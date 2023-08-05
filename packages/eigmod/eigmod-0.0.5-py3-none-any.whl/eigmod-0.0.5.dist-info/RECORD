@@ -1,0 +1,15 @@
+eigmod/ButtonFunktionen.py,sha256=HgJWiXuxeqUMjntpsujX2E4C5l-3afSDv2-u78YgxrA,12451
+eigmod/Graphen2.py,sha256=O74pBQYH1vFR41C5coE9ROWMs5PojR8iGfSk8gIh3Fs,9211
+eigmod/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eigmod/border_zoom_camera_alt#####.py,sha256=4o5W_xAxwXx-80KNxQBTluYx7JpAUdCdRf1vRpGN4GY,3456
+eigmod/camera.py,sha256=m9rmKw_SCZWsTZWTuFGGvyWicSmi9OINsdsyG1R_CHg,3664
+eigmod/collisionen.py,sha256=lxEzSZkL4EVlBDM9Btr7tDadMxi05xIoHT9by34h72c,2916
+eigmod/draw_assistance.py,sha256=-CFIiLJsKWjYmbFXGvVYVjhI3i9FugBK62V3EQhqQvA,7353
+eigmod/draw_text_list.py,sha256=PNKkf0ITbXEnYKsieTHgTMlF_CD2kSz6FrlZhWvjVcw,1505
+eigmod/input_box.py,sha256=4wnqlS6fCn2W_DKrlNKyOu51xuL9Hx_M52t4kntmUZQ,18911
+eigmod/numpy_assistance.py,sha256=py5MXD01AW68K2lJ8zUVTsGjkTtAO6w80I_VS9-tp3M,456
+eigmod/test.py,sha256=VrgZrg3Jm-ZEVp5VDs0SeFm3vVDQi7mf_HdGmHI7cJw,1491
+eigmod-0.0.5.dist-info/METADATA,sha256=I4ivekMogYK4EByobMSwpFSJ7u4xyPUmDUaPqC_ARGo,402
+eigmod-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+eigmod-0.0.5.dist-info/top_level.txt,sha256=xYeNpjtI7G8lCud64P2rrIDd1-9C3umn8o4gDqWF0ag,7
+eigmod-0.0.5.dist-info/RECORD,,
