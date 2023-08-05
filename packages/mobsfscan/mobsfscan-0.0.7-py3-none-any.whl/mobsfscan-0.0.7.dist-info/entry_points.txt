@@ -1,0 +1,3 @@
+[console_scripts]
+mobsfscan = mobsfscan.__main__:main
+
