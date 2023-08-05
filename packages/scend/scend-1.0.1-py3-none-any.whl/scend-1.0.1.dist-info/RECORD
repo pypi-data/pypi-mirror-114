@@ -1,0 +1,12 @@
+scend/__init__.py,sha256=foAyQT2cJ4hdny3lmTZkd0HJK2jjqi6E-9BZrtKLjb8,220
+scend/initialParams.py,sha256=8v46IGeIrTPsgPIKNq_0DnMN7p8zRvFFXC0zeSIVx_I,3328
+scend/lossFunc.py,sha256=19xDRe-uUHCPYUtry0yiogA7C6e3IDXkfyz0Nw05wio,1143
+scend/optimize.py,sha256=V3r6p3GN0vWR2_VCgScJnrZ_Q97CzZ8rwsfHbgsKZow,4147
+scend/scend.py,sha256=941jezg6GuRwRoOvXTQs4hjQKRJ-9EaDoz1iP2eZCRo,11849
+scend/utiles.py,sha256=UtnFHZxa0MhN1cl656-dTiO2GhX05tW78QlgSzZh8Bk,2486
+scend/version.py,sha256=IxdcU4KqGUP0G1b15_bZ1qibsg0I4xGEwOGlhoLsURQ,165
+scend-1.0.1.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+scend-1.0.1.dist-info/METADATA,sha256=YcIOn2qYwKbF7xZORa2rSpqFvuNj6ptElOAfKrhSQcA,2777
+scend-1.0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+scend-1.0.1.dist-info/top_level.txt,sha256=inVDpUn2DXLHjAQatQhGnxkMNTWQF_DJ8fvyW1rTojA,6
+scend-1.0.1.dist-info/RECORD,,
