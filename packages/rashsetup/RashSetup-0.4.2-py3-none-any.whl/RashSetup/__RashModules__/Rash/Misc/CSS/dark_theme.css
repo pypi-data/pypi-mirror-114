@@ -1,0 +1,180 @@
+/* Main Window */
+QMainWindow::separator:hover,
+QSplitter::handle:hover {
+  background-color: #46b5d1;
+}
+
+QMainWindow::separator {
+  background-color: #414141;
+}
+
+/* Status Bar */
+
+QStatusBar {
+  background-color: #0099e5;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+/* Tool Bar */
+
+QToolBar {
+background-color: #FF8300;
+}
+
+/* Docks */
+
+QDockWidget,
+#MainDocks {
+  background-color: #313131;
+  border-width: 4px;
+  border-color: #414141;
+  padding: 10px;
+}
+
+QDockWidget QTreeView {
+  background-color: #313131;
+  color: #f0ece2;
+  border: 0px;
+}
+
+QDockWidget QTreeView::item:hover {
+  background-color: #ff4d00;
+  color: #acdbdf;
+}
+
+/* Splitter */
+
+#Central,
+QDialog,
+QCheckBox,
+QDialog QLabel,
+#DataPage QGroupBox {
+  background-color: #464646;
+  font-family: "Comics Sans MS";
+  font-size: 22px;
+  color: #ffffff;
+}
+
+#MarkDown {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+#LogViewer {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#entry,
+#DirView > QLineEdit {
+  background-color: #464646;
+  border-style: none;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 24px;
+  padding: 2px;
+
+  selection-background-color: #ff6c00;
+}
+
+#entry:hover,
+#DirView > QLineEdit:hover {
+  border-style: none;
+  background: #252525;
+}
+
+#iconView {
+  background-color: #464646;
+  padding-left: 10px;
+  padding-right: 14px;
+  padding-bottom: 12px;
+  padding-top: 10px;
+  border-width: 3px;
+  border-style: inset;
+  border-color: #393e46;
+}
+
+#iconView:hover {
+  border-style: outset;
+  background: #252525;
+}
+
+#DirView QToolButton {
+  background-color: "#252525";
+}
+
+#DirView QToolButton:hover {
+  background-color: "#435055";
+}
+
+#Central QPushButton,
+QDialog QPushButton {
+  background-color: "#212121";
+  color: "#eeeeee";
+  min-width: 120px;
+  min-height: 40px;
+  border-radius: 20px;
+  border-style: outset;
+}
+
+#Central QPushButton:hover,
+QDialog QPushButton:hover {
+  background-color: "#525252";
+  color: "#ff7844";
+  border-width: 3px;
+  border-style: inset;
+  border-color: "#14ffec";
+}
+
+#Central QPushButton:pressed,
+QDialog QPushButton:pressed,
+#Central QPushButton:focus,
+QDialog QPushButton:focus {
+  background-color: "#222831";
+  border-style: groove;
+  border-width: 6px;
+  border-color: "#fd7014";
+  outline: 0;
+}
+
+#Central QPushButton:disabled {
+  background-color: "#212121";
+  color: "#525252";
+}
+
+#Central QTreeView {
+  color: "#eeeeee";
+  outline: 0;
+  border-style: inset;
+  background-color: "#525252";
+  border-radius: 24px;
+  alternate-background-color: yellow;
+}
+
+#Central QTreeView:hover {
+  border-style: ridge;
+  border-width: 2px;
+  background-color: #464646;
+}
+
+QSlider {
+  outline: 0;
+}
+
+/* Plugin Item */
+
+QScrollArea{
+background-color: "orange";
+}
+
+#Browser{
+background-color: "black";
+}
+
+QTextBrowser{
+}

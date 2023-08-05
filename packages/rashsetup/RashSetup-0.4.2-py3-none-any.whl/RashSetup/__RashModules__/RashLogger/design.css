@@ -1,0 +1,38 @@
+hr {
+  border-width: 6px;
+}
+
+p.WARNING {
+  color: "yellow";
+  font-weight: normal;
+}
+
+p.ERROR {
+  color: "red";
+  font-weight: bold;
+}
+
+p.EXCEPTION {
+  color: "red";
+  font-weight: bold;
+}
+
+p.DEBUG {
+  color: "green";
+  font-weight: normal;
+}
+
+p.INFO {
+  color: "orange";
+  font-weight: bold;
+}
+
+p.CONSOLE_ERROR {
+  color: "red";
+  font-weight: bold;
+}
+
+p.CONSOLE_OUT {
+  color: "grey";
+  font-weight: normal;
+}

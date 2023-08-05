@@ -1,0 +1,13 @@
+{
+  "name": "RashLogger",
+  "version": "0.0.1",
+  "template": "Tool",
+  "readme": "https://github.com/RahulARanger/Rash/blob/master/RashLogger/README.md",
+  "requires": [
+    "PySide2",
+    "RashSetup"
+  ],
+  "downloads": {
+
+  }
+}

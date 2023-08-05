@@ -1,0 +1,31 @@
+{
+  "name": "Rash",
+  "version": "0.0.5",
+  "hosted": "https://github.com/RahulARanger/Rash/tree/master/Rash",
+  "template": "Main",
+  "requires": [
+    "PySide2"
+  ],
+  "downloads": {
+    "Icons": {
+      "accepted.png": "https://image.flaticon.com/icons/png/512/2270/2270584.png",
+      "alert.png": "https://image.flaticon.com/icons/png/512/3064/3064339.png",
+      "back.png": "https://image.flaticon.com/icons/png/512/189/189254.png",
+      "enter.png": "https://image.flaticon.com/icons/png/512/1828/1828381.png",
+      "finish-line.png": "https://image.flaticon.com/icons/png/512/1668/1668532.png",
+      "globe.png": "https://image.flaticon.com/icons/png/512/814/814513.png",
+      "house.png": "https://image.flaticon.com/icons/png/512/619/619153.png",
+      "logs.png": "https://image.flaticon.com/icons/png/512/2620/2620995.png",
+      "markdown.png": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Markdown.png",
+      "stay_safe.png": "https://image.flaticon.com/icons/png/512/3922/3922912.png",
+      "stop.png": "https://image.flaticon.com/icons/png/512/2369/2369537.png",
+      "warning.png": "https://image.flaticon.com/icons/png/512/595/595067.png",
+      "workspace.png": "https://image.flaticon.com/icons/png/512/1599/1599808.png",
+      "search.png": "https://image.flaticon.com/icons/png/512/639/639375.png",
+      "rash.ico": "https://repository-images.githubusercontent.com/363789312/746d2900-b426-11eb-968c-8176baa4e4e9",
+      "redirect.png": "https://image.flaticon.com/icons/png/512/2653/2653482.png",
+      "open_folder.png": "https://image.flaticon.com/icons/png/512/2521/2521944.png",
+      "reload.png": "https://image.flaticon.com/icons/png/512/3580/3580284.png"
+    }
+  }
+}
