@@ -1,0 +1,4 @@
+cuid
+requests
+django
+factory-boy
