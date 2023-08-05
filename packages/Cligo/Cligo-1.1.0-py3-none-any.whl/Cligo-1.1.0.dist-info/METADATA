@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: Cligo
+Version: 1.1.0
+Summary: A Python CLI Framework.
+Home-page: https://github.com/AidenEllis/Cligo
+Author: Aiden Ellis
+Author-email: itsaidenellis@protonmail.com
+License: MIT
+Project-URL: Github, https://github.com/AidenEllis/Cligo
+Project-URL: Documentation, https://github.com/AidenEllis/Cligo/blob/main/docs
+Project-URL: Issue tracker, https://github.com/AidenEllis/Cligo/issues
+Keywords: cligo,cli,cli go,python cli framework,CLI Framework,Command Line Interface
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+Requires-Dist: asgiref (==3.4.1)
+Requires-Dist: certifi (==2021.5.30)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: cx-Freeze (==6.7)
+Requires-Dist: cx-Logging (==3.0)
+Requires-Dist: importlib-metadata (==4.6.1)
+Requires-Dist: Jinja2 (==3.0.1)
+Requires-Dist: MarkupSafe (==2.0.1)
+Requires-Dist: peewee (==3.14.4)
+Requires-Dist: pytz (==2021.1)
+Requires-Dist: sqlparse (==0.4.1)
+Requires-Dist: wincertstore (==0.2)
+Requires-Dist: zipp (==3.5.0)
+
+<a href="https://github.com/AidenEllis/Cligo"><p align="center"></a>
+<img height=100 src="https://upstorage.pythonanywhere.com/api/storage/file/its_sakib/Public/cligo/cligo.png"/>
+
+
+<p align="center">
+  <strong>CLI Go - Taking CLI Framework to the moon 🚀</strong>
+</p>
+
+<h3 align="center">
+  <a href="https://github.com/AidenEllis/Cligo/blob/main/CONTRIBUTING.md">Contribute</a>
+  <span> · </span>
+  <a href="https://discord.gg/gbJ3sAeZkv">Community</a>
+  <span> · </span>
+  <a href="https://github.com/AidenEllis/Cligo/tree/main/docs">Documentation</a>
+</h3>
+
+---
+
+## 🎫 Introduction :
+Cligo (aka CLI Go) is a Python-based free and open-source CLI (Command line interface)
+Framework. Cligo makes it easier & faster to build CLI
+application.
+
+The main goal of CliGo is to allow developers to focus on building commands,
+instead of worrying about the process, execution & user input handeling.
+
+And with our built-in components you can easily do stuffs like `checking 
+permissions` (e.g., checking if the user is logged in), 
+`user information`, `Handeling errors`, `Handeling inputs`, `Database` and more.
+
+With our continuous updates you will keep getting new components and
+features.
+
+
+## Contributions
+
+CliGo is open to contributions.
+
+Please read [CONTRIBUTING.md](https://github.com/AidenEllis/Cligo/blob/main/CONTRIBUTING.md) for details on this project 
+or visit our [Discord server](https://discord.gg/gbJ3sAeZkv)
+
+## Code of Conduct
+
+Please read [CODE_OF_CONDUCT.md](https://github.com/AidenEllis/Cligo/blob/main//CODE_OF_CONDUCT.md) for details on our code of conduct.
+
+
