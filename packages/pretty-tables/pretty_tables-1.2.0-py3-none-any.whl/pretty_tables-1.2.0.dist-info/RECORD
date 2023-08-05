@@ -1,0 +1,11 @@
+pretty_tables/__init__.py,sha256=FiQYrwuNi2VjF_KsZ0NofuMmnYIg8RVZT9uvMhxb9Jc,106
+pretty_tables/tables.py,sha256=Yir7Jxhk5zt-xQUIQNIJFbJqp_z-druVVA4B2hypB60,6327
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/unit/conftest.py,sha256=othGNJ0_20VIZp9LalVVhm1EqrjJgvU6hrz1JUGt9io,532
+test/unit/test_tables.py,sha256=dJKCLJgQqqSPwik7nVVmb3xZV8GMOAWKQlu47_sF7h8,5791
+pretty_tables-1.2.0.dist-info/LICENSE,sha256=WoDunZvVM8yKs2dwmA-Eae0e64uqKwfEuOOokFS1w5g,1071
+pretty_tables-1.2.0.dist-info/METADATA,sha256=VRKiJZNtdQFyFGsIe4DI537yMsRGduKLqEOZHf-aJYE,3692
+pretty_tables-1.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pretty_tables-1.2.0.dist-info/top_level.txt,sha256=sHUtleLxRkynZfm3gZI58xZrvfx6EDkZlYRXH0_xUk0,19
+pretty_tables-1.2.0.dist-info/RECORD,,
