@@ -1,0 +1,3 @@
+[console_scripts]
+beau-pyrm=beau_pyrm.main:app
+
