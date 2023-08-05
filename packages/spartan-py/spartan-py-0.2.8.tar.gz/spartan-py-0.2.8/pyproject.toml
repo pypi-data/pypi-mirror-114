@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "spartan-py"
+version = "0.2.8"
+description = "Library for spartan protocol"
+authors = ["Hedy Li <hedy@tilde.cafe>"]
+packages = [
+	{include = "spartan"}
+]
+license = "MIT"
+readme = "README.md"
+homepage = "https://sr.ht/~hedy/spartan-py"
+repository = "https://sr.ht/~hedy/spartan-py"
+classifiers = [
+	"Topic :: Software Development :: Libraries :: Python Modules",
+]
+include = [
+	"LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
