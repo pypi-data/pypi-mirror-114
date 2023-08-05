@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: AlexFireBot
+Version: 0.0
+Summary: Бот для AlexFireChat
+Home-page: https://github.com/AlexFire-Dev/AlexFireBot
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.8
+Requires-Dist: requests
+Requires-Dist: websockets
+
+UNKNOWN
+
+
