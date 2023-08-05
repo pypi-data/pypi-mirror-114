@@ -1,0 +1,10 @@
+sqlite_utils/__init__.py,sha256=BQJq68f6kxQq-P-_lnXVp8yiuI50feBclUO0is7fj8o,113
+sqlite_utils/cli.py,sha256=r84sVNw5s-cObXSV5NVxchjf087L5OkuQUPHPHTYbDg,55390
+sqlite_utils/db.py,sha256=dXKEd-W2cYtk6yWDNG7fngIAsZchYiH6g9beJTx6-NI,79658
+sqlite_utils/utils.py,sha256=qy97c2JMF9zY_KPmmZTWTEJCFLJNlcYVloPWkWhFKwQ,7471
+sqlite_utils-3.13.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sqlite_utils-3.13.dist-info/METADATA,sha256=xLejBRGuGLLroUAuqUxbQ7sWJmXkHamLmRg6uRvO8aA,6260
+sqlite_utils-3.13.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sqlite_utils-3.13.dist-info/entry_points.txt,sha256=kQvUadNEdxu9gnDDvKP-pnV-qq3FJQqb2UxenMnIgUY,73
+sqlite_utils-3.13.dist-info/top_level.txt,sha256=_dw_n5BWKUEtCYB2DTlmPMQfdRZSuFsmRQe2ZhNYwnQ,13
+sqlite_utils-3.13.dist-info/RECORD,,
