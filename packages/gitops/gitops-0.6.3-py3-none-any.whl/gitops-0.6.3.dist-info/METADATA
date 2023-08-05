@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: gitops
+Version: 0.6.3
+Summary: Manage multiple apps across one or more k8s clusters.
+License: BSD
+Author: Jarek Głowacki
+Author-email: jarekwg@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: server
+Requires-Dist: boto3
+Requires-Dist: colorama (>=0.4.4,<0.5.0)
+Requires-Dist: dsnparse
+Requires-Dist: fastapi; extra == "server"
+Requires-Dist: httpx (>=0.18.1,<0.19.0); extra == "server"
+Requires-Dist: humanize (>=3.5.0,<4.0.0)
+Requires-Dist: invoke
+Requires-Dist: pyyaml (>=5.1.2)
+Requires-Dist: tabulate (>=0.8.9,<0.9.0)
+Requires-Dist: uvicorn (>=0.13.4,<0.14.0); extra == "server"
