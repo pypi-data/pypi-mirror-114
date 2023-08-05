@@ -1,0 +1,4 @@
+[console_scripts]
+csv-search = hed_utils.cli.csv_search:run
+rkill = hed_utils.cli.rkill:run
+
