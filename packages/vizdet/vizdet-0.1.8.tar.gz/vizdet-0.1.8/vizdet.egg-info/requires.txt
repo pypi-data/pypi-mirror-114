@@ -1,0 +1,13 @@
+numpy
+
+[docs]
+Sphinx
+pydata-sphinx-theme
+sphinx-autodoc-typehints
+
+[tests]
+pytest
+flake8
+black
+mypy
+isort
