@@ -1,0 +1,10 @@
+setup.py
+selwyn_binomial/Binomialdistribution_challenge.py
+selwyn_binomial/Gaussiandistribution.py
+selwyn_binomial/Generaldistribution.py
+selwyn_binomial/__init__.py
+selwyn_binomial.egg-info/PKG-INFO
+selwyn_binomial.egg-info/SOURCES.txt
+selwyn_binomial.egg-info/dependency_links.txt
+selwyn_binomial.egg-info/not-zip-safe
+selwyn_binomial.egg-info/top_level.txt
