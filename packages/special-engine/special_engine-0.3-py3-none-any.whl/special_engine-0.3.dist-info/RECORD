@@ -1,0 +1,9 @@
+special_engine/__init__.py,sha256=iaC1C_BSTScsJf2HNKTkQ2J9M0WYhLgjkw8T3io3nGk,113
+special_engine/capi.py,sha256=96ZAn30QsK5scxdqprK0WnQUApsS48lyDl8qJ1Ifif0,17518
+special_engine/compat.py,sha256=HIZpUa8xZSr8zivhOufwl0dv2FLNjwJqOKENjF4G6lg,1492
+special_engine/constants.py,sha256=L6rqqCzw8pqb7pn3zKoiD_dq1l2V79g9x2SJtaVcUiA,965
+special_engine/wrappers.py,sha256=FyuA978qdSe51YPI2pNFwUah4zgjBb9Zo4sFqtEcW8w,2926
+special_engine-0.3.dist-info/METADATA,sha256=gxRpHVUv8u0mMp0U4ohkGKiwKyB1kUEjdwgCqNLHSJY,1059
+special_engine-0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+special_engine-0.3.dist-info/top_level.txt,sha256=emHE9ZODXM509yiPdDIdGGcLCyKQJSvjbSpnRcUMyLU,15
+special_engine-0.3.dist-info/RECORD,,
