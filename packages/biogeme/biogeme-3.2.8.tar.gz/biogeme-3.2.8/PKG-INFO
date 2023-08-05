@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: biogeme
+Version: 3.2.8
+Summary: Estimation and application of discrete choice models
+Home-page: http://biogeme.epfl.ch
+Author: Michel Bierlaire
+Author-email: michel.bierlaire@epfl.ch
+License: UNKNOWN
+Description: # Biogeme
+        
+        Biogeme is an open source freeware designed for the maximum likelihood estimation of parametric models in general, with a special emphasis on discrete choice models.
+        
+        ## Install
+        Biogeme requires Python 3.6, 3.7 or 3.8 and can be installed [from PyPI](https://pypi.org/project/biogeme/).
+        
+        `pip install biogeme`
+        
+        Installing Biogeme from source can be done after cloning the repository with:
+        
+        `python setup.py install`
+        
+        ## Documentation
+        Further documentation is available on https://biogeme.epfl.ch/
+        
+Keywords: discrete choice maximum likelihood estimation
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
