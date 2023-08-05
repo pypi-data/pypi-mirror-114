@@ -1,0 +1,5 @@
+[console_scripts]
+aptuscmd = aptus.cmdline:main
+aptusgui = aptus.gui:main
+aptusweb = aptus.web:main
+
