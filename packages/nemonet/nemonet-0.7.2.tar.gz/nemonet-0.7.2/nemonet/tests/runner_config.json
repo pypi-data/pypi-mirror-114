@@ -1,0 +1,16 @@
+{
+    "driver": {
+        "headless": false,
+        "browser": "chrome",
+        "type": "selenium",
+        "options": {
+            "experimental_flags": [
+                "same-site-by-default-cookies@2",
+                "cookies-without-same-site-must-be-secure@2"
+            ]
+        }
+    },
+    "recording": {
+        "switch": false
+    }
+}

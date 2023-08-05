@@ -1,0 +1,13 @@
+<graph>
+    <nodes>
+        <node name="node1"/>
+        <node name="node2"/>
+    </nodes>
+    <edges>
+        <edge from="node1" to="node2"/>
+    </edges>
+    <actions>
+        <action xpath="" type="OPENURL" nodename="node1" value="https://jqueryui.com/droppable/" waitafter="10"/>
+        <action xpath="//*[@id='draggable']" type="DRAG_AND_DROP_JS" nodename="node2" value="//*[@id='droppable']" waitafter="10"/>
+    </actions>
+</graph>
