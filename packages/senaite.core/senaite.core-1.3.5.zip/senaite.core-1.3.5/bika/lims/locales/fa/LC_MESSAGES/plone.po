@@ -1,0 +1,883 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Translators:
+# Ramon Bartl <rb@ridingbytes.com>, 2018
+# roozbeh karimi <information.spnco@gmail.com>, 2021
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-08-02 11:38+0000\n"
+"PO-Revision-Date: 2018-06-01 18:46+0000\n"
+"Last-Translator: roozbeh karimi <information.spnco@gmail.com>, 2021\n"
+"Language-Team: Persian (https://www.transifex.com/senaite/teams/87045/fa/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: plone\n"
+"Language: fa\n"
+
+#: bika/lims/profiles/default/types/ARTemplate.xml
+msgid "AR Template"
+msgstr "قالب AR"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/ARTemplates.xml
+msgid "AR Templates"
+msgstr "قالب‌های AR"
+
+#: bika/lims/profiles/default/types/ARReport.xml
+msgid "ARReport"
+msgstr "گزارش AR"
+
+# Manual Workflow State and Transition MsgIds
+# Despite the fact, that these are defined in the "bika" domain, they are not
+# translated
+# in the action menu of Plone.
+# Please don't remove
+msgid "Activate"
+msgstr "فعال شده"
+
+msgid "Active"
+msgstr "فعال"
+
+#: bika/lims/profiles/default/types/Worksheet.xml
+msgid "Add Analyses"
+msgstr "اضافه کردن آزمایش"
+
+#: bika/lims/profiles/default/types/Worksheet.xml
+msgid "Add Blank Reference"
+msgstr "اضافه کردن منبع شاهد"
+
+#: bika/lims/profiles/default/types/Worksheet.xml
+msgid "Add Control Reference"
+msgstr "اضافه کردن منبع کنترلی"
+
+#: bika/lims/profiles/default/types/Worksheet.xml
+msgid "Add Duplicate"
+msgstr "اضافه کردن کپی"
+
+#: bika/lims/profiles/default/types/ReportFolder.xml
+msgid "Administration"
+msgstr "ادمین"
+
+#: bika/lims/profiles/default/types/ReferenceSample.xml
+msgid "Analyses"
+msgstr "آزمایش‌ها"
+
+#: bika/lims/profiles/default/types/Analysis.xml
+msgid "Analysis"
+msgstr "آزمایش"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/AnalysisCategories.xml
+msgid "Analysis Categories"
+msgstr "دسته‌بندی‌های آزمایش"
+
+#: bika/lims/profiles/default/types/AnalysisCategory.xml
+msgid "Analysis Category"
+msgstr "دسته‌بندی‌ آزمایش"
+
+#: bika/lims/profiles/default/types/AnalysisProfile.xml
+msgid "Analysis Profile"
+msgstr "پروفایل آزمایش"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/AnalysisProfiles.xml
+#: bika/lims/profiles/default/types/Client.xml
+msgid "Analysis Profiles"
+msgstr "پروفایل‌های آزمایش"
+
+#: bika/lims/profiles/default/types/AnalysisService.xml
+msgid "Analysis Service"
+msgstr "خدمات آزمایش"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/AnalysisServices.xml
+msgid "Analysis Services"
+msgstr "خدمات آزمایش"
+
+#: bika/lims/profiles/default/types/AnalysisSpec.xml
+msgid "Analysis Specification"
+msgstr "مشخصه آزمایش"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/AnalysisSpecs.xml
+#: bika/lims/profiles/default/types/Client.xml
+msgid "Analysis Specifications"
+msgstr "مشخصات آزمایش"
+
+msgid "Assign"
+msgstr "تخصیص دادن"
+
+msgid "Assigned"
+msgstr "تخصیص داده شده"
+
+msgid "Attach"
+msgstr "پیوست"
+
+#: bika/lims/profiles/default/types/Attachment.xml
+msgid "Attachment"
+msgstr "فایل پیوست"
+
+#: bika/lims/profiles/default/types/AttachmentType.xml
+msgid "Attachment Type"
+msgstr "نوع پیوست"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/AttachmentTypes.xml
+msgid "Attachment Types"
+msgstr "انواع پیوست"
+
+msgid "Attachment due"
+msgstr "سررسید پیوست"
+
+#: bika/lims/profiles/default/types/Client.xml
+msgid "Attachments"
+msgstr "پیوست‌ها"
+
+#: bika/lims/profiles/default/actions.xml
+msgid "Audit Log"
+msgstr "گزارش حسابرسی "
+
+#: bika/lims/profiles/default/types/Instrument.xml
+msgid "Auto-Import Logs"
+msgstr "درونریزی خودکار گزارش‌ها"
+
+#: bika/lims/profiles/default/types/Batch.xml
+msgid "Batch"
+msgstr "دسته‌بندی"
+
+#: bika/lims/profiles/default/types/Batch.xml
+msgid "Batch Book"
+msgstr "دفترچه دسته‌بندی"
+
+#: bika/lims/profiles/default/types/BatchLabel.xml
+msgid "Batch Label"
+msgstr "برچسب دسته‌بندی"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/BatchLabels.xml
+msgid "Batch Labels"
+msgstr "برچسب‌های دسته‌بندی"
+
+#: bika/lims/profiles/default/types/BatchFolder.xml
+#: bika/lims/profiles/default/types/Client.xml
+msgid "Batches"
+msgstr "دسته‌بندی‌ها"
+
+#: bika/lims/profiles/default/types/Calculation.xml
+msgid "Calculation"
+msgstr "محاسبه"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/Calculations.xml
+msgid "Calculations"
+msgstr "محاسبات"
+
+#: bika/lims/profiles/default/types/Instrument.xml
+msgid "Calibration Certificates"
+msgstr "تائیدیه کالیبراسون"
+
+#: bika/lims/profiles/default/types/Instrument.xml
+msgid "Calibrations"
+msgstr "کالیبراسیون‌ها"
+
+msgid "Cancel"
+msgstr "لغو"
+
+#: bika/lims/profiles/default/types/Client.xml
+msgid "Client"
+msgstr "مشتری"
+
+#: bika/lims/profiles/default/types/ClientFolder.xml
+msgid "Clients"
+msgstr "مشتری‌ها"
+
+msgid "Close"
+msgstr "بستن"
+
+msgid "Complete"
+msgstr "تمام شده"
+
+#: bika/lims/profiles/default/types/Contact.xml
+#: bika/lims/profiles/default/types/SupplierContact.xml
+msgid "Contact"
+msgstr "مخاطب"
+
+#: bika/lims/profiles/default/types/Client.xml
+#: bika/lims/profiles/default/types/Supplier.xml
+msgid "Contacts"
+msgstr "مخاطبین"
+
+#: bika/lims/profiles/default/types/Container.xml
+msgid "Container"
+msgstr "نگه‌دارنده"
+
+#: bika/lims/profiles/default/types/ContainerType.xml
+msgid "Container Type"
+msgstr "نوع نگهدارنده"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/ContainerTypes.xml
+msgid "Container Types"
+msgstr "انواع نگهدارنده"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/Containers.xml
+msgid "Containers"
+msgstr "نگهدارنده‌ها"
+
+#: bika/lims/profiles/default/types/AnalysisRequest.xml
+msgid "Create Invoice PDF"
+msgstr "ساخت PDF فاکتور"
+
+msgid "Current"
+msgstr "کنونی"
+
+#: bika/lims/profiles/default/actions.xml
+msgid "Dashboard"
+msgstr "میزکار"
+
+msgid "Deactivate"
+msgstr "غیرفعال"
+
+#: bika/lims/profiles/default/types/Department.xml
+msgid "Department"
+msgstr "دپارتمان"
+
+#: bika/lims/profiles/default/types/Departments.xml
+msgid "Departments"
+msgstr "دپارتمان‌ها"
+
+msgid "Dispatch"
+msgstr "ارسال"
+
+msgid "Dispatched"
+msgstr "ارسال شده"
+
+msgid "Dispose"
+msgstr "انتقال"
+
+msgid "Disposed"
+msgstr "منتقل شده"
+
+#: bika/lims/profiles/default/types/Instrument.xml
+msgid "Documents"
+msgstr "اسناد"
+
+msgid "Dormant"
+msgstr "خوابیده"
+
+#: bika/lims/profiles/default/types/DuplicateAnalysis.xml
+msgid "Duplicate Analysis"
+msgstr "آزمایش تکراری"
+
+#: bika/lims/profiles/default/controlpanel.xml
+msgid "Dynamic Analysis Specifications"
+msgstr "مشخصات آزمایش پویا"
+
+#: bika/lims/profiles/default/types/ARTemplate.xml
+#: bika/lims/profiles/default/types/AnalysisCategory.xml
+#: bika/lims/profiles/default/types/AnalysisProfile.xml
+msgid "Edit"
+msgstr "ویرایش"
+
+msgid "Expire"
+msgstr "انقضا"
+
+msgid "Expired"
+msgstr "منقضی شده"
+
+#: bika/lims/profiles/default/types/Worksheet.xml
+msgid "Export"
+msgstr "برون‌ریزی"
+
+#: bika/lims/profiles/default/types/ReportFolder.xml
+msgid "History"
+msgstr "تاریخچه"
+
+#: bika/lims/profiles/default/actions.xml
+msgid "Import"
+msgstr "درون‌ریزی"
+
+msgid "Imported"
+msgstr "درون‌ریزی شده"
+
+msgid "Inactive"
+msgstr "غیر فعال"
+
+#: bika/lims/profiles/default/types/Instrument.xml
+msgid "Instrument"
+msgstr "دستگاه"
+
+#: bika/lims/profiles/default/controlpanel.xml
+msgid "Instrument Locations"
+msgstr "موقعیت دستگاه‌ها"
+
+#: bika/lims/profiles/default/types/InstrumentType.xml
+msgid "Instrument Type"
+msgstr "نوع دستگاه"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/InstrumentTypes.xml
+msgid "Instrument Types"
+msgstr "انواع دستگاه"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/InstrumentType.xml
+#: bika/lims/profiles/default/types/Instruments.xml
+msgid "Instruments"
+msgstr "دستگاه‌ها"
+
+msgid "Invalid"
+msgstr "نامعتبر"
+
+msgid "Invalidate"
+msgstr "بی اعتبار کردن"
+
+#: bika/lims/profiles/default/types/AnalysisRequest.xml
+#: bika/lims/profiles/default/types/Invoice.xml
+msgid "Invoice"
+msgstr "فاکتور"
+
+#: bika/lims/profiles/default/types/LabContact.xml
+msgid "Lab Contact"
+msgstr "تماس با آزمایشگاه"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/Department.xml
+#: bika/lims/profiles/default/types/LabContacts.xml
+msgid "Lab Contacts"
+msgstr "تماس‌های آزمایشگاه"
+
+#: bika/lims/profiles/default/controlpanel.xml
+msgid "Lab Departments"
+msgstr "دپارتمان‌های آزمایشگاه"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/LabProducts.xml
+msgid "Lab Products"
+msgstr "محصولات آزمایشگاه"
+
+#: bika/lims/profiles/default/types/Laboratory.xml
+msgid "Laboratory"
+msgstr "آزمایشگاه"
+
+#: bika/lims/profiles/default/controlpanel.xml
+msgid "Laboratory Information"
+msgstr "اطلاعات آزمایشگاه"
+
+#: bika/lims/profiles/default/types/AnalysisRequest.xml
+msgid "Large Sticker"
+msgstr "برچسب بزرگ"
+
+#: bika/lims/profiles/default/types/Contact.xml
+#: bika/lims/profiles/default/types/LabContact.xml
+msgid "Login details"
+msgstr "اطلاعات ورود"
+
+#: bika/lims/profiles/default/types/Instrument.xml
+msgid "Maintenance"
+msgstr "تعمیرات"
+
+#: bika/lims/profiles/default/types/AnalysisRequest.xml
+msgid "Manage Analyses"
+msgstr "مدیریت آزمایش‌ها"
+
+#: bika/lims/profiles/default/types/AnalysisRequest.xml
+#: bika/lims/profiles/default/types/Worksheet.xml
+msgid "Manage Results"
+msgstr "مدیریت نتایج"
+
+#: bika/lims/profiles/default/types/Manufacturer.xml
+msgid "Manufacturer"
+msgstr "تولید کننده"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/Manufacturers.xml
+msgid "Manufacturers"
+msgstr "تولید کننده‌ها"
+
+#: bika/lims/profiles/default/types/Method.xml
+msgid "Method"
+msgstr "روش"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/Methods.xml
+msgid "Methods"
+msgstr "روش‌ها"
+
+#: bika/lims/profiles/default/actions.xml
+msgid "My organization"
+msgstr "سازمان من"
+
+msgid "No preservation required"
+msgstr "نگهداری نیاز ندارد"
+
+msgid "No sampling workflow"
+msgstr "نیاز به نمونه برداری ندارد"
+
+msgid "Not requested"
+msgstr "درخواست ندارد"
+
+msgid "Open"
+msgstr "باز"
+
+#: bika/lims/profiles/default/types/Client.xml
+msgid "Orders"
+msgstr "سفارش‌ها"
+
+msgid "Pending"
+msgstr "در انتظار"
+
+msgid "Prepublish"
+msgstr "پیش انتشار"
+
+#: bika/lims/profiles/default/types/Preservation.xml
+msgid "Preservation"
+msgstr "نگهداری"
+
+msgid "Preservation required"
+msgstr "نیاز به نگهداری"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/Preservations.xml
+msgid "Preservations"
+msgstr "نگهداری‌ها"
+
+msgid "Preserve"
+msgstr "نگه‌داری"
+
+#: bika/lims/profiles/default/types/Pricelist.xml
+msgid "Pricelist"
+msgstr "لیست قیمت"
+
+#: bika/lims/profiles/default/types/PricelistFolder.xml
+msgid "Pricelists"
+msgstr "لیست‌های قیمت"
+
+#: bika/lims/profiles/default/types/Invoice.xml
+#: bika/lims/profiles/default/types/SupplyOrder.xml
+msgid "Print"
+msgstr "پرینت"
+
+#: bika/lims/profiles/default/types/AnalysisRequest.xml
+msgid "Print Invoice"
+msgstr "چاپ فاکتور"
+
+#: bika/lims/profiles/default/types/Pricelist.xml
+msgid "Print pricelist"
+msgstr "چاپ لیست قیمت"
+
+#: bika/lims/profiles/default/types/ReportFolder.xml
+msgid "Productivity"
+msgstr "بهره‌وری"
+
+msgid "Publish"
+msgstr "انتشار"
+
+msgid "Published"
+msgstr "منتشر شده"
+
+#: bika/lims/profiles/default/types/AnalysisRequest.xml
+msgid "Published results"
+msgstr "انتشار نتایج"
+
+#: bika/lims/profiles/default/types/Instrument.xml
+msgid "QC Results"
+msgstr "نتایج کنترل کیفیت"
+
+msgid "Receive"
+msgstr "دریافت"
+
+msgid "Receive sample"
+msgstr "دریافت نمونه"
+
+msgid "Received"
+msgstr "دریافت شده"
+
+#: bika/lims/profiles/default/types/ReferenceAnalysis.xml
+msgid "Reference Analysis"
+msgstr "مرجع آزمایش"
+
+#: bika/lims/profiles/default/types/ReferenceDefinition.xml
+msgid "Reference Definition"
+msgstr "تعریف مرجع"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/ReferenceDefinitions.xml
+msgid "Reference Definitions"
+msgstr "تعاریف مرجع"
+
+#: bika/lims/profiles/default/types/ReferenceSample.xml
+msgid "Reference Sample"
+msgstr "نمونه مرجع "
+
+#: bika/lims/profiles/default/types/ReferenceSamplesFolder.xml
+#: bika/lims/profiles/default/types/Supplier.xml
+msgid "Reference Samples"
+msgstr "نمونه‌های مرجع "
+
+#: bika/lims/profiles/default/types/ReferenceSample.xml
+msgid "Reference Values"
+msgstr "مقادیر مرجع"
+
+#: bika/lims/profiles/default/controlpanel.xml
+msgid "Reflex Rules"
+msgstr "قوانین واکنش"
+
+#: bika/lims/profiles/default/types/ReflexRuleFolder.xml
+msgid "Reflex Rules Folder"
+msgstr "پوشه قوانین واکنش"
+
+#: bika/lims/profiles/default/types/ReflexRule.xml
+msgid "ReflexRule"
+msgstr "قانون واکنش"
+
+msgid "Registered"
+msgstr "ثبت شده"
+
+msgid "Reinstate"
+msgstr "برگشت مجدد"
+
+msgid "Reject"
+msgstr "رد کردن"
+
+#: bika/lims/profiles/default/types/RejectAnalysis.xml
+msgid "Reject Analysis"
+msgstr "رد کردن آزمایش"
+
+msgid "Rejected"
+msgstr "رد شده"
+
+msgid "Remove"
+msgstr "برداشتن"
+
+#: bika/lims/profiles/default/actions.xml
+#: bika/lims/profiles/default/types/Report.xml
+msgid "Report"
+msgstr "گزارش"
+
+#: bika/lims/profiles/default/types/ReportFolder.xml
+msgid "Reports"
+msgstr "گزارش‌ها"
+
+msgid "Republish"
+msgstr "انتشار مجدد"
+
+msgid "Retract"
+msgstr "پس گرفتن"
+
+msgid "Retracted"
+msgstr "پس گرفته شده"
+
+#: bika/lims/profiles/default/types/AnalysisRequest.xml
+msgid "Sample"
+msgstr "نمونه"
+
+#: bika/lims/profiles/default/types/SampleCondition.xml
+msgid "Sample Condition"
+msgstr "وضعیت نمونه"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/SampleConditions.xml
+msgid "Sample Conditions"
+msgstr "وضعیت‌های نمونه"
+
+msgid "Sample Imports"
+msgstr "درون‌ریزی نمونه"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/SampleMatrices.xml
+msgid "Sample Matrices"
+msgstr "ابعاد نمونه"
+
+#: bika/lims/profiles/default/types/SampleMatrix.xml
+msgid "Sample Matrix"
+msgstr "ماتریس نمونه"
+
+#: bika/lims/profiles/default/types/SamplePoint.xml
+msgid "Sample Point"
+msgstr "نقطه نمونه"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/Client.xml
+#: bika/lims/profiles/default/types/SamplePoints.xml
+msgid "Sample Points"
+msgstr "نقاط نمونه"
+
+#: bika/lims/profiles/default/types/Client.xml
+msgid "Sample Templates"
+msgstr "قالب‌های نمونه"
+
+#: bika/lims/profiles/default/types/SampleType.xml
+msgid "Sample Type"
+msgstr "نوع نمونه"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/SampleTypes.xml
+msgid "Sample Types"
+msgstr "انواع نمونه"
+
+msgid "Sample due"
+msgstr "سررسید نمونه"
+
+msgid "Sample received"
+msgstr "نمونه دریافت شد"
+
+msgid "Sample registered"
+msgstr "نمونه ثبت شد"
+
+msgid "Sampled"
+msgstr "نمونه برداری شد"
+
+#: bika/lims/profiles/default/types/AnalysisRequestsFolder.xml
+#: bika/lims/profiles/default/types/Batch.xml
+#: bika/lims/profiles/default/types/Client.xml
+msgid "Samples"
+msgstr "نمونه‌ها"
+
+#: bika/lims/profiles/default/types/SamplingDeviation.xml
+msgid "Sampling Deviation"
+msgstr "خطای نمونه برداری"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/SamplingDeviations.xml
+msgid "Sampling Deviations"
+msgstr "خطاهای نمونه‌برداری"
+
+msgid "Sampling Round Templates"
+msgstr "قالب‌های رند نمونه برداری"
+
+msgid "Sampling workflow"
+msgstr "چریان نمونه برداری"
+
+#: bika/lims/profiles/default/types/Instrument.xml
+msgid "Schedule"
+msgstr "برنامه"
+
+msgid "Schedule sampling"
+msgstr "برنامه نمونه برداری"
+
+msgid "Scheduled sampling"
+msgstr "نمونه برداری برنامه ریزی شده"
+
+#: bika/lims/profiles/default/actions.xml
+msgid "Search"
+msgstr "جستجو"
+
+#: bika/lims/profiles/default/types/BikaSetup.xml
+msgid "Setup"
+msgstr "ستاپ"
+
+#: bika/lims/profiles/default/actions.xml
+msgid "Sharing"
+msgstr "به اشتراک گزاری"
+
+#: bika/lims/profiles/default/types/AnalysisRequest.xml
+msgid "Small Sticker"
+msgstr "برچسب کوچک"
+
+#: bika/lims/profiles/default/types/Batch.xml
+#: bika/lims/profiles/default/types/ReferenceSample.xml
+#: bika/lims/profiles/default/types/Worksheet.xml
+msgid "Sticker"
+msgstr "برچسب"
+
+#: bika/lims/profiles/default/types/AnalysisRequest.xml
+#: bika/lims/profiles/default/types/Batch.xml
+#: bika/lims/profiles/default/types/ReferenceSample.xml
+msgid "Stickers preview"
+msgstr "پیشنمایش استیکر"
+
+#: bika/lims/profiles/default/types/StorageLocation.xml
+msgid "Storage Location"
+msgstr "موقعیت انبار"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/StorageLocations.xml
+msgid "Storage Locations"
+msgstr "موقعیت‌های انبار"
+
+#: bika/lims/profiles/default/types/SubGroup.xml
+msgid "Sub-group"
+msgstr "زیر گروه"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/SubGroups.xml
+msgid "Sub-groups"
+msgstr "زیر گروه‌ها"
+
+msgid "Submit"
+msgstr "ثبت"
+
+msgid "Submit for verification"
+msgstr "ثبت جهت تایید"
+
+#: bika/lims/profiles/default/types/Supplier.xml
+msgid "Supplier"
+msgstr "تامین کننده"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/Suppliers.xml
+msgid "Suppliers"
+msgstr "تامین کنندگان"
+
+#: bika/lims/profiles/default/types/SupplyOrder.xml
+msgid "Supply Order"
+msgstr "سفارش تامین"
+
+#: bika/lims/profiles/default/types/SupplyOrderFolder.xml
+msgid "Supply Orders"
+msgstr "سفارش‌های تامین"
+
+msgid "To be preserved"
+msgstr "نگهداری شود"
+
+msgid "To be sampled"
+msgstr "نمونه برداری شود"
+
+msgid "To be verified"
+msgstr "تایید شود"
+
+msgid "Unpublished"
+msgstr "منتشر نشده"
+
+msgid "Unsassign"
+msgstr "تخصیص داده نشده"
+
+msgid "Valid"
+msgstr "معتبر"
+
+msgid "Validate"
+msgstr "معتبر سازی"
+
+#: bika/lims/profiles/default/types/Instrument.xml
+msgid "Validations"
+msgstr "اعتبار سنجی‌ها"
+
+msgid "Verified"
+msgstr "تایید شده"
+
+msgid "Verify"
+msgstr "تایید"
+
+#: bika/lims/profiles/default/types/ARReport.xml
+#: bika/lims/profiles/default/types/ARTemplate.xml
+#: bika/lims/profiles/default/types/AnalysisCategory.xml
+msgid "View"
+msgstr "مشاهده"
+
+#: bika/lims/profiles/default/types/Worksheet.xml
+msgid "Worksheet"
+msgstr "کاربرگ"
+
+#: bika/lims/profiles/default/types/WorksheetTemplate.xml
+msgid "Worksheet Template"
+msgstr "قالب‌ کاربرگ"
+
+#: bika/lims/profiles/default/controlpanel.xml
+#: bika/lims/profiles/default/types/WorksheetTemplates.xml
+msgid "Worksheet Templates"
+msgstr "قالب‌های کاربرگ"
+
+#: bika/lims/profiles/default/types/WorksheetFolder.xml
+msgid "Worksheets"
+msgstr "قالب‌های کاربرگ‌ها"
+
+msgid "label_schema_Accounting"
+msgstr "حسابداری"
+
+msgid "label_schema_Address"
+msgstr "آدرس"
+
+msgid "label_schema_Analyses"
+msgstr "آزمایش‌ها"
+
+msgid "label_schema_Analysis Templates"
+msgstr "قالب‌های label_schema_Analysis"
+
+msgid "label_schema_Appearance"
+msgstr "label_schema_Appearance"
+
+msgid "label_schema_Bank details"
+msgstr "اطلاعات بانک"
+
+msgid "label_schema_Calculation"
+msgstr "محاسبات"
+
+msgid "label_schema_Container and Preservation"
+msgstr "نگهداری و نگهدارنده‌ها"
+
+msgid "label_schema_Dates"
+msgstr "تاریخ‌ها"
+
+msgid "label_schema_Description"
+msgstr "شرح"
+
+msgid "label_schema_Email Telephone Fax"
+msgstr "ایمیل تلفن فکس"
+
+msgid "label_schema_ID Server"
+msgstr "ID Server"
+
+msgid "label_schema_Labels"
+msgstr "Labels"
+
+msgid "label_schema_Layout"
+msgstr "Layout"
+
+msgid "label_schema_Location"
+msgstr "Location"
+
+msgid "label_schema_Method"
+msgstr "Method"
+
+msgid "label_schema_Notifications"
+msgstr "label_schema_Notifications"
+
+msgid "label_schema_Preferences"
+msgstr "Preferences"
+
+msgid "label_schema_Publication preference"
+msgstr "Publication preference"
+
+msgid "label_schema_Reference Values"
+msgstr "Reference Values"
+
+msgid "label_schema_Reflex Rule Folder"
+msgstr "پوشه قوانین label_schema_Reflex "
+
+msgid "label_schema_Result Options"
+msgstr "Result Options"
+
+msgid "label_schema_Results Reports"
+msgstr "Results Reports"
+
+msgid "label_schema_SR Templates"
+msgstr "SR Templates"
+
+msgid "label_schema_Sample Partitions"
+msgstr "Sample Partitions"
+
+msgid "label_schema_Sample Templates"
+msgstr "قالب‌های label_schema_Sample"
+
+msgid "label_schema_Sampling"
+msgstr "label_schema_Sampling"
+
+# Setup Schemata
+msgid "label_schema_Security"
+msgstr "Security"
+
+msgid "label_schema_Sticker"
+msgstr "label_schema_Sticker"
+
+msgid "label_schema_Uncertainties"
+msgstr "Uncertainties"
