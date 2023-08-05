@@ -1,0 +1,16 @@
+CHANGELOG.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+nameko_slackclient/__init__.py
+nameko_slackclient/constants.py
+nameko_slackclient/rtm.py
+nameko_slackclient/web.py
+nameko_slackclient.egg-info/PKG-INFO
+nameko_slackclient.egg-info/SOURCES.txt
+nameko_slackclient.egg-info/dependency_links.txt
+nameko_slackclient.egg-info/requires.txt
+nameko_slackclient.egg-info/top_level.txt
+nameko_slackclient.egg-info/zip-safe
