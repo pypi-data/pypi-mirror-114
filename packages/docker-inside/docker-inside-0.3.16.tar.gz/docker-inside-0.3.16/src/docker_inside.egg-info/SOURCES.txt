@@ -1,0 +1,16 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/docker_inside.egg-info/PKG-INFO
+src/docker_inside.egg-info/SOURCES.txt
+src/docker_inside.egg-info/dependency_links.txt
+src/docker_inside.egg-info/entry_points.txt
+src/docker_inside.egg-info/requires.txt
+src/docker_inside.egg-info/top_level.txt
+src/dockerinside/__init__.py
+src/dockerinside/__main__.py
+src/dockerinside/dockerutils.py
+src/dockerinside/setup/__init__.py
+src/dockerinside/setup/__main__.py
