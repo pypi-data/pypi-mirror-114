@@ -1,0 +1,9 @@
+README.md
+qwiic_eeprom.py
+setup.cfg
+setup.py
+sparkfun_qwiic_eeprom.egg-info/PKG-INFO
+sparkfun_qwiic_eeprom.egg-info/SOURCES.txt
+sparkfun_qwiic_eeprom.egg-info/dependency_links.txt
+sparkfun_qwiic_eeprom.egg-info/requires.txt
+sparkfun_qwiic_eeprom.egg-info/top_level.txt
