@@ -1,0 +1,6 @@
+coincap_fdw/__init__.py,sha256=HdzgwgGcmacbBbI4zMwEslyLlYZ5pWAXTVUw9tN4Dwc,56
+coincap_fdw/wrapper.hy,sha256=frC-kuMblBP3DLXIBwH2a0B9gmL5fP02C6KKFqwHY0w,982
+coincap_fdw-0.0.1.dist-info/METADATA,sha256=D-2DiZeJ_6fKVt_jNkv8PCBTzntaZrAu46GR4GtkvDo,276
+coincap_fdw-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+coincap_fdw-0.0.1.dist-info/top_level.txt,sha256=2qX4evhcOAfV6esr0sXh5UF1UNOloFpxfe0_mqNf0rU,12
+coincap_fdw-0.0.1.dist-info/RECORD,,

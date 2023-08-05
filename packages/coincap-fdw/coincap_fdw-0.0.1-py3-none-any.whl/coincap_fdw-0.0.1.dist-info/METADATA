@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: coincap-fdw
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/sabino/coincap_fdw
+Author: sabino
+Author-email: sabino@secret.fyi
+License: WTFPL
+Platform: UNKNOWN
+Requires-Dist: hy (==0.20.0)
+Requires-Dist: requests (==2.25.1)
+
+UNKNOWN
+
+
