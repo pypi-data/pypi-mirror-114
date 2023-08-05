@@ -1,0 +1,14 @@
+vulcan/__init__.py,sha256=nGHZuZMffC4z36rV2NesGd26RQyVNIhJ27f89UWjB5Q,4912
+vulcan/build_backend.py,sha256=RUmIoj4idwKaPLt-6s_CqGgev2ADCKAPMbGuc0qzjug,6047
+vulcan/builder.py,sha256=eYToZTpLNI4KZWYsIzFF9zci9-8buPK3fhPdf_FXB4c,1806
+vulcan/cli.py,sha256=sf99PVX8gptWcta3tMjvlpaGJ721w3Q_El-qjf_q27g,6270
+vulcan/isolation.py,sha256=_aa_srV9o52811ougCxlRJhM4Xto5fnAw3CpU29GpD8,4067
+vulcan/plugins.py,sha256=oxnmTndbtbVhSRRZWp5N-44Qt57LsJJPq2_Nlhh9ebU,1917
+vulcan/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vulcan/scripts/setuppy_to_pep621.py,sha256=cEQ0d99CLftS9K7yKVEnmbLkGkPhQTAR85_tJ4sUFOc,6138
+vulcan_py-1.0.0.dist-info/LICENSE,sha256=Hbh21zrPbMzQWg9q_0GRxZ5NwmNgu2zX1IWvwD6NPAU,10762
+vulcan_py-1.0.0.dist-info/METADATA,sha256=8c5wv6_a8MTbUpUYIFZb9pVp-ImPa5ZwZFl_3cd6fD0,8724
+vulcan_py-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+vulcan_py-1.0.0.dist-info/entry_points.txt,sha256=GrTDf6HdJDWwGws1naQMQS-hS2LoQ-lrJD3Kn0lv19M,166
+vulcan_py-1.0.0.dist-info/top_level.txt,sha256=Wp8Ddga48cqQsqVTlPPjWVCX4e2R_XmTWdEbkQ4y4Hw,7
+vulcan_py-1.0.0.dist-info/RECORD,,
