@@ -1,0 +1,12 @@
+numpy
+matplotlib
+pandas
+
+[dev]
+faker
+pytest
+pytest-cov
+codecov
+coveralls
+black
+flake8
