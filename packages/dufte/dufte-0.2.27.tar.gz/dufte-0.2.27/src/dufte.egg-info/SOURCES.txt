@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/dufte/__init__.py
+src/dufte/main.py
+src/dufte/optimize.py
+src/dufte.egg-info/PKG-INFO
+src/dufte.egg-info/SOURCES.txt
+src/dufte.egg-info/dependency_links.txt
+src/dufte.egg-info/requires.txt
+src/dufte.egg-info/top_level.txt
