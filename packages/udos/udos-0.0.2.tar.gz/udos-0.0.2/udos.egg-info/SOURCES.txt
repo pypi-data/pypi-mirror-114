@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+udos/__init__.py
+udos.egg-info/PKG-INFO
+udos.egg-info/SOURCES.txt
+udos.egg-info/dependency_links.txt
+udos.egg-info/not-zip-safe
+udos.egg-info/top_level.txt
