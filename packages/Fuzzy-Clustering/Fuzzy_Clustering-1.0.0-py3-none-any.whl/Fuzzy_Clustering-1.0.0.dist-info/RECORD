@@ -1,0 +1,10 @@
+fuzzy_clustering/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fuzzy_clustering/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fuzzy_clustering/core/fuzzy.py,sha256=2LfbskRHz-FYzhZrdWexGNzTNt_xX0uvCkXmMsyEGtk,3171
+fuzzy_clustering/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fuzzy_clustering/utils/utils.py,sha256=0vvsJwvfEoPQyShChmcY5Y_TKTlBx5cn5n0A9k_SBPI,1826
+Fuzzy_Clustering-1.0.0.dist-info/LICENSE,sha256=tY0aDRNTaq9SBgjpX7FICT8-k2-FX-F_3ciy-656XPk,1088
+Fuzzy_Clustering-1.0.0.dist-info/METADATA,sha256=N406YSUERIJsXlpMddiRQRWaFRTLFLANbhkcz80NFAs,4264
+Fuzzy_Clustering-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Fuzzy_Clustering-1.0.0.dist-info/top_level.txt,sha256=rrQh4m1NpXkaOGGgAwujPqdDH2fbeL46oFnAAZutX8w,17
+Fuzzy_Clustering-1.0.0.dist-info/RECORD,,
