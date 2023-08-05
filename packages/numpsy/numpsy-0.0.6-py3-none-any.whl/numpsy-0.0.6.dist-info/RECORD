@@ -1,0 +1,13 @@
+numpsy/__init__.py,sha256=hg2lZRCrlfykRueQ-EI6RWf5rfaUipSQnDPeEtvKKwI,179
+numpsy/configuration.py,sha256=oF0PeIH0a34rqxemSCgoO8IProa70jOk2yn6aQruH7c,1521
+numpsy/constants.py,sha256=v09oTChg4Q8AzmBiQCNAgsQFq-HcDRsVleA0WjkpHeo,1214
+numpsy/core.py,sha256=21_KL8eemL_TN_N9clZQDJZVIWBrvxYlYgWAYwRsy-g,23594
+numpsy/functions.py,sha256=_rTVlf7cTEv8v-0KcHBcjCNN_hfpM8JdQ_uMk_vbItk,3784
+numpsy/helpers.py,sha256=Gjt1r7ZVgSAAWiPJWiOIfBgqyL2d1za-G3I8tADC8Co,6973
+numpsy/printers.py,sha256=9V3XCvi9S7M3nNzgaKjqudsagrrUBRl9IxfOfpSFfXY,3699
+numpsy/units.py,sha256=EawN3wLqzVANQcV5MicHIMHXSOZINprOOVUfBGLkBao,738
+numpsy-0.0.6.dist-info/LICENSE,sha256=NHPYpma4WFZ8YqyaHqrddfdpaVTWhN82J4faecaKJIc,1095
+numpsy-0.0.6.dist-info/METADATA,sha256=DsWm7-oz2IFdokvlCzSgnZQbcwmJUhLrABXdxac3Bqs,11589
+numpsy-0.0.6.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+numpsy-0.0.6.dist-info/top_level.txt,sha256=zX9gy4pIKkFXkg4ZwjMlSJ6vh8QosTrU6u7O4QV59oQ,7
+numpsy-0.0.6.dist-info/RECORD,,
