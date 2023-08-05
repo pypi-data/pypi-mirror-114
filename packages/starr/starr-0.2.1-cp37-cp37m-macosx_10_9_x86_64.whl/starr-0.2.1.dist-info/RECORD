@@ -1,0 +1,16 @@
+starr/__init__.py,sha256=HAVz6QOk4FAdvIusoQvThxiuc0pkp3ceQ1ogmBTbIbg,225
+starr/_cython.cpython-37m-darwin.so,sha256=tryRyvNJQmcBVRfWMoqqLMz2nhZXjlot9fifGUSg8Zo,559912
+starr/sumtree_array.py,sha256=cuxOdzXT2kuTSaiGXdQo6LhHlJ-y2yUyrnf4TtTIDjo,20730
+starr/experimental/__init__.py,sha256=s-pNt_8vXTlKuixhVICmumt-yg8fXTnlwCZCrrsq_74,104
+starr/experimental/_cython.cpython-37m-darwin.so,sha256=-e_UmJ6dHulFIVMdGg3FJjOgKdEv-xPT2Pj1lXCxNc8,55832
+starr/experimental/benchmarks.py,sha256=iWPenIgzHFbRA0iwyl9QY9tG2Q3O6qPe1uPLfZZABO8,3700
+starr/experimental/slow.py,sha256=D6Sz2YrpEl1Iu4Jk5cyLgnoFdNrsajtI58ftdgLYlXw,2617
+starr/experimental/src/_sumtree_array.pyx,sha256=TOUi2YDxXp4E4A1xbqQVhNqvX_K-D8H7_lPGrVmVmQU,1619
+starr/experimental/src/sumtree_array.cpp,sha256=doF_dwPg5EkjN9cWUTlGa-_YQKVvWDO6SEKmTP27ZJo,2242
+starr/experimental/src/sumtree_array.h,sha256=0kQy4Wz89pxmv4Mf32xnb_-FeDSQLSAASspyo2G9SkU,470
+starr/src/_sumtree_array.pyx,sha256=86aro_kY5ppfEro1eswrqy_U4QTKbqZU7paH_WQr6p8,6021
+starr-0.2.1.dist-info/LICENSE,sha256=rvey85iAbeiue9tLbLLUrmsIRRdMHhJ1naxZFQCLPxo,1071
+starr-0.2.1.dist-info/METADATA,sha256=pqItlp0F1-SX2c04rgWbBfDAjIoT3bqHomqwnqSM1XI,6137
+starr-0.2.1.dist-info/WHEEL,sha256=WVG6A_oY5zUoNXUyvfLMOSXC-hqC5VZacUL1MeSOz70,110
+starr-0.2.1.dist-info/top_level.txt,sha256=SAF2vmbO5ysJY3G-F2JcrzZFbHIrCBV8I4juXcsda70,6
+starr-0.2.1.dist-info/RECORD,,
