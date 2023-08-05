@@ -1,0 +1,13 @@
+figure {
+    display: inline-block;
+}
+figure img {
+    vertical-align: top;
+    align: center;
+    width: 110%;
+    height:45%;
+
+}
+figure figcaption {
+    text-align: center;
+}
