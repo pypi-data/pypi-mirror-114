@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: dynamodb-stream-router
+Version: 0.0.2
+Summary: A framework for content-based routing of records in a Dynamodb Stream to the callable that should handle them
+Home-page: https://github.com/QuiNovas/dynamodb-stream-router
+Author: Mathew Moon
+Author-email: mmoon@quinovas.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: typeguard
+Requires-Dist: sly
+
+Introduction
+============
+
+TODO: Write a readme.......
+
