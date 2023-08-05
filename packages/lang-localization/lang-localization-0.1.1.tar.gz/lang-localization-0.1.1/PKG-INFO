@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: lang-localization
+Version: 0.1.1
+Summary: Translate your program
+Home-page: UNKNOWN
+Author: Patrik Ackermann
+Author-email: <patrik.ackermann@outlook.com>
+License: UNKNOWN
+Description: #lang-localization
+        With lang-localization you can translate your program to different languages.
+        It is not possible translating your program easier.
+        
+        ## How to use
+        Start by creating a folder named "localization" in the directory where your python file is located. For every language you want to add you need to create a file with the .loc ending in the new directory. For example "de.loc" or "en.loc". 
+        The inside of the file must look like this:
+        ```
+        hw = Hello World!
+        button1 = Press Me
+        ``` 
+        Your python file must look like this:
+        ```python
+        import localization
+        
+        localization.setLang("de") # The string must be the same as the filename of your translation without .loc
+        
+        print(localization.get("hw"))
+        
+        randomButtonCreateFunction(text=localization.get("button1"))
+        ```
+Keywords: python,language,localize,translate
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
