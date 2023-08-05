@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: requests-toolkit
+Version: 0.0.1
+Summary: Decorators and other tools for handling common patterns with the python requests module.
+Home-page: https://github.com/benjaminCallaghan/requests_toolkit
+Author: benjaminCallaghan
+Author-email: benjamin.r.callaghan@gmail.com
+License: UNKNOWN
+Description: <h1>The Requests-Toolkit</h1>
+        <p>A collection of decorators and other tools for handling
+        common patterns when working with the python requests package.
+        </p>
+        
+        ## Installation
+        ```bash
+        $ pip install requests_toolkit
+        ```
+        
+        ## Developers
+        To run tests you must install the extra dev tools
+        from setup.py
+        ```bash
+        $ pip install -e .[dev]
+        ```
+        
+        To run tests
+        ```bash
+        $ python -m pytest
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
