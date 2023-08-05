@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+GeneticFeatureSelection/GeneticFeatureSelection/__init__.py
+GeneticFeatureSelection/GeneticFeatureSelection.egg-info/PKG-INFO
+GeneticFeatureSelection/GeneticFeatureSelection.egg-info/SOURCES.txt
+GeneticFeatureSelection/GeneticFeatureSelection.egg-info/dependency_links.txt
+GeneticFeatureSelection/GeneticFeatureSelection.egg-info/top_level.txt
