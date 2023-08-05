@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: tamr-toolbox
+Version: 1.4.0
+Summary: Tools for Tamr
+Home-page: https://github.com/Datatamer/tamr-toolbox
+Author: Tamr Inc.
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: all
+Provides-Extra: pandas
+Provides-Extra: slack
+Provides-Extra: testing
+Provides-Extra: translation
+License-File: LICENSE
+
+# tamr-toolbox
+The Tamr Toolbox is a Python library created to provide a simple interface for common interactions with Tamr and common data workflows that include Tamr. The more specialized [Tamr Python Client](https://github.com/Datatamer/tamr-client) library is used for direct interactions with Tamr in both the development of the Tamr Toolbox and in the recommended use of the Tamr Toolbox.
+
+__Releases:__ https://github.com/Datatamer/tamr-toolbox/releases 
+
+__Documentation Home:__ https://datatamer.github.io/tamr-toolbox/latest/
+
+__Installation:__ https://datatamer.github.io/tamr-toolbox/latest/installation.html
+
+__Examples:__ https://datatamer.github.io/tamr-toolbox/latest/examples.html
+
+
