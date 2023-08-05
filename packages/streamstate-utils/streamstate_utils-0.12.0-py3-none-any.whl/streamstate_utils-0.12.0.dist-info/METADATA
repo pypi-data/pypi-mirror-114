@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: streamstate-utils
+Version: 0.12.0
+Summary: Utilities for firebase and spark streaming specifically for streamstate
+Home-page: https://github.com/StreamState/streamstate-utils
+Author: Daniel Stahl
+Author-email: danstahl1138@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: firebase-admin (>=5.0.0,<6.0.0)
+Requires-Dist: google-auth (>=1.29.0,<2.0.0)
+Requires-Dist: google-cloud-storage (>=1.37.1,<2.0.0)
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
+Project-URL: Repository, https://github.com/StreamState/streamstate-utils
