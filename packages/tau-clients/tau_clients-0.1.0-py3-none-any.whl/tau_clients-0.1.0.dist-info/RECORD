@@ -1,0 +1,9 @@
+tau_clients/__init__.py,sha256=1gYdINYPHq7DYXDr3M5d6kGriPWhNKDlJgtwXB0acc8,3609
+tau_clients/exceptions.py,sha256=geYWB0NEx4vwn8m7zUbT58OgySYSWDrsVRIb5jvJqbM,792
+tau_clients/nsx_defender/__init__.py,sha256=ZtUxDvmQZP-qp1qfFBNOef1gXEnPunonnH_iG7p25gQ,27361
+tau_clients-0.1.0.dist-info/LICENSE,sha256=Ob_skt9Wu28FiklMEIU1tYBXrCvfxNdKbRia6sfrmys,1499
+tau_clients-0.1.0.dist-info/METADATA,sha256=9svDl46xVXXuMco6-gLRBGzNZZbPGFmU36bjhzJCfJg,3638
+tau_clients-0.1.0.dist-info/NOTICE,sha256=XtbI39ngHQ1dw9LW2KRzCiEpbHPpW-71VuH0jPxRCgc,446
+tau_clients-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tau_clients-0.1.0.dist-info/top_level.txt,sha256=hBM_ZszFTHBjuZZuCZyxWif7ZrRzC2SwPQfNC-Ldvuc,12
+tau_clients-0.1.0.dist-info/RECORD,,
