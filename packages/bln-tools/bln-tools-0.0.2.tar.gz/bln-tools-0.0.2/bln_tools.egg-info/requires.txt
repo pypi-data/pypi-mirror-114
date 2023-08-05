@@ -1,0 +1,6 @@
+fuzzywuzzy
+numpy
+pandas
+python-Levenshtein
+questionary
+sklearn
