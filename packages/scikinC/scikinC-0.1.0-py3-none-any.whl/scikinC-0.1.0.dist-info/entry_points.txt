@@ -1,0 +1,3 @@
+[console_scripts]
+scikinC = scikinC.__main__:main
+
