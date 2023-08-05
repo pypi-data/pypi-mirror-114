@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: poetry-git-version-changer
+Version: 1.0.1a0
+Summary: An extension to support dynamic package versioning with poetry.
+Home-page: https://github.com/bijij/unnamed-poetry-extension
+License: Apache-2.0
+Keywords: poetry,extension,versioning
+Author: Bijij
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Version Control
+Classifier: Topic :: Software Development :: Version Control :: Git
+Project-URL: Repository, https://github.com/bijij/unnamed-poetry-extension
+Description-Content-Type: text/markdown
+
+```toml
+[tool.poetry-git-version-changer]
+enabled = true
+version-file = "foo/__init__.py"
+```
+
