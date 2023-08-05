@@ -1,0 +1,5 @@
+cli2
+
+[test]
+pytest
+pytest-cov

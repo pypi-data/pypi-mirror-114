@@ -1,0 +1,16 @@
+README.rst
+setup.py
+sysplan/__init__.py
+sysplan/bash.py
+sysplan/cli.py
+sysplan/colors.py
+sysplan/config.py
+sysplan/plan.py
+sysplan/run.py
+sysplan/systemd.py
+sysplan.egg-info/PKG-INFO
+sysplan.egg-info/SOURCES.txt
+sysplan.egg-info/dependency_links.txt
+sysplan.egg-info/entry_points.txt
+sysplan.egg-info/requires.txt
+sysplan.egg-info/top_level.txt
