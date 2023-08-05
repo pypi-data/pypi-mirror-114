@@ -1,0 +1,3 @@
+[console_scripts]
+gitstat=pygitstat.gitstat:cli
+
