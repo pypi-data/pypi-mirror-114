@@ -1,0 +1,8 @@
+README.md
+setup.py
+AzureK/AzureK.py
+AzureK/__init__.py
+AzureK.egg-info/PKG-INFO
+AzureK.egg-info/SOURCES.txt
+AzureK.egg-info/dependency_links.txt
+AzureK.egg-info/top_level.txt
