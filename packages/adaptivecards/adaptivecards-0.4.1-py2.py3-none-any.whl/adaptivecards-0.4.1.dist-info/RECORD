@@ -1,0 +1,10 @@
+adaptivecards/__init__.py,sha256=sdhZJI5xP7J2D7ztACXHdht0hMUi0Wv_7dmZCrDH5kY,1295
+adaptivecards/adaptivecard.py,sha256=PdT1Q3cV7igGhtEYbY4G1CsHvMZ8vYZdrjv8KZvH2Xw,3279
+adaptivecards/baseobject.py,sha256=Mr5mpYUWtMDmh27Gy6KSFPUZ47sd7GeUMW436sYiiyw,2183
+adaptivecards/containers.py,sha256=WYIt6rIdGy-jHBS3ItyCrunKWtcFiuX_qfV2zOEWIl4,4611
+adaptivecards/elements.py,sha256=UpPFUdst58PwxV0R-oq5yV8Bx3_M-jzo5yjTZd0yuyE,5187
+adaptivecards-0.4.1.dist-info/LICENSE,sha256=p61kkUq4eKVAkUPjNjlXKNiXqGuH1KaN-rY-hzw5US0,1071
+adaptivecards-0.4.1.dist-info/METADATA,sha256=WacmFHeVHtRJLAOUi1z5t4LfRNmZkzjh_Lp3ERvEQEs,4796
+adaptivecards-0.4.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+adaptivecards-0.4.1.dist-info/top_level.txt,sha256=JxzKCI7-vBII3xKWBqFLwYTFPY6Ifadiaikj3OunW6Q,14
+adaptivecards-0.4.1.dist-info/RECORD,,
