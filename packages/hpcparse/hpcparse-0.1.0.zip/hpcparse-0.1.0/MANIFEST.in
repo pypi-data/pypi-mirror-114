@@ -1,0 +1,16 @@
+include README.txt LICENSE.txt NEWS.txt
+
+recursive-include doc *
+recursive-include hpcparser *.py
+
+include *.py
+include *.rst
+include MANIFEST.in
+include LICENSE
+
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.orig
+global-exclude *.rej
+
+prune doc/_build

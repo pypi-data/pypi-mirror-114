@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: hpcparse
+Version: 0.1.0
+Summary: Parse HPC data like users, accounting, accounts, qos, ... etc
+Home-page: https://gitlab.cs.ksu.edu/brdunn/hpsparse
+Author: Brandon Dunn
+Author-email: brdunn@ksu.edu
+License: UNKNOWN
+Project-URL: Documentation, https://gitlab.cs.ksu.edu/brdunn/hpsparse
+Description: High Performance Computing Accounting parser
+        ============================================
+        
+        hpcparse (HPC Scheduler/resource manager general purpose parser) is a Python library that adds functionality to parse HPC scheduler/Resource manager
+        infromation like Accounting, users, qos, ..etc. This librarary Fully supports SLURM, partial SGE and more to be added later
+        Parsers available currently are:
+        
+        * AccountingParser "*"
+            - Parser that gets a list of jobs based on accounting information "-"
+            - Returns a list of job objects "-"
+        
+        * AccountsParser "*"
+            - Parser that get a list of accounts "-"
+            - Returns list of account objects "-"
+        
+        * ClusterParser "*"
+            - Parser that get a list of clusters and associated information "-"
+            - Returns a list of cluster object "-"
+        
+        * ConfigParser "*"
+            - Parser that reads in the scheduler's configuration imformation "-"
+            - Returns  a configuration options object
+            - Returns a list of node objects "-"
+            - Returns a list of partition objects "-"
+            - ordering a out put is configuration options, nodes, partitions
+        
+        * QOSParser "*" 
+            - Parser that gets a list of QOS's for the cluster "-"
+            - Returns a list of qos objects "-" 
+        
+        * UserParser "*"
+            - Parser that gets a list of Users for the HPC "-"
+            - Returns a list of user objects "-"
+               
+        Prerequisites
+        ^^^^^^^^^^^^^
+Keywords: HPC parser
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.4
+Provides-Extra: docs
