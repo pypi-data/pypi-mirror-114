@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: velbus-aio
+Version: 2021.7
+Summary: UNKNOWN
+Home-page: https://github.com/Cereal2nd/velbus-aio
+Author: Maikel Punie
+Author-email: maikel.punie@gmail.com
+License: MIT
+Platform: any
+License-File: LICENSE
+Requires-Dist: asyncio
+
+UNKNOWN
+
