@@ -1,0 +1,6 @@
+README.md
+setup.py
+src/hibpy.egg-info/PKG-INFO
+src/hibpy.egg-info/SOURCES.txt
+src/hibpy.egg-info/dependency_links.txt
+src/hibpy.egg-info/top_level.txt
