@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: korner
+Version: 0.0.0
+Summary: korner
+Home-page: https://github.com/rozsasarpi/korner
+Author: Arpad Rozsas
+Author-email: rozsasarpi@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+Provides-Extra: lint_type_checks
+Provides-Extra: docs
+License-File: LICENSE
+
+# korner
+
+[![PyPI version](https://img.shields.io/pypi/v/korner)](https://pypi.org/project/korner/)
+
+Under development.
+
