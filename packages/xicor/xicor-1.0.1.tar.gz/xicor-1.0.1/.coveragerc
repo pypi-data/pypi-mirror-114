@@ -1,0 +1,7 @@
+[run]
+include=
+    xicor/*.py
+    xicor_lib/*.py
+omit =
+    setup.py
+    tests/*

@@ -1,0 +1,13 @@
+name: xicor
+channels:
+  - bioconda
+  - conda-forge
+  - r
+  - defaults
+dependencies:
+  - pandas
+  - pytest-cov
+  - seaborn
+  - numpy
+  - scipy
+  - ipykernel
