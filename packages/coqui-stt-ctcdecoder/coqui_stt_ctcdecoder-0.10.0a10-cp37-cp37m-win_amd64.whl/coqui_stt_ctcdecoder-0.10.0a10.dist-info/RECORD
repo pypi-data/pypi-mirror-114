@@ -1,0 +1,13 @@
+Release/_swigwrapper.cp37-win_amd64.exp,sha256=jfOb551_W1jVZz2qh_ayK2B9CKpOwI0V-XS42SuxVsc,786
+Release/_swigwrapper.cp37-win_amd64.lib,sha256=Egg8D1ffmE1lXsGNWjZwFLPDk8HJ323ByisrB5rF6MI,2088
+Release/swigwrapper_wrap.obj,sha256=dwLGn5VEaznVIts6LlRmYgspUvDFIAUH-ao-vQFHsyM,7494043
+coqui_stt_ctcdecoder/__init__.py,sha256=xicBrkdu6_Ogz6Cix0pBs76k1gCIzu-FOJicdCm6Z0c,9325
+coqui_stt_ctcdecoder/_swigwrapper.cp37-win_amd64.pyd,sha256=A-283jUzvtCESZjaZZifrGdJZ8g22YDSP62HBRW1HwQ,2103808
+coqui_stt_ctcdecoder/swigwrapper.py,sha256=ok3t4KrccYGOzllycVK5z6ArZDLIh2VgE21wNVTbCRc,28208
+coqui_stt_ctcdecoder-0.10.0a10.dist-info/COPYING,sha256=isrDXFkSVDyKtDpTuGa7KqZJr2ZTQyEd9NwOn9v0RlU,402
+coqui_stt_ctcdecoder-0.10.0a10.dist-info/LICENSE.paddlepaddle,sha256=4gg7gGIkh71vzcj8eB3Df3_2My1qgq8dpmBkpU4NwaU,11380
+coqui_stt_ctcdecoder-0.10.0a10.dist-info/LICENSE.parlance,sha256=obf7yFJvKuFJjhEqm-rJs3gFwi6OUlT1jQLAV2SrHSo,1111
+coqui_stt_ctcdecoder-0.10.0a10.dist-info/METADATA,sha256=RE1LckwCpb4T2LroA-QoV6dU6uZ1L0UYsI_qb3nbaJs,216
+coqui_stt_ctcdecoder-0.10.0a10.dist-info/WHEEL,sha256=uaZe_9gV-4T_d4AskuIQkCgcY8wMc0UXsVFnf0_mBGs,106
+coqui_stt_ctcdecoder-0.10.0a10.dist-info/top_level.txt,sha256=td_AfbOj9SFqzgd33WMaX1FJ5rqPndphVRywSkUFUPw,21
+coqui_stt_ctcdecoder-0.10.0a10.dist-info/RECORD,,
