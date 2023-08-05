@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Pokemail.egg-info/PKG-INFO
+Pokemail.egg-info/SOURCES.txt
+Pokemail.egg-info/dependency_links.txt
+Pokemail.egg-info/top_level.txt
+pokemail/__init__.py
+pokemail/pokemail.py
