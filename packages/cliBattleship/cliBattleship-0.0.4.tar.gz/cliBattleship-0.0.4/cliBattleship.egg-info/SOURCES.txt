@@ -1,0 +1,17 @@
+README.md
+setup.py
+cliBattleship/__init__.py
+cliBattleship/cliBattleship.py
+cliBattleship.egg-info/PKG-INFO
+cliBattleship.egg-info/SOURCES.txt
+cliBattleship.egg-info/dependency_links.txt
+cliBattleship.egg-info/top_level.txt
+cliBattleship/gameModules/__init__.py
+cliBattleship/gameModules/autoShipPlacement.py
+cliBattleship/gameModules/computerPlays.py
+cliBattleship/gameModules/gameBoards.py
+cliBattleship/gameModules/gameFunctions.py
+cliBattleship/gameModules/playerNumberFunctions.py
+cliBattleship/gameModules/playerPlays.py
+cliBattleship/gameModules/playerShipPlacement.py
+cliBattleship/gameModules/players.py
