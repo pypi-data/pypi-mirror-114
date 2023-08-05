@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: cdk8s-kuma-types
+Version: 0.0.2
+Summary: @opencdk8s/cdk8s-kuma-types
+Home-page: https://github.com/opencdk8s/cdk8s-kuma-types.git
+Author: Hunter Thompson<aatman@auroville.org.in>
+License: Apache-2.0
+Project-URL: Source, https://github.com/opencdk8s/cdk8s-kuma-types.git
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: cdk8s-plus-17 (<2.0.0,>=1.0.0.b28)
+Requires-Dist: cdk8s (<2.0.0,>=1.0.0.b24)
+Requires-Dist: constructs (<4.0.0,>=3.3.80)
+Requires-Dist: jsii (<2.0.0,>=1.32.0)
+Requires-Dist: publication (>=0.0.3)
+
+# cdk8s-kuma-types
+
+Extends APIObject for Kuma CRD.
+
+
