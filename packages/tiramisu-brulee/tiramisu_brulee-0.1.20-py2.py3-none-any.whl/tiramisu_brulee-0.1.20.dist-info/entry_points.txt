@@ -1,0 +1,5 @@
+[console_scripts]
+lesion-predict = tiramisu_brulee.experiment.cli:predict
+lesion-predict-image = tiramisu_brulee.experiment.cli:predict_image
+lesion-train = tiramisu_brulee.experiment.cli:train
+
