@@ -1,0 +1,9 @@
+humanmodels/HumanClassifier.py,sha256=EhIqDlqOzXJEEheemGk02bvwwF3Li0IZqTe1RqIgAlw,20153
+humanmodels/HumanRegressor.py,sha256=dzyZeh47qE7kYnURcwsQ5SN3kEXwAdw1f74dxMq08Kg,17015
+humanmodels/__init__.py,sha256=--uCkhcKFUf5xGvRAkGHx3Bt0avt97JDtSysEDa6tuA,303
+humanmodels/_humanmodels.py,sha256=EVr1b9ZxSIDs5vDueraSUp0pKR1djkncSwUyN8rGcb4,33127
+humanmodels-0.5.9.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+humanmodels-0.5.9.dist-info/METADATA,sha256=49G3nO0OckfIbAtIKhVHqJHjYRI5XQgk7TIB3-O3pKE,8522
+humanmodels-0.5.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+humanmodels-0.5.9.dist-info/top_level.txt,sha256=LstjqxpQqWvA7FRVrL8GHfJBYE3Z91mZCX53XvdP1a8,12
+humanmodels-0.5.9.dist-info/RECORD,,
