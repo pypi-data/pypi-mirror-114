@@ -1,0 +1,4 @@
+[console_scripts]
+elbat=elbat.main:app
+gluent=elbat.main:app
+

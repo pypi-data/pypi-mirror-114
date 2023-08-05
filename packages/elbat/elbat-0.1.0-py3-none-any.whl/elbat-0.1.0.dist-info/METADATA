@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: elbat
+Version: 0.1.0
+Summary: 
+Author: Cody Fincher
+Author-email: cody@gluent.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: SQLAlchemy (>=1.4.22,<2.0.0)
+Requires-Dist: cx-Oracle (>=8.2.1,<9.0.0)
+Requires-Dist: loguru (>=0.5.3,<0.6.0)
+Requires-Dist: typer[all] (>=0.3.2,<0.4.0)
