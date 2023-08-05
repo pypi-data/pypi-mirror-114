@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: phondler
+Version: 0.0.1
+Summary: Python sound change applier
+Home-page: https://github.com/fsbayer/phondler
+Author: Frederic Bayer
+Author-email: frederic.s.bayer@gmail.com
+License: MIT License
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# phondler
+A **phon**etic han**dler** for Python. Makes phonetic representations (IPA, X-SAMPA, others) interoperable and creates a phoneme data dictionary to enable other packages to work on phonemes.
+
+* phondler:
+  * phondler_tables.py - tables mapping phonetic representations
+  * phondler.py - tools for converting strings between representations
+  * pronlex.py - tools for reading, writing, converting, and searching pronunciation lexicon files in several standard formats.
+
+* test: test scripts and example files, showing how to use these tools.
+
+
+
