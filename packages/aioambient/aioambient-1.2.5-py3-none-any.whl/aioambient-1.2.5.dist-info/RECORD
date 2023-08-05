@@ -1,0 +1,9 @@
+aioambient/__init__.py,sha256=HNYKYNUDxWCIGqPO-47-fl0ADOIeiZYyigPslJxYxKU,64
+aioambient/api.py,sha256=MK0jQREwvjsNDlsWtXJ2b4zTstjRaXoNKjPzZW6sZcU,2809
+aioambient/client.py,sha256=odmq0zQT5U32RQVhyU3l0YYJEEAzW9D7E6PgCzRYjbw,728
+aioambient/errors.py,sha256=l2T3mBbWw1ZYD8OdbBUikubM0R804lr3HY86QmKdRGE,315
+aioambient/websocket.py,sha256=HyyAnitU2bU0sDMuBeFyts7NCo8zD8ft45yEryw6i-0,5813
+aioambient-1.2.5.dist-info/LICENSE,sha256=FTF9lC9P4MjR5EcYxNqTzoze0OjPm4L7Up_oihQ3S5I,1067
+aioambient-1.2.5.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+aioambient-1.2.5.dist-info/METADATA,sha256=EtMTN4vHiKkpcCokQzTdjG9Ew63YnuYCHQ-hucJyjkE,9284
+aioambient-1.2.5.dist-info/RECORD,,
