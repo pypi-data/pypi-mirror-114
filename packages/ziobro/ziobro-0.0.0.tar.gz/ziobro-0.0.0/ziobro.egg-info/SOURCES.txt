@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+ziobro/__init__.py
+ziobro/const.py
+ziobro/exit.py
+ziobro/func.py
+ziobro/object.py
+ziobro.egg-info/PKG-INFO
+ziobro.egg-info/SOURCES.txt
+ziobro.egg-info/dependency_links.txt
+ziobro.egg-info/top_level.txt
