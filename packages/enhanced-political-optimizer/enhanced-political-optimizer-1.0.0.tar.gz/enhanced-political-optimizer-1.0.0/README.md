@@ -1,0 +1,56 @@
+## How to use the package.
+
+To use the package you need to provide four things to the PO methods
+
+- Optimization function, which the is function that you are trying to optimize. Our method can cater to constraints as well by using static penalty. An example is given below.
+- Number of dimensions of the problem
+- Lower boundary
+- Upper boundary
+
+**Note** The boundaries can be scalars or arrays. The example below uses arrays because the
+boundaries are different for different variables, if they are same, use scalar values.
+
+```
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+## optimization function.
+def TCSD(x: np.ndarray):
+    x1 = x[0]
+    x2 = x[1]
+    x3 = x[2]
+    z = (x3 + 2) * x2 * (x1 * x1)
+
+    c = [
+        1 - ((x2 * x2 * x2 * x3)) / (71785 * x1 * x1 * x1 * x1),
+        ((4 * x2 * x2 - (x1 * x2)) / (12566 * (x2 * x1 * x1 * x1 - (x1 ** 4))))
+        + (1 / (5108 * x1 * x1))
+        - 1,
+        1 - ((140.45 * x1) / (x2 * x2 * x3)),
+        ((x1 + x2) / 1.5) - 1,
+    ]
+    cmaxes = [x if x > 0 else 0 for x in c]
+    c_np_array = np.array(cmaxes)
+    c_np_array = np.power(c_np_array, 2)
+    c_np_array = (10 ** 10) * c_np_array
+    sumofarray = np.sum(c_np_array)
+    return z + sumofarray
+
+
+scores = [0 for x in range(RUNS)]
+
+for i in range(RUNS):
+    # matlab's rng("shuffle") seeds with the system's default time, python's random.seed has that as default val
+    np.random.seed(1)
+    # implement political optimizer.
+
+    objectiveFunction = TCSD
+    dim = 3 # dimentions
+    lb = [0.05, 0.25, 2.00] # upper boundary
+    ub = [2.00, 1.30, 15.00] # lower boundary
+    (leaderScore, leaderPosition, convergenceCurve) = PO(lb, ub, dim, objectiveFunction)
+    print(leaderScore)
+    print(leaderPosition)
+
+```

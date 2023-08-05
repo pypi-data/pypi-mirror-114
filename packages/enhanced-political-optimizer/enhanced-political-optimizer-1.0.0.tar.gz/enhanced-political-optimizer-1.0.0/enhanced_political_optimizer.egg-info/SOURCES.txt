@@ -1,0 +1,8 @@
+README.md
+setup.py
+enhanced_political_optimizer.egg-info/PKG-INFO
+enhanced_political_optimizer.egg-info/SOURCES.txt
+enhanced_political_optimizer.egg-info/dependency_links.txt
+enhanced_political_optimizer.egg-info/entry_points.txt
+enhanced_political_optimizer.egg-info/requires.txt
+enhanced_political_optimizer.egg-info/top_level.txt
