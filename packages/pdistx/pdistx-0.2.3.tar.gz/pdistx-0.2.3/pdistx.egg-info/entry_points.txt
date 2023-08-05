@@ -1,0 +1,6 @@
+[console_scripts]
+pdistx = pdistx.__main__:main
+ppack = ppack.__main__:main
+pvariant = pvariant.__main__:main
+pvendor = pvendor.__main__:main
+
