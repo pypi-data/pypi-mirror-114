@@ -1,0 +1,6 @@
+lxml
+PyQt5
+pymorphy2
+requests
+pymorphy2-dicts-ru
+beautifulsoup4
