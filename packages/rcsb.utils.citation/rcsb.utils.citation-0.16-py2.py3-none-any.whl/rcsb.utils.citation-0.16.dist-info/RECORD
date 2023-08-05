@@ -1,0 +1,13 @@
+rcsb/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+rcsb/utils/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+rcsb/utils/citation/CitationReferenceProvider.py,sha256=yNGYqNgTvwa1Z1UNeJydpMNWH_-8FyW6MmukkmwLldE,6843
+rcsb/utils/citation/JournalTitleAbbreviationProvider.py,sha256=jyBAVw3G--zHqlasreZmTu9zMu6pkgqUba6UcJtzL0Y,18952
+rcsb/utils/citation/PubMedReader.py,sha256=OgMSMmpAFBIfNMVlmM8EGdMG7Xn0Vdc6Na6ituMo7oo,13138
+rcsb/utils/citation/PubMedUtils.py,sha256=qjLxT1B4xP2ygAVeR3Mxe1326TvXKb-o-d-3GIZ8AeI,5717
+rcsb/utils/citation/__init__.py,sha256=EP8WDsAzjfwY1Y2u5-cQJVlaLJyB_MHkF7ovi15bThY,154
+rcsb.utils.citation-0.16.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+rcsb.utils.citation-0.16.dist-info/METADATA,sha256=4WYXOlhGmOfqRa6wu5R23OVFrPDV8jMmQbCbUMUPSPc,1972
+rcsb.utils.citation-0.16.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+rcsb.utils.citation-0.16.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+rcsb.utils.citation-0.16.dist-info/top_level.txt,sha256=o9JzKwjXZKvIt99MG_WvJuOnR1DZn6_CIPtgWgUB0E8,5
+rcsb.utils.citation-0.16.dist-info/RECORD,,
