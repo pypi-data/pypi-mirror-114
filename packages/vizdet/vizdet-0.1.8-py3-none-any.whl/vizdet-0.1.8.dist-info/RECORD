@@ -1,0 +1,11 @@
+vizdet/__init__.py,sha256=Gl7lI-JuUQknc_AiKCpaXzYLxW9AFOeTZ_uvfIckdp8,194
+vizdet/bboxes.py,sha256=LCkwtpxEJw8PDIr8V2wV6GnvUpuHdjTqpXZVblwHUlY,9500
+vizdet/font.py,sha256=tj4DCABcVXo_RzLgJRDEJp2Ux918ZnasYLyS-QECSeo,890
+vizdet/infobox.py,sha256=wjguQFVGB1c9VhljzlZNeydaune6MgJlsW8lnR0j1-E,4557
+vizdet/label.py,sha256=m9hxU0HPCbCoV3PvD8eqBlMh85egwtiUBPKhmoWdweo,2254
+vizdet/fonts/FiraGO-Regular.ttf,sha256=SVkBwMYI6iZfTDGqKkx6MT5cwqPdYQ2nikR_6OB0VKI,804888
+vizdet-0.1.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+vizdet-0.1.8.dist-info/METADATA,sha256=69C4G8ZHJUdG9tr5jh9WMIoRDtUa1-Yjs5i-LUXEiYI,6840
+vizdet-0.1.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+vizdet-0.1.8.dist-info/top_level.txt,sha256=sN_XrN3CWN7vX819Rkwzyrf_rZ-jmDwyqTqXZQgrWBY,7
+vizdet-0.1.8.dist-info/RECORD,,
