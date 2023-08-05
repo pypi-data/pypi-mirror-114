@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pywap
+Version: 0.0.1
+Summary: Python web API protocol.
+Home-page: https://github.com/phuang1024/pywap
+Author: Patrick Huang
+Author-email: huangpatrick16777216@gmail.com
+License: UNKNOWN
+Description: # pywap
+        Python web API protocol.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

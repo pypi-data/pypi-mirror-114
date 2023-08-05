@@ -1,0 +1,9 @@
+setup.py
+pywap/__init__.py
+pywap/client.py
+pywap/server.py
+pywap.egg-info/PKG-INFO
+pywap.egg-info/SOURCES.txt
+pywap.egg-info/dependency_links.txt
+pywap.egg-info/requires.txt
+pywap.egg-info/top_level.txt
