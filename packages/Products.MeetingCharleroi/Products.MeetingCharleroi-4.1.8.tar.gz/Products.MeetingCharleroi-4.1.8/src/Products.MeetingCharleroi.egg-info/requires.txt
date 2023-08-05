@@ -1,0 +1,10 @@
+Pillow
+Products.CMFPlone
+Products.MeetingCommunes
+setuptools
+
+[templates]
+Genshi
+
+[test]
+Products.PloneMeeting[test]
