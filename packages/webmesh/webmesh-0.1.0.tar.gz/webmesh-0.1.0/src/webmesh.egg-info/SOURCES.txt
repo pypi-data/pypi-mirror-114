@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/webmesh/__init__.py
+src/webmesh/message_protocols.py
+src/webmesh/message_serializers.py
+src/webmesh/websocket_server.py
+src/webmesh.egg-info/PKG-INFO
+src/webmesh.egg-info/SOURCES.txt
+src/webmesh.egg-info/dependency_links.txt
+src/webmesh.egg-info/requires.txt
+src/webmesh.egg-info/top_level.txt
