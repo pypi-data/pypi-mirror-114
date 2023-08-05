@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: tigerhash
+Version: 0.1.0
+Summary: Here you can find Python3 lib with different hash structs for CDC task.
+Home-page: https://github.com/Badcat330/TigerHash
+Author: Alex Glushko
+Author-email: aglushko@hse.ru
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Cython
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.9
