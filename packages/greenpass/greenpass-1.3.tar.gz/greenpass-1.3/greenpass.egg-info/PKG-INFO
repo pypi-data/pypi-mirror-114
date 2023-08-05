@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: greenpass
+Version: 1.3
+Summary: Scriptable green pass verifier
+Home-page: https://github.com/berdav/greenpass
+Author: Davide Berardi
+Author-email: berardi.dav@gmail.com
+License: GPLv3
+Download-URL: https://github.com/berdav/greenpass/archive/refs/tags/v1.1.zip
+Description: # Green Pass Verifier
+        
+        ![A verified green pass](https://github.com/berdav/greenpass/blob/master/img/draghi.png?raw=true)
+        
+        Scriptable green pass verifier.
+        With this application you can automatize accesses based on green pass validity.
+        
+        ## Installation
+        You need to have pip and libzbar to install the application.
+        
+        You can install it using your favorite package manager, for instance in Ubuntu:
+        
+        ```bash
+        $ sudo apt install python3-pip libzbar0
+        ```
+        
+        You can just install the application using pip:
+        ```bash
+        $ pip install greenpass
+        ```
+        
+        If you want to install it from sources, install the python3 requirements
+        using the following command:
+        ```bash
+        $ pip3 install -r requirements.txt
+        ```
+        
+        ## Usage
+        You can feed the application with different file formats, for instance:
+        
+        Green pass official PDFs
+        ```bash
+        $ greenpass --pdf greenpass.pdf
+        ```
+        
+        QRCode images in PNG
+        ```bash
+        $ greenpass --qr greenpass.png
+        ```
+        
+        Txt files with the content of the qrcode
+        ```bash
+        $ greenpass --txt greenpass.txt
+        ```
+        
+        Standard input and pipes
+        ```bash
+        $ zbarimg --raw greenpass.png | greenpass --txt -
+        ```
+        
+        The application returns an UNIX compatible code, therefore you can
+        concatenate commands that will be executed only if the green pass is
+        verified
+        ```bash
+        $ greenpass --qr greenpass.png && echo "green pass ok"
+        ```
+        
+        You can also get the expiration configuration using `--settings` without
+        other inputs.
+        ```bash
+        $ greenpass --settings
+        ```
+        
+Keywords: covid19,greenpass,certificates,authorization
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
