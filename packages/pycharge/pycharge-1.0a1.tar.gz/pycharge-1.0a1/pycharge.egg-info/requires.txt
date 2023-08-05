@@ -1,0 +1,7 @@
+numpy
+dill
+scipy
+matplotlib
+
+[MPI]
+mpi4py
