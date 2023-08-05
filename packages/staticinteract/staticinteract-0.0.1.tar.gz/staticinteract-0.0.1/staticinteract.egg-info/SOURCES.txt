@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+staticinteract/__init__.py
+staticinteract/interact.py
+staticinteract/widgets.py
+staticinteract.egg-info/PKG-INFO
+staticinteract.egg-info/SOURCES.txt
+staticinteract.egg-info/dependency_links.txt
+staticinteract.egg-info/requires.txt
+staticinteract.egg-info/top_level.txt
