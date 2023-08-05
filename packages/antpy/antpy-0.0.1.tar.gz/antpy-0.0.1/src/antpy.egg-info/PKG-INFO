@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: antpy
+Version: 0.0.1
+Summary: My Python extensions
+Home-page: https://github.com/IvanAntipov/AntPy
+Author: Ivan Antipov
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# AntPy
+My Python extensions
+
+
+# Methods
+
+[collections.group_by](./examples/group_by_examples.py)
+
+[collections.merge_into_dictionary](./examples/merge_into_dictionary_example.py)
+

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/antpy/__init__.py
+src/antpy/collections.py
+src/antpy.egg-info/PKG-INFO
+src/antpy.egg-info/SOURCES.txt
+src/antpy.egg-info/dependency_links.txt
+src/antpy.egg-info/top_level.txt
