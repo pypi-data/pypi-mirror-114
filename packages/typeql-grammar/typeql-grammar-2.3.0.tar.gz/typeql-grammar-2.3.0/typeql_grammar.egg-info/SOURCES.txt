@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+com/__init__.py
+com/vaticle/__init__.py
+com/vaticle/typeql/__init__.py
+com/vaticle/typeql/grammar/TypeQLPythonLexer.py
+com/vaticle/typeql/grammar/TypeQLPythonListener.py
+com/vaticle/typeql/grammar/TypeQLPythonParser.py
+com/vaticle/typeql/grammar/TypeQLPythonVisitor.py
+com/vaticle/typeql/grammar/__init__.py
+typeql_grammar.egg-info/PKG-INFO
+typeql_grammar.egg-info/SOURCES.txt
+typeql_grammar.egg-info/dependency_links.txt
+typeql_grammar.egg-info/not-zip-safe
+typeql_grammar.egg-info/requires.txt
+typeql_grammar.egg-info/top_level.txt
