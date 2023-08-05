@@ -1,0 +1,17 @@
+shape_registration/__init__.py,sha256=EO7DuTpDgyO4RhcAt8D5aYudteTKSGngqhbNOWmF1Ig,65
+shape_registration/cropping.py,sha256=zDoS3fwramUADjt0Z70IDC-X-WzlAtDOYrPNJcJVk8I,4880
+shape_registration/delaunay.py,sha256=0XLfKrlfZpFWgOoCbsaqCXXOmqQRVYVYIAlH2Avh7Ww,35546
+shape_registration/entrypoints.py,sha256=pNDTrcMHe9y72M9SvrsttvTH8Gew0OumsqTlDVWHIIw,5121
+shape_registration/lightning_registration.py,sha256=vIzOjKrRN0QhJm3npurAASnIVa0BorGSNyer5KjJXRk,10992
+shape_registration/losses.py,sha256=VAAn4SJvHJ-llRoSojlzjfLr79BP8JAhj3-4qr5PrqY,20588
+shape_registration/procrustes.py,sha256=wZKSAFzOc8JNsLUjslQ-IJYKqPHRHznxgykP0I9G3kE,4624
+shape_registration/register.py,sha256=Baba_8lGYnxl5iZFbRY0vblNvjI1Rzva1EnBEzoKKWA,8489
+shape_registration/regularizer.py,sha256=-A6IFK_8dolwtlWLINS1q1NMNDxUUoMzM_zviNv6vJU,2113
+shape_registration/sampling.py,sha256=0X26TFQcjCN38b4m9IVa_OLsxEiSvP1sszHGWkKt5RA,1288
+shape_registration/transformation.py,sha256=DcU8xvRA2hvALe4A6PmevVAykGnit41kkRtWijPDAl0,13563
+shape_registration/utils.py,sha256=XP1nioK4xl7LwbHZnemGYHhYKLvG49B0zw_q3X7Xewk,8333
+shape_registration-0.1.0.dist-info/METADATA,sha256=4rSkRMuaEMRe5Jg22QQrWah5c1sVRUg1B5wKVJdS2Z0,843
+shape_registration-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+shape_registration-0.1.0.dist-info/entry_points.txt,sha256=8Zl9qctvAThDan8fefdLB3zwgQZUewkU1aCKj6aFwyg,244
+shape_registration-0.1.0.dist-info/top_level.txt,sha256=V8DRnS3KID5bDf1LcRgSqk75Og9hSN9FdJ0UWYEB3ds,19
+shape_registration-0.1.0.dist-info/RECORD,,
