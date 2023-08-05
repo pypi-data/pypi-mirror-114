@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: scanfs
+Version: 0.0.5
+Summary: File system scanner in Python
+Home-page: https://github.com/cpuinfo/scanfs
+Author: CPU Info
+Author-email: cpuinfo10@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: System :: Operating System Kernels :: Linux
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# scanfs
+
+This module scans the filesystem and provides custom hooks to handle each file
+type of your choice.
+
+## Installation
+
+```bash
+pip install scanfs
+```
+
+## Example
+
+```python
+import os
+import subprocess
+from scanfs.fsscanner import FileSystemScanner
+from scanfs.fsscannerex import FSScannerException
+
+
+def callback(fpath, node):
+    try:
+        path = os.path.join(fpath, node.name)
+        completed_process = subprocess.run(
+            ["checksec", "--format=json", "--file=" + str(path)],
+            capture_output=True,
+            check=True,
+        )
+        print(completed_process)
+    except Exception as e:
+        print("An exception occurred: " + str(e))
+
+
+fss = FileSystemScanner("/usr/bin")
+fss.checksec_on_elfs()
+```
+
+## Developer
+
+```bash
+python -m build
+twine upload dist/*
+```
+
+> Ref: https://packaging.python.org/tutorials/packaging-projects/
+
+
