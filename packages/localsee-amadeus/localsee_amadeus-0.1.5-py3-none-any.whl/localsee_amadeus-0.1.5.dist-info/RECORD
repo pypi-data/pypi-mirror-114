@@ -1,0 +1,12 @@
+localsee/__init__.py,sha256=4NOisZXwjjV9P8WeHf8999GN9wBsDPB272H0GljrwwU,4773
+localsee/__main__.py,sha256=Pu46zvl4jtOpbENBF_j5drTsX4bsyndZWOb7jtiQaz4,4828
+localsee/api.py,sha256=W3x65HzE7eEdTNRKOafkY1aYJOzVJodYhzVhBE2oRzE,33
+localsee/localsee.py,sha256=oJjWHPbw1a_9hDS9NEPEs5OT1ASUxZ188JVoqbWaymw,1621
+localsee/option.py,sha256=s_y-1HpmvTtSqWIv_WgD-nQ-_MtF6kYA1BmBtKRVygk,783
+localsee/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+localsee/scripts/xyscript.py,sha256=6vWeaQU8HozC44UOrrf2lBvEPQy0_WRa-r3T9ukaaOo,140
+localsee_amadeus-0.1.5.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+localsee_amadeus-0.1.5.dist-info/METADATA,sha256=VsC4xRMYYH435kTYjVazCQV46aiCABi0f4uU4cVUPeg,680
+localsee_amadeus-0.1.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+localsee_amadeus-0.1.5.dist-info/top_level.txt,sha256=WbgqFZNBINKOWStmH0YUw6PL1398ss_UdJ7TKJzrB08,9
+localsee_amadeus-0.1.5.dist-info/RECORD,,
