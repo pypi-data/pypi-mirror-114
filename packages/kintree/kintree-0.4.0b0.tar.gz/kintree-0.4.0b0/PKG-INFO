@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: kintree
+Version: 0.4.0b0
+Summary: Fast part creation in KiCad and InvenTree
+License: GPL3
+Author: Placeholder Name
+Author-email: placeholder@test.com
+Requires-Python: >=3.7,<3.10
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PySimpleGUI (>=4.28.0,<5.0)
+Requires-Dist: PyYAML (>=5.3.1,<6.0)
+Requires-Dist: digikey-api (>=0.4.0,<1.0)
+Requires-Dist: fuzzywuzzy (>=0.18.0,<1.0)
+Requires-Dist: inventree (>=0.2.4,<1.0)
+Requires-Dist: multiprocess (>=0.70.12.2,<0.71)
+Requires-Dist: python-Levenshtein (>=0.12.2,<0.13.0)
+Requires-Dist: validators (>=0.18.2)
+Requires-Dist: wrapt (>=1.12.1,<2.0)
