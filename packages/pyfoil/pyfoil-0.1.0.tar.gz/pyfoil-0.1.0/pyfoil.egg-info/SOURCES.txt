@@ -1,0 +1,14 @@
+README.md
+setup.py
+pyfoil/__init__.py
+pyfoil/airfoil.py
+pyfoil.egg-info/PKG-INFO
+pyfoil.egg-info/SOURCES.txt
+pyfoil.egg-info/dependency_links.txt
+pyfoil.egg-info/requires.txt
+pyfoil.egg-info/top_level.txt
+pyfoil/generators/__init__.py
+pyfoil/generators/joukowsy.py
+pyfoil/generators/naca.py
+pyfoil/generators/treffz.py
+pyfoil/generators/vandevooren.py
