@@ -1,0 +1,12 @@
+shrdlu_blocks/__init__.py,sha256=ds4HY06WuqopCSnjDbx-lt5f5eEij2P15GQ3WA5u-bM,155
+shrdlu_blocks/control.py,sha256=QQtuWsTMgAAWVoPrczY7s9e9YaFdu75VKcMdohdAr3w,16178
+shrdlu_blocks/demo.py,sha256=1H6ZuPQgK2uStvhl4hPJH6QvjkR_nvLq4MKCwr01uPw,3582
+shrdlu_blocks/geometry.py,sha256=NMDYUqy57DT3V-UJbqQax6zKvoGytFTkiqiiS_M_VfU,15719
+shrdlu_blocks/scenes.py,sha256=AYqKifoOxoLFxw8cuF8BRZmYVaoh0AfdqZeM9ya58tg,8509
+shrdlu_blocks/typedefs.py,sha256=GplGe806T8A3nhz0weq106rcitmA3eCXdKzSZC8mh4M,468
+shrdlu_blocks/viewer.py,sha256=Quw6x0WwXxKu7XMIj7kCp1b9tEu1SkLY4JRh9-eDPLI,10725
+shrdlu_blocks-0.0.6.dist-info/LICENSE.md,sha256=LPt3YbeqR7kbBGiKVO-bvRdKk14a6-eZFiIzrb10N2A,1080
+shrdlu_blocks-0.0.6.dist-info/METADATA,sha256=31E7bKtGEYtWtwGKBnfvnRFSugwJnMjrOaGgK3lA8LQ,10529
+shrdlu_blocks-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+shrdlu_blocks-0.0.6.dist-info/top_level.txt,sha256=OkmTqkk1K2_GziiAKioUKSK_8P33kT08tmmZ9hbky2k,14
+shrdlu_blocks-0.0.6.dist-info/RECORD,,
