@@ -1,0 +1,14 @@
+composites/core.cpython-39-x86_64-linux-gnu.so,sha256=JaQhferDXlU4Ohi_K1UziLVR_eXxKCd8n8kM6fN2r3k,4234816
+composites/__init__.py,sha256=egVWEOLR_dqS43il09gbpIdat-kM3yIgrfj6C1vePLE,1990
+composites/version.py,sha256=40-PUZPRIakJU2yYWQcwTYvSJA6iewqiG8XylhxuAQk,22
+composites/utils.py,sha256=7IG-FYpxsIMyA2LWf9TN-wOdZJOZdsR-j8A_sqe6d0c,9147
+composites/core.pxd,sha256=ntOxlXXK9_DWvWXGYgdOOE5H_CMhbKemFlTvHspE-iw,2555
+composites.libs/libgomp-f7e03b3e.so.1.0.0,sha256=GzmXB1qluHXQUhlsmNKuWncNm8Jezfq1jt5rKrV_8kQ,93080
+composites-0.4.8.dist-info/LICENSE,sha256=CF-lnKvB4UJUm3w-LhQXXXOlEjOOEb5aDgHRo4L_Dlc,1310
+composites-0.4.8.dist-info/METADATA,sha256=kbahb1Kj9WXc8cPflXS9IItIw7YOWgI0ZulqHhIHFAw,3185
+composites-0.4.8.dist-info/top_level.txt,sha256=8rFKbL1In6cv0XBeSaI5uG5g6oe1tYJjAc1mLlAvhWU,11
+composites-0.4.8.dist-info/RECORD,,
+composites-0.4.8.dist-info/WHEEL,sha256=u068djhQadWB5Cpg73zJkoU_srgtd6zcF9RJVkaqWXU,148
+composites-0.4.8.data/data/LICENSE,sha256=CF-lnKvB4UJUm3w-LhQXXXOlEjOOEb5aDgHRo4L_Dlc,1310
+composites-0.4.8.data/data/README.md,sha256=TC-vXrHzaAxafvrZPHenEHkq208PV76hOsPa4zSewdU,1912
+composites-0.4.8.data/data/version.py,sha256=40-PUZPRIakJU2yYWQcwTYvSJA6iewqiG8XylhxuAQk,22
