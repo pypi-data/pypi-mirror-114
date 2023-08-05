@@ -1,0 +1,9 @@
+captest/__init__.py,sha256=8nqlZ_Wno4h0m4ec3ec0MvThOSbpjMes6btHBFGaVlk,146
+captest/_version.py,sha256=RXQidB4-AFNN2eFjJDZDD6njn4dXeWEUa1nmyMFgc3g,498
+captest/capdata.py,sha256=ZdWs93XkZ4jeozN0gZi5TscySLFdYIurv47I7bdYDnk,128826
+captest/util.py,sha256=RHQe6V9DhfVGhB-TmK1MoPeFGkXmT-Hhza907skTVV0,2450
+captest-0.10.0.dist-info/LICENSE.txt,sha256=PZDXVBJdcB8_m9vxoYiQZSzTuzm0YjikdhtvRwfCSMs,1067
+captest-0.10.0.dist-info/METADATA,sha256=5fSl0Ywnln2ld0PIg8I5PLZxzg1zWxzstk-Mg8y-H-M,5403
+captest-0.10.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+captest-0.10.0.dist-info/top_level.txt,sha256=3krgWr0q1Z09eRlfWOGNNx1mXBaWvBvJF26xDWtmznc,8
+captest-0.10.0.dist-info/RECORD,,
