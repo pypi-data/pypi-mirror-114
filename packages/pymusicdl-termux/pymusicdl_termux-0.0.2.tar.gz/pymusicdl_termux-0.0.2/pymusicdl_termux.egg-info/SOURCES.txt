@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+pymusicdl_termux/__init__.py
+pymusicdl_termux/musicDL.py
+pymusicdl_termux.egg-info/PKG-INFO
+pymusicdl_termux.egg-info/SOURCES.txt
+pymusicdl_termux.egg-info/dependency_links.txt
+pymusicdl_termux.egg-info/requires.txt
+pymusicdl_termux.egg-info/top_level.txt
+pymusicdl_termux/modules/__init__.py
+pymusicdl_termux/modules/common.py
+pymusicdl_termux/modules/picker.py
+pymusicdl_termux/modules/spotify_downloader.py
+pymusicdl_termux/modules/ytDownloader.py

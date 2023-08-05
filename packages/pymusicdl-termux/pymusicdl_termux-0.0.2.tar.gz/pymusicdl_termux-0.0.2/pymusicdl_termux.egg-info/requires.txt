@@ -1,0 +1,8 @@
+pafy
+pytube
+requests
+rich
+spotipy
+urllib3
+youtube-dl
+youtube-title-parse
