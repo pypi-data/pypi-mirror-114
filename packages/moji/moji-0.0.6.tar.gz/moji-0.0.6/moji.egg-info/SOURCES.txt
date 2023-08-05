@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+moji/__init__.py
+moji/dacc.py
+moji/util.py
+moji.egg-info/PKG-INFO
+moji.egg-info/SOURCES.txt
+moji.egg-info/dependency_links.txt
+moji.egg-info/not-zip-safe
+moji.egg-info/requires.txt
+moji.egg-info/top_level.txt

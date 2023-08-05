@@ -1,0 +1,3 @@
+idiom
+importlib_resources
+numpy
