@@ -1,0 +1,5 @@
+multidict
+pytz
+discord
+requests
+py7zr

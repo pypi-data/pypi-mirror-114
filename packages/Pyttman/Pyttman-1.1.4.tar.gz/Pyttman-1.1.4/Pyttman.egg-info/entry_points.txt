@@ -1,0 +1,3 @@
+[console_scripts]
+pyttman-cli = pyttman.tools.pyttmancli:run
+
