@@ -1,0 +1,3 @@
+[console_scripts]
+qldailycheckin = dailycheckin.main:checkin
+
