@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: EasyEquities
+Version: 1.0.2
+Summary: EasyEquities active scraper to issue trading instructions
+Home-page: https://github.com/kloniphani/EasyEquities
+Author: Kloniphani Maxakadzi
+Author-email: Kloniphani@gmail.com
+License: MIT
+Download-URL: https://github.com/kloniphani/EasyEquities/archive/refs/tags/v1.0.2.tar.gz
+Description: UNKNOWN
+Keywords: South Africa,Trading,EasyEQuities
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
