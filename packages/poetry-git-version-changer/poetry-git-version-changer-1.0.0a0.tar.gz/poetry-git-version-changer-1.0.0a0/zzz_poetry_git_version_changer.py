@@ -1,0 +1,3 @@
+import poetry_git_version_changer as plugin
+
+plugin.activate()
