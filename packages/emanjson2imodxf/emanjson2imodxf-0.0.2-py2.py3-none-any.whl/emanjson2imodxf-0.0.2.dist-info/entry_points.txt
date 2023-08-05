@@ -1,0 +1,3 @@
+[console_scripts]
+emanjson2imodxf = emanjson2imodxf.emanjson2imodxf:cli
+
