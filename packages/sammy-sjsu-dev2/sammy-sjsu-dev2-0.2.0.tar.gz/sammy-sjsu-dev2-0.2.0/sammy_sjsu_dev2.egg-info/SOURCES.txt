@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+sammy/__init__.py
+sammy/__main__.py
+sammy/sammy.py
+sammy_sjsu_dev2.egg-info/PKG-INFO
+sammy_sjsu_dev2.egg-info/SOURCES.txt
+sammy_sjsu_dev2.egg-info/dependency_links.txt
+sammy_sjsu_dev2.egg-info/entry_points.txt
+sammy_sjsu_dev2.egg-info/requires.txt
+sammy_sjsu_dev2.egg-info/top_level.txt
