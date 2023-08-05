@@ -1,0 +1,12 @@
+README.md
+setup.py
+aristoteDash/__init__.py
+aristoteDash/aristote.py
+aristoteDash/aristoteApp.py
+aristoteDash/aristoteDash.py
+aristoteDash/aristoteQuick.py
+aristoteDash.egg-info/PKG-INFO
+aristoteDash.egg-info/SOURCES.txt
+aristoteDash.egg-info/dependency_links.txt
+aristoteDash.egg-info/requires.txt
+aristoteDash.egg-info/top_level.txt
