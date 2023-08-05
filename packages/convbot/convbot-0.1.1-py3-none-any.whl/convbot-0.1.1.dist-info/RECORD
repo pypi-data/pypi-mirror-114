@@ -1,0 +1,9 @@
+convbot/__init__.py,sha256=4GXsBsfc3i0daRsRsG9ZAe2htupcZxvDOSJkZ2vxLRQ,119
+convbot/__main__.py,sha256=CU7LdYhs7rKbPUkKYxr4yKgjAnF4Ihs2shvTMQOhcTs,370
+convbot/convbot.py,sha256=NEH5csNO1tHQP8fpjYoRtqm5RrnNFXi_FQYZdXO1L1Q,3676
+convbot/force_async.py,sha256=-MRRwtiyW-9jSXQ6mbSF0kqTWH5l1o5-mxuhzjld5ls,1193
+LICENSE,sha256=bbHPUVqWKddgoeO4Cl0-S4Y60O7vbLX51GSgBTnpDww,1064
+convbot-0.1.1.dist-info/LICENSE,sha256=bbHPUVqWKddgoeO4Cl0-S4Y60O7vbLX51GSgBTnpDww,1064
+convbot-0.1.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+convbot-0.1.1.dist-info/METADATA,sha256=u31o3djkUViRmqXS6_R6cRg3EOTr9OLleonUrsgbNWA,2476
+convbot-0.1.1.dist-info/RECORD,,
