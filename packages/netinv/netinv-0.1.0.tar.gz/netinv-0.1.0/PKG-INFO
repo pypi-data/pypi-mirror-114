@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: netinv
+Version: 0.1.0
+Summary: Network inventory with async connection support
+Home-page: https://github.com/dmfigol/netinv
+Keywords: netinv,network inventory,network automation,inventory
+Author: Dmitry Figol
+Author-email: git@dmfigol.me
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: pydantic (>=1,<2)
+Project-URL: Repository, https://github.com/dmfigol/netinv
+Description-Content-Type: text/markdown
+
+## NetInv — network inventory with async connection support
+Inspired by [nornir](https://github.com/nornir-automation/nornir)
+
+Supported on Python 3.6.2+
