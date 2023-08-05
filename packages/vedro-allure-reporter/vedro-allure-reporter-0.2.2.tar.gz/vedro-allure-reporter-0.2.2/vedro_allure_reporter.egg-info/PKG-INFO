@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: vedro-allure-reporter
+Version: 0.2.2
+Summary: UNKNOWN
+Home-page: https://github.com/nikitanovosibirsk/vedro-allure-reporter
+Author: Nikita Tsvetkov
+Author-email: nikitanovosibirsk@yandex.com
+License: Apache-2.0
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Vedro Allure Reporter
+
+[![Codecov](https://img.shields.io/codecov/c/github/nikitanovosibirsk/vedro-allure-reporter/master.svg?style=flat-square)](https://codecov.io/gh/nikitanovosibirsk/vedro-allure-reporter)
+[![PyPI](https://img.shields.io/pypi/v/vedro-allure-reporter.svg?style=flat-square)](https://pypi.python.org/pypi/vedro-allure-reporter/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/vedro-allure-reporter?style=flat-square)](https://pypi.python.org/pypi/vedro-allure-reporter/)
+[![Python Version](https://img.shields.io/pypi/pyversions/vedro-allure-reporter.svg?style=flat-square)](https://pypi.python.org/pypi/vedro-allure-reporter/)
+
+[Allure](https://docs.qameta.io/allure/) reporter for [Vedro](https://github.com/nikitanovosibirsk/vedro) framework
+
+## Installation
+
+```shell
+$ pip3 install vedro-allure-reporter
+```
+
+```python
+# ./bootstrap.py
+import vedro
+from vedro_allure_reporter import AllureReporter
+
+vedro.run(plugins=[AllureReporter()])
+```
+
+## Usage
+
+### Run tests
+
+```shell
+$ python3 bootstrap.py -r allure --allure-report-dir ./allure_reports
+```
+
+### Generate report via [Allure command-line tool](https://docs.qameta.io/allure/#_installing_a_commandline)
+
+```shell
+$ allure serve ./allure_reports
+```
+
+
