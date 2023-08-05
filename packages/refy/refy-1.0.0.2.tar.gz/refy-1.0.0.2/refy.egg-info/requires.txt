@@ -1,0 +1,17 @@
+pyinspect
+nltk
+langdetect
+pandas
+loguru
+requests
+myterial
+rich
+bibtexparser
+xmltodict
+sklearn
+
+[dev]
+pytest
+pytest-sugar
+pytest-cov
+coverage
