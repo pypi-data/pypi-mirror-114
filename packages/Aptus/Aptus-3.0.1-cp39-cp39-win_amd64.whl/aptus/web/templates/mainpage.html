@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+    <title>Aptus</title>
+    <link href="{{ url_for('static', path='/style.css') }}" rel="stylesheet">
+    <script>
+    const palettes = {{palettes|tojson}};
+    </script>
+    <script src="/static/aptus.js"></script>
+</head>
+<body>
+    <div id="the_view"></div>
+
+    <div id="renderwait">
+        <div class="panel draggable">
+            Rendering...
+        </div>
+    </div>
+
+    {% set altnote -%}
+        *
+    {%- endset %}
+
+    {% set alt -%}
+        <b><span class="notmac">alt</span><span class="mac">option</span></b>
+    {%- endset %}
+
+    {% set closebtn -%}
+        <div class="closebtn">{% include "icon_close.svg" %}</div>
+    {%- endset %}
+
+    <div id="splash" class="panel draggabble">
+        {{closebtn}}
+        <p>Aptus mandelbrot explorer.</p>
+        <p>Type <kbd>?</kbd> for help.</p>
+    </div>
+
+    <div id="helppanel" class="panel draggable">
+        {{closebtn}}
+        <p><b>Aptus {{version}}</b>, Mandelbrot set explorer.</p>
+
+        <p>Copyright 2007-2021, Ned Batchelder.
+        <a href='https://nedbatchelder.com/code/aptus'>http://nedbatchelder.com/code/aptus</a>
+        </p>
+
+        <p>
+        <kbd>a</kbd> set the angle<br/>
+        <kbd>c</kbd> toggle continuous coloring<br/>
+        <kbd>i</kbd> set the iteration limit<br/>
+        <kbd>I</kbd> toggle the computation parameters panel<br/>
+        <kbd>L</kbd> display a permalink<br/>
+        <kbd>r</kbd> redraw<br/>
+        <kbd>R</kbd> reset everything<br/>
+        <kbd>s</kbd> render and save a super-sampled image<br/>
+        <kbd>w</kbd> set the canvas size<br/>
+        <kbd>(</kbd> <kbd>)</kbd> rotate the angle {{altnote}}<br/>
+        <kbd>&lt;</kbd> <kbd>&gt;</kbd> cycle through palettes<br/>
+        <kbd>,</kbd> <kbd>.</kbd> cycle the palette one color<br/>
+        <kbd>;</kbd> <kbd>'</kbd> stretch the colors, if continuous {{altnote}}<br/>
+        <kbd>[</kbd> <kbd>]</kbd> adjust the hue {{altnote}}<br/>
+        <kbd>{</kbd> <kbd>}</kbd> adjust the saturation {{altnote}}<br/>
+        <kbd>0</kbd> (zero) reset all color adjustments<br/>
+        <kbd>?</kbd> toggle help panel<br/>
+        </p>
+        <p>
+        <b>click</b>: zoom in {{altnote}}<br/>
+        <b>shift-click</b>: zoom out {{altnote}}<br/>
+        <b>click-drag</b>: pan the view<br/>
+        <b>shift-click-drag</b>: select new view area<br/>
+        <br/>
+        {{altnote}} +{{alt}}: just a little<br/>
+        </p>
+    </div>
+
+    <div id="infopanel" class="panel draggable form">
+        {{closebtn}}
+        <p><label for="centerr">c.r:</label><input id="centerr" size="23"/></p>
+        <p><label for="centeri">c.i:</label><input id="centeri" size="23"/></p>
+        <p><label for="pixsize">pixel:</label><input id="pixsize" size="23"/></p>
+        <p><label for="angle">angle:</label><input id="angle" size="3"/></p>
+        <p><label for="iter_limit">iters:</label><input id="iter_limit" size="8"/></p>
+    </div>
+
+    <div id="palettepanel" class="panel draggable form">
+        {{closebtn}}
+        <p><label for="ncolors">colors:</label><input id="ncolors" size="3" value="12"/></p>
+        <p><label for="hlo">hue:</label><input id="hlo" size="3" value="0"/> <input id="hhi" size="3" value="360"/></p>
+        <p><label for="llo">light:</label><input id="llo" size="3" value="100"/> <input id="lhi" size="3" value="150"/></p>
+        <p><label for="slo">sat:</label><input id="slo" size="3" value="100"/> <input id="shi" size="3" value="100"/></p>
+        <p><label for="stretch">stretch:</label><input id="stretch" size="3" value="4"/></p>
+        <p><label for="ease">ease:</label><input id="ease" value="1" size="5"/></p>
+    </div>
+
+    <div id="renderform" class="panel draggable form">
+        {{closebtn}}
+        <p><label for="rendersize">size:</label><input id="rendersize" size="10"/></p>
+        <p><label for="supersample">super:</label><input id="supersample" size="5" value="1"/></p>
+        <p class="buttons"><input type="button" value="Render" id="renderbutton"/></p>
+    </div>
+
+    <div id="linkpanel" class="panel draggable">
+        {{closebtn}}
+        <p>Permalink:</p>
+        <p id="linklink"></p>
+    </div>
+
+    <div id="problempanel" class="panel draggable">
+        {{closebtn}}
+        <p></p>
+    </div>
+
+    <script>
+        document.body.onload = main;
+    </script>
+</body>
