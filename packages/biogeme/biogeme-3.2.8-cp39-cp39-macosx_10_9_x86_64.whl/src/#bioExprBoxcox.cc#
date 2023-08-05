@@ -1,0 +1,137 @@
+//-*-c++-*------------------------------------------------------------
+//
+// File name : bioExprBoxcox.cc
+// @date   Fri Jun 25 17:23:22 2021
+// @author Michel Bierlaire
+// @version Revision 1.0
+//
+//--------------------------------------------------------------------
+
+#include "bioExprBoxcox.h"
+#include <sstream>
+#include "bioDebug.h"
+#include "bioExceptions.h"
+
+bioExprBoxcox::bioExprBoxcox(bioExpression* l, bioExpression* r) :
+  left(l), right(r) {
+  listOfChildren.push_back(l) ;
+  listOfChildren.push_back(r) ;
+
+}
+
+bioExprBoxcox::~bioExprBoxcox() {
+}
+  
+const bioDerivatives* bioExprBoxcox::getValueAndDerivatives(std::vector<bioUInt> literalIds,
+							    bioBoolean gradient,
+							    bioBoolean hessian) {
+
+  if (gradient && theDerivatives.getSize() != literalIds.size()) {
+    theDerivatives.resize(literalIds.size()) ;
+  }
+
+
+  
+  bioUInt n = literalIds.size() ;
+  const bioDerivatives* leftResult = left->getValueAndDerivatives(literalIds,gradient,hessian) ;
+  const bioDerivatives* rightResult = right->getValueAndDerivatives(literalIds,gradient,hessian) ;
+  if (leftResult == NULL) {
+    throw bioExceptNullPointer(__FILE__,__LINE__,"left result") ;
+  }
+  if (rightResult == NULL) {
+    throw bioExceptNullPointer(__FILE__,__LINE__,"right result") ;
+  }
+
+  bioReal ell = rightResult->f ;
+  bioReal lnx = log(leftResult->f) ;
+  bioReal x = leftResult->f ;
+  
+  if (std::abs(ell)  <= 1.0-5) {
+    // We use the McLaurin polynomial approximation
+    if (ell == 0.0) {
+      theDerivatives.f = lnx ;
+    }
+    else {
+      theDerivatives.f = lnx
+	+ lnx * lnx * ell / 2.0
+	+ lnx * lnx * lnx * ell * ell / 6.0
+	+ lnx * lnx * lnx * lnx * ell * ell * ell / 24.0 ;
+    }
+    if (gradient) {
+      for (bioUInt i = 0 ; i < n ; ++i) {
+	// Derivative wrt to x
+	theDerivatives.g[i] = leftResult->g[i] *
+	  (ell * ell * ell * lnx * lnx * lnx / (6 * x) +
+	   ell * ell * lnx * lnx / (2 * x) +
+	   ell * lnx / x +
+	   1 / x) ;
+	// Derivative wrt to ell
+	theDerivatives.g[i] += rightResult->g[i] *
+	  (ell * ell * lnx * lnx * lnx * lnx / 8.0 +
+	   ell * lnx * lnx * lnx / 3.0 +
+	   lnx * lnx / 2.0) ;
+	if (hessian) {
+	  for (bioUInt j = i ; j < n ; ++j) {
+	    theDerivatives.h[i][j] =
+	      theDerivatives.h[j][i] = 
+	  }
+	}
+      }
+      
+    }
+  }
+  else {
+    // We use the original formulation
+  }
+  
+  if (leftResult->f == 0.0) {
+    theDerivatives.f = rightResult->f ;
+  }
+  else if (rightResult->f == 0.0) {
+    theDerivatives.f = leftResult->f ;
+  }
+  else {
+    theDerivatives.f = leftResult->f + rightResult->f ;
+  }
+  if (gradient) {
+    for (bioUInt i = 0 ; i < n ; ++i) {
+      if (leftResult->g[i] == 0.0) {
+	theDerivatives.g[i] = rightResult->g[i] ;
+
+      }
+      else if (rightResult->g[i] == 0.0) {
+	theDerivatives.g[i] = leftResult->g[i] ;
+      }
+      else {
+	theDerivatives.g[i] = leftResult->g[i] + rightResult->g[i] ;
+      }
+      if (hessian) {
+	for (bioUInt j = 0 ; j < n ; ++j) {
+	  if (leftResult->h[i][j] == 0.0) {
+	    theDerivatives.h[i][j] = rightResult->h[i][j] ;
+	  }
+	  else if (rightResult->h[i][j] == 0.0) {
+	    theDerivatives.h[i][j] = leftResult->h[i][j] ;
+	    
+	  }
+	  else {
+	    theDerivatives.h[i][j] = leftResult->h[i][j] + rightResult->h[i][j] ;
+	  }
+	}
+      }
+    }
+  }
+  //  DEBUG_MESSAGE("Plus - Calculated: " << str.length() << " = " << theDerivatives.f) ;
+  return &theDerivatives ;
+}
+
+bioString bioExprBoxcox::print(bioBoolean hp) const {
+  std::stringstream str ;
+  if (hp) {
+    str << "+(" << left->print(hp) << "," << right->print(hp) << ")" ;
+  }
+  else {
+    str << "(" << left->print(hp) << "+" << right->print(hp) << ")" ;
+  }
+  return str.str() ;
+}
