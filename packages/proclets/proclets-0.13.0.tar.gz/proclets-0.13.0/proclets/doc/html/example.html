@@ -1,0 +1,434 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Example &mdash; proclets 0.13.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Change Log" href="changes.html" />
+    <link rel="prev" title="Channels" href="channel.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> proclets
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="proclet.html">Proclets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="channel.html">Channels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="channel.html#performatives">Performatives</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Example</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#nets">Nets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transitions">Transitions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#syncing">Syncing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#blocking">Blocking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#forking">Forking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#joining">Joining</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#finishing">Finishing</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#running">Running</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#output">Output</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Change Log</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">proclets</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Example</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/example.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="example">
+<h1>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h1>
+<p>This scenario was inspired by the teaching problem set out in the paper
+<a class="reference external" href="https://dblp.org/rec/conf/apn/Fahland19">Describing behaviour of Processes with Many-to-Many Interactions</a> by Dirk Fahland (2019).</p>
+<p>Our example concerns the launch by Mission Control of a Space Vehicle.
+The Vehicle separates from its launcher and orbits the earth.</p>
+<p>Mission Control dispatches Recovery teams to locate both Vehicles after
+they have separately reentered the atmosphere.</p>
+<p>Full source code is <a class="reference external" href="https://raw.githubusercontent.com/tundish/proclets/master/proclets/mission.py">here</a>.</p>
+<section id="nets">
+<h2>Nets<a class="headerlink" href="#nets" title="Permalink to this headline">¶</a></h2>
+<p>The net of the Vehicle proclet is simple; a linear arrangement of
+five transitions, terminating at the last.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">net</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">pro_launch</span><span class="p">:</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">pro_separation</span><span class="p">],</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">pro_separation</span><span class="p">:</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">pro_orbit</span><span class="p">],</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">pro_orbit</span><span class="p">:</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">pro_reentry</span><span class="p">],</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">pro_reentry</span><span class="p">:</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">pro_recovery</span><span class="p">],</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">pro_recovery</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="p">}</span>
+</pre></div>
+</div>
+<p>Recovery teams have three transitions, looping continually so that after having finished one job,
+they are available for another.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">net</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">pro_tasking</span><span class="p">:</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">pro_recovery</span><span class="p">],</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">pro_recovery</span><span class="p">:</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">pro_standby</span><span class="p">],</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">pro_standby</span><span class="p">:</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">pro_tasking</span><span class="p">],</span>
+        <span class="p">}</span>
+</pre></div>
+</div>
+<p>Mission Control is the most complex net. It must continually monitor the Vehicles and Recovery teams.
+Some transitions loop back to themselves.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">net</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">pro_launch</span><span class="p">:</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">pro_separation</span><span class="p">],</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">pro_separation</span><span class="p">:</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">pro_reentry</span><span class="p">],</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">pro_reentry</span><span class="p">:</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">pro_recovery</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">pro_reentry</span><span class="p">],</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">pro_recovery</span><span class="p">:</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">pro_complete</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">pro_recovery</span><span class="p">],</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">pro_complete</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="transitions">
+<h2>Transitions<a class="headerlink" href="#transitions" title="Permalink to this headline">¶</a></h2>
+<p>In Proclet theory, a Transition is <em>activated</em> when all its input places are occupied by <em>tokens</em>.
+It can choose whether to <em>fire</em> based on <em>guard</em> conditions. It may also <em>block</em> for a while, in
+the manner of Timed Petri Nets.</p>
+<p>Here we implement each Transition as a single instance method of the Proclet object.
+The code in each one should be succinct and easy to understand.</p>
+<p>We aim to standardise on a small number of code patterns based on simple Python idiom.</p>
+<section id="syncing">
+<h3>Syncing<a class="headerlink" href="#syncing" title="Permalink to this headline">¶</a></h3>
+<p>The simplest form of communication between Proclets is synchronising on a transition they both share.
+Here’s how one Proclet offers synchronisation to another:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">pro_launch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">this</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;We are go for launch&quot;</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;proclet&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="p">})</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">results</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">roster</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">yield from</span> <span class="bp">self</span><span class="o">.</span><span class="n">channels</span><span class="p">[</span><span class="s2">&quot;uplink&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">send</span><span class="p">(</span>
+            <span class="n">sender</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">uid</span><span class="p">,</span> <span class="n">group</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">group</span><span class="p">,</span>
+            <span class="n">action</span><span class="o">=</span><span class="n">this</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">yield</span>
+</pre></div>
+</div>
+</section>
+<section id="blocking">
+<h3>Blocking<a class="headerlink" href="#blocking" title="Permalink to this headline">¶</a></h3>
+<p>A Proclet waiting for synchronisation must block. In <strong>proclets</strong> this is achieved by returning from
+the transition without a <cite>yield</cite> to another.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">pro_launch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">this</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">sync</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span>
+                <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">channels</span><span class="p">[</span><span class="s2">&quot;uplink&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">receive</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">this</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">i</span><span class="o">.</span><span class="n">action</span> <span class="o">==</span> <span class="n">this</span><span class="o">.</span><span class="vm">__name__</span>
+            <span class="p">)</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="n">sync</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;proclet&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="p">})</span>
+        <span class="k">except</span> <span class="ne">StopIteration</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Launch phase is complete&quot;</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;proclet&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="p">})</span>
+            <span class="k">yield</span>
+</pre></div>
+</div>
+</section>
+<section id="forking">
+<h3>Forking<a class="headerlink" href="#forking" title="Permalink to this headline">¶</a></h3>
+<p>One Proclet may create another. The <a class="reference internal" href="proclet.html#proclets.proclet.Proclet.create" title="proclets.proclet.Proclet.create"><code class="xref py py-meth docutils literal notranslate"><span class="pre">create()</span></code></a> function
+adds a new Proclet to the <em>population</em>.</p>
+<p>Note here how the Space Vehicle explicitly sets the <em>marking</em> of the Launch Vehicle, since the latter
+is not supposed to go into orbit.</p>
+<p>The Transition must <cite>yield</cite> the newly created Proclet. In this way the new Proclet gets added to the <em>domain</em>
+of its parent for reference.
+Then we send a synchronisation offer back to Mission Control.
+The <cite>uid</cite> of the new Vehicle is included in the <em>context</em> of the message.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">pro_separation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">this</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Separation initiated&quot;</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;proclet&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="p">})</span>
+        <span class="n">v</span> <span class="o">=</span> <span class="n">Vehicle</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+            <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Launch vehicle&quot;</span><span class="p">,</span> <span class="n">orbits</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">channels</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;beacon&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">channels</span><span class="p">[</span><span class="s2">&quot;beacon&quot;</span><span class="p">]},</span> <span class="n">group</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">group</span><span class="p">,</span>
+            <span class="n">marking</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">i_nodes</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">pro_reentry</span><span class="p">],</span>
+        <span class="p">)</span>
+        <span class="k">yield</span> <span class="n">v</span>
+        <span class="k">yield from</span> <span class="bp">self</span><span class="o">.</span><span class="n">channels</span><span class="p">[</span><span class="s2">&quot;uplink&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">send</span><span class="p">(</span>
+            <span class="n">sender</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">uid</span><span class="p">,</span> <span class="n">group</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">group</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="p">{</span><span class="n">v</span><span class="o">.</span><span class="n">uid</span><span class="p">},</span>
+            <span class="n">action</span><span class="o">=</span><span class="n">this</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">yield</span>
+</pre></div>
+</div>
+</section>
+<section id="joining">
+<h3>Joining<a class="headerlink" href="#joining" title="Permalink to this headline">¶</a></h3>
+<p>After reentry, we brief the Recovery teams.
+Now we begin to get many-to-many interactions between Recovery proclets and Vehicle proclets.</p>
+<p>Back at Mission Control, the looped transitions monitor the radio for news. These are not state synchronisations,
+they are messages whose significance depend on Performative action.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>        <span class="k">for</span> <span class="n">msg</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">channels</span><span class="p">[</span><span class="s2">&quot;vhf&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">receive</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">this</span><span class="p">):</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;proclet&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="p">})</span>
+            <span class="k">if</span> <span class="n">msg</span><span class="o">.</span><span class="n">action</span> <span class="o">==</span> <span class="n">Exit</span><span class="o">.</span><span class="n">deliver</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">msg</span><span class="o">.</span><span class="n">context</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">results</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">msg</span>
+</pre></div>
+</div>
+</section>
+<section id="finishing">
+<h3>Finishing<a class="headerlink" href="#finishing" title="Permalink to this headline">¶</a></h3>
+<p>Mission Control has a cardinality constraint. It launched one Vehicle, but it expects two to be recovered.
+When this is detected, it halts the run by raising an exception:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">results</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Mission complete&quot;</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;proclet&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="p">})</span>
+            <span class="k">raise</span> <span class="n">Termination</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="running">
+<h2>Running<a class="headerlink" href="#running" title="Permalink to this headline">¶</a></h2>
+<p>To run the example code, first install <strong>proclets</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">proclets</span>
+</pre></div>
+</div>
+<p>Then launch the Mission:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">proclets</span><span class="o">.</span><span class="n">mission</span>
+</pre></div>
+</div>
+</section>
+<section id="output">
+<h2>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Mission control|    pro_launch|We are go for launch
+  Space vehicle|    pro_launch|Launch phase is complete
+  Space vehicle|pro_separation|Separation initiated
+Mission control|pro_separation|Copy your separation
+ Launch vehicle|   pro_reentry|Re-entering atmosphere
+  Space vehicle|     pro_orbit|In orbit 1
+Mission control|   pro_reentry|Observing reentry of launch vehicle
+  Space vehicle|     pro_orbit|In orbit 2
+Mission control|  pro_recovery|Team 501 briefed for recovery of launch vehicle
+  Space vehicle|     pro_orbit|In orbit 3
+  Recovery Team|  pro_recovery|Commencing search for launch vehicle
+  Recovery Team|  pro_recovery|Abandoning search for launch vehicle
+  Space vehicle|   pro_reentry|Re-entering atmosphere
+  Recovery Team|   pro_standby|Team 501 standing by
+Mission control|   pro_reentry|Observing reentry of space vehicle
+Mission control|  pro_recovery|Team 501 briefed for recovery of space vehicle
+  Recovery Team|  pro_recovery|Commencing search for space vehicle
+  Recovery Team|  pro_recovery|Abandoning search for space vehicle
+Mission control|  pro_recovery|Team 54e briefed for recovery of space vehicle
+  Recovery Team|   pro_standby|Team 501 standing by
+  Recovery Team|  pro_recovery|Commencing search for space vehicle
+  Recovery Team|  pro_recovery|Abandoning search for space vehicle
+Mission control|  pro_recovery|Team 501 briefed for recovery of space vehicle
+  Recovery Team|   pro_standby|Team 54e standing by
+  Recovery Team|  pro_recovery|Commencing search for space vehicle
+  Recovery Team|  pro_recovery|Abandoning search for space vehicle
+Mission control|  pro_recovery|Team 54e briefed for recovery of space vehicle
+  Recovery Team|   pro_standby|Team 501 standing by
+  Recovery Team|  pro_recovery|Commencing search for space vehicle
+  Recovery Team|  pro_recovery|Abandoning search for space vehicle
+Mission control|  pro_recovery|Team 501 briefed for recovery of space vehicle
+  Recovery Team|   pro_standby|Team 54e standing by
+  Recovery Team|  pro_recovery|Commencing search for space vehicle
+  Recovery Team|  pro_recovery|Abandoning search for space vehicle
+Mission control|  pro_recovery|Team 54e briefed for recovery of space vehicle
+  Recovery Team|   pro_standby|Team 501 standing by
+  Recovery Team|  pro_recovery|Commencing search for space vehicle
+  Recovery Team|  pro_recovery|Rendezvous with space vehicle
+Mission control|  pro_recovery|Team 501 briefed for recovery of launch vehicle
+  Space vehicle|  pro_recovery|Signing off
+  Recovery Team|   pro_standby|Team 54e standing by
+  Recovery Team|  pro_recovery|Commencing search for launch vehicle
+  Recovery Team|  pro_recovery|Rendezvous with launch vehicle
+ Launch vehicle|  pro_recovery|Signing off
+  Recovery Team|   pro_standby|Team 501 standing by
+Mission control|  pro_recovery|Mission complete
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="changes.html" class="btn btn-neutral float-right" title="Change Log" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="channel.html" class="btn btn-neutral float-left" title="Channels" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, D E Haynes
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
