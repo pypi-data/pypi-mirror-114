@@ -1,0 +1,8 @@
+senaite.core
+setuptools
+
+[test]
+Products.PloneTestCase
+Products.SecureMailHost
+plone.app.testing
+unittest2
