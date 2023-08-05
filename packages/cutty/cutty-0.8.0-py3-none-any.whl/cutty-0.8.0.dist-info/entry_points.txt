@@ -1,0 +1,3 @@
+[console_scripts]
+cutty=cutty.__main__:main
+
