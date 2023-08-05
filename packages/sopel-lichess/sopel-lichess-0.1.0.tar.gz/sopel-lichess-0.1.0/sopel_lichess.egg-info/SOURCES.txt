@@ -1,0 +1,15 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+sopel_lichess/__init__.py
+sopel_lichess/config.py
+sopel_lichess/parsers.py
+sopel_lichess/plugin.py
+sopel_lichess.egg-info/PKG-INFO
+sopel_lichess.egg-info/SOURCES.txt
+sopel_lichess.egg-info/dependency_links.txt
+sopel_lichess.egg-info/entry_points.txt
+sopel_lichess.egg-info/not-zip-safe
+sopel_lichess.egg-info/requires.txt
+sopel_lichess.egg-info/top_level.txt
