@@ -1,0 +1,4 @@
+[console_scripts]
+conda-env-sorter = madforhooks.conda_env_sorter:main
+no-print-statements = madforhooks.no_print_statements:main
+
