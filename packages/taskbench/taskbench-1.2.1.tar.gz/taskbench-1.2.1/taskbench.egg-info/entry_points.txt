@@ -1,0 +1,3 @@
+[console_scripts]
+taskbench = taskbench.__main__
+
