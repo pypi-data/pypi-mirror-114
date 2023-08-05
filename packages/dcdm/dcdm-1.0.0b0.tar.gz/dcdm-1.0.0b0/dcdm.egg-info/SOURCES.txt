@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+dcdm/__init__.py
+dcdm/__version__.py
+dcdm/logger.py
+dcdm/main.py
+dcdm.egg-info/PKG-INFO
+dcdm.egg-info/SOURCES.txt
+dcdm.egg-info/dependency_links.txt
+dcdm.egg-info/entry_points.txt
+dcdm.egg-info/requires.txt
+dcdm.egg-info/top_level.txt

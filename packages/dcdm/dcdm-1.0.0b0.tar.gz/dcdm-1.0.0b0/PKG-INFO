@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: dcdm
+Version: 1.0.0b0
+Summary: cdm is a commend line Download Manger
+Home-page: https://github.com/DoostanKhas/cdm 
+Author: doostanKhas
+Author-email: doostanKhas@gmail.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# dcdm
+
+> [C]ommendLine [D]ownload [M]anager
+
+## dcdm is a commend line Download Manger
+
+You can download your file by giving arguments to the program
+‍
+```
+
+dcdm [OPTIONS] URL
+
+```
+
+## OPTIONS
+
+```
+Options:
+  --number_of_threads INTEGER  No of Threads
+  --name PATH                  Name of the file with extension
+  --help                       Show this message and exit.
+```
+
+
