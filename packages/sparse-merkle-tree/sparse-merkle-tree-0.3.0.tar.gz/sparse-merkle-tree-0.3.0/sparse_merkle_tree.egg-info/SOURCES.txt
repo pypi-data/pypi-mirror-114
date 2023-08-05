@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+smt/__init__.py
+smt/proof.py
+smt/store.py
+smt/tree.py
+smt/utils.py
+sparse_merkle_tree.egg-info/PKG-INFO
+sparse_merkle_tree.egg-info/SOURCES.txt
+sparse_merkle_tree.egg-info/dependency_links.txt
+sparse_merkle_tree.egg-info/requires.txt
+sparse_merkle_tree.egg-info/top_level.txt
+tests/__init__.py
+tests/test_tree.py
