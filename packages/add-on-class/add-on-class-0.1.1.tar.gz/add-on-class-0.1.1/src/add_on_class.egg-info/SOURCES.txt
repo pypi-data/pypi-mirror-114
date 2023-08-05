@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/add_on_class/__init__.py
+src/add_on_class/add_on_class.py
+src/add_on_class.egg-info/PKG-INFO
+src/add_on_class.egg-info/SOURCES.txt
+src/add_on_class.egg-info/dependency_links.txt
+src/add_on_class.egg-info/top_level.txt
