@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+easy_api/easy_api.py
+easy_api.egg-info/PKG-INFO
+easy_api.egg-info/SOURCES.txt
+easy_api.egg-info/dependency_links.txt
+easy_api.egg-info/requires.txt
+easy_api.egg-info/top_level.txt
