@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: nspb
+Version: 0.0.1
+Summary: ProgressBar for python
+Home-page: UNKNOWN
+Author: Alexandre Hachet
+Author-email: alexandre.hachet@gmail.com
+License: UNKNOWN
+Description: # Progress Bar
+        
+        This is a simple terminal progress bar for python,
+        <br>
+        no libraries required.
+        <br>
+        ## Usage
+        ```python
+        from progressbar import ProgressBar
+        
+        pb = ProgressBar(size=100, length=100, prefix='', suffix='', decimals=1, fill='█', infos=False, printEnd ="\r", file=sys.stdout) # With full params
+        pb = ProgressBar(size=100, length=100) # Simplest declaration
+        
+        for i in range(100 + 1):
+        	pb.update(i) # The value of update can be any int value, for example it can be the downloaded size of a file
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
