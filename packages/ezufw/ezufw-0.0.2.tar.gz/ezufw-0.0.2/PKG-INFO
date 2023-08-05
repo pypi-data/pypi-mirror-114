@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ezufw
+Version: 0.0.2
+Summary: Another Eazy UFW wrapper
+Home-page: UNKNOWN
+Author: Kyther (Mark Adam Gancarz)
+Author-email: <mrk.gancarz@gmail.com>
+License: UNKNOWN
+Description: EzUFW
+        -----
+        
+Keywords: python,firewall,ufw,network,inet,ipv4,sockets
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown
