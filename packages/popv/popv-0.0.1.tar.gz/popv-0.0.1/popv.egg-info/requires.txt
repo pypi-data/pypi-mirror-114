@@ -1,0 +1,9 @@
+gdown
+obonet
+bbknn
+OnClass
+scvi-tools
+imgkit
+scanorama
+scanpy
+tensorflow
