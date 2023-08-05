@@ -1,0 +1,3 @@
+[console_scripts]
+marsrover-ping = marsrover:ping
+
