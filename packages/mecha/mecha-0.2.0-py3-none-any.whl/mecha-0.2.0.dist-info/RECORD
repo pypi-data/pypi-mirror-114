@@ -1,0 +1,15 @@
+mecha/__init__.py,sha256=sH42T5qGLfQoA20QWy2OiRw0KUf_8_9ysA4gVJn70xM,84
+mecha/api.py,sha256=y0100zCqwlgi9raEESo8yJC-byXuEcTcQEcbdgiQ-gk,1675
+mecha/ast.py,sha256=g_D-9XZC5TgwiHNpU6rCJvmrmFqSPdjioma7LWUc3B0,2050
+mecha/parse.py,sha256=kL7E9B4QEtI_9feVaIqzZ5ZB-M2iF3jmM8hD9mbvycw,3777
+mecha/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mecha/resources/1_16.json,sha256=xOrUha4zwIwXAwqFkCwmUv_ybw-sD-lACMLn8WWxAGs,257142
+mecha/resources/1_17.json,sha256=mg5ebpfdcDDkgj3FibWnOLGMQWsbHoSJwJbm1vZKL2E,266016
+mecha/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mecha/resources/patch.json,sha256=n2lu3lhxdSdtTmGc1wKwdKcBF8JJ5hFGNUFF1_Qc31w,199
+mecha/resources/wiki_examples.mcfunction,sha256=A7mz_PB_AVf_KWP6N2k7gUHqR_QJGcc0zeAp10u6zW8,211
+mecha/spec.py,sha256=n6602nwdGxeEqbdXOo31MvAjLzqU3wlqKo48gFRyT1E,8662
+mecha-0.2.0.dist-info/LICENSE,sha256=4gLu2TrJPEkFTd4RV8wz0Lncyd4YPBpVUZcolDL6588,1073
+mecha-0.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+mecha-0.2.0.dist-info/METADATA,sha256=5wX79xqj9jc-xIAzQjpPymEcS-eg8EpvYqoJs4mO-tM,3198
+mecha-0.2.0.dist-info/RECORD,,
