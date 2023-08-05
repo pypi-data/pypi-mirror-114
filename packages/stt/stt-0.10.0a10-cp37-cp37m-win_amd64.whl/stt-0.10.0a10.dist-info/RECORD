@@ -1,0 +1,12 @@
+Release/_impl.cp37-win_amd64.exp,sha256=BapXxpFNU6QXLv8GgUHDkY2mvdLOcXupk2ZQBbWuTe8,737
+Release/_impl.cp37-win_amd64.lib,sha256=fdYcD_8mrjuj2gZ3nzhox2UwJd8UFJpMgV5_lrW8rX8,1964
+stt/__init__.py,sha256=SL36p3tNT0hdu3bpXY4gqjiK2YVSA0ToJeXcbtSW4h0,13488
+stt/_impl.cp37-win_amd64.pyd,sha256=S1so9KnZlSzpW8KP2jq34BP7F1uk4-66akbddMnhur4,75264
+stt/client.py,sha256=BXCVLU4ILhrQYtaGEpmpgYtfIcKIyO955UmIoCwozWE,7020
+stt/impl.py,sha256=7nx1D04p8biiiZHbE4fSa-2iv-wJ8KSRSn2Kj-ILRKc,7409
+stt/lib/libstt.so,sha256=bRgNxG8urP6U5gqCOIs3G2qyus0MGP6ez3c2SqXnTUQ,25920512
+stt-0.10.0a10.dist-info/METADATA,sha256=jl_9LQa8QYLCimgaOetztbnhgUAQy40HSV_wPJ9OeEI,1341
+stt-0.10.0a10.dist-info/WHEEL,sha256=uaZe_9gV-4T_d4AskuIQkCgcY8wMc0UXsVFnf0_mBGs,106
+stt-0.10.0a10.dist-info/entry_points.txt,sha256=-RJKAhqFH3le0allDtX9BNVyOHyAXMbyweoEXUinoRI,41
+stt-0.10.0a10.dist-info/top_level.txt,sha256=U36suN9i5BZ2UbKj5dzgbpHmkIEAvyge7wRwJVB24jk,4
+stt-0.10.0a10.dist-info/RECORD,,
