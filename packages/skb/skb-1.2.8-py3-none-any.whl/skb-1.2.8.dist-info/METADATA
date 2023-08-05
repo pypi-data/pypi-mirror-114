@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: skb
+Version: 1.2.8
+Summary: Synth Kit builder for Synthstrom Deluge
+License: MIT
+Author: neilbaldwin
+Author-email: neil.baldwin@mac.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: importlib-metadata (>=1.0,<2.0); python_version < "3.8"
+Requires-Dist: lxml (>=4.6.3,<5.0.0)
