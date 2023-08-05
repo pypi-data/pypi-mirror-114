@@ -1,0 +1,76 @@
+---
+# If true, don't execute any `put` or `post` requests.
+# dry_run=true still executes get requests though.
+# set to true for debugging or development.
+dry_run: true
+
+# gitlab api base url without trailing slash
+gitlab_base_url: "https://git.example.com/api/v4"
+
+# Enable tls certification verification. Disable for local development.
+verify: true
+
+# Auto-generate the issue id in Gitlab. If set to `true`, create a Gitlab issue with
+# the same id as the Bugzilla ticket number.  The group members which are 
+# mapped in the user mappings need to be defined as project owners for this
+# to work properly. Otherwise the Gitlab API will silently ignore the `iid` setting 
+# and fallback to the default behavior (i.e. auto-generate the issue id).
+use_bugzilla_id: false
+
+# The gitlab project id
+gitlab_project_id: 5
+
+# The private token of the gitlab Administrator. This program needs GitLab sudo to run.
+# Read more about sudo here:
+# http://docs.gitlab.com/ce/api/#sudo
+gitlab_private_token: "SUPERSECRETTOKEN"
+
+# bugzilla base url without trailing slash
+bugzilla_base_url: "https://landfill.bugzilla.org/bugzilla-5.0-branch"
+
+# bugzilla user, set to an empty string when anonymous access is allowed
+# when not empty, you are prompted for password once upon script startup
+bugzilla_user:
+
+# The way to format datetime strings in the gitlab issue description and comment body.
+datetime_format_string: "%b %d, %Y %H:%M"
+
+# Generic bugzilla user that bug reporting forms would create bugs as. Performs better formatting for the Issue description
+# Optional
+bugzilla_auto_reporter: "webreporter"
+
+# Bugzilla states that close the issue in gitlab
+bugzilla_closed_states:
+    - "RESOLVED"
+    - "VERIFIED"
+    - "CLOSED"
+
+# Generic gitLab user for misc or old bugzilla users that don't have GitLab accounts
+gitlab_misc_user: "bugzilla"
+
+# Default label(s) to add to all migrated bugs
+# Optional
+default_gitlab_labels:
+    - "bugzilla"
+    - "legacy"
+
+# Include a link to the original bugzilla bug in the GitLab issue description
+include_bugzilla_link: true
+
+# Set to true to map bugzilla operating system to GitLab
+map_operating_system: false
+
+# Set to true to map bugzilla keywords to GitLab
+map_keywords: true
+
+# Do not map these bugzilla keywords to GitLab
+keywords_to_skip:
+    - "SKIPME"
+    - "NOTHING"
+# Set to true to map bugzilla milestones to GitLab
+map_milestones: true
+
+# Do not map these bugzilla milestones to GitLab
+milestones_to_skip:
+    - "---"
+    - "UNKNOWN"
