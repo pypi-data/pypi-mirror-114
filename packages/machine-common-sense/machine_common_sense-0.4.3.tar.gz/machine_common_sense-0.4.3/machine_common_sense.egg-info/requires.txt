@@ -1,0 +1,9 @@
+shapely>=1.7.0
+opencv-python>=4.0
+matplotlib>=3.3
+msgpack>=1.0.0
+ai2thor==2.5.0
+marshmallow>=3.5.2
+
+[:python_version < "3.7"]
+dataclasses==0.8
