@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: KGlobal
+Version: 1.6.7.4
+Summary: SQL Handling, Object Shelving, Data Encryption, ETL File Handler, E-mail Parsing, Logging
+Home-page: https://github.com/KLRussell/Python_KGlobal_Package
+Author: Kevin Russell
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: pywin32 (==300)
+Requires-Dist: pandas
+Requires-Dist: future
+Requires-Dist: sqlalchemy
+Requires-Dist: pyodbc
+Requires-Dist: portalocker (==2.2.1)
+Requires-Dist: cryptography
+Requires-Dist: independentsoft.msg
+Requires-Dist: exchangelib
+Requires-Dist: bs4
+Requires-Dist: six
+Requires-Dist: xlrd
+Requires-Dist: XlsxWriter
+Requires-Dist: Xlwt
+Requires-Dist: Openpyxl
+Requires-Dist: django
+Requires-Dist: openpyxl
+Requires-Dist: odfpy
+Requires-Dist: pyxlsb
+
+UNKNOWN
+
