@@ -1,0 +1,12 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/IDG/__init__.py
+src/IDG/deployment.py
+src/IDG/jsonObject.py
+src/IDG/module.py
+src/IDG/routeSettings.py
+src/IoT_Deployment_Generator.egg-info/PKG-INFO
+src/IoT_Deployment_Generator.egg-info/SOURCES.txt
+src/IoT_Deployment_Generator.egg-info/dependency_links.txt
+src/IoT_Deployment_Generator.egg-info/top_level.txt
