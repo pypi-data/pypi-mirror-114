@@ -1,0 +1,8 @@
+LICENSE.txt
+README.txt
+setup.py
+pysourcebin/__init__.py
+pysourcebin.egg-info/PKG-INFO
+pysourcebin.egg-info/SOURCES.txt
+pysourcebin.egg-info/dependency_links.txt
+pysourcebin.egg-info/top_level.txt
