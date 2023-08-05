@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: benford-stats
+Version: 0.0.4
+Summary: Statistical Test for Benfords Law
+Home-page: https://gitlab.com/hbenne/benford/
+Author: Hannes Benne
+Author-email: hbenne@gmx.at
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/hbenne/benford/issues
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

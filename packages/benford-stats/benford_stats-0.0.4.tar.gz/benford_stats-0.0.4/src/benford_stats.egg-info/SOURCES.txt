@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+src/benford/__init__.py
+src/benford/benford.py
+src/benford_stats.egg-info/PKG-INFO
+src/benford_stats.egg-info/SOURCES.txt
+src/benford_stats.egg-info/dependency_links.txt
+src/benford_stats.egg-info/requires.txt
+src/benford_stats.egg-info/top_level.txt
