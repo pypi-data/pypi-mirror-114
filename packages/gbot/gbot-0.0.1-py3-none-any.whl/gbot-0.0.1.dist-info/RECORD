@@ -1,0 +1,11 @@
+gbot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gbot/boolean operations.py,sha256=nK6ffqOOWIC5neeA44E_sTynGlCUB85ntCY8J9X3Bh0,11284
+gbot/bsplines.py,sha256=54PRrdjG84urdGQSnkHvDxlmNZkc2AAoqj8XfwO1np8,2200
+gbot/dividedDifference.py,sha256=14neP5lO3dx3ke6oqBt6PM34F3VndCJm9Y_0e76PLkg,1553
+gbot/draggablepoints.py,sha256=e_aB7qmgWpJ4XbYRptG3yqDh4_xIJ03gugL5ygRRjtE,4307
+gbot/transformations.py,sha256=ihf66DtiIZmxAkK1cnVDSZwM4_zHMi0XWmGsw0-Rcfo,8795
+gbot-0.0.1.dist-info/LICENSE,sha256=z78WVop9gjYFuxHZnOQ51bs7pBoy6DEXYE4HHQwCPPk,1070
+gbot-0.0.1.dist-info/METADATA,sha256=IKTvQ7lLkU5yGX-4YPKfOio4-iaGwavORcOgL_jpJcA,960
+gbot-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gbot-0.0.1.dist-info/top_level.txt,sha256=cR31mjFrTUxDAyanPsdMEXKi47x04XOvCXgj9vdjMNU,5
+gbot-0.0.1.dist-info/RECORD,,
