@@ -1,0 +1,60 @@
+mixin content()
+    .preview(ng-controller='interface-ui')
+        {{info['view']['html']}}
+
+    script.
+        var dataset_id = '{{dataset_id}}';
+        var app_id = '{{app_id}}';
+        var API = {
+            logger: function(code, msg) {
+            },
+            apps: {
+                view: {
+                    url: function(fnname) {
+                        return '/api/view/function/' + dataset_id + '/' + app_id + '/' + fnname;
+                    },
+                    functions: function(fnname, data, cb, opts) {
+                        var _url = API.apps.view.url(fnname);
+                        var ajax = {
+                            url: _url,
+                            type: 'POST',
+                            data: data
+                        };
+
+                        if (opts) {
+                            for(var key in opts) {
+                                ajax[key]= opts[key];
+                            }
+                        }
+                        $.ajax(ajax).always(function(a, b, c) {
+                            if(a.log)
+                                API.logger(a.code, a.log);
+                            
+                            if(a.code == 200)
+                                cb(a.data, b, c);
+                            else
+                                cb(a, b, c);
+                        });
+                    }
+                }
+            }
+        };
+        
+        {{info['view']['js']}}
+
+        try {
+            app.controller('interface-ui', interface_controller);
+        } catch (e) {
+            app.controller('interface-ui', function () {});
+        }
+
+    style.
+        {{info['view']['css']}}
+
+        html,
+        body {
+            overflow: auto;
+        }
+
+include component/layout
++layout
