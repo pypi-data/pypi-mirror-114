@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="bulegoa_onaro" model="res.partner">
+      <field name="name">Bulegoa Onaro</field>
+      <field name="email">bulegoa@onaro.eus</field>
+    </record>
+    <record id="bulegoa" model="res.users">
+      <field name="name">Bulegoa Onaro</field>
+      <field name="login">bulegoa@onaro.eus</field>
+      <field name="partner_id" ref="bulegoa_onaro" />
+      <field name="groups_id" eval="[(4, ref('group_user'))]" />
+    </record>
+
+    <record id="group_user" model="res.groups">
+        <field name="name">User</field>
+        <field
+            name="implied_ids"
+            eval="[(6, 0, [ref('base.group_user')])]"
+        />
+    </record>
+
+    <record id="group_manager" model="res.groups">
+        <field name="name">Manager</field>
+        <field name="implied_ids" eval="[(4, ref('group_user'))]" />
+        <field
+            name="users"
+            eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"
+        />
+    </record>
+</odoo>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+  <record id="crm_lead_line_creation_email_template" model="mail.template">
+    <field name="name">CRM Lead Line creation</field>
+    <field name="email_from">bulegoa@onaro.eus</field>
+    <field name="reply_to">bulegoa@onaro.eus</field>
+    <field name="model_id" ref="crm_lead_product.model_crm_lead_line"/>
+  </record>
+</odoo>
