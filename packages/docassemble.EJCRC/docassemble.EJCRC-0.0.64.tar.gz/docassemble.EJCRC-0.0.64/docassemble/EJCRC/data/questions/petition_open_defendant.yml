@@ -1,0 +1,304 @@
+metadata:
+  title: Petition to Open Default Judgment 
+  temporary session: true
+---
+question: |
+  Thank you, ${ defendantname1 }!
+subquestion: |
+ ### [CLICK TO DOWNLOAD YOUR PETITION TO OPEN DEFAULT JUDGMENT](${ output_file.url_for() })
+ 
+ 
+ YOU MUST FILE THIS PETITION WITH THE COURT FILING OFFICE. [Click here](https://www.courts.phila.gov/pdf/manuals/civil-trial/FJD_Civil_E-Filing_User_Manual.pdf) for instructions on how to e-file your legal documents. [Click here](${ url_of('EFS_Instructions.pdf') }) for instructions on how to create an account to e-file your document(s).
+continue button field: finish
+continue button label: |
+  Finish Petition to Open Default Judgment
+mandatory: True
+---
+mandatory: true
+need:
+  finish
+question: | 
+  Review the following reminders:
+subquestion: |
+  **[You can download your petition here](${ output_file.url_for() })**
+fields:
+  - I understand that I have not filed my Petition by using this website: nofile
+    datatype: yesnowide
+  - I have downloaded my Petition: download
+    datatype: yesnowide
+continue button field: done
+continue button label: |
+  Next
+validation code: |
+  if not download:
+    validation_error("You cannot continue until you indicate that you have downloaded your Petition.")
+  if not nofile:
+    validation_error("You cannot continue until you indicate that you understand you have not filed your Petition.")
+--- 
+mandatory: true
+need:
+  done
+question: |
+  You have completed the process of filling out your Petition to Open Default Judgment. Click exit to return to the Philadelphia Court website
+buttons:
+  - Exit: exit
+    url: https://courts.phila.gov
+---
+attachment:
+  - variable name: petition_open_defendant
+    filename: Petition to Open Default Judgment
+    docx template file: petition_open_defendant.docx
+    valid formats:
+      - pdf
+---
+attachment:
+  variable name: ExhibitA
+  filename: ExhibitA
+  docx template file: ExhibitA_Answer.docx
+---
+question: |
+  Petition to Open Default Judgment 
+subquestion: |
+  A Petition to Open default is a request to the court to strike/remove judgment entered in the case. Please review the following Rules of Pennsylvania Civil Procedure before filing this motion.
+  
+  ### Rule 237.3 Relief from Judgment of Non Pros or by Default
+  
+  (a) A petition for relief from a judgment of non pros or by default entered pursuant to Rule 237.1shall have attached thereto a copy of the complaint, preliminary objections, and/or answer which the petitioner seeks leave to file. All grounds for relief shall be raised in a single petition.
+
+  (b)
+  
+  (1) If the petition is filed within ten days after the entry of a judgment of non pros on the docket, the court shall open the judgment if the proposed complaint states a meritorious cause of action.
+
+  (2) If the petition is filed within ten days after the entry of a default judgment on the docket, the court shall open the judgment if one or more of the proposed preliminary objections has merit or the proposed answer states a meritorious defense.
+  
+fields:
+  - I understand and have reviewed the above rule(s) of civil procedure: understand
+    datatype: yesnowide
+validation code: |
+  if not understand:
+    validation_error("You cannot continue until you indicate that you understand.")
+---
+mandatory: true
+need:
+  understand
+question: |
+  Please complete the information for each plaintiff in this case.
+subquestion: |
+  A plaintiff is a party who is suing/taking the plaintiff(s) to court.  
+fields:
+  - How many plaintiffs are party to the case?: plaintiffnumber
+    datatype: integer
+    choices:
+      - 1
+      - 2
+      - 3
+    default: 1    
+  - Plaintiff Full Name: plaintiffname1
+  - Plaintiff Street Address: plaintiffstreetaddress1
+  - Plaintiff City and State: plaintiffcity1
+    help: This should be Philadelphia, PA
+    default: Philadelphia, PA
+  - Plaintiff ZIP Code: plaintiffzipcode1
+  - Plaintiff Phone Number: plaintiffphone1
+    required: false
+  - 2nd Plaintiff Full Name: plaintiffname2
+    js show if: |
+      val('plaintiffnumber') > 1 
+  - 2nd Plaintiff Street Address: plaintiffstreetaddress2
+    js show if: |
+      val('plaintiffnumber') > 1  
+  - 2nd Plaintiff City and State: plaintiffcity2
+    js show if: |
+      val('plaintiffnumber') > 1
+  - 2nd Plaintiff ZIP Code: plaintiffzipcode2
+    js show if: |
+      val('plaintiffnumber') > 1
+  - 2nd Plaintiff Phone Number: plaintiffphone2
+    required: false
+    js show if: |
+      val('plaintiffnumber') > 1  
+  - 3rd Plaintiff Full Name: plaintiffname3
+    js show if: |
+      val('plaintiffnumber') > 2
+  - 3rd Plaintiff Street Address: plaintiffstreetaddress3
+    js show if: |
+      val('plaintiffnumber') > 2
+  - 3rd Plaintiff City and State: plaintiffcity3
+    js show if: |
+      val('plaintiffnumber') > 2
+  - 3rd Plaintiff ZIP Code: plaintiffzipcode3
+    js show if: |
+      val('plaintiffnumber') > 2
+  - 3rd Plaintiff Phone Number: plaintiffphone3
+    required: false
+    js show if: |
+      val('plaintiffnumber') > 2
+
+---
+need:
+  plaintiffname1
+question: |
+  Please complete the information for each defendant in this case.
+subquestion: |
+  A defendant is a party (individual, company, or institution) being sued. Name all of the defendants you are trying to remove from the property to the best of your ability. **If you do not know the names of some of the defendants, you may enter “All Occupants” in the name section.**
+fields:
+  - How many defendants are there?: defendantnumber
+    datatype: integer
+    choices:
+      - 1
+      - 2
+      - 3
+    default: 1   
+  - defendant Full Name: defendantname1
+  - 2nd defendant Full Name: defendantname2
+    js show if: |
+      val('defendantnumber') > 1
+  - 3rd defendant Full Name: defendantname3
+    js show if: |
+      val('defendantnumber') > 2  
+---
+need: 
+  defendantname1
+question: | 
+  Please provide the Case ID number for this case:
+subquestion: |  
+  If you cannot locate the Case ID number, you may either contact the civil filing office or find the number by searching for your case on the [FJD Civil Docket.](http://fjdefile.phila.gov/efsfjd/zk_fjd_public_qry_00.zp_disclaimer)
+  
+  [Click here if you need additional help (opens a separate tab)](${ interview_url(i='docassemble.EJCRC:data/questions/case_id_help.yml') }){:target="_blank"}.
+
+fields:
+  - Do you have a 9-digit case number?: nines
+    datatype: radio
+    choices: 
+      - Yes
+      - No
+  - 9-digit case number: serial
+    datatype: integer
+    required: false
+    js show if: |
+      val('nines') == 'Yes'
+    max: 999999999
+validation code: |
+  if nines == 'No':
+    validation_error("Please click the link for additional help")
+---
+need:
+  nines
+question: |
+  Please provide the following dates
+fields:
+  - When was the complaint originally filed?: complaintdate
+    datatype: date
+  - What is today's date: today1
+    datatype: date
+    default: |
+      ${ today() }
+  - When will you serve this petition to the plaintiff?: servedate
+    datatype: date
+---
+need:
+  today1
+question: |
+  Review the following text and sign below:
+subquestion: |
+  ### MOTION COVER SHEET
+  By filing this document and signing below, the moving party certifies that this motion, petition, answer or response along with all documents filed, will be served upon all counsel and unrepresented parties as required by rules of Court (see PA. R.C.P. 206.6, Note to 208.2(a), and 440). Furthermore, moving party verifies that the answers made herein are true and correct and understands that sanctions may be imposed for inaccurate or incomplete answers.
+signature: signature1
+under: |
+  ${ defendantname1 }
+---
+need:
+  signature1
+question: |
+  Briefly answer the following questions
+fields:
+  - What date was the judgment of default entered?: nothing
+    datatype: date
+    default: |
+      ${ today().minus(days=10) }
+    note: Use your case number to search the [FJD Civil Docket.](http://fjdefile.phila.gov/efsfjd/zk_fjd_public_qry_00.zp_disclaimer). Under the Rule 237.3 of Pennsylvania Civil Procedure court, you can open judgment for non pros if 
+     1.	The petition is filed within 10 days of the entry of judgment for non pros;
+     
+     2.	A copy of the complaint is attached to the petition and;
+     
+     3.	The facts and law in the complaint make valid legal claims that can be pursued in court.
+  - Will this petition be filed within 10 days of the entry of default judgment?: paragraph1
+    choices:
+      - This petition is being filed within 10 days of the entry of default judgment.
+      - This petition is being filed more than 10 days after the date of entry of the default judgment.
+  - Explain to the court why the petition is being filed beyond 10 days after the entry of judgment: explanation1
+    datatype: area
+    js show if: |
+      val('paragraph1') == 'This petition is being filed more than 10 days after the date of entry of the default judgment.'
+  - Explain to the court why you did not respond to the complaint before judgment was entered: paragraph2
+    datatype: area
+  - 3)	Explain to the court why your answer or preliminary objection has legal merit as a defense to the plaintiff’s complaint: paragraph3
+    datatype: area
+  - 4)	A copy of my answer or preliminary objection is attached as Exhibit A: complaintupload
+    datatype: files
+---
+need:
+  complaintupload
+question: |
+  What relief are you seeking from the court regarding this judgment? 
+fields:
+  - Provide more detail: paragraph4
+    note: The sentence usually starts with WHEREFORE (in all caps).
+    datatype: area
+---
+mandatory: true
+code: |
+  output_file = pdf_concatenate(petition_open_defendant, ExhibitA, complaintupload)
+---
+need:
+  servedate
+question: |
+  Review the following text and sign below:
+subquestion: |
+  ###VERIFICATION
+  I, ${ plaintiffname1 }, Plaintiff, verify that the facts set forth in the foregoing are true and correct to the best of my information, knowledge and belief.
+
+  I understand that the statements contained herein are subject to the Penalties of 18 Pa.C.S.A., Section 4904 relating to unsworn falsification to authorities.
+signature: signature2
+under: |
+  ${ defendantname1 }
+---
+need:
+  signature2
+question: |
+  Review the following text and sign below:
+subquestion: |
+  ###CERTIFICATION OF SERVICE
+  
+  I, ${ defendantname1 }, hereby certify that a true and correct copy of the foregoing Motion/Petition and accompanying papers, was served on the below listed addresses by First-Class  United States mail, postage pre-paid on ${ servedate }:
+
+  Name: ${ plaintiffname1 }
+  
+  Address: ${ plaintiffstreetaddress1 }
+  
+  City, State, Zip Code: ${ plaintiffcity1 }, ${ plaintiffzipcode1 }
+  % if plaintiffnumber == 2:
+  
+  Name: ${ plaintiffname2 }
+  
+  Address: ${ plaintiffstreetaddress2 }
+  
+  City, State, Zip Code: ${ plaintiffcity2 }, ${ plaintiffzipcode2 }
+  
+  % elif plaintiffnumber == 3:
+  
+  Name: ${ plaintiffname2 }
+  
+  Address: ${ plaintiffstreetaddress2 }
+  
+  City, State, Zip Code: ${ plaintiffcity2 }, ${ plaintiffzipcode2 }
+  
+  Name: ${ plaintiffname3 }
+  
+  Address: ${ plaintiffstreetaddress3 }
+  
+  City, State, Zip Code: ${ plaintiffcity3 }, ${ plaintiffzipcode3 }
+  % endif
+signature: signature3
+under: |
+  ${ defendantname1 }

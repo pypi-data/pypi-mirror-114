@@ -1,0 +1,17 @@
+metadata:
+  temporary session: true
+  title: Ejectment Defendant
+---
+mandatory: true
+question: | 
+  Please select the document you would like to fill out:
+subquestion: |
+  * [Answer to Complaint]  
+  * [Motion to Stay Writ of Possession]  
+  * [Notice of Praecipe to Enter Judgment of Non Pros]   
+  * [Petition to Open Default Judgment]
+    
+    [Answer to Complaint]: ${ interview_url(i='docassemble.EJCRC:data/questions/answer_to_civil_complaint.yml') }
+    [Motion to Stay Writ of Possession]: ${ interview_url(i='docassemble.EJCRC:data/questions/stay_woe.yml') }
+    [Notice of Praecipe to Enter Judgment of Non Pros]: ${ interview_url(i='docassemble.EJCRC:data/questions/praecipe_non_pros.yml') }
+    [Petition to Open Default Judgment]: ${ interview_url(i='docassemble.EJCRC:data/questions/petition_open_defendant.yml') }
