@@ -1,0 +1,7 @@
+Jinja2
+PyGitHub
+joern2sarif
+markdown
+pyjwt
+requests
+rich
