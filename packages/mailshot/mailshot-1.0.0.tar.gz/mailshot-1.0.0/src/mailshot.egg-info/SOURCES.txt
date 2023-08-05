@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/mailshot/__init__.py
+src/mailshot/client.py
+src/mailshot/config.py
+src/mailshot/mailshot.py
+src/mailshot/utils.py
+src/mailshot.egg-info/PKG-INFO
+src/mailshot.egg-info/SOURCES.txt
+src/mailshot.egg-info/dependency_links.txt
+src/mailshot.egg-info/top_level.txt
