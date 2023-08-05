@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+dynamodb_stream_router/__init__.py
+dynamodb_stream_router/router.py
+dynamodb_stream_router.egg-info/PKG-INFO
+dynamodb_stream_router.egg-info/SOURCES.txt
+dynamodb_stream_router.egg-info/dependency_links.txt
+dynamodb_stream_router.egg-info/requires.txt
+dynamodb_stream_router.egg-info/top_level.txt
