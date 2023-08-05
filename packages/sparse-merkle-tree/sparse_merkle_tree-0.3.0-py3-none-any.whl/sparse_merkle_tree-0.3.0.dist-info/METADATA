@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: sparse-merkle-tree
+Version: 0.3.0
+Summary: A Sparse Merkle Tree for a key/value map
+Home-page: https://github.com/davebryson/sparse-merkle-tree
+Author: Dave Bryson
+License: Apache 2.0
+Project-URL: Source, https://github.com/davebryson/sparse-merkle-tree
+Keywords: merkletree
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+
+# Sparse Merkle Tree
+
+A Sparse Merkle Tree for a key/value map.
+
+This is a Python port of the great work here: [celestiaorg](https://github.com/celestiaorg/smt)
+
+> The tree implements the same optimisations specified in the Libra whitepaper, to reduce the number of hash operations required per tree operation to O(k) where k is the number of non-empty elements in the tree.
+
+
+## Example
+
+```python
+tree = SparseMerkleTree()
+
+root = tree.update(b"a", b"a1")
+assert b"a1" == tree.get(b"a")
+
+proof = tree.prove(b"a")
+assert verify_proof(proof, root, b"a", b"a1")
+
+tree.delete(b"a")
+assert b"" == tree.get(b"a")
+```
+
+
