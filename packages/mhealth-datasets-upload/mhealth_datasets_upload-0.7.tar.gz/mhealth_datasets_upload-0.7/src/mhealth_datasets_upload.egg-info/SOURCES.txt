@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/mhealth_datasets_upload/__init__.py
+src/mhealth_datasets_upload/config.py
+src/mhealth_datasets_upload/upload.py
+src/mhealth_datasets_upload.egg-info/PKG-INFO
+src/mhealth_datasets_upload.egg-info/SOURCES.txt
+src/mhealth_datasets_upload.egg-info/dependency_links.txt
+src/mhealth_datasets_upload.egg-info/requires.txt
+src/mhealth_datasets_upload.egg-info/top_level.txt
