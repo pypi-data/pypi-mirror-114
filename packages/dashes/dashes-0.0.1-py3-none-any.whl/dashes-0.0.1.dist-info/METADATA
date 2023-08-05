@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: dashes
+Version: 0.0.1
+Summary: -
+Home-page: UNKNOWN
+Author: Arohan Arora
+Author-email: novakcoolguy@gmail.com
+License: UNKNOWN
+Keywords: python,dashes package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: streamlit
+
+-
+
+
