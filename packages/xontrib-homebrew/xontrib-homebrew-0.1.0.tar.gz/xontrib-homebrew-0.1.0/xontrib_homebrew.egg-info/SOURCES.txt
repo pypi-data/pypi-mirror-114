@@ -1,0 +1,7 @@
+setup.py
+xontrib/homebrew.xsh
+xontrib_homebrew.egg-info/PKG-INFO
+xontrib_homebrew.egg-info/SOURCES.txt
+xontrib_homebrew.egg-info/dependency_links.txt
+xontrib_homebrew.egg-info/requires.txt
+xontrib_homebrew.egg-info/top_level.txt
