@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: nickw-flask-utils
+Version: 1.2.2
+Summary: A set of utilities to make working with flask web applications easier.
+Home-page: https://github.com/nickw444/nickw-flask-utils
+Author: Nick Whyte
+Author-email: nick@nickwhyte.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.4
+Provides-Extra: celery
+Requires-Dist: celery ; extra == 'celery'
+Provides-Extra: ldap
+Provides-Extra: pagination
+Requires-Dist: webargs ; extra == 'pagination'
+Requires-Dist: marshmallow ; extra == 'pagination'
+Provides-Extra: restful
+Requires-Dist: flask-restful ; extra == 'restful'
+Provides-Extra: sentry
+Requires-Dist: raven[flask] ; extra == 'sentry'
+Provides-Extra: token_auth
+Requires-Dist: marshmallow ; extra == 'token_auth'
+Provides-Extra: webargs
+Requires-Dist: webargs ; extra == 'webargs'
+
+Nickw-Flask-Utils
++++++++++++++++++
+
+.. image:: https://travis-ci.org/nickw444/nickw-flask-utils.svg
+    :target: https://travis-ci.org/nickw444/nickw-flask-utils
+
+.. image:: https://img.shields.io/github/issues/nickw444/nickw-flask-utils.svg
+    :target: https://github.com/nickw444/nickw-flask-utils
+
+.. image:: https://img.shields.io/pypi/v/nickw-flask-utils.svg
+    :target: https://pypi.python.org/pypi/nickw-flask-utils/
+
+A set of utilities to make working with flask web applications easier.
+
+This repository contains a collection of web utilities that are common across many of our projects.
+
+It makes the most sense to keep these in a common repository to promote code re-use and modularity.
+
+`View the Full Documentation at ReadTheDocs <http://nickw-flask-utils.readthedocs.org/en/latest/>`_
+
+
+
