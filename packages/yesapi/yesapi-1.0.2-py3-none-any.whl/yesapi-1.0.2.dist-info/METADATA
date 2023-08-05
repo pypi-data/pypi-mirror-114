@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: yesapi
+Version: 1.0.2
+Summary: yesapi-python3-sdk
+Home-page: https://github.com/asihacker/yesapi
+Author: chenjunxue
+Author-email: asihacker@gmail.com
+License: MIT license
+Keywords: yesapi,api,yes
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# yesapi
+![](http://cdn7.okayapi.com/CEE4B8A091578B252AC4C92FB4E893C3_20190304213902_63f85e982adc8419feffd862e883581e.jpeg)
+
+# yesapi-python-sdk
+小白接口（YesApi.cn）Python SDK包
+
+文档地址: http://api.okayapi.com/docs.php
+安装：pip install yesapi
+用法：
+
+    yes = YesApi(api_url='http://xxx.com', app_key='xxxx',
+                 app_secret='xxxxx')
+    params = {'s': 'App.Captcha.Create'}
+    with open('yzm.jpeg', 'wb+') as f:
+        rsp = yes.http_get(params=params)
+        f.write(rsp.content)
+
