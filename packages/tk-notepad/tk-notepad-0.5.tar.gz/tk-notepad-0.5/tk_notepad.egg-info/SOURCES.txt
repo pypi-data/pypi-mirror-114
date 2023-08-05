@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tk_notepad/__init__.py
+tk_notepad/notepad.py
+tk_notepad.egg-info/PKG-INFO
+tk_notepad.egg-info/SOURCES.txt
+tk_notepad.egg-info/dependency_links.txt
+tk_notepad.egg-info/entry_points.txt
+tk_notepad.egg-info/not-zip-safe
+tk_notepad.egg-info/top_level.txt
+tk_notepad/icons/notepad_icon.ico
