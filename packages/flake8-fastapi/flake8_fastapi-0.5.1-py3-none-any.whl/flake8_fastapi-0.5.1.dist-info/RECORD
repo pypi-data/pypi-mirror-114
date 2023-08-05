@@ -1,0 +1,15 @@
+flake8_fastapi/__init__.py,sha256=hcf0Z_HVCI9ODOFdGld20KQFDRDPvGdlp7PvY8ANmdI,100
+flake8_fastapi/errors.py,sha256=SC5JsQqe-Aoo6DEFwAlNBrS8WCXA8I_CWC4JRmBR938,1090
+flake8_fastapi/plugin.py,sha256=1RTrQisownuFgn1XZiZcRIGjqMN8Z47JELMJhg96YyE,477
+flake8_fastapi/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flake8_fastapi/visitors/__init__.py,sha256=fdaYgW7-dK9dO_LVgEvoL1iQMqd_FssmySlFzEuLaPE,362
+flake8_fastapi/visitors/cors_middleware.py,sha256=U3A3t-n7u6C9VPADhOupGcC1QFIFP1PykH_4xOBxnrM,1899
+flake8_fastapi/visitors/generic_exception_handler.py,sha256=BUU8IRYy8RqGXsrKuZjlBvHGebddzalCXM5eIJ0y9mc,1294
+flake8_fastapi/visitors/no_content_response.py,sha256=FzBiwwnpT8IyX7RgMNE76GRFJz81_z8_s8WdivPIBq0,1923
+flake8_fastapi/visitors/route_decorator.py,sha256=KvoeZFZbNq1y6YyfYGpw-e77rFzq00keJPhuWWOwnMY,757
+flake8_fastapi/visitors/router_prefix.py,sha256=dUen22KH3OgBVbHHDp81ZrWKRpILHO3VD8Fia4-5WtM,399
+flake8_fastapi-0.5.1.dist-info/entry_points.txt,sha256=2_NcOpeWOoBvJRheceMnfrqS6enZZcEm80lsdOwiQQY,59
+flake8_fastapi-0.5.1.dist-info/LICENSE,sha256=_2N4sMUZiaIPfRx1HDP0kDE112CKjRyKipsmj08dwvU,1076
+flake8_fastapi-0.5.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+flake8_fastapi-0.5.1.dist-info/METADATA,sha256=a_3Uv4dA0i2VVzGbiDIhpeRLMqU0af8c3p469XUG9nc,7171
+flake8_fastapi-0.5.1.dist-info/RECORD,,
