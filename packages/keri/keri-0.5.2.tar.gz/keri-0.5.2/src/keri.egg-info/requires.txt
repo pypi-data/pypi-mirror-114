@@ -1,0 +1,12 @@
+lmdb>=1.2.1
+pysodium>=0.7.8
+blake3==0.1.8
+msgpack>=1.0.2
+cbor2>=5.4.0
+multidict>=5.1.0
+orderedset>=2.0.3
+hio>=0.4.3
+multicommand>=0.1.1
+jsonschema>=3.2.0
+falcon>=3.0.1
+daemonocle>=1.2.3
