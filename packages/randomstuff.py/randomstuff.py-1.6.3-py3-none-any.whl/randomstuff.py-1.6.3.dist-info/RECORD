@@ -1,0 +1,17 @@
+randomstuff/__init__.py,sha256=H-rpb38OnWB3bl54-BtV-WSiARfqWoyMJaf5xAetpDU,767
+randomstuff/_helper.py,sha256=H3-FTqcXJ_279MJhEBSZ0lbIQqYDwnBidMSrEGaXdjQ,1381
+randomstuff/ai_response.py,sha256=wBmWTqNEwWGwMrrdc2rup0xRYUC4ttyx2a0eEPjZS3k,755
+randomstuff/client.py,sha256=DbVk2yiVvuJrrlJM3c2uI6ObT_k8CCYOtVn3hckTQ84,20567
+randomstuff/constants.py,sha256=i7bAglaxQ278XfbDgRr56AEd01ozX5jjy3U9tW-BtlM,502
+randomstuff/errors.py,sha256=14BmEQXJNQMLNO4o3ejStnMNE42_RxSyQgv0x7unaOE,2200
+randomstuff/flags.py,sha256=Xv9I3vMjkoeI8A-wHxJKZNiwoUpyslJ6tkpv7_vpJU0,741
+randomstuff/joke.py,sha256=X8zdZkozpLi3LRJdUghX3WvGnn_gZhp2Ybnn2UC6fek,1830
+randomstuff/objects.py,sha256=2Lcw2riI53X9V7QOMgisYxo-xNEffCsSV9nKMMAu3nc,4451
+randomstuff/utils.py,sha256=-OTE8sHfThWF4jgaPUFgvYMnFiEaXOXLcq3iPKLgcm8,2087
+randomstuff/waifu.py,sha256=LjQgsCu1rvOiaxIR_BsL3poPWleH224Cc8aHn2LI7vk,300
+randomstuff/weather.py,sha256=hgxFInygAdaRBm2WKcnyxVsE1UtxjZt6BnOo5BYcC70,5529
+randomstuff.py-1.6.3.dist-info/LICENSE,sha256=YLQkUzjA6SCj-q6HbiY5VkSja-C2Sty7YHOJzvbSLYU,1089
+randomstuff.py-1.6.3.dist-info/METADATA,sha256=SumxlBOAgGU4JjEHXyT1vmT45vwYz-sedHpwiRrxDB0,4302
+randomstuff.py-1.6.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+randomstuff.py-1.6.3.dist-info/top_level.txt,sha256=VqaHws1QlqbiUak-xCORlY07Y7Bt9FAO7EoZ0EPOWXc,12
+randomstuff.py-1.6.3.dist-info/RECORD,,
