@@ -1,0 +1,13 @@
+README.md
+setup.py
+pulumi_postgresql_exec/__init__.py
+pulumi_postgresql_exec/_utilities.py
+pulumi_postgresql_exec/exec_.py
+pulumi_postgresql_exec/provider.py
+pulumi_postgresql_exec/py.typed
+pulumi_postgresql_exec.egg-info/PKG-INFO
+pulumi_postgresql_exec.egg-info/SOURCES.txt
+pulumi_postgresql_exec.egg-info/dependency_links.txt
+pulumi_postgresql_exec.egg-info/not-zip-safe
+pulumi_postgresql_exec.egg-info/requires.txt
+pulumi_postgresql_exec.egg-info/top_level.txt
