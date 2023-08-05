@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: ustackdocstheme
+Version: 0.2.0
+Summary: Sphinx ducumentation themes for TFCloud.
+Home-page: https://www.tfcloud.com/
+Author: William Huang
+Author-email: ai.william@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Documentation
+Requires-Python: >= 3.5
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: pbr (!=2.1.0,>=2.0.0)
+Requires-Dist: openstackdocstheme (>=1.18.1)
+Requires-Dist: os-api-ref (>=1.4.0)
+
+=================
+ustackdocstheme
+=================
+
+Sphinx documentation themes for TFCloud.
+
+* Free software: Apache license
+
+
+
