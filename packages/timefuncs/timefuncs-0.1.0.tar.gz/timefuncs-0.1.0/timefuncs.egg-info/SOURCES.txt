@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+timefuncs/__init__.py
+timefuncs/funcs.py
+timefuncs.egg-info/PKG-INFO
+timefuncs.egg-info/SOURCES.txt
+timefuncs.egg-info/dependency_links.txt
+timefuncs.egg-info/requires.txt
+timefuncs.egg-info/top_level.txt
