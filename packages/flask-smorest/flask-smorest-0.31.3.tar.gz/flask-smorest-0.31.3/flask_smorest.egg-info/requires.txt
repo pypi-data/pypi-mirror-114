@@ -1,0 +1,5 @@
+werkzeug<3,>=2.0
+flask<3,>=2.0
+marshmallow<4,>=3.10.0
+webargs<9,>=8.0.0
+apispec<5,>=4.0.0
