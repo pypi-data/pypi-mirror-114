@@ -1,0 +1,3 @@
+[console_scripts]
+data = data.urls:display_shared_links
+
