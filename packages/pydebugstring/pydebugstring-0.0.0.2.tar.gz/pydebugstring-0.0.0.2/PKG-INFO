@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: pydebugstring
+Version: 0.0.0.2
+Summary: function to write python obects to OutputDebugString on windows
+Home-page: https://github.com/dougransom/pydebugstring
+Author: Doug Ransom
+Author-email: doug@ransom.vip
