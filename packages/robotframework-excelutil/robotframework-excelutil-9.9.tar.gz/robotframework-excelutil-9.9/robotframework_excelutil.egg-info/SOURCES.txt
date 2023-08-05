@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.txt
+setup.py
+ExcelUtil/ExcelUtil.py
+ExcelUtil/__init__.py
+ExcelUtil/conf.py
+robotframework_excelutil.egg-info/PKG-INFO
+robotframework_excelutil.egg-info/SOURCES.txt
+robotframework_excelutil.egg-info/dependency_links.txt
+robotframework_excelutil.egg-info/requires.txt
+robotframework_excelutil.egg-info/top_level.txt
