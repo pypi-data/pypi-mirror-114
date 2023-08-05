@@ -1,0 +1,4 @@
+#!python
+
+from _sortd import __main__
+
