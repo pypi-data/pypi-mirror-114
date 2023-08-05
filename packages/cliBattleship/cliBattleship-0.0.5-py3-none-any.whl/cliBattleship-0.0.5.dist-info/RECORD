@@ -1,0 +1,16 @@
+cliBattleship/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cliBattleship/cliBattleship.py,sha256=fImcaM1Aj_AJYT16r_L0R2IhuzWP1t5I6Q1Q_nUnWQI,3220
+cliBattleship/gameModules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cliBattleship/gameModules/autoShipPlacement.py,sha256=wHV32HqdQotTIE_MrxBl4HvaFo8Pi4vwIxS9zT7UHB8,10173
+cliBattleship/gameModules/computerPlays.py,sha256=v46kXrSsyHEbnPOw5hwyzIQ32GN-dJHQTuEdkGMbCcs,11680
+cliBattleship/gameModules/gameBoards.py,sha256=XB7OuQGUKSbFMztV1AdKwz8JVEAjBct7Qvq2I1Iqowc,11390
+cliBattleship/gameModules/gameFunctions.py,sha256=xEuGYgDtRsaghYMkr9rJwz961Zvx77tCumWTtpV0UUs,4917
+cliBattleship/gameModules/playerNumberFunctions.py,sha256=eIESFgWqQDDKwZG4Q60iDf-1900d-KG94HjghLCSQz4,3790
+cliBattleship/gameModules/playerPlays.py,sha256=C4PveTvZCfv9egEpt7-UvECJvXiSkF5f90RgE-atoro,2329
+cliBattleship/gameModules/playerShipPlacement.py,sha256=CPapvI_n1g_dksieb87GZB78p0tp1MyqGl1df6MO4lA,13031
+cliBattleship/gameModules/players.py,sha256=8HW_R4udCu6QLj2Lf3W4A61fGMW4nK2MuWosa7QV4QM,11375
+cliBattleship-0.0.5.dist-info/LICENSE.txt,sha256=-yH5su356IAG7rMpEf8OiYnb69EUJykJQOaM2Xy84oI,1054
+cliBattleship-0.0.5.dist-info/METADATA,sha256=pge0j00aPBnVVibIAiOcsKYC52ZgeJlsOOXocqp3JPk,287
+cliBattleship-0.0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+cliBattleship-0.0.5.dist-info/top_level.txt,sha256=XkHIuq1l5GKPdMJ-asXih9Hj9KLdYdZys4zBHc7thqY,14
+cliBattleship-0.0.5.dist-info/RECORD,,
