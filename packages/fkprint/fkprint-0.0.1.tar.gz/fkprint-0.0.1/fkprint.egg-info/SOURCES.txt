@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+fkprint.egg-info/PKG-INFO
+fkprint.egg-info/SOURCES.txt
+fkprint.egg-info/dependency_links.txt
+fkprint.egg-info/top_level.txt

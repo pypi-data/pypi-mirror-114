@@ -1,0 +1,2 @@
+# fkprint
+print sucks
