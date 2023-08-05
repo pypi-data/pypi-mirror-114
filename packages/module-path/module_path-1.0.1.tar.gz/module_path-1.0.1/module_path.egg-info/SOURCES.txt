@@ -1,0 +1,8 @@
+README.rst
+setup.py
+module_path/__init__.py
+module_path/__meta__.py
+module_path.egg-info/PKG-INFO
+module_path.egg-info/SOURCES.txt
+module_path.egg-info/dependency_links.txt
+module_path.egg-info/top_level.txt
