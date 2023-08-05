@@ -1,0 +1,8 @@
+django_cognito_jwt/__init__.py,sha256=cn7dba6o_h9l1Px-35MYMlW8nkx8ywlufa6U4IeH0TI,71
+django_cognito_jwt/backend.py,sha256=w6IIklnFe2JHHXwMX9KByhOTdprePRnv3AhKZpit7MQ,3488
+django_cognito_jwt/validator.py,sha256=gadznX1srqo96s_GcNl5H9IeM-UcX6nCkN8OOZv69ns,2390
+django_cognito_jwt_rydra/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_cognito_jwt_rydra-0.0.4.dist-info/LICENSE,sha256=RpAK8K4jKAU4dVthDV38ERQV4ZTvGt-SMZM0pthGP18,1079
+django_cognito_jwt_rydra-0.0.4.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+django_cognito_jwt_rydra-0.0.4.dist-info/METADATA,sha256=DMLslVSA8h9KoyJX4Sr94RHMptgoPw9w7YwQbnEuoOs,1090
+django_cognito_jwt_rydra-0.0.4.dist-info/RECORD,,
