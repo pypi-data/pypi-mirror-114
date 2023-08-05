@@ -1,0 +1,3 @@
+[console_scripts]
+inferout = inferout:execute_from_command_line
+
