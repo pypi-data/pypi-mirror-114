@@ -1,0 +1,9 @@
+sphinx_graphql/__init__.py,sha256=7NoHUztA99me-KKAkZ5DEWEQ6wT_XILoXZDoQZvGQ64,79
+sphinx_graphql/_version_git.py,sha256=TX104w8sYqjg5KgAGMTw4EeWB3E3tii1v4vk501uuhI,3825
+sphinx_graphql/attachGraphiQL.js,sha256=L6w8BwVX-2C3cLJTU-gChBrHZ9ZSEnmsmXVsD-mi18A,1915
+sphinx_graphql/graphiql.py,sha256=nQBrTBRksZKDaaEGCTjU-KHpMydGiplQI1IsNvwmLuo,2161
+sphinx_graphql-0.1.2rc1.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+sphinx_graphql-0.1.2rc1.dist-info/METADATA,sha256=APqksrArHZAO3XkkcAN-Xr3gvQKTvXn2W7T-YsLcqZA,2463
+sphinx_graphql-0.1.2rc1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sphinx_graphql-0.1.2rc1.dist-info/top_level.txt,sha256=i1J2iM2V1rMlqE7wLcncvQp2eWDMY-tlCQZslHNggW0,15
+sphinx_graphql-0.1.2rc1.dist-info/RECORD,,
