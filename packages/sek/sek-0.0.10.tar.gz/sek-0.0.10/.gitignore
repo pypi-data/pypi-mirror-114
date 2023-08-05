@@ -1,0 +1,4 @@
+*.pyc
+dist/
+sek.egg-info/
+build/
