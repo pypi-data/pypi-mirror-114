@@ -1,0 +1,3 @@
+[console_scripts]
+tenbagger = tenbagger.cli:main
+
