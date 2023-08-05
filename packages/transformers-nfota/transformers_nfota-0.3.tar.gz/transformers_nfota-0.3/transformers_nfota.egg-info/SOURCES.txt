@@ -1,0 +1,8 @@
+setup.py
+transformers_nfota/__init__.py
+transformers_nfota/transformers.py
+transformers_nfota.egg-info/PKG-INFO
+transformers_nfota.egg-info/SOURCES.txt
+transformers_nfota.egg-info/dependency_links.txt
+transformers_nfota.egg-info/not-zip-safe
+transformers_nfota.egg-info/top_level.txt
