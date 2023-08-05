@@ -1,0 +1,15 @@
+Dosepy/GUI.py,sha256=vyHTReOUJgun6xIcdyTha3-Lbnt9GknBQ2YcUQZfN4I,5097
+Dosepy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Dosepy/dose.py,sha256=gB3LU8yBJDmBHbs2o--xxgtChs5DKg3eGvnhkdRSAz4,15433
+Dosepy/Icon/Icon.png,sha256=OqV1J1ygOiiZpvmpGAuX90i592_MPBdNd9aMBCjo91c,568371
+Dosepy/Icon/folder.png,sha256=lz2ltoR2nrG8VXmpcKKS_ALuvS5AvQ4Rjq_StuExKPY,11084
+Dosepy/Layouts/Imagen.py,sha256=xWZ-MZEtfUBJS14Im1H6go2wP3wz-6fax7Of0kfNRiU,13782
+Dosepy/Layouts/MostrarLabels_Import.py,sha256=pbxfkXqCSwjUwrDoucZal37lYEztKRVc4RgkZNGJ1no,8429
+Dosepy/Layouts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Dosepy/data/D_FILM.csv,sha256=jcvDjJ9uqpuqmMlujKXNHVOK_ZPZBaLy7uOk8Fok23k,380625
+Dosepy/data/D_TPS.csv,sha256=1zg8-2RgL9Kf3UwyYkkTNdbfur27_gwH8D6e58zE5Ko,380625
+Dosepy-0.0.8.dist-info/LICENSE,sha256=j5ZIT21OhmDEVuC5ci3W5Jr3PBKXUznu0ux0c8tonWs,1107
+Dosepy-0.0.8.dist-info/METADATA,sha256=WHPQFHLaC2Hui_1Pooiaj717nmF-wsxySm2WRvuxyAA,17249
+Dosepy-0.0.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Dosepy-0.0.8.dist-info/top_level.txt,sha256=7Ed9lBNcuWdGBHz_oK2GL_mM6sH5smiOyFrJCCzEdc8,7
+Dosepy-0.0.8.dist-info/RECORD,,
