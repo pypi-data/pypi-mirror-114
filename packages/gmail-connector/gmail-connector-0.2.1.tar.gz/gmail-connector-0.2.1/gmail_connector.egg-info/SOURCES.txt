@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+gmail_connector.egg-info/PKG-INFO
+gmail_connector.egg-info/SOURCES.txt
+gmail_connector.egg-info/dependency_links.txt
+gmail_connector.egg-info/top_level.txt
+gmailconnector/read_email.py
+gmailconnector/send_email.py
+gmailconnector/send_sms.py
