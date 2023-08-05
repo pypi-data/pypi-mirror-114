@@ -1,0 +1,10 @@
+nolds
+statsmodels
+pandas
+torchvision
+tqdm
+seaborn
+torch
+pytest
+matplotlib
+numpy
