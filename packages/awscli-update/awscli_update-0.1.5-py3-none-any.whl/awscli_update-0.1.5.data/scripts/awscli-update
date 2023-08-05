@@ -1,0 +1,9 @@
+#!python
+
+from awscli_update import update
+
+def main():
+    return update.main()
+
+if __name__ == '__main__':
+    main()
