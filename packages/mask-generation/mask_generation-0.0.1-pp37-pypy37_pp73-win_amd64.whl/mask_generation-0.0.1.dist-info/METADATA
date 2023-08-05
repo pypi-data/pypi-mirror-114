@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: mask-generation
+Version: 0.0.1
+Summary: build mask files for wyvern code
+Home-page: https://github.com/ly16302/mask
+Author: Liang Yang
+Author-email: liang.yang@cranfield.ac.uk
+License: Apache-2.0
+Keywords: f2py
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# mask-generation
+mask generation library for wyvern 
+
+![Actions Status](https://github.com/ly16302/mask/workflows/cibuildwheel/badge.svg)
+
+
+|| **Linux** | **OS X (10.14+)** | **Windows** | **Documentation**|
+|:------|:-----|:-----|:-----|:-----|
+|**Build**| ✅ | ✅ |  | 
+|**PyPI** | ✅ | ✅ |  |
+
+![alt text](https://github.com/ly16302/mask/blob/main/_static/lamp_3.png?raw=true)
+
+
+## Installation
+
+```bash
+pip install mask-generation
+```
+
+
