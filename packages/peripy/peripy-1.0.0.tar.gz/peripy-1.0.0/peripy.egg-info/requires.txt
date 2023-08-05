@@ -1,0 +1,9 @@
+meshio
+numpy
+pyopencl
+scipy
+tqdm
+h5py
+sklearn
+tqdm
+sphinx_rtd_theme
