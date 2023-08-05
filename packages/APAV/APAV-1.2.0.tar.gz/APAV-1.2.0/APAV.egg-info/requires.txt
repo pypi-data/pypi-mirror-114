@@ -1,0 +1,10 @@
+numpy>=1.17
+pyqtgraph>=0.11.0
+numba
+lmfit>=1.0
+fast-histogram
+tabulate
+PyQt5>=5.11
+periodictable
+pytest>=5
+pytest-qt>=3
