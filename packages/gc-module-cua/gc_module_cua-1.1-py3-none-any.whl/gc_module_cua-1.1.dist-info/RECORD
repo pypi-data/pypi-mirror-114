@@ -1,0 +1,16 @@
+gc_module_cua/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gc_module_cua/capture_user_activity.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gc_module_cua/functions.py,sha256=24rb-uh07b6CUIk8tFIMoN_KKE0UcVWKsjyd0RtfxCo,2975
+gc_module_cua/main.py,sha256=X0ov7SlIRUHlpCgfnhTZ13261vI76vOZC7e8ZqfRBQg,1315
+gc_module_cua/settings.py,sha256=A4JvF1KXP4b9BYMfSqyv4X6fffmoi8CA7vSYd6cg-5A,446
+gc_module_cua/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gc_module_cua/tests/capture_user_activity_test.py,sha256=6qvfx1Kfp2G4GPl7Ab2mESEoiaTCj6vVZECHMGUXkuk,373
+gc_module_cua/tests/functions_test.py,sha256=McOXVKiZ5q-1GihLPrpr5r9Wv5eLr43RUYt_Yjf9wXo,443
+gc_module_cua/tests/main_test.py,sha256=TrJmnUvO6aQyKBjIKA7yg2IU8TVx_ksLWk7lZfsUOXw,300
+gc_module_cua/tests/settings_test.py,sha256=2a-btli3fm5fUOrc_h1FZ6kDE91ZcOlX0sLDo5654U0,164
+gc_module_cua/tests/sqlshell_test.py,sha256=wTvXpstU8k9uox4gIgHKTnF82LkrEzrpCI4OHUzPL2M,158
+gc_module_cua-1.1.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+gc_module_cua-1.1.dist-info/METADATA,sha256=Zf6stCO7yC-lt9xwiFyye8OTdWSUCnRQ8FV2AGcBUBM,348
+gc_module_cua-1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gc_module_cua-1.1.dist-info/top_level.txt,sha256=ev3eaECRRe2Np6NWpMPix1tXDIpaUI4ybFSN_rVbkjs,14
+gc_module_cua-1.1.dist-info/RECORD,,

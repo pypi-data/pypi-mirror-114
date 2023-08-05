@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: gc-module-cua
+Version: 1.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: PunchyArchy
+Author-email: ksmdrmvscthny@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: wsqluse
+
+Модуль Gravity Core для фиксации в БД событий, инициированных юзером.
+
