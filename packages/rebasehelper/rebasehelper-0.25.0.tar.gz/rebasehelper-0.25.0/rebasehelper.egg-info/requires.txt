@@ -1,0 +1,9 @@
+GitPython
+ansicolors
+copr
+pyquery
+python-pam
+requests
+requests-gssapi
+rpm-py-installer
+unidiff
