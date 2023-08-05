@@ -1,0 +1,15 @@
+shap
+matplotlib
+anndata
+numpy
+pandas
+sklearn
+scikit-learn
+imblearn
+imbalanced-learn
+xgboost
+loompy
+tqdm
+requests
+pathlib
+pip
