@@ -1,0 +1,207 @@
+Metadata-Version: 2.1
+Name: adara-privacy
+Version: 0.1.2
+Summary: The Adara Privacy SDK is an open source library which allows you to safely manage sensitive Personally Identifiable Information (PII).
+Home-page: https://bitbucket.org/adarainc/adara-privacy-sdk-python
+Author: Adara, Inc.
+Author-email: oss@adara.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# Adara Privacy SDK #
+
+The Adara Privacy SDK allows you to tokenize Personally Identifiable Information (PII) within an isolated environment. The tokens produced using this SDK follow a set of simple standards that allow you interact with other token producers so that you can participate in meaningful data exchanges without revealing any senstive information about individual users. While this SDK is written to offer out-of-the-box support for engagement with Adara's Privacy API, it is not required.
+> **NOTE:** Any tokenization data generated within this SDK is only transmitted to Adara explicitly as described below.
+
+## Getting Started ##
+
+Download and install the SDK from PyPi (we strongly recommend installing in a virtual environment):
+```bash
+(venv) % pip install adara-privacy
+```
+
+### Setup your local configuration ###
+The Adara Privacy SDK is configured using a single JSON configuration file. Here's the format:
+```json
+{
+  "client_id": "<optional: your client ID>",
+  "client_secret": "<optional: your client secret>",
+  "auth_uri": "<optional: authorization URI>",
+  "privacy": {
+    "common_salt": "<!!REQUIRED!!: your COMMON salt value>",
+    "private_salt": "<!!REQUIRED!!: your PRIVATE salt value>",
+    "audience_uri": "<optional: audience URI>",
+    "pipeline_id": "<optional: pipeline ID"
+  }
+}
+```
+The values above are discussed in more detail below.
+
+Setup your configuration file locally (you can start by simply copying the JSON blob above and defining the values later) and point the environment variable `ADARA_SDK_CREDENTIALS` to your file location:
+
+```bash
+% export ADARA_SDK_CREDENTIALS=<path to your config>/my_config.txt
+```
+The file path, name and extension are not important as long as they point to a readable file location in your local enviroment.
+
+## Using the SDK in your code ##
+
+### Identities and Identifiers
+
+The SDK is written to accept the PII you have access to for an individual and transform it into a privacy-safe set of tokens. An important point to remember is that tokens, by themselves, are intentionally pretty useless. They are useful only when maintained as a set of tokens pointing to an individual user. The classes within the SDK reflect this by using a set of **Identifiers** that belong to an **Identity**:
+```python
+from adara_privacy import Identity, Identifier
+
+my_identity = Identity(
+    # pass the identifier type as an arg (placement doesn't matter)
+    Identifier('email', 'someone.special@somedomain.com'),
+    # or use a named argument
+    Identifier(state_id = "D1234567"),  
+)
+```
+
+#### Supported identifier types
+The SDK supports several identifiers out of the box:
+
+| Type Value         | Description                          | Keywords                             |
+| ------------------ | ------------------------------------ | ------------------------------------ |
+| cookie             | Persistent cookie identifier         | single: `cookie`                     |
+| customer_id        | Internal customer ID                 | single: `customer_id`                |
+| drivers_license    | State-issued driver's license number | single: `drivers_license`            |
+| email              | Clear text email address             | single: `email`                      |
+| hashed_email       | Hashed email address                 | single: `hashed_email`               |
+| membership_id      | Membership / loyalty ID              | single: `membership_id`              |
+| passport           | Passport number                      | single: `passport`                   |
+| social_security    | Social security number               | single: `social_security`            |
+| state_id           | Other state ID                       | single: `state_id`                   |
+| streetname_zipcode | Street name and zip code             | composite: `street_name`, `zip_code` |
+
+You can also extend the SDK with identifier types of your own.
+
+#### Serializing and deserializing
+
+Identities can be serialized into JSON and then deserialized using that that JSON. In Python, this just leverages the `dict` and `list` object types you should be used to when working with the `json` package:
+
+```python
+    # identifiers as json
+    my_identity = Identity(
+        Identifier({'email' : 'someone.special@somedomain.com'}),
+        Identifier({'state_id' : 'D1234567'}),  
+    )
+
+    # full identity deserialization
+    another_id = Identity(
+        [
+            {'email': 'someone.special@adara.com'}, 
+            {'state_id': 'D1234567'}, 
+        ]
+    )
+```
+
+Note that the serialization of an `Identity` is really just a `list` of `Identifier` objects.
+
+Also note that these objects and their serializations still contain PII. In order to remove the PII, we'll need to turn these indentifiers into tokens.
+
+### Tokens
+
+Each `Identifier` can be turned into a token. The tokens are generated using the **common salt** and **private salt** defined in your configuration. Using these salts and some standard hashing algorithms, the raw PII from the identifier is turned into the **common token** and **private token** (respectively). The type of identifier (example: "email" or "driver's license number") is also stored with the token.
+
+You can see the tokens for an `Identity` by accessing the `tokens` property:
+
+```python
+print(my_identity.tokens)
+```
+For the first example above, this yields the following output (or something similar, based on your client salt):
+```json
+[
+    {
+        "common": "a5ec8815eac047cc88095451b77af9a136ce6451d7f62adeab2a03ccf3d9e3c4",
+        "private": "7df0cfe1bc64df0891ac1c4ad4f3be06345e6442afc78a2a2deb1edaf06a0e76",
+        "type": "email"
+    },
+    {
+        "common": "141dd951d0a54dfb320bdea0f5c35c9b379726780670d3b8cd6dd0d5341bb106",
+        "private": "8e56a39748d4591d829c914ba56068b47911278267e1f89282203c29b72f92b3",
+        "type": "state_id"
+    }
+]
+```
+
+
+### Saving results to a file ###
+> The SDK uses a set of streamer classes for sending tokenization outputs to various destinations. For now, there is a streamer for file I/O and a streamer for sending tokens to Adara's Privacy API; additional streamers for database I/O are planned, or you can easily write your own based on your own use cases.
+
+Use the built-in `FileStreamer` class to save identities and tokens in a consistent format that allows for later recall:
+```python
+from adara_privacy import FileStreamer
+
+# ... use "my_identity" from above
+
+with FileStreamer('./my_file.txt', file_format='token') as fs:
+    fs.save(my_identity)  # auto conversion to tokens
+    fs.save(another_id.tokens)  # explicit tokenization
+```
+
+The code above will automatically create/append the file specified and, based on the `file_format` option, save the Identity into its tokenized representation.
+
+Going from an `Identity` to a `Token` is a one-way operation.  You can't get back to the original PII (this is obviously by design).  Therefore, you should be sure to store your raw PII values in a secure local location.  The `FileStreamer` object can write the untokenized `Identity` records to a file if you specify the `file_format="identity"` option:
+
+```python
+with FileStreamer('./my_file.txt', file_format='identity') as fs:
+    fs.save(my_identity)
+```
+
+### Reading from a file ###
+If you have saved token sets into a file, you can easily recall them later.  Each line in the file should contain all the tokens for a single identity (this is how ```FileStreamer``` saves the tokens). When reading, the easiest way to get the file contents is to loop over the ```read()``` generator, which returns an instance of ```Identity``` for each token set in the file.
+
+```python
+with FileStreamer('./my_file.txt') as fs:
+    for identity in fs.read():
+        # do something here
+        print(identity.tokens())
+```
+
+Note that the file mode is set based on your first operation with the file: if you execute a `save()` the file will be opened for writing (append); a call to `read()` will open the file for reading.  You can change the mode using an explicit call to `open(mode = "r" | "w" | "a")`.
+
+### Sending data to Adara ###
+If you want to send your tokens into Adara's Privacy API, you can use the ```AdaraPrivacyApiStreamer``` class.
+> You'll need to specify several of the "optional" settings in the configuration file for this, and you'll get these values from Adara's provisioning team.  They'll setup a configuration file for you with everything you need, such as client secrets, pipeline IDs, and API endpoints.
+
+Here's some sample code that loops over the tokens stored in a file and sends them to Adara's Privacy API:
+
+```python
+from adara_privacy import AdaraPrivacyApiStreamer
+
+# create instance of an API streamer
+adara_api = AdaraPrivacyApiStreamer()
+
+# loop over the token sets in a file and transmit
+with FileStreamer('./my_file.txt', 'r') as fs:
+    for identity in fs.read():
+        adara_api.save(identity)
+```
+
+## About your salt... ###
+The SDK has two salts that are used for tokenization. The common salt is like a public key and is shared across all tokenization clients working within your consortium. Your private salt is special and unique only to you. You should treat your private salt like a private key - don't share it with anyone and keep it secure. This will allow you do generate tokens for identifiers which are only meaningful to you, even if the tokens themselves are compromised.
+
+If you want to use Adara's Privacy API to support identity expansions and other features related to ID graphing, you'll need to share your common salt with Adara.  You have two options for managing your salt:
+
+1. You can keep your salt private and transmit both the common token and your client token to the Privacy API
+2. You can use Adara like a KMS for your private salt and we'll provision it for you, in which case you only need to transmit the common tokens
+
+Each approach has its advantages and trade-offs, so we can work with you to identify the use case which is most appropriate for your needs.
+
+As mentioned earlier, you can also use this SDK completely independent of Adara's Privacy API, and you don't even have to contact Adara to provision anything.  You can create your own salt values and specify it in the appropriate configuration key, and work directly with other SDK users with whom you share a common salt.  To generate a salt value, you can use any string; we recommend something like a UUID or a SHA-256 hash of your favorite disco album.
+
+## Version History ##
+0.1.2: initial public release
+
+## Contact Adara ##
+privacy-sdk@adara.com
+
+
