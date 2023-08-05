@@ -1,0 +1,11 @@
+pandas-sharkbite/__init__.py,sha256=dWbZcHjY5k3xDGUPzhys51d7SkoE9XcnC94jJ-BCaKk,2892
+pandas-sharkbite/pandassharkbite.py,sha256=4dhb1a8vfssjsXWQaZY-L5VQUVcMi4TsbUYB1hLGgjE,2002
+pandas-sharkbite/torch.py,sha256=QchpvTOECcDGlRBg-i4-wryapcJ_DMLDI69WzDX_7ZI,2442
+pandashark/__init__.py,sha256=qh6hvY4Nnm73f3MLdimJxxrf8lXxTLFRAmLpaKyncK0,2449
+pandashark/pandassharkbite.py,sha256=aKKe5aMUlViKhCrEW3QJ0zuThSzIEPV73PhFGPnsrWo,2352
+pandashark/torch.py,sha256=QchpvTOECcDGlRBg-i4-wryapcJ_DMLDI69WzDX_7ZI,2442
+pandashark-1.1.1.0.dist-info/LICENSE,sha256=txDOxZx6feNRy7AvRMNrz_QBIXunW6-8u2Y69NiL8FM,11895
+pandashark-1.1.1.0.dist-info/METADATA,sha256=KRYcOgqHUysLvGB1CK6fmCBQSnJ-IEbyVESCdDUDhz4,4729
+pandashark-1.1.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pandashark-1.1.1.0.dist-info/top_level.txt,sha256=9YEg8b6FRLzuXXJv5X7rXwJdxT2PcBkCrKz4f5Vi3Qw,11
+pandashark-1.1.1.0.dist-info/RECORD,,
