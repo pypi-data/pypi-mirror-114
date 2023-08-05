@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: task-processing
+Version: 0.1.17
+Summary: Framework for task processing executors and configuration
+Home-page: UNKNOWN
+Author: Task Processing
+Author-email: team-taskproc@yelp.com
+License: UNKNOWN
+Platform: UNKNOWN
+Provides: task_processing
+License-File: LICENSE
+Requires-Dist: pyrsistent
+Requires-Dist: typing-extensions
+Provides-Extra: k8s
+Requires-Dist: kubernetes ; extra == 'k8s'
+Provides-Extra: mesos_executor
+Requires-Dist: addict ; extra == 'mesos_executor'
+Requires-Dist: pymesos (>=0.2.14) ; extra == 'mesos_executor'
+Requires-Dist: requests ; extra == 'mesos_executor'
+Provides-Extra: metrics
+Requires-Dist: yelp-meteorite ; extra == 'metrics'
+Provides-Extra: persistence
+Requires-Dist: boto3 ; extra == 'persistence'
+
+UNKNOWN
+
