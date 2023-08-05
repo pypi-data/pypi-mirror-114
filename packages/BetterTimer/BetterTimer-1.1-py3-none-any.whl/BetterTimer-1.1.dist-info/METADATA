@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: BetterTimer
+Version: 1.1
+Summary: A more accurate timer libary
+Home-page: https://github.com/LukachoLombardi/BetterTimer_Python
+Author: LukachoLombardi
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A small python library that allows active-while-loop-based sleeping below 1ms. The minimum sleep value depends on the speed of your pc but you can excpect to get an accuracy of at least a microsecond.
+
