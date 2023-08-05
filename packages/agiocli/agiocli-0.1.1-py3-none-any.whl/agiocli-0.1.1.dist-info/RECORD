@@ -1,0 +1,10 @@
+agiocli/__init__.py,sha256=bpRw4lo4rVizKwfOPnljJgLnDHyYIbD0aJRNZG7LnmA,104
+agiocli/__main__.py,sha256=j1FAUtcjVMvUdrvMCKcZ8ApcY1mVWzVdGx423UFXzzc,8274
+agiocli/api_client.py,sha256=3rwQKvirnzZRMMFtWTIunBImsPgQop4EZQCW205MtBc,7041
+agiocli/utils.py,sha256=RehJMB3bz9unLP6jVH38hb7MHTfSbnQ78qM_S9YeRkw,19923
+agiocli-0.1.1.dist-info/LICENSE,sha256=_cFUYTcZbSqwTQrZUjiC3U-dtzPwrC4DcqJ_Zofx7lo,1071
+agiocli-0.1.1.dist-info/METADATA,sha256=e6J0IxYUXgYaMzNbNcj2CIzgh1zvlFODmrhRviQCmnU,2877
+agiocli-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+agiocli-0.1.1.dist-info/entry_points.txt,sha256=8P8phrqdNtAtCAG1XqQyO-Vi0HSKN37Kx6iSa07r_Uo,48
+agiocli-0.1.1.dist-info/top_level.txt,sha256=s-VlP7WWuj4tEtVdWazgTDzIm94PLOWmUaQ6zhP7Opg,8
+agiocli-0.1.1.dist-info/RECORD,,
