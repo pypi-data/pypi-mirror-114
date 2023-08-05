@@ -1,0 +1,3 @@
+[console_scripts]
+gitlabform = gitlabform.gitlabform.run:run
+
