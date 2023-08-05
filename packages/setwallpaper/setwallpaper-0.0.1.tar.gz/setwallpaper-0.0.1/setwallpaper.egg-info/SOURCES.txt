@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setwallpaper/__init__.py
+setwallpaper/wallpaper.py
+setwallpaper/win.py
+setwallpaper.egg-info/PKG-INFO
+setwallpaper.egg-info/SOURCES.txt
+setwallpaper.egg-info/dependency_links.txt
+setwallpaper.egg-info/top_level.txt
