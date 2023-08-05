@@ -1,0 +1,19 @@
+{% macro render_error_code_digit(digit, idx, code) -%}
+    {% if digit == '0' %}
+    <svg width="20" height="20" fill="currentColor" role="presentation">
+      <use xlink:href="{{ url_for('base.static', filename='images/icons/custom-icons.svg') }}#smileybones-error"/>
+    </svg>
+    {% else %}
+      <p>{{ digit }}</p>
+    {% endif %}
+{%- endmacro %}
+
+{% macro render_error_code(code) %}
+<div class="row align-items-center justify-content-center arxiv-error-code">
+    {% for digit in code|string %}
+    <div class="col-auto">
+        {{ render_error_code_digit(digit, loop.index, code) }}
+    </div>
+    {% endfor %}
+</div>
+{% endmacro %}

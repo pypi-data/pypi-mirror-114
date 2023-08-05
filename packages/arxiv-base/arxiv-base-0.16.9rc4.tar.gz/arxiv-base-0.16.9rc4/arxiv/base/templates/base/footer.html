@@ -1,0 +1,68 @@
+<div class="arxiv-footer"><div class="container container-wide">
+    <div class="row">
+      <div class="col-sm">
+        <div class="row">
+          <div class="col-md">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="{{ url_for('about')}}">About</a></li>
+              <li class="list-group-item"><a href="{{ url_for('help') }}">Help</a></li>
+              <li class="list-group-item"><a href="{{ url_for('contact') }}"> Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="{{ url_for('privacy_policy') }}">Privacy Policy</a></li>
+              <li class="list-group-item"><a href="{{ url_for('a11y') }}">Web Accessibility Assistance</a></li>
+              <li class="list-group-item"><a href="{{ url_for('donate')}}">Support arXiv</a></li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <svg width="20" height="20" role="presentation">
+                  <use xlink:href="{{ url_for('base.static', filename='images/icons/custom-icons.svg') }}#smileybones-small"/>
+                </svg>
+                <a href="{{ url_for('subscribe') }}"> Subscribe</a>
+              </li>
+              <li class="list-group-item">
+                  <a class="a11y-main-link" href="https://status.arxiv.org" target="_blank">
+                    arXiv Operational Status
+                    <svg class="icon-small" width="20" height="20" fill="currentColor" role="presentation">
+                      <use xlink:href="{{ url_for('base.static', filename='bootstrap/bootstrap-icons.svg') }}#chevron-right"/>
+                    </svg>
+                  </a><br>
+                  <p class="notification-options">Get status notifications via<br>
+                    <a href="https://subscribe.sorryapp.com/24846f03/email/new" target="_blank">
+                      <svg width="20" height="20" fill="currentColor" role="presentation">
+                        <use xlink:href="{{ url_for('base.static', filename='bootstrap/bootstrap-icons.svg') }}#envelope-fill"/>
+                      </svg>
+                      email
+                    </a>
+                    or
+                    <a href="https://subscribe.sorryapp.com/24846f03/slack/new" target="_blank">
+                      <svg width="20" height="20" fill="currentColor" role="presentation">
+                        <use xlink:href="{{ url_for('base.static', filename='bootstrap/bootstrap-icons.svg') }}#slack"/>
+                      </svg>
+                      slack
+                    </a>
+                  </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm col-md-5 arxiv-membership">
+        <p>We gratefully acknowledge support from Cornell Tech, the Simons Foundation, {{ session['institution'] if ('institution' in session and session['institution'] != None) else 'arXiv members' }}, and all <a href="{{ url_for('about') }}/membership">our contributors</a>.</p>
+        <div class="row row-cols-1 row-cols-xxl-2">
+          <div class="col">
+            <img class="logo-cornell-tech" src="{{ url_for('base.static', filename='images/logo-cornell-tech.png') }}" alt="Cornell Tech logo">
+          </div>
+          <div class="col">
+            {{ session['institution'] if ('institution' in session and session['institution'] != None) else '[member institution logo here]' }}
+          </div>
+        </div>
+      </div>
+
+    </div>
+</div></div>

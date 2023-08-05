@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "base/head.html" %}
+    {% block addl_head %}
+      {# Custom style sheets or other head includes #}
+      {% include "base/analytics.html" %}
+    {% endblock addl_head %}
+  </head>
+  <body>
+    {% import "base/macros.html" as macros %}
+    <header>
+      <div class="visually-hidden-focusable overflow-hidden"><a href="#content">Skip to main content</a></div>
+      {% block header %}
+      {% include "base/header.html" %}
+      {% endblock header %}
+    </header>
+    {%- if request.path != "/" %}
+    {% include "base/breadcrumbs.html" %}
+    {% endif %}
+    <main>
+      {% block alerts %}{{ macros.alerts(get_alerts()) }}{% endblock alerts %}
+      <div class="container" id="content">
+        {% block content %}
+        {% endblock content %}
+      </div>
+      {% block content_extra %}
+      {% endblock content_extra %}
+    </main>
+    <footer>
+      {% block footer %}
+      {% include "base/footer.html" %}
+      {% endblock footer %}
+    </footer>
+    <script src="{{ url_for('base.static', filename='bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('base.static', filename='js/custom.js') }}"></script>
+  </body>
+</html>
