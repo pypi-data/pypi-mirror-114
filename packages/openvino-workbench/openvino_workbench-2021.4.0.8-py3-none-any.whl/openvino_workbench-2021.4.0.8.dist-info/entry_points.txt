@@ -1,0 +1,3 @@
+[console_scripts]
+openvino-workbench = openvino_workbench.main:main
+
