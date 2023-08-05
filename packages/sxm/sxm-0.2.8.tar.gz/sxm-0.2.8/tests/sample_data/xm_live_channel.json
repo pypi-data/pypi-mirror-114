@@ -1,0 +1,3019 @@
+{
+    "messages": [
+        {
+            "message": "Successful",
+            "code": 100
+        }
+    ],
+    "status": 1,
+    "moduleList": {
+        "modules": [
+            {
+                "moduleArea": "NowPlayingTimelineFeed",
+                "moduleType": "Live",
+                "updateFrequency": 50,
+                "wallClockRenderTime": "2021-07-15T01:17:37.816+0000",
+                "moduleResponse": {
+                    "liveChannelData": {
+                        "hlsAudioInfos": [
+                            {
+                                "name": "primary",
+                                "url": "%Live_Primary_HLS%/AAC_Data/octane/octane_variant_small_v3.m3u8",
+                                "size": "SMALL"
+                            },
+                            {
+                                "name": "primary",
+                                "url": "%Live_Primary_HLS%/AAC_Data/octane/octane_variant_medium_v3.m3u8",
+                                "size": "MEDIUM"
+                            },
+                            {
+                                "name": "primary",
+                                "url": "%Live_Primary_HLS%/AAC_Data/octane/octane_variant_large_v3.m3u8",
+                                "size": "LARGE"
+                            },
+                            {
+                                "name": "secondary",
+                                "url": "%Live_Secondary_HLS%/AAC_Data/octane/octane_variant_small_v3.m3u8",
+                                "size": "SMALL"
+                            },
+                            {
+                                "name": "secondary",
+                                "url": "%Live_Secondary_HLS%/AAC_Data/octane/octane_variant_medium_v3.m3u8",
+                                "size": "MEDIUM"
+                            },
+                            {
+                                "name": "secondary",
+                                "url": "%Live_Secondary_HLS%/AAC_Data/octane/octane_variant_large_v3.m3u8",
+                                "size": "LARGE"
+                            }
+                        ],
+                        "customAudioInfos": [
+                            {
+                                "name": "primary",
+                                "url": "%Live_Primary_HLS%/AAC_Data/octane/octane_variant_small_v3.m3u8",
+                                "size": "SMALL",
+                                "position": {
+                                    "timestamp": "2021-07-15T01:09:34.000+0000",
+                                    "position": "TUNE_START"
+                                },
+                                "chunks": {
+                                    "chunks": [
+                                        {
+                                            "url": "%Live_Primary_HLS%/AAC_Data/octane/HLS_octane_32k_v3/octane_32k_1_071504172003_00144991_v3.aac",
+                                            "timestamp": "2021-07-15T01:09:32.003+0000",
+                                            "offset": 1997,
+                                            "key": "0Nsco7MAgxowGvkUT8aYag==",
+                                            "keyUrl": "%Live_Primary_HLS%/AAC_Data/octane/HLS_octane_32k_v3/key/1"
+                                        },
+                                        {
+                                            "url": "%Live_Primary_HLS%/AAC_Data/octane/HLS_octane_32k_v3/octane_32k_1_071504181754_00144992_v3.aac",
+                                            "timestamp": "2021-07-15T01:09:41.754+0000",
+                                            "offset": 0,
+                                            "key": "0Nsco7MAgxowGvkUT8aYag==",
+                                            "keyUrl": "%Live_Primary_HLS%/AAC_Data/octane/HLS_octane_32k_v3/key/1"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "secondary",
+                                "url": "%Live_Secondary_HLS%/AAC_Data/octane/octane_variant_small_v3.m3u8",
+                                "size": "SMALL",
+                                "chunks": {
+                                    "chunks": [
+                                        {
+                                            "url": "",
+                                            "offset": 0,
+                                            "key": "0Nsco7MAgxowGvkUT8aYag==",
+                                            "keyUrl": ""
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "markerLists": [
+                            {
+                                "layer": "episode",
+                                "markers": [
+                                    {
+                                        "assetGUID": "5b413be3-2a93-64f7-f74e-6268f1baa8fe",
+                                        "layer": "episode",
+                                        "time": 1626278400000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T16:00:00.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 21600.0,
+                                        "episode": {
+                                            "legacyIds": {
+                                                "shortId": "28299998"
+                                            },
+                                            "mediumTitle": "Caity Babs",
+                                            "longTitle": "Octane with Caity Babs",
+                                            "shortDescription": "Your favorite Canadian raised Metal chick!",
+                                            "longDescription": "Canadian raised metal head, Caity Babs not only lives and breathes rock n\\u2019 roll, but has traveled around the world to catch it. Since joining Octane she\\u2019s brought her passion for hard rock to the airwaves connecting with listeners all across North America. ",
+                                            "keywords": {},
+                                            "episodeGUID": "7d9191c0-2aab-8645-deb2-cc5a778b5c5b",
+                                            "originalAirDate": "2021-07-14T16:00:00.000+0000",
+                                            "valuable": false,
+                                            "show": {
+                                                "legacyIds": {
+                                                    "shortId": "10355756"
+                                                },
+                                                "mediumTitle": "Caity Babs",
+                                                "longTitle": "Octane with Caity Babs",
+                                                "shortDescription": "Your favorite Canadian raised Metal chick!",
+                                                "longDescription": "Canadian raised metal head, Caity Babs not only lives and breathes rock n\\u2019 roll, but has traveled around the world to catch it. Since joining Octane she\\u2019s brought her passion for hard rock to the airwaves connecting with listeners all across North America. ",
+                                                "guid": "21c376ec-08cb-5e39-1d98-594bba805a69",
+                                                "showGUID": "21c376ec-08cb-5e39-1d98-594bba805a69",
+                                                "connectInfo": {
+                                                    "twitter": "@CiBabs",
+                                                    "facebook": "Ci.babs"
+                                                },
+                                                "disableRecommendations": [
+                                                    "false"
+                                                ],
+                                                "futureAirings": [
+                                                    {
+                                                        "timestamp": "2021-07-15T16:00:00.000+0000",
+                                                        "channelId": "octane",
+                                                        "duration": 21600
+                                                    }
+                                                ],
+                                                "aodEpisodeCount": 0,
+                                                "programType": "Talk Show",
+                                                "isPlaceholderShow": true,
+                                                "isLiveVideoEligible": false,
+                                                "vodEpisodeCount": 0
+                                            },
+                                            "hot": false,
+                                            "highlighted": false,
+                                            "dmcaInfo": {
+                                                "irNavClass": "RESTRICTED_2",
+                                                "playOnSelect": "NEWEST_0",
+                                                "channelContentType": "M_0",
+                                                "maxFwdSkips": 5,
+                                                "maxBackSkips": 1,
+                                                "fwdSkipDur": 12,
+                                                "backSkipDur": 12,
+                                                "maxTotalSkips": 6,
+                                                "maxSkipDur": 3600000
+                                            },
+                                            "entities": {},
+                                            "topics": {},
+                                            "live": false,
+                                            "repeat": false,
+                                            "mref": "794816"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "20633177-039e-c49e-1cad-07864c4c0191",
+                                        "layer": "episode",
+                                        "time": 1626300000000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T22:00:00.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 3600.0,
+                                        "episode": {
+                                            "legacyIds": {
+                                                "shortId": "28261171"
+                                            },
+                                            "mediumTitle": "Big Uns",
+                                            "longTitle": "Big Uns Countdown",
+                                            "shortDescription": "Bullet For My Valentine, Fozzy, More",
+                                            "longDescription": "Bullet For My Valentine, Fozzy, More",
+                                            "keywords": {},
+                                            "episodeGUID": "e7879a0d-7d5c-a06e-6a3b-a03dd68194df",
+                                            "originalAirDate": "2021-07-10T19:00:00.000+0000",
+                                            "valuable": false,
+                                            "show": {
+                                                "legacyIds": {
+                                                    "shortId": "24"
+                                                },
+                                                "mediumTitle": "Big Uns",
+                                                "longTitle": "Big Uns Countdown",
+                                                "shortDescription": "Biggest and best new rock songs",
+                                                "longDescription": "The biggest and best new rock songs of the week, as voted by the Octane Airforce! Hosted by Grant Random. ",
+                                                "guid": "f1299966-6b80-4fdb-bdd8-4e756b97ea9b",
+                                                "creativeArts": [
+                                                    {
+                                                        "encrypted": false,
+                                                        "width": 150,
+                                                        "height": 150,
+                                                        "type": "IMAGE",
+                                                        "url": "http://pri.art.prod.streaming.siriusxm.com/images/chan/ff/370868-47a2-f1f3-2048-77741d089dd3.png",
+                                                        "relativeUrl": "%Image%/images/chan/ff/370868-47a2-f1f3-2048-77741d089dd3.png",
+                                                        "name": "show logo on dark"
+                                                    },
+                                                    {
+                                                        "encrypted": false,
+                                                        "width": 256,
+                                                        "height": 320,
+                                                        "type": "IMAGE",
+                                                        "url": "http://pri.art.prod.streaming.siriusxm.com/images/chan/61/8cd600-868e-ae5c-ca33-f3a3aadf5195.png",
+                                                        "relativeUrl": "%Image%/images/chan/61/8cd600-868e-ae5c-ca33-f3a3aadf5195.png",
+                                                        "name": "show logo on dark"
+                                                    },
+                                                    {
+                                                        "encrypted": false,
+                                                        "width": 150,
+                                                        "height": 150,
+                                                        "type": "IMAGE",
+                                                        "url": "http://pri.art.prod.streaming.siriusxm.com/images/chan/f6/5bf6fd-f24b-83d0-a613-2ec7672c15b4.png",
+                                                        "relativeUrl": "%Image%/images/chan/f6/5bf6fd-f24b-83d0-a613-2ec7672c15b4.png",
+                                                        "name": "show logo on light"
+                                                    },
+                                                    {
+                                                        "encrypted": false,
+                                                        "width": 256,
+                                                        "height": 320,
+                                                        "type": "IMAGE",
+                                                        "url": "http://pri.art.prod.streaming.siriusxm.com/images/chan/7e/719eb7-9092-79e4-6081-4472c320b7ae.png",
+                                                        "relativeUrl": "%Image%/images/chan/7e/719eb7-9092-79e4-6081-4472c320b7ae.png",
+                                                        "name": "show logo on light"
+                                                    },
+                                                    {
+                                                        "encrypted": false,
+                                                        "width": 150,
+                                                        "height": 150,
+                                                        "type": "IMAGE",
+                                                        "url": "http://pri.art.prod.streaming.siriusxm.com/images/chan/90/ad450a-49a6-b5c5-8baf-c7acf990b7b4.png",
+                                                        "relativeUrl": "%Image%/images/chan/90/ad450a-49a6-b5c5-8baf-c7acf990b7b4.png",
+                                                        "name": "show logo white"
+                                                    },
+                                                    {
+                                                        "encrypted": false,
+                                                        "width": 256,
+                                                        "height": 320,
+                                                        "type": "IMAGE",
+                                                        "url": "http://pri.art.prod.streaming.siriusxm.com/images/chan/59/b2d73e-e315-89fc-fe80-1e8f88408e48.png",
+                                                        "relativeUrl": "%Image%/images/chan/59/b2d73e-e315-89fc-fe80-1e8f88408e48.png",
+                                                        "name": "show logo white"
+                                                    },
+                                                    {
+                                                        "encrypted": false,
+                                                        "width": 1920,
+                                                        "height": 1920,
+                                                        "type": "IMAGE",
+                                                        "url": "http://pri.art.prod.streaming.siriusxm.com/images/chan/a6/b1fdac-f39d-c0fd-29ec-9b9910289e33.jpg",
+                                                        "relativeUrl": "%Image%/images/chan/a6/b1fdac-f39d-c0fd-29ec-9b9910289e33.jpg",
+                                                        "name": "square everest tile show background"
+                                                    },
+                                                    {
+                                                        "encrypted": false,
+                                                        "width": 1080,
+                                                        "height": 1920,
+                                                        "type": "IMAGE",
+                                                        "url": "http://pri.art.prod.streaming.siriusxm.com/images/chan/a0/b5effb-eeac-83d6-4a51-9de220cc2907.jpg",
+                                                        "relativeUrl": "%Image%/images/chan/a0/b5effb-eeac-83d6-4a51-9de220cc2907.jpg",
+                                                        "name": "everest tile show background"
+                                                    }
+                                                ],
+                                                "showGUID": "f1299966-6b80-4fdb-bdd8-4e756b97ea9b",
+                                                "connectInfo": {
+                                                    "twitter": "@SXMOctane",
+                                                    "facebook": "siriusxmOctane"
+                                                },
+                                                "disableRecommendations": [
+                                                    "false"
+                                                ],
+                                                "futureAirings": [
+                                                    {
+                                                        "timestamp": "2021-07-17T19:00:00.000+0000",
+                                                        "channelId": "octane",
+                                                        "duration": 3600
+                                                    }
+                                                ],
+                                                "aodEpisodeCount": 0,
+                                                "programType": "New Hard Rock Music",
+                                                "isPlaceholderShow": false,
+                                                "isLiveVideoEligible": false,
+                                                "vodEpisodeCount": 0
+                                            },
+                                            "hot": false,
+                                            "highlighted": false,
+                                            "dmcaInfo": {
+                                                "irNavClass": "RESTRICTED_2",
+                                                "playOnSelect": "NEWEST_0",
+                                                "channelContentType": "M_0",
+                                                "maxFwdSkips": 5,
+                                                "maxBackSkips": 1,
+                                                "fwdSkipDur": 12,
+                                                "backSkipDur": 12,
+                                                "maxTotalSkips": 6,
+                                                "maxSkipDur": 3600000
+                                            },
+                                            "entities": {},
+                                            "topics": {},
+                                            "live": false,
+                                            "repeat": true,
+                                            "mref": "795912"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "fed268ff-4674-a12e-ef53-dbc3b8c7d105",
+                                        "layer": "episode",
+                                        "time": 1626303600000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T23:00:00.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 10800.0,
+                                        "episode": {
+                                            "legacyIds": {
+                                                "shortId": "28300000"
+                                            },
+                                            "mediumTitle": "Jose Mangin",
+                                            "longTitle": "Octane with Jose Mangin",
+                                            "shortDescription": "Hard rock to end your day",
+                                            "longDescription": "A natural born headbanger from Arizona, Jose went to Pharmacy school in Memphis but at the crossroads in life chose music over medicine, and since 2000 has passionately led the satellite radio rock revolution! Jose is a Director of Programming at SiriusXM working on Liquid Metal, Ozzy\\u2019s Boneyard & Octane. ",
+                                            "keywords": {},
+                                            "episodeGUID": "52a59814-86f1-dfd7-701d-35cbeaf53b23",
+                                            "originalAirDate": "2021-07-14T23:00:00.000+0000",
+                                            "valuable": false,
+                                            "show": {
+                                                "legacyIds": {
+                                                    "shortId": "6017"
+                                                },
+                                                "mediumTitle": "Jose Mangin",
+                                                "longTitle": "Octane with Jose Mangin",
+                                                "shortDescription": "Hard rock to end your day",
+                                                "longDescription": "A natural born headbanger from Arizona, Jose went to Pharmacy school in Memphis but at the crossroads in life chose music over medicine, and since 2000 has passionately led the satellite radio rock revolution! Jose is a Director of Programming at SiriusXM working on Liquid Metal, Ozzy\\u2019s Boneyard & Octane. ",
+                                                "guid": "6d94e735-19c7-4523-8103-45083eaca96d",
+                                                "creativeArts": [
+                                                    {
+                                                        "encrypted": false,
+                                                        "width": 1920,
+                                                        "height": 1920,
+                                                        "type": "IMAGE",
+                                                        "url": "http://pri.art.prod.streaming.siriusxm.com/images/chan/fa/c0b74a-d2bf-3139-036d-46a282664c40.jpg",
+                                                        "relativeUrl": "%Image%/images/chan/fa/c0b74a-d2bf-3139-036d-46a282664c40.jpg",
+                                                        "name": "square everest tile show background"
+                                                    },
+                                                    {
+                                                        "encrypted": false,
+                                                        "width": 1080,
+                                                        "height": 1920,
+                                                        "type": "IMAGE",
+                                                        "url": "http://pri.art.prod.streaming.siriusxm.com/images/chan/41/72f002-a7b4-643e-b3cb-34da9b35536d.jpg",
+                                                        "relativeUrl": "%Image%/images/chan/41/72f002-a7b4-643e-b3cb-34da9b35536d.jpg",
+                                                        "name": "everest tile show background"
+                                                    }
+                                                ],
+                                                "showGUID": "6d94e735-19c7-4523-8103-45083eaca96d",
+                                                "connectInfo": {
+                                                    "twitter": "@JoseMangin",
+                                                    "facebook": "JoseMangin"
+                                                },
+                                                "disableRecommendations": [
+                                                    "false"
+                                                ],
+                                                "futureAirings": [
+                                                    {
+                                                        "timestamp": "2021-07-15T02:15:00.000+0000",
+                                                        "channelId": "octane",
+                                                        "duration": 6300
+                                                    }
+                                                ],
+                                                "aodEpisodeCount": 0,
+                                                "programType": "Talk Show",
+                                                "isPlaceholderShow": false,
+                                                "isLiveVideoEligible": false,
+                                                "vodEpisodeCount": 0
+                                            },
+                                            "hot": false,
+                                            "highlighted": false,
+                                            "dmcaInfo": {
+                                                "irNavClass": "RESTRICTED_2",
+                                                "playOnSelect": "NEWEST_0",
+                                                "channelContentType": "M_0",
+                                                "maxFwdSkips": 5,
+                                                "maxBackSkips": 1,
+                                                "fwdSkipDur": 12,
+                                                "backSkipDur": 12,
+                                                "maxTotalSkips": 6,
+                                                "maxSkipDur": 3600000
+                                            },
+                                            "entities": {},
+                                            "topics": {},
+                                            "live": false,
+                                            "repeat": false,
+                                            "mref": "796436"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "layer": "future-episode",
+                                "markers": [
+                                    {
+                                        "assetGUID": "b15bd9fd-6423-968d-3600-9805fbbf9e7a",
+                                        "layer": "episode",
+                                        "time": 1626314400000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T02:00:00.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 900.0,
+                                        "episode": {
+                                            "episodeGUID": "efe6ab0f-c5e8-3e49-8d6e-89c014a391a5",
+                                            "show": {
+                                                "guid": "bc215e85-e759-4e34-1a9c-acdb629e9f76",
+                                                "showGUID": "bc215e85-e759-4e34-1a9c-acdb629e9f76",
+                                                "aodEpisodeCount": 0,
+                                                "vodEpisodeCount": 0
+                                            },
+                                            "dmcaInfo": {
+                                                "irNavClass": "RESTRICTED_2",
+                                                "playOnSelect": "NEWEST_0",
+                                                "channelContentType": "M_0",
+                                                "maxFwdSkips": 5,
+                                                "maxBackSkips": 1,
+                                                "fwdSkipDur": 12,
+                                                "backSkipDur": 12,
+                                                "maxTotalSkips": 6,
+                                                "maxSkipDur": 3600000
+                                            },
+                                            "live": false,
+                                            "repeat": true,
+                                            "mref": "795672"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "layer": "segment",
+                                "markers": [
+                                    {
+                                        "assetGUID": "340b3f94-394a-aab8-565e-2eb0bed64828",
+                                        "layer": "segment",
+                                        "time": 1626293529000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T20:12:09.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 238.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a31c"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "8d1e5110-d7fa-56c6-4941-097dff0af0a0",
+                                        "layer": "segment",
+                                        "time": 1626293767000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T20:16:07.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 230.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a31d"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "903e5c10-1366-aa65-a7fb-67cb25b05da4",
+                                        "layer": "segment",
+                                        "time": 1626293997000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T20:19:57.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 198.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a31e"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "d4fa7425-6b99-53db-10a6-9b8cf3f144a3",
+                                        "layer": "segment",
+                                        "time": 1626294195000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T20:23:15.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 205.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a31f"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "111f2bd0-472b-17c7-e5c7-a3172146a812",
+                                        "layer": "segment",
+                                        "time": 1626294400000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T20:26:40.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 202.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a320"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "3365b925-6569-0ea9-6130-5b0f1e99701c",
+                                        "layer": "segment",
+                                        "time": 1626294602000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T20:30:02.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 198.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a321"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "a83bd68f-f2af-7547-a446-8783d60b1ebe",
+                                        "layer": "segment",
+                                        "time": 1626294800000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T20:33:20.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 229.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a322"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "91aa14e5-6de8-c32e-f96d-94213cc6333e",
+                                        "layer": "segment",
+                                        "time": 1626295029000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T20:37:09.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 219.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a323"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "1ac66340-389d-45a2-5ebd-41b9b54b4115",
+                                        "layer": "segment",
+                                        "time": 1626295248000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T20:40:48.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 222.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a324"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "15602d0a-f051-c8f5-2a5c-1b4da09012ef",
+                                        "layer": "segment",
+                                        "time": 1626295470000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T20:44:30.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 193.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a325"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "4d5c7603-7936-6d04-dc5b-4cd1ad65018a",
+                                        "layer": "segment",
+                                        "time": 1626295663000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T20:47:43.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 233.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a326"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "3c8af755-7023-2e4b-1277-b3a20fdee103",
+                                        "layer": "segment",
+                                        "time": 1626295896000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T20:51:36.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 213.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a327"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "dafeedc5-a8cd-9020-bc9e-b7f3b9da99b2",
+                                        "layer": "segment",
+                                        "time": 1626296109000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T20:55:09.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 207.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a328"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "b6b22daa-e284-7356-efef-751a071729a9",
+                                        "layer": "segment",
+                                        "time": 1626296316000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T20:58:36.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 295.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a329"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "ffe5b106-7947-9a52-4701-307419715923",
+                                        "layer": "segment",
+                                        "time": 1626296611000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T21:03:31.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 203.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a32a"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "b9d35a17-0920-61ee-69a8-a98b10216b35",
+                                        "layer": "segment",
+                                        "time": 1626296814000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T21:06:54.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 174.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a32b"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "d3707dd0-6c59-675b-bf27-05c9b70d3bb4",
+                                        "layer": "segment",
+                                        "time": 1626296988000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T21:09:48.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 251.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a32c"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "b0364d6b-4066-8f96-667f-d71ec0dec1f7",
+                                        "layer": "segment",
+                                        "time": 1626297239000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T21:13:59.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 316.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a32d"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "1d94cca6-f66d-0066-9726-76f08c83142b",
+                                        "layer": "segment",
+                                        "time": 1626297555000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T21:19:15.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 128.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a32e"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "294a326d-2eaf-ff47-ecb4-11502452462c",
+                                        "layer": "segment",
+                                        "time": 1626297683000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T21:21:23.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 174.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a32f"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "ff8a387f-4741-622b-c113-4415979443bd",
+                                        "layer": "segment",
+                                        "time": 1626297857000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T21:24:17.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 315.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a330"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "cbe27277-9f88-46de-cd4b-0b2942ff305e",
+                                        "layer": "segment",
+                                        "time": 1626298172000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T21:29:32.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 209.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a331"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "3d208eab-3338-00ba-507e-0ea4fccde509",
+                                        "layer": "segment",
+                                        "time": 1626298381000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T21:33:01.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 239.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a332"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "e762fb53-a709-7de0-ea84-83e91a6c8c75",
+                                        "layer": "segment",
+                                        "time": 1626298620000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T21:37:00.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 184.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a333"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "6f1faf04-3f0f-24dd-6fbb-181b6cad4de0",
+                                        "layer": "segment",
+                                        "time": 1626298804000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T21:40:04.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 268.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a334"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "04a0c5eb-60ae-d2b8-e8a6-8e2bd6126ef0",
+                                        "layer": "segment",
+                                        "time": 1626299072000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T21:44:32.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 242.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a335"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "18955776-181e-5a39-0f72-e99d7d94e266",
+                                        "layer": "segment",
+                                        "time": 1626299314000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T21:48:34.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 212.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a336"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "f6f23cd4-fd35-a3cd-3b43-dd7a3bc06914",
+                                        "layer": "segment",
+                                        "time": 1626299526000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T21:52:06.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 202.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a337"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "121f64de-4f8e-cdaa-afe4-c0249c423fde",
+                                        "layer": "segment",
+                                        "time": 1626299728000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T21:55:28.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 323.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a338"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "61fe8695-db4b-c0a4-f3d2-9449e14e61e1",
+                                        "layer": "segment",
+                                        "time": 1626300051000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T22:00:51.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 171.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a339"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "3e37487a-65c0-23dd-47ff-cd4f6eb65aa9",
+                                        "layer": "segment",
+                                        "time": 1626300222000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T22:03:42.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 246.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a33a"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "1f92b108-9692-2ca8-0c14-044f86d85bee",
+                                        "layer": "segment",
+                                        "time": 1626300468000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T22:07:48.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 180.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a33b"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "dd9a891b-cc1a-c29e-06a1-5d45ab6924aa",
+                                        "layer": "segment",
+                                        "time": 1626300648000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T22:10:48.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 233.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a33c"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "a4a69c3f-d096-4559-5901-e3ce4b609ba2",
+                                        "layer": "segment",
+                                        "time": 1626300881000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T22:14:41.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 156.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a33d"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "694f6157-b6f4-6cc7-692a-e56a327ef981",
+                                        "layer": "segment",
+                                        "time": 1626301037000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T22:17:17.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 239.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a33e"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "6a6bf49d-ff4d-751c-416c-46ed815f9df4",
+                                        "layer": "segment",
+                                        "time": 1626301276000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T22:21:16.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 178.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a33f"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "69d97ef1-52b4-aac8-5c3d-1d1c9dde70a4",
+                                        "layer": "segment",
+                                        "time": 1626301454000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T22:24:14.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 236.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a340"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "5f8e95a1-9ca3-4042-9ef3-4f62d763b284",
+                                        "layer": "segment",
+                                        "time": 1626301690000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T22:28:10.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 211.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a341"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "d1ef85f5-1762-bfbf-18c1-f5655a5eeaa2",
+                                        "layer": "segment",
+                                        "time": 1626301901000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T22:31:41.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 254.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a342"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "e04b8e94-0a5a-2089-4495-fe8c35ce036f",
+                                        "layer": "segment",
+                                        "time": 1626302155000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T22:35:55.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 186.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a343"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "181ad5ab-1f15-41bf-b271-a98a04f1bd6f",
+                                        "layer": "segment",
+                                        "time": 1626302341000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T22:39:01.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 244.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a344"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "c733d787-224f-f290-1156-8c7477737ed8",
+                                        "layer": "segment",
+                                        "time": 1626302585000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T22:43:05.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 288.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a345"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "b8cef4ec-06f2-17ec-d3fd-5c6572af149c",
+                                        "layer": "segment",
+                                        "time": 1626302873000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T22:47:53.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 273.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a346"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "e566987f-d628-9d4e-11dd-57e02f774f8d",
+                                        "layer": "segment",
+                                        "time": 1626303146000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T22:52:26.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 280.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a347"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "0186c7d3-332d-d013-66e1-99bfad5d64a8",
+                                        "layer": "segment",
+                                        "time": 1626303426000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T22:57:06.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 209.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a348"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "222add2d-6662-ba07-550c-6eb6d73f2f41",
+                                        "layer": "segment",
+                                        "time": 1626303635000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T23:00:35.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 295.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a349"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "ea1cfaf9-4bb3-7419-ba83-d13938b34b97",
+                                        "layer": "segment",
+                                        "time": 1626303930000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T23:05:30.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 204.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a34a"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "3e9b0aaa-8d57-eb4e-3c72-3bb8e9c233cb",
+                                        "layer": "segment",
+                                        "time": 1626304134000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T23:08:54.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 175.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a34b"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "1526d52e-8a53-795e-4702-8b8a2db6facc",
+                                        "layer": "segment",
+                                        "time": 1626304309000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T23:11:49.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 278.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a34c"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "1738699c-1119-06a0-2675-2320ef7a3958",
+                                        "layer": "segment",
+                                        "time": 1626304587000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T23:16:27.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 221.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a34d"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "8425b115-fee2-e2b6-dcff-2512eb4372b0",
+                                        "layer": "segment",
+                                        "time": 1626304808000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T23:20:08.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 215.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a34e"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "64c773d0-648d-8c32-7151-2759e11b4426",
+                                        "layer": "segment",
+                                        "time": 1626305023000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T23:23:43.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 291.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a34f"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "c1eb41f0-e6e6-6c82-0cf9-beb3cd54927a",
+                                        "layer": "segment",
+                                        "time": 1626305314000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T23:28:34.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 191.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a350"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "6c3b7b7c-08bb-5481-fb5b-ad25477b7466",
+                                        "layer": "segment",
+                                        "time": 1626305505000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T23:31:45.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 258.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a351"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "9f492843-7a26-48a0-6e47-63c7f095a15f",
+                                        "layer": "segment",
+                                        "time": 1626305763000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T23:36:03.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 288.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a352"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "1caf3573-383b-6aac-2c0b-555d163b6e57",
+                                        "layer": "segment",
+                                        "time": 1626306051000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T23:40:51.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 214.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a353"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "b5091fbd-ce61-1027-f41d-b4a5b7ca2829",
+                                        "layer": "segment",
+                                        "time": 1626306265000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T23:44:25.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 379.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a354"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "b44428b6-e482-4496-12bb-094fa1648219",
+                                        "layer": "segment",
+                                        "time": 1626306644000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T23:50:44.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 219.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a355"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "67fd92c8-961f-5834-b3a9-05b738bb26bc",
+                                        "layer": "segment",
+                                        "time": 1626306863000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T23:54:23.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 205.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a356"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "57fed3dd-7ed5-0272-e42e-3cecc4c605ca",
+                                        "layer": "segment",
+                                        "time": 1626307068000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T23:57:48.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 208.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a357"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "55b1cee2-dd66-8dc8-b6a3-124e94f3890e",
+                                        "layer": "segment",
+                                        "time": 1626307276000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:01:16.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 324.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a358"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "0a35d78b-2b38-396d-b35f-512b707f4123",
+                                        "layer": "segment",
+                                        "time": 1626307600000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:06:40.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 238.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a359"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "89812ec7-41dc-1302-e438-a09e231982b1",
+                                        "layer": "segment",
+                                        "time": 1626307838000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:10:38.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 221.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a35a"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "60144dc0-7e0e-c098-1a24-6f861015f338",
+                                        "layer": "segment",
+                                        "time": 1626308059000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:14:19.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 135.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a35b"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "6267b0f4-ffc4-d01b-6100-36b2a77b0543",
+                                        "layer": "segment",
+                                        "time": 1626308194000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:16:34.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 146.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a35c"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "c6d46969-97bc-1318-0c28-77c1a323b278",
+                                        "layer": "segment",
+                                        "time": 1626308340000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:19:00.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 280.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a35d"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "19647c88-6cfe-1b1e-0a12-0fba17778e71",
+                                        "layer": "segment",
+                                        "time": 1626308620000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:23:40.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 221.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a35e"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "0d9e766e-75ff-c676-973e-b4a79a80aa12",
+                                        "layer": "segment",
+                                        "time": 1626308841000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:27:21.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 318.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a35f"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "fed835ca-3158-da7e-c331-c5915be0ae3e",
+                                        "layer": "segment",
+                                        "time": 1626309159000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:32:39.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 306.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a360"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "ee48627f-ff0f-81ea-168c-cedd9eb72b54",
+                                        "layer": "segment",
+                                        "time": 1626309465000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:37:45.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 207.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a361"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "8b9f975d-96b0-c362-e6b5-443b5e8f8c90",
+                                        "layer": "segment",
+                                        "time": 1626309672000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:41:12.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 235.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a362"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "160010a0-c0c5-d8be-3f7a-cb0744b3783b",
+                                        "layer": "segment",
+                                        "time": 1626309907000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:45:07.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 194.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a363"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "c4a609c0-620f-b465-e0cb-30bf9e03483b",
+                                        "layer": "segment",
+                                        "time": 1626310101000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:48:21.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 350.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a364"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "de44fce7-21ce-42dd-f81c-1510ec84c13d",
+                                        "layer": "segment",
+                                        "time": 1626310451000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:54:11.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 198.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a365"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "80857894-f652-75cb-d62f-b539060d3af6",
+                                        "layer": "segment",
+                                        "time": 1626310649000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:57:29.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 468.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a366"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "4b64e2e1-f061-3904-eec5-1a870a71a08d",
+                                        "layer": "segment",
+                                        "time": 1626311117000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:05:17.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 257.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a367"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "bc2dc05e-498d-e799-ea07-92df26fb21ac",
+                                        "layer": "segment",
+                                        "time": 1626311374000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:09:34.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 352.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a368"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "e7a4870c-c855-e50c-b6d6-1c37551ed604",
+                                        "layer": "segment",
+                                        "time": 1626311726000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:15:26.000+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 0.0,
+                                        "segment": {
+                                            "legacyIds": {
+                                                "shortId": "a369"
+                                            },
+                                            "segmentType": "SOFT"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "layer": "cut",
+                                "markers": [
+                                    {
+                                        "assetGUID": "5a007b00-7d00-601e-be66-33efaadc697d",
+                                        "consumptionInfo": "gi=GDCA-106746487-001,c=octane,d=0,si=805744975,ms=2021-07-14T15:48:10.376Z,ag=5a007b00-7d00-601e-be66-33efaadc697d",
+                                        "layer": "cut",
+                                        "time": 1626277690376,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T15:48:10.376+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 0.0,
+                                        "cut": {
+                                            "legacyIds": {
+                                                "siriusXMId": "3006b14f"
+                                            },
+                                            "title": "Bulletproof",
+                                            "artists": [
+                                                {
+                                                    "name": "From Ashes To New"
+                                                }
+                                            ],
+                                            "galaxyAssetId": "GDCA-106746487-001",
+                                            "cutContentType": "Link"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "d62770c8-bc5b-0e2f-2d3f-2c8d062168f8",
+                                        "consumptionInfo": "gi=GDCA-106746487-001,c=octane,d=0,si=805794582,ms=2021-07-14T20:00:42.013Z,ag=d62770c8-bc5b-0e2f-2d3f-2c8d062168f8",
+                                        "layer": "cut",
+                                        "time": 1626292842013,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T20:00:42.013+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 0.0,
+                                        "cut": {
+                                            "legacyIds": {
+                                                "siriusXMId": "30077316"
+                                            },
+                                            "title": "Bulletproof",
+                                            "artists": [
+                                                {
+                                                    "name": "From Ashes To New"
+                                                }
+                                            ],
+                                            "galaxyAssetId": "GDCA-106746487-001",
+                                            "cutContentType": "Link"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "8184e340-49f3-5955-0aae-21d5b2fb9c7d",
+                                        "consumptionInfo": "gi=GDCA-106627731-001,c=octane,d=236,si=805795795,ms=2021-07-14T20:12:09.945Z,ag=8184e340-49f3-5955-0aae-21d5b2fb9c7d,ph=$OLwby",
+                                        "layer": "cut",
+                                        "time": 1626293529945,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T20:12:09.945+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 236.716,
+                                        "cut": {
+                                            "legacyIds": {
+                                                "siriusXMId": "300777d3",
+                                                "pid": "$OLwby"
+                                            },
+                                            "title": "HostAge At A BeAch House PArty",
+                                            "artists": [
+                                                {
+                                                    "name": "Avoid"
+                                                }
+                                            ],
+                                            "album": {
+                                                "title": "Burner",
+                                                "creativeArts": [
+                                                    {
+                                                        "encrypted": false,
+                                                        "size": "THUMBNAIL",
+                                                        "type": "IMAGE",
+                                                        "url": "http://albumart.siriusxm.com/albumart/2000/GDCA-106627731-001_t.jpg",
+                                                        "relativeUrl": "%Album_Art%/albumart/2000/GDCA-106627731-001_t.jpg"
+                                                    },
+                                                    {
+                                                        "encrypted": false,
+                                                        "size": "SMALL",
+                                                        "type": "IMAGE",
+                                                        "url": "http://albumart.siriusxm.com/albumart/2000/GDCA-106627731-001_s.jpg",
+                                                        "relativeUrl": "%Album_Art%/albumart/2000/GDCA-106627731-001_s.jpg"
+                                                    },
+                                                    {
+                                                        "encrypted": false,
+                                                        "size": "MEDIUM",
+                                                        "type": "IMAGE",
+                                                        "url": "http://albumart.siriusxm.com/albumart/2000/GDCA-106627731-001_m.jpg",
+                                                        "relativeUrl": "%Album_Art%/albumart/2000/GDCA-106627731-001_m.jpg"
+                                                    }
+                                                ]
+                                            },
+                                            "clipGUID": "0442df90-d0f0-be4e-aa8d-c1b2f8167f54",
+                                            "galaxyAssetId": "GDCA-106627731-001",
+                                            "cutContentType": "Song"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "6fd625f3-7304-eb35-6c2f-83993a7f7e83",
+                                        "consumptionInfo": "gi=NDCA-000318553-001,c=octane,d=224,si=805797349,ms=2021-07-14T20:16:06.661Z,ag=6fd625f3-7304-eb35-6c2f-83993a7f7e83,ph=$O1DnP",
+                                        "layer": "cut",
+                                        "time": 1626293766661,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T20:16:06.661+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 224.657,
+                                        "cut": {
+                                            "legacyIds": {
+                                                "siriusXMId": "30077de5",
+                                                "pid": "$O1DnP"
+                                            },
+                                            "title": "Feel Invincible",
+                                            "artists": [
+                                                {
+                                                    "name": "Skillet"
+                                                }
+                                            ],
+                                            "album": {
+                                                "title": "Unleashed",
+                                                "creativeArts": [
+                                                    {
+                                                        "encrypted": false,
+                                                        "size": "THUMBNAIL",
+                                                        "type": "IMAGE",
+                                                        "url": "http://albumart.siriusxm.com/albumart/2000/NDCA-000318553-001_t.jpg",
+                                                        "relativeUrl": "%Album_Art%/albumart/2000/NDCA-000318553-001_t.jpg"
+                                                    },
+                                                    {
+                                                        "encrypted": false,
+                                                        "size": "SMALL",
+                                                        "type": "IMAGE",
+                                                        "url": "http://albumart.siriusxm.com/albumart/2000/NDCA-000318553-001_s.jpg",
+                                                        "relativeUrl": "%Album_Art%/albumart/2000/NDCA-000318553-001_s.jpg"
+                                                    },
+                                                    {
+                                                        "encrypted": false,
+                                                        "size": "MEDIUM",
+                                                        "type": "IMAGE",
+                                                        "url": "http://albumart.siriusxm.com/albumart/2000/NDCA-000318553-001_m.jpg",
+                                                        "relativeUrl": "%Album_Art%/albumart/2000/NDCA-000318553-001_m.jpg"
+                                                    }
+                                                ]
+                                            },
+                                            "clipGUID": "d2329f40-f92a-2e34-477b-107b43af4e1f",
+                                            "galaxyAssetId": "NDCA-000318553-001",
+                                            "cutContentType": "Song"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "ab641d74-9a47-c027-a854-d3597121f1e1",
+                                        "consumptionInfo": "gi=GDCA-105572569-001,c=octane,d=6,si=805798137,ms=2021-07-14T20:19:51.318Z,ag=ab641d74-9a47-c027-a854-d3597121f1e1",
+                                        "layer": "cut",
+                                        "time": 1626293991318,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T20:19:51.318+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 6.719,
+                                        "cut": {
+                                            "legacyIds": {
+                                                "siriusXMId": "300780f9"
+                                            },
+                                            "title": "@sxmOctane",
+                                            "artists": [
+                                                {
+                                                    "name": "Fit More Hard Rock Into Your Day"
+                                                }
+                                            ],
+                                            "galaxyAssetId": "GDCA-105572569-001",
+                                            "cutContentType": "Link"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "d6628016-1073-f913-ec06-ecd54c7344e1",
+                                        "consumptionInfo": "gi=GDCA-106617165-001,c=octane,d=197,si=805797348,ms=2021-07-14T20:19:58.037Z,ag=d6628016-1073-f913-ec06-ecd54c7344e1,ph=$OLwNt",
+                                        "layer": "cut",
+                                        "time": 1626293998037,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T20:19:58.037+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 197.324,
+                                        "cut": {
+                                            "legacyIds": {
+                                                "siriusXMId": "30077de4",
+                                                "pid": "$OLwNt"
+                                            },
+                                            "title": "Die With Me",
+                                            "artists": [
+                                                {
+                                                    "name": "Gemini Syndrome"
+                                                }
+                                            ],
+                                            "album": {
+                                                "title": "Die With Me"
+                                            },
+                                            "clipGUID": "60c4d518-af1c-d732-f28f-17d92347370f",
+                                            "galaxyAssetId": "GDCA-106617165-001",
+                                            "cutContentType": "Song"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "cfa2fc54-1324-0d69-fe0c-444204476f1b",
+                                        "consumptionInfo": "gi=GDCA-106419953-001,c=octane,d=199,si=805798829,ms=2021-07-14T20:23:15.361Z,ag=cfa2fc54-1324-0d69-fe0c-444204476f1b,ph=$OLslx",
+                                        "layer": "cut",
+                                        "time": 1626294195361,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T20:23:15.361+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 199.234,
+                                        "cut": {
+                                            "legacyIds": {
+                                                "siriusXMId": "300783ad",
+                                                "pid": "$OLslx"
+                                            },
+                                            "title": "Wilting In The Light",
+                                            "artists": [
+                                                {
+                                                    "name": "Light The Torch"
+                                                }
+                                            ],
+                                            "album": {
+                                                "title": "Wilting In The Light",
+                                                "creativeArts": [
+                                                    {
+                                                        "encrypted": false,
+                                                        "size": "THUMBNAIL",
+                                                        "type": "IMAGE",
+                                                        "url": "http://albumart.siriusxm.com/albumart/2000/GDCA-106419953-001_t.jpg",
+                                                        "relativeUrl": "%Album_Art%/albumart/2000/GDCA-106419953-001_t.jpg"
+                                                    },
+                                                    {
+                                                        "encrypted": false,
+                                                        "size": "SMALL",
+                                                        "type": "IMAGE",
+                                                        "url": "http://albumart.siriusxm.com/albumart/2000/GDCA-106419953-001_s.jpg",
+                                                        "relativeUrl": "%Album_Art%/albumart/2000/GDCA-106419953-001_s.jpg"
+                                                    },
+                                                    {
+                                                        "encrypted": false,
+                                                        "size": "MEDIUM",
+                                                        "type": "IMAGE",
+                                                        "url": "http://albumart.siriusxm.com/albumart/2000/GDCA-106419953-001_m.jpg",
+                                                        "relativeUrl": "%Album_Art%/albumart/2000/GDCA-106419953-001_m.jpg"
+                                                    }
+                                                ]
+                                            },
+                                            "clipGUID": "0568ca55-dbde-c81c-a0a7-0fc1b813ed98",
+                                            "galaxyAssetId": "GDCA-106419953-001",
+                                            "cutContentType": "Song"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "16f7e676-e5e3-342a-a03d-c7713626bd83",
+                                        "consumptionInfo": "gi=GDCA-105572551-001,c=octane,d=6,si=805799472,ms=2021-07-14T20:26:34.595Z,ag=16f7e676-e5e3-342a-a03d-c7713626bd83",
+                                        "layer": "cut",
+                                        "time": 1626294394595,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T20:26:34.595+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 6.265,
+                                        "cut": {
+                                            "legacyIds": {
+                                                "siriusXMId": "30078630"
+                                            },
+                                            "title": "@sxmOctane",
+                                            "artists": [
+                                                {
+                                                    "name": "New Hard Rock"
+                                                }
+                                            ],
+                                            "galaxyAssetId": "GDCA-105572551-001",
+                                            "cutContentType": "Link"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "96ec03b9-54f1-d690-25b8-250a4f040a0d",
+                                        "consumptionInfo": "gi=NDCA-000066601-001,c=octane,d=201,si=805798828,ms=2021-07-14T20:26:40.860Z,ag=96ec03b9-54f1-d690-25b8-250a4f040a0d,ph=$OFy2",
+                                        "layer": "cut",
+                                        "time": 1626294400860,
+                                        "timestamp": {
+                                            "absolute": "2021-07-14T20:26:40.860+0000"
+                                        },
+                                        "containerGUID": "0fed9647-cc82-24d7-526d-98762e8a52cd",
+                                        "duration": 201.817,
+                                        "cut": {
+                                            "legacyIds": {
+                                                "siriusXMId": "300783ac",
+                                                "pid": "$OFy2"
+                                            },
+                                            "title": "Ten Thousand Fists",
+                                            "artists": [
+                                                {
+                                                    "name": "Disturbed"
+                                                }
+                                            ],
+                                            "album": {
+                                                "title": "Ten Thousand Fists",
+                                                "creativeArts": [
+                                                    {
+                                                        "encrypted": false,
+                                                        "size": "THUMBNAIL",
+                                                        "type": "IMAGE",
+                                                        "url": "http://albumart.siriusxm.com/albumart/2000/NDCA-000066601-001_t.jpg",
+                                                        "relativeUrl": "%Album_Art%/albumart/2000/NDCA-000066601-001_t.jpg"
+                                                    },
+                                                    {
+                                                        "encrypted": false,
+                                                        "size": "SMALL",
+                                                        "type": "IMAGE",
+                                                        "url": "http://albumart.siriusxm.com/albumart/2000/NDCA-000066601-001_s.jpg",
+                                                        "relativeUrl": "%Album_Art%/albumart/2000/NDCA-000066601-001_s.jpg"
+                                                    },
+                                                    {
+                                                        "encrypted": false,
+                                                        "size": "MEDIUM",
+                                                        "type": "IMAGE",
+                                                        "url": "http://albumart.siriusxm.com/albumart/2000/NDCA-000066601-001_m.jpg",
+                                                        "relativeUrl": "%Album_Art%/albumart/2000/NDCA-000066601-001_m.jpg"
+                                                    }
+                                                ]
+                                            },
+                                            "externalIds": [
+                                                {
+                                                    "id": "I_TUNES",
+                                                    "value": "1030227633"
+                                                }
+                                            ],
+                                            "clipGUID": "235bcd87-f120-4969-bc5d-980bc9cc9cab",
+                                            "galaxyAssetId": "NDCA-000066601-001",
+                                            "cutContentType": "Song"
+                                        }
+                                    },
+                                    {
+                                        "assetGUID": "661a6b8a-843a-88ab-ed87-422905646e2c",
+                                        "consumptionInfo": "gi=GDCA-103163910-001,c=octane,d=194,si=805799504,ms=2021-07-14T20:30:02.677Z,ag=661a6b8a-843a-88ab-ed87-...1cee2-dd66-8dc8-b6a3-124e94f3890e",
+                                        "layer": "segment",
+                                        "time": 1626307276000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:01:16.000+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "55b1cee2-dd66-8dc8-b6a3-124e94f3890e"
+                                    },
+                                    {
+                                        "assetGUID": "9518ac48-de89-78b9-a85f-11914025dc10",
+                                        "layer": "cut",
+                                        "time": 1626307277398,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:01:17.398+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "9518ac48-de89-78b9-a85f-11914025dc10"
+                                    },
+                                    {
+                                        "assetGUID": "b0060b19-78c0-db55-bfea-ac66b499f04b",
+                                        "layer": "cut",
+                                        "time": 1626307277398,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:01:17.398+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "b0060b19-78c0-db55-bfea-ac66b499f04b"
+                                    },
+                                    {
+                                        "assetGUID": "b0060b19-78c0-db55-bfea-ac66b499f04b",
+                                        "layer": "cut",
+                                        "time": 1626307492217,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:04:52.217+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "b0060b19-78c0-db55-bfea-ac66b499f04b"
+                                    },
+                                    {
+                                        "assetGUID": "be2b404f-a7d1-c7a3-762c-af022765ec2f",
+                                        "layer": "cut",
+                                        "time": 1626307492217,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:04:52.217+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "be2b404f-a7d1-c7a3-762c-af022765ec2f"
+                                    },
+                                    {
+                                        "assetGUID": "55b1cee2-dd66-8dc8-b6a3-124e94f3890e",
+                                        "layer": "segment",
+                                        "time": 1626307600000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:06:40.000+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "55b1cee2-dd66-8dc8-b6a3-124e94f3890e"
+                                    },
+                                    {
+                                        "assetGUID": "0a35d78b-2b38-396d-b35f-512b707f4123",
+                                        "layer": "segment",
+                                        "time": 1626307600000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:06:40.000+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "0a35d78b-2b38-396d-b35f-512b707f4123"
+                                    },
+                                    {
+                                        "assetGUID": "be2b404f-a7d1-c7a3-762c-af022765ec2f",
+                                        "layer": "cut",
+                                        "time": 1626307601233,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:06:41.233+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "be2b404f-a7d1-c7a3-762c-af022765ec2f"
+                                    },
+                                    {
+                                        "assetGUID": "9650ebd7-6d61-15e9-aac6-09967fd5ca36",
+                                        "layer": "cut",
+                                        "time": 1626307601233,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:06:41.233+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "9650ebd7-6d61-15e9-aac6-09967fd5ca36"
+                                    },
+                                    {
+                                        "assetGUID": "0a35d78b-2b38-396d-b35f-512b707f4123",
+                                        "layer": "segment",
+                                        "time": 1626307838000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:10:38.000+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "0a35d78b-2b38-396d-b35f-512b707f4123"
+                                    },
+                                    {
+                                        "assetGUID": "89812ec7-41dc-1302-e438-a09e231982b1",
+                                        "layer": "segment",
+                                        "time": 1626307838000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:10:38.000+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "89812ec7-41dc-1302-e438-a09e231982b1"
+                                    },
+                                    {
+                                        "assetGUID": "9650ebd7-6d61-15e9-aac6-09967fd5ca36",
+                                        "layer": "cut",
+                                        "time": 1626307838664,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:10:38.664+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "9650ebd7-6d61-15e9-aac6-09967fd5ca36"
+                                    },
+                                    {
+                                        "assetGUID": "76d8fe40-f92f-7669-c9c4-17a038fdbd5e",
+                                        "layer": "cut",
+                                        "time": 1626307838664,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:10:38.664+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "76d8fe40-f92f-7669-c9c4-17a038fdbd5e"
+                                    },
+                                    {
+                                        "assetGUID": "76d8fe40-f92f-7669-c9c4-17a038fdbd5e",
+                                        "layer": "cut",
+                                        "time": 1626308052983,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:14:12.983+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "76d8fe40-f92f-7669-c9c4-17a038fdbd5e"
+                                    },
+                                    {
+                                        "assetGUID": "6c1ad1a4-73d6-1d81-285a-ae3f234ae71b",
+                                        "layer": "cut",
+                                        "time": 1626308052983,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:14:12.983+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "6c1ad1a4-73d6-1d81-285a-ae3f234ae71b"
+                                    },
+                                    {
+                                        "assetGUID": "89812ec7-41dc-1302-e438-a09e231982b1",
+                                        "layer": "segment",
+                                        "time": 1626308059000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:14:19.000+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "89812ec7-41dc-1302-e438-a09e231982b1"
+                                    },
+                                    {
+                                        "assetGUID": "60144dc0-7e0e-c098-1a24-6f861015f338",
+                                        "layer": "segment",
+                                        "time": 1626308059000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:14:19.000+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "60144dc0-7e0e-c098-1a24-6f861015f338"
+                                    },
+                                    {
+                                        "assetGUID": "60144dc0-7e0e-c098-1a24-6f861015f338",
+                                        "layer": "segment",
+                                        "time": 1626308194000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:16:34.000+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "60144dc0-7e0e-c098-1a24-6f861015f338"
+                                    },
+                                    {
+                                        "assetGUID": "6267b0f4-ffc4-d01b-6100-36b2a77b0543",
+                                        "layer": "segment",
+                                        "time": 1626308194000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:16:34.000+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "6267b0f4-ffc4-d01b-6100-36b2a77b0543"
+                                    },
+                                    {
+                                        "assetGUID": "6c1ad1a4-73d6-1d81-285a-ae3f234ae71b",
+                                        "layer": "cut",
+                                        "time": 1626308195205,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:16:35.205+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "6c1ad1a4-73d6-1d81-285a-ae3f234ae71b"
+                                    },
+                                    {
+                                        "assetGUID": "ce4f6cb9-0ffb-b46d-1939-8ad7677fd66b",
+                                        "layer": "cut",
+                                        "time": 1626308195205,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:16:35.205+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "ce4f6cb9-0ffb-b46d-1939-8ad7677fd66b"
+                                    },
+                                    {
+                                        "assetGUID": "ce4f6cb9-0ffb-b46d-1939-8ad7677fd66b",
+                                        "layer": "cut",
+                                        "time": 1626308331370,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:18:51.370+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "ce4f6cb9-0ffb-b46d-1939-8ad7677fd66b"
+                                    },
+                                    {
+                                        "assetGUID": "6f517321-6acd-122a-d4fd-b0217f4e8ea5",
+                                        "layer": "cut",
+                                        "time": 1626308331370,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:18:51.370+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "6f517321-6acd-122a-d4fd-b0217f4e8ea5"
+                                    },
+                                    {
+                                        "assetGUID": "6267b0f4-ffc4-d01b-6100-36b2a77b0543",
+                                        "layer": "segment",
+                                        "time": 1626308340000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:19:00.000+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "6267b0f4-ffc4-d01b-6100-36b2a77b0543"
+                                    },
+                                    {
+                                        "assetGUID": "c6d46969-97bc-1318-0c28-77c1a323b278",
+                                        "layer": "segment",
+                                        "time": 1626308340000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:19:00.000+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "c6d46969-97bc-1318-0c28-77c1a323b278"
+                                    },
+                                    {
+                                        "assetGUID": "6f517321-6acd-122a-d4fd-b0217f4e8ea5",
+                                        "layer": "cut",
+                                        "time": 1626308341367,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:19:01.367+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "6f517321-6acd-122a-d4fd-b0217f4e8ea5"
+                                    },
+                                    {
+                                        "assetGUID": "bbc3173e-ba07-b906-d7fd-047cb14fad8c",
+                                        "layer": "cut",
+                                        "time": 1626308341367,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:19:01.367+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "bbc3173e-ba07-b906-d7fd-047cb14fad8c"
+                                    },
+                                    {
+                                        "assetGUID": "c6d46969-97bc-1318-0c28-77c1a323b278",
+                                        "layer": "segment",
+                                        "time": 1626308620000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:23:40.000+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "c6d46969-97bc-1318-0c28-77c1a323b278"
+                                    },
+                                    {
+                                        "assetGUID": "19647c88-6cfe-1b1e-0a12-0fba17778e71",
+                                        "layer": "segment",
+                                        "time": 1626308620000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:23:40.000+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "19647c88-6cfe-1b1e-0a12-0fba17778e71"
+                                    },
+                                    {
+                                        "assetGUID": "bbc3173e-ba07-b906-d7fd-047cb14fad8c",
+                                        "layer": "cut",
+                                        "time": 1626308620794,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:23:40.794+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "bbc3173e-ba07-b906-d7fd-047cb14fad8c"
+                                    },
+                                    {
+                                        "assetGUID": "3a0506ae-cd7c-3db5-0e12-4e70c28591ef",
+                                        "layer": "cut",
+                                        "time": 1626308620794,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:23:40.794+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "3a0506ae-cd7c-3db5-0e12-4e70c28591ef"
+                                    },
+                                    {
+                                        "assetGUID": "3a0506ae-cd7c-3db5-0e12-4e70c28591ef",
+                                        "layer": "cut",
+                                        "time": 1626308835757,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:27:15.757+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "3a0506ae-cd7c-3db5-0e12-4e70c28591ef"
+                                    },
+                                    {
+                                        "assetGUID": "d659f412-fe7b-6082-9c7e-ced6f85c6d26",
+                                        "layer": "cut",
+                                        "time": 1626308835757,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:27:15.757+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "d659f412-fe7b-6082-9c7e-ced6f85c6d26"
+                                    },
+                                    {
+                                        "assetGUID": "19647c88-6cfe-1b1e-0a12-0fba17778e71",
+                                        "layer": "segment",
+                                        "time": 1626308841000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:27:21.000+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "19647c88-6cfe-1b1e-0a12-0fba17778e71"
+                                    },
+                                    {
+                                        "assetGUID": "0d9e766e-75ff-c676-973e-b4a79a80aa12",
+                                        "layer": "segment",
+                                        "time": 1626308841000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:27:21.000+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "0d9e766e-75ff-c676-973e-b4a79a80aa12"
+                                    },
+                                    {
+                                        "assetGUID": "d659f412-fe7b-6082-9c7e-ced6f85c6d26",
+                                        "layer": "cut",
+                                        "time": 1626308842159,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:27:22.159+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "d659f412-fe7b-6082-9c7e-ced6f85c6d26"
+                                    },
+                                    {
+                                        "assetGUID": "9d683698-3576-97b4-3fdb-902534c71850",
+                                        "layer": "cut",
+                                        "time": 1626308842159,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:27:22.159+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "9d683698-3576-97b4-3fdb-902534c71850"
+                                    },
+                                    {
+                                        "assetGUID": "9d683698-3576-97b4-3fdb-902534c71850",
+                                        "layer": "cut",
+                                        "time": 1626309051002,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:30:51.002+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "9d683698-3576-97b4-3fdb-902534c71850"
+                                    },
+                                    {
+                                        "assetGUID": "21acd19a-eef7-e91f-df23-45498ccf1eb0",
+                                        "layer": "cut",
+                                        "time": 1626309051002,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:30:51.002+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "21acd19a-eef7-e91f-df23-45498ccf1eb0"
+                                    },
+                                    {
+                                        "assetGUID": "0d9e766e-75ff-c676-973e-b4a79a80aa12",
+                                        "layer": "segment",
+                                        "time": 1626309159000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:32:39.000+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "0d9e766e-75ff-c676-973e-b4a79a80aa12"
+                                    },
+                                    {
+                                        "assetGUID": "fed835ca-3158-da7e-c331-c5915be0ae3e",
+                                        "layer": "segment",
+                                        "time": 1626309159000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:32:39.000+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "fed835ca-3158-da7e-c331-c5915be0ae3e"
+                                    },
+                                    {
+                                        "assetGUID": "21acd19a-eef7-e91f-df23-45498ccf1eb0",
+                                        "layer": "cut",
+                                        "time": 1626309159616,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:32:39.616+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "21acd19a-eef7-e91f-df23-45498ccf1eb0"
+                                    },
+                                    {
+                                        "assetGUID": "b745d972-f1da-f24d-41f2-267c78b5022f",
+                                        "layer": "cut",
+                                        "time": 1626309159616,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:32:39.616+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "b745d972-f1da-f24d-41f2-267c78b5022f"
+                                    },
+                                    {
+                                        "assetGUID": "fed835ca-3158-da7e-c331-c5915be0ae3e",
+                                        "layer": "segment",
+                                        "time": 1626309465000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:37:45.000+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "fed835ca-3158-da7e-c331-c5915be0ae3e"
+                                    },
+                                    {
+                                        "assetGUID": "ee48627f-ff0f-81ea-168c-cedd9eb72b54",
+                                        "layer": "segment",
+                                        "time": 1626309465000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:37:45.000+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "ee48627f-ff0f-81ea-168c-cedd9eb72b54"
+                                    },
+                                    {
+                                        "assetGUID": "b745d972-f1da-f24d-41f2-267c78b5022f",
+                                        "layer": "cut",
+                                        "time": 1626309465466,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:37:45.466+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "b745d972-f1da-f24d-41f2-267c78b5022f"
+                                    },
+                                    {
+                                        "assetGUID": "66f1764e-e212-c860-407a-8c1ce97062c8",
+                                        "layer": "cut",
+                                        "time": 1626309465466,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:37:45.466+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "66f1764e-e212-c860-407a-8c1ce97062c8"
+                                    },
+                                    {
+                                        "assetGUID": "66f1764e-e212-c860-407a-8c1ce97062c8",
+                                        "layer": "cut",
+                                        "time": 1626309666592,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:41:06.592+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "66f1764e-e212-c860-407a-8c1ce97062c8"
+                                    },
+                                    {
+                                        "assetGUID": "b59e5b7c-e870-8df8-d4ae-25806761b063",
+                                        "layer": "cut",
+                                        "time": 1626309666592,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:41:06.592+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "b59e5b7c-e870-8df8-d4ae-25806761b063"
+                                    },
+                                    {
+                                        "assetGUID": "ee48627f-ff0f-81ea-168c-cedd9eb72b54",
+                                        "layer": "segment",
+                                        "time": 1626309672000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:41:12.000+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "ee48627f-ff0f-81ea-168c-cedd9eb72b54"
+                                    },
+                                    {
+                                        "assetGUID": "8b9f975d-96b0-c362-e6b5-443b5e8f8c90",
+                                        "layer": "segment",
+                                        "time": 1626309672000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:41:12.000+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "8b9f975d-96b0-c362-e6b5-443b5e8f8c90"
+                                    },
+                                    {
+                                        "assetGUID": "b59e5b7c-e870-8df8-d4ae-25806761b063",
+                                        "layer": "cut",
+                                        "time": 1626309902588,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:45:02.588+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "b59e5b7c-e870-8df8-d4ae-25806761b063"
+                                    },
+                                    {
+                                        "assetGUID": "19c1ae25-ee54-c10c-a015-8fe9f72c0f2c",
+                                        "layer": "cut",
+                                        "time": 1626309902588,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:45:02.588+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "19c1ae25-ee54-c10c-a015-8fe9f72c0f2c"
+                                    },
+                                    {
+                                        "assetGUID": "8b9f975d-96b0-c362-e6b5-443b5e8f8c90",
+                                        "layer": "segment",
+                                        "time": 1626309907000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:45:07.000+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "8b9f975d-96b0-c362-e6b5-443b5e8f8c90"
+                                    },
+                                    {
+                                        "assetGUID": "160010a0-c0c5-d8be-3f7a-cb0744b3783b",
+                                        "layer": "segment",
+                                        "time": 1626309907000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:45:07.000+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "160010a0-c0c5-d8be-3f7a-cb0744b3783b"
+                                    },
+                                    {
+                                        "assetGUID": "19c1ae25-ee54-c10c-a015-8fe9f72c0f2c",
+                                        "layer": "cut",
+                                        "time": 1626309907658,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:45:07.658+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "19c1ae25-ee54-c10c-a015-8fe9f72c0f2c"
+                                    },
+                                    {
+                                        "assetGUID": "dd4b8527-3ad6-81ac-a3a3-91548dc8d38a",
+                                        "layer": "cut",
+                                        "time": 1626309907658,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:45:07.658+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "dd4b8527-3ad6-81ac-a3a3-91548dc8d38a"
+                                    },
+                                    {
+                                        "assetGUID": "160010a0-c0c5-d8be-3f7a-cb0744b3783b",
+                                        "layer": "segment",
+                                        "time": 1626310101000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:48:21.000+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "160010a0-c0c5-d8be-3f7a-cb0744b3783b"
+                                    },
+                                    {
+                                        "assetGUID": "c4a609c0-620f-b465-e0cb-30bf9e03483b",
+                                        "layer": "segment",
+                                        "time": 1626310101000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:48:21.000+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "c4a609c0-620f-b465-e0cb-30bf9e03483b"
+                                    },
+                                    {
+                                        "assetGUID": "dd4b8527-3ad6-81ac-a3a3-91548dc8d38a",
+                                        "layer": "cut",
+                                        "time": 1626310102640,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:48:22.640+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "dd4b8527-3ad6-81ac-a3a3-91548dc8d38a"
+                                    },
+                                    {
+                                        "assetGUID": "7329e044-a9e4-50b0-f1a6-8dbf996df382",
+                                        "layer": "cut",
+                                        "time": 1626310102640,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:48:22.640+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "7329e044-a9e4-50b0-f1a6-8dbf996df382"
+                                    },
+                                    {
+                                        "assetGUID": "7329e044-a9e4-50b0-f1a6-8dbf996df382",
+                                        "layer": "cut",
+                                        "time": 1626310359963,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:52:39.963+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "7329e044-a9e4-50b0-f1a6-8dbf996df382"
+                                    },
+                                    {
+                                        "assetGUID": "54da385e-9416-d377-626a-6d5b8725ad70",
+                                        "layer": "cut",
+                                        "time": 1626310359963,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:52:39.963+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "54da385e-9416-d377-626a-6d5b8725ad70"
+                                    },
+                                    {
+                                        "assetGUID": "c4a609c0-620f-b465-e0cb-30bf9e03483b",
+                                        "layer": "segment",
+                                        "time": 1626310451000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:54:11.000+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "c4a609c0-620f-b465-e0cb-30bf9e03483b"
+                                    },
+                                    {
+                                        "assetGUID": "de44fce7-21ce-42dd-f81c-1510ec84c13d",
+                                        "layer": "segment",
+                                        "time": 1626310451000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:54:11.000+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "de44fce7-21ce-42dd-f81c-1510ec84c13d"
+                                    },
+                                    {
+                                        "assetGUID": "54da385e-9416-d377-626a-6d5b8725ad70",
+                                        "layer": "cut",
+                                        "time": 1626310451464,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:54:11.464+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "54da385e-9416-d377-626a-6d5b8725ad70"
+                                    },
+                                    {
+                                        "assetGUID": "d0649bb7-9acc-1ba9-9999-cee5e702a67d",
+                                        "layer": "cut",
+                                        "time": 1626310451464,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:54:11.464+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "d0649bb7-9acc-1ba9-9999-cee5e702a67d"
+                                    },
+                                    {
+                                        "assetGUID": "de44fce7-21ce-42dd-f81c-1510ec84c13d",
+                                        "layer": "segment",
+                                        "time": 1626310649000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:57:29.000+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "de44fce7-21ce-42dd-f81c-1510ec84c13d"
+                                    },
+                                    {
+                                        "assetGUID": "80857894-f652-75cb-d62f-b539060d3af6",
+                                        "layer": "segment",
+                                        "time": 1626310649000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:57:29.000+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "80857894-f652-75cb-d62f-b539060d3af6"
+                                    },
+                                    {
+                                        "assetGUID": "d0649bb7-9acc-1ba9-9999-cee5e702a67d",
+                                        "layer": "cut",
+                                        "time": 1626310649567,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:57:29.567+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "d0649bb7-9acc-1ba9-9999-cee5e702a67d"
+                                    },
+                                    {
+                                        "assetGUID": "eb5cb3c1-31f7-251c-5122-f8380532c51e",
+                                        "layer": "cut",
+                                        "time": 1626310649567,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T00:57:29.567+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "eb5cb3c1-31f7-251c-5122-f8380532c51e"
+                                    },
+                                    {
+                                        "assetGUID": "eb5cb3c1-31f7-251c-5122-f8380532c51e",
+                                        "layer": "cut",
+                                        "time": 1626310883777,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:01:23.777+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "eb5cb3c1-31f7-251c-5122-f8380532c51e"
+                                    },
+                                    {
+                                        "assetGUID": "6b765d1d-b7b6-91a6-3216-a096882660e7",
+                                        "layer": "cut",
+                                        "time": 1626310883777,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:01:23.777+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "6b765d1d-b7b6-91a6-3216-a096882660e7"
+                                    },
+                                    {
+                                        "assetGUID": "6b765d1d-b7b6-91a6-3216-a096882660e7",
+                                        "layer": "cut",
+                                        "time": 1626310899394,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:01:39.394+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "6b765d1d-b7b6-91a6-3216-a096882660e7"
+                                    },
+                                    {
+                                        "assetGUID": "76059306-b0a1-039d-4e19-330d9d06e26e",
+                                        "layer": "cut",
+                                        "time": 1626310899394,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:01:39.394+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "76059306-b0a1-039d-4e19-330d9d06e26e"
+                                    },
+                                    {
+                                        "assetGUID": "80857894-f652-75cb-d62f-b539060d3af6",
+                                        "layer": "segment",
+                                        "time": 1626311117000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:05:17.000+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "80857894-f652-75cb-d62f-b539060d3af6"
+                                    },
+                                    {
+                                        "assetGUID": "4b64e2e1-f061-3904-eec5-1a870a71a08d",
+                                        "layer": "segment",
+                                        "time": 1626311117000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:05:17.000+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "4b64e2e1-f061-3904-eec5-1a870a71a08d"
+                                    },
+                                    {
+                                        "assetGUID": "76059306-b0a1-039d-4e19-330d9d06e26e",
+                                        "layer": "cut",
+                                        "time": 1626311117690,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:05:17.690+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "76059306-b0a1-039d-4e19-330d9d06e26e"
+                                    },
+                                    {
+                                        "assetGUID": "315abba8-55f6-3d84-8e4e-3f0a9c534f76",
+                                        "layer": "cut",
+                                        "time": 1626311117690,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:05:17.690+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "315abba8-55f6-3d84-8e4e-3f0a9c534f76"
+                                    },
+                                    {
+                                        "assetGUID": "315abba8-55f6-3d84-8e4e-3f0a9c534f76",
+                                        "layer": "cut",
+                                        "time": 1626311366629,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:09:26.629+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "315abba8-55f6-3d84-8e4e-3f0a9c534f76"
+                                    },
+                                    {
+                                        "assetGUID": "14d5fd65-e63c-9a5f-6d40-6671b0d30109",
+                                        "layer": "cut",
+                                        "time": 1626311366629,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:09:26.629+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "14d5fd65-e63c-9a5f-6d40-6671b0d30109"
+                                    },
+                                    {
+                                        "assetGUID": "4b64e2e1-f061-3904-eec5-1a870a71a08d",
+                                        "layer": "segment",
+                                        "time": 1626311374000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:09:34.000+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "4b64e2e1-f061-3904-eec5-1a870a71a08d"
+                                    },
+                                    {
+                                        "assetGUID": "bc2dc05e-498d-e799-ea07-92df26fb21ac",
+                                        "layer": "segment",
+                                        "time": 1626311374000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:09:34.000+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "bc2dc05e-498d-e799-ea07-92df26fb21ac"
+                                    },
+                                    {
+                                        "assetGUID": "14d5fd65-e63c-9a5f-6d40-6671b0d30109",
+                                        "layer": "cut",
+                                        "time": 1626311374904,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:09:34.904+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "14d5fd65-e63c-9a5f-6d40-6671b0d30109"
+                                    },
+                                    {
+                                        "assetGUID": "9683c9a8-e26b-3fdb-18f2-ad10d954736d",
+                                        "layer": "cut",
+                                        "time": 1626311374904,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:09:34.904+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "9683c9a8-e26b-3fdb-18f2-ad10d954736d"
+                                    },
+                                    {
+                                        "assetGUID": "9683c9a8-e26b-3fdb-18f2-ad10d954736d",
+                                        "layer": "cut",
+                                        "time": 1626311624799,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:13:44.799+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "9683c9a8-e26b-3fdb-18f2-ad10d954736d"
+                                    },
+                                    {
+                                        "assetGUID": "e61c2416-eddd-7c3b-bcf9-a826099d6e4a",
+                                        "layer": "cut",
+                                        "time": 1626311624799,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:13:44.799+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "e61c2416-eddd-7c3b-bcf9-a826099d6e4a"
+                                    },
+                                    {
+                                        "assetGUID": "null_INSTANTANEOUS",
+                                        "active": true,
+                                        "layer": "livepoint",
+                                        "time": 1626311674327,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:14:34.327+0000"
+                                        },
+                                        "event": "INSTANTANEOUS"
+                                    },
+                                    {
+                                        "assetGUID": "bc2dc05e-498d-e799-ea07-92df26fb21ac",
+                                        "layer": "segment",
+                                        "time": 1626311726000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:15:26.000+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "bc2dc05e-498d-e799-ea07-92df26fb21ac"
+                                    },
+                                    {
+                                        "assetGUID": "e7a4870c-c855-e50c-b6d6-1c37551ed604",
+                                        "layer": "segment",
+                                        "time": 1626311726000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:15:26.000+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "e7a4870c-c855-e50c-b6d6-1c37551ed604"
+                                    },
+                                    {
+                                        "assetGUID": "e7a4870c-c855-e50c-b6d6-1c37551ed604",
+                                        "layer": "segment",
+                                        "time": 1626311726000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:15:26.000+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "e7a4870c-c855-e50c-b6d6-1c37551ed604"
+                                    },
+                                    {
+                                        "assetGUID": "e61c2416-eddd-7c3b-bcf9-a826099d6e4a",
+                                        "layer": "cut",
+                                        "time": 1626311726946,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:15:26.946+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "e61c2416-eddd-7c3b-bcf9-a826099d6e4a"
+                                    },
+                                    {
+                                        "assetGUID": "75e12011-5816-f700-9fa2-c38b413a8234",
+                                        "layer": "cut",
+                                        "time": 1626311726946,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:15:26.946+0000"
+                                        },
+                                        "event": "START",
+                                        "markerGuid": "75e12011-5816-f700-9fa2-c38b413a8234"
+                                    },
+                                    {
+                                        "assetGUID": "75e12011-5816-f700-9fa2-c38b413a8234",
+                                        "layer": "cut",
+                                        "time": 1626311726946,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T01:15:26.946+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "75e12011-5816-f700-9fa2-c38b413a8234"
+                                    },
+                                    {
+                                        "assetGUID": "fed268ff-4674-a12e-ef53-dbc3b8c7d105",
+                                        "layer": "episode",
+                                        "time": 1626314400000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T02:00:00.000+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "fed268ff-4674-a12e-ef53-dbc3b8c7d105"
+                                    },
+                                    {
+                                        "assetGUID": "6d94e735-19c7-4523-8103-45083eaca96d",
+                                        "layer": "show",
+                                        "time": 1626314400000,
+                                        "timestamp": {
+                                            "absolute": "2021-07-15T02:00:00.000+0000"
+                                        },
+                                        "event": "END",
+                                        "markerGuid": "fed268ff-4674-a12e-ef53-dbc3b8c7d105"
+                                    }
+                                ]
+                            }
+                        ],
+                        "hlsConsumptionInfo": "?consumer=k2&gupId=CF2C633E494102A1BB44F526C2BBE62B",
+                        "connectInfo": {
+                            "phone": "",
+                            "email": "",
+                            "twitter": "@SXMOctane",
+                            "facebook": "siriusxmoctane"
+                        },
+                        "channelId": "octane",
+                        "aodEpisodeCount": 0,
+                        "inactivityTimeOut": 28800
+                    }
+                }
+            }
+        ]
+    }
+}
