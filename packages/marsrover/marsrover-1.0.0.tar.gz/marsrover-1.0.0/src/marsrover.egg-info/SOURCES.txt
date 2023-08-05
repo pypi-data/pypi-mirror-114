@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/marsrover/__init__.py
+src/marsrover/marsrover.py
+src/marsrover.egg-info/PKG-INFO
+src/marsrover.egg-info/SOURCES.txt
+src/marsrover.egg-info/dependency_links.txt
+src/marsrover.egg-info/entry_points.txt
+src/marsrover.egg-info/top_level.txt
