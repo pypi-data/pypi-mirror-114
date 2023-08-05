@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: statease
+Version: 0.1.0
+Summary:  Python interface to Stat-Ease 360.
+Home-page: https://statease.com/docs/se360/python-integration/
+Author: Stat-Ease, Inc.
+Author-email: support@statease.com
+License: Other/Proprietary License
+Description: This package implements an API to connect Python code with Stat-Ease 360.
+        
+        See: https://statease.com/docs/se360/python-integration/
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Manufacturing
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Description-Content-Type: text/markdown
