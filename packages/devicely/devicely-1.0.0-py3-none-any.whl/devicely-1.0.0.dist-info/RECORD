@@ -1,0 +1,11 @@
+devicely/__init__.py,sha256=gfdGDtS37jGF-ciMRFcd5h1be1UZ_bRz-81-hS1TzEc,212
+devicely/empatica.py,sha256=mgFfP40LUsJANGorQtNAqT00U8QA0HSDUslz-cGMtVY,9216
+devicely/everion.py,sha256=eioinom75rc66OmiLIDlTacLqILtjx8dqtDWKrjIBCs,13706
+devicely/faros.py,sha256=YTsnTMKWoZZ0DmRmxXIWhWlnNd-XAvIl4Eg_LBZOmyU,10158
+devicely/shimmer_plus.py,sha256=isw9nYGsOCClWEAtaFzknOxBEU5kIoY7gx8hngwjZLw,4038
+devicely/spacelabs.py,sha256=wBojfzO4WOzpWvSuiC5iEvL7hVlvo59SubZ1PksFTGk,11352
+devicely/tag.py,sha256=saSc9vJpq_dOXVnHPoTMHkRzmofG8wYoVv94Jol1Ww0,2413
+devicely-1.0.0.dist-info/LICENSE,sha256=aYTIWCOtuBhhqnzHMDyB6yDyBIlK17vlzChU8QMtiXQ,1105
+devicely-1.0.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+devicely-1.0.0.dist-info/METADATA,sha256=H2Qe58ZVhVHrfB809xnh-UhEkxSRXRR61bZsH1WHiUA,806
+devicely-1.0.0.dist-info/RECORD,,
