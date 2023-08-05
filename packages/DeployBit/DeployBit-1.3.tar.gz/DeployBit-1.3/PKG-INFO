@@ -1,0 +1,47 @@
+Metadata-Version: 1.1
+Name: DeployBit
+Version: 1.3
+Summary: A New Door to Salesforce
+Home-page: UNKNOWN
+Author: Padmnabh Munde
+Author-email: padmnabhmunde77@gmail.com
+License: MIT
+Description: # DeployBit
+        ##### A New Door to Salesforce
+        
+        DeployBit is Salesforce Metadata API based, Lightweight Python Environment to Smoothen and Support your Development and Deployment Processes.
+        
+        #### Supported API Calls
+        
+        - Login
+        - Deploy
+        - Check Deploy Status
+        - Cancel Deploy
+        - Retrieve
+        - Check Retrieve Status
+        - Describe Metadata
+        - List Metadata
+        - Query
+        - Query More
+        - Search
+        - Apex Execute
+        - Logout
+        
+        #### Other DeployBit Implementations
+        
+        - [DeployBit Salesforce(LWC)] 
+        - [DeployBit Android]
+        
+        [DeployBit Salesforce(LWC)]: <https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000FR5S9UAL>
+        [DeployBit Android]: <https://play.google.com/store/apps/details?id=com.deploybit.deploybit>
+Keywords: Salesforce,DeployBit,DeployBit Python,Deploy,Deployment,Retrieve,Metadata API,SOAP API,Query,SOQL
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.9
