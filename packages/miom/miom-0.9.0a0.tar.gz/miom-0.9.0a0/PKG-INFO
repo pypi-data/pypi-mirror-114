@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: miom
+Version: 0.9.0a0
+Summary: Mixed Integer Optimization for Metabolism
+License: GPLv3
+Keywords: optimization,LP,MIP,metabolism,metabolic-networks
+Author: Pablo R. Mier
+Author-email: pablo.rodriguez.mier@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: gurobipy (>=9.1.2,<10.0.0)
+Requires-Dist: mip (>=1.13.0,<2.0.0)
+Requires-Dist: mosek (>=9.2.47,<10.0.0)
+Requires-Dist: numpy (>=1.20.3,<2.0.0)
+Requires-Dist: picos (>=2.2.43,<3.0.0)
+Requires-Dist: swiglpk (>=5.0.3,<6.0.0)
