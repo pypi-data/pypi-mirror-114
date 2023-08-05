@@ -1,0 +1,16 @@
+odoo/addons/sm_connect/__init__.py,sha256=Ax4qLxdb9ATk05MF7cSQ0BdpYCpGVYFy9n4U4zODf9o,46
+odoo/addons/sm_connect/__manifest__.py,sha256=hzpFxjTF5Jog0ZKGnMp9D5mFKzcCl0t-SXLPvizmYOA,698
+odoo/addons/sm_connect/demo_credentials.json,sha256=rKBYLjfHVc3nfncD4F_E23Jd4ufjaf2eXAjjs5Lk9Vs,875
+odoo/addons/sm_connect/models/__init__.py,sha256=8CqLl4rRDMGsudvmTdMJvRG_y024Mj_6LHLFa-uhe9U,233
+odoo/addons/sm_connect/models/credential_loader.py,sha256=6yTV_onVFO_ecIRIQ18PZkGcraDIe39K-XLMMDApzJs,2135
+odoo/addons/sm_connect/models/models_sm_carsharing_api_utils.py,sha256=T564SKTqOSUQc2h86FTSTmN-qdYnx5p3ZEKERz_A-vM,3688
+odoo/addons/sm_connect/models/models_sm_carsharing_db_utils.py,sha256=w7hdGaRpr33PGKZz3TSvJEsu_Qx7K6e-AEHPvXZDxxU,3277
+odoo/addons/sm_connect/models/models_sm_company.py,sha256=W-mUwyMI0X4SRgM2PnXcCiDlzw1PoVz-jmHV3aSd-Yk,2072
+odoo/addons/sm_connect/models/models_sm_res_config_settings.py,sha256=3hLGCcq7ZqDvUX0qjkvz1naJ_8qKiGV1YtWmFvJpKR0,3831
+odoo/addons/sm_connect/models/models_sm_wordpress_db_utils.py,sha256=zCNtHJua16ampX9-d0QmlXey_axgJFYEVsLZ0uKrI2U,5141
+odoo/addons/sm_connect/security/ir.model.access.csv,sha256=EygArynEZn9Oazz44m_d5ckm_gzO8yO1_fjTS7C0hXw,164
+odoo/addons/sm_connect/views/views_res_config_settings.xml,sha256=vXReJzTTeW0QaFWX8V8zeiiRHPR4yDgERTpkM4CxX7o,2571
+odoo12_addon_sm_connect-12.0.0.0.6.dist-info/METADATA,sha256=9IZhQzl34MCziKwf_urnXts6kn-kTzWpTsuETKvd5F0,442
+odoo12_addon_sm_connect-12.0.0.0.6.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+odoo12_addon_sm_connect-12.0.0.0.6.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_sm_connect-12.0.0.0.6.dist-info/RECORD,,
