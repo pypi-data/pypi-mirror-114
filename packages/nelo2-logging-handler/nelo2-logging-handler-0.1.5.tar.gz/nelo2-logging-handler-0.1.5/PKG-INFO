@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: nelo2-logging-handler
+Version: 0.1.5
+Summary: 
+Home-page: https://github.com/ultimatelife/nelo2-logging-handler
+Keywords: nelo,nelo2,naver,ncloud,elsa
+Author: ultimatelife
+Requires-Python: >=3.8.7,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: aiohttp (>=3.7.4,<4.0.0)
+Requires-Dist: requests (>=2.23.0,<3.0.0)
+Project-URL: Documentation, https://github.com/ultimatelife/nelo2-logging-handler
+Project-URL: Repository, https://github.com/ultimatelife/nelo2-logging-handler
+Description-Content-Type: text/x-rst
+
+nelo2-logging-handler
+----------------------------
+
+This is the package for https://www.ncloud.com/product/analytics/elsa
+
