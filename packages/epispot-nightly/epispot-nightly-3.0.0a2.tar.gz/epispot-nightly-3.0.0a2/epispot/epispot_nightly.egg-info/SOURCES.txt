@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup-nightly.py
+setup.cfg
+setup.py
+bin/epispot
+epispot/epispot_nightly.egg-info/PKG-INFO
+epispot/epispot_nightly.egg-info/SOURCES.txt
+epispot/epispot_nightly.egg-info/dependency_links.txt
+epispot/epispot_nightly.egg-info/requires.txt
+epispot/epispot_nightly.egg-info/top_level.txt
+epispot/plots/__init__.py
+epispot/plots/native.py
+epispot/plots/web.py
