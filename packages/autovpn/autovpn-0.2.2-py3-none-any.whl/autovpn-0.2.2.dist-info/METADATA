@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: autovpn
+Version: 0.2.2
+Summary: A CLI wrapper for Cisco's Anyconnect VPN tool
+Home-page: https://github.com/corneliusroemer/autovpn
+Author: Cornelius Roemer
+License: MIT
+Project-URL: Documentation, https://github.com/corneliusroemer/autovpn
+Project-URL: Source, https://github.com/corneliusroemer/autovpn
+Project-URL: Tracker, https://github.com/corneliusroemer/autovpn/issues
+Keywords: cli wrapper cisco anyconnect vpn passwordless
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Operating System :: POSIX
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+Requires-Dist: Click (>=8)
+Requires-Dist: sortedcontainers (>=2)
+Requires-Dist: toml (>0.10)
+
+UNKNOWN
+
