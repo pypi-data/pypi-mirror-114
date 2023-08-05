@@ -1,0 +1,1 @@
+from dashes3.dashboard.dashboard import main
