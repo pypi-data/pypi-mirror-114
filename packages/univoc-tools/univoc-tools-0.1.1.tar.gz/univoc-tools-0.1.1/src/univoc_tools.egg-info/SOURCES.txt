@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/univoc_tools/UnivocElasticAPI.py
+src/univoc_tools/__init__.py
+src/univoc_tools.egg-info/PKG-INFO
+src/univoc_tools.egg-info/SOURCES.txt
+src/univoc_tools.egg-info/dependency_links.txt
+src/univoc_tools.egg-info/requires.txt
+src/univoc_tools.egg-info/top_level.txt
