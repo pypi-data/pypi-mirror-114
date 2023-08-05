@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+dprop/__init__.py
+dprop.egg-info/PKG-INFO
+dprop.egg-info/SOURCES.txt
+dprop.egg-info/dependency_links.txt
+dprop.egg-info/requires.txt
+dprop.egg-info/top_level.txt
+tests/test.py
