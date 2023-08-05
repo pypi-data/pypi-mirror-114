@@ -1,0 +1,130 @@
+sysplan: quick system configuration tool
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A ``sysplan apply`` command in the fashion of netplan.
+
+Overview
+========
+
+In ``/etc/sysplan.d``, you can add ``.yaml`` configuration files that
+``sysplan`` will be able to apply on your system. You will be able to generate
+systemd stuff, add your custom bash modules, and even more complex python
+modules to infinitely extend sysplan to your taste.
+
+The structure of the yaml file is as such::
+
+.. code-block:: yaml
+
+    plugin_name:
+      your-first-plan-name:
+        any: config
+        for:
+        - your
+        - plan
+
+Tutorial
+========
+
+Basics and systemd
+------------------
+
+Try adding the following content into ``/etc/sysplan.d/example_systemd.yaml``:
+
+.. code-block:: yaml
+
+    services:
+      sysplan-test-service:
+        TEST_ENV_VAR: 2
+        Unit:
+          Description: Example Service
+        Service:
+          Type: oneshot
+          ExecStart: /bin/bash -c 'echo nice!'
+          WorkingDirectory: /tmp
+
+    timers:
+      sysplan-test-service:
+        Timer:
+          OnCalendar: '*-*-* 23:00:00'
+
+    mounts:
+      mnt-backups:
+        Unit:
+          Description: Mount NFS Share
+        Mount:
+          What: 172.24.0.5:/srv/backups
+          Where: /mnt/backups
+          Type: nfs
+          Options: defaults
+          TimeoutSec: 10
+        Install:
+          WantedBy: multi-user.target
+
+Then, try the following commands:
+
+- ``sysplan diff``
+- ``sysplan apply``
+- ``sysplan destroy``
+- ``sysplan help``
+
+Custom bash modules
+-------------------
+
+Add the following to ``/etc/sysplan.d/bash_example.yaml``:
+
+.. code-block:: yaml
+
+    bash_example.sh:
+      plan-one:
+        somevar: date
+        nested:
+        - item: /tmp/$plan_name
+
+      plan-two:
+        somevar: uname -a
+
+Add the following to ``/etc/sysplan.d/bash_example.sh``:
+
+.. code-block:: bash
+
+    write() {
+        $somevar > /tmp/$plan_name
+        cat /tmp/$plan_name
+    }
+
+    diff() {
+        if [ ! -f $nested_0_item ]; then
+            echo + $nested_0_item TO CREATE
+        else
+            $somevar | $(which diff) -u $nested_0_item -
+        fi
+    }
+
+    activate() {
+        echo activated >> /tmp/$plan_name
+    }
+
+    destroy() {
+        rm -rf /tmp/$plan_name
+    }
+
+Then again, play with the ``sysplan`` commands.
+
+Custom python module
+====================
+
+Custom Python modules are registered on the ``sysplan_plans`` entry points. For
+example, this is how the systemd plans are registered is ``setup.py``:
+
+.. code-block:: python
+
+    entry_points={
+        'sysplan_plans': [
+            'services = sysplan.systemd:ServicePlan',
+            'mounts = sysplan.systemd:MountPlan',
+            'timers = sysplan.systemd:TimerPlan',
+        ],
+    },
+
+As such, the pointed python plan classes will be used for the ``services``,
+``mounts`` and ``timers`` keys in sysplan yaml.
