@@ -1,0 +1,17 @@
+mobot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mobot/agent.py,sha256=wWce4zWPD-PqtRauAWOV-zDLwytrrvwsDOLnINab-6o,10016
+mobot/utils.py,sha256=udN7bscVJ60T-mUpGLkaPKEUenN29TQ6MEQIbIvg45g,1365
+mobot/proto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mobot/proto/mobot_pb2.py,sha256=hKl3TdAtnXxG51KlzyPZgSV9p_-vpP6T2bEXtmI6tm0,48026
+mobot/proto/mobot_pb2_grpc.py,sha256=jA5FoK2emtj7Z5QlMGI9gmqA7dMccsgX-FErzvvMUj0,30710
+mobot/server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mobot/server/body_state.py,sha256=g7MfySlL9rzNvfDWPdqCjQoaEoVgz1UGlEI9xKbC0Ho,3859
+mobot/server/server.py,sha256=TGNWru4FiB3d7g394OoELkLEzw8p2BV5zHUays8ioww,1871
+mobot/server/servicer.py,sha256=MnfS2UoQn8J6_q9tUb9VirG_cw7RuVzerQX94ZwW-UA,10995
+mobot/server/utils.py,sha256=6n3PU0E8rWkPE6lL4w6y78vaJgcp73mDdqiuJy8MuEY,4157
+mobot-0.0.2.dist-info/LICENSE,sha256=ACmTUcz3hhxG1priTE3t53wLi6xYr43dChFqi6SkVFY,1062
+mobot-0.0.2.dist-info/METADATA,sha256=lfxFmn_ZbBqy0ldVLAuMEblutSJB0hyPa56vs-lj6IA,626
+mobot-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mobot-0.0.2.dist-info/entry_points.txt,sha256=X48izNeu9yv-UvSdkqvS9EoOFEiJlxHadx69x9UpoRA,59
+mobot-0.0.2.dist-info/top_level.txt,sha256=0r07uxQGeTnR3_mUhIhBOZCumcP4EyzWCY0CqW17cyg,6
+mobot-0.0.2.dist-info/RECORD,,

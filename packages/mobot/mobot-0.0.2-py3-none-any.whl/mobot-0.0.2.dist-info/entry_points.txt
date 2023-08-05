@@ -1,0 +1,3 @@
+[console_scripts]
+mobot_server = mobot.server.server:main
+
