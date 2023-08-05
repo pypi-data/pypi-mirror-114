@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: marsrover
+Version: 1.1.1
+Summary: Let's go grow potatoes on Mars!
+Home-page: https://becky2sawyer.github.io/mars-rover
+Author: pysatellite
+Author-email: pysatellite@gmail.com
+License: GNU General Public License (GPL)
+Project-URL: Bug Tracker, https://github.com/becky2sawyer/mars-rover/issues
+Platform: macOS
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# marsrover
+Let's go grow potatoes on Mars!
+
+# User Guide
+- [https://becky2sawyer.github.io/mars-rover](https://becky2sawyer.github.io/mars-rover)
+- [https://pypi.org/project/marsrover](https://pypi.org/project/marsrover)
+
+# quick start
+```
+pip install marsrover
+```
+```
+marsrover-ping
+```
+```
+marsrover-ping kr
+```
+```
+marsrover-ping en
+```
+```python
+import marsrover
+marsrover.what_about_there()
+```
+
+# todo
+```
+marsrover-ping kr "남측 관측소와 연락이 되지 않습니다. 무슨 일인지 알고 계신가요?"
+```
+
