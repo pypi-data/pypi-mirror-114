@@ -1,0 +1,14 @@
+{% load static %}
+
+<meetings src="{% url "meeting-guide:api" %}"></meetings>
+
+<script>
+var tsml_react_config = {{ meeting_guide_settings|safe }};
+</script>
+{% comment %}
+Let's keep a local copy of the JavaScript here so we can control
+when upgrades occur and test.
+
+Source is at https://react.meetingguide.org/app.js
+{% endcomment %}
+<script src="{% static 'meeting_guide/app.js' %}" async></script>
