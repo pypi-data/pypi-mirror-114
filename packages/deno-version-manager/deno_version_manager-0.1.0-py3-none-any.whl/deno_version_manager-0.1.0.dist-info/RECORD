@@ -1,0 +1,8 @@
+deno_version_manager/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+deno_version_manager/__main__.py,sha256=qpKiPBpdh1ziu1nqb2OoS6oh4m3PUQyTjjWGkqnjXhk,44
+deno_version_manager/main.py,sha256=xuuAxhAtn0C6hdWWQlZ5B4PYOhNjy1wBrpxiQhRt9FU,2478
+deno_version_manager/test_main.py,sha256=YRYVMWElj4GodFtucHqBBuA3hUxXuQR8UNHitWJREI0,1558
+deno_version_manager-0.1.0.dist-info/entry_points.txt,sha256=owgnwBreFUVYMzNFj6knMkGXH_H_lHNbxW_UExhw8KQ,53
+deno_version_manager-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+deno_version_manager-0.1.0.dist-info/METADATA,sha256=a4g9xO_dbkT-vik8ZDg8jXspRScfbbrv-0etnB24Gx0,1837
+deno_version_manager-0.1.0.dist-info/RECORD,,

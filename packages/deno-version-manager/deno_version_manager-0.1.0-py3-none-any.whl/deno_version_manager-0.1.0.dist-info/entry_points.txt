@@ -1,0 +1,3 @@
+[console_scripts]
+dvm=deno_version_manager.main:app
+
