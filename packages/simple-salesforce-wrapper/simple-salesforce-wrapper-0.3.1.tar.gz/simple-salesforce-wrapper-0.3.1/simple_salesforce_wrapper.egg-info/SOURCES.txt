@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+simple_salesforce_wrapper/__init__.py
+simple_salesforce_wrapper/connection_manager.py
+simple_salesforce_wrapper/utils.py
+simple_salesforce_wrapper.egg-info/PKG-INFO
+simple_salesforce_wrapper.egg-info/SOURCES.txt
+simple_salesforce_wrapper.egg-info/dependency_links.txt
+simple_salesforce_wrapper.egg-info/requires.txt
+simple_salesforce_wrapper.egg-info/top_level.txt
