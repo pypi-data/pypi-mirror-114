@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tox-demo
+Version: 0.1.0
+Summary: A demo for tox, pyproject, wheel, setuptools
+License: MIT
+Author: mog
+Author-email: mo.gao@foxmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: setuptools (>=57.1.0,<58.0.0)
+Requires-Dist: tox (>=3.23.1,<4.0.0)
+Requires-Dist: wheel (>=0.36.2,<0.37.0)
