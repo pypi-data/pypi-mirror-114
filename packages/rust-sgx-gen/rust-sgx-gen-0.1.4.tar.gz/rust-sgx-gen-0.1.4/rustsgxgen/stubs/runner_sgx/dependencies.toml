@@ -1,0 +1,7 @@
+[package]
+resolver = "2"
+
+[dependencies]
+ra-common = { git = "https://github.com/gianlu33/rust-sgx-remote-attestation.git", tag="fosdem-21" }
+ra-enclave = { git = "https://github.com/gianlu33/rust-sgx-remote-attestation.git", tag="fosdem-21" }
+sgx-crypto = { git = "https://github.com/gianlu33/rust-sgx-remote-attestation.git", tag="fosdem-21" }
