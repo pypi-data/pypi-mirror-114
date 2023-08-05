@@ -1,0 +1,98 @@
+# tues
+
+Easily run commands on collections of hosts
+
+## Install
+
+ * Run `pip install tues`
+
+## Getting Started
+
+
+### As a commandline tool
+
+Tues expects a command to execute, followed by the name of a hostname provider and its arguments.
+
+Run `id` on localhost as user root, using the IPv4/IPv6 adresses is not required, just passing localhost three times would work as well, you are only prompted for a password once and the original sudo prompt is stripped from the output.
+
+```
+$ tues -u root id cl localhost 127.0.0.1 ::1
+[::1/stdout]: uid=0(root) gid=0(root) groups=0(root)
+[127.0.0.1/stdout]: uid=0(root) gid=0(root) groups=0(root)
+[localhost/stdout]: uid=0(root) gid=0(root) groups=0(root)
+$
+```
+
+There are switches to send output to a directory, one file per host (`-d <dir>`), run on multiple hosts at a time `-n <num>`, upload files to the remote host before executing the command `-f <file>` and also a mechanic to tread the executed command as a local script in `TUES_PATH` that needs to be uploaded to the host first.
+
+
+### From Python
+
+When running from python, tues will behave mostly the same, with slight differences where it makes sense. In Python mode, we need to explicitly request output prefixing for example:
+```python
+import tues                           
+                                      
+tues.run(                             
+    ["localhost", "127.0.0.1", "::1"],
+    "id",                             
+    user="root",                      
+    prefix=True,                      
+)                                     
+```
+
+```$python3 tues.py 
+Your remote sudo password: 
+[localhost/stdout]: uid=0(root) gid=0(root) groups=0(root)
+[127.0.0.1/stdout]: uid=0(root) gid=0(root) groups=0(root)
+[::1/stdout]: uid=0(root) gid=0(root) groups=0(root)
+$
+```
+
+Output is usually kept "clean" (except for the sudo output of course) for later processing:
+
+```python
+import sys                            
+                                      
+import tues                           
+                                      
+run = tues.run(                       
+    ["localhost", "127.0.0.1", "::1"],
+    "id",                             
+    user="root",                      
+    text=True,                        
+    capture_output=True,              
+)                                     
+                                      
+for run in runs:                      
+    sys.stdout.write(run.stdout)      
+```
+
+The interface tries to mimic `subprocess.run` as much as possible, but differ slightly because of the concurrent nature of the function.
+```
+$ python _tues.py
+Your remote sudo password: 
+uid=0(root) gid=0(root) groups=0(root)
+uid=0(root) gid=0(root) groups=0(root)
+uid=0(root) gid=0(root) groups=0(root)
+$ 
+```
+
+## Providers
+
+### Foreman
+
+Execute on all hosts matching a certain foreman expression.
+
+```
+export FOREMAN_URL="https://user:password@foreman.domain/"
+tues "ls" fm "class = my::class"
+```
+
+### Custom Providers
+
+New providers may be added by putting a new executable with a name like "tues-provider-<name>"
+on your PATH. A provider is expected to return a newline seperated list of hosts.
+
+If the provider returns with an error, the output is considered to be an error message and/or
+it's help output. If '--help' is passed through to the provider the output is displayed no matter
+what exit code is used.

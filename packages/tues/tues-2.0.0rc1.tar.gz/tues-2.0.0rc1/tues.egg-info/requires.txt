@@ -1,0 +1,5 @@
+click
+asyncssh
+async-timeout
+requests>=2.4
+setuptools
