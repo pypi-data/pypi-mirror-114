@@ -1,0 +1,3 @@
+[console_scripts]
+color_spray = color_spray.entry_points:main
+
