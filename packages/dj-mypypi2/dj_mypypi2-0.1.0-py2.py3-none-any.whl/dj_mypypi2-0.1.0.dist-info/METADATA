@@ -1,0 +1,124 @@
+Metadata-Version: 2.1
+Name: dj-mypypi2
+Version: 0.1.0
+Summary: django app implementing pypi server
+Home-page: https://github.com/kverdecia/dj-mypypi2
+Author: Karel Antonio Verdecia Ortiz
+Author-email: kverdecia@gmail.com
+License: MIT
+Keywords: dj-mypypi2
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django :: 2.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: cuid
+Requires-Dist: requests
+Requires-Dist: django
+Requires-Dist: factory-boy
+
+=============================
+django app implementing pypi
+=============================
+
+.. image:: https://badge.fury.io/py/dj-mypypi2.svg
+    :target: https://badge.fury.io/py/dj-mypypi2
+
+.. image:: https://travis-ci.org/kverdecia/dj-mypypi2.svg?branch=master
+    :target: https://travis-ci.org/kverdecia/dj-mypypi2
+
+.. image:: https://codecov.io/gh/kverdecia/dj-mypypi2/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/kverdecia/dj-mypypi2
+
+django app implementing pypi server
+
+Documentation
+-------------
+
+The full documentation is at https://dj-mypypi2.readthedocs.io.
+
+Quickstart
+----------
+
+Install django app implementing pypi::
+
+    pip install dj-mypypi2
+
+Add it to your `INSTALLED_APPS`:
+
+.. code-block:: python
+
+    INSTALLED_APPS = (
+        ...
+        'djmypypi2.apps.DjMyPypi2Config',
+        ...
+    )
+
+Add django app implementing pypi's URL patterns:
+
+.. code-block:: python
+
+    from djmypypi2 import urls as djmypypi2_urls
+
+
+    urlpatterns = [
+        ...
+        url(r'^', include(djmypypi2_urls)),
+        ...
+    ]
+
+Features
+--------
+
+* TODO
+
+Running Tests
+-------------
+
+Does the code actually work?
+
+::
+
+    source <YOURVIRTUALENV>/bin/activate
+    (myenv) $ pip install tox
+    (myenv) $ tox
+
+
+Development commands
+---------------------
+
+::
+
+    pip install -r requirements_dev.txt
+    invoke -l
+
+
+Credits
+-------
+
+Tools used in rendering this package:
+
+*  Cookiecutter_
+*  `cookiecutter-djangopackage`_
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`cookiecutter-djangopackage`: https://github.com/pydanny/cookiecutter-djangopackage
+
+
+
+
+History
+-------
+
+0.1.0 (2021-04-24)
+++++++++++++++++++
+
+* First release on PyPI.
+
+
