@@ -1,0 +1,35 @@
+name: Upload to PyPI
+
+on:
+  pull_request:
+    types: [ opened, synchronize ]
+  release:
+    types: [published]
+
+jobs:
+  deploy:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ macos-latest, ubuntu-latest ]
+        python-version: [ 3.6, 3.7, 3.8 ]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Display Python version
+        run: python -c "import sys; print(sys.version)"
+      - name: Build wheel
+        run: |
+          python setup.py bdist_wheel
+      - name: Upload wheel and source tarball to PyPI
+        env:
+          TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
+          TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+        run: |
+          python -m pip install --upgrade pip
+          ls -l dist/*
+          python -m pip install --upgrade twine
+          python -m twine upload -r pypi --non-interactive --skip-existing --verbose dist/*

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cmdstan-builder
+Version: 0.0.0
+Summary: A package to build the cmdstan binary and use it as an extension to EvalML
+Home-page: https://github.com/alteryx/cmdstan_ext/
+Author: Alteryx, Inc.
+Author-email: support@featurelabs.com
+License: BSD-3-Clause
+Description: # cmdstan_ext
+        Install cmdstan via pip! Enables commercial deployment of Facebook's Prophet time series model.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
