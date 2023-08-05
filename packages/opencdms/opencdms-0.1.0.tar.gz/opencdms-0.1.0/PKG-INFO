@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: opencdms
+Version: 0.1.0
+Summary: OpenCDMS Python package
+Home-page: https://github.com/opencdms/opencdms
+Author: OpenCDMS
+Author-email: info@opencdms.org
+License: MIT license
+Keywords: opencdms
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+License-File: LICENSE
+License-File: AUTHORS.md
+
+See details in README.md
+
+
+=======
+History
+=======
+
+0.1.0 (2020-09-18)
+------------------
+
+* First release on PyPI.
+
+

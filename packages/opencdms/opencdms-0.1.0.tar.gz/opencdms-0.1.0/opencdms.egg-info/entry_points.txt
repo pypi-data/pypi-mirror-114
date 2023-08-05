@@ -1,0 +1,3 @@
+[console_scripts]
+opencdms = opencdms.cli:main
+
