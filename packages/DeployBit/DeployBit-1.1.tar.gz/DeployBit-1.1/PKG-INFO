@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: DeployBit
+Version: 1.1
+Summary: A New Door to Salesforce
+Home-page: https://github.com/padmnabhmunde77/DeployBit
+Author: Padmnabh Munde
+Author-email: padmnabhmunde77@gmail.com
+License: MIT
+Download-URL: https://github.com/padmnabhmunde77/DeployBit/archive/refs/tags/1.0.tar.gz
+Description: UNKNOWN
+Keywords: Salesforce,DeployBit,DeployBit Python,Deploy,Deployment,Retrieve,Metadata API,SOAP API,Query,SOQL
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
