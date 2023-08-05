@@ -1,0 +1,3 @@
+[console_scripts]
+chapicha=chapicha.cli:main
+
