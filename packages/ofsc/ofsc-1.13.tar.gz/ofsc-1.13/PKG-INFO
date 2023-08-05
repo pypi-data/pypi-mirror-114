@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: ofsc
+Version: 1.13
+Summary: Python Wrapper for Oracle Field Service API
+Home-page: https://github.com/btoron/pyOFSC
+Author: Borja Toron
+Author-email: borja.toron@gmail.com
+License: MIT
+Download-URL: https://github.com/btoron/pyOFSC/archive/v1.13.tar.gz
+Description: UNKNOWN
+Keywords: OFSC,Python,ORACLE FIELD SERVICE CLOUD,OFS,ORACLE FIELD SERVICE
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
