@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+truthsayer/opti.py
+truthsayer/poly.py
+truthsayer/processor.py
+truthsayer/renderer.py
+truthsayer.egg-info/PKG-INFO
+truthsayer.egg-info/SOURCES.txt
+truthsayer.egg-info/dependency_links.txt
+truthsayer.egg-info/requires.txt
+truthsayer.egg-info/top_level.txt
