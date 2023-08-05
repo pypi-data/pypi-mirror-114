@@ -1,0 +1,3 @@
+[console_scripts]
+par2ls = par2.__main__:ls
+
