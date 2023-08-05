@@ -1,0 +1,6 @@
+numpy
+click
+
+[dev]
+pytest
+pre-commit
