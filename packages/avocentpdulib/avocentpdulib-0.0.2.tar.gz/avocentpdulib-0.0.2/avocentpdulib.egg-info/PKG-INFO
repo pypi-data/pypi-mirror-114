@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: avocentpdulib
+Version: 0.0.2
+Summary: Feature-rich methods to control avocent pdu's in python
+Home-page: https://github.com/Howaner/avocentpdulib
+Author: Howaner
+Author-email: me@reiterfranz.de
+License: UNKNOWN
+Download-URL: https://github.com/Howaner/avocentpdulib/archive/refs/tags/v0.0.1.tar.gz
+Description: A library which contains methods to control avocent pdu's with python. You can take a look into the test_avocent.py file to find out how the library can be used.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >3.5.2
+Description-Content-Type: text/markdown
