@@ -1,0 +1,6 @@
+dask
+distributed
+pymongo
+
+[test]
+pytest

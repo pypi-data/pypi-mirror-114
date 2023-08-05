@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+dask_mongo/__init__.py
+dask_mongo/core.py
+dask_mongo.egg-info/PKG-INFO
+dask_mongo.egg-info/SOURCES.txt
+dask_mongo.egg-info/dependency_links.txt
+dask_mongo.egg-info/not-zip-safe
+dask_mongo.egg-info/requires.txt
+dask_mongo.egg-info/top_level.txt
+dask_mongo/tests/test_core.py
