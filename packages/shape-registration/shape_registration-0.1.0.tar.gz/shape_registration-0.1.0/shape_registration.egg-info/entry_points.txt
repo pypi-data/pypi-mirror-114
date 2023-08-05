@@ -1,0 +1,5 @@
+[console_scripts]
+register_affine = shape_registration.entrypoints:register_affine
+register_diffeomorphic = shape_registration.entrypoints:register_diffeomorphic
+transfer_points_to_segmentation = shape_registration.entrypoints:transfer_points
+
