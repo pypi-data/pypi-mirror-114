@@ -1,0 +1,9 @@
+exclude .mcli
+exclude CHANGES.rst
+include README.rst
+exclude setup.cfg
+include *.py
+exclude todo.rst
+exclude mapping.json
+recursive-include mcli *
+global-exclude *.py[co]

@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.py
+m_cli.egg-info/PKG-INFO
+m_cli.egg-info/SOURCES.txt
+m_cli.egg-info/dependency_links.txt
+m_cli.egg-info/entry_points.txt
+m_cli.egg-info/not-zip-safe
+m_cli.egg-info/requires.txt
+m_cli.egg-info/top_level.txt
+mcli/__init__.py

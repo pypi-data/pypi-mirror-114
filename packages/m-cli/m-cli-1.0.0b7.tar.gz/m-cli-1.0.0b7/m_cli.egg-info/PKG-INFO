@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: m-cli
+Version: 1.0.0b7
+Summary: Mizuvo CLI
+Home-page: https://pypi.python.org/pypi/m-cli
+Author: Mizuvo
+Author-email: info@mizuvo.com
+License: UNKNOWN
+Description: MCLI
+        ====
+        
+        Read documentation for more informations about how to use this package
+        
+Keywords: CLI
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Classifier: License :: Other/Proprietary License
+Provides-Extra: test
