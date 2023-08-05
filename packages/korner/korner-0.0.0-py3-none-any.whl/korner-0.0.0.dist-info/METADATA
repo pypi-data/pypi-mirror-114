@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: korner
+Version: 0.0.0
+Summary: korner
+Home-page: https://github.com/rozsasarpi/korner
+Author: Arpad Rozsas
+Author-email: rozsasarpi@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (<2)
+Requires-Dist: scipy (<2)
+Requires-Dist: matplotlib (<4)
+Provides-Extra: docs
+Requires-Dist: sphinx (<4,>=3) ; extra == 'docs'
+Requires-Dist: sphinx-gallery (<1) ; extra == 'docs'
+Requires-Dist: sphinx-copybutton (<1) ; extra == 'docs'
+Requires-Dist: sphinx-inline-tabs ; extra == 'docs'
+Requires-Dist: sphinxcontrib-bibtex (<3) ; extra == 'docs'
+Requires-Dist: myst-parser (<1) ; extra == 'docs'
+Requires-Dist: furo ; extra == 'docs'
+Provides-Extra: lint_type_checks
+Requires-Dist: pre-commit ; extra == 'lint_type_checks'
+Requires-Dist: black ; extra == 'lint_type_checks'
+Requires-Dist: isort ; extra == 'lint_type_checks'
+Requires-Dist: mypy ; extra == 'lint_type_checks'
+Requires-Dist: flake8 ; extra == 'lint_type_checks'
+Requires-Dist: flake8-tidy-imports ; extra == 'lint_type_checks'
+Requires-Dist: flake8-import-order ; extra == 'lint_type_checks'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: coverage[toml] ; extra == 'tests'
+
+# korner
+
+[![PyPI version](https://img.shields.io/pypi/v/korner)](https://pypi.org/project/korner/)
+
+Under development.
+
