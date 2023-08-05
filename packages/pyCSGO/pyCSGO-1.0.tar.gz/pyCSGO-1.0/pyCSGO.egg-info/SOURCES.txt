@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+pyCSGO/Binomialdistribution.py
+pyCSGO/Gaussiandistribution.py
+pyCSGO/Generaldistribution.py
+pyCSGO/__init__.py
+pyCSGO.egg-info/PKG-INFO
+pyCSGO.egg-info/SOURCES.txt
+pyCSGO.egg-info/dependency_links.txt
+pyCSGO.egg-info/not-zip-safe
+pyCSGO.egg-info/top_level.txt
