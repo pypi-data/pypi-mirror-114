@@ -1,0 +1,103 @@
+#!python
+
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+from __future__ import unicode_literals
+
+import os
+import sys
+import argparse
+import pyspextools
+from pyspextools.io.ogip import OGIPRegion
+from pyspextools.data.badchannels import clean_region
+import pyspextools.messages as message
+
+from builtins import int
+
+from future import standard_library
+
+standard_library.install_aliases()
+
+
+def main():
+    """The OGIP2spex script offers a quick way to convert OGIP type spectra to SPEX format.
+    It reads OGIP PHA type I spectra and responses. After the conversion to SPEX format, the
+    files are filtered for bad channels (optional)."""
+
+    # Obtain command line arguments
+    parser = ogip2spex_arguments()
+    args = parser.parse_args()
+
+    # Print message header
+    message.print_header(os.path.basename(__file__))
+
+    # Set color in the terminal
+    message.set_color(args.color)
+
+    # Load OGIP spectra and response files
+    ogip = OGIPRegion()
+
+    print("Input PHA file: {0}".format(args.phafile))
+    print("Input Background file: {0}".format(args.bkgfile))
+    print("Input Response file: {0}".format(args.rmffile))
+    print("Input Effective area file: {0}".format(args.arffile))
+
+    ogip.read_region(args.phafile, args.rmffile, bkgfile=args.bkgfile, arffile=args.arffile, grouping=args.group)
+
+    # Filter for bad channels (if not blocked by command line argument)
+    if args.badchan:
+        ogip = clean_region(ogip)
+        if not isinstance(ogip, OGIPRegion):
+            sys.exit(1)
+
+    # Add the ogip2spex command to the file history
+    history = []
+    history.append("OGIP2SPEX version: {0}".format(pyspextools.__version__))
+    command = ''
+    for arg in sys.argv:
+        command = command + ' ' + arg
+    history.append("Command used: {0}".format(command))
+    history.append("Variables derived from commandline:")
+    for arg in vars(args):
+        line = "{0} : {1}".format(arg, getattr(args, arg))
+        history.append(line)
+
+    # Check output file names
+    spofile = ogip.spo.check_filename(args.spofile)
+    resfile = ogip.res.check_filename(args.resfile)
+
+    # Write output spo and res file
+    print("Writing SPO to file: {0}".format(spofile))
+    ogip.spo.write_file(spofile, exp_rate=args.exprate, overwrite=args.overwrite, history=history)
+
+    print("Writing RES to file: {0}".format(resfile))
+    ogip.res.write_file(resfile, overwrite=args.overwrite, history=history)
+
+
+# Get command line arguments
+def ogip2spex_arguments():
+    # Obtain command line arguments
+    parser = argparse.ArgumentParser(description=message.docs)
+    parser.add_argument('--phafile', help='Input PHA source spectrum (required)', type=str, required=True)
+    parser.add_argument('--bkgfile', help='Input Background spectrum', type=str)
+    parser.add_argument('--rmffile', help='Input Response matrix (required)', type=str, required=True)
+    parser.add_argument('--arffile', help='Input Effective area file', type=str)
+    parser.add_argument('--spofile', help='Output SPEX spectrum file (.spo, required)', type=str, required=True)
+    parser.add_argument('--resfile', help='Output SPEX response file (.res, required)', type=str, required=True)
+    parser.add_argument('--keep-badchannels', help='Do not remove bad channels.', dest="badchan", action="store_false",
+                        default=True)
+    parser.add_argument('--keep-grouping', help='Retain the grouping information from the PHA file.', dest="group",
+                        action="store_true", default=False)
+    parser.add_argument('--overwrite', help="Overwrite existing spo and res files with same name.", action="store_true",
+                        default=False)
+    parser.add_argument('--no-exprate', help="Do not write additional Exp_Rate column (SPEX <=3.04.00).",
+                        dest="exprate", action="store_false", default=True)
+    parser.add_argument('--no-color', help="Suppress color output.", dest="color", action="store_false", default=True)
+    parser.add_argument('--version', action='version', version=message.version)
+
+    return parser
+
+
+if __name__ == "__main__":
+    main()
