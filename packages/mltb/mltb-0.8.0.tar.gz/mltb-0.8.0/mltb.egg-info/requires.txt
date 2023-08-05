@@ -1,0 +1,10 @@
+sklearn
+numpy
+matplotlib
+pandas
+tqdm
+scipy
+joblib
+
+[checking]
+black
