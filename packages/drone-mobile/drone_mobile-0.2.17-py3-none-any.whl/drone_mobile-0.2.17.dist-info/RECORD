@@ -1,0 +1,9 @@
+drone_mobile/__init__.py,sha256=gokt3ehXq_2GPl4OrJF9CfxcmnErjD9NP1nX20_aKf4,33
+drone_mobile/const.py,sha256=DB1VWbg_JqqcFLO31uUZj90QfD7m4IU6MJPCOMXnFrA,1198
+drone_mobile/drone_mobile.py,sha256=o7F_zDFGMwdv3ikjVTqTEpoeIIF30eFg7lWiCKeYDwo,11246
+drone_mobile-0.2.17.data/scripts/demo.py,sha256=oD-2A4Vm9TAT9_WfceI1ULGOgDl0JM6EwM-CYjyC_LY,559
+drone_mobile-0.2.17.dist-info/LICENSE.md,sha256=9Spn8pPTITKJLh5WmGoDawYfRw9xwmZXjvrsxrtGieM,1067
+drone_mobile-0.2.17.dist-info/METADATA,sha256=LrdRUwHp6dU0gB5_iQqgvrcSSoYd7crBOWXfOPvaT8c,2334
+drone_mobile-0.2.17.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+drone_mobile-0.2.17.dist-info/top_level.txt,sha256=vPcNHVESqM0AHoT9gaP7UFDlH4xxLcNJz0148FxFcRo,13
+drone_mobile-0.2.17.dist-info/RECORD,,
