@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/dokdo/__init__.py
+src/dokdo/dokdo.py
+src/dokdo.egg-info/PKG-INFO
+src/dokdo.egg-info/SOURCES.txt
+src/dokdo.egg-info/dependency_links.txt
+src/dokdo.egg-info/entry_points.txt
+src/dokdo.egg-info/top_level.txt
