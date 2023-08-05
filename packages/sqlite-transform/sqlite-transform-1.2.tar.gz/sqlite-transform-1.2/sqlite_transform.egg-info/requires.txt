@@ -1,0 +1,7 @@
+dateutils
+tqdm
+click
+sqlite-utils
+
+[test]
+pytest
