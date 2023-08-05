@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: sfu-data-io
+Version: 0.1.3
+Summary: A set of helpers that transfer data across different filesystems.
+Author: Anderson de Andrade
+Author-email: adeandrade@ensc.sfu.ca
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: boto3 (>=1.12,<2.0)
+Requires-Dist: numpy
+Requires-Dist: s3fs (>=0.6,<0.7)
