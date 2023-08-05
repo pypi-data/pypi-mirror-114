@@ -1,0 +1,11 @@
+README.md
+setup.py
+shallowgibbs/__init__.py
+shallowgibbs/doublebackpropagation.py
+shallowgibbs_doublebackpropagation.egg-info/PKG-INFO
+shallowgibbs_doublebackpropagation.egg-info/SOURCES.txt
+shallowgibbs_doublebackpropagation.egg-info/dependency_links.txt
+shallowgibbs_doublebackpropagation.egg-info/entry_points.txt
+shallowgibbs_doublebackpropagation.egg-info/not-zip-safe
+shallowgibbs_doublebackpropagation.egg-info/requires.txt
+shallowgibbs_doublebackpropagation.egg-info/top_level.txt
