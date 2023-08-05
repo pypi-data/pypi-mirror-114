@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: champion-name-converter
+Version: 1.0.1
+Summary: Convert League of Legends Champions Name to ID
+Home-page: https://github.com/flowd1337/champion-name-converter/
+Author: flowd1337
+Author-email: john_doe@gmail.com
+License: MIT
+Download-URL: https://github.com/flowd1337/champion-name-converter/archive/refs/tags/1.0.1.tar.gz
+Description: # Champion Name Converter
+        
+        ###Installing using pip: 
+        
+        ```
+        pip install champion-name-converter
+        ```
+        
+        ###Usage:
+        
+        ```
+        from converter import Converter
+        
+        convert = Converter()
+        
+        champion_id = convert.champion_to_id("Akshan")
+        print(champion_id)
+        ```
+        
+Keywords: League,League of Legends,Champion Name Converter
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
