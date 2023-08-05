@@ -1,0 +1,9 @@
+[MESSAGE CONTROL]
+
+disable=bad-continuation, # black
+        missing-function-docstring,
+        missing-module-docstring
+
+[DESIGN]
+
+max-args=8
