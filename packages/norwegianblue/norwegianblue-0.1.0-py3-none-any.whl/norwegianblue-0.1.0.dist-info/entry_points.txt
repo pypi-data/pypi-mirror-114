@@ -1,0 +1,4 @@
+[console_scripts]
+eol = norwegianblue.cli:main
+norwegianblue = norwegianblue.cli:main
+
