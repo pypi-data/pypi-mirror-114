@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: uol-grades-calculator
+Version: 0.8.0
+Summary: Grades calculator for the BSc Computer Science at the University of London
+Home-page: https://github.com/sglavoie/uol-grades-calculator
+Author: Sébastien Lavoie
+Author-email: sebastien@lavoie.dev
+License: MIT
+Project-URL: Documentation, https://uol-grades-calculator.readthedocs.io
+Project-URL: Source, https://github.com/sglavoie/uol-grades-calculator
+Project-URL: Tracker, https://github.com/sglavoie/uol-grades-calculator/issues
+Description: # Grades Calculator
+        
+        [![PyPi](https://img.shields.io/pypi/v/uol-grades-calculator.svg)](https://pypi.python.org/pypi/uol-grades-calculator) [![Documentation Status](https://readthedocs.org/projects/uol-grades-calculator/badge/?version=latest)](https://uol-grades-calculator.readthedocs.io/en/latest/?badge=latest)
+        
+        This tool is all about getting information and generating insights from the progress made in a [BSc Computer Science at the University of London](https://london.ac.uk/courses/computer-science) (calculations are specific to this particular degree).
+        
+        In order to use it, please [refer to the documentation](https://uol-grades-calculator.readthedocs.io/).
+        
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Education
+Classifier: Topic :: Education :: Testing
+Classifier: Topic :: Documentation :: Sphinx
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown; charset=UTF-8
+Provides-Extra: test
+Provides-Extra: all
