@@ -1,0 +1,16 @@
+setuptools
+requests
+carp
+pandas
+urllib3
+utils
+numpy
+argparse
+wheel
+Jinja2
+Werkzeug
+matplotlib
+seaborn
+pip
+tqdm
+twine
