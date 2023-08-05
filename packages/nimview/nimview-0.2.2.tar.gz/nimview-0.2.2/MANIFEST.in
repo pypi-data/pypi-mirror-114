@@ -1,0 +1,1 @@
+include nakefile.nim src/library.nim nimview.pyd nimview.so

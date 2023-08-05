@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+bdist_wheel.py
+nakefile.nim
+setup.cfg
+setup.py
+nimview/README.md
+nimview/nakefile.nim
+nimview.egg-info/PKG-INFO
+nimview.egg-info/SOURCES.txt
+nimview.egg-info/dependency_links.txt
+nimview.egg-info/requires.txt
+nimview.egg-info/top_level.txt
+nimview/src/library.nim
+src/library.nim
