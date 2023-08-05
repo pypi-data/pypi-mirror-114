@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/example_pkg_stevech.egg-info/PKG-INFO
+src/example_pkg_stevech.egg-info/SOURCES.txt
+src/example_pkg_stevech.egg-info/dependency_links.txt
+src/example_pkg_stevech.egg-info/top_level.txt
+src/stvexample_package/__init__.py
+src/stvexample_package/stvexample.py
