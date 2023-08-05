@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+sztestlib/__init__.py
+sztestlib/szlibone.py
+sztestlib20210724.egg-info/PKG-INFO
+sztestlib20210724.egg-info/SOURCES.txt
+sztestlib20210724.egg-info/dependency_links.txt
+sztestlib20210724.egg-info/top_level.txt
