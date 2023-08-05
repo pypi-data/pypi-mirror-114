@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "BlockFiRates"
+version = "0.2.2"
+description = "Scrape the latest APY rates for BlockFi Interest Accounts"
+authors = ["P.G. Ó Slatara <pgoslatara@gmail.com>"]
+keywords = ["crypto", "python3", "blockfi"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/pgoslatara/blockfirates"
+repository = "https://github.com/pgoslatara/blockfirates"
+classifiers = [
+    "Environment :: Console",
+    "Framework :: Flake8",
+    "Programming Language :: Python :: 3"
+]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+lxml = "^4.6.3"
+cloudscraper = "^1.2.58"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.9.2"
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
