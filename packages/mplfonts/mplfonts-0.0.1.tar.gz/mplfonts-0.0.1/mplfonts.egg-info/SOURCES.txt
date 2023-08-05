@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+mplfonts/__init__.py
+mplfonts/conf.py
+mplfonts.egg-info/PKG-INFO
+mplfonts.egg-info/SOURCES.txt
+mplfonts.egg-info/dependency_links.txt
+mplfonts.egg-info/entry_points.txt
+mplfonts.egg-info/requires.txt
+mplfonts.egg-info/top_level.txt
+mplfonts/bin/__init__.py
+mplfonts/bin/cli.py
+mplfonts/util/__init__.py
+mplfonts/util/common.py
+mplfonts/util/manage.py
