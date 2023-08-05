@@ -1,0 +1,9 @@
+LICENSE,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+pygitstat/gitstat/__init__.py,sha256=gYCHDuyCuDOFD5C9D-fFwyNzQBomfe3J9XCaj-gHdKw,74
+pygitstat/gitstat/gitstat.py,sha256=-Pd187f6SvQZBHizQXU_cjDSWL0jjPGjKy3UVnQMWwM,31743
+pygitstat/gitstat/tests/test_gitstat.py,sha256=PXZPS0UQRJ11g7wFVWlxGvWzT6Aomtd6xALgZEn9OxQ,1177
+pygitstat-0.4.8.dist-info/entry_points.txt,sha256=OFlYifJz7emYM9d-kqyWN3ThLu2P3YFwQ7XUYClaX-Q,47
+pygitstat-0.4.8.dist-info/LICENSE,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+pygitstat-0.4.8.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+pygitstat-0.4.8.dist-info/METADATA,sha256=zrcvMhQ_ut-r31IwCdETuuxGvkasNdcduIc42VUqXWA,6213
+pygitstat-0.4.8.dist-info/RECORD,,
