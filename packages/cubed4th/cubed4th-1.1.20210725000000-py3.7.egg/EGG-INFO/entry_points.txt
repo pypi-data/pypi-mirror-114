@@ -1,0 +1,3 @@
+[console_scripts]
+c4 = cubed4th.cli_FORTH:ide_stdio
+
