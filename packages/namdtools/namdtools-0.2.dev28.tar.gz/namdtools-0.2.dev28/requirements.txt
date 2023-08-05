@@ -1,0 +1,6 @@
+numba
+numpy
+pandas
+pyyaml>=5.3
+scipy
+sympy
