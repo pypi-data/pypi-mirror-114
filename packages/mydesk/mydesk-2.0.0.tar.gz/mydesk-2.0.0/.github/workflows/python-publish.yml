@@ -1,0 +1,44 @@
+# This workflow will upload a Python Package using Twine when a release is created
+# For more information see: https://help.github.com/en/actions/language-and-framework-guides/using-python-with-github-actions#publishing-to-package-registries
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Publish Python Package
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  deploy:
+
+    runs-on: macos-11.0
+
+    steps:
+    - uses: actions/checkout@master
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install build pipenv
+        pipenv install
+        git clone --depth 1 https://github.com/pyinstaller/pyinstaller.git
+        pushd pyinstaller/bootloader
+        python ./waf all
+        popd
+        pipenv run pip install file://`pwd`/pyinstaller/
+    - name: Build package
+      run: |
+        pipenv run zsh pyinstaller.sh
+        python -m build
+    - name: Publish package
+      uses: pypa/gh-action-pypi-publish@master
+      with:
+        user: __token__
+        password: ${{ secrets.PYPI_API_TOKEN }}

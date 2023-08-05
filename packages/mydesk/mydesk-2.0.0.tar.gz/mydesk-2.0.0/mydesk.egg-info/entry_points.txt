@@ -1,0 +1,3 @@
+[console_scripts]
+mydesk = mydesk.gui:main
+
