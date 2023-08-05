@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: aristoteDash
+Version: 1.0.4
+Summary: Programme de prévision de production électrique d'une centrale PV
+Home-page: UNKNOWN
+Author: Dorian Drevon
+Author-email: drevondorian@gmail.com
+License: UNKNOWN
+Description: programme de prévision de production de puissance et d'énergie produite par une centrale PV 
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
