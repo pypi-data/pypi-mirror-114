@@ -1,0 +1,3 @@
+import v2ray
+
+V2RAY_RUNTIME_DIR = v2ray.V2RAY_RUNTIME_DIR
