@@ -1,0 +1,59 @@
+<!DOCTYPE html><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"></head><body>
+<h1>PiLC - The Raspberry Pi PLC</h1>
+
+<p><a href="https://bues.ch/a/pilc">PiLC</a> is a <a href="https://www.raspberrypi.org/">Raspbian</a> Operating System derivative that comes with Awlsim preinstalled and ready-to-go.</p>
+
+<p>PiLC can be used to run a Raspberry Pi just like a "real" PLC.</p>
+
+<h2>How to setup PiLC on the Raspberry Pi?</h2>
+
+<p>Just copy the PiLC image file onto an SD card. The process of installing PiLC is exactly the same as installing the standard Raspbian distribution.</p>
+
+<p>Please see the <a href="https://bues.ch/a/pilc#install">install instructions</a> for more details.</p>
+
+<p>There is no need to set up anything else. The PiLC image is pre-configured so that the Awlsim core will automatically start during bootup. The Awlsim core on the PiLC listens to SSH connections on the Ethernet port.</p>
+
+<h2>How to connect to the PiLC?</h2>
+
+<ol>
+<li><p>Connect the Raspberry Pi's Ethernet port to your network and power up the Raspberry Pi. It will automatically fetch an IP address from your router.</p></li>
+<li><p>Check your router information page to see which IP address the Raspberry Pi obtained.</p></li>
+<li><p>Start the Awlsim GUI on your PC.</p></li>
+<li><p>Load the example project <code>raspberrypi-gpio.awlpro</code> that is shipped with Awlsim into the Awlsim GUI by clicking <code>File</code> and then <code>Open project...</code></p></li>
+<li><p>Then connect to the PiLC by clicking <code>CPU</code> and then <code>Go online (Connect to a CPU)</code> in the menu bar.</p></li>
+<li><p>Enter the IP address of your Raspberry Pi here:<br />
+<a href="doc/pic/pilc/connection0.png"><img src="doc/pic/pilc/connection0.png" alt="awlsim-gui" /></a></p></li>
+<li><p>Then click <code>Accept</code>.</p></li>
+<li><p>If Awlsim asks you to confirm the connection authentication, click <code>Yes</code>:<br />
+<a href="doc/pic/pilc/connection1.png"><img src="doc/pic/pilc/connection1.png" alt="awlsim-gui" /></a></p></li>
+<li><p>Finally type in the Raspberry Pi login password. The default password is <code>raspberry</code><br />
+<a href="doc/pic/pilc/connection2.png"><img src="doc/pic/pilc/connection2.png" alt="awlsim-gui" /></a></p></li>
+</ol>
+
+<h2>Connection failure</h2>
+
+<p>If the connection fails with the following error message, it might be due to a failed SSH authentication:<br />
+<a href="doc/pic/pilc/connection3.png"><img src="doc/pic/pilc/connection3.png" alt="awlsim-gui" /></a></p>
+
+<p>This will happen, if you re-install PiLC on the Raspberry Pi.<br />
+Re-installing PiLC generates new SSH keys and therefore causes subsequent authentications to fail.</p>
+
+<p>To fix this delete the SSH authentication (<code>known_hosts</code> entry) on the PC (<em>not</em> on the Raspberry Pi).
+If you are using OpenSSH/Linux on the PC, enter the following command into a command prompt:</p>
+
+<p><code>ssh-keygen -R 192.168.0.10</code></p>
+
+<p>Replace <code>192.168.0.10</code> with the IP address of your Raspberry Pi.</p>
+
+<h2>How do I get my PLC program onto PiLC?</h2>
+
+<p>Just connect to PiLC (see previous chapter) and click the <code>download</code> button in the Awlsim GUI. This will transfer the program over to the PiLC.<br />
+<a href="doc/pic/pilc/download.png"><img src="doc/pic/pilc/download.png" alt="awlsim-gui" /></a></p>
+
+<p>If the PiLC is not in RUN state, click the RUN button to start the program.</p>
+
+<h2>Where does Awlsim store its state on the Raspberry Pi?</h2>
+
+<p>The Awlsim working directory is <code>/etc/awlsim/</code><br />
+The loaded project and other configuration files are stored there.</p>
+</body></html>
