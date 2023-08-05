@@ -1,0 +1,14 @@
+LICENSE
+NOTICE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/tau_clients/__init__.py
+src/tau_clients/exceptions.py
+src/tau_clients.egg-info/PKG-INFO
+src/tau_clients.egg-info/SOURCES.txt
+src/tau_clients.egg-info/dependency_links.txt
+src/tau_clients.egg-info/requires.txt
+src/tau_clients.egg-info/top_level.txt
+src/tau_clients/nsx_defender/__init__.py
