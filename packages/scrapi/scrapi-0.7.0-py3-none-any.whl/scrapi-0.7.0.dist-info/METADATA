@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: scrapi
+Version: 0.7.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pandas (>=0.25.0)
+Requires-Dist: pepars
+Requires-Dist: sparsedat (>=1.0.0alpha5)
+Requires-Dist: numpy
+Requires-Dist: plotly
+Requires-Dist: h5py
+Requires-Dist: sklearn
+Requires-Dist: scipy
+Requires-Dist: statsmodels
+
+UNKNOWN
+
+
