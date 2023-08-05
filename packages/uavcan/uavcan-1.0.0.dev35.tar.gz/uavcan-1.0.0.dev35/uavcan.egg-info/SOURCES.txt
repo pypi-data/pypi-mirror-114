@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+uavcan.egg-info/PKG-INFO
+uavcan.egg-info/SOURCES.txt
+uavcan.egg-info/dependency_links.txt
+uavcan.egg-info/top_level.txt
