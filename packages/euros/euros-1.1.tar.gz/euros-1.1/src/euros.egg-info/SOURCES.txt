@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/euros/__init__.py
+src/euros/en.py
+src/euros/fr.py
+src/euros/it.py
+src/euros/test_en.py
+src/euros/test_fr.py
+src/euros/test_it.py
+src/euros.egg-info/PKG-INFO
+src/euros.egg-info/SOURCES.txt
+src/euros.egg-info/dependency_links.txt
+src/euros.egg-info/top_level.txt
