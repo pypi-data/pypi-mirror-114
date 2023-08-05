@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: generative-model-tools
+Version: 0.1
+Summary: For generative models visualization
+Home-page: https://dlzhou.top/pypi/generative-model-tools.html
+Author: dlzhou
+Author-email: zhou-dongliang@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# 生成模型工具
+本工具主要用于生成模型对应的工具包
+
