@@ -1,0 +1,9 @@
+neuro-cli>=21.1.13
+click>=7.0
+toml>=0.10.0
+pyyaml>=3.0
+awscli>=1.19.0
+colorama<=0.4.3
+
+[:python_version < "3.7"]
+dataclasses>=0.7
