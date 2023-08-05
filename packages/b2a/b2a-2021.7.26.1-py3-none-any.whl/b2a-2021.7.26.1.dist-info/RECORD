@@ -1,0 +1,12 @@
+b2a/__init__.py,sha256=pxJL2mYMD0hz_UqE8N7LbFJpInWEjpnnVw0gVquWbNs,7999
+b2a/aliplat.py,sha256=qSA97q58ww-HUUfgO_-OqzvUpdqsJJx_HyvabfJ_J5o,11944
+b2a/bdyplat.py,sha256=a3V0-CDW-AbLKwC9Fr-fuaucJhQ0IYVPcx72VRul4Ck,3139
+b2a/platformImp.py,sha256=ipcG2eGRuFSudCtHpbkd5IAGkPHb84Q04uXNQb4ZDzc,1330
+b2a_gui/__init__.py,sha256=K4IWsbOnL-3xpBtUY4fsjT39YRzBEQTeeDwNZsRMLNg,381
+b2a_gui/download.py,sha256=ZrxyX3PJVojPIcRUDnxoI2G-CzOmpqj_6z_aSQSux28,186
+b2a_gui/main.py,sha256=nNQlQIUjmEr3OwegX0_DUJPZd8A477SBWL77LynIzFo,1635
+b2a-2021.7.26.1.dist-info/METADATA,sha256=EE632qcCK8J-bZyi9NFfqAwtbOyHI52y_SbP_ObCKR0,340
+b2a-2021.7.26.1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+b2a-2021.7.26.1.dist-info/entry_points.txt,sha256=B7NH5cMbUKn1DGSkBGLlVyVsyHoRa3KeAm0gpZ7iaOA,34
+b2a-2021.7.26.1.dist-info/top_level.txt,sha256=Pt2cOYPPeBz_xvIU59fwuDfC8yA1tpoP3c7qSswFWsA,12
+b2a-2021.7.26.1.dist-info/RECORD,,
