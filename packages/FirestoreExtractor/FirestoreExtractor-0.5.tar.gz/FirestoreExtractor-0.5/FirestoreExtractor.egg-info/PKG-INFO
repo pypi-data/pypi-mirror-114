@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: FirestoreExtractor
+Version: 0.5
+Summary: Extracts data from cloud firestore and firebase database
+Home-page: https://github.com/praKhr/FirestoreExtractor
+Author: Prakhar Gandhi
+Author-email: gprakhar0@gmail.com
+License: MIT
+Download-URL: https://github.com/prakHr/FirestoreExtractor/archive/refs/tags/v_05.tar.gz
+Keywords: cloud-firestore,firebase,firestore
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE.txt
+
+UNKNOWN
+
