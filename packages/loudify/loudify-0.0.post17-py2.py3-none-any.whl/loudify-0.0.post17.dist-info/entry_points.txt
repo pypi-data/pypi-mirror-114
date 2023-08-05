@@ -1,0 +1,6 @@
+[console_scripts]
+loudify-broker=loudify:main_broker
+loudify-cli=loudify:main_cli
+loudify-client=loudify:main_client
+loudify-worker=loudify:main_worker
+
