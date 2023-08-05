@@ -1,0 +1,3 @@
+include README.md
+include MarkerMAG/MarkerMAG_config.py
+include MarkerMAG/VERSION
