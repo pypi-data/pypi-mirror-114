@@ -1,0 +1,14 @@
+fgvcdata/__init__.py,sha256=834gEzrIimtHdFGoqHg6RcibBsUm7A_9r-vWOCSMjTc,1238
+fgvcdata/aircraft.py,sha256=fHzbsZQSu5M8wcTrH0PkX4aZvriUfmnT1Ki9E3h3bLU,1910
+fgvcdata/base.py,sha256=WLYiAscFwU6CQucOCLCrW83o6dHbpzpWLc3CEdcthXE,2798
+fgvcdata/birds.py,sha256=_eXN9GBMDAe5WKmlPjJwgsfdpF04jL8PmGcHhB4gj6E,2950
+fgvcdata/cars.py,sha256=948NcX1hnxP4pwHDTz-26tXBKbJ5wHKdamVx-0ePl1g,1960
+fgvcdata/dogs.py,sha256=52CwwBY9UvtYwCjEV6SqsyjgsLnx8maY8Ev5LmKgOYA,4860
+fgvcdata/flowers.py,sha256=3eAwGOdxMjqHits-gXKYZDTagiJnvhIV0qCCo7zv0VE,2054
+fgvcdata/icub.py,sha256=n1X1d206c1mtU_sJIPxNnYhcBQZk6Nt8BTS0FCGdsvA,1472
+fgvcdata/data/cubplus_image_class_labels.txt,sha256=Vy8BOvymDP8ZSKpn7ENgppE5bmbtmJ_KU4d_L2JGLRg,98412
+fgvcdata-0.1.0.dist-info/LICENSE,sha256=bioErXFMmNutLzqf55pMl89vxtkZGeT_36RJRygNdww,1055
+fgvcdata-0.1.0.dist-info/METADATA,sha256=sXrpEyd9oF-Z3gR7ZWEty_YcHj_1qezgV1mpUi1WC1c,3272
+fgvcdata-0.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+fgvcdata-0.1.0.dist-info/top_level.txt,sha256=1q4bBz1VU_bLaOitOssTQVULV9685afYcCnFsIyioIM,9
+fgvcdata-0.1.0.dist-info/RECORD,,
