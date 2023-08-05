@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: azure_python_arm_deployer
+Version: 0.0.3
+Summary: Deployer package to deploy or delete Azure resources based on ARM templates
+Home-page: https://github.com/pypa/sampleproject
+Author: Rishabh Jain
+Author-email: rijain@microsoft.com
+License: UNKNOWN
+Description: # azure-python-arm-deployer
+        Simple python package to perform operations on Azure resources using ARM templates. Consumes Azure SDK for python.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
