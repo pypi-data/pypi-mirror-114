@@ -1,0 +1,10 @@
+scikit_talk/__init__.py,sha256=xlnoZhT0ejvemi8kCWxO8Wb0o-CDxagW6XYm3ZtEi-U,145
+scikit_talk/cli.py,sha256=W0wOpb_fKUHK6qEMMzcTXbNLDDb-8-mMiK2ZwFSWOzA,427
+scikit_talk/preprocessor.py,sha256=DgW18_fo4EPzgBLIELoDycvUDJJMvloeYIEJ8xzXWgM,9474
+scikit_talk-0.0.223.dist-info/AUTHORS.rst,sha256=l96L6von0mSJA8a7XqpwV3ezqvnnyCK074fkqQ5S_dk,178
+scikit_talk-0.0.223.dist-info/LICENSE,sha256=aIhQQxbR1AM5fCM5KJhKblAQu0djb6cfF3l1dpZnQ08,1092
+scikit_talk-0.0.223.dist-info/METADATA,sha256=fBjGmCo7lv2kE_GsbdF5yZGSK5EIga5BlK7Er-6ESIE,3695
+scikit_talk-0.0.223.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+scikit_talk-0.0.223.dist-info/entry_points.txt,sha256=1kP4KiHEGmPGvEureWnvf28fjaT7mHU9EQ-UzvKOTDI,54
+scikit_talk-0.0.223.dist-info/top_level.txt,sha256=UxzSXrU84kYK3T2L8u4j5qq_hDOnUqtz3gV-3cgNm0I,12
+scikit_talk-0.0.223.dist-info/RECORD,,
