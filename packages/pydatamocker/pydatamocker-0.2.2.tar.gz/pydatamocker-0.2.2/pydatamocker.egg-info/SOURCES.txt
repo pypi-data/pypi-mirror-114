@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+./pydatamocker/MockGenerator.py
+./pydatamocker/__init__.py
+./pydatamocker/builder.py
+./pydatamocker/config.py
+./pydatamocker/exceptions.py
+./pydatamocker/io.py
+./pydatamocker/numbers.py
+./pydatamocker/sampler.py
+./pydatamocker/time.py
+pydatamocker.egg-info/PKG-INFO
+pydatamocker.egg-info/SOURCES.txt
+pydatamocker.egg-info/dependency_links.txt
+pydatamocker.egg-info/top_level.txt
