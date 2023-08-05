@@ -1,0 +1,13 @@
+py2048/__init__.py,sha256=1fHaH09-miA2g0q2gTwhPpBafeFaDu7khmbW_zhYc0E,1504
+py2048/basefrontend.py,sha256=0LT7ZH6ZEDP1WzfbSOhHAsG0NzKEFBqqiUXGrndvW7c,7034
+py2048/cell.py,sha256=CytEHI5Utvz7UNVtNa9DSeqYWD7aaZjvba-CsNfs3QI,4073
+py2048/core.py,sha256=9xjVF67vBmKQ0JCil_KCx__PYBAxdzLAdeDJT9AWzkw,18396
+py2048/grid.py,sha256=Jhb59ctFmWdKbGzaz8mGfKZDe8EdyEXw7gjFeqFwpIg,19179
+py2048/log.py,sha256=hlkvdT4gpgV-y07RPhMI2LgyuDGzC4naYGmx_d1y-wE,2081
+py2048/test.py,sha256=rbeifhypgzrq3PPK4mw_XxAQlXCcv-Tn8SBnihFhSk8,7268
+py2048/utils.py,sha256=KBi-Jk0bcpLUB6wY4sc3QFW6c2MqvRhFcQCFyWuvdhs,6967
+py2048base-0.45.dist-info/METADATA,sha256=SEsjElQLJIhSNAe6U7JosrDOKq46WLQ9yyjuQtStUbg,5211
+py2048base-0.45.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+py2048base-0.45.dist-info/top_level.txt,sha256=_296bUvBMva3ZeMNvfptKD1btzho81rt4k5TSGgUYSA,7
+py2048base-0.45.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+py2048base-0.45.dist-info/RECORD,,
