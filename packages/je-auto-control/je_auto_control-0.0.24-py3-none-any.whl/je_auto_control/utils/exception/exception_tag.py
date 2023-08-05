@@ -1,0 +1,28 @@
+"""
+keyboard tags
+"""
+keyboard_press_key = "keyboard press key error"
+keyboard_release_key = "keyboard release key error"
+keyboard_type_key = "keyboard type key error"
+"""
+mouse tags
+"""
+mouse_get_position = "mouse get position error"
+mouse_set_position = "mouse set position error"
+mouse_press_mouse = "mouse press mouse error"
+mouse_release_mouse = "mouse release key error"
+mouse_click_mouse = "mouse click mouse error"
+mouse_scroll = "mouse scroll error"
+"""
+screen tags
+"""
+screen_get_size = "screen get size error"
+"""
+table tags
+"""
+cant_find_key = "can't find key error"
+"""
+image tags
+"""
+cant_find_image = "can't find image"
+find_image_error_variable = "variable error"
