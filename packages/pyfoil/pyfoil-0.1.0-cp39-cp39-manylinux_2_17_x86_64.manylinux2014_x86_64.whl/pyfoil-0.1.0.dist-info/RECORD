@@ -1,0 +1,13 @@
+xfoil.cpython-39-x86_64-linux-gnu.so,sha256=bzkXKeaxSR2HCrFHzcqkGePerWzuLPBxcW-mKzNsgOA,640104
+xfoil-stubs/__init__.pyi,sha256=F2aaPFxuLNjYw32UUNAwnK8Q1w7lRBaEshvNUn3KVEM,940
+pyfoil-stubs/__init__.py,sha256=OvxKBoynJ-6MoMPTdU5EQR9SwbkAd9-ledTr841dN8c,34
+pyfoil-stubs/airfoil.py,sha256=OQScWGeB1ma2Y34Y4Y0lFkLw5xBXSx5HUeh5Zstkam8,13489
+pyfoil-stubs/generators/treffz.py,sha256=YSTNLl8pMkSUFFQAbkViwCWRzX8I_B4Ui-BkZh2SY44,1168
+pyfoil-stubs/generators/naca.py,sha256=XXZjNQyOOa9SHOL4_bH1Oa-QGIdn535zjd3H4dxb3tw,1536
+pyfoil-stubs/generators/__init__.py,sha256=aDMgk8U_0AcKey46vSYBdsHKVy4IWOQeKxxZ36A4mMI,221
+pyfoil-stubs/generators/vandevooren.py,sha256=4I7rLFjayYWG6RR2kZ9Gcu-VDpKgPSN1Lr5sv8HORTE,1147
+pyfoil-stubs/generators/joukowsy.py,sha256=HSAUsvdBcpGj4lrvABwz_kS0stWpVmuYChY85dC6Org,4038
+pyfoil-0.1.0.dist-info/METADATA,sha256=S4zfDudKuPqMqFl4EQr3EMZC-uI1eXm-5xfz0CbMvs4,949
+pyfoil-0.1.0.dist-info/top_level.txt,sha256=LnSukpPgye9lL3l0xYAL0hd175ZEgcKfsE5730l9ZXw,8
+pyfoil-0.1.0.dist-info/RECORD,,
+pyfoil-0.1.0.dist-info/WHEEL,sha256=a60ds3Ma82hx_sQpOqkP7xcMHCqlDvAwFM7jtmOVcmY,148
