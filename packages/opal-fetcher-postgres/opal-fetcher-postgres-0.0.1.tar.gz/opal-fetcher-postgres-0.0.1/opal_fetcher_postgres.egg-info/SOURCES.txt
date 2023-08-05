@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+opal_fetcher_postgres/__init__.py
+opal_fetcher_postgres/provider.py
+opal_fetcher_postgres.egg-info/PKG-INFO
+opal_fetcher_postgres.egg-info/SOURCES.txt
+opal_fetcher_postgres.egg-info/dependency_links.txt
+opal_fetcher_postgres.egg-info/requires.txt
+opal_fetcher_postgres.egg-info/top_level.txt
