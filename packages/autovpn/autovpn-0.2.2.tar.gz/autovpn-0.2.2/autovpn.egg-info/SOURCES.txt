@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+autovpn.py
+setup.py
+autovpn.egg-info/PKG-INFO
+autovpn.egg-info/SOURCES.txt
+autovpn.egg-info/dependency_links.txt
+autovpn.egg-info/entry_points.txt
+autovpn.egg-info/requires.txt
+autovpn.egg-info/top_level.txt
