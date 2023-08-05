@@ -1,0 +1,7 @@
+senaite.core
+senaite.jsonapi
+setuptools
+
+[test]
+plone.app.testing
+unittest2
