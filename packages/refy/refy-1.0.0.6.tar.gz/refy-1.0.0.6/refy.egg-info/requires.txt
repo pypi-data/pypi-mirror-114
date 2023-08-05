@@ -1,0 +1,16 @@
+pyinspect
+pandas
+loguru
+requests
+myterial
+rich
+bibtexparser
+xmltodict
+sklearn
+gensim==3.8.3
+
+[dev]
+pytest
+pytest-sugar
+pytest-cov
+coverage
