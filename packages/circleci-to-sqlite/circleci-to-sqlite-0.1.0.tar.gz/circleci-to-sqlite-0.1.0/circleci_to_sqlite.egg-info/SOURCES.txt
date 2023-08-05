@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+circleci_to_sqlite/__init__.py
+circleci_to_sqlite/cli.py
+circleci_to_sqlite/utils.py
+circleci_to_sqlite.egg-info/PKG-INFO
+circleci_to_sqlite.egg-info/SOURCES.txt
+circleci_to_sqlite.egg-info/dependency_links.txt
+circleci_to_sqlite.egg-info/entry_points.txt
+circleci_to_sqlite.egg-info/requires.txt
+circleci_to_sqlite.egg-info/top_level.txt
