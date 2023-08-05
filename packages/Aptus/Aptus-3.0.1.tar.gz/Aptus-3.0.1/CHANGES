@@ -1,0 +1,98 @@
+-----------------------
+Aptus 3.0.1, July 25 2021
+-----------------------
+
+* Web interface.
+
+* Requires Python 3.9 or higher.
+
+------------
+Next release
+------------
+
+* Multi-threaded.
+
+* Added full-screen mode.  'f' toggles between full-screen and windowed.
+
+* Window size can be set interactively with the 'w' key.  Enter an explicit size,
+  or 's/2' (or s/3, s/4, etc) for half the screen size.
+
+* Un-computed pixels are shown as gray checkerboard.
+
+* If the view crosses the x-axis, the symmetry is used to speed up computation.
+
+* 'o' opens saved settings or image files (*.aptus or *.png).
+
+* Files can be dropped on the Aptus window to open them.
+
+* The About section of the Help dialog now shows versions of installed
+  pre-requisite packages.
+
+
+-----------------------
+Aptus 2.0, October 2008
+-----------------------
+
+* Multiple top-level exploration windows.  Use 'n' to make a new window.
+
+* Tool panels show supplementary information:
+  * You Are Here shows your location in the Mandelbrot set.  Use 'l' to show it.
+  * Palettes panel shows all the palettes, and the one currently in use.
+  * Statistics panel shows statistics about the latest computation.
+  * Point Info panel shows information about the current point, shift-hover to indicate point.
+  * Julia panel shows Julia set for the current point, shift-hover to indicate point.
+    Double-clicking the Julia panel opens a new exploration window to explore that Julia set.
+
+* Computation improvements:
+  * Faster.
+  * The exploration window updates during computation.
+  * Continuous coloring is more accurate now: banding artifacts are gone.
+  * When dragging the exploration window, pixels still in the window aren't re-calculated.
+
+* Center and diameter can be specified in the command line arguments.
+
+
+----------------------
+Aptus 1.56, April 2008
+----------------------
+
+* Yet more painting improvements.  Thanks, Paul Ollis.
+
+
+----------------------
+Aptus 1.55, April 2008
+----------------------
+
+* Painting is now flicker-free. Thanks, Rob McMullen.
+
+
+----------------------
+Aptus 1.51, March 2008
+----------------------
+
+* Painting didn't work at all on Mac or Linux!
+
+* Some keys didn't respond on Linux.
+
+* Shifting the palette into negative offsets caused incorrect jumps in colors.
+
+
+---------------------
+Aptus 1.5, March 2008
+---------------------
+
+* Continuous coloring.
+
+* Rotation support.
+
+* Middle mouse button drags the image.
+
+* Palette tweaking:
+    * Hue and saturation adjustments.
+    * Scaling the palette to adjust distance between colors.
+
+* More statistics: boundaries traced, boundaries filled, and points computed.
+
+* Statistics are written into the final .PNG files.
+
+* Reads .xet files from http://hbar.servebeer.com/mandelbrot/coordinates.html
