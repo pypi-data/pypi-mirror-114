@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+README.md
+setup.cfg
+setup.py
+plover_sqlite_dictionary/__init__.py
+plover_sqlite_dictionary/py.typed
+plover_sqlite_dictionary.egg-info/PKG-INFO
+plover_sqlite_dictionary.egg-info/SOURCES.txt
+plover_sqlite_dictionary.egg-info/dependency_links.txt
+plover_sqlite_dictionary.egg-info/entry_points.txt
+plover_sqlite_dictionary.egg-info/requires.txt
+plover_sqlite_dictionary.egg-info/top_level.txt
+plover_sqlite_dictionary.egg-info/zip-safe
