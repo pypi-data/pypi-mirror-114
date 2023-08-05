@@ -1,0 +1,6 @@
+---
+- ansible.builtin.pip:
+    name: bash_kernel
+    virtualenv: "{{ kernel_virtualenv }}"
+
+- ansible.builtin.shell: "{{ kernel_virtualenv }}/bin/python -m bash_kernel.install"
