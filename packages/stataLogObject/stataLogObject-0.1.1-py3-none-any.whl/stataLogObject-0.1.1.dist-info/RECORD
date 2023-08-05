@@ -1,0 +1,16 @@
+stataLogObject/__init__.py,sha256=keBAhac7Glhf7CjFpC7AYHmuv9ajBPUsVi2UMK2yPog,112
+stataLogObject/Configs/ConfigObj.py,sha256=uvsrarvCAY0WSzJw1p_gCtEbWGmC-2gHETy06AbpZCQ,3429
+stataLogObject/Configs/__init__.py,sha256=K5SL2CSyfgznRQcckJaIEb-3QKsztbsV0p6Prb-p008,34
+stataLogObject/StataParser/StataCommon.py,sha256=1XZKESTHpfUDsRxDZpEKunBMtQJh1Lq6ghuIwT61jsU,8938
+stataLogObject/StataParser/StataExtractor.py,sha256=JXOqCOBcbWk9hNbQjyiOped0wLuNnJk6pnr3iPCn-LA,7417
+stataLogObject/StataParser/__init__.py,sha256=nIMGilxTAEmSiwwn1WkUBOvYTaclp5fOJ2XORZ9OCJs,82
+stataLogObject/Tables/Regressions.py,sha256=EcmwIlTfpezACoCVexkuagmS7bULn_3sqCdT8fK4c5Q,7111
+stataLogObject/Tables/Summary.py,sha256=vzmpGWBEKU7rthaM_k7NRhR7ezH6Li9CZOzV-QRYYG8,4965
+stataLogObject/Tables/__init__.py,sha256=HYHJtWVx1L2VtU-lSdVibz2RmZSQUXXPQj87XBDVzo8,91
+stataLogObject/Writers/Results.py,sha256=jOVYMGCmYf3EdnqC6_Szqv1wRm2QfR7TsvfLPa1hAsc,1009
+stataLogObject/Writers/__init__.py,sha256=5voUyRacReTCfHKBmV54uqmYcR7DFKU2YT4mIYWYDWA,43
+stataLogObject-0.1.1.dist-info/LICENSE,sha256=xZcGbgqpLfUL-_kZyLf19H94ARWpF4q9LL3k7Cadvug,1090
+stataLogObject-0.1.1.dist-info/METADATA,sha256=SIxk9dbeHbiHeWOb-mia6KDny3qv_27XwZA5EfJ_gHA,658
+stataLogObject-0.1.1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+stataLogObject-0.1.1.dist-info/top_level.txt,sha256=ouWU6NQ08vWrMn3_YvlCo8F2p7V8kUGpcuW9aoFMo44,15
+stataLogObject-0.1.1.dist-info/RECORD,,
