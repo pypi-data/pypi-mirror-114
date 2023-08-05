@@ -1,0 +1,16 @@
+igi_gc_reader/__init__.py,sha256=_YdP-noRP-Njkb9A_5x__r7oVTcmH9eSi6vwm_BJwxI,30
+igi_gc_reader/app.py,sha256=uoBX99grgzbF2AVLrz_pslEaSEGO2R8XLP3pYx-ghQw,2180
+igi_gc_reader/sample_data.py,sha256=eOsN4T_-6C5dkDaAIkrOq5el9IKtyhPX0ukVWaE9Yco,3988
+igi_gc_reader/writer.py,sha256=77B_I1QtI66lMa-kWRCFaZezo6iKKTM81qaAVxFhSMw,1222
+igi_gc_reader/reader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+igi_gc_reader/reader/classification.py,sha256=vJkajKc2NcxSlWfSS7FdZq_MUBRKRS5gMQRUyJb2-3Q,1011
+igi_gc_reader/reader/context_data.py,sha256=ikayTw86yhQNOQwaWsIAdz60sXJf04HI_EYL8FWgOrs,5855
+igi_gc_reader/reader/excel_address.py,sha256=YX_6AhJmzwHUO5BJ2-635pNprS4p5ZiiEcokmZWdvIY,2820
+igi_gc_reader/reader/excel_reader.py,sha256=nOOKCbCazVwn-cqh5GovA_Ss67SBocqpNPOonTfvo1s,4181
+igi_gc_reader/reader/gc_page.py,sha256=D0GgEgBngVG4l0NhVSZ8A2uBtwq_63or2nCmdLWFENw,10163
+igi_gc_reader/reader/gc_reader.py,sha256=YRYdCIKsqMuuETmcKcAQaOFfU7RoxJ2YRnS2B8POMBs,3027
+igi_gc_reader-0.0.2.dist-info/METADATA,sha256=k73s6GFbueavz9S0KmhB-ocs9r_jAtN6eQUBfWpLBO4,1348
+igi_gc_reader-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+igi_gc_reader-0.0.2.dist-info/licence.txt,sha256=1YhFKdHSM3XT4EdCH-WQ2nzYI9tpUjpZQvQBg-zHCwo,1052
+igi_gc_reader-0.0.2.dist-info/top_level.txt,sha256=TPIkYl_MF1Wo4s8KKVAcwGJBQgimfQf5zFoOjx_-h5k,14
+igi_gc_reader-0.0.2.dist-info/RECORD,,
