@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/shreyadatta/__init__.py
+src/shreyadatta.egg-info/PKG-INFO
+src/shreyadatta.egg-info/SOURCES.txt
+src/shreyadatta.egg-info/dependency_links.txt
+src/shreyadatta.egg-info/requires.txt
+src/shreyadatta.egg-info/top_level.txt

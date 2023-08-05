@@ -1,0 +1,20 @@
+import numpy as np
+xlist = np.linspace(-3.0, 3.0, 100)
+ylist = np.linspace(-3.0, 3.0, 100)
+X, Y = np.meshgrid(xlist, ylist)
+Z = np.sqrt((X-0)**2 + (Y-0)**2)
+Z= X**2 + (Y-((X**2)**(1.0/3)))**2
+import matplotlib.pyplot as plt
+plt.figure()
+cp = plt.contour(X, Y, Z)
+plt.colorbar(cp)
+plt.title('Filled Contours Plot')
+plt.xlabel('x (cm)')
+plt.ylabel('y (cm)')
+cp = plt.contourf(X, Y, Z)
+plt.clabel(cp, inline=True,fontsize=10)
+plt.title('Contour Plot')
+plt.text(0, -0.4, 'I love You Shreya', fontsize=30, fontweight='bold',color='red', horizontalalignment='center')
+plt.xlabel('x (cm)')
+plt.ylabel('y (cm)')
+plt.show()
