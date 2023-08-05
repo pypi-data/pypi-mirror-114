@@ -1,0 +1,89 @@
+GeneticFeatureSelection aims to provide a simple implementation for the users to perform sequential feature selection with genetic algorithm.
+
+## 1) Initial Population 
+   a) Heuristic ?
+   
+   b) Randomized ?
+    
+## 2) Selection
+   a) Roulette Wheel Selection ?
+   
+   b) Rank Selection ?
+   
+   c) Steady State Selection ?
+   
+   d) Tournament Selection ?
+   
+   e) Elitism Selection ?
+   
+   f) Boltzmann Selection ?
+   
+
+## 3) Reproduction
+   a) One-point crossover ?
+   
+   b) k-point crossover ?
+   
+   c) Uniform crossover ?
+   
+
+## 4) Mutation
+   a) Bit string mutation ?
+   
+   b) Flip Bit ?
+   
+   c) Boundary ?
+   
+   d) Non-Uniform ?
+   
+   e) Uniform ?
+   
+   f) Gaussian ?
+   
+   g) Shrink ?
+   
+
+
+Quick Start:
+
+	!pip install GeneticFeatureSelection
+	
+	from GeneticFeatureSelection import GeneticFeatureSelection
+	
+	gfs = GeneticFeatureSelection()
+
+	gfs.sequential_selection(
+    		X=X_train, 
+   		y=y_train, 
+    		pop_size=12, 
+    		estimator=xgbr, 
+    		scoring='neg_mean_absolute_error', 
+    		cv=5, 
+    		select_method='R', 
+    		offspring_size=20, 
+   		c_pt=1, 
+    		epsilon=.1, 
+    		tolerance=1, 
+    		verbose=1
+		)
+
+It requires at least six arguments to run:
+
+- estimators: machine learning model
+- X (array): features space
+- y (array): target
+- cv (int): number of folds in a (Stratified)KFold
+- scoring (str): see https://scikit-learn.org/stable/modules/model_evaluation.html
+- estimator: machine learning models
+- pop_size (int): population size
+- select_method (str): 'RW' (Roulette Wheel)
+		        'SS' (Steady State/Stratify)
+		        'T' (Tournament)
+		        'SUS' (Stochastic Universal Sampling)
+		        'R' (Rank)
+- offspring_size (int): offspring size
+- c_pt (int): 'crossover point'
+- epsilon (float): mutation rate
+- tolerance (int): number of fails that GFS can tolerate
+- verbose (int): level of verbosity
+    
