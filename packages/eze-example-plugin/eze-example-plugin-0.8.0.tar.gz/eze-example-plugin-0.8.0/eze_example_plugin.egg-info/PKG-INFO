@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: eze-example-plugin
+Version: 0.8.0
+Summary: Example plugin for helping eze-cli plugin makers
+Home-page: https://github.com/RiverSafeUK/eze-example-plugin
+Author: RiverSafe,
+Author-email: anthony.mckale@riversafe.co.uk,
+License: "MIT license"
+Project-URL: Homepage, https://github.com/RiverSafeUK/eze-example-plugin
+Project-URL: Source, https://github.com/RiverSafeUK/eze-example-plugin
+Keywords: eze,eze-cli
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Security
+Classifier: Topic :: Utilities
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# Introduction 
+
+Eze example plugin, provides a starter project for extending the capabilities of Eze, by adding new security tools or report types.
+
+# Getting Started
+
+- Eze Cli and it's sub-repos are powered by python and docker, make sure you have the latest versions installed
+- Have you read the [Contributing Guide](CONTRIBUTING.md)?
+- Have you read the [Code Of Conduct](CODE_OF_CONDUCT.md)?
+- Check out the [existing issues](https://github.com/https://github.com/RiverSafeUK/eze-example-plugin/issues) to see if any issues you're interested in have already been raised
+
+# Build and Test
+
+## Install Locally (via make)
+
+```bash
+make plugin-install
+```
+
+## Install Locally (Manual via pip)
+
+```bash
+rm dist/eze-example-plugin-*.tar.gz
+python setup.py sdist
+pip install dist/eze-example-plugin-*.tar.gz
+```
+
+## Test installed correctly
+
+```bash
+eze tools list
+eze reporters list
+```
+
+# Contribute
+
+See [CONTRIBUTING GUIDE](CONTRIBUTING.md)
+

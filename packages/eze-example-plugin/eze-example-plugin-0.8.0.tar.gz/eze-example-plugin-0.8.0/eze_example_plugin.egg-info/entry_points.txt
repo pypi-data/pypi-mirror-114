@@ -1,0 +1,3 @@
+[eze.plugins]
+eze = example = src.plugin
+

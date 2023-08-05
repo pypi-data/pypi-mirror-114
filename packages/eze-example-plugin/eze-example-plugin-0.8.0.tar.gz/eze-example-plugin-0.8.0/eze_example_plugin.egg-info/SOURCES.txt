@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+eze_example_plugin.egg-info/PKG-INFO
+eze_example_plugin.egg-info/SOURCES.txt
+eze_example_plugin.egg-info/dependency_links.txt
+eze_example_plugin.egg-info/entry_points.txt
+eze_example_plugin.egg-info/top_level.txt
+src/__init__.py
+src/example_reporter.py
+src/example_tool.py
+src/plugin.py
