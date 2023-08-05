@@ -1,0 +1,8 @@
+aiopg_listen/__init__.py,sha256=NVToIaKBbKaCwpeulrbvdo9KiZAYzB-ipmOldLGN4Cg,1238
+aiopg_listen/listener.py,sha256=0rcawrtauwoz3HdNsCIyAE9IDFUQeDUTQks4y8thxfk,4862
+aiopg_listen/py.typed,sha256=E84IaZyFwfLqvXjOVW4LS6WH7QOaKEFpNh9TFyzHNQc,6
+aiopg_listen-0.0.2.dist-info/LICENSE,sha256=aVmBXoo4joWuu-u1A14wOPPZKjKO4JZUOo4LuX4RQqQ,1068
+aiopg_listen-0.0.2.dist-info/METADATA,sha256=ie5ZgspfG9Gmpqk-qqZ0z_p4GW09UPWEk8T3PJ1wBfs,2232
+aiopg_listen-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aiopg_listen-0.0.2.dist-info/top_level.txt,sha256=ItdyrcOnwU7TArgY2QMSKjHZDrOsrYcN_Xj0rj5kcQ8,13
+aiopg_listen-0.0.2.dist-info/RECORD,,

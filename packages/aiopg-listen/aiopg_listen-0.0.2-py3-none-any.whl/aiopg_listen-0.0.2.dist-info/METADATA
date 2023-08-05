@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: aiopg-listen
+Version: 0.0.2
+Summary: Helps to use PostgreSQL listen/notify with aiopg
+Home-page: https://github.com/Pliner/aiopg-listen
+Author: Yury Pliner
+Author-email: yury.pliner@gmail.com
+License: MIT
+Platform: macOS
+Platform: POSIX
+Platform: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Web Environment
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: AsyncIO
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: aiopg (>=1.3.1)
+Requires-Dist: async-timeout (<4.0,>=3.0)
+
+# aiopg-listen
+
+This library simplifies usage of listen/notify with [aiopg](https://github.com/aio-libs/aiopg):
+1. Handles lost of a connection
+1. Simplifies processing notifications from multiple channels
+1. Setups a timeout for receiving a notification
+1. Allows to receive all notifications/only last notification depends on `ListenPolicy`.
+
+```python
+import asyncio
+import aiopg
+import aiopg_listen
+
+
+async def handle_notifications(notification: aiopg_listen.NotificationOrTimeout) -> None:
+    print(f"{notification} has been received")
+
+
+consumer = aiopg_listen.NotificationListener(aiopg_listen.connect_func())
+consume_task = asyncio.create_task(
+    consumer.run(
+        {"channel": handle_notifications},
+        policy=aiopg_listen.ListenPolicy.LAST,
+        notification_timeout=1
+    )
+)
+
+async with aiopg.connect() as connection, connection.cursor() as cursor:
+    for i in range(42):
+        await cursor.execute(f"NOTIFY simple, '{i}'")
+```
+
+## v0.0.2 (2021-07-25)
+
+* Add `aiopg_listen.connect_func` to simplify initialization [#5](https://github.com/Pliner/aiopg-listen/pull/5)
+* Rename consumer to listener [#6](https://github.com/Pliner/aiopg-listen/pull/6)
+* Do not crash if handler fails [#7](https://github.com/Pliner/aiopg-listen/pull/7)
+
+## v0.0.1 (2021-07-25)
+
+* A first version
+
+
