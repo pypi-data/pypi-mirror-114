@@ -1,0 +1,66 @@
+[tool.poetry]
+name = "elbat"
+version = "0.1.1"
+description = ""
+authors = ["Cody Fincher <cody@gluent.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4"
+typer = {extras = ["all"], version = "^0.3.2"}
+SQLAlchemy = "^1.4.22"
+loguru = "^0.5.3"
+importlib-metadata = {version = "^1.0", python = "<3.8"}
+cx-Oracle = "^8.2.1"
+click-help-colors = "^0.9.1"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^21.7b0"
+isort = "^5.9.2"
+flake8 = "^3.9.2"
+pre-commit = "^2.13.0"
+autoflake = "^1.4"
+
+[tool.poetry.scripts]
+gluent = "elbat.main:main"
+elbat = "elbat.main:main"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88 # default length for black
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = "True"
+force_grid_wrap = 0
+use_parentheses = "True"
+ensure_newline_before_comments = "True"
+known_third_party="type,sqlalchemy,uvicorn,loguru"
+sections = "FUTURE,STDLIB,THIRDPARTY,FIRSTPARTY,LOCALFOLDER"
+default_section = "THIRDPARTY"
+import_heading_stdlib="Standard Library"
+import_heading_thirdparty="Third Party Libraries"
+import_heading_firstparty="Gluent"
+import_heading_localfolder="Local"
+line_length = 87 # it should be one less than the max
+skip = ".venv/,migrations/,manage.py,instance.py,hook_main.py"
+known_first_party = "elbat"
+profile = "black"
+
+[tool.flake8]
+max-line-length = 88
+format = "wemake"
+show-source = "True"
+statistics = "False"
+doctests = "True"
+inline-quotes = "double"
+strictness = "long"
+docstring-style = "numpy"
+accept-encodings = "utf-8"
+isort-show-traceback = "True"
+max-complexity = 9
