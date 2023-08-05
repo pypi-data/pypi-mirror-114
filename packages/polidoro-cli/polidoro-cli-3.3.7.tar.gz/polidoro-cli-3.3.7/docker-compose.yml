@@ -1,0 +1,51 @@
+version: '3.6'
+
+services:
+  post_manager:
+    image: post_manager:latest
+    build:
+      context: .
+      args:
+        MIX_ENV: dev
+    command: bash -c "while true; do sleep 60; done"
+    container_name: post_manager
+    env_file: ./env/dev.env
+    depends_on:
+      - postgres
+    ports:
+      - 4000:4000
+    volumes:
+      - .:/post_manager
+      - post_manager_build:/post_manager/_build
+      - post_manager_deps:/post_manager/deps
+      - post_manager_root:/root
+      - post_manager_tmp:/post_manager/tmp
+    networks:
+      full_shared:
+
+  postgres:
+    container_name: postgres
+    environment:
+      POSTGRES_PASSWORD: postgres
+    image: postgres:11
+    volumes:
+      - post_manager_postgres:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+volumes:
+  post_manager:
+  post_manager_web:
+  post_manager_support:
+  post_manager_build:
+  post_manager_deps:
+  post_manager_root:
+  post_manager_postgres:
+  post_manager_tmp:
+
+networks:
+  default:
+    external:
+      name: full_shared
+  full_shared:
+    name: full_shared

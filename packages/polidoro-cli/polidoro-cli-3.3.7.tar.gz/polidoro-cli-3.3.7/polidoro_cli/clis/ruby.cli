@@ -1,0 +1,4 @@
+console,c=$docker bundle exec rails console
+migrate,dbm=$docker bundle exec rails db:migrate
+create,dbc=$docker bundle exec rails db:create
+bundle,b=$docker bundle install

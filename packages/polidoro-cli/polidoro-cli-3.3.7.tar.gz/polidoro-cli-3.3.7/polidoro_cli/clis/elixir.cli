@@ -1,0 +1,12 @@
+compile=$docker mix compile
+credo=$docker mix credo
+deps=$docker mix deps.get
+iex=$docker iex -S mix
+iexup=$docker iex -S mix phx.server
+test=MIX_ENV=test mix test
+setup=$docker mix ecto.setup
+reset=$docker mix ecto.reset
+migrate=$docker mix ecto.migrate
+up=$docker mix phx.server
+schema=$docker mix phx.gen.schema
+gettext=$docker mix gettext.extract --merge
