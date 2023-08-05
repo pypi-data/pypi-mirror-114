@@ -1,0 +1,29 @@
+name: Unit Tests
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install coverage iso639
+    - name: Run unit tests
+      run: |
+        coverage run --source=. --branch -m unittest discover
+    - name: Generate coverage report
+      run: |
+        coverage report | tee cov.txt
+    - name: Verify minimum coverage
+      run: |
+        python -c "print(open('cov.txt').read().split()[-1].strip('%'))"|tee score
+        python -c "m=95;s=int(open('score').read());assert s>=m,'Score: %s\nMinimum: %s'%(s,m)"
