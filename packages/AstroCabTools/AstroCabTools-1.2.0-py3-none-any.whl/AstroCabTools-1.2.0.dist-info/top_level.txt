@@ -1,0 +1,8 @@
+astrocabtools/all_tools/src
+astrocabtools/cube_ans/src
+astrocabtools/fit_line/src
+astrocabtools/mrs_chan/src
+astrocabtools/mrs_det_plot/src
+astrocabtools/mrs_spec_chan/src
+astrocabtools/mrs_subviz/src
+astrocabtools/quick_spec/src
