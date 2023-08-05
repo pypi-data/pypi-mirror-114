@@ -1,0 +1,3 @@
+[console_scripts]
+remarking=remarking.cli.cli:command_line
+
