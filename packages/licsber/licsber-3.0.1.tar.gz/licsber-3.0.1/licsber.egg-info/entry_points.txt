@@ -1,0 +1,10 @@
+[console_scripts]
+archive = licsber.shell.dir_ops:archive
+count-dir = licsber.shell.dir_ops:count_dir
+empty-dir = licsber.shell.dir_ops:empty_dir
+flatten-dir = licsber.shell.dir_ops:flatten_dir
+licsber = licsber.shell.hello:licsber
+memobird = licsber.shell:memobird
+rename = licsber.shell.dir_ops:rename
+save-115 = licsber.shell.dir_ops:save_115_link
+
