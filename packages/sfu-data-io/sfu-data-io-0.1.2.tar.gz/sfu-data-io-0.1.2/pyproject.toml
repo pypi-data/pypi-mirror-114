@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "sfu-data-io"
+version = "0.1.2"
+description = "A set of helpers that transfer data across different filesystems."
+authors = ["Anderson de Andrade <adeandrade@ensc.sfu.ca>"]
+exclude = ["tests/*"]
+
+[[tool.poetry.source]]
+name = "private"
+url = "https://pypi.org/simple"
+secondary = true
+
+[tool.poetry.dependencies]
+python = "^3.7"
+boto3 = "^1.12"
+numpy = "*"
+s3fs = "^0.6"
+
+[tool.poetry.dev-dependencies]
+defopt = "*"
+flake8 = "*"
+mypy = "*"
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
