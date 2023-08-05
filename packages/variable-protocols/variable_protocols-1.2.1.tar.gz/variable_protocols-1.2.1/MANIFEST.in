@@ -1,0 +1,6 @@
+include src/variable_protocols/py.typed
+include LICENSE
+
+recursive-exclude test *
+
+global-exclude __pycache__ *.pyc

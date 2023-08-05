@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/variable_protocols/__init__.py
+src/variable_protocols/py.typed
+src/variable_protocols/variables.py
+src/variable_protocols.egg-info/PKG-INFO
+src/variable_protocols.egg-info/SOURCES.txt
+src/variable_protocols.egg-info/dependency_links.txt
+src/variable_protocols.egg-info/not-zip-safe
+src/variable_protocols.egg-info/top_level.txt
