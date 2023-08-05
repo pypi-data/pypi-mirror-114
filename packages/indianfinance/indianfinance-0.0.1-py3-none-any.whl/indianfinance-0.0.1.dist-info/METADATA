@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: indianfinance
+Version: 0.0.1
+Summary: Indian Financial Markets
+Home-page: UNKNOWN
+Author: Mrityunjay Samanta
+Author-email: samantamrityunjay98@gmail.com
+License: UNKNOWN
+Keywords: python,financials
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: requests
+
+Various tools for Indian Financial Markets
+
+
