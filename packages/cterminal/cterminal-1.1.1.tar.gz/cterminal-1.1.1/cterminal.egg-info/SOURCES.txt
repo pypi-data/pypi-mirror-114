@@ -1,0 +1,8 @@
+README.md
+setup.py
+cterminal/__init__.py
+cterminal/cio.py
+cterminal.egg-info/PKG-INFO
+cterminal.egg-info/SOURCES.txt
+cterminal.egg-info/dependency_links.txt
+cterminal.egg-info/top_level.txt
