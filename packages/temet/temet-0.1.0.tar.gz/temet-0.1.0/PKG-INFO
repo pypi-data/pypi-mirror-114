@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: temet
+Version: 0.1.0
+Summary: 
+Author: cgmark101
+Author-email: cgmark101@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Jinja2 (>=3.0.1,<4.0.0)
+Requires-Dist: aiofiles (>=0.7.0,<0.8.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: typer[all] (>=0.3.2,<0.4.0)
+Description-Content-Type: text/markdown
+
+# Temet CLI
+
+The awesome Temet
