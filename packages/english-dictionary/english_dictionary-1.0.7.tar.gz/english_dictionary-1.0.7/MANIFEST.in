@@ -1,0 +1,3 @@
+include definitions 
+include dict.pickle
+include english_dictionary/scripts/dict.pickle
