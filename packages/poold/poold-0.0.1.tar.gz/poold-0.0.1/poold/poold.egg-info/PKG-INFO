@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: poold
+Version: 0.0.1
+Summary: Python library for Optimistic Online Learning under Delay
+Home-page: https://github.com/geflaspohler/poold
+Author: Genevieve Flaspohler and Lester Mackey
+Author-email: geflaspohler@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+
