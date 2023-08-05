@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tigerhash/tigerhash.cpp
+tigerhash/tigerhash.egg-info/PKG-INFO
+tigerhash/tigerhash.egg-info/SOURCES.txt
+tigerhash/tigerhash.egg-info/dependency_links.txt
+tigerhash/tigerhash.egg-info/requires.txt
+tigerhash/tigerhash.egg-info/top_level.txt
