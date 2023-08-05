@@ -1,0 +1,8 @@
+octadocs_decisions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+octadocs_decisions/plugin.py,sha256=XoqwM4FYHYqvlw2APRqyHD048g9c7t_DEaLxeHWZ92I,998
+octadocs_decisions/templates/octadocs-decisions/adr.html,sha256=gWN3F37dBO-Z6RaYCgpzdYBiaQOU4mXVGcuxOntuqWQ,2417
+octadocs_decisions/yaml/context.yaml,sha256=VrsuAj0qaG2Apl2brG7Ty4MmRxk2fInH9XGuLWH8P8w,421
+octadocs_decisions-0.1.0.dist-info/entry_points.txt,sha256=hYIqWoC0KHtyEgUQB7KxzrI8_yUP-6kGTdhGj2sjNY0,79
+octadocs_decisions-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+octadocs_decisions-0.1.0.dist-info/METADATA,sha256=Z1Ul0jEZnoyVBA4c0blREcCiEpfCDVrCv-6LkLW7cqY,309
+octadocs_decisions-0.1.0.dist-info/RECORD,,

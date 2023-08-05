@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+octadocs_decisions=octadocs_decisions.plugin:DecisionsPlugin
+
