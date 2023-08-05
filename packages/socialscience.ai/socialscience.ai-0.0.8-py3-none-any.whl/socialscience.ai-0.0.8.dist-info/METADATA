@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: socialscience.ai
+Version: 0.0.8
+Summary: AI/ML toolkits for social scientists
+Home-page: UNKNOWN
+Author: Nick Oh
+Author-email: socialscience.ai@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: pandas
+
+AI/ML toolkits for social scientists
+
