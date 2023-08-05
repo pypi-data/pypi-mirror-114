@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+requirements.txt
+setup.py
+fasta_splitter.egg-info/PKG-INFO
+fasta_splitter.egg-info/SOURCES.txt
+fasta_splitter.egg-info/dependency_links.txt
+fasta_splitter.egg-info/entry_points.txt
+fasta_splitter.egg-info/requires.txt
+fasta_splitter.egg-info/top_level.txt
+splitter/__init__.py
+splitter/splitter.py
+splitter/splitter_exceptions.py
+splitter/tests/__init__.py
+splitter/tests/test_splitter.py
