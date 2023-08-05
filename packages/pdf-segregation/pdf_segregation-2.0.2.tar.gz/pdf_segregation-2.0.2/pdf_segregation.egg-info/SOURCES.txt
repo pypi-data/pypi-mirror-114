@@ -1,0 +1,8 @@
+setup.py
+pdf_segregation/__init__.py
+pdf_segregation/pdf_classifier.py
+pdf_segregation.egg-info/PKG-INFO
+pdf_segregation.egg-info/SOURCES.txt
+pdf_segregation.egg-info/dependency_links.txt
+pdf_segregation.egg-info/requires.txt
+pdf_segregation.egg-info/top_level.txt
