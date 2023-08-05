@@ -1,0 +1,3 @@
+[console_scripts]
+anchorage = anchorage.cli:main
+
