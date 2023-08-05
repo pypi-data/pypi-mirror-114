@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: awscli-update
+Version: 0.1.4
+Summary: CLI tool to update AWS CLI 2
+Home-page: https://github.com/x4121/awscli-update
+Author: Armin Grodon
+Author-email: me@armingrodon.de
+License: MIT
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# AWS CLI v2 Update Script
+
+## Usage
+`awscli-update`
+
+### Setup
+```bash
+python3 -m pip install awscli-update
+```
+
+## Development
+- Create venv (`python3 -m venv .venv`)
+- Install requirements (`python3 -m pip install -r requirements`)
+- Build local dist (`python3 setup.py develop --user`)
+
+## Deployment
+- Install dependencies (`python3 -m pip install setuptools wheel twine`)
+- Build dist (`python3 setup.py sdist bdist_wheel`)
+- Deploy (`twine upload dist/*`)
+
+
