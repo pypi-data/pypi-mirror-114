@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/newspick.egg-info/PKG-INFO
+src/newspick.egg-info/SOURCES.txt
+src/newspick.egg-info/dependency_links.txt
+src/newspick.egg-info/requires.txt
+src/newspick.egg-info/top_level.txt
+src/pkg/__init__.py
+src/pkg/models.py
