@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pybetaface
+Version: 1.0
+Summary: Use the BetaFace API in Python
+Home-page: https://github.com/williamd47/pybetaface
+Author: WilliamD47
+License: MIT
+Description: Use the BetaFace API in Python. Example usage in README
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown

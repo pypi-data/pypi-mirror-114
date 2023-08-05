@@ -1,0 +1,8 @@
+README.md
+setup.py
+pybetaface/__init__.py
+pybetaface.egg-info/PKG-INFO
+pybetaface.egg-info/SOURCES.txt
+pybetaface.egg-info/dependency_links.txt
+pybetaface.egg-info/requires.txt
+pybetaface.egg-info/top_level.txt
