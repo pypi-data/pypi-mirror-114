@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+src/bioezy/__init__.py
+src/bioezy/bzy.py
+src/bioezy.egg-info/PKG-INFO
+src/bioezy.egg-info/SOURCES.txt
+src/bioezy.egg-info/dependency_links.txt
+src/bioezy.egg-info/top_level.txt
+test/test1_on_frequency_map.py
