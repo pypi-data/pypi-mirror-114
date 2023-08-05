@@ -1,0 +1,4 @@
+
+        [binalyzer.commands]
+        patch=binalyzer_patch.cli:patch
+    
