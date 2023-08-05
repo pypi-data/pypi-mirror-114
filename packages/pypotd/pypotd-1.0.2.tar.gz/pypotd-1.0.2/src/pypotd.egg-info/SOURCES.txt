@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pypotd/__init__.py
+src/pypotd/const.py
+src/pypotd/data.py
+src/pypotd.egg-info/PKG-INFO
+src/pypotd.egg-info/SOURCES.txt
+src/pypotd.egg-info/dependency_links.txt
+src/pypotd.egg-info/top_level.txt
