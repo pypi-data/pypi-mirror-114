@@ -1,0 +1,3 @@
+[napari.plugin]
+waver = waver
+
