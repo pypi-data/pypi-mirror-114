@@ -1,0 +1,8 @@
+[console_scripts]
+sysplan = sysplan.cli:cli.entry_point
+
+[sysplan_plans]
+mounts = sysplan.systemd:MountPlan
+services = sysplan.systemd:ServicePlan
+timers = sysplan.systemd:TimerPlan
+
