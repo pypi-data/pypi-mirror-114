@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+interchange/__init__.py
+interchange/collections.py
+interchange/geo.py
+interchange/math.py
+interchange/packstream.py
+interchange/text.py
+interchange/time.py
+interchange.egg-info/PKG-INFO
+interchange.egg-info/SOURCES.txt
+interchange.egg-info/dependency_links.txt
+interchange.egg-info/requires.txt
+interchange.egg-info/top_level.txt
