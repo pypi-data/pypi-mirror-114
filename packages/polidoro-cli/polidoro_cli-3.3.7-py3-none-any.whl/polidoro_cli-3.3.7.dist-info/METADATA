@@ -1,0 +1,149 @@
+Metadata-Version: 2.1
+Name: polidoro-cli
+Version: 3.3.7
+Summary: Generic CLI.
+Home-page: https://github.com/heitorpolidoro/cli
+Author: Heitor Polidoro
+License: unlicense
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: polidoro-argument (>=3.3)
+Requires-Dist: pyyaml
+
+# Polidoro CLI
+### To install
+
+```
+sudo apt install python3-pip -y
+pip3 install polidoro_cli
+```
+
+Then add to your `.bashrc`
+```
+export PATH="$PATH:$HOME/.local/bin/"
+```
+
+### To use:
+`cli --help`
+
+### Tips:
+Create alias for the CLI commands:
+
+Add in your `.bashrc`
+```
+alias dk='cli docker'
+alias ex='cli elixir'
+alias rb='cli ruby'
+alias npm='cli npm'
+```
+
+### Default CLIs:
+#### Docker `cli docker COMMAND` or `dk COMMAND`
+```
+armageddon  Delete EVERYTHING in Docker with "docker system prune -af --volumes"
+bash        Run "docker-compose exec $service bash"
+exec        Run "docker-compose exec $service"
+logs        Run "docker-compose logs -f $service"
+ps          Run "docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}""
+run         Run "docker-compose run --rm $service"
+stop_all    Stop all containers
+```
+The CLI will replace `$service` for the first argument um command line, if is a valid service, 
+or will use the first service with `build` in `docker-compose.yml`
+
+Example:
+```
+/home/workspace/my_project$ dk bash
++ docker-compose my_project_service bash
+
+/home/workspace/my_project$ dk web bash
++ docker-compose exec web bash
+
+```
+
+#### Elixir `cli elixir COMMAND` or `ex COMMAND`
+```
+compile     Run "$docker mix compile"
+credo       Run "$docker mix credo"
+deps        Run "$docker mix deps.get"
+gettext     Run "$docker mix gettext.extract --merge"
+iex         Run "$docker iex -S mix"
+iexup       Run "$docker iex -S mix phx.server"
+migrate     Run "$docker mix ecto.migrate"
+reset       Run "$docker mix ecto.reset"
+schema      Run "$docker mix phx.gen.schema"
+setup       Run "$docker mix ecto.setup"
+test        Run "MIX_ENV=test mix test"
+up          Run "$docker mix phx.server"
+```
+The CLI will replace the `$docker` for `docker-compose exec $service` 
+if the parameter `-d/--docker` is in the command line
+```
+/home/workspace/my_project$ ex iex
++ iex -S mix
+
+/home/workspace/my_project$ ex iex -d
++ docker exec -it my_project_service iex -S mix
+```
+
+#### Ruby `cli ruby COMMAND` or `rb COMMAND`
+```
+console (c)     Run "$docker bundle exec rails console"
+migrate (dbm)   Run "$docker bundle exec rails db:migrate"
+create (dbc)    Run "$docker bundle exec rails db:create"
+bundle (b)      Run "$docker bundle install"
+```
+The CLI will replace the `$docker` for `docker-compose exec $service`
+if the parameter `-d/--docker` is in the command line
+
+### Creating your own CLI
+To create your CLI just create a file in `~/.cli` with the CLI name `NAME.cli` then create the commands like an alias:
+
+Exemple:
+`ls.cli`
+```
+ll=ls -l
+```
+
+You can set variables with `set NAME=value` then use in the CLI:
+```
+set WORKSPACE=~/workspace
+
+ls=ls $WORKSPACE
+```
+
+It's possible to iterate in a list for multiple commands:
+```
+# Run same commands in multiples directories
+# Enter in each directory in PROJECT and run 'git fetch'
+set PROJECTS=proj1,proj2,proj3
+fetch_all=cd s && git fetch for s in PROJECTS
+
+# Run multiples commands
+# Run 'git fetch', 'git pull' and 'git status' in the current directory
+set CMDS=fetch,pull,status
+update=git c for c in $CMDS
+```
+You can set a default command, to run if the CLI didn't find any command. Example:
+```
+set DEFAULT_COMMAND=git
+
+short_status,ss=git log --oneline -1
+```
+So, when you run `cli git short_status` while run you command, but if you run `cli git status` will run `git status`. 
+This is more useful when you overrides the alias in bash like `alias git=cli git`. Then you can run your custom git alias as if
+where git commands:
+```bash
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+$ git ss
+hashash (HEAD -> master, origin/master, origin/HEAD) this cli is awesome!
+```
+
+
