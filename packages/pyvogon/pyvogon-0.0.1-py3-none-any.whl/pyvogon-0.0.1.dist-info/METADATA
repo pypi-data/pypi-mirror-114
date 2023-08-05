@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pyvogon
+Version: 0.0.1
+Summary: sqlalchemy-dbapi 2.0 driver for vogon
+Home-page: https://github.com/shubhiks/pyvogon.git
+Author: Shubham Kumar
+Author-email: shubhamkumar1032@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pyvogon
+
+A python sqlalchemy-DB 2.0 API driver which can be used to query Vogon.
+
