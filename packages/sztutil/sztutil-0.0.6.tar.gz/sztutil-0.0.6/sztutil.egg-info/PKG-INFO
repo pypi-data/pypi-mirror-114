@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: sztutil
+Version: 0.0.6
+Summary: 深证通辅助工具
+Home-page: https://gitee.com/chenc224/sztutil
+Author: Chen chuan
+Author-email: kcchen@139.com
+License: UNKNOWN
+Description: #深证通辅助工具
+        
+        此处深证通是深圳证券通信有限公司的金融数据交换平台的俗称。
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown

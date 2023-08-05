@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+import sys,importlib,os,shutil
+import sztutil.tool as szt
+
+class main(object):
+    def __init__(self):
+        self.readconfig()
+    def readconfig(self):
+        fn="sztutil.cfg"
+        if len(sys.argv)>1:
+            fn=sys.argv[1]
+        if not os.path.isfile(fn):
+            print("不能打开文件%s。你可以在命令行指定一个。如果不知道怎么写，可以参考下%s。" %(fn,os.path.join(os.path.dirname(os.path.abspath(szt.__file__)),"datafile","sztutil.cfg")))
+            sys.exit(-1)
+        f=open(fn,encoding="GBK")
+        section="global"
+        storidata=[]
+        stdata={}
+        for s in f.readlines():
+            if s.startswith(":"):
+                if section!="global":
+                    if not hasattr(szt,section):
+                        print("找不到函数%s，请检查配置文件" %(section))
+                        sys.exit(-2)
+                    getattr(szt,section)(stdata,storidata)
+                section=s[1:].strip()
+                storidata=[]
+                stdata={}
+                continue
+            storidata.append(s)
+            s=s.rstrip()
+            if s.find("=")>=0:
+                name=s[:s.find("=")].strip()
+                value=s[s.find("=")+1:].strip()
+                stdata[name]=value
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+bin/sztutil
+sztutil/__init__.py
+sztutil/tool.py
+sztutil.egg-info/PKG-INFO
+sztutil.egg-info/SOURCES.txt
+sztutil.egg-info/dependency_links.txt
+sztutil.egg-info/not-zip-safe
+sztutil.egg-info/top_level.txt
+sztutil/datafile/sztsample.py
+sztutil/datafile/sztutil.cfg
+sztutil/datafile/sztutil_manual.txt
