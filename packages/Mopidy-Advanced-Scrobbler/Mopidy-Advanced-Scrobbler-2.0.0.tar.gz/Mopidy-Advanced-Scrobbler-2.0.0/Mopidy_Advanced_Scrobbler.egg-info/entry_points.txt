@@ -1,0 +1,3 @@
+[mopidy.ext]
+advanced_scrobbler = mopidy_advanced_scrobbler:Extension
+
