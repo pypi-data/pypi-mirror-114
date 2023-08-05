@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: stream-sqlite
+Version: 0.0.5
+Summary: Python function to extract all the rows from a SQLite database, without loading the entire file into memory or disk
+Home-page: https://github.com/uktrade/stream-sqlite
+Author: Department for International Trade
+Author-email: sre@digital.trade.gov.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Database
+Requires-Python: >=3.5.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# stream-sqlite [![CircleCI](https://circleci.com/gh/uktrade/stream-sqlite.svg?style=shield)](https://circleci.com/gh/uktrade/stream-sqlite) [![Test Coverage](https://api.codeclimate.com/v1/badges/b665c7634e8194fe6878/test_coverage)](https://codeclimate.com/github/uktrade/stream-sqlite/test_coverage)
+
+> Work in progress. This README serves as a rough design spec
+
+
+## Usage
+
+```python
+from stream_sqlite import stream_sqlite
+import httpx
+
+def sqlite_bytes():
+    # Iterable that yields the bytes of a sqlite file
+    with httpx.stream('GET', 'https://www.example.com/my.sqlite') as r:
+        yield from r.iter_bytes(chunk_size=65536)
+
+# A table is not guarenteed to be contiguous in a sqlite file, so can appear
+# multiple times while iterating
+for table_name, table_info, rows in stream_sqlite(sqlite_bytes()):
+    for row in rows:
+        print(row)
+```
+
+
