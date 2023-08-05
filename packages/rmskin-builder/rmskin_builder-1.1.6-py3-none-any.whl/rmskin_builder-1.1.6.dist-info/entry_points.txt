@@ -1,0 +1,3 @@
+[console_scripts]
+rmskin-builder = rmskin_builder:main
+
