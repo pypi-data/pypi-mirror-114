@@ -1,0 +1,31 @@
+from typing import overload
+from typing import List
+from typing import TypeVar
+from .AbstractMapSettingContainer import *
+from .SettingsOverlay import *
+from .ScriptTrigger import *
+
+List = TypeVar["java.util.List_xyz.wagyourtail.jsmacros.core.config.ScriptTrigger_"]
+TextRenderer = TypeVar["net.minecraft.client.font.TextRenderer"]
+
+class ProfileSetting(AbstractMapSettingContainer):
+
+	@overload
+	def __init__(self, x: int, y: int, width: int, height: int, textRenderer: TextRenderer, parent: SettingsOverlay, group: List[str]) -> None:
+		pass
+
+	@overload
+	def addField(self, key: str, value: List[ScriptTrigger]) -> None:
+		pass
+
+	@overload
+	def removeField(self, key: str) -> None:
+		pass
+
+	@overload
+	def changeKey(self, key: str, newKey: str) -> None:
+		pass
+
+	pass
+
+
