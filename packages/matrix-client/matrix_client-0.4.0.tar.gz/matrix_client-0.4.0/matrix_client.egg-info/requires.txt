@@ -1,0 +1,15 @@
+requests~=2.22
+urllib3~=1.21
+
+[doc]
+Sphinx==1.*,>=1.7.6
+sphinx-rtd-theme==0.1.*,>=0.1.9
+sphinxcontrib-napoleon==0.5.*,>=0.5.3
+
+[e2e]
+python-olm~=3.1
+canonicaljson~=1.1
+
+[test]
+pytest<6.0.0,>=4.6
+responses==0.10.*,>=0.10.6
