@@ -1,0 +1,4 @@
+[plover.dictionary]
+jssql = plover_sqlite_dictionary:SQLiteJSONDictionary
+sql = plover_sqlite_dictionary:SQLiteDictionary
+
