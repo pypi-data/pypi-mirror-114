@@ -1,0 +1,14 @@
+docs/algorithm_descriptions.pdf,sha256=awu651teQKebnd1Lv0qn6Pt7HtSrVnbtXz_lSs3INIQ,151018
+docs/cuthbert_bbc_comparison.html,sha256=vIU-GGKCCbCDFLZg5NCFJcL4CjZMe4uFfq0g2S4Yj-A,713256
+docs/dilms_example.html,sha256=CLggOj8ApbrZgM_acz3VOnphPa-b-maUHO9hw-3XjVY,635035
+docs/user-guide.txt,sha256=ULaY2LYBGYH15Kx2WDlH2ozP6gzOVj272zaAWJTbKPA,5212
+iceberg/__init__.py,sha256=DUykcFLgdXz4VR3IgJXkYOb-aAd28IH3G8vlw_uN9lY,70
+iceberg/conftest.py,sha256=EVVpI-BiIWEc0_kMs_5nt6YfEt5kcCfn0BcRgc7yvMQ,30
+iceberg/estimate.py,sha256=fEFA5LsWkvqm3OQFpP8G2V9xGKZpKzEHyywZ6D0pbD8,10806
+iceberg/simulate.py,sha256=CFY1CMn7mlswDYgrZgy3ahXYNi2-aipECoOJLROtKRA,5596
+iceberg/tests/test_iceberg.py,sha256=kMSdXSpHRnu-lO6ggotX2ZEuFDExoCHHhEzFBggM7lc,329
+iceberg_est-1.0.0.dist-info/LICENSE,sha256=hlcTI7z-sWqEv-o0EiTrBHZzfrAdMytIB5D0xoHVK5k,1077
+iceberg_est-1.0.0.dist-info/METADATA,sha256=aWiyD94B9v1pqLfsoVu4pnXJwSrQ5TsTIyAam9oLu0I,1918
+iceberg_est-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+iceberg_est-1.0.0.dist-info/top_level.txt,sha256=Rzfwg0EuV_GCn6r-JsYr3jgpM0s3dushH1WDjPXOE6M,8
+iceberg_est-1.0.0.dist-info/RECORD,,
