@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: outils-de-controles
+Version: 2.4.9
+Summary: Outils_de_controles permet de vérifier que des objets sont valides.
+Home-page: UNKNOWN
+Author: Cyprien BONTRON
+Author-email: c.b.e.python@gmail.com
+Maintainer: Cyprien BONTRON
+Maintainer-email: c.b.e.python@gmail.com
+License: CC-BY-NC (Creative Commons, attribution et non commerciale).
+Download-URL: https://pypi.org/project/outils-de-controles/
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Natural Language :: French
+Classifier: Intended Audience :: Developers
+Classifier: License :: Free for non-commercial use
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Outils_de_controles
+
+[![Version](https://img.shields.io/pypi/v/outils-de-controles.svg)](https://pypi.org/project/outils-de-controles/) [![PyVersion](https://img.shields.io/pypi/pyversions/outils-de-controles.svg)](https://pypi.org/project/outils-de-controles/)
+
+## English version
+### Project's description
+
+Outils_de_controles is a package to check if objects are valid or not. Currantly the package's documentation is writen in french, but the README file is also in english.
+The "outils de controles" package is a high level way to check and control python's object. The package's objective is  to prevent your program from detecting errors during the process. For exemple, by checking arguments before the method calling, your programm doesn't start modifying the object when it may not be able to finish the expected modifications.
+
+### Classes
+This package contains several classes which check that objects are valids:
+- Verificateur which checks that a non-container objects meets certain criteria (type, minimum, maximum, etc.). Usefull for objects' type like int, float or bool.
+- VerificateurStr which checks that a string is valide. Inherits from Verificateur.
+- VerificateurConteneurs which checks that container objects contain valid objects. (For each expected element, one or more identifiers are provided as well as a verifier object.) Do not use this class directly !
+- VerificateurListes which checks that a list or a tuple is valid. Check the len of the list and the list's elements. Inherits from VerificateurConteneurs.
+- VerificateurDict which checks that a dictionary conforms to the expected object. Inherits from VerificateurConteneurs. (class planned for a later version)
+- VerificateurTableaux which checks that arrays (ie a list containing other lists, which forms a two-dimensional array) are indeed valid. Inherits from VerificateurListes.
+- VerificateurArguments which checks that the arguments provided are valid. Inherits from VerificateurConteneurs.
+
+### Decorators
+This package also contains a module with decorators. Among them, we find the "controle_types" decorator which checks that the arguments passed to functions or methods are of the right type. Another decorator ("controle_arguments") allows the arguments to check all the validity criteria defined by the checking objects.
+
+
+## French version
+### Description du projet
+
+Le package "outils de controles" permet d'avoir des moyens de haut niveaux pour controler et vérifier que certaines conditions sont remplies, dans l'objectif d'eviter que votre programme ne lève des erreurs en cours de processus. Par exemple, en controlant les arguments à l'appel de la methode, votre programme ne commence pas à modifier l'objet alors qu'il risque de pas pouvoir finir les modifications attendues.
+
+### Classes
+Ce package contient plusieurs classes qui vérifient que des objets sont valides :
+- Verificateur qui vérifie qu'un objet non conteneur respecte certains critères (type, minimum, maximum, …). Utile pour les objets de type int, float ou bool.
+- VerificateurStr qui vérifie qu’une chaîne de caractère est bien valide. Hérite de Verificateur.
+- VerificateurConteneurs qui vérifie que les objets conteneurs sont composés d'éléments valides. (Pour chaque élément attendu, il est fourni un ou des identifiants ainsi qu'un objet verificateur.) Ne pas utiliser cette classe directement !
+- VerificateurListes qui vérifie qu'une liste ou un tuple est bien valide : on contrôle le nombre d’éléments de la liste et les éléments de la liste. Hérite de VerificateurConteneurs.
+- VerificateurDict qui vérifie qu'un dictionnaire est bien conforme vis-à-vis de l'objet attendu. Hérite de VerificateurConteneurs. (classe prévue pour une version ultérieure)
+- VerificateurTableaux qui vérifie que des tableaux (c'est à dire une liste contenant d'autres listes, qui forme un tableau bi-dimensionnel) sont bien valides. Hérite de VerificateurListes.
+- VerificateurArgumments qui vérifie que les arguments fournis sont bien valides. Hérite de VerificateurConteneurs.
+
+### Décorateurs
+Ce package contient aussi un module avec des décorateurs. Parmi eux, on trouve le décorateur "controle_types" qui vérifie que les arguments passées à des fonctions ou méthodes sont du bon type. Un autre décorateur ("controle_arguments") permet que les arguments vérifient tous les critères de validités définis par les objets vérificateurs.
+
+## License
+**Creative Commons Attribution-NonCommercial (CC-BY-NC)**
+©Cyprien BONTRON (c.b.e.python@gmail.com)
+
