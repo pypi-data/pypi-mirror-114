@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: StructureFingerprint
+Version: 2.1
+Summary: UNKNOWN
+Home-page: https://github.com/dcloudf/MorganFingerprint
+License: LGPLv3
+Platform: UNKNOWN
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6.0
+Requires-Dist: CGRtools (>=4.0.41)
+Requires-Dist: numpy (>=1.18)
+
+Molecules and CGR's fingerprints
+--------------------------------
+
+Library provides transformers of molecules and CGR's into features.
+
+* Pure python code
+* Sklearn like API. Pipelines supported.
+* Linear fingerprints
+* Morgan fingerprints
+* Linear features lists
+* Morgan features lists
+
+Install
+-------
+
+    pip install StructureFingerprint
+
+Example
+-------
+
+    import numpy as np
+    from CGRtools import smiles
+    from StructureFingerprint import LinearFingerprint, MorganFingerprint
+
+    lfp = LinearFingerprint()  # Sklearn-like transformer
+    mol = smiles('CN(C)C=O')
+
+    print(lfp.transform([mol]))  # array. Can be used in sklearn estimators
+    print(lfp.transform_bitset([mol]))  # active bits indexes
+
+    print(set(np.where(lfp.transform([mol])==1)[1]) == set(lfp.transform_bitset([mol])[0]))
+
+    print(lfp.transform_hashes([mol]))  # hashes of fragments
+
+
