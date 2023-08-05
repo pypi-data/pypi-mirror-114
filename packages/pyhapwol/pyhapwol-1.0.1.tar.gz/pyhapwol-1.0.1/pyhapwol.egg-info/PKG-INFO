@@ -1,0 +1,124 @@
+Metadata-Version: 2.1
+Name: pyhapwol
+Version: 1.0.1
+Summary: A Wake on LAN Switch implementation for HomeKit
+Home-page: https://gitlab.com/aquator/hap-wol-python
+Author: István Rábel
+Author-email: thraex.aquator@icloud.com
+License: Unlicense
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+HomeKit Wake on LAN [Python]
+============================
+
+A [hap-python] based implementation of HomeKit Switch Accessory to send
+Wake on LAN magic packets to turn your machines on.
+
+Turning the Switch On will result sending a WoL magic packet to the target.
+
+The state of the Switch is regulary updated, it will eventually turn off if the machine is not reachable, and turn back on, if the machine can be pinged.
+
+You can however manually turn it Off and On again, to trigger a WoL packet, and optionally refresh the stored IP address of the target (that is used for pings).
+
+Requirements
+------------
+Requires at least [Python 3.6](https://www.python.org/downloads/release/python-360/). Uses [hap-python] for HomeKit integration, [click] for command line, [pyyaml]
+for configuration, [pywol] for sending the Wake on LAN packet, and [scapy] to
+get IP address from MAC, and ping.
+
+Installation
+------------
+You can use [pip] to install the package.
+```
+> pip install pyhapwol
+```
+
+Alternatively, check out the source code, and install it locally, or install the dependencies and use
+```
+> python -m pyhapwol
+```
+
+Command Line Options
+--------------------
+After installation, the `pyhapwol` script should be available. (You can also fallback to `python -m pyhapwol`)
+
+```
+> pyhapwol --help
+Usage: pyhapwol [OPTIONS]
+
+  Start HomeKit Server with specified configuration and state file.
+
+Options:
+  -c, --config TEXT    Configuration file to use.  [default: config.yaml]
+  -s, --state TEXT     HomeKit State file for persistence.  [default:
+                       homekit.state]
+  -d, --debug BOOLEAN  Debug messages.
+  --help               Show this message and exit.
+```
+
+Configuration
+-------------
+The configuration is a YAML file:
+```yaml
+- name: Server Name
+  mac: a0:b1:c2:d3:e4:f5
+  broadcast: 192.168.0.1/24
+  # The following values are optional:
+  ip: 192.168.0.123
+  interface: eth0
+  port: 9
+- name: Other Server
+  mac: f0:e1:d2:c3:b4:a5
+  broadcast: 192.168.0.0/24
+```
+
+The `name` will act as a default name for the Switch Accessory.
+The `mac` is the mandatory MAC (hardware) address of the network interface you want to wake up.
+The `broadcast` is used to resolve the broadcast address of your subnet. You can use an IP address of the subnet, and the netmask. This is passed to [pywol].
+Optional `ip` can be used in case of fix (or DHCP reserved) addresses. If it is omitted, [scapy] is used to determine the IP address. In case it is not provided, the IP will be "forgotten" when the switch is turned off, and re-evaluated when it is turned on again.
+Optional `interface` is the network interface to use by [scapy] in the machine running pyhapwol.
+Optional `port` is the port to send the magic packet to. Default value is 9.
+
+Caveats
+-------
+Only IPv4 addresses are supported.
+You will need root privileges for [scapy] to send and receive packets to determine the IP from the given MAC address, or to ping the target machine for liveness check.
+
+Running With Docker
+-------------------
+You can build a docker image with
+```
+> docker build -t pyhapwol:latest .
+```
+
+And run it as
+```
+> docker run \
+  --restart unless-stopped \
+  --log-opt max-size=10m \
+  --log-opt max-file=3 \
+  --network host \
+  --volume $PWD/config.yaml:/opt/wol/config.yaml:ro \
+  --volume $PWD/homekit.state:/opt/wol/homekit.state \
+  pyhapwol:latest
+```
+
+Note that it takes some time to compile the cryptography dependency in an ARMv7 Raspberry Pi, or similar.
+
+[hap-python]: https://github.com/ikalchev/HAP-python
+[click]: https://click.palletsprojects.com/en/8.0.x/
+[pyyaml]: https://pyyaml.org/
+[pywol]: https://github.com/erberlin/pywol
+[scapy]: https://scapy.net/
+[pip]: https://pip.pypa.io/en/stable/
+
+
