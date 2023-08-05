@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+GhostScan.egg-info/PKG-INFO
+GhostScan.egg-info/SOURCES.txt
+GhostScan.egg-info/dependency_links.txt
+GhostScan.egg-info/requires.txt
+GhostScan.egg-info/top_level.txt
