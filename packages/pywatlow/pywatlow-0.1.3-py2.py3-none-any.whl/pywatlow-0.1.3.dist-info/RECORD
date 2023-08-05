@@ -1,0 +1,11 @@
+pywatlow/__init__.py,sha256=0PD6QxIuSaaldK8FubSi9rwJiuvflX7C1EqT2hLSBjs,23
+pywatlow/__main__.py,sha256=rlvGG4VOK0leYqhIVVjXUslSEYPy6MH3im18WYp-2X0,401
+pywatlow/cli.py,sha256=OSyqI-X562HigwK2d9Vu3d1Kok2lKEt3Ymr__9EpnEI,2043
+pywatlow/watlow.py,sha256=Pvz12qHIscD2qKAuYA5GoV93qrTA5-hvMZZsrYHVBNg,17115
+pywatlow-0.1.3.dist-info/AUTHORS.rst,sha256=vf0KXmRD7xhYIGrgT0VEcCvSe2Fyqd0ZYLhn4VO4giU,99
+pywatlow-0.1.3.dist-info/LICENSE,sha256=6W_mQ5TTJgVVIIMpj7oHsqvVRsN3z8bjALRku5ZyieA,44506
+pywatlow-0.1.3.dist-info/METADATA,sha256=UEQ_fwmfVp6bddZfkbuKxRdy-UlBieUskBmyrg5Ho-E,2814
+pywatlow-0.1.3.dist-info/WHEEL,sha256=6T3TYZE4YFi2HTS1BeZHNXAi8N52OZT4O-dJ6-ome_4,116
+pywatlow-0.1.3.dist-info/entry_points.txt,sha256=5-9uJQD6Tg6x_Pm4Z_NzhuwEXy9Yozpjy8ka74Z2WUE,48
+pywatlow-0.1.3.dist-info/top_level.txt,sha256=a3sqTbfeyY1DmH4G0M7REHgH14V17aQWFC_022APeNI,9
+pywatlow-0.1.3.dist-info/RECORD,,
