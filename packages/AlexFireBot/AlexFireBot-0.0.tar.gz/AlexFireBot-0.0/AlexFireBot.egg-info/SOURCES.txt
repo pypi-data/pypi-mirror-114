@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+AlexFireBot/__init__.py
+AlexFireBot/clients.py
+AlexFireBot/config.py
+AlexFireBot/events.py
+AlexFireBot.egg-info/PKG-INFO
+AlexFireBot.egg-info/SOURCES.txt
+AlexFireBot.egg-info/dependency_links.txt
+AlexFireBot.egg-info/requires.txt
+AlexFireBot.egg-info/top_level.txt
