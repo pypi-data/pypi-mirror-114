@@ -1,0 +1,3 @@
+[console_scripts]
+dcdm = cdm.main:download_file
+
