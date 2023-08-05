@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: sciformlib
+Version: 1.0.0.dev1
+Summary: A Simplified Science Formula Library, to solve science problems with few more easy steps.
+Home-page: UNKNOWN
+Author: iamrealbhuvi
+Author-email: bhuvanesh19112001@gmail.com
+License: MIT
+Description: # Sciformlib
+        Sciformlib(Science Formula Library) is a library created to make science formulations and calculations easier. This library comprises many scientific formulations already written which is easy to use and deploy.
+        
+        ## Installation
+        ```pip install sciformlib```
+        
+        ## How to use it?
+        ```from sciformlib import *```
+        Using this command you can import all the script files in the module
+        
+        ## Script Usage
+        
+        ```sum_of_pos_int_pow(base_value,start_point,end_point)```
+        
+        It is used to find the sum of same base integers with increasing power
+        eg: if base value = 2 , start\_point = 3 , end\_point = 7
+        it evaluates as 2³+2⁴+2⁵+2⁶+2⁷ (Geometric Progression)
+        
+        ### Mechanics - Instantaneous Velocity
+        ```mechanics_instant_velocity(pos,time)```
+        
+        pos = distance , and time = time
+        
+        ### Mechanics - Average Velocity
+        ```mechanics_average_velocity(initial_pos,final_pos,initial_time,final_time)```
+        
+        ### Displacement - Formula 1 
+        ```mechanics_displacement_f1(initial_velocity,acceleration,time```
+        
+        ### Displacement - Formula 2
+        ```mechanics_displacement_f2(initial_velocity,final_velocity,time)```
+        
+        ### Final Velocity - Formula 1 
+        ```mechanics_velocity_f_f1(initial_velocity,acceleration,time)```
+        
+        ### Final Velocity - Formula 2
+        ```mechanics_velocity_f_f2(initial_velocity,acceleration,position)```
+        
+        This function gives value of "v not v²"
+        
+        ### Acceleration 
+        
+        ```mechanics_acce_f1(initial_velocity,final_velocity,time)```
+        
+        ### Instantaneous Acceleration
+        
+        ```mechanics_instant_acce(velocity,time)```
+        
+        ### Average Acceleration
+        
+        
+        ```mechanics_average_acce(final_velocity,initial_velocity,final_time,initial_time)```
+        ## License
+        
+        MIT LISCENSE
+        
+        © 2021 Iamrealbhuvi .
+        
+        This repository is licensed under the MIT license. See LICENSE for details.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
