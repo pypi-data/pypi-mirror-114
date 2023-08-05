@@ -1,0 +1,3 @@
+boto3==1.14.25
+Flask>=1.0.4
+ordbhandler>=0.0.1
