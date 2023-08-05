@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: multiSourceWordMaps
+Version: 0.0.4
+Summary: Allows the user to list sources and compile word maps from those sources
+Home-page: https://www.thisiswhy.biz
+Author: Ot Gabaldon Torrents
+Author-email: gabaldonot@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://www.thisiswhy.biz
+Description: Look at those maps.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
