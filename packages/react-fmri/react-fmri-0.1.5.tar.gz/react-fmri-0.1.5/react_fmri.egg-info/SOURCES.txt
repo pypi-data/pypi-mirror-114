@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+data/gm_mask.nii.gz
+data/pet_atlas.nii.gz
+react/__init__.py
+react/utils.py
+react_fmri.egg-info/PKG-INFO
+react_fmri.egg-info/SOURCES.txt
+react_fmri.egg-info/dependency_links.txt
+react_fmri.egg-info/requires.txt
+react_fmri.egg-info/top_level.txt
+script/react
+script/react_masks
+script/react_normalize
