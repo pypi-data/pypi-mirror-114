@@ -1,0 +1,3 @@
+[orange.widgets]
+4Cast = orange_4cast
+
