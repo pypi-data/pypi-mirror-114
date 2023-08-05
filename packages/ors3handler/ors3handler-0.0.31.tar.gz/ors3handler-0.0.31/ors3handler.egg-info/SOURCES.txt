@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+ors3handler/__init__.py
+ors3handler/ors3handler.py
+ors3handler.egg-info/PKG-INFO
+ors3handler.egg-info/SOURCES.txt
+ors3handler.egg-info/dependency_links.txt
+ors3handler.egg-info/requires.txt
+ors3handler.egg-info/top_level.txt

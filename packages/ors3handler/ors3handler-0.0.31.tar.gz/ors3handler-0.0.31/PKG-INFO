@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ors3handler
+Version: 0.0.31
+Summary: AWS S3 Data Management.
+Home-page: https://github.com/leonardomra/s3handler
+Author: Leonardo de Araújo
+Author-email: dearaujo@uni-bremen.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+This module is responsible for mananing communication of the OpenResearch API with AWS S3.
+
+## Create Package
+
+pip3 install setuptools twine 
+python3 setup.py sdist
+python3 setup.py bdist_wheel
+twine upload dist/*
+
+pip install YOURPACKAGE --upgrade
+
