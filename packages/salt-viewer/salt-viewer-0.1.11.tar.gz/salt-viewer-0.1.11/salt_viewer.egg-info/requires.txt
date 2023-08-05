@@ -1,0 +1,8 @@
+natsort
+pillow
+send2trash
+rarfile
+py7zr
+cairosvg
+pdf2image
+pypdf3
