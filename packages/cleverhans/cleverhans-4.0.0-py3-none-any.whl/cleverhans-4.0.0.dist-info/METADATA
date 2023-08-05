@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: cleverhans
+Version: 4.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/cleverhans-lab/cleverhans
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: nose
+Requires-Dist: pycodestyle
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: mnist
+Requires-Dist: numpy
+Requires-Dist: tensorflow-probability
+Requires-Dist: joblib
+Requires-Dist: easydict
+Requires-Dist: absl-py
+Requires-Dist: six
+Provides-Extra: jax
+Requires-Dist: jax (>=0.2.9) ; extra == 'jax'
+Requires-Dist: jaxlib ; extra == 'jax'
+Provides-Extra: pytorch
+Requires-Dist: torch (>=1.7.0) ; extra == 'pytorch'
+Requires-Dist: torchvision (>=0.8.0) ; extra == 'pytorch'
+Provides-Extra: tf
+Requires-Dist: tensorflow (>=2.4.0) ; extra == 'tf'
+Requires-Dist: tensorflow-probability ; extra == 'tf'
+Requires-Dist: tensorflow-datasets ; extra == 'tf'
+
+UNKNOWN
+
+
