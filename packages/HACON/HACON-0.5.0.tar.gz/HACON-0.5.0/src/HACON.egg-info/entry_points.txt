@@ -1,0 +1,3 @@
+[console_scripts]
+HACON = hacon.hacon:HACON.arguments
+
