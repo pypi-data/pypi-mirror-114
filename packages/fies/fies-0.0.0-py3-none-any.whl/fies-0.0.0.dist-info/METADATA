@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: fies
+Version: 0.0.0
+Summary: file in out tool
+Home-page: https://github.co.jp/
+Author: le_lattelle
+Author-email: g.tiger.ml@gmail.com
+License: CC0 v1.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Description-Content-Type: text/markdown
+Requires-Dist: relpath
+Requires-Dist: ezpip
+Requires-Dist: sout
+
+# fies
+
+下の方に日本語の説明があります
+
+## Overview
+This is a tool to read and write json files easily.
+It will be extended to other formats. (csv, pickle, plain text, binary, etc.)
+
+## Usage
+```python
+import fies
+
+# Save json
+fies["./test.json"] = {"hoge": 23, "dummy_data": "fuga"}
+
+# Read json
+print(fies["./test.json"]) # -> {'hoge': 23, 'dummy_data': 'fuga'}
+````
+
+## 概要
+jsonファイルを簡単に読み書きできるツールです。
+他の形式にも拡張予定です。(csv, pickle, プレーンテキスト, バイナリ など)
+
+## 使い方
+```python
+import fies
+
+# json保存
+fies["./test.json"] = {"hoge": 23, "dummy_data": "fuga"}
+
+# json読み込み
+print(fies["./test.json"])	# -> {'hoge': 23, 'dummy_data': 'fuga'}
+```
+
+
