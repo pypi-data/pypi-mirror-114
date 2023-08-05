@@ -1,0 +1,11 @@
+.gitignore
+setup.py
+mchatx_python/__init__.py
+mchatx_python/api.py
+mchatx_python/download_tl.py
+mchatx_python.egg-info/PKG-INFO
+mchatx_python.egg-info/SOURCES.txt
+mchatx_python.egg-info/dependency_links.txt
+mchatx_python.egg-info/entry_points.txt
+mchatx_python.egg-info/requires.txt
+mchatx_python.egg-info/top_level.txt

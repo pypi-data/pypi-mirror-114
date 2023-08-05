@@ -1,0 +1,3 @@
+[console_scripts]
+download_tl = mchatx_python.download_tl:main
+
