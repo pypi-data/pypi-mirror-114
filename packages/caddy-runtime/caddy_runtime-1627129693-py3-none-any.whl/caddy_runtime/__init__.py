@@ -1,0 +1,3 @@
+import caddy
+
+CADDY_RUNTIME_DIR = caddy.CADDY_RUNTIME_DIR
