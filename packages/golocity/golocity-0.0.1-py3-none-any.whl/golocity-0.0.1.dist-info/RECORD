@@ -1,0 +1,14 @@
+golocity/__init__.py,sha256=8yB9RvVXSn671JXWNobN_u7bGRt7nm-A5cng5SIzvbI,569
+golocity/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+golocity/commands/build.py,sha256=VE620Cw0cbBGBI-d0Iz6J4fzEhEiHO8mKUlOkLLgQCM,2678
+golocity/commands/deploy.py,sha256=oGrkiSkPzuMLxv2Zq6JF6dwgzNu1OrBPVv-cVFPkkuQ,1737
+golocity/helpers.py,sha256=3G5wODgj4aysbFyDt9XJ53lxp7WqXLIsjQ-XmNfPhYA,1394
+golocity/image.py,sha256=bmC3yKHvZC2NnZpNK5oTKPDuYf4CezYSDt-oqRA2HgA,5862
+golocity/main.py,sha256=RaFBGc8cy_8StYAf3qy7JqUgzjxVP3ll5arljxyZagY,1587
+golocity/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+golocity/yagna.py,sha256=2dXJSOMans14QCVZ_Sr0Rp6E2LZsuC6YomANWzgDGb4,1244
+golocity-0.0.1.dist-info/entry_points.txt,sha256=VKhNYsB2Yvo-qI-kJn4NwNykoj6V1-sXbS3C3q1GgZs,51
+golocity-0.0.1.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+golocity-0.0.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+golocity-0.0.1.dist-info/METADATA,sha256=cTmjB4zFfkaZrx8rbpKBPPp5ZM4WLSzpvYnXxBF2xj4,3886
+golocity-0.0.1.dist-info/RECORD,,

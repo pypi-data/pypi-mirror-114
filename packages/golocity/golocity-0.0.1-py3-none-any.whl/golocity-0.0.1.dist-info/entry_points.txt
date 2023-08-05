@@ -1,0 +1,3 @@
+[console_scripts]
+golocity=golocity.main:golocity
+
