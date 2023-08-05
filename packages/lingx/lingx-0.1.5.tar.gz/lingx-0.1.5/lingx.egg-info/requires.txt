@@ -1,0 +1,4 @@
+stanza==1.2.1
+numpy
+pandas
+treelib
