@@ -1,0 +1,17 @@
+purplship/mappers/tnt/__init__.py,sha256=nGiQUgC56KfZmCohHfgJeHxuyke7nIpdLPKWPw8pyrU,528
+purplship/mappers/tnt/mapper.py,sha256=i0M3UVJ5U8p6-xYIjWZmgrKkyOOxR0DlA_SiY6Mj29c,1726
+purplship/mappers/tnt/proxy.py,sha256=LYFTrE8TGvgzoxmT298Wmv2QFI64GRD2cRjkMXY9yeE,1892
+purplship/mappers/tnt/settings.py,sha256=DGnH_I8bLfwokaYu0hxp-HIb-miNjJ9A_NsQUrZO4hc,436
+purplship/providers/tnt/__init__.py,sha256=-8EQeW81Y3CtBIMXTOzqa4NXE9K5n9lAeiEL2tErtd4,334
+purplship/providers/tnt/error.py,sha256=Kgf1MVHfsjS_xUi2wKoJtWvGP02CHIduHhT7gZmTDMM,3948
+purplship/providers/tnt/rate.py,sha256=zVZsGPTbp4YCOB2PHblhiTS880GW1AdXP3DRKHM7T48,4841
+purplship/providers/tnt/shipment/__init__.py,sha256=rlrICQjGx0czoQhP5WUz5X5mxyKavphMTYOFN5ZF9X8,94
+purplship/providers/tnt/shipment/create.py,sha256=PA2zBrHUMC7scBAqfrHJwuRvyUWWo3APVPEQWXJrvNQ,2075
+purplship/providers/tnt/shipment/label.py,sha256=MbAEj3uqIDXzslDSoGP4y_x4rCEmgeEWViImUgSjlSk,4746
+purplship/providers/tnt/shipment/request.py,sha256=mGlMmg9mQVclrP6Y72PvPKQpqOXDesL2NalWW_ehgSU,6181
+purplship/providers/tnt/tracking.py,sha256=mQ6N_A9uu0R2Vp9icUptKGQ5LiDIn4h05_evtL8qwLA,2324
+purplship/providers/tnt/units.py,sha256=Xe_VQ93juOKtZrYA8RaO3fSuauFk5HgOcJtmlRW3wsM,3229
+purplship/providers/tnt/utils.py,sha256=b7d5rdAWCwZex0kKAhnxj3Gy11kOXazEtttOF3LxAAY,583
+purplship.tnt-2021.7rc2.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+purplship.tnt-2021.7rc2.dist-info/METADATA,sha256=390HfdtPLZ3v5gs48TcNNzZM46LoT7SdlJj_MW0i2SQ,1387
+purplship.tnt-2021.7rc2.dist-info/RECORD,,
