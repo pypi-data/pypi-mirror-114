@@ -1,0 +1,7 @@
+aiofiles
+aiohttp
+cloudscraper
+py-tgcalls
+python-decouple==3.3
+python-dotenv==0.15.0
+redis
