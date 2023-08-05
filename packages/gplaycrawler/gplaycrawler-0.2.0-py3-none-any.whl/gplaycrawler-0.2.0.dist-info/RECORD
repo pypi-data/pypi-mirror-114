@@ -1,0 +1,15 @@
+gplaycrawler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gplaycrawler/__main__.py,sha256=NIPqVhIPqIrWiCHFlkfJU6JB74mUlmHOkdSV3OiJTQw,362
+gplaycrawler/charts.py,sha256=DMEJAHcjGIFlBdbC3LYFQuPB5IDPLjdpH8t5NTh5x4M,3375
+gplaycrawler/main.py,sha256=EWfAX32IrI2PPAHLJjK6gvMTE4yNbpi8tGjANWW8E08,6723
+gplaycrawler/metadata.py,sha256=oX95VNZognxL-JcegYeB1a0lx5RVBChGhNJD71nHpPo,5115
+gplaycrawler/packages.py,sha256=E9HgkbLs-Kuwj9cd3ks8kiNYvzG6bd7odwceLqjYqHI,8023
+gplaycrawler/related.py,sha256=QtagTDAw6hSlQKhuMyM2_vPtRL8SM5eMMomI19idl1I,11401
+gplaycrawler/search.py,sha256=En_qPO9cGOX9DaNEg1mJMouE2D0fuPvssk1QvB5elyo,9099
+gplaycrawler/utils.py,sha256=qrUUu0bWj0ULlIyq5mfPpOzaYN_dvc_TY2JkL7p-9Uc,1526
+gplaycrawler-0.2.0.dist-info/LICENSE.md,sha256=V2Fq4S-_1Y9swfE-j9vDaL76xKtC5NOJOCG27P3b2pI,1067
+gplaycrawler-0.2.0.dist-info/METADATA,sha256=oTkM1vuRpPIH02Tf8-fcYf6d30p3fGC_8CwuRfp-kKo,6048
+gplaycrawler-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gplaycrawler-0.2.0.dist-info/entry_points.txt,sha256=qXvBfsCwV5JT2h5i1mcyfhlomabTvZieiwhM_U90v-o,57
+gplaycrawler-0.2.0.dist-info/top_level.txt,sha256=GV1xaB06_hK1thnmEApXEh1xfAKXWEo80pJXHUbOoB8,13
+gplaycrawler-0.2.0.dist-info/RECORD,,
