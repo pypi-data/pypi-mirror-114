@@ -1,0 +1,3 @@
+[console_scripts]
+run-test=streamstate_utils.run_test:main
+
