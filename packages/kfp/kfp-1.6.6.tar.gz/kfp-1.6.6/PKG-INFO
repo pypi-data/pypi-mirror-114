@@ -1,0 +1,26 @@
+Metadata-Version: 1.2
+Name: kfp
+Version: 1.6.6
+Summary: KubeFlow Pipelines SDK
+Home-page: https://github.com/kubeflow/pipelines
+Author: The Kubeflow Authors
+License: UNKNOWN
+Project-URL: Documentation, https://kubeflow-pipelines.readthedocs.io/en/stable/
+Project-URL: Bug Tracker, https://github.com/kubeflow/pipelines/issues
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6.1
