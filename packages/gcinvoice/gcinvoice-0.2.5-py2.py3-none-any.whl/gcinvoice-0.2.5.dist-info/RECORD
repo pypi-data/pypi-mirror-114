@@ -1,0 +1,10 @@
+gcinvoice/__init__.py,sha256=fMwWbBhoO7tesed93d4r2O8eDt7aej1IAYnrzbFA7bo,94
+gcinvoice/_version.py,sha256=Wd-sPwNc6QeaN7g6oMMZesxOIJrdvAZoU8oAWsb3BKw,127
+gcinvoice/gcivc.py,sha256=eUvlaE6IYaVVKWHos3EvZbZWs1r9M9liVPGlbAGWL_A,42319
+gcinvoice/yaptu.py,sha256=UqJpUkl9fhAGAdPw-R6gsQY7T7Hi-WUSNwvfSWIQeho,4156
+gcinvoice-0.2.5.dist-info/LICENSE,sha256=_F6cLtL4qGTBqSsgVbkWQB-XloN2-vn-cWZYawVU5ps,1078
+gcinvoice-0.2.5.dist-info/METADATA,sha256=ru7Fa6ALKuTmJr4NbHATkZ3LPyoWFScFPzblrfihgoA,12821
+gcinvoice-0.2.5.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+gcinvoice-0.2.5.dist-info/entry_points.txt,sha256=hOXiCQ5byYqk-Kb158mKx5z4mf2SPrXhGw6IP4sh8a0,58
+gcinvoice-0.2.5.dist-info/top_level.txt,sha256=K981Nthil83BTUsR-a1c1WbhU3cC9A7ANWRY-NPBdtE,10
+gcinvoice-0.2.5.dist-info/RECORD,,
