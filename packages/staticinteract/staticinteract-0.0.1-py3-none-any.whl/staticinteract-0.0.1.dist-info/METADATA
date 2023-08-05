@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: staticinteract
+Version: 0.0.1
+Summary: Jupyter static interactive figures
+Home-page: http://github.com/robaina/staticInteract
+Author: Semidan Robaina, Jake VanderPlas
+Author-email: srobaina@ull.edu.es
+Maintainer: Semidan Robaina
+Maintainer-email: srobaina@gmail.com
+License: BSD
+Download-URL: http://github.com/robaina/staticInteract
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: ipython
+
+Generate interactive figures in Jupyter which solely depend on JavaScript and, hence, can be exported to static HTML webpages. Forked from https://github.com/jakevdp/ipywidgets-static
+
