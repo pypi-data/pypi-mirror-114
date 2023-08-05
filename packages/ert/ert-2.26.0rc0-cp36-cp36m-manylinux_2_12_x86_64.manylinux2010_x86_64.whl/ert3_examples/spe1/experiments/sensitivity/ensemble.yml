@@ -1,0 +1,24 @@
+input:
+  -
+    source: stochastic.field_properties
+    record: field_properties
+  -
+    source: stochastic.wells
+    record: wells
+  -
+    source: storage.spe1case2_template
+    record: spe1_template
+
+output:
+    -
+      record: wopt_prod
+    -
+      record: wwpt_prod
+    -
+      record: wgpt_prod
+    -
+      record: wwit_inj
+
+forward_model:
+  driver: local
+  stage: simulate_SPE1
