@@ -1,0 +1,12 @@
+interchange/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+interchange/collections.py,sha256=zIhe0Hnh8p3SqKagwmzilqq4dSQRADViwbiy57qU3TI,20858
+interchange/math.py,sha256=ogBjgPCoFXqawd1kHXmNBqWCuH8NSt-eCaULtjTQ3zE,4392
+interchange/packstream.py,sha256=HbT1zX7_tQdRRRvRMmd-g4PvA_3IdBRhnZcwFwGhMJg,18276
+interchange/space.py,sha256=2MTHzMP9vQtmvX7FgtXR1NdvtTUtHyz16nQ4q292cUg,2616
+interchange/text.py,sha256=9iU6whRe5TiT6yVybQ6gwixz39LL_YbWkp8dgD0nXFg,2509
+interchange/time.py,sha256=vsL75v6vBw3fHIGcF-69jV8dY-hrbCygJ7kvokShhoY,47306
+interchange-2021.0.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+interchange-2021.0.0.dist-info/METADATA,sha256=7kwLSuYgiEcQ9ddYlCAxVlfMcSgt0TppGywFtOm8Rak,1888
+interchange-2021.0.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+interchange-2021.0.0.dist-info/top_level.txt,sha256=KwErSHGIQpqCnsfzrsGqGTij8ua6QpLFtdGDKIjwi0I,12
+interchange-2021.0.0.dist-info/RECORD,,
