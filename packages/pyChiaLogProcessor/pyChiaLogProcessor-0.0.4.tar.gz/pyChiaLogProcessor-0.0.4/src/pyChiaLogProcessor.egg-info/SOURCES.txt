@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+src/pyChiaLogProcessor.py
+src/pyChiaLogProcessor.egg-info/PKG-INFO
+src/pyChiaLogProcessor.egg-info/SOURCES.txt
+src/pyChiaLogProcessor.egg-info/dependency_links.txt
+src/pyChiaLogProcessor.egg-info/requires.txt
+src/pyChiaLogProcessor.egg-info/top_level.txt
