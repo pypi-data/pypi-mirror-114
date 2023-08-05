@@ -1,0 +1,54 @@
+{# Copyright 2020 Karlsruhe Institute of Technology
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+ # you may not use this file except in compliance with the License.
+ # You may obtain a copy of the License at
+ #
+ #     http://www.apache.org/licenses/LICENSE-2.0
+ #
+ # Unless required by applicable law or agreed to in writing, software
+ # distributed under the License is distributed on an "AS IS" BASIS,
+ # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ # See the License for the specific language governing permissions and
+ # limitations under the License. #}
+
+{% extends "groups/manage_group_base.html" %}
+
+{% block content %}
+  <div class="card">
+    {% include "groups/snippets/manage_group_menu.html" %}
+
+    <nav-tabs :tabs="['overview', 'records', 'collections', 'templates', 'revisions']">
+      <template #overview-head>
+        <strong>{% trans %}Overview{% endtrans %}</strong>
+      </template>
+      <template #overview-body>
+        {% include "groups/snippets/view_overview.html" %}
+      </template>
+      <template #records-head>
+        {% trans %}Records{% endtrans %}
+      </template>
+      <template #records-body>
+        {% include "groups/snippets/view_records.html" %}
+      </template>
+      <template #collections-head>
+        {% trans %}Collections{% endtrans %}
+      </template>
+      <template #collections-body>
+        {% include "groups/snippets/view_collections.html" %}
+      </template>
+      <template #templates-head>
+        {% trans %}Templates{% endtrans %}
+      </template>
+      <template #templates-body>
+        {% include "groups/snippets/view_templates.html" %}
+      </template>
+      <template #revisions-head>
+        {% trans %}Revisions{% endtrans %}
+      </template>
+      <template #revisions-body>
+        {% include "groups/snippets/view_revisions.html" %}
+      </template>
+    </nav-tabs>
+  </div>
+{% endblock %}

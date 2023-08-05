@@ -1,0 +1,107 @@
+{# Copyright 2020 Karlsruhe Institute of Technology
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+ # you may not use this file except in compliance with the License.
+ # You may obtain a copy of the License at
+ #
+ #     http://www.apache.org/licenses/LICENSE-2.0
+ #
+ # Unless required by applicable law or agreed to in writing, software
+ # distributed under the License is distributed on an "AS IS" BASIS,
+ # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ # See the License for the specific language governing permissions and
+ # limitations under the License. #}
+
+<div class="float-md-right mb-3 mb-md-0 ml-0 ml-md-3">
+  <div class="btn-group">
+    <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">
+      {% trans %}Export{% endtrans %}
+    </button>
+    <div class="dropdown-menu">
+      {% for export_type, title in config["EXPORT_TYPES"]["record"].items() %}
+        <a href="{{ url_for('records.export_record', id=record.id, export_type=export_type) }}" class="dropdown-item">
+          {{ title }}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% if publication_providers %}
+    <div class="btn-group">
+      <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">
+        {% trans %}Publish{% endtrans %}
+      </button>
+      <div class="dropdown-menu">
+        {% for provider in publication_providers %}
+          <a href="{{ url_for('records.publish_record', id=record.id, provider=provider.name) }}" class="dropdown-item">
+            {{ provider.title }}
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+  {% if has_permission(current_user, "create", "record", None) %}
+    <a href="{{ url_for('records.new_record', record=record.id) }}" class="btn btn-sm btn-primary">
+      {% trans %}Copy record{% endtrans %}
+    </a>
+  {% endif %}
+</div>
+
+{% snippet "resources/basic_info", resource=record %}
+
+{% set num_tags = record.tags.count() %}
+
+{% if record.license or num_tags > 0 %}
+  <hr>
+{% endif %}
+
+{% if record.license %}
+  <p>
+    <strong class="mr-3">{% trans %}License{% endtrans %}</strong>
+    <small>
+      <i class="fas fa-external-link-alt mr-1"></i>
+    </small>
+    <a href="{{ record.license.url or '' }}">
+      <strong>{{ record.license.title }}</strong>
+    </a>
+  </p>
+{% endif %}
+
+{% if num_tags > 0 %}
+  <strong class="mr-3">Tags</strong>
+  {% for tag in record.tags.order_by("name") %}
+    <h5 class="d-inline">
+      <a href="{{ url_for('records.records', tag=tag.name) }}"
+         class="badge badge-light border border-muted font-weight-normal my-1 mx-1"
+         title="{{ tag.name }}">
+        {{ tag.name | truncate(20) }}
+      </a>
+    </h5>
+  {% endfor %}
+{% endif %}
+
+<hr>
+
+{% if record.extras %}
+  {% set can_update = has_permission(current_user, "update", "record", record.id) %}
+
+  <extras-viewer {% if can_update %}edit-endpoint="{{ url_for('records.edit_record', id=record.id) }}"{% endif %}
+                 :extras="{{ record.extras | escaped_json }}">
+    <p>
+      <strong>{% trans %}Extra metadata{% endtrans %}</strong>
+      <span class="badge badge-pill badge-light text-muted border border-muted">{{ len(record.extras) }}</span>
+    </p>
+  </extras-viewer>
+  {% if has_permission(current_user, "create", "template", None) %}
+    <div class="mt-3">
+      <a href="{{ url_for('templates.new_template', type='extras', record=record.id) }}" class="btn btn-sm btn-primary">
+        {% trans %}Export as template{% endtrans %}
+      </a>
+    </div>
+  {% endif %}
+{% else %}
+  <p>
+    <strong>{% trans %}Extra metadata{% endtrans %}</strong>
+    <span class="badge badge-pill badge-light text-muted border border-muted">{{ len(record.extras) }}</span>
+  </p>
+  <em class="text-muted">{% trans %}No extra metadata.{% endtrans %}</em>
+{% endif %}

@@ -1,0 +1,35 @@
+{# Copyright 2021 Karlsruhe Institute of Technology
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+ # you may not use this file except in compliance with the License.
+ # You may obtain a copy of the License at
+ #
+ #     http://www.apache.org/licenses/LICENSE-2.0
+ #
+ # Unless required by applicable law or agreed to in writing, software
+ # distributed under the License is distributed on an "AS IS" BASIS,
+ # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ # See the License for the specific language governing permissions and
+ # limitations under the License. #}
+
+<div class="row">
+  <div class="col-xl-8 {% if pos == 'bottom' %}order-2 order-xl-1{% endif %}">
+    <submit-field class="{% if pos == 'top' %}btn-sm mb-2 mb-xl-0{% else %}mt-2 mt-xl-0{% endif %}"
+                  :field="{{ json_field(form.submit_quit) }}">
+    </submit-field>
+    <submit-field class="{% if pos == 'top' %}btn-sm mb-2 mb-xl-0{% else %}mt-2 mt-xl-0{% endif %}"
+                  :field="{{ json_field(form.submit) }}">
+    </submit-field>
+  </div>
+  <div class="col-xl-4 d-xl-flex justify-content-end {% if pos == 'bottom' %}order-1 order-xl-2{% endif %}">
+    {% if has_permission(current_user, "delete", resource.__tablename__, resource.id) %}
+      <button type="button" class="{% if pos == 'top' %}btn-sm{% endif %} btn btn-danger" @click="deleteResource">
+        {{ delete_text }}
+      </button>
+    {% endif %}
+  </div>
+</div>
+
+{% if pos == "top" %}
+  <hr>
+{% endif %}
