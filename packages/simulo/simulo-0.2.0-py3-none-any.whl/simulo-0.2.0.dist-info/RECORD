@@ -1,0 +1,15 @@
+simulo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simulo/config.py,sha256=LUSuDN7h04XNmlMBPWBQnYDGDWJ1UD2SyXbFIFQ-qu0,310
+simulo/simulomath.py,sha256=d5J5QaENFjciNcO-VOugHw064SvtaAMaQ4cLc_CyE-I,984
+simulo/auth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simulo/auth/authenticator.py,sha256=p-Ka-mTlIZpm29fYxYyiz3OBCy6mKpx6ayiCEDHT0wo,2281
+simulo/upload/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simulo/upload/data_upload.py,sha256=jXggsc80CVkTqg1iGP_15_EIlZgPjxmNZB3Aiv_m7Y0,12637
+simulo/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simulo/utils/json_transformations.py,sha256=S-SVjCSsIHHTkZc4W_jvh7Z2K0byg4ypa6Gv7NyXRAk,840
+simulo/utils/unique_id.py,sha256=bTPFbttQkSKdY_yanhXuqN9z4djqnOsO4e5jhdOgoDY,61
+simulo-0.2.0.dist-info/LICENSE,sha256=x5JnN5GAWFR9eyfDOgdLqvS4DILMvMd7nTii7pdWaAk,20
+simulo-0.2.0.dist-info/METADATA,sha256=zAKkJNPxZORnNegbxes1Bg0QqkkBmTdUQFDeIFW2dMY,846
+simulo-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+simulo-0.2.0.dist-info/top_level.txt,sha256=qud9mL24_iIiqb0ZMUSRitgwjDv_3zxgVqlWY45swJI,7
+simulo-0.2.0.dist-info/RECORD,,
