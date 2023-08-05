@@ -1,0 +1,67 @@
+[tool.poetry]
+name = "mcwiki"
+version = "0.1.2"
+description = "A scraping library for the Minecraft Wiki"
+authors = ["Valentin Berlier <berlier.v@gmail.com>"]
+license = "MIT"
+
+homepage = "https://github.com/vberlier/mcwiki"
+repository = "https://github.com/vberlier/mcwiki"
+documentation = "https://github.com/vberlier/mcwiki"
+
+readme = "README.md"
+
+keywords = [
+  "mcwiki",
+  "minecraft",
+  "scraping",
+  "wiki",
+  "minecraft-wiki"
+]
+
+include = ["mcwiki/py.typed"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.26.0"
+beautifulsoup4 = "^4.9.3"
+
+[tool.poetry.dev-dependencies]
+black = "^21.7b0"
+pytest = "^6.2.4"
+pytest-insta = "^0.1.10"
+isort = "^5.9.2"
+python-semantic-release = "^7.16.2"
+
+[tool.black]
+target-version = ["py38"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | node_modules
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+
+[tool.semantic_release]
+branch = "main"
+version_variable = ["mcwiki/__init__.py:__version__"]
+version_toml = "pyproject.toml:tool.poetry.version"
+major_on_zero = false
+build_command = "poetry build"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
