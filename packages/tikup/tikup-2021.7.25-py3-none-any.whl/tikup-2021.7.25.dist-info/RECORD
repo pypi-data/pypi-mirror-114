@@ -1,0 +1,11 @@
+packages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+packages/tikup.py,sha256=Qqt2YPJby8PpgJDiQRlhP7ObOe11RBjihcW8QNVnOYc,7524
+tikup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tikup/argparser.py,sha256=mB5Js2r78B8T_4Xz_zJZmwUIwdr__UzZ6u7jOlw2cdE,1328
+tikup/tikup.py,sha256=TMdUCvJFhqDcWxjvRUBzqukY-p3v9sY6UhzCHStZuKM,8599
+tikup-2021.7.25.dist-info/LICENSE,sha256=iifhqNIYi5VCe26_cFYrxo4h6dN2edybYYqdiV-VnbQ,1091
+tikup-2021.7.25.dist-info/METADATA,sha256=SYfC83FiW0HaEh-EJUGCSXjwd0eD6_SNGLbKXRYH2ik,1925
+tikup-2021.7.25.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tikup-2021.7.25.dist-info/entry_points.txt,sha256=OBsGOFdI4MlPmHATSCH7Zz8Zp-ZgjYORnCyO0mAzpho,44
+tikup-2021.7.25.dist-info/top_level.txt,sha256=x_GPWiJ1Fbjc1OK23TC6kR-c0klQuUP8B5r-LHEKxNA,6
+tikup-2021.7.25.dist-info/RECORD,,
