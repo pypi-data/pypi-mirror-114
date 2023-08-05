@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: process-snapshot-toolkit
+Version: 0.1.0
+Summary: VMware Toolkit to work with process snapshot.
+Home-page: https://github.com/Lastline-Inc/process-snapshot-toolkit
+Author: AMG at VMware, Inc.
+License: BSD-2-Clause
+Platform: UNKNOWN
+License-File: LICENSE.txt
+License-File: NOTICE.txt
+
+UNKNOWN
+
