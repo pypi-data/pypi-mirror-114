@@ -1,0 +1,10 @@
+xicor/__init__.py,sha256=nPKCikg4IcM6L5cN8A36HtSflH3MHd9ql7etVWZLywg,841
+xicor/version.py,sha256=-OJMXjLowM8J30N-B6bSNHELw3tEVJJoegCOovEf9Gc,142
+xicor/xicor.py,sha256=Vaz8Qv6cRBy_qYNN_AB7DTtfklHHkR7aDqTomBN26Vk,4450
+xicor/xicor_pandas.py,sha256=6GH5_eYJYVY7eiXxZMoYQ5gPTSHjdexq9P-1sE9TCmM,4251
+xicor/notebooks/profiling.ipynb,sha256=rg6gwSqkmsyFqlcCEJjNLki4SY4gtXrHVBR2k4y3gZM,22218
+xicor-1.0.1.dist-info/LICENSE,sha256=96jd8wS-vrHGw6Mc_gNIPMq6x26UiWbfAeij9g85QcM,1078
+xicor-1.0.1.dist-info/METADATA,sha256=7h5N2rhAFz1EFTNCLurfWaFdM2VkuiD2vXA9gWANIzU,2033
+xicor-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+xicor-1.0.1.dist-info/top_level.txt,sha256=5F3QsevFa833xRtgqMfM2tIwCRwT8TxqIezjYzYllYw,6
+xicor-1.0.1.dist-info/RECORD,,
