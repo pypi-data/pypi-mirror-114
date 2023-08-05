@@ -1,0 +1,7 @@
+{domain}/uif {
+   reverse_proxy 127.0.0.1:10000
+}
+
+{domain} {
+   respond "Hello world!"
+}
