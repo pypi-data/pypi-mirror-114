@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+fifocast/__init__.py
+fifocast.egg-info/PKG-INFO
+fifocast.egg-info/SOURCES.txt
+fifocast.egg-info/dependency_links.txt
+fifocast.egg-info/top_level.txt
