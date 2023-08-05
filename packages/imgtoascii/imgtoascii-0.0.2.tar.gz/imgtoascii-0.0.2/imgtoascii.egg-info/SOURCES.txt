@@ -1,0 +1,8 @@
+README.md
+setup.py
+imgtoascii/__init__.py
+imgtoascii.egg-info/PKG-INFO
+imgtoascii.egg-info/SOURCES.txt
+imgtoascii.egg-info/dependency_links.txt
+imgtoascii.egg-info/requires.txt
+imgtoascii.egg-info/top_level.txt
