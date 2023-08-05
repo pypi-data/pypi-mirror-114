@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: plan-visualiser
+Version: 0.0.18
+Summary: Package which creates a PowerPoint slide of a plan from an Excel workbook
+Home-page: https://github.com/sevire/ppt-plan-visual
+Author: Sevire
+Author-email: tbg-sevire@genonline.co.uk
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/sevire/ppt-plan-visual/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: python-pptx
+Requires-Dist: dataclasses
+Requires-Dist: colour
+Requires-Dist: ddt (==1.4.2)
+Requires-Dist: openpyxl
+
+UNKNOWN
+
+
