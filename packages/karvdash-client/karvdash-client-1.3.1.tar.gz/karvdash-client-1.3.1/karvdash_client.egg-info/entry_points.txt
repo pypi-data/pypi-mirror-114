@@ -1,0 +1,3 @@
+[console_scripts]
+karvdashctl = karvdash_client.cli:main
+
