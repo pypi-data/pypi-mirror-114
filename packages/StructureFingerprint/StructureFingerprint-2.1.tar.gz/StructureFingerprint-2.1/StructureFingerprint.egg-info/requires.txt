@@ -1,0 +1,2 @@
+CGRtools>=4.0.41
+numpy>=1.18

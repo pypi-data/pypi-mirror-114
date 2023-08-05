@@ -1,0 +1,10 @@
+README.md
+setup.py
+StructureFingerprint/__init__.py
+StructureFingerprint/linear.py
+StructureFingerprint/morgan.py
+StructureFingerprint.egg-info/PKG-INFO
+StructureFingerprint.egg-info/SOURCES.txt
+StructureFingerprint.egg-info/dependency_links.txt
+StructureFingerprint.egg-info/requires.txt
+StructureFingerprint.egg-info/top_level.txt
