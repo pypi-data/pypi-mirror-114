@@ -1,0 +1,15 @@
+english_dictionary/__init__.py,sha256=IxXJTYJX1sbQp3DF_iL89jyCJ-mcUdE2IWMLOg0cs0U,93
+english_dictionary/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+english_dictionary/scripts/build_dictionary.py,sha256=uRpHEwxE6SWAmYKsrHOmo098TIOr3bSUBvCvhJmAQDM,1405
+english_dictionary/scripts/dict.pickle,sha256=G9Xlu35Aiigoi-x2iHm4ie65cyVjPZtbYt6LD_WmRuc,8956469
+english_dictionary/scripts/read_pickle.py,sha256=0W7lmL7Hr4jpFuNJDokJXbrHrAYWgwESp7FIu9luYWM,203
+english_dictionary/scripts/scrape_merriam_webster.py,sha256=oE8wyTuDYuSY9Ju-i-T9-m7aG9ptPu9T7jdfhkszVic,577
+english_dictionary/scripts/tokenize.py,sha256=MHgR7tx0P6_E01yNR04sXPasTWVcf_yFZgDjMCPlspw,799
+english_dictionary/scripts/write_pickle.py,sha256=UqRVQwupmjJstQgcD2qCAGhQIQ0HRPvLJuZzFBFeB6M,476
+english_dictionary/tools/get_words.sh,sha256=2JEoIOy2n_DITjVLb3HXD1yDxwSKWFKFAsrPRQEx19I,421
+english_dictionary/tools/words.txt,sha256=adGnQ3G5hnbTMScnEVsT_vr1fVYVYbbuNH0Tse6g0Mk,2493109
+english_dictionary-1.0.1.dist-info/LICENSE,sha256=oj4JqY6laDoijzOL5OldgJKa2TCTe0OBzpkuAN5JNTY,1070
+english_dictionary-1.0.1.dist-info/METADATA,sha256=9USd0Cr6Itt4cIegCO_2NXNVSWtGTMegdLzGxZIxN7M,850
+english_dictionary-1.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+english_dictionary-1.0.1.dist-info/top_level.txt,sha256=_KFmY7PuNragUidJqPqSeYrKr9EIJw1LlmbdqKi3qF4,19
+english_dictionary-1.0.1.dist-info/RECORD,,
