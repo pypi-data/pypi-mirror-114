@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: climate_metrics
+Version: 0.1.0
+Summary: Climate metrics for greenhouse gas accounting
+Home-page: https://github.com/BlaneG/climate_metrics
+Author: Blane Grann
+License: MIT License
+Keywords: GWP,GTP,global warming potential,global average temperature change potential,GHG,greenhouse gas,climate metrics
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: License.txt
+
+# Climate metrics
+`climate_metrics` implements standard greenhouse gas methods including Global Warming Potential (GWP) and Average Global Temperature Change Potential (GTP).  The implementation provides flexibility for computing climate metrics for a time series of GHG emissions.
+
+# Development
+
+Tests can be executed on the local copy of climate_metrics by running `python -m pytest` from the root directry which adds the current directory to `sys.path`.
+
+Notebooks are checked with nbval: `pytest --nbval notebooks`
+

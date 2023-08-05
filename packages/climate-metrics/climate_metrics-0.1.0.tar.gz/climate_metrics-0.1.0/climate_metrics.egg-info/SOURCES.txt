@@ -1,0 +1,9 @@
+License.txt
+climate_metrics.py
+pyproject.toml
+setup.cfg
+climate_metrics.egg-info/PKG-INFO
+climate_metrics.egg-info/SOURCES.txt
+climate_metrics.egg-info/dependency_links.txt
+climate_metrics.egg-info/requires.txt
+climate_metrics.egg-info/top_level.txt
