@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: p1-helpers
+Version: 1.0.0
+Summary: A corporate helper package
+Home-page: https://github.com/ParticleDev/p1_helpers
+Author: ParticleOne Team
+Author-email: malanin@particle.one
+Maintainer: 
+Maintainer-email: 
+License: MIT
+Keywords: p1_helpers,particle,particleone,particle.one
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >= 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (>=1.1.1)
+Requires-Dist: boto3 (>=1.14.51)
+Requires-Dist: tqdm (>=4.61.2)
+
+# p1_helpers
+
+Package with common helper functions we use all the time.
+We use it to reduce code repeating and unify common processes.
+
+```bash
+$ tree p1_helpers/
+p1_helpers/
+├── dbg.py
+├── io_.py
+├── parser.py
+├── printing.py
+├── s3.py
+└── system_interaction.py
+```
+
+## Package contents
+- `dbg.py` - debugging wrappers, logging, assertion wrappers
+- `io_.py` - input output, files/folders management
+- `parser.py` - Argparse extends
+- `printing.py` - printing helpers
+- `s3.py` - AWS S3 interaction
+- `system_interaction.py` - CLI wrappers
+
+
+## Build package 
+- Build
+```bash
+$ python -m build --no-isolation
+```
+Will create `dist/` folder with package.
+- Test your package with local installation
+## Upload package to pypi.org
+### Test upload
+Before upload on pypy.org try to upload using test.pypi.org server,
+more info here [https://packaging.python.org/guides/using-testpypi/](https://packaging.python.org/guides/using-testpypi/).  
+- Register separate account here [https://test.pypi.org/](https://test.pypi.org/)  
+- Create token.  
+- Update your `~/.pypirc`
+```bash
+[testpypi]
+  username = __token__
+  password = Your_token_from_test_pypi_org_here
+```
+- Check your upload
+```bash
+$ python -m twine upload --repository testpypi dist/*
+```
+### Production upload
+- Generate token
+[https://pypi.org/manage/account/token/](https://pypi.org/manage/account/token/)
+
+- Edit or create a `~/.pypirc` file with following structure:
+
+```bash
+[pypi]
+  username = __token__
+  password = Your_token_here
+```
+
+- Upload package using twine.
+```bash
+$ python -m twine upload --repository pypi dist/*
+```
+
