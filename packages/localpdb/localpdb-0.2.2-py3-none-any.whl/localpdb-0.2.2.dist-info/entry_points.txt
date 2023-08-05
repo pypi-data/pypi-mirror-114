@@ -1,0 +1,3 @@
+[console_scripts]
+localpdb_setup=localpdb.localpdb_setup:main
+
