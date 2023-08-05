@@ -1,0 +1,4 @@
+hedera-sdk-py>=2.0.9
+colorama>=0.4.4
+python-dotenv>=0.18.0
+requests>=2.19.1
