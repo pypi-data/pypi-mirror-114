@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: ika
+Version: 1.10.8
+Summary: Unofficial Python package to control IKA products; we are not affiliated with IKA.
+Home-page: https://gitlab.com/heingroup/ika
+Author: Veronica Lai // Hein Group
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ftdi-serial
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: hein-utilities (>=3.14.2)
+Requires-Dist: scipy
+
+# ika
+
+Unofficial Python package to control IKA products; we are not affiliated with IKA.
+
+Package not compatible with Mac OS
+
+## Products supported
+- IKA Magnetic Stirrer model C-MAG HS 7
+    - https://www.ika.com/en/Products-Lab-Eq/Magnetic-Stirrers-Hot-Plate-Lab-Mixer-Stirrer-Blender-csp-188/C-MAG-HS-7-control-Downloads-cpdl-20002694/
+- IKA RCT 5 digital
+    - https://www.ika.com/en/Products-Lab-Eq/Magnetic-Stirrers-Hot-Plate-Lab-Mixer-Stirrer-Blender-csp-188/RCT-5-digital-cpdt-20002704/
+
+### Basics
+
+Make sure you have installed the necessary driver for your computer:
+- https://www.ika.com/en/Products-Lab-Eq/Magnetic-Stirrers-Hot-Plate-Lab-Mixer-Stirrer-Blender-csp-188/C-MAG-HS-7-control-Package-Downloads-cpdl-10003279/
+
+To control a magnetic stirrer with the `ika` package, you need to identify the comport the device is when connected to
+your computer.
+
+#### Example usage
+
+Check the examples folder
+
+
