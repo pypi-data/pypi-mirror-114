@@ -1,0 +1,12 @@
+#
+# This file sets up include directories, link directories, and
+# compiler settings for a project to use SimpleITK.  It should not be
+# included directly, but rather through the SimpleITK_USE_FILE setting
+# obtained from SimpleITKConfig.cmake.
+#
+
+# Add include directories needed to use SimpleITK.
+include_directories(${SimpleITK_INCLUDE_DIRS})
+
+# Add link directories needed to use SimpleITK.
+link_directories(${SimpleITK_LIBRARY_DIRS})

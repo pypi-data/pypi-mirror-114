@@ -1,0 +1,75 @@
+#-----------------------------------------------------------------------------
+#
+# SimpleITKConfig.cmake - SimpleITK CMake configuration file for external
+# projects.
+#
+# This file is configured by SimpleITK, imported into client projects by
+# find_package(SimpleITK), and provides values for UseSimpleITK.cmake.
+
+# This SimpleITKConfig file is configured for the @SimpleITKConfig_TREE@ tree
+
+# Compute this installation's prefix from this file's location:
+get_filename_component(_SimpleITKConfig_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+@SimpleITKConfig_CODE@
+
+# The SimpleITK version number
+#
+# If version component is unset it the SimpleITK project it will
+# remain unset for project who use it, this changes the default CMake
+# behavior of setting unset version values to 0.
+set(SimpleITK_VERSION_MAJOR "@SimpleITK_VERSION_MAJOR@")
+set(SimpleITK_VERSION_MINOR "@SimpleITK_VERSION_MINOR@")
+set(SimpleITK_VERSION_PATCH)
+if(NOT "@SimpleITK_VERSION_PATCH@" STREQUAL "")
+  set(SimpleITK_VERSION_PATCH "@SimpleITK_VERSION_PATCH@")
+endif()
+set(SimpleITK_VERSION_TWEAK)
+if(NOT "@SimpleITK_VERSION_TWEAK@" STREQUAL "")
+  set(SimpleITK_VERSION_TWEAK  "@SimpleITK_VERSION_TWEAK@")
+endif()
+set(SimpleITK_VERSION_RC)
+if(NOT "@SimpleITK_VERSION_RC@" STREQUAL "")
+  set(SimpleITK_VERSION_RC "@SimpleITK_VERSION_RC@")
+endif()
+set(SimpleITK_VERSION_POST)
+if(NOT "@SimpleITK_VERSION_POST@" STREQUAL "")
+  set(SimpleITK_VERSION_POST "@SimpleITK_VERSION_POST@")
+endif()
+set(SimpleITK_VERSION_DEV)
+if(NOT "@SimpleITK_VERSION_DEV@" STREQUAL "")
+  set(SimpleITK_VERSION_DEV "@SimpleITK_VERSION_DEV@")
+endif()
+set(SimpleITK_VERSION_HASH)
+if(NOT "SimpleITK_VERSION_HASH@" STREQUAL "")
+  set(SimpleITK_VERSION_HASH "@SimpleITK_VERSION_HASH@")
+endif()
+set(SimpleITK_VERSION_COUNT)
+
+
+
+
+# The SimpleITK include file directories.
+set(SimpleITK_INCLUDE_DIRS "@SimpleITKConfig_INCLUDE_DIRS@")
+
+# The SimpleITK library directories.
+set(ITK_LIBRARY_DIRS "@ITK_LIBRARY_DIRS@")
+set(SimpleITK_LIBRARY_DIRS "${ITK_LIBRARY_DIRS}")
+
+# The location of the UseITK.cmake file.
+set(SimpleITK_USE_FILE "${_SimpleITKConfig_DIR}/UseSimpleITK.cmake")
+
+# Locate ITK for required targets
+if(NOT ITK_CONFIG_TARGETS_FILE)
+  find_package(ITK "@ITK_VERSION@" EXACT REQUIRED)
+endif()
+
+# Import SimpleITK targets.
+set(SimpleITK_TARGETS_FILE "${_SimpleITKConfig_DIR}/SimpleITKTargets.cmake")
+if(NOT SimpleITK_TARGETS_IMPORTED)
+  set(SimpleITK_TARGETS_IMPORTED 1)
+  include("${SimpleITK_TARGETS_FILE}")
+endif()
+
+# A list of all libraries for SimpleITK.  Those listed here should
+# automatically pull in their dependencies via imported targets.
+set(SimpleITK_LIBRARIES "@SimpleITK_LIBRARIES@")

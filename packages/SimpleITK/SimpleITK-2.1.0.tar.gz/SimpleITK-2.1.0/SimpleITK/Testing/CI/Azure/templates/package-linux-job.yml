@@ -1,0 +1,41 @@
+parameters:
+  DOCKERFILE: Dockerfile-2010-x86_64
+  PYTHON_VERSIONS: "cp36-cp36m cp37-cp37m cp38-cp38 cp39-cp39"
+
+jobs:
+  - job: Linux_${{replace(parameters.DOCKERFILE, '-', '_')}}
+    dependsOn: Configure
+    condition: ne( variables['configure.skiplinux'], 'true' )
+    timeoutInMinutes: 300
+    variables:
+      SIMPLEITK_GIT_TAG: $[ dependencies.Configure.outputs['configure.BuildHash'] ]
+    steps:
+      - template: ./git-download-steps.yml
+      - bash: |
+          cd ${BUILD_SOURCESDIRECTORY}/Utilities/Distribution/manylinux
+          docker build --pull=true --rm=true -t simpleitk_manylinux -f ${{ parameters.DOCKERFILE }} .
+        displayName: Build Docker Image
+      - bash: |
+          cd ${BUILD_SOURCESDIRECTORY}/Utilities/Distribution/manylinux
+          docker run --rm \
+               --user "$(id -u):$(id -g)" \
+               --mount type=bind,source=${ExternalData_OBJECT_STORES},destination=/var/io/.ExternalData \
+               --env "ExternalData_OBJECT_STORES=/var/io/.ExternalData" \
+               --env PYTHON_VERSIONS \
+               --env SIMPLEITK_GIT_TAG \
+                -v "$(pwd):/work/io" \
+                -t simpleitk_manylinux
+        env:
+          ExternalData_OBJECT_STORES: "$(Build.SourcesDirectory)/.ExternalData"
+          SIMPLEITK_GIT_TAG: "$(SimpleITKBuildHash)"
+          PYTHON_VERSIONS: ${{ parameters.PYTHON_VERSIONS }}
+      - task: CopyFiles@2
+        inputs:
+          sourceFolder: '$(Build.SourcesDirectory)/Utilities/Distribution/manylinux/wheelhouse'
+          contents: '*.whl'
+          targetFolder: $(Build.ArtifactStagingDirectory)/python
+          flattenFolders: true
+      - task: PublishBuildArtifacts@1
+        inputs:
+          pathtoPublish: $(Build.ArtifactStagingDirectory)/python
+          artifactName: Python
