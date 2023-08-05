@@ -1,0 +1,12 @@
+[tool.poetry]
+name = "pymongo-the-sql"
+version = "0.0.1"
+authors = ["Marcus Bader <marcus@appsight.se>"]
+description = "A sql wrapper made to mimic the pymongo syntax in order to simplify sql syntax."
+
+[tool.poetry.dependencies]
+python = '^3.6'
+
+[build-system]
+requires = ['poetry-core~=1.0']
+build-backend = 'poetry.core.masonry.api'
