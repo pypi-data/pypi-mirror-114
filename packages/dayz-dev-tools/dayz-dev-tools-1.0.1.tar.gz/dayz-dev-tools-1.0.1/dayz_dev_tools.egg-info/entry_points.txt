@@ -1,0 +1,3 @@
+[console_scripts]
+unpbo = dayz_dev_tools.unpbo:main
+
