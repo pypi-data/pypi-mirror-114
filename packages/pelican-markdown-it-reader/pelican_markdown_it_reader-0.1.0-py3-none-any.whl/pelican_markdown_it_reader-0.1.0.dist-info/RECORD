@@ -1,0 +1,6 @@
+pelican/plugins/markdown_it_reader/__init__.py,sha256=pKlA2UW2JsLPq13uYqQCJlaIJNpep6b_IlU2--a8ljQ,42
+pelican/plugins/markdown_it_reader/markdown_it_reader.py,sha256=HzkqF1H93D6lAf4vsEkV9v1wrbpL0qKaeqVjrzp-gqE,4185
+pelican/plugins/markdown_it_reader/test_markdown_it_reader.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pelican_markdown_it_reader-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+pelican_markdown_it_reader-0.1.0.dist-info/METADATA,sha256=2J_BNb9hjad4Lk3Zy6QsdXZGhTtl_HX89GuO2RLDp8w,3008
+pelican_markdown_it_reader-0.1.0.dist-info/RECORD,,
