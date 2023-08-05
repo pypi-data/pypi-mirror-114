@@ -1,0 +1,11 @@
+playstoreapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+playstoreapi/config.py,sha256=ARupO8jRCSnbW1zBIVv5_25ulMSGQCMkGezz68JEmIE,9776
+playstoreapi/device.properties,sha256=v2KgL2bzXf--WGbGYFjNwprrlfg1FYhB3kdMvZyvGXI,317625
+playstoreapi/googleplay.py,sha256=JYj-cQokiMXvsHEv6VwdlcNw025IhLtGZTdGqCrn4O0,33004
+playstoreapi/googleplay_pb2.py,sha256=w-dp2yLbSlrJPzLwW7GcG6x1GKVlV88rCDkJpd7rr3s,896660
+playstoreapi/utils.py,sha256=t6lBWoQGT_cia6OX8ZMf82TJg8KsKbphdFL5BGWDljs,2163
+playstoreapi-0.5.0.dist-info/LICENSE.md,sha256=14LPA0rabfCzYmsDcEIsPqTSjQDyei6HDvmj2hDk2oc,35133
+playstoreapi-0.5.0.dist-info/METADATA,sha256=DBCTpxFOpFiWPPIE4PovkYd9uwh6RuBHas9Nj_Rb3b8,382
+playstoreapi-0.5.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+playstoreapi-0.5.0.dist-info/top_level.txt,sha256=Frf3bcfDq-uQijPH22ET4DhedsNtrCgE4z_PF2SN9j4,13
+playstoreapi-0.5.0.dist-info/RECORD,,
