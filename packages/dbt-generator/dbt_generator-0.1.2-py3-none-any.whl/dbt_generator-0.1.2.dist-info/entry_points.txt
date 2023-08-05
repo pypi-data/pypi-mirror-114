@@ -1,0 +1,3 @@
+[console_scripts]
+dbt-generator = dbt_generator.dbt_generator:dbt_generator
+
