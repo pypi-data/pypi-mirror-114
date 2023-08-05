@@ -1,0 +1,9 @@
+cbayes/__init__.py,sha256=pSBEsQ-Up5aYe-VcUwSFSJ4uaHxHo-qrM6pKMT-F1jQ,751
+cbayes/distributions.py,sha256=jjbKKBpf-uI-HdVbJv4JYymr3TzL1OBlsAI832u-Vkg,13476
+cbayes/sample.py,sha256=BZSDgQjhsmvf1aEvd1L8UoZAeCa02fwMSWL080P_h3Q,19515
+cbayes/solve.py,sha256=Fs4KNz65m0O4ZxTBWPQR2muQprN8tp7bPR_FVBlo-p0,2313
+cbayes-0.4.dist-info/LICENSE,sha256=6Q5xJkynEzSTWUxKHF-Fx02H4b1Ur2As6mjmuVLRJfo,1072
+cbayes-0.4.dist-info/METADATA,sha256=lt4VbmAgXNnmTT1LeQ_40XUxTgfT9dLgnBXIvSJ0wUg,333
+cbayes-0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cbayes-0.4.dist-info/top_level.txt,sha256=6ar5RXZxi_6_aDQLMvP68TjXR7KijyIG7Cmsyoghieo,7
+cbayes-0.4.dist-info/RECORD,,
