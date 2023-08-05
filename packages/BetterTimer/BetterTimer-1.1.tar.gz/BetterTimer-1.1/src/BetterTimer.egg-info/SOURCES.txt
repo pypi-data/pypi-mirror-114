@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/BetterTimer.egg-info/PKG-INFO
+src/BetterTimer.egg-info/SOURCES.txt
+src/BetterTimer.egg-info/dependency_links.txt
+src/BetterTimer.egg-info/top_level.txt
