@@ -1,0 +1,10 @@
+rpass/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rpass/__main__.py,sha256=Stgt_oqFouqUsZraRP9HYiQJeLgWWeQg9FWOcwRuwBo,1033
+rpass/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rpass/utils/create_password.py,sha256=Pe4Rt69XD4o2B9_GAh4ubjXZCDxtFRZJh3pfbwhP89s,1923
+rpass-0.0.2.dist-info/LICENSE,sha256=Hy8nJFfmy476diq0b9XutKd96FYoT7ZKpCtlFJEunYE,1068
+rpass-0.0.2.dist-info/METADATA,sha256=N4cx1d-nytCww2jBY1CQXCdI1fDVwlp9Npn6skrJswc,2453
+rpass-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+rpass-0.0.2.dist-info/entry_points.txt,sha256=9OHQIhaq2eLqtdVFBCpc1A9a_bIU01i5mgJmJE-r4JQ,65
+rpass-0.0.2.dist-info/top_level.txt,sha256=bSomYQA5HzWrZ8SMVI-X7kL4vqdyEO3lgzQKaRuOE6M,6
+rpass-0.0.2.dist-info/RECORD,,
