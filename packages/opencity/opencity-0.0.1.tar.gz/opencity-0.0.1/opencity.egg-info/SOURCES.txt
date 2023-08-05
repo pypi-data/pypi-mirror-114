@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+opencity/API_helper.py
+opencity/VERSION
+opencity/__init__.py
+opencity/config.py
+opencity/fetch_dataset_list.py
+opencity/get_latest_packages.py
+opencity/opencity.py
+opencity.egg-info/PKG-INFO
+opencity.egg-info/SOURCES.txt
+opencity.egg-info/dependency_links.txt
+opencity.egg-info/requires.txt
+opencity.egg-info/top_level.txt
