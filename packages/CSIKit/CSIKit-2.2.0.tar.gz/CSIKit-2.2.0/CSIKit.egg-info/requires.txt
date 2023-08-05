@@ -1,0 +1,6 @@
+numba
+numpy<1.21,>=1.17
+matplotlib
+scikit-learn
+pandas
+PyWavelets
