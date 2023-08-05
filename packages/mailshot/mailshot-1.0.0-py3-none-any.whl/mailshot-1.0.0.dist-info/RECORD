@@ -1,0 +1,10 @@
+mailshot/__init__.py,sha256=KzuxLUj263nKM7OAhbIzwK50TN9RK-uE6QVWVtH1GBA,38
+mailshot/client.py,sha256=ZndsJjwIRWZTb62tAE72DzgMklWe0W0CKTeBLAT_S4M,1830
+mailshot/config.py,sha256=yLvZgo4VBdj_IbD7TQuQaaJgPWdRlktMvc1987sCmsg,42
+mailshot/mailshot.py,sha256=C6nR6wo_NolTKOqSDBwh1V0fREKwUHaiAI1L57Lr6-Y,4044
+mailshot/utils.py,sha256=DOmz6p2YN8sGZMlv4edsnYdZCWB-Au1fSvLmuIAnF04,1100
+mailshot-1.0.0.dist-info/LICENSE,sha256=NF4R0KDz3thoKzImlJCXZrf7y7GfOOxn6hQkxQdruSg,1090
+mailshot-1.0.0.dist-info/METADATA,sha256=MtTkfKXbQ7IS9Bq-nTUNySx0AsCqOtMcpCeZZE8P1wo,3136
+mailshot-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mailshot-1.0.0.dist-info/top_level.txt,sha256=QtozbkQacNDbQAPae2Yyht6n0WdgNgwhdmebT7YgKTM,9
+mailshot-1.0.0.dist-info/RECORD,,
