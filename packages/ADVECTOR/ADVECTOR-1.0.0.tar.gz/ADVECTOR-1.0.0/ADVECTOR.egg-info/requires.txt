@@ -1,0 +1,11 @@
+numpy
+pandas
+scipy
+dask
+xarray
+wget
+netcdf4
+pyopencl
+matplotlib
+tqdm
+pytest
