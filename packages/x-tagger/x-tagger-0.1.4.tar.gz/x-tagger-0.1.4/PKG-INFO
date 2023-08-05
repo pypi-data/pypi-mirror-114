@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: x-tagger
+Version: 0.1.4
+Summary: A Natural Language Processing toolkit for token classification in its simplest form.
+Home-page: https://github.com/safakkbilici/x-tagger
+Author: Şafak Bilici
+Author-email: safakk.bilici.2112@gmail.com
+License: MIT
+Download-URL: https://github.com/safakkbilici/x-tagger/archive/refs/tags/0.1.4.tar.gz
+Description: UNKNOWN
+Keywords: Hidden Markov Models,Token Classification,Deep Learning For Token Classification
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
