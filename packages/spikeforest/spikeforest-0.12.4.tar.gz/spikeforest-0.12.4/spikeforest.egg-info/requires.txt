@@ -1,0 +1,3 @@
+kachery-client>=1.0.12
+hither>=0.7.0
+sortingview>=0.2.33
