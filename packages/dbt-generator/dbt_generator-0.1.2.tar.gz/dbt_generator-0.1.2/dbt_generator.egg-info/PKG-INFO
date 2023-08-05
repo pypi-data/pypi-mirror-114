@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: dbt-generator
+Version: 0.1.2
+Summary: Generate and process base models for dbt
+Home-page: https://github.com/tuanchris/dbt-generator
+Author: Tuan Nguyen
+Author-email: anhtuan.nguyen@me.com
+License: MIT
+Description: UNKNOWN
+Keywords: dbt python package base models
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
