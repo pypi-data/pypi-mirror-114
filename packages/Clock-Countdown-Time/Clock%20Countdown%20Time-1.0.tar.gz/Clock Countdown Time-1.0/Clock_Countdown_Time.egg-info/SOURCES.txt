@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+Clock_Countdown_Time.egg-info/PKG-INFO
+Clock_Countdown_Time.egg-info/SOURCES.txt
+Clock_Countdown_Time.egg-info/dependency_links.txt
+Clock_Countdown_Time.egg-info/requires.txt
+Clock_Countdown_Time.egg-info/top_level.txt

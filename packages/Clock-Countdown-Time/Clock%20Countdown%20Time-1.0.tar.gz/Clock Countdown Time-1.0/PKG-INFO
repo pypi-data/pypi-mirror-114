@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: Clock Countdown Time
+Version: 1.0
+Summary: Used to countdown time
+Home-page: UNKNOWN
+Author: JohanCoder
+Author-email: immrwant@gmail.com
+License: MIT
+Keywords: countdown
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+This is a very easy clock countdown timer
+
+Change Log
+==========
+
+1 (7/24/2021)
+-------------
+- First Release
+
