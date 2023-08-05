@@ -1,0 +1,8 @@
+README.md
+setup.py
+qx-hello/__init__.py
+qx-hello/hello.py
+qxHello.egg-info/PKG-INFO
+qxHello.egg-info/SOURCES.txt
+qxHello.egg-info/dependency_links.txt
+qxHello.egg-info/top_level.txt
