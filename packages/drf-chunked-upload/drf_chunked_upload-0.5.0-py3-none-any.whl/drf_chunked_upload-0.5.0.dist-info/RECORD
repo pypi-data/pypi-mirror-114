@@ -1,0 +1,17 @@
+drf_chunked_upload/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_chunked_upload/admin.py,sha256=vAbQWisix1tvcY6Vat-NCsc4uWOZCeosJ2qO4GdZd34,475
+drf_chunked_upload/exceptions.py,sha256=x321e40KAjqS5cDv7lIc1TEoSYwTw-pHm7eZV_o0xBI,262
+drf_chunked_upload/models.py,sha256=l6MNyQOfZ6SIFbXOMflnkR9ZRu3UORBxEt6rDSN9erQ,4497
+drf_chunked_upload/serializers.py,sha256=fVXHKUfS9-9b67W76PWTEs-8v3FaDNCZqzpin24qV1c,597
+drf_chunked_upload/settings.py,sha256=iKpzT0kFg9iOkJTwWfdvUdx2LPk0KJBxUXol6DxAIfc,1452
+drf_chunked_upload/views.py,sha256=h0llM2S5YGOHedJacWhqnb_vm1RwrPY-5ZfXn83Qwag,10059
+drf_chunked_upload/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_chunked_upload/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_chunked_upload/management/commands/delete_expired_uploads.py,sha256=iHWzgd5VQ1iCcHZTZmohldU7qR-2efijbqk3StdkZbQ,4583
+drf_chunked_upload/migrations/0001_initial.py,sha256=cUM_AKMXHmI1JLxl_3z0nfmOMKxXco32NCCDRTNzhF4,1370
+drf_chunked_upload/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_chunked_upload-0.5.0.dist-info/LICENSE.txt,sha256=yEiIU30_C-W1OUibUj_8TNn93O6lRm7I66w_s0NNUT4,980
+drf_chunked_upload-0.5.0.dist-info/METADATA,sha256=eZar4a99kYUgWAZFnVVqgXFNMubBao1E8Jps-s7yva0,6410
+drf_chunked_upload-0.5.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+drf_chunked_upload-0.5.0.dist-info/top_level.txt,sha256=4uZcXzL8FgPIAxa41Q35qMADgRoeOVFcaPfUglyh9ds,19
+drf_chunked_upload-0.5.0.dist-info/RECORD,,
