@@ -1,0 +1,3 @@
+[console_scripts]
+dokdo-ping = dokdo:ping
+

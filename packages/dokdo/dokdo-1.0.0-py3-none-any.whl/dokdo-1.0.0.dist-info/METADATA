@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: dokdo
+Version: 1.0.0
+Summary: The beautiful island of the Republic of Korea, Dokdo.
+Home-page: https://becky2sawyer.github.io/dokdo
+Author: pysatellite
+Author-email: pysatellite@gmail.com
+License: GNU General Public License (GPL)
+Project-URL: Bug Tracker, https://github.com/becky2sawyer/dokdo/issues
+Platform: macOS
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dokdo 독도
+The beautiful island of the Republic of Korea, Dokdo.
+
+# User Guide
+- [https://pypi.org/project/dokdo](https://pypi.org/project/dokdo)
+```python
+$ pip install dokdo
+$ dokdo-ping
+```
+
+![dokdo](https://static.thenounproject.com/png/182998-200.png)
+
+# 비슷한 프로젝트
+- https://github.com/wonderlandpark/dokdo
+
