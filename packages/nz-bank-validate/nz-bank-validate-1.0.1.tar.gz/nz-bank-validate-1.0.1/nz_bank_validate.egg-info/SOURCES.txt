@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+nz_bank_validate/__init__.py
+nz_bank_validate/__main__.py
+nz_bank_validate.egg-info/PKG-INFO
+nz_bank_validate.egg-info/SOURCES.txt
+nz_bank_validate.egg-info/dependency_links.txt
+nz_bank_validate.egg-info/top_level.txt
