@@ -1,0 +1,6 @@
+numpy>=1.17
+xarray>=0.16.1
+pint>=0.16
+
+[:python_version < "3.8"]
+importlib-metadata
