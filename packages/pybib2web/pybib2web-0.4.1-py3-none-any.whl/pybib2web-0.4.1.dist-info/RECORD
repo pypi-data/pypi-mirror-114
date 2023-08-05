@@ -1,0 +1,15 @@
+pybib2web/__init__.py,sha256=QYPJgivtwN32U8A_ETHsED25ighAfogsAGIaa8B0OTw,2589
+pybib2web/bibexport.py,sha256=kC2RqgSAjW0foyn-iVewntddF0oibvjetn7Q94DAT-w,1412
+pybib2web/bibparser.py,sha256=X-NIbFqx5tLgzaWe7ckwVUktlDljHUGfO9wEgF5qXuo,3428
+pybib2web/categories.py,sha256=1yTdRVU99oq9S5IX5K82O-qhRypJuoknfr6iR0psYx0,6136
+pybib2web/config.py,sha256=T4AvDaPt6EijYBWVyD7uF56U-oMWix4T0QjfYNpiHOM,1750
+pybib2web/htmlexport.py,sha256=wp5af9caH-ofntLxdAe_991k30R4F28J9gqoEb3cZck,27893
+pybib2web/util.py,sha256=AmG0qGL3pxXavZNmv4h43oUHBsEu7cDWwA6-Wv53bJ0,2488
+pybib2web/version.py,sha256=KOsBVJFqPJM7hWojMyokOhu2Q6uDNkFuqIz2Zmtx8BU,249
+pybib2web-0.4.1.dist-info/Apache-2.0.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+pybib2web-0.4.1.dist-info/METADATA,sha256=Nx3nPRwkd1dILBHP1eZ5Z13ivdSEjhsG3eaqAP6-MoI,3323
+pybib2web-0.4.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pybib2web-0.4.1.dist-info/entry_points.txt,sha256=1jSKHrZm8tmfAyUHmkqRkx6ua7YT4vS1k3UkiKmjIoA,46
+pybib2web-0.4.1.dist-info/top_level.txt,sha256=iefblCdHrLt4dkiYY9wI6vlvhVJnXNtFlvYLq9KXGMg,10
+pybib2web-0.4.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pybib2web-0.4.1.dist-info/RECORD,,
