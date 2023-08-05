@@ -1,0 +1,11 @@
+brewblox_dev/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+brewblox_dev/__main__.py,sha256=p-_BgEAzWgtzUKdmNQHCSmrGN2hpFUi1fDW5HoaXVnw,407
+brewblox_dev/docker.py,sha256=pejQ7lCf15z22T5qP1P6wiXWtrue5_shzeMSZ9EFL5s,4374
+brewblox_dev/localbuild.py,sha256=lpgwLkNPvZZNnXvQ21AGMxFn0jihoy_UJAxkeJYweHw,2999
+brewblox_dev/repository.py,sha256=g4x7cnw3jE8Hp62V73vaR7u8nnctZcYwKykxIZZLMrE,4483
+brewblox_dev/utils.py,sha256=1NsuozigxTXEJqgy9F03HLVPuhLhoZVyPxVYtCqZTfs,929
+brewblox_dev-1.8.0.dist-info/entry_points.txt,sha256=EssYNsTZ0elGRq0S_yebPx-bJZc3WEx-08NX8XvF0DY,59
+brewblox_dev-1.8.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+brewblox_dev-1.8.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+brewblox_dev-1.8.0.dist-info/METADATA,sha256=hfayCvI60MSrDOnwkjRDjRUPpuRzd5ZN2GnY3sxrVCk,598
+brewblox_dev-1.8.0.dist-info/RECORD,,
