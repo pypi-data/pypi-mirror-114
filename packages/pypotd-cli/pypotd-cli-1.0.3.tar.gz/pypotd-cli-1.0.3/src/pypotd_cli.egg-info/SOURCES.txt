@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+src/pypotd-cli/__init__.py
+src/pypotd-cli/__main__.py
+src/pypotd-cli/app.py
+src/pypotd_cli.egg-info/PKG-INFO
+src/pypotd_cli.egg-info/SOURCES.txt
+src/pypotd_cli.egg-info/dependency_links.txt
+src/pypotd_cli.egg-info/requires.txt
+src/pypotd_cli.egg-info/top_level.txt
