@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+flagsmith/__init__.py
+flagsmith/flagsmith.py
+flagsmith.egg-info/PKG-INFO
+flagsmith.egg-info/SOURCES.txt
+flagsmith.egg-info/dependency_links.txt
+flagsmith.egg-info/requires.txt
+flagsmith.egg-info/top_level.txt
