@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+mangadex/__init__.py
+mangadex/api.py
+mangadex/errors.py
+mangadex/models.py
+mangadex/url_models.py
+mangadex.egg-info/PKG-INFO
+mangadex.egg-info/SOURCES.txt
+mangadex.egg-info/dependency_links.txt
+mangadex.egg-info/not-zip-safe
+mangadex.egg-info/requires.txt
+mangadex.egg-info/top_level.txt
+test/test_unittest.py
