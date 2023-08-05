@@ -1,0 +1,8 @@
+setup.py
+pylogpro/__init__.py
+pylogpro/level.py
+pylogpro/pylogpro.py
+pylogpro.egg-info/PKG-INFO
+pylogpro.egg-info/SOURCES.txt
+pylogpro.egg-info/dependency_links.txt
+pylogpro.egg-info/top_level.txt
