@@ -1,0 +1,9 @@
+*.pyc
+.eggs
+.cache
+__pycache__
+models
+build
+dist
+notebooks/.ipynb_checkpoints/
+.pytest_cache
