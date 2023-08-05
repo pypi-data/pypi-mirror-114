@@ -1,0 +1,9 @@
+README.md
+setup.py
+pypi_package_guide.egg-info/PKG-INFO
+pypi_package_guide.egg-info/SOURCES.txt
+pypi_package_guide.egg-info/dependency_links.txt
+pypi_package_guide.egg-info/top_level.txt
+pypi_package_template/__init__.py
+pypi_package_template/phraser.py
+pypi_package_template/data/phrases.txt
