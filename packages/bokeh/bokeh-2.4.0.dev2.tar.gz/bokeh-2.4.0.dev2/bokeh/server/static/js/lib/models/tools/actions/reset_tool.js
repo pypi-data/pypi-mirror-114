@@ -1,0 +1,23 @@
+import { ActionTool, ActionToolView } from "./action_tool";
+import { tool_icon_reset } from "../../../styles/icons.css";
+export class ResetToolView extends ActionToolView {
+    doit() {
+        // reset() issues the RangesUpdate event
+        this.plot_view.reset();
+    }
+}
+ResetToolView.__name__ = "ResetToolView";
+export class ResetTool extends ActionTool {
+    constructor(attrs) {
+        super(attrs);
+        this.tool_name = "Reset";
+        this.icon = tool_icon_reset;
+    }
+    static init_ResetTool() {
+        this.prototype.default_view = ResetToolView;
+        this.register_alias("reset", () => new ResetTool());
+    }
+}
+ResetTool.__name__ = "ResetTool";
+ResetTool.init_ResetTool();
+//# sourceMappingURL=reset_tool.js.map
