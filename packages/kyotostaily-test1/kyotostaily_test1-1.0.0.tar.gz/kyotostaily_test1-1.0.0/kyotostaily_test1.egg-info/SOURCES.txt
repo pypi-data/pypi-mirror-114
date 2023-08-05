@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+kyotostaily_test1/__init__.py
+kyotostaily_test1/converter.py
+kyotostaily_test1.egg-info/PKG-INFO
+kyotostaily_test1.egg-info/SOURCES.txt
+kyotostaily_test1.egg-info/dependency_links.txt
+kyotostaily_test1.egg-info/not-zip-safe
+kyotostaily_test1.egg-info/requires.txt
+kyotostaily_test1.egg-info/top_level.txt
