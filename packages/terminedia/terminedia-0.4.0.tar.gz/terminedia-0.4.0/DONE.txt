@@ -1,0 +1,484 @@
+version 0.4
+============
+ - Change mechanism of 'square' resolution in shapes to work with full color:
+    - automatically set the other half of th character to keep an independent color by forcing the background
+    - Shape.square.get_at returns Color, not boolean
+    - Improved `TM.shape` call to accept "promote" and "resolution" parameters, allowing loading an image file in square-full-color with a single call. (try "TM.shape(filename, promote=True, resolution='square', size=(60,60))")
+    - Update terminedia-image example to be able to use 'square' resolution
+    - Make terminedia-image threshold images for 'braille' and 'high' resolutions
+ - Sprites are added to shapes as "active" by default (reverses default of active=False).
+ - Force Shapes in Sprites to be "FullShape" by autopromotting the shape on the constructor.
+ - create a "TransformerContainer.bake" method to eagerly apply a stack of transformers to a shape.
+ - Sprites promote shapes whitespace and default colors to transparency when created by default (pass alpha=False to prevent)
+ - Sprite stack rendering honors TRANSPARENT special value
+ - Add 'pretransformers' context value which can hold a TransformersContainer and eagerly transform data when writting to a Shape(__setitem__). The "transformers" context value, on the other hand, works on _reading_ shape data (__getitem__)
+ - sextant (1/6 block) (depends on unicode 12 with vintage charset)(V)
+ - ObservableProperty descriptor class enabling reactive programing patterns(V)
+
+ - Screen.data aliased to Screen.shape to indicate it _should_ be used directly, and it is no internal-state only.
+ - Screen.accelerate to bypass legacy drawing mode when using the mainloop
+ - TM.contexts.active_context registry allow contexts entered with "with context()" to affect downstream functions, even
+        withotu passing "ctx" explictly.
+ - TM.Effects can be constructed from strings (which means one can assign a string with the effect name directly to TM.context.effects)
+ - 'floodfill' method in drawing API.
+ - Basic Raster "Undo" subsystem
+
+ Bugfixes:
+
+     bug: (big issue): workaround stdout blocking and raising error when in input.keyboard reading mode.
+
+New Mouse and events:
+
+    - implement SIGWINCH signal handler to enable auto-resize/reflowing on terminal window size change:
+        - Create a signal handler
+        - Register the signal handler on Screen instantiation
+        - Unregister signal handler on Screen de-instantiation
+        - Handler should send Terminedia event
+        - decouple terminedia event "dispatch" from actually calling the callbacks; create an event "process" that does that; [V]
+                - add  a signl queue for holding all events. (deque).
+                - This will prevent screen.data Shape resizing in the mid of some processing and potential catastrohpic bugs
+        - Actually create "shape.resize" methods - (just truncate on reduce, fill with context attrs on enlarge)
+        - Dispatch a self.data.resize order upon screen resize event on Screen
+    - terminedia_main Asynchronous mainloop
+    - ainput asynchronous input function
+    - terminedia "sinput" function: synchronous version of ainput
+        - inkey should error on posix if called outside of a "keyboard" context manager
+    - "sinput" and "ainput" can take context parameters
+
+New 'transformers library':
+    - Set of Kernel transformers to convert blocks to "line art" by using box drawing (table drawing) unicode characters
+    - ThresholdTransformer - apply a threshold filter to a colored image.
+    - AddAlpha Transformer to replace empty spaces, default-fg, default-bg, no effect with TRANSPARENT special value
+
+
+New rich-text and text-handling features:
+    [text-branch]
+
+    - Refactor 'text.py' into directory:[V]
+        - separate 'font' code into text/fonts.py [V]
+        - text_planes/big text into text/planes.py (V)
+        - file with text utilities for parsing/rendering text:
+            - split string into units containing a single grapheme, by grouping "combining characters" together (V)
+            - Refactor code to have a core to be used by  backend.print, screen.print, text.at, shape.print [V]
+    - create aliased string names for the text[...] text planes [V]
+    - Add tests to terminedia-planes [ongoing]
+    - Avoid creating a new "Text" instance on each text-plane access![V]
+    - Tests for styling bases classes in progress - testing attribute changing and position[V]
+    - Rename "Text" class to "TextPlane" [v]
+    - Remove dictionary attribute with concrete TextPlane information: use TextPlane instances themselves [v]
+    - Make assignment of string to shape or text area cell spread the text across as many cells as needed:[V]
+        - correctly detect combining characters so that combined characters live on the same cell (V)
+
+        - create markup language for embedding context changing directives inside a single string:[WIP]
+        - make it usable by assignment, `print` and `at` methods on shapes, scren and text [V]
+
+    - changed text rendering to silently "swallow" out of range characters, instead of raising[V]
+    - Text entity, akim to "shape" or "sprite" which allows for flowing text [V]:
+        - BUG: when rendering spaces, attributes (like background) are not updated (V) - fixed by sprite transparency handling implementation.
+        - BUG: on rendering rich text, text_plane's context is not being taken in account. (i.e. if color is "red", DEFAULT_FG is being used instead) [V]
+        - The "Text entity" endded up implemented as the pre-existint "text_planes" themselves [v]
+
+    - create markup language for embedding context changing directives inside a single string:[V]
+        - make it usable by assignment, `text[x].print` and `at` methods
+        - BUG: when rendering spaces from text-planes, attributes (like background) are not updated (V):
+                - fixed by sprite transparency handling implementation.[V]
+        - Implement a way to "stream" rich text inside these text-plane containers [V]:
+            - TM.text.style.StyledSequence is the class used for that [v]
+            - Streamed text should allow marks for changing style (color, bg, effects, direction, position)[v]
+                - accept tokens in embedded square-brackets in the string ex.: "abc[color:red]def[V]
+                - Accept absolute/relative movement with "[+x,+y]" tokens embedded in the string (and work as "portals")[V]
+                - allow for 'pop last parameter of this type' tokens ([/color], [/effects])[V]
+                - allow for default colors with [color:default] (V) (but check default-color bug)
+            - Allow a call to MLToken.parse to be passed a transformers-mapping, and use it as a source for transformers objects in the  markup [transformer:...] elements [V]
+            - Apply transformers eagerly on a  per-character base [V]
+                    - Added "pretransformers"  ( regular context-transformers are currently lazy, applied at rendering time only, and are "flat" for the whole shape) [V]
+                    - Change MLTokenizer to create 'pre-tranformer" context attribute on "transformer" token [V]
+                    - Manage list of pretransformers in context during StyledText rendering [V]
+                    - Add new features to transformers that will make sense for text-streams as opposed to 2D shape data:[V]
+                        - character linear position in text - sequence_index [V]
+                        - transformation starting point inside main sequence - sequence_absolute_start [V]
+                        - transformed sequence_len - sequence_len [V]
+                        - transformed sequence itself - sequence [V]
+                        - allow a markup with a transformer to specify the block length that will be transformed -
+                            (the 'sequence_len' and 'sequence_index' parameters are relative to this block): [V]
+                                - a length in the Mark object itself [V]
+                                - a [/transformer]  mark in the text. [V]
+                                - take care that mixed transformers started by markup and by embeded Marks in the text_plane  keep their counts without interfering one in another [V]
+                    - find a way to declare and retrieve meaningful pretransformers from markup: [V]
+                        - Text class includes a ".transformers_map" attribute - a plain dictionary with transfomer-names as keys, and Transformer instances as values - the names can be used from the rich-text markup [V]
+
+
+        - Any rich writting on a text-plane is recorded in a non destructive way, so it can be retrieved and re-rendered in a follow-up frame (with possibly differing attributes)[V]:
+                - base suport [V]
+                - Refactor to specialized data object instead of parallel list and set (to preserve order) (implemented as a dict with None values) [V]
+
+        - create special markup for possible but hard to create patterns: apply gradients, modify color by tick and position:[V]:
+            - these can be achived by adding "transformers" to "attributes" in the Mark objects.[V]
+            - Allow Transformers inlined in Marks to have "sequence_index" and "sequence_len"  allowed dependency injections:[V]
+                - Transformers is changed so that arbitrary dependency injection names can work: their values have to be  set as attributes on the transformer instanc prior to rendering [V]
+                - StyledSequence rendering machinnery have to setup these parameters in the transformers.[V]
+                - StyledSequence rendering machinnery have to pop a transformer once its spam is due.[V]
+                - sequence_index should count from the place the Mark containing the transformer is active, not the absolute value[V]
+                - sequence_len, likewise, should reflect the length of the string that is modified by that Mark.[V]
+                - allow  closing Marks, popping a transformer to specify the affected length [v]
+                - also allow "lenght" field on markups and Mark to specify the affected length of text [v]
+
+        - Markup is super-rich allowing marks indicating attribute changes to be set either
+            in the text sequence, or in locations on the Text object
+    - Multi-line text-flowing, by using "portal" Mark objects created automatically to the
+        right of the last  column of the TextPlane object - each of these "teleport" the
+        text-flow to the column 0 on the next line.
+    - To enable the automatic portals and some other features, a specialized container
+        for Marks assigned to a textplane is created (MarkMap) [V]:
+            - it is tightly coupled with Mark, StyledSequence and TextPlanes (sorry purists)[V]
+            - It can draw "rectangles" of markers in order to create the portals at
+                text-plane boundaries[V]
+            - it can handle special Marks which position varies with the current tick [V]
+
+    -  Method .add_border to the TextPlane class - allowing fancy unicode frames (by using ready_made tranformers available on the transformers.library) [V]:
+        - create text[x].add_border method [V]:
+        - Text.update for adding frames does: [v]
+            - move special next-line portal "markers" to the recalculatd last-column of the text-area[V]:
+                - Caused a breaktrhough in the code with the "ObservableProperty": the start of an event system [V]:
+                    - Padding changes trigger changes to computed with and height of textplanes through ObservableProperty suscriptions [P]
+                - create the concept of marker being rallowed to be rlative to the left margin or bottom[v]:
+                    - RelativeMarkIndex class in TM.values created, resembling SymPy stuff[v]
+                    - MarkMap separates normally indexed marks and relativemarks[v]
+                    - markmap __getitem__ working for all relativemarks [v]
+                    - markmap __setitem__ working for all normal and relativemarks [v]
+                    - markmap __delitem__ working for all normal and relativemarks [v]
+                    - Markmap __getitem__ should be optimized when rendering text by baking in all relativemarks when .prepare is called (tests in place for this) (checking the existence of a mark at an index triggers a lot of code) [V]
+
+
+
+    - modify text_plane.at method to use styled sequence (Screen.print_at calls this as well) [V]
+    - fix and modify "=" in text_plane to use styled_sequence[V
+    - Allow a "size" attribute accepting the text-resolution to use on Screen.print_at method [V]
+    - create aliased string names for the text[...] text planes [V]
+    - allow programatic attributes on Mark objects (computed Color, etc...)[V]:
+        - implemented as Transformers.[V]
+
+    - correctly detect if final transformed character takes more than 1 cell width after applying effects, and correctly use 2 cells for character [V]
+        - retrieve last-character width after calling Shape.__setitem__ [V]
+        - check that last-character width works with multiple-character grapheme [V]
+        - allow Shape.__setitem__ to set character to the _left_ of given position if a special attribute is set in the context (and maybe if direction==Right) [V]
+
+        - implement a dry-run TextPlane.extents call [V]
+        - implement TextPlane[num].last_pos as a simple instance attribute [V]
+        - make text-rendering on plane thread-safe [V]
+        - Write tests for .extents[V]
+    - when printing double-width characters, check if the skiped cell contained
+        any positional Mark before rendering the next character (github issue #16)[V]
+
+[gradient-transformers-upgrade]
+    - Allow gradient to be applied to background, char and effects channel as well as "foreground"
+    - Accept an optional "size" parameter  to the GradientTransformer
+    - accept an optional "repeat" mode parameter to the GradientTransformer:
+        - repeat mode "saw"
+        - repeat mode "triangle"
+        - repeat mode "truncate"
+        - repeat mode "none"
+    - accept an optional "offset" parameter
+    - improve discoverability and docs
+    - Gradient class refactored to be able to interpolate generic values: ColorGradient should be used for color gradients.
+
+Minor Features:
+ - TransformersContainer and SpriteContainer (TM.Utils.Hooklist)s can be shallow-copied with copy.copy()
+ - Context.foreground is an alias for context.color
+
+version 0.3
+============
+
+Bezier curves primitive (v)
+2D Vector class (v)
+PNM Image File loading and Displaying (v)
+Shape Class (v)
+Image File Displaying Support(v)
+Preliminary CLI (v)
+move examples to CLI-based standalone scripts available to pip-installs (v)
+refactor into full package (v)
+Big Font rendering - using multi-block for large characters composed of multiple pixels. (V)
+Bold, blink and underline text support (V)
+Basic support for 'sprites': independent images that can be repositioned (V)
+    - Added 'transformers' support to Sprite.
+"Square" half block resolution
+
+Simple Gradients
+Transformers examples using gradients, and converting colors to characters
+Color HSV Support
+
+multiple backends:
+    ANSI backend (file or text string) (V)
+    HTML backend
+
+    - "plain stream mode": provide an easy to use "terminedia.print" function to enable the use of colors and character effects without breaking the existing flow on the tty - (no need to instantiate a Screen or print at a specfic position)
+
+    - braille-block (1/8 block)(WIP):
+        - refactor "HighRes" class splittin a base class sub-pixel resolution agnostic (V)
+        - refactor "BlockChars" to have a usefull superclass (V)
+        - add equivalent class using Braille characters as 2x4 pixel blocks (V)
+        - Add a provisional namespace "braille" for super-resolution (V)
+        - Add a Text[2] plane using braille chars(V)
+
+unicode latin-effected characters as character effects:
+    (like digits and letters inside squares and circles, combining stroke, underline, slash, and so on)
+    (should use the "Effects" space currently marking terminal-wise text effects,
+     and be applied only at rendering time - "value_data" structures should retain page-0 range latin text)
+     - encircled chars(V)
+     - squared chars(V)
+     - Reversed squared chars(V)
+     - Refactor char translation engine to enable auto-generation of more unicode-alphabet families (WIP)
+     - mathematical sans-serif bold italic (WIP - missing digits, think on refactoring)
+     - Small (combining?) chars
+     - Fix internal data and cursor positioning for non-single width characters(V)
+     - Allow manual selection of double-width chars (the "math-bold-italic" unicode group is listed as "single width", but does not look nice, would be better as double-width)
+
+Single-write optimization:(V)
+    pass a "buffer" parameter around on the method-chain calls for screen rendering in the classes in Terminal.py (WIP)
+    have an option to export the rendered buffer as a single block of bytes: a screenshot snapshot with built-in ANSI sequences.(V)
+    Add an optional parameter to Screen.update (maybe rename the method to 'render'?) to draw to a string buffer instead of the terminal.(V)
+
+
+    - Reactive rendering
+        - Reactive rendering to update just screen parts where srawing activity took place
+        - update terminedia-shapes to naively use sprites with the existingv"eager fullscreen
+        update" per frame. take note of performance. (V)
+
+        - ANSI backend "fast_render" method: called in place of the "_print" method, takes
+        a list of rectangles and an image data source - caches color, bg, effects by itself
+        inside a rectangle, and change status by calling ".csi" functions by itself (V)
+            - fast_render method in ScreenCommands (V)
+            - Call to fast_render based in root-context flag(V)
+            - uses absolute-positioning (V)
+            - updates foreground and background (V)
+            - Rendering tests (V)
+            - apply unicode effects (V)
+            - cache unicode effects (V)
+            - apply terminal effects (V)
+            - test rendering of effects (V)
+            - strange bug on first-frame of terminedia-shape, showing a displaced sprite in a double-rendering (V)
+            -  bug on terminedia-shape: first-frame shows shape above line 0 on screen, rendering goes past screen existing lines (V)
+            - Naive terminedia-shapes "FPS" measurement: showing a rough 33% improvement in performance for full-screen fast-rendering(ex.: 0.18 seconds per frame to 0.12 seconds per frame at the same resolution)
+            (V)
+            - Frame time improved to 0.03 sec. on terminedia-shapes example.(V)
+
+        - Use data structures to track dirty rectangles in a shape for fast_update =
+            render only modified rectangles by default (V):
+                - have a dirty_ namespace in shapes for handling this (V)
+                - have a specialized dirty_registry data structure (V)
+                    - (internaly using a heapfied list - maybe an specializd data structure as a linked list would be better)
+                - Have sprites track their dirty regions (including recursively if needed) (V)
+                - Mark whole shape as dirty if any active Transformer is taking "tick" as input (V)
+                - Track all changed pixels in a shape, marking a tile (a sensible sized square region) as dirty on any changes. (V)
+                - in a test with the working features, terminedia-shapes have dropped from a 0.28s/frame to 0.07s/frame.(V)
+                - reset sprite dirty-rects on rendering(V)
+
+        - screen.update changed its behavior to use rects marked as dirty.(V)
+        - Setting "context.fast_render" to False on the root context retains old semantics, of pixel-by-pixel
+        rendering to a "journalingcommands" proxy to the backend. Interactive mode uses this flag to ensure screen-redraw on update(V)
+
+
+
+Text and big-text capabilities:
+
+    enable new blank shape with given size (V)
+    sanitizing load from data for shapes(V)
+    enable drawing context and api for shapes(V)
+    enable shape drawing (V)
+    enable shape blit (V)
+    write shape-concatenation method (V)
+        use "imp.resource" to read default font data (allows terminedia to run from zipped egg) (V)
+    create "render text" call returning a shape (V)
+    create "render text and blit at position on screen" call on drawing api (V)
+    write example script using large-text rendering (V)
+    connect Screen "print" and "print_at" to ".text" namespace.(V)
+
+    Improve font selection and loading (V)
+    Bundle 8x16 UNSCII font to packages (whooping 3.5MB) (V)
+    read font "planes" on demand(V) (characters are lazily loaded when the first char in a 256/char block is requested)
+
+create full fledged shape with char, fg, bg, effects
+        implement FullShape class (V):
+        class with internal data planes for each attribute (V)
+        class bound as internal storage for screen (V)
+        bug: issues with internal data and rendering(V)
+        Fix text rendering into FullShape(V)
+        FEATURE: being able to draw in differing planes (value, FG, BG, effects) independent way(V) (Use TM.TRANSPARENT as value not to affect a given plane- even for "char")
+        write a refresh method to redraw a Screen rectangle - allowing double-buffering drawing (V)
+    Add "render" method or other API for early implementation of other backends (not terminal)
+- accept context attributes (color, background, effects) as keyword arguments on all .draw methods [V]:
+        - reate contextkwords decorator [V]
+        - refactor methods in drawing.py [V]
+        - optimize decorator not to enter a 'with' context block if not needed
+                (it slows down certain operations)[V]
+        - fix bug that prevents temporary context drawing with the same color
+                (context is reset to black on a second call)[V]
+        - fix subshape slicing drawing (fill is broken)[V]
+        - refactor various 'print', 'at' and 'set_at' around[V]
+
+
+Imaging capabilities:
+    make text effects work on terminal (V)
+    Associate a base FullShape class with a Screen (V)
+    Add example with terminal text effects(V)
+    enable rendering of pixels with char, fg, bg, effects on screen (V)
+    enable rendering of arbitrary pixels on arbitrary shape types (V)
+    update blit and other actions on drawing api to use all pixel properties. (V) (via context.transfomer)
+    implement handling of "TRANSPARENT" as FG, BG and Effects keeping attribute (V)
+
+
+General Refactoring:
+    refactor context initialization (V)
+    Convert directions to specialized V2s, with a nice repr, instead of Enums (they have to be interchangeable with plain V2) (V)
+    Add a proper rectangle class (V)
+    Refactor APIs to accept Rectangle(V)
+    Introduce "Shape view" so that shape-slices work like a rectangular view with no data-copying (V)
+    improve "blit" to allow optional source and destination ROI (V)
+    create a proper color class:
+        - Accept 0-255 or 0-1.0 3 sequences for RGB color
+        - Accept internal constants and a have a proper way to check for then
+                 (defaultFG, defaultBG, Transparent, context)
+        - Normalized reading and representation
+
+
+Improvements and small features:
+    Text effects are not cached in the terminal journaling-commands (V)
+    Fix tm.text.render into palettedshape: result is mixing spaces and color-constants in data
+    make double-width unicode characters take 2 character cells. (V):
+        - create way to check char width and constant (V)
+        - refactor text effects flags to be iterable (V)
+        - implement fix at FullShape.__setitem__, __getitem__ (V)
+        - implement fix at drawing.blit
+        - implement fix at text[1].at (V)
+        - implement fix at Screen.__setitem__ (V)
+        - implement fix at terminal.Commands.print
+        - fix example snake game - second half of apple should be edible.(V)
+        - fix regression in high-res shape drawing(V)
+    Fix blitting from FullShape (V)
+    fix-highres-shape-bliting color leak (V)
+    fix breaking on terminedia-context (context initialization) (V)
+    fix regression on terminedia-context (V)
+    FIX DOCUMENTATION GENERATION (V)
+    Refactor "context" namespace into full class with descriptors. (V)
+    Optimize extent-limted blitting to skip fast to next shape line (by sending a next-line sentinel to shape-iterator) (V)
+    improvement: Screen.set_at should pass a pixel straight to __setitem__ and not set the context and pass only th value
+    .text rendering should be transparent on unused pixels by default
+    terminedia-image should resize to full screen-size when loading image (V))
+    add an --output parameter to terminedia image to render output as ansi-laden txt file(V)
+    add a <br> element after outputting a full row in the HTML backend (by  sending a "\n" and converting it in "html.print"(?)) - so that html output can be properly copy and pasted. (V)
+    Toggle terminal screen buffer when clearing screen: "magically" restores terminal content on Screen.__exit__(V)
+    - add an option so that rectangular area rendering to files be '"relocatable" - suppressing absolute cursor movement sequences (V):
+
+smaller features:
+    - accept context attributes (color, background, effects) as keyword arguments on all .draw methods [V]:
+        - change decorator (and possibly context) to allow using a whole
+            context as parameter to update the current context (V)
+        - improve decorator to proper fix the signature of the decorated functions (V)
+            (and then record resulting hack as an answer to https://stackoverflow.com/questions/34402773/signature-changing-decorator-properly-documenting-additional-argument) (V)
+    - make emoji's and unicode chars easier to use:
+        - implement basic search for character names with partial match
+            (eg: so that one can search for all characters containing "square" or "chess" in the name)
+    - shape "clear" call:
+        - method to redraw text from a given plane/roi.(V)
+    - Context kwords should take "direction" as an option(V)
+    - bug: Screen.clear() should clear the associated shape in Screen.data (V)
+
+    - bug: DEFAULT_FG displaying as black for blits and sprites (terminedia-shapes in dark theme konsole)(V)
+
+    - Add ANSI commands for relative cursor movement (V)
+        - enable relative positioning in Terminal class (V) (but not perfect, see bellow)
+        - Add state attribute to terminal backend indicating relative positioning should be used (V)
+        - change 'shape.render' to use relative positioning for ansi and not home cursor to 0,0 (V)
+    Rename "realtime_keyb" to "keyboard" (and keyboard.py to input.py) (V)
+    Added "input.getch" function, which pauses until a key is pressed
+    Added a "clear" shape method to empty-up a target.
+    Made Character class returned by TM.unicode.lookup directly usable as a string (yay emoji!)
+
+
+
+
+Color class:
+    - Create a color class (V)
+    - Use color class in terminal commands(V)
+    - Add support for html/css color names (V)
+    - Add proper support for special constants: (default_bg, default_fg, etc...) (V)
+    - use color class in html commands (V)
+    - BUG: fix image-rendering to terminal using "default_fg" for black color.
+
+
+HTML-Backend Steps
+    find-out a working HTML model able to represent chars as in the terminal (V)
+        - recreate ScreenCommands equivalent to generate HTML(WIP):
+            - make minimal working version outputing colored blocks (V)
+            - Fix span-tag re-use over multiple characters in the same row (V)
+            - Implement text and character effects (V):
+                - apply "terminal effects" into html rendering with inline CSS (V)
+
+        - Refactor JornalingScreenCommands so that its logic can be reused by HTMLCommands (V)
+        - refactor Journaling...Commands to generate HTML(V)
+        - Add a mechanism to provide default actual colors for "default_fg" and "default_bg" (V)
+    re-write functionalities of Commands and logic of Journaling commands for HTML (V)
+    Implement HTML render output for files in images.Shape (V)
+    Change terminedia-image example script to accept a "-backend HTML" option and create an HTML file.(V)
+
+
+Transformers :
+    Transformers are a generic word for filters, which include attached shapes that will work as extra layers.
+    Improve context transformers to become a friendly, stackable class with defined API:
+        - a TransformerContainer class is attached to each context in "transformers"
+            - a specialized sequence to hold a Transformers stack for each context
+            - exposes "pixel", "char", "foreground", "background" and "effect" properties which
+            yield the final value for a pixel in a given position when it is read via "__getitem__" in a Shape
+            - a TransformerContainer is also attached to a Sprite and applies to all shapes within (Sprite.transformers)
+        - Transformer:
+            a class with slots for each possible transformation a pixel might go through:
+                - slots: pixel, char, foreground, background, effect:
+                    each slot is a callable - in which the parameters may take any combinations
+                    of the names "self, value, pos, pixel, source, tick, context":
+                        when each pixel is _read_ on the base-shape, its contents
+                        are processed in each of the slots in the transformer before
+                        its value is delivered. Thus, if the shape is used
+                        in a "blit" operation, all its values are processed.
+
+                        For example, a transformer with a "char" slot that have
+                        as parameters "char, foreground" will receive, for each pixel,
+                        the character and the color, and should return  a new character that
+                        will replace the character in that position.
+
+                        these are the input parameters valid for the slot characters:
+                            - self: the Transformer instance
+                            - value: the pixel value (character)
+                            - pos: the coordinates for the current pixel
+                            - pixel: the whole pixel (4-value consisting of char,fg, bg, effects)
+                            - source: the shape where the transformer is being applied
+                                      (NB: one can't read the shape's values with the "[ ]"
+                                       syntax from within a Transformer code - the values
+                                       read through that are processed in the transformers.
+                                       Use `shape.get_raw` instead)
+                            - tick: a frame count from the start of the process -
+                            currently not used - but idea is a monotonically growing
+                            number each time the shape is rendered.
+                            - context: the shape's current context
+            KernelTransformer:
+                - A subclass that makes easy to transform the current pixel
+                value based on the values of the surrounding pixels
+                    - preconfigured kernels:
+                        - can automatically make a blocky image drawn into unicode/ASCII line art (only simple, ASCII +|- kernel implemented for now)
+
+Windows Suport [WIP]
+    - install and activate colorama if under windows (V)
+    - create a non-blocking keybard reading system using mscrvt api (V)
+
+
+Bugs:
+    bug: CRITICAL: effects refactoring led rendering to be B&W (V)
+    bug: unicode_effects not being applied on direct "screen.print" call.(V)
+    Bug: current "inkey" is buggy as repeated keystrokes are bundled in the same inkey response. (completly bork at higher repeat rates)(V)
+    bug: re-entering a screen context and blitting  is not rendering the char at [0,0] (V)
+    bug: Terminedia-shape with custom shape may trigger "going left" after going up or down. (V)
+    bug: blitting full-shape to full-shape destroys characters and keep only blocks (V)
+    bug: RootContext repr not working (V)
+    bug: Terminedia-image not proper resampling images (getting out of range errors for full-sized images)(V)
+    bug: colors in the 0-255 range are not working as terminedia-text value for color option
+    bug: PGMShap class incorrectly using "default color" for black pixels (termined-image default loading is broken after refactoring to use Color class)
+
