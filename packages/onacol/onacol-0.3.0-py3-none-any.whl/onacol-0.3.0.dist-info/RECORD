@@ -1,0 +1,10 @@
+onacol/__init__.py,sha256=2pVZ443jjHeUtKja_apXnwJPiccSwcIK7i7hLFKaxdc,203
+onacol/base.py,sha256=Q3LOzJ43QJrDdEe1EYm4R0KcnejQTZHrgkpBVOZiPn4,186
+onacol/config_file.py,sha256=38ADRH_oIuAXYNo80lycVkBkDuNMIbVQyQjVBdpkwlg,4732
+onacol/config_schema.py,sha256=UiLXLbQgfWxZeOkYHqXaPu5CqH4yI2aLlYEsEda7q6o,12593
+onacol/flat_schema.py,sha256=8XTDNtU10enQNhD1abdJ4mIWOFf0veQoZR4n_SAl-gA,6649
+onacol/onacol.py,sha256=ldv477KyblYw5gBM5PSixInlkR8zlJtjro6X_hx90u0,6780
+onacol-0.3.0.dist-info/LICENSE,sha256=Mi5rr9p9qQdKA5nE69wSfzvL7JJGB5C-dXseNkKdoS0,1071
+onacol-0.3.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+onacol-0.3.0.dist-info/METADATA,sha256=XH8KSKyrHeGEnq-uuAIigGl6-SIQeytQ4AA8s8DHUkg,22116
+onacol-0.3.0.dist-info/RECORD,,
