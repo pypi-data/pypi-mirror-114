@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: github-traffic
+Version: 0.1.2a3
+Summary: Summarize Github traffic stats across repositories.
+Home-page: https://github.com/jashandeep-sohi/github-traffic
+License: GPLv3
+Author: Jashandeep Sohi
+Author-email: jashandeep.s.sohi@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyGithub (>=1.43.8)
+Requires-Dist: click (>=7)
+Requires-Dist: click-aliases (>=1.0.1,<2.0.0)
+Requires-Dist: terminaltables (>=3.1.0,<4.0.0)
+Project-URL: Repository, https://github.com/jashandeep-sohi/github-traffic
+Description-Content-Type: text/x-rst
+
+|pypi-badge|
+
+github-traffic
+==============
+
+Summarize Github traffic stats across repos
+
+
+Install
+-------
+
+Latest stable::
+
+  $ pip install --user github-traffic
+
+Latest pre-release::
+
+  $ pip install --user --pre github-traffic
+
+Git::
+
+  $ pip install --user git+https://github.com/jashandeep-sohi/github-traffic.git
+
+Usage
+-----
+
+Views & clones summary::
+
+  $ github-traffic --token "$GITHUB_TOKEN" summary
+
+Views summary::
+
+  $ github-traffic --token "$GITHUB_TOKEN" summary --metrics views
+
+Clones summary::
+
+  $ github-traffic --token "$GITHUB_TOKEN" summary --metrics clones
+
+Top referrers::
+
+  $ github-traffic --token "$GITHUB_TOKEN" referrers
+
+Top paths::
+
+  $ github-traffic --token "$GITHUB_TOKEN" paths
+
+.. |pypi-badge| image:: https://img.shields.io/pypi/v/github-traffic
+    :alt: PyPI
+    :target: https://pypi.org/project/github-traffic/
+
