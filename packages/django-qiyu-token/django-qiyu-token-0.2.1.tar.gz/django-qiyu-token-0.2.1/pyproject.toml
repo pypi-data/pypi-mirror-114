@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "django-qiyu-token"
+version = "0.2.1"
+description = "Django Token Management APP"
+authors = ["dev <dev@qiyutech.tech>"]
+homepage = "https://oss.qiyutech.tech/"
+repository = "https://github.com/QiYuTechOrg/django-qiyu-token"
+documentation = "https://github.com/QiYuTechOrg/django-qiyu-token"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+django = ">=3.2,<3.3"
+
+# for API
+django-ninja = ">=0.13,<0.14"
+
+# Json Web Token
+pyjwt = { version = ">=2.1,<3.0", extras = ["crypto"] }
+
+[tool.poetry.dev-dependencies]
+black = "*"
+pytest = "*"
+pytest-django = "*"
+pylama = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
