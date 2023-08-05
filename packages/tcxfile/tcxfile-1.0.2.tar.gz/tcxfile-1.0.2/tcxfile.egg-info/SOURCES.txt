@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+tcxfile/__init__.py
+tcxfile/tcx.py
+tcxfile/version_info.py
+tcxfile.egg-info/PKG-INFO
+tcxfile.egg-info/SOURCES.txt
+tcxfile.egg-info/dependency_links.txt
+tcxfile.egg-info/requires.txt
+tcxfile.egg-info/top_level.txt
+test/test_loop.py
+test/test_read.py
