@@ -1,0 +1,8 @@
+setup.py
+discordspy/__init__.py
+discordspy/client.py
+discordspy/utils.py
+discordspy.egg-info/PKG-INFO
+discordspy.egg-info/SOURCES.txt
+discordspy.egg-info/dependency_links.txt
+discordspy.egg-info/top_level.txt
