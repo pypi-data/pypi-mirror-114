@@ -1,0 +1,3 @@
+[pytest11]
+testit_pytest = testit_pytest.plugin
+
