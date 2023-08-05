@@ -1,0 +1,56 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+
+"24/7 channel daemon CLI"
+
+__version__ = 38
+
+import os, sys
+
+import atexit
+import bot.all
+import ob
+import os
+import sys
+import termios
+import trm
+
+name = "genocide"
+ob.wd = "/var/lib/botd"
+
+from ob import Restart, Handler, Kernel, launch
+
+class MyKernel(Kernel):
+    def error(self, e):
+        trm.cprint(e.exc)
+        raise Restart
+
+k = MyKernel()
+k.cfg.p = "bot,gcd"
+k.cfg.m = ""
+
+class CLI(Handler):
+    def error(self, e):
+        trm.cprint(e.exc)
+        raise Restart
+
+    def handle(self, e):
+        k.put(e)
+        e.wait()
+
+    def raw(self, txt):
+        trm.cprint(txt)
+
+def ver(event):
+    event.reply("GENOCIDE %s" % __version__)
+
+def main():
+    k.parse_cli(disk=True)
+    if not k.cfg.txt:
+        return
+    k.boot()
+    k.add(ver)
+    cli = CLI()
+    return k.cmd(cli, k.cfg.otxt)
+
+trm.wrap(main)

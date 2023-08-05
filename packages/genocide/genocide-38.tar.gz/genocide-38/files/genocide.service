@@ -1,0 +1,14 @@
+[Unit]
+Description=GENOCIDE http://genocide.rtfd.io otp.informationdesk@icc-cpi.int OTP-CR-117/19
+After=multi-user.target
+
+[Service]
+DynamicUser=True
+StateDirectory=genocide
+LogsDirectory=genocide
+CacheDirectory=genocide
+ExecStart=/usr/local/bin/genocide
+CapabilityBoundingSet=CAP_NET_RAW
+
+[Install]
+WantedBy=multi-user.target

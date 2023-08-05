@@ -1,0 +1,4 @@
+# This file is placed in the Public Domain.
+
+PROG=`which botcmd`
+systemd-run -q -t --property=Type=exec --no-ask-password --property=DynamicUser=yes --property=StateDirectory=botd $PROG $*
