@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pydantic-orm
+Version: 0.1.1
+Summary: An asynchronous ORM that uses pydantic.
+License: MIT
+Author: Ronald Williams
+Author-email: rnwprogramming@gmail.com
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+# pydantic orm
+
+[![pypi](https://img.shields.io/pypi/v/pydantic-orm?color=blue&style=plastic)](https://pypi.python.org/pypi/pydantic-orm)
+[![versions](https://img.shields.io/pypi/pyversions/pydantic-orm)](https://pypi.org/pypi/pyversions/pydantic-orm)
+
+Asynchronous database ORM using Pydantic.
+
+## Installation
+
+Install using `pip install -U pydantic-orm` or `poetry add pydantic-orm`
+
