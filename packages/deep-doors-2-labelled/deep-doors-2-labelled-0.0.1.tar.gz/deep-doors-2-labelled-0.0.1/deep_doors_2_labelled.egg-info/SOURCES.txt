@@ -1,0 +1,10 @@
+README.md
+setup.py
+deep_doors_2_labelled/__init__.py
+deep_doors_2_labelled/__version__.py
+deep_doors_2_labelled.egg-info/PKG-INFO
+deep_doors_2_labelled.egg-info/SOURCES.txt
+deep_doors_2_labelled.egg-info/dependency_links.txt
+deep_doors_2_labelled.egg-info/entry_points.txt
+deep_doors_2_labelled.egg-info/requires.txt
+deep_doors_2_labelled.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: deep-doors-2-labelled
+Version: 0.0.1
+Summary: Deep doors 2 labelled dataset
+Home-page: https://github.com/micheleantonazzi/deep-doors-2-labelled
+Author: Michele Antonazzi
+Author-email: micheleantonazzi@gmail.com
+License: MIT
+Description: # deep-doors-2-labelled
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Provides-Extra: test
