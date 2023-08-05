@@ -1,0 +1,7 @@
+numpy
+pandas
+python-pptx
+dataclasses
+colour
+ddt==1.4.2
+openpyxl
