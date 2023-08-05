@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+betting_models/__init__.py
+football_betting_models.egg-info/PKG-INFO
+football_betting_models.egg-info/SOURCES.txt
+football_betting_models.egg-info/dependency_links.txt
+football_betting_models.egg-info/requires.txt
+football_betting_models.egg-info/top_level.txt
