@@ -1,0 +1,4 @@
+fire>=0.4.0
+aiohttp>=3.7.4.post0
+msmcauth==0.0.3
+paramiko>=2.7.2
