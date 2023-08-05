@@ -1,0 +1,7 @@
+README.md
+setup.py
+donotimport/__init__.py
+donotimport.egg-info/PKG-INFO
+donotimport.egg-info/SOURCES.txt
+donotimport.egg-info/dependency_links.txt
+donotimport.egg-info/top_level.txt
