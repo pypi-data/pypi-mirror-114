@@ -1,0 +1,2 @@
+[console_scripts]
+databricks-converter=databricks_converter:main
