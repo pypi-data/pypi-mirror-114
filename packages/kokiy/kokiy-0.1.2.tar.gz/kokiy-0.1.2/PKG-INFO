@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: kokiy
+Version: 0.1.2
+Summary: Utilities to work on a 2D structured grid
+Home-page: https://nitrox.cerfacs.fr/open-source/kokiy
+Author: CoopTeam-CERFACS
+Author-email: coop@cerfacs.com
+License: UNKNOWN
+Project-URL: Documentation, http://open-source.pg.cerfacs.fr/kokiy/
+Project-URL: Bug Tracker, https://nitrox.cerfacs.fr/open-source/kokiy/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+License-File: LICENSE.md
+
+UNKNOWN
+

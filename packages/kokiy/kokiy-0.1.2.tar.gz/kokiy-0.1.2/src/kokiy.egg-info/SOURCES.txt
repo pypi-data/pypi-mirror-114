@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+src/kokiy/__init__.py
+src/kokiy/axishell.py
+src/kokiy/cartshell.py
+src/kokiy/shell.py
+src/kokiy/shell_utils.py
+src/kokiy.egg-info/PKG-INFO
+src/kokiy.egg-info/SOURCES.txt
+src/kokiy.egg-info/dependency_links.txt
+src/kokiy.egg-info/requires.txt
+src/kokiy.egg-info/top_level.txt
