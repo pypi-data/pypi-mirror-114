@@ -1,0 +1,8 @@
+nevermined-metadata-driver-interface
+arweave-python-client~=1.0.14
+
+[dev]
+pytest
+
+[test]
+pytest
