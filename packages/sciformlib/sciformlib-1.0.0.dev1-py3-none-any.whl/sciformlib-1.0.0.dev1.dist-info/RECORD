@@ -1,0 +1,10 @@
+sciformlib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sciformlib/__main__.py,sha256=7jJnjGoYVnm5Ff7puSzOsC0uKr7_sk4Xwj0BLGNZ9bY,82
+sciformlib/physicform.py,sha256=tV2Ifa0l7uyqbR1SYAgkj75vOW7-hhQXhXBJFIZ8o6g,2158
+sciformlib/physics.py,sha256=FTJsO1gR5mFCOK1Qbn7-RQ7GxApRPsrJP6kumGWeEWo,2176
+sciformlib-1.0.0.dev1.dist-info/LICENSE,sha256=X3TquMPag0n-AfpsmS5-UijM7evmwJvNWckzynIV2lw,1069
+sciformlib-1.0.0.dev1.dist-info/METADATA,sha256=PCMIpGQ3CK_DJOn_fk6GqaL2HfbTPZc9xas7pmsa5rw,2418
+sciformlib-1.0.0.dev1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sciformlib-1.0.0.dev1.dist-info/entry_points.txt,sha256=_BIk7gC-aA092OFWrxM-C5bOrhZQe4eCggAGwVctUxs,49
+sciformlib-1.0.0.dev1.dist-info/top_level.txt,sha256=UwlZhgbj_7fTSNKR0tBTLqjGl_MQYcbJDIeAzvL3YyQ,11
+sciformlib-1.0.0.dev1.dist-info/RECORD,,
