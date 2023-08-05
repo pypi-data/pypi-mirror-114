@@ -1,0 +1,5 @@
+magicgui>=0.2.10
+napari>=0.4.10
+napari-plugin-engine>=0.1.4
+numpy
+zarr
