@@ -1,0 +1,4 @@
+include definitions 
+include dict.pkl
+global-include *.pkl
+include *
