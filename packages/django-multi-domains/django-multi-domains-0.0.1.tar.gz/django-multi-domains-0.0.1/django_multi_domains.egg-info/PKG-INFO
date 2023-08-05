@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: django-multi-domains
+Version: 0.0.1
+Summary: Django Middleware for mapping domains to custom url confs.
+Home-page: https://github.com/project-tampah/django-multi-domains
+Author: Project Tampah
+Author-email: info@project-tampah.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# django-multi-domains
+
+This Django App sets specific [URL Confs](https://docs.djangoproject.com/en/dev/topics/http/urls/) for configured domains.
+
+After all, the app has only a small middleware.
+
+## Installation
+
+```bash
+pip install django-multi-domains
+```
+
+## Setup
+
+The following configurations should be added in the [Django Settings](https://docs.djangoproject.com/en/dev/ref/settings/) Module.
+
+1. Add `"multi_domains"` to `INSTALLED_APPS`
+
+   ```python
+   INSTALLED_APPS = [
+       "...",
+       "multi_domains",
+   ]
+   ```
+
+2. Add middleware `"multi_domains.middleware.MultiDomainsMiddleware"` to the beginning of the `MIDDLEWARE`
+
+   ```python
+   MIDDLEWARE = [
+       "multi_domains.middleware.MultiDomainsMiddleware",
+       "...",
+   ]
+   ```
+
+3. Define the mapping of domain and urlconf `MULTI_DOMAINS`
+
+   ```python
+   MULTI_DOMAINS = {
+       "api.example.com": "api.urls",
+       "shop.example.com": "shop.urls",
+   }
+   ```
+
+If no mapping is set for a domain, `ROOT_URLCONF` is used as a fallback.
+
+
