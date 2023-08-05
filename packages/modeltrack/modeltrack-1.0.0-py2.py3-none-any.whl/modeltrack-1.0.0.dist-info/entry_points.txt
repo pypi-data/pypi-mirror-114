@@ -1,0 +1,3 @@
+[console_scripts]
+modeltrack = modeltrack.experiment:run
+
