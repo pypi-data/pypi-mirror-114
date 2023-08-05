@@ -1,0 +1,9 @@
+requests
+Click
+
+[dev]
+black
+pytest
+pylint
+requests
+Click
