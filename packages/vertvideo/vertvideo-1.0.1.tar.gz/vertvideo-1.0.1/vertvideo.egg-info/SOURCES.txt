@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+vertvideo/__init__.py
+vertvideo/__main__.py
+vertvideo/version.py
+vertvideo.egg-info/PKG-INFO
+vertvideo.egg-info/SOURCES.txt
+vertvideo.egg-info/dependency_links.txt
+vertvideo.egg-info/entry_points.txt
+vertvideo.egg-info/requires.txt
+vertvideo.egg-info/top_level.txt
