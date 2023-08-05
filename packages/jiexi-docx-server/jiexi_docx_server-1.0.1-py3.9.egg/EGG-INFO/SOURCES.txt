@@ -1,0 +1,17 @@
+setup.py
+jiexi_client/__init__.py
+jiexi_client/jiexi.py
+jiexi_client/client/__init__.py
+jiexi_client/client/client.py
+jiexi_client/grpc_docx/__init__.py
+jiexi_client/grpc_docx/docx_grpc_pb2.py
+jiexi_client/grpc_docx/docx_grpc_pb2_grpc.py
+jiexi_docx_server.egg-info/PKG-INFO
+jiexi_docx_server.egg-info/SOURCES.txt
+jiexi_docx_server.egg-info/dependency_links.txt
+jiexi_docx_server.egg-info/requires.txt
+jiexi_docx_server.egg-info/top_level.txt
+test/test2_qingyou.py
+test/test_1.py
+test/test_mysql.py
+test/test_style.py
