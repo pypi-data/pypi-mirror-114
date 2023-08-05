@@ -1,0 +1,4 @@
+PyYAML>=5.4.1
+GitPython>=3.1.17
+click>=7
+gitflow_linter>=0.0.4
