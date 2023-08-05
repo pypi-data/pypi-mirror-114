@@ -1,0 +1,10 @@
+partx/__init__.py,sha256=_ijS45ypJJyQDOvf-146BFBRNSUwpH4dK-e5Rtjd00s,217
+partx/continued_sampling.py,sha256=6yxGiJB8wIctZ5A2-sfdRP0OOrL3veVv-iZskPzmicM,45721
+partx/controlled_budget.py,sha256=nW9XiYLXGGZQxIe6Ye-yS70mENb8PHxnNSP0wpA9u4I,41681
+partx/models.py,sha256=XS87FMr5SlGogD0jPTy_dB2OGRXcALSyTzn7CjJ6pAU,1052
+partx/part_optimize.py,sha256=zPElB2i2fre7r7qSFBxkFFz0xH4NEQco7IK-lf_lIXU,37469
+partx/partitioning.py,sha256=zw0TM2rFJp3qW2pJM-rDAH3NQZpRu-o_gpYKKvWKZBM,4543
+partx/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+partx-0.0.41.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+partx-0.0.41.dist-info/METADATA,sha256=TxKOILMMYZTfsnjGBnmKtGjPg_ClIDxP-HtkkG385-Y,728
+partx-0.0.41.dist-info/RECORD,,
