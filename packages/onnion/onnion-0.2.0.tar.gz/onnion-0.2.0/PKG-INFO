@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: onnion
+Version: 0.2.0
+Summary: onnx compiler
+Home-page: https://github.com/Idein/onnion/tree/master/compiler
+License: Apache-2.0
+Keywords: onnx
+Author: Idein Inc.
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy (>=1.21.0,<2.0.0)
+Requires-Dist: onnx (>=1.9.0,<2.0.0)
+Project-URL: Repository, https://github.com/Idein/onnion/tree/master/compiler
+Description-Content-Type: text/markdown
+
+# onnion
+
+## Installation
+
+```
+$ pip3 install onnion
+```
+
+## Usage
+
+```
+$ onnion ssd-10-post.onnx -o ssd_post_model.py
+```
+
+See [tutorial](https://github.com/Idein/onnion/tree/master#tutorial).
+
+## Development Guide
+
+```
+$ poetry install
+```
+
