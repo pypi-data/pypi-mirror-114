@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+adaptivecards/__init__.py
+adaptivecards/adaptivecard.py
+adaptivecards/baseobject.py
+adaptivecards/containers.py
+adaptivecards/elements.py
+adaptivecards.egg-info/PKG-INFO
+adaptivecards.egg-info/SOURCES.txt
+adaptivecards.egg-info/dependency_links.txt
+adaptivecards.egg-info/not-zip-safe
+adaptivecards.egg-info/top_level.txt
