@@ -1,0 +1,5 @@
+[console_scripts]
+parse2phrase=sencore.entry:phrase
+parse2vocab=sencore.entry:vocab
+review_phrase=sencore.train:generate_review_phrases
+
