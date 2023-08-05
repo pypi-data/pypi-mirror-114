@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/dstkc/__init__.py
+src/dstkc/tkc.py
+src/dstkc.egg-info/PKG-INFO
+src/dstkc.egg-info/SOURCES.txt
+src/dstkc.egg-info/dependency_links.txt
+src/dstkc.egg-info/top_level.txt
