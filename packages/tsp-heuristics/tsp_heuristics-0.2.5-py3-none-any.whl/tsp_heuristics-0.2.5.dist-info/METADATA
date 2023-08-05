@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tsp-heuristics
+Version: 0.2.5
+Summary: Meta-heuristics for solving the TSP
+License: Unlicense
+Author: Adriel Martins
+Author-email: adrielfalcao@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: matplotlib (>=3.4.2,<4.0.0)
+Requires-Dist: numpy (>=1.21.1,<2.0.0)
+Requires-Dist: pandas (>=1.3.0,<2.0.0)
+Requires-Dist: sympy (>=1.8,<2.0)
+Requires-Dist: tsplib95 (>=0.7.1,<0.8.0)
