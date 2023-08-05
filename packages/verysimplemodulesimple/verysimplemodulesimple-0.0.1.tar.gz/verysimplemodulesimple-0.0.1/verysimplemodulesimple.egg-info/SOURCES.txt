@@ -1,0 +1,5 @@
+setup.py
+verysimplemodulesimple.egg-info/PKG-INFO
+verysimplemodulesimple.egg-info/SOURCES.txt
+verysimplemodulesimple.egg-info/dependency_links.txt
+verysimplemodulesimple.egg-info/top_level.txt
