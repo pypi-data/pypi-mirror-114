@@ -1,0 +1,39 @@
+//-*-c++-*------------------------------------------------------------
+//
+// File name : bioSeveralFormulas.h
+// @date   Mon Apr 23 13:53:55 2018
+// @author Michel Bierlaire
+// @version Revision 1.0
+//
+//--------------------------------------------------------------------
+
+#ifndef bioSeveralFormulas_h
+#define bioSeveralFormulas_h
+
+#include <vector>
+#include <map>
+#include "bioTypes.h"
+#include "bioString.h"
+#include "bioFormula.h"
+
+class bioExpression ;
+
+class bioSeveralFormulas: public bioFormula {
+  friend std::ostream& operator<<(std::ostream &str, const bioSeveralFormulas& x) ;
+
+ public:
+  bioSeveralFormulas() ;
+  ~bioSeveralFormulas() ;
+  void setExpressions(std::map<bioString, std::vector<bioString> > dictOfExpressionsStrings) ;
+  void resetExpressions() ;
+  virtual bioBoolean isDefined() const ;
+  std::map<bioString, bioExpression*> getExpressions() ;
+ private:
+  std::map<bioString, bioExpression*> theFormulas ;
+  bioBoolean defined ;
+
+
+};
+
+
+#endif
