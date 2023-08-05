@@ -1,0 +1,43 @@
+Metadata-Version: 2.0
+Name: multiwatch
+Version: 1.0.7
+Summary: A watcher for multiprocessing queues and processes, with a bunch of handy methods to deal with parallel execution.
+Home-page: https://go.pelicandd.com/n/multiwatch
+Author: Arseni Mourzenko
+Author-email: arseni.mourzenko@pelicandd.com
+License: MIT
+Keywords: multiprocessing,parallel,process,queue
+Platform: UNKNOWN
+Requires-Dist: psutil (==5.7.0)
+
+This package is a watcher for multiprocessing queues and processes, and contains a series of handy methods to deal with parallel execution.
+
+Runner
+------
+
+The ``multiwatch.run(processes, queues, exit_event, sleep, report_interval, output)`` function handles the lifespan of the processes. On regular intervals indicated by ``report_interval`` (in seconds), it saves to a file the information about the CPU and memory usage, the different processes running, and the number of elements in a queue.
+
+The individual processes defined through the ``multiwatch.RunnerProcess`` class can also specify a retry strategy. When they fail, the runner will restart them automatically.
+
+Termination
+-----------
+
+``multiwatch.setup_sigterm(sigterm_event, exit_event)`` function ensures the processes are terminated on SIGINT and SIGTERM signals.
+
+Any process can also set the ``exit_event`` which will propagate to every other processes an instruction to terminate what they are doing.
+
+Reading files
+-------------
+
+A common pattern I am using in my applications consists of reading lines from ``stdin``, transforming them, and adding them to a queue in order for other processes to process them.
+
+This can be done in one line of code with ``multiwatch.read_file_into_queue(file, exit_event, queue, transform)``. It works in a non-blocking way, that is, the application can still be gracefully terminated through SIGINT and SIGTERM signals (or when it sets the ``exit_event``). In a `dedicated article <https://blog.pelicandd.com/article/191>`_, I explain how this is done, and why the common alternatives don't work.
+
+Contributing
+------------
+
+The `source code <https://source.pelicandd.com/codebase/multiwatch>`_ is available. The package is distributed under `MIT License <https://opensource.org/licenses/MIT>`_.
+
+If you want to have SVN access to the official repository in order to contribute to the project, contact me at `arseni.mourzenko@pelicandd.com <mailto:arseni.mourzenko@pelicandd.com>`_. If you find it more convinient to clone the source to GitHub, you can do that too.
+
+
