@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/threadmycode/__init__.py
+src/threadmycode.egg-info/PKG-INFO
+src/threadmycode.egg-info/SOURCES.txt
+src/threadmycode.egg-info/dependency_links.txt
+src/threadmycode.egg-info/top_level.txt
