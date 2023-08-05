@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+setup.py
+sssss/__init__.py
+sssss/sssss.py
+sssss.egg-info/PKG-INFO
+sssss.egg-info/SOURCES.txt
+sssss.egg-info/dependency_links.txt
+sssss.egg-info/top_level.txt
