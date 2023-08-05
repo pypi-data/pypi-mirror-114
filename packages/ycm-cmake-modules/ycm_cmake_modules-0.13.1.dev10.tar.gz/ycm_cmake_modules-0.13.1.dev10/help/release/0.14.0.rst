@@ -1,0 +1,17 @@
+YCM 0.14.0 (UNRELEASED) Release Notes
+*************************************
+
+.. only:: html
+
+  .. contents::
+
+Changes made since YCM 0.13.0 include the following.
+
+
+Modules
+=======
+
+Find Modules
+------------
+
+* Added new find module `FindSOXR.cmake` for libsoxr.
