@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/Fuzzy_Clustering.egg-info/PKG-INFO
+src/Fuzzy_Clustering.egg-info/SOURCES.txt
+src/Fuzzy_Clustering.egg-info/dependency_links.txt
+src/Fuzzy_Clustering.egg-info/requires.txt
+src/Fuzzy_Clustering.egg-info/top_level.txt
+src/fuzzy_clustering/__init__.py
+src/fuzzy_clustering/core/__init__.py
+src/fuzzy_clustering/core/fuzzy.py
+src/fuzzy_clustering/utils/__init__.py
+src/fuzzy_clustering/utils/utils.py

@@ -1,0 +1,7 @@
+numpy>=1.16.4
+
+[examples]
+matplotlib
+opencv-python
+scikit-image
+scikit-learn
