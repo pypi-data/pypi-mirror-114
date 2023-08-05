@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+numpsy/__init__.py
+numpsy/configuration.py
+numpsy/constants.py
+numpsy/core.py
+numpsy/functions.py
+numpsy/helpers.py
+numpsy/printers.py
+numpsy/units.py
+numpsy.egg-info/PKG-INFO
+numpsy.egg-info/SOURCES.txt
+numpsy.egg-info/dependency_links.txt
+numpsy.egg-info/top_level.txt
