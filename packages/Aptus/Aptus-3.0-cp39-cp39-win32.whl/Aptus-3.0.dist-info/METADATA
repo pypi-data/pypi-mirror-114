@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: Aptus
+Version: 3.0
+Summary: Aptus: A Mandelbrot set explorer and renderer.
+Home-page: http://nedbatchelder.com/code/aptus/v3.html
+Author: Ned Batchelder
+Author-email: ned@nedbatchelder.com
+License: MIT
+Project-URL: Documentation, https://nedbatchelder.com/code/aptus/v3.html
+Project-URL: Code, http://github.com/nedbat/aptus
+Project-URL: Issues, https://github.com/nedbat/aptus/issues
+Project-URL: Funding, https://github.com/users/nedbat/sponsorship
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications :: GTK
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python
+Classifier: Topic :: Artistic Software
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+Requires-Dist: Pillow
+Requires-Dist: numpy
+Provides-Extra: gui
+Requires-Dist: wxPython ; extra == 'gui'
+Provides-Extra: web
+Requires-Dist: aiofiles ; extra == 'web'
+Requires-Dist: fastapi ; extra == 'web'
+Requires-Dist: jinja2 ; extra == 'web'
+Requires-Dist: uvicorn ; extra == 'web'
+Requires-Dist: cachetools ; extra == 'web'
+
+Aptus is a Mandelbrot set explorer and renderer with a browser interface, a wxPython GUI and
+a computation extension in C for speed.
+
+For more information see `Aptus v3 <https://nedbatchelder.com/code/aptus/v3.html>`_.
+
+
+
