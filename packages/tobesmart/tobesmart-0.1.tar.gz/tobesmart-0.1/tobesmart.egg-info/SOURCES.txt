@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+tobesmart.egg-info/PKG-INFO
+tobesmart.egg-info/SOURCES.txt
+tobesmart.egg-info/dependency_links.txt
+tobesmart.egg-info/top_level.txt
