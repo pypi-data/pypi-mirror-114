@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+dexis/__init__.py
+dexis.egg-info/PKG-INFO
+dexis.egg-info/SOURCES.txt
+dexis.egg-info/dependency_links.txt
+dexis.egg-info/not-zip-safe
+dexis.egg-info/top_level.txt
