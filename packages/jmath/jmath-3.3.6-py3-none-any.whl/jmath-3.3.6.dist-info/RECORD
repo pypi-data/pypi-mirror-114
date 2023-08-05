@@ -1,0 +1,11 @@
+jmath/__init__.py,sha256=R0X06lb8P92iTPOAONdeSufgfj46KQbDZQ5zfTS4GEw,1707
+jmath/discrete.py,sha256=dN27Pw2L2-jmfmnYAj7rJ69i7kVkOg80C4RSsSTHyHI,6943
+jmath/exceptions.py,sha256=wRlEmy8slTCMZmSiv0dXxuOFEVYxi5vHdoomoeqypaw,877
+jmath/fraction.py,sha256=YAKDctq5nPoXU0SMFLxpLS316VNEX7EFSiX_YLADvGc,4844
+jmath/linearalgebra.py,sha256=xvejdtTbC74oQ9zPhZ6Gbq6xdF3eXjZwEa-nvATG_dw,8062
+jmath/uncertainties.py,sha256=nTRTv93ggZXAcl_xmqc-2zYu0-C14wZh_BPACtl7RcU,6628
+jmath-3.3.6.dist-info/LICENSE,sha256=jqtD6k9KSrpB_Ip82Zyz5fGnFWaqhIg32C9lgWIOGZc,1067
+jmath-3.3.6.dist-info/METADATA,sha256=teCOVAWl__-NsgSIATdzHFoLI74JO_yC9h-Sihlq_KE,1482
+jmath-3.3.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+jmath-3.3.6.dist-info/top_level.txt,sha256=LArtzNUKDELWNNkARaQmiUDo4Z5VAgVsXhOk31e-30E,6
+jmath-3.3.6.dist-info/RECORD,,
