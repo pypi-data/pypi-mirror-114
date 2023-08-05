@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "dEFT-hep"
+version = "0.5.5"
+description = "dEFT is a tool for performing fits of EFT coefficients to HEP data in seconds"
+authors = [
+	"Alexander Veltman <alexveltman@protonmail.com>",
+	"James Keaveney <keaveney@cern.ch>",
+]
+license = "GPL3"
+repository = "https://github.com/codecalec/dEFT"
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+numpy = "^1.20.1"
+matplotlib = "^3.3.4"
+emcee = "^3.0.2"
+corner = "^2.2.1"
+tqdm = "^4.59.0"
+scikit-learn = "^0.24.1"
+
+[tool.poetry.dev-dependencies]
+black = "^20.8b1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
