@@ -1,0 +1,3 @@
+[console_scripts]
+anyd=anyd.cli:main
+
