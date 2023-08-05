@@ -1,0 +1,6 @@
+[console_scripts]
+changelogparser = deptools.changelogparser:main
+createversionfile = deptools.createversionfile:main
+deploy = deptools.deploy:main
+runclangformat = deptools.runclangformat:main
+
