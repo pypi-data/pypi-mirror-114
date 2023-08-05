@@ -1,0 +1,8 @@
+parflowio/_pyParflowio.so,sha256=fw7oJGP_j_9iVltHwzafgryDyzGHQXec9f3cIQIj6Jc,169984
+parflowio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parflowio/pyParflowio.py,sha256=iuhPmkTv3UyrCcn1wxh3c044WgR4ZcSwBLJ9FiLlenI,32877
+parflowio/.dylibs/libparflowio_shared.dylib,sha256=RamNIGMiuiv0RGMefW0CqLlAik1mLNOphAM9nSAI9gI,69504
+parflowio-0.0.7.dist-info/RECORD,,
+parflowio-0.0.7.dist-info/WHEEL,sha256=WVG6A_oY5zUoNXUyvfLMOSXC-hqC5VZacUL1MeSOz70,110
+parflowio-0.0.7.dist-info/top_level.txt,sha256=2YhlL_gnj-yP1TrZgP_MvIq4KXxykAqn_hv9xoNqC0g,10
+parflowio-0.0.7.dist-info/METADATA,sha256=kgyWu85-EU4skigNMe_GISohKug-BouWEmlN0xq98Vk,267
