@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: taskbench
+Version: 1.2.1
+Summary: Behavior control software suite in Visintel lab
+Home-page: UNKNOWN
+Author: Minggui Chen
+Author-email: minggui.chen@gmail.com
+License: UNKNOWN
+Platform: Windows
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+### taskbench: *behavior control software suite in Visintel lab*
+
+This software is used to implement behavioral tasks, with stimulus presentation and behavioral tracking built in.
+
+
