@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: vertvideo
+Version: 1.0.1
+Summary: python package to help you convert video/audio files.
+Home-page: https://github.com/ellipyhub/vertvideo
+Author: Ellipyhub
+License: MIT License
+Keywords: audio video file convert
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Multimedia :: Video :: Conversion
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow (==8.3.1)
+Requires-Dist: autopep8 (==1.5.7)
+Requires-Dist: certifi (==2021.5.30)
+Requires-Dist: charset-normalizer (==2.0.3)
+Requires-Dist: decorator (==4.4.2)
+Requires-Dist: idna (==3.2)
+Requires-Dist: imageio-ffmpeg (==0.4.4)
+Requires-Dist: imageio (==2.9.0)
+Requires-Dist: moviepy (==1.0.3)
+Requires-Dist: numpy (==1.21.1)
+Requires-Dist: proglog (==0.1.9)
+Requires-Dist: pycodestyle (==2.7.0)
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: tqdm (==4.61.2)
+Requires-Dist: urllib3 (==1.26.6)
+
+# vertvideo
+
+python package to help you convert video/audio files
+
+## How to install
+
+    pip install vertvideo
+
+## How to run
+
+vertvideo was designed to run on multiple files, so you have to put then inside a folder so they can get processed in one single loop.
+
+`input_folder` is a mandatory arg.
+`output_format` always defaults to mp3 unless a different value is provided.
+
+    vertvideo <input_folder> <output_format:?mp3>
+
+
+

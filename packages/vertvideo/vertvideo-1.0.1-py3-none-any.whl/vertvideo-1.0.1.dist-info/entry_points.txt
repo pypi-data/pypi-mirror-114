@@ -1,0 +1,3 @@
+[console_scripts]
+vertvideo = vertvideo.__main__:main
+
