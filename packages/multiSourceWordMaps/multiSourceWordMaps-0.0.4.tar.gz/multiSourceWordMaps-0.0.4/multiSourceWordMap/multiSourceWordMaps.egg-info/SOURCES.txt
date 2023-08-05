@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+multiSourceWordMap/multiSourceWordMaps.egg-info/PKG-INFO
+multiSourceWordMap/multiSourceWordMaps.egg-info/SOURCES.txt
+multiSourceWordMap/multiSourceWordMaps.egg-info/dependency_links.txt
+multiSourceWordMap/multiSourceWordMaps.egg-info/entry_points.txt
+multiSourceWordMap/multiSourceWordMaps.egg-info/requires.txt
+multiSourceWordMap/multiSourceWordMaps.egg-info/top_level.txt
