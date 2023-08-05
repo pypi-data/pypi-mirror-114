@@ -1,0 +1,7 @@
+README.md
+setup.py
+pubtrend/__init__.py
+pubtrend.egg-info/PKG-INFO
+pubtrend.egg-info/SOURCES.txt
+pubtrend.egg-info/dependency_links.txt
+pubtrend.egg-info/top_level.txt
