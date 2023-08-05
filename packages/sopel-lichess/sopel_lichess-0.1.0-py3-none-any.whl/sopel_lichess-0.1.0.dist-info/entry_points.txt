@@ -1,0 +1,3 @@
+[sopel.plugins]
+lichess = sopel_lichess.plugin
+
