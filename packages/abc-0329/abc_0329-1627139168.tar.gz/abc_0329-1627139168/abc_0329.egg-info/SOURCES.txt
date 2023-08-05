@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.py
+abc_0329.egg-info/PKG-INFO
+abc_0329.egg-info/SOURCES.txt
+abc_0329.egg-info/dependency_links.txt
+abc_0329.egg-info/not-zip-safe
+abc_0329.egg-info/requires.txt
+abc_0329.egg-info/top_level.txt
+uif_client/__init__.py
+uif_client/__main__.py
+uif_client/main.py
