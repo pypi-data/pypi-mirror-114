@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+version.yml
+pathogen/core.py
+pathogen/version.py
+pathogen.egg-info/PKG-INFO
+pathogen.egg-info/SOURCES.txt
+pathogen.egg-info/dependency_links.txt
+pathogen.egg-info/top_level.txt
