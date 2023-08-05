@@ -1,0 +1,8 @@
+ofsc/__init__.py,sha256=WRb4fNmLowPnkkrEpTtU3p7jLEy8jSmjpGsc0R6VhCE,26
+ofsc/common.py,sha256=wZuvHRqJnPQFVErNGvZqiyFxNiJiZH8-uZhQYCiHZW4,48
+ofsc/ofsc_proxy.py,sha256=48NE4dTurjKMW40na5o-vs0wg9WyJ7NDQ_2MzbjxRb4,15188
+ofsc-1.13.dist-info/LICENSE.txt,sha256=wmkja9siOj8n-1iFO7fHk1E5BQ5BRtM4juSEdfuuFu8,1064
+ofsc-1.13.dist-info/METADATA,sha256=0SH3v03E2yfiGClwAsaAVu9ijGRZo5pzD0dsKCEuVzM,666
+ofsc-1.13.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ofsc-1.13.dist-info/top_level.txt,sha256=r55qqJu6Yr8GgbNHfmzlQAZUb2Q4Qb-EWf3ftPMQ8J4,5
+ofsc-1.13.dist-info/RECORD,,
