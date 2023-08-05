@@ -1,0 +1,13 @@
+orcommunicator/__init__.py,sha256=3gZne1DkXjJ4VnfgQHByFA3EDBtSSW0o5eLgh4dEN4A,42
+orcommunicator/orchannel.py,sha256=CE6mefH_IIu67ltuStMg4fwlL-hynJ7fKOioChRZ168,89
+orcommunicator/orcommunicator.py,sha256=gA0r5T_HOr6hL-Q0SUNWRNOT4tGMR1NCsoxKOO4z_vs,1713
+orcommunicator/orevent.py,sha256=ulH5dW6ubY17KESPJe8eDo8K3FWBIpN6j59AlT9lTHg,3585
+orcommunicator/oritem.py,sha256=T-vqijhEARD3bHIQmZ4zPH1PncSJBMFWgMWru2LP0PU,2521
+orcommunicator/ormessage.py,sha256=koViFQ2wzdba21sv_b4y2V4bCqSsIHRp_68pCXMFUQs,57
+orcommunicator/orqueue.py,sha256=2CjCixpl9-B-w-3k4vEtbIP4iqOsQ62C2zRcWG-IoPA,2591
+orcommunicator/ortopic.py,sha256=0DeH1t790gOlabD2i3fmDfM6_tjC1L_VIonlFvkxXec,2280
+orcommunicator-0.0.11.dist-info/LICENSE.txt,sha256=tUun0QijDNXGa5y3dxChala7L7ufHbO5Yjixh5q_qI0,1058
+orcommunicator-0.0.11.dist-info/METADATA,sha256=Ea5ft2BraMrVwUTbGAwsAMZh36O0Bo9KF9Lm5z2W0G0,884
+orcommunicator-0.0.11.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+orcommunicator-0.0.11.dist-info/top_level.txt,sha256=vsKoXrUfjrpOZPrhP_S3nVOUHitvipUyFbIhMbbMRJ0,15
+orcommunicator-0.0.11.dist-info/RECORD,,
