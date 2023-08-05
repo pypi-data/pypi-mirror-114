@@ -1,0 +1,123 @@
+{%- macro script() %}
+<script id="documentation_options"
+        data-url_root="{{ pathto('', 1) }}"
+        src="{{ pathto('_static/documentation_options.js', 1) }}">
+</script>
+{%- for js in script_files %}
+{{ js_tag(js) }}
+{%- endfor %}
+<script src="{{ pathto('_static/theme.js', 1) }}" defer></script>
+{%- endmacro -%}
+
+{%- set lang_attr = "en" if language == None else (language|replace('_','-')) -%}
+
+{%- if not embedded and docstitle -%}
+  {%- if title == docstitle -%}
+    {%- set titlesuffix = "" -%}
+  {%- else -%}
+    {%- set titlesuffix = " | "|safe + docstitle|e -%}
+  {%- endif -%}
+{%- else -%}
+  {%- set titlesuffix = "" -%}
+{%- endif %}
+
+<!DOCTYPE html>
+<html lang="{{ lang_attr }}">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    {{ metatags }}
+    {%- block htmltitle %}
+    <title>
+      {{ title|striptags|e if title else docstitle }}{{ titlesuffix }}
+    </title>
+    {%- endblock %}
+    {#- Extra CSS files for overriding stuff #}
+    {%- for css in css_files %}
+      <link rel="stylesheet" href="{{ pathto(css, 1) }}" />
+    {%- endfor %}
+    {%- if pageurl %}
+      <link rel="canonical" href="{{ pageurl }}" />
+    {%- endif %}
+    {%- if favicon %}
+      <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}" />
+    {%- endif %}
+    {%- block linktags %}
+      {%- if hasdoc('search') %}
+        <link rel="search" title="{{ _('Search') }}" href="{{ pathto('search') }}"/>
+      {%- endif %}
+      {%- if hasdoc('genindex') %}
+        <link rel="index" title="{{ _('Index') }}" href="{{ pathto('genindex') }}"/>
+      {%- endif %}
+      {%- if next %}
+        <link
+          rel="next"
+          title="{{ next.title|striptags|e }}"
+          href="{{ next.link|e }}"
+        />
+      {%- endif %}
+      {%- if prev %}
+        <link
+          rel="prev"
+          title="{{ prev.title|striptags|e }}"
+          href="{{ prev.link|e }}"
+        />
+      {%- endif %}
+    {%- endblock %}
+  </head>
+
+  {#-
+    Theme variables are strings and even if they are defined as booleans in the
+    ``html_theme_options`` dictionary, they are treated as strings. Therefore,
+    we must use string comparison to check, whether a value is ``true`` or not.
+  -#}
+
+  <body class="text-gray-900 antialiased">
+    <div id="page" class="h-screen md:grid md:grid-layout">
+      {% include "skip.html" %}
+
+      <header class="grid-area-header z-10">
+        {% include "header.html" %}
+      </header>
+
+      {%- if theme_show_nav|lower == 'true' -%}
+        <aside id="sidebar" class="grid-area-sidebar h-full fixed md:relative inset-y-0 left-0 z-20 md:z-0 print:hidden overflow-y-auto transition-all transform transform-gpu -translate-x-full opacity-0 duration-300 md:translate-x-0 md:opacity-100">
+          {% include "sidebar.html" %}
+        </aside>
+      {%- endif %}
+
+      <main class="px-5 lg:ml-fluid grid-area-main overflow-y-auto flex flex-col h-full {% if theme_show_nav|lower != 'true' -%}mx-auto{%- endif -%}">
+        {%- if pagename != master_doc and theme_show_breadcrumbs|lower == 'true' %}
+          {%- include "breadcrumbs.html" %}
+        {% endif -%}
+
+        {#-
+          The `body` block is rendered from the `page.html` template.
+          The `page.html` template is inherited from the `basic` theme.
+        -#}
+
+        <article role="main" class="flex-1">
+          {% block body %}{% endblock %}
+        </article>
+
+        {%- if theme_show_prev_next|lower == 'true' %}
+          {%- include "prev_next.html" %}
+        {%- endif %}
+
+        <footer>
+          {% block footer %}
+            {% include "footer.html" %}
+          {% endblock %}
+        </footer>
+      </main>
+
+      {% include "menu.html" %}
+      {% include "search-pane.html" %}
+      {% include "modals.html" %}
+    </div>
+    {% block scripts %}
+      {{ script() }}
+    {% endblock %}
+  </body>
+</html>
