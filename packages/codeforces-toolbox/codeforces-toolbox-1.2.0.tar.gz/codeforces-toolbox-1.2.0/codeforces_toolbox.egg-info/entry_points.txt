@@ -1,0 +1,3 @@
+[console_scripts]
+cft = cft.main:main
+
