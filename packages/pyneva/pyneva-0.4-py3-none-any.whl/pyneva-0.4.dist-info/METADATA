@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyneva
+Version: 0.4
+Summary: Custom library for electricity meters Neva MT 3xx
+Home-page: https://github.com/vazelegend/pyneva
+Author: Nikita Nemirovsky
+Author-email: vaze.legend@gmail.com
+License: MIT
+Platform: any
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyserial (>=3.5)
+
+UNKNOWN
+
