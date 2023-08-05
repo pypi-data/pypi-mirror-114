@@ -1,0 +1,6 @@
+[console_scripts]
+tiledb-cf = tiledb.cf:cli
+
+[xarray.backends]
+tiledb = tiledb.cf.engines.xarray_engine:TileDBBackendEntrypoint
+
