@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+groot/__init__.py
+groot/functional.py
+groot/node.py
+groot/tree.py
+groot/utils.py
+i_am_groot.egg-info/PKG-INFO
+i_am_groot.egg-info/SOURCES.txt
+i_am_groot.egg-info/dependency_links.txt
+i_am_groot.egg-info/requires.txt
+i_am_groot.egg-info/top_level.txt
