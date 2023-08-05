@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: hypertrace-agent
+Version: 0.2.0
+Summary: Hypertrace Python Agent
+Home-page: https://github.com/hypertrace/pythonagent
+Author: Hypertrace
+Author-email: community@hypertrace.org
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/hypertrace/pythonagent/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: opentelemetry-api (==1.1.0)
+Requires-Dist: opentelemetry-exporter-otlp (==1.1.0)
+Requires-Dist: opentelemetry-exporter-zipkin (==1.1.0)
+Requires-Dist: opentelemetry-instrumentation (==0.20b0)
+Requires-Dist: opentelemetry-instrumentation-aiohttp-client (==0.20b0)
+Requires-Dist: opentelemetry-instrumentation-wsgi (==0.20b0)
+Requires-Dist: opentelemetry-instrumentation-flask (==0.20b0)
+Requires-Dist: opentelemetry-instrumentation-mysql (==0.20b0)
+Requires-Dist: opentelemetry-instrumentation-psycopg2 (==0.20b0)
+Requires-Dist: opentelemetry-instrumentation-requests (==0.20b0)
+Requires-Dist: opentelemetry-instrumentation-grpc (==0.20b0)
+Requires-Dist: opentelemetry-propagator-b3 (==1.1.0)
+Requires-Dist: opentelemetry-sdk (==1.1.0)
+Requires-Dist: opentelemetry-util-http (==0.20b0)
+Requires-Dist: google (>=3.0.0)
+Requires-Dist: pyyaml
+Requires-Dist: protobuf (>=3.15.8)
+
+file: README.md
+
