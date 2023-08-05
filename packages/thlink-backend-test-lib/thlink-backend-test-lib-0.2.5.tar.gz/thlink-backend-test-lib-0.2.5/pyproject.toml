@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "thlink-backend-test-lib"
+version = "0.2.5"
+description = "pytest mock fixtures"
+authors = ["thlink"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+thlink-backend-app-lib = "^0.6.0"
+aws-lambda-powertools = "^1.16.1"
+thlink-backend-db-lib = "^0.4.0"
+thlink-backend-object-storage-lib = "^0.2.1"
+thlink-backend-notification-lib = "^0.6.0"
+pytest = "^6.2.4"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."pytest11"]
+"thlink_backend_test_lib" = "thlink_backend_test_lib"
