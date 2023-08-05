@@ -1,0 +1,13 @@
+orion/algo/robo/__init__.py,sha256=3VXEPo4YbGu2khgc6ME0_e28mqNeYUSadSPgo_jJ1nM,398
+orion/algo/robo/_version.py,sha256=xsMe_TSiM4dNUtwbEeZbNjidjC3db5-UxdbzM5mwVYw,498
+orion/algo/robo/base.py,sha256=7qL_HAKAPZCKi_tfDYwg7796VuVflgHCa8_lHP6iu60,12791
+orion/algo/robo/bohamiann.py,sha256=qkmz6k1QRM6rbnIUGsmyaf0epbwmC7_T9VoQq6q54YY,9809
+orion/algo/robo/dngo.py,sha256=ZZ0WlgHeYbDwbNdc9lNrST8z6q6nfGkmvQ109FiPEo0,6588
+orion/algo/robo/gp.py,sha256=4JHZd3whStVauJ5CxXyOa4m-3x_IDvql8jbOvbdvhLg,10148
+orion/algo/robo/randomforest.py,sha256=fLfBgQdCJ3cKh1K7vUNyo93tzmaRF8k8hvRj5wzK0ww,5924
+orion.algo.robo-0.1.1.dist-info/LICENSE,sha256=GdBEmi4ZDpZKEEgKpUr4p82J_GxbYwDUEHosJBNJg-k,1550
+orion.algo.robo-0.1.1.dist-info/METADATA,sha256=47jXBqPrZJ7AfNao_o1-l-3FCsEtBq01z-aP8-RaBO0,4670
+orion.algo.robo-0.1.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+orion.algo.robo-0.1.1.dist-info/entry_points.txt,sha256=U10XFdM7dsvtVu4Zr6SyYrTYzw5MARZ5AUwtf89qB2w,277
+orion.algo.robo-0.1.1.dist-info/top_level.txt,sha256=l769l2bu6nhhTWB3Jmk6wLz59m7vaQ1kZQybOWxsiwM,6
+orion.algo.robo-0.1.1.dist-info/RECORD,,

@@ -1,0 +1,7 @@
+[OptimizationAlgorithm]
+robo_bohamiann = orion.algo.robo.bohamiann:RoBO_BOHAMIANN
+robo_dngo = orion.algo.robo.dngo:RoBO_DNGO
+robo_gp = orion.algo.robo.gp:RoBO_GP
+robo_gp_mcmc = orion.algo.robo.gp:RoBO_GP_MCMC
+robo_randomforest = orion.algo.robo.randomforest:RoBO_RandomForest
+
