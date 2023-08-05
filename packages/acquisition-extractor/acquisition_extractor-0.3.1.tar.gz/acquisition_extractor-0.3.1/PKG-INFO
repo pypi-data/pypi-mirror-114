@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: acquisition-extractor
+Version: 0.3.1
+Summary: Parse statute, decision data from a specified location
+Author: Marcelino G. Veloso III
+Author-email: testmarcelino@gmail.com
+Requires-Python: >=3.9.1,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: PyYAML (>=5.4.1,<6.0.0)
+Requires-Dist: arrow (>=1.1.0,<2.0.0)
+Requires-Dist: beautifulsoup4 (>=4.9.3,<5.0.0)
+Requires-Dist: html5lib (>=1.1,<2.0)
