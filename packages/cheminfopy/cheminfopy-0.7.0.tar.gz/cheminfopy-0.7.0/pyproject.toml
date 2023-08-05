@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "cheminfopy"
+version = "0.7.0"
+description = "cheminfopy is a SDK that provides a high-level interface to the rest-on-couch API that powers the cheminfo ELN"
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/cheminfo-py/cheminfopy"
+repository = "https://github.com/cheminfo-py/cheminfopy"
+keywords = ["ELN", "API", "data", "chemistry"]
+authors = ["Kevin M. Jablonka <kevin.jablonka@epfl.ch>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.12.1"
+black = "^21.7b0"
+isort = "^5.8.0"
+jupyterlab = "^3.0.15"
+Sphinx = "^3.5.1"
+sphinx-book-theme = "^0.1.1"
+sphinx-autodoc-typehints = "^1.11.1"
+sphinx-copybutton = "^0.3.1"
+pylint = "^2.9.5"
+twine = "^3.4.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
