@@ -1,0 +1,9 @@
+setup.py
+pikaManagement/__init__.py
+pikaManagement/consumer.py
+pikaManagement/producer.py
+pikaManagement.egg-info/PKG-INFO
+pikaManagement.egg-info/SOURCES.txt
+pikaManagement.egg-info/dependency_links.txt
+pikaManagement.egg-info/requires.txt
+pikaManagement.egg-info/top_level.txt
