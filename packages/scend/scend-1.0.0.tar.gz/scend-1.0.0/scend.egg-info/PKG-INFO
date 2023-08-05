@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: scend
+Version: 1.0.0
+Summary: SCEnd: A matrix factorization method for single-cell
+Home-page: https://github.com/deepomicslab/SCEnd
+Author: Bingchen Wang
+Author-email: wangbingchen@buaa.edu.cn
+License: UNKNOWN
+Description: # SCEnd
+        A matrix factorization method for single-cell
+        
+        
+        
+        
+        ## Pre-requirements
+        * python3
+        * numpy
+        * pandas
+        * scipy
+        * scikit-learn
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
