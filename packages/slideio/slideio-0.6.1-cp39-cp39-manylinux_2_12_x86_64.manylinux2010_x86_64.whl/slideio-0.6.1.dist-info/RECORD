@@ -1,0 +1,13 @@
+libslide_io.so,sha256=q5ixqVsHr9GYGgADrmzSr8OAOaopYuTVMBHaMy0Ht8U,63172352
+slideiopybind.cpython-39-x86_64-linux-gnu.so,sha256=bV32PTSob_IZGLL-pPz4H-6F5CY5iWGxYz-8EPJ1VHA,3528416
+slideiopybind.cpython-37m-x86_64-linux-gnu.so,sha256=gydfS13HnD2dzkNMEYAatQ_SwzQhbblKCNW22THJqgw,3536608
+slideiopybind.cpython-36m-x86_64-linux-gnu.so,sha256=PRmoSQcethioORlIUKFcVEI2O3tZu2WsdapUlk4Yv0U,3536608
+slideiopybind.cpython-310-x86_64-linux-gnu.so,sha256=HnYfXDqNxT4vS8e-wz1DUZo_OQ-XF5c0KeBVst6Afqc,3528416
+slideiopybind.cpython-38-x86_64-linux-gnu.so,sha256=vzefO5CUzOOT59zg84AAJCcCUMJFYPGdokOXoq62VQE,3528416
+slideio/py_slideio.py,sha256=1nyQHvws8lZcwixrTuvhViHcN3ongFsCq0YTLW8wOdg,8168
+slideio/__init__.py,sha256=-mYF3uAT_vENMs8F6bY7Xd7-w2MEIHWryVscGdHCWHo,226
+slideio-0.6.1.dist-info/WHEEL,sha256=u068djhQadWB5Cpg73zJkoU_srgtd6zcF9RJVkaqWXU,148
+slideio-0.6.1.dist-info/RECORD,,
+slideio-0.6.1.dist-info/METADATA,sha256=wkkmKTqRPzf-pPAFN6cGlwy8TXHCmNP44vnReYiDXm4,1200
+slideio-0.6.1.dist-info/top_level.txt,sha256=GjKvFJIq0ND8NFcAt3GozneEwtsW0rX09rDW1CrPGcI,8
+slideio-0.6.1.data/data/requirements-dev.txt,sha256=88hd6JBxfTwnj69wkk9kE6O8Apk7ybLAtvAwsF8wyS4,28
