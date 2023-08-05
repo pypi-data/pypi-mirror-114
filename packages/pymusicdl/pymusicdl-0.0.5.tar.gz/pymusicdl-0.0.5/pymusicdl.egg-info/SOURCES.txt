@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+pymusicdl/__init__.py
+pymusicdl/musicDL.py
+pymusicdl.egg-info/PKG-INFO
+pymusicdl.egg-info/SOURCES.txt
+pymusicdl.egg-info/dependency_links.txt
+pymusicdl.egg-info/requires.txt
+pymusicdl.egg-info/top_level.txt
+pymusicdl/modules/__init__.py
+pymusicdl/modules/common.py
+pymusicdl/modules/picker.py
+pymusicdl/modules/spotify_downloader.py
+pymusicdl/modules/ytDownloader.py
