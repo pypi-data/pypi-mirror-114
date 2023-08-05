@@ -1,0 +1,7 @@
+README.md
+setup.py
+pipincluder/__init__.py
+pipincluder.egg-info/PKG-INFO
+pipincluder.egg-info/SOURCES.txt
+pipincluder.egg-info/dependency_links.txt
+pipincluder.egg-info/top_level.txt
