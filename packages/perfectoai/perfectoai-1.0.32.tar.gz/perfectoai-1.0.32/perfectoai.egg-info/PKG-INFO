@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: perfectoai
+Version: 1.0.32
+Summary: PerfectoAI is an automated emailable reporter along with AI graphs & predictions
+Home-page: UNKNOWN
+Author: Genesis Thomas
+Author-email: gthomas@perforce.com
+License: UNKNOWN
+Description: PerfectoAI is an automated emailable reporter along with AI graphs & predictions for Perfecto Reports.
+        
+        CHANGES
+        =======
+        
+        1.0.32:
+        -------
+        
+        - Clicking on header logo will navigate to perfecto cloud website
+        - Removed unnecessary logs, packages & non relevant code to improve speed by 20%
+        - Graphs have meaningful headings
+        - Deprecating tags of -e parameter and replaced it with addInfo to make it more meaningful
+        - Appending " -d true" parameter to your existing query will now enable downloading of .txt files and extra console statements
+        - Appending "|ci=false" to -e parameter will automatically open report post execution. It will not be opened automatically by default in order to provide a seemless devops experience.
+        
+Keywords: Perfecto,appium,selenium,testing,api,automation
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
