@@ -1,0 +1,271 @@
+Metadata-Version: 2.1
+Name: libecm
+Version: 1.2
+Summary: Library for NEXTW ECM-SK and ECM-XF Module
+Home-page: https://github.com/hex-in/libecm
+Author: Heyn
+Author-email: heyunhuan@gmail.com
+License: UNKNOWN
+Keywords: ETHERCAT,ECM-SK,ECM-XF
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+libecm
+======
+
+libecm is a library for EtherCAT master ( NEXTW ECM-SK and NEXTW ECM-XF
+)
+
+Installation
+------------
+
+.. code:: shell
+
+    # pip3 install libecm
+
+or
+
+.. code:: shell
+
+    # python3 setup.py build
+    # python3 setup.py install
+
+After installation you can run unit tests to make sure that the library
+works fine. Execute
+
+.. code:: shell
+
+    # python3 -m libecm.test.test_csp           # For ECM-SK
+    # python3 -m libecm.test.test_ecmxf_elmo    # For ECM-XF elmo 8 servo
+
+Usage
+-----
+
+In Python 3 ( ECM-SK 12bits )
+
+.. code:: python
+
+    from libecm import sk12 as ethercat
+
+    from libecm.sk12 import WO, WR
+    from libecm.sk12 import DRIVE, IO
+    from libecm.sk12 import FREERUN, DCSYNC
+    from libecm.sk12 import MODE_CSP, MODE_CSV, MODE_CST
+    from libecm.sk12 import MAX_SLAVES, MAX_CHANNELS, MAX_BYTES
+    from libecm.sk12 import STATE_INIT, STATE_PRE_OP, STATE_SAFE_OP, STATE_OP
+
+In Python 3 ( ECM-SK 16bits )
+
+.. code:: python
+
+    from libecm import sk16 as ethercat
+
+    from libecm.sk16 import WO, WR
+    from libecm.sk16 import DRIVE, IO
+    from libecm.sk16 import FREERUN, DCSYNC
+    from libecm.sk16 import MODE_CSP, MODE_CSV, MODE_CST
+    from libecm.sk16 import MAX_SLAVES, MAX_CHANNELS, MAX_BYTES
+    from libecm.sk16 import STATE_INIT, STATE_PRE_OP, STATE_SAFE_OP, STATE_OP
+
+In Python 3( ECM-XF )
+
+.. code:: python
+
+    from libecm.ecmxf import ecmxf_library
+    from libecm.ecmxf import DATA_DEFAULT_SIZE
+    from libecm.ecmxf import MODE_CSP, MODE_CSV, MODE_CST
+    from libecm.ecmxf import STATE_INIT, STATE_PRE_OP, STATE_SAFE_OP, STATE_OP
+
+    # ELMO SERVO
+    from libecm.servo.elmo_gold_pdo_mapping import get_rx_pdo_mapping
+    from libecm.servo.elmo_gold_pdo_mapping import get_tx_pdo_mapping
+
+    # UNIVERSAL SERVO
+    from libecm.servo.universal_pdo_mapping import get_rx_pdo_mapping
+    from libecm.servo.universal_pdo_mapping import get_tx_pdo_mapping
+
+ECM-SK Example
+--------------
+
+1. Open EtherCAT
+
+.. code:: python
+
+    ethercat.open( )
+
+2. EtherCAT initial.
+
+.. code:: python
+
+  ethercat.set_state( STATE_PRE_OP )                # Set EtherCAT state    
+  ethercat.axis( group=0, topology=[ DRIVE ]*8 )    # Return number of slaves.    
+  ethercat.set_dc( 1000 )                           # Cycle Time Unit : us                  
+  ethercat.set_mode( slaves=[1], modes=[ MODE_CSP ]*1, types=[ DCSYNC ]*1)    
+  time.sleep( 1 )    
+  ethercat.set_state( STATE_SAFE_OP )    
+  time.sleep( 1 )    
+  ethercat.set_state( STATE_OP )
+
+3. Servo ON
+
+.. code:: python
+
+  ethercat.servo_on( slaves=[1] )
+
+4. CSP, CSV, CST Mode
+
+.. code:: python
+
+  ethercat.csp( slaves=[1], values=[ int(position) ], rw=WR )
+  ethercat.csv( slaves=[1], values=[ int(velocity) ], rw=WR )
+  ethercat.cst( slaves=[1], values=[ int(torque) ],   rw=WR ) 
+
+  ethercat.mixing( [ dict( slaves=1, modes=MODE_CSV, values=0x55555555 ), dict( slaves=2, modes=MODE_CSP, values=0xAAAAAAAA ) ] )
+
+
+5. Close EtherCAT
+
+.. code:: python
+
+  result = ethercat.servo_off( slaves=[1] )    # Return list    """ [ { 'index':0, 'status':0, 'position':0, 'torque':0 }, ]    """
+  ethercat.set_state( STATE_INIT )    
+  ethercat.close()
+
+6. Other Functions
+
+.. code:: python
+
+  ethercat.get_status( )
+
+  ethercat.sdo( 1, 0x607A, 0, size=4, alias='Target Position' ).value     # Read SDO
+  ethercat.sdo( 1, 0x60C2, 1, size=1, alias='Interpolation').value = 125  # Write SDO
+
+  ethercat.clear_alarm( slaves=[ 1, 2, 3, 4, 5, 6, 7, 8 ] )
+  ethercat.go_home( [ 1, 2, 3, 4, 5, 6, 7, 8 ] )
+  ethercat.abort_home( [ 1, 2, 3, 4, 5, 6, 7, 8 ] )
+  ethercat.set_ex( 0, 0 ) # Param1 Disable(Enable) Command CRC Verification 
+                          # Param2 Disable(Enable) Response CRC Verification
+
+  ethercat.read_dio( slaves=[ 1, 2, 3, 4, 5, 6, 7, 8 ])
+  ethercat.write_dio(slaves=[ 1, 2, 3, 4, 5, 6, 7, 8 ], values=[ 0x55, 0x66, 0x77, 8, 9, 10, 11, 12 ] )
+
+  ethercat.reset( )   # Module hardware reset 
+  ethercat.reboot( )  # Module software reset
+  ethercat.ric_io( )  # Read ECM IC DIO 
+  ethercat.wic_io( 0x55555555 ) # Write ECM IC DIO
+
+
+ECM-XF Example
+--------------
+
+1. Open EtherCAT
+
+.. code:: python
+
+  from libecm.servo.universal_pdo_mapping import get_rx_pdo_mapping 
+  from libecm.servo.universal_pdo_mapping import get_tx_pdo_mapping
+
+  COUNT  = 1
+  SLAVES = [ i for i in range( 0, COUNT ) ]
+  MODES  = [ MODE_CSV ]
+
+  RX_PDO_MAPPING = get_rx_pdo_mapping( MODES )
+  TX_PDO_MAPPING = get_rx_pdo_mapping( MODES )
+
+  ethercat = ecmxf_library( SLAVES, RX_PDO_MAPPING, TX_PDO_MAPPING )
+  ethercat.open( dev='/dev/spidev0.0' )
+
+2. EtherCAT initial
+
+.. code:: python
+
+  ethercat.set_dc( 5000000 )    # ns    
+  ethercat.firmware()           # Get ECMXF firmware version    
+  ethercat.axis( )              # Get slave count    
+  ethercat.set_state( STATE_PRE_OP )    
+  ethercat.reconfig( slaves=SLAVES, rx_mapping=RX_PDO_MAPPING, tx_mapping=TX_PDO_MAPPING )   
+  ethercat.set_mode( slaves=SLAVES, modes=MODES )    
+
+  ethercat.set_state( STATE_SAFE_OP )    
+  for slave in SLAVES:                       
+    ethercat.align_position( slave=slave, homing=True, position=0 )    
+
+  ethercat.set_state( STATE_OP )
+
+3. Servo ON
+
+.. code:: python
+
+  ethercat.servo_on( slaves=SLAVES )
+
+4. CSP, CSV, CST Mode
+
+.. code:: python
+
+  ethercat.mixing( slaves=SLAVES, values=[ 0 ]*COUNT, syntax=False )  # Not monitor FIFO 
+  ethercat.mixing( slaves=SLAVES, values=[ 0 ]*COUNT, syntax=True  )   # monitor FIFO
+
+  # Get ECMXF feedback values 
+  ethercat.feedback( slaves=SLAVES )
+
+
+5. Close EtherCAT
+
+.. code:: python
+
+  ethercat.servo_off( slaves=SLAVES )    
+  ethercat.close( )
+
+6. Other Functions
+
+.. code:: python
+
+  from libecm.ecmxf import sdo
+
+  ethercat.sdo( 1, 0x607A, 0, size=4, alias='Target Position' ).value     # Read SDO 
+  ethercat.sdo( 1, 0x60C2, 1, size=1, alias='Interpolation').value = 125  # Write SDO
+
+  ethercat.reset( )   # Module hardware reset 
+  ethercat.reboot( )  # Module software reset
+
+  ethercat.show_pdo( slaves=SLAVES, index=0x1C12 ) 
+  ethercat.show_pdo( slaves=SLAVES, index=0x1C13 )
+
+  ethercat.show_pdo_size()
+
+
+
+V1.2 (2021-05-31 dev)
+~~~~~~~~~~~~~~~~~~~~~
+
+-  New add hardware reset function ( For Raspberry Pi 4B, RESET PIN =
+   WIRINGPI CODE 3 ).
+
+-  Optimized class hexinSigmoid
+
+-  Fixed some bugs.
+
+V1.1 (2021-05-13)
+~~~~~~~~~~~~~~~~~
+
+-  New add ECMXF library.
+
+V0.6 (2020-09-28)
+~~~~~~~~~~~~~~~~~
+
+-  Optimized code.
+
+
