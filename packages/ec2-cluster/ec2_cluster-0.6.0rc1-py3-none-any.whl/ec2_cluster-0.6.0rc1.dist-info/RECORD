@@ -1,0 +1,7 @@
+ec2_cluster/VERSION,sha256=w6_cS416JePH43fcAuqaqyRwOiQc_I6bDVQxQ-Dl1Y0,8
+ec2_cluster/__init__.py,sha256=ZInoL38A8CZ5KOudjZ_KxEleeaTm0HnQB6qutI-Q7To,299
+ec2_cluster/extras.py,sha256=1cv0oUMgCXv_zHsOGr5uYlpExkfJCB47mSgkG8BCnPo,2225
+ec2_cluster-0.6.0rc1.dist-info/METADATA,sha256=ZOlKSyJ8ULQrZRce5cqGIpauHbUSEAXWL1x6jcbuLHY,3098
+ec2_cluster-0.6.0rc1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ec2_cluster-0.6.0rc1.dist-info/top_level.txt,sha256=PQ_7kNxDu44OTtYE33-ASOMf25I4zt82Myf8shHJY9Y,12
+ec2_cluster-0.6.0rc1.dist-info/RECORD,,
