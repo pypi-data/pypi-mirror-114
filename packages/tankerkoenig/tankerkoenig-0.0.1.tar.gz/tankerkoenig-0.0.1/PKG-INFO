@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: tankerkoenig
+Version: 0.0.1
+Summary: Wrapper for creativecommons.tankerkoenig.de API
+Home-page: https://github.com/hugohabicht01/tankerkoenig-python
+Author: hugohabicht01
+Author-email: jodeldiplominhaber@pm.me
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/hugohabicht01/tankerkoenig-python/issues
+Project-URL: Source, https://github.com/hugohabicht01/tankerkoenig-python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# Tankerkoenig-Python
+Python wrapper for the creativecommons.tankerkoenig.de API
+
+Note: The API is under Creative Commons (CC BY 4.0) license. It is used by many clients so please restrict API calls to the minimum.
+Every request requires an API key that can be requested [here](https://creativecommons.tankerkoenig.de/#register)
+
+## Example
+```python
+import tankerkoenig
+from tankerkoenig import models
+
+client = tankerkoenig.Client(api_key="00000000-0000-0000-0000-000000000002")
+
+petrol_stations = client.list(
+    lat=50.114634,
+    lng=8.687657,
+    rad=2,
+    petrol_type=models.Petrol.DIESEL,
+    sort=models.SortingMethod.DISTANCE,
+)
+print(petrol_stations)
+```
+
+
