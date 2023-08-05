@@ -1,0 +1,10 @@
+pandas
+nltk
+transformers
+spacy
+tensorflow
+clean-text
+word2vec
+dateparser
+scikit-learn
+google-cloud-storage
