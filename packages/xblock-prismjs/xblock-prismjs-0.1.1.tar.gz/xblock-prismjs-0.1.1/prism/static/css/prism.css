@@ -1,0 +1,5 @@
+/* CSS for PrismXBlock */
+code[class*="language-"] {
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
