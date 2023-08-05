@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: shreyadatta
+Version: 0.3
+Summary: IAS shreya datta
+Home-page: https://github.com/susanta97
+Author: susanta
+Author-email: mail2susantasadhukhan@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/susanta97
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+# Example Package
+
+You are my good better best friend . I will wait for you all my life . 
+
+[Github-flavored Markdown](https://guides.github.com/susanta97/)
+
+my best friend
+
