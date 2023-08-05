@@ -1,0 +1,16 @@
+pypgstac/__init__.py,sha256=G6Dbxq2ws-1ZAXwDD8q0KWueYtso_Y6Uyvtj8sRWsPI,22
+pypgstac/migrations/pgstac.0.1.9.sql,sha256=qC6CFNPZah8JyL3t24ziGJ35QN3-S2nCiXuaASMJrSs,35445
+pypgstac/migrations/pgstac.0.2.3.sql,sha256=XdtKBi-Z0OHmSPFeNniMsLrTtymxHQXwUBGqWTjrM8U,35445
+pypgstac/migrations/pgstac.0.2.4-0.2.5.sql,sha256=aQ-9Hnv2qZapmQn2QDy3ugOHE7k2_9rZndX7AmB9BoI,7132
+pypgstac/migrations/pgstac.0.2.4-0.2.7.sql,sha256=hLxhGsRiPr6yBJ9KtWQdEeDbS_s3mRk4uHOIG-hAQgI,8816
+pypgstac/migrations/pgstac.0.2.4.sql,sha256=XhjE5dQqGp6_QIWGbKIm0iPVJs2jcpL6AjewzxBGSZY,35445
+pypgstac/migrations/pgstac.0.2.5-0.2.7.sql,sha256=_MP5oyWRjbIbKMkgHXLfWTFtssMgVccFCGtbboCeO4k,1783
+pypgstac/migrations/pgstac.0.2.5.sql,sha256=SWI8ztKf0dTzxzcVmYp770E_3gE2luc-EPAhT7ZIlWo,35570
+pypgstac/migrations/pgstac.0.2.7-0.2.8.sql,sha256=FVKpMYcA4jOtkp5YhJ6iBr9ZG9gVkyhpOAIgFgnqlfs,103
+pypgstac/migrations/pgstac.0.2.7.sql,sha256=5vgqdTm5YMEBa0N3v5u6_YRmzZzdHyTijACyuk0ApZQ,35570
+pypgstac/migrations/pgstac.0.2.8.sql,sha256=Xm6fXn92HjknjZB7AJ-cB2grmQNcY5Bum-bMC3b88iM,35570
+pypgstac/pypgstac.py,sha256=YB_DFXyMv-f8wQRmHBFWB3mTxfrS-tcq-fFeZhqW6Ug,9767
+pypgstac-0.2.8.dist-info/entry_points.txt,sha256=0uevJ0aHf9IOs6auf7JzqS0Z9UaoUFCArytJtPUqb28,50
+pypgstac-0.2.8.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+pypgstac-0.2.8.dist-info/METADATA,sha256=DOgHGqm--9uhRZzAYWZ3DeTaAgdELN1s8J2LRqzyICY,750
+pypgstac-0.2.8.dist-info/RECORD,,
