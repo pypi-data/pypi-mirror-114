@@ -1,0 +1,6 @@
+setup.py
+src/csc/__init__.py
+src/csc.egg-info/PKG-INFO
+src/csc.egg-info/SOURCES.txt
+src/csc.egg-info/dependency_links.txt
+src/csc.egg-info/top_level.txt
