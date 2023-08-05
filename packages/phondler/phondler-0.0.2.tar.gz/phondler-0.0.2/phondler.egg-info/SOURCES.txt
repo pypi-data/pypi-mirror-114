@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+phondler/__init__.py
+phondler/phondler.py
+phondler/phondler_tables.py
+phondler/phoneme.py
+phondler/pronlex.py
+phondler.egg-info/PKG-INFO
+phondler.egg-info/SOURCES.txt
+phondler.egg-info/dependency_links.txt
+phondler.egg-info/top_level.txt
