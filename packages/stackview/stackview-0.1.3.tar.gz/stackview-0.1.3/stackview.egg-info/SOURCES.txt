@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+stackview/__init__.py
+stackview.egg-info/PKG-INFO
+stackview.egg-info/SOURCES.txt
+stackview.egg-info/dependency_links.txt
+stackview.egg-info/requires.txt
+stackview.egg-info/top_level.txt

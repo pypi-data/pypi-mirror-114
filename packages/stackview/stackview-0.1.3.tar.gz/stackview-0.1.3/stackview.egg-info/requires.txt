@@ -1,0 +1,5 @@
+numpy!=1.19.4
+numpy_image_widget
+ipywidgets
+scikit-image
+ipyevents
