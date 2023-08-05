@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+src/brainlib.egg-info/PKG-INFO
+src/brainlib.egg-info/SOURCES.txt
+src/brainlib.egg-info/dependency_links.txt
+src/brainlib.egg-info/top_level.txt
