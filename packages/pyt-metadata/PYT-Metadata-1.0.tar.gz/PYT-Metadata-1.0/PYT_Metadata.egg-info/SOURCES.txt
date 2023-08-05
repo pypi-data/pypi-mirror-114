@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+PYT_Metadata/__init__.py
+PYT_Metadata/__main__.py
+PYT_Metadata/generate_pyt_meta.py
+PYT_Metadata.egg-info/PKG-INFO
+PYT_Metadata.egg-info/SOURCES.txt
+PYT_Metadata.egg-info/dependency_links.txt
+PYT_Metadata.egg-info/requires.txt
+PYT_Metadata.egg-info/top_level.txt
