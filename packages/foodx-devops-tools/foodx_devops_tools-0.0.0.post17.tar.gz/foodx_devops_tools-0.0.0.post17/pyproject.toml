@@ -1,0 +1,82 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+
+[tool.flit.metadata]
+module = "foodx_devops_tools"
+author = "FoodX Technologies"
+author-email = "support@foodxtech.com"
+home-page = "https://github.com/Food-X-Technologies/foodx_devops_tools"
+description-file = "README.rst"
+classifiers = ["License :: OSI Approved :: MIT License"]
+
+requires-python = ">=3.8"
+
+requires = [
+    "aiofiles == 0.7.0",
+    "azure-devops == 6.0.0b4",
+    "click == 7.1.2",
+    "click-log == 0.3.2",
+    "deepmerge == 0.3.0",
+    "pydantic == 1.8.2",
+    "ruamel.yaml == 0.17.9"
+]
+
+
+[tool.flit.scripts]
+puff = "foodx_devops_tools.puff_utility:entrypoint"
+release_flow = "foodx_devops_tools.release_flow_entry:flit_entry"
+validate_configuration = "foodx_devops_tools.validate_configuration:flit_entry"
+
+
+[tool.flit.metadata.requires-extra]
+dev = [
+    "build_harness == 0.1.1",
+    "pre_commit == 2.7.1",
+]
+doc = [
+    "sphinx == 3.2.1",
+    "sphinx_rtd_theme == 0.5.0",
+]
+test = [
+    "asynctest == 0.13.0",
+    "pytest == 6.1.1",
+    "pytest-cov == 2.10.1",
+    "pytest-mock == 2.0.0",
+]
+
+
+[tool.black]
+# Don't forget to sync this with isort, .flake8
+line-length = 80
+
+
+[tool.isort]
+profile = "black"
+# Don't forget to sync this with black, .flake8
+line_length = 80
+
+
+[tool.coverage.run]
+source = ["foodx_devops_tools"]
+branch = true
+
+
+[tool.coverage.report]
+exclude_lines = [
+    "except ImportError",
+    "raise NotImplementedError",
+    "pass",
+    "ABCmeta",
+    "abstractmethod",
+    "warnings.warn",
+]
+omit = [
+    "*exceptions*",
+    "*pytest_cache*",
+    ".venv/*",
+    "dist/*",
+]
+precision = 0
+show_missing = true

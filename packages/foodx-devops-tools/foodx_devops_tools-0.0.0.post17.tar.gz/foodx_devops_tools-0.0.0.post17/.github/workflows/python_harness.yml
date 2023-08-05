@@ -1,0 +1,498 @@
+name: Python build harness
+on:
+  - push
+
+env:
+  FLIT_ROOT_INSTALL: 1
+
+  PYPI_API_USER: __token__
+
+
+  VENV_DIR: .venv
+  VENV_BIN: .venv/bin
+  PIP_CACHE_DIR: ~/.cache/pip
+  CACHE_HASH_PATH: pyproject.toml
+
+  CALL_TARGET: ${VENV_BIN}/build-harness
+
+
+jobs:
+  install-dependencies:
+    runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: false
+      matrix:
+        # Only need to check formatting on one version.
+        python-version: [3.8, 3.9]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: actions/cache@v2
+        id: pip-cache
+        with:
+          path: ${{ env.PIP_CACHE_DIR }}
+          key: ${{ runner.os }}-pip-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - uses: actions/cache@v2
+        id: venv-cache
+        with:
+          path: ${{ env.VENV_DIR }}
+          key: ${{ runner.os }}-venv-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - run: |
+          python3 -m venv .venv
+          ${{ env.VENV_BIN }}/pip install build_harness
+          ${{ env.VENV_BIN }}/build-harness install
+          ${{ env.VENV_BIN }}/flit install -s
+        # Only reinstall packages if there is a cache miss.
+        if: (steps.pip-cache.output.cache-hit != 'true') || (steps.venv-cache.output.cache-hit != 'true')
+
+  formatting-check:
+    env:
+      TARGET: formatting --check
+    needs:
+      - install-dependencies
+    runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: false
+      matrix:
+        # Only need to check formatting on one version.
+        python-version: [3.9]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.PIP_CACHE_DIR }}
+          key: ${{ runner.os }}-pip-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.VENV_DIR }}
+          key: ${{ runner.os }}-venv-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - run: ${{ env.CALL_TARGET }} ${TARGET}
+
+
+  flake8-check:
+    env:
+      TARGET: static-analysis --analysis flake8
+    needs:
+      - install-dependencies
+    runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: false
+      # It can be useful to do flake8 checks across Python version because you get code checks across versions.
+      matrix:
+        python-version: [3.8, 3.9]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.PIP_CACHE_DIR }}
+          key: ${{ runner.os }}-pip-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.VENV_DIR }}
+          key: ${{ runner.os }}-venv-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - run: ${{ env.CALL_TARGET }} ${TARGET}
+
+
+  mypy-check:
+    env:
+      TARGET: static-analysis --analysis mypy
+    needs:
+      - install-dependencies
+    runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: false
+      # It can be useful to do mypy checks across Python version because you get code checks across versions.
+      matrix:
+        python-version: [3.8, 3.9]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.PIP_CACHE_DIR }}
+          key: ${{ runner.os }}-pip-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.VENV_DIR }}
+          key: ${{ runner.os }}-venv-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - run: ${{ env.CALL_TARGET }} ${TARGET}
+
+
+  pydocstyle-check:
+    env:
+      TARGET: static-analysis --analysis pydocstyle
+    needs:
+      - install-dependencies
+    runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: false
+      matrix:
+        # Only need to check docstrings on one version.
+        python-version: [3.9]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.PIP_CACHE_DIR }}
+          key: ${{ runner.os }}-pip-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.VENV_DIR }}
+          key: ${{ runner.os }}-venv-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - run: ${{ env.CALL_TARGET }} ${TARGET}
+
+
+  unit-tests:
+    env:
+      TARGET: unit-test
+    needs:
+      - install-dependencies
+    runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.8, 3.9]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.PIP_CACHE_DIR }}
+          key: ${{ runner.os }}-pip-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.VENV_DIR }}
+          key: ${{ runner.os }}-venv-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - run: ${{ env.CALL_TARGET }} ${TARGET}
+
+
+# !!! acceptance tests deactivated while there are no feature files present in repo.
+#  acceptance-tests:
+#    env:
+#      TARGET: acceptance tests --junitxml
+#    needs:
+#      - install-dependencies
+#    runs-on: ubuntu-20.04
+#    strategy:
+#      fail-fast: false
+#      matrix:
+#        python-version: [3.8, 3.9]
+#    steps:
+#      - uses: actions/checkout@v2
+#      - name: Set up Python ${{ matrix.python-version }}
+#        uses: actions/setup-python@v2
+#        with:
+#          python-version: ${{ matrix.python-version }}
+#      - uses: actions/cache@v2
+#        with:
+#          path: ${{ env.PIP_CACHE_DIR }}
+#          key: ${{ runner.os }}-pip-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+#      - uses: actions/cache@v2
+#        with:
+#          path: ${{ env.VENV_DIR }}
+#          key: ${{ runner.os }}-venv-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+#      - run: ${{ env.CALL_TARGET }} ${TARGET}
+
+
+  unit-tests-coverage-report:
+    env:
+      # Don't forget to update the coverage threshold in .pre-commit-config.yaml
+      TARGET: unit-test --coverage-html
+    needs:
+      - install-dependencies
+    runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.8, 3.9]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.PIP_CACHE_DIR }}
+          key: ${{ runner.os }}-pip-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.VENV_DIR }}
+          key: ${{ runner.os }}-venv-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - run: ${{ env.CALL_TARGET }} ${TARGET}
+      - uses: actions/upload-artifact@v2
+        with:
+          name: coverage-report-artifacts-${{ matrix.python-version }}
+          path: dist/coverage_report
+
+
+  unit-tests-coverage-check:
+    env:
+      # Don't forget to update the coverage threshold in .pre-commit-config.yaml
+      # Setting CI threshold to 89% because GHA calculates a different coverage result than locally (94%);
+      # the problem seems to be with foodx_devops_tools/pull/puffignore.py (32% coverage in GHA, 100% coverage locally).
+      TARGET: unit-test --check 89
+    needs:
+      - install-dependencies
+    runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.8, 3.9]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.PIP_CACHE_DIR }}
+          key: ${{ runner.os }}-pip-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.VENV_DIR }}
+          key: ${{ runner.os }}-venv-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - run: ${{ env.CALL_TARGET }} ${TARGET}
+
+
+  install-check:
+    env:
+      TARGET: install
+    needs:
+      - install-dependencies
+    runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.8, 3.9]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.PIP_CACHE_DIR }}
+          key: ${{ runner.os }}-pip-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.VENV_DIR }}
+          key: ${{ runner.os }}-venv-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - run: ${{ env.CALL_TARGET }} ${TARGET}
+
+
+  build-packages:
+    needs:
+      - install-dependencies
+    runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: false
+      matrix:
+        # Only need to build package using a single run.
+        python-version: [3.9]
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          # need all tags and branch info for release-flow utility.
+          # https://github.com/actions/checkout#fetch-all-history-for-all-tags-and-branches
+          fetch-depth: 0
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.PIP_CACHE_DIR }}
+          key: ${{ runner.os }}-pip-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.VENV_DIR }}
+          key: ${{ runner.os }}-venv-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          export THIS_VERSION=$(${{ env.VENV_BIN }}/release-flow --default-branch main)
+          echo ${THIS_VERSION}
+          ${{ env.CALL_TARGET }} package --release-id ${THIS_VERSION}
+      - uses: actions/upload-artifact@v2
+        with:
+          name: distribution-package-artifacts
+          path: dist
+
+
+  publish-release-packages:
+    concurrency: publish
+    env:
+      PYPI_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
+    # Lack of regular expression parsing limits what conditions are possible here.
+    # Want to scope in on valid semantic versions https://semver.org including "alpha", "beta" pre-releases.
+    if: ${{ startsWith(github.ref, 'refs/tags/') && !contains(github.ref, '+dryrun') }}
+    needs:
+      - build-packages
+      - install-dependencies
+    runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.9]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.PIP_CACHE_DIR }}
+          key: ${{ runner.os }}-pip-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.VENV_DIR }}
+          key: ${{ runner.os }}-venv-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - uses: actions/download-artifact@v2
+        with:
+          name: distribution-package-artifacts
+          path: dist
+      - run: |
+          echo "github.ref: ${{ github.ref }}"
+          ls dist/
+          ${{ env.CALL_TARGET }} publish --user ${PYPI_API_USER} --password ${PYPI_TOKEN}
+
+
+  publish-release-dryrun:
+    concurrency: publish
+    env:
+      PYPI_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
+    if: ${{ startsWith(github.ref, 'refs/tags/') && contains(github.ref, '+dryrun') }}
+    needs:
+      - build-packages
+      - install-dependencies
+    runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.9]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.PIP_CACHE_DIR }}
+          key: ${{ runner.os }}-pip-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.VENV_DIR }}
+          key: ${{ runner.os }}-venv-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - uses: actions/download-artifact@v2
+        with:
+          name: distribution-package-artifacts
+          path: dist
+      - run: |
+          echo "github.ref: ${{ github.ref }}"
+          ls dist/
+          ${{ env.CALL_TARGET }} publish --user ${PYPI_API_USER} --password ${PYPI_TOKEN} --dryrun
+
+
+
+  publish-prerelease-baseline-packages:
+    concurrency: publish
+    env:
+      PYPI_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
+    if: ${{ startsWith(github.ref, 'refs/heads/main') }}
+    needs:
+      - build-packages
+      - install-dependencies
+    runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.9]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.PIP_CACHE_DIR }}
+          key: ${{ runner.os }}-pip-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.VENV_DIR }}
+          key: ${{ runner.os }}-venv-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - uses: actions/download-artifact@v2
+        with:
+          name: distribution-package-artifacts
+          path: dist
+      # Main branch publish pre-release "baseline" package (semantic version "-post.N" release id suffix).
+      - run: |
+          # debug logging
+          echo "github.ref: ${{ github.ref }}"
+          ls dist/
+          # publish main branch packages with appropriate release id
+          ${{ env.CALL_TARGET }} publish --user ${PYPI_API_USER} --password ${PYPI_TOKEN}
+
+
+  publish-feature-packages:
+    concurrency: publish
+    env:
+      PYPI_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
+    if: ${{ !startsWith(github.ref, 'refs/tags/') && !startsWith(github.ref, 'refs/heads/main') }}
+    needs:
+      - build-packages
+      - install-dependencies
+    runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.9]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.PIP_CACHE_DIR }}
+          key: ${{ runner.os }}-pip-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.VENV_DIR }}
+          key: ${{ runner.os }}-venv-${{ matrix.python-version }}-${{ hashFiles(env.CACHE_HASH_PATH) }}
+      - uses: actions/download-artifact@v2
+        with:
+          name: distribution-package-artifacts
+          path: dist
+      # Don't publish feature branch packages, just provide diagnostic logging.
+      - run: |
+          # debug logging
+          echo "github.ref: ${{ github.ref }}"
+          ls dist/
