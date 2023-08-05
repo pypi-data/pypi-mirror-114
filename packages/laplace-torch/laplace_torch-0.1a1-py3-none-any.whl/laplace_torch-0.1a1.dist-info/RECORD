@@ -1,0 +1,16 @@
+laplace/__init__.py,sha256=kMS9wGXDUMBsnTB-uEsOWWD7zwcRPwGFIA2AHpJrCGE,658
+laplace/baselaplace.py,sha256=mfbXcbmIYsEdOKkt0fSfuTCJ34TiHm8Si0y9QbPosTI,31601
+laplace/feature_extractor.py,sha256=89EMgB8b1Ofd21p0Nv0_fH9k8dAinVU6VJYYCa8Nt8o,5650
+laplace/laplace.py,sha256=qzWq4Zq1Ba9HacfFx-idowmdIbLemAOEXdPW48X6EF4,1155
+laplace/lllaplace.py,sha256=DZee_Fe-y_IHe1dta21pXtbo1nAC4qQPHF2ZXO9zJqU,9626
+laplace/matrix.py,sha256=6Neb_xgajCY4_ideWuWPieNgN4gDQEsnc0P4ZBzlchs,15877
+laplace/utils.py,sha256=suSvkCqxIl9xjb3i_c5w55BHg1SlzHuWLXDCi2G4-fY,4447
+laplace/curvature/__init__.py,sha256=1epAAhnFfYiatkGx1O4fmbgRn6tBglcFjTv7fXUe2wM,598
+laplace/curvature/asdl.py,sha256=N6D4p3MbAYEw4LKvqOi-gHX8nClBZ7waGCl3YRgNEho,5960
+laplace/curvature/backpack.py,sha256=QihYh8iv3IR846QpjYCFuLD6S0ISIXcxoklIHDhEOZU,5397
+laplace/curvature/curvature.py,sha256=H-7pMgsn_TYV7rSWwosN6egWdrarqSiTvFeP6fLzm5w,9840
+laplace_torch-0.1a1.dist-info/LICENSE.txt,sha256=XnIKgOrbOVy4fe8zcQ9vXHWqZ6UtZ8GzLvpLiYvpEJA,1067
+laplace_torch-0.1a1.dist-info/METADATA,sha256=Kh6tWOdoStCHCwf8XRzWQ_BSxVQoLQRHOzEIk7Vhhg4,8803
+laplace_torch-0.1a1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+laplace_torch-0.1a1.dist-info/top_level.txt,sha256=miT6qTaH7MSLy2iNStZCy478rCt72Hij9KP1bRBTGPA,8
+laplace_torch-0.1a1.dist-info/RECORD,,
