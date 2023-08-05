@@ -1,0 +1,8 @@
+setup.py
+mapexcept/__init__.py
+mapexcept/mapexcept.py
+mapexcept.egg-info/PKG-INFO
+mapexcept.egg-info/SOURCES.txt
+mapexcept.egg-info/dependency_links.txt
+mapexcept.egg-info/requires.txt
+mapexcept.egg-info/top_level.txt

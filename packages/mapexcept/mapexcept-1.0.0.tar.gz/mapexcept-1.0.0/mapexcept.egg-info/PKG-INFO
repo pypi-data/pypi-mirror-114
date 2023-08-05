@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: mapexcept
+Version: 1.0.0
+Summary: Exception? Just keep mapping.
+Home-page: UNKNOWN
+Author: Perzan
+Author-email: PerzanDevelopment@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+
+```python
+import mapexcept
+
+# Basic usage
+for i in mapexcept(['1', '2', '3', 'FOOBAR', '4'])[ValueError](int):
+    print(i)
+
+# 1
+# 2
+# 3
+# 4
+
+print('
+
+
+')
+
+# With default values
+for i in mapexcept(['1', '2', '3', 'FOOBAR', '4'])[ValueError:0](int):
+    print(i)
+
+# 1
+# 2
+# 3
+# 0
+# 4
+
+print('
+
+
+')
+
+# As a decorator
+@mapexcept(['1', '2', '3', 'FOOBAR', '4'])[ValueError:0]
+def conversion(val:str):
+    return int(val)
+
+for i in conversion:
+    print(i)
+
+# 1
+# 2
+# 3
+# 0
+# 4
+```
+
+
