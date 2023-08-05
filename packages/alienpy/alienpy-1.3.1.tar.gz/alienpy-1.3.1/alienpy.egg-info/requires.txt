@@ -1,0 +1,4 @@
+async-stagger
+websockets<10.0.0
+pyOpenSSL
+xrootd
