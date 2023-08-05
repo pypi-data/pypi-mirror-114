@@ -1,0 +1,8 @@
+README.md
+setup.py
+lydite/__init__.py
+lydite.egg-info/PKG-INFO
+lydite.egg-info/SOURCES.txt
+lydite.egg-info/dependency_links.txt
+lydite.egg-info/top_level.txt
+lydite/data/__init__.py
