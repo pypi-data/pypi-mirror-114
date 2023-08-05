@@ -1,0 +1,334 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Extraction &mdash; CherryPicker 0.3.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-143748897-1"></script>
+        <script src="_static/google_analytics_tracker.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="API Reference" href="api.html" />
+    <link rel="prev" title="Filtering" href="filter.html" />
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+	"palette": {
+		"popup": {
+			"background": "#eaf7f7",
+			"text": "#5c7291"
+		},
+		"button": {
+			"background": "#56cbdb",
+			"text": "#ffffff"
+		}
+	},
+	"theme": "edgeless",
+    "position": "bottom-right"
+})});
+</script>
+
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> CherryPicker
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.3.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="filter.html">Filtering</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Extraction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#navigating-lists">Navigating lists</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CherryPicker</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Extraction</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/extract.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="extraction">
+<h1>Extraction<a class="headerlink" href="#extraction" title="Permalink to this headline">¶</a></h1>
+<p>When you have navigated to the data node(s) you care about, you can extract
+data from them into flat tables. These tables will always contain the values
+you have requested in a <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a> or nested lists. Lists are used to
+improve compatability with <code class="xref py py-mod docutils literal notranslate"><span class="pre">pandas</span></code> and <code class="xref py py-mod docutils literal notranslate"><span class="pre">numpy</span></code>.</p>
+<p>Much like <a class="reference internal" href="filter.html"><span class="doc">filtering</span></a>, extraction differs depending on the
+type of data node you are operating on:</p>
+<ul class="simple">
+<li><p>If the data is <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a>-like, values will be extracted from all the keys
+provided into a flat list.</p></li>
+<li><p>If the data is <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a>-like, data extraction will be delegated to each
+item in the collection, and the results returned in another list.</p></li>
+</ul>
+<p>Data is extracted with the square brackets (<code class="docutils literal notranslate"><span class="pre">[]</span></code>) operator. When you extract
+data, the results are wrapped up in another <code class="xref py py-class docutils literal notranslate"><span class="pre">CherryPicker</span></code> object (this
+is to enable the chaining of operations). At any stage in your cherry picking,
+you can get down to the raw data with the <code class="xref py py-meth docutils literal notranslate"><span class="pre">CherryPicker.get()</span></code> operator:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span> <span class="o">=</span> <span class="n">CherryPicker</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;city&#39;</span><span class="p">]</span>
+<span class="go">&lt;CherryPickerIterable(list, len=2)&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;city&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+<span class="go">[1, &#39;Amsterdam&#39;]</span>
+</pre></div>
+</div>
+<p>Note that you can also extract data as an attribute for convenience:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span> <span class="o">=</span> <span class="n">CherryPicker</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span><span class="o">.</span><span class="n">id</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+<span class="go">[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, ...]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">id</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+<span class="go">1</span>
+</pre></div>
+</div>
+<div class="section" id="navigating-lists">
+<h2>Navigating lists<a class="headerlink" href="#navigating-lists" title="Permalink to this headline">¶</a></h2>
+<p>Lists (or any <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a>-like object) is a little more complicated than it
+first seems. What if you want to get the first item of a list? Well that’s
+easy:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span> <span class="o">=</span> <span class="n">CherryPicker</span><span class="p">(</span><span class="n">mylist</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span>
+<span class="go">&lt;CherryPickerIterable(list, len=105)&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="go">&lt;CherryPickerMapping(dict)&gt;</span>
+</pre></div>
+</div>
+<p>It’s just like working with a normal list. Just provide the index of the item
+you want and your cherry picker will get it for you. Slices are also accepted
+if you want multiple items. If you want to drill down and extract items from
+each item in the list, that’s also easy enough:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span><span class="p">[</span><span class="s1">&#39;city&#39;</span><span class="p">]</span>
+<span class="go">&lt;CherryPickerIterable(list, len=105)&gt;</span>
+</pre></div>
+</div>
+<p>You can see here that this time the cherry picker has given you a list of
+results. That’s because it’s extracted the <em>city</em> from each item in the list.
+Cherry pickers are usually smart enough to know when you want to grab something
+from the list itself vs. grab something from the items in the list.</p>
+<p>But what if <code class="docutils literal notranslate"><span class="pre">mylist</span></code> was actually a list of lists, and you actually wanted
+to get the first item of each list? Things aren’t as clear now, because your
+picker will assume that <code class="code python docutils literal notranslate"><span class="name"><span class="pre">picker</span></span><span class="punctuation"><span class="pre">[</span></span><span class="literal number integer"><span class="pre">0</span></span><span class="punctuation"><span class="pre">]</span></span></code> means grab the entire first item
+only. In this case, you must give your picker an extra hint. For
+<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a>-like objects, if you provide an <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a> or
+<a class="reference external" href="https://docs.python.org/3/library/functions.html#slice" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">slice</span></code></a>-like parameter, you can also provide an optional second boolean
+parameter known as the <em>propagate</em> flag. If this flag is set to True, the
+picker will apply the index to each child node, regardless of what type it is:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mynestedlist</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="mi">20</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="mi">34</span><span class="p">],</span> <span class="o">...</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span> <span class="o">=</span> <span class="n">CherryPicker</span><span class="p">(</span><span class="n">mynestedlist</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+<span class="go">[&#39;Alice&#39;, 20]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+<span class="go">[&#39;Alice&#39;, &#39;Bob&#39;, ...]</span>
+</pre></div>
+</div>
+<p>In the first command, the first item in the list (another list of length 2) is
+obtained. In the second command, the <em>propagate</em> flag is set, so we instead
+grab the first item of each child instead.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="api.html" class="btn btn-neutral float-right" title="API Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="filter.html" class="btn btn-neutral float-left" title="Filtering" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, big-o
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-143748897-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+   
+
+</body>
+</html>

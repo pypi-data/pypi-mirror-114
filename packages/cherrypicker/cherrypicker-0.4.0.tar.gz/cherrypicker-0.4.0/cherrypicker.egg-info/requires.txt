@@ -1,0 +1,14 @@
+joblib>=0.13.0
+
+[dev]
+check-manifest
+sphinx
+sphinx_rtd_theme
+
+[test]
+black
+coverage
+pytest
+pytest-black
+pytest-cov
+pytest-sphinx

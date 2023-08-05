@@ -1,0 +1,888 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>cherrypicker.traversable &mdash; CherryPicker 0.3.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-143748897-1"></script>
+        <script src="../../_static/google_analytics_tracker.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+	"palette": {
+		"popup": {
+			"background": "#eaf7f7",
+			"text": "#5c7291"
+		},
+		"button": {
+			"background": "#56cbdb",
+			"text": "#ffffff"
+		}
+	},
+	"theme": "edgeless",
+    "position": "bottom-right"
+})});
+</script>
+
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> CherryPicker
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.3.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../filter.html">Filtering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../extract.html">Extraction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api.html">API Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">CherryPicker</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>cherrypicker.traversable</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for cherrypicker.traversable</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">from</span> <span class="nn">collections.abc</span> <span class="kn">import</span> <span class="n">Callable</span>
+<span class="kn">from</span> <span class="nn">fnmatch</span> <span class="kn">import</span> <span class="n">fnmatchcase</span>
+<span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">partial</span>
+<span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">chain</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Any</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Generator</span><span class="p">,</span> <span class="n">NoReturn</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Tuple</span><span class="p">,</span> <span class="n">Union</span>
+
+<span class="kn">from</span> <span class="nn">joblib</span> <span class="kn">import</span> <span class="n">Parallel</span><span class="p">,</span> <span class="n">delayed</span>
+
+<span class="kn">from</span> <span class="nn">.picker</span> <span class="kn">import</span> <span class="n">CherryPicker</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;CherryPickerIterable&quot;</span><span class="p">,</span> <span class="s2">&quot;CherryPickerMapping&quot;</span><span class="p">,</span> <span class="s2">&quot;CherryPickerTraversable&quot;</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="CherryPickerTraversable"><a class="viewcode-back" href="../../api.html#cherrypicker.CherryPickerTraversable">[docs]</a><span class="k">class</span> <span class="nc">CherryPickerTraversable</span><span class="p">(</span><span class="n">CherryPicker</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Abstract class for traversable (mappable and/or iterable) nodes.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">_RE_ERR</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">opts</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Shortcut to :meth:`.filter`.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">opts</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">opts</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_opts</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">opts</span><span class="o">=</span><span class="n">opts</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_obj</span><span class="o">.</span><span class="fm">__iter__</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_obj</span><span class="p">)</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">_make_child</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+        <span class="n">ccls</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_get_cherry_class</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">parent</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">child</span> <span class="o">=</span> <span class="n">ccls</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="o">**</span><span class="n">parent</span><span class="o">.</span><span class="n">_opts</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">child</span> <span class="o">=</span> <span class="n">ccls</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="o">**</span><span class="bp">cls</span><span class="o">.</span><span class="n">_opts</span><span class="p">)</span>
+        <span class="n">child</span><span class="o">.</span><span class="n">_parent</span> <span class="o">=</span> <span class="n">parent</span>
+        <span class="k">return</span> <span class="n">child</span>
+
+<div class="viewcode-block" id="CherryPickerTraversable.filter"><a class="viewcode-back" href="../../filter.html#cherrypicker.CherryPickerTraversable.filter">[docs]</a>    <span class="k">def</span> <span class="nf">filter</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">:</span> <span class="s2">&quot;CherryPickerTraversable&quot;</span><span class="p">,</span>
+        <span class="n">how</span><span class="o">=</span><span class="s2">&quot;all&quot;</span><span class="p">,</span>
+        <span class="n">allow_wildcards</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">case_sensitive</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">regex</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">opts</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+        <span class="o">**</span><span class="n">predicates</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;CherryPickerTraversable&quot;</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return a filtered view of the child nodes. This method is usually</span>
+<span class="sd">        accessed via :meth:`CherryPicker.__call__`</span>
+
+<span class="sd">        For an object with a mappable interface, this will return the object</span>
+<span class="sd">        itself if it matches the predicates according to the rules specified.</span>
+
+<span class="sd">        For an object with an iterable but not a mappable interface, a</span>
+<span class="sd">        collection of child objects matching the predicates according to the</span>
+<span class="sd">        rules specified will be returned.</span>
+
+<span class="sd">        This method is not implemented for leaf nodes and will cause an error</span>
+<span class="sd">        to be raised.</span>
+
+<span class="sd">        :Example:</span>
+
+<span class="sd">        Find any items with a name of ``Alice``:</span>
+
+<span class="sd">        &gt;&gt;&gt; picker(name=&#39;Alice&#39;)</span>
+
+<span class="sd">        Find any items with a name of ``Alice`` and an age of 20:</span>
+
+<span class="sd">        &gt;&gt;&gt; picker(name=&#39;Alice&#39;, age=20)</span>
+
+<span class="sd">        Find any items with a name of ``Alice`` `or` an age of 20:</span>
+
+<span class="sd">        &gt;&gt;&gt; picker(name=&#39;Alice&#39;, age=20, how=&#39;any&#39;)</span>
+
+<span class="sd">        Find any items with a name of ``Alice`` and an age of 20 or more:</span>
+
+<span class="sd">        &gt;&gt;&gt; picker(name=&#39;Alice&#39;, age=lambda a: a &gt;= 20)</span>
+
+<span class="sd">        Find any items with a name beginning with ``Al``:</span>
+
+<span class="sd">        &gt;&gt;&gt; picker(name=&#39;Al*&#39;)</span>
+
+<span class="sd">        Find any items with a name beginning with ``Al`` or ``al``:</span>
+
+<span class="sd">        &gt;&gt;&gt; picker(name=&#39;Al*&#39;, case_sensitive=False)</span>
+
+<span class="sd">        Find any items with a name of ``Al*``:</span>
+
+<span class="sd">        &gt;&gt;&gt; picker(name=&#39;Al*&#39;, allow_wildcards=False)</span>
+
+<span class="sd">        Find any items with a name matching a particular pattern (these two</span>
+<span class="sd">        lines are equivalent):</span>
+
+<span class="sd">        &gt;&gt;&gt; picker(name=r&#39;^(?:Alice|Bob)$&#39;, regex=True, case_sensitive=False)</span>
+<span class="sd">        &gt;&gt;&gt; picker(name=re.compile(r&#39;^(?:Alice|Bob)$&#39;, re.I))</span>
+
+<span class="sd">        :param how: The rule to be applied to predicate matching. May be one</span>
+<span class="sd">                of (&#39;all&#39;, &#39;any&#39;).</span>
+<span class="sd">        :type how: str.</span>
+<span class="sd">        :param allow_wildcards: If True, special characters</span>
+<span class="sd">                (``*``, ``?``, ``[]``) in any string predicate values will be</span>
+<span class="sd">                treated as wildcards according to :meth:`fnmatch.fnmatchcase`.</span>
+<span class="sd">        :type allow_wildcards: bool, default = True.</span>
+<span class="sd">        :param case_sensitive: If True, any comparisons to strings or</span>
+<span class="sd">                uncompiled regular expressions will be case sensitive.</span>
+<span class="sd">        :type case_sensitive: bool, default = True.</span>
+<span class="sd">        :param regex: If True, any string comparisons will be reinterpreted as</span>
+<span class="sd">                regular expressions. If ``case_sensitive`` is False, they will</span>
+<span class="sd">                be case-insensitive patterns. For more complex regex options,</span>
+<span class="sd">                omit this parameter and provide pre-compiled regular expression</span>
+<span class="sd">                patterns in your predicates instead. All regular expressions</span>
+<span class="sd">                will be compared to string values using a full match.</span>
+<span class="sd">        :type regex: bool, default = False.</span>
+<span class="sd">        :param predicates: Keyword arguments where the keys are the object keys</span>
+<span class="sd">                used to get the comparison value, and the values are either a</span>
+<span class="sd">                value to compare, a regular expression to perform a full match</span>
+<span class="sd">                against, or a callable function that takes a single value as</span>
+<span class="sd">                input and returns something that evaluates to True if the value</span>
+<span class="sd">                passes the predicate, or False if it does not.</span>
+<span class="sd">        :type predicates: str, regular expression or Callable.</span>
+
+<span class="sd">        :return: If this is a mappable object, the object itself if it passes</span>
+<span class="sd">                the predicates. If not and this is an iterable object, a</span>
+<span class="sd">                collection of children that pass the predicates.</span>
+<span class="sd">        :rtype: :class:`CherryPicker`.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="n">opts</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">opts</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_opts</span>
+
+        <span class="k">if</span> <span class="n">how</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_PRED_RULES</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;`how` parameter must be one of </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_PRED_RULES</span><span class="p">)</span>
+            <span class="p">)</span>
+
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">predicates</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_child</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_filter</span><span class="p">(</span>
+                <span class="n">how</span><span class="p">,</span> <span class="n">allow_wildcards</span><span class="p">,</span> <span class="n">case_sensitive</span><span class="p">,</span> <span class="n">regex</span><span class="p">,</span> <span class="n">opts</span><span class="o">=</span><span class="n">opts</span><span class="p">,</span> <span class="o">**</span><span class="n">predicates</span>
+            <span class="p">),</span>
+            <span class="bp">self</span><span class="p">,</span>
+        <span class="p">)</span></div>
+
+    <span class="k">def</span> <span class="nf">_filter</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">how</span><span class="p">,</span> <span class="n">allow_wildcards</span><span class="p">,</span> <span class="n">case_sensitive</span><span class="p">,</span> <span class="n">regex</span><span class="p">,</span> <span class="n">opts</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">predicates</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">NoReturn</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">()</span>
+
+    <span class="c1"># Needs to be a class method so we can parallelise it.</span>
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">_filter_item</span><span class="p">(</span>
+        <span class="bp">cls</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="n">how</span><span class="p">,</span> <span class="n">allow_wildcards</span><span class="p">,</span> <span class="n">case_sensitive</span><span class="p">,</span> <span class="n">regex</span><span class="p">,</span> <span class="n">opts</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">predicates</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="n">opts</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">opts</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_opts</span>
+
+        <span class="k">for</span> <span class="n">attr</span><span class="p">,</span> <span class="n">pred</span> <span class="ow">in</span> <span class="n">predicates</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="k">if</span> <span class="n">attr</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">obj</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">opts</span><span class="p">[</span><span class="s2">&quot;on_missing&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;raise&quot;</span><span class="p">:</span>
+                    <span class="k">raise</span> <span class="ne">AttributeError</span><span class="p">(</span><span class="s2">&quot;`</span><span class="si">{}</span><span class="s2">` attribute does not exist&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">attr</span><span class="p">))</span>
+                <span class="n">res</span> <span class="o">=</span> <span class="kc">False</span>
+
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">val</span> <span class="o">=</span> <span class="n">obj</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span>
+                <span class="n">res</span> <span class="o">=</span> <span class="kc">False</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">pred</span><span class="p">,</span> <span class="n">Callable</span><span class="p">):</span>
+                        <span class="n">res</span> <span class="o">=</span> <span class="n">pred</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+                    <span class="k">elif</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">pred</span><span class="p">,</span> <span class="s2">&quot;fullmatch&quot;</span><span class="p">):</span>
+                        <span class="n">res</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">fullmatch</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+                    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">pred</span><span class="p">,</span> <span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">)):</span>
+                        <span class="k">if</span> <span class="ow">not</span> <span class="n">case_sensitive</span><span class="p">:</span>
+                            <span class="n">pred</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+                            <span class="n">val</span> <span class="o">=</span> <span class="n">val</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+                        <span class="k">if</span> <span class="n">regex</span><span class="p">:</span>
+                            <span class="n">flags</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">case_sensitive</span> <span class="k">else</span> <span class="n">re</span><span class="o">.</span><span class="n">I</span>
+                            <span class="n">res</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">fullmatch</span><span class="p">(</span><span class="n">pred</span><span class="p">,</span> <span class="n">val</span><span class="p">,</span> <span class="n">flags</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+                        <span class="k">elif</span> <span class="n">allow_wildcards</span><span class="p">:</span>
+                            <span class="n">res</span> <span class="o">=</span> <span class="n">fnmatchcase</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="n">pred</span><span class="p">)</span>
+                        <span class="k">else</span><span class="p">:</span>
+                            <span class="n">res</span> <span class="o">=</span> <span class="n">pred</span> <span class="o">==</span> <span class="n">val</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">res</span> <span class="o">=</span> <span class="n">pred</span> <span class="o">==</span> <span class="n">val</span>
+
+                <span class="k">except</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_RE_ERR</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                    <span class="c1"># Invalid regex. Always raise.</span>
+                    <span class="k">raise</span>
+
+                <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">opts</span><span class="p">[</span><span class="s2">&quot;on_error&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;raise&quot;</span><span class="p">:</span>
+                        <span class="k">raise</span>
+                    <span class="n">res</span> <span class="o">=</span> <span class="kc">False</span>
+
+            <span class="k">if</span> <span class="n">res</span> <span class="ow">and</span> <span class="n">how</span> <span class="o">==</span> <span class="s2">&quot;any&quot;</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">True</span>
+            <span class="k">elif</span> <span class="ow">not</span> <span class="n">res</span> <span class="ow">and</span> <span class="n">how</span> <span class="o">==</span> <span class="s2">&quot;all&quot;</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">False</span>
+
+        <span class="k">if</span> <span class="n">how</span> <span class="o">==</span> <span class="s2">&quot;any&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+        <span class="k">elif</span> <span class="n">how</span> <span class="o">==</span> <span class="s2">&quot;all&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">True</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">flat</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">keys</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">NoReturn</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="CherryPickerMapping"><a class="viewcode-back" href="../../api.html#cherrypicker.CherryPickerMapping">[docs]</a><span class="k">class</span> <span class="nc">CherryPickerMapping</span><span class="p">(</span><span class="n">CherryPickerTraversable</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A mappable (key-&gt;value pairs) object to be cherry picked from.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">:</span> <span class="s2">&quot;CherryPickerMapping&quot;</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;CherryPickerMapping&quot;</span><span class="p">:</span>
+        <span class="n">picker</span> <span class="o">=</span> <span class="nb">super</span><span class="p">(</span><span class="n">CherryPicker</span><span class="p">,</span> <span class="bp">cls</span><span class="p">)</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">picker</span>
+
+    <span class="k">def</span> <span class="fm">__contains__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">key</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_obj</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_obj</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+            <span class="k">return</span> <span class="kc">True</span>
+        <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+
+<div class="viewcode-block" id="CherryPickerMapping.keys"><a class="viewcode-back" href="../../api.html#cherrypicker.CherryPickerMapping.keys">[docs]</a>    <span class="k">def</span> <span class="nf">keys</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">peek</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        :param peek: Not used.</span>
+<span class="sd">        :type peek: object, optional</span>
+
+<span class="sd">        :return: A view of the object&#39;s keys.</span>
+<span class="sd">        :rtype: list</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_obj</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="CherryPickerMapping.values"><a class="viewcode-back" href="../../api.html#cherrypicker.CherryPickerMapping.values">[docs]</a>    <span class="k">def</span> <span class="nf">values</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">peek</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        :param peek: Not used.</span>
+<span class="sd">        :type peek: object, optional</span>
+
+<span class="sd">        :return: A view of the object&#39;s values.</span>
+<span class="sd">        :rtype: list</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_obj</span><span class="o">.</span><span class="n">values</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="CherryPickerMapping.items"><a class="viewcode-back" href="../../api.html#cherrypicker.CherryPickerMapping.items">[docs]</a>    <span class="k">def</span> <span class="nf">items</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">peek</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        :param peek: Not used.</span>
+<span class="sd">        :type peek: object, optional</span>
+
+<span class="sd">        :return: A view of the object&#39;s items.</span>
+<span class="sd">        :rtype: list</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_obj</span><span class="o">.</span><span class="n">items</span><span class="p">()</span></div>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">_flatten</span><span class="p">(</span>
+        <span class="bp">cls</span><span class="p">,</span>
+        <span class="n">obj</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span>
+        <span class="n">flat</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="n">delim</span><span class="o">=</span><span class="s2">&quot;_&quot;</span><span class="p">,</span>
+        <span class="n">maxdepth</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+        <span class="n">depth</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="n">Any</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="n">Dict</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Flatten a json object with nested keys into a single level.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            nested_json: A nested json object.</span>
+<span class="sd">        Returns:</span>
+<span class="sd">            The flattened json object if successful, None otherwise.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">flat</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">flat</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="n">dlen</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">delim</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">maxdepth</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">depth</span> <span class="o">&gt;</span> <span class="n">maxdepth</span><span class="p">:</span>
+            <span class="n">flat</span><span class="p">[</span><span class="n">prefix</span><span class="p">[:</span><span class="o">-</span><span class="n">dlen</span><span class="p">]]</span> <span class="o">=</span> <span class="n">obj</span>
+            <span class="k">return</span> <span class="n">flat</span>
+
+        <span class="n">ccls</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_get_cherry_class</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">ccls</span> <span class="ow">is</span> <span class="n">CherryPickerMapping</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">obj</span><span class="p">:</span>
+                <span class="bp">cls</span><span class="o">.</span><span class="n">_flatten</span><span class="p">(</span>
+                    <span class="n">obj</span><span class="p">[</span><span class="n">key</span><span class="p">],</span>
+                    <span class="n">flat</span><span class="p">,</span>
+                    <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">{}{}{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">prefix</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">delim</span><span class="p">),</span>
+                    <span class="n">delim</span><span class="o">=</span><span class="n">delim</span><span class="p">,</span>
+                    <span class="n">maxdepth</span><span class="o">=</span><span class="n">maxdepth</span><span class="p">,</span>
+                    <span class="n">depth</span><span class="o">=</span><span class="n">depth</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="p">)</span>
+
+        <span class="k">elif</span> <span class="n">ccls</span> <span class="ow">is</span> <span class="n">CherryPickerIterable</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">obj</span><span class="p">):</span>
+                <span class="bp">cls</span><span class="o">.</span><span class="n">_flatten</span><span class="p">(</span>
+                    <span class="n">val</span><span class="p">,</span>
+                    <span class="n">flat</span><span class="p">,</span>
+                    <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">{}{}{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">prefix</span><span class="p">,</span> <span class="n">idx</span><span class="p">,</span> <span class="n">delim</span><span class="p">),</span>
+                    <span class="n">delim</span><span class="o">=</span><span class="n">delim</span><span class="p">,</span>
+                    <span class="n">maxdepth</span><span class="o">=</span><span class="n">maxdepth</span><span class="p">,</span>
+                    <span class="n">depth</span><span class="o">=</span><span class="n">depth</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="p">)</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">flat</span><span class="p">[</span><span class="n">prefix</span><span class="p">[:</span><span class="o">-</span><span class="n">dlen</span><span class="p">]]</span> <span class="o">=</span> <span class="n">obj</span>
+
+        <span class="k">return</span> <span class="n">flat</span>
+
+<div class="viewcode-block" id="CherryPickerMapping.flatten"><a class="viewcode-back" href="../../api.html#cherrypicker.CherryPickerMapping.flatten">[docs]</a>    <span class="k">def</span> <span class="nf">flatten</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">delim</span><span class="o">=</span><span class="s2">&quot;_&quot;</span><span class="p">,</span> <span class="n">maxdepth</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Flatten down the object so that all of its values are leaf nodes.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">flat</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_flatten</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_obj</span><span class="p">,</span> <span class="n">delim</span><span class="o">=</span><span class="n">delim</span><span class="p">,</span> <span class="n">maxdepth</span><span class="o">=</span><span class="n">maxdepth</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_child</span><span class="p">(</span><span class="n">flat</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_parent</span><span class="p">)</span></div>
+
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+        <span class="n">allow_missing</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_opts</span><span class="p">[</span><span class="s2">&quot;on_missing&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;ignore&quot;</span>
+        <span class="n">default</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_opts</span><span class="p">[</span><span class="s2">&quot;default&quot;</span><span class="p">]</span>
+        <span class="n">obj</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_obj</span>
+
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">):</span>
+            <span class="c1"># Use lists rather than tuples for better panadas compatibility.</span>
+            <span class="k">if</span> <span class="n">allow_missing</span><span class="p">:</span>
+                <span class="n">items</span> <span class="o">=</span> <span class="p">[</span>
+                    <span class="n">obj</span><span class="o">.</span><span class="fm">__getitem__</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span> <span class="k">if</span> <span class="n">arg</span> <span class="ow">in</span> <span class="n">obj</span> <span class="k">else</span> <span class="n">default</span> <span class="k">for</span> <span class="n">arg</span> <span class="ow">in</span> <span class="n">args</span>
+                <span class="p">]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">items</span> <span class="o">=</span> <span class="p">[</span><span class="n">obj</span><span class="o">.</span><span class="fm">__getitem__</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span> <span class="k">for</span> <span class="n">arg</span> <span class="ow">in</span> <span class="n">args</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">allow_missing</span><span class="p">:</span>
+                <span class="n">items</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="fm">__getitem__</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="k">if</span> <span class="n">args</span> <span class="ow">in</span> <span class="n">obj</span> <span class="k">else</span> <span class="n">default</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">items</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="fm">__getitem__</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_child</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_repr</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_repr</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_repr</span> <span class="o">=</span> <span class="s2">&quot;&lt;</span><span class="si">{}</span><span class="s2">(</span><span class="si">{}</span><span class="s2">)&gt;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_obj</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+        <span class="p">)</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_repr</span>
+
+    <span class="k">def</span> <span class="nf">_filter</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">how</span><span class="p">,</span> <span class="n">allow_wildcards</span><span class="p">,</span> <span class="n">case_sensitive</span><span class="p">,</span> <span class="n">regex</span><span class="p">,</span> <span class="n">opts</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">predicates</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">opts</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">opts</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_opts</span>
+
+        <span class="k">if</span> <span class="n">CherryPickerMapping</span><span class="o">.</span><span class="n">_filter_item</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_obj</span><span class="p">,</span>
+            <span class="n">how</span><span class="p">,</span>
+            <span class="n">allow_wildcards</span><span class="p">,</span>
+            <span class="n">case_sensitive</span><span class="p">,</span>
+            <span class="n">regex</span><span class="p">,</span>
+            <span class="n">opts</span><span class="o">=</span><span class="n">opts</span><span class="p">,</span>
+            <span class="o">**</span><span class="n">predicates</span>
+        <span class="p">):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_obj</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_opts</span><span class="p">[</span><span class="s2">&quot;default&quot;</span><span class="p">]</span></div>
+
+
+<div class="viewcode-block" id="CherryPickerIterable"><a class="viewcode-back" href="../../api.html#cherrypicker.CherryPickerIterable">[docs]</a><span class="k">class</span> <span class="nc">CherryPickerIterable</span><span class="p">(</span><span class="n">CherryPickerTraversable</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A collection of objects to be cherry picked.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># If the children have different parents to self, e.g. if they are</span>
+    <span class="c1"># grandchildren.</span>
+    <span class="n">_child_parents</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">:</span> <span class="s2">&quot;CherryPickerIterable&quot;</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;CherryPickerIterable&quot;</span><span class="p">:</span>
+        <span class="n">picker</span> <span class="o">=</span> <span class="nb">super</span><span class="p">(</span><span class="n">CherryPicker</span><span class="p">,</span> <span class="bp">cls</span><span class="p">)</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">picker</span>
+
+    <span class="k">def</span> <span class="fm">__contains__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">item</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_obj</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">_make_child</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="n">parent</span><span class="p">,</span> <span class="n">child_parents</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+        <span class="n">child</span> <span class="o">=</span> <span class="nb">super</span><span class="p">(</span><span class="n">CherryPickerIterable</span><span class="p">,</span> <span class="bp">cls</span><span class="p">)</span><span class="o">.</span><span class="n">_make_child</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span>
+        <span class="n">child</span><span class="o">.</span><span class="n">_child_parents</span> <span class="o">=</span> <span class="n">child_parents</span>
+        <span class="k">return</span> <span class="n">child</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">_flatten</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">chunk</span><span class="p">,</span> <span class="n">delim</span><span class="o">=</span><span class="s2">&quot;_&quot;</span><span class="p">,</span> <span class="n">maxdepth</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">:</span>
+        <span class="n">flats</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">chunk</span><span class="p">:</span>
+            <span class="n">ccls</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_get_cherry_class</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">ccls</span> <span class="ow">is</span> <span class="n">CherryPickerMapping</span><span class="p">:</span>
+                <span class="n">flats</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                    <span class="n">CherryPickerMapping</span><span class="o">.</span><span class="n">_flatten</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">delim</span><span class="o">=</span><span class="n">delim</span><span class="p">,</span> <span class="n">maxdepth</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+                <span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">flats</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">flats</span>
+
+    <span class="k">def</span> <span class="nf">flatten</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">delim</span><span class="o">=</span><span class="s2">&quot;_&quot;</span><span class="p">,</span> <span class="n">maxdepth</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
+        <span class="k">with</span> <span class="n">Parallel</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_effective_n_jobs</span><span class="p">)</span> <span class="k">as</span> <span class="n">parallel</span><span class="p">:</span>
+            <span class="n">flats</span> <span class="o">=</span> <span class="n">parallel</span><span class="p">(</span>
+                <span class="n">delayed</span><span class="p">(</span><span class="n">CherryPickerIterable</span><span class="o">.</span><span class="n">_flatten</span><span class="p">)(</span>
+                    <span class="n">chunk</span><span class="p">,</span> <span class="n">delim</span><span class="o">=</span><span class="n">delim</span><span class="p">,</span> <span class="n">maxdepth</span><span class="o">=</span><span class="n">maxdepth</span>
+                <span class="p">)</span>
+                <span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_chunks</span><span class="p">()</span>
+            <span class="p">)</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_effective_n_jobs</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="n">flats</span> <span class="o">=</span> <span class="n">flats</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">flats</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_join_chunks</span><span class="p">(</span><span class="n">flats</span><span class="p">)</span>
+
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_child</span><span class="p">(</span><span class="n">flats</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_parent</span><span class="p">)</span>
+
+<div class="viewcode-block" id="CherryPickerIterable.keys"><a class="viewcode-back" href="../../api.html#cherrypicker.CherryPickerIterable.keys">[docs]</a>    <span class="k">def</span> <span class="nf">keys</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">peek</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        :param peek: The maximum number of items in the iterable to inspect in</span>
+<span class="sd">                order to ascertain what all possible keys are. If None, all</span>
+<span class="sd">                items are inspected.</span>
+<span class="sd">        :type peek: int, optional</span>
+
+<span class="sd">        :return: A view of the keys that exist in `all` items that were</span>
+<span class="sd">                previewed. Individual items may have other keys, but they will</span>
+<span class="sd">                not be returned unless all the other items inspected also have</span>
+<span class="sd">                those keys.</span>
+<span class="sd">        :rtype: list</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">preview</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_obj</span><span class="p">[</span><span class="nb">slice</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">peek</span><span class="p">,</span> <span class="kc">None</span><span class="p">)]</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">keys</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">preview</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+        <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+            <span class="n">keys</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">preview</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">keys</span> <span class="o">=</span> <span class="n">keys</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+            <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+                <span class="k">pass</span>
+
+        <span class="k">return</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">keys</span><span class="p">)</span></div>
+
+    <span class="c1"># Needs to be a class method to allow parallelisation.</span>
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">_filter_chunk</span><span class="p">(</span>
+        <span class="bp">cls</span><span class="p">,</span> <span class="n">chunk</span><span class="p">,</span> <span class="n">how</span><span class="p">,</span> <span class="n">allow_wildcards</span><span class="p">,</span> <span class="n">case_sensitive</span><span class="p">,</span> <span class="n">regex</span><span class="p">,</span> <span class="n">opts</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">predicates</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">opts</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">opts</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_opts</span>
+
+        <span class="n">items</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">item</span>
+            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">chunk</span>
+            <span class="k">if</span> <span class="n">CherryPickerIterable</span><span class="o">.</span><span class="n">_filter_item</span><span class="p">(</span>
+                <span class="n">item</span><span class="p">,</span>
+                <span class="n">how</span><span class="p">,</span>
+                <span class="n">allow_wildcards</span><span class="p">,</span>
+                <span class="n">case_sensitive</span><span class="p">,</span>
+                <span class="n">regex</span><span class="p">,</span>
+                <span class="n">opts</span><span class="o">=</span><span class="n">opts</span><span class="p">,</span>
+                <span class="o">**</span><span class="n">predicates</span>
+            <span class="p">)</span>
+        <span class="p">]</span>
+
+        <span class="k">return</span> <span class="n">items</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">_get_child_items</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">keys</span><span class="p">,</span> <span class="n">batch</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">keys</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">):</span>
+            <span class="n">items</span> <span class="o">=</span> <span class="p">[[</span><span class="n">obj</span><span class="o">.</span><span class="fm">__getitem__</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">]</span> <span class="k">for</span> <span class="n">obj</span> <span class="ow">in</span> <span class="n">batch</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">items</span> <span class="o">=</span> <span class="p">[</span><span class="n">obj</span><span class="o">.</span><span class="fm">__getitem__</span><span class="p">(</span><span class="n">keys</span><span class="p">)</span> <span class="k">for</span> <span class="n">obj</span> <span class="ow">in</span> <span class="n">batch</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">items</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">_get_grandchild_items</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">keys</span><span class="p">,</span> <span class="n">batch</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">list</span><span class="p">,</span> <span class="nb">list</span><span class="p">]:</span>
+        <span class="c1"># Always create lists for better pandas/numpy integration</span>
+        <span class="n">items</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">parents</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">obj</span> <span class="ow">in</span> <span class="n">batch</span><span class="p">:</span>
+            <span class="n">parent</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_make_child</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+            <span class="n">items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">parent</span><span class="o">.</span><span class="fm">__getitem__</span><span class="p">(</span><span class="n">keys</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">())</span>
+            <span class="n">parents</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">items</span><span class="p">,</span> <span class="n">parents</span>
+
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_obj</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_opts</span><span class="p">[</span><span class="s2">&quot;on_missing&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;ignore&quot;</span><span class="p">:</span>
+                <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_child</span><span class="p">([],</span> <span class="bp">self</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">IndexError</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+
+        <span class="n">propagate</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">):</span>
+            <span class="c1"># Nasty hack because __getitem__ does not support kwargs</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">args</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="ow">in</span> <span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">):</span>
+                <span class="n">propagate</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+                <span class="n">args</span> <span class="o">=</span> <span class="n">args</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="n">args</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="n">propagate</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="c1"># Default behaviour</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+                <span class="c1"># Valid iterable index, get from this obj.</span>
+                <span class="n">item</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_obj</span><span class="o">.</span><span class="fm">__getitem__</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_child_parents</span><span class="p">:</span>
+                    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_child</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_child_parents</span><span class="p">[</span><span class="n">args</span><span class="p">])</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_child</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="nb">slice</span><span class="p">):</span>
+                <span class="n">items</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_obj</span><span class="o">.</span><span class="fm">__getitem__</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_child_parents</span><span class="p">:</span>
+                    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_child</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_child_parents</span><span class="p">[</span><span class="n">args</span><span class="p">])</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_child</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+
+            <span class="k">else</span><span class="p">:</span>
+                <span class="c1"># Get from each child</span>
+                <span class="k">with</span> <span class="n">Parallel</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_effective_n_jobs</span><span class="p">)</span> <span class="k">as</span> <span class="n">parallel</span><span class="p">:</span>
+                    <span class="n">children</span> <span class="o">=</span> <span class="n">parallel</span><span class="p">(</span>
+                        <span class="n">delayed</span><span class="p">(</span><span class="n">CherryPickerIterable</span><span class="o">.</span><span class="n">_get_child_items</span><span class="p">)(</span><span class="n">args</span><span class="p">,</span> <span class="n">chunk</span><span class="p">)</span>
+                        <span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_chunks</span><span class="p">()</span>
+                    <span class="p">)</span>
+                    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_effective_n_jobs</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                        <span class="n">children</span> <span class="o">=</span> <span class="n">children</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">children</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_join_chunks</span><span class="p">(</span><span class="n">children</span><span class="p">)</span>
+
+                <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_child</span><span class="p">(</span><span class="n">children</span><span class="p">,</span> <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_child_parents</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="n">propagate</span><span class="p">:</span>
+            <span class="k">with</span> <span class="n">Parallel</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_effective_n_jobs</span><span class="p">)</span> <span class="k">as</span> <span class="n">parallel</span><span class="p">:</span>
+                <span class="n">tree</span> <span class="o">=</span> <span class="n">parallel</span><span class="p">(</span>
+                    <span class="n">delayed</span><span class="p">(</span><span class="n">CherryPickerIterable</span><span class="o">.</span><span class="n">_get_grandchild_items</span><span class="p">)(</span><span class="n">args</span><span class="p">,</span> <span class="n">chunk</span><span class="p">)</span>
+                    <span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_chunks</span><span class="p">()</span>
+                <span class="p">)</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_effective_n_jobs</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                    <span class="n">tree</span> <span class="o">=</span> <span class="n">tree</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">tree</span> <span class="o">=</span> <span class="p">[</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">_join_chunks</span><span class="p">([</span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">tree</span><span class="p">]),</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">_join_chunks</span><span class="p">([</span><span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">tree</span><span class="p">]),</span>
+                    <span class="p">]</span>
+
+            <span class="n">grandchildren</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">all_parents</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">grandchild</span><span class="p">,</span> <span class="n">child</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">tree</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">tree</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+                <span class="n">grandchildren</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">grandchild</span><span class="p">)</span>
+                <span class="n">all_parents</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_make_child</span><span class="p">(</span><span class="n">child</span><span class="p">,</span> <span class="bp">self</span><span class="p">))</span>
+
+            <span class="n">grandchildren</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_child</span><span class="p">(</span><span class="n">grandchildren</span><span class="p">,</span> <span class="bp">self</span><span class="p">,</span> <span class="n">all_parents</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">grandchildren</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_child</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_obj</span><span class="o">.</span><span class="fm">__getitem__</span><span class="p">(</span><span class="n">args</span><span class="p">),</span> <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_child_parents</span>
+            <span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_chunks</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Generator</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_obj</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_obj</span>
+
+        <span class="n">n_jobs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_effective_n_jobs</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">n_jobs</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_obj</span>
+
+        <span class="n">len_obj</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_obj</span><span class="p">)</span>
+        <span class="n">chunksize</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="o">-</span><span class="n">len_obj</span> <span class="o">//</span> <span class="n">n_jobs</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">pos</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">len_obj</span><span class="p">,</span> <span class="n">chunksize</span><span class="p">):</span>
+            <span class="n">chunk</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_obj</span><span class="p">[</span><span class="n">pos</span> <span class="p">:</span> <span class="n">pos</span> <span class="o">+</span> <span class="n">chunksize</span><span class="p">]</span>
+            <span class="k">yield</span> <span class="n">chunk</span>
+
+    <span class="k">def</span> <span class="nf">_join_chunks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">chunks</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">chain</span><span class="o">.</span><span class="n">from_iterable</span><span class="p">(</span><span class="n">chunks</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_repr</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_repr</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_repr</span> <span class="o">=</span> <span class="s2">&quot;&lt;</span><span class="si">{}</span><span class="s2">(</span><span class="si">{}</span><span class="s2">, len=</span><span class="si">{}</span><span class="s2">)&gt;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_obj</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_obj</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_repr</span> <span class="o">=</span> <span class="s2">&quot;&lt;</span><span class="si">{}</span><span class="s2">(</span><span class="si">{}</span><span class="s2">)&gt;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_obj</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+            <span class="p">)</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_repr</span>
+
+    <span class="k">def</span> <span class="nf">_filter</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">how</span><span class="p">,</span> <span class="n">allow_wildcards</span><span class="p">,</span> <span class="n">case_sensitive</span><span class="p">,</span> <span class="n">regex</span><span class="p">,</span> <span class="n">opts</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">predicates</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">opts</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">opts</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_opts</span>
+
+        <span class="k">with</span> <span class="n">Parallel</span><span class="p">(</span><span class="n">n_jobs</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_effective_n_jobs</span><span class="p">)</span> <span class="k">as</span> <span class="n">parallel</span><span class="p">:</span>
+            <span class="n">items</span> <span class="o">=</span> <span class="n">parallel</span><span class="p">(</span>
+                <span class="n">delayed</span><span class="p">(</span><span class="n">CherryPickerIterable</span><span class="o">.</span><span class="n">_filter_chunk</span><span class="p">)(</span>
+                    <span class="n">chunk</span><span class="p">,</span>
+                    <span class="n">how</span><span class="p">,</span>
+                    <span class="n">allow_wildcards</span><span class="p">,</span>
+                    <span class="n">case_sensitive</span><span class="p">,</span>
+                    <span class="n">regex</span><span class="p">,</span>
+                    <span class="n">opts</span><span class="p">,</span>
+                    <span class="o">**</span><span class="n">predicates</span>
+                <span class="p">)</span>
+                <span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_chunks</span><span class="p">()</span>
+            <span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_effective_n_jobs</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">items</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">items</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_join_chunks</span><span class="p">(</span><span class="n">items</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">items</span></div>
+
+
+<span class="n">CherryPicker</span><span class="o">.</span><span class="n">register_cherry_type</span><span class="p">(</span><span class="s2">&quot;iterable&quot;</span><span class="p">,</span> <span class="n">CherryPickerIterable</span><span class="p">)</span>
+<span class="n">CherryPicker</span><span class="o">.</span><span class="n">register_cherry_type</span><span class="p">(</span><span class="s2">&quot;mapping&quot;</span><span class="p">,</span> <span class="n">CherryPickerMapping</span><span class="p">)</span>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, big-o
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-143748897-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+   
+
+</body>
+</html>

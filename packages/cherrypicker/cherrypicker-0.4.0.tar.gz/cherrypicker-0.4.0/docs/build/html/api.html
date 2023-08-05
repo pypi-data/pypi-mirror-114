@@ -1,0 +1,543 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>API Reference &mdash; CherryPicker 0.3.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-143748897-1"></script>
+        <script src="_static/google_analytics_tracker.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Extraction" href="extract.html" />
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+	"palette": {
+		"popup": {
+			"background": "#eaf7f7",
+			"text": "#5c7291"
+		},
+		"button": {
+			"background": "#56cbdb",
+			"text": "#ffffff"
+		}
+	},
+	"theme": "edgeless",
+    "position": "bottom-right"
+})});
+</script>
+
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> CherryPicker
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.3.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="filter.html">Filtering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extract.html">Extraction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CherryPicker</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>API Reference</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/api.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="api-reference">
+<h1>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="cherrypicker.CherryPicker">
+<em class="property">class </em><code class="sig-prename descclassname">cherrypicker.</code><code class="sig-name descname">CherryPicker</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cherrypicker/picker.html#CherryPicker"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cherrypicker.CherryPicker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reduces nestings of iterable and mappable objects into flat tables.</p>
+<p>The CherryPicker class allows you to apply chained filter and extract
+operations to an object with complex structure. All the cherry picker uses
+to navigate your object is iterable and mapping interfaces. Anything
+without either of those interfaces (or a string) is treated as a leaf node.</p>
+<p>Each chained operation will return a new <a class="reference internal" href="#cherrypicker.CherryPicker" title="cherrypicker.CherryPicker"><code class="xref py py-class docutils literal notranslate"><span class="pre">CherryPicker</span></code></a> which
+wraps the resulting data from that operation. To get the wrapped data back,
+use the <a class="reference internal" href="#cherrypicker.CherryPicker.get" title="cherrypicker.CherryPicker.get"><code class="xref py py-meth docutils literal notranslate"><span class="pre">CherryPicker.get()</span></code></a> method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>obj</strong> (<em>object.</em>) – The data to operate on.</p></li>
+<li><p><strong>on_missing</strong> (str, default = <code class="docutils literal notranslate"><span class="pre">ignore</span></code>.) – Action to perform when trying to get an attribute that
+doesn’t exist from an object with a Mapping interface. <code class="docutils literal notranslate"><span class="pre">ignore</span></code>
+will do nothing, <code class="docutils literal notranslate"><span class="pre">raise</span></code> will raise an <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#AttributeError" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">AttributeError</span></code></a>.</p></li>
+<li><p><strong>on_error</strong> (str, default = <code class="docutils literal notranslate"><span class="pre">ignore</span></code>) – Action to perform if an error occurs during filtering.
+<code class="docutils literal notranslate"><span class="pre">ignore</span></code> will just mean the filter operation returns False, and
+<code class="docutils literal notranslate"><span class="pre">raise</span></code> will mean the error is raised.</p></li>
+<li><p><strong>on_leaf</strong> (str, default = <code class="docutils literal notranslate"><span class="pre">raise</span></code>.) – Action to perform when calling <code class="xref py py-meth docutils literal notranslate"><span class="pre">__getitem__()</span></code> on a
+leaf node. <code class="docutils literal notranslate"><span class="pre">raise</span></code> will cause a
+<code class="xref py py-class docutils literal notranslate"><span class="pre">cherrypicker.exceptions.LeafError`</span></code> to be raised. <code class="docutils literal notranslate"><span class="pre">get</span></code>
+will return the result of <code class="xref py py-meth docutils literal notranslate"><span class="pre">__getitem__()</span></code> on the wrapped item.</p></li>
+<li><p><strong>leaf_types</strong> – By default, anything doesn’t have an Iterable or
+Mapping interface will be treated as a leaf. Any classes specifed
+in this parameter will also be treated as leaves regardless of any
+interfaces they conform to. <code class="docutils literal notranslate"><span class="pre">leaf_types</span></code> may be a class, a method
+that resolves to True if an object passed to it should be treated
+as a leaf, or a tuple of classes/methods.</p></li>
+<li><p><strong>default</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><em>object</em></a><em>, </em><em>default = None</em>) – The item to return when extracting an attribute that does
+not exist from an object.</p></li>
+<li><p><strong>n_jobs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>default = None</em>) – The maximum number of parallel processes to run when
+performing operations on iterable objects. If n_jobs &gt; 1 then the
+iterable will be processed in parallel batches. If n_jobs = -1, all
+the CPUs are used. For n_jobs below -1, (n_cpus + 1 + n_jobs) are
+used. Thus for n_jobs = -2, all CPUs but one are used. See
+<code class="xref py py-class docutils literal notranslate"><span class="pre">joblib.Parallel</span></code> for more details on this parameter.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Examples</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<p>Data extraction may be done with the getitem interface. Let’s say we have a
+list of objects and we want to get a flat list of the <code class="docutils literal notranslate"><span class="pre">name</span></code> attributes
+for each item in the list:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="p">{</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">20</span><span class="p">},</span> <span class="p">{</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">30</span> <span class="p">}</span> <span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span> <span class="o">=</span> <span class="n">CherryPicker</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+<span class="go">[&#39;Alice&#39;, &#39;Bob&#39;]</span>
+</pre></div>
+</div>
+<p>We can also request multiple attributes for each item to produce a flat
+table:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="p">{</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">20</span><span class="p">},</span> <span class="p">{</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">30</span> <span class="p">}</span> <span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span> <span class="o">=</span> <span class="n">CherryPicker</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+<span class="go">[[&#39;Alice&#39;, 20], [&#39;Bob&#39;, 30]]</span>
+</pre></div>
+</div>
+<p>Filter operations are applied with parentheses. For example, to get every
+<code class="docutils literal notranslate"><span class="pre">name</span></code> attribute from each item in a list called <code class="docutils literal notranslate"><span class="pre">data</span></code>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="p">{</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">20</span><span class="p">},</span> <span class="p">{</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">30</span> <span class="p">}</span> <span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span> <span class="o">=</span> <span class="n">CherryPicker</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Alice&#39;</span><span class="p">)[</span><span class="s1">&#39;age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+<span class="go">[30]</span>
+</pre></div>
+</div>
+<p>Multiple filters may be provided:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="p">{</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">20</span><span class="p">},</span> <span class="p">{</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">30</span> <span class="p">}</span> <span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span> <span class="o">=</span> <span class="n">CherryPicker</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Alice&#39;</span> <span class="n">age</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">&gt;</span><span class="mi">10</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;any&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+<span class="go">[{&#39;name&#39;: &#39;Alice&#39;, &#39;age&#39;: 20}, {&#39;name&#39;: &#39;Bob&#39;, &#39;age&#39;: 30}]</span>
+</pre></div>
+</div>
+<p>Filters can also be chained:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="p">{</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">20</span><span class="p">},</span> <span class="p">{</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">30</span> <span class="p">}</span> <span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span> <span class="o">=</span> <span class="n">CherryPicker</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span><span class="p">(</span><span class="n">age</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">&gt;</span><span class="mi">10</span><span class="p">)(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;B*&#39;</span><span class="p">)[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+<span class="go">[&#39;Bob&#39;]</span>
+</pre></div>
+</div>
+<p>See <code class="xref py py-meth docutils literal notranslate"><span class="pre">CherryPicker.filter()</span></code> for more filtering options.</p>
+<dl class="py method">
+<dt id="cherrypicker.CherryPicker.get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Any<a class="reference internal" href="_modules/cherrypicker/picker.html#CherryPicker.get"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cherrypicker.CherryPicker.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain the original data that this object wraps.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="cherrypicker.CherryPicker.parent">
+<em class="property">property </em><code class="sig-name descname">parent</code><a class="headerlink" href="#cherrypicker.CherryPicker.parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the parent or iterable of parents.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="cherrypicker.CherryPicker.parents">
+<em class="property">property </em><code class="sig-name descname">parents</code><a class="headerlink" href="#cherrypicker.CherryPicker.parents" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for <a class="reference internal" href="#cherrypicker.CherryPicker.parent" title="cherrypicker.CherryPicker.parent"><code class="xref py py-meth docutils literal notranslate"><span class="pre">parent()</span></code></a>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="cherrypicker.CherryPickerTraversable">
+<em class="property">class </em><code class="sig-prename descclassname">cherrypicker.</code><code class="sig-name descname">CherryPickerTraversable</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cherrypicker/traversable.html#CherryPickerTraversable"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cherrypicker.CherryPickerTraversable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Abstract class for traversable (mappable and/or iterable) nodes.</p>
+<dl class="py method">
+<dt id="cherrypicker.CherryPickerTraversable.filter">
+<code class="sig-name descname">filter</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">how</span><span class="o">=</span><span class="default_value">'all'</span></em>, <em class="sig-param"><span class="n">allow_wildcards</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">case_sensitive</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">regex</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">opts</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">predicates</span></em><span class="sig-paren">)</span> &#x2192; cherrypicker.traversable.CherryPickerTraversable<a class="reference internal" href="_modules/cherrypicker/traversable.html#CherryPickerTraversable.filter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cherrypicker.CherryPickerTraversable.filter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a filtered view of the child nodes. This method is usually
+accessed via <code class="xref py py-meth docutils literal notranslate"><span class="pre">CherryPicker.__call__()</span></code></p>
+<p>For an object with a mappable interface, this will return the object
+itself if it matches the predicates according to the rules specified.</p>
+<p>For an object with an iterable but not a mappable interface, a
+collection of child objects matching the predicates according to the
+rules specified will be returned.</p>
+<p>This method is not implemented for leaf nodes and will cause an error
+to be raised.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Example</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<p>Find any items with a name of <code class="docutils literal notranslate"><span class="pre">Alice</span></code>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Alice&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Find any items with a name of <code class="docutils literal notranslate"><span class="pre">Alice</span></code> and an age of 20:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Find any items with a name of <code class="docutils literal notranslate"><span class="pre">Alice</span></code> <cite>or</cite> an age of 20:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;any&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Find any items with a name of <code class="docutils literal notranslate"><span class="pre">Alice</span></code> and an age of 20 or more:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="k">lambda</span> <span class="n">a</span><span class="p">:</span> <span class="n">a</span> <span class="o">&gt;=</span> <span class="mi">20</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Find any items with a name beginning with <code class="docutils literal notranslate"><span class="pre">Al</span></code>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Al*&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Find any items with a name beginning with <code class="docutils literal notranslate"><span class="pre">Al</span></code> or <code class="docutils literal notranslate"><span class="pre">al</span></code>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Al*&#39;</span><span class="p">,</span> <span class="n">case_sensitive</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Find any items with a name of <code class="docutils literal notranslate"><span class="pre">Al*</span></code>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Al*&#39;</span><span class="p">,</span> <span class="n">allow_wildcards</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Find any items with a name matching a particular pattern (these two
+lines are equivalent):</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;^(?:Alice|Bob)$&#39;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">case_sensitive</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">picker</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;^(?:Alice|Bob)$&#39;</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">I</span><span class="p">))</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>how</strong> (<em>str.</em>) – The rule to be applied to predicate matching. May be one
+of (‘all’, ‘any’).</p></li>
+<li><p><strong>allow_wildcards</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>default = True.</em>) – If True, special characters
+(<code class="docutils literal notranslate"><span class="pre">*</span></code>, <code class="docutils literal notranslate"><span class="pre">?</span></code>, <code class="docutils literal notranslate"><span class="pre">[]</span></code>) in any string predicate values will be
+treated as wildcards according to <code class="xref py py-meth docutils literal notranslate"><span class="pre">fnmatch.fnmatchcase()</span></code>.</p></li>
+<li><p><strong>case_sensitive</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>default = True.</em>) – If True, any comparisons to strings or
+uncompiled regular expressions will be case sensitive.</p></li>
+<li><p><strong>regex</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>default = False.</em>) – If True, any string comparisons will be reinterpreted as
+regular expressions. If <code class="docutils literal notranslate"><span class="pre">case_sensitive</span></code> is False, they will
+be case-insensitive patterns. For more complex regex options,
+omit this parameter and provide pre-compiled regular expression
+patterns in your predicates instead. All regular expressions
+will be compared to string values using a full match.</p></li>
+<li><p><strong>predicates</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>regular expression</em><em> or </em><em>Callable.</em>) – Keyword arguments where the keys are the object keys
+used to get the comparison value, and the values are either a
+value to compare, a regular expression to perform a full match
+against, or a callable function that takes a single value as
+input and returns something that evaluates to True if the value
+passes the predicate, or False if it does not.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>If this is a mappable object, the object itself if it passes
+the predicates. If not and this is an iterable object, a
+collection of children that pass the predicates.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#cherrypicker.CherryPicker" title="cherrypicker.CherryPicker"><code class="xref py py-class docutils literal notranslate"><span class="pre">CherryPicker</span></code></a>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="cherrypicker.CherryPickerIterable">
+<em class="property">class </em><code class="sig-prename descclassname">cherrypicker.</code><code class="sig-name descname">CherryPickerIterable</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cherrypicker/traversable.html#CherryPickerIterable"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cherrypicker.CherryPickerIterable" title="Permalink to this definition">¶</a></dt>
+<dd><p>A collection of objects to be cherry picked.</p>
+<dl class="py method">
+<dt id="cherrypicker.CherryPickerIterable.keys">
+<code class="sig-name descname">keys</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">peek</span><span class="o">=</span><span class="default_value">5</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)">list</a><a class="reference internal" href="_modules/cherrypicker/traversable.html#CherryPickerIterable.keys"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cherrypicker.CherryPickerIterable.keys" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>peek</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – The maximum number of items in the iterable to inspect in
+order to ascertain what all possible keys are. If None, all
+items are inspected.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A view of the keys that exist in <cite>all</cite> items that were
+previewed. Individual items may have other keys, but they will
+not be returned unless all the other items inspected also have
+those keys.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)">list</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="cherrypicker.CherryPickerMapping">
+<em class="property">class </em><code class="sig-prename descclassname">cherrypicker.</code><code class="sig-name descname">CherryPickerMapping</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cherrypicker/traversable.html#CherryPickerMapping"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cherrypicker.CherryPickerMapping" title="Permalink to this definition">¶</a></dt>
+<dd><p>A mappable (key-&gt;value pairs) object to be cherry picked from.</p>
+<dl class="py method">
+<dt id="cherrypicker.CherryPickerMapping.flatten">
+<code class="sig-name descname">flatten</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">delim</span><span class="o">=</span><span class="default_value">'_'</span></em>, <em class="sig-param"><span class="n">maxdepth</span><span class="o">=</span><span class="default_value">100</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cherrypicker/traversable.html#CherryPickerMapping.flatten"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cherrypicker.CherryPickerMapping.flatten" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flatten down the object so that all of its values are leaf nodes.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="cherrypicker.CherryPickerMapping.items">
+<code class="sig-name descname">items</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">peek</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span> &#x2192; Any<a class="reference internal" href="_modules/cherrypicker/traversable.html#CherryPickerMapping.items"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cherrypicker.CherryPickerMapping.items" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>peek</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><em>object</em></a><em>, </em><em>optional</em>) – Not used.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A view of the object’s items.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)">list</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="cherrypicker.CherryPickerMapping.keys">
+<code class="sig-name descname">keys</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">peek</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span> &#x2192; Any<a class="reference internal" href="_modules/cherrypicker/traversable.html#CherryPickerMapping.keys"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cherrypicker.CherryPickerMapping.keys" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>peek</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><em>object</em></a><em>, </em><em>optional</em>) – Not used.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A view of the object’s keys.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)">list</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="cherrypicker.CherryPickerMapping.values">
+<code class="sig-name descname">values</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">peek</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span> &#x2192; Any<a class="reference internal" href="_modules/cherrypicker/traversable.html#CherryPickerMapping.values"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cherrypicker.CherryPickerMapping.values" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>peek</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><em>object</em></a><em>, </em><em>optional</em>) – Not used.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A view of the object’s values.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)">list</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="cherrypicker.CherryPickerLeaf">
+<em class="property">class </em><code class="sig-prename descclassname">cherrypicker.</code><code class="sig-name descname">CherryPickerLeaf</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cherrypicker/leaf.html#CherryPickerLeaf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cherrypicker.CherryPickerLeaf" title="Permalink to this definition">¶</a></dt>
+<dd><p>A non-traversable node (an end-point).</p>
+<p>This class cannot perform filter or extract operations; it only exists to
+return a result (with <a class="reference internal" href="#cherrypicker.CherryPicker.get" title="cherrypicker.CherryPicker.get"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get()</span></code></a>).</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="extract.html" class="btn btn-neutral float-left" title="Extraction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, big-o
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-143748897-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+   
+
+</body>
+</html>
