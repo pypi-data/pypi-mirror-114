@@ -1,0 +1,6 @@
+edx-toggles
+edx-drf-extensions
+Django>=2.2
+django-model-utils
+djangorestframework
+django-config-models
