@@ -1,0 +1,3 @@
+[console_scripts]
+jbt2=jbtuner2_manager.main:app
+
