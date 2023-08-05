@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: english-dictionary
+Version: 1.0.1
+Summary: In-memory dictionary of 100 thousand English words
+Home-page: https://github.com/DanDelluomo/dictionary
+Author: Daniel E. Dell'uomo
+Author-email: dandelluomo@gmail.com
+License: MIT
+Description: In-memory Python dictionary of the English language for easy access in NLP applications. 
+        
+        To my knowledge, this does not exist. Current dictionary packages rely on API calls under the hood, which are obviously extremely slow compared to key lookup.
+        
+        ## Install
+        ```
+        pip install english_dictionary
+        ```
+        
+        ## Usage
+        
+        ```
+        import english_dictionary
+        ```
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
