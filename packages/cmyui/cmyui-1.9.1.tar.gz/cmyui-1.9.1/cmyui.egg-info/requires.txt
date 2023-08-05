@@ -1,0 +1,4 @@
+aiohttp
+aiomysql
+mysql-connector-python
+orjson
