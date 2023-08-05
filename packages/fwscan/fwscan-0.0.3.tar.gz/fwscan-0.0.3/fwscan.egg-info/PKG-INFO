@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: fwscan
+Version: 0.0.3
+Summary: UNKNOWN
+Home-page: https://github.com/cpuinfo/fwscan.git
+Author: CPU Info
+Author-email: cpuinfo10@gmail.com
+License: BSD
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+
+# fwscan
+
+Firmware security scanner
+
+# Installation
+
+Simply run:
+
+    $ pip install .
+
+# Usage
+
+To use it:
+
+    $ fwscan --help
+
+

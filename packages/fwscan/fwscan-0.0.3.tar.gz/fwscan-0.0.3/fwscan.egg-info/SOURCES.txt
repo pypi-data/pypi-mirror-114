@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+fwscan/__init__.py
+fwscan/cli.py
+fwscan.egg-info/PKG-INFO
+fwscan.egg-info/SOURCES.txt
+fwscan.egg-info/dependency_links.txt
+fwscan.egg-info/entry_points.txt
+fwscan.egg-info/not-zip-safe
+fwscan.egg-info/requires.txt
+fwscan.egg-info/top_level.txt
+fwscan/utils/__init__.py
+fwscan/utils/colorprints.py
