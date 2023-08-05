@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: scikit-talk
+Version: 0.0.2
+Summary: Scikit-talk helps to process real-world conversational speech data. 
+Home-page: https://github.com/partigabor/scikit_talk
+Author: Gabor Parti
+Author-email: gabor.parti@connect.polyu.hk
+License: MIT license
+Keywords: scikit_talk
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: Click (>=7.0)
+Requires-Dist: speach (>=0.1a9.post2)
+Requires-Dist: pylangacq (>=0.15.0)
+
+===========
+scikit-talk
+===========
+
+
+.. image:: https://img.shields.io/pypi/v/scikit_talk.svg
+        :target: https://pypi.python.org/pypi/scikit_talk
+
+.. image:: https://img.shields.io/travis/partigabor/scikit_talk.svg
+        :target: https://travis-ci.com/partigabor/scikit_talk
+
+.. image:: https://readthedocs.org/projects/scikit-talk/badge/?version=latest
+        :target: https://scikit-talk.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+Scikit-talk helps to process real-world conversational speech data. 
+
+
+* Free software: MIT license
+* Documentation: https://scikit-talk.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.0.2 (2021-07-26)
+------------------
+
+* First release on PyPI.
+
+
