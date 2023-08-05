@@ -1,0 +1,9 @@
+LICENSE
+README.md
+anagram_solver.py
+setup.py
+ruben_anagram_solver.egg-info/PKG-INFO
+ruben_anagram_solver.egg-info/SOURCES.txt
+ruben_anagram_solver.egg-info/dependency_links.txt
+ruben_anagram_solver.egg-info/entry_points.txt
+ruben_anagram_solver.egg-info/top_level.txt

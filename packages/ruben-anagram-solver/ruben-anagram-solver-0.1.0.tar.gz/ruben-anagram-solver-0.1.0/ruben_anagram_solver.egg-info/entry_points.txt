@@ -1,0 +1,3 @@
+[console_scripts]
+ruben-anagram-solver = anagram_solver:main
+
