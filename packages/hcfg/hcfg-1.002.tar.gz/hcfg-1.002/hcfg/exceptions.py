@@ -1,0 +1,5 @@
+
+
+
+class hypSyntaxError(Exception):
+    pass
