@@ -1,0 +1,10 @@
+functionali/__init__.py,sha256=rlilv6mgrM-dC2cGgXsdhLGBjVMMUXiBEzWFy7_Jznw,148
+functionali/higher_order_functions.py,sha256=R3WfRRKnBy4M6lLm5nW_NijYagCWNv9Z09EEzoelBhI,2040
+functionali/predicates.py,sha256=MB2mAi6y1x9ZGynQpxfkxYYCCemBvQJcgF3QfUswX5o,10910
+functionali/seq_transform.py,sha256=_g4Qhj8_XLFk2rrGOj4IA76qAhh-8_QlDp64K8Snhd4,7670
+functionali/seq_traverse.py,sha256=MMG3bFcBzQ4njvCh76-IqcXEPcpBKW6qjFAYOX0iAyM,8658
+LICENSE,sha256=1vq7QN89fbk5MGIlGQxAVqjkjL7z3BzmFG5QI4wGvZk,1554
+functionali-0.1.0.dist-info/LICENSE,sha256=1vq7QN89fbk5MGIlGQxAVqjkjL7z3BzmFG5QI4wGvZk,1554
+functionali-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+functionali-0.1.0.dist-info/METADATA,sha256=_jnc6vW70i9ZCZi-1lGGxmbnurUgZ5dAMP0FYioCPeI,6094
+functionali-0.1.0.dist-info/RECORD,,
