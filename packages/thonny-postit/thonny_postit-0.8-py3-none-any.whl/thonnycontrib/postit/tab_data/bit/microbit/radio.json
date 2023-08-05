@@ -1,0 +1,149 @@
+[
+    {
+        "postit_type" : "postit_title"
+    },
+    {
+        "postit_type" : "ttk_separator"
+    },
+    {
+        "postit_type" : "postit_para",
+        "on_label" : "<< 匯入模組",
+        "off_label" : "匯入模組 >>",
+        "start_on" : true
+    },
+    {
+        "postit_type" : "in_para_dropdown_postit",
+        "postfix_enter" : true,
+        "items" :[
+            {
+                "menu_display" : "匯入模組",
+                "code" : "import radio as 廣播",
+                "code_display" : "import radio as 廣播",
+                "note" : "### 需先匯入才能使用",
+                "long_note" : true
+            }
+        ]
+    },
+    {
+        "postit_type" : "ttk_separator"
+    },
+    {
+        "postit_type" : "postit_para",
+        "on_label" : "<< 啟用與設定",
+        "off_label" : "啟用與設定 >>",
+        "start_on" : true
+    },
+    {
+        "postit_type" : "in_para_dropdown_postit",
+        "postfix_enter" : true,
+        "items" :[
+            {
+                "menu_display" : "啟用廣播",
+                "code" : "廣播.on()",
+                "code_display" : "廣播.on()",
+                "note" : "啟用廣播",
+                "long_note" : true
+            },
+            {
+                "menu_display" : "關閉廣播",
+                "code" : "廣播.off()",
+                "code_display" : "廣播.off()",
+                "note" : "關閉廣播",
+                "long_note" : true
+            }
+        ]
+    },
+    {
+        "postit_type" : "in_para_dropdown_postit",
+        "postfix_enter" : true,
+        "items" :[
+            {
+                "menu_display" : "設定 群組",
+                "code" : "廣播.config(group=0)",
+                "code_display" : "廣播.config(group=0)",
+                "note" : "設定群組(0~255)",
+                "long_note" : true
+            },
+            {
+                "menu_display" : "設定 訊息長度",
+                "code" : "廣播.config(length=32)",
+                "code_display" : "廣播.config(length=32)",
+                "note" : "設定訊息長度(1~251)",
+                "long_note" : true
+            }
+        ]
+    },
+    {
+        "postit_type" : "ttk_separator"
+    },
+    {
+        "postit_type" : "postit_para",
+        "on_label" : "<< 廣播文字訊息",
+        "off_label" : "廣播文字訊息 >>",
+        "start_on" : false
+    },
+    {
+        "postit_type" : "in_para_dropdown_postit",
+        "postfix_enter" : true,
+        "items" :[
+            {
+                "menu_display" : "傳送文字",
+                "code" : "廣播.send('文字')",
+                "code_display" : "廣播.send('文字')",
+                "note" : "傳送文字",
+                "long_note" : true
+            }
+        ]
+    },
+    {
+        "postit_type" : "in_para_dropdown_postit",
+        "postfix_enter" : true,
+        "items" :[
+            
+            {
+                "menu_display" : "接收文字",
+                "code" : "接收文字 = 廣播.receive()",
+                "code_display" : "接收文字 = 廣播.receive()",
+                "note" : "",
+                "long_note" : true
+            }
+        ]
+    },
+    {
+        "postit_type" : "ttk_separator"
+    },
+    {
+        "postit_type" : "postit_para",
+        "on_label" : "<< 廣播位元組訊息",
+        "off_label" : "廣播位元組訊息 >>",
+        "start_on" : false
+    },
+    {
+        "postit_type" : "in_para_dropdown_postit",
+        "postfix_enter" : true,
+        "items" :[
+            
+            {
+                "menu_display" : "傳送位元組",
+                "code" : "廣播.send_bytes(b'abc')",
+                "code_display" : "廣播.send_bytes(b'abc')",
+                "note" : "傳送位元組",
+                "long_note" : true
+            }
+        ]
+    },
+    {
+        "postit_type" : "in_para_dropdown_postit",
+        "postfix_enter" : true,
+        "items" :[
+            
+            {
+                "menu_display" : "接收位元組",
+                "code" : "接收位元組 = 廣播.receive_bytes()",
+                "code_display" : "接收位元組 = 廣播.receive_bytes()",
+                "note" : "",
+                "long_note" : true
+            }
+        ]
+    }
+]
