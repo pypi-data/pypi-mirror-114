@@ -1,0 +1,12 @@
+pip
+packaging
+numpy
+scipy
+matplotlib
+scikit-learn
+pandas
+joblib
+datetime
+xgboost
+
+[dev]
