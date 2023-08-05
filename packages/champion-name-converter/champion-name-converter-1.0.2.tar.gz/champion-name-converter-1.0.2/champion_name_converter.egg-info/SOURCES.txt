@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+champion-converter/__init__.py
+champion-converter/converter.py
+champion_name_converter.egg-info/PKG-INFO
+champion_name_converter.egg-info/SOURCES.txt
+champion_name_converter.egg-info/dependency_links.txt
+champion_name_converter.egg-info/requires.txt
+champion_name_converter.egg-info/top_level.txt
