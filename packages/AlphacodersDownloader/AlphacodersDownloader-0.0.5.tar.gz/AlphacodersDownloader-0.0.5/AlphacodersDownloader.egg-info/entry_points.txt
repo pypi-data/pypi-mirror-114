@@ -1,0 +1,3 @@
+[console_scripts]
+alphacoders_downloader = alphacoders_downloader.alphacoders_downloader:start
+
