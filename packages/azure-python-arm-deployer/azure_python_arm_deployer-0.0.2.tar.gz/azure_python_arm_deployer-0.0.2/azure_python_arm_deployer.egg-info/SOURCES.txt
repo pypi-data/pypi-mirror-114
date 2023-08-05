@@ -1,0 +1,8 @@
+README.md
+setup.py
+azure_python_arm_deployer/__init__.py
+azure_python_arm_deployer.egg-info/PKG-INFO
+azure_python_arm_deployer.egg-info/SOURCES.txt
+azure_python_arm_deployer.egg-info/dependency_links.txt
+azure_python_arm_deployer.egg-info/requires.txt
+azure_python_arm_deployer.egg-info/top_level.txt
