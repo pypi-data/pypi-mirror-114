@@ -1,0 +1,13 @@
+numpy
+
+[dev]
+black
+coverage
+Cython
+flake8
+numpy
+pandas
+pytest
+tabulate
+tox
+twine
