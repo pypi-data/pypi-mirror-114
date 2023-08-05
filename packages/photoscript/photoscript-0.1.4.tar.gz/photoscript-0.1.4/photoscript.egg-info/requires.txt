@@ -1,0 +1,4 @@
+pyobjc-core
+pyobjc-framework-AppleScriptKit
+pyobjc-framework-AppleScriptObjC
+py-applescript==1.0.2
