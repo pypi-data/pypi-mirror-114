@@ -1,0 +1,12 @@
+requests==2.5.3
+numpy
+pandas
+python-dateutil
+pytz
+six
+tqdm
+blackduck
+configargparse
+structlog
+urllib3
+requests-toolbelt
