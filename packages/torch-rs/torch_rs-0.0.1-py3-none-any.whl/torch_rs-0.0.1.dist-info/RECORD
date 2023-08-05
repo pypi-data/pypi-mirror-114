@@ -1,0 +1,16 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/models/test_rams.py,sha256=V0utLQPsSDsu7rlrdiU3xxFdNIrEsO2kbISS7jJURy8,813
+torchrs/__init__.py,sha256=FyvvTuhFDKM-RAudsBQt1Uroo-9gg99FO2UAqVJTr1A,92
+torchrs/transforms.py,sha256=Yt9Mz-0xncxDVN3USpkus11oGO9QpmDUC5zLtreAeMc,1122
+torchrs/datasets/__init__.py,sha256=qbAWIFZDH7uqlTkGZ3_kAflPNATGKiEfU6V3XzKf7lY,85
+torchrs/datasets/etci2021.py,sha256=g72agINUxBwrP3wLUnENjP50PVZGMj74jYzPDwboCuU,3370
+torchrs/datasets/probav.py,sha256=osAMCqLlJebbv94MlQGeY9_7tigEj5593wXT3awt_Pk,4510
+torchrs/datasets/rsvqa.py,sha256=0-8zpnTUbqq2fq-ZNmKzTQaUvaH4Qiwg241bDOqT8_o,3930
+torchrs/models/__init__.py,sha256=Fcxvd2Bw_CDbrrKxGlMIGW-2MALgQOpeXlut47rR4VA,23
+torchrs/models/rams.py,sha256=Uhzey6-JqaU75Lqh0BxU-PCDMr7v4C1h-vguhQJmqOM,5646
+torch_rs-0.0.1.dist-info/LICENSE,sha256=nzNuiR2fclQpI532goFklvifj4oAckV4frw3kIhKt2A,1062
+torch_rs-0.0.1.dist-info/METADATA,sha256=yc7AulDMfKK1DTQLMH-bIrvXWkCkMBQZkgbzvDY18Pg,6679
+torch_rs-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+torch_rs-0.0.1.dist-info/top_level.txt,sha256=jmv1GVmEMhH6tW1q0RxBNt1MRY3ttHSxbPoyAeCUDeE,14
+torch_rs-0.0.1.dist-info/RECORD,,
