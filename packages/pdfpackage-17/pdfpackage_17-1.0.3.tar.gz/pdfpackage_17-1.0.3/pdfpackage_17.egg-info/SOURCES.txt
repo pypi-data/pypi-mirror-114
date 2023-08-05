@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pdfpackage17/__init__.py
+pdfpackage17/pdf2image.py
+pdfpackage17/pdf2text.py
+pdfpackage_17.egg-info/PKG-INFO
+pdfpackage_17.egg-info/SOURCES.txt
+pdfpackage_17.egg-info/dependency_links.txt
+pdfpackage_17.egg-info/top_level.txt
