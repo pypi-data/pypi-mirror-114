@@ -1,0 +1,16 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+playstoreapi/__init__.py
+playstoreapi/config.py
+playstoreapi/device.properties
+playstoreapi/googleplay.py
+playstoreapi/utils.py
+playstoreapi.egg-info/PKG-INFO
+playstoreapi.egg-info/SOURCES.txt
+playstoreapi.egg-info/dependency_links.txt
+playstoreapi.egg-info/requires.txt
+playstoreapi.egg-info/top_level.txt
+test/test.py
