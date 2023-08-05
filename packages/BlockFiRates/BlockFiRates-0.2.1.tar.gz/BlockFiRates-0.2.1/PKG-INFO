@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: blockfirates
+Version: 0.2.1
+Summary: Scrape the latest APY rates for BlockFi Interest Accounts
+Home-page: https://github.com/pgoslatara/blockfirates
+License: MIT
+Keywords: crypto,python3,blockfi
+Author: P.G. Ó Slatara
+Author-email: pgoslatara@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: cloudscraper (>=1.2.58,<2.0.0)
+Requires-Dist: lxml (>=4.6.3,<5.0.0)
+Project-URL: Repository, https://github.com/pgoslatara/blockfirates
