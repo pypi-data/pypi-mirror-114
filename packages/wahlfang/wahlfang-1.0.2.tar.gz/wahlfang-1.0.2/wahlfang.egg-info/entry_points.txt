@@ -1,0 +1,3 @@
+[console_scripts]
+wahlfang = wahlfang.manage:main
+
