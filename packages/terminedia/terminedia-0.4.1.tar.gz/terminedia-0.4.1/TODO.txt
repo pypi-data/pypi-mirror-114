@@ -1,0 +1,615 @@
+Targeted for next release (0.4):
+=================================
+    - [bug] None ended-slices of shapes should work (i.e. screen.data[10:, :]) should work: bug in Rect class
+    - [bug] StyledText: multiple "moveto" Marks pointing one to another do not chain: only the first one take effect
+    - [bug] "new_line" marks not working for text-resolutions other than 1. [v]
+    - [bug] 'add_border' in text planes only working for plane[1] [v]
+    - [bug] top level ScreenMenu being redrawn everyframe. App gets slugish: [v]
+        - dirty_rect clear on display shape was not propagating to the sprites shapes [v]
+            - sprites with "tick" transforms are stil always dirty [v]
+
+
+[Draw]
+    - Drawing API fill (floodfill) [v]
+
+
+[Widgets]
+            - Editable can handle up-down entry-point movement via keyboard arrows: [wip]
+                    - de-hardcode left-to-right-and-down text layout from text planes, and offer other layout options. examples: [wip]
+                        - left-to-right and down [v]
+                        - S shaped
+                        - up-to-down and right
+                        - spiral shaped
+            - [future] handle copy-paste
+        - pointer dependent widgets:
+        - Widgets:
+            - Entry: one line text editing [v]
+            - Text: multiline text editing [v]
+            - List Selection: (Selector) options-selector [v]
+                - refactor to generalize layout
+
+            - tabular selector (depends on refactoring list selector)
+
+            - Radio box/check box
+            - Drop down selection
+
+            - ScreenMenu [wip]
+                - Support for arrowkey navigation and <enter> selection
+                - Support for mouse-click select
+            - PaletteMenu:
+                - Allow cells with colors or characters or options be picked by clicking or keyboard navigation
+            - EditablePaletteMenu:
+                - Allow user to interactivelly enter contents for the cells
+
+        - Advanced Widgets: (develop concurrently with 'cross-widget stateful workflow' widget grou bellow)
+            - palette widget:
+                - color selection
+                - character selection
+                - effect selection
+            - Gradient editor
+            - date picker
+            - "Windows" and "tabs":
+                - widget grouping and selective display
+        - Widget tools:
+            - scrollbar
+            - label
+            - styling:
+                - widget framing [v]
+                - styling with context [wip]
+                - styling with transformers (very likely will work out of the box)
+                - check viability of CSS-like traversing and selction for widget styling, with context-keywords:
+                    - allow css like declarative styling
+
+        - Layout management:
+            - HBox/VBox filling:
+                - 'super' widget: elastic box able to contain sub-widgets
+                    - widgets need a "resize" method which triggers an event
+                    - container widgets subscribe to the children resizing
+                - widgets inside super-widget should hav a tab-focus order of their own
+                - API: append, prepend, padding, per widget 'gravity' or group 'distribute'
+                - de-activating have to hide and deactivate all contained widgets
+                - hbox
+                - vbox
+                - scrollable
+                    - might need independent scrollbar
+                - table (auto combine vbox + hbox):
+                    - fixed cols
+                    - dynamic cols
+                - cross-widget statefull workflow:
+                    - example: enable implementation of customizable pallet widget as super-widget coupling table + drop-down + buttons
+                - reactively respond to inner widgets size change ?
+                    - (maybe have a "size" property for all widgets as an "ObservableProperty"?)
+                    - or emit a custom "resize" event?
+
+
+[mouse-and-events]
+    - create a reliable way to read information back from stdin with ANSI events
+        - cursor position
+        - mouse events (V)
+    - add an API for event subscribing system [WIP]:
+        - add minimal event dispatcher system (V)
+        - if there are events, there should be a "main loop" (currently, one call per frame to Screen.update)
+        - Add "enable mouse" as a context-manager on "input.py" (V)
+        - Add "guard-expressions" to event subscriptions, so it is possible to, for example,
+                subscribe for specific key-presses (or any other simple-test with event attributes) [v]
+
+        - way to do "event pump" [v]:
+            - call "terminedia.events.process [v] # was "currently one does call 'inkey'":
+            - refactor _posix_inkey to us a separate function to read keystrokes + mouse + ANSI responses as tokens[v]
+            - create "event pump" call in events to get the events running [v]
+            - have a keyboard + mouse event subscritpion on the "Screen" object context [v]
+            - establish a default event-discard policy (by number of ticks? seconds?)
+            - have the "screen update" call pump the events[v]
+
+    - Problem: Konsole does not report mouse position with no buttons pressed (it works on gnome-terminal)
+
+    - refactor "inkey" so that tokens in sys.stdin are read in an independent way.[v]
+
+    - last frame events can be retrieved without the need to add callbacks.[?]
+
+
+    - simple "cls" [v]
+
+        - check if there is a ms-windows equivalent - (yes - have to be hacked in: https://github.com/microsoft/terminal/issues/281)
+
+    - Integrate "Observable Properties" into the event system?
+            (currently used in text.resize, which is triggered by adding a border)
+
+    - mouse handling on windows
+
+    - make input accept context-parameters, like print does. [v]
+    - Create a 'double-click' event [V]
+
+[Future - wiget and App branch]:
+
+    - add early widgets: (#NB: can be done in another branch than "mouse and events") [wip]
+        - base (evolve from Sprite - or even add as mixin to sprite) [v]
+        - button      [v]
+        - text entry [v]
+        - text area  [v]
+        - radio/checkbox
+        - menus [wi]
+    - tab/shift tab based widget focus
+
+    - add way for "text" objects to be larger than their parent shapes
+        - scrollbars
+
+[text-branch]
+
+    - Accept friendlier parameter names when constructiong a TM.Mark object. [V]
+        - (currently all context-attributes hav to be inside an "attributes" dictionary passed as parameter - it should accept keyword parameters for each context attribute)
+
+    - make Rich Text markup  usable by standalone "terminedia.print" (terminedia.print should work without an underlying shape) [future]:
+            - parse text, and create a transient shape if markup is used
+            - test negative Y offsets on transient shape
+            - render transient shape at cursor position, clipped to generated content extents.
+                - Consider if the character data in each plane (text_plane.plane dictionary) is worth keeping. consider that:
+                    - static characters are stored there without any attributes
+                    - they are reflected on the owner shape data anyway (keeping the attributes)
+                    - rendering rich text automatically rewrites the shape-data
+                    - written text is stored at the "writtings" object anyway
+
+            - create a few ready-to-use transformers using these features to apply gradients, and time (tick) changing visibility, or color offset.
+
+    - Add transformers "offset" (or "translate") channel: modify the placement of the given character (without changing "last_pos" on  the the caller machinery)
+
+    - Allow "offset" parameters to styled text, so that text can move according to tick:
+        - A subset of the text could be displayed as a "visible window"
+        - This would allow for text to be printed at the bottom of a text-region
+        and scroll-up in subsequent frames.
+        - probably these should be specified as "SpecialMark" objects.
+        - pad right with"nop" characters
+        - select a renderable window of text
+        - allow negative offset;
+
+    - Consider merging "SpecialMark" and "Mark" classes. (They are distinguishable by the presence of an ".index" attribute)
+
+    - Think of a nice API to make use of TM.text.StyledSequence that is shorter than instantiating one, passing the screen.data.text[1] as text_plane kwarg, and calling "render" on it followed by "screen.update()" :-) (probably changing "print", "at" and "__setitem__" on .text to use it :-) ):[V]
+
+    - create an ANSI Sequence parser based on the MLTkenizer parser.
+
+    - Allow parsing mixed markup-and-ansi text and create a unique rich text object that can be rendered.
+
+    - Make shape.text alone behave like shape.text[1], with no need for indexing.
+    - Cache TextPlane size data - it is a property called several times per cell position when rendering, and does a big mess going back to self.root.size
+
+    - pickle terminedia.unicode.CHAR_BASE as part of setup.py install (?)
+    - enable re-shapping of TextPlane or Shape triggering re-flowing of textual content.
+
+    - Implement "trans-dimensional-mark" - mechanism to allow text-flow to continue
+            in another TextPlane object, entirely.
+    - Connect screen.update to text_planes.update (maybe via sprite re-rendering)
+
+    - add support for scrolling and buffer of text areas.
+        -Do it after "trans-dimensional-marks to ensure text can scroll across  several areas (e.g. columns) before falling off the screen
+        - record the initial position and tick - possibly as the value in TextPlane.writtings
+
+    - Allow markup parser to recognize ":emoji_name:" style emojis, using the names and aliases as used by Python-emojis (from Ruby gen emojis):
+        - include emoji nick/alias information on TM.Unicode.Character information
+        - Allow character search by emoji nick/alias
+    - BUG: effects not being suspended upon a [/effect] tag
+    - BUG: encircled characters not taking two horizontal cells when being rendered.(V):
+            - ambiguous character (as in unicodedata.east_asian_width(char) == 'A') changed to be of width
+    - BUG: Transfomer "effect" channel on Sprite not working: suppressing effects altogether.
+    - BUG: inline [/color] tag closing [color] tag placed as postioned mark on the text-plane.
+
+
+
+[WIP]
+Implement "big square" 2 block resolution:
+make way for 6x3 block core transformers in order to use half-triangle characters
+
+    - Document work around for use under windows (WIP)
+    - Create color-reducing code so that colors (mostly) work
+    - future: Windows terminal backend bypassing colorama, using full capabilities;
+    - Fix windows keyboard handling on new- MS terminal (2019)
+    - Known Issue: the rendering through colorama is super-slow. most animation applications will be just proof of concepts until another way is found.
+
+- Refactor utils.py into proper folder [V]
+- Spice up "HookedList" to support slice operations and work seamlesly as a list
+     - implement "reversed"
+     - have "remove" and other altering methods to use the cast-hook for proper element matching
+     (suggestions by Serhiy Storchaka)
+- Efficient MutableString/struct container to replace "list" as main data storage [WIP]:
+    - backed by bytearray
+    - use abc.MutableSequence for and store utf-32-le data for characters
+    - slice set/get uses strings
+    - But how could this be ever faster than lists of one-character strings?? :-(
+        - temptative:
+            - abuse slice operations - these should go fast
+            - change internal read operations to operate on row-chunks
+            - make image.__getitem__ a special case of getting a single item and move
+                most of its code to a method that operate on chunks.
+                - make client methods (draw.blit, text.char_at, backend reading) use the chunky method
+
+
+
+Resolve "can't output a lot of things to terminal if stdin set to non blocking" bug on windows
+
+smaller features:
+    - accept context attributes (color, background, effects) as keyword arguments on all .draw methods [WIP]:
+        - create the concept of 'pretransformers': transformations
+            to pixels at writting time in a separate context transformers stack [V]
+    - Make local contexts default to root context if a value has not been explicitly set
+        - more important: make thread-local contexts default to values on the main (interactive) thread
+        so that an event loop can be spawned in interactive mode and use proper context values
+    - use the same option of suppressing absolute cursor movement for the html backend.
+    - uniformize "size", "get", "set" and __getitem__ & __setitem__ on screen, shape, high and braille namespaces.
+    - fix palleted shapes:
+        - create proper booleanshape (true/false + color) - used by default to render fonts.
+        - reading with __getitem__ should get back a pixel with the original character, but when blitting, only the color and boolean information should be blitted (color.TRANSPARENT should imply in "False" pixels)
+        - on drawing, context.char should be respected - and auto-appended to the color_map if not there.
+    - make emoji's and unicode chars easier to use:
+        - expose unicodedata databases as plain dictionaries
+    - enable "debug" flag in root context and display internal information on object's repr based on that
+            (currently Screen's repr is showing last_pos, last_color, and other internal state attrs by default)
+    - shape "clear" call:
+        - optional parameter to reset text information
+
+    - Fix in-function imports in place to avoid circular imports so that they only run once per process
+    - Alias context.foreground to context.color
+
+
+    - bug: html rendering not respecting context colors, on starting empty space characters
+    - bug: with terminal in relative movement, snake-game is faulty,, suggesting terminal-context bugs
+    - bug: (may be postponed) - shape.render does not respect shapesviews (slices): the parent shape is rendered instead
+
+
+    Transformers:
+        - include a variety of ready-to-use and easy to parametrize transformers for:
+             -applying gradient effects (POC done)
+             - convolution filters (POC done)
+             -  Mapping that allows key/value pairs to have attached tags
+                when using the tags in browsing (values, keys), a tag may be specifed
+                to filter out any pairs that do not have the same tag.
+                This should be useful for tagging sprites and the event system -
+                and also for providing a single "transformers library" object
+                using tags for the transformers categories.
+            - Refactor Transformers.process so that the setup does not have to be
+                repeated for each pixel. (an strategy like the used by
+                StyledText.render will likely be possible):
+                    - create a benchmarking script
+                    - create a two-step process that yields a callback
+                        with the signature of current Transformers.Process
+        - Write a combining/blending transformer that can contain other transformers:
+            - blend color information (maybe using more than "normal" blending)
+            - be able to apply masks and "clips" on the underlying transformers.
+            - use example: a GradientTransformer can then blend and tint other colors
+            in the text without one needing to rewrite, or hard code the blending code
+            in that class.
+
+
+        -Enhance transformers __repr__
+
+    Sprites:
+        - Add Spatial transformation
+
+
+        - Spatial - class embedding a 2D (3X3) transformation matrix with friendly properties
+                to specify linear transformations in a friendly way.
+
+        - Find a way to attach sprites to other than native resolution - so
+        that a normally rendered sprite, attached to "high" space will be drawn
+        scaled down, on that space.
+
+    create some filters as ready-made transformers (maybe not all for 0.3.0):
+        - threshold: yield true/false pixels and strip color information
+        - convert colorred fullblock pixels to "transparent" pixels: keep the existing char, and apply the color as background
+        - color-value to different unicode-circles
+        - color-value to different unicode-squares
+        - linear gradients
+
+
+    - Reactive rendering
+
+        - per-backend "fast_render" method: called in place of the "_print" method, takes
+        a list of rectangles and an image data source - caches color, bg, effects by itself
+            (HTML Backend missing improvement. Current HTML usage, of pre-rendering a full frame
+            would not take advantages from this, as there is no way to update
+            an inner rectangle changing just some pixels from one frame to the next.
+            Other totally new HTML renderings (e.g. using tables, Canvas, one ID for each character
+                                                could benefit from fast_render)
+            - relative-positioning for ANSI backend (TBD)
+
+        - Use data structures to track dirty rectangles in a shape for fast_update =
+                - have a specialized dirty_registry data structure (V)
+                    - (internaly using a heapfied list - maybe an specializd data structure as a linked list would be better)
+                - Missing tests for any of dirty-rect tracking features.
+        - create "FrozenRect" and avoid usage of tuples-as-rects in code.
+
+        - Speedup pixel-data retrieving from within shapes:
+            - use a unique data-structure instead of 4 separate lists for fullshapes:
+                - speed-up (or skip altogether) Pixel creation for each read.
+        - fix other low hanging improvements visible with 'python -m profile terminedia-shapes
+            - ex. avoid in-per-pixel methods use of "imports"
+
+
+breaking-changes:
+    - rename unicode effects so that their name matchs their unicode names (at least "super_bold" -> "regional_indicator")
+
+0.4.1:
+========
+Write some real nice docs, with tutorials and use suggestions
+
+
+Future
+========
+
+- MARKUP: [V]
+    Accept a markup in all string-printing methods to enable interleaving
+    context changes during the print:
+        - Example: "TM.print("Hello [color:red]World[/color][effect:blink]!!!") [V]
+        - Allow cursor movement commands into the markup [V]
+        - promote the current side-effect that if "context.char" is set
+        to a string more than one glyph in length all the string is
+        placed instead of a single pixel to a full feature, accepting
+        this markup [V]
+
+- BACKENDS:
+
+    - "The One" optmization: (maybe sprint around Christmas 2020)
+        - Benchmark complex rendering (with 2 more levels of sprites and 4+ levels of transformers + text effects / frame)
+        - add consistent benchmarking as a script in tools
+        - then proceed to revamp everything:
+            - refactor as many pixel by pixel function calls to a way that can be pre-set to a retangular area and then used as a generator:
+                - Rendering backend: should get a "shape", a rect and a file stream, and usr
+                    a method on the shape to setup pixel yielding for that area, and use a single
+                    "for" block for rendering.
+                - (final backend rendering method should be contained in a single function, with no extra calls)
+                - shapes:
+                    - have a method to setup an area, that will, in turn, setup areas in it's text planes, and sprites
+                    - use generator semantics with "send" to the sprites (so that transformers with any kind of transparency
+                        can have their data).
+                    - optimize storage to use arrays instead of lists. (no need to numpy - just arrays of 4 bytes and
+                        a fast way to interpret those as  a single UTF-32 unicode codepoint string)
+                - transformers:
+                    - benchmark to check if this is worth the effort:
+                    - (optional) have a decorator that could work on bytecode level to upgrade a normal function-based transformer
+                            to a generator:
+                                - insert a `pos, pixel, source, ... = yield mydata; char, foreground, background, effects = pixel` line
+                                at the start of the bytecode;
+                                - replace all "return" values for a "bytecode jump" to the line with the "yield".
+                                - since the transformer-generator will be garbage colector once its area-blitting is over,
+                                there is no problem that such a transformer becomes an "infinite size" generator
+                - text-planes and text-style:
+                    - have blitted text-styles in teh text-plane have the combined (text-plane positional + string positional) Marks in place,
+                    ready to work as a generator for all "full pixels". Updating the shape will trigger the rendering for text planes
+                        - it is possible that this is hard to do for text-planes of more than one block per character (big-text):
+                            if that is the case, just leave big-text rendering as eager (as they work today(, and document that.
+                - subpixel:
+                    - benchmark to csheck if "de-normalizing" the super-refactored code in there would make some difference. [x]
+                    - (current code is super-geekie but requires 3-level calls to set/reset each subpixel) [x]
+                    - if keeping elegance is a must, evolve a script in tools that will "glue together" the denormalized code inline. [x]
+                    - (or check pymacro) [x]
+                    - pre-render all possible subppixel operations as 2 dicts per subpixel class upon loading, using existing code.
+                        -subsequent calls to set/reset pixels are just a matter of a dict lookup by tuple
+    - ^^ these optimizations should bring frame performance to a more reasonable value (10s of FPS expected. Currently 5
+         FPS is something just achiaveable for the most simple of renderings, just affecting an area of the screen).
+         At this point the bottleneck
+         should be the terminal emulator program (then check for Kitty and other terminals that intend to be fast)
+
+
+
+
+    Image 'screenshot' backend
+        - including rendering animations as gifs or image-sequences
+    image backend (pixels are simple color-only boring, image pixels)
+    postscript backend
+    .rtf backend
+    pdf backend
+    jupyter notebook backend
+    Fallback terminal to 1-byte color setting for up to 216 colors + 24 grayscale
+    - ANSI:
+        - get the color, movement, and effects sequences from terminfo, and use hard-coded common sequences just as fallback. (thanks to Gilles Quenot)
+
+- new "resolution modes":
+    - double-character (2 blocks - square aspect ratio)
+    - create a solution equivalent to the ".text[4]" plane selection for resolutions
+    - 1 block width x 1 block height at arbitrary 1/8 block height position. (use "LOWER ONE EIGHTH BLOCK" and friends)
+    - 1 block width x 1 block height at arbitrary 1/8 block width position.
+    - refactor image loading to be able to use super-resolutions for B&W, while keeping color resolution low (Speccy way)
+     - Update "text-effects" example to fit more effects to come.
+
+- Event system
+    Allow for CSS like animations, mainloop and callback registration
+    for events [V]
+        - need a way to specify animations (preliminary event system alreayd accepts callback by "tick")
+
+- System Font finding and auto-terminal config
+    - Find a way to find witch unicode-glyphs are available in system-wide fonts
+    - suggest font-installation
+    - (or) download free-fonts to terminedia data folder (but how to make the host terminal use them?)
+    - refactor unicode-translations to include correct information about the characters used, with links back to proper unicode documentation (including the motivation for theis inclusion)
+
+Convolution-dependant effects: [WIP]
+    - smooth-out corners
+    - use unicode circles and squares to denote intensity
+    - conversion to ASCII line-art with "/_\|" chars, and unicode version [WIP]
+    - conversion to table chars (single and double-frame) [WIP]
+    - Couple with "find border" filter(?)
+
+"page" abstraction expanding the "shape": including text regions, layers and animation effects
+    (possibly using sprites)
+
+easy way to pick unicode emojis and glyphs
+
+Enhance color and composition:
+    alpha channel support for images:
+    plot with spaces (" ") instead of full-block char, and compose color using background
+    "combination modes"
+    add easy color operations (modify RGB or HSL attributes of a given color in an easy way)
+
+Sprites:
+    create tagging system
+    and easy tag-based event api
+
+Improving Shape objects:
+    - Change the internal representation of data in FullShape (if not other shapes) -
+        - it is absoltely wasteful
+        - check if Numpy can be used optionally without complicating too much the code (do not force Numpy data - Python arrays, or some ctypes Struct should be preferable) [x]
+             - Perceived problem - there is no "char array" in stdlib.array. [x]
+            - instead of numpy or arrays: inner data representation using dicionaries seems enough, and it enables undo steps using chainmap strategy. [v]
+
+    - Add Shape public functions to retrieve the raw shape data in ways useful outside of terminedia, other than by rendering (shape.as_string? what about other attributes than chars?)
+
+MS-Windows support (colorama/mscrvt/color reducing)[WIP]
+
+"business" framed-window api for apps
+
+
+
+Basic image transform API: resize, rotate, flip.
+
+Table drawing chars drawing API (maybe convert chars with a convolution after block-line art?) [WIP]
+
+Super-high resolution (Unicode vintage charset and "sextant" blocks)[V]
+
+
+Audio support (pyAudio?)
+
+Image (shape) transform - (rotate, scale).
+
+paint modes to use different characters to denote intensity (back do ascii art):
+    - already possible via transformers [0.3.0dev0]
+    unicode circles
+    unicode squares
+    Classic ASCII # * . etc
+    Block-smoothing with half triangle block chars
+    (use a context "paint mode" to have this supported on all paint operations?)
+    (use a special "effects" attribute and apply a convolution variant with a transformer?)
+
+"gradients": ways to make easy to create gradually changing colors.
+             possibly a "painting context" similar to Cairo's, instead
+             of a plain value for foreground color. Then color
+             for each pixel could be sourced from a shape, image,
+             gradient, whatever.
+             But whatever is done, have ways for it being simpler to
+             use than cairo's contexts.'
+             (Hint: already possible on "user side" by using context-transformers)
+
+replicate text-char effects for big-chars
+
+Graph plotting CLI
+    make terminedia available as a matplotlib backend
+
+alpha emulation using background and color manipulation
+
+gaming framework in general:
+    (integrate as a backend to "jsbueno/mapengine"?)
+    sprites
+    physics engine (minimal, 2D)
+    animation support
+    main loop
+
+"main loop":
+    - event system
+    - loop dependant 'blink like" animations: cicle colors, characters, text based on timing
+
+
+space invaders implementation (hint: it would be already feasible - but it is still a "landmark" of the roadmap)
+
+
+# virtual terminal server-
+Advanced terminal handling features
+    REPL Environment wit bottom lines for python console and upper screen for image (see posix_openpt)
+    anmating and coloring text output of unaware apps, by creating an internal virtual terminal (posix_openpt)
+    animating and coloring text output ... monkey patching a subprocess stdin, stdout and stderr.
+    handle scrolling capabilities and pre-post buffer
+    terminal agnostic screen commands (terminfo and infocmp to de-hardcode ANSI sequences)
+
+more features
+###############
+    Add text formatting and flowing primitives into ".text" namespace:
+        method to allow text insertion and flowing inside a shape or ROI
+        allow center/left/right/justify alignments
+    Add scrolling, rectangular text regions and flowing text
+    All-side scrolling and flowing text from one region to the next
+    (make text.at work with the @ operator?: `sc.text[4] @ (5,2)("hello!")(?)
+    Find proper API do render 8x16 pixel fonts into 8x8 char "high-resolution" 1/4 block.
+    Add arbitrary font handling by using PIL to cache rendered chars.
+    Enable 16 x 8 double and 16 x 16 double width UNSCII fonts.
+    create a "blit fast path" for value/palette shapes to target (avoid overhead of pixel creation)
+    make "Alpha" value work for value-shapes.
+    make "intensity" rendering for values (B&W shapes)
+    (them proceed to write the different backends.)
+        - Accept 0-255 or 0-1.0 3 [4] sequences for RGB color [Alpha]
+        - conversion to 1-byte standard 216 color palette for terminals
+        - make use of 1byte color on terminal.py
+    - make main user-facing classes: Shapes, Text, Transformers, Sprites, pickle serializable (and deep-copyable)
+
+    Assume `set` method passed to drawing.Drawing can always accept pixels. Simplify workarounds in "image.ShapeApiMixin" and "screen.set_at" to accept pixels. (API breaking - change this before making a release)
+
+
+Enhance EMOJI and multi-language support:
+    - handle combining characters properly
+    - document which terminal applications will have the best emoji experience (check kitty terminal app)
+
+shape and page capabilities:
+    create full fledged shape with char, fg, bg, effects (WIP - only missing example script):
+        Add example script using FullShape and transformers(terminedia-text)
+    create "Page" class: contaning several z-ordered shape or ROIs for text layout
+
+- implement fix at drawing.blit (N/A - blit simply copies CONTINUATION constant normally)
+- implement fix at terminal.Commands.print (N/A - 'CONTINUATION' constant never reaches terminal functions)
+- [future]:
+    - check double width chars at UNSCII 16 for proper use at other text scales
+    - if needed implement the logic above at text[4], [8], etc...
+
+Features and improvements
+=========================
+    fix-paletted-shape-blitting-bug
+    fix-value-shape-blitting-bug
+    refactor bezier-curve and ellipse(empty) adaptive code to use same codebase
+    configure properly and make consistent use of logger
+    Improve error messages/or silence/ when attempting to write out of Screen/Shape limits
+    generate documentation
+    Add missing doc-strings
+    improvement: API for  X-session wide key-repeat tunning with "xset r rate".
+            (Maybe, in combination with other features, it is even possible to have keydown/keyup emulation)
+            What is the equivalent API for Win and Mac if any?
+    Make internal FullShape planes (and maybe other Shapes) specialized containers (they are plain lists): enable direct attribute setting on plane (rename  attributes in the process) (maybe trim further down shape class, and make internal planes for shapes, shapes as well?)
+    create a few ready-made, parametrized transformers for effects like: plane select, color gradients, mask blit,
+    Update "Context" to use context-locals (async aware) instead of thread-locals
+    Drawing APIs not respecting ShapeView limits (V)
+    add "callback" or early event system so that context parameters can be changed after printing a character, or other event.
+    set up internal state on which terminal program is running, basd on env-vars (so that terminal behaviors bugs can be worked-around)
+    work on special methods to allow pickle serialization of shapes and maybe screens.
+
+Color class Todo:
+    Future:
+    - Add support for gray colors (single int)
+    - Add support for alpha-component
+    - Add support for HSV parsing/convertion (V)
+
+HTML-Backend Steps (WIP)
+    future
+    ------
+    Hardwire a web-font to display braille characters as pixels (UNSCII?)
+    Refactor rendering mechanism to speed things up (0.2 sec/frame = 10 times too slow)
+    Render with a separate CSS block and classes instead of inlining style in all tags.
+    WSGI compatible server and javascript snippet to enable frame rendering and update
+    keyboard and mouse event handling on server.
+    create HTML Canvas output (?)
+    create SVG output (?)
+    Add text effects to take advantage of transforms available in HTML/SVG (rotate, rescale, transparency)
+    Ability to emulate Unix terminal on HTML comonent (posix_openpt)
+    Full-client-side implementation (using brython or similar)
+
+
+Bugs
+=====
+
+    bug: plot example script prints completly bogus values on the y scale.
+    bug:fix printing of colored double-width characters . (b0rk on konsole) (WIP)
+    bug: when apple shows up over snake body, it is erased from screen (snake.py) (easy) (external) (hacktober)
+    bug: Effects.super_script not working for letters 'n' and 'q' - check if there is a suitable custom glyph
+    bug: Pallette shapes need to be overhauled - currently tests are broken due to reading from it back just yielding "True" and "False"
+    bug: (big issue): workaround stdout blocking and raising error when in input.keyboard reading mode. [v]
+    bug: TM.DEFAULT_FG always rendering as White when comming from blitted [transformed] source
+    bug: terminedia-shapes example has stopped working properly, due to differences in how
+    whitespace is blitted. To fix: refactor script to use Sprites instead of raw shapes.(V)
+    bug: TrasnformersContainer.bake breaking with KernelTransformers (and any transforemrs that will use 'source' and 'pos') (V)
+    bug: terminedia-shapes for colored shapes(shape2) is behaving weird for the first frame, after refactoring how Transparency works with sprites
+    bug: Screen.data.render yielding strange results for just some text rendered on screen.
+    bug: Screen.print and Screen.text[1].print - not working, (probably broken by markup usage in text[].at)
+    bug: several tests failing on pypy3
