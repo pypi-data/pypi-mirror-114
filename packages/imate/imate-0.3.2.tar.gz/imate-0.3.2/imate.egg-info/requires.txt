@@ -1,0 +1,21 @@
+numpy>1.11
+scipy>=1.5
+
+[:implementation_name == "cpython"]
+matplotlib>=2.0
+seaborn
+
+[docs]
+sphinx
+sphinx-math-dollar
+sphinx-toggleprompt
+sphinx_rtd_theme
+graphviz
+sphinx-automodapi
+
+[extra]
+scikit-sparse
+
+[test]
+pytest-cov
+codecov
