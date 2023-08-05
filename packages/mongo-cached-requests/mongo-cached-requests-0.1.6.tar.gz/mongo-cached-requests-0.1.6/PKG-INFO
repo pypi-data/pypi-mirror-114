@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mongo-cached-requests
+Version: 0.1.6
+Summary: 
+Author: Patrick Fenerty
+Author-email: patrick@fenerty.me
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pymongo (>=3.11.4,<4.0.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
