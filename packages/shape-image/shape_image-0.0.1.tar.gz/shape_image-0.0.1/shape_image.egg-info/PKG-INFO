@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: shape-image
+Version: 0.0.1
+Summary: This is a super duper package
+Home-page: https://github.com/justusschock/shape-image
+Author: Justus Schock
+Author-email: justus.schock@posteo.de
+License: UNKNOWN
+Project-URL: source, https://github.com/justusschock/shape-image
+Project-URL: tracker, https://github.com/justusschock/shape-image/issues
+Keywords: deep learning,machine learning,pytorch,medical,AI
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+
+Python Template repository
+
+
