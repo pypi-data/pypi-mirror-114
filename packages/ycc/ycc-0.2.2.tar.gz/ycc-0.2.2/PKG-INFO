@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: ycc
+Version: 0.2.2
+Summary: 三圆计算器,cmd或命令行python -m ycc 命令开始运行
+Home-page: http://github.com
+Author: 神秘的·
+Author-email: 3046479366@qq.com
+License: MIT
+Keywords: ycc
+Platform: Operating System :: MacOS
+Platform: Operating System :: Windows
+Platform: Operating System :: Linux
+Platform: License :: OSI Approved :: MIT License
+Platform: Programming Language :: Python :: 3
+Platform: Programming Language :: Python :: 3.1
+Platform: Programming Language :: Python :: 3.2
+Platform: Programming Language :: Python :: 3.3
+Platform: Programming Language :: Python :: 3.4
+Platform: Programming Language :: Python :: 3.5
+Platform: Programming Language :: Python :: 3.6
+Platform: Programming Language :: Python :: 3.7
+Platform: Programming Language :: Python :: 3.8
+Platform: Programming Language :: Python :: 3.9
+Platform: Intended Audience :: Developers
+License-File: LICENCE
+
+# 3yzh
+Formerly known as: 3y
+Renamed name :a_3y
+A three-circle calculator, It contains Circle Circles and Cylinders.
+It is in Chinese.If you konw how to speak and write or mean these,you can use
+
+Now,you can Download and input python 3y and then it will running
+
+Please comply with local laws and regulations, 
+User only has the right to use 
+The final interpretation belongs to the author 
+For mainland China only. 
+You can see or read the log in log.py
+This means that you have read and agreed to all the above regulations. 
+
+Welcome Download and use!
+
