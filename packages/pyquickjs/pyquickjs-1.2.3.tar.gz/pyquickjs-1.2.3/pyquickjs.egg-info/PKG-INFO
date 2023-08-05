@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyquickjs
+Version: 1.2.3
+Summary: a quickjs call package, used for eval javascript
+Home-page: https://github.com/Esbiya/pyquickjs
+Author: esbiya
+Author-email: 2995438815@qq.com
+License: MIT
+Platform: all
+
+# Example Package
+This is a simple quickjs call package with python.
+
+[contact author](https://github.com/Esbiya)
+
+

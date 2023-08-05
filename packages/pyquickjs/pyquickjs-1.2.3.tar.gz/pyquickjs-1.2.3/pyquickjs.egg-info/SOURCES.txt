@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.py
+pyquickjs/__init__.py
+pyquickjs/quickjs.py
+pyquickjs.egg-info/PKG-INFO
+pyquickjs.egg-info/SOURCES.txt
+pyquickjs.egg-info/dependency_links.txt
+pyquickjs.egg-info/top_level.txt
+pyquickjs/extension/__init__.py
+pyquickjs/lib/alpine/libquickjs.so
+pyquickjs/lib/centos/libquickjs.so
+pyquickjs/lib/macos/libquickjs.dylib
+pyquickjs/lib/win64/libquickjs.dll
