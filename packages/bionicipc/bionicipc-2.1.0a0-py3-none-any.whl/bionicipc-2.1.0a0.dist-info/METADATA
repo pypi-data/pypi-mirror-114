@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: bionicipc
+Version: 2.1.0a0
+Summary: Pretty simple RPC-like IPC proto
+Home-page: https://gitlab.com/h3xcode/bionic
+Author: h3xcode
+Author-email: me@h3xco.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: orjson
+
+# Bionic IPC
+A pretty simple library for transporting json-parsable data.
+
