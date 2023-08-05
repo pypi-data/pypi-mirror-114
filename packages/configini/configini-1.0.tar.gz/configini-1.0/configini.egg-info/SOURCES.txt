@@ -1,0 +1,13 @@
+.gitignore
+LICENSE.txt
+README.md
+setup.py
+configini/__init__.py
+configini/casting.py
+configini/data_types.py
+configini.egg-info/PKG-INFO
+configini.egg-info/SOURCES.txt
+configini.egg-info/dependency_links.txt
+configini.egg-info/top_level.txt
+tests/config_data_types.ini
+tests/test_data_types.py
