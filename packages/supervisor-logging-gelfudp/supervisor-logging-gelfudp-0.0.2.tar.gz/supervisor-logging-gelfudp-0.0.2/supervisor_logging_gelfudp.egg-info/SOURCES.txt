@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+test_requirements.txt
+supervisor_logging_gelfudp/__init__.py
+supervisor_logging_gelfudp.egg-info/PKG-INFO
+supervisor_logging_gelfudp.egg-info/SOURCES.txt
+supervisor_logging_gelfudp.egg-info/dependency_links.txt
+supervisor_logging_gelfudp.egg-info/entry_points.txt
+supervisor_logging_gelfudp.egg-info/requires.txt
+supervisor_logging_gelfudp.egg-info/top_level.txt
