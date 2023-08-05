@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+special_engine/__init__.py
+special_engine/capi.py
+special_engine/compat.py
+special_engine/constants.py
+special_engine/wrappers.py
+special_engine.egg-info/PKG-INFO
+special_engine.egg-info/SOURCES.txt
+special_engine.egg-info/dependency_links.txt
+special_engine.egg-info/top_level.txt
