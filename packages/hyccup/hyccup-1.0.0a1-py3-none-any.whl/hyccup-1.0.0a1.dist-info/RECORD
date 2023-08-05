@@ -1,0 +1,13 @@
+hyccup/__init__.py,sha256=BhVdMiYBJm37oBOspPxznDE4pcPlprvARxHA-huo8Gw,10
+hyccup/compiler.hy,sha256=Z_alvYR-mC5ugzQ6RpE2AZUvk30Pfa5WUCmdALFXHwU,5149
+hyccup/core.hy,sha256=_XsE8RMaRlE0bXKBFRSBVa5QexIPbBsZwmtrD999LPI,546
+hyccup/defdecos.hy,sha256=t3p9ULuZCDfdCGDZwvb4ARYRgvi_VLcOD9JazwWPGNQ,1134
+hyccup/defmacros.hy,sha256=FkoElb0GZWrj1FEPodab0WbT_gXeSfwGrjZgaslWJgg,1640
+hyccup/element.hy,sha256=3TbS0NoGF3DCayH3nQ7UIy8QKmXqaDX6FXVVYFSZoGE,1046
+hyccup/form.hy,sha256=XYDTrjwTxYLhVWJqSnayQpcqmLH13u78umew0kP0tiU,3943
+hyccup/page.hy,sha256=dS840gtPzxSwfWSoQCaA02yDjbEdozVPtTm3O7WuTI4,2831
+hyccup/util.hy,sha256=72mBuNVVLT7DL2fg-nb20x-XTI-xboYsxgXlueXpyfE,2467
+hyccup-1.0.0a1.dist-info/LICENSE.txt,sha256=4RRwbsgcnVQYZZEgtL_vnlhn8sBVB8B-KXZ4UVRXxYQ,1121
+hyccup-1.0.0a1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+hyccup-1.0.0a1.dist-info/METADATA,sha256=N3lyD39HblsoGv9gABHIBwSla_0U7pYWkulYnpSQxKw,4766
+hyccup-1.0.0a1.dist-info/RECORD,,
