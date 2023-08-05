@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "metta-profiler"
+version = "0.1.0"
+description = "Profiler for stream of messages"
+license = "MIT"
+authors = ["Ryan Brigden <rpb@hey.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.910"
+black = "^21.6b0"
+mypy-protobuf = "^2.4"
+setuptools = "^57.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
