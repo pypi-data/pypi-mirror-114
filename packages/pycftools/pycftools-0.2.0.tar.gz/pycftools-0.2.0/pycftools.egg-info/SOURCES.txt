@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pycftools.py
+setup.cfg
+setup.py
+pycftools.egg-info/PKG-INFO
+pycftools.egg-info/SOURCES.txt
+pycftools.egg-info/dependency_links.txt
+pycftools.egg-info/not-zip-safe
+pycftools.egg-info/requires.txt
+pycftools.egg-info/top_level.txt
