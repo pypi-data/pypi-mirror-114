@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "deno_version_manager"
+version = "0.1.0"
+description = "dvm - a cli to manage deno versions"
+authors = ["dev-124 <60511077+dev-124@users.noreply.github.com>"]
+readme = "README.md"
+repository = "https://github.com/dev-124/dvm/"
+homepage = "https://github.com/dev-124/dvm/"
+license = "MIT"
+keywords = ['version', 'manager', 'deno', 'denojs', 'dvm', 'cli']
+
+[tool.poetry.scripts]
+dvm = "deno_version_manager.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = { extras = ["all"], version = "^0.3.2" }
+pytest-cov = "^2.12.1"
+coverage = "^5.5"
+mypy = "^0.910"
+black = "^21.7b0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+flake8 = "^3.9.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
