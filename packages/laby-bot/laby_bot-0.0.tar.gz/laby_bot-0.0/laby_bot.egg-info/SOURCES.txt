@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+laby_bot/__init__.py
+laby_bot/__main__.py
+laby_bot/robot.py
+laby_bot/solver.py
+laby_bot.egg-info/PKG-INFO
+laby_bot.egg-info/SOURCES.txt
+laby_bot.egg-info/dependency_links.txt
+laby_bot.egg-info/top_level.txt
