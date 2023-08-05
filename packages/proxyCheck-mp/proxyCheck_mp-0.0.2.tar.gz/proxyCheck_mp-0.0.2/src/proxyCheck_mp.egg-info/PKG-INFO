@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: proxyCheck-mp
+Version: 0.0.2
+Summary: You can check the availability of the proxy.
+Home-page: https://github.com/IMaresaLI/Proxy_Checker
+Author: Batuhan Olgac
+Author-email: mares4l@hotmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/IMaresaLI/Proxy_Checker/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# Proxy Checker Mp
+
+# How to use ?
+
+## 1-) Module Install and Import
+ - **Install Module**
+```
+pip install proxyCheck-mp
+```
+```
+pip3 install proxyCheck-mp
+```
+- **Import Module**
+```
+from proxyChecker.proxyCheck import ProxyController
+```
+## 2-) proxyController class must be called.
+### prxCont = ProxyController() >> userAgent Parameter
+Default Parameter ;
+```
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36
+```
+## 3-) The proxyControl method bound to the proxyController class must be called.
+### prxCont.proxyControl(proxys , url , timeout , details)
+
+```
+**Parameter Details ;**
+proxy 	-> You have to give the list structure. (List)
+url	-> Give url to check proxy. (https-http) Default = https://www.google.com
+timeout -> Set a waiting time to connect. Default timeout = (3.05,27) >> (connect,read)
+details -> Information message about whether the proxy is working or not. (True or False) Default = True
+```
+## 4-) Output
+```
+prxCont = ProxyController()
+proxyList = ["0.0.0.0:18","1.1.1.1:80","11.11.11.11:8080"]
+prxCont.proxyControl(proxyList)
+#output _> 
+	The connection is unstable - 0.0.0.0:18
+	The connection is unstable - 1.1.1.1:80
+	The connection is unstable - 11.11.11.11:8080
+	Proxy attempt finished.
+	None of the proxies you provided are working.
+
+prxCont.proxyControl(proxyList,detail=True)
+#output2 _>
+	Proxy attempt finished.
+	None of the proxies you provided are working.
+```
+
