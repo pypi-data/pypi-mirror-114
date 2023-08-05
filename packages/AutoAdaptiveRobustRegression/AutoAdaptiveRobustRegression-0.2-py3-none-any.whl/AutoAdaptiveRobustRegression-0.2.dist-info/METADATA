@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: AutoAdaptiveRobustRegression
+Version: 0.2
+Summary: TYPE YOUR DESCRIPTION HERE
+Home-page: https://github.com/1chi-Zhang/adaptive-robust-regression
+Author: Yichi Zhang
+Author-email: zhangyichi19941030@gmail.com
+License: MIT
+Download-URL: https://github.com/1chi-Zhang/adaptive-robust-regression
+Keywords: Adaptive Gradient Descent
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: numpy
+
+UNKNOWN
+
+
