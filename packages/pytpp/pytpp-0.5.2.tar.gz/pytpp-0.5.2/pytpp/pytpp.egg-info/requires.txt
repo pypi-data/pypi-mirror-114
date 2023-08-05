@@ -1,0 +1,7 @@
+requests
+datetime
+jsonpickle
+python-dateutil
+isodate
+dblogging
+packaging
