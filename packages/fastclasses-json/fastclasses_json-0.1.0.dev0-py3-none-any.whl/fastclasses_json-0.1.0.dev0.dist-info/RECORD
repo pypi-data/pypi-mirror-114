@@ -1,0 +1,10 @@
+fastclasses_json/__init__.py,sha256=qouyW3lL9xuYZS2zvQp49p39-So2L4ZG2AqRye1bczg,103
+fastclasses_json/api.py,sha256=JsV8OTCF9dX4D3Clt44zPB398JQPImZ64DQ6NseRy4E,413
+fastclasses_json/core.py,sha256=qWRrQeL6d77hH5zeGJ54OAg9DGySTN7H9vMQjTT8IKQ,8583
+fastclasses_json/mypy_plugin.py,sha256=RfpKHuhcwmUb1C63y0tsYxDMQe2qaPDuc1VVSD_xQ8A,4408
+fastclasses_json/utils.py,sha256=LZWms_MkYktqadEHlL8Llk823qdFcMRH0BDoKNGoSKk,142
+fastclasses_json-0.1.0.dev0.dist-info/LICENSE.txt,sha256=Lf3IKOotscgyzFp-Y9nlCJBX8CAoj-fq-L7e4P6eKBg,1071
+fastclasses_json-0.1.0.dev0.dist-info/METADATA,sha256=AuE75JSTGuEY1FITiEWlfYZIa5uIGaZrbCBnk_0wt7U,4159
+fastclasses_json-0.1.0.dev0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fastclasses_json-0.1.0.dev0.dist-info/top_level.txt,sha256=sBAZ7gnRxSHytUsbwqBlqdGqVo_lj6GXGwIvNrRGvmc,17
+fastclasses_json-0.1.0.dev0.dist-info/RECORD,,
