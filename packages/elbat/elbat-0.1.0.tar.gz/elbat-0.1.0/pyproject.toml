@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "elbat"
+version = "0.1.0"
+description = ""
+authors = ["Cody Fincher <cody@gluent.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+cx-Oracle = "^8.2.1"
+typer = {extras = ["all"], version = "^0.3.2"}
+SQLAlchemy = "^1.4.22"
+loguru = "^0.5.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^21.7b0"
+isort = "^5.9.2"
+
+[tool.poetry.scripts]
+gluent = "elbat.main:app"
+elbat = "elbat.main:app"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
