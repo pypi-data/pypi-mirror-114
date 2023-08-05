@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pylibpostal
+Version: 0.1.0
+Summary: Parse street addresses around the world.
+License: MIT
+Author: snapADDY GmbH
+Author-email: info@snapaddy.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: six (>=1.16.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+
+
+export LD_LIBRARY_PATH=/usr/local/lib
+
