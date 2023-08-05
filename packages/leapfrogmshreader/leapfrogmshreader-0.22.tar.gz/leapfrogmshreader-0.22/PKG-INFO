@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: leapfrogmshreader
+Version: 0.22
+Summary: A simple reader of leapfrog mesh files, without onerous installation requirements.
+Home-page: https://github.com/ThomasMGeo/leapfrog_msh_reader
+Author: Thomas Martin
+Author-email: tpm319@gmail.com
+License: LGPL 3.0
+Description: UNKNOWN
+Keywords: leapfrog,mesh,.msh
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
