@@ -1,0 +1,12 @@
+metadata:
+  temporary session: true
+---
+mandatory: true
+question: |
+  Select the scenario that best applies to you:
+subquestion: |
+  * [I am a party in an active court case.]
+  * [My case has already been decided and I want to ask the court to change its decision.]
+
+  [I am a party in an active court case.]: ${ interview_url(i='docassemble.EJCRC:data/questions/LLT_or_ejectment_defendant_screen.yml') }
+  [My case has already been decided and I want to ask the court to change its decision.]: ${ interview_url(i='docassemble.EJCRC:data/questions/petition_open_defendant1.yml') }
