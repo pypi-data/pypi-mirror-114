@@ -1,0 +1,18 @@
+.gitignore
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+images/SHRDLU Blocks Demo (Cropped).png
+shrdlu_blocks/__init__.py
+shrdlu_blocks/control.py
+shrdlu_blocks/demo.py
+shrdlu_blocks/geometry.py
+shrdlu_blocks/scenes.py
+shrdlu_blocks/typedefs.py
+shrdlu_blocks/viewer.py
+shrdlu_blocks.egg-info/PKG-INFO
+shrdlu_blocks.egg-info/SOURCES.txt
+shrdlu_blocks.egg-info/dependency_links.txt
+shrdlu_blocks.egg-info/requires.txt
+shrdlu_blocks.egg-info/top_level.txt
