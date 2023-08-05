@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+libsgfdata/__init__.py
+libsgfdata/comments.csv
+libsgfdata/data-flag.csv
+libsgfdata/data.csv
+libsgfdata/main.csv
+libsgfdata/method.csv
+libsgfdata/methods.csv
+libsgfdata.egg-info/PKG-INFO
+libsgfdata.egg-info/SOURCES.txt
+libsgfdata.egg-info/dependency_links.txt
+libsgfdata.egg-info/requires.txt
+libsgfdata.egg-info/top_level.txt
