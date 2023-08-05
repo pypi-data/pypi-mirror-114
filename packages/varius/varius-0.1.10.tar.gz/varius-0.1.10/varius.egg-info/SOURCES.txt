@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+varius/__init__.py
+varius/printer.py
+varius/scope.py
+varius/variable.py
+varius.egg-info/PKG-INFO
+varius.egg-info/SOURCES.txt
+varius.egg-info/dependency_links.txt
+varius.egg-info/requires.txt
+varius.egg-info/top_level.txt
