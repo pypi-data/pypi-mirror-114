@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+p3dss/__init__.py
+p3dss/exceptions.py
+p3dss/processor.py
+p3dss/spritesheet_object.py
+p3dss/types.py
+p3dss.egg-info/PKG-INFO
+p3dss.egg-info/SOURCES.txt
+p3dss.egg-info/dependency_links.txt
+p3dss.egg-info/requires.txt
+p3dss.egg-info/top_level.txt
