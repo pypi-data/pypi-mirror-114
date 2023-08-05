@@ -1,0 +1,9 @@
+README.md
+setup.py
+coincap_fdw.egg-info/PKG-INFO
+coincap_fdw.egg-info/SOURCES.txt
+coincap_fdw.egg-info/dependency_links.txt
+coincap_fdw.egg-info/requires.txt
+coincap_fdw.egg-info/top_level.txt
+src/__init__.py
+src/wrapper.hy
