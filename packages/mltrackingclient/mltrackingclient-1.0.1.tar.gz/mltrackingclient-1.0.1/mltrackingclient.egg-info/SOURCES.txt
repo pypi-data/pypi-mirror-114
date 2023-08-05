@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+mltrackingclient.egg-info/PKG-INFO
+mltrackingclient.egg-info/SOURCES.txt
+mltrackingclient.egg-info/dependency_links.txt
+mltrackingclient.egg-info/entry_points.txt
+mltrackingclient.egg-info/requires.txt
+mltrackingclient.egg-info/top_level.txt
+reader/__init__.py
+reader/__main__.py
+reader/config.cfg
+reader/feed.py
+reader/viewer.py
