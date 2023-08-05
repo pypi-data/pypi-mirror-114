@@ -1,0 +1,9 @@
+tk_notepad/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tk_notepad/notepad.py,sha256=S8F3dvI4sSDYgV-qzHFdxFTEGhO-cb_c17H6yUVgI0A,5228
+tk_notepad/icons/notepad_icon.ico,sha256=PIz7eB75LZgnRGKAZ8Jb50uMoEWF5Y33VplpyOyI1s4,6782
+tk_notepad-0.5.dist-info/LICENSE,sha256=G75YqhqyIP2tEg6N6uOCyDJ4bIZT7J0cHQssclyMXtw,1082
+tk_notepad-0.5.dist-info/METADATA,sha256=Zj7ZdXHXs8z7e4JoJAiVgTnGImRY_UO9otZTXzKSohE,924
+tk_notepad-0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tk_notepad-0.5.dist-info/entry_points.txt,sha256=MpFc2I5BQzuGzc6VGEXbpBDG6tXssnxazk4FUjVwF9g,56
+tk_notepad-0.5.dist-info/top_level.txt,sha256=xgez5Sb8PqQNGO6VK19D5dRwYq2wYAZ-YygxTcu_HIs,11
+tk_notepad-0.5.dist-info/RECORD,,
