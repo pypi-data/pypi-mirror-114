@@ -1,0 +1,7 @@
+metadata_driver_arweave/__init__.py,sha256=Zhd_5aWcQz5PeMgIJfuiM_krGpHQewagvidDtW0w9c4,43
+metadata_driver_arweave/arweave_client.py,sha256=v-9gm1xpSKnDlhKuQM0AKZBvVjYM652y1uJCd2zAGKU,1088
+metadata_driver_arweave/plugin.py,sha256=I4kXfZTx2icvcQRn0UeVHLNfJO_p2Y0QWwcl2Pajzfs,2903
+nevermined_metadata_driver_arweave-0.1.1.dist-info/METADATA,sha256=Akoyed6YppKAV0aP4rAXv0vRcqmrXvsCuVWyf3Nwzek,3635
+nevermined_metadata_driver_arweave-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+nevermined_metadata_driver_arweave-0.1.1.dist-info/top_level.txt,sha256=FJ1J8U05puqwZuTQQFUn01mLENp32v9tRfzmHSsXVsw,24
+nevermined_metadata_driver_arweave-0.1.1.dist-info/RECORD,,
