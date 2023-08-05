@@ -1,0 +1,13 @@
+wanikani_notifier/__init__.py,sha256=8blQcUA0fkovL4iT76m9X7mUsU2KJwkv77WlJMlifPg,143
+wanikani_notifier/__main__.py,sha256=Iq4_SquLr7-6J2RnDKrhbwgud3eOMlUncRes20iD-jM,958
+wanikani_notifier/wanikani_notifier.py,sha256=bRyncid8MVWp3Oe3JGlmUyHxIurYpI-u65GJAGSS0Aw,3538
+wanikani_notifier/notifiers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wanikani_notifier/notifiers/notifier.py,sha256=l1AHLkSiOIF8NnC0z09jOLCQ6XkFGR9sYBdrS_BYkBA,350
+wanikani_notifier/notifiers/pushsafer.py,sha256=xbrqas8lmrk5lrVk9VbsKbUYbSmhXr7e-6ftqw04exg,702
+wanikani_notifier-0.3.0.dist-info/AUTHORS.rst,sha256=b2jpT5FCy11vBDmhL61HLxpDQyXLBUSGwmTNMmLFFAI,164
+wanikani_notifier-0.3.0.dist-info/LICENSE,sha256=RLkXOeafgCgi343_5dyJrvWtf0wMikWw8ACFXr-gxl0,1073
+wanikani_notifier-0.3.0.dist-info/METADATA,sha256=fW5IWpqqukzTE_C1KMNfljNZxVmZEsCUBCkgHf-2dfA,2837
+wanikani_notifier-0.3.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+wanikani_notifier-0.3.0.dist-info/entry_points.txt,sha256=beCQ-VF87qpwujuc49zkV-6adhKP8tbdppFWyXBnH4I,71
+wanikani_notifier-0.3.0.dist-info/top_level.txt,sha256=Ycq3D2ivrN3-atwEH2rNzn-FQeW0glE9zQJikpcuFFY,18
+wanikani_notifier-0.3.0.dist-info/RECORD,,
