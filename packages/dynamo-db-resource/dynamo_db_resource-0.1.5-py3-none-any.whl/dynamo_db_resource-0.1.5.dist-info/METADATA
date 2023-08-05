@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: dynamo-db-resource
+Version: 0.1.5
+Summary: abstraction of Dynamo DB for AWS Serverless Wrapper
+Home-page: https://github.com/janluak/dynamo_db_resource
+Author: Jan Lukas Braje
+Author-email: aws_dynamo_db@getkahawa.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: botocore
+Requires-Dist: aws-schema
+
+# dynamo_db_resource
+
+This package is an abstraction for Dynamo DB of the boto3 package from AWS for the usage with the AWS Serverless Wrapper.
+It currently relies on the config of the wrapper to work.
+
+
