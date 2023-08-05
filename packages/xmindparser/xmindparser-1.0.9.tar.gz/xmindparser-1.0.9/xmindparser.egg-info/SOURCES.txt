@@ -1,0 +1,15 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+xmindparser/__init__.py
+xmindparser/main.py
+xmindparser/xreader.py
+xmindparser/zenreader.py
+xmindparser.egg-info/PKG-INFO
+xmindparser.egg-info/SOURCES.txt
+xmindparser.egg-info/dependency_links.txt
+xmindparser.egg-info/entry_points.txt
+xmindparser.egg-info/not-zip-safe
+xmindparser.egg-info/top_level.txt
