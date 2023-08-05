@@ -1,0 +1,4 @@
+[console_scripts]
+fsm=togpush.fsm:main
+tog=togpush.tog:main
+
