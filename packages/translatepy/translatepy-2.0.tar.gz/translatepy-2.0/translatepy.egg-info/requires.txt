@@ -1,0 +1,7 @@
+requests
+beautifulsoup4
+pyuseragents
+inquirer
+
+[:python_version < "3.5"]
+typing
