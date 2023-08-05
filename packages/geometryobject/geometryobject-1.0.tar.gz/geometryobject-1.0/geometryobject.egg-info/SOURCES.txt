@@ -1,0 +1,7 @@
+README.md
+geometryobject.py
+setup.py
+geometryobject.egg-info/PKG-INFO
+geometryobject.egg-info/SOURCES.txt
+geometryobject.egg-info/dependency_links.txt
+geometryobject.egg-info/top_level.txt

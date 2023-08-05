@@ -1,0 +1,45 @@
+# PythonGeometryObject2D
+In this practice, i make my own distribution to make some Geometry Object 2D
+
+## Which have feature to prints
+--
+1. Square
+2. Rectangle
+3. Right Triangle
+4. Equilateral Triangle
+
+## Installation
+--
+Run the following to install:
+
+pip install geometryobject
+
+## Usage
+--
+import geometyobject2d as obj2d;
+
+#To print square object
+
+obj2d.printSquare(5)
+
+5 is side length
+
+#To print rectangle object
+
+obj2d.printRectangle(3,7)
+
+3 is height
+
+7 is length
+
+#To print right triangle object
+
+obj2d.printRightTriangle(5)
+
+5 is height
+
+#To print equilateral triangle object
+
+obj2d.printEquilateralTriangle(5)
+
+5 is height
