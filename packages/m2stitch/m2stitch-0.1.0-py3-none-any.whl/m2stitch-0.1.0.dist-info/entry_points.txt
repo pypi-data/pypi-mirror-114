@@ -1,0 +1,3 @@
+[console_scripts]
+m2stitch=m2stitch.__main__:main
+
