@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: beastiary
+Version: 0.2.0
+Summary: 
+Author: Wytamma Wirth
+Author-email: wytamma.wirth@me.com
+Requires-Python: >=3.6.2,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: typer[all] (>=0.3.2,<0.4.0)
+Description-Content-Type: text/markdown
+
+![beastiary logo](images/logo.png)
+
+
+[![PyPi](https://img.shields.io/pypi/v/beastiary.svg)](https://pypi.org/project/beastiary/)
+[![tests](https://github.com/Wytamma/beastiary/actions/workflows/test.yml/badge.svg)](https://github.com/Wytamma/beastiary/actions/workflows/test.yml)
+[![docs](https://github.com/Wytamma/beastiary/actions/workflows/docs.yml/badge.svg)](https://beastiary.wytamma.com/)
+
+This is a replacement for tracer. It's feature feature is the real time aspect. Secondly it's modern looking. 3rd it has improved features. 
+
+
+## CLI
+Launch the app
+Can point to log file to autostart watcher
+
+## Webapp 
+Vue
+Plotly
+
+## Web API
+FastAPI that sends data to and from DB and servers the webapp
+Can start file watchers
+
+## Watcher 
+Python class that watches files and updates DB with changes.
+
+
+## BD (MEMORY)
+Protected by the CRUD
+
+
+## distribution 
+CLI vs app (just launches web browser)
+https://docs.python-guide.org/shipping/freezing/
+
