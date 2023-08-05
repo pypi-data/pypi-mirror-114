@@ -1,0 +1,11 @@
+autogenfiles/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autogenfiles/__main__.py,sha256=Aqa1xoqf9J72p7kva0eCatRcMWpb1kJNiT4zdjP29ug,86
+autogenfiles/autogenfiles.py,sha256=shH3L8dwOlPXCn-yPn5rqD9r083NCJj5KQIu_JSutLM,2346
+autogenfiles/configuration.py,sha256=CbYYzcahjOrLNNc85QtYP5Ug48hYgz_LMVzPupBIi6o,328
+autogenfiles/files_helper.py,sha256=Nj02DLxy3x85sL96AouGGeyBLIe9Dwn7k6Db7dpAEao,1767
+autogenfiles-0.0.4.dist-info/LICENSE,sha256=QwChjmTsA5K6T6UAhm8RwqOWUctUWnZ0dDEFf7Bo2QA,1073
+autogenfiles-0.0.4.dist-info/METADATA,sha256=Yv1Q_fI5b86aJ9_AgIIakNjARKtH_13chTEawkockU8,954
+autogenfiles-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+autogenfiles-0.0.4.dist-info/entry_points.txt,sha256=diXZgCN1tBj7zFocQl2SCzFJgICEDd_ZQLo-gVQRvhY,73
+autogenfiles-0.0.4.dist-info/top_level.txt,sha256=mh2wsQiOO_c02Mymr4q_AC97NPRmJptbeqxy6LSAEeY,13
+autogenfiles-0.0.4.dist-info/RECORD,,
