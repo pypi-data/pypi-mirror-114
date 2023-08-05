@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: hibpy
+Version: 0.0.4
+Summary: Python CLI application to check if you have been pwned.
+Home-page: https://github.com/Geographs/HIBP
+Author: Geographs
+Author-email: 87452561+Geographs@users.noreply.github.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Geographs/HIBP/issues
+Description: # HIBP
+        Python CLI application to check if you have been pwned.
+        # Installation
+        ```pip install hibp```
+        # Usage
+        ```hibp search EMAIL```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
