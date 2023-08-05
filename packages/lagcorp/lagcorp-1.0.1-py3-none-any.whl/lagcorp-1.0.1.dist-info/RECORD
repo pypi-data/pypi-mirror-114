@@ -1,0 +1,9 @@
+lagcorp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lagcorp/__main__.py,sha256=2urdHmOOzwCVqN2EhoPeb9zy7Dy4-qwIQ1DyMN4eA0c,79
+lagcorp/camper.py,sha256=aWkaaLjgZEqTHFKhF99XHtgNiYL3RmSwlKzPMQns6Mc,248
+lagcorp-1.0.1.dist-info/LICENSE,sha256=X3TquMPag0n-AfpsmS5-UijM7evmwJvNWckzynIV2lw,1069
+lagcorp-1.0.1.dist-info/METADATA,sha256=HO2sza3ECuyEBtRYbCYfz4sF7H_90fp_bOHBAUTlZxU,720
+lagcorp-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+lagcorp-1.0.1.dist-info/entry_points.txt,sha256=_BIk7gC-aA092OFWrxM-C5bOrhZQe4eCggAGwVctUxs,49
+lagcorp-1.0.1.dist-info/top_level.txt,sha256=-SuoCkraKppyvrrnXMjCsKwnakHEdQX65ENHFZ6xlEo,8
+lagcorp-1.0.1.dist-info/RECORD,,
