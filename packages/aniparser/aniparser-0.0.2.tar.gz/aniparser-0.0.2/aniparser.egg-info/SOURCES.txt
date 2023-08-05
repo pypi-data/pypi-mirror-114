@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+aniparser/__init__.py
+aniparser/constants.py
+aniparser/parser.py
+aniparser/regexes.py
+aniparser.egg-info/PKG-INFO
+aniparser.egg-info/SOURCES.txt
+aniparser.egg-info/dependency_links.txt
+aniparser.egg-info/requires.txt
+aniparser.egg-info/top_level.txt
