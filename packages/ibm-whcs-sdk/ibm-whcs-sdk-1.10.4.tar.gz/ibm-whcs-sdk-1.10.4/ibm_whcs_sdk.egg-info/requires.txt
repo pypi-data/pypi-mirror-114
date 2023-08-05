@@ -1,0 +1,4 @@
+requests<3.0,>=2.20
+python_dateutil<3.0.0,>=2.5.3
+ibm_cloud_sdk_core==2.0.5
+PyJWT==1.7.1
