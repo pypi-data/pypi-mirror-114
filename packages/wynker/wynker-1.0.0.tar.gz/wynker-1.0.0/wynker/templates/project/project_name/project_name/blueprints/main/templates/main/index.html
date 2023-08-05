@@ -1,0 +1,9 @@
+{% extends "layouts/base.html" %}
+
+
+{% block content %}
+<section class="h-screen flex flex-col justify-center items-center bg-gray-100 text-gray-700">
+    <img src="{{ url_for('static', filename='images/wynker.svg') }}" alt="">
+    <p class="mt-2 md:text-lg md:mt-3 lg:text-xl lg:mt-4">Welcome to your new Flask site!</p>
+</section>
+{% endblock %}

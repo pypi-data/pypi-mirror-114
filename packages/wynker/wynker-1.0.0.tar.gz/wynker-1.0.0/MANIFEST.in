@@ -1,0 +1,4 @@
+include LICENSE *.rst *.txt *.md
+graft wynker
+global-exclude __pycache__
+global-exclude *.py[co]

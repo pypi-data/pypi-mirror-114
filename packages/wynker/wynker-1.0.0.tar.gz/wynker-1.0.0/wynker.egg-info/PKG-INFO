@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: wynker
+Version: 1.0.0
+Summary: WYNKER provides Starter Kits for Flask.
+Home-page: UNKNOWN
+Author: Abhijeet Sonawane
+Author-email: abhijeet.sonawane001@gmail.com
+License: MIT
+Keywords: flaskspot wynker wynker-cli starterkit flask boilerplate
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# WYNKER
+
+STARTER KIT FOR FLASK WEB FRAMEWORK
+
+
+
+## Features
+
+- Blueprint based starter kit
+- Command to Add Model
+- Command to Add Blueprint
+
+
+
+## Upcoming Features
+
+- Pre-configured TailwindCSS
+- User Authentication (Registration, Login, Forgot Password, Reset Password, etc.)
+
