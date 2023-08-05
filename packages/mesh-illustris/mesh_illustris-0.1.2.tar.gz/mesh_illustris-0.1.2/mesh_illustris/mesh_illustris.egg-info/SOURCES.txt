@@ -1,0 +1,10 @@
+LICENSE
+LICENSE_bundled
+README.md
+pyproject.toml
+setup.py
+mesh_illustris/mesh_illustris.egg-info/PKG-INFO
+mesh_illustris/mesh_illustris.egg-info/SOURCES.txt
+mesh_illustris/mesh_illustris.egg-info/dependency_links.txt
+mesh_illustris/mesh_illustris.egg-info/requires.txt
+mesh_illustris/mesh_illustris.egg-info/top_level.txt
