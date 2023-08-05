@@ -1,0 +1,9 @@
+README.md
+setup.py
+pycomscore/__init__.py
+pycomscore/pycomscore.py
+pycomscore.egg-info/PKG-INFO
+pycomscore.egg-info/SOURCES.txt
+pycomscore.egg-info/dependency_links.txt
+pycomscore.egg-info/requires.txt
+pycomscore.egg-info/top_level.txt
