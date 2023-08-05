@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: lang-localization
+Version: 0.1
+Summary: Translate your program
+Home-page: UNKNOWN
+Author: Patrik Ackermann
+Author-email: <patrik.ackermann@outlook.com>
+License: UNKNOWN
+Description: A package that allows to add different languages to your program.
+Keywords: python,language,localize,translate
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown

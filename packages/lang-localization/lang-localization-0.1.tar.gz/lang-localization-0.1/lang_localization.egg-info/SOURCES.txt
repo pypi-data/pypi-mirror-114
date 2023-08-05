@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+lang-localization/__init__.py
+lang-localization/localization.py
+lang_localization.egg-info/PKG-INFO
+lang_localization.egg-info/SOURCES.txt
+lang_localization.egg-info/dependency_links.txt
+lang_localization.egg-info/top_level.txt
