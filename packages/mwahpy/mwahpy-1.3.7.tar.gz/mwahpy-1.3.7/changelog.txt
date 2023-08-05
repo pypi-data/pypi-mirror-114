@@ -1,0 +1,40 @@
+v1.3.7:
+ - Fixed sign of Ly
+ - added start and stop keywords to output_handler.read_output()
+
+v1.3.6:
+ - fixed sky_to_pole() tests and a couple other tests
+ - fixed a bug with output_handler.make_nbody_input() not writing '\n' at end of file
+
+v1.3.5:
+ - sky_to_pole() now uses a change of basis matrix instead of vector math
+ - fixed bugs with mismatches of Timestep.index_list after extra calculations
+ - Timestep.id is now an array of ints, not floats
+ - added Timestep.take_by_id()
+ - output_handler.make_nbody_input() now properly handles the 'recenter' keyword argument
+ - output_handler.make_nbody_input() pads now floats correctly
+ - updated README
+ - Timestep.typ is now a list of ints, not floats
+
+v1.3.4:
+ - Timestep.typ attribute stores whether particles are baryons (0) or dark matter (1)
+ - output_handler has been updated to also read in particle type
+ - Timestep.only_baryons() and Timestep_only_dark_matter() cut the data to only
+   include one type of particle
+ - Added support for galactic spherical coordinates (phi, theta)
+ - Added find_progenitor()
+ - make_nbody_input() no longer recenters the Timestep before printing out
+ - fixed 'self not defined' error in output_handler.make_csv()
+ - Timestep.rad and Timestep.rot are now Timestep.vrad and Timestep.vrot
+ - updated documentation pdf to new naming convention
+ - updated documentation to include all supported functions
+ - updated README
+ - removed coords.approx_lsr()
+
+v1.3.3:
+ - added changelog
+ - fixed bug in Timestep.copy() that would cause error if the Timestep had calculated values
+ - adapted python standard naming convention (mostly, method names went from camelCase to lower_case)
+ - consolidated coords.py tests into tests.py
+ - bug fix in coords.cart_to_plane()
+ - fixed import scheme
