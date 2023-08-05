@@ -1,0 +1,3 @@
+[console_scripts]
+mklists=mklists.cli:cli
+

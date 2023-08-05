@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: mklists
+Version: 0.2
+Summary: Sync your lists to evolving rules.
+Home-page: https://github.com/tombaker/mklists
+Author: Tom Baker
+Author-email: tom@tombaker.org
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Text Processing
+Classifier: Intended Audience :: End Users/Desktop
+Requires-Dist: click
+Requires-Dist: dataclasses
+Requires-Dist: ruamel.base
+Requires-Dist: ruamel.yaml
+Requires-Dist: sphinx ; extra == "doc"
+Requires-Dist: sphinx_rtd_theme ; extra == "doc"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Provides-Extra: doc
+Provides-Extra: test
+
+MkLists documentation
+---------------------
+
+Sync your lists to evolving rules.
+
+Deploy docs
+-----------
+
+Documentation is automatically deployed on ReadTheDocs at
+every push or merged pull request.
+
+See: https://mklists.readthedocs.io/en/latest/
+
+PyPI: https://pypi.org/project/mklists/
+
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :target: https://github.com/psf/black
+
