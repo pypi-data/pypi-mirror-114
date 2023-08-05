@@ -1,0 +1,8 @@
+README.md
+setup.py
+ashar/__init__.py
+ashar.egg-info/PKG-INFO
+ashar.egg-info/SOURCES.txt
+ashar.egg-info/dependency_links.txt
+ashar.egg-info/requires.txt
+ashar.egg-info/top_level.txt
