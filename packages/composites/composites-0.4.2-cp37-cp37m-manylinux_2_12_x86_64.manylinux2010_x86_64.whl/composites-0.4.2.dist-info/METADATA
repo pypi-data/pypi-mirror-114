@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: composites
+Version: 0.4.2
+Summary: Methods to calculate composite material properties
+Home-page: https://github.com/saullocastro/composites
+Author: Saullo G. P. Castro
+Author-email: castrosaullo@gmail.com
+License: BSD
+Keywords: mechanics composite materials composites shell classical first-order laminated plate theory
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Education
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: BSD License
+License-File: LICENSE
+Requires-Dist: numpy
+
+UNKNOWN
+
