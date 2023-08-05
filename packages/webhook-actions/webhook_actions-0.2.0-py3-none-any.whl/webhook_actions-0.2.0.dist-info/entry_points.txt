@@ -1,0 +1,3 @@
+[console_scripts]
+webhook-actions = webhook_actions.__main__:main
+
