@@ -1,0 +1,4 @@
+include README.md
+include screenagent/config.ini
+include soundagent/config.ini
+include vdr/config.ini
