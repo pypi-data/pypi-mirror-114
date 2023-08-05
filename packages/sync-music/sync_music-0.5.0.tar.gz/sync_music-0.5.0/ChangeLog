@@ -1,0 +1,72 @@
+CHANGES
+=======
+
+v0.5.0
+------
+
+* transcode: Log FFmpeg output
+* tests: Improve testing metadata
+* sync\_music: Add support for MP4 audio files (.M4a)
+* sync\_music: Refactor ReplayGain into own class
+* tests: Use Mutagen to ensure the output files are correct
+* tests: Use FFmpeg to ensure ReplayGain data is applied correctly
+* transcode: Switch from python-audio-tools to FFmpeg
+* sync\_music: Split metadata related code into own module
+* sync\_music: Drop Skip action
+* sync\_music: Make sure all tests use the tmp\_dir fixture
+* hashdb: Refactor HashDb to keep internal datastructure private
+* sync\_music: Use a named tuple for tasks
+* cleanup: Use f-strings
+* cleanup: Drop custom log style adapter
+* cleanup: Migrate from os.path to pathlib
+* gitignore: Ignore VSCode files
+* project: Improve GitLab CI config
+* tox: Enable branch coverage
+* transcode: Fix copying MusicBrainz Album Artist and Release Group tags
+* tox: Fix warnings reported by PyLint 2.8.0
+* project: Reformat using black
+* project: Add Python 3.9 to CI jobs
+* readme: Fix monospace text
+
+v0.4.4
+------
+
+* sync\_music: Add "artist-albumartist" hack
+
+v0.4.3
+------
+
+* sync\_music: Fix version info string
+* readme: Update Travis URL
+* tox: Fix warnings reported by PyLint 2.7.0
+* project: Update supported python versions
+* tox: Fix warnings reported by PyLint 2.6.0
+
+v0.4.2
+------
+
+* tox: Fix warnings reported by PyLint 2.4.2
+* tox: Fix warnings reported by PyLint 2.4.0
+* gitignore: Ignore .coverage.\* files
+* project: Remove audiotools from requirements.txt
+* tox: Fix warnings reported by PyLint 2.2.0
+
+v0.4.1
+------
+
+* project: Add automatic deployment to PyPI with Travis CI
+* project: Update year in copyright headers to 2013-2018
+* project: Packaging with pbr
+* tests: Switch from nose to pytest
+* sync\_music: Fix deprecation warning for SafeConfigParser
+* tests: Fix test\_reference\_exception
+* readme: Add PyPI version badge from shields.io
+* tox: Fix warnings reported by PyLint 2.0.0
+* project: Switch to Travis CI
+* tox: Fix warnings reported by Pylint
+* project: Fix caching in GitLab CI configuration
+* project: Update GitLab CI configuration to parse coverage percentage
+* tox: Fix warnings reported by Flake8
+* project: Release 0.4.0
+* hack: Set album to 'Various Artists' if albumartist is empty
+* project: Release 0.3.1
