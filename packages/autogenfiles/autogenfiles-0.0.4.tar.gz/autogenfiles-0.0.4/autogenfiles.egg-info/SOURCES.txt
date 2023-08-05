@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+autogenfiles/__init__.py
+autogenfiles/__main__.py
+autogenfiles/autogenfiles.py
+autogenfiles/configuration.py
+autogenfiles/files_helper.py
+autogenfiles.egg-info/PKG-INFO
+autogenfiles.egg-info/SOURCES.txt
+autogenfiles.egg-info/dependency_links.txt
+autogenfiles.egg-info/entry_points.txt
+autogenfiles.egg-info/not-zip-safe
+autogenfiles.egg-info/requires.txt
+autogenfiles.egg-info/top_level.txt
