@@ -1,0 +1,13 @@
+psycopg2>=2.4.2
+argh>=0.21.2
+python-dateutil
+
+[azure]
+azure-identity
+azure-storage-blob
+
+[cloud]
+boto3
+
+[completion]
+argcomplete
