@@ -1,0 +1,4 @@
+#!/usr/bin/env python3
+
+from _sortd import __main__
+
