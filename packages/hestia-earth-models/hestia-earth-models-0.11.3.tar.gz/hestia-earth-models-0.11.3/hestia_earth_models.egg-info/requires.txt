@@ -1,0 +1,5 @@
+hestia_earth.schema>=6.0.0
+hestia_earth.utils>=0.8.0
+python-dateutil>=2.8.1
+requests>=2.24.0
+pydash
