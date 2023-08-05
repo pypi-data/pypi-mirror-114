@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ssl-metrics-git-commits-loc
+Version: 0.2
+Summary: SSL Metrics - Git History (LOC/KLOC) Analysis
+Home-page: https://github.com/SoftwareSystemsLaboratory/ssl-metrics-git-commits-loc
+Author: Software and Systems Laboratory - Loyola University Chicago
+Author-email: ssl-metrics@ssl.luc.edu
+License: Apache License 2.0
+Keywords: git,software engineering,metrics,commits
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.0
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: progress
+Requires-Dist: python-dateutil
+
+UNKNOWN
+
