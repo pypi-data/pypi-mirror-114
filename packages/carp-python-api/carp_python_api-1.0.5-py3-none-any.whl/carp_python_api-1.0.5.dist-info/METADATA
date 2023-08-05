@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: carp-python-api
+Version: 1.0.5
+Summary: The [C]openh[A]gen Center for Health Technology [R]esearch [P]latform (CARP) enables researchers to run mobile health (mHealth) studies where data is collected on participant's smartphones and wearable devices. Data is securely uploaded and managed in a hosting infrastructure managed by the Technical University of Denmark (DTU).
+Home-page: https://cachet.dk
+Author: Alban Maxhuni, PhD
+Author-email: almax@dtu.dk
+License: CACHET Research Platform
+Project-URL: CARP Client API - Library, https://github.com/cph-cachet/carp.python-client-api
+Keywords: carp-python-api
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENCE.md
+Requires-Dist: setuptools
+Requires-Dist: requests
+Requires-Dist: carp
+Requires-Dist: pandas
+Requires-Dist: urllib3
+Requires-Dist: utils
+Requires-Dist: numpy
+Requires-Dist: argparse
+Requires-Dist: wheel
+Requires-Dist: Jinja2
+Requires-Dist: Werkzeug
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: pip
+Requires-Dist: tqdm
+Requires-Dist: twine
+
+# CARP PYTHON CLIENT API
+
+![CACHET](cachet.png)
+
+##
+The Copenhagen Center for Health Technology (CACHET) Research Platform (CARP) enables researchers to run mobile health (mHealth) studies where data is collected on participant's smartphones and wearable devices. Data is securely uploaded and managed in a hosting infrastructure managed by the Technical University of Denmark.
+
+CARP is a platform for running research studies in the health domain – also known as Digital Phenotyping. Such studies range from technical feasibility studies of novel technology to large-scale clinical studies. The platform is very versatile both in terms of support for different types of health domains, as well as in terms of technical support and configuration.
+
+CARP PYTHON CLIENT API
+-----------------
+To support researchers using the [CARP Webservices API](https://carp.cachet.dk) with the Python programming language, we implemented a [CARP PYTHON CLIENT API](https://pypi.org/project/carp-python-api/) to consume all existing endpoints such as authenticating, creating studies, deployments, protocols, consents, data points, documents|collections, summaries, and other endpoints.
+
+The repository [CARP Client API - Flask](https://github.com/cph-cachet/carp.client-api-flask) provides a sample project that allows consuming [CARP Webservices API](https://carp.cachet.dk) endpoints using the [Flask framework](https://flask.palletsprojects.com/en/2.0.x/).
+
+Note
+-----------------
+To use this client with any of the CARP environments listed below, [contact us](https://carp.cachet.dk/#contact) to create a researcher account to use the [CARP Web Services] endpoints.
+
+Environments 
+-----------------
+
+|CARP Environments      | Path |
+| :------------  |:------------ |
+| **test** | https://cans.cachet.dk:443/test |
+| **development** | https://cans.cachet.dk:443/dev |
+| **staging** | https://cans.cachet.dk:443/stage |
+| **production**| https://cans.cachet.dk:443 |
+ 
+|Local Environment      | Path |
+| :------------  |:------------ |
+| **local** | http://localhost:8091 |
+
+References
+-----------------
+- Copenhagen Center for Health Technology [CACHET](https://cachet.dk)
+- [CARP Webpage](https://carp.cachet.dk).
+- [CANS Management Dashboard](https://cans.cachet.dk).
+- [CARP Core](https://carp.cachet.dk/core/)
+
+
+
