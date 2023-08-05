@@ -1,0 +1,12 @@
+[console_scripts]
+archive = licsber.shell.dir_ops:archive
+conv = licsber.shell.cloud_drive:conv
+count-dir = licsber.shell.dir_ops:count_dir
+empty-dir = licsber.shell.dir_ops:empty_dir
+flatten-dir = licsber.shell.dir_ops:flatten_dir
+licsber = licsber.shell.hello:licsber
+memobird = licsber.shell:memobird
+rename = licsber.shell.dir_ops:rename
+save-115 = licsber.shell.cloud_drive:save_115_link
+save-115-dir = licsber.shell.cloud_drive:save_115_dir
+
