@@ -1,0 +1,3 @@
+[pymodaq.plugins]
+andor = pymodaq_plugins_andor
+
