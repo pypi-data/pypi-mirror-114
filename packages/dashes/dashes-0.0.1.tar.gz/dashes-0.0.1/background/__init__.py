@@ -1,0 +1,1 @@
+from dashes.background.background import set_png_as_page_bg
