@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+mathparser.cpp
+pyproject.toml
+setup.cfg
+setup.py
+InfixParser.egg-info/PKG-INFO
+InfixParser.egg-info/SOURCES.txt
+InfixParser.egg-info/dependency_links.txt
+InfixParser.egg-info/top_level.txt
+MathEvaluator/include/evaluator.cpp
+MathEvaluator/include/evaluator.hpp
+MathEvaluator/include/list.hpp
+MathEvaluator/include/stack.hpp
