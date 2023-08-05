@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+get_metadata/__init__.py
+get_metadata.egg-info/PKG-INFO
+get_metadata.egg-info/SOURCES.txt
+get_metadata.egg-info/dependency_links.txt
+get_metadata.egg-info/top_level.txt
