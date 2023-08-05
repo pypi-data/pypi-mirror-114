@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: donjon-scaffold
+Version: 0.7.5
+Summary: Python3 API for the Scaffold board
+Home-page: https://github.com/Ledger-Donjon/scaffold
+Author: Olivier Heriveaux
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyserial
+Requires-Dist: crcmod
+
+# scaffold board Python3 API
+
+This is the Python3 API package for the Scaffold board.
+See [Scaffold project on GitHub](https://github.com/Ledger-Donjon/scaffold).
+
+

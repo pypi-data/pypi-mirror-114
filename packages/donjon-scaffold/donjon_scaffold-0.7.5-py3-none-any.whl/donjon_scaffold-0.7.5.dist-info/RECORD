@@ -1,0 +1,9 @@
+donjon_scaffold-0.7.5.dist-info/DESCRIPTION.rst,sha256=gxdX_rOPdn6fnNl9p-2-uYPpuAsGVnCbilVPdMqZjAs,165
+donjon_scaffold-0.7.5.dist-info/METADATA,sha256=oiUbYDLFO23QFteM3P1tlHubH07SiwC-5nF0AIpI09w,492
+donjon_scaffold-0.7.5.dist-info/RECORD,,
+donjon_scaffold-0.7.5.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+donjon_scaffold-0.7.5.dist-info/metadata.json,sha256=m5WUH6PqitUPIZPOaUVfPP4Q2yuABgcHWP0z5DYO5TI,527
+donjon_scaffold-0.7.5.dist-info/top_level.txt,sha256=aLfYcjRWwVHB73DR9jvLh71eUnfVb37BudybADkmaSM,9
+scaffold/__init__.py,sha256=S4GfRUQ6ZQmXkzSlUNFoldXQseYOz6nD_ZFLchEeyLQ,98299
+scaffold/iso7816.py,sha256=w0dgBIoqkUF5oqSNRRMRxwrTodi-341Te39Kx5GkSPc,24844
+scaffold/stm32.py,sha256=S6BjxNJk0nHxHre-RlgcJIBr-yp_I35xVo_OuZsz8NI,13547
