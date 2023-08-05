@@ -1,0 +1,3 @@
+[console_scripts]
+slreporter = reporter.cli:main
+
