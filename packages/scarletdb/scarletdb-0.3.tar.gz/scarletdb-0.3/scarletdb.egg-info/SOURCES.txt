@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+scarletdb/__init__.py
+scarletdb.egg-info/PKG-INFO
+scarletdb.egg-info/SOURCES.txt
+scarletdb.egg-info/dependency_links.txt
+scarletdb.egg-info/requires.txt
+scarletdb.egg-info/top_level.txt
