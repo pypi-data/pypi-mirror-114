@@ -1,0 +1,8 @@
+linkedin_messaging/__init__.py,sha256=w6NZOIdjO4jvueOsXs6y_3f_hvet8X3KG3s88oQPs8E,378
+linkedin_messaging/api_objects.py,sha256=OLKxy8xx3IJwHLBFXU9oHvBY7Ysj-s3XJ4fM88GvExI,12428
+linkedin_messaging/linkedin.py,sha256=RBcHvz7919M2mgZxZ1pgIfdPrQYw10zsDLgnQHgoMKA,21021
+linkedin_messaging/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+linkedin_messaging-0.4.2rc2.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+linkedin_messaging-0.4.2rc2.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+linkedin_messaging-0.4.2rc2.dist-info/METADATA,sha256=xlfo1XD3L2W2dJEPfB4-I6i1lkbciIhDp-5XOs4m_f8,2199
+linkedin_messaging-0.4.2rc2.dist-info/RECORD,,
