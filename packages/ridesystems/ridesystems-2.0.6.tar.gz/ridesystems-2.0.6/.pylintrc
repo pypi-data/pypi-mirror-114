@@ -1,0 +1,11 @@
+[GENERAL]
+extension-pkg-whitelist=pyodbc
+
+[FORMAT]
+max-line-length=120
+
+[TYPECHECK]
+ignored-classes=Browser
+
+[MASTER]
+init-hook='import sys; sys.path.append(".")'
