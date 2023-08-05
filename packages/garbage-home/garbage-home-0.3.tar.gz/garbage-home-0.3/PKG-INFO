@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: garbage-home
+Version: 0.3
+Summary: garbage
+Home-page: https://google.com/
+Author: Brent Spector
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
