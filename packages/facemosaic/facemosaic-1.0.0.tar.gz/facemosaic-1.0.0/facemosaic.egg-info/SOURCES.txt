@@ -1,0 +1,10 @@
+setup.py
+facemosaic/__init__.py
+facemosaic/facemosaic.py
+facemosaic.egg-info/PKG-INFO
+facemosaic.egg-info/SOURCES.txt
+facemosaic.egg-info/dependency_links.txt
+facemosaic.egg-info/requires.txt
+facemosaic.egg-info/top_level.txt
+facemosaic/model/Caffe/deploy.prototxt
+facemosaic/model/Caffe/res10_300x300_ssd_iter_140000_fp16.caffemodel
