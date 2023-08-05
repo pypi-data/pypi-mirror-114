@@ -1,0 +1,11 @@
+click
+ytmusicapi>=0.18.0
+enlighten
+
+[dev]
+pre-commit
+flake8
+yapf
+coverage
+rope
+pytest
