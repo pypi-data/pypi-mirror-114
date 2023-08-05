@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pywhistle/__init__.py
+pywhistle/client.py
+pywhistle.egg-info/PKG-INFO
+pywhistle.egg-info/SOURCES.txt
+pywhistle.egg-info/dependency_links.txt
+pywhistle.egg-info/requires.txt
+pywhistle.egg-info/top_level.txt

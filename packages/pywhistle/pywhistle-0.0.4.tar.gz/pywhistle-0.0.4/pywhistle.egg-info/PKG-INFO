@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pywhistle
+Version: 0.0.4
+Summary: Unofficial Whistle 3 Device API
+Home-page: https://github.com/Fusion/pywhistle
+Author: Chris F Ravenscroft
+Author-email: chris@voilaweb.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+
+This is a very basic library to query Whistle.app's API for Whistle 3 devices.
+
+The API is not published, so it may break eventually.
+
+More information to come soon...
+
+
