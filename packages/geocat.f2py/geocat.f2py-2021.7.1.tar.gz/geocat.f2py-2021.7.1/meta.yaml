@@ -1,0 +1,42 @@
+{% set version = "2021.07.1" %}
+
+package:
+  name: 'geocat-f2py'
+  version: {{ version }}
+
+source:
+#  git_rev: main     # For building from main branch for debugging purposes
+  git_tag: v{{ version }}   # For building from a specific tag
+  git_url: https://github.com/NCAR/geocat-f2py.git
+#  url: https://github.com/NCAR/geocat-f2py/archive/v{{ version }}.tar.gz   # For building from a specific tag's tarball
+
+build:
+  number: 0
+  skip: True # [py<35]
+
+requirements:
+  host:
+    - python
+    - pip
+    - setuptools
+    - numpy>=1.20.2
+    - {{ compiler('fortran') }}
+  run:
+    - python
+    - xarray
+    - dask
+    - numpy>=1.20.2
+    - {{ compiler('fortran') }}
+
+test:
+  source_files:
+    - test
+  requires:
+    - pytest
+  imports:
+    - geocat.f2py
+  commands:
+    - pytest test
+
+about:
+  home: https://github.com/NCAR/geocat-f2py
