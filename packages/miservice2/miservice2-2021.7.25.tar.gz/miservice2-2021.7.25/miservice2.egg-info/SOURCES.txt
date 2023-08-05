@@ -1,0 +1,14 @@
+LICENSE
+README.md
+micli.py
+setup.py
+miservice2/__init__.py
+miservice2/miaccount.py
+miservice2/miiocommand.py
+miservice2/miioservice.py
+miservice2/minaservice.py
+miservice2.egg-info/PKG-INFO
+miservice2.egg-info/SOURCES.txt
+miservice2.egg-info/dependency_links.txt
+miservice2.egg-info/requires.txt
+miservice2.egg-info/top_level.txt
