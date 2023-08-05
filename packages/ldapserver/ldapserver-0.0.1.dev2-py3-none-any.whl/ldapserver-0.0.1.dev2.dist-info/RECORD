@@ -1,0 +1,15 @@
+ldapserver/__init__.py,sha256=PuTJOhYP9L_Qm65HR0vO5PslQarricSGt8guNHWFk_w,132
+ldapserver/asn1.py,sha256=9crO99VH3ES_a6D_zwX8VJK1tEHl27k32Pe03Rk3EhU,7324
+ldapserver/directory.py,sha256=o1fjBG_68tv_Op1_2o0pCwrJ6R4hbcrbyjlcNKqzJ4w,6945
+ldapserver/dn.py,sha256=ar5GnJfos1ZZWd5xsE0MHmj5XOzk5sDyuIZQ2CUelvM,5534
+ldapserver/exceptions.py,sha256=2V7lD7haQ_k4jQCnquljTxYiusN9jVu1KnfoswS7r0o,3690
+ldapserver/ldap.py,sha256=Wpg4Bmohy3VIMv3LjOH00RU_S36T9TIM2g1y0jCo4kA,14014
+ldapserver/server.py,sha256=U06K5on2FFs3aTHWppLS2YIKzHVBpoCuzhEHZ6-HoDs,17326
+ldapserver/util.py,sha256=_-yVZBS9MLSm1AL6z6Qd2R-65u3LiUaA9MRI0PKbTcY,1287
+ldapserver/schema/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ldapserver/schema/rfc2307bis.py,sha256=4PuCbxil1YGc8nxStQy5BNmajF2Kh9T3LZJFJDmCBgo,84349
+ldapserver-0.0.1.dev2.dist-info/LICENSE,sha256=aeIM0Z0Ulgf0bnDMJGP7nVvePeq89sw1XIhjqCnesC0,34461
+ldapserver-0.0.1.dev2.dist-info/METADATA,sha256=51df4YI2gdKcW8CICfyw_iBo8xjV3B5BkLGLj7STkso,1011
+ldapserver-0.0.1.dev2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ldapserver-0.0.1.dev2.dist-info/top_level.txt,sha256=hKhNs0-tZXm_NTSFjqUkzmJxuLS3rKZtMnoH5cPeCUA,11
+ldapserver-0.0.1.dev2.dist-info/RECORD,,
