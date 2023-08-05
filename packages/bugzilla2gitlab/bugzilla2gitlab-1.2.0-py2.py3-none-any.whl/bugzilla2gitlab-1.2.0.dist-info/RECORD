@@ -1,0 +1,12 @@
+bugzilla2gitlab/__init__.py,sha256=YDoYFvgigtYJFmYWqE0GEyEQ12JAZUgALeGQGWd3Pxs,86
+bugzilla2gitlab/config.py,sha256=BNCCxBAils98pKIxc4MlawOyPfT9OwK6WKHZElNK0k8,3705
+bugzilla2gitlab/migrator.py,sha256=60aAK1nLz0puIUBB_OVLllkDEGgqriO2nuyq-8oMlwE,901
+bugzilla2gitlab/models.py,sha256=lCFf-J-NkZk-m-RWyj1qYPSOS4var9MkQstc83CTfaA,15429
+bugzilla2gitlab/utils.py,sha256=GMasgHEHvy8d-IMCmzSGj1mCc2toQ751-5LmPmebe2w,4157
+bugzilla2gitlab-1.2.0.data/scripts/bugzilla2gitlab,sha256=1zKCcUeAuDKcLnYcsEBvcVK3E31g_B7G0tw8sW-2Kds,794
+bugzilla2gitlab-1.2.0.data/scripts/clone_users.py,sha256=tnuuFgXCqfOwFXtXnzaqXxddaQQc4nnx8tYmirU1Jo4,5496
+bugzilla2gitlab-1.2.0.dist-info/LICENSE,sha256=qasZrIrOvKhFqAWS3lnT6VV1iZX15mkOy4MCiWDmimo,1082
+bugzilla2gitlab-1.2.0.dist-info/METADATA,sha256=gQkz5TfwEaZNTUxb3AMWoyDDoCqDqlQaUa0utCurQ6A,6818
+bugzilla2gitlab-1.2.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+bugzilla2gitlab-1.2.0.dist-info/top_level.txt,sha256=3M76ixwtsiNrhSh-PBlUbRDuAPoW4vHvjcc-R2crm7w,16
+bugzilla2gitlab-1.2.0.dist-info/RECORD,,
