@@ -1,0 +1,8 @@
+README.md
+setup.py
+nspb/__init__.py
+nspb/pb.py
+nspb.egg-info/PKG-INFO
+nspb.egg-info/SOURCES.txt
+nspb.egg-info/dependency_links.txt
+nspb.egg-info/top_level.txt
