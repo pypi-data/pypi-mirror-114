@@ -1,0 +1,5 @@
+click~=8.0.0
+hap-python~=3.5.0
+pywol~=1.0.0
+pyyaml~=5.4.0
+scapy~=2.4.0
