@@ -1,0 +1,17 @@
+pyLogObject/__init__.py,sha256=ZQHlfUc99mr4CmERzER0nxNQ8ysIpvhzPtX4TRIHDsM,106
+pyLogObject/Configs/ConfigObj.py,sha256=uvsrarvCAY0WSzJw1p_gCtEbWGmC-2gHETy06AbpZCQ,3429
+pyLogObject/Configs/Stata.yaml,sha256=kv4khknU76_gs7l7z13XNECy0WbuUeVezoNK6WjVf0w,1078
+pyLogObject/Configs/__init__.py,sha256=K5SL2CSyfgznRQcckJaIEb-3QKsztbsV0p6Prb-p008,34
+pyLogObject/StataParser/StataCommon.py,sha256=1XZKESTHpfUDsRxDZpEKunBMtQJh1Lq6ghuIwT61jsU,8938
+pyLogObject/StataParser/StataExtractor.py,sha256=DVH6TLmFWiR_Ieqg7otrPke0awIjRAUWLKsBh_yl7X4,7408
+pyLogObject/StataParser/__init__.py,sha256=nIMGilxTAEmSiwwn1WkUBOvYTaclp5fOJ2XORZ9OCJs,82
+pyLogObject/Tables/Regressions.py,sha256=EcmwIlTfpezACoCVexkuagmS7bULn_3sqCdT8fK4c5Q,7111
+pyLogObject/Tables/Summary.py,sha256=vzmpGWBEKU7rthaM_k7NRhR7ezH6Li9CZOzV-QRYYG8,4965
+pyLogObject/Tables/__init__.py,sha256=HYHJtWVx1L2VtU-lSdVibz2RmZSQUXXPQj87XBDVzo8,91
+pyLogObject/Writers/Results.py,sha256=jOVYMGCmYf3EdnqC6_Szqv1wRm2QfR7TsvfLPa1hAsc,1009
+pyLogObject/Writers/__init__.py,sha256=5voUyRacReTCfHKBmV54uqmYcR7DFKU2YT4mIYWYDWA,43
+stataLogObject-0.1.0.dist-info/LICENSE,sha256=xZcGbgqpLfUL-_kZyLf19H94ARWpF4q9LL3k7Cadvug,1090
+stataLogObject-0.1.0.dist-info/METADATA,sha256=ROpPDx7JDv1Fsdkt7arN6GPxGWgFMm4w-GisgZ5uglo,658
+stataLogObject-0.1.0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+stataLogObject-0.1.0.dist-info/top_level.txt,sha256=OOIVwmB01gisDp9UKyZBJN4PKqgQ-NYhne4h2XRTmD0,12
+stataLogObject-0.1.0.dist-info/RECORD,,

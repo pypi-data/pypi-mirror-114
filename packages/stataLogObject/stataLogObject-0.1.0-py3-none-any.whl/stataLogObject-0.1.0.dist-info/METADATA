@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: stataLogObject
+Version: 0.1.0
+Summary: Taking multiple output forms into journal tables
+Home-page: UNKNOWN
+Author: Samuel Baker
+Author-email: samuelbaker.researcher@gmail.com
+Maintainer: Samuel Baker
+Maintainer-email: samuelbaker.researcher@gmail.com
+License: MIT
+Download-URL: https://github.com/sbaker-dev/stataLogObject
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: miscSupports
+Requires-Dist: csvObject
+
+
+# stataLogObject
+
+Taking multiple output forms into journal tables
+
+
+
