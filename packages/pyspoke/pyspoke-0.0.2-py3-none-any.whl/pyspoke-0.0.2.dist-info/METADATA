@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pyspoke
+Version: 0.0.2
+Summary: A publish/subscribe and rpc library in python
+Home-page: https://gitlab.com/samflam/pyspoke
+Author: samflam
+Author-email: pyspoke@samflam.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# `spoke`
+
+A python library supporting pubsub and remote procedure calls.
+
+# Isn't this just a bad dbus?
+
+Actually this project started out as a bad ROS, but yes.
+
+# Usage
+
+See the various test cases in `tests` for examples
+
+
