@@ -1,0 +1,3 @@
+[console_scripts]
+tap2shex=tap2shex.cli:cli
+
