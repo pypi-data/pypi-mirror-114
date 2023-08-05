@@ -1,0 +1,8 @@
+vsffdnet/__init__.py,sha256=l2_2-234t6MR7duZqZn8mb_EtiI1E4y-Dcb_EbH4soM,2512
+vsffdnet/basicblock.py,sha256=USlJc2ZuPzRWcD6z1Emr8mQc_x9Cv2H5ekboBqLLzUQ,24729
+vsffdnet/network_ffdnet.py,sha256=WC94pnn753rrx650D01Rg-Pti35cLC3IOL2uLNmk6c4,2679
+vsffdnet-1.1.0.dist-info/LICENSE,sha256=TOnHjjjk72COaBl3aWUvIQWIiDASReAL7xEEGPSGN3E,1084
+vsffdnet-1.1.0.dist-info/METADATA,sha256=oRiPTKbrW3jdsiOO-Ja3ztaHT-k1v7vQ_rHDgf5dnSs,1141
+vsffdnet-1.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+vsffdnet-1.1.0.dist-info/top_level.txt,sha256=rTSriDJr1HoXwb8_Ux4ZpjxqfjWnFt7GEMLW9JbNKeg,9
+vsffdnet-1.1.0.dist-info/RECORD,,
