@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: robotframework-excelutil
+Version: 9.2
+Summary: Robotframework library for excel xlsx file format
+Home-page: https://www.linkedin.com/in/nagesh-nagaraja-mba-pmp-csm-33515130/
+Author: Nagesh B Nagaraja Rao
+Author-email: nagesh.nagaraja@gmail.com
+License: UNKNOWN
+Description: # Robotframework-excelutil library
+        
+        This Robotframework Excel Util library provides Robot keywords to Open, Read, Write and Save XLSX files. 
+        This library uses python to read and write datas in xlsx files.
+        
+        ## Pre-requisities
+        - Python - 3.x (Not tested with Python 2.x)
+        - Robotframework - 4.x (Not tested with other versions)
+        - Openpyxl
+        
+        ## Installation
+        ```pip install robotframework-excelutil```
+        
+        ## Example
+        
+        | Library    ExcelUtil |
+        
+        | Open Excel |	Filename with fullpath |
+        
+        ## License
+        
+        Â© 2021 Nagesh B Nagaraja Rao
+        
+        This repository is licensed under the MIT license. See LICENSE for details.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
