@@ -1,0 +1,14 @@
+numpy
+matplotlib
+pandas
+
+[:python_version < "3.7"]
+dataclasses
+
+[dev]
+faker
+pytest
+pytest-cov
+coveralls
+black
+flake8
