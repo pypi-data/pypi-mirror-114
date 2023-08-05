@@ -1,0 +1,10 @@
+ailabdc/__init__.py,sha256=h-QyvMVzDNpT3jyVskcSbUVFXxGCRxieFPrvTveZG9k,64
+ailabdc/client/__init__.py,sha256=G8tM5OrylV3B1dKWRh3oSHmarfRX6gPqdo5ycbNrO5c,73
+ailabdc/client/func.py,sha256=3w_XxVrV9m_lZ836iJWDYx_ivEUkV_uxbEbYSZGtHRA,721
+ailabdc/client/models.py,sha256=-Rzk4g1lE6SgeFQXAqOPgTRYQ7uYLVPc6AK3_lvbxsw,6098
+ailabdc/client/remote.py,sha256=9tAfxmQqvLRt9YHQzdUAAzPzDfTMVKi_CpokHPqaPMw,1249
+ailabdc/client/zaco.py,sha256=yA2TcK_mpCnNJuywn_2JMOE5crQqTKNTQlxIrUjj4KE,6864
+ailabdc_client-0.1.dist-info/METADATA,sha256=Oly4LanWxu7sANCXlNrYFOXaamUMuUw_ByttZ5Mvf7Q,553
+ailabdc_client-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ailabdc_client-0.1.dist-info/top_level.txt,sha256=R0Piq32lM63PRIUdMV3KOWT4WCbFlV8qTa2Bg3YCB_U,8
+ailabdc_client-0.1.dist-info/RECORD,,

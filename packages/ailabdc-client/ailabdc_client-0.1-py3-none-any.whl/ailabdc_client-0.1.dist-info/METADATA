@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ailabdc-client
+Version: 0.1
+Summary: AILab Data Client function
+Home-page: https://lab.zalo.ai
+Author: DuyDV2
+Author-email: duydv2@vng.com.vn
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+Requires-Dist: python-multipart
+Requires-Dist: aiofiles
+Requires-Dist: ailabtools
+
+UNKNOWN
+
+
