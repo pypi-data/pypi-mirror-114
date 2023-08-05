@@ -1,0 +1,14 @@
+schemdule/__init__.py,sha256=KAAwrqQDMjFIrgQ7lzzQY9yfCtBtj91bMfBb6_725ZA,120
+schemdule/__main__.py,sha256=4T9vYothI7zJTzQRYMJWAKZLPrSC8HVFDAdPkjQ8ggc,1935
+schemdule/timetable.py,sha256=O88XZy8AojhtOI3yEL2-t8R_pauaFK6qbmTusQyCY_s,5696
+schemdule/timeutils.py,sha256=-0jD3bwjee-svHYiP8Fp4GJ9mfCxrQry5-v2Fms8lWk,475
+schemdule/prompters/__init__.py,sha256=qP0aHogCaLPIuRnnR1Y8pMtdOP5O8qKxztVW2mdAnvI,562
+schemdule/prompters/configer.py,sha256=fUl_Vli1Ln_2mZLxOT2M8NcOXsO0N3NqKvwHDtYOn9k,1232
+schemdule/prompters/general.py,sha256=nF7kq0UzoPrxiFJK1FdVOy0MX8fS5fbPrXSlRL6Co58,1080
+schemdule/prompters/hubs.py,sha256=WE2IoxwwmDWC6TyxkD5Nu_Zw3dGyOiZVyHiXz9cmszg,1519
+schemdule-0.0.3.dist-info/LICENSE,sha256=S4nUUYvRNatO4VSnvOciJGtXqYw9fvwaCUCYmBYMK9E,16724
+schemdule-0.0.3.dist-info/METADATA,sha256=nMaubNI1NA2l-U9QBIq6nSm31P3pTWSKYYm0x9qdjyM,5199
+schemdule-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+schemdule-0.0.3.dist-info/entry_points.txt,sha256=JgdYgYhtL9OigSTbld2rlO6bdy4b7Q8Y4UxP7dLn3LY,55
+schemdule-0.0.3.dist-info/top_level.txt,sha256=ldeP8Cwk0a3YraSKV48qB7JGSeKUE-8feUfieMbiprc,10
+schemdule-0.0.3.dist-info/RECORD,,
