@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: qxHello
+Version: 0.0.1
+Summary: qxHello: A python package to print your name
+Home-page: https://github.com/qxresearch/qx-hello
+Author: xiowuc2
+Author-email: <rohitmandal814566@gmail.com>
+License: Apache 2.0
+Project-URL: Documentation, https://github.com/qxresearch/qx-hello/docs
+Project-URL: Bug Reports, https://github.com/qxresearch/qx-hello/issues
+Project-URL: Source, https://github.com/qxresearch/qx-hello
+Keywords: qxresearch,python,pypi,hello-world
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+# qx-hello
+
+good first Python package to print your name.
+
+
