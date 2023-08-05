@@ -1,0 +1,156 @@
+Metadata-Version: 2.1
+Name: bln-tools
+Version: 0.0.2
+Summary: Big Local News Tools
+Home-page: https://github.com/biglocalnews/tools
+Author: Daniel Jenson
+Author-email: djenson@stanford.edu
+License: GNU GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fuzzywuzzy
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: python-Levenshtein
+Requires-Dist: questionary
+Requires-Dist: sklearn
+
+# Big Local News Tools for Journalists
+[Harmonizer](#Harmonizer): attempts to standardize data.  
+[Labeler](#Labeler): machine learning assisted data labeling / categorization.  
+[PowerBI](#PowerBI): tools for scraping PowerBI dashboards.  
+
+
+# Harmonizer
+The harmonizer attempts to standardize data. For instance, a column of data
+like this:
+
+Apple Inc.  
+APPLE Inc.  
+APPLE INC  
+APPLE  
+
+Would be standardized to "Apple Inc.", so all four entries would have the same
+value. The methodology, usage, and examples are below. Understanding the
+methodology will help to understand how it is used.
+
+## Methodology:
+- Harmonizing a column consists of two phases:
+  1. __OPTIONAL__: Identify "stop words." Stop words are commonly occurring words
+     that carry little semantic value; in normal language, these are words
+     like "a", "the", "of", etc., but in the context of something like
+     corporate names, they may be words like "LLC", "CO", "INTERNATIONAL",
+     "GROUP", "DBA", etc. Identifying and removing these reduces the similarity
+     between unrelated companies, i.e. "ACME INTERNATIONAL" and "APPLE
+     INTERNATIONAL" might be ~50% similar, but once you strip "INTERNATIONAL"
+     from the names, they are 0% similar, which is most often what is desired.
+  1. Standardize the names; this consists of several steps:
+    - clean the target column:
+      - uppercase all tokens (words)
+      - remove punctuation
+      - remove stop words (loaded from `stop_words.csv` generated in optional
+        step 1; if this file doesn't exist, it doesn't remove any stop words)
+    - sort the target column (allows this algorithm to run in O(1) time)
+    - compare the current value to the previous value and calculate their
+      similarity (this program uses the harmonic mean of the partial ratio and
+      the sorted token ratio, see the python library
+      [fuzzywuzzy](https://pypi.org/project/fuzzywuzzy/) for the meaning of
+      these)
+    - if the similarity is above the given threshold, it assigns the same
+      `harmonizer_id` to the value, otherwise it creates a new ID
+    - identify the longest cleaned name for each group by ID and assign the
+      original name to that group
+
+## Use:
+1. Create a `stop_words.csv` file: `harmonizer stop_words <csv_name> <csv_column>`
+1. Harmonize the desired field: `harmonizer harmonize <csv_name> <csv_column> -t 0.85`
+  - the `-t 0.85` is optional and specifies a threshold between 0 and 1, with
+    values closer to 1 requiring a stricter match in order to assign the same
+    ID
+
+## Help:
+- General help: `harmonizer -h`
+- Stop words help: `harmonizer stop_words -h`
+- Harmonize help: `harmonizer harmonize -h`
+
+## Examples:
+- `cd <package-dir>/harmonizer/examples # change into examples directory`
+- H1B data:
+  - `harmonizer stop_words h1b_datahubexport-2019.csv Employer`
+    - outputs: `stop_words.csv`
+  - `harmonizer harmonize h1b_datahubexport-2019.csv Employer`
+    - time: requires about ~18s on a normal laptop
+    - uses: `stop_words.csv`
+    - outputs: `h1b_datahubexport-2019_harmonized.csv`
+- WARN data:
+  - `harmonizer stop_words Alaska_warn_raw.csv 'Company Name'`
+    - outputs: `stop_words.csv`
+  - `harmonizer harmonize Alaska_warn_raw.csv 'Company Name'`
+    - time: requires about ~1s on a normal laptop
+    - uses: `stop_words.csv`
+    - outputs: `Alaska_warn_raw_harmonized.csv`
+
+
+## Tuning:
+- This script outputs the original file with the following columns added:
+  - `<column>_harmonizer_cleaned`: contains the cleaned version of the
+    target column
+  - `<column>_harmonizer_score`: contains the similarity score that
+    compares the current row to the previous row
+  - `<column>_harmonizer_id`: contains the assigned harmonizer ID
+  - `<column>_harmonizer_standardized`: contains the standardized value
+- Look at the `<column>_harmonizer_score`, which represents the similarity
+  between the current and previous rows' values; you can raise or lower the
+  threshold with the `-t <value>` argument, i.e. raise it if you think two
+  things shouldn't be a match and lower it if you think two things should be a
+  match
+
+## Caveats:
+- This measure is not perfect; for instance, these companies probably will not
+  be identified as the same (although this doesn't appear to happen often in
+  H1B data):
+    - ACME GROUP / SPECIAL DIVISION X
+    - ACME GROUP / REAL ESTATE
+    - ACME GROUP / AGRICULTURE
+
+## Alternatives:
+- Attempted to use this
+  [approach](https://www.analyticsinsight.net/company-names-standardization-using-a-fuzzy-nlp-approach/),
+  but found that using a similarity matrix and affinity propagation doesn't
+  work, except for very small datasets (i.e. H1B data with ~51,000 rows crashes
+  a pretty decent computer); their algorithm runs in space and time of O(N^2),
+  while the one implemented here runs in O(N)
+
+
+# Labeler
+This tool helps label free form text. It takes a csv with raw text and a list
+of labels and uses user input to train a model periodically, which then
+predicts labels for unlabeled texts.
+
+## Help
+- `labeler -h`
+
+## Use
+- `labeler start <csv> <text-column-name> <label-1> <label-2>...[OPTIONS]`
+- `labeler resume <checkpoint-pkl-path>`
+
+## Examples
+- `cd <package-dir>/labeler/examples # change into examples directory`
+- `labeler start examples/contraband.csv contraband alcohol drugs other weapons`
+  - runs labeler on `contraband.csv` with labels `alcohol`, `drugs`, `other`, and
+    `weapons`
+- `labeler start examples/contraband.csv contraband alcohol drugs other weapons -xor`
+  - runs labeler on `contraband.csv` with labels `alcohol`, `drugs`, `other`, and
+    `weapons`; however, this time, each record can only have 1 label, i.e. the
+    labels are mutually exclusive
+- follow the menu to label text or use the model to automatically label the
+  remaining texts, and then to save the labeled texts as a csv
+- this program also permits saving checkpoints, so labeling can be resumed at a
+  later point; this option can be accessed from the main menu
+
+
