@@ -1,0 +1,8 @@
+README.md
+setup.py
+tossip/Tossip.py
+tossip/__init__.py
+tossip.egg-info/PKG-INFO
+tossip.egg-info/SOURCES.txt
+tossip.egg-info/dependency_links.txt
+tossip.egg-info/top_level.txt
