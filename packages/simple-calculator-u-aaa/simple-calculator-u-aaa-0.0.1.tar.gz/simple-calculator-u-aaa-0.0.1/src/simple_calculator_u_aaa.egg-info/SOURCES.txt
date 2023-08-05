@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/simple_calculator_u_aaa.egg-info/PKG-INFO
+src/simple_calculator_u_aaa.egg-info/SOURCES.txt
+src/simple_calculator_u_aaa.egg-info/dependency_links.txt
+src/simple_calculator_u_aaa.egg-info/top_level.txt
