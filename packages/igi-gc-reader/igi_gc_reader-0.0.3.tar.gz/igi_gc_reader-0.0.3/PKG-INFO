@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: igi_gc_reader
+Version: 0.0.3
+Summary: GC lab file (Excel) -> Excel table formatted sheet.
+Home-page: https://github.com/IGILtd/data_transformation_scripts/tree/master/import_file_formats/gc
+Author: IGI
+Author-email: chris.prosser@igiltd.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Database
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Pre-processors
+Classifier: Topic :: Text Processing
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: licence.txt
+
+Create files ready for p:IGI+/Transform import from print formatted GC lab files.
+
