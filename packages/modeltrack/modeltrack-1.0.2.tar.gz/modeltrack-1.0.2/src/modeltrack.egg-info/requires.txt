@@ -1,0 +1,12 @@
+torch==1.9.0
+matplotlib==3.4.2
+easydict==1.9
+fpdf==1.7.2
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
