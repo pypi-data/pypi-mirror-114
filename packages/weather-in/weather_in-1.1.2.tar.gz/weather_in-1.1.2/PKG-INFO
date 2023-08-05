@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: weather_in
+Version: 1.1.2
+Summary: OpenWeather CLI script
+Home-page: https://github.com/fleetyeets/weather.in
+Author: Travis Pawlikowski
+Author-email: tnp123@protonmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/fleetyeets/weather.in/issues
+Project-URL: Source, https://github.com/fleetyeets/weather.in
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# weather_in
+
+## What is weather_in?
+
+weather_in is a simple script for terminal use.  It utilizes the <a href = "https://openweathermap.org/current">Open Weather Map API</a> to provide quick, relevant and basic information regarding a specified locale's weather.
+
+## System Requirements
+
+* python3
+
+## Installation
+
+```pip install weather_in```
+
+## Usage
+
+To use weather_in:
+
+```weather_in City State Country (country is optional; defaults to USA)```
+
+(example: Pasadena California USA)
+
+*note: State should not be abbreviated*
+
