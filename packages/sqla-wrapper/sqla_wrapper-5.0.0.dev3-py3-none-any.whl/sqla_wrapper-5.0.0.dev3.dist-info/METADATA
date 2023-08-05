@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: sqla-wrapper
+Version: 5.0.0.dev3
+Summary: A framework-independent modern wrapper for SQLAlchemy 2 & Alembic.
+Home-page: https://github.com/jpsca/sqla-wrapper
+Author: Juan-Pablo Scaletti
+Author-email: juanpablo@jpscaletti.com
+License: MIT
+Project-URL: Issue tracker, https://github.com/jpsca/sqla-wrapper/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Requires-Python: <4.0,>=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: sqlalchemy (>=1.4)
+Requires-Dist: alembic (>=1.6)
+Provides-Extra: click
+Requires-Dist: click ; extra == 'click'
+Provides-Extra: dev
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: sqlalchemy[mypy] ; extra == 'dev'
+Provides-Extra: pyceo
+Requires-Dist: pyceo (>=4.0) ; extra == 'pyceo'
+Provides-Extra: test
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: psycopg2-binary ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: click ; extra == 'test'
+Requires-Dist: pyceo (>=4.0) ; extra == 'test'
+
+# sqla-wrapper
+
+A friendly wrapper for [modern SQLAlchemy](https://docs.sqlalchemy.org/en/14/glossary.html#term-2.0-style) (v1.4 or later) and Alembic.
+
+Includes:
+
+- A `SQLAlchemy` wrapper, that does all the SQLAlchemy setup and gives you:
+    - A preconfigured scoped session.
+    - A model baseclass including some helper methods.
+    - A helper for performant testing with a real database
+
+- An `Alembic` wrapper that loads the config from your application instead of an ini file.
+
+- A `sa` helper module, that imports all the functions and classes from `sqlalchemy`and `sqlalchemy.orm`,
+so you don't need to repeat those imports everywhere.
+
+## Resources
+
+- [Documentation](https://sqla-wrapper.jpscaletti.com)
+- [PyPI](https://pypi.org/project/sqla-wrapper/)
+- [Change log](https://github.com/jpsca/sqla-wrapper/releases)
+
+
