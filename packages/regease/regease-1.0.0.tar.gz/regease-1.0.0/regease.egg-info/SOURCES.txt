@@ -1,0 +1,8 @@
+README.md
+setup.py
+REGEASE/__init__.py
+REGEASE/regease.py
+regease.egg-info/PKG-INFO
+regease.egg-info/SOURCES.txt
+regease.egg-info/dependency_links.txt
+regease.egg-info/top_level.txt
