@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: nose2-reportportal-agent
+Version: 0.0.1
+Summary: Report Portal integration with nose2
+Home-page: https://github.com/diegorubin/nose2-reportportal-agent
+Author: Diego Rubin
+Author-email: contact@diegorubin.dev
+License: GPL2
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha

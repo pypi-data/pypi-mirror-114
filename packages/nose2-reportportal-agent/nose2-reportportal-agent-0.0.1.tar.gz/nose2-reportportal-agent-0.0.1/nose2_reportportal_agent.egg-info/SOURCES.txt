@@ -1,0 +1,8 @@
+README.md
+setup.py
+nose2_reportportal_agent.egg-info/PKG-INFO
+nose2_reportportal_agent.egg-info/SOURCES.txt
+nose2_reportportal_agent.egg-info/dependency_links.txt
+nose2_reportportal_agent.egg-info/requires.txt
+nose2_reportportal_agent.egg-info/top_level.txt
+nose2_rp_agent/__init__.py
