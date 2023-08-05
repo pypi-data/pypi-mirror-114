@@ -1,0 +1,9 @@
+README.md
+setup.py
+multiselect/__init__.py
+multiselect/multiselect_core.py
+multiselect/multiselect_example.py
+multiselect.egg-info/PKG-INFO
+multiselect.egg-info/SOURCES.txt
+multiselect.egg-info/dependency_links.txt
+multiselect.egg-info/top_level.txt
