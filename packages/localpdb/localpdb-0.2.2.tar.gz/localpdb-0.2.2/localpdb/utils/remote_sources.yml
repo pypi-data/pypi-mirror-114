@@ -1,0 +1,35 @@
+---
+mirrors:
+  rcsb:
+    url: "ftp.rcsb.org/pub/pdb"
+    download_proto: "https"
+    rsync_url: "rsync.rcsb.org::ftp_data/structures/divided"
+    rsync_opts: "--port=33444"
+
+  pdbe:
+    url: "ftp.ebi.ac.uk/pub/databases/pdb"
+    download_proto: "http"
+    rsync_url: "ftp.ebi.ac.uk::pub/databases/pdb/data/structures/divided"
+    rsync_opts: ""
+
+  pdbj:
+    url: "ftp.pdbj.org/pub/pdb"
+    download_proto: "http"
+    rsync_url: "ftp.pdbj.org::ftp_data/structures/divided"
+    rsync_opts: ""
+
+ftp_locs:
+  entries_type: "derived_data/pdb_entry_type.txt"
+  entries: "derived_data/index/entries.idx"
+  bundles: "compatible/pdb_bundle/pdb_bundle_index.txt"
+  resolution: "derived_data/index/resolu.idx"
+  seqres: "derived_data/pdb_seqres.txt.gz"
+  added: "data/status/"
+  modified: "data/status/"
+  obsolete: "data/status"
+
+api:
+  url: "https://search.rcsb.org/rcsbsearch"
+  version: "v1"
+  query: "query?"
+  return_type: "entry"
