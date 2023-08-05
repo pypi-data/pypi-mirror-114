@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "beastiary"
+version = "0.2.0"
+description = ""
+authors = ["Wytamma Wirth <wytamma.wirth@me.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+beastiary = "beastiary.main:app"
+
+[tool.poetry.dependencies]
+python = ">=3.6.2,<4.0"
+typer = {extras = ["all"], version = "^0.3.2"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+mkdocs-material = "^7.2.0"
+black = "^21.7b0"
+pytest-cov = "^2.12.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
