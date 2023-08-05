@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+irfanpdf.egg-info/PKG-INFO
+irfanpdf.egg-info/SOURCES.txt
+irfanpdf.egg-info/dependency_links.txt
+irfanpdf.egg-info/top_level.txt
