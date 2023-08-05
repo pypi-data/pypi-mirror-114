@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: mhealth-datasets-upload
+Version: 0.7
+Summary: A pacakge to scan an external drive for files and upload to the server.
+Home-page: https://bitbucket.org/mhealthresearchgroup/upload-data.git
+Author: binodtc
+Author-email: binod.thapachhetry@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: paramiko (==2.7.2)
+Requires-Dist: pywin32 (==228)
+
+# mhealth_datasets_upload package
+
+
+
+
+
