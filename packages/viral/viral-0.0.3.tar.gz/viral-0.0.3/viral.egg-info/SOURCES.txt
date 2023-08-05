@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+viral/__init__.py
+viral/base.py
+viral/get_viral_data.py
+viral.egg-info/PKG-INFO
+viral.egg-info/SOURCES.txt
+viral.egg-info/dependency_links.txt
+viral.egg-info/not-zip-safe
+viral.egg-info/requires.txt
+viral.egg-info/top_level.txt
