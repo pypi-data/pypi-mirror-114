@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: odc-typer-test
+Version: 0.1.0
+Summary: This is my package that tests out Typer.
+Author: one-data-cookie
+Author-email: kolacek.m@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: typer (>=0.3.2,<0.4.0)
+Description-Content-Type: text/markdown
+
+# Typer Test
+
+I'm testing [Typer](/typer.tiangolo.com) here. What do you think?
+
