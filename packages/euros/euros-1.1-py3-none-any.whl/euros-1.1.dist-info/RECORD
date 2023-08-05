@@ -1,0 +1,12 @@
+euros/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+euros/en.py,sha256=Hv3EngcUEczvQMK__zLCVghwFIg6pWDVqbewT2L3rUQ,3528
+euros/fr.py,sha256=XJwIrQXj8yrbwjS2VFqP4U0iCwtom2cFoqpo1dDJIbQ,4265
+euros/it.py,sha256=ODWViHmkpAsCXDXBtw6F23fQCGDVydPA6uiMP34ZUVA,4087
+euros/test_en.py,sha256=ZJgEPjz3TFV0LrLzr5qw8qVAD2yEQd3I_jS32UCfmwE,567
+euros/test_fr.py,sha256=4kIyMJxXbi_pRuxjrCjq_ZnF1IeWRLOynS3rixETuZA,615
+euros/test_it.py,sha256=v74ny_Kh-kyV-v5FK4WRjSxo97GE1bNWt809GOFYlSc,554
+euros-1.1.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+euros-1.1.dist-info/METADATA,sha256=Ph2N6JWEUkEWj9fmBpHVSZIkF6C9C4bRirN8zyGB00o,1109
+euros-1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+euros-1.1.dist-info/top_level.txt,sha256=jHqgDPUpKIrQiffJIHPyK12z89jrgaX9Q3nrmM-3GeI,6
+euros-1.1.dist-info/RECORD,,
