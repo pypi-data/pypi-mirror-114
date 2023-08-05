@@ -1,0 +1,3 @@
+[console_scripts]
+autogenfiles = autogenfiles.autogenfiles:AutoGenFiles
+

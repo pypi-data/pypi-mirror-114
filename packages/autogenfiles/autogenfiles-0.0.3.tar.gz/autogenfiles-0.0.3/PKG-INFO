@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: autogenfiles
+Version: 0.0.3
+Summary: Auto generate files based on a template
+Home-page: http://github.com/jtemporal/autogenfiles
+Author: Jessica Temporal
+Author-email: hello@jtemporal.com
+License: MIT
+Keywords: auto generate files,jinja,templates,cli
+Platform: UNKNOWN
+Requires-Python: >=3.8.2
+License-File: LICENSE
+
+# AutoGenFiles
+
+Based on a predefined templating structure create new files
+
+## Examples
+
+Check [AutoGenFiles Playground](https://github.com/jtemporal/autogenfiles_playground).
+
+## TODO
+
+There are a few TODO marked on the code but here's a list of most general ones
+
+- [x] guarantee file structure from templates folder
+- [ ] test all
+- [ ] make it into an installable cli
+- [ ] document the variables.yaml structure
+- [ ] document how to contribute
+- [x] document example with the project in case
+- [x] move all logic into an module structure
+
+
