@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.py
+caddy/.__init__.py.un~
+caddy/LICENSE
+caddy/README.md
+caddy/__init__.py
+caddy/__init__.py~
+caddy/caddy.exe
+caddy_runtime_windows.egg-info/PKG-INFO
+caddy_runtime_windows.egg-info/SOURCES.txt
+caddy_runtime_windows.egg-info/dependency_links.txt
+caddy_runtime_windows.egg-info/not-zip-safe
+caddy_runtime_windows.egg-info/top_level.txt
