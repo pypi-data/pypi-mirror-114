@@ -1,0 +1,11 @@
+djangogoboot/__init__.py,sha256=-bBNFYOq80A2Egtpo5V5zWJtYOxQfRZFQ_feve5lkFU,23
+djangogoboot/main.py,sha256=-CA-iSE0JC1VlP1Us_wPdVLJTxRbJl5MTclG1AllGoM,5655
+djangogoboot/repo.py,sha256=rXeheGY6bxcTHDAG3rYoMiS_zKSTQWqLaooT_QzgFu0,6632
+djangogoboot/settings.py,sha256=Lxmoz5LSLhdq6DAHBq4t13SDbmFXMktK7s9jCfu0c5o,159
+djangogoboot/ssh.py,sha256=uylJlqmLxwz8Zs2i6ULhrNTF-2EsgU51fquVdHxKxiU,4323
+djangogoboot/utils.py,sha256=EY6retusWb1hZnNt2YYitefIgy-IBw72GGYIejIko7I,672
+djangogoboot-1.0.1.dist-info/entry_points.txt,sha256=iTUNFg-sePppXlzGrDoakaaA8nxhdIlX4Pp98HmFZ8E,50
+djangogoboot-1.0.1.dist-info/LICENSE,sha256=MHFYzcYkrRVe4tvdjd5sooAWTVzLks8JwiC_WVwssxE,1068
+djangogoboot-1.0.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+djangogoboot-1.0.1.dist-info/METADATA,sha256=93suyI1hwIg9M04SuhIA0rmCZJn1o7gKJi1hPspR5JY,8234
+djangogoboot-1.0.1.dist-info/RECORD,,
