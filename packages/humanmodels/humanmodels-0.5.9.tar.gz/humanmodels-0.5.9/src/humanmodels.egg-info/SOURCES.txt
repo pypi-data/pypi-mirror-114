@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+src/humanmodels/HumanClassifier.py
+src/humanmodels/HumanRegressor.py
+src/humanmodels/__init__.py
+src/humanmodels.egg-info/PKG-INFO
+src/humanmodels.egg-info/SOURCES.txt
+src/humanmodels.egg-info/dependency_links.txt
+src/humanmodels.egg-info/requires.txt
+src/humanmodels.egg-info/top_level.txt
