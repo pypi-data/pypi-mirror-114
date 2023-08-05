@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+msorm/__init__.py
+msorm/__main__.py
+msorm/exceptions.py
+msorm/extras.py
+msorm/models.py
+msorm/mssql_fields.py
+msorm/settings.py
+msorm.egg-info/PKG-INFO
+msorm.egg-info/SOURCES.txt
+msorm.egg-info/dependency_links.txt
+msorm.egg-info/requires.txt
+msorm.egg-info/top_level.txt
