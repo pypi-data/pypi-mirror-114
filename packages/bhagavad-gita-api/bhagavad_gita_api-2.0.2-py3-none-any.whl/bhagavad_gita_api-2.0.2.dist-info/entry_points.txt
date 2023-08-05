@@ -1,0 +1,4 @@
+[console_scripts]
+bhagavad-gita-api=bhagavad_gita_api.main:cli
+gita-api=bhagavad_gita_api.main:cli
+
