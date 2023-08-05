@@ -1,0 +1,8 @@
+cbor_json/__init__.py,sha256=dz6WGngIB7X9v6TKEU8yuDsY0S5tYUl3pJJpmp4VMoY,467
+cbor_json/_cbor_json_codecs.py,sha256=xRsShpp0ugIZ44vQdwvYLjc14-khonAvSH2qSA0U1Sc,16577
+cbor_json/_custom_objects_base.py,sha256=6atL3l_uEmT-G1D5KFBDCjVPWg_AtMGzmBPCLTonxhw,3128
+cbor_json/custom_objects.py,sha256=3XpKX3bvyHII7d1YqyM4CHX0ciCfYtcuK816e6JA-lA,6462
+cbor_json-0.0.3.dist-info/LICENSE.txt,sha256=YhBWvz1JlKTbniTUE2sXpyRsuXPOSQvEN3YwJBk0BKs,1106
+cbor_json-0.0.3.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+cbor_json-0.0.3.dist-info/METADATA,sha256=y5HO-zQapq8VpuqDIRwwQJDNp5ezt2rumsczsRyTHnU,9972
+cbor_json-0.0.3.dist-info/RECORD,,
