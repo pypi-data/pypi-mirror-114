@@ -1,0 +1,11 @@
+.idea/*
+build/*
+.weboa
+log.txt
+.DS_Store
+nohup.out
+
+##### Composer
+composer.phar
+/vendor/
+composer.lock
