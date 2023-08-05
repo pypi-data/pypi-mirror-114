@@ -1,0 +1,4 @@
+#! python
+
+from pps_tools import main
+main.main()
