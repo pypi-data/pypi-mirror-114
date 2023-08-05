@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: torchdyn
+Version: 1.0.0
+Summary: Your PyTorch package for neural differential equations
+License: Apache License, Version 2.0
+Author: Michael Poli
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: ipykernel
+Requires-Dist: ipywidgets
+Requires-Dist: matplotlib
+Requires-Dist: poethepoet (>=0.10.0,<0.11.0)
+Requires-Dist: pytorch-lightning
+Requires-Dist: scipy
+Requires-Dist: sklearn
+Requires-Dist: torch (>=1.8.1,<2.0.0)
+Requires-Dist: torchvision
