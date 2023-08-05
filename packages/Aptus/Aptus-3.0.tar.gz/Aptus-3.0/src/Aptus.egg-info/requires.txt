@@ -1,0 +1,12 @@
+Pillow
+numpy
+
+[gui]
+wxPython
+
+[web]
+aiofiles
+fastapi
+jinja2
+uvicorn
+cachetools
