@@ -1,0 +1,13 @@
+pybitrix24/__init__.py,sha256=ZLyuaGaSnXLESXK_sOq9SgwUKtxSgy7deQTac771PDQ,106
+pybitrix24/bitrix24.py,sha256=wze9Zz241CNlJJS_lQDEU0NjyTPcj5mG_3HFdRYO_Qw,12438
+pybitrix24/exceptions.py,sha256=M00OkXqXcE9lrH4Xt97R1SkDNwkALntLGtMzvcX0SE4,247
+pybitrix24/requester.py,sha256=gAidXYEEwJC4VETqLkBuebvnGg3e0V5sDlzAWB_iTnM,4237
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/automation.py,sha256=h1it_lkSHXZoZ3Fx5V0JLIR80xqTiq8vJkEMmA0J7PE,3902
+tests/test_e2e.py,sha256=4N2DD2U6MlQibErnclDe9vPcAvYCWhN2OZbAKaj63_Y,4857
+tests/test_unit.py,sha256=gHDepLPMpoijpCNhCsWM0Qd8jB-K1rJ2YtQeWoGwCUY,1722
+pybitrix24-1.0.1.dist-info/LICENSE.txt,sha256=hGmkExErincvSJ6fclOlAKNbdfIMM8zOpQ_HZn5NWDs,1092
+pybitrix24-1.0.1.dist-info/METADATA,sha256=PAE6SK7MRoQWaJqg8S2J_ovsBc0tM0E1eHwexyEDdec,6184
+pybitrix24-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pybitrix24-1.0.1.dist-info/top_level.txt,sha256=h0tGEOyeeXyNDgE6RDQtEh0pTppPLVr-Zp-ufUeHf-I,17
+pybitrix24-1.0.1.dist-info/RECORD,,
