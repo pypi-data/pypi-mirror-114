@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: metta-profiler
+Version: 0.1.1
+Summary: Profiler for stream of messages
+License: MIT
+Author: Ryan Brigden
+Author-email: rpb@hey.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
