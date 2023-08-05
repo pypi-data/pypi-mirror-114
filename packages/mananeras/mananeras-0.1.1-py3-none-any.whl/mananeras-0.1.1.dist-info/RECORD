@@ -1,0 +1,11 @@
+mananeras/__init__.py,sha256=ImsiwNYlczCpy8ThrNxaAZw_0cxAr_yvlNXZTI5AO5M,131
+mananeras/__main__.py,sha256=WgRAY175eS7yOD6moyVWziBW2dGAEjzi-WHR0TLsBnM,935
+mananeras/dataset/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mananeras/dataset/download_articles.py,sha256=FmCekcype4Z9mTCgepMgxzFp9oeLd_VHsGdhK1mC8S0,376
+mananeras/dataset/download_urls.py,sha256=LEnxk5Xp00fJAZybEikP6IRqzYIe9ngdYopD9C0Pr2E,2417
+mananeras/dataset/extract_dialogs.py,sha256=VMn9HCKGx3aBbKz7-3xzrfY5H5ygf9AQLaFRL8EB8NY,2844
+mananeras/entities.py,sha256=IBFRoMI5lPDrXoplKCfIbMTphWjbPKKZh3S2GViHBK8,454
+mananeras/reader.py,sha256=aFLdXo-H5S69g-03sC24yagxhjZc1e2lJLu45EApCC0,1446
+mananeras-0.1.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+mananeras-0.1.1.dist-info/METADATA,sha256=lrQp81vcmOaw9NUnzP5RiWlMrTXIkUZEKPWpVIW0JCs,757
+mananeras-0.1.1.dist-info/RECORD,,
