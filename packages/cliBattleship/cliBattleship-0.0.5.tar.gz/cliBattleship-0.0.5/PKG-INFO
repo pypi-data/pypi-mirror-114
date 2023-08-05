@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: cliBattleship
+Version: 0.0.5
+Summary: A basic CLI program to play battleship against the computer
+Home-page: https://github.com/tvanpat/cli-battleship
+Author: Tyson Van Patten
+Author-email: tyson@descriptdata.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
