@@ -1,0 +1,6 @@
+attrs
+xlsxwriter
+
+[testing]
+pytest
+pytest-mock
