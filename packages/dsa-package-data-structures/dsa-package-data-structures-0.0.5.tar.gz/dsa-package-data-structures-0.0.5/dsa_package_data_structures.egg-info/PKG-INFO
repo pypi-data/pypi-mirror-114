@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: dsa-package-data-structures
+Version: 0.0.5
+Summary: Data Structures [for Python]
+Home-page: https://gitlab.com/dsa-package/data-structures/python/-/wikis/home
+Author: VivinMeth
+Author-email: vivinmeth@gmail.com
+License: BSD-3-Clause
+Project-URL: Documentation, https://gitlab.com/dsa-package/data-structures/python/-/wikis
+Project-URL: Source, https://github.com/dsa-package/data-structures-python
+Project-URL: Tracker, https://gitlab.com/dsa-package/data-structures/python/-/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Data Structures [for Python]
+
