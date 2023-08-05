@@ -1,0 +1,9 @@
+gapandas/__init__.py,sha256=cRiKqESOR6awg42WE0DhA0Gf0e9cS9ZUBx66Hi0fmac,284
+gapandas/connect.py,sha256=Xrs9UKh1O2vul6N0PwWINBzMxj6xVl0nj8TRi0YCLCI,1658
+gapandas/query.py,sha256=bxzguNJj9uGAczETGh-9qq6EifWwn2UdZ_u4YQYEBlo,23890
+gapandas/reports.py,sha256=TwMZsJ7NVF6zhtBl8aGVCBMbkg81Q_SWCV-isQlOduk,9230
+gapandas-0.23.dist-info/LICENSE.txt,sha256=S1pJL407BwTTXzZK0BQPNM7ZZs57uj1pTSfVZ8Whx30,1061
+gapandas-0.23.dist-info/METADATA,sha256=_iDwKuuKFo0e3Oi73rj__Kjk-QlhhTByeina19IbwaA,4094
+gapandas-0.23.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gapandas-0.23.dist-info/top_level.txt,sha256=TIQ8hQAyA1uJjpNJJ-FJkHEFabjIFsfrgXVsVmlYgao,9
+gapandas-0.23.dist-info/RECORD,,
