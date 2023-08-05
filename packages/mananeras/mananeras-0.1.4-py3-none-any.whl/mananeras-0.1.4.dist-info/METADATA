@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: mananeras
+Version: 0.1.4
+Summary: Las conferencias mananeras del presidente de México
+License: MIT
+Author: Antonio Feregrino
+Author-email: antonio.feregrino@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: beautifulsoup4 (>=4.9.3,<5.0.0)
+Requires-Dist: click (>=7,<8)
+Requires-Dist: dateparser (>=1.0.0,<2.0.0)
+Requires-Dist: html5lib (>=1.1,<2.0)
+Requires-Dist: kaggle (>=1.5.12,<2.0.0)
+Requires-Dist: lxml (>=4.6.3,<5.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
