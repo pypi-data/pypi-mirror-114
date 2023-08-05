@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: eq-utils
+Version: 0.0.1
+Summary: A Django app to help you make models easier
+Home-page: UNKNOWN
+Author: Equality
+Author-email: germanchiocchia@gmail.com
+License: MIT
+Description: =====
+        eq-utils version 0.0.1
+        =====
+        
+        'eq-utils' is a Django reusable app to help you make models easier.
+        
+        
+        Quick start
+        -----------
+        1. pip install eq-utils==<version>
+        2. Add "eq_utils" to your INSTALLED_APPS setting like this::
+        
+            INSTALLED_APPS = [
+                'eq_utils',
+            ]
+        
+        3. Import the module like this:
+        
+            from eq_utils.base_model import ModelAddressBase (or whatever Base you need)
+        
+        And that's all.
+        
+        Usage
+        -----
+        1. Inherit the ModelAddressBase in the model.
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

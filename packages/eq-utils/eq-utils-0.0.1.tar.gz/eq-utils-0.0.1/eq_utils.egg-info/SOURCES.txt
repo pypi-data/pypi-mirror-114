@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+eq_utils/__init__.py
+eq_utils/base_model.py
+eq_utils.egg-info/PKG-INFO
+eq_utils.egg-info/SOURCES.txt
+eq_utils.egg-info/dependency_links.txt
+eq_utils.egg-info/requires.txt
+eq_utils.egg-info/top_level.txt
