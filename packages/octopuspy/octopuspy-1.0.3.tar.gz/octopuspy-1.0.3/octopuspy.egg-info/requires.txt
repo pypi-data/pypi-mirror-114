@@ -1,0 +1,8 @@
+coverage==4.3.4
+cycler
+kiwisolver
+matplotlib
+numpy
+pyparsing
+python-dateutil
+six
