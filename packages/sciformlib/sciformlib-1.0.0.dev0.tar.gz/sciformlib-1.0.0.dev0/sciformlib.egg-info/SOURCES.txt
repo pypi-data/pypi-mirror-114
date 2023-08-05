@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+sciformlib/__init__.py
+sciformlib/__main__.py
+sciformlib/physicform.py
+sciformlib.egg-info/PKG-INFO
+sciformlib.egg-info/SOURCES.txt
+sciformlib.egg-info/dependency_links.txt
+sciformlib.egg-info/entry_points.txt
+sciformlib.egg-info/requires.txt
+sciformlib.egg-info/top_level.txt
