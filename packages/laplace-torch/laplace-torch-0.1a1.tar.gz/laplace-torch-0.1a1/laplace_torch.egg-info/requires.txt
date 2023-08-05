@@ -1,0 +1,15 @@
+torch
+torchvision
+torchaudio
+backpack-for-pytorch
+asdfghjkl
+
+[docs]
+matplotlib
+pdoc3
+
+[tests]
+pytest
+pytest-cov
+coveralls
+scipy
