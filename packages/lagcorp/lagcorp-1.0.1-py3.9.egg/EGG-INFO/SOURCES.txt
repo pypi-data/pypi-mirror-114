@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+lagcorp/__init__.py
+lagcorp/__main__.py
+lagcorp/camper.py
+lagcorp.egg-info/PKG-INFO
+lagcorp.egg-info/SOURCES.txt
+lagcorp.egg-info/dependency_links.txt
+lagcorp.egg-info/entry_points.txt
+lagcorp.egg-info/top_level.txt
