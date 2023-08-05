@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.py
+caddy_runtime/__init__.py
+caddy_runtime.egg-info/PKG-INFO
+caddy_runtime.egg-info/SOURCES.txt
+caddy_runtime.egg-info/dependency_links.txt
+caddy_runtime.egg-info/not-zip-safe
+caddy_runtime.egg-info/top_level.txt
