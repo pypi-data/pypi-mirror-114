@@ -1,0 +1,9 @@
+msgpack-stubs/__init__.pyi,sha256=1C7-Y_h6biFhe5lM60U51ylSrmT3zQqm9to9DddHmj4,2466
+msgpack-stubs/_version.pyi,sha256=bxpTcvnrc55gJyigv44SIPbCAimQkCq18z3WMntj43A,56
+msgpack-stubs/exceptions.pyi,sha256=G3nhlTPIApNzyk99iRQso6QKDxwwuPKs-O_ry_xDJfc,460
+msgpack-stubs/ext.pyi,sha256=cBDqck5o3EQM6HqaKrPOVQZosa02wo-fIWQ_eeUsl8E,849
+msgpack-stubs/fallback.pyi,sha256=pZSK15g_et_EdS-TPw3wipHkiMNZSx01fIs-q9ruPNo,2760
+msgpack_types-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+msgpack_types-0.2.0.dist-info/WHEEL,sha256=fRZ0jyDPltM3MgdRgnIh981pt0qqbfzrEGV0U1fUdZo,85
+msgpack_types-0.2.0.dist-info/METADATA,sha256=ywg4HRKKuPwU4RuqjIIL99ey4bXyaf_GGiScgJFhw5Q,1018
+msgpack_types-0.2.0.dist-info/RECORD,,
