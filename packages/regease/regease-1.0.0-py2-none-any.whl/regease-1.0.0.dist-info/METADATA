@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: regease
+Version: 1.0.0
+Summary: Simplify the Regular Expression
+Home-page: UNKNOWN
+Author: Jaskamal Singla
+Author-email: <jaskamal252007@gmail.com>
+License: UNKNOWN
+Keywords: python,regex,regular expressions,validation,password,username,email
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+# Information
+
+<mark>**regease**</mark> is a simple **Python** module to simplify the so-called regular expressions. It includes validation of complex _passwords_ , simple and common  _usernames_ and the _Email Addressess_
+
+---
+
+>It will make your life easier....
+
+To import the module:
+
+```python
+
+import regease
+
+```
+
+# OR
+
+```python
+from regease import emailVd, usernameVd, passwordVd
+
+```
+
+
+
