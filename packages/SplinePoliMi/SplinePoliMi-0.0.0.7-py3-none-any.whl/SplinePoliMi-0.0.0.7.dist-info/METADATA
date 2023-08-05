@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: SplinePoliMi
+Version: 0.0.0.7
+Summary: Spline generation
+Home-page: https://github.com/edoardoramalli/Spline
+Author: Edoardo Ramalli, Timoteo Dinelli
+Author-email: edoardo.ramalli@polimi.it
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# Spline
+
+Questo è una repo per le spline
+
+
