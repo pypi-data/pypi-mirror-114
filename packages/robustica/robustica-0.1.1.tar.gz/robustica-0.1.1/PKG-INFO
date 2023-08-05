@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: robustica
+Version: 0.1.1
+Summary: Fully cumstomizable robust Independent Components Analysis (ICA)
+Home-page: https://github.com/CRG-CNAG/robustica
+Author: Miquel Anglada Girotto
+Author-email: miquel.anglada@crg.eu
+License: UNKNOWN
+Project-URL: Issues, https://github.com/CRG-CNAG/robustica/issues
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
