@@ -1,0 +1,3 @@
+[console_scripts]
+aostats = src.__main__:run
+
