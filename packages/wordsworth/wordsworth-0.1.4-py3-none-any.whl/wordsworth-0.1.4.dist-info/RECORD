@@ -1,0 +1,11 @@
+gen_cw/__init__.py,sha256=h_rRrTuB-N2xfOB-lV5QO8ImGHgrDiCFDGlkGy8D3C8,4546
+gen_cw/abbrevs.dict,sha256=DuYdRUuXslpgcWt7e6D8EMFrwrjPAMjt0UMrSzNkPMQ,315
+gen_cw/combination.dict,sha256=su5yYFMKtkCDqEYKbCz0Ux-WLxyvNyPSm-aStdTguzQ,243
+gen_cw/connectives.dict,sha256=LA9YcKnXWG_T-qixAHCUhtVSF9e6lnQsiClHAbra2VQ,747
+gen_cw/names.dict,sha256=NGIvHZ9N0pW3HZxr6V-IZ9JmB4IcC1DRUiuIjmCYcWc,371
+gen_cw/words.dict,sha256=r3P07Wzv8zQ5Nk8zqFCd0jbhQ-q8wlbBmXIR8Iy5v_M,733
+wordsworth-0.1.4.dist-info/METADATA,sha256=o82olHR7ASMk3E5vep65M4dDCcmVG1yNp0hAtF3Hc3o,3279
+wordsworth-0.1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wordsworth-0.1.4.dist-info/entry_points.txt,sha256=F5YVm_2Lo1Lw0qNg8jedGg00h5ngxhUc5Bzz1K0Mv98,44
+wordsworth-0.1.4.dist-info/top_level.txt,sha256=kuLFgMdmtU5xioLQd887t1Qd6fUbSRs4RY5lwA1NAJQ,7
+wordsworth-0.1.4.dist-info/RECORD,,
