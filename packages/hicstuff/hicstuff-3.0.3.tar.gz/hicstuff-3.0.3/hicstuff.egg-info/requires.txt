@@ -1,0 +1,16 @@
+numpy
+scipy
+pandas
+matplotlib
+docopt
+biopython
+requests
+sklearn
+pysam
+pyfastx
+
+[cooler]
+cooler
+
+[mappy]
+mappy
