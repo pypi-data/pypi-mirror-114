@@ -1,0 +1,16 @@
+kwollect/__init__.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+kwollect/kwollector.py,sha256=_09sCCiFnSq7jU89GW4Bv34eUOw4uHgfaRi_BIr16NY,24803
+kwollect/kwollector_wattmetre.py,sha256=Lc0midoAkl8VepxcCvetR5nqUEJscEEt74sVmJJbO94,7041
+kwollect/grafana/kwollect_dashboard.json,sha256=FX0_NlgJfyesUQ0pIZkzkM1MKTYdOWyn155mukp9Lfw,10868
+kwollect/grafana/kwollect_dashboardsource.yaml,sha256=rlEp6h1mkpE4YxbyE4-l6UMdCD4ouZa1tJ59zdgP_cU,828
+kwollect/grafana/postgres_datasource.yaml,sha256=3YW6XugfoyKgfiIZMWJS49HIziIH2W3fxnPs1eE8i38,413
+kwollect/tools/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+kwollect/tools/grafana_dashboard.json,sha256=ExFHtuB9qRB-o2mZPZmVfVEv-DBV7CXaudeRuD-0Njo,4950
+kwollect/tools/kwollect_setup_db.py,sha256=gc_asNS18WdY3BCFXTORq6lEd179j0QoiXS7ZgGSYWs,13346
+kwollect/tools/kwollect_setup_db_oar.py,sha256=OUSdZmd8pY4ts8BmoPcX2bgTWnXbTqy1CqLE1kWSwi8,3321
+kwollect-1.0.0.dist-info/LICENSE.txt,sha256=W0dLRPFuFmTFayZZLV6Z_h5_USsWylDcqatdgRqjlcw,1102
+kwollect-1.0.0.dist-info/METADATA,sha256=f6CzU4kqTC5YEgdlR7syjVAYtG_sfujkAKnaY6eWWHo,15337
+kwollect-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+kwollect-1.0.0.dist-info/entry_points.txt,sha256=astRluIGhDR-OPX6Wu2VoyMNRlH9X3eKmcEcG1yYo8Y,239
+kwollect-1.0.0.dist-info/top_level.txt,sha256=B6St-RhCqoIUIsyx2eiPlSsrlWCPZplvFjIVqFYtPsY,9
+kwollect-1.0.0.dist-info/RECORD,,
