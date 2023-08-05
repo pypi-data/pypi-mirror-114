@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: speedrun.py
+Version: 0.0.2
+Summary: An asynchronous API wrapper for speedrun.com
+License: MIT
+Author: null2264
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp (>=3.6.2,<4.0.0)
+Description-Content-Type: text/markdown
+
+# speedrun.py
+
+An asynchronous API wrapper for speedrun.com
+
+## Coverage
+
+- [ ] Categories
+- [ ] Games
+- [ ] Guests
+- [ ] Leaderboards
+- [ ] Levels
+- [ ] Notifications
+- [ ] Platforms
+- [ ] Profile
+- [ ] Publishers
+- [ ] Regions
+- [ ] Runs
+- [ ] Series
+- [ ] Users
+- [ ] Variables
+
