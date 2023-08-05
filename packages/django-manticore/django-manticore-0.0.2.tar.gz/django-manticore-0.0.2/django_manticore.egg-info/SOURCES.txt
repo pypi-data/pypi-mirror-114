@@ -1,0 +1,9 @@
+README.md
+setup.py
+django_manticore.egg-info/PKG-INFO
+django_manticore.egg-info/SOURCES.txt
+django_manticore.egg-info/dependency_links.txt
+django_manticore.egg-info/requires.txt
+django_manticore.egg-info/top_level.txt
+manticore/__init__.py
+manticore/routers.py
