@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: debatewiki
+Version: 0.1.0a0
+Summary: A wiki that only allows valid arguments to make it into its pages.
+Home-page: https://github.com/OpenDebates/DebateWiki
+License: Apache-2.0
+Keywords: wiki,debate,fastapi,logic
+Author: Taven
+Author-email: taven@outlook.in
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Wiki
+Requires-Dist: Jinja2 (>=3.0.1,<4.0.0)
+Requires-Dist: schema (>=0.7.4,<0.8.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: uvloop (>=0.15.3,<0.16.0)
+Project-URL: Documentation, https://debatewiki.readthedocs.io
+Project-URL: Repository, https://github.com/OpenDebates/DebateWiki
+Description-Content-Type: text/markdown
+
+# Debate Wiki
+A wiki that only allows valid arguments to make it into its pages.
+

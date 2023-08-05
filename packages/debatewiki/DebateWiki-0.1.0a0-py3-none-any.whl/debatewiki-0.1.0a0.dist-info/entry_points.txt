@@ -1,0 +1,3 @@
+[console_scripts]
+DebateWiki=DebateWiki.__main__:main
+
