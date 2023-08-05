@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/py_basic_ses/__init__.py
+src/py_basic_ses/emailing.py
+src/py_basic_ses/entry.py
+src/py_basic_ses.egg-info/PKG-INFO
+src/py_basic_ses.egg-info/SOURCES.txt
+src/py_basic_ses.egg-info/dependency_links.txt
+src/py_basic_ses.egg-info/entry_points.txt
+src/py_basic_ses.egg-info/requires.txt
+src/py_basic_ses.egg-info/top_level.txt
