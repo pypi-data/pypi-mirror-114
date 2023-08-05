@@ -1,0 +1,6 @@
+[console_scripts]
+kedro-diff = kedro_diff.cli:cli
+
+[kedro.project_commands]
+kedro-diff = kedro_diff.cli:cli
+

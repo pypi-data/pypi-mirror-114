@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: kedro-diff
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/WaylonWalker/kedro-diff
+License: MIT
+Platform: any
+Requires-Dist: click
+Requires-Dist: kedro
+Requires-Dist: more-itertools
+Requires-Dist: rich
+Provides-Extra: dev
+Requires-Dist: black (==20.8b1) ; extra == 'dev'
+Requires-Dist: bump2version ; extra == 'dev'
+Requires-Dist: flake8 (==3.9.0) ; extra == 'dev'
+Requires-Dist: interrogate ; extra == 'dev'
+Requires-Dist: isort (==5.8.0) ; extra == 'dev'
+Requires-Dist: mypy (==0.812) ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: setuptools ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+
+UNKNOWN
+
+
