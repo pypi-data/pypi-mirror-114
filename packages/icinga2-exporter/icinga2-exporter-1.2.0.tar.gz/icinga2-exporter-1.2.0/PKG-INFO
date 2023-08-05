@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: icinga2-exporter
+Version: 1.2.0
+Summary: A Prometheus exporter for Icinga2
+Home-page: https://github.com/opsdis/icinga2-exporter
+Author: thenodon
+Author-email: anders@opsdis.com
+License: GPLv3
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: COPYING
+
+UNKNOWN
+
