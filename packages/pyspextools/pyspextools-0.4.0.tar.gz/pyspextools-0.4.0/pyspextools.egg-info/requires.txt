@@ -1,0 +1,5 @@
+future>=0.15
+numpy>=1.11
+astropy>=1.1
+sphinx-argparse>=0.1.15
+sphinx
