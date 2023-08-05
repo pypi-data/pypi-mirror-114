@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/module_inspector/__init__.py
+src/module_inspector/module_inspector.py
+src/module_inspector.egg-info/PKG-INFO
+src/module_inspector.egg-info/SOURCES.txt
+src/module_inspector.egg-info/dependency_links.txt
+src/module_inspector.egg-info/top_level.txt
