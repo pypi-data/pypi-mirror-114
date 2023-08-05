@@ -1,0 +1,172 @@
+Metadata-Version: 2.1
+Name: hed-utils
+Version: 4.6.0
+Summary: Personal utils collection for (mostly) automation projects.
+Home-page: https://github.com/Hrissimir/hed_utils
+Author: Hrissimir
+Author-email: hrisimir.dakov@gmail.com
+License: mit
+Project-URL: Documentation, https://pyscaffold.org/
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst; charset=UTF-8
+License-File: LICENSE.txt
+License-File: AUTHORS.rst
+Requires-Dist: psutil (<6.0.0,>=5.8.0)
+Requires-Dist: tabulate (<1.0.0,>=0.8.9)
+Requires-Dist: pytz (<2022.1,>=2021.1)
+Requires-Dist: tzlocal (<3.0,>=2.1)
+Requires-Dist: beautifulsoup4 (<5.0.0,>=4.9.3)
+Requires-Dist: pathvalidate (<2.5.0,>=2.4.1)
+Requires-Dist: requests (<2.30.1,>=2.26.0)
+Requires-Dist: lxml (<5.0.0,>=4.6.3)
+Requires-Dist: openpyxl (<4.0.0,>=3.0.7)
+Requires-Dist: oauth2client (<5.0.0,>=4.1.3)
+Requires-Dist: gspread (<4.0.0,>=3.7.0)
+Requires-Dist: selenium (>=3.141.0)
+Provides-Extra: testing
+Requires-Dist: coverage (>=5.0.3) ; extra == 'testing'
+Requires-Dist: flake8 (>=3.7.9) ; extra == 'testing'
+Requires-Dist: pylint (>=2.4.4) ; extra == 'testing'
+Requires-Dist: pytest (<7.0.0,>=6.2.4) ; extra == 'testing'
+Requires-Dist: pytest-cov (<3.0.0,>=2.12.1) ; extra == 'testing'
+Requires-Dist: pyscaffold (>=3.2.3) ; extra == 'testing'
+Requires-Dist: ddt (>=1.2.2) ; extra == 'testing'
+Requires-Dist: twine (>=3.1.1) ; extra == 'testing'
+Requires-Dist: webdriverdownloader (>=1.1.0.3) ; extra == 'testing'
+
+=========
+hed_utils
+=========
+
+
+    Personal utils collection for (mostly) automation projects.
+
+
+
+What's inside?
+==============
+
+
+    * The following CLI bindings:
+
+
+        * rkill (recursively kill processes)
+
+            usage: rkill [-h] [-pid PID] [-n NAME] [-p PATTERN] [-y]
+
+            Recursively kill matching processes and their children.
+
+            optional arguments:
+
+                -h, --help  show this help message and exit
+
+                -pid PID    target process id
+
+                -n NAME     target process name
+
+                -p PATTERN  target process name pattern
+
+                -y          confirm the kill
+
+
+        * csv-search (find matching rows in multiple csv files)
+
+            usage: csv-search [-h] [-v] [-d DIRECTORY] [-o TEXT_REPORT] [-xl EXCEL_REPORT] [-e ENCODING] -t TEXT [-i]
+
+            Find text in CSV files.
+
+            optional arguments:
+
+                -h, --help        show this help message and exit
+
+                -v                sets the log level to DEBUG
+
+                -d DIRECTORY      path to CSV files directory (default: CWD)
+
+                -o TEXT_REPORT    filepath for writing text report
+
+                -xl EXCEL_REPORT  filepath for writing excel report
+
+                -e ENCODING       encoding for opening the CSV files (default: utf-8)
+
+                -t TEXT           the text to find
+
+                -i                if passed search will ignore casing (default: False)
+
+
+    * The following packages:
+
+        * hed_utils (Package root)
+
+            * cli (Implementation of CLI bindings)
+
+            * selenium (Selenium wrappers & helpers)
+
+            * support (Tools for achieving common tasks)
+
+
+
+Installation:
+=============
+
+
+! Dependencies:
+---------------
+
+
+    * psutil
+
+    * tabulate
+
+    * pytz
+
+    * tzlocal
+
+    * bs4
+
+    * pathvalidate
+
+    * requests
+
+    * lxml
+
+    * openpyxl
+
+    * oauth2client
+
+    * gspread
+
+    * selenium
+
+
+
+Install from PyPI:
+------------------
+
+
+    * `pip install -U --force hed_utils`
+
+
+
+Note
+====
+
+
+This project has been set up using PyScaffold 3.2.3. For details and usage
+information on PyScaffold see https://pyscaffold.org/.
+
+
