@@ -1,0 +1,6 @@
+orion>=0.1.11
+numpy
+torch>=1.2.0
+
+[test]
+pytest>=3.0.0
