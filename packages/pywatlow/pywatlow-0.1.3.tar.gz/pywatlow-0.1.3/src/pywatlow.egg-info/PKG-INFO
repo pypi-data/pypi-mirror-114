@@ -1,0 +1,110 @@
+Metadata-Version: 1.2
+Name: pywatlow
+Version: 0.1.3
+Summary: A Python driver for the Watlow EZ-Zone PM3 temperature controller standard bus protocol
+Home-page: https://github.com/BrendanSweeny/pywatlow
+Author: Brendan Sweeny
+Author-email: brendan.sweeny@gmail.com
+License: LGPL-3.0-only
+Project-URL: Documentation, https://pywatlow.readthedocs.io/
+Project-URL: Changelog, https://pywatlow.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/BrendanSweeny/pywatlow/issues
+Description: ========
+        Overview
+        ========
+        
+        
+        
+        A Python 3 driver for the Watlow EZ-Zone PM temperature controller standard bus protocol.
+        This driver allows the user to access each of the parameters outlined in the Watlow
+        `user manual <https://www.watlow.com/-/media/documents/user-manuals/pm-pid-1.ashx>`_
+        with just a few functions.
+        
+        * Free software: GNU Lesser General Public License v3 (LGPLv3)
+        
+        Installation
+        ============
+        
+        ::
+        
+            pip install pywatlow
+        
+        You can also install the in-development version with::
+        
+            pip install https://github.com/BrendanSweeny/pywatlow/archive/master.zip
+        
+        
+        Documentation
+        =============
+        
+        
+        https://pywatlow.readthedocs.io/
+        
+        
+        Development
+        ===========
+        
+        To run the all tests run::
+        
+            tox
+        
+        Note, to combine the coverage data from all the tox environments run:
+        
+        .. list-table::
+            :widths: 10 90
+            :stub-columns: 1
+        
+            - - Windows
+              - ::
+        
+                    set PYTEST_ADDOPTS=--cov-append
+                    tox
+        
+            - - Other
+              - ::
+        
+                    PYTEST_ADDOPTS=--cov-append tox
+        
+        
+        Changelog
+        =========
+        
+        0.1.3 (2021-07-25)
+        ------------------
+        * Fixed support for multiple instances where the parameter data type is an integer
+        
+        0.1.2 (2021-01-13)
+        ------------------
+        * added support for multiple instances, like in the RM series controllers with multiple channels
+        
+        0.1.1 (2020-08-15)
+        ------------------
+        
+        * Initial PyPI release
+        * Various tox, badge, and metadata fixes
+        * Removed unused temperature unit conversion functions
+        * Updated Python version requirements
+        * Minor documentation clean up
+        
+        0.1.0 (2020-08-08)
+        ------------------
+        
+        * Added basic functionality
+        
+          * Reading/writing of Watlow parameters
+          * Request message generation
+          * Calculation of check bytes
+          * Response message parsing
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5
