@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/nopo/__init__.py
+src/nopo/el.py
+src/nopo/els.py
+src/nopo.egg-info/PKG-INFO
+src/nopo.egg-info/SOURCES.txt
+src/nopo.egg-info/dependency_links.txt
+src/nopo.egg-info/top_level.txt
