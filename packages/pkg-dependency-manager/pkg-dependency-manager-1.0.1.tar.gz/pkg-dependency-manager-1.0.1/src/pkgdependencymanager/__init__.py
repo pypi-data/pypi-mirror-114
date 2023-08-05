@@ -1,0 +1,1 @@
+from pkgdependencymanager.config import PackageConfig
