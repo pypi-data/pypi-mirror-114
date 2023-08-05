@@ -1,0 +1,15 @@
+jinja2
+
+[dev]
+ploomber
+twine
+flake8
+yapf
+pytest
+invoke
+ipython
+nox
+jedi==0.17.2
+
+[dev:python_version < "3.7"]
+importlib_resources
