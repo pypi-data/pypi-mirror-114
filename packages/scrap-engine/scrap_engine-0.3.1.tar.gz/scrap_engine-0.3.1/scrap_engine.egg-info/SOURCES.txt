@@ -1,0 +1,10 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+scrap_engine.py
+setup.py
+scrap_engine.egg-info/PKG-INFO
+scrap_engine.egg-info/SOURCES.txt
+scrap_engine.egg-info/dependency_links.txt
+scrap_engine.egg-info/top_level.txt
