@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: color_spray
+Version: 0.1.0
+Summary: Library that colorizes gray STEM imagess using deep convolutional neural networks.
+Home-page: https://github.com/fengwang/color_spray
+Author: Feng Wang
+Author-email: wang_feng@live.com
+License: BSD
+Keywords: color_spray
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
+Requires-Python: >=3.6.*
+Description-Content-Type: text/markdown
+
+# Color Spray
+
+![](https://github.com/fengwang/color_spray/raw/master/assets/demo.png)
+
+
+STEM images colorization using Deep Convolutional Neural Networks.
+
+## Installing
+
+__A__. Install and update using [pip](https://pip.pypa.io/en/stable/quickstart/):
+
+```bash
+pip3 install color-spray
+```
+Or
+```bash
+git checkout https://github.com/fengwang/color_spray.git
+cd color_spray
+python3 -m pip install -e .
+```
+
+__B__. Dowload pretrained model files from `https://drive.google.com/drive/folders/1dl-iNgROmSv71EpzNalh97zksKIBc90u?usp=sharing`, place them in your home folder, under path `.color_spray/model`.
+
+## Usage
+
+
+Command line:
+
+```bash
+color_spray INPUT_GRAY_IMAGE_PATH OUTPUT_RGB_IMAGE_PATH
+```
+
+Using Python API:
+
+```python
+# uncomment the follow three lines if you have a Nvidia GPU but you do not want to enable it.
+#import os
+#os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+#os.environ["CUDA_VISIBLE_DEVICES"]=''
+
+from color_spray import color_spray
+rgb_image = color_spray( './a_gray_image.png', './an_rgb_image.png' )
+
+```
+
+## Details
+
++ The training images are downloaded from [PEXEL](https://www.pexels.com/).
+
+## License
+
++ BSD
+
+
+
