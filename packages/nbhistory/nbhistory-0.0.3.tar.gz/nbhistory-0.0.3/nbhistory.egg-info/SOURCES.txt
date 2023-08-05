@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+nbhistory/__init__.py
+nbhistory/_nbdev.py
+nbhistory/core.py
+nbhistory.egg-info/PKG-INFO
+nbhistory.egg-info/SOURCES.txt
+nbhistory.egg-info/dependency_links.txt
+nbhistory.egg-info/entry_points.txt
+nbhistory.egg-info/not-zip-safe
+nbhistory.egg-info/requires.txt
+nbhistory.egg-info/top_level.txt

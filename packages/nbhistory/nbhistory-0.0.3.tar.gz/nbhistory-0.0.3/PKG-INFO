@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: nbhistory
+Version: 0.0.3
+Summary: nbhistory enable saving current notebook execution history as a notebook
+Home-page: https://github.com/pporcher/nbhistory/tree/master/
+Author: Pierre Porcher
+Author-email: pporcher.dev@gmail.com
+License: Apache Software License 2.0
+Description: # nbhistory
+        > Enable saving current notebook execution history as a notebook
+        
+        
+        ## Install
+        
+        `pip install nbhistory`
+        
+        ## How to use
+        
+        ```
+        save_notebook_history('tmp/my_history.ipynb')
+        ```
+        
+            Notebook history saved to tmp/my_history.ipynb
+        
+        
+Keywords: jupyter notebook,notebook history
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
