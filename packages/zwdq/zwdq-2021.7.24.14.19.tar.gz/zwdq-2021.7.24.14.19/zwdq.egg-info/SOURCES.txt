@@ -1,0 +1,9 @@
+setup.py
+src/zwdq/__init__.py
+src/zwdq/api.py
+src/zwdq/myfunc.py
+src/zwdq/nov_dl.py
+zwdq.egg-info/PKG-INFO
+zwdq.egg-info/SOURCES.txt
+zwdq.egg-info/dependency_links.txt
+zwdq.egg-info/top_level.txt

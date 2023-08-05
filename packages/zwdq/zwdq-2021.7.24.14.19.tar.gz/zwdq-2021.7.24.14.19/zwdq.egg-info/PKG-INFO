@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: zwdq
+Version: 2021.7.24.14.19
+Summary: 个人接口
+Home-page: UNKNOWN
+Author: zwdq
+Author-email: zhuwudaoqin@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: numpy
+Requires: pandas
