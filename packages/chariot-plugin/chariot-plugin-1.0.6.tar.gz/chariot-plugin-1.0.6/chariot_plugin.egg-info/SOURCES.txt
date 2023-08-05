@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+chariot_plugin.egg-info/PKG-INFO
+chariot_plugin.egg-info/SOURCES.txt
+chariot_plugin.egg-info/dependency_links.txt
+chariot_plugin.egg-info/entry_points.txt
+chariot_plugin.egg-info/requires.txt
+chariot_plugin.egg-info/top_level.txt
+core/__init__.py
+core/config.py
+core/main.py
+core/tasks.py
+core/tools.py
