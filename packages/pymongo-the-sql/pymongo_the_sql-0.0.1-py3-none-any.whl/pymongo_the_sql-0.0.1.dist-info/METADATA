@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pymongo-the-sql
+Version: 0.0.1
+Summary: A sql wrapper made to mimic the pymongo syntax in order to simplify sql syntax.
+Author: Marcus Bader
+Author-email: marcus@appsight.se
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
