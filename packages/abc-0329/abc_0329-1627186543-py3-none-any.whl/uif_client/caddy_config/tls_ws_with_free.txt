@@ -1,0 +1,11 @@
+localhost/uif {
+   reverse_proxy 127.0.0.1:10000
+}
+
+localhost/uif_free {
+   reverse_proxy 127.0.0.1:10001
+}
+
+localhost {
+   respond "Hello world!"
+}
