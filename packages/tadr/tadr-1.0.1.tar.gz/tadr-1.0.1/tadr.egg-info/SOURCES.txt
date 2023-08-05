@@ -1,0 +1,12 @@
+README.md
+setup.py
+tadr
+core/__init__.py
+core/classes.py
+core/main.py
+core/misc.py
+tadr.egg-info/PKG-INFO
+tadr.egg-info/SOURCES.txt
+tadr.egg-info/dependency_links.txt
+tadr.egg-info/requires.txt
+tadr.egg-info/top_level.txt

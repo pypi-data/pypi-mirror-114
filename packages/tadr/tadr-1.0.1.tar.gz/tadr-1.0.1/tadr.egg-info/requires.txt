@@ -1,0 +1,3 @@
+colored
+configparser
+praw>=7.1.2
