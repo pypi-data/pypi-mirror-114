@@ -1,0 +1,134 @@
+#!python
+'''
+This script used to generate __manifest__ depends for project core install
+'''
+
+import sys
+import json
+import os
+from importlib import import_module
+from functools import reduce
+
+sys.path.append(os.getcwd())
+
+COLOR = {
+    'red': '\033[1;31m',
+    'green': '\033[1;32m',
+    'yellow': '\033[1;33m',
+    'off': '\033[1;m'
+}
+OPTIONS = '''
+Options:
+    - project (project=biszx) *required
+    - website (website=https://biszx.com)
+        default: 
+    - version (version=14)
+        default: 14
+    - addon_path (addon_path=addons)
+        default: addon
+'''
+
+def get_argv():
+    '''
+    Make bash arguments into dict
+    '''
+    argv_dict = {
+        'addon_path': 'addons',
+        'website': '',
+        'version': '14'
+    }
+    for arg in sys.argv[1:]:
+        pare = arg.split('=')
+        key = pare[0]
+        value = pare[1]
+        argv_dict[key] = value
+    return argv_dict
+
+
+def validate_argv(argv):
+    required_argv = ['project']
+    return reduce(lambda a, v: a and v in argv, required_argv, True)
+
+
+def get_depends(argv):
+    ext = argv.get('ext', {})
+    addon_paths = [argv['addon_path']] + ext.get('addon_path', [])
+    dirs = []
+    for addon_path in addon_paths:
+        dirs += list(filter(
+            lambda v: (
+                os.path.isdir(os.path.join(addon_path, v))
+                and v != '%s_core_install' % argv['project'].lower()
+            ),
+            os.listdir(addon_path)
+        ))
+    dirs += ext.get('depends', [])
+    dirs.sort()
+    return json.dumps(
+        dirs,
+        indent=8
+    ).replace('"', '\'')[:-1] + '    ]'
+
+
+def generate_manifest(argv, manifest_path):
+    option = (
+        '    \'name\': \'{project} Core Install\',\n'
+        '    \'summary\': \'{project} Core Install\',\n'
+        '    \'author\': \'{project}\',\n'
+        '    \'website\': \'{website}\',\n'
+        '    \'version\': \'{version}.0.0.0.1\',\n'
+        '    \'depends\': {depends}'
+    ).format(project=argv['project'].upper(),
+                website=argv['website'],
+                version=argv['version'],
+                depends=get_depends(argv))
+    content = '{\n%s\n}\n' % option
+    manifest_exists = os.path.exists(manifest_path)
+    exit_code = not manifest_exists
+    if manifest_exists:
+        with open(manifest_path, 'r') as f:
+            exit_code = f.read() != content
+    if exit_code:
+        with open(manifest_path, 'w') as f:
+            f.write(content)
+    return int(exit_code)
+
+
+def main():
+    argv = get_argv()
+    if validate_argv(argv):
+        core_install_path = os.path.join(
+            argv['addon_path'],
+            '%s_core_install' % argv['project']
+        )
+        init_path = '%s/__init__.py' % core_install_path
+        manifest_path = '%s/__manifest__.py' % core_install_path
+        ext_path = '%s/ext.py' % core_install_path
+        if not os.path.exists(core_install_path):
+            os.makedirs(core_install_path)
+            exit_code = 1
+        if not os.path.exists(init_path):
+            with open(init_path, 'w') as f:
+                f.write('')
+            exit_code = 1
+
+        has_ext = os.path.exists(ext_path)
+        if has_ext:
+            argv['ext'] = import_module(
+                ext_path.split('.')[0].replace('/', '.')
+            ).options
+        exit_code = generate_manifest(argv, manifest_path)
+        if exit_code:
+            print(
+                '{green}Core install has been updated.{off}'.format(**COLOR)
+            )
+            exit(exit_code)
+    else:
+        print(
+            '{red}Some options is missing' + OPTIONS + '{off}'.format(**COLOR)
+        )
+        exit(1)
+
+
+if __name__ == '__main__':
+    main()

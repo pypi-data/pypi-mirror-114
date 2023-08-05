@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: odoo-core-install-generator
+Version: 1.0.2
+Summary: Odoo core install generator
+Home-page: https://gitlab.com/is4res/odoo-core-install-generator
+Author: Biszx
+Author-email: isares.br@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Odoo Core Install Generator
+
+## Install
+- pip
+```
+pip install odoo-core-install-generator
+```
+
+## Using
+#### Options
+| Key | Description | Required | Default | Example |
+|-|-|-|-|-|
+| project | project name or code | :heavy_check_mark: | | project=biszx |
+| website | website | | | website=https://biszx.com |
+| version | version | | 14 | version=14 |
+| addon_path | addon path to generate core install | | addons | addon_path=addons |
+#### config
+create ext.py in project core install directory
+```
+# tree view
+addons/project_core_install
+└── ext.py
+
+# ext.py
+options = {
+    # more addon to depends addon directory
+    # that contain in project path
+    'addon_path': [],
+  
+    # more addon to depends by addon name
+    'depends': [
+        'more_addon',
+    ]
+}
+```
+#### running
+```
+odoo-core-install-generator project=biszx
+```
+
+
