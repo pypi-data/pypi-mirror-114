@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "django-cognito-jwt-rydra"
+version = "0.0.4"
+description = "Django backends for AWS Cognito JWT (Forked from django-cognito-jwt with some customizations)"
+authors = ["David Jiménez <davigetto@gmail.com>", "Michael van Tellingen <m.vantellingen@labdigital.nl>"]
+repository = "https://github.com/rydra/django-cognito-jwt"
+packages = [
+    { include = "django_cognito_jwt_rydra", from = "src" },
+    { include = "django_cognito_jwt", from = "src" }
+]
+license = "MIT"
+classifiers = [
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Framework :: Django :: 1.11",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6"
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+django = "^2.0"
+cryptography = "^2.8"
+djangorestframework = "^3.11.0"
+pyjwt = "^1.7.1"
+requests = "^2.22.0"
+redis = "^3.3.11"
+decorator = "^4.4.1"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^4.6"
+pyhamcrest = "^2.0.0"
+pytest-django = "^3.8.0"
