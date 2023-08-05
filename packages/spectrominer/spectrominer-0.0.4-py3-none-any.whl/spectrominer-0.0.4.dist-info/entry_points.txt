@@ -1,0 +1,3 @@
+[console_scripts]
+spectrominer=spectrominer.ui.app:start
+
