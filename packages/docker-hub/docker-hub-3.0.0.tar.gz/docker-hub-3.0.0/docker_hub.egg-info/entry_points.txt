@@ -1,0 +1,3 @@
+[console_scripts]
+docker-hub = docker_hub.__main__:main
+
