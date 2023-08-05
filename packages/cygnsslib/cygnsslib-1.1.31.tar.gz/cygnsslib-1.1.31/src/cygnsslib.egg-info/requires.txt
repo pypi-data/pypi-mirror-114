@@ -1,0 +1,15 @@
+geographiclib
+lxml
+matplotlib
+netcdf4
+numpy
+openpyxl
+pandas
+paramiko
+pbkdf2
+pycrypto
+pyproj
+pysftp
+requests
+setuptools
+tqdm
