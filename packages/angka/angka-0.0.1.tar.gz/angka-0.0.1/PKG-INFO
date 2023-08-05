@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: angka
+Version: 0.0.1
+Summary: a library for data manipulation and visualization
+Home-page: https://github.com/yudhastyawan/angka
+Author: Yudha Styawan
+Author-email: yudhastyawan@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/yudhastyawan/angka/issues
+Project-URL: Documentation, http://angka.readthedocs.io
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Angka
+
+[![Documentation Status](https://readthedocs.org/projects/angka/badge/?version=latest)](https://angka.readthedocs.io/en/latest/?badge=latest)
+
+
+a repository focusing on data processing package namely angka. 
+It focuses on matrix data manipulating and visualization in C.
+The project is an initial step for the applied focuses, especially
+earth science purposes. We also have a goal to wrap this library to
+another language such as Python.
+
+### The important links:
+
+- Documentation: http://angka.readthedocs.io
+
+
