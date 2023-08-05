@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+tf_slice_assign.py
+tf_slice_assign.egg-info/PKG-INFO
+tf_slice_assign.egg-info/SOURCES.txt
+tf_slice_assign.egg-info/dependency_links.txt
+tf_slice_assign.egg-info/not-zip-safe
+tf_slice_assign.egg-info/requires.txt
+tf_slice_assign.egg-info/top_level.txt
