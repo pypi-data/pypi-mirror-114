@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: takelessons-scraper
+Version: 0.0.3
+Summary: Scrape chat content from TakeLessons.com
+Home-page: UNKNOWN
+Author: EliMor
+Author-email: elimor.github@gmail.com
+License: This is free and unencumbered software released into the public domain.
+        
+        Anyone is free to copy, modify, publish, use, compile, sell, or
+        distribute this software, either in source code form or as a compiled
+        binary, for any purpose, commercial or non-commercial, and by any
+        means.
+        
+        In jurisdictions that recognize copyright laws, the author or authors
+        of this software dedicate any and all copyright interest in the
+        software to the public domain. We make this dedication for the benefit
+        of the public at large and to the detriment of our heirs and
+        successors. We intend this dedication to be an overt act of
+        relinquishment in perpetuity of all present and future rights to this
+        software under copyright law.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+        EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+        IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+        OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+        ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+        OTHER DEALINGS IN THE SOFTWARE.
+        
+        For more information, please refer to <https://unlicense.org>
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+License-File: LICENSE
+
+# Scrape the chat logs from TakeLessons
+
+## What is this?
+If you noticed that TakeLessons doesn't have an API or a way to export your own data you can use this package to get at it.
+
+## How do I use it?
+
+### Prerequisites
+
+1. Install Chrome
+2. Find the correct selenium driver version for your install [here](https://chromedriver.chromium.org/downloads)
+3. Add it to PATH or make a note of where it is
+4. ```pip install takelessons-scraper```
+
+### Example Usage:
+
+```py 
+# Assume some db object you can save your data to
+db = SomeDBStore()
+from takelessons_scraper import TakeLessonsScraper
+chromedriver_path = '/path/to/chromedriver'
+username = 'username'
+password = 'password'
+scraper = TakeLessonsScraper(chromedriver_path)
+# login to load cookies behind scenes
+scraper.login(username, password)
+# get a block of chat data up to date
+chat_date = '2020-01-01'
+# you may need to sleep a bit
+chat_log = scraper.get_chat_history(chat_date) # Chat obj, can get raw json back
+db.save(chat_log)
+```
+
+## Notes:
+Please consider this a hobby project to be used as reference. Since it is a scraper I expect it to fail as regularly as the source is updated... which could be at any time and not within my control.
+
+

@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+takelessons_scraper/__init__.py
+takelessons_scraper/__version__
+takelessons_scraper/selenium_tools.py
+takelessons_scraper/takelessons_scraper.py
+takelessons_scraper.egg-info/PKG-INFO
+takelessons_scraper.egg-info/SOURCES.txt
+takelessons_scraper.egg-info/dependency_links.txt
+takelessons_scraper.egg-info/requires.txt
+takelessons_scraper.egg-info/top_level.txt
