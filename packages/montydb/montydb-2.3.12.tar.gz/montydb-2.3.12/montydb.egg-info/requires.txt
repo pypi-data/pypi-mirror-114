@@ -1,0 +1,6 @@
+
+[bson]
+pymongo
+
+[lmdb]
+lmdb
