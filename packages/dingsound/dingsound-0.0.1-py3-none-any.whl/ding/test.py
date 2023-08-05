@@ -1,0 +1,3 @@
+import dingsound
+
+dingsound.ding()

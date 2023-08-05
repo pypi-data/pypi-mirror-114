@@ -1,0 +1,10 @@
+ding/__init__.py,sha256=2aMX6kNQPeGXhR8d38eceDulVoxJNxRVBghYOwloZA8,38
+ding/functions.py,sha256=kNZCYyCllSnPleY1XmnmfjIJ_uDkuISfPfeFmwtyVyY,160
+ding/test.py,sha256=R2MIpAOOZT-rrE2OBySVszoVtl0YG2iGFWW4kC6sxrU,36
+dingsound/__init__.py,sha256=2aMX6kNQPeGXhR8d38eceDulVoxJNxRVBghYOwloZA8,38
+dingsound/functions.py,sha256=kNZCYyCllSnPleY1XmnmfjIJ_uDkuISfPfeFmwtyVyY,160
+dingsound/test.py,sha256=aF6UQzO8TN0fk6RXjAJrkJL2-x8y1tNoPzNJcHg21zI,40
+dingsound-0.0.1.dist-info/METADATA,sha256=EcBkHnsq8a7yeCOf9rShc6y9qCAtxIgRrYJA8C6Q8Hw,613
+dingsound-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dingsound-0.0.1.dist-info/top_level.txt,sha256=HLltUSkXHVAjukx0F9ufs0f6SXdNyntnIggQOhdjTEg,10
+dingsound-0.0.1.dist-info/RECORD,,
