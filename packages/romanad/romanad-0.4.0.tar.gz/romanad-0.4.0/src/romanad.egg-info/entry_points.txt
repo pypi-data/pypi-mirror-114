@@ -1,0 +1,3 @@
+[asdf.resource_mappings]
+rad = rad.integration:get_resource_mappings
+

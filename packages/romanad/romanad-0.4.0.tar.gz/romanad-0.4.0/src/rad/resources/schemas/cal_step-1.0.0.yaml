@@ -1,0 +1,19 @@
+%YAML 1.1
+---
+$schema: asdf://stsci.edu/datamodels/roman/schemas/rad_schema-1.0.0
+id: asdf://stsci.edu/datamodels/roman/schemas/cal_step-1.0.0
+
+title: Calibration Status
+type: object
+properties:
+  flat_field:
+    title: Flat Field Step
+    type: string
+    enum: ['N/A', 'COMPLETE', 'SKIPPED', 'INCOMPLETE']
+    archive_catalog:
+      datatype: nvarchar(15)
+      destination: [ScienceRefData.flat_field]
+propertyOrder: [flat_field]
+flowStyle: block
+required: [flat_field]
+...
