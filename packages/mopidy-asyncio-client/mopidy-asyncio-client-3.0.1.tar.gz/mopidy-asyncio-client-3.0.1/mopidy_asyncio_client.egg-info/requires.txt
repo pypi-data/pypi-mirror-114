@@ -1,0 +1,10 @@
+websockets
+setuptools
+
+[dev]
+twine
+wheel
+
+[release]
+twine
+wheel
