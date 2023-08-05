@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: django-magic-notifier
+Version: 0.0.3
+Summary: The Django package to send all type of notifications like magic
+Home-page: https://github.com/jefcolbi/django-magic-notifier
+Author: jefcolbi
+Author-email: jefcolbi@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Natural Language :: English
+Classifier: Natural Language :: French
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: django (>=2.2)
+Requires-Dist: djangorestframework
+
+
+********
+Django Magic Notifier
+********
+A notifications library for Djangonauts
+
+
+Why Django Magic Notifier?
+-------------
+
+Sending notifications in Django has always been a complex subject. Django Magic Notifier solves this by
+providing only one function `notify()`
+
+Installation
+------------
+
+``$pip install --upgrade django-magic-notifier``
+
+Features
+--------
+    - Send emails
+    - Sens sms
+    - Send push messages
+    - Support custom EmailClient
+    - Support custom SmsClient
+
+Usage
+-----
+.. code-block:: python
+
+    django-admin startproject testbot
+    cd testbot
+    python manage.py startapp base
+
+Docs and support
+----------------
+You can find the documentation at https://django-magic-notifier.readthedocs.org
+
+Roadmap
+-------
+    - Write all tests
+    - Generate full documentation
+    - Translate documentation
+
+Contributing
+------------
+Contribution are welcome and required.
+
+License
+-------
+As per the license, feel free to use the the framework as you want.
+
+
