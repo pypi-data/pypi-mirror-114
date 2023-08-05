@@ -1,0 +1,10 @@
+black>=21.7b0
+regex>=2020.1.8
+typing_extensions>=3.7.4
+mypy_extensions>=0.4.3
+
+[:python_version < "3.7"]
+dataclasses>=0.6
+
+[d]
+black[d]>=21.6b0
