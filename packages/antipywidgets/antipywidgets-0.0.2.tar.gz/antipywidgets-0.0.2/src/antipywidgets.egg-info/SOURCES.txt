@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/antipywidgets/__init__.py
+src/antipywidgets/jobs_runner.py
+src/antipywidgets.egg-info/PKG-INFO
+src/antipywidgets.egg-info/SOURCES.txt
+src/antipywidgets.egg-info/dependency_links.txt
+src/antipywidgets.egg-info/requires.txt
+src/antipywidgets.egg-info/top_level.txt
