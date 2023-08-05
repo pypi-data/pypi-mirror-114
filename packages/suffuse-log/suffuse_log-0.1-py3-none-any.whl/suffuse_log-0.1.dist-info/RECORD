@@ -1,0 +1,12 @@
+suffuse_log/__init__.py,sha256=Ju1KP4P-o_at8XbKr0cCd9j1AuIVqtp31jDTrHLmBY4,98
+suffuse_log/ansi_config.py,sha256=9m9yzxrPMiRN0ytPQat_mgnIxPcFzRpK2C8gWVNRxPM,8585
+suffuse_log/ansi_swatch.py,sha256=FQ8T2qiMZ0uuxlQpC6-RkRi8cFBxYtlsCI-KM8UUK80,1223
+suffuse_log/suffuse_formatter.py,sha256=7YMWmhJAOB4E67gTH3SSC0v6F7GHdbZWp_R2cTVkQmo,3586
+suffuse_log/test_ansi_config.py,sha256=dnVGV9XvDo1LBvzriHNUcQ75Tp_w3LjaX7YURzQgTog,420
+suffuse_log/test_ansi_swatch.py,sha256=nXgzCNeSYhnjePU8BlX_9D0MyuLZxP429s5UGbIttQw,720
+suffuse_log/test_suffuse_formatter.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+suffuse_log-0.1.dist-info/LICENSE,sha256=3NQDD5b8g16W7kyOh-8yBRd8G3j8O-IXIPQQERO_2ro,1089
+suffuse_log-0.1.dist-info/METADATA,sha256=LgLQa5m_b27CXygiPXJJ6lKnfb5KYaOZINIqzgdieYg,1562
+suffuse_log-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+suffuse_log-0.1.dist-info/top_level.txt,sha256=U7I5qFeM1L9sER9oCZma6dklAKEcGpoGASo9OtHdJRc,12
+suffuse_log-0.1.dist-info/RECORD,,
