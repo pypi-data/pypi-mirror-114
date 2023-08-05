@@ -1,0 +1,3 @@
+kernel
+products
+sage_painless
