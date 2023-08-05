@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Pokemail
+Version: 0.0.1
+Summary: Pokemail, a wrapper around guerillamail.com's pokemail service
+Home-page: https://github.com/nubonics/pokemail
+Author: Cody Quist
+Author-email: codyjquist@gmail.com
+License: UNKNOWN
+Keywords: pokemail,email api,disposable email api,guerillamail,disposable email,email
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+UNKNOWN
+
+
