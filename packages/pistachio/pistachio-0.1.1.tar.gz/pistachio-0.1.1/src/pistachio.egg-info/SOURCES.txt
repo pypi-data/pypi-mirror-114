@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tox.ini
+src/__init__.py
+src/pistachio.py
+src/pistachio.egg-info/PKG-INFO
+src/pistachio.egg-info/SOURCES.txt
+src/pistachio.egg-info/dependency_links.txt
+src/pistachio.egg-info/requires.txt
+src/pistachio.egg-info/top_level.txt
+tests/__init__.py
+tests/test_pistachio.py
