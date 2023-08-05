@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: easy_widgets
+Version: 0.2
+Summary: Make widget management in CLI easy
+Home-page: https://github.com/fantastic001/easy_widgets
+Author: Stefan Nozinic
+Author-email: stefan@lugons.org
+License: UNKNOWN
+Download-URL: https://github.com/fantastic001/easy_widgets/tarball/0.2
+Description: UNKNOWN
+Keywords: curses
+Platform: UNKNOWN
