@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pandashark
+Version: 1.1.1.1
+Summary: Apache Accumulo and Apache HDFS Python Connector
+Home-page: https://docs.sharkbite.io/
+Author: Marc Parisi
+Author-email: phrocker@apache.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: C++
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# ![logo](https://www.sharkbite.io/wp-content/uploads/2017/02/sharkbite.jpg) Sharkbite 
+[![Documentation Status](https://readthedocs.org/projects/sharkbite/badge/?version=latest)](https://docs.sharkbite.io/en/latest/?badge=latest)
+
+**S**harkbite is an HDFS and native client for Apache Accumulo ccumulo, with design liberties
+that make it usable across other key/value stores. 
+
+**P**andashark is a pandas linkage for sharkbite.
+
+
