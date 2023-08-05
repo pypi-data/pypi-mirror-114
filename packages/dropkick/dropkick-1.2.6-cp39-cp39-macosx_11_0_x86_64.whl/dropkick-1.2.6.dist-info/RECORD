@@ -1,0 +1,16 @@
+_glmnet.cpython-39-darwin.so,sha256=YH4_3NZteuFiA9Kstz6yrsHO5OGJ-XVZsGEKJ8GApow,841000
+dropkick/__init__.py,sha256=m9U_0OcwP5vYlZS7aFFjsod-dS_keJ-10fltiKzs7eM,500
+dropkick/__main__.py,sha256=jWQr_oT09OmkIghGnrAfjU6d4Ur9znS3DdvkvXoIUL0,8351
+dropkick/_version.py,sha256=9l1CrLVCsvzLuSu-9N0P8Ioe4ferZCwztpuf5KqLgmA,498
+dropkick/api.py,sha256=8e05KepbEA8cAg22C8Al6Edz-VzUqrlQbMZnQYtC1FM,35910
+dropkick/errors.py,sha256=WHWleIRHE9rf5aOfQMBQSOSJb-H0vVOe453oDzB6634,2323
+dropkick/logistic.py,sha256=Wqmf4pP7SFo2OQ89YLBKVpVhqPtg9OCHuRsCMXHWQgk,22911
+dropkick/qc.py,sha256=NxgufBmf0n3CYpqPkx5bzsdR8Rr37m8g8qGinPaJKlc,7803
+dropkick/scorer.py,sha256=UWJzNnSRxeDJ9gxsiU0UGwbcLlZ9lyCpxbMoSzz1mIw,12679
+dropkick/util.py,sha256=3aYkzManpkkhBRIkXno_p2wdOFK5suuDa1LlR544GWI,8003
+dropkick-1.2.6.dist-info/LICENSE,sha256=L8JQXSqfBU_tSL-lI4sIkn0BZQkI2tb0EEq2MEs4AmQ,1070
+dropkick-1.2.6.dist-info/METADATA,sha256=94GNBLMlOgKrqVhElZmJPm80JKvniUff-XU07uCzqSY,2782
+dropkick-1.2.6.dist-info/WHEEL,sha256=xtefXou5QCWCZW0FXQMA4tiilsZ3Oa5LqOk3i-xYBVA,109
+dropkick-1.2.6.dist-info/entry_points.txt,sha256=EcClP4uY-sg2RSzEtMqcNPgW477u46KUXLXUSH1bZNc,53
+dropkick-1.2.6.dist-info/top_level.txt,sha256=pMeHvkGxdPZGUAwbXuiP5KnwQu0aR1dWK80_hxmgxcA,17
+dropkick-1.2.6.dist-info/RECORD,,
