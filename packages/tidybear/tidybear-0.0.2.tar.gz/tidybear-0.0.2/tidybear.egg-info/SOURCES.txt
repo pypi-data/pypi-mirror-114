@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+tidybear/__init__.py
+tidybear/groupby.py
+tidybear.egg-info/PKG-INFO
+tidybear.egg-info/SOURCES.txt
+tidybear.egg-info/dependency_links.txt
+tidybear.egg-info/top_level.txt
