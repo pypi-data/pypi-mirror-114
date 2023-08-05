@@ -1,0 +1,10 @@
+openfabric_pysdk/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+openfabric_pysdk/api.py,sha256=56BzKpFLzhIqHsXmDieTeQI3iyd5_Gnm8FF4KyyoaMw,1517
+openfabric_pysdk/json.py,sha256=VtT6ZcKKCSjqym0uaZokTE8SgraGOhfSBM5rdMor7FM,808
+openfabric_pysdk/manifest.py,sha256=LySOlIza1EbxUoeuQvdIYkfn3lvPo1EqceVUAcEPSlg,469
+openfabric_pysdk/schema.py,sha256=hjIFKbfAJzSTzWBjDCmFt4kCCt7P0yXtqwGfJ6iwGak,177
+openfabric_pysdk/service.py,sha256=6qOK-46c18GjY1YpnN2KVGNubvxskePrzwqE_Vrs4iU,1583
+openfabric_pysdk/util.py,sha256=Er832Vn0RTZ-8c3bezC9TGrcQmARKQODXhybG0XNOVw,410
+openfabric_pysdk-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+openfabric_pysdk-0.1.0.dist-info/METADATA,sha256=-l38NnlqHmVQ2k4fJp3YV7o21qciZxSi7W2G93FD4Eo,908
+openfabric_pysdk-0.1.0.dist-info/RECORD,,
