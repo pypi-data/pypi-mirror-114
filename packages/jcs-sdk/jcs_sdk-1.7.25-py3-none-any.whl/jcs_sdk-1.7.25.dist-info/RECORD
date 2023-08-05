@@ -1,0 +1,9 @@
+JointCloudStorage/__init__.py,sha256=xicAjipITQOo52Fu2bzuZFIe6vjtrVlDAqUdCFdRRPI,155
+JointCloudStorage/auth.py,sha256=7YVy46wnIItW0XA4-D5Nj0OykkddqiBjobNDN6PCCrs,2659
+JointCloudStorage/bucket.py,sha256=2ua2jxYjQ8zVWxiBZBm1yiCftUimZYLE6pT6KtiBsi0,1960
+JointCloudStorage/exceptions.py,sha256=kHHYv0urxm8wgZzq7tpPWYdHcq7LBxH-BadUAfqqh_o,569
+JointCloudStorage/state.py,sha256=bIT1NaMWhwwRdsHy1t5Y7f-tCDd9d5wYpK9-sOLmBtI,708
+jcs_sdk-1.7.25.dist-info/METADATA,sha256=Hx7njLmczigrmE6I0jdgKTahX51-mnDNkASSGKmZVY0,2008
+jcs_sdk-1.7.25.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+jcs_sdk-1.7.25.dist-info/top_level.txt,sha256=RIBucylsFJpX77PkM23to9vE5MJFWTCJQwccTP9Z2fE,18
+jcs_sdk-1.7.25.dist-info/RECORD,,
