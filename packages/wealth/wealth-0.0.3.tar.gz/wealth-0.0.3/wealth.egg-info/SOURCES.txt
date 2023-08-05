@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+wealth/__init__.py
+wealth/animation.py
+wealth/dacc.py
+wealth/util.py
+wealth.egg-info/PKG-INFO
+wealth.egg-info/SOURCES.txt
+wealth.egg-info/dependency_links.txt
+wealth.egg-info/not-zip-safe
+wealth.egg-info/requires.txt
+wealth.egg-info/top_level.txt
