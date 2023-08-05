@@ -1,0 +1,3 @@
+[console_scripts]
+dump_hdrh = hdrh.dump:main
+
