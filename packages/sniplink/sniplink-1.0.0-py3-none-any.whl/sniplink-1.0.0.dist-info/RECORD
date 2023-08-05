@@ -1,0 +1,10 @@
+sniplink/__init__.py,sha256=Mi3sf-833OUn8aG2mLCiIT-at4LuhjY0-QjRNCfHLgU,140
+sniplink/api.py,sha256=mCbKFNKef2ZAJ6_8nXX5hoHs-8J4JvzdTpDa1ZCXaQo,177
+sniplink/client.py,sha256=gE-QSN2MmG1UbQxCy5RYi_2FEPzKOVLmDDk73Din7nU,1914
+sniplink/objects.py,sha256=5mQCtYajF0flCWpblur0ZYlb2eiMQIfx_AYZ2vDKUkc,1020
+sniplink/utils.py,sha256=OCvw4LqVtuH94HuIpdt9x1FgBj8xUg39Wif8RYNhizA,270
+sniplink-1.0.0.dist-info/LICENSE.md,sha256=X1Sr8yLo1yJJQZgBb7JuNED7p6q2jUwdgyg_Wq7eJYw,1093
+sniplink-1.0.0.dist-info/METADATA,sha256=kdlOd70Yj1GtRrmjojySoVX-7xFkJrAtgeMGmwo1vAk,2921
+sniplink-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sniplink-1.0.0.dist-info/top_level.txt,sha256=xDiZOo4r28IzqE53mP0k-Kea5-kF9PNKSrgSuu0cG6c,9
+sniplink-1.0.0.dist-info/RECORD,,
