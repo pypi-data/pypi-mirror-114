@@ -1,0 +1,4 @@
+httpx==0.18.2
+httpx_auth==0.10.0
+pydantic==1.8.2
+makefun==1.11.3
