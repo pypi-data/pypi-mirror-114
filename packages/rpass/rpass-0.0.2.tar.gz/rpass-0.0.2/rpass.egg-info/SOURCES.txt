@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+rpass/__init__.py
+rpass/__main__.py
+rpass.egg-info/PKG-INFO
+rpass.egg-info/SOURCES.txt
+rpass.egg-info/dependency_links.txt
+rpass.egg-info/entry_points.txt
+rpass.egg-info/requires.txt
+rpass.egg-info/top_level.txt
+rpass/utils/__init__.py
+rpass/utils/create_password.py
