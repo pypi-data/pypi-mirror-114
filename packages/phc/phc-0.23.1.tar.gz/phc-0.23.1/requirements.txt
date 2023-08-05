@@ -1,0 +1,10 @@
+aiohttp>3.5.3
+backoff==1.10.0
+nest_asyncio
+pyjwt==1.7.1
+pandas
+funcy
+lenses
+toolz
+pydantic
+python-pmap
