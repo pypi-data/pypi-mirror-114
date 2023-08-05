@@ -1,0 +1,126 @@
+Metadata-Version: 2.1
+Name: sxm
+Version: 0.2.8
+Summary: Top-level package for sxm.
+Home-page: https://github.com/AngellusMortis/sxm-client
+License: MIT license
+Keywords: sxm,SiriusXM,XM Radio
+Author: AngellusMortis
+Author-email: cbailey@mort.is
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp
+Requires-Dist: fake-useragent
+Requires-Dist: httpx
+Requires-Dist: make-it-sync
+Requires-Dist: pydantic
+Requires-Dist: python-dotenv
+Requires-Dist: tenacity
+Requires-Dist: typer
+Requires-Dist: ua-parser
+Requires-Dist: bandit ; extra == "dev"
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: flake8-bugbear ; extra == "dev"
+Requires-Dist: flake8-builtins ; extra == "dev"
+Requires-Dist: flake8-commas ; extra == "dev"
+Requires-Dist: flake8-comprehensions ; extra == "dev"
+Requires-Dist: flake8 ; extra == "dev"
+Requires-Dist: flit ; extra == "dev"
+Requires-Dist: isort ; extra == "dev"
+Requires-Dist: mypy ; extra == "dev"
+Requires-Dist: pip-tools ; extra == "dev"
+Requires-Dist: pylint ; extra == "dev"
+Requires-Dist: pyproject-flake8 ; extra == "dev"
+Requires-Dist: rstcheck ; extra == "dev"
+Requires-Dist: typing-extensions~=3.7.4.1 ; extra == "dev"
+Requires-Dist: furo ; extra == "doc"
+Requires-Dist: snooty-lextudio ; extra == "doc"
+Requires-Dist: sphinx ; extra == "doc"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: pytest-socket ; extra == "test"
+Requires-Dist: pytest-sugar ; extra == "test"
+Requires-Dist: pytest-clarity ; extra == "test"
+Requires-Dist: tox ; extra == "test"
+Requires-Dist: coverage ; extra == "test"
+Project-URL: Documentation, https://sxm-client.readthedocs.io/en/latest/
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
+
+sxm-client
+==========
+
+.. image:: https://readthedocs.org/projects/sxm-client/badge/?version=latest
+    :target: https://sxm-client.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
+.. image:: https://github.com/AngellusMortis/sxm-client/actions/workflows/ci.yml/badge.svg
+    :target: https://github.com/AngellusMortis/sxm-client/actions/workflows/ci.yml
+    :alt: CI Status
+
+.. image:: https://api.codeclimate.com/v1/badges/ea06824c1732b39d7d0b/maintainability
+    :target: https://codeclimate.com/github/AngellusMortis/sxm-client/maintainability
+    :alt: Maintainability
+
+.. image:: https://api.codeclimate.com/v1/badges/ea06824c1732b39d7d0b/test_coverage
+    :target: https://codeclimate.com/github/AngellusMortis/sxm-client/test_coverage
+    :alt: Test Coverage
+
+.. image:: https://pypip.in/v/sxm/badge.png
+    :target: https://pypi.org/project/sxm/
+    :alt: Latest PyPI version
+
+
+.. warning:: Designed for PERSONAL USE ONLY
+
+    ``sxm`` is a 100% unofficial project and you use it at your own risk.
+    It is designed to be used for personal use with a small number of users
+    listening to it at once. Similar to playing music over a speak from the
+    radio directly. Using ``sxm-player`` in any corporate setting, to
+    attempt to pirate music, or to try to make a profit off your subscription
+    may result in you getting in legal trouble.
+
+``sxm-client`` is a Python library designed to help write applications for the
+popular XM Radio service.
+
+* Free software: MIT license
+* Documentation: http://sxm-client.readthedocs.io/.
+
+Features
+--------
+
+* A simple HTTP Proxy server that can serve HLS streams for sxm-client channels
+* Python sxm Client
+* Python classes for interface with sxm channel data
+
+For details on usage and installation, see the `documentation`_.
+
+``sxm-client`` is designed to be a bare bones library to setup an anonymous HLS
+stream. For a more in-depth applications, check out
+`sxm-player`_.
+
+.. _documentation: http://sxm-client.readthedocs.io/
+.. _sxm-player: https://github.com/AngellusMortis/sxm-player
+
+
+Credits
+-------
+
+Huge props to andrew0 <andrew0@github.com> for for reverse engineering the
+original SXM APIs used
+
+This package was created with Cookiecutter_ and the
+`audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
