@@ -1,0 +1,5 @@
+mongo_cached_requests/__init__.py,sha256=6FQ_9FHhk5S8RkCQRIETDkBg98msXHIE7ceGYktTkBg,63
+mongo_cached_requests/client.py,sha256=3FLSVmARoQFY4B4Ja6HSXQS0hM2JfBV9LbaR4-i7qCs,2338
+mongo_cached_requests-0.1.6.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+mongo_cached_requests-0.1.6.dist-info/METADATA,sha256=S-TBy49K-wyE9zu1Au6eFS8ZVNvS4iiDhwH8Lkb-2Lg,391
+mongo_cached_requests-0.1.6.dist-info/RECORD,,
