@@ -1,0 +1,17 @@
+.gitignore
+MANIFEST.in
+README.md
+setup.py
+wordsworth
+gen_cw/__init__.py
+gen_cw/abbrevs.dict
+gen_cw/combination.dict
+gen_cw/connectives.dict
+gen_cw/names.dict
+gen_cw/words.dict
+misc/QST-Wordsworth.pdf
+wordsworth.egg-info/PKG-INFO
+wordsworth.egg-info/SOURCES.txt
+wordsworth.egg-info/dependency_links.txt
+wordsworth.egg-info/entry_points.txt
+wordsworth.egg-info/top_level.txt
