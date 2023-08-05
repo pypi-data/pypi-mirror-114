@@ -1,0 +1,3 @@
+dorianUtilsModulaire==3.4.1
+geopy==2.2.0
+tzwhere==3.0.3
