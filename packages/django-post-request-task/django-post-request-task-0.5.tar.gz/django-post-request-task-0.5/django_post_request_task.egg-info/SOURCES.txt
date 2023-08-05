@@ -1,0 +1,14 @@
+AUTHORS
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+django_post_request_task.egg-info/PKG-INFO
+django_post_request_task.egg-info/SOURCES.txt
+django_post_request_task.egg-info/dependency_links.txt
+django_post_request_task.egg-info/not-zip-safe
+django_post_request_task.egg-info/requires.txt
+django_post_request_task.egg-info/top_level.txt
+post_request_task/__init__.py
+post_request_task/task.py
+post_request_task/tests.py
