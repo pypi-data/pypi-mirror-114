@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: hierarpy
+Version: 1.0.0
+Summary: A library for hierarchical configuration in Python.
+Home-page: https://github.com/rodrigo-castellon/hierarpy
+Author: Rodrigo Castellon
+Author-email: rjcaste@stanford.edu
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: addict
+
+# hierarpy
+A library for hierarchical configuration in Python.
+
+## Introduction
+
+Typical approaches to handling configuration are usually too static and flat, and struggle to accomodate deep learning experiments out-of-the-box. For example, you may want to switch out a model architecture, but the architecture has a different set of hyperparameters that could be tuned! It would be great if you could easily handle these common cases.
+
+To this end, we propose a hierarchical structure of configuration files in a config directory. Subfolders contain alternate configuration files that can each be substituted into the parent configuration file. `hierarpy` handles this hierarchical structure, encouraging faster, more high entropy, yet reproducible experiments.
+
+`hierarpy` also lets you overrides  configuration variables at the command line by simply adding a flag such as `--model.bidirectional=True` when calling the script (see A Minimal Example for how this works).
+
+## Requirements
+
+`hierarpy` relies only on `addict` (see [this link](https://github.com/mewwts/addict) for the repository).
+
+## A Minimal Example
+
+See `example/` for an example of `hierarpy` in action.
+
+If you run `$ python example/main.py`, in our standard output you should get
+
+```
+learning_rate: 0.01
+model:
+  bidirectional: false
+  hidden_sizes:
+  - 300
+  - 300
+  - 300
+  input_size: 100
+  subconfig_name: lstm
+optimizer: adam
+```
+
+Notice how this automatically incorporates the child config file `lstm.yaml` in the `model` directory. Now if you try running `$ python example/main.py --model.bidirectional=True`, you should get
+```
+learning_rate: 0.01
+model:
+  bidirectional: true
+  hidden_sizes:
+  - 300
+  - 300
+  - 300
+  input_size: 100
+  subconfig_name: lstm
+optimizer: adam
+```
+
+
