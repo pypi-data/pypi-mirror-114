@@ -1,0 +1,6 @@
+README.md
+parac.egg-info/PKG-INFO
+parac.egg-info/SOURCES.txt
+parac.egg-info/dependency_links.txt
+parac.egg-info/requires.txt
+parac.egg-info/top_level.txt
