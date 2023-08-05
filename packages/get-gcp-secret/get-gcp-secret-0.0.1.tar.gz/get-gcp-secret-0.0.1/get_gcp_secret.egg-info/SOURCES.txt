@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+get-gcp-secret/__init__.py
+get_gcp_secret.egg-info/PKG-INFO
+get_gcp_secret.egg-info/SOURCES.txt
+get_gcp_secret.egg-info/dependency_links.txt
+get_gcp_secret.egg-info/requires.txt
+get_gcp_secret.egg-info/top_level.txt
