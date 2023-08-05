@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dotfilesmanager
+Version: 1.1.3
+Summary: dotfiles管理工具
+Home-page: https://github.com/xyz1001/dotfilesmanager
+Author: xyz1001
+Author-email: zgzf1001@gmail.com
+License: MIT
+Keywords: python dotfiles
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+
+dotfile管理工具，支持多平台
+
