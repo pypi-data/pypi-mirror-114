@@ -1,0 +1,4 @@
+[console_scripts]
+bombadlyanegra = bombadlyanegra.cli:main
+bomber = bombadlyanegra.cli:main
+
