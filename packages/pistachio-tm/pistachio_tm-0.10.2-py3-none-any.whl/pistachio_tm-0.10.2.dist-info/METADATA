@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pistachio-tm
+Version: 0.10.2
+Summary: A transfer matrix algorithm and related tools
+Home-page: https://github.com/garrekds/pistachio
+Author: Garrek Stemo
+Author-email: garrekstemo@icloud.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+
