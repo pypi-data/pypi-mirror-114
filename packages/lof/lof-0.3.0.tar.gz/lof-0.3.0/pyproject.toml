@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "lof"
+version = "0.3.0"
+description = "AWS Lambdas on FastAPI it is a Cli utilit that up & run your Python lambdas in local env based on AWS CloudFormation Template (json or yaml)"
+authors = ["Iuliia Volkova <xnuinside@gmail.com>"]
+license = "MIT"
+readme = "docs/README.rst"
+homepage = "https://github.com/xnuinside/lof"
+repository = "https://github.com/xnuinside/lof"
+classifiers = [
+    "Programming Language :: PL/SQL",
+    "Programming Language :: SQL",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Utilities",
+    "Topic :: Software Development :: Code Generators",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[tool.poetry.scripts]
+lof = 'lof.cli:cli'
+
+[tool.poetry.dependencies]
+python = ">=3.6.1,<4.0"
+fastapi = "^0.66.0"
+PyYAML = "^5.4.1"
+uvicorn = "^0.14.0"
+python-dotenv = "^0.18.0"
+typer = "^0.3.2"
+Jinja2 = "^3.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+twine = "^3.4.1"
+m2r = "^0.2.1"
+flake8 = "^3.9.2"
+pre-commit = "^2.13.0"
+pytest-asyncio = "^0.15.1"
+coverage = "^5.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
