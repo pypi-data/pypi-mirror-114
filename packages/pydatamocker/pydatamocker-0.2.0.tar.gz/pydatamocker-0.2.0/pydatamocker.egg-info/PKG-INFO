@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pydatamocker
+Version: 0.2.0
+Summary: A data mocker for python scripts and jupyter notebooks
+Home-page: https://github.com/msoukharev/pydatamocker
+Author: Maxim Soukharev
+Author-email: maxim.soukharev@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/msoukharev/pydatamocker
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Pydatamocker
+
+Create lots of records for rick mock data
+
+
