@@ -1,0 +1,8 @@
+dask_mongo/__init__.py,sha256=Tx8Ti60Yg3VPIP91J6sJrkaBjRJi-UFck4pWrfbLNzU,65
+dask_mongo/core.py,sha256=Lh79GrAkPO_3oIJYvh6W-yVhQKNAHoNzK2UyaeyTwic,4464
+dask_mongo/tests/test_core.py,sha256=VuGLMrJjo9zQld5P2mnXWt9ntnyS7h7tJ1sdvYYvjec,5493
+dask_mongo-2021.7.2.dist-info/LICENSE,sha256=HNWwDA-m_QVmldFRpD9yuX2jYcnFEbLEs4qer7m5gmM,1514
+dask_mongo-2021.7.2.dist-info/METADATA,sha256=hkahxooPIpvQhc7gcvY_m-Ms9zmpJZg5NbR0yQMnQFw,1624
+dask_mongo-2021.7.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dask_mongo-2021.7.2.dist-info/top_level.txt,sha256=hbuHQnmaW-l7Kqwts_27ywyOsjljgnzpxGZpfqsh2WY,11
+dask_mongo-2021.7.2.dist-info/RECORD,,
