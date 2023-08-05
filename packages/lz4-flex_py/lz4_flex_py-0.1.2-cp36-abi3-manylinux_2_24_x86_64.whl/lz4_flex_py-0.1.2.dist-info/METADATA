@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: lz4_flex_py
+Version: 0.1.2
+Summary: A Python wrapper for lz4_flex Rust crate
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/imbolc/lz4_flex_py
+
+lz4_flex python wrapper
+=======================
+
+Usage
+-----
+```python
+>>> import lz4_flex
+>>> compressed = lz4_flex.compress_prepend_size(b"foo")
+>>> lz4_flex.decompress_size_prepended(compressed)
+b'foo'
+```
+
+Development
+-----------
+
+Preparations:
+```sh
+pip install maturin
+python -m venv .venv
+source .venv/bin/activate
+```
+Install the package:
+```sh
+maturin develop
+```
+
+Test it:
+```sh
+python -c'import lz4_flex'
+```
+
+Publishing to pypi:
+```sh
+maturin publish
+```
+
