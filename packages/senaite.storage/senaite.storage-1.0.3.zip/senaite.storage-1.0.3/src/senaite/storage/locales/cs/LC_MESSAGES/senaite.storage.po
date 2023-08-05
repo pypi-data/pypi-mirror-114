@@ -1,0 +1,254 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Translators:
+# trendspotter, 2020
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-07-23 20:52+0000\n"
+"PO-Revision-Date: 2019-03-31 21:21+0000\n"
+"Last-Translator: trendspotter, 2020\n"
+"Language-Team: Czech (https://www.transifex.com/senaite/teams/97702/cs/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: senaite.storage\n"
+"Language: cs\n"
+
+#: senaite/storage/browser/templates/store_samples.pt:32
+msgid "${back_link}"
+msgstr "${back_link}"
+
+#: senaite/storage/browser/storagelisting.py:49
+msgid "% Samples"
+msgstr "% Vzorky"
+
+#: senaite/storage/browser/templates/store_samples.pt:32
+msgid "&larr; Back"
+msgstr "&larr; Zpět"
+
+#: senaite/storage/browser/containers.py:70
+#: senaite/storage/browser/storagelisting.py:60
+#: senaite/storage/browser/storagerootfolder.py:67
+msgid "Active"
+msgstr "Aktivní"
+
+#: senaite/storage/browser/storagerootfolder.py:74
+msgid "Add Facility"
+msgstr "Přidat zařízení"
+
+#: senaite/storage/browser/templates/store_container.pt:117
+msgid "Add Sample"
+msgstr "Přidat vzorek"
+
+#: senaite/storage/browser/samples.py:102
+msgid "Add Samples"
+msgstr "Přidat vzorky"
+
+#: senaite/storage/browser/containers.py:84
+msgid "Add container"
+msgstr "Přidat kontejner"
+
+#: senaite/storage/profiles/default/workflows/senaite_storage_default_workflow/definition.xml
+msgid "Add samples"
+msgstr "Přidat vzorky"
+
+#: senaite/storage/browser/containers.py:89
+msgid "Add samples container"
+msgstr "Přidat kontejner vzorků"
+
+#: senaite/storage/content/storagefacility.py:53
+msgid "Address"
+msgstr "Adresa"
+
+#: senaite/storage/content/storagelayoutcontainer.py:47
+msgid "Alphabet letters will be used to represent a row within the container"
+msgstr "Písmena abecedy budou použita k reprezentaci řádku v kontejneru"
+
+#: senaite/storage/browser/templates/store_container.pt:34
+msgid "Available positions:"
+msgstr "Dostupné pozice:"
+
+#: senaite/storage/browser/templates/store_container.pt:124
+#: senaite/storage/browser/templates/store_samples.pt:152
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: senaite/storage/browser/store_container.py:150
+msgid "Cannot store samples. Samples container {} is full"
+msgstr "Nelze ukládat vzorky. Kontejner na vzorky {} je plný"
+
+#: senaite/storage/content/storagelayoutcontainer.py:60
+msgid "Columns"
+msgstr "Sloupce"
+
+#: senaite/storage/browser/containers.py:62
+#: senaite/storage/browser/storagelisting.py:53
+#: senaite/storage/browser/storagerootfolder.py:56
+msgid "Containers"
+msgstr "Kontejnery"
+
+#: senaite/storage/browser/containers.py:64
+msgid "Containers usage"
+msgstr "použití kontejnerů"
+
+#: senaite/storage/browser/analysisrequests.py:95
+msgid "Date stored"
+msgstr "Datum uloženo"
+
+#: senaite/storage/browser/storagerootfolder.py:60
+msgid "Email"
+msgstr "e-mail"
+
+#: senaite/storage/content/storagefacility.py:45
+msgid "Email Address"
+msgstr "e-mailová adresa"
+
+#: senaite/storage/content/storagecontainer.py:37
+msgid "Expected temperature"
+msgstr "Očekávaná teplota"
+
+#: senaite/storage/content/storagecontainer.py:38
+msgid "Expected temperature of this container"
+msgstr "Očekávaná teplota tohoto kontejneru"
+
+#: senaite/storage/browser/containers.py:54
+#: senaite/storage/browser/storagelisting.py:47
+msgid "ID"
+msgstr "ID"
+
+#: senaite/storage/browser/viewlets/templates/sample_container_viewlet.pt:18
+msgid "Location:"
+msgstr "Umístění:"
+
+#: senaite/storage/browser/containers.py:51
+#: senaite/storage/browser/storagelisting.py:44
+#: senaite/storage/browser/storagerootfolder.py:49
+msgid "Name"
+msgstr "Název"
+
+#: senaite/storage/browser/templates/store_container.pt:133
+msgid "Next container:"
+msgstr "Další kontejner:"
+
+#: senaite/storage/browser/store_samples.py:53
+msgid "No items selected"
+msgstr "Nejsou vybrány žádné položky"
+
+#: senaite/storage/browser/store_container.py:159
+msgid "No position or not valid sample selected"
+msgstr "Není vybrána žádná poloha nebo není platný vzorek"
+
+#: senaite/storage/content/storagelayoutcontainer.py:61
+msgid "Number of positions per row. Numbers will be used to represent a column within a row"
+msgstr "Počet pozic na řádek. Čísla budou použita k představení sloupce v řádku"
+
+#: senaite/storage/browser/storagerootfolder.py:58
+#: senaite/storage/content/storagefacility.py:38
+msgid "Phone"
+msgstr "Telefon"
+
+#: senaite/storage/browser/samples.py:53
+#: senaite/storage/browser/templates/store_container.pt:105
+#: senaite/storage/browser/templates/store_samples.pt:130
+msgid "Position"
+msgstr "Pozici"
+
+#: senaite/storage/browser/analysisrequests.py:72
+msgid "Print stickers"
+msgstr "Tisk samolepek"
+
+#: senaite/storage/profiles/default/workflows/senaite_storage_default_workflow/definition.xml
+msgid "Recover samples"
+msgstr "Obnovit vzorky"
+
+#: senaite/storage/content/storagelayoutcontainer.py:46
+msgid "Rows"
+msgstr "Řádky"
+
+#: senaite/storage/configure.zcml:41
+msgid "SENAITE STORAGE"
+msgstr "ÚLOŽIŠTĚ SENAITE"
+
+#: senaite/storage/configure.zcml:50
+msgid "SENAITE STORAGE (uninstall)"
+msgstr ""
+
+#: senaite/storage/browser/templates/store_container.pt:63
+msgid "Sample"
+msgstr "Vzorek"
+
+#: senaite/storage/configure.zcml:41
+msgid "Sample storage module for SENAITE"
+msgstr "Modul úložiště vzorků pro SENAITE"
+
+#: senaite/storage/browser/store_container.py:178
+msgid "Sample storing canceled"
+msgstr "Ukládání vzorků bylo zrušeno"
+
+#: senaite/storage/browser/containers.py:58
+#: senaite/storage/browser/storagelisting.py:51
+#: senaite/storage/browser/storagerootfolder.py:52
+msgid "Samples"
+msgstr "Vzorky"
+
+#: senaite/storage/browser/templates/store_samples.pt:86
+msgid "Samples container"
+msgstr "Kontejner na vzorky"
+
+#: senaite/storage/profiles/default/types/StorageSamplesContainer.xml
+msgid "Samples container for storage"
+msgstr "Nádoba na vzorky pro skladování"
+
+#: senaite/storage/browser/storagerootfolder.py:36
+#: senaite/storage/profiles/default/controlpanel.xml
+#: senaite/storage/profiles/default/types/StorageRootFolder.xml
+msgid "Samples storage"
+msgstr "Úložiště vzorků"
+
+#: senaite/storage/browser/containers.py:60
+#: senaite/storage/browser/storagerootfolder.py:54
+msgid "Samples usage"
+msgstr "Použití vzorků"
+
+#: senaite/storage/browser/analysisrequests.py:105
+msgid "Storage"
+msgstr "Úložiště"
+
+#: senaite/storage/profiles/default/types/StorageFacility.xml
+msgid "Storage Facility"
+msgstr "Zařízení úložiště"
+
+#: senaite/storage/profiles/default/types/StorageContainer.xml
+msgid "Storage container"
+msgstr "Úložný kontejner"
+
+#: senaite/storage/browser/templates/store_samples.pt:146
+msgid "Store Samples"
+msgstr "Ukládání vzorků"
+
+#: senaite/storage/browser/templates/store_samples.pt:24
+msgid "Store samples"
+msgstr "Uložit vzorky"
+
+#: senaite/storage/browser/analysisrequests.py:79
+msgid "Stored"
+msgstr "Uloženo"
+
+#: senaite/storage/browser/viewlets/templates/sample_container_viewlet.pt:12
+msgid "Stored sample"
+msgstr "Uložený vzorek"
+
+#: senaite/storage/browser/store_container.py:169
+msgid "Stored sample {} at position {}"
+msgstr "Uložený vzorek {} na pozici {}"
+
+#: senaite/storage/browser/containers.py:56
+msgid "Temperature"
+msgstr "Teplota"
