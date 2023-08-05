@@ -1,0 +1,11 @@
+mcwiki/__init__.py,sha256=DkMhuzk1N8BAroSJhAahqcIc5vW7aeZm41_Po7t4gLA,227
+mcwiki/extractor.py,sha256=Ahb2bCK4dlj5m82TLMr1-USJAvLJPNY8-A2b_bzyZqo,1593
+mcwiki/page.py,sha256=dyxA8RLeKGvIvZhQrtGcGbBGlnW6pT4XuLglnMYrLug,2758
+mcwiki/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcwiki/text.py,sha256=PJ-AydrUb-TGdRlTEuDgX7tJ9sHOIs7rkM-6q4XAGoU,315
+mcwiki/tree.py,sha256=t9xg_fnO1GQk9qd1qdjEE8tfUHBAuono_sjAFLa-knk,5226
+mcwiki/utils.py,sha256=81Ymlg-Xw5GLSo5c6zGPdxr9yz6rUw_MOSZeNKpDPyQ,346
+mcwiki-0.2.0.dist-info/LICENSE,sha256=71AZ-oBXSovKxFMoYVEQTw8rpS2hUllt8_xX3cp0kgA,1073
+mcwiki-0.2.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+mcwiki-0.2.0.dist-info/METADATA,sha256=6fGxdcrt_eVJ9IXCeR8bGbk-53xDbD3V0Zz-VpOyzvQ,7641
+mcwiki-0.2.0.dist-info/RECORD,,
