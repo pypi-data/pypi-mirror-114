@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pysolo
+Version: 1.0.0
+Summary: Work in Progress
+Home-page: https://github.com/NCAR/lrose-solo-python
+Author: Ammar Siddiqi
+Author-email: siddiqi91899@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/NCAR/lrose-solo-python/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# lrose-solo-python
+Python interface to Solo editing functions
+
+To install, type this in shell: 
+
+```shell
+pip install -i https://test.pypi.org/simple/ pysolo-wip
+```
+Tested for Windows 10 and Ubuntu 18.04 and 20.04.
+
+Test it on Colab: https://colab.research.google.com/drive/1q2n79rtTjvQahCaFI9sBEGgveOm6HL7V?usp=sharing
+
+
