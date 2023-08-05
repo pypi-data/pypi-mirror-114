@@ -1,0 +1,12 @@
+Pillow
+PyMuPDF
+base45
+cbor2
+colorama
+cose
+fitz
+pyOpenSSL
+pyasn1
+pyzbar
+requests
+termcolor
