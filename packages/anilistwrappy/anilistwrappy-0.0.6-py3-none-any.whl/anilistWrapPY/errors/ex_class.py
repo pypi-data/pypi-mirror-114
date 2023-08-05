@@ -1,0 +1,2 @@
+class AniListException(BaseException):
+    pass
