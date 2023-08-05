@@ -1,0 +1,11 @@
+README.md
+setup.py
+metadata_driver_arweave/__init__.py
+metadata_driver_arweave/arweave_client.py
+metadata_driver_arweave/plugin.py
+nevermined_metadata_driver_arweave.egg-info/PKG-INFO
+nevermined_metadata_driver_arweave.egg-info/SOURCES.txt
+nevermined_metadata_driver_arweave.egg-info/dependency_links.txt
+nevermined_metadata_driver_arweave.egg-info/not-zip-safe
+nevermined_metadata_driver_arweave.egg-info/requires.txt
+nevermined_metadata_driver_arweave.egg-info/top_level.txt
