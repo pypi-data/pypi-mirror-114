@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: DFW
+Version: 0.1.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: scipy
+Requires-Dist: h5py
+Requires-Dist: sklearn
+Requires-Dist: numpy
+
+UNKNOWN
+
