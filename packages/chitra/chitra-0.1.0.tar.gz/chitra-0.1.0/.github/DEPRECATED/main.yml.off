@@ -1,0 +1,52 @@
+name: CI
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: [master]
+env:
+  HOME: /root
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  nb-sync:
+    runs-on: ubuntu-latest
+    container: fastai/jekyll
+    steps:
+    - uses: actions/checkout@v2
+    - run: pip install -qe .
+    - name: Check if notebooks are synced and cleaned
+      uses: fastai/workflows/nb@master
+
+  nbdev_test_nbs:
+    runs-on: ubuntu-latest
+    container: fastai/jekyll
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run tests
+      run: |
+        pip install -qe .
+        pip install -qU fastcore
+        # make test
+
+#  fastpages-integration:
+#    runs-on: ubuntu-latest
+#    container: fastai/jekyll
+#    steps:
+#    - uses: actions/checkout@v2
+#    - name: Install nbdev
+#      run: |
+#        pip install -qe .
+#        pip install -qU fastcore
+#    - uses: actions/checkout@v2
+#      with:
+#        repository: "fastai/fastpages"
+#        path: "data"
+#    - name: convert posts
+#      run: |
+#        cd data
+#        mkdir -p /fastpages
+#        cp -r _action_files/* /fastpages/
+#        /fastpages/action_entrypoint.sh
