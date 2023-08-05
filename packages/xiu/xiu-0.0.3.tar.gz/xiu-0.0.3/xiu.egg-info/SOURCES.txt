@@ -1,0 +1,10 @@
+README.md
+setup.py
+data/__init__.py
+data/urls.py
+xiu.egg-info/PKG-INFO
+xiu.egg-info/SOURCES.txt
+xiu.egg-info/dependency_links.txt
+xiu.egg-info/entry_points.txt
+xiu.egg-info/requires.txt
+xiu.egg-info/top_level.txt
