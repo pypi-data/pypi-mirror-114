@@ -1,0 +1,10 @@
+phondler/__init__.py,sha256=VObIJBL1Fw9bcA2X8yZvWfDWBrPn4Pu9clB-nviU7K0,992
+phondler/phondler.py,sha256=1gW_LRKwbkk7TSRG_gFn1uxUzBLVuckkPEcrPqX4rVY,8181
+phondler/phondler_tables.py,sha256=R4oVbP_VDYAGlq57Sx8KaEx4ZtdrKthv5B5RgKpvvbk,12771
+phondler/phoneme.py,sha256=FFVkDQGrOLV4yFf9F72UF_22TM9V8Ry9MD_ttNj2f1w,1436
+phondler/pronlex.py,sha256=LYlPQ879rczmjFYDeSS361B9VTN7ALJDfcIW3lGWJg8,11358
+phondler-0.0.2.dist-info/LICENSE,sha256=5QbzREb2Kh3-JQ_-z-jPSAk5Twrb1d3SXU__7UnEZok,1210
+phondler-0.0.2.dist-info/METADATA,sha256=09TWtO8TEKdPotkdU-8L45IklsPHtPgggOZE1nYbUuY,1550
+phondler-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+phondler-0.0.2.dist-info/top_level.txt,sha256=I-jTIv4UsI3MibaKV_iTQWjHbIf3fMEY0HfQ1872cvk,9
+phondler-0.0.2.dist-info/RECORD,,
