@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: GhostScan
+Version: 0.4.19
+Summary: three-dimensional imaging and projection 
+Home-page: https://github.com/NU-ACCESS/GhostScan
+Author: Marc Walton
+Author-email: marc.walton@northwestern.edu
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.11)
+Requires-Dist: matplotlib (>=1.5)
+Requires-Dist: Pillow (>=7.0.0)
+Requires-Dist: matplotlib (>=3.2.1)
+Requires-Dist: numpy (>=1.18.2)
+Requires-Dist: torch (>=1.4.0)
+Requires-Dist: tifffile (>=2020.6.3)
+Requires-Dist: scipy (>=1.5.2)
+Requires-Dist: wavepy (>=1.0.5)
+Requires-Dist: checkerboard (>=0.2.4)
+Requires-Dist: tqdm (>=4.48.2)
+Requires-Dist: opencv-contrib-python (>=4.4.0)
+Requires-Dist: selenium (>=3.141.0)
+Requires-Dist: pandas (>=1.1.1)
+Requires-Dist: scikit-image (>=0.17.2)
+Requires-Dist: ipython (>=7.18.1)
+Requires-Dist: bokeh (>=0.12.5)
+
+UNKNOWN
+
