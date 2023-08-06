@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+stream_archive_subtitle/__init__.py
+stream_archive_subtitle/stream_archive_subtitle.py
+stream_archive_subtitle.egg-info/PKG-INFO
+stream_archive_subtitle.egg-info/SOURCES.txt
+stream_archive_subtitle.egg-info/dependency_links.txt
+stream_archive_subtitle.egg-info/entry_points.txt
+stream_archive_subtitle.egg-info/requires.txt
+stream_archive_subtitle.egg-info/top_level.txt
