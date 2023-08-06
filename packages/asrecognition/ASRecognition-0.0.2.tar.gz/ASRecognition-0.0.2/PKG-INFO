@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: asrecognition
+Version: 0.0.2
+Summary: ASRecognition: just an easy-to-use library for Automatic Speech Recognition.
+Home-page: https://github.com/jonatasgrosman/asrecognition
+License: MIT
+Keywords: audio,speech,automatic speech recognition,asr,voice recognition,speech recognition,speech-to-text
+Author: Jonatas Grosman
+Author-email: jonatasgrosman@gmail.com
+Maintainer: Jonatas Grosman
+Maintainer-email: jonatasgrosman@gmail.com
+Requires-Python: >=3.7,<3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: datasets (>=1.10.2,<2.0.0)
+Requires-Dist: librosa (>=0.8.1,<0.9.0)
+Requires-Dist: llvmlite (>=0.36.0,<0.37.0)
+Requires-Dist: numba (>=0.53.1,<0.54.0)
+Requires-Dist: torch (>=1.9.0,<2.0.0)
+Requires-Dist: transformers (>=4.9.1,<5.0.0)
+Project-URL: Documentation, https://github.com/jonatasgrosman/asrecognition
+Project-URL: Repository, https://github.com/jonatasgrosman/asrecognition
+Project-URL: issues, https://github.com/jonatasgrosman/asrecognition/issues
+Description-Content-Type: text/markdown
+
+# ASRecognition
+
+ASRecognition: just an easy-to-use library for Automatic Speech Recognition.
+
+The currently supported languages are Arabic (ar), German (de), Greek (el), English (en), Spanish (es), Persian (fa), Finnish (fi), French (fr), Hungarian (hu), Italian (it), Japanese (ja), Dutch (nl), Polish (pl), Portuguese (pt), Russian (ru), Chinese (zh-CN).
+
+# Requirements
+
+- Python 3.7+
+
+# Installation
+
+```console
+$ pip install asrecognition
+```
+
+# How to use it?
+
+```python
+from asrecognition import ASREngine
+
+# 1 - Load the ASR engine by a given language (may take a while for the first time)
+asr = ASREngine("en")
+
+# 2 - Use the ASR engine to transcribe a list of audio files
+audio_paths = ["/path/to/sagan.mp3", "/path/to/asimov.wav"]
+transcriptions = asr.transcribe(audio_paths)
+
+# 3 - Voilà!
+print(transcriptions)
+
+# [
+#  {"path": "/path/to/sagan.mp3", "transcription": "EXTRAORDINARY CLAIMS REQUIRE EXTRAORDINARY EVIDENCE"},
+#  {"path": "/path/to/asimov.wav", "transcription": "VIOLENCE IS THE LAST REFUGE OF THE INCOMPETENT"}
+# ]
+```
+# Want to help?
+
+See the [contribution guidelines](https://github.com/jonatasgrosman/asrecognition/blob/master/CONTRIBUTING.md)
+if you'd like to contribute to ASRecognition project.
+
+You don't even need to know how to code to contribute to the project. Even the improvement of our documentation is an outstanding contribution.
+
+If this project has been useful for you, please share it with your friends. This project could be helpful for them too.
+
+If you like this project and want to motivate the maintainers, give us a :star:. This kind of recognition will make us very happy with the work that we've done with :heart:
+
+# Citation
+If you want to cite the tool you can use this:
+
+```bibtex
+@misc{grosman2021asrecognition,
+  title={ASRecognition},
+  author={Grosman, Jonatas},
+  publisher={GitHub},
+  journal={GitHub repository},
+  howpublished={\url{https://github.com/jonatasgrosman/asrecognition}},
+  year={2021}
+}
+```
