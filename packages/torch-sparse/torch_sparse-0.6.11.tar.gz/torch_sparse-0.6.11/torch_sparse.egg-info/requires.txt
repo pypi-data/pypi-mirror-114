@@ -1,0 +1,6 @@
+scipy
+
+[test]
+pytest
+pytest-runner
+pytest-cov
