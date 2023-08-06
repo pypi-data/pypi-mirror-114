@@ -1,0 +1,8 @@
+appdirs
+configerus>=3.0.0
+pyyaml
+docker
+kubernetes==18.20.0b1
+fire
+requests
+toml
