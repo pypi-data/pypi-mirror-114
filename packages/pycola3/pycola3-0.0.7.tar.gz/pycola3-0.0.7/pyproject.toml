@@ -1,0 +1,21 @@
+
+[build-system]
+requires = ["setuptools>=30.3.0",
+            "wheel",
+            "setuptools_scm",
+            "cython>=0.23",
+            "pyfftw"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+target-version = ['py39',]
+exclude = '''
+/(
+    \.git
+  | build
+  | dist
+  | docs
+  | examples
+  | pycola3/src
+)/
+'''

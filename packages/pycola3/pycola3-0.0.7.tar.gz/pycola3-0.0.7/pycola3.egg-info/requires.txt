@@ -1,0 +1,5 @@
+numpy>=0.19
+scipy
+h5py
+pyfftw
+cython
