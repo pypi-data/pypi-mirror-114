@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sfu-ml-lib
+Version: 0.0.12
+Summary: Libraries that support the development of machine learning models in TensorFlow.
+Author: Anderson de Andrade
+Author-email: anderson_de_andrade@sfu.ca
+Requires-Python: >=3.8,<3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: mlflow-skinny (>=1.8,<2.0)
+Requires-Dist: numba (>=0.51,<1)
+Requires-Dist: numpy
+Requires-Dist: scikit-learn (>=0.24,<1)
+Requires-Dist: scipy (>=1.4,<2.0)
+Requires-Dist: sfu-data-io (>=0.1,<1)
+Requires-Dist: tensorflow (>=2.2,<3.0)
