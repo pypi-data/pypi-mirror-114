@@ -1,0 +1,14 @@
+b2a/__init__.py,sha256=9EbKIG-PiT6yAg6sMplRXa1uBz8ktpAFP840_adLvYE,6421
+b2a/aliplat.py,sha256=ART5r-31tPsLO5dKcAeNObT85rSraja0GjZbCq35vZ0,12515
+b2a/bdyplat.py,sha256=GfGdrPcTQYDQLbWdMoPZI0n6l5TBnms_M4vgn8TTq4w,3488
+b2a/config.py,sha256=gUytIickFlcFoQn5QAJvtbDvYGrn5n6yk1BdZMe0MiY,992
+b2a/platformImp.py,sha256=ipcG2eGRuFSudCtHpbkd5IAGkPHb84Q04uXNQb4ZDzc,1330
+b2a/trans.py,sha256=GSI46tQIrY_BDg1hOzalDnZt8zgvs5Sae4ANvrFpsTc,2457
+b2a_gui/__init__.py,sha256=e5M9Iu9KlFEqxrmJhlxw1IhmsWBceq1Pf-rz7orVTfQ,900
+b2a_gui/download.py,sha256=MlqmKieDNxmILQFZ6FhkqPJbUIFJAzKUUR0gSq_Zleg,3959
+b2a_gui/main.py,sha256=ThqLhu-dX00mWqJzqUo99OHObD8Sab1p4dFZcx6450I,2712
+b2a-2021.7.28.3.dist-info/METADATA,sha256=RaGcyd2zcsT_eQbb8ii8RWh8WI5HCFh_1h9cgYMSbQE,340
+b2a-2021.7.28.3.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+b2a-2021.7.28.3.dist-info/entry_points.txt,sha256=B7NH5cMbUKn1DGSkBGLlVyVsyHoRa3KeAm0gpZ7iaOA,34
+b2a-2021.7.28.3.dist-info/top_level.txt,sha256=Pt2cOYPPeBz_xvIU59fwuDfC8yA1tpoP3c7qSswFWsA,12
+b2a-2021.7.28.3.dist-info/RECORD,,
