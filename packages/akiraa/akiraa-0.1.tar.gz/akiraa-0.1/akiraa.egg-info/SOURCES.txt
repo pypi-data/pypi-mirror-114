@@ -1,0 +1,10 @@
+setup.py
+akiraa/Binomialdistribution.py
+akiraa/Gaussiandistribution.py
+akiraa/Generaldistribution.py
+akiraa/__init__.py
+akiraa.egg-info/PKG-INFO
+akiraa.egg-info/SOURCES.txt
+akiraa.egg-info/dependency_links.txt
+akiraa.egg-info/not-zip-safe
+akiraa.egg-info/top_level.txt
