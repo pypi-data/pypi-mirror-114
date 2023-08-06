@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: toupy
+Version: 0.2.2
+Summary: Tomographic Utilities for Python
+Home-page: https://github.com/jcesardasilva/toupy
+Author: Julio Cesar da Silva
+Author-email: julio-cesar.da-silva@neel.cnrs.fr
+License: GPLv3 License
+Project-URL: Bug Tracker, https://github.com/jcesardasilva/toupy/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Classifier: Operating System :: Unix
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fabio (>=0.11.0)
+Requires-Dist: h5py (>=3.1.0)
+Requires-Dist: ipython (>=7.16.1)
+Requires-Dist: joblib (>=1.0.1)
+Requires-Dist: matplotlib (>=3.3.4)
+Requires-Dist: numpy (>=1.16.5)
+Requires-Dist: numexpr (>=2.6.9)
+Requires-Dist: scipy (>=1.5.4)
+Requires-Dist: PyFFTW (>=0.11.1)
+Requires-Dist: pyopencl (>=2021.1.1)
+Requires-Dist: scikit-image (>=0.17.2)
+Requires-Dist: silx (>=0.9.0)
+Requires-Dist: tqdm (>=4.61.2)
+
+<img src="resources/toupy_logo.png" alt="toupy" width="200"> 
+
+TOUPY - Tomographic Utilities for Python
+========================================
+DOI: [![DOI](https://zenodo.org/badge/196718112.svg)](https://zenodo.org/badge/latestdoi/196718112)
+
+Introduction
+------------
+
+The name **Toupy** stands for Tomographic Utilites for Python and it is a wordplay with the French 
+word *toupie* (pronounced *too-pee*)  for spinning top, the toy designed to spin rapidly on the ground, the motion of 
+which causes it to remain precisely balanced on its tip due to its rotational inertia. 
+You can find the information in the wikipedia page in [English](https://en.wikipedia.org/wiki/Top) and in [French](https://fr.wikipedia.org/wiki/Toupie_(jouet)).
+
+Documentation
+-------------
+
+The documentation can be found in [ReadTheDocs](https://toupy.readthedocs.io/en/latest/).
+
+Installation
+------------
+
+Installation should be as simple as:
+
+	pip install toupy
+
+For local installation, using the flag --user:
+
+	pip install --user toupy
+
+or, if you prefer:
+
+    python3 setup.py install --user
+
+after downloading/clone github repository files. 
+    
+Click [here](https://toupy.readthedocs.io/en/latest/installing.html) for more info about installation.
+
+Travis
+------
+[![Build Status](https://travis-ci.com/jcesardasilva/toupy.svg?branch=master)](https://travis-ci.com/jcesardasilva/toupy)
+
+Get started
+-----------
+
+Get started quickly with the examples in the [templates](https://github.com/jcesardasilva/toupy/tree/master/templates) directory.
+
+
+Dependencies
+------------
+
+Toupy depends on the following python packages:
+
+* python >= 3.6
+* numpy
+* numexpr
+* matplotlib
+* pyfftw
+* fabio
+* h5py
+* scikit-image
+* silx
+
+Call for Contributions
+----------------------
+
+Toupy welcomes help to improvements from a wide range of different backgrounds.
+For example, work on the documentation is well appreciated.
+
+
