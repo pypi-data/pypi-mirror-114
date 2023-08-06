@@ -1,0 +1,12 @@
+discolib/__init__.py,sha256=pjAdVcd3gGRktxvnIlmz7oTGLuaaL1LOGT2reC_esN4,186
+discolib/__main__.py,sha256=rKhU1UDGDG_P4H91xI1Vj265lm9-ZO7VSb7IrzDkOms,2216
+discolib/attr.py,sha256=227wDrhhCNZveHDNHdsEekwdnoGod1FthzvP7j0et5M,2149
+discolib/core.py,sha256=PnaabMm1ASw-WqdAUTItxNz2udsUVSG7iO12h9Qt2R0,2237
+discolib/io.py,sha256=ictA2PbhI75n1EatXaSpT2S5U_EWBl7Ba-3Jlk5i0AQ,2531
+discolib/protocol.py,sha256=1UJupnYmQHf2ac1yxEA9H2dSqqqAdRoTYOOWIPx8v_M,1333
+discolib/examples/serial.py,sha256=3SkGSq9xqCWnRovdZk-LNNSM7P7nsm4uZXo9SD5BmII,870
+discolib/examples/stub.py,sha256=BbZGMn7WxU6z6DQgZW05YbWs9cnrYrFgyyEXfnqOuuk,847
+discolib-0.1.90.dist-info/METADATA,sha256=TQE7mTRwJdidn7TOYGwT4c-y6tc2V8tUzfkw5q8S8xQ,450
+discolib-0.1.90.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+discolib-0.1.90.dist-info/top_level.txt,sha256=JUj8upnH5gxSmigp2PUnqL2rL8Vdfs4oWCvKYGO82I0,9
+discolib-0.1.90.dist-info/RECORD,,
