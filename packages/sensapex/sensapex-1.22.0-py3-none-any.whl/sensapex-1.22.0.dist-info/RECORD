@@ -1,0 +1,12 @@
+sensapex/__init__.py,sha256=NxriQztYjnEf6R2u3nWF3hsM1bEdJZAOdFs-eIm66Zo,51
+sensapex/accuracy_test.py,sha256=JBuTUlOfClvCrMH6eZJzxt1kSsjTGBMI1abCzlpoXcc,6723
+sensapex/libum.dll,sha256=TdoJCM4-v83JfQbEwiicWj3ql7VITaFq8_UfsGdi6JQ,44032
+sensapex/sensapex.py,sha256=HAgxw602jy7QuqKToeDITMMWyFhf_WHyOa60XbBqrk8,26489
+sensapex/test.py,sha256=xE_zJe_5HBRY-xy_Rzj1E_0665Ta9_vHcI2MLjZNi1A,1329
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_move_request.py,sha256=SQQg4K1i3v1Ee-LdOXw_z2HNJink0LudJr1SPzdUtDg,5171
+sensapex-1.22.0.dist-info/LICENSE,sha256=4cEKm0TrzPOMQFHtgrkT3yOIX2Yq1QLa3QDIjqEMGIY,1121
+sensapex-1.22.0.dist-info/METADATA,sha256=bTcuojDWIlDR9y5973x2fvmkGffbUn5rxQNHPhgisP8,2430
+sensapex-1.22.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sensapex-1.22.0.dist-info/top_level.txt,sha256=Vg4vLv0_c3x8UIaLiKBWoeWvg_1oeW3F7yXc8uFxgw8,15
+sensapex-1.22.0.dist-info/RECORD,,
