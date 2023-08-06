@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: aiotr
+Version: 0.1.0
+Summary: Support transmission rpc client and manage server with async/await
+Home-page: https://github.com/synodriver/aiotransmission
+Author: synodriver
+Author-email: diguohuangjiajinweijun@gmail.com
+Maintainer: v-vinson
+License: GPLv3
+Project-URL: Bug Tracker, https://github.com/synodriver/aiotransmission/issues
+Description: # aiotr
+        ## The transmission python client with asyncio support
+Keywords: asyncio,transmission
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: AsyncIO
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
