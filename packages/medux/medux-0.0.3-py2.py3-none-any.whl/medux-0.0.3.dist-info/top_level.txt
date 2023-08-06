@@ -1,0 +1,4 @@
+locale
+media
+medux
+static
