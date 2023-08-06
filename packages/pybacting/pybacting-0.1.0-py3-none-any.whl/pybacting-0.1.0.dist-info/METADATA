@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: pybacting
+Version: 0.1.0
+Summary: A python wrapper around bacting
+Home-page: https://github.com/cthoyt/pybacting
+Author: Charles Tapley Hoyt
+Author-email: cthoyt@gmail.com
+Maintainer: Charles Tapley Hoyt
+Maintainer-email: cthoyt@gmail.com
+License: MIT
+Download-URL: https://github.com/cthoyt/pybacting/releases
+Project-URL: Bug Tracker, https://github.com/cthoyt/pybacting/issues
+Keywords: databases,biological databases,biomedical databases
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scyjava
+
+# pybacting
+
+Python wrapper around [bacting](https://github.com/egonw/bacting).
+
+## Usage
+
+Based on the example from the bacting page, you can do:
+
+```python
+from pybacting import cdk
+
+print(cdk.fromSMILES("COC"))
+```
+
+Or you can use some of the more pythonic functions that wrap the functions
+exposed through the `pybacting.cdk` object:
+
+```python
+import pybacting
+
+print(pybacting.from_smiles("COC"))
+```
+
+## Installation
+
+Before installing, you'll need to make sure Maven (`mvn`) is available on your
+path. If you're on mac, use `brew install maven`.
+
+Install from GitHub:
+
+```shell
+$ pip install git+https://github.com/cthoyt/pybacting
+```
+
+Install in development mode:
+
+```shell
+$ git clone https://github.com/cthoyt/pybacting
+$ cd pybacting
+$ pip install --editable .
+```
+
+
+
