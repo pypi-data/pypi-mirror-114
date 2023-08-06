@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/smsfactor/__init__.py
+src/smsfactor/smsfactor.py
+src/smsfactor.egg-info/PKG-INFO
+src/smsfactor.egg-info/SOURCES.txt
+src/smsfactor.egg-info/dependency_links.txt
+src/smsfactor.egg-info/requires.txt
+src/smsfactor.egg-info/top_level.txt
+src/smsfactor/ressources/__init__.py
