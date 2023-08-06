@@ -1,0 +1,4 @@
+_preselectedtranslations
+_stemdescriptor
+pystem
+stemdescriptor2
