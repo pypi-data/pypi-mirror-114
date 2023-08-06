@@ -1,0 +1,9 @@
+setup.py
+src/__init__.py
+src/swpwn.py
+swpwn.egg-info/PKG-INFO
+swpwn.egg-info/SOURCES.txt
+swpwn.egg-info/dependency_links.txt
+swpwn.egg-info/entry_points.txt
+swpwn.egg-info/requires.txt
+swpwn.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+swpwn = swpwn.swpwn:main
+
