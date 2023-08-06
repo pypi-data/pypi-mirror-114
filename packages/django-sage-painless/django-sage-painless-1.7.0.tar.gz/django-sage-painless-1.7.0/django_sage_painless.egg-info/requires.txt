@@ -1,0 +1,9 @@
+Django
+django-redis
+redis
+drf-yasg
+django-seed
+Faker
+autopep8
+django-sage-encrypt
+django-sage-streaming
