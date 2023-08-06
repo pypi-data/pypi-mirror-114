@@ -1,0 +1,16 @@
+License.txt
+setup.py
+mgtdisklib/Disk.py
+mgtdisklib/File.py
+mgtdisklib/Image.py
+mgtdisklib/__init__.py
+mgtdisklib.egg-info/PKG-INFO
+mgtdisklib.egg-info/SOURCES.txt
+mgtdisklib.egg-info/dependency_links.txt
+mgtdisklib.egg-info/requires.txt
+mgtdisklib.egg-info/top_level.txt
+tests/__init__.py
+tests/runtests.py
+tests/test_disk.py
+tests/test_file.py
+tests/test_image.py
