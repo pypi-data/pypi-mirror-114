@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "tuxsay"
+version = "0.1.1"
+description = "A CLI like cowsay but its Tux as your host"
+authors = ["Arghya Sarkar <arghyasarkar.nolan@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+click = "^8.0.1"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+txs = "tuxsay.main:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
