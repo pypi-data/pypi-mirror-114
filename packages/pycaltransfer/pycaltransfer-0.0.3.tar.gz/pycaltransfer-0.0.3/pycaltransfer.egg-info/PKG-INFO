@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pycaltransfer
+Version: 0.0.3
+Summary: Calibration transfer for chemometrics and spectral data applications
+Home-page: https://gitlab.com/vfonsecad/pycaltransfer
+Author: Valeria Fonseca Diaz
+Author-email: valeria.fonseca.diaz@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Calibration transfer for chemometrics and spectral data applications
+
+This package contains methods to perform calibration transfer based on bilinear models, mainly Partial Least Squares Regression.
+Numpy and Sci-Kit Learn are mandatory dependencies
+
+The methods included are:
+
+(Piecewise) Direct Standardization (PDS, DS) (Wang 1991, Bouveresse1996)
+
+Orthogonal projection (EPO transfer) (Zeaiter 2006, Roger 2003)
+
+Domain invariant PLS (Nikzad-Langerodi 2018)
+
+Joint Y PLS (Folch-Fortuny 2017, Garcia Munoz 2005)
+
+To start using this package and get the documentation of the methods, do:
+
+```python
+import pycaltransfer.caltransfer as caltransfer
+help(caltransfer.ds_pc_transfer_fit)
+help(caltransfer.pds_pls_transfer_fit)
+help(caltransfer.epo_fit)
+help(caltransfer.jointypls_regression)
+help(caltransfer.slope_bias_correction)
+help(caltransfer.nipals_dipls)
+```
+
+
