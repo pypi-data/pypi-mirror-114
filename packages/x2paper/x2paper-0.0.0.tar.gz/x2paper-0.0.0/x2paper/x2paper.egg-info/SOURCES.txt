@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+x2paper/core/__init__.py
+x2paper/core/utils.py
+x2paper/x2paper.egg-info/PKG-INFO
+x2paper/x2paper.egg-info/SOURCES.txt
+x2paper/x2paper.egg-info/dependency_links.txt
+x2paper/x2paper.egg-info/requires.txt
+x2paper/x2paper.egg-info/top_level.txt
