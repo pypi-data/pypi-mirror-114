@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: smsAlert
+Version: 1.0.1
+Summary: A simple python client for Sms Alert APIs
+Home-page: https://github.com/smsAlert
+Author: Prashant
+Author-email: prashant@cozyvision.com
+License: ISCL
+Keywords: smsAlert
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+
+SMS Alert
+==========
+
+A simple python client for SMS Alert APIs.
+To use this package, you must have a valid account on https://www.smsalert.co.in.
+
+* Free software: ISC license
+
+Features
+--------
+
+* Send sms to any mobile number using SMS Alert username, password, senderid, route.
+
+
+Requirements
+------------
+
+* username : SMS Alert account username
+
+* password : SMS Alert account password
+
+* mobileno : Destination mobile number (Keep number in international format)
+
+* message : Message Content to send
+
+* senderid : Receiver will see this as sender's ID
+
+* route : If your operator supports multiple routes then give one route name
+
+
+How to use
+----------
+
+//import smsAlert.py where you want to send msg
+
+	from smsAlert import smsAlertMsg
+
+	class smsAlertMsg(unittest.TestCase):
+   
+    def setUp(self):
+	username='' # add your SMS Alert username
+        password='' # add your SMS Alert password
+	
+	self.client = smsAlertMsg(username=username,password=password)
+
+    def tearDown(self):
+        pass
+
+    def test_send_sms(self):
+        self.client.send_sms('918010551055','Test SMS','CVDEMO','demo') #(mobileno, message, senderid, route)
+		
+	if __name__ == '__main__':
+    import sys
+    sys.exit(unittest.main())	
+
+
+Credits
+---------
+
+This package was created with Cozy Vision Pvt. Ltd.
+
+
+
+History
+=======
+
+0.5.0
+------------------
+
+* First release on PyPI.
+
+1.0.0 
+------------------
+
+* Some minor changes and fixes.
+
+1.0.1
+------------------
+
+* Updated Readme
+* Minor changes.
+
+
