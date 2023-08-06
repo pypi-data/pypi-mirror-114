@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: soundsliceapi
+Version: 1.0
+Summary: The official Python library for Soundslice's data API.
+Home-page: https://github.com/soundslice/soundsliceapi/
+Author: Soundslice
+Author-email: feedback@soundslice.com
