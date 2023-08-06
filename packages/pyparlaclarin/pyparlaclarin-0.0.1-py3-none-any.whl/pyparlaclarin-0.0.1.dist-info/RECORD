@@ -1,0 +1,7 @@
+pyparlaclarin/__init__.py,sha256=qVOtEazazgUGFFGNFDswV8YHuSmaLTDp0CFDisgs36M,83
+pyparlaclarin/create.py,sha256=Zc3RfE4XKgzEqgUvbNqECzppobJ8udg5GzNq7cR4pyE,3849
+pyparlaclarin/read.py,sha256=N-JQboN-SEtYxqY1wqr9Y1lJECTYBGilulfJ5cGiLP0,4771
+pyparlaclarin/refine.py,sha256=OPGZp3oEMFalxS-T6NHSCIBO024X_kCsJEGVNZHzuY4,4662
+pyparlaclarin-0.0.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+pyparlaclarin-0.0.1.dist-info/METADATA,sha256=PwwbKN3lA1er0hcSqrVw8EfdPi6fIBskvXZw0bInhFA,364
+pyparlaclarin-0.0.1.dist-info/RECORD,,
