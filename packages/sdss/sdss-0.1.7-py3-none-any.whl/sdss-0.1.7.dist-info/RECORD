@@ -1,0 +1,10 @@
+sdss/__init__.py,sha256=FwA28chdj-V8BW5OGpyujqz2e8sbm7FsKhEkFOObqzE,234
+sdss/objects.py,sha256=xmdZsm8iqlIJHVW2llc-IQ8u8Kw1QUjgrYVyciwttjg,4987
+sdss/refs.py,sha256=Yl4IHDGdBBYEqnTLRfI_eNyxqJmYtGhd22K0UZcX8Sc,292
+sdss/regions.py,sha256=JOHhAXpAUrQo6yfEuQYTAtHHQbSkQ57LlQBNgixkJwQ,3390
+sdss/utils.py,sha256=r6RhoqTrqptm-iijmW3LlzwhplE-4lNIIfYDufm_o6Y,3917
+sdss-0.1.7.dist-info/LICENSE.txt,sha256=xUUPh7-Cezg7Tj6iSBkhBbwkYRfWJBRmR38hLa9IKrM,1071
+sdss-0.1.7.dist-info/METADATA,sha256=k6-yghAerRtrJFwSaSgCT1Uq5EcJxHO_5F5KiprxpEs,1720
+sdss-0.1.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sdss-0.1.7.dist-info/top_level.txt,sha256=ZZFCDSN5ZGAIgrYraZ_mDth8zjAntjze8maTNVfmm_U,5
+sdss-0.1.7.dist-info/RECORD,,
