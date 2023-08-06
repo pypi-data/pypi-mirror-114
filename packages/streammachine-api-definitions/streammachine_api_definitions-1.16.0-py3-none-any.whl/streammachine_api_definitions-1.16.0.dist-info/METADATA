@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: streammachine-api-definitions
+Version: 1.16.0
+Summary: Stream Machine API definitions
+Home-page: UNKNOWN
+Author: Stream Machine B.V.
+Author-email: apis@streammachine.io
+License: UNKNOWN
+Keywords: streammachine api definitions
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.6
+Requires-Dist: grpcio (==1.38.1)
+
+UNKNOWN
+
