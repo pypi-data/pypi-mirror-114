@@ -1,0 +1,5 @@
+numpy~=1.19
+pybind11~=2.6.2
+cached_property
+cpufeature==0.2.0
+pymorton==1.0.5
