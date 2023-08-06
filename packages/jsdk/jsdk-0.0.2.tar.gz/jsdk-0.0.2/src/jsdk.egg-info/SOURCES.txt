@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/jsdk/__init__.py
+src/jsdk/manager.py
+src/jsdk/models.py
+src/jsdk.egg-info/PKG-INFO
+src/jsdk.egg-info/SOURCES.txt
+src/jsdk.egg-info/dependency_links.txt
+src/jsdk.egg-info/requires.txt
+src/jsdk.egg-info/top_level.txt
