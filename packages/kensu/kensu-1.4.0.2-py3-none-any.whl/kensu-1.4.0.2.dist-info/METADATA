@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: kensu
+Version: 1.4.0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author-email: 
+License: UNKNOWN
+Keywords: Ingestion,Kensu,Data Intelligence Manager,Analytics Observability,Data Observability
+Platform: Posix; MacOS X; Windows
+License-File: LICENSE
+
+    Python Client to Report Entities to Kensu Data Activity Manager    
+
