@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: topicmodels
+Version: 0.0.7
+Summary: A package for topic modelling in python.
+Home-page: https://github.com/AmitKumarKushwaha/topicmodeling
+Author: Amit Kumar Kushwaha
+Author-email: kushwaha.amitkumar@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/AmitKumarKushwaha/topicmodeling/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: absl-py
+Requires-Dist: aiohttp
+Requires-Dist: astor
+Requires-Dist: astunparse
+Requires-Dist: async-timeout
+Requires-Dist: attrs
+Requires-Dist: blinker
+Requires-Dist: brotlipy
+Requires-Dist: cachetools
+Requires-Dist: certifi
+Requires-Dist: cffi
+Requires-Dist: chardet
+Requires-Dist: click
+Requires-Dist: collection
+Requires-Dist: colorama
+Requires-Dist: coverage
+Requires-Dist: cryptography
+Requires-Dist: cython
+Requires-Dist: dataclasses
+Requires-Dist: fasttext
+Requires-Dist: filelock
+Requires-Dist: gast
+Requires-Dist: google-auth
+Requires-Dist: google-auth-oauthlib
+Requires-Dist: google-pasta
+Requires-Dist: grpcio
+Requires-Dist: h5py
+Requires-Dist: huggingface-hub
+Requires-Dist: icc-rt
+Requires-Dist: idna
+Requires-Dist: idna-ssl
+Requires-Dist: importlib-metadata
+Requires-Dist: intel-openmp
+Requires-Dist: joblib
+Requires-Dist: keras
+Requires-Dist: keras-applications
+Requires-Dist: keras-preprocessing
+Requires-Dist: protobuf
+Requires-Dist: markdown
+Requires-Dist: multidict
+Requires-Dist: nltk
+Requires-Dist: numpy
+Requires-Dist: oauthlib
+Requires-Dist: opt-einsum
+Requires-Dist: packaging
+Requires-Dist: pandas
+Requires-Dist: pyasn1
+Requires-Dist: pyasn1-modules
+Requires-Dist: pybind11
+Requires-Dist: pycparser
+Requires-Dist: pyjwt
+Requires-Dist: pyopenssl
+Requires-Dist: pyparsing
+Requires-Dist: pyreadline
+Requires-Dist: pysocks
+Requires-Dist: pytz
+Requires-Dist: pyyaml
+Requires-Dist: regex
+Requires-Dist: requests
+Requires-Dist: requests-oauthlib
+Requires-Dist: rsa
+Requires-Dist: sacremoses
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: setuptools
+Requires-Dist: six
+Requires-Dist: sklearn
+Requires-Dist: tensorboard
+Requires-Dist: tensorboard-plugin-wit
+Requires-Dist: tensorflow
+Requires-Dist: tensorflow-estimator
+Requires-Dist: termcolor
+Requires-Dist: threadpoolctl
+Requires-Dist: tokenizers
+Requires-Dist: torch
+Requires-Dist: tqdm
+Requires-Dist: transformers
+Requires-Dist: typing-extensions
+Requires-Dist: urllib3
+Requires-Dist: vc
+Requires-Dist: werkzeug
+Requires-Dist: wheel
+Requires-Dist: win-inet-pton
+Requires-Dist: wincertstore
+Requires-Dist: wrapt
+Requires-Dist: yarl
+Requires-Dist: zipp
+
+# Topic Modelling
+
