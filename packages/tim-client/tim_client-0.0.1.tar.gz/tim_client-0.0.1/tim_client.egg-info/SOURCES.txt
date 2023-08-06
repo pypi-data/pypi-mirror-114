@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+tim_client.egg-info/PKG-INFO
+tim_client.egg-info/SOURCES.txt
+tim_client.egg-info/dependency_links.txt
+tim_client.egg-info/requires.txt
+tim_client.egg-info/top_level.txt

@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: tim-client
+Version: 0.0.1
+Summary: TIM Python Client
+Home-page: https://tangent.works
+Author: Tangent Works
+Author-email: info@tangent.works
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# TIM Python Client V5
+
+# Project setup
+
+Run `pip3 install -e '.[dev]'` to install dependencies from the setup.cfg.
+Run `pre-commit install` to setup the git pre-hooks.
+
+# Build and upload to TestPyPi
+
+1. Remove dist folder
+2. python3 -m build
+3. python3 -m twine upload --repository testpypi dist/*
+
+
