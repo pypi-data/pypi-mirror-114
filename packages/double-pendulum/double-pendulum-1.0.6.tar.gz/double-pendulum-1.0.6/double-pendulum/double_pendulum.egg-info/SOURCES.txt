@@ -1,0 +1,7 @@
+README.md
+setup.py
+double-pendulum/double_pendulum.egg-info/PKG-INFO
+double-pendulum/double_pendulum.egg-info/SOURCES.txt
+double-pendulum/double_pendulum.egg-info/dependency_links.txt
+double-pendulum/double_pendulum.egg-info/entry_points.txt
+double-pendulum/double_pendulum.egg-info/top_level.txt
