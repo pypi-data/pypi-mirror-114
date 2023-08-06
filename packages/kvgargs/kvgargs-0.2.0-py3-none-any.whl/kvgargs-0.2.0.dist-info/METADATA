@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: kvgargs
+Version: 0.2.0
+Summary: Grouped key-value command line argument parser
+Home-page: https://declassed.art/repository/kvgargs
+Author: AXY
+Author-email: axy@declassed.art
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Software Development :: User Interfaces
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+
+
+Grouped key=value command line argument parser
+==============================================
+
+This is an extended and less elegant version of ``kvargs`` module.
+
+It parses arguments in key=value form and groups them by preceeding nonparseable arguments.
+
+
+How to use this module
+----------------------
+
+example.py::
+
+    import kvgargs
+
+    print(kvgargs.all)
+    print(kvgargs.group)
+
+How to provide command line args
+--------------------------------
+
+Example 1::
+
+    python3 example.py foo=bar create far=baz
+
+Output::
+
+    OrderedDict([('foo', 'bar'), ('far', 'baz')])
+    OrderedDict([(None, {'foo': 'bar'}), ('create', {'far': 'baz'})])
+
+Example 2::
+
+    python3 example.py create something foo=bar with far=baz
+
+Output::
+
+    OrderedDict([('foo', 'bar'), ('far', 'baz')])
+    OrderedDict([(('create', 'something'), {'foo': 'bar'}), ('with', {'far': 'baz'})])
+
+
+
