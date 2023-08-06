@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+src/q_server.egg-info/PKG-INFO
+src/q_server.egg-info/SOURCES.txt
+src/q_server.egg-info/dependency_links.txt
+src/q_server.egg-info/top_level.txt
+src/qclient/__init__.py
+src/qclient/qclient.py
