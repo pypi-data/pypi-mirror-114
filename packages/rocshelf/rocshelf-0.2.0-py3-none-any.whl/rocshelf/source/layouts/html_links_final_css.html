@@ -1,0 +1,9 @@
+<script>
+	var ls = [{i{urls}}]
+	ls.forEach(e => {
+		var l = document.createElement("link");
+		l.rel = "stylesheet";
+		l.href = e;
+		document.head.insertBefore( l, document.head.childNodes[ document.head.childNodes.length - 1 ].nextSibling );
+	});
+</script>
