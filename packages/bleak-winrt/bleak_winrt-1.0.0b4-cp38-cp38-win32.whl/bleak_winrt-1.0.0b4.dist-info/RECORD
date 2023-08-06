@@ -1,0 +1,14 @@
+bleak_winrt/__init__.py,sha256=WfBvW2CvVuwBpVOCkHngBwJeChj29ycCaIEUgtah_tE,643
+bleak_winrt/_bleak_winrt.pyd,sha256=ae6FH32Pl9yhSuvkpR3PeDM0lj31CgkjF9B6Ldli5x0,1011712
+bleak_winrt/windows/devices/bluetooth/__init__.py,sha256=kzVLBMi5D1NqRv2kD1oCyW-82qm1iaZ7bb3scbt6tTE,4872
+bleak_winrt/windows/devices/bluetooth/advertisement/__init__.py,sha256=jVhnhDxjggkPXek0TU_jzUeCcyWOgKeI2O6LltWrsv8,2335
+bleak_winrt/windows/devices/bluetooth/background/__init__.py,sha256=-T_HGT5wg62XOGVNjUcP1oV1EA9Y9eWjTN8nnUyPsJg,1635
+bleak_winrt/windows/devices/bluetooth/genericattributeprofile/__init__.py,sha256=agl4mLwI3F3CUyogfg8jyZLoCPaAHMsw1QKgwgxAMXA,4525
+bleak_winrt/windows/foundation/__init__.py,sha256=2N8VKghYL0Bzabg5Xcy9uxbLPrTAnxqRkcjDtRTOiyQ,2468
+bleak_winrt/windows/foundation/collections/__init__.py,sha256=fruzRXM5O_nnjBpLKh1GYwBi4Ouyq5Sh0sKuEJqxvG0,997
+bleak_winrt/windows/storage/streams/__init__.py,sha256=YU8quLEcWztyLZU8QaeELmQU3i41rYlSkOsOmWHEeJc,2107
+bleak_winrt-1.0.0b4.dist-info/LICENSE,sha256=MW8rBna0m4VA7d6672vhTpu3V6o7MRMSK3dVpP61EyQ,1128
+bleak_winrt-1.0.0b4.dist-info/METADATA,sha256=VbN3PXtZPPKgc7WmAqvo8TH8QC7z3ipZhhBvPaJUoQA,798
+bleak_winrt-1.0.0b4.dist-info/WHEEL,sha256=QI_fCOG00gjGmGu-hCXoIniW60IQcc6i5OCOVh5_SLA,90
+bleak_winrt-1.0.0b4.dist-info/top_level.txt,sha256=P-iqpP41WLbcFviBbenVhTKYeMtE-FGSYRsmgXRmMHY,12
+bleak_winrt-1.0.0b4.dist-info/RECORD,,
