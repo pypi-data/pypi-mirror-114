@@ -1,0 +1,7 @@
+LICENSE,sha256=sJAjE890aAct1xVz6C_a7bnM0HiAT1Ghoe29yxLDK1s,1071
+src/coingecko_api_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/coingecko_api_client/client.py,sha256=PM7wiSJcLqiBXhonOvJX8u4zPbtfFa79ULa1JHnEGCs,30520
+coingecko_api_client-0.1.3.dist-info/LICENSE,sha256=sJAjE890aAct1xVz6C_a7bnM0HiAT1Ghoe29yxLDK1s,1071
+coingecko_api_client-0.1.3.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+coingecko_api_client-0.1.3.dist-info/METADATA,sha256=OYOGUhhJRuf60KEEuzoPZoiz3NMuxxIzx04D9S5FZOA,2154
+coingecko_api_client-0.1.3.dist-info/RECORD,,
