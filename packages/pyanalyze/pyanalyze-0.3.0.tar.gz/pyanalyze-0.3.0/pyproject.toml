@@ -1,0 +1,27 @@
+[tool.black]
+target_version = ['py36']
+include = '\.pyi?$'
+skip-magic-trailing-comma = true
+experimental-string-processing = true
+
+# README
+# The first section is for directories
+# The second section is for specific files
+
+exclude = '''
+/(
+    \.git
+  | \.ipython
+  | \.ipython64
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+)/
+'''
+
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
