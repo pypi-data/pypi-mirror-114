@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: libhsmd
+Version: 0.10.0.post3
+Summary: Python wrapper to the libhsmd library
+Home-page: https://github.com/ElementsProject/lightning/tree/master/contrib/libhsmd_python/
+Author: Christian Decker
+Author-email: cdecker@blockstream.com
+License: BSD-MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+
