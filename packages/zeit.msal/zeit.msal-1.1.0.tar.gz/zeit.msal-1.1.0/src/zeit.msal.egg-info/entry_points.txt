@@ -1,0 +1,3 @@
+[console_scripts]
+msal-token = zeit.msal.cli:cli
+

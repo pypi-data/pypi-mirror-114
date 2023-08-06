@@ -1,0 +1,59 @@
+Metadata-Version: 1.0
+Name: zeit.msal
+Version: 1.1.0
+Summary: Microsoft Azure AD authentication helper for CLI applications
+Home-page: https://github.com/ZeitOnline/zeit.msal
+Author: Zeit Online
+Author-email: zon-backend@zeit.de
+License: BSD
+Description: =========
+        zeit.msal
+        =========
+        
+        Helper to authenticate against Microsoft Azure AD and store the resulting tokens for commandline applications.
+        
+        Usage
+        =====
+        
+        1. Run interactively to store a refresh token in the cache
+        2. Use in e.g. automated tests to retrieve an ID token from the cache (which automatically refreshes it if necessary).
+        
+        ::
+        
+            $ msal-token --client-id=myclient --client-secret=mysecret \
+                --cache-url=file:///tmp/msal.json login
+            Please visit https://login.microsoftonline.com/...
+            # Perform login via browser
+        
+        
+            def test_protected_web_ui():
+                auth = zeit.msal.Authenticator(
+                    'myclient', 'mysecret', 'file:///tmp/msal.json')
+                http = requests.Session()
+                http.headers['Authorization'] = 'Bearer %s' % auth.get_id_token()
+                r = http.get('https://example.zeit.de/')
+                assert r.status_code == 200
+        
+        
+        Alternatively, retrieve the refresh token after interactive login, and use that in tests::
+        
+            auth.login_with_refresh_token('myrefreshtoken')
+        
+        
+        zeit.msal changes
+        =================
+        
+        1.1.0 (2021-07-28)
+        ------------------
+        
+        - Add `get_access_token` method, make scopes configurable
+        
+        - Implement redis cache
+        
+        
+        1.0.0 (2021-07-23)
+        ------------------
+        
+        - Initial release
+        
+Platform: UNKNOWN
