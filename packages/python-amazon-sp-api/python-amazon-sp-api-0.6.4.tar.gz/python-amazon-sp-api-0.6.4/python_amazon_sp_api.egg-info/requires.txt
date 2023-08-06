@@ -1,0 +1,7 @@
+requests
+six<2,>=1.15
+boto3<2,>=1.16.39
+cachetools~=4.2.0
+pycryptodome
+pytz
+confuse~=1.4.0
