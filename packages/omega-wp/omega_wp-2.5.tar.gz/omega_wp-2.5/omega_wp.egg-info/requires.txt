@@ -1,0 +1,5 @@
+pwntools
+requests
+bs4
+lxml
+responses
