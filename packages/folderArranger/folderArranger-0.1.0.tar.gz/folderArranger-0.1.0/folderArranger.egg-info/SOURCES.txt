@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+folderArranger/UnRAR.exe
+folderArranger/__init__.py
+folderArranger/folderArranger.py
+folderArranger.egg-info/PKG-INFO
+folderArranger.egg-info/SOURCES.txt
+folderArranger.egg-info/dependency_links.txt
+folderArranger.egg-info/requires.txt
+folderArranger.egg-info/top_level.txt

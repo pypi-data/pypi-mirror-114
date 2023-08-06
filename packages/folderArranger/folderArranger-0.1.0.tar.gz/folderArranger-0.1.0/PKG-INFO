@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: folderArranger
+Version: 0.1.0
+Summary: A library to assist in organizing folders of student projects so that they are easier to grade.
+Home-page: https://github.com/mehmetsinanyildirim/folderArranger
+Author: Mehmet Sinan YILDIRIM
+Author-email: mehmetsinanyildirim@yandex.com
+License: BSD 2-clause
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
+
+UNKNOWN
+
