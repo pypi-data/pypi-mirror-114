@@ -1,0 +1,4 @@
+# https://snarky.ca/what-the-heck-is-pyproject-toml/
+[build-system]
+requires = ["setuptools >= 40.6.0", "wheel", "Cython>=0.29.24", "luckydonald-utils>=0.82", "cffi>=1.0.0"]
+build-backend = "setuptools.build_meta"
