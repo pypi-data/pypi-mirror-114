@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pipsearchguitk
+Version: 0.1.1
+Summary: Check whether a particular package is available in your system
+Home-page: https://github.com/ahn1305/pipsearchguitk
+Author: Ashwin.B
+Author-email: ahnashwin1305@gmail.com
+License: GPL v3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+## pipsearchguitk
+
+This is an project made for developers to check for availability of a pip package
+
+## Installation
+```python
+pip install pipsearchguitk
+```
+## Pre-requisites
+Make sure your have tkinter installed in your system
+
+## Usage
+```python
+python -m pipsearchguitk
+(or)
+python3 -m pipsearchguitk
+```
+
+## Check for the latest version
+```
+pip show pipsearchguitk
+```
+
