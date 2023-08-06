@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: versa
+Version: 0.8.0
+Summary: Versa model for Web resources and relationships. Think of it as an evolution of Resource Description Framework (RDF) that's at once simpler and more expressive.
+Home-page: https://github.com/uogbuji/versa
+Author: Uche Ogbuji
+Author-email: uche@ogbuji.net
+License: License :: OSI Approved :: Apache Software License
+Description: Versa
+        =====
+        
+        The Versa model for Web resources and relationships. Think of it as an
+        evolution of Resource Description Framework (RDF) that's at once simpler
+        and more expressive.
+        
+        
+Keywords: web,data
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet :: WWW/HTTP
+Description-Content-Type: text/markdown
