@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+salinipdf/__init__.py
+salinipdf/pdf2image.py
+salinipdf/pdf2text.py
+salinipdf.egg-info/PKG-INFO
+salinipdf.egg-info/SOURCES.txt
+salinipdf.egg-info/dependency_links.txt
+salinipdf.egg-info/top_level.txt
