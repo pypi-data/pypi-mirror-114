@@ -1,0 +1,19 @@
+[tool.poetry]
+name = 'omniblack.screen'
+version = "0.0.1.post1"
+description = 'A screen displaying running build processes.'
+authors = ['Terry Patterson <terryp@wegrok.net>']
+license = 'MPL-2.0'
+packages = [
+    {include = 'omniblack'}
+]
+
+[tool.poetry.dependencies]
+python = '^3.9'
+urwid = '^2.1.2'
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ['poetry>=0.12']
+build-backend = 'poetry.masonry.api'
