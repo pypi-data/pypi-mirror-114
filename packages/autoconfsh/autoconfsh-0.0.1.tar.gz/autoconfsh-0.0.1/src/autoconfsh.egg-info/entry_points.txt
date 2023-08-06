@@ -1,0 +1,3 @@
+[console_scripts]
+autoconf.sh = autoconfsh.cli:cli_entrypoint
+
