@@ -1,0 +1,16 @@
+python_gedcom_2/__init__.py,sha256=ekHIljuz-5ynkVGAQzxvIMbuRBkewFo8swYAOlCjatI,108
+python_gedcom_2/helpers.py,sha256=6HRUPLNdcIs7OuLPR5FgQoigCoBSgsBPAvsSr0XsnT8,714
+python_gedcom_2/parser.py,sha256=otTiMCVUp26PnAMI67df3qDE7EMjshGTBRDzLFtXVyM,22866
+python_gedcom_2/tags.py,sha256=0VEG91WjiMnN4fbg96rg_RmQnRPq1X7GgiNCdDt1eLE,21743
+python_gedcom_2/element/__init__.py,sha256=sFq1xcCGmmX5013APH3YcfOlqOAw6fNoCxL9_0IFTVI,138
+python_gedcom_2/element/element.py,sha256=ock1NAZ2yI0dFXfml5yvRaVFBBJCOKX3sqAJ7VihS0E,9174
+python_gedcom_2/element/family.py,sha256=D-16a-Iakzpn8d3dF9B8wV6D3j_51aTE7X3UdzRn4MI,552
+python_gedcom_2/element/file.py,sha256=dLhKZCoK69wYpCOrIa3uSF5N0Pnb14XkeShyY3UstO8,222
+python_gedcom_2/element/individual.py,sha256=xpcMaH0DbuurjoN3ZQqfiC-oxs9UFJ3BwuDpna982kg,14154
+python_gedcom_2/element/object.py,sha256=7ME7B0CY4fguBrckkwBmWNtgLMHMJdp9RXCIxpuo4hw,438
+python_gedcom_2/element/root.py,sha256=CMYb64jydRWylCux_v7pIGFGGp8S7d-tf__cw5V8mto,436
+python_gedcom_2-1.4.0.dist-info/LICENSE.txt,sha256=GJsa-V1mEVHgVM6hDJGz11Tk3k0_7PsHTB-ylHb3Fns,18431
+python_gedcom_2-1.4.0.dist-info/METADATA,sha256=Dgo00Uv3CchD0_nQ1mJ5NzQV9jSS4x6NRFdJ7UHyAaQ,6139
+python_gedcom_2-1.4.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+python_gedcom_2-1.4.0.dist-info/top_level.txt,sha256=ohRMRLmliBuYCeoVNkaqe9jt6j_iKyCZmoZGxTNAh-A,16
+python_gedcom_2-1.4.0.dist-info/RECORD,,
