@@ -1,0 +1,9 @@
+PyQt5
+SpeechRecognition
+importlib_resources
+librosa
+matplotlib
+musicnn
+pillow
+pydub
+wordcloud
