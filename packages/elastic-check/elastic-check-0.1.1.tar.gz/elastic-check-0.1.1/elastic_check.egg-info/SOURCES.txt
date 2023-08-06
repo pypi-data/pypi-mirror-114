@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+elastic/__init__.py
+elastic/elastic_check.py
+elastic_check.egg-info/PKG-INFO
+elastic_check.egg-info/SOURCES.txt
+elastic_check.egg-info/dependency_links.txt
+elastic_check.egg-info/entry_points.txt
+elastic_check.egg-info/top_level.txt
