@@ -1,0 +1,13 @@
+digitalguide/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+digitalguide/generateActions.py,sha256=w05vRHFi5NC9T0dHBga86DWhyjWhKPgociqEW3V93hw,7173
+digitalguide/mongo_persistence.py,sha256=iMShXVBn0GV0EbuUch0M4NtvYyEmCAAH4rmwyQ8Tkk0,8172
+digitalguide/rasa_filter.py,sha256=ogJpziPwvKaAhTU2BulYkHklWwS4RNFyeZBQkdfkgn8,920
+digitalguide/uhrzeit_filter.py,sha256=WmSYb9RYO8iSYdARHV9KECkGVx-eSRo4GbfR3ql7ePs,326
+digitalguide/writeActions.py,sha256=ShYitV-JdqwF9VDedfb5uBXSamJUgdezJTSX6NizBMA,2660
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_uhrzeit_filter.py,sha256=TUBj3nc6exl5SV4Y8ycTSpQqb0JghtVOWQYjXqieEqQ,1179
+digitalguide-0.0.20.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+digitalguide-0.0.20.dist-info/METADATA,sha256=nNbl0KN5PWu_w7VeSYMR3dUOeFkh0VbShskjKsGwaRI,223
+digitalguide-0.0.20.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+digitalguide-0.0.20.dist-info/top_level.txt,sha256=0ruF1fPnXDShb5gWLfQm6depE7JgwtnhgL_JCjUMVnc,19
+digitalguide-0.0.20.dist-info/RECORD,,
