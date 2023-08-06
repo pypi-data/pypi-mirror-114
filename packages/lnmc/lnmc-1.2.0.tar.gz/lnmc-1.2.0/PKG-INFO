@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: lnmc
+Version: 1.2.0
+Summary: Allows to create symbolic link in batches from a YAML file and consolidate them in a specific directory.
+Home-page: https://github.com/LuqueDaniel/lnmc
+Author: Daniel Luque
+Author-email: danielluque14@gmail.com
+License: AGPLv3+
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Classifier: Topic :: System :: Shells
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev
+License-File: LICENSE
+
+# lnmc
+
+[![PyPI](https://img.shields.io/pypi/v/lnmc)](https://pypi.org/project/lnmc/)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/lnmc)
+![PyPI - License](https://img.shields.io/pypi/l/lnmc)
+[![Build Status](https://travis-ci.com/LuqueDaniel/lnmc.svg?branch=master)](https://travis-ci.com/LuqueDaniel/lnmc)
+[![Build status](https://ci.appveyor.com/api/projects/status/mok7jp052rv7j4hb/branch/master?svg=true)](https://ci.appveyor.com/project/LuqueDaniel/lnmc/branch/master)
+[![Coverage Status](https://coveralls.io/repos/github/LuqueDaniel/lnmc/badge.svg?branch=master)](https://coveralls.io/github/LuqueDaniel/lnmc?branch=master)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+Allows to create symbolic link in batches from a YAML file and consolidate them in a
+specific directory.
+
+Install:
+
+```shell
+pip install lnmc
+```
+
+Dev Install:
+```shell
+git clone https://github.com/LuqueDaniel/lnmc.git
+cd lnmc
+pip install -e ".[test,dev]"
+```
+
+Usege:
+
+```shell
+lnmc addons.yml src/ destination/
+```
+
+## Configuration File
+
+lnmc as first argument needs a `.yaml` or `.yml` file. The directories, sub-directories
+and files that will be the target for symbolic links are specified in this file. For example.
+
+```yaml
+reporting-engine:
+  - report_xlsx
+purchase-workflow:
+  - purchase_landed_cost
+pos:
+  - pos_margin
+partner-contact:
+  - partner_vat_unique
+  - base_location_nuts
+  - base_location_geonames_import
+  - base_location
+mis-builder:
+  - mis_builder
+  - mis_builder_budget
+# It will create symbolic links of all subdirectories and files
+l10n-spain:
+```
+
+(Example of a typical Odoo project)
+
+
