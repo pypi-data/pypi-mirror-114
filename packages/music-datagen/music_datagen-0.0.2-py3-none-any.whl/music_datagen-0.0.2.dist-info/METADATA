@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: music-datagen
+Version: 0.0.2
+Summary: Sequential data generator for music AI in keras
+Home-page: https://github.com/noahsolomon0518/music-datagen
+Author: Noah Solomon
+Author-email: noahsolomon0518@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/noahsolomon0518/music-datagen/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# music-datagen
+
