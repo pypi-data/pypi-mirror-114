@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/dcscaffold/__init__.py
+src/dcscaffold/libdcs.py
+src/dcscaffold.egg-info/PKG-INFO
+src/dcscaffold.egg-info/SOURCES.txt
+src/dcscaffold.egg-info/dependency_links.txt
+src/dcscaffold.egg-info/top_level.txt
