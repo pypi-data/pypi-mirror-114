@@ -1,0 +1,3 @@
+[console_scripts]
+bdcctools = bdcctools.cli.cli:main
+
