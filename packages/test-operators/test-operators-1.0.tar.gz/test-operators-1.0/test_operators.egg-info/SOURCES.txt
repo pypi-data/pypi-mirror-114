@@ -1,0 +1,9 @@
+README.md
+setup.py
+test-operators/__init__.py
+test_operators.egg-info/PKG-INFO
+test_operators.egg-info/SOURCES.txt
+test_operators.egg-info/dependency_links.txt
+test_operators.egg-info/entry_points.txt
+test_operators.egg-info/requires.txt
+test_operators.egg-info/top_level.txt
