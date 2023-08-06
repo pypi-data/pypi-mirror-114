@@ -1,0 +1,9 @@
+MyStackAlias:
+  stack: MyStackName
+  file: ../stacks/simple.yml
+  use_changesets: false
+
+MyOtherStackAlias:
+  stack: MyOtherStackName
+  file: ../stacks/simple.yml
+  use_changesets: true

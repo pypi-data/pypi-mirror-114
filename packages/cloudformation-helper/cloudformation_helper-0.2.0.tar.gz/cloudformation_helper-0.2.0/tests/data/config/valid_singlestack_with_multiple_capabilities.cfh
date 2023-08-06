@@ -1,0 +1,7 @@
+MyStackAlias:
+  stack: MyStackName
+  file: ../stacks/simple.yml
+  use_changesets: false
+  capabilities:
+    - CAPABILITY_IAM
+    - CAPABILITY_NAMED_IAM
