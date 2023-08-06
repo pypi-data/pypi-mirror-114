@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+scikit_garden_forked.egg-info/PKG-INFO
+scikit_garden_forked.egg-info/SOURCES.txt
+scikit_garden_forked.egg-info/dependency_links.txt
+scikit_garden_forked.egg-info/not-zip-safe
+scikit_garden_forked.egg-info/requires.txt
+scikit_garden_forked.egg-info/top_level.txt
+skgarden/__init__.py
+skgarden/forest.py
+skgarden/quantile/__init__.py
+skgarden/quantile/ensemble.py
+skgarden/quantile/tree.py
+skgarden/quantile/utils.py
