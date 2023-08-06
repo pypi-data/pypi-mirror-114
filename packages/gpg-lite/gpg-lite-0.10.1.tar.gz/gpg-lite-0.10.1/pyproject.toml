@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[tool.pylint.'MESSAGES CONTROL']
+disable = "line-too-long,invalid-name,too-few-public-methods,too-many-instance-attributes,too-many-arguments,missing-docstring"
+output-format = "text"
+reports = "no"
+
+[tool.coverage.run]
+branch = true
+source = ["gpg_lite"]
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = clean,py{36,37,38,39,310},report
+
+[testenv]
+depends =
+    py{36,37,38,39,310}: clean
+    report: py{36,37,38,39,310}
+deps =
+    coverage[toml]
+commands =
+    coverage run --append -m unittest discover -s test -v
+
+[testenv:report]
+skip_install = true
+commands =
+    coverage report
+
+[testenv:clean]
+skip_install = true
+commands = coverage erase
+"""
