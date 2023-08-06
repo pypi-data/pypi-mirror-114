@@ -1,0 +1,3 @@
+[mkdocs.themes]
+rackio_material = rackio_material
+
