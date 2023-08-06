@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: anyflow
+Version: 0.2.0
+Summary: a simplest common middleware framework for python.
+License: MIT
+Author: Cologler
+Author-email: skyoflw@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# anyflow
+
+a simplest common middleware framework for python.
+
+## HOW-TO-USE
+
+``` py
+from anyflow import Flow
+
+flow = Flow()
+
+@flow.use()
+def middleware_1(ctx, next):
+    ctx.state['value'] = 1
+    # call the next middleware (middleware_2):
+    return next()
+
+@flow.use()
+def middleware_2(ctx, next):
+    print(ctx.state['value'])
+    # next middleware does not exists, call nothing:
+    return next()
+
+flow.run()
+```
+
