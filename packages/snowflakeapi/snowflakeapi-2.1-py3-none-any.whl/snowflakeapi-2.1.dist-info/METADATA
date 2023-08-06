@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: snowflakeapi
+Version: 2.1
+Summary: SnowFlake API Wrapper for Python
+License: MIT
+Author: DevSynth
+Author-email: synth@snowflakedev.org
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Sphinx (>=4.1.1,<5.0.0)
+Requires-Dist: aiohttp (>=3.7.4,<4.0.0)
+Requires-Dist: pytest (>=6.2.4,<7.0.0)
+Requires-Dist: pytest-asyncio (>=0.15.1,<0.16.0)
+Requires-Dist: python-dotenv (>=0.18.0,<0.19.0)
