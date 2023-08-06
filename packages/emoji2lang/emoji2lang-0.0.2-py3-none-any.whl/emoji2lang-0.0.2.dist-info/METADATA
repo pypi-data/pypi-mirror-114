@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: emoji2lang
+Version: 0.0.2
+Summary: convert emoji to human language
+Home-page: https://github.com/sonas-guo-/emoji2lang
+Author: sonas
+Author-email: guolinsen123@163.com
+License: MIT Licence
+Keywords: pip,emoji,human language,convert
+Platform: any
+
+convert emoji to human language
+
+
