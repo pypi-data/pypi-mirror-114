@@ -1,0 +1,3 @@
+setuptools
+pyyaml
+anki==2.1.44
