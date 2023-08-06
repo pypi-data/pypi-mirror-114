@@ -1,0 +1,4 @@
+Flask
+PyJWT
+aliyun_python_sdk_core
+Cython

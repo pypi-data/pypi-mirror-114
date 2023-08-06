@@ -1,0 +1,5 @@
+include LICENSE
+recursive-include flask_auth_user/helper/mini *
+recursive-include flask_auth_user/helper/sms *
+recursive-include flask_auth_user/helper/token *
+recursive-include flask_auth_user/utils/token *
