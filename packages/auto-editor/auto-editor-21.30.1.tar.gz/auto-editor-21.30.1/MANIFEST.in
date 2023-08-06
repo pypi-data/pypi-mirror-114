@@ -1,0 +1,4 @@
+include auto_editor/ffmpeg/LICENSE.txt
+include auto_editor/ffmpeg/Windows/*
+include auto_editor/ffmpeg/Darwin/*
+include auto_editor/config.txt
