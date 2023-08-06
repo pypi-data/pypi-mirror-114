@@ -1,0 +1,6 @@
+numpy
+pandas!=1.3.0,>=1.2
+pymbar<4,>=3.0.5
+scipy
+scikit-learn
+matplotlib
