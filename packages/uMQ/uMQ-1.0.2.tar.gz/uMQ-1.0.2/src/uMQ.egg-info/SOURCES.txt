@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/uMQ/__init__.py
+src/uMQ/uMQ.py
+src/uMQ.egg-info/PKG-INFO
+src/uMQ.egg-info/SOURCES.txt
+src/uMQ.egg-info/dependency_links.txt
+src/uMQ.egg-info/top_level.txt
