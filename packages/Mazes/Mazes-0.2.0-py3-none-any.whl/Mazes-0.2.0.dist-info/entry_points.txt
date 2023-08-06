@@ -1,0 +1,3 @@
+[console_scripts]
+mazes = mazes.cli:cli
+
