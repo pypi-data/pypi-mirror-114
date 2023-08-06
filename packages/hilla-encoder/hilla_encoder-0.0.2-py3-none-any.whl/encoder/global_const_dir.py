@@ -1,0 +1,7 @@
+TITLE = 'Title'
+DATE = 'Date'
+DATE_MONTH = 'Date_month'
+DATE_DAY_OF_MONTH = 'Date_day_of_month'
+RATING = 'Rating'
+RATING_NUMBER = 'rating_number'
+AVERAGE_RATING = 'average_rating'
