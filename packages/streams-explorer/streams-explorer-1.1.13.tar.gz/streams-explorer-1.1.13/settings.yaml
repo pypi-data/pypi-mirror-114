@@ -1,0 +1,78 @@
+graph:
+  # update graph (fetch deployments and connectors) every X seconds
+  update_interval: 300
+  layout_arguments: "-Grankdir=LR -Gnodesep=0.8 -Gpad=10"
+  pipeline_distance: 500
+
+k8s:
+  deployment:
+    cluster: false
+    # not needed if in cluster
+    context: "kubernetes-cluster"
+    namespaces:
+      - "kubernetes-namespace"
+  # used to extract the consumer group for metrics (e.g. consumer lag)
+  consumer_group_annotation: "consumerGroup"
+  containers:
+    ignore:
+      - name: "prometheus-jmx-exporter"
+  displayed_information:
+    - name: "Labels"
+      key: "metadata.labels"
+  labels:
+    # used to set attributes of nodes in the graph (used to extract pipeline names)
+    - "pipeline"
+  pipeline:
+    # refers to the attribute of nodes the pipeline name should be extracted from
+    label: "pipeline"
+
+## (optional) configure kafka connect url and displayed information
+# kafkaconnect:
+#   url: "http://localhost:8083"
+#   displayed_information:
+#     - name: "Transformer"
+#       key: "transforms.changeTopic.regex"
+
+## (optional) configure schema registry for topic information
+# schemaregistry:
+#   url: "http://localhost:8081"
+
+prometheus:
+  url: "http://localhost:9090"
+
+## (optional) choose either AKHQ or Kowl to be used as message viewer in the linker
+## enable one of them only
+akhq:
+  enable: false
+  url: "http://localhost:8080"
+  cluster: "kubernetes-cluster"
+  ## (optional) connect name
+  # connect: "kafka-connect"
+
+kowl:
+  enable: false
+  url: "http://localhost:8080"
+
+grafana:
+  url: "http://localhost:3000"
+  dashboards:
+    topics: "path/to/dashboard"
+    consumergroups: "path/to/dashboard"
+
+## (optional) choose either Kibana or Loki to be used as logging provider in the linker
+## enable one of them only
+kibanalogs:
+  enable: false
+  url: "http://localhost:5601"
+
+loki:
+  enable: false
+  url: "http://localhost:3000"
+
+esindex:
+  url: "http://localhost:5601/app/kibana#/dev_tools/console"
+
+plugins:
+  path: "./plugins"
+  extractors:
+    default: true
