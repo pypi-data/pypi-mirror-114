@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: english-asr
+Version: 1.2
+Summary: An Automatic Speech Recognition(ASR) for English language trained on LibriSpeech dataset using Conformer.
+Home-page: https://github.com/neso613/english_asr
+Author: Neha Soni
+Author-email: soni.neha45@gmail.com
+License: Apache-2.0
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: librosa
+Requires-Dist: tensorflow
+Requires-Dist: soundfile (>=0.10.2)
+
+# english_asr
+An Automatic Speech Recognition (ASR) models in TensorFlow Lite (TFLite) for Speech-To-Text conversion.
+
+## Installation
+- pip3 install english-asr
+
+## Supported Model
+- [Conformer Transducer](https://arxiv.org/abs/2005.08100) using [LibriSpeech](http://www.openslr.org/12) dataset.
+
+## How To Run
+```
+from english_asr.conformer import get_text_from_speech
+out = get_text_from_speech('audio.wav')```
+
+
