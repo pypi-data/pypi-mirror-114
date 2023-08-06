@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: dtween
+Version: 0.0.4
+Summary: Digital Twin of an Organization realized with Action-Oriented Process Mining
+Home-page: https://github.com/gyunamister/dtween
+Author: Gyunam Park
+Author-email: gnpark@pads.rwth-aachen.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: ==3.8.8
+Requires-Dist: setuptools (==51.1.2)
+Requires-Dist: tqdm (==4.56.2)
+Requires-Dist: dash (==1.19.0)
+Requires-Dist: dash-bootstrap-components (==0.12.2)
+Requires-Dist: dash-table (==4.11.2)
+Requires-Dist: dash-daq (==0.5.0)
+Requires-Dist: dash-auth (==1.4.1)
+Requires-Dist: dash-renderer (==1.9.0)
+Requires-Dist: celery (==5.0.2)
+Requires-Dist: plotly (==4.14.1)
+Requires-Dist: plotly-express (==0.4.1)
+Requires-Dist: dash-interactive-graphviz (==0.3.0)
+Requires-Dist: fsspec (==0.8.5)
+Requires-Dist: locket (==0.2.0)
+Requires-Dist: partd (==1.1.0)
+Requires-Dist: numpy (==1.19.3)
+Requires-Dist: scikit-learn (==0.24.1)
+Requires-Dist: scikit-learn-extra (==0.1.0b2)
+Requires-Dist: dask (==2.30.0)
+Requires-Dist: pandas (==1.2.2)
+Requires-Dist: cvxopt (==1.2.5)
+Requires-Dist: pm4py (>=2.2.0)
+Requires-Dist: seaborn (==0.11.0)
+Requires-Dist: scipy (==1.6.1)
+Requires-Dist: pygraphviz (==1.6)
+Requires-Dist: redis (==3.5.3)
+Requires-Dist: matplotlib (==3.3.3)
+Requires-Dist: ipython (==7.19.0)
+Requires-Dist: ocpa (==0.0.13)
+Requires-Dist: python-dotenv
+
+UNKNOWN
+
+
