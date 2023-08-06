@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+LibraryH.egg-info/PKG-INFO
+LibraryH.egg-info/SOURCES.txt
+LibraryH.egg-info/dependency_links.txt
+LibraryH.egg-info/top_level.txt
+libraryH/BuildingFile.py
+libraryH/CSVChangeContent.py
+libraryH/OperationLibrary.py
+libraryH/__init__.py
