@@ -1,0 +1,11 @@
+gqlalchemy/__init__.py,sha256=u-w0pyY2Xeah_FZUmHGJXUMoWhK-UZ4Ba3JzW0Clpzw,891
+gqlalchemy/connection.py,sha256=MZfLyCG8wfM9O1p4Wt-SD8UJyrEzfph3AwgK0IACRzs,4077
+gqlalchemy/memgraph.py,sha256=q7GhjI9GO-ldKs8oYDlaQUVSWJeMp6ibIKBe6Zj-ACw,6309
+gqlalchemy/models.py,sha256=Ta-d1tHdff2GOyYNW96rjci4kX98-UpNyc5piwfg4BI,4628
+gqlalchemy/query_builder.py,sha256=SUUjpvoNCFKeR1o2YjQz8Aru9448EjefHr6UXWtEaRc,7471
+gqlalchemy/transformations.py,sha256=_PKS9W7hDlwhmVvkKziRiQu6eAT9DM0x2vfmbGtSaz8,6519
+gqlalchemy/utilities.py,sha256=BFtlLhSLs4gdQ5wz-C5rN91YBnSA4bNgpo-sL0ggA4o,1975
+gqlalchemy-1.0.4.dist-info/LICENSE,sha256=DVQuDIgE45qn836wDaWnYhSdxoLXgpRRKH4RuTjpRZQ,10174
+gqlalchemy-1.0.4.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+gqlalchemy-1.0.4.dist-info/METADATA,sha256=-IjtKh-hAVmbkSO16knyy_0QJ1N2JpMJYfm1XS9OzhE,3921
+gqlalchemy-1.0.4.dist-info/RECORD,,
