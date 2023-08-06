@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: django-frontend-settings
+Version: 1.0.0
+Summary: Expose feature flags and settings from django waffle and django constance in an endpoint.
+Home-page: https://github.com/loadsmart/django-frontend-settings
+Author: Loadsmart
+Author-email: developer@loadsmart.com
+License: MIT
+Description: Frontend Settings
+        =================
+        
+        Abstract
+        --------
+        
+        This project provides an API that expose settings and feature flags for the frontend.
+        
+        It uses `django-drf` to create an endpoint to expose flags and settings configured in `django-waffle` and `django-constance`
+        
+        
+        
+        Usage
+        -----
+        
+        Requirements
+        Python (3.6, 3.7, 3.8, 3.9)
+        Django (2.2, 3.0, 3.1, 3.2)
+        
+        Installation
+        ~~~~~~~~~~~~
+        Install using pip:
+        
+        .. code::
+        
+            pip install django-frontend-settings
+        
+        Add 'frontend-settings' to your INSTALLED_APPS setting.
+        
+        .. code:: python
+        
+            INSTALLED_APPS = [
+                ...
+                'frontend-settings',
+            ]
+        
+        Expose the view in your urls:
+        
+        .. code:: python
+        
+            from frontend_settings.views import settings as frontend_settings_view
+        
+            url(r"^frontend-settings/", frontend_settings_view, name="frontend-settings"),
+        
+        
+        Then your flags from waffle and setting from constance should be returned on a get in this route:
+        
+        
+        .. code::
+        
+            $ curl 'http://localhost:8000/frontend-settings/'
+            {"data":{"flags":{"MY_FEATURE_FLAG":true},"settings":{}}}
+        
+        
+        In that case I had `FRONTEND_MY_FEATURE_FLAG` flag in waffle.
+        The default prefix for flags is `FRONTEND_`, if you like to change it you can do by changing the following config on settings.py:
+        
+        .. code:: python
+        
+            FRONTEND_SETTINGS = {
+                "WAFFLE_FLAG_PREFIX": "FRONTEND_", # Prefix used to filter out the flag that should be exposed in the endpoint
+                "CONSTANCE_KEY": "FRONTEND_SETTINGS", # Name of the settings in constance
+            }
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Provides-Extra: test
+Provides-Extra: lint
+Provides-Extra: doc
+Provides-Extra: dev
