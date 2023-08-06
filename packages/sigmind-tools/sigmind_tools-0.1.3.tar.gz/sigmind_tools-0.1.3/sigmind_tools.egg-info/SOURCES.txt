@@ -1,0 +1,9 @@
+README.md
+setup.py
+sigmind_tools/__init__.py
+sigmind_tools/wrapper.py
+sigmind_tools.egg-info/PKG-INFO
+sigmind_tools.egg-info/SOURCES.txt
+sigmind_tools.egg-info/dependency_links.txt
+sigmind_tools.egg-info/requires.txt
+sigmind_tools.egg-info/top_level.txt
