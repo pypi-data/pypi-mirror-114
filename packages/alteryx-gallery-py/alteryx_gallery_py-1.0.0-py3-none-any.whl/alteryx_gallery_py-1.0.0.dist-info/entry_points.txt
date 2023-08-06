@@ -1,0 +1,3 @@
+[console_scripts]
+alteryx_gallery_py = alteryx_gallery_py.__main__:main
+
