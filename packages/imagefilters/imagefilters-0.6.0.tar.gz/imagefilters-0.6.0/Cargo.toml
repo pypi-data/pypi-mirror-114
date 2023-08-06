@@ -1,0 +1,32 @@
+[package]
+authors = ["Michael Pascuzzi"]
+name = "imagefilters"
+version = "0.6.0"
+description = "A project that incorporates a Rust image library and exposes it as a python module"
+edition = "2018"
+
+[dependencies]
+image = "0.23.14"
+
+[dependencies.pyo3]
+version = "0.14.1"
+features = ["extension-module"]
+
+[lib]
+name = "filters"
+crate-type = ["cdylib"]
+
+[profile.release]
+lto = "fat"
+codegen-units = 1
+
+[package.metadata.maturin]
+classifier=[
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python",
+    "Programming Language :: Rust",
+    "Operating System :: POSIX",
+    "Operating System :: MacOS :: MacOS X",
+]
