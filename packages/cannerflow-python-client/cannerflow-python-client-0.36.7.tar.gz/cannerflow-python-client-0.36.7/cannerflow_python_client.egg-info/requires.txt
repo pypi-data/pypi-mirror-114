@@ -1,0 +1,13 @@
+requests
+pandas
+pillow
+aiohttp
+nest-asyncio
+pyarrow
+pillow
+numpy==1.19.5
+fastparquet==0.4.1
+json-lines
+
+[:python_version >= "3.6" and python_version < "3.7"]
+dataclasses==0.8
