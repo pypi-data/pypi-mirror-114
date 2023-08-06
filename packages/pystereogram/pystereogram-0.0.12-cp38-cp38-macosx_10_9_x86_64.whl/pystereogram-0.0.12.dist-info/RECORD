@@ -1,0 +1,9 @@
+compute_line.cpython-38-darwin.so,sha256=fBFK_WJ-RDwJqkZulvS6bgX4Lcit67XlFiwQTYEiWdk,188932
+autostereogram/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autostereogram/compute_line.pyx,sha256=N2U6868OBmjqY78zKS5_3YRO1bUxaCrhJEoCnkvHErw,2324
+autostereogram/converter.py,sha256=-gnQil7RugGCWDEaBJHReUEPAqlk6kpqr565DUVMp1E,4543
+pystereogram-0.0.12.dist-info/LICENSE,sha256=kwVrG5b3UhEFw2_EilmU-NvTOMJRExORee6DHdWomM4,1066
+pystereogram-0.0.12.dist-info/METADATA,sha256=nENJgGrX6YdNU55kIcNXPF3mi3dnmcJ7dFdZylXBpKY,1144
+pystereogram-0.0.12.dist-info/WHEEL,sha256=RA4ju32EWHpO-G1BhxTQ3AwXQWjnnrzYGkM9skoN7_I,109
+pystereogram-0.0.12.dist-info/top_level.txt,sha256=ZMJ4AShG18sfCQuI7wsQPhP_WRPTxJrXSIlmHebbs_Q,28
+pystereogram-0.0.12.dist-info/RECORD,,
