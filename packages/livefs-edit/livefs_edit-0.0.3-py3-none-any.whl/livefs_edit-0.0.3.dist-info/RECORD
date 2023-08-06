@@ -1,0 +1,10 @@
+livefs_edit/__init__.py,sha256=38asX0SOmS4iLxaatLnI5V-1koy4Dr0Sz43uu5MCEfA,105
+livefs_edit/__main__.py,sha256=TyNPWcSnk7gTK8jJsLCLbIh_JwRx5dOpujcJRSY2p6Y,1534
+livefs_edit/actions.py,sha256=Uam7ZxXr9Wt6bqJ4R-MomMv_TBzPATedi0ooPxxC8sE,13194
+livefs_edit/cli.py,sha256=cE89oX4xKj68E5Y2TOXAOsCUgUaMh1sxiZ09rct2LH4,1950
+livefs_edit/context.py,sha256=Gj-HzN7u0QOm4KHBzKpTg-2oCnismKysK9IVO9MrOTU,4862
+livefs_edit-0.0.3.dist-info/METADATA,sha256=c1SFv4ERt5J6gj2iPpw-VgFo6SrYmpXNOVAjRcViJng,7589
+livefs_edit-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+livefs_edit-0.0.3.dist-info/entry_points.txt,sha256=Sjq72da-JROzIbRuXctaVHGllXQvjtF2gj-YagAzlRc,54
+livefs_edit-0.0.3.dist-info/top_level.txt,sha256=pWow--m3REhbxTxAwMf8SULu_gCtPb7Yki4DgcrqKrU,12
+livefs_edit-0.0.3.dist-info/RECORD,,
