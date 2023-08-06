@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mediatimestamp
+Version: 2.5.0
+Summary: A timestamp library for high precision nanosecond timestamps
+Home-page: https://github.com/bbc/rd-apmm-python-lib-mediatimestamp
+Author: James P. Weaver
+Author-email: james.barrett@bbc.co.uk
+License: Apache 2
+Platform: UNKNOWN
+Requires-Python: >=3.6.0
+License-File: LICENSE.md
+License-File: NOTICE.md
+Requires-Dist: python-dateutil (>=2.1)
+
+A timestamp library for high precision nanosecond timestamps
+
