@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: doge-art
+Version: 3.7.3
+Summary: wow very terminal doge
+Home-page: https://github.com/MUTLCC/doge-art
+Author: Mutlu
+Author-email: 
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2
+License-File: LICENSE
+
+UNKNOWN
+

@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+doge/__init__.py
+doge/core.py
+doge/wow.py
+doge/static/doge-halloween.txt
+doge/static/doge-small.txt
+doge/static/doge-thanksgiving.txt
+doge/static/doge-xmas.txt
+doge/static/doge.txt
+doge_art.egg-info/PKG-INFO
+doge_art.egg-info/SOURCES.txt
+doge_art.egg-info/dependency_links.txt
+doge_art.egg-info/entry_points.txt
+doge_art.egg-info/top_level.txt
