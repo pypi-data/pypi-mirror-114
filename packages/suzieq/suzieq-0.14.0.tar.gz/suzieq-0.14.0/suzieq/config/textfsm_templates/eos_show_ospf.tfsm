@@ -1,0 +1,8 @@
+Value vrf (\S+)
+Value instanceId (\d+)
+Value routerId ([0-9.]+)
+
+Start
+  ^OSPF instance ${instanceId} with ID ${routerId} VRF ${vrf}.*$$ -> Record
+
+#OSPF instance 1 with ID 10.0.0.22 VRF default
