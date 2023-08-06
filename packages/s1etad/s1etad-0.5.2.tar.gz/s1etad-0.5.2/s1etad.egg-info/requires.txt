@@ -1,0 +1,26 @@
+numpy
+scipy
+lxml
+netCDF4
+pandas
+shapely
+
+[:python_version < "3.8"]
+typing-extensions
+
+[cli]
+argcomplete
+
+[docs]
+sphinx
+nbsphinx
+sphinx-rtd-theme
+
+[kmz]
+simplekml
+gdal
+matplotlib
+
+[ql]
+gdal
+matplotlib
