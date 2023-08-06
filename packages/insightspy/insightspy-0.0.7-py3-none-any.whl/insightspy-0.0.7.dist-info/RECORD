@@ -1,0 +1,15 @@
+insightspy/ComparisonsMixin.py,sha256=oiaI0K8x7yP2NNcGPB9VOrUquBFxR5SB8sN75-37uFU,2202
+insightspy/PipelinesMixin.py,sha256=VsgyW9Zzkj-1d8_l8_i8EyVIMwzJel-zR1pGMV1gY5w,1702
+insightspy/PortalSession.py,sha256=T3l8P4X-G-qbPOaNlKFoMBV-qJTSG9up3zK9oFIgV4w,2518
+insightspy/ProjectsMixin.py,sha256=FvuBm0EHPkRNYXGoKw-T7RkuNTQG4U9YBQWZ9Jj_7y4,1374
+insightspy/ReferenceSetMixin.py,sha256=P1hBwB1DQB_RwafUjnM-IZCDtxBSaeBVZefR-ZTSvP4,2782
+insightspy/SamplesMixin.py,sha256=EgxNUPEwqzoGzHUr5QTwQZJLS6A3L4UhvG_rlSFZMsk,14223
+insightspy/SessionCore.py,sha256=WXCu4KWRrhwg5Kuty6JgMj2qjG2_AHkod9lmHmAqanw,3536
+insightspy/SignaturesMixin.py,sha256=wdsDNW8rTqm5fRH2zLtERnfsosftfBP_QoPCrkQht3Q,2368
+insightspy/__init__.py,sha256=lPmNwp1ggFcnNXBzeFu3hV249cRANepIFP2x5QHEpvQ,813
+insightspy/__version__.py,sha256=c1bPI5iqmiit0svP8b3WSK3yPl903E_oxnc7nQOKMxg,486
+insightspy/utils.py,sha256=whmQALmcRzC3bxVZtuHtg2Y9aTFxKyfsH926y8lb2Gs,2623
+insightspy-0.0.7.dist-info/METADATA,sha256=8IGQkncJdJ60nSNAPU_7S8wAW80xXW2M2kBkajbr5jk,502
+insightspy-0.0.7.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+insightspy-0.0.7.dist-info/top_level.txt,sha256=ZTVpMqR8oZIRiHCWQjTGpNmv6xFwARjW9U9UFY04xx4,11
+insightspy-0.0.7.dist-info/RECORD,,
