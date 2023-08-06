@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: opg-circleci
+Version: 0.0.3
+Summary: Shared Integrations Code
+Home-page: https://github.com/ministryofjustice/opg-data
+Author: OPG
+Author-email: opg-integrations@digital.justice.gov.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
+To upload your own python packages to code artifact and then use them, you should follow these instructions.
+
+Install wheel for packaging
+
+```
+python3 -m pip install --user --upgrade setuptools wheel
+```
+
+Package your distribution
+
+```
+python3 setup.py sdist bdist_wheel
+```
+
+Install twine for publishing
+
+```
+python3 -m pip install --user --upgrade twine
+```
+
+Login for publishing
+
+```
+aws-vault exec management-operator -- aws codeartifact login --tool twine --repository shared-integrations-pip --domain opg-integrations --domain-owner 311462405659 --region eu-west-1
+```
+
+Upload to a repo
+
+```
+python3 -m twine upload --repository codeartifact dist/*
+```
+
+Login to repo to be able to pull
+
+```
+aws-vault exec management-operator -- aws codeartifact login --tool twine --repository shared-integrations-pip --domain opg-integrations --domain-owner 311462405659 --region eu-west-1
+```
+
+Pull using pip in the usual way
+
+```
+pip3 install opg_integrations_shared==0.0.1
+```
+
+No terraform code artifact yet (but coming very soon):
+
+https://github.com/terraform-providers/terraform-provider-aws/issues/13714
+
+

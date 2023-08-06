@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+opg_circleci/__init__.py
+opg_circleci/cancel_redundant_builds.py
+opg_circleci.egg-info/PKG-INFO
+opg_circleci.egg-info/SOURCES.txt
+opg_circleci.egg-info/dependency_links.txt
+opg_circleci.egg-info/top_level.txt
