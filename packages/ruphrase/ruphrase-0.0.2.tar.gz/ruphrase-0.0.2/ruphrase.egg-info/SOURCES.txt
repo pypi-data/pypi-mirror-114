@@ -1,0 +1,10 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+ruphrase/__init__.py
+ruphrase/functions.py
+ruphrase.egg-info/PKG-INFO
+ruphrase.egg-info/SOURCES.txt
+ruphrase.egg-info/dependency_links.txt
+ruphrase.egg-info/top_level.txt
