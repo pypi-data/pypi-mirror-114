@@ -1,0 +1,7 @@
+opg_circleci/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opg_circleci/cancel_redundant_builds.py,sha256=qsCeEVYPKdKJLfuCZ36294JMOKxlMjeloRuGhNTqYQs,7408
+opg_circleci-0.0.3.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+opg_circleci-0.0.3.dist-info/METADATA,sha256=Msh4btNk-eDNJAVSt_VzG2PIYPRyeA0cTaWweoXmMdw,1739
+opg_circleci-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+opg_circleci-0.0.3.dist-info/top_level.txt,sha256=OSLWv6nP9gnWdHkt1QZLeK51Zz8_Um9Zm5HxVm_PRp4,13
+opg_circleci-0.0.3.dist-info/RECORD,,
