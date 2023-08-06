@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/IsoScore/IsoScore.py
+src/IsoScore/__init__.py
+src/IsoScore.egg-info/PKG-INFO
+src/IsoScore.egg-info/SOURCES.txt
+src/IsoScore.egg-info/dependency_links.txt
+src/IsoScore.egg-info/top_level.txt
