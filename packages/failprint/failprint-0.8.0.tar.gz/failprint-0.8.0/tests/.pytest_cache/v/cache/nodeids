@@ -1,0 +1,4 @@
+[
+  "test_process.py::test_pass_stdin_to_pty_subprocess",
+  "test_process.py::test_pass_stdin_to_subprocess"
+]
