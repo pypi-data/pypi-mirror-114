@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/qclient/__init__.py
+src/qclient/qclient.py
+src/qclient.egg-info/PKG-INFO
+src/qclient.egg-info/SOURCES.txt
+src/qclient.egg-info/dependency_links.txt
+src/qclient.egg-info/top_level.txt
