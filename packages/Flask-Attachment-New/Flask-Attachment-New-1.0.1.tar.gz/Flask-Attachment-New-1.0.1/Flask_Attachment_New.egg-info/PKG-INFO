@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: Flask-Attachment-New
+Version: 1.0.1
+Summary: attachment file
+Home-page: http://iotwonderful.com
+Author: zhangchi, lisichen
+Author-email: UNKNOWN
+License: BSD
+Description: 
+        Flask-Logging
+        -------------
+         
+        Log every request to specific view
+        
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
