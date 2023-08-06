@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: interview_star_questions
+Version: 1.5.6
+Summary: Command Line Program that allows you to add, edit, and delete interview questions
+                and add related answers, notes and tips.
+Home-page: https://github.com/datapointchris/interview_questions
+Author: Chris Birch
+Author-email: datapointchris@gmail.com
+License: MIT
+Description: 
+        
+        <h1 align="center">
+          Interview Questions Practice
+          <br>
+        </h1>
+        
+        <h4 align="center">This program stores and displays interview questions and corresponding answers, notes, and tips.<br />
+        </h4>
+        
+        <p align="center">
+        	<a href="#description">Description</a> •
+        	<a href="#features">Features</a> •
+        	<a href="#future-features">Future Features</a> •
+        	<a href="#file-descriptions">File Descriptions</a> •
+        	<a href="#how-to-use">How To Use</a> •
+        	<a href="#requirements">Requirements</a> •
+        	<a href="#credits">Credits</a> •
+        	<a href="#license">License</a>
+        <br />
+        <br />
+        <img src='images/flashcards.png' height=400>
+        </p>
+        
+        
+        ## Description
+        
+        This is a flash card interface, used for interview questions currently.
+        
+        
+        ## Features
+        
+        * Command line interface to display random practice questions
+        * Optionally add answers, notes, and tips
+        * Keeps track of what questions you have answered
+        
+        
+        ## Future Features
+        
+        * Move program to webpage using flask for better interface
+        * Add function to include job descriptions
+        
+        
+        ## How To Use
+        
+        
+        ```bash
+        pip install interview-star-questions
+        
+        interview
+        ```
+        
+        ## Requirements
+        
+        *No special requirements!*
+        
+        
+        ## Credits
+        
+        [navdeep-G setup.py](https://github.com/navdeep-G/setup.py)
+        
+        ## License
+        
+        [MIT](https://tldrlegal.com/license/mit-license)
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8.2
+Description-Content-Type: text/markdown
