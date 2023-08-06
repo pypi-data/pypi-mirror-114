@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: lc-classifier
+Version: 2.0.0
+Summary: ALeRCE light curve classifier
+Home-page: UNKNOWN
+Author: ALeRCE Team
+Author-email: contact@alerce.online
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: astropy (>=4.0)
+Requires-Dist: click (>=7.1)
+Requires-Dist: Cython (>=0.29)
+Requires-Dist: GPy (>=1.9)
+Requires-Dist: Jinja2 (>=2.11)
+Requires-Dist: imbalanced-learn (>=0.7)
+Requires-Dist: matplotlib (>=3.3)
+Requires-Dist: numba (>=0.51)
+Requires-Dist: numpy (>=1.16)
+Requires-Dist: requests (>=2.24)
+Requires-Dist: scipy (>=1.4)
+Requires-Dist: setuptools (>=49.6)
+Requires-Dist: scikit-learn (>=0.23)
+Requires-Dist: tqdm (>=4.48)
+Requires-Dist: tensorflow (>=2.3)
+Requires-Dist: pandas (>=1.1)
+Requires-Dist: wget (>=3.2)
+Requires-Dist: celerite2 (>=0.1)
+
+UNKNOWN
+
