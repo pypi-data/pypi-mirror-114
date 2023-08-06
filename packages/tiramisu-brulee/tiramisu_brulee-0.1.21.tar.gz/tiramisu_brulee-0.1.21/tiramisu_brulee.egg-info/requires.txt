@@ -1,0 +1,15 @@
+torch
+
+[lesionseg]
+jsonargparse
+nibabel
+numpy
+pandas
+pytorch-lightning
+PyYAML
+ruyaml
+scikit-image
+scipy
+SimpleITK>=2.1.0
+torchio
+torchmetrics
