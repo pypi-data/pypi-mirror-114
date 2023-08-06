@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: socomote
+Version: 0.0.1
+Summary: Application for remote control of Sonos systems
+Home-page: UNKNOWN
+Author: Theo Dickson
+Author-email: tmsdickson@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: soco (>=0.23.2)
+Requires-Dist: getkey (>=0.6.5)
+
+UNKNOWN
+

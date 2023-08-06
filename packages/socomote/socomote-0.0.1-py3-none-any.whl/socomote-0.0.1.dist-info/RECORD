@@ -1,0 +1,12 @@
+socomote/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+socomote/__main__.py,sha256=GjaqL41dPsYfpaGiy0DV42UFbMFGVjTFOh_hIUSwqn4,1154
+socomote/action.py,sha256=LkmWR7p6Dg_du-8qt6QATo8iLskieq4gtkPAOOgtstA,484
+socomote/input_handler.py,sha256=5qneJDS8PA55SKbNdKZ9NVXAYPmNUoE5NlC_BhrmMYo,2257
+socomote/receiver.py,sha256=wTz4IkGyjkxSgwrjia9ACYNkbslHqD9Wga5yPI2Yt_c,6932
+socomote/settings.py,sha256=695AKtdujh0iJnmCFklzVxfdeDmQxxyQgTGTBnDenE0,439
+socomote/station.py,sha256=_LX42ubDJTiEjxaQ4kGyHmk65-ztgj7D7Jtuczm4jaU,2125
+socomote/tts_server.py,sha256=e1Rx2bvBxx-PKCaJMvmbqG5WuxiO2Docp_tvikMRAQ0,3179
+socomote-0.0.1.dist-info/METADATA,sha256=BuYV7qod6gZG3KO3__LADFa1Q1foaBQ8I5L4ih1xzdQ,288
+socomote-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+socomote-0.0.1.dist-info/top_level.txt,sha256=6uxKe1HVHrz3komBHJfYUxNh58yTXY3g4f8DNspGltQ,9
+socomote-0.0.1.dist-info/RECORD,,
