@@ -1,0 +1,17 @@
+django_bleach/__init__.py,sha256=Wg90--FN29hHhyY19kfBHJB7yZK1ORxBEc7m8_4SN3k,118
+django_bleach/forms.py,sha256=CWZzrcFlMbjYK-NULTzbMni9IiKNjtwOd7Ys7gqAncQ,2408
+django_bleach/models.py,sha256=79zUXzrQC395g7MYKYNOiOLITczso4ecWbFRyy_oAaU,2206
+django_bleach/utils.py,sha256=7-YIvKj_YNGVNZjik2O25507ncs-sxmwolNYXl9upmE,589
+django_bleach/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_bleach/templatetags/bleach_tags.py,sha256=P41MpR2dg6-x0U-jBTa5vJiHP1PO4TNvVLF4E8Vubww,1061
+django_bleach/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_bleach/tests/test_forms.py,sha256=HsuOdLmVRnqui-013s9JA2zOy05cW6XzlrCfZPeRHr0,6477
+django_bleach/tests/test_modelformfield.py,sha256=KQLy_jfaj6G7CcaztTIcTHds42kznSYX4gjAOXCbIYc,2204
+django_bleach/tests/test_models.py,sha256=3CRvbzSh1-bZX-8bvi9Nz6K-11PHOh-kHe8Ns8kRM3I,2822
+django_bleach/tests/test_settings.py,sha256=nZ_sSN14PaVddlyy9FB7dUMlHbzYiqDfvoFZvfKjSoI,2924
+django_bleach/tests/test_templatetags.py,sha256=NbAB8blWRHrlE2w3PtHjV7Vb6FAeNalnXccn0uYXOhk,2553
+django_bleach-0.7.2.dist-info/LICENSE,sha256=_LszVDZRN9tS3rjGWMCEvit9dUjlFuZeyCILOqAauiQ,1067
+django_bleach-0.7.2.dist-info/METADATA,sha256=aQTjHwK0RSuBIyNu_vsprEYI2mYFPI_OxNZtXGHQY9E,6329
+django_bleach-0.7.2.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+django_bleach-0.7.2.dist-info/top_level.txt,sha256=qFzUtSMMNACYn4LxlKvQO2zHJyq6cBYrhuPWxihKBa4,14
+django_bleach-0.7.2.dist-info/RECORD,,
