@@ -1,0 +1,15 @@
+frictionless_dfour/__init__.py,sha256=BeckJdrQYYUcPKRw9vQvl4Gth_GOC_V3RhWUMA1bVsE,82
+frictionless_dfour/__main__.py,sha256=DhMRXv29c1jt_ltsyi22zgV4Pb6gyrWNl9X8JpyjI9A,88
+frictionless_dfour/config.py,sha256=0edy9HfI2zpZhiklx_Gu4y4wyDqKJjh3H5ceYOehB6I,232
+frictionless_dfour/dfour.py,sha256=AsLH2EabonKWzZnTEdwHXAMLDta3h9H19upm54MnjHY,11762
+frictionless_dfour/assets/VERSION,sha256=96Zy8TSUFvRP7R8Mt77PKHXXJ2iaDz6uap8emqEhfrM,8
+frictionless_dfour/program/__init__.py,sha256=KJIGZjRMWvlATkB-6iig5ge3UjpRwCjr5g8Pt8BKojw,67
+frictionless_dfour/program/common.py,sha256=nsEoeHQSi78J_Zwso8PceCe-QcSGNwtiRC0jV_W0E6E,942
+frictionless_dfour/program/main.py,sha256=ahx3AxlrZy0QmCKaF_NyxozM6N-tMD356C7iYLgwUuQ,2008
+frictionless_dfour/program/workspace.py,sha256=_z-VMzYwg7Du9T62R1f_N9Tr1ukwm5oeZ6Or0tQipac,14205
+frictionless_dfour-0.1.0b10.dist-info/LICENSE.md,sha256=z86jLVGSo0jgdNU8r0zH8c7gEABmq6hjJ_-3F7tejLU,1078
+frictionless_dfour-0.1.0b10.dist-info/METADATA,sha256=7euyj6g2iIJESMINg02k0gEdIWrpGvzT8FbWWl3YjmE,3728
+frictionless_dfour-0.1.0b10.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+frictionless_dfour-0.1.0b10.dist-info/entry_points.txt,sha256=Z5VypzBIBa0Gde220LmlZ0gR-wwJyZ26cqf26h9lp2I,63
+frictionless_dfour-0.1.0b10.dist-info/top_level.txt,sha256=sfrrDd90cI6SgrnDYoBVw4usCgZoZOJr2AImJrg6zFo,19
+frictionless_dfour-0.1.0b10.dist-info/RECORD,,
