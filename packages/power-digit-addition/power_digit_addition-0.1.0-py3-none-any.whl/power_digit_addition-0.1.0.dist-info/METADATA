@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: power-digit-addition
+Version: 0.1.0
+Summary: Addition of digit of power(base_number, exponent_number)
+Home-page: https://power-digit-addition.readthedocs.io/
+Author: Govardhan Veer, Vijay Shinde
+Author-email: vijayshinde993@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+
+A library is intended to perform the following activities on input received from a user specifically a base numebr & exponent number : 
+1. calculate the result for base & exponent number, 
+2. perform the addition of all digits of a result generated in step 1
+Note : addition of digits will be performed recursively until program reaches to single digit result.
+
+
