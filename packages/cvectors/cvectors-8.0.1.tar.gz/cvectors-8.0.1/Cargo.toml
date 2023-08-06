@@ -1,0 +1,25 @@
+[package]
+authors = ["Tom Fryers"]
+name = "cvectors"
+version = "8.0.1"
+description = "A simple complex vectors package."
+edition = "2018"
+
+[dependencies]
+
+[dependencies.pyo3]
+version = "0.14.1"
+features = ["extension-module", "num-complex"]
+
+[lib]
+name = "cvectors"
+crate-type = ["cdylib"]
+
+[package.metadata.maturin]
+classifier=[
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Rust",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+]
