@@ -1,0 +1,14 @@
+README.md
+setup.py
+skipatom/__init__.py
+skipatom/induced.py
+skipatom/model.py
+skipatom/one_hot.py
+skipatom/trainer.py
+skipatom/training_data.py
+skipatom/util.py
+skipatom.egg-info/PKG-INFO
+skipatom.egg-info/SOURCES.txt
+skipatom.egg-info/dependency_links.txt
+skipatom.egg-info/requires.txt
+skipatom.egg-info/top_level.txt
