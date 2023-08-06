@@ -1,0 +1,5 @@
+arkindex-client==1.0.6
+minio==7.1.0
+python-gnupg==0.4.7
+PyYAML==5.4.1
+rich==10.6.0

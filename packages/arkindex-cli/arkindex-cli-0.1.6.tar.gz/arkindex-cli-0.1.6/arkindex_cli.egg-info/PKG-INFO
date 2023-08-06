@@ -1,0 +1,161 @@
+Metadata-Version: 2.1
+Name: arkindex-cli
+Version: 0.1.6
+Summary: Arkindex CLI client easy and sexy to use
+Home-page: https://arkindex.teklia.com
+Author: Teklia
+Author-email: contact@teklia.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Arkindex CLI
+
+The Arkindex CLI allows you to perform various advanced actions on an Arkindex
+instance. It can both be used interactively or for scripting.
+
+You can install this tool using pip: `pip install arkindex-cli`
+
+To get general help about the CLI from the command line, use `arkindex -h`.
+To get specific help for a subcommand, use `arkindex <subcommand> -h`.
+
+## Logging in
+
+To interact with an Arkindex instance, you first need to log in with your
+email and password. To do so, use this command:
+
+```
+arkindex login
+```
+
+You will be asked for the instance URL, your email and your password.
+If it all goes well, you will be asked for an alias under which the
+credentials should be stored, and whether or not these should be the default
+credentials to use for all other commands.
+
+The credentials are then stored in a YAML file at
+`~/.config/arkindex/cli.yaml`. Your email and password are not directly stored;
+only the instance URL and an API token.
+
+In any subcommand, you can use the `-p` or `--profile` arguments to select a
+profile other than your default. For example, if you are logged in to two
+instances using the aliases `Foo` and `Bar`, and your default instance is
+`Foo`, all `arkindex` commands will login to `Foo` by default, and you can
+connect to `Bar` using `arkindex --profile Bar <subcommand>`.
+
+## Upload
+
+Helper to upload files on a project.
+You may have a write access to this project and use existing element types.
+
+### Create elements from a list of IIIF URIs
+
+You may create elements from existing IIIF images, providing a list of complete URIs (e.g. `https://iiif.teklia.com/main/iiif/2/test_007.png`).
+
+You need to provide a local path to a text file listing all images URIs to import, and the corpus ID on the Arkindex instance where the elements will be created.
+
+```
+arkindex upload iiif-images <iiif_url_list> <corpus_id> --import-folder-name <folder_name>
+```
+
+## ML reports
+
+Arkindex machine learning workers can return `ml_report.json` artifacts; JSON
+files that describe which elements a worker processed, along with the created
+elements, classifications or transcriptions and the encountered errors.
+
+The CLI can fetch all of the ML reports for a process and provide statistics
+on the errors:
+
+```
+arkindex process report <Process ID>
+```
+
+A possible output might be:
+
+```
+11061 elements: 10575 successful, 486 with errors
+    Errors by class
+┏━━━━━━━━━━━━━┳━━━━━━━┓
+┃ Class       ┃ Count ┃
+┡━━━━━━━━━━━━━╇━━━━━━━┩
+│ HTTPError   │   470 │
+│ KeyError    │    15 │
+│ ReadTimeout │     1 │
+└─────────────┴───────┘
+```
+
+By default, this command retrieves the ML reports for the latest run of the
+process. If you want to use another run, you can specify its number using
+`-r` or `--run`:
+
+```
+arkindex process report <Process ID> --run 4
+```
+
+### Output modes
+
+A JSON mode is available with the `-j` or `--json` arguments.
+This will return an object with all elements from all ML reports that have
+at least one error.
+
+You can also display the full error messages and tracebacks with syntax
+highlighting using `-v` or `--verbose`.
+
+## Process recovery
+
+It is possible to start a new process on another process' failed elements
+(elements with at least one error):
+
+```
+arkindex process recover <Process ID>
+```
+
+This will retrieve the ML reports, list the failed elements, add them to
+your selection, then create an unconfigured process. A link will be provided
+to then open the Arkindex frontend, allowing you to configure and start
+your new process.
+
+Since this updates your selection, if you already had selected elements, the
+tool will ask for your confirmation before deselecting them.
+
+By default, this command retrieves failed elements from the ML reports for the
+latest run of the process. If you want to use another run, you can specify its
+number using `-r` or `--run`:
+
+```
+arkindex process recover <Process ID> --run 4
+```
+
+## Classes management
+
+You can build a CSV file listing all the ML classes from a corpus:
+
+```
+arkindex classes --init my_classes.csv <corpus_id>
+```
+
+The file `my_classes.csv` will then have two columns (ID and class name), for each class found.
+
+## Docker image
+
+You can also use a Docker image to run the tool, instead of installing it through **pip**. This may be useful for Mac owners (or other architectures, or when Python is not available on your computer).
+
+The dockker image is available as `registry.gitlab.com/arkindex/cli:latest` for the most up-to-date version. You can also specify a release instead of `latest`.
+
+You'll need to expose your local configuration in order to persist the login information:
+
+```console
+docker run -it -v $HOME/.config/arkindex:/root/.config/arkindex registry.gitlab.com/arkindex/cli:latest
+```
+
+To ease your usage, you should setup an alias in your `~/.bashrc` or `~/.profile` like so:
+
+```console
+alias arkindex="docker run --rm -it -v $HOME/.config/arkindex:/root/.config/arkindex registry.gitlab.com/arkindex/cli:latest"
+```
+
+By using this alias, you can run the same commands as described above: `arkindex login` for example.
+
+
