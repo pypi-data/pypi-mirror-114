@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: authzerolib
+Version: 1.1.0
+Summary: A super simple and basic client lib for Auth0
+Home-page: https://github.com/mozilla-iam/authzerolib
+Author: Mozilla IAM
+Author-email: gene@mozilla.com
+License: MPL-2.0
+Keywords: auth0 iam library
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# authozero library
+
+This is a super simple and basic Auth0 Python client library.
+
+You can also find it here: https://pypi.python.org/pypi/authzerolib
+
+# Quickstart
+
+```
+from authzero import AuthZero
+
+config = {'client_id': 'AAAA', 'client_secret': 'BBBB', 'uri': 'localhost'}
+az = AuthZero(config)
+ret = az.get_rules()
+...
+```
+
+See `authzerolib.py` for a list of functions.
+
+
+## Options
+
+- `AuthZero.access_token_auto_renew bool` if true, the library will attempt to automatically renew access_tokens
+- `AuthZero.access_token_auto_renew_leeway int` in seconds, will renew the access token before it expires with that
+  amount of time buffer
+
+
