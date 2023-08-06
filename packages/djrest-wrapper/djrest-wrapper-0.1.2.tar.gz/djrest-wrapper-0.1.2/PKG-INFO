@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: djrest-wrapper
+Version: 0.1.2
+Summary: Customized Wrapper for Django Rest Framework
+Home-page: https://github.com/almohress/drfwrapper
+License: MIT
+Description: # drfwrapper
+        Django Rest Framework Customized App
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.8
