@@ -1,0 +1,6 @@
+requests
+geopy
+wheel
+beautifulsoup4
+lxml
+pytz
