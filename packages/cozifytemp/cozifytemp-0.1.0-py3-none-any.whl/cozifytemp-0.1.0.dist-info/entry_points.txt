@@ -1,0 +1,4 @@
+[console_scripts]
+cozifytemp-sample-loop=cozifytemp.sample_loop:run
+cozifytemp-single-sample=cozifytemp.single_sample:main
+

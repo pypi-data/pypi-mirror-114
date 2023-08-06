@@ -1,0 +1,12 @@
+cozifytemp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cozifytemp/cache.py,sha256=J_LGYlQzafANZ867DbQzSAKXNEa5m-sjKJwBbh4VopI,1054
+cozifytemp/config.py,sha256=aQ6Qd4DYuIJwH87cH9k8YrQ5nuYpdG5VC0SQpvkge-4,1747
+cozifytemp/sample_loop.py,sha256=2qIKAvNC4-Okv4155BtTnQdk7-RxbcZAVfKXlFf7LDs,4459
+cozifytemp/single_sample.py,sha256=rrEnTaXuZvzM-DJm1YuTGHUPFV9U-GRQ74GbSsmqqeI,898
+cozifytemp/storage.py,sha256=v4u8VHXWhg8wQvvr5U0Zyt-NxqfhbJwbUe278SBpfPs,2091
+cozifytemp/util.py,sha256=5lJzfbZAKM3sMdt7-Gphtk6-XkVGFWpNLiJmbLS2xcI,1009
+cozifytemp-0.1.0.dist-info/entry_points.txt,sha256=lny3Tvt9rM3UjImjKRoM7nPmMu4XBjII1E9XULH4xz8,124
+cozifytemp-0.1.0.dist-info/LICENSE,sha256=O95w8KauWE6dMFD3Ga5Xpy0zVCddBdxouabmW4AvIg4,1134
+cozifytemp-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+cozifytemp-0.1.0.dist-info/METADATA,sha256=SZJX9bO_asF5tDWRWKo3r3yDwEVlgSrpDLcATNFvsi0,610
+cozifytemp-0.1.0.dist-info/RECORD,,
