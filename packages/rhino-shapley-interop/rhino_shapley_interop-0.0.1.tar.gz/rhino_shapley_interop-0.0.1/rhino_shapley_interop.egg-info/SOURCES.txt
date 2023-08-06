@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+rhino_shapely_interop/__init__.py
+rhino_shapely_interop/importers.py
+rhino_shapely_interop/rhino_wrappers.py
+rhino_shapely_interop/transformations.py
+rhino_shapley_interop.egg-info/PKG-INFO
+rhino_shapley_interop.egg-info/SOURCES.txt
+rhino_shapley_interop.egg-info/dependency_links.txt
+rhino_shapley_interop.egg-info/requires.txt
+rhino_shapley_interop.egg-info/top_level.txt
