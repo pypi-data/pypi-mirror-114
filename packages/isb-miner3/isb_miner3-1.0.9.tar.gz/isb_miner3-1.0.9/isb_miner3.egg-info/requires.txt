@@ -1,0 +1,12 @@
+numpy
+scipy
+pandas
+sklearn
+lifelines
+matplotlib
+seaborn
+mygene
+pydot
+graphviz
+gql
+chembl_webresource_client
