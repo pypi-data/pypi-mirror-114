@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: chanml-client
+Version: 0.1.1
+Summary: chanml-client
+Author: Jun Du
+Author-email: dujun@ruiking.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pygments (>=2.9.0,<3.0.0)
+Requires-Dist: httpx (==0.18.2)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: tqdm (==4.61.2)
+Requires-Dist: typer[all] (>=0.3.2,<0.4.0)
+Requires-Dist: ujson (==4.0.2)
+Description-Content-Type: text/markdown
+
+# ChanML
+
+ ## Instalation
+
+    * poetry installation
+    
