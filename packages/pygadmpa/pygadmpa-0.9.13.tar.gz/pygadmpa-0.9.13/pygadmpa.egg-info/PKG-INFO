@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pygadmpa
+Version: 0.9.13
+Summary: analysis module for Gadget
+Home-page: https://bitbucket.org/broett/pygad
+Author: Bernhard Roettgers
+Author-email: broett@mpa-garching.mpg.de
+License: GPL-2+
+Project-URL: Bug Tracker, https://bitbucket.org/broett/pygad/issues
+Project-URL: Source Code, https://bitbucket.org/broett/pygad
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Physics
+
+A light-weighted analysis module for galaxy         simulations performed by the SPH code Gadget.
+
