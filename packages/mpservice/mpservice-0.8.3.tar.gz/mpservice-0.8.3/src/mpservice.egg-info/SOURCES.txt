@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/mpservice/__init__.py
+src/mpservice/_mperror.py
+src/mpservice/_mpservice.py
+src/mpservice/http_server.py
+src/mpservice/server_process.py
+src/mpservice/streamer.py
+src/mpservice.egg-info/PKG-INFO
+src/mpservice.egg-info/SOURCES.txt
+src/mpservice.egg-info/dependency_links.txt
+src/mpservice.egg-info/requires.txt
+src/mpservice.egg-info/top_level.txt

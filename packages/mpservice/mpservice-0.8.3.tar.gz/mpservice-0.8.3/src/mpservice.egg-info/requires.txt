@@ -1,0 +1,4 @@
+psutil>=5.7.0
+uvicorn<0.15.0,>=0.13.0
+starlette<0.17.0,>=0.14.0
+nest_asyncio>=1.5.1
