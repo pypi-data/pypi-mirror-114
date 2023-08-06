@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pvae
+Version: 0.1
+Summary: Pytorch implementation of Poincare Variational Auto-Encoders
+Home-page: https://github.com/emilemathieu/pvae
+Author: Jeffrey Cheng
+Author-email: jeff.s.cheng@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
