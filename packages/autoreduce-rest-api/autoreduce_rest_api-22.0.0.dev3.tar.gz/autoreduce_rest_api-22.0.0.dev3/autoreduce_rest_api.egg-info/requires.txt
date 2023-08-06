@@ -1,0 +1,4 @@
+autoreduce_utils==22.0.0.dev4
+autoreduce_scripts==22.0.0.dev11
+django==3.2.4
+djangorestframework==3.12.4
