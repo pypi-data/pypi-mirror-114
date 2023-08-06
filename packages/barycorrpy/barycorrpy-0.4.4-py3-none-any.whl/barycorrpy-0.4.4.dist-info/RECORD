@@ -1,0 +1,16 @@
+barycorrpy/PINT_erfautils.py,sha256=nDi8nLY_AXVOQDcB5vAvN0BCjEYj3YdAID-ePXyvlSY,4794
+barycorrpy/PhysicalConstants.py,sha256=pkt0vM1GvVge0vZY-FKlWKMXUxx0QFwPuW3GzBN3p4E,955
+barycorrpy/SolarSystemBC.py,sha256=ZHoZioGd0Ze1BgJG_AlUNm4P6YBDMIAIDvOSbThSdXk,16443
+barycorrpy/__init__.py,sha256=wu84iT5B3kNBhr-8GcIetsDYYnFJkF5Ht6S-AtWu54I,311
+barycorrpy/barycorrpy.py,sha256=-jLsf0YbT_stXa7EWpbYFIf6DDk7rK9wf_VEFn3cLho,28020
+barycorrpy/sample_script.py,sha256=Yx9cjhTRDzg72qZ4sDp4OAO85c7NdLVW6iMPCUevd2w,4782
+barycorrpy/utc_tdb.py,sha256=Wmu2vrfgaQz3DZhUgG6RRfmh2xX_aN6Rld_uwVCd274,23364
+barycorrpy/utils.py,sha256=PSmV1oH-2UJRFyfcmwKNcsk_-Ow6sxaPOeEd6knOHSw,4276
+barycorrpy/data/hip2.dat,sha256=ILwL7lgh_QTKbVTnqhs_DWL6dmUFOGQJk_1i2Eu9IHw,32791490
+barycorrpy/tests/__init__.py,sha256=_6Yl-eMBve0mGQA-aiFg4qvQ7GUCV5eGvIcoRf4mEPw,3
+barycorrpy/tests/test_barycorrpy.py,sha256=HCWQN-87zuhfA1dXGo7d0kHO3Hap2_NG6I9u75NUNYQ,3697
+barycorrpy-0.4.4.dist-info/LICENSE.txt,sha256=Czg9WmPaZE9ijZnDOXbqZIftiaqlnwsyV5kt6sEXHms,35821
+barycorrpy-0.4.4.dist-info/METADATA,sha256=JkAOyggBRwhwoMHO2JWZS1L3HOv7GkSB7w3WwQ7RmX4,4110
+barycorrpy-0.4.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+barycorrpy-0.4.4.dist-info/top_level.txt,sha256=mlbEssZeznC9tk2MRSRrkm7tHXJsW517kUIx188JvP4,11
+barycorrpy-0.4.4.dist-info/RECORD,,
