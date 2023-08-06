@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: ruphrase
+Version: 0.0.3
+Summary: Build the correct turn of phrase in Russian
+Home-page: https://github.com/nigani/ruphrase
+Author: nigani
+Author-email: nigani@internet.ru
+License: MIT License
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ruphrase
+
+Build the correct turn of phrase in Russian
+
+
+## Installation
+
+Run `pip install ruphrase`
+or `python -m pip install --user ruphrase`
+
+
+## Usage
+
+```
+>>> from ruphrase impport ruphrase
+>>> ruphrase('Опубликован/а/ы', 42, 'новост/ь/и/ей')
+Опубликованы 42 новости
+
+>>> ruphrase(None, 15, '/сияющая звезда/сияющие звезды/сияющих звезд')
+15 сияющих звезд
+
+>>> ruphrase('Заселен/ы', 3001, 'дом/а/ов', '')
+Заселен 3001 дом
+
+```
+
+
