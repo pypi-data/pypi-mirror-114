@@ -1,0 +1,15 @@
+epicbot_images/__init__.py,sha256=-PYTKPEkq2aGJHOdzkgu5oKZIPKSq6MCqGrFyy4QQXc,21
+epicbot_images/memes.py,sha256=A1yov3Dr4jPAv4BqrornAeNMpr0eADZQjp1l25KsExM,2757
+epicbot_images/utils.py,sha256=kE7Pzum570iacP_5fGtc_8X_3GVGyBie1wDwD01AzCo,371
+epicbot_images/assets/fonts/Roboto-Bold.ttf,sha256=uvRM6BY2zJJ_wndoQ35dqFO6xpnoqvgy0ELw3-0ptLQ,167336
+epicbot_images/assets/meme_templates/disappointed.png,sha256=NHMjkmiCIo-HZ6NVxggAB670d19W9C-A0MvtzZo5NnA,355326
+epicbot_images/assets/meme_templates/drake.png,sha256=5dWaQu6eOT6TmeWdYcfQ_DACmVHqGQ1_8Yb3mebiW90,371697
+epicbot_images/assets/meme_templates/flex_tape.png,sha256=MUcVXQbzcF3-b3gMN0kkuVOY3KY6U616t8wpBu2ieP0,949915
+epicbot_images/temp/disappointed.png,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+epicbot_images/temp/drake.png,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+epicbot_images/temp/flex_tape.png,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+epicbot_images-1.0.3.dist-info/LICENSE,sha256=XA0asI2ToLBIAmilZ3XTRUZeYCCqd0rrSnfdlnM5OGQ,1090
+epicbot_images-1.0.3.dist-info/METADATA,sha256=Ji2hav07L0c6_M__5qgXXLFO_rJLAbHO-nFG8MJj6x8,285
+epicbot_images-1.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+epicbot_images-1.0.3.dist-info/top_level.txt,sha256=3HryBJoKXTVPEP8DqNnSJWB1pCBsO9WD5tXnFoxLD6c,15
+epicbot_images-1.0.3.dist-info/RECORD,,
