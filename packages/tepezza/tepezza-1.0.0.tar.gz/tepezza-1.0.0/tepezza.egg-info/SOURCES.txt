@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tepezza/__init__.py
+tepezza/__version__.py
+tepezza/api.py
+tepezza/hotkey.py
+tepezza.egg-info/PKG-INFO
+tepezza.egg-info/SOURCES.txt
+tepezza.egg-info/dependency_links.txt
+tepezza.egg-info/top_level.txt
