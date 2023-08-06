@@ -1,0 +1,5 @@
+instaloader>=4.7.1
+numpy>=1.19.5
+
+[dev]
+pytest>3.7

@@ -1,0 +1,11 @@
+License.txt
+MANIFEST.in
+READMe.md
+setup.cfg
+setup.py
+src/instadownloader.py
+src/instadownloader.egg-info/PKG-INFO
+src/instadownloader.egg-info/SOURCES.txt
+src/instadownloader.egg-info/dependency_links.txt
+src/instadownloader.egg-info/requires.txt
+src/instadownloader.egg-info/top_level.txt
