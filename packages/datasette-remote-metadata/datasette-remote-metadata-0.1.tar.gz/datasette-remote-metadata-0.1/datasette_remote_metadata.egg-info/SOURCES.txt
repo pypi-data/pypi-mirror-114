@@ -1,0 +1,9 @@
+README.md
+setup.py
+datasette_remote_metadata/__init__.py
+datasette_remote_metadata.egg-info/PKG-INFO
+datasette_remote_metadata.egg-info/SOURCES.txt
+datasette_remote_metadata.egg-info/dependency_links.txt
+datasette_remote_metadata.egg-info/entry_points.txt
+datasette_remote_metadata.egg-info/requires.txt
+datasette_remote_metadata.egg-info/top_level.txt
