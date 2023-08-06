@@ -1,0 +1,16 @@
+egp_genomic_library/__init__.py,sha256=YfEmfkyfXZqWhBgsFXN8PaGsHDOLE8J1lVr2EF361aw,164
+egp_genomic_library/entry_validator.py,sha256=h-Ha7uBhQLIOTyz4X8fC6PdwKRvCujx0RCNdAWDHEhI,9021
+egp_genomic_library/gc_type.py,sha256=c3Xmm4IvclRxSsKVkWnkzI1t-I0SDMbo7n14cVpYHeY,1486
+egp_genomic_library/genomic_library.py,sha256=jBUuUe6T3gD_PymLfYtazJSrO8xWGJmn3TI43CM9haI,15366
+egp_genomic_library/data/codons.json,sha256=zLuUrjzuRASrxKwDk0qHR2kk1rjTcqPkMwdnO0msPI4,661575
+egp_genomic_library/data/gc_types.json,sha256=DEM4Cd-XgFQ6rASBLVNssdLrHAQRXXF80vAStmM4w8g,400
+egp_genomic_library/data/mutations.json,sha256=rOgQ1-LLtPjEDOCdyOGRrkZq204afUnFnyIVtBHTiwU,4
+egp_genomic_library/formats/entry_format.json,sha256=BzF2CazaCPRMkn10UGhofz_gFs6qmpRR9tPgnJ3q8gw,20646
+egp_genomic_library/formats/table_format.json,sha256=J9Cw0balVSLcCVWt4E4LxIycV1pgbhlUsO_sv-HcDFo,2287
+egp_genomic_library/utils/base_validator.py,sha256=esBcf-147kOHJoSCxfxNnzMPIoSi8b8Oo-6CKJQyJbc,2735
+egp_genomic_library/utils/reference.py,sha256=8WP4k0dumMECjvC8fa0-kx8QfmWqsAPoSb6hp_2h5Zo,507
+egp_genomic_library/utils/text_token.py,sha256=MfLYkjgrSdVUysi9G4A8EwZRNeao50eBcd0-0w7AR6s,2814
+egp_genomic_library-0.0.1.dev1.dist-info/METADATA,sha256=k8krvQvPQwmw0FwDsKaVt3LxHXc18dH38xvSbOepKCE,1075
+egp_genomic_library-0.0.1.dev1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+egp_genomic_library-0.0.1.dev1.dist-info/top_level.txt,sha256=nijR8O55dpfbtC_d_VfVeZSAgrmpq9mYo4BS0ELIdCU,20
+egp_genomic_library-0.0.1.dev1.dist-info/RECORD,,
