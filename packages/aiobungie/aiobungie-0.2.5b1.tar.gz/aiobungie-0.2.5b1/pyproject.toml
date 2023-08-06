@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "aiobungie"
+version = "0.2.5b1"
+description = "A small async api wrapper for the bungie api"
+authors = ["nxtlo <dhmony-99@hotmail.com>"]
+license = "MIT"
+keywords = ['async', 'api', 'destiny', 'bungie']
+readme = "README.md"
+repository = "https://github.com/nxtlo/aiobungie"
+packages = [
+    {include = "aiobungie"},
+    {include = "aiobungie/**/*.py"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: AsyncIO",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Communications :: Chat",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+python-dateutil = "2.8.2"
+aiohttp = "3.7.4.post0"
+aiosqlite = "0.17.0"
+aredis = "1.1.8"
+
+[tool.poetry.dev-dependencies]
+black = "21.7b0"
+mypy = "0.910"
+nox = "2021.6.12"
+pdoc3 = "0.9.2"
+isort = "5.9.2"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
