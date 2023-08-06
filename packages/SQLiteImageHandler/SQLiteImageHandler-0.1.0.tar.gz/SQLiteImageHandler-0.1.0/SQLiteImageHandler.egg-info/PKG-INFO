@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: SQLiteImageHandler
+Version: 0.1.0
+Summary: Simple to use image handler for python sqlite3.
+Home-page: https://github.com/mozancetin/SQLite-Image-Handler
+Author: Mustafa Ozan Çetin
+Author-email: mustafaozancetin@gmail.com
+License: MIT
+Description: This package helps you to save images to sqlite database and get images from sqlite database.
+Keywords: sqlite,python,sqlite-image,image-handler
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

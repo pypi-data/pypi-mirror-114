@@ -1,0 +1,11 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+SQLiteImageHandler/SQLiteImageHandler.py
+SQLiteImageHandler/__init__.py
+SQLiteImageHandler/__main__.py
+SQLiteImageHandler.egg-info/PKG-INFO
+SQLiteImageHandler.egg-info/SOURCES.txt
+SQLiteImageHandler.egg-info/dependency_links.txt
+SQLiteImageHandler.egg-info/top_level.txt
