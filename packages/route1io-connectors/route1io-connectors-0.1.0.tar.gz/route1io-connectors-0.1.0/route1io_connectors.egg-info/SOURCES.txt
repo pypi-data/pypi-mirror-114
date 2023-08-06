@@ -1,0 +1,13 @@
+README.md
+setup.py
+route1io_connectors/__init__.py
+route1io_connectors/aws.py
+route1io_connectors/facebook.py
+route1io_connectors/gsheets.py
+route1io_connectors/sa360.py
+route1io_connectors/slack.py
+route1io_connectors.egg-info/PKG-INFO
+route1io_connectors.egg-info/SOURCES.txt
+route1io_connectors.egg-info/dependency_links.txt
+route1io_connectors.egg-info/requires.txt
+route1io_connectors.egg-info/top_level.txt
