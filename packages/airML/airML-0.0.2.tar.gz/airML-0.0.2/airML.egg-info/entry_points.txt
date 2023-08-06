@@ -1,0 +1,3 @@
+[console_scripts]
+airML = airML.airML:execute_kbox_command
+
