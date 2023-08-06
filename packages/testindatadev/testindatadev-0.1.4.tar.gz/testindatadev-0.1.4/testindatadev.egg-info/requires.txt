@@ -1,0 +1,5 @@
+click
+minio
+qiniu
+requests
+pyyaml
