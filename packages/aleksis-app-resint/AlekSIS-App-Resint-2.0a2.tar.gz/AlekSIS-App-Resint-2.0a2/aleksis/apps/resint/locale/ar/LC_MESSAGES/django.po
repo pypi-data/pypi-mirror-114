@@ -1,0 +1,229 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-01 11:28+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: aleksis/apps/resint/menus.py:37 aleksis/apps/resint/models.py:125
+msgid "Poster"
+msgstr ""
+
+#: aleksis/apps/resint/menus.py:46
+msgid "Manage posters"
+msgstr ""
+
+#: aleksis/apps/resint/menus.py:57 aleksis/apps/resint/models.py:39
+#: aleksis/apps/resint/templates/resint/group/list.html:4
+#: aleksis/apps/resint/templates/resint/group/list.html:14
+msgid "Poster groups"
+msgstr ""
+
+#: aleksis/apps/resint/models.py:19
+msgid "Slug used in URL name"
+msgstr ""
+
+#: aleksis/apps/resint/models.py:20
+msgid "If you use 'example', the filename will be 'example.pdf'."
+msgstr ""
+
+#: aleksis/apps/resint/models.py:22
+#: aleksis/apps/resint/templates/resint/group/list.html:19
+msgid "Name"
+msgstr ""
+
+#: aleksis/apps/resint/models.py:24
+msgid "Publishing weekday"
+msgstr ""
+
+#: aleksis/apps/resint/models.py:26
+#: aleksis/apps/resint/templates/resint/group/list.html:22
+msgid "Publishing time"
+msgstr ""
+
+#: aleksis/apps/resint/models.py:29
+msgid "Default PDF"
+msgstr ""
+
+#: aleksis/apps/resint/models.py:30
+msgid "This PDF file will be shown if there is no current PDF."
+msgstr ""
+
+#: aleksis/apps/resint/models.py:34
+msgid "Show in menu"
+msgstr ""
+
+#: aleksis/apps/resint/models.py:35
+msgid "Show for not logged-in users"
+msgstr ""
+
+#: aleksis/apps/resint/models.py:38 aleksis/apps/resint/models.py:104
+msgid "Poster group"
+msgstr ""
+
+#: aleksis/apps/resint/models.py:45
+msgid "Can view all posters of this group"
+msgstr ""
+
+#: aleksis/apps/resint/models.py:46
+msgid "Can upload new posters to this group"
+msgstr ""
+
+#: aleksis/apps/resint/models.py:47
+msgid "Can change all posters of this group"
+msgstr ""
+
+#: aleksis/apps/resint/models.py:48
+msgid "Can delete all posters of this group"
+msgstr ""
+
+#: aleksis/apps/resint/models.py:107
+msgid "Calendar week"
+msgstr ""
+
+#: aleksis/apps/resint/models.py:112
+msgid "Year"
+msgstr ""
+
+#: aleksis/apps/resint/models.py:115
+msgid "PDF"
+msgstr ""
+
+#: aleksis/apps/resint/models.py:126
+#: aleksis/apps/resint/templates/resint/poster/list.html:5
+#: aleksis/apps/resint/templates/resint/poster/list.html:8
+msgid "Posters"
+msgstr ""
+
+#: aleksis/apps/resint/templates/resint/group/create.html:5
+#: aleksis/apps/resint/templates/resint/group/create.html:8
+msgid "Create poster group"
+msgstr ""
+
+#: aleksis/apps/resint/templates/resint/group/edit.html:5
+#: aleksis/apps/resint/templates/resint/group/edit.html:8
+msgid "Edit poster group"
+msgstr ""
+
+#: aleksis/apps/resint/templates/resint/group/list.html:10
+msgid "Create new poster group"
+msgstr ""
+
+#: aleksis/apps/resint/templates/resint/group/list.html:20
+msgid "Filename"
+msgstr ""
+
+#: aleksis/apps/resint/templates/resint/group/list.html:21
+msgid "Publishing day"
+msgstr ""
+
+#: aleksis/apps/resint/templates/resint/group/list.html:23
+msgid "Default PDF file"
+msgstr ""
+
+#: aleksis/apps/resint/templates/resint/group/list.html:24
+#: aleksis/apps/resint/templates/resint/poster/list.html:65
+msgid "Actions"
+msgstr ""
+
+#: aleksis/apps/resint/templates/resint/group/list.html:40
+msgid "Open"
+msgstr ""
+
+#: aleksis/apps/resint/templates/resint/group/list.html:49
+#: aleksis/apps/resint/templates/resint/poster/list.html:81
+msgid "Edit"
+msgstr ""
+
+#: aleksis/apps/resint/templates/resint/group/list.html:58
+#: aleksis/apps/resint/templates/resint/poster/list.html:87
+msgid "Delete"
+msgstr ""
+
+#: aleksis/apps/resint/templates/resint/group/list.html:65
+msgid "There are no poster groups available."
+msgstr ""
+
+#: aleksis/apps/resint/templates/resint/poster/edit.html:5
+#: aleksis/apps/resint/templates/resint/poster/edit.html:8
+msgid "Edit poster"
+msgstr ""
+
+#: aleksis/apps/resint/templates/resint/poster/list.html:23
+#, python-format
+msgid ""
+"\n"
+"                      Week %(week)s/%(year)s\n"
+"                    "
+msgstr ""
+
+#: aleksis/apps/resint/templates/resint/poster/list.html:35
+msgid "There is no poster for this week."
+msgstr ""
+
+#: aleksis/apps/resint/templates/resint/poster/list.html:42
+msgid "Show current PDF"
+msgstr ""
+
+#: aleksis/apps/resint/templates/resint/poster/list.html:54
+msgid "Upload new poster"
+msgstr ""
+
+#: aleksis/apps/resint/templates/resint/poster/list.html:58
+msgid "All uploaded posters"
+msgstr ""
+
+#: aleksis/apps/resint/templates/resint/poster/list.html:62
+msgid "Group"
+msgstr ""
+
+#: aleksis/apps/resint/templates/resint/poster/list.html:63
+msgid "Week"
+msgstr ""
+
+#: aleksis/apps/resint/templates/resint/poster/list.html:64
+msgid "Valid from ... to"
+msgstr ""
+
+#: aleksis/apps/resint/templates/resint/poster/list.html:75
+msgid "Show"
+msgstr ""
+
+#: aleksis/apps/resint/templates/resint/poster/upload.html:5
+#: aleksis/apps/resint/templates/resint/poster/upload.html:8
+#: aleksis/apps/resint/templates/resint/poster/upload.html:16
+msgid "Upload poster"
+msgstr ""
+
+#: aleksis/apps/resint/views.py:40 aleksis/apps/resint/views.py:51
+msgid "The poster group has been saved."
+msgstr ""
+
+#: aleksis/apps/resint/views.py:61
+msgid "The poster group has been deleted."
+msgstr ""
+
+#: aleksis/apps/resint/views.py:97
+msgid "The poster has been uploaded."
+msgstr ""
+
+#: aleksis/apps/resint/views.py:111
+msgid "The poster has been changed."
+msgstr ""
+
+#: aleksis/apps/resint/views.py:124
+msgid "The poster has been deleted."
+msgstr ""
