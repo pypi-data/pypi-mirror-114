@@ -1,0 +1,135 @@
+Metadata-Version: 2.1
+Name: speasy
+Version: 0.9.0
+Summary: A simple Python package to deal with main Space Physics WebServices (CDA,CSA,AMDA,..) mainly written to ease development of SciQLop.
+Home-page: https://github.com/SciQLop/speasy
+Author: Alexis Jeandet
+Author-email: alexis.jeandet@member.fsf.org
+License: GNU General Public License v3
+Keywords: speasy
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Click (>=6.0)
+Requires-Dist: requests
+Requires-Dist: zeep
+Requires-Dist: xmltodict
+Requires-Dist: pandas
+Requires-Dist: diskcache
+Requires-Dist: appdirs
+Requires-Dist: numpy
+Requires-Dist: packaging
+Requires-Dist: python-dateutil
+Requires-Dist: astropy
+Requires-Dist: spwc
+Provides-Extra: cdf
+Requires-Dist: spacepy ; extra == 'cdf'
+
+================================
+Space Physics made EASY
+================================
+
+
+.. image:: https://img.shields.io/pypi/v/speasy.svg
+        :target: https://pypi.python.org/pypi/speasy
+
+.. image:: https://github.com/SciQLop/speasy/workflows/Tests/badge.svg
+        :target: https://github.com/SciQLop/speasy/actions?query=workflow%3A%22Tests%22
+
+.. image:: https://readthedocs.org/projects/speasy/badge/?version=latest
+        :target: https://speasy.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+.. image:: https://codecov.io/gh/SciQLop/speasy/coverage.svg?branch=master
+        :target: https://codecov.io/gh/SciQLop/speasy/branch/master
+        :alt: Coverage Status
+
+.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.4118780.svg
+   :target: https://doi.org/10.5281/zenodo.4118780
+   :alt: Zendoo DOI
+
+A simple Python package to deal with main Space Physics WebServices (CDA,CSA,AMDA,..).
+This package was initially written to ease development of `SciQLop <https://github.com/SciQLop/SciQLop>`_ , but
+now offers an intuitive and efficient access to any scientist or student who just want get spacecraft data.
+
+As simple as:
+
+.. code-block:: python
+
+    import speasy as spz
+    ace_mag = spz.get_data('amda/imf', "2016-6-2", "2016-6-5")
+
+* Free software: GNU General Public License v3
+
+
+Features
+========
+
+- Simple and intuitive API
+- Pandas DataFrame like interface for variables
+- Quick functions to convert a variable to a Pandas DataFrame
+- Local cache to avoid repeating twice the same request
+
+Examples
+========
+See `here <https://nbviewer.jupyter.org/github/SciQLop/speasy/blob/master/examples/demo.ipynb>`_ for a complete list of examples.
+
+Credits
+========
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.8.2 (2021-04-20)
+==================
+
+* sscweb trajectories are always in km
+
+0.8.1 (2021-04-18)
+==================
+
+* Fixes minimum request duration for sscweb
+
+0.8.0 (2021-04-18)
+==================
+
+* Full support for trajectories and 0.2 proxy version
+
+0.7.2 (2020-11-13)
+==================
+
+* ccsweb/proxy: Fix missing coordinate system parameter
+
+0.7.1 (2020-11-13)
+==================
+
+* Fix project URL on PyPi
+
+0.7.0 (2020-11-13)
+==================
+
+* SSCWEB support to get satellites trajectories.
+* Few bug fixes.
+* Totally disabled cdf support for now.
+
+0.1.0 (2019-12-07)
+==================
+
+* First release on PyPI.
+
+
