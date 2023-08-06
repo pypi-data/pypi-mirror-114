@@ -1,0 +1,36 @@
+{
+    "name": "NerLabelOntologyMapping",
+    "displayname": "NLP.NERLabelOntologyMapping",
+    "configurations": {
+        "PANDORA_NLP_ENABLED_LABELS": {
+            "$type": "MultiselectConfigurationValue",
+            "values": [
+                {
+                    "$type": "TextConfigurationValue",
+                    "value": "Spacy"
+                },
+                {
+                    "$type": "TextConfigurationValue",
+                    "value": "Wikipedia"
+                },
+                {
+                    "$type": "TextConfigurationValue",
+                    "value": "MITRE"
+                },
+                {
+                    "$type": "TextConfigurationValue",
+                    "value": "Sectors"
+                },
+                {
+                    "$type": "TextConfigurationValue",
+                    "value": "Regex"
+                }
+            ]
+        },
+        "PANDORA_NLP_LABELS_ONTOLOGY_MAPPING": {
+            "$type": "TextConfigurationValue",
+            "value": "{ \t\"Spacy\": { \t\t\"PERSON\": \"/ontology/entitytype/person\", \t\t\"GPE\": \"/ontology/entitytype/location\", \t\t\"LOC\": \"/ontology/entitytype/location\", \t\t\"ORG\": \"/ontology/entitytype/organization\" \t}, \t\"Wikipedia\": { \t\t\"PERSON\": \"/ontology/entitytype/person\", \t\t\"GPE\": \"/ontology/entitytype/location\", \t\t\"ORG\": \"/ontology/entitytype/organization\" \t}, \t\"MITRE\": { \t\t\"mitigations\": \"/ontology/entitytype/mitigation\", \t\t\"malware\": \"/ontology/entitytype/software/malware\", \t\t\"groups\": \"/ontology/entitytype/intrusion_set\", \t\t\"tools\": \"/ontology/entitytype/software/tool\", \t\t\"tactics\": \"/ontology/entitytype/x-mitre-tactic\", \t\t\"sub_technique\": \"/ontology/entitytype/attack_pattern/sub_technique\", \t\t\"techniques\": \"/ontology/entitytype/attack_pattern\" \t}, \t\"Sectors\": { \t\t\"Oil and Gas Sector\": \"/ontology/entitytype/sector/oil_gas_sector\", \t\t\"Information Services Sector\": \"/ontology/entitytype/sector/information_services_sector\", \t\t\"Technology Sector\": \"/ontology/entitytype/sector/technology_sector\", \t\t\"Religious Organizations Sector\": \"/ontology/entitytype/sector/religious_organizations_sector\", \t\t\"Development Sector\": \"/ontology/entitytype/sector/development_sector\", \t\t\"Food Sector\": \"/ontology/entitytype/sector/food_sector\", \t\t\"industrial control Sector\": \"/ontology/entitytype/sector/industrial_control_systems_sector\", \t\t\"Media Sector\": \"/ontology/entitytype/sector/media_sector\", \t\t\"Water Sector\": \"/ontology/entitytype/sector/water_sector\", \t\t\"Nuclear Sector\": \"/ontology/entitytype/sector/nuclear_sector\", \t\t\"Defense Sector\": \"/ontology/entitytype/sector/defense_sector\", \t\t\"Industrial Equipment Sector\": \"/ontology/entitytype/sector/industrial_equipment_sector\", \t\t\"Finance Sector\": \"/ontology/entitytype/sector/finance_sector\", \t\t\"Telecommunications sector\": \"/ontology/entitytype/sector/telecommunications_sector\", \t\t\"Transport Sector\": \"/ontology/entitytype/sector/transport_sector\", \t\t\"Pharmaceuticals and Medical Research Sector\": \"/ontology/entitytype/sector/pharmaceuticals_medical_research_sector\", \t\t\"Entertainment Sector\": \"/ontology/entitytype/sector/entertainment_sector\", \t\t\"Academic and Educational Sector\": \"/ontology/entitytype/sector/academic_educations\", \t\t\"Aerospace Sector\": \"/ontology/entitytype/sector/aerospace_sector\", \t\t\"Construction and Engineering Sector\": \"/ontology/entitytype/sector/construction_engineering_sector\", \t\t\"Utilities Sector\": \"/ontology/entitytype/sector/utilities_sector\", \t\t\"Chemicals Sector\": \"/ontology/entitytype/sector/chemicals_sector\", \t\t\"Healthcare Sector\": \"/ontology/entitytype/sector/healthcare_sector\", \t\t\"Electrical equipment Sector\": \"/ontology/entitytype/sector/electrical_equipment_sector\", \t\t\"Energy Sector\": \"/ontology/entitytype/sector/energy_sector\", \t\t\"Agriculture Sector\": \"/ontology/entitytype/sector/agricultural_sector\", \t\t\"Real Estate Sector\": \"/ontology/entitytype/sector/real_estate_sector\", \t\t\"Raw Materials Sector\": \"/ontology/entitytype/sector/raw_materials_sector\", \t\t\"Governments Sector\": \"/ontology/entitytype/sector/governments_sector\" \t}, \t\"Regex\": { \t\t\"weblink\": \"/ontology/entitytype/weblink\", \t\t\"email\": \"/ontology/entitytype/email\", \t\t\"twitter.hashtag\": \"/ontology/entitytype/hashtag\", \t\t\"twitter.account\": \"/ontology/entitytype/social_media_account/twitter_account\", \t\t\"mobile\": \"/ontology/entitytype/phone\", \t\t\"address\": \"/ontology/entitytype/location\", \t\t\"address.street_name\": \"/ontology/entitytype/location/has_streetname\", \t\t\"address.street_number\": \"/ontology/entitytype/location/has_house_number\", \t\t\"address.postal_code\": \"/ontology/entitytype/location/has_zipcode\", \t\t\"address.city\": \"/ontology/entitytype/location/has_city\", \t\t\"phone\": \"/ontology/entitytype/phone\", \t\t\"auto\": \"/ontology/entitytype/car\", \t\t\"postcode\": \"/ontology/entitytype/location/has_zipcode\", \t\t\"IBAN\": \"/ontology/entitytype/bank_account\" \t} }"
+        }
+    },
+    "tenantId": "25a747d6-dbaf-461d-9c08-037e03ad827e",
+}

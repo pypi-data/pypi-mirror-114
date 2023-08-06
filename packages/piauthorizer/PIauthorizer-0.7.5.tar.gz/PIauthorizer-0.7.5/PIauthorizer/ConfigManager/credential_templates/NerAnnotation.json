@@ -1,0 +1,253 @@
+{
+    "name": "NerAnnotation",
+    "displayName": "NLP.NERAnnotation",
+    "configurations": [
+        {
+            "$type": "MultiselectConfiguration",
+            "defaultValues": [
+                {
+                    "$type": "TextConfigurationValue",
+                    "value": "PERSON"
+                },
+                {
+                    "$type": "TextConfigurationValue",
+                    "value": "NORP"
+                },
+                {
+                    "$type": "TextConfigurationValue",
+                    "value": "FAC"
+                },
+                {
+                    "$type": "TextConfigurationValue",
+                    "value": "ORG"
+                },
+                {
+                    "$type": "TextConfigurationValue",
+                    "value": "GPE"
+                },
+                {
+                    "$type": "TextConfigurationValue",
+                    "value": "LOC"
+                },
+                {
+                    "$type": "TextConfigurationValue",
+                    "value": "PRODUCT"
+                },
+                {
+                    "$type": "TextConfigurationValue",
+                    "value": "EVENT"
+                },
+                {
+                    "$type": "TextConfigurationValue",
+                    "value": "WORK_OF_ART"
+                },
+                {
+                    "$type": "TextConfigurationValue",
+                    "value": "LAW"
+                },
+                {
+                    "$type": "TextConfigurationValue",
+                    "value": "LANGUAGE"
+                },
+                {
+                    "$type": "TextConfigurationValue",
+                    "value": "DATE"
+                },
+                {
+                    "$type": "TextConfigurationValue",
+                    "value": "TIME"
+                },
+                {
+                    "$type": "TextConfigurationValue",
+                    "value": "PERCENT"
+                },
+                {
+                    "$type": "TextConfigurationValue",
+                    "value": "MONEY"
+                },
+                {
+                    "$type": "TextConfigurationValue",
+                    "value": "QUANTITY"
+                },
+                {
+                    "$type": "TextConfigurationValue",
+                    "value": "ORDINAL"
+                },
+                {
+                    "$type": "TextConfigurationValue",
+                    "value": "CARDINAL"
+                }
+            ],
+            "options": [
+                {
+                    "name": "PERSON",
+                    "description": "People, including fictional.",
+                    "value": {
+                        "$type": "TextConfigurationValue",
+                        "value": "PERSON"
+                    }
+                },
+                {
+                    "name": "NORP",
+                    "description": "Nationalities or religious or political group",
+                    "value": {
+                        "$type": "TextConfigurationValue",
+                        "value": "NORP"
+                    }
+                },
+                {
+                    "name": "FAC",
+                    "description": "Buildings, airports, highways, bridges, etc.",
+                    "value": {
+                        "$type": "TextConfigurationValue",
+                        "value": "FAC"
+                    }
+                },
+                {
+                    "name": "ORG",
+                    "description": "Companies, agencies, institutions, etc.",
+                    "value": {
+                        "$type": "TextConfigurationValue",
+                        "value": "ORG"
+                    }
+                },
+                {
+                    "name": "GPE",
+                    "description": "Countries, cities, states.",
+                    "value": {
+                        "$type": "TextConfigurationValue",
+                        "value": "GPE"
+                    }
+                },
+                {
+                    "name": "LOC",
+                    "description": "NON-GPE locations, mountain ranges, bodies of water.",
+                    "value": {
+                        "$type": "TextConfigurationValue",
+                        "value": "LOC"
+                    }
+                },
+                {
+                    "name": "PRODUCT",
+                    "description": "Objects, vehicles, foods, etc. (not services.).",
+                    "value": {
+                        "$type": "TextConfigurationValue",
+                        "value": "PRODUCT"
+                    }
+                },
+                {
+                    "name": "EVENT",
+                    "description": "Named hurricanes, battles, wars, sport events, etc.",
+                    "value": {
+                        "$type": "TextConfigurationValue",
+                        "value": "EVENT"
+                    }
+                },
+                {
+                    "name": "WORK_OF_ART",
+                    "description": "Titles of books, songs, etc.",
+                    "value": {
+                        "$type": "TextConfigurationValue",
+                        "value": "WORK_OF_ART"
+                    }
+                },
+                {
+                    "name": "LAW",
+                    "description": "Named documents made into laws.",
+                    "value": {
+                        "$type": "TextConfigurationValue",
+                        "value": "LAW"
+                    }
+                },
+                {
+                    "name": "LANGUAGE",
+                    "description": "Any named language.",
+                    "value": {
+                        "$type": "TextConfigurationValue",
+                        "value": "LANGUAGE"
+                    }
+                },
+                {
+                    "name": "DATE",
+                    "description": "Absolute or relative dates or periods.",
+                    "value": {
+                        "$type": "TextConfigurationValue",
+                        "value": "DATE"
+                    }
+                },
+                {
+                    "name": "TIME",
+                    "description": "Times smaller than a day.",
+                    "value": {
+                        "$type": "TextConfigurationValue",
+                        "value": "TIME"
+                    }
+                },
+                {
+                    "name": "PERCENT",
+                    "description": "Percentage, including %",
+                    "value": {
+                        "$type": "TextConfigurationValue",
+                        "value": "PERCENT"
+                    }
+                },
+                {
+                    "name": "MONEY",
+                    "description": "Monetary values, including unit.",
+                    "value": {
+                        "$type": "TextConfigurationValue",
+                        "value": "MONEY"
+                    }
+                },
+                {
+                    "name": "QUANTITY",
+                    "description": "Measurements, as of weight or distance.",
+                    "value": {
+                        "$type": "TextConfigurationValue",
+                        "value": "QUANTITY"
+                    }
+                },
+                {
+                    "name": "ORDINAL",
+                    "description": "first, second etc.",
+                    "value": {
+                        "$type": "TextConfigurationValue",
+                        "value": "ORDINAL"
+                    }
+                },
+                {
+                    "name": "CARDINAL",
+                    "description": "NUmerals that do not fall under another type.",
+                    "value": {
+                        "$type": "TextConfigurationValue",
+                        "value": "CARDINAL"
+                    }
+                }
+            ],
+            "required": false,
+            "key": "DEFAULT_LABELS",
+            "name": "Default Labels",
+            "description": "Default Labels",
+            "tenants": [
+                "research"
+            ],
+            "audience": "PandoraAdmin",
+            "metadata": []
+        },
+        {
+            "$type": "TextConfiguration",
+            "defaultValue": {
+                "value": ""
+            },
+            "required": false,
+            "key": "ADDITIONAL_LABELS",
+            "name": "Additional Labels (uppercase, comma seperated)",
+            "description": "Additional Labels (uppercase, comma seperated)",
+            "tenants": [
+                "research"
+            ],
+            "audience": "PandoraAdmin",
+            "metadata": []
+        }
+    ]
+}
