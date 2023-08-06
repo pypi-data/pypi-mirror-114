@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: pydbrepo
+Version: 0.1.6
+Summary: Simple implementation of repository pattern for database connections.
+Home-page: https://github.com/danteay/pydbrepo
+License: MIT
+Keywords: database,repository,postgres
+Author: Eduardo Aguilar
+Author-email: dante.aguilar41@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: PyPika (>=0.48.7,<0.49.0)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Project-URL: Documentation, https://pydbrepo.readthedocs.io
+Project-URL: Repository, https://github.com/danteay/pydbrepo
+Description-Content-Type: text/markdown
+
+# PyDBRepo
+
+Is a simple implementation of the Repository pattern to access data in python, providing extensibility flexibility
+and builtin tools to manage databases with this pattern.
+
+## Requirements
+
+- Python >= 3.7
+  
+### Postgres
+
+- psychopg2-binary
+  
+### MongoDB
+
+- pymongo
+- dnspython
+
