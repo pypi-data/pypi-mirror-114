@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: snowfall-ml
+Version: 0.1.0
+Summary: Machine Learning Framework based on PyTorch with focus on Neural Networks
+Home-page: https://github.com/aminrezaei0x443/snowfall
+Author: Amin Rezaei
+Author-email: AminRezaei0x443@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: snowfall-ml,snowfall,neural-networks,pytorch
+Platform: UNKNOWN
