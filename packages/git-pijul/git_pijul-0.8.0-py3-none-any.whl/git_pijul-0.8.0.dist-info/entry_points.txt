@@ -1,0 +1,3 @@
+[console_scripts]
+git-pijul=git_pijul:main
+
