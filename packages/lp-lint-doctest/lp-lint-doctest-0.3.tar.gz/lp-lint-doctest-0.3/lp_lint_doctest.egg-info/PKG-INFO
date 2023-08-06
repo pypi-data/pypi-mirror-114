@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: lp-lint-doctest
+Version: 0.3
+Summary: Style checker for Launchpad doctests.
+Home-page: https://launchpad.net/lp-lint-doctest
+Author: LAZR Developers
+Author-email: lazr-developers@lists.launchpad.net
+License: MIT
+Description: `lp-lint-doctest <https://git.launchpad.net/lp-lint-doctest>`_ is a style
+        checker for `Python doctests
+        <https://docs.python.org/3/library/doctest.html>`_ stored in text files (as
+        opposed to doctests stored in docstrings), optimized for use in `Launchpad
+        development <https://dev.launchpad.net/>`_.  It applies the following
+        checks:
+        
+         * Comments should be in the narrative part of the doctest (i.e. in
+           unindented text) rather than in Python examples.
+         * Narrative text lines are limited to 78 characters.
+         * Source lines in examples (beginning with ``>>>`` or ``...``) are limited
+           to 70 characters.
+         * Expected output lines in examples are limited to 74 characters.
+         * Source and expected output lines should be indented by exactly four
+           spaces.
+         * There should be no trailing whitespace.
+         * reStructuredText-style headings should be used, not MoinMoin-style.
+        
+        A ``# noqa`` comment in any source line in an example suppresses the
+        comment, line length, indentation, and trailing whitespace checks for all
+        lines in that example.
+        
+        In addition, ``lp-lint-doctest`` runs `pyflakes
+        <https://pypi.org/project/pyflakes/>`_ on the accumulated source code of
+        each doctest file.
+        
+        This project was split out from Curtis Hovey's `pocket-lint
+        <https://launchpad.net/pocket-lint>`_ project.  Since that was written, many
+        other excellent linters have arisen for most of the other source types
+        supported by ``pocket-lint``, but there seems to be no other viable
+        replacement for its doctest checks.
+        
+        ``lp-lint-doctest`` supports `pre-commit <https://pre-commit.com/>`_.  To
+        use it, add the following to the ``repos`` section of your
+        ``.pre-commit-config.yaml`` file::
+        
+            -   repo: https://git.launchpad.net/lp-lint-doctest
+                rev: ''  # pick a git tag to point to
+                hooks:
+                -   id: lp-lint-doctest
+        
+        If you need to add a custom doctest option flag, then add ``args:
+        [--allow-option-flag, MY_CUSTOM_FLAG_NAME]``.
+        
+        ========================
+        NEWS for lp-lint-doctest
+        ========================
+        
+        0.3 (2021-07-27)
+        ================
+        
+          - Allow ``# noqa`` comments to suppress comment checks as well.
+        
+        0.2 (2021-07-25)
+        ================
+        
+          - Add ``--allow-option-flag`` command-line option to register custom
+            ``doctest`` option flags.
+          - Allow comments in source lines in examples if they contain ``doctest``
+            directives.
+          - Allow suppressing checks for an example by adding a ``# noqa`` comment
+            to any of its source lines.
+        
+        0.1 (2021-07-24)
+        ================
+        
+          - Initial release, split out from pocket-lint.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Python: >=3
+Provides-Extra: test
