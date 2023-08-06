@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+swaggertest/__init__.py
+swaggertest/app.py
+swaggertest/command.py
+swaggertest.egg-info/PKG-INFO
+swaggertest.egg-info/SOURCES.txt
+swaggertest.egg-info/dependency_links.txt
+swaggertest.egg-info/entry_points.txt
+swaggertest.egg-info/not-zip-safe
+swaggertest.egg-info/requires.txt
+swaggertest.egg-info/top_level.txt
