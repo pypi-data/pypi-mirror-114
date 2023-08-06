@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "bells"
+version = "0.1.0"
+description = "Bells is a program for keeping track of sound recordings."
+authors = ["Ceda EI <ceda_ei@webionite.com>"]
+license = "GPL-3.0"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "^8.0.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+bells = "bells.__main__:main"
