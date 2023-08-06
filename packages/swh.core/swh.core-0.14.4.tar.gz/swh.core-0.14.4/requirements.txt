@@ -1,0 +1,4 @@
+click
+deprecated
+pyyaml
+sentry-sdk
