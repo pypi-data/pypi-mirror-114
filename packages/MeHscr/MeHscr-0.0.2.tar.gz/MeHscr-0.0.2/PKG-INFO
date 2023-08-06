@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: MeHscr
+Version: 0.0.2
+Summary: A bioinformatic tool for profiling methylation heterogeneity genomewide
+Home-page: https://github.com/britishcoffee/Methylationhet
+Author: Ya-Ting Sabrina Chang
+Author-email: <ytchang.sabrina@gmail.com>
+License: MIT
+Description: UNKNOWN
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
