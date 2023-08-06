@@ -1,0 +1,3 @@
+[napari.plugin]
+Split and merge labels = napari_manual_split_and_merge_labels
+
