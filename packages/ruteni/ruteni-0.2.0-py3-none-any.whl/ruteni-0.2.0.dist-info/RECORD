@@ -1,0 +1,10 @@
+ruteni/__init__.py,sha256=TM9BKoERdh3_Ge7Al_2QL9LnjbI3hXPtOdOgXbTznEA,4645
+ruteni/database.py,sha256=0kVVZofsAv4yFm1yCe6TYcyocQNN28pJP7u-aqzNLlM,955
+ruteni/presence.py,sha256=oNLRpYOGEnDyoL7rrZ6i_t_vlHCQP_2wP6B0ibd3Uwk,3144
+ruteni/authentication/__init__.py,sha256=P5iQ_KvVxagBDd3sqtR3oIo-melyxbmS35iKWqQXuXc,5229
+ruteni/authentication/google.py,sha256=h0Os3sbIV2xqzHEb3fFgPRloHdaHg7-v80xyL_b7OhQ,1358
+ruteni-0.2.0.dist-info/LICENSE,sha256=V_tC-80LA3zlKO2PcvHsCV1nvGgl7PFEj_Ob4f5opLQ,13792
+ruteni-0.2.0.dist-info/METADATA,sha256=qbit0VPAw_LkzhY3yEK8FvrNU4s6eCCym71Zme8Ccjg,804
+ruteni-0.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ruteni-0.2.0.dist-info/top_level.txt,sha256=n7iutZl9x6bqQixd7VqM9sLysERUbnsWo-mRNSDx71E,7
+ruteni-0.2.0.dist-info/RECORD,,
