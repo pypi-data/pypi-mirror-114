@@ -1,0 +1,10 @@
+django_changelist_inline/__init__.py,sha256=Rva00uxPuOxFTCSjEyGqQu0mBX9X7mRfqTLVAp3XIqk,288
+django_changelist_inline/admin.py,sha256=s2GI0zdaEvMqcFr7FwT-fzzz3YphU5BzFA2fJnwRRso,4204
+django_changelist_inline/apps.py,sha256=TT81QM6hdEfGqpGmBbtBqACvQCInvbbajmOQSDhbkc8,329
+django_changelist_inline/static/django_changelist_inline/css/changelist_inline.css,sha256=A-xTxs-9T8fDiwy6g4aZYYyqtK3BoiQOBuFcZB7dnkU,400
+django_changelist_inline/templates/django_changelist_inline/changelist_inline.html,sha256=BjG7M6K3qDT_YB-e_gFE6CBUbzeGq8vSQdt51Oca_mU,1222
+django_changelist_inline-1.0.0.dist-info/LICENSE,sha256=rHHqp45jW3lerKK8-GKE3ifhYiynHGn0xqJJorXsJhw,1086
+django_changelist_inline-1.0.0.dist-info/METADATA,sha256=z2Vh9XcGp54SVjjuBE1cZmgADxrU3FOsOEbvHIqChSk,7584
+django_changelist_inline-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_changelist_inline-1.0.0.dist-info/top_level.txt,sha256=wDnkf7i_ikNbDNetjX0iSBsPWp2axojDk6-rZ_9uBKI,25
+django_changelist_inline-1.0.0.dist-info/RECORD,,
