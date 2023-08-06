@@ -1,0 +1,14 @@
+bods_client/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+bods_client/client.py,sha256=5xSQJWK0Ip5iaU56Rhn4mTFHM4lD2m6UOVSLfSNqepg,7863
+bods_client/constants.py,sha256=EuPbUpdtSwxubu7xLaiM0FwxwiDwBeYoSCypjBAeY1U,445
+bods_client/models/__init__.py,sha256=jid2Nh-qXIPczmnM39nepj4XW-YwpI4k1Sk7kIxLJow,415
+bods_client/models/avl.py,sha256=uIo2MMlqfhlnEBJ7p8j7_qiHLSUGSDcZnKrYrF2KLgk,1083
+bods_client/models/base.py,sha256=P7RXB-SWr1BHrMuYkn3yd3RlCHEtoYaQ6Zq3LiN08Kk,1682
+bods_client/models/fares.py,sha256=ZbAdbQvSeZgy9oQKcknHsvMVp-xFBOGm0XRUs-cq2Qk,690
+bods_client/models/timetables.py,sha256=sP4N_0IEDb2_HKIzn1OYjfQKHF90PoZC_1teSrOTJBI,1534
+bods_client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bods_client/types.py,sha256=9lzhHzpj5I6JQpqetGNtmSwfPLsBW_bmmY_5fTC_gjk,102
+bods_client-0.5.0.dist-info/LICENSE,sha256=Wd2XuAPdrilhl5Clg_vvQq1fA9iqZ3-I2bPsG64mJ8U,1104
+bods_client-0.5.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+bods_client-0.5.0.dist-info/METADATA,sha256=ITg7LltJaqMr-to56yJBcZioXNrEjaA5I2Z7MgFv-Y8,4503
+bods_client-0.5.0.dist-info/RECORD,,
