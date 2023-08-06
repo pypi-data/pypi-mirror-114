@@ -1,0 +1,13 @@
+simple_mockforce/__init__.py,sha256=7J2IdyLUG38Y9jlaBtFHrJqBRtk7maGTnUoZy9FEmRI,3040
+simple_mockforce/callbacks.py,sha256=MtCN-fElPXgV6YUEwkUa3BipIZlH2NaU5zPExxfTZXg,5384
+simple_mockforce/constants.py,sha256=Qa2rWqE0jpO9dC18zFBKReBdMwwhhgmnMYTaVoKo5AI,1329
+simple_mockforce/error_codes.py,sha256=7t0l_Y6wTKXVP4rYM9IOpCg0lMtV_KZFC9Nx1CwIA6A,25
+simple_mockforce/query_algorithms/__init__.py,sha256=lRk5RgzTUNviRO4kYCF4i-W0S10pLMgDzetZac77Y8s,243
+simple_mockforce/query_algorithms/order_by.py,sha256=w_FEtDdOSNe2fTjKQ26ijxaU0TL44Qbw1B8I1au17bo,1351
+simple_mockforce/query_algorithms/parent_attrs.py,sha256=t9w1bq6IE_N-53Ti9DfXpRTzqZirjsTna8ZQPbO-lUk,711
+simple_mockforce/query_algorithms/where.py,sha256=m3u_vlkWpfXprPBi_GDr9mjjm9xXSxb8XLsVE_W8F6c,4458
+simple_mockforce/utils.py,sha256=biBGDqpPT7fT2obh7Vx-gd7iIxPxim-8-2BhplzOov8,1532
+simple_mockforce/virtual.py,sha256=0pxx9WKNne7ZA3DD41kOwr084sPU9HmpZZSDQGUEqiM,9324
+simple_mockforce-0.1.10.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+simple_mockforce-0.1.10.dist-info/METADATA,sha256=Iu2nUd82uhqxx04QFrapxU8WBGaX_szKw6PHM2WSjlo,4861
+simple_mockforce-0.1.10.dist-info/RECORD,,
