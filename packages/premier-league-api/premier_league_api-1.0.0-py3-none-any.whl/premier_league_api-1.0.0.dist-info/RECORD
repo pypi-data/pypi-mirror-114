@@ -1,0 +1,14 @@
+premier_league_api/__init__.py,sha256=VHI0Cd-3_hkPJyViIw5lebJ3_9tMxDypoejcwxfyLq8,329
+premier_league_api/client.py,sha256=kdohl5-7dU_icXrbLEi6mfKd7rzTxTrIhNgTCdIyaL4,5537
+premier_league_api/competitions.py,sha256=z5qIqGI7OA8orBfEBP85FDzLu5nwfh0KtKYjKw_ce-c,45128
+premier_league_api/errors.py,sha256=Z-yX4tEiHnmKyKbMQDJDYaOPNHXNWlS2YsZji4jADps,121
+premier_league_api/fixture.py,sha256=zqBqR02riIe8VPjqAqi1kGyh0sFTE1CFs3ZA_2cMSrw,5039
+premier_league_api/gameweek.py,sha256=9mHP9mU_QgnO6bq-1LxIAa-LMMAAUfs-_O4FGs1oZ44,3553
+premier_league_api/meta_competitions.py,sha256=XeRvDLfk7eUPeQW8-QqKbxuRTdeJyDO55wVGNcNfzVw,2603
+premier_league_api/player.py,sha256=oqYp7w8nmCpmb9SDj1DYDkn0VJkytLhVY5MhZpxp_FM,6456
+premier_league_api/shared.py,sha256=VWbJ_Kiu7_ufTqi5KivWBMVdczNhNtaDPMCesMY9gYw,2803
+premier_league_api-1.0.0.dist-info/METADATA,sha256=2WyoHEJ5Cc4ntiYklCMZQvpAspHHgldCdXvYVHtEngU,2125
+premier_league_api-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+premier_league_api-1.0.0.dist-info/top_level.txt,sha256=PmM16GEXTaSqbSa--FaQ3WMg2-3Yn36LgDI4uXsgsfw,19
+premier_league_api-1.0.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+premier_league_api-1.0.0.dist-info/RECORD,,
