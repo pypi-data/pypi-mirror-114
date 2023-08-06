@@ -1,0 +1,7 @@
+requests
+playsound
+setuptools
+wheel
+pip
+enrocrypt
+py-expression-eval

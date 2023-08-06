@@ -1,0 +1,4 @@
+[console_scripts]
+gitIt = py_everything.gitIt:main
+setupPyGen = py_everything.setupPyGen:main
+
