@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: qserver
+Version: 1.0.1
+Summary: Client for executing quantum applications on qserver instances
+Home-page: https://github.com/ax1/qclient_py
+Author: ax1
+Author-email: 
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ax1/qclient_py/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# QServer
+
+This is only a dummy package to prevent malicious packages with similar names. Current version of server is not open-source
+
