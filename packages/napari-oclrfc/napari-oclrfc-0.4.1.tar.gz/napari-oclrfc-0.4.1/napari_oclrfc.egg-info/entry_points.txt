@@ -1,0 +1,3 @@
+[napari.plugin]
+5 Segmentation and classification on GPU (oclrfc) = napari_oclrfc
+
