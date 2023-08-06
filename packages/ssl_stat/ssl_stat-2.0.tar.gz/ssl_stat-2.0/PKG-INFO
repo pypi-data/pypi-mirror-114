@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: ssl_stat
+Version: 2.0
+Summary: Python C Language Extension To Get SSL Certificate Information From URL
+Home-page: https://github.com/six519/ssl_stat
+Author: Ferdinand Silva
+Author-email: ferdinandsilva@ferdinandsilva.com
+License: UNKNOWN
+Download-URL: https://github.com/six519/ssl_stat
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: C
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
