@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+balanceAct/__init__.py
+balanceAct.egg-info/PKG-INFO
+balanceAct.egg-info/SOURCES.txt
+balanceAct.egg-info/dependency_links.txt
+balanceAct.egg-info/top_level.txt
