@@ -1,0 +1,3 @@
+[console_scripts]
+dockerfile-recover=dockerfile_recover.__main__:main
+
