@@ -1,0 +1,13 @@
+Django>=3.2
+djangorestframework>=3.12
+django-simple-history>=3
+django-guardian>=2.4
+authlib>=0.15
+django-drf-utils>=1.0.3
+
+[test]
+assertpy
+factory_boy
+pytest
+pytest-django
+requests
