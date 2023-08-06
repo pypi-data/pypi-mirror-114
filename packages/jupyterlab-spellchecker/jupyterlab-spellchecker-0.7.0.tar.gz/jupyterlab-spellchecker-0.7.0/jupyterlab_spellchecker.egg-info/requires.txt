@@ -1,0 +1,2 @@
+babel
+jupyterlab~=3.0
