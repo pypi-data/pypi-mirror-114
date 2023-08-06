@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "teko import test"
+version = "0.1.0"
+description = "Import test from .xlsx file"
+authors = ["anhvietnguyen.nva@gmail.com"]
+
+[tool.poetry.dependencies]
+python = "^3.7.1"
+Click = "8.0.1"
+pandas = "1.3.0"
+setuptools = "57.1.0"
+openpyxl = "3.0.7"
+twine = "3.4.1"

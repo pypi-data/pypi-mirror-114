@@ -1,0 +1,10 @@
+README.md
+cli.py
+pyproject.toml
+setup.py
+teko_import_test.egg-info/PKG-INFO
+teko_import_test.egg-info/SOURCES.txt
+teko_import_test.egg-info/dependency_links.txt
+teko_import_test.egg-info/entry_points.txt
+teko_import_test.egg-info/requires.txt
+teko_import_test.egg-info/top_level.txt
