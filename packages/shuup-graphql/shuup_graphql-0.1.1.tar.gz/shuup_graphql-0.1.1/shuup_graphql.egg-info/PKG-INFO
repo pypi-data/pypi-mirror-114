@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: shuup-graphql
+Version: 0.1.1
+Summary: A Shuup GraphQL API implementation.
+Home-page: https://github.com/jyoost/shuup-graphql
+Author: John Yoost
+Author-email: jyoost@gmail.com
+License: Apache 2.0
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
