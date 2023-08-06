@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+pygpiotools/__init__.py
+pygpiotools/cp210x.py
+pygpiotools/dummy.py
+pygpiotools/pl2303.py
+pygpiotools/sysfs.py
+pygpiotools.egg-info/PKG-INFO
+pygpiotools.egg-info/SOURCES.txt
+pygpiotools.egg-info/dependency_links.txt
+pygpiotools.egg-info/requires.txt
+pygpiotools.egg-info/top_level.txt
+test/test.py
