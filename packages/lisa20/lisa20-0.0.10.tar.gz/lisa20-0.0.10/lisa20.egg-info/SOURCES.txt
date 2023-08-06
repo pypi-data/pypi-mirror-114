@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+./lisa20.egg-info/PKG-INFO
+./lisa20.egg-info/SOURCES.txt
+./lisa20.egg-info/dependency_links.txt
+./lisa20.egg-info/top_level.txt
+lisa20.egg-info/PKG-INFO
+lisa20.egg-info/SOURCES.txt
+lisa20.egg-info/dependency_links.txt
+lisa20.egg-info/top_level.txt
