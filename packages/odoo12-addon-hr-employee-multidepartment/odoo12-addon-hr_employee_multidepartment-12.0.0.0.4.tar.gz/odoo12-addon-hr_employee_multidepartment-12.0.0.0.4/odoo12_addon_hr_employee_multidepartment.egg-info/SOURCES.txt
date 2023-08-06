@@ -1,0 +1,7 @@
+setup.py
+odoo12_addon_hr_employee_multidepartment.egg-info/PKG-INFO
+odoo12_addon_hr_employee_multidepartment.egg-info/SOURCES.txt
+odoo12_addon_hr_employee_multidepartment.egg-info/dependency_links.txt
+odoo12_addon_hr_employee_multidepartment.egg-info/not-zip-safe
+odoo12_addon_hr_employee_multidepartment.egg-info/requires.txt
+odoo12_addon_hr_employee_multidepartment.egg-info/top_level.txt
