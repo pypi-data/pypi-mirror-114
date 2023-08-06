@@ -1,0 +1,11 @@
+click
+numpy
+pandas
+pysam
+scipy
+statsmodels
+matplotlib
+tqdm
+biopython
+kneed
+pypmml
