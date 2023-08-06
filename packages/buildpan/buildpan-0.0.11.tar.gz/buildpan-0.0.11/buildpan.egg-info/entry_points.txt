@@ -1,0 +1,3 @@
+[console_scripts]
+buildpan = buildpan.buildpan:buildpan
+
