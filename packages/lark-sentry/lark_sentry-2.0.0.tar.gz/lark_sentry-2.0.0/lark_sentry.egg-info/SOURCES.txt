@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+lark_sentry/__init__.py
+lark_sentry/plugin.py
+lark_sentry.egg-info/PKG-INFO
+lark_sentry.egg-info/SOURCES.txt
+lark_sentry.egg-info/dependency_links.txt
+lark_sentry.egg-info/entry_points.txt
+lark_sentry.egg-info/requires.txt
+lark_sentry.egg-info/top_level.txt
