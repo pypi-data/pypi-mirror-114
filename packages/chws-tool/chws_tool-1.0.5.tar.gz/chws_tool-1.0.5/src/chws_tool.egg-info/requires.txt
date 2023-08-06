@@ -1,0 +1,8 @@
+east-asian-spacing>=1.2.5
+
+[dev]
+black
+pytest
+pytest-asyncio
+pytype
+tox
