@@ -1,0 +1,26 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout_wip.html" as layout with context %}
+{% import "archetypes/rowan-and-will-kenrith.json" as deck_json %}
+
+{% block title %}
+Rowan and Will Kenrith
+{% endblock %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>Rowan and Will Kenrith</h1>
+{{ layout.wip() }}
+{% endblock %}
+
+{% block archetype %}
+
+<div class="warning">
+	<h3>Ce deck contient des cartes bannies</h3>
+	<ul>
+		<li>{{ gifts_ungiven }} a été banni le 26 juillet 2021</li>
+	</ul>
+</div>
+{% endblock %}
