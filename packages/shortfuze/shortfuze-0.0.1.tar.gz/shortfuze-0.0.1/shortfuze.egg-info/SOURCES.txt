@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+shortfuze/__init__.py
+shortfuze.egg-info/PKG-INFO
+shortfuze.egg-info/SOURCES.txt
+shortfuze.egg-info/dependency_links.txt
+shortfuze.egg-info/top_level.txt
