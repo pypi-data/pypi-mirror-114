@@ -1,0 +1,13 @@
+combinedUA/__init__.py,sha256=wbPKMhDso4Ar8xUUj0HQVkJHGS7lCpVmhUpse0sDdIc,1527
+combinedUA/util.py,sha256=axL-IsaP1FdGKtU3diS_Qb24XHYBTXzaFul8O30XXk8,134
+combinedUA/db/android.txt,sha256=n2ujPWKvrjjNWjl-dejgZPNNztTL9l-dg4GlSDJgtP0,88
+combinedUA/db/chrome.txt,sha256=Fl9NvxPuj__Iaq8BQlFT0-hcWbAVCj61Il9nxbrb9-M,160002
+combinedUA/db/ios.txt,sha256=sPBy8jgCkTylfR8C-4TkxsAPOaEXSwJdkUrKQa0AR6Y,616
+combinedUA/db/safari_build.txt,sha256=CyIfFduHHY1IbdKoMopykGc_YfIq8qqWiMm7xaDYQJY,12
+combinedUA/db/safari_version.txt,sha256=7XtQbSFfxKvfxkj6fH1k_gpg_Z5v1uW5gkTbVYi8inQ,92
+combinedUA/db/webkit.txt,sha256=OfOIzHJeFnLZ6OGyg96dYee8yxozViyrnQhzDX74cTU,20419
+combinedUA-0.0.2.dist-info/LICENSE,sha256=nmv7t5KRK_IlR2HSWq1kbpaMD5wdNZdWOFBz7jbk0Jk,1086
+combinedUA-0.0.2.dist-info/METADATA,sha256=bABgh_cM4W6K0qkL8UMPYmwsmM0Tmqdu5yLagSy43fk,157
+combinedUA-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+combinedUA-0.0.2.dist-info/top_level.txt,sha256=d-nVGs-AmKuRW2xXUZC07Bmmw0HWnvwdI_xnHgtNBFs,11
+combinedUA-0.0.2.dist-info/RECORD,,
