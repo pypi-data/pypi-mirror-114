@@ -1,0 +1,13 @@
+CHANGES.rst
+DESCRIPTION.rst
+MANIFEST.in
+README.md
+setup.py
+src/vfs/__init__.py
+src/vfs/process.py
+src/video_frame_selector.egg-info/PKG-INFO
+src/video_frame_selector.egg-info/SOURCES.txt
+src/video_frame_selector.egg-info/dependency_links.txt
+src/video_frame_selector.egg-info/entry_points.txt
+src/video_frame_selector.egg-info/requires.txt
+src/video_frame_selector.egg-info/top_level.txt
