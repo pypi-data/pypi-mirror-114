@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: MyQQ-http
+Version: 0.0.2
+Summary: MyQQ_SDK python version
+Home-page: https://github.com/marztop
+Author: Marztop
+Author-email: 1332346968@qq.com
+License: UNKNOWN
+Description: #MyQQ_SDK Package
+        
+        This is the Package for MyQQhttp , for calling APIs easier.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
