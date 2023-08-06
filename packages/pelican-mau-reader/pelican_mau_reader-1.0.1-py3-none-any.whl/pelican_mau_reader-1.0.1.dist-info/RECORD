@@ -1,0 +1,10 @@
+pelican/plugins/mau_reader/__init__.py,sha256=U93-5jDe8OdT5NK6KJA5vYAfnKSePjr_f05ybV17ziE,34
+pelican/plugins/mau_reader/mau_reader.py,sha256=DsEfbX0Bcy40d-MlarKkhAnlYi7iLCr1uLjfIIOrOL4,2101
+pelican/plugins/mau_reader/test_data/article_with_content.html,sha256=-qXAnyI7UD2uyYkY6m5nFOqfdokyuQBMPFxaDMGrsRQ,181
+pelican/plugins/mau_reader/test_data/article_with_content.mau,sha256=6m0-8i-z0rTvGIl6cL7j1WVodpkPpFV5lTIxzrh8cv0,340
+pelican/plugins/mau_reader/test_data/article_with_content_custom.html,sha256=R1NyxF7f9D77LguJhTsvmu_XNW1u9pfpaJqCbpf6Stw,214
+pelican/plugins/mau_reader/test_data/article_with_nonascii_metadata.mau,sha256=XhsORemkviEKwboJR6Qduxv9DGXQylDcDqYPRsDMbuU,401
+pelican/plugins/mau_reader/test_mau_reader.py,sha256=49u4-GCu6-X3XvvuFFcg4HtkAD-gQjDj1DpmnIKmy3w,2700
+pelican_mau_reader-1.0.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+pelican_mau_reader-1.0.1.dist-info/METADATA,sha256=In42liQkoTcwGUKOFFT8SKrUPgh5rcfAmswIb9niy_k,5570
+pelican_mau_reader-1.0.1.dist-info/RECORD,,
