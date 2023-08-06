@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: bantam
+Version: 1.0.0
+Summary: small utils to automate web interface in Python
+Home-page: https://github.com/nak/bantam
+Author: John Rusnak
+Author-email: john.j.rusnak@att.net
+License: BSD 2-CLAUSE
+Download-URL: https://github.com/bantam/dist/1.0.0
+Keywords: auto web api python
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+
+UNKNOWN
+
