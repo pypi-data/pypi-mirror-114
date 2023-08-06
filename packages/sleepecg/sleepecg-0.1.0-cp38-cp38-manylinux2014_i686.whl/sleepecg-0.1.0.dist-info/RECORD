@@ -1,0 +1,14 @@
+sleepecg/__init__.py,sha256=IhwUxog2o8WsztzmTYxGFaE6rIvrvWEvZ3wO4sghrTU,225
+sleepecg/_heartbeat_detection.cpython-38-i386-linux-gnu.so,sha256=7N9QUWEJoeeAhTvYFvgOQkNM06m0WCUH1um_60PlZ38,58308
+sleepecg/_heartbeat_detection.c,sha256=sWlrXMELI50B1X208k0dBvCCBICgX-b38Hwelq_rXqg,23827
+sleepecg/_heartbeat_detection.pyi,sha256=M-oWvhfFWzQJm1GXNVSjw1GXEwsCy2DCvZ_krUROeTI,362
+sleepecg/heartbeat_detection.py,sha256=NuPSpS_Os7TUfYoKmn00960FrceI-EzvOXd71Vep9XI,7906
+sleepecg/io/physionet_api.py,sha256=BxdWaDH9jH6t3LTjoDaA8Sh8QV56xr523SbBIBJ-wuU,4276
+sleepecg/io/__init__.py,sha256=CnqYJt4sjNtC8L3zzcyToN7LB9dcfGMIijW-KEcpKmE,99
+sleepecg/io/utils.py,sha256=pY1mm3nupZvUX2_giBvb_kGkg7EJUyYr_YC60q_nRd4,2701
+sleepecg/io/ecg_readers.py,sha256=4pAWxxzcEHCxaTyvYg17eHfNWm3DZbW39AYKPSWIqYc,6049
+sleepecg-0.1.0.dist-info/top_level.txt,sha256=sWaoeQrWgrjNElYSNiSKftNadQfhh74mt4SGqjKg-aw,9
+sleepecg-0.1.0.dist-info/WHEEL,sha256=zNt7rfoau4nWUs8qKgj0n7_OxKzroljhbZRH0jfE8aY,109
+sleepecg-0.1.0.dist-info/LICENSE,sha256=gD3s-7HHCb4KKKIZj5YXb-ytDkGrdALpTT7iq_Zvs_M,1538
+sleepecg-0.1.0.dist-info/METADATA,sha256=tFNW3b0HG3G69WOZTMmOs1m2JtvOJO9aHnRIKBD_PbA,5797
+sleepecg-0.1.0.dist-info/RECORD,,
