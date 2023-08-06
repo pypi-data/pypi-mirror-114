@@ -1,0 +1,10 @@
+IsoSpecPy>=2
+matplotlib
+numpy
+pandas
+progressbar2
+PySimpleGUI
+pythonnet
+reportlab
+sklearn
+svglib>=0.9.0
