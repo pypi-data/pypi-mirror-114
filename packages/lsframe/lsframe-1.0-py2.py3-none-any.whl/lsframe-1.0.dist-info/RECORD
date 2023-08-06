@@ -1,0 +1,17 @@
+lsframe/__init__.py,sha256=yth3PbS5ZaZywnqNdQxie3HgjvpFuNM43BcyyyRvZHs,119
+lsframe/engine.py,sha256=SuKUYvGJkKLt1LDzStck6GGcxzESA1oWc6hJHuUMBrk,2527
+lsframe/intake.py,sha256=LiAJuH45o6d5zEnqip-4jHRC-j4UnWvzcyhQS-vBNOc,50048
+lsframe/start.py,sha256=1b68NsPUAG0bmsUDgWy1z0vZ4EpeTxTj7NRdQLzA14s,16334
+lsframe/version.py,sha256=kM55qqhSrc4b-StNTuN03Srg0kwfg1G4BckCKhUytaE,20
+lsframe/tools/__init__.py,sha256=5bbuH876rexCZdikFz0CDdKvCqP7ggX1IY4dOnqYf0c,64
+lsframe/tools/sea_born.py,sha256=DyCNr9Q-E9M6vuA4ac81ykUhlvLKV-8KXuxvcNLsBkQ,2854
+lsframe/tools/utest.py,sha256=LG9XMM_ocLjMQiZjuO4ngOUa16wwK4T4onrNTEj46s4,77
+lsframe/tools/utest2.py,sha256=z9oPPRK8YacWLon_82Ce4oir3-dYcVzLI_qQKAKHFcc,236
+unittests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unittests/test_lsframe.py,sha256=xAjs6X2rmWlA1CizgV_BIKMc_-nyXcgRJlUCKsfoy1I,15756
+lsframe-1.0.dist-info/LICENSE.txt,sha256=EuJv1Cm54vPBaWwhGnlvDRVRyhAm4l0HZkD-ZH0Dz98,1069
+lsframe-1.0.dist-info/METADATA,sha256=logKvlxCZSUCp_xL-zR3kwq58NBP2YGkJ_UamKVUlug,2152
+lsframe-1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+lsframe-1.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+lsframe-1.0.dist-info/top_level.txt,sha256=eSx3VoBAmHt9rgYO81Y1SOMu5RCQROOKUt-tXuApeKA,18
+lsframe-1.0.dist-info/RECORD,,
