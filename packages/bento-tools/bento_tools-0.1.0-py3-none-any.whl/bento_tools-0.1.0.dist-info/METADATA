@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: bento-tools
+Version: 0.1.0
+Summary: A toolkit for subcellular analysis of RNA organization
+License: MIT
+Author: Clarence Mah
+Author-email: ckmah@ucsd.edu
+Requires-Python: >=3.7.1,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: anndata (>=0.7.1,<0.8.0)
+Requires-Dist: astropy (>=4.0.1,<5.0.0)
+Requires-Dist: datashader (>=0.12,<0.13)
+Requires-Dist: geopandas (>=0.9.0,<0.10.0)
+Requires-Dist: ipywidgets (>=7.5.1,<8.0.0)
+Requires-Dist: leidenalg (>=0.8.3,<0.9.0)
+Requires-Dist: matplotlib (>=3.2.1,<4.0.0)
+Requires-Dist: numpy (>=1.18.4,<2.0.0)
+Requires-Dist: pandas (>=1.2.0,<2.0.0)
+Requires-Dist: proplot (>=0.6.4,<0.7.0)
+Requires-Dist: pydata-sphinx-theme (>=0.6.3,<0.7.0)
+Requires-Dist: pygeos (>=0.8,<0.9)
+Requires-Dist: rasterio (>=1.2.1,<2.0.0)
+Requires-Dist: scanpy (>=1.6.0,<2.0.0)
+Requires-Dist: scikit-learn (>=0.22.2.post1,<0.23.0)
+Requires-Dist: scipy (>=1.4.1,<2.0.0)
+Requires-Dist: seaborn (>=0.11.0,<0.12.0)
+Requires-Dist: shapely (>=1.7.0,<2.0.0)
+Requires-Dist: skorch (>=0.9.0,<0.10.0)
+Requires-Dist: torchvision (>=0.8.1,<0.9.0)
+Requires-Dist: tqdm (>=4.44.1,<5.0.0)
