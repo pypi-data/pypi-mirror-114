@@ -1,0 +1,3 @@
+[pytest.parsers]
+.rst=pytest_addons_test:main
+
