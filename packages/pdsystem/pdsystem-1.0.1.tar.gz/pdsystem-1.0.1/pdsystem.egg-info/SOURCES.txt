@@ -1,0 +1,11 @@
+LICENCE.txt
+README.md
+pdsystem.py
+setup.cfg
+setup.py
+pdsystem.egg-info/PKG-INFO
+pdsystem.egg-info/SOURCES.txt
+pdsystem.egg-info/dependency_links.txt
+pdsystem.egg-info/not-zip-safe
+pdsystem.egg-info/requires.txt
+pdsystem.egg-info/top_level.txt

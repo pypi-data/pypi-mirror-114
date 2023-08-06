@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pdsystem
+Version: 1.0.1
+Summary: 判断系统
+Home-page: https://pypi.org/project/ycc
+Author: 神秘人
+Author-email: 3046479366@qq.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+# log日志
+
+更新依赖包，添加配置文件,仅为ycc作者使用   
+
+
+
