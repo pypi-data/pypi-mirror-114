@@ -1,0 +1,15 @@
+meshkernel-1.0.0.data/purelib/meshkernel/__init__.py,sha256=_wn0J_9H-ksd9gapoenz3MW_1Pkil2Aca50KE7NO58I,547
+meshkernel-1.0.0.data/purelib/meshkernel/c_structures.py,sha256=LXRYi6paIvCIbwCzZZYTwgQcFFd-ITZTth2p-W7mDbQ,16033
+meshkernel-1.0.0.data/purelib/meshkernel/errors.py,sha256=u8gm40bNJQvRnuNjM9pJdaLxqRziMXyaoVfsKyJ8awM,261
+meshkernel-1.0.0.data/purelib/meshkernel/factories.py,sha256=fdb_DRIPDzlwMRHQpx0tYDF8ygxqKCMWRjjMDkxKPwg,3337
+meshkernel-1.0.0.data/purelib/meshkernel/libMeshKernelApi.dylib,sha256=Lkrahdh3nA6mKIJT5lu1l6uqAQGxrgm7z0KLIWMEl8E,3917480
+meshkernel-1.0.0.data/purelib/meshkernel/meshkernel.py,sha256=votxNClLoCAm1ONAJVibGIXdnndoy4JF3dZ6ffNZlXM,44965
+meshkernel-1.0.0.data/purelib/meshkernel/py_structures.py,sha256=898PYU1IyJmQa49i35GN9_aJhSH3VL0T-0095VMRaS0,9599
+meshkernel-1.0.0.data/purelib/meshkernel/utils.py,sha256=XPsYbYiyrhY7tL-0EjOBqWM8388RQaE9b4yjKgZTNaw,999
+meshkernel-1.0.0.data/purelib/meshkernel/version.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+meshkernel-1.0.0.dist-info/DESCRIPTION.rst,sha256=_J70OeIRsXTm48WbF29cOrNqfIrxF4AKi_Y9-7bbnPM,2411
+meshkernel-1.0.0.dist-info/METADATA,sha256=UHHEYMLgoiTs6yBlSAxrPIVMRRCoN82kw1iYU0fUqP4,3447
+meshkernel-1.0.0.dist-info/RECORD,,
+meshkernel-1.0.0.dist-info/WHEEL,sha256=k7p0OCid2CN7AOLWt2lqYrH19aA6oOgLHEeWaEtguvk,108
+meshkernel-1.0.0.dist-info/metadata.json,sha256=Aw57zN0RNSrH-bzoYPurcCpdvmTZQ25f-Uwd-ZJxNs4,984
+meshkernel-1.0.0.dist-info/top_level.txt,sha256=xYNpL-Wj8YTkM0U0U804EqDsO-rc9d91pttk7jesk-4,11
