@@ -1,0 +1,38 @@
+name: PyPI
+
+on:
+  push:
+    branches: [ main ]
+    tags: [ '*' ]
+    paths-ignore: ['**.md']
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ ubuntu-20.04, macOS-10.15 ]
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          submodules: true
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Build wheels
+        uses: pypa/cibuildwheel@v2.0.0
+        env:
+          MACOSX_DEPLOYMENT_TARGET: 10.15
+          MAKEFLAGS: -j8
+      - name: Publish to PyPI
+        # Publish only when the current ref. is a tag.
+        if: ${{ startsWith(github.ref, 'refs/tags/v') }}
+        run: |
+          python3 -m pip install --upgrade build twine
+          python3 -m build --sdist
+          python3 -m twine upload --skip-existing dist/*.tar.gz wheelhouse/*.whl
+        env:
+          TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
+          TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
