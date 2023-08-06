@@ -1,0 +1,34 @@
+schedule
+********
+
+
+Description
+===========
+
+The schedule object
+
+
+Available Commands
+==================
+
+* create
+
+* create-daily-frequency
+
+* create-hourly-frequency
+
+* create-monthly-frequency
+
+* delete
+
+* get
+
+* list
+
+* update
+
+* update-daily-frequency
+
+* update-hourly-frequency
+
+* update-monthly-frequency
