@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        circleci-to-sqlite=circleci_to_sqlite.cli:cli
+    
