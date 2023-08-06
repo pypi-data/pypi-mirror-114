@@ -1,0 +1,76 @@
+﻿'''_5270.py
+
+PlanetaryConnectionCompoundMultibodyDynamicsAnalysis
+'''
+
+
+from typing import List
+
+from mastapy.system_model.connections_and_sockets import _1969
+from mastapy._internal import constructor, conversion
+from mastapy.system_model.analyses_and_results.mbd_analyses import _5129
+from mastapy.system_model.analyses_and_results.mbd_analyses.compound import _5284
+from mastapy._internal.python_net import python_net_import
+
+_PLANETARY_CONNECTION_COMPOUND_MULTIBODY_DYNAMICS_ANALYSIS = python_net_import('SMT.MastaAPI.SystemModel.AnalysesAndResults.MBDAnalyses.Compound', 'PlanetaryConnectionCompoundMultibodyDynamicsAnalysis')
+
+
+__docformat__ = 'restructuredtext en'
+__all__ = ('PlanetaryConnectionCompoundMultibodyDynamicsAnalysis',)
+
+
+class PlanetaryConnectionCompoundMultibodyDynamicsAnalysis(_5284.ShaftToMountableComponentConnectionCompoundMultibodyDynamicsAnalysis):
+    '''PlanetaryConnectionCompoundMultibodyDynamicsAnalysis
+
+    This is a mastapy class.
+    '''
+
+    TYPE = _PLANETARY_CONNECTION_COMPOUND_MULTIBODY_DYNAMICS_ANALYSIS
+
+    __hash__ = None
+
+    def __init__(self, instance_to_wrap: 'PlanetaryConnectionCompoundMultibodyDynamicsAnalysis.TYPE'):
+        super().__init__(instance_to_wrap)
+        self._freeze()
+
+    @property
+    def component_design(self) -> '_1969.PlanetaryConnection':
+        '''PlanetaryConnection: 'ComponentDesign' is the original name of this property.
+
+        Note:
+            This property is readonly.
+        '''
+
+        return constructor.new(_1969.PlanetaryConnection)(self.wrapped.ComponentDesign) if self.wrapped.ComponentDesign else None
+
+    @property
+    def connection_design(self) -> '_1969.PlanetaryConnection':
+        '''PlanetaryConnection: 'ConnectionDesign' is the original name of this property.
+
+        Note:
+            This property is readonly.
+        '''
+
+        return constructor.new(_1969.PlanetaryConnection)(self.wrapped.ConnectionDesign) if self.wrapped.ConnectionDesign else None
+
+    @property
+    def connection_analysis_cases_ready(self) -> 'List[_5129.PlanetaryConnectionMultibodyDynamicsAnalysis]':
+        '''List[PlanetaryConnectionMultibodyDynamicsAnalysis]: 'ConnectionAnalysisCasesReady' is the original name of this property.
+
+        Note:
+            This property is readonly.
+        '''
+
+        value = conversion.pn_to_mp_objects_in_list(self.wrapped.ConnectionAnalysisCasesReady, constructor.new(_5129.PlanetaryConnectionMultibodyDynamicsAnalysis))
+        return value
+
+    @property
+    def connection_analysis_cases(self) -> 'List[_5129.PlanetaryConnectionMultibodyDynamicsAnalysis]':
+        '''List[PlanetaryConnectionMultibodyDynamicsAnalysis]: 'ConnectionAnalysisCases' is the original name of this property.
+
+        Note:
+            This property is readonly.
+        '''
+
+        value = conversion.pn_to_mp_objects_in_list(self.wrapped.ConnectionAnalysisCases, constructor.new(_5129.PlanetaryConnectionMultibodyDynamicsAnalysis))
+        return value
