@@ -1,0 +1,13 @@
+cubicweb_rqlcontroller/__init__.py,sha256=w3bPEb9Q0spS-p3qaOvVYvBcESMG0hQhfVg-Z8cvHMI,85
+cubicweb_rqlcontroller/__pkginfo__.py,sha256=A4-7TL8LZAP2h66qwUknZCdQueKZl106STdZNbILKaE,806
+cubicweb_rqlcontroller/__pkginfo__.py.orig,sha256=Syke_jmzCglGKOpjcBz61kybWlHuJuSkU595dMwDz0A,806
+cubicweb_rqlcontroller/rql_schema_holder.py,sha256=J_KXHWKLJvzTnLT13LPkKlZWPSFwfA4KXWR6pRY29y0,5288
+cubicweb_rqlcontroller/views.py,sha256=0sn5PBmohi1MOpojuRqRFdrK25oJ7MlMEzXCdSRG0bU,6908
+cubicweb_rqlcontroller/i18n/en.po,sha256=PczXiFFfvJJV0QriryPaFF2YjD8LhPRe3XAGcF-kLP0,203
+cubicweb_rqlcontroller/i18n/es.po,sha256=PczXiFFfvJJV0QriryPaFF2YjD8LhPRe3XAGcF-kLP0,203
+cubicweb_rqlcontroller/i18n/fr.po,sha256=PczXiFFfvJJV0QriryPaFF2YjD8LhPRe3XAGcF-kLP0,203
+cubicweb_rqlcontroller-0.7.2.dist-info/METADATA,sha256=u2upwNvmJEOS42zUSrcDheFu1P6tqapfGOLaw0MsvCk,2478
+cubicweb_rqlcontroller-0.7.2.dist-info/WHEEL,sha256=MYFsq5fFBwF_oyJgrOoFmYYB1K6Sw7MxY-0897ZLbdM,92
+cubicweb_rqlcontroller-0.7.2.dist-info/entry_points.txt,sha256=AT7LKtpwqRXGWXeOctC15bhOi9t_gVDpQuuImiXoxmM,57
+cubicweb_rqlcontroller-0.7.2.dist-info/top_level.txt,sha256=cSMjGv3e0ynpyJUmd2RLVhTnqw_aDSkqlgRJ78sy788,23
+cubicweb_rqlcontroller-0.7.2.dist-info/RECORD,,
