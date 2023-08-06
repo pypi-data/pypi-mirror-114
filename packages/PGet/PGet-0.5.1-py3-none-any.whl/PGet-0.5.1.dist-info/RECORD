@@ -1,0 +1,12 @@
+pget/__init__.py,sha256=8uZZJGnqirjppiFHY1Z3k6cDC3J18VmVXhyZbX70-GM,109
+pget/bin.py,sha256=yOZcutStm1S4kRL85BTv9slOGFc-6KRRx8bya4ZmjxM,4068
+pget/chunk.py,sha256=5EHrYlR-__VTW0LUxnsOqwEbFdBWbDg7EPTPQmD5QLM,2811
+pget/down.py,sha256=LwKTfYiCjC74b6dQlVAreFlGTnx9quJLRK-TOqiubBc,7151
+pget/log.py,sha256=fQgSKvr3lxyB37vZycmiTPCHrJ2bNS0WGzBDqjp9O6Y,535
+pget/term.py,sha256=sYDnmovhCSf-7tVXUkEZZJa1bB3HhuWbGgCu9qYaECs,2981
+PGet-0.5.1.dist-info/LICENSE,sha256=8S75_TlqE-kIeGMLG0-rRxxu2ct6SM8quyUWKBYyIY4,10834
+PGet-0.5.1.dist-info/METADATA,sha256=BnEyXg93dj-4oFfhOV2G_aU-qKKf9sn4ATtfIrwBszI,436
+PGet-0.5.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+PGet-0.5.1.dist-info/entry_points.txt,sha256=X8a3wSKrokf3C5TxgmcRnCEaqlo-qa50MSkFlAL90mQ,40
+PGet-0.5.1.dist-info/top_level.txt,sha256=HogJ-UfGFxaWSmih6GMSxsHEKjOASZduo1X25rSBhUE,5
+PGet-0.5.1.dist-info/RECORD,,
