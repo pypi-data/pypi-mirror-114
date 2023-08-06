@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: covid19-nuuuwan
+Version: 1.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/nuuuwan/covid19
+Author: Nuwan I. Senaratna
+Author-email: nuuuwan@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/nuuuwan/covid19/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: pycountry
+Requires-Dist: pypopulation
+Requires-Dist: utils-nuuuwan
+Requires-Dist: tweepy
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: tabula-py
+Requires-Dist: infographics-nuuuwan
+Requires-Dist: pycountry-convert
+Requires-Dist: scipy
+Requires-Dist: emoji-country-flag
+
+UNKNOWN
+
