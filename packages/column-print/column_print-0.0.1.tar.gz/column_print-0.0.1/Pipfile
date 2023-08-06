@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+three = "*"
+column-print = {editable = true, path = "."}
+
+[dev-packages]
+pylint = "*"
+check-manifest = "*"
+sphinx = "*"
+sphinx-rtd-theme = "*"
+twine = "*"
+
+[requires]
+python_version = "3.8"

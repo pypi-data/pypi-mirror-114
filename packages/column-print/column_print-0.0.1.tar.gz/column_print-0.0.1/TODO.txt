@@ -1,0 +1,19 @@
+=TODO=
+
+==Documentation==
+
+Using Sphinx, ReStructured Text.
+
+
+==Cross-Platform Support==
+
+Currently only tested on Linux.
+
+
+==Upload==
+
+**Upload Targets**
+
+* GitHub (https://github.com/)
+* PyPi (https://pypi.org/)
+* ReadTheDocs (https://readthedocs.org/)
