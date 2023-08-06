@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+discordTogether/__init__.py
+discordTogether/discordTogetherMain.py
+discordTogether/errors.py
+discord_together.egg-info/PKG-INFO
+discord_together.egg-info/SOURCES.txt
+discord_together.egg-info/dependency_links.txt
+discord_together.egg-info/requires.txt
+discord_together.egg-info/top_level.txt
