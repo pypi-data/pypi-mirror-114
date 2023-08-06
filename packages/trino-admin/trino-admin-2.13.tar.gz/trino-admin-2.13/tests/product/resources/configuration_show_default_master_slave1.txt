@@ -1,0 +1,16 @@
+master: Configuration file at /etc/presto/node.properties:
+(.|\n)*
+master: Configuration file at /etc/presto/jvm.config:
+(.|\n)*
+master: Configuration file at /etc/presto/config.properties:
+(.|\n)*
+master: Configuration file at /etc/presto/log.properties:
+(.|\n)*
+slave1: Configuration file at /etc/presto/node.properties:
+(.|\n)*
+slave1: Configuration file at /etc/presto/jvm.config:
+(.|\n)*
+slave1: Configuration file at /etc/presto/config.properties:
+(.|\n)*
+slave1: Configuration file at /etc/presto/log.properties:
+(.|\n)*
