@@ -1,0 +1,9 @@
+setup.py
+USel/webUi/__init__.py
+USel/webUi/autoTest/USelenium.py
+USel/webUi/autoTest/__init__.py
+seleniumwebui.egg-info/PKG-INFO
+seleniumwebui.egg-info/SOURCES.txt
+seleniumwebui.egg-info/dependency_links.txt
+seleniumwebui.egg-info/requires.txt
+seleniumwebui.egg-info/top_level.txt
