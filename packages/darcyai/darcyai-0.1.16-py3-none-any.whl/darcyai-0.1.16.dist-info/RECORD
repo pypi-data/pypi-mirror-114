@@ -1,0 +1,16 @@
+darcyai/__init__.py,sha256=LSt5ZaNgXmDAmf0KLOuN-SADLh2x0Q50EmFsSQIvvsU,47
+darcyai/config.py,sha256=8gcTCCH4hU_U8E9DIEo5Sy7qwEJz05dvjYKWyJZFjYk,5521
+darcyai/darcyai.py,sha256=QEM5SMV8K33Mh5KpNmrOzpMVxz6fElIRAauR7z-ye3I,40203
+darcyai/object.py,sha256=yw97GSv69v_kHoitqp0p0FGrAhiEJOmOPCF2zSmPNzc,88
+darcyai/person.py,sha256=dRZgolS-u0creCeNQTUyio4VQYpeQttzpnkaEUgXQTE,58
+darcyai/pose_engine.py,sha256=ipKncI_UqE81--yDFTqweCKjszvbVzRm93KqDmaBH3Y,5846
+darcyai/models/posenet.tflite,sha256=c4N5ArhDEiOGEzpRenMrXDiHz90h-mrkrB20th2igxg,1680872
+darcyai/posenet_lib/aarch64/posenet_decoder.so,sha256=_Y3wq8OXGi6EZ9juG4EL5dnqCmxl-Rrh4R_F0n66jIk,330168
+darcyai/posenet_lib/armv7a/posenet_decoder.so,sha256=A-chr3R_SWC5H-KhScnGfUUm_TE5OQU5uZvx90pBd_4,186104
+darcyai/posenet_lib/armv7l/posenet_decoder.so,sha256=A-chr3R_SWC5H-KhScnGfUUm_TE5OQU5uZvx90pBd_4,186104
+darcyai/posenet_lib/x86_64/posenet_decoder.so,sha256=7lw467If4HuUyEcIuyTd2lmfZJp9PioX1bjJIXLIJKY,285224
+darcyai-0.1.16.dist-info/LICENSE,sha256=7JwN1m_-1nJkGm1_NoxwI5lyB-JG74_9cclLKd7fhns,1078
+darcyai-0.1.16.dist-info/METADATA,sha256=OJDrcdOz46fs25KiFaiY9tuwVZFdS-PaMfJTAqZU1ng,771
+darcyai-0.1.16.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+darcyai-0.1.16.dist-info/top_level.txt,sha256=h7maXcTJHq60vvJXShwIk-Mlt_cTK-Ls99aYrQ6nC4k,8
+darcyai-0.1.16.dist-info/RECORD,,
