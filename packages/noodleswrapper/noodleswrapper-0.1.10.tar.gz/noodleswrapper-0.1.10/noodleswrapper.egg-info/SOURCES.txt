@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+noodleswrapper/__init__.py
+noodleswrapper/noodle.py
+noodleswrapper.egg-info/PKG-INFO
+noodleswrapper.egg-info/SOURCES.txt
+noodleswrapper.egg-info/dependency_links.txt
+noodleswrapper.egg-info/requires.txt
+noodleswrapper.egg-info/top_level.txt
