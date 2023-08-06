@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: kd-med
+Version: 0.0.1
+Summary: A plug-in for knowledge distillation
+Home-page: https://github.com/jingnan-jia/kd_med
+Author: Jingnan
+Author-email: jiajingnan2222@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: googledrivedownloader
+Requires-Dist: torch
+
+# A plug-in for knowledge distillation
+
