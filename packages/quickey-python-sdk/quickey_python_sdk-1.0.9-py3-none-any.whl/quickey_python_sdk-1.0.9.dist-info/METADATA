@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: quickey-python-sdk
+Version: 1.0.9
+Summary: A Login Management System for Application
+Home-page: https://github.com/efrizal-analisa/quickey_python_sdk
+Author: quickey team
+Author-email: efrizal@analisa.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# QuickeySDK - Python
+
+A Login Management System for Application
+
+## How to Use
+
+```
+from quickey_python_sdk import sdk
+
+```
+
+### Get App Metadata - Access Token
+
+```
+app = sdk.App('YOUR API KEY').getAppMetaData()
+email = app.json()['app']['email']
+print(email)
+
+app = sdk.Auth().getAccessToken('YOUR USER EMAIL')
+access_token = app.json()['access_token']
+print(access_token)
+
+```
+
+
+
