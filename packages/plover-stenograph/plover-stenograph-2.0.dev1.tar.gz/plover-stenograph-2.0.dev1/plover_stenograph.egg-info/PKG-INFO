@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: plover-stenograph
+Version: 2.0.dev1
+Summary: Plover plugin for Stenograph machines
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: # Plover Stenograph
+        
+        A Plover plugin for using newer Stenograph machines (Stentura Protégé and
+        Fusion, Élan Mira and Cybra, Diamanté, Wave, Luminex) connected to the computer
+        over USB or Wi-Fi.
+        
+        This is a work-in-progress rewrite of the
+        [plover-stenograph-usb](https://github.com/morinted/plover_stenograph_usb) and
+        [plover-stenograph-wifi](https://github.com/stanographer/plover_stenograph_wifi)
+        plugins to reuse code and add more protocol functionality.
+        
+Keywords: plover plover_plugin
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
