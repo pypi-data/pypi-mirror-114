@@ -1,0 +1,3 @@
+[console_scripts]
+leet2git = leet2git.leet2git:leet2git
+
