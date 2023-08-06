@@ -1,0 +1,8 @@
+ccs_aws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ccs_aws/dynamo.py,sha256=05DBEfJlcwyET7fKv1nWgK4-S_L6wtf0g2_TRU9PFhk,2963
+ccs_aws/s3.py,sha256=1Sqckw505qurO4Vhn-ESmTAMGjZ18GfLxNvf3sAbQcg,1095
+ccs_aws/secrets.py,sha256=KvNYhEbOYJu1bTwHAm25wNXHSiaqKQh_Zd60IziBKu0,257
+ccs_aws-2.3.0.dist-info/METADATA,sha256=1y_cnb4ONU7lJeIxOzRDGNosBzxzs60_0Y-am59412A,366
+ccs_aws-2.3.0.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+ccs_aws-2.3.0.dist-info/top_level.txt,sha256=gryWmB4xvIR-xEG26fa3raVyMVtppwXg-hhl2P94OF8,8
+ccs_aws-2.3.0.dist-info/RECORD,,
