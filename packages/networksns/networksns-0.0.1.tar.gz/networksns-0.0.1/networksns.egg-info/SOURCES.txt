@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+networksns/__init__.py
+networksns/centrality_measures.py
+networksns/networksns_test.py
+networksns/statistical_models.py
+networksns.egg-info/PKG-INFO
+networksns.egg-info/SOURCES.txt
+networksns.egg-info/dependency_links.txt
+networksns.egg-info/requires.txt
+networksns.egg-info/top_level.txt
