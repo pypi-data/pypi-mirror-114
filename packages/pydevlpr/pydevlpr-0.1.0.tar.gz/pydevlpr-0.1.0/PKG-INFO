@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pydevlpr
+Version: 0.1.0
+Summary: Frontend for connecting to devlprd and processing data from a FANTM DEVLPR
+License: MIT
+Author: Ezra Boley
+Author-email: eboley@wisc.edu
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: websockets (>=9.1,<10.0)
