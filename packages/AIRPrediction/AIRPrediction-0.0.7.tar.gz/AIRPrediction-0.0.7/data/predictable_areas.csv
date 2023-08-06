@@ -1,0 +1,178 @@
+State,County,City
+Alabama,Jefferson,Birmingham
+Alaska,Fairbanks North Star ,Fairbanks
+Arizona,Maricopa,Phoenix
+Arizona,Maricopa,Scottsdale
+Arizona,Pima,Tucson
+Arkansas,Pulaski,North Little Rock
+California,Alameda,Berkeley
+California,Alameda,Oakland
+California,Contra Costa,Bethel Island
+California,Contra Costa,Concord
+California,Contra Costa,Crockett
+California,Contra Costa,Pittsburg
+California,Contra Costa,San Pablo
+California,Fresno,Fresno
+California,Humboldt,Eureka
+California,Humboldt,Not in a city
+California,Imperial,Calexico
+California,Kern,Bakersfield
+California,Los Angeles,Burbank
+California,Los Angeles,Hawthorne
+California,Los Angeles,Long Beach
+California,Los Angeles,Los Angeles
+California,Los Angeles,West Los Angeles
+California,Orange,Costa Mesa
+California,Riverside,Rubidoux
+California,Sacramento,Arden-Arcade
+California,Sacramento,Not in a city
+California,San Bernardino,Fontana
+California,San Bernardino,Victorville
+California,San Diego,Chula Vista
+California,San Diego,El Cajon
+California,San Diego,San Diego
+California,San Francisco,San Francisco
+California,Santa Barbara,Capitan
+California,Santa Barbara,Goleta
+California,Santa Barbara,Lompoc
+California,Santa Barbara,Vandenberg Air Force Base
+California,Santa Clara,Cupertino
+California,Santa Clara,San Jose
+California,Santa Cruz,Davenport
+California,Solano,Benicia
+California,Solano,Vallejo
+California,Ventura,Not in a city
+Colorado,Adams,Welby
+Colorado,Denver,Denver
+Colorado,Denver,Not in a city
+Colorado,Jackson,Not in a city
+Connecticut,Fairfield,Westport
+Connecticut,Hartford,East Hartford
+Connecticut,Litchfield,Cornwall
+Connecticut,New Haven,New Haven
+Country Of Mexico,BAJA CALIFORNIA NORTE,Mexicali
+Country Of Mexico,BAJA CALIFORNIA NORTE,Rosarito
+Country Of Mexico,BAJA CALIFORNIA NORTE,Tijuana
+Delaware,New Castle,Wilmington
+District Of Columbia,District of Columbia,Washington
+Florida,Hillsborough,Valrico
+Florida,Orange,Winter Park
+Georgia,DeKalb,Not in a city
+Hawaii,Honolulu,Not in a city
+Idaho,Ada,Not in a city
+Illinois,Cook,Calumet City (PU RR name Calumet Park (sta.))
+Illinois,Cook,Chicago
+Illinois,Cook,Cicero
+Illinois,Cook,Northbrook
+Illinois,Saint Clair,East Saint Louis
+Indiana,Marion,Indianapolis (Remainder)
+Iowa,Polk,Des Moines
+Iowa,Scott,Davenport
+Kansas,Linn,Not in a city
+Kansas,Sumner,Not in a city
+Kansas,Wyandotte,Kansas City
+Kentucky,Boyd,Ashland
+Kentucky,Daviess,Not in a city
+Kentucky,Fayette,Lexington-Fayette (corporate name for Lexington)
+Kentucky,Henderson,Henderson
+Kentucky,Jefferson,Louisville
+Kentucky,McCracken,Paducah
+Louisiana,East Baton Rouge,Baton Rouge
+Louisiana,Jefferson,Kenner
+Maine,Aroostook,Presque Isle
+Maine,Cumberland,Portland
+Maryland,Baltimore,Essex
+Maryland,Garrett,Grantsville
+Maryland,Prince George's,Beltsville
+Massachusetts,Suffolk,Boston
+Michigan,Kent,Grand Rapids
+Michigan,Wayne,Detroit
+Minnesota,Anoka,Blaine
+Missouri,Saint Louis,Breckenridge Hills
+Missouri,Saint Louis,Ferguson
+Missouri,Saint Louis,Ladue
+Missouri,Saint Louis,Not in a city
+Missouri,Saint Louis,St. Ann
+Missouri,Saint Louis,Sunset Hills
+Missouri,St. Louis City,St. Louis
+Nevada,Clark,Boulder City
+Nevada,Washoe,Reno
+New Hampshire,Hillsborough,Manchester
+New Hampshire,Rockingham,Not in a city
+New Jersey,Camden,Camden
+New Jersey,Essex,Newark
+New Mexico,Bernalillo,Albuquerque
+New York,Bronx,New York
+New York,Monroe,Rochester
+New York,Queens,New York
+New York,Steuben,Not in a city
+New York,Suffolk,Holtsville
+North Carolina,Forsyth,Winston-Salem
+North Carolina,Mecklenburg,Charlotte
+North Carolina,Wake,Raleigh
+North Dakota,Cass,Not in a city
+Ohio,Athens,Athens
+Ohio,Cuyahoga,Cleveland
+Ohio,Hamilton,Cincinnati
+Ohio,Medina,Not in a city
+Oklahoma,Adair,Cherry Tree
+Oklahoma,Cherokee,Park Hill
+Oklahoma,Kay,Ponca City
+Oklahoma,Oklahoma,Oklahoma City
+Oklahoma,Ottawa,Miami
+Oklahoma,Tulsa,Tulsa
+Oregon,Multnomah,Portland
+Pennsylvania,Adams,Not in a city
+Pennsylvania,Allegheny,Pittsburgh
+Pennsylvania,Beaver,Beaver Falls
+Pennsylvania,Berks,Not in a city
+Pennsylvania,Berks,Reading
+Pennsylvania,Blair,Altoona
+Pennsylvania,Bucks,Bristol
+Pennsylvania,Cambria,Johnstown
+Pennsylvania,Dauphin,Not in a city
+Pennsylvania,Erie,Erie
+Pennsylvania,Lackawanna,Scranton
+Pennsylvania,Lancaster,Lancaster
+Pennsylvania,Lawrence,New Castle
+Pennsylvania,Luzerne,Wilkes-Barre
+Pennsylvania,Montgomery,Norristown
+Pennsylvania,Northampton,Freemansburg
+Pennsylvania,Philadelphia,Philadelphia
+Pennsylvania,Washington,Charleroi
+Pennsylvania,Westmoreland,Greensburg
+Pennsylvania,York,York
+Rhode Island,Providence,East Providence
+South Carolina,Charleston,Not in a city
+South Carolina,Richland,Dentsville (Dents)
+South Dakota,Minnehaha,Sioux Falls
+South Dakota,Union,Not in a city
+Tennessee,Blount,Not in a city
+Tennessee,Haywood,Not in a city
+Tennessee,Meigs,Not in a city
+Texas,Bexar,Not in a city
+Texas,Bexar,San Antonio
+Texas,Dallas,Dallas
+Texas,El Paso,El Paso
+Texas,Harris,Deer Park
+Texas,Harris,Houston
+Texas,McLennan,Waco
+Texas,Travis,Austin
+Utah,Duchesne,Roosevelt
+Utah,Salt Lake,Salt Lake City
+Utah,Uintah,Not in a city
+Virginia,Alexandria City,Alexandria
+Virginia,Alexandria City,Not in a city
+Virginia,Fairfax,Annandale
+Virginia,Fairfax,McLean
+Virginia,Fairfax,Not in a city
+Virginia,Fairfax,Seven Corners
+Virginia,Hampton City,Hampton
+Virginia,Henrico,East Highland Park
+Virginia,Roanoke,Vinton
+Washington,King,Seattle
+Wisconsin,Milwaukee,Milwaukee
+Wyoming,Fremont,Riverton
+Wyoming,Laramie,Not in a city
+Wyoming,Sweetwater,Not in a city
+Wyoming,Uinta,Not in a city
