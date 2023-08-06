@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: qclient
+Version: 1.0.4
+Summary: Client for executing quantum applications on qserver instances
+Home-page: https://github.com/ax1/qclient_py
+Author: ax1
+Author-email: 
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ax1/qclient_py/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# qclient
+
+## Install
+
+```sh
+pip install qclient
+```
+
+## Usage
+
+> See test file for more examples
+
+```python
+import qclient
+
+qclient.configure({'token': 'YOUR_TOKEN'})
+print(qclient.get('bell'))
+print(qclient.execute('bell'))
+```
+
