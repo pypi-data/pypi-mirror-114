@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/dicom_mask/__init__.py
+src/dicom_mask/convert.py
+src/dicom_mask.egg-info/PKG-INFO
+src/dicom_mask.egg-info/SOURCES.txt
+src/dicom_mask.egg-info/dependency_links.txt
+src/dicom_mask.egg-info/top_level.txt
