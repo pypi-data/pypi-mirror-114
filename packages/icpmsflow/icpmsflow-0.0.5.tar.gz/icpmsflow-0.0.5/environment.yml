@@ -1,0 +1,10 @@
+name: icpmsflow-env
+channels:
+  - conda-forge
+  - wpk-nist
+dependencies:
+  - python=3.8
+  - numpy
+  - pandas
+  - scipy
+  - setuptools>=38.4
