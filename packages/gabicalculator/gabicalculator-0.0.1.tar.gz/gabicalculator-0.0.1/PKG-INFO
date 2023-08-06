@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: gabicalculator
+Version: 0.0.1
+Summary: Very basic calculator
+Home-page: UNKNOWN
+Author: Gabriel Renom
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.10
+Classifier: Framework :: Django :: 1.9
+Classifier: Framework :: Django :: 1.8
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Intended Audience :: Developers
