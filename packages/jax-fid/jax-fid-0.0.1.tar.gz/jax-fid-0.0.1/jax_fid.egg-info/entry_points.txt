@@ -1,0 +1,3 @@
+[console_scripts]
+pycli = pycli.__main__:main
+

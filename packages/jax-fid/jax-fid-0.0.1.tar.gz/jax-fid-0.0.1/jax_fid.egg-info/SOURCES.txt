@@ -1,0 +1,13 @@
+README.md
+setup.py
+jax_fid/__init__.py
+jax_fid/__main__.py
+jax_fid/fid.py
+jax_fid/inception.py
+jax_fid/utils.py
+jax_fid.egg-info/PKG-INFO
+jax_fid.egg-info/SOURCES.txt
+jax_fid.egg-info/dependency_links.txt
+jax_fid.egg-info/entry_points.txt
+jax_fid.egg-info/requires.txt
+jax_fid.egg-info/top_level.txt

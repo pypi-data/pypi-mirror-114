@@ -1,0 +1,11 @@
+numpy==1.19.5
+requests==2.23.0
+jax
+jaxlib
+flax
+Pillow==7.1.2
+tqdm==4.60.0
+scipy
+
+[testing]
+pytest
