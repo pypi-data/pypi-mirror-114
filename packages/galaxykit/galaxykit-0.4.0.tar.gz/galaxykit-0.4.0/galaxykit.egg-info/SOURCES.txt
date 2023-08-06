@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+galaxykit/__init__.py
+galaxykit/client.py
+galaxykit/command.py
+galaxykit/containers.py
+galaxykit/dockerutils.py
+galaxykit/groups.py
+galaxykit/namespaces.py
+galaxykit/users.py
+galaxykit.egg-info/PKG-INFO
+galaxykit.egg-info/SOURCES.txt
+galaxykit.egg-info/dependency_links.txt
+galaxykit.egg-info/entry_points.txt
+galaxykit.egg-info/requires.txt
+galaxykit.egg-info/top_level.txt
