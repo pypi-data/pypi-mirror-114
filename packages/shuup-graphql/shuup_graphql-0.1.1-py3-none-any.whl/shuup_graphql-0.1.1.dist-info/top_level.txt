@@ -1,0 +1,2 @@
+shuup_graphql
+shuup_graphql_tests
