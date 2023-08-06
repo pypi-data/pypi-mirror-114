@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: divyaj-psee-spark
+Version: 0.0.1
+Summary: Package for connecting HDFS and JHUB
+Home-page: UNKNOWN
+Author: Divyaj Balivada
+Author-email: b.divyajbalivada@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# divyaj_psee
+This code is used to connect to HDFS, it is built specifically for psee analytics team in Abbvie
+
+ - The functions under this module:
+        spark_read(name), spark_write(dataframe, name), delete_files(names)
+
+## refer docstrings for better understanding
+
+
