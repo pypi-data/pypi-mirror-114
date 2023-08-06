@@ -1,0 +1,12 @@
+consolet/__init__.py,sha256=ku6ghJCN6aJfoB3f4Y1inQM1yTjY7Muqt5WiyTEuXwk,75
+consolet/colors.py,sha256=O_VEqHuePfcc1v7148UIlgqNwcsCDImXtsaJhss0A1I,1881
+consolet/command.py,sha256=bIB3PMYfISe7nZxi70C_RbRtZguzSa0LDsD2eCnFPcE,580
+consolet/console.py,sha256=PoaaIJOSrJ9vsptBJ4ZpW0IUv_u2ejsjAj19ur_kbHg,4249
+consolet/errors.py,sha256=zu9X2ir2tZ7H3389NOhVuuZyqhL-wwtEGAUoOpJXnpk,52
+consolet/terminal.py,sha256=LbnaJsZEw9Rt3aKRa5euGEiveaEhQLh3gfRF7AMG7tk,2745
+consolet/utils.py,sha256=KWl46uWFRXL7RH5YJnk6MlmbvfKhEGM2dP8NKuy0giU,597
+consolet-0.0.1.dist-info/LICENSE,sha256=1I9ryqKVHdG_0gIxoEMqM_2rns2r6GObUkjYwTdaqiQ,1083
+consolet-0.0.1.dist-info/METADATA,sha256=nHvaZ2y7ts5Nws8mgRH3JwZTkHW_sM60p9LFutz0Lho,570
+consolet-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+consolet-0.0.1.dist-info/top_level.txt,sha256=A_yvsLPRxR0Zp2F8Q8sNfZb_GuQTW2gehOlCegM79ZU,9
+consolet-0.0.1.dist-info/RECORD,,
