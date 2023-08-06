@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: CrowdStrike2TH
+Version: 0.0.4
+Summary: Falcon CrowdStrike Alert Feeder for TheHive
+Home-page: https://github.com/Sshahar/CrowdStrike2TH/
+Author: Shahar Margalit
+Author-email: shaharma@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Sshahar/CrowdStrike2TH//issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# CrowdStrike2TH: Falcon CrowdStrike Alert Feeder for TheHive
+[Falcon CrowdStrike](https://www.crowdstrike.com/) provides endpoint protection, threat intelligence and attribution.
+
+## Package
+https://pypi.org/project/CrowdStrike2TH/
+
+Make sure to edit [config](https://github.com/Sshahar/CrowdStrike2TH/blob/main/src/config/config.py)
+
+
