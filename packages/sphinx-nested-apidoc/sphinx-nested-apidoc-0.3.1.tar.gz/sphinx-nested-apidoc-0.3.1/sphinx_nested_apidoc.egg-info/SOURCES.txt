@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+sphinx_nested_apidoc/__init__.py
+sphinx_nested_apidoc/__main__.py
+sphinx_nested_apidoc/nested.py
+sphinx_nested_apidoc.egg-info/PKG-INFO
+sphinx_nested_apidoc.egg-info/SOURCES.txt
+sphinx_nested_apidoc.egg-info/dependency_links.txt
+sphinx_nested_apidoc.egg-info/entry_points.txt
+sphinx_nested_apidoc.egg-info/requires.txt
+sphinx_nested_apidoc.egg-info/top_level.txt
