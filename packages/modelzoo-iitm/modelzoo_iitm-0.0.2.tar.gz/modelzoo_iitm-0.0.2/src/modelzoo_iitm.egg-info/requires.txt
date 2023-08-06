@@ -1,0 +1,4 @@
+elasticdeform~=0.4.9
+
+[dev]
+pytest>=3.7
