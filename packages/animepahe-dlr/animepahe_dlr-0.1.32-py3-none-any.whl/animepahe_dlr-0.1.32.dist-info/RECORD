@@ -1,0 +1,12 @@
+animepahe_dlr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+animepahe_dlr/ap_dlr.py,sha256=N_-ayOyrvByy6hLex6xwbxDYvkMe40LJ1ReGuyZV61w,14695
+animepahe_dlr/gecko_installer.py,sha256=UJD5_y03GrEYCfaNlgeJvE0fjuT-xSm7hvkvBcEpqqE,3496
+animepahe_dlr/driver_extensions/mozilla_cc3@internetdownloadmanager.com.xpi,sha256=whecu8GgmSQ0GBQOU_qAH1ei6bfuNOpaD5Ro0-7xj90,125116
+animepahe_dlr/driver_extensions/uBlock0@raymondhill.net.xpi,sha256=jsz6Q2vFhSuR3blijcpL_Q_10qMC8unlldgB-iKMOXU,2781722
+animepahe_dlr/driver_extensions/universal-bypass.xpi,sha256=pHDT5TENMn4fA9J4b7XuONE5eWtW6mBXaZST_qFm4EE,435504
+animepahe_dlr-0.1.32.dist-info/METADATA,sha256=VVQWvLQflKwUUwd1T1nSPfyUVx36ENlUEbGlw2psAX0,4230
+animepahe_dlr-0.1.32.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+animepahe_dlr-0.1.32.dist-info/entry_points.txt,sha256=rqZ-fTRrVdSm2X0LyCSAQMYjVyAgwRz0sGVOcwgAlOM,61
+animepahe_dlr-0.1.32.dist-info/license.md,sha256=beERaWxVPxjvYzvRDHN4SYjzrOwKY1MX77Ew1ZZsg20,1091
+animepahe_dlr-0.1.32.dist-info/top_level.txt,sha256=2AhRm5bsNHiL9vv8XCwne5rn0qXyVSMUp6BbTWsU2pY,37
+animepahe_dlr-0.1.32.dist-info/RECORD,,

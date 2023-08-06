@@ -1,0 +1,3 @@
+[console_scripts]
+animepahe-dlr = animepahe_dlr.ap_dlr:main
+
