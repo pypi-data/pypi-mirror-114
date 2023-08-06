@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: vi_nlp_core
+Version: 0.3
+Summary: vi-core-nlp is a library that supports Vietnamese NER by pattern matching .
+Home-page: https://github.com/demdecuong/vi-core-nlp/tree/main
+Author: minhnp et al.
+Author-email: nguyenphucminh2804@gmail.com
+License: UNKNOWN
+Keywords: vi_nlp_core
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# NER/Intent classification for Vietnamese Appointment Chatbot
+
+# Usage
+
+**Extract Vietnamese phone number**
+
+**Extract person name**
+```
+import vi_nlp_core
+from vi_nlp_core.extractor import Extractor
+extractor = Extractor()
+
+text = "tôi cần đặt bác sĩ tạ biên cương"
+print(extractor.extract_person_name(text,'pattern'))
+```
+
+**Extract Date** 
+```
+import vi_nlp_core
+from vi_nlp_core.extractor import Extractor
+extractor = Extractor()
+
+text = "tôi sinh vào ngày 21-3-1997"
+extractor.extract_date(text)
+```
+
+**Extract Time**
+```
+import vi_nlp_core
+from vi_nlp_core.extractor import Extractor
+extractor = Extractor()
+
+text = '14:50 ngày 7 tháng 6'
+print(extractor.extract_time(text,return_value=True)) #return value only
+```
+
+
