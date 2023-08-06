@@ -1,0 +1,149 @@
+Metadata-Version: 2.1
+Name: switch_api
+Version: 0.1.9
+Summary: A complete package for data ingestion into the Switch Automation platform.
+Home-page: UNKNOWN
+Author: Switch Automation Pty Ltd.
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Other Audience
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Natural Language :: English
+Requires-Python: >=3.8.*
+Description-Content-Type: text/markdown
+License-File: LICENCE
+License-File: AUTHORS.rst
+
+# Switch Automation library for Python
+This is a package for data ingestion into the Switch Automation software platform. 
+
+You can find out more about the platform on [Switch Automation](https://www.switchautomation.com)
+
+## Getting started
+
+### Prerequisites
+* Python 3.8 or later is required to use this package. 
+* You must have a [Switch Automation user account](https://www.switchautomation.com/our-solution/) to use this package. 
+
+### Install the package
+Install the Switch Automation library for Python with [pip](https://pypi.org/project/pip/):
+
+```bash
+pip install switch_api
+```
+
+# History
+
+## 0.1.9
+### Added 
+- New module ``platform_insights``
+
+In the ``integration`` module: 
+- New function ``get_sites`` added to lookup site information (optionally with site-level tags)
+- New function ``get_device_sensors`` added to assist with lookup of device/sensor information, optionally including 
+  either metadata or tags.
+- New function ``get_tag_groups`` added to lookup list of sensor-level tag groups 
+- New function ``get_metadata_keys`` added to lookup list of device-level metadata keys
+
+### Changed
+- Modifications to connections to storage accounts. 
+- Additional parameter ``queue_name`` added to the following methods of the ``Automation`` class of the ``pipeline`` module: 
+  - ``deploy_on_timer``
+  - ``deploy_as_email_data_feed``
+  - ``deploy_as_upload_data_feed``
+  - ``deploy_as_ftp_data_feed``
+
+### Fixed
+In the ``pipeline`` module:
+- Addressed issue with the schema validation for the ``upsert_workorders`` function
+
+## 0.1.8
+### Changed
+In the ``integrations`` module: 
+- Updated to batch upserts by DeviceCode to improve reliability & performance of the ``upsert_device_sensors`` function
+
+### Fixed
+In the `analytics` module: 
+- typing issue that caused error in the import of the switch_api package for python 3.8
+
+## 0.1.7
+### Added 
+In the ``integrations`` module: 
+- Added new function ``upsert_workorders``
+  - Provides ability to ingest work order data into the Switch Automation platform. 
+  - Documentation provides details on required & optional fields in the input dataframe and also provides information on allowed values for some fields.
+  - Two attributes available for function, added to assist with creation of scripts by providing list of required & optional fields: 
+    - ``upsert_workorders.df_required_columns``
+    - ``upsert_workorders.df_optional_columns``
+- Added new function ``get_states_by_country``: 
+  - Retrieves the list of states for a given country. Returns a dataframe containing both the state name and abbreviation.
+- Added new function ``get_equipment_classes``:
+  - Retrieves the list of allowed values for Equipment Class. 
+    - EquipmentClass is a required field for the upsert_device_sensors function
+
+### Changed
+In the `integrations` module:
+- For the ``upsert_device_sensors`` function:
+  - New attributes added to assist with creation of tasks: 
+    - ``upsert_device_sensors.df_required_columns`` - returns list of required columns for the input ``df``
+  - Two new fields required to be present in the dataframe passed to function by parameter ``df``: 
+    - `EquipmentClass`
+    - `EquipmentLabel`
+  - Fix to documentation so required fields in documentation match. 
+- For the ``upsert_sites`` function:
+  - New attributes added to assist with creation of tasks: 
+    - ``upsert_sites.df_required_columns`` - returns list of required columns for the input ``df``
+    - ``upsert_sites.df_optional_columns`` - returns list of required columns for the input ``df``
+- For the ``get_templates`` function: 
+  - Added functionality to filter by type via new parameter ``object_property_type``
+  - Fixed capitalisation issue where first character of column names in dataframe returned by the function had been converted to lowercase. 
+- For the ``get_units_of_measure`` function: 
+  - Added functionality to filter by type via new parameter ``object_property_type``
+  - Fixed capitalisation issue where first character of column names in dataframe returned by the function had been converted to lowercase. 
+ 
+In the ``analytics`` module: 
+- Modifications to type hints and documentation for the functions: 
+  - ``get_clone_modules_list``
+  - ``run_clone_modules``
+- Additional logging added to ``run_clone_modules``  
+
+## 0.1.6
+### Added
+- Added new function ``upsert_timeseries_ds()`` to the `integrations` module
+
+### Changed
+- Additional logging added to ``invalid_file_format()`` function from the `error_handlers` module. 
+
+### Removed 
+- Removed ``append_timeseries()`` function
+
+## 0.1.5
+### Fixed 
+- bug with ``upsert_sites()`` function that caused optional columns to be treated as required columns.
+
+### Added
+Added additional functions to the `error_handlers` module:
+- ``validate_datetime()`` - which checks whether the values of the datetime column(s) of the source file are valid. Any datetime errors identified by this function should be passed to the ``post_errors()`` function.
+- ``post_errors()`` - used to post errors (apart from those identified by the ``invalid_file_format()`` function) to the data feed dashboard.
+
+## 0.1.4
+### Changed
+Added additional required properties to the Abstract Base Classes (ABC): Task, IntegrationTask, AnalyticsTask, LogicModuleTask. These properties are: 
+- Author
+- Version
+
+Added additional parameter `query_language` to the `switch.integration.get_data()` function. Allowed values for this parameter are: 
+- `sql`
+- `kql`
+
+Removed the `name_as_filename` and `treat_as_timeseries` parameter from the following functions: 
+- ``switch.integration.replace_data()``
+- ``switch.integration.append_data()``
+- ``switch.integration.upload_data()``
+ 
+
+
