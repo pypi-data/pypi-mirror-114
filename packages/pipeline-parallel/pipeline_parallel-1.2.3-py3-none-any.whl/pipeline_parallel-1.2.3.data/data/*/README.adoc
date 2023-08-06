@@ -1,0 +1,251 @@
+= Pipeline Parallel Documentation
+:author: Christophe Cossou <christophe.cossou@ias.u-psud.fr>
+:sectnums:
+:toc: left
+:toclevels: 4
+:encoding: utf-8
+:lang: en
+:numbered:
+:source-language: python
+:imagesdir:   doc
+
+== Introduction
+
+This package was originally developped for JWST. It comes from the realisation that multiprocess in Python only cares about number of CPUs.
+
+For pipeline purposes, each process uses a lot of memory, up to 40GB. This packages provides a ProcessPool that not only accept CPU *and* RAM limits, but also accept memory prediction for each process.
+
+The idea behind is to come up with a simple function, reading metadata of the input .fits file and gives that to the ProcessPool before running it.
+
+=== Use cases
+One of the usecase is when a classic multiprocessing.Pool doesn't work. One example is due to the original Pool not killing the previous process but reusing it. I force kill the previous process to create a new one. While this is not efficient if each individual run is quick, this come in handy when reusing an old process slow the next process. While this is not entirely understood, this is something that was noticed when using webbpsf.
+
+=== How to install
+To install:
+[source]
+----
+pip install pipeline_parallel
+----
+
+=== How to use
+
+. First import the package:
++
+[source, python]
+----
+import pipeline_parallel
+----
++
+. Add this line [red]*before* importing *Numpy* to force single thread
++
+[source, python]
+----
+pipeline_parallel.force_single_thread()
+----
++
+. Init logging preferences to your needs. You can also add special config (see <<init_log>>).
++
+[source, python]
+----
+pipeline_parallel.init_log(log="pipeline.log", stdout_loglevel="INFO", file_loglevel="DEBUG")
+----
++
+. Then gets the list of .fits files:
++
+[source,python]
+----
+import glob
+filenames = glob.glob("test_*/det_images/*.fits")
+----
++
+. and create the file list:
++
+[source,python]
+----
+ # For JWST (RAM function embedded)
+ lvl1s = pipeline_parallel.ArgList(filenames=filenames)
+ # or in general
+ rams = [2.] * len(filenames)
+ lvl1s = pipeline_parallel.ArgList(filenames=filenames, ram=rams)
+----
++
+. Then create the pool:
++
+[source, python]
+----
+ pool = pipeline_parallel.ProcessPool(func=run_level1, params=lvl1s)
+----
++
+. run it:
++
+[source,python]
+----
+ pool.run()
+----
++
+
+
+Full examples on how to use it are available in the scripts folder. Here is a basic minimal example:
+[source, python]
+----
+import pipeline_parallel
+pipeline_parallel.force_single_thread()
+
+import time
+import numpy as np
+import logging
+import os
+
+LOG = logging.getLogger("main")
+
+pipeline_parallel.init_log(log="pipeline.log", stdout_loglevel="INFO", file_loglevel="DEBUG")
+
+def test_function(arg):
+
+    LOG.info(args)
+
+
+def main():
+    """
+    Trying ProcessPool on a dummy example
+    """
+    filenames = ["a", "b", "c", "d", "e", "f"]
+    ram = [1.] * len(filenames)
+
+    lvl1s = pipeline_parallel.ArgList(filenames=filenames, ram=ram)
+
+    pool = pipeline_parallel.ProcessPool(func=test_function, params=lvl1s, delay=0)
+    pool.run()
+
+
+if __name__ == '__main__':
+    main()
+
+----
+
+=== Log files
+.The package create 2 log files:
+. *pipeline.log*: Store all logging messages from the script, including all processes
+. *pool.log*: Current pool status, follow it by using this line in bash:
+[source, bash]
+----
+watch cat pool.log
+----
+
+While running, *pool.log* looks like:
+[source]
+----
+Function: run_ima_single
+Pool Usage: RAM 86.8/88.1 GB ; CPUs 2 / 23
+Ellapsed time: 00h07m15s ; Completion: 5.6 % ; ETA 02h03m16s
+Process running: 2
+        Process-1 (32631 ; 39.6 / 82.4 GB): ('i4_f200/..._MIRIMAGE_F560Wexp1.fits',)
+        Process-3 (707 ; 1.2 / 4.4 GB): ('i4_f5/..._MIRIMAGE_F560Wexp1.fits',)
+Files waiting 15/18
+Files completed 1/18:
+         i1_f25/..._MIRIMAGE_F560Wexp1.fits in 339.3 s (3.57 GB)
+Files failed 0/18:
+
+----
+
+Once finished:
+[source]
+----
+Function: run_ima_single
+Pool ressources: 19 CPUs and 176.3 GB of RAM
+Total time: 02h34m07s
+Files completed 18/18:
+  i1_f25/...MIRIMAGE_F560Wexp1.fits in 370.9 s (3.57 GB)
+  i2_f25/...MIRIMAGE_F560Wexp1.fits in 892.8 s (6.08 GB)
+  i4_f25/...MIRIMAGE_F560Wexp1.fits in 1063.7 s (11.34 GB)
+  i4_f5/...MIRIMAGE_F560Wexp1.fits in 582.2 s (3.16 GB)
+  ...
+Files failed 0/18:
+----
+
+[[restart]]
+== Restart
+Since v1.0.0, restart is available. A file *pool.restart* is created in the current working directory.
+If this exist in the current worlking directory when running a *ProcessPool*, the list of parameters of that
+pool is ignored, and the one in the *pool.restart* is taken instead. Internally, this file is a pickle file to
+accept parameters from all possible types (and not just strings).
+
+NOTE: *pool.restart* is overwritten every time a pool is launched in that directory. Make a copy if you want
+to keep a version of that file.
+
+== Tools
+
+=== Force single thread
+The goal is to prevent numpy from launching threads when he feels like it.
+
+IMPORTANT: you must use this fonction before importing Numpy, else
+he'll completely ignore it.
+
+
+Python, and Numpy in particular, will launch several threads when available, to try and speed up calculations.
+While it would seem a good idea in general, it sometimes will be problematic.
+
+In the particular case of a parallel setup, this become a horrible idea because each process will launch as many threads as possible
+without accouting for other processes on the same machine. Let's say you have a 12 cores machine. You launch 12 processes in parallel,
+each python process will launch 12 threads, because, why not? You end up with 144 threads and a machine with a 1.4 millions
+context switches per second, freezing the computer and turning a 8 minutes calculus into a multi-hour ogre.
+
+
+[source, python]
+----
+pipeline_parallel.force_single_thread()
+----
+
+[[init_log]]
+=== init_log
+
+[source, python]
+----
+pipeline_parallel.init_log(log="pipeline.log", stdout_loglevel="INFO", file_loglevel="DEBUG")
+----
+
+.parameters:
+* `log`: filename where to store logs. By default "pipeline.log"
+* `stdout_loglevel`: log level for standard output (ERROR, WARNING, INFO, DEBUG)
+* `file_loglevel`: log level for log file (ERROR, WARNING, INFO, DEBUG)
+* [optional] `extra_config`: Set of extra properties to be added to the dict_config for logging
+
+=== ArgList
+* `filenames` (list(args)): Each element of that list will be passed to your function as *args*. I use it to pass a list of files
+* [optional] `ram` (list(float)): For each file, the expected RAM consumption (upper limit)
+            If not given, will launch the "get_jwst_miri_expected_ram" function to estimate it (valid for JWST 1B data)
+
+=== ProcessPool
+[source, python]
+----
+ pool = pipeline_parallel.ProcessPool(func=run_level1, params=lvl1s)
+----
+* `func` (Python function): Function to be launched in parallel
+* `params` (ArgList): list of parameters for each process to launch
+* [optional] `cpu`: Number of CPU allowed (by default, all but one of them)
+* [optional] `ram`: RAM allowed [GB] (by default total minus a RAM_SAFETY value
+* [optional] `delay`: [optional] Number of seconds (by default, 2 seconds) between two consecutive process launches.
+              A non-zero value prevent freeze due to all processes initializing at once
+
+*ProcessPool* accept restart (if some file failed, where on queue or running when the pool stopped). Launch the same
+pool in the same folder for a restart, the list of parameters will be ignored and the one from the restart file taken instead.
+For more info see Section <<restart>>.
+
+== JWST RAM predicting function
+Embedded in the package is a function designed to estimate the amount of RAM needed by the pipeline,
+depending on characteristics of the input .fits file.
+
+Right now, this only works for MIRI level 1 data. Level 1 data is by
+far the most greedy type of pipeline there is, in terms of memory. We approximate the
+pipeline to level 1 only as a crude estimate.
+
+This function is derived from data obtained with the pipeline v7.1 (package v0.9.6):
+[latexmath]
++++++++++++++
+RAM (GB) = 0.1 * \mathrm{n_{groups}} * \mathrm{n_{ints}} + 2.4
++++++++++++++
+
+.Data point vs fitting function for memory needed by JWST pipeline
+image::JWST_ram_prediction.png[]
+
+The script uses data from *mem_profile.log*. Data is extracted from log file *pool.log* via the script `extract_log_data.py`, aggregated from past runs.

@@ -1,0 +1,11 @@
+pipeline_parallel/__init__.py,sha256=A05KH9x2v1lvvM-_8WLDtsnntTf4aehLXWmDZzenfwY,243
+pipeline_parallel/arg_list.py,sha256=dPRCNDkjCkjtqmHvZkP9kgO4l027jtwdFxRRw96ADvE,2393
+pipeline_parallel/fake_server.py,sha256=778M6G_QHusFQoXuI8zXz9CROfOX_eyz6Zx7idE7LjU,2278
+pipeline_parallel/process_pool.py,sha256=RKxG5rDvEJbJd-HSR0vNmmKKfX02nQkWVJJdH6oG0Tw,14047
+pipeline_parallel/utils.py,sha256=vExL1TbZ0nGkGvt8nqxWwNONBLcWxMsmODpRzQ8GRyM,7458
+pipeline_parallel-1.2.3.data/data/*/README.adoc,sha256=KsXi8qGKa6o8DAtp1WVRtCIKaRh3ca8RlTC9cfDFl7Q,8304
+pipeline_parallel-1.2.3.dist-info/LICENSE.txt,sha256=Umr4PNZx5QrDloOd-3go0eUwv5rhtCqTXeDiGamBWq4,1069
+pipeline_parallel-1.2.3.dist-info/METADATA,sha256=V91SXPEZa_hsv8jyVEXPaizzNN835oGRbCSlxyrreEg,461
+pipeline_parallel-1.2.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pipeline_parallel-1.2.3.dist-info/top_level.txt,sha256=6qQEP_9HaIIoMer17PNuXNeAMffKMLgZi7G-ozTh3_g,18
+pipeline_parallel-1.2.3.dist-info/RECORD,,
