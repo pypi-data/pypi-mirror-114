@@ -1,0 +1,4 @@
+gitdb<5,>=4.0.1
+
+[:python_version < "3.10"]
+typing-extensions>=3.7.4.3
