@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: sf-apm-lib
+Version: 0.1.0
+Summary: Snappyflow pip package
+Home-page: https://github.com/snappyflow/py_snappyflow
+Author: Maplelabs
+Author-email: pradeep.jaiswar@maplelabs.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+sf-apm-lib
+==============
+
+Snappyflow modules
+
+Installation
+------------
+pip install sf-apm-lib
+
+Usage
+-----
+* Get trace config
+
+    ```    
+    from sf_apm_lib import snappyflow as sf
+    trace_config = sf.get_trace_config(<Snappyflow Profile Key>, <Project Name>, <App Name>)
+    ```
+
+
