@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: adatest
+Version: 0.0.1
+Summary: Adative testing for NLP models.
+Home-page: https://github.com/slundberg/adatest.git
+Author: Scott Lundberg and Marco Tulio Ribeiro
+Author-email: scott.lundberg@microsoft.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
