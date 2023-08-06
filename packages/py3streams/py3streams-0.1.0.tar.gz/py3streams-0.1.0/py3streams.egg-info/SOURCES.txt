@@ -1,0 +1,12 @@
+README.md
+setup.py
+py3streams/__init__.py
+py3streams/dict_stream.py
+py3streams/int_stream.py
+py3streams/optional.py
+py3streams/stream.py
+py3streams/stream_base.py
+py3streams.egg-info/PKG-INFO
+py3streams.egg-info/SOURCES.txt
+py3streams.egg-info/dependency_links.txt
+py3streams.egg-info/top_level.txt
