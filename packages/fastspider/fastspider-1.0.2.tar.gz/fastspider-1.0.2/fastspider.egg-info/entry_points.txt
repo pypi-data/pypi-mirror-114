@@ -1,0 +1,3 @@
+[console_scripts]
+fastspider = fastspider.commands.cmdline:execute
+
