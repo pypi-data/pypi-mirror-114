@@ -1,0 +1,11 @@
+imutils
+pandas
+matplotlib
+numpy
+torch-lucent
+pytorchcv
+scikit-image
+Pillow
+yacs
+torchsummary
+ignite
