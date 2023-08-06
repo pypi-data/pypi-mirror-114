@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+mptrfhandler/__init__.py
+mptrfhandler.egg-info/PKG-INFO
+mptrfhandler.egg-info/SOURCES.txt
+mptrfhandler.egg-info/dependency_links.txt
+mptrfhandler.egg-info/requires.txt
+mptrfhandler.egg-info/top_level.txt
+tests/__init__.py
+tests/tests_mp.py
+tests/tests_timed.py
