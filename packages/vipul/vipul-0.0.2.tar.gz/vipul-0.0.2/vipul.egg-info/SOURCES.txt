@@ -1,0 +1,13 @@
+License.txt
+setup.py
+vipul/__init__.py
+vipul/artificialintel.py
+vipul/month.py
+vipul/numbers.py
+vipul/operators.py
+vipul/subjectpercent.py
+vipul/surfacearea.py
+vipul.egg-info/PKG-INFO
+vipul.egg-info/SOURCES.txt
+vipul.egg-info/dependency_links.txt
+vipul.egg-info/top_level.txt
