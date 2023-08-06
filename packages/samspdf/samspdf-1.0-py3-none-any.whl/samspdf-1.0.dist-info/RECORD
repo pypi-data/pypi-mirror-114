@@ -1,0 +1,8 @@
+samspdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+samspdf/pdf2image.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+samspdf/pdf2text.py,sha256=fAzPb9ODHYQ3oA4wsgmSaYPUW8Cr8r5vQN5QUNxs5Ak,41
+samspdf-1.0.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+samspdf-1.0.dist-info/METADATA,sha256=JBnJB2wuvPdfV_X3wcdHP9sBpiVf7dD1gdqad7zF6XM,198
+samspdf-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+samspdf-1.0.dist-info/top_level.txt,sha256=GzDXQaDlvGTP-XaVleKmUw8FKhfreCh9EbOW2tZ4-Uo,8
+samspdf-1.0.dist-info/RECORD,,
