@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: numeroprimo
+Version: 1.0
+Summary: Herramienta para saber si un número es primo.
+Home-page: UNKNOWN
+Author: Lucy Areán
+Author-email: lucy.arean.granja@gmail.com
+License: GNU GPLv3
+Keywords: pyoperaciones primo número
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+
+NUMERO PRIMO
+==============
+
+Este es un ejemplo simple de un paquete Python. Este paquete contiene un conjunto de funciones para saber si un nÃºmero es primo.
+Este programa es libre; Puedes redistribuirlo y/o modificarlo bajo los tÃ©rminos de la licencia para software libre.
+
+
