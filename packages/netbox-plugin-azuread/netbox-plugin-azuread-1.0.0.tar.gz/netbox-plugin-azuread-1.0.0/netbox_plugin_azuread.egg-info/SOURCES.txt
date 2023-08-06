@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+netbox_plugin_azuread/VERSION
+netbox_plugin_azuread/__init__.py
+netbox_plugin_azuread/backends.py
+netbox_plugin_azuread/urls.py
+netbox_plugin_azuread/views.py
+netbox_plugin_azuread.egg-info/PKG-INFO
+netbox_plugin_azuread.egg-info/SOURCES.txt
+netbox_plugin_azuread.egg-info/dependency_links.txt
+netbox_plugin_azuread.egg-info/not-zip-safe
+netbox_plugin_azuread.egg-info/top_level.txt
+netbox_plugin_azuread/templates/azure/login.html
