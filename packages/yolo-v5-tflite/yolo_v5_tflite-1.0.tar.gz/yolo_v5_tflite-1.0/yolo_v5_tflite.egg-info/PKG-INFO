@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: yolo-v5-tflite
+Version: 1.0
+Summary: YOLO_v5 - most advanced vision AI model for object detection in TFLite. 
+Home-page: https://github.com/neso613/yolo-v5-pip-wheel
+Author: Neha Soni
+Author-email: soni.neha45@gmail.com
+License: Apache-2.0
+Description: # yolo-v5-tflite
+        YOLOv5 model in TensorFlow Lite (TFLite) for Object Detection over 1000 classes(coco dataset).
+        
+        ## Installation
+        - pip3 install yolo-v5-tflite
+        
+        ## How To Run
+        ```
+        from yolo_v5_tflite.yolo_v5 import detect
+        detect('zidane.jpg')
+        ```
+        
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown

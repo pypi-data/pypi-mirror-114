@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+yolo_v5_tflite/yolo_v5.py
+yolo_v5_tflite.egg-info/PKG-INFO
+yolo_v5_tflite.egg-info/SOURCES.txt
+yolo_v5_tflite.egg-info/dependency_links.txt
+yolo_v5_tflite.egg-info/requires.txt
+yolo_v5_tflite.egg-info/top_level.txt
