@@ -1,0 +1,8 @@
+vc_hid/__init__.py,sha256=qgd4CCvBqRIVctmCUMOzjluhFZcNLB3_2XYLrF46e5w,105
+vc_hid/hid_tde.py,sha256=Zbo5nKJFFeQCrB4GIg0e3b-GdQSibfLUwlCsNu31pg4,370
+vc_hid/vc_hid.dll,sha256=Ux9oPd_XJHyiJbEkAXZDQZUFmloko8GsWhDeiutp20s,231424
+vc_hid/vc_hid.pyd,sha256=OLrh1EFoUYBpQFUyjYnOqFEZrtDmIYE1gc_6vLD61FU,51200
+vc_hid-2021.3.1.dist-info/METADATA,sha256=VZjLr4TptWlz5F6321UfoxLk0xmGARBwmDI60ccHieQ,569
+vc_hid-2021.3.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+vc_hid-2021.3.1.dist-info/top_level.txt,sha256=AME05KuSKwnQYHFO84fSV8NOgtwGTMS7shXKLw-cKAY,7
+vc_hid-2021.3.1.dist-info/RECORD,,
