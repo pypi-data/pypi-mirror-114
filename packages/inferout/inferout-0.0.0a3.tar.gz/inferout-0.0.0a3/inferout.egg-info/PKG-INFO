@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: inferout
+Version: 0.0.0a3
+Summary: Distributed Scale Out Framework for ML models serving/inference
+Home-page: https://github.com/svrdev27/py-inferout
+License: GPLv3
+Download-URL: https://github.com/svrdev27/py-inferout/archive/v0.0.0-alpha.0.tar.gz
+Keywords: distributed,scale,ML,models,serving,inference,framework
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# py-inferout
+Distributed Scale Out Framework for ML models serving/inference
+
+**This Project is in development, Not intended for production use**
+
+
