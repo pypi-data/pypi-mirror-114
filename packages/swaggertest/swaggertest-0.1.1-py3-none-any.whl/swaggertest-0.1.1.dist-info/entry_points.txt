@@ -1,0 +1,6 @@
+[console_scripts]
+swaggertest = swaggertest.app:SwaggerTest.main
+
+[swaggertest.app]
+test-schemas = swaggertest.command:TestSchemas
+
