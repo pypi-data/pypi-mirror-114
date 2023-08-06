@@ -1,0 +1,4 @@
+[console_scripts]
+nb_to_py = import_nb:main
+pdiff = plot_diff:main
+
