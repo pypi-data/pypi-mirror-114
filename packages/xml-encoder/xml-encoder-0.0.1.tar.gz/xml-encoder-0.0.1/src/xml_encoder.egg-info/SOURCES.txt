@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/xml_encoder/__init__.py
+src/xml_encoder.egg-info/PKG-INFO
+src/xml_encoder.egg-info/SOURCES.txt
+src/xml_encoder.egg-info/dependency_links.txt
+src/xml_encoder.egg-info/top_level.txt
