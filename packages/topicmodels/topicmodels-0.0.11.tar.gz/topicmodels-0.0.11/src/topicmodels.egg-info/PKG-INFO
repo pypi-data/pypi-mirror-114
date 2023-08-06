@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: topicmodels
+Version: 0.0.11
+Summary: A package for topic modelling in python.
+Home-page: https://github.com/AmitKumarKushwaha/topicmodeling
+Author: Amit Kumar Kushwaha
+Author-email: kushwaha.amitkumar@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/AmitKumarKushwaha/topicmodeling/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Topic Modelling
+
