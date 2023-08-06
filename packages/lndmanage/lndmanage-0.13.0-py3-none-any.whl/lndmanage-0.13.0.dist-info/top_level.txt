@@ -1,0 +1,3 @@
+lndmanage
+lnregtest
+test
