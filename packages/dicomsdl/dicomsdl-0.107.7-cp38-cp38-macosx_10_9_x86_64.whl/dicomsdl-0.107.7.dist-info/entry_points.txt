@@ -1,0 +1,4 @@
+[console_scripts]
+dicomdump = dicomsdl.dump:main
+dicomshow = dicomsdl.show:main
+
