@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mlbaklava
+Version: 0.0.4.dev7
+Summary: UNKNOWN
+Home-page: https://github.com/intuit/baklava
+Maintainer: Intuit ML Platform
+Maintainer-email: baklava-maintainers@intuit.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: docker (>=2.0.0)
+Requires-Dist: appdirs (>=1.4.0)
+
+UNKNOWN
+
+

@@ -1,0 +1,10 @@
+[distutils.commands]
+execute = baklava.commands:Train
+predict = baklava.commands:Predict
+serve = baklava.commands:Predict
+train = baklava.commands:Train
+
+[distutils.setup_keywords]
+dockerlines = baklava.commands:passthrough
+python_version = baklava.commands:passthrough
+
