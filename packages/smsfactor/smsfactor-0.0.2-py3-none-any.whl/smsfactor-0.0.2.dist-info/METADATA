@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: smsfactor
+Version: 0.0.2
+Summary: A very simple package to use SMSFactor API to send easily SMS using Python
+Home-page: https://github.com/aleaforny/python-wordpress-api-jwt
+Author: Baptiste VANDENBORGHT
+Author-email: baptiste@twiiky-corp.fr
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/aleaforny/python-wordpress-api-jwt/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# python-smsfactor
+A very simple package to use SMSFactor API to send easily SMS using Python
+
+
