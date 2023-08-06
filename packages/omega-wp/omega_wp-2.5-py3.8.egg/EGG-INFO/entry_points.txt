@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        omega=omega_wp.__main__:main
+    
