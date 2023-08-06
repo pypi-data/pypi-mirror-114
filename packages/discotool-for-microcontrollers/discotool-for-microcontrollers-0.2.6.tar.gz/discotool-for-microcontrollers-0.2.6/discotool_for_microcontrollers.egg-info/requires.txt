@@ -1,0 +1,11 @@
+click>=7.1.2
+click-aliases==1.0.1
+psutil>=5.8.0
+pyserial>=3.4
+
+[:platform_system == "Linux"]
+pyudev
+
+[:platform_system == "Windows"]
+wmi
+pywin32
