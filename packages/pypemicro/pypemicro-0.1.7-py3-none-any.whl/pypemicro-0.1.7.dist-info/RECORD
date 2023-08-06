@@ -1,0 +1,13 @@
+pypemicro/__init__.py,sha256=C4lMJLUaD7GFu_aLUZH4OIFRG_q2mIqicaaoNHqr6J8,2048
+pypemicro/pemicro.py,sha256=ZL7o273QkykNlGqVSfPb_zY4pC4usxoRnlgjO7u0EpM,52843
+pypemicro/pemicro_const.py,sha256=ND4D72miuRZVphppE37hzPT-rGEsCVSsNadxnJx3yrI,7000
+pypemicro/libs/Linux/unitacmp-64.so,sha256=Z0Mn94FHzWDvcc7h5JNVGJO_xfceDgSnaghoyOv3UZY,3793904
+pypemicro/libs/MacOS/libusb.dylib,sha256=rax7_BSvyTd41isRbP59MGCVZhzI7paqFDMaXsvGNKQ,131508
+pypemicro/libs/MacOS/unitacmp-64.dylib,sha256=1majFzqVY-y8EJaKOs4qTk3GyWc-GcJPkcp3hWQun2k,3390728
+pypemicro/libs/Windows/unitacmp-32.dll,sha256=HSv4_guxlhatilIMczJ7zw5poWIOsK-6VrtawyHzfa0,949432
+pypemicro/libs/Windows/unitacmp-64.dll,sha256=kGssRalRe0UmeV7Lniem--60Kb_GXaxjXNcFXFJFyXY,506040
+pypemicro-0.1.7.dist-info/LICENSE,sha256=1XiY7xnUvtW1AHrGj59xb7rlwPhahJvz_2QeP5y1yA8,1948
+pypemicro-0.1.7.dist-info/METADATA,sha256=0rP1MN1rU5vzTbFRSQeJVJxIyCPxkMYDpFK91tY6xx0,2695
+pypemicro-0.1.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pypemicro-0.1.7.dist-info/top_level.txt,sha256=O0CDaP10aNtSwSvFVoDvgIbs0htr8q0j8qPWzlOc9Mw,10
+pypemicro-0.1.7.dist-info/RECORD,,
