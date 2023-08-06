@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pyparlaclarin"
+version = "0.0.1"
+description = ""
+authors = ["ninpnin <vainoyrjanainen@icloud.com>"]
+license = "MIT"
+packages = [
+    { include = "pyparlaclarin", from = "" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+devtools = "^0.5.1"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
