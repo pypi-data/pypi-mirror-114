@@ -1,0 +1,7 @@
+async_http2-0.1.0.dist-info/METADATA,sha256=XepEpJA5VGWDTrmSbZwsdZx5o1aEtVbj1oNTmUv32Pg,500
+async_http2-0.1.0.dist-info/WHEEL,sha256=1HEwZAITh_yiTwtXMHisvb8pD5d_tmirjdRqls8ajfc,129
+async_http2/__init__.py,sha256=PCGWrjudpEbVrGRqu__u5QSz3sqnfnfbMg00eTIs7Uw,27
+async_http2/__init__.pyi,sha256=l9JjIYKD__fdI3l_SKHDDLUR5-RS-a9-tUBgSUiTiA4,496
+async_http2/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+async_http2/async_http2.cpython-37m-x86_64-linux-gnu.so,sha256=tmkSfLlWTs00C5QQe7G-pL91GpwseN2FnjDC00hbZlU,10674528
+async_http2-0.1.0.dist-info/RECORD,,
