@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: statsnz
+Version: 1.0.0
+Summary: A collection of functions to enable ease of use of the various Stats NZ APIs
+Home-page: https://github.com/basanovase/statsnz
+Author: Flynn
+Author-email: flynn.mclean@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: pandas
+Requires-Dist: requests
+
+# statsnz
+
+A collection of functions to enable ease of use of the various Stats NZ APIs
+
+Installion:
+
+  pip install statsnz
+
+Examples:
+
+  To get the region with a set of coordinates:
+
+    from statsnz import statsnz
+
+    region_example = statsnz("YOUR_API_KEY",172.323,-41.242).get_region()
+
+
