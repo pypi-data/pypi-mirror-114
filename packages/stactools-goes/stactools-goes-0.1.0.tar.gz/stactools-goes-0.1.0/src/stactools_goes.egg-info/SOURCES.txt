@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/stactools/goes/__init__.py
+src/stactools/goes/commands.py
+src/stactools/goes/dataset.py
+src/stactools/goes/stac.py
+src/stactools_goes.egg-info/PKG-INFO
+src/stactools_goes.egg-info/SOURCES.txt
+src/stactools_goes.egg-info/dependency_links.txt
+src/stactools_goes.egg-info/requires.txt
+src/stactools_goes.egg-info/top_level.txt
