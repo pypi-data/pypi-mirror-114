@@ -1,0 +1,37 @@
+{
+    "os": "Darwin-20.1.0-x86_64-i386-64bit",
+    "python": "3.7.7",
+    "heartbeatAt": "2021-07-30T13:16:19.955944",
+    "startedAt": "2021-07-30T13:16:14.744601",
+    "docker": null,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "data.dataset_path=/Users/mozharovsky/Desktop/git-t5-tokenizer/data",
+        "data.dataset_column=text",
+        "data.max_sequence_length=512",
+        "data.overwrite_cache=False",
+        "data.num_workers=8",
+        "data.train_batch_size=1",
+        "data.eval_batch_size=1",
+        "model.model_type=t5",
+        "model.config_name=t5-base",
+        "model.tokenizer_path=/Users/mozharovsky/Desktop/git-t5-tokenizer/tokenizer",
+        "model.cache_dir=/Users/mozharovsky/Desktop/git-t5-tokenizer/model",
+        "trainer.logging_steps=1",
+        "logger.name=t5_experiment_01",
+        "logger.project=t5_tpu"
+    ],
+    "state": "running",
+    "program": "/Users/mozharovsky/GitHub/git-t5/git_t5/cli/train_model.py",
+    "codePath": "git_t5/cli/train_model.py",
+    "git": {
+        "remote": "git@github.com:formermagic/git-t5.git",
+        "commit": "dd9a86a8ed570c2011c00ca4463c9754dede1078"
+    },
+    "email": "mozharovsky@live.com",
+    "root": "/Users/mozharovsky/GitHub/git-t5",
+    "host": "Eugenes-MacBook-Pro.local",
+    "username": "mozharovsky",
+    "executable": "/Users/mozharovsky/GitHub/git-t5/.venv/bin/python"
+}

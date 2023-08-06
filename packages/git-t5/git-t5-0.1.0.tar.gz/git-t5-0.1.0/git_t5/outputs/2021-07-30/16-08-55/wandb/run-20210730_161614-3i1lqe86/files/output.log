@@ -1,0 +1,152 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epoch=0:  27%|████████████████████████████████████████████████████████████████████████████████████▎                                                                                                                                                                                                                                     | 112/417 [17:33<47:48,  9.41s/it]
+Traceback (most recent call last):
+  File "/Users/mozharovsky/.pyenv/versions/3.7.7/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/Users/mozharovsky/.pyenv/versions/3.7.7/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/Users/mozharovsky/GitHub/git-t5/git_t5/cli/train_model.py", line 77, in <module>
+  File "/Users/mozharovsky/GitHub/git-t5/git_t5/cli/train_model.py", line 73, in main
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/hydra/main.py", line 53, in decorated_main
+    config_name=config_name,
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/hydra/_internal/utils.py", line 368, in _run_hydra
+    lambda: hydra.run(
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/hydra/_internal/utils.py", line 211, in run_and_report
+    return func()
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/hydra/_internal/utils.py", line 371, in <lambda>
+    overrides=args.overrides,
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/hydra/_internal/hydra.py", line 105, in run
+    configure_logging=with_log_configuration,
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/hydra/core/utils.py", line 160, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "/Users/mozharovsky/GitHub/git-t5/git_t5/cli/train_model.py", line 67, in hydra_entry
+  File "/Users/mozharovsky/GitHub/git-t5/git_t5/core/trainer.py", line 87, in fit
+    state, dropout_rng, batch
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/jax/_src/traceback_util.py", line 183, in reraise_with_filtered_traceback
+    return fun(*args, **kwargs)
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/jax/_src/api.py", line 1639, in f_pmapped
+    global_arg_shapes=tuple(global_arg_shapes_flat))
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/jax/core.py", line 1621, in bind
+    return call_bind(self, fun, *args, **params)
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/jax/core.py", line 1552, in call_bind
+    outs = primitive.process(top_trace, fun, tracers, params)
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/jax/core.py", line 1624, in process
+    return trace.process_map(self, fun, tracers, params)
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/jax/core.py", line 607, in process_call
+    return primitive.impl(f, *tracers, **params)
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/jax/interpreters/pxla.py", line 637, in xla_pmap_impl
+    return compiled_fun(*args)
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/jax/interpreters/pxla.py", line 1160, in execute_replicated
+    out_bufs = compiled.execute_sharded_on_local_devices(input_bufs)
+KeyboardInterrupt

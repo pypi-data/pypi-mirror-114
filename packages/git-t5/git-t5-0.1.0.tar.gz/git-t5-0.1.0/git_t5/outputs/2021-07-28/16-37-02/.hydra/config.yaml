@@ -1,0 +1,23 @@
+tokenizer:
+  vocab_size: 30000
+  special_tokens: []
+  additional_special_tokens: []
+  model_max_length: null
+  show_progress: true
+tokenizer_trainer:
+  save_directory: ???
+data:
+  dataset_name: null
+  dataset_config_name: null
+  dataset_path: null
+  dataset_column: null
+  model_path: null
+  tokenizer_path: null
+  use_fast_tokenizer: true
+  cache_dir: null
+  overwrite_cache: false
+  validation_size: 0.05
+  max_sequence_length: null
+  num_workers: null
+  mlm_probability: 0.15
+  mean_noise_span_length: 3.0

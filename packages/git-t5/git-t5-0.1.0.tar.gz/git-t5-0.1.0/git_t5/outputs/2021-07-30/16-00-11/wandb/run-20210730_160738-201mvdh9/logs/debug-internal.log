@@ -1,0 +1,73 @@
+2021-07-30 16:07:44,655 INFO    MainThread:72026 [internal.py:wandb_internal():91] W&B internal server running at pid: 72026, started at: 2021-07-30 16:07:44.654649
+2021-07-30 16:07:44,656 DEBUG   HandlerThread:72026 [handler.py:handle_request():124] handle_request: check_version
+2021-07-30 16:07:44,656 INFO    WriterThread:72026 [datastore.py:open_for_write():80] open: /Users/mozharovsky/GitHub/git-t5/git_t5/outputs/2021-07-30/16-00-11/wandb/run-20210730_160738-201mvdh9/run-201mvdh9.wandb
+2021-07-30 16:07:44,658 DEBUG   SenderThread:72026 [sender.py:send():179] send: header
+2021-07-30 16:07:44,659 DEBUG   SenderThread:72026 [sender.py:send_request():193] send_request: check_version
+2021-07-30 16:07:44,797 DEBUG   SenderThread:72026 [sender.py:send():179] send: run
+2021-07-30 16:07:44,801 INFO    SenderThread:72026 [sender.py:_maybe_setup_resume():414] checking resume status for None/t5_tpu/201mvdh9
+2021-07-30 16:07:45,288 ERROR   SenderThread:72026 [internal_api.py:execute():133] 401 response executing GraphQL.
+2021-07-30 16:07:45,289 ERROR   SenderThread:72026 [internal_api.py:execute():134] {"errors":[{"message":"permission denied","path":["upsertBucket"],"extensions":{"code":"PERMISSION_ERROR"}}],"data":{"upsertBucket":null}}
+2021-07-30 16:07:45,661 INFO    WriterThread:72026 [datastore.py:close():288] close: /Users/mozharovsky/GitHub/git-t5/git_t5/outputs/2021-07-30/16-00-11/wandb/run-20210730_160738-201mvdh9/run-201mvdh9.wandb
+2021-07-30 16:07:45,662 INFO    HandlerThread:72026 [handler.py:finish():658] shutting down handler
+2021-07-30 16:07:45,662 ERROR   MainThread:72026 [internal.py:wandb_internal():159] Thread SenderThread:
+Traceback (most recent call last):
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/wandb/sdk/lib/retry.py", line 102, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 136, in execute
+    six.reraise(*sys.exc_info())
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/six.py", line 719, in reraise
+    raise value
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 130, in execute
+    return self.client.execute(*args, **kwargs)
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/gql/transport/requests.py", line 39, in execute
+    request.raise_for_status()
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/requests/models.py", line 953, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 925, in upsert_run
+    response = self.gql(mutation, variable_values=variable_values, **kwargs)
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/wandb/sdk/lib/retry.py", line 118, in __call__
+    if not check_retry_fn(e):
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/wandb/util.py", line 723, in no_retry_auth
+    raise CommError("Invalid or missing api_key.  Run wandb login")
+wandb.errors.CommError: Invalid or missing api_key.  Run wandb login
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/wandb/sdk/internal/internal_util.py", line 55, in run
+    self._run()
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/wandb/sdk/internal/internal_util.py", line 105, in _run
+    self._process(record)
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/wandb/sdk/internal/internal.py", line 292, in _process
+    self._sm.send(record)
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/wandb/sdk/internal/sender.py", line 181, in send
+    send_handler(record)
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/wandb/sdk/internal/sender.py", line 604, in send_run
+    self._init_run(run, config_value_dict)
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/wandb/sdk/internal/sender.py", line 640, in _init_run
+    commit=repo.last_commit,
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/wandb/apis/normalize.py", line 62, in wrapper
+    six.reraise(CommError, CommError(message, err), sys.exc_info()[2])
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/six.py", line 718, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 925, in upsert_run
+    response = self.gql(mutation, variable_values=variable_values, **kwargs)
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/wandb/sdk/lib/retry.py", line 118, in __call__
+    if not check_retry_fn(e):
+  File "/Users/mozharovsky/GitHub/git-t5/.venv/lib/python3.7/site-packages/wandb/util.py", line 723, in no_retry_auth
+    raise CommError("Invalid or missing api_key.  Run wandb login")
+wandb.errors.CommError: Invalid or missing api_key.  Run wandb login
+2021-07-30 16:07:47,687 INFO    MainThread:72026 [internal.py:handle_exit():78] Internal process exited
