@@ -1,0 +1,3 @@
+[console_scripts]
+dfour = frictionless_dfour.__main__:program
+
