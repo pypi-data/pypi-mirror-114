@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/UWUIZE/UWU.py
+src/UWUIZE/__init__.py
+src/UWUIZE.egg-info/PKG-INFO
+src/UWUIZE.egg-info/SOURCES.txt
+src/UWUIZE.egg-info/dependency_links.txt
+src/UWUIZE.egg-info/top_level.txt
