@@ -1,0 +1,8 @@
+devices_module/__init__.py,sha256=ivpWrkwN7oOibYMnUpML5zI7d-bmeFSQRdKq2l-C65s,644
+devices_module/items.py,sha256=lcd6FdAtmkYXuPY4zZ6CZz0bO6n6lwLYMziuPrSiMHc,8297
+devices_module/models.py,sha256=8-iv43X_cRpA-HysZ39cA-80htOIOlNbu7dtSDzzwsc,39775
+fastybird_devices_module-0.2.8.dist-info/LICENSE.md,sha256=xazLvYVG6Uw0rtJK_miaYXYn0Y7tWmxIJ35I21fCOFE,11356
+fastybird_devices_module-0.2.8.dist-info/METADATA,sha256=-Q4Gr17vqVH6ffLhC9lYFQ0R119n5GLX7SCsBzTXjio,6342
+fastybird_devices_module-0.2.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fastybird_devices_module-0.2.8.dist-info/top_level.txt,sha256=0oEGPOY2P_U34_BgvavBX7KtpZhmxDAvGddzlqQJz0o,15
+fastybird_devices_module-0.2.8.dist-info/RECORD,,
