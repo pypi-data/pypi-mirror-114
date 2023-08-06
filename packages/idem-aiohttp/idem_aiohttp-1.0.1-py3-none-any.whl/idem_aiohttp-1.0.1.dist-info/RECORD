@@ -1,0 +1,13 @@
+idem_aiohttp/conf.py,sha256=OBBUfTwbKXFY3hbxlQZgvb-OJEF4pd112XpBihMUYXE,284
+idem_aiohttp/version.py,sha256=8w8B3_c8f9YbSV-uYdur5glUi08JT6qWX4xYVz3y7aE,42
+idem_aiohttp/acct/http/basic_auth.py,sha256=iiV7TuwEO9NPi2VczXy1T8JxpnvvXs6tT07ETyBs4Y8,2707
+idem_aiohttp/exec/http/init.py,sha256=WRK_z6_N1IWvhY5dJwgs8pEl68XbXMIOPSq73UcmE-0,53
+idem_aiohttp/exec/http/json.py,sha256=dkkCKgu3YYBd0TxH2X6SPso2AK43VnvxXU2xyrjIfkw,2821
+idem_aiohttp/exec/http/request.py,sha256=8FxucgidlJuM_vRDVnHDKxluN7jbhaglY1Xtr6iFaLc,1457
+idem_aiohttp/tool/http/session.py,sha256=XaG5EOEP500pQGTBnupqNdSbPiPQCMbFytMYmVLNFJM,3862
+idem_aiohttp-1.0.1.dist-info/LICENSE,sha256=O7IpADM12kOhyGCTRMTdwc1BK4QtI9avtj2pRW-_cW0,11343
+idem_aiohttp-1.0.1.dist-info/METADATA,sha256=G3n0zwISRrGNAkxiozMG9F256IIMTPSDuEGP1c2aWVg,4093
+idem_aiohttp-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+idem_aiohttp-1.0.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+idem_aiohttp-1.0.1.dist-info/top_level.txt,sha256=5vBq2xsFLCA2qoED44_a_t50pqQ3VhVCFUNq1QT0T30,13
+idem_aiohttp-1.0.1.dist-info/RECORD,,
