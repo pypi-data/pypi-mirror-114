@@ -1,0 +1,13 @@
+afar/__init__.py,sha256=w2y6m03ijWw1vwf5aJBT1JPVZDUFgLK-T_uLm7QkC-8,155
+afar/_version.py,sha256=I3erkeHYhoEMesA8Z0Zml6qG_UHMw1AQvjK3SONEcqQ,497
+afar/core.py,sha256=9SUAysUdt5MTvFNGudEpIc_6L-W-9qwjhCEo4SI_sQE,11166
+afar/reprs.py,sha256=u5dg1cKFsZTizo8hmnxTY2PI_svYss6D0bNOhjAb4Fw,4207
+afar/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+afar/tests/test_core.py,sha256=rSTL2e4vtRG1ZTtU8thkNhwvMUKo4Fw12vl0Nj_hrgg,2458
+afar/tests/test_later.py,sha256=d4V1jxF9GGqIXkYjv1Wc0mZD3i4bDJc2liWClyfP4yY,2065
+afar/tests/test_remotely.py,sha256=vTt2UV_wDX24V9xI9b9WOMWl5DMj3P9k9Mr0vyEAwFY,834
+afar-0.3.2.dist-info/LICENSE,sha256=S72P_KInKLBlWkpr933OWzdH4Ll83ac9pK4MzxwJU1c,1486
+afar-0.3.2.dist-info/METADATA,sha256=tIpyx8px2AMgu7sdSwlq2r48T9-8uQS2pVIfuVopdu4,4341
+afar-0.3.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+afar-0.3.2.dist-info/top_level.txt,sha256=vlXZ38JfcQdRM8oVzAn2fz9U8V7ZL9qHTcWY-kgjiNQ,5
+afar-0.3.2.dist-info/RECORD,,
