@@ -1,0 +1,4 @@
+manim_kunyuan>=0.27
+sparrow_tool
+fake_headers
+requests
