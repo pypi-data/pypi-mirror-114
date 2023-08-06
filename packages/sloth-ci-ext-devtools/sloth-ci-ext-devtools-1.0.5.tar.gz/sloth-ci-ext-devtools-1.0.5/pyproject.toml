@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "sloth-ci-ext-devtools"
+version = "1.0.5"
+description = "Utilities to help you develop extensions and validators for Sloth CI"
+authors = ["Constantine Molchanov <moigagoo@live.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    {include = "sloth_ci_ext_devtools.py"},
+    {include = "templates/*.py"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+sloth-ci = "^2.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
