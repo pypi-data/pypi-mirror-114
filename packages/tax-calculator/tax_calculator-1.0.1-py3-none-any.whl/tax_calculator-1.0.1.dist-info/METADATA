@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: tax-calculator
+Version: 1.0.1
+Summary: Allows you to compute taxes
+Home-page: UNKNOWN
+Author: Massimo Bono
+Author-email: massimobono1@gmail.com
+License: MIT
+Keywords: tax
+Platform: UNKNOWN
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+License-File: README.md
+License-File: requirements.txt
+License-File: setup.py
+Requires-Dist: arrow (>=1.1.1)
+Requires-Dist: beautifulsoup4 (>=4.9.3)
+Requires-Dist: python-dateutil (>=2.8.2)
+Requires-Dist: requests (>=2.26.0)
+Requires-Dist: soupsieve (>=2.2.1)
+Requires-Dist: stringcase (>=1.2.0)
+Requires-Dist: urllib3 (>=1.26.6)
+
+# Introduction
+ 
+Allows a regime forfettario partita IVA to compute the taxes it needs to pay to the Italian Government.
+ 
+# Installation
+ 
+```
+pip install tax-calculator
+```
+ 
+For a help, use:
+ 
+```
+tax-calculator --help
+``` 
+
+To compute taxes:
+
+```
+tax-calculator forfettario --ateco="62.02.00" --ricavi=15000
+```
+
+# Features
+
+ * Allows you to compute regime forfettario taxes; 
+ 
+
