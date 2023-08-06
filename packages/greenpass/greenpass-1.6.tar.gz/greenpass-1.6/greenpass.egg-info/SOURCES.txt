@@ -1,0 +1,9 @@
+README.md
+greenpass
+setup.cfg
+setup.py
+greenpass.egg-info/PKG-INFO
+greenpass.egg-info/SOURCES.txt
+greenpass.egg-info/dependency_links.txt
+greenpass.egg-info/requires.txt
+greenpass.egg-info/top_level.txt
