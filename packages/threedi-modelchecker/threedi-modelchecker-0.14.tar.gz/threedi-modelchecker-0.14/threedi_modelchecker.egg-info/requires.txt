@@ -1,0 +1,13 @@
+Click
+GeoAlchemy2>=0.6
+SQLAlchemy>=1.2
+alembic>=0.9
+
+[postgis]
+psycopg2
+
+[test]
+factory_boy
+mock
+pytest
+pytest-cov
