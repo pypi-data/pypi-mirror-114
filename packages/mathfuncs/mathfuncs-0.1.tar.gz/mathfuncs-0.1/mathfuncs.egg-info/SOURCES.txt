@@ -1,0 +1,10 @@
+setup.py
+mathfuncs/Binomialdistribution.py
+mathfuncs/Gaussiandistribution.py
+mathfuncs/Generaldistribution.py
+mathfuncs/__init__.py
+mathfuncs.egg-info/PKG-INFO
+mathfuncs.egg-info/SOURCES.txt
+mathfuncs.egg-info/dependency_links.txt
+mathfuncs.egg-info/not-zip-safe
+mathfuncs.egg-info/top_level.txt
