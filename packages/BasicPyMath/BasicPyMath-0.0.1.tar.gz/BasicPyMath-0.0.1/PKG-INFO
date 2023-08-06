@@ -1,0 +1,43 @@
+Metadata-Version: 1.1
+Name: BasicPyMath
+Version: 0.0.1
+Summary: Basic Math Library
+Home-page: UNKNOWN
+Author: Gabriele Ambrogio
+Author-email: UNKNOWN
+License: MIT
+Description: This is a simple Calculator Library that contains more than 15 different mathematical operation.
+        The operation contained in this library are:
+        -Add
+        -Subtract
+        -Multiply
+        -Divide
+        -Sqrt
+        -Pow
+        -Greater
+        -Less
+        -Equal
+        -Different
+        -FindHypotenuse
+        -FindCathetus
+        -SquareArea
+        -RectangleArea
+        -ParallelogramArea
+        -TriangleArea
+        -TrapezoidArea
+        -RhombusArea
+        
+        Change Log
+        ==========
+        
+        
+        0.0.1 (28/07/2021)
+        ------------------
+        - First Release
+Keywords: math
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
