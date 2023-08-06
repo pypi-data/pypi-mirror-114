@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: spikeinterface
+Version: 0.13.0
+Summary: Python toolkit for analysis, visualization, and comparison of spike sorting output
+Home-page: https://github.com/SpikeInterface/spikeinterface
+Author: Alessio Paolo Buccino, Cole Hurwitz, Samuel Garcia, Jeremy Magland, Matthias Hennig
+Author-email: alessiop.buccino@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: spikeextractors (>=0.9.7)
+Requires-Dist: spiketoolkit (>=0.7.6)
+Requires-Dist: spikesorters (>=0.4.5)
+Requires-Dist: spikecomparison (>=0.3.3)
+Requires-Dist: spikewidgets (>=0.5.3)
+Provides-Extra: full
+Requires-Dist: h5py (>=3.2.1) ; extra == 'full'
+Requires-Dist: scipy (>=1.6.3) ; extra == 'full'
+Requires-Dist: pyintan (>=0.3.0) ; extra == 'full'
+Requires-Dist: pyopenephys (>=1.1.4) ; extra == 'full'
+Requires-Dist: neo (>=0.9.0) ; extra == 'full'
+Requires-Dist: MEArec (>=1.7) ; extra == 'full'
+Requires-Dist: pynwb (>=1.4) ; extra == 'full'
+Requires-Dist: lxml (>=4.6.3) ; extra == 'full'
+Requires-Dist: nixio (>=1.5.0) ; extra == 'full'
+Requires-Dist: shybrid (>=0.4.2) ; extra == 'full'
+Requires-Dist: pyyaml (>=5.4.1) ; extra == 'full'
+Requires-Dist: mtscomp (>=1.0.1) ; extra == 'full'
+Requires-Dist: sonpy ; (python_version > "3.7") and extra == 'full'
+
+<img src="doc/images/logo.png" class="center" />
+
+# SpikeInterface: a unified framework for spike sorting
+
+Here the branch of the OLD API of spikeinterface when spikeinterface was a metapackage depending on
+
+- [spikeextractors](https://github.com/SpikeInterface/spikeextractors): Data file I/O and probe handling. [![Build Status](https://travis-ci.org/SpikeInterface/spikeextractors.svg?branch=master)](https://travis-ci.org/SpikeInterface/spikeextractors)
+- [spiketoolkit](https://github.com/SpikeInterface/spiketoolkit): Toolkit for pre-processing, post-processing, validation, and automatic curation. [![Build Status](https://travis-ci.org/SpikeInterface/spiketoolkit.svg?branch=master)](https://travis-ci.org/SpikeInterface/spiketoolkit) 
+- [spikesorters](https://github.com/SpikeInterface/spikesorters): Python wrappers to spike sorting algorithms. [![Build Status](https://travis-ci.org/SpikeInterface/spikesorters.svg?branch=master)](https://travis-ci.org/SpikeInterface/spikesorters) 
+- [spikecomparison](https://github.com/SpikeInterface/spikecomparison): Comparison of spike sorting output (with and without ground-truth). [![Build Status](https://travis-ci.org/SpikeInterface/spikecomparison.svg?branch=master)](https://travis-ci.org/SpikeInterface/spikecomparison) 
+- [spikewidgets](https://github.com/SpikeInterface/spikewidgets): Data visualization widgets. [![Build Status](https://travis-ci.org/SpikeInterface/spikewidgets.svg?branch=master)](https://travis-ci.org/SpikeInterface/spikewidgets) 
+
+Now spikeinterface since v0.9.0 is a one unique package.
+
+You can still use this branch for old API
+
+
+```bash
+git clone https://github.com/SpikeInterface/spikeinterface.git
+cd spikeinterface
+git checkout 0.1X_old_api
+python setup.py install (or develop)
+```
+
+Then you can install the latest releases of the spikeinterface packages:
+
+```bash
+pip install --upgrade spikeextractors spiketoolkit spikesorters spikecomparison spikewidgets
+```
+
+You can also install the five packages from sources (e.g. for `spikeextractors`): 
+
+```bash
+git clone https://github.com/SpikeInterface/spikeextractors.git
+cd spikeextractors
+python setup.py install (or develop)
+```
+
+
