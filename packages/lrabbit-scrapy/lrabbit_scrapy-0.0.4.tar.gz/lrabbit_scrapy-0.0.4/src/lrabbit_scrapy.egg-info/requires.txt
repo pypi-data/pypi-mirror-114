@@ -1,0 +1,4 @@
+aiomysql>=0.0.21
+aiohttp>=3.7.3
+sqlalchemy>=1.4.0
+parsel==1.6.0

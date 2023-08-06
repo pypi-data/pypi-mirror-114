@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: lrabbit-scrapy
+Version: 0.0.4
+Summary: this is a small spider,you can easy running. When you often need to crawl a single site, you don't have to redo some repeated code every time, using this small framework you can quickly crawl data into a file or database.
+Home-page: https://github.com/litter-rabbit/lrabbit_scrapy
+Author: lrabbit
+Author-email: 709343607@qq.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/litter-rabbit/lrabbit_scrapy/issues
+Description: lrabbit_scrapy
+        =====
+        
+        this is a small spider,you can easy running. When you often need to crawl a single site, you don't have to redo some repeated code every time, using this small framework you can quickly crawl data into a file or database.
+        
+        
+        Installing
+        ----------
+        
+            $ pip3 install lrabbit_scrapy
+        
+        A Simple Example
+        ----------------
+        
+        
+            $ python -m lrabbit_scrapy newscrapy blog_scrapy
+            $ cd blog_scrapy
+            $ python blog_scrapy.py
+        
+        Links
+        -----
+        
+        - author: http://www.lrabbit.life/
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
