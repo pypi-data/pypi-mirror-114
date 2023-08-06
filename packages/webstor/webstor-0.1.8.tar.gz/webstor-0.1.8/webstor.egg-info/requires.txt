@@ -1,0 +1,6 @@
+dnspython
+beautifulsoup4
+mysql-connector-python
+js-regex
+gevent
+requests
