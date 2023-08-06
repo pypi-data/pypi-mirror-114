@@ -1,0 +1,65 @@
+[project]
+name = "infer_pyproject"
+version = "0.0.1"
+description = "Tools to manage elasticsearch indexes."
+authors = [
+    "Opscidia (Tech) <tech@opscidia.com>"
+]
+maintainer = [
+    "Frejus Laleye <frejus.Laleye@opscidia.com>"
+]
+readme = "README.md"
+python = "^3.7"
+homepage = "https://github.com/opscidia"
+repository = "https://github.com/opscidia/opscidia_elasticsearch"
+documentation = "https://github.com/opscidia/opscidia_elasticsearch"
+
+keywords = ['elasticsearch', 'ospcidia', 'index', 'create']
+
+classifiers = [
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: Developers",
+        "Programming Language :: Python :: 3",
+        "Operating System :: OS Independent",
+    ]
+
+# Requirements
+[dependencies]
+Click = "^7.0"
+
+#[dev-dependencies]
+#black = { version = "^18.3-alpha.0", python = "^3.6" }
+
+#[scripts]
+#poetry = "infer_pyproject.cli:main"
+
+[build-system]
+requires = [
+    "setuptools >= 35.0.2",
+    "setuptools_scm >= 2.0.0, <3"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 88
+target_version = ['py37']
+include = '\.pyi?$'
+exclude = '''
+
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+  | foo.py           # also separately exclude a file named foo.py in
+                     # the root of the project
+)
+'''

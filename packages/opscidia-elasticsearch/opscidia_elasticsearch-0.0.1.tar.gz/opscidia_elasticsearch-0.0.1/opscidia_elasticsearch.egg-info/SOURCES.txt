@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+opscidia_elasticsearch/__init__.py
+opscidia_elasticsearch/manager.py
+opscidia_elasticsearch.egg-info/PKG-INFO
+opscidia_elasticsearch.egg-info/SOURCES.txt
+opscidia_elasticsearch.egg-info/dependency_links.txt
+opscidia_elasticsearch.egg-info/requires.txt
+opscidia_elasticsearch.egg-info/top_level.txt
