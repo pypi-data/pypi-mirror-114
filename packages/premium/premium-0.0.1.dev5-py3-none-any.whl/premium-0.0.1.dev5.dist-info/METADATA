@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: premium
+Version: 0.0.1.dev5
+Summary: Python AI toolkits
+Home-page: https://github.com/GaoangLiu/psox
+Author: slipper
+Author-email: byteleap@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: smart-open
+
+`premium`: AI toolkits.
+
+## Usage
+```python
+import premium
+...
+```
+
+## Install
+`python3 -m pip install premium`
+
+
+
