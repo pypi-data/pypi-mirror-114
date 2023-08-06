@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "mhdscraper"
+version = "1.0.0"
+description = "Mediawiki history dumps scraper, a module that scrapes the site of \"Mediawiki history dumps\" and returns to you the available content."
+authors = ["Eugenio Berretta <euberdeveloper@gmail.com>"]
+keywords = ["mediawiki", "mediawiki-history-dumps", "tsv", "scraper", "wikipedia", "wikimedia"]
+readme = "README.md"
+license = "ISC"
+homepage = "https://github.com/euberdeveloper/wikimedia-history-dumps-scraper#pip"
+repository = "https://github.com/euberdeveloper/wikimedia-history-dumps-scraper#pip"
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.25.1"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.9.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.masonry.api"
