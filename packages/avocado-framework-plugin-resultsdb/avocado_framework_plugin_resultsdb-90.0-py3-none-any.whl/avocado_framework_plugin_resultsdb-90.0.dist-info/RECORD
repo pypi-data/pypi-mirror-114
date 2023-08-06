@@ -1,0 +1,6 @@
+avocado_resultsdb/__init__.py,sha256=gT95nhulKD_cgWPZSs5JPTjOTFRHIY8sSy4_CcjqXls,6967
+avocado_framework_plugin_resultsdb-90.0.dist-info/METADATA,sha256=kVguBLsK1F6pKFfYOKd0nRtE0ek6XKxSGJCDiSv9oSE,368
+avocado_framework_plugin_resultsdb-90.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+avocado_framework_plugin_resultsdb-90.0.dist-info/entry_points.txt,sha256=HjdS4GjIhS8IrWX_YljfE5AM_dXa0lqI6c_qjs1xg14,222
+avocado_framework_plugin_resultsdb-90.0.dist-info/top_level.txt,sha256=BNPvIw4AVi_SaJkWHOAuiMQ5Xf_xN6GcpZPKba06xb0,18
+avocado_framework_plugin_resultsdb-90.0.dist-info/RECORD,,
