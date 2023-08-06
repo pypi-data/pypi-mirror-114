@@ -1,0 +1,67 @@
+# Verificador de Respostas do Laboratório
+
+## Verificando a resposta de um problema
+
+Para verificar sua resposta para um problema, importe a classe responsável por
+verificar respostas com a seguinte linha de código:
+
+```
+from verificador_respostas.verificador import Verificador
+```
+
+Supondo que a variável ```x``` é a sua resposta, instancie o verificador
+e verifique a resposta da seguinte forma: 
+
+```
+verificador = Verificador()
+verificador.verificar_resposta(x)
+```
+
+A função retorna uma variável booleana com valor ```True``` caso a resposta esteja correta.
+
+### Arquivos de resposta com nome não-padronizado
+
+Quando instanciado usando os valores padrão do seu construtor, o verificador
+procura por um arquivo chamado "solucao", sem extensão, na pasta onde o script/notebook está sendo executado. Para casos onde o arquivo resposta não possui esse 
+nome, pode-se instanciar o verificador da seguinte maneira:
+
+```
+verificador = Verificador("nome do arquivo resposta")
+```
+
+E utilizá-lo como normalmente.
+
+## Gerando a resposta de um problema
+
+### Gerando resposta com interface
+
+Execute o script sem argumento nenhum:
+
+```$ python3 verificador.py```
+
+Na primeira janela, selecione o arquivo .txt contendo a resposta. Respostas para os problemas devem ser sequências de números, com ou sem casa decimal, separados por espaço, como:
+
+```
+1 1 2.0 3 5.4 7.328
+```
+
+O arquivo pode conter términos de linha, vírgulas, ou outros caracteres. Qualquer
+caracter que não é um digito é ignorado.
+
+Na segunda janela, escolha um nome para o arquivo e uma pasta de destino e clique em salvar.
+
+### Gerando resposta sem interface
+
+Para gerar um arquivo solução sem interface gráfica, execute:
+
+Linux: 
+
+``` $ python3 verificador.py -f /caminho/para/solucao.txt -d /caminho/de/destino/solucao ```
+
+Windows:
+
+```$ python3 verificador.py -f C:\\caminho\\para\\solucao.txt -d C:\\caminho\\de\\destino```
+
+Para ajuda em como utilizar o verificador para geração de arquivos resposta:
+
+``` $ python3 verificador.py -h ```

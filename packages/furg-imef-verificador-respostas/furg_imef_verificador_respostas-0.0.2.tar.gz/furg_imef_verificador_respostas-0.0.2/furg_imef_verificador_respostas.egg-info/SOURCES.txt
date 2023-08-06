@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+furg_imef_verificador_respostas/__init__.py
+furg_imef_verificador_respostas/verificador.py
+furg_imef_verificador_respostas.egg-info/PKG-INFO
+furg_imef_verificador_respostas.egg-info/SOURCES.txt
+furg_imef_verificador_respostas.egg-info/dependency_links.txt
+furg_imef_verificador_respostas.egg-info/requires.txt
+furg_imef_verificador_respostas.egg-info/top_level.txt
