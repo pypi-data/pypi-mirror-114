@@ -1,0 +1,36 @@
+Metadata-Version: 1.0
+Name: kping
+Version: 0.1.0
+Summary: Simple visual Ping
+Home-page: https://pypi.python.org/pypi/kping/
+Author: Kenneth Burgener
+Author-email: kenneth@oeey.com
+License: LICENSE.txt
+Description: kping
+        =====
+        
+        **kping** - Simple Visual Ping Utility
+        
+        Useful for watching ping failures.
+        
+        Source
+        ======
+        
+          GitHub - https://github.com/oeey/kping
+        
+        PyPI
+        ====
+        
+          PyPI - https://pypi.python.org/pypi/kping
+        
+            pip install kping
+        
+        Usage
+        =====
+        
+          1. pip install kping
+        
+          2. kping [options] <target>
+        
+        
+Platform: UNKNOWN

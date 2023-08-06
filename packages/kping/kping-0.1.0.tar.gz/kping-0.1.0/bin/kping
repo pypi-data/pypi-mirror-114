@@ -1,0 +1,91 @@
+#!/bin/bash
+
+
+# kping - visual ping history
+# Programmed by Kenneth Burgener (SEP 2011)
+#
+# Change Log:
+#   Sep 2012 - Initial version
+#   Oct 2011 - minute wrap
+#   Jul 2012 - added options, audio bell, minute count, restart flag
+
+
+UPBELL=false    # audio bell on ping recovery
+DOWNBELL=false  # audio bell on ping loss
+RESTART=false   # restart minute count on state change
+
+while getopts "aAr" Option
+do
+    case $Option in
+        a )
+            DOWNBELL=true ;;
+        A )
+            UPBELL=true ;;
+        r )
+            RESTART=true ;;
+        * )
+            echo "Error: Invalid option!"
+            exit 1
+            ;;
+    esac
+done
+shift $(($OPTIND - 1))
+
+if [ $# -ne 1 ] ; then
+    echo "Usage: $0 [-a:DOWNBELL] [-A:UPBELL] [-r:RESTART] <SERVER>"
+    echo "  UPBELL   - audio bell on ping recovery"
+    echo "  DOWNBELL - audio bell on ping loss"
+    echo "  RESTART  - restart minute count on state change"
+    exit 1
+fi
+
+# minute and seconds count
+MAXCOUNT=60
+count=0
+minutes=0
+
+# restart condition
+NEWSTATE=1
+OLDSTATE=1
+DORESTART=false
+
+printf "%03d " $minutes
+while true ; do
+
+    # check ping state
+    ping -c 1 -W 1 $1 > /dev/null
+    if [ $? -eq 0 ] ; then
+        NEWSTATE=1
+        echo -n "."
+        if $UPBELL ; then
+            echo -en "\a"
+        fi
+        sleep 1
+    else
+        NEWSTATE=0
+        echo -n "-"
+        if $DOWNBELL ; then
+            echo -en "\a"
+        fi
+        sleep .05
+    fi
+
+    # minute restart condition
+    if [ $RESTART == true -a $NEWSTATE -ne $OLDSTATE ] ; then
+        DORESTART=true
+    fi
+    OLDSTATE=$NEWSTATE
+
+    # minute and second count
+    count=$(( count + 1 ))
+    if [ $count -eq $MAXCOUNT -o $DORESTART == true ] ; then
+        echo
+        minutes=$(( minutes + 1 ))
+        printf "%03d " $minutes
+        count=0
+        DORESTART=false
+    fi
+
+done
+
+echo ""

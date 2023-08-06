@@ -1,0 +1,26 @@
+kping
+=====
+
+**kping** - Simple Visual Ping Utility
+
+Useful for watching ping failures.
+
+Source
+======
+
+  GitHub - https://github.com/oeey/kping
+
+PyPI
+====
+
+  PyPI - https://pypi.python.org/pypi/kping
+
+    pip install kping
+
+Usage
+=====
+
+  1. pip install kping
+
+  2. kping [options] <target>
+
