@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/Kei.py
+src/KeiAPI.egg-info/PKG-INFO
+src/KeiAPI.egg-info/SOURCES.txt
+src/KeiAPI.egg-info/dependency_links.txt
+src/KeiAPI.egg-info/requires.txt
+src/KeiAPI.egg-info/top_level.txt
