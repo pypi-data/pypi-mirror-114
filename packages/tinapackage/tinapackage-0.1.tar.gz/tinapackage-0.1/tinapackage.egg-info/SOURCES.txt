@@ -1,0 +1,8 @@
+README.md
+setup.py
+tinapackage/__init__.py
+tinapackage.egg-info/PKG-INFO
+tinapackage.egg-info/SOURCES.txt
+tinapackage.egg-info/dependency_links.txt
+tinapackage.egg-info/not-zip-safe
+tinapackage.egg-info/top_level.txt
