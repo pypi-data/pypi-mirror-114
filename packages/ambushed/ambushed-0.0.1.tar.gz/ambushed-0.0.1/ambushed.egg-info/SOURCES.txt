@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+ambushed/__init__.py
+ambushed.egg-info/PKG-INFO
+ambushed.egg-info/SOURCES.txt
+ambushed.egg-info/dependency_links.txt
+ambushed.egg-info/top_level.txt
