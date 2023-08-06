@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: Flask-kinesis
+Version: 0.1.9
+Summary: Flask plugin for aws kinesis stream
+Home-page: https://github.com/iidd0101/flask-kinesis
+Author: doyoung
+Author-email: hdy3405@gmail.com
+License: MIT
+Description: 
+        Flask-Kinesis
+        -------------
+        
+        With this library, you can simply record events from the flask application to aws kinesis
+        
+Platform: any
+Classifier: Development Status :: 1 - Planning
+Classifier: Framework :: Flask
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Natural Language :: Korean
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
