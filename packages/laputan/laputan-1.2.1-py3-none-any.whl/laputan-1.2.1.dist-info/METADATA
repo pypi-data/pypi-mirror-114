@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: laputan
+Version: 1.2.1
+Summary: Library of Astronomical Python Utility Tool for Astrophysics Nerds
+Home-page: https://github.com/kxxdhdn/laputan
+Author: D. HU
+Author-email: dangning.hu@cea.fr
+License: BSD
+Project-URL: IDL, https://github.com/kxxdhdn/laputan/tree/master/idl
+Project-URL: SwING, https://github.com/kxxdhdn/laputan/tree/master/swing
+Project-URL: Tests, https://github.com/kxxdhdn/laputan/tree/master/tests
+Keywords: astronomy astrophysics
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: astropy
+Requires-Dist: reproject
+Requires-Dist: h5py
+Requires-Dist: tqdm
+
+UNKNOWN
+
+
