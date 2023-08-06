@@ -1,0 +1,9 @@
+setup.py
+birb_client/__init__.py
+birb_client/client.py
+birb_client/rooms.py
+birb_client.egg-info/PKG-INFO
+birb_client.egg-info/SOURCES.txt
+birb_client.egg-info/dependency_links.txt
+birb_client.egg-info/requires.txt
+birb_client.egg-info/top_level.txt
