@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: divyaj_psee
+Version: 1.1.2
+Summary: Package for connecting HDFS and JHUB
+Home-page: UNKNOWN
+Author: Divyaj Balivada
+Author-email: b.divyajbalivada@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# divyaj_psee
+This code is used to connect to HDFS, it is built specifically for psee analytics team in Abbvie
+
+ - The functions under this module:
+        read_pickle(name), write_pickle(dataframe, name)
+
+## refer docstrings for better understanding
+
+
