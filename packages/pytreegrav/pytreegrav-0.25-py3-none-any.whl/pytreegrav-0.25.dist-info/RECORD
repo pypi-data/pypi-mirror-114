@@ -1,0 +1,12 @@
+pytreegrav/__init__.py,sha256=mAS20UatPJAnUG9YqDpOWrL-70t97Y8rC3KftsBSVwg,46
+pytreegrav/bruteforce.py,sha256=BTPRpk1rAO0kE--XEGbB0vNLN5OIaX3p4dvYDZ4sF0c,8355
+pytreegrav/dynamic_tree.py,sha256=6vJ4IuTsExPp3hBVPVU_jIlKgQwesbR8tJyIdLvMnKo,11323
+pytreegrav/frontend.py,sha256=jPnlS2Yv0xzyaE1uHWdGJrXpV7n89s6MxzYDYMdgcOo,20872
+pytreegrav/kernel.py,sha256=ZeiTN6Q_rtZZ0As_dUhDrprlW5H_kY84Hg7UXB2z1qE,1377
+pytreegrav/octree.py,sha256=RAfPyU8Db4UHM3azyQS54AzcJ36CyWIo9CMwIIk8i-Y,10391
+pytreegrav/treewalk.py,sha256=EudtynS3lExxvQ84lYSFq3wLhs5NzHNQ1Z0hBkPs0Pc,25316
+pytreegrav-0.25.dist-info/LICENSE.txt,sha256=uZImcz4dBjAQhrwznfy6c27X0z2s0A0TsH0onAKYfxg,1062
+pytreegrav-0.25.dist-info/METADATA,sha256=jC-lC_xXlqlKKjOBLAznuQtpISneIBMhIpm0HDWX-Lo,7290
+pytreegrav-0.25.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pytreegrav-0.25.dist-info/top_level.txt,sha256=avvX4vy0S5PTjhj5CZKR3qI9O1mg8WW6vnqiLqbIb7Y,11
+pytreegrav-0.25.dist-info/RECORD,,
