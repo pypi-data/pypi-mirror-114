@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: GaERP
+Version: 1.0
+Summary: Gestión Almacen + Contabilidad
+Home-page: https://pypi.python.org/pypi/GaERP
+Author: Gonzalo G. Campos
+Author-email: gonzalo.g.campos@gmail.com
+License: GPL v3.0
+Keywords: GaERP contabilidad almacen
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: Spanish
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE.txt
+
+ERP Contabilidad + Almacen para PYMES
+
