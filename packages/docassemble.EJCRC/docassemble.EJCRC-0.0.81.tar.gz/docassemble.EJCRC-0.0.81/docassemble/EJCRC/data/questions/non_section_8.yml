@@ -1,0 +1,209 @@
+metadata:
+  title: Appealing a Landlord Tenant Case from  Municipal Court
+  temporary session: true
+---
+attachment:
+  variable name: non_section_8
+  filename: non_section_8
+  docx template file: non_section_8.docx
+---
+attachment:
+  variable name: non_section_8_no_super
+  filename: non_section_8_no_super
+  docx template file: non_section_8_no_super.docx
+---
+mandatory: true
+question: |
+  Please complete the information for each plaintiff in this case.
+subquestion: |
+  A plaintiff is a party who is suing/taking the defendant(s) to court.  
+fields:
+  - How many plaintiffs are there?: plaintiffnumber
+    datatype: integer
+    choices:
+      - 1
+      - 2
+      - 3
+    default: 1   
+  - Plaintiff Full Name: plaintiffname1
+  - 2nd Plaintiff Full Name: plaintiffname2
+    js show if: |
+      val('plaintiffnumber') > 1
+  - 3rd Plaintiff Full Name: plaintiffname3
+    js show if: |
+      val('plaintiffnumber') > 2
+---
+question: |
+  Please complete the information for each defendant in this case.
+need:
+  plaintiffname1
+subquestion: |
+  A defendant is a party (individual, company, or institution) being sued. 
+fields:
+  - How many defendants are party to the case?: defendantnumber
+    datatype: integer
+    choices:
+      - 1
+      - 2
+      - 3
+    default: 1    
+  - Defendant Full Name: defendantname1
+  - 2nd Defendant Full Name: defendantname2
+    js show if: |
+      val('defendantnumber') > 1 
+  - 3rd Defendant Name: defendantname3
+    js show if: |
+      val('defendantnumber') > 2
+---
+need: 
+  defendantname1
+question: | 
+  Please provide the Case ID number for this case:
+subquestion: |  
+  If you cannot locate the Case ID number, you may either contact the civil filing office or find the number by searching for your case on the [FJD Civil Docket.](http://fjdefile.phila.gov/efsfjd/zk_fjd_public_qry_00.zp_disclaimer)
+  
+  [Click here if you need additional help (opens a separate tab)](${ interview_url(i='docassemble.EJCRC:data/questions/case_id_help.yml') }){:target="_blank"}.
+
+fields:
+  - Do you have a 9-digit case number?: nines
+    datatype: radio
+    choices: 
+      - Yes
+      - No
+  - 9-digit case number: serial
+    datatype: integer
+    required: false
+    js show if: |
+      val('nines') == 'Yes'
+    max: 999999999
+validation code: |
+  if nines == 'No':
+    validation_error("Please click the link for additional help")
+---
+mandatory: true
+need:
+  serial
+question: |
+  Please provide more information about yourself
+fields:
+  - What party were you in the original case?: filer
+    choices:
+     - Plaintiff
+     - Defendant
+  - What is your street address?: streetaddress
+  - What city and state do you live in?: cityandstate
+  - What is your ZIP Code?: zipcode
+  - What is your telephone number?: phoneo
+    required: false
+  - What is today's date?: date
+    datatype: date
+    default: |
+      ${ today() }
+---
+mandatory: true
+need:
+  filer
+question: |
+  Provide more information about your Municipal Court Order and appeal
+fields:
+  - Upload a copy of the Order you are appealing: orderupload
+    datatype: files
+  - When was the original decision ordered?: municipalcourtorderdate
+    datatype: date
+  - What type of lease is this?: lease
+    choices:
+      - Residential Lease: residential
+      - Non-Residential Lease: nonres
+  - Are you requesting a superseadas?: supersedeas
+    choices: 
+      - Yes: requested
+      - No: not
+    note: A supersedeas is a stay that will prevent you from being evicted as long as you pay escrow due to the court on time.
+  - Have you paid your rent this month?: paid
+    choices:
+      - Yes
+      - No
+    js show if: |
+      val('supersedeas') == 'requested'
+  - What is the total amount of monthly rent you personally pay?: rentamount
+    datatype: integer
+    js show if: |
+      val('supersedeas') == 'requested'
+  - What day of the month do you pay rent?: rentday
+    datatype: integer
+    min: 1
+    max: 31
+    js show if: |
+      val('supersedeas') == 'requested'
+---
+mandatory: true
+need: 
+  orderupload
+question: |
+  Please read and sign to the below text:
+subquestion: |
+  This Petition is verified by me. I understand that the statements contained in this Petition are true and correct to the best of my knowledge, information and belief. I understand that the statement herein is made subject to the penalties of 18 Pa. C.S.A. Section 4904 relating to unsworn falsification to authorities.
+signature: signature1
+---
+need:
+  paid
+question: |
+  Please read and sign to the bleow text
+subquestion: |
+  I verify that the statements made in the affidavit are true and correct to the best of my knowledge, information and belief. I understand that false statements herein are made subject to the penalties of 18 Pa.C.S. §4904 relating to unsworn falsification to authorities.
+signature: signature2
+---
+mandatory: true
+need:
+  done
+question: |
+  You have completed the process of filling out your appeal. Click continue to fill out Return of Service Affidavit. Click exit to return to the Philadelphia Court website
+action buttons:
+  - label: Continue
+    action: |
+      ${ interview_url(i='docassemble.EJCRC:data/questions/return_service.yml') } 
+    color: primary
+    placement: before
+  - label: Exit
+    action: https://courts.phila.gov
+---
+question: |
+  Thank you, ${ defendantname1 }!
+subquestion: |
+ ### [CLICK TO DOWNLOAD YOUR APPEAL](${ output_file1.url_for() })
+ 
+ 
+   YOU MUST FILE THIS COMPLAINT WITH THE COURT FILING OFFICE. [Click here](https://www.courts.phila.gov/pdf/manuals/civil-trial/FJD_Civil_E-Filing_User_Manual.pdf) for instructions on how to e-file your legal documents. [Click here](${ url_of('EFS_Instructions.pdf') }) for instructions on how to create an account to e-file your document(s).
+continue button field: finish
+continue button label: |
+  Finish Petition
+mandatory: True
+---
+mandatory: true
+need:
+  finish
+question: | 
+  Review the following reminders:
+subquestion: |
+  **[You can download your appeal documents here](${ output_file1.url_for() })**
+fields:
+  - I understand this document has not been filed with the court and that I must file it on my own.: nofile
+    datatype: yesnowide
+  - I have downloaded my appeal: download
+    datatype: yesnowide
+continue button field: done
+continue button label: |
+  Next
+validation code: |
+  if not download:
+    validation_error("You cannot continue until you indicate that you have downloaded your complaint.")
+  if not nofile:
+    validation_error("You cannot continue until you indicate that you understand you have not filed your complaint.")
+
+---
+mandatory: true
+code: |
+  if supersedeas == 'requested':
+    output_file1 = pdf_concatenate(non_section_8, orderupload)
+  if supersedeas == 'not': 
+    output_file1 = pdf_concatenate(non_section_8_no_super, orderupload)

@@ -1,0 +1,35 @@
+metadata:
+  title: Court of Common Pleas
+  temporary session: true
+---  
+mandatory: true
+question: |
+  How to find your case type
+subquestion: |  
+  There are three ways to determine what kind of case you are involved with.
+  
+    1. Review the documents you received from the court and from the property owner.  You may see the words “ejectment” or “landlord-tenant” on your documents.
+    
+    2. Search for your case history online in the court dockets.  The case type should be listed at top of the screen for your case. The Court of Common Pleas Civil docket can be found [here.](https://fjdefile.phila.gov/efsfjd/zk_fjd_public_qry_00.zp_disclaimer) and the Municipal Civil Court docket can be found [here](https://fjdclaims.phila.gov/phmuni/login.do#)
+    
+    3. Call the filing offices for the Court of Common Pleas (215)686-4251 and Municipal Court (215) 686-7980.
+
+continue button label: |
+  Click here to return to the previous page
+continue button field: known
+---
+mandatory: true
+need:
+  known
+question: |
+  Court of Common Pleas Cases
+subquestion: |
+  The Court of Common Pleas has jurisdiction over legal and equity actions, appeals from Municipal Court, and appeals from certain administrative agencies and boards.  This online tool can assist you with general filings for ejectment actions and Municipal Court landlord-tenant appeals.
+  
+  Select your case’s category to see what kind of documents this online tool can help you with.
+  
+  * [Ejectment]
+  * [Landlord-tenant appeal from Municipal Court]  
+  
+  [Ejectment]: ${ interview_url(i='docassemble.EJCRC:data/questions/ejectment_defendant_screen.yml') }
+  [Landlord-tenant appeal from Municipal Court]: ${ interview_url(i='docassemble.EJCRC:data/questions/appeal_LLT_case.yml') }
