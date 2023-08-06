@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+SnakeEyez/__init__.py
+SnakeEyez.egg-info/PKG-INFO
+SnakeEyez.egg-info/SOURCES.txt
+SnakeEyez.egg-info/dependency_links.txt
+SnakeEyez.egg-info/top_level.txt
