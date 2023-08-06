@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: webplucker
+Version: 0.0.8
+Summary: webplucker Is A Fast And Handy Package For Web Scraping
+Home-page: https://github.com/shivjeetbhullar/webplucker
+Author: Shivjeet Singh Bhullar
+Author-email: bhullarshivjeet@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.1
+Description-Content-Type: text/markdown
+Requires-Dist: cssselect
+Requires-Dist: lxml
+Requires-Dist: pi7db
+Requires-Dist: pyppeteer
+Requires-Dist: requests
+
+# WebPlucker
+<p align="center">
+<img title="WebPlucker"  alt="WebPlucker" src="https://raw.githubusercontent.com/shivjeetbhullar/webplucker/main/ic_launcher.png"> 
+</p>
+WebPlucker is a handy and fast python package for website scraping. It also supports javascript rendering in HTML pages.
+Websites built in react, angular, etc is also possible to scrape using webplucker.
+
+
+
+
