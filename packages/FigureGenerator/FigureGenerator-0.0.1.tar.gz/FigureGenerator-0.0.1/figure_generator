@@ -1,0 +1,98 @@
+#!usr/bin/env python
+# -*- coding: utf-8 -*-
+
+from __future__ import print_function, division
+import argparse, datetime, ast
+import FigureGenerator as sm
+from FigureGenerator.screenshot_maker import FigureGenerator
+
+
+if __name__ == "__main__":
+    copyrightMessage = (
+        "Contact: software@cbica.upenn.edu\n\n"
+        + "This program is NOT FDA/CE approved and NOT intended for clinical use.\nCopyright (c) "
+        + str(datetime.date.today().year)
+        + " University of Pennsylvania. All rights reserved."
+    )
+    parser = argparse.ArgumentParser(
+        prog="ScreenshotMaker",
+        formatter_class=argparse.RawTextHelpFormatter,
+        description="Constructing screenshots from medical images.\n\n"
+        + copyrightMessage,
+    )
+    parser.add_argument(
+        "-images",
+        type=str,
+        help="Input image files (comma-separated without any spaces in path and co-registered)",
+        required=True,
+    )
+    parser.add_argument(
+        "-masks",
+        type=str,
+        default=None,
+        help="Mask files  (comma-separated without any spaces in path and co-registered with images); if multiple files are passed, first is ground truth",
+        required=False,
+    )
+    parser.add_argument(
+        "-mask_opacity",
+        type=float,
+        default=0.5,
+        help="Mask opacity between 0-1",
+        required=False,
+    )
+    # parser.add_argument(
+    #     "-colormap",
+    #     type=str,
+    #     default="jet",
+    #     help="The color map to use for alpha blending. All options in https://simpleitk.org/doxygen/latest/html/classitk_1_1simple_1_1ScalarToRGBColormapImageFilter.html#ad6f89e6e076652b4debdfbfd82234c6f",
+    #     required=False,
+    # )
+    parser.add_argument(
+        "-output",
+        type=str,
+        help="Output screenshot file",
+        required=True,
+    )
+    ## this is problematic because these numbers will need to be translated after resampling the image
+    # parser.add_argument(
+    #     "-slice",
+    #     type=str,
+    #     default=None,
+    #     help="Slice number to pick screenshots from; if not defined and mask present, slices with largest areas are used; if masks are absent, middle of each axis from image(s) is used",
+    #     required=False,
+    # )
+    parser.add_argument(
+        "-axisrow",
+        type=ast.literal_eval,
+        default=False,
+        help="Put all axes views across each column and stack images and blends in rows, defaults to False",
+        required=False,
+    )
+    parser.add_argument(
+        "-bounded",
+        type=ast.literal_eval,
+        default=False,
+        help="Construct bounding box around binarized ground truth",
+        required=False,
+    )
+    parser.add_argument(
+        "-borderpc",
+        type=float,
+        default=0.05,
+        help="Percentage of size to use as border around bounding box (used only when mask and bounded are defined)",
+        required=False,
+    )
+
+    parser.add_argument(
+        "-v",
+        "--version",
+        action="version",
+        version="%(prog)s v{}".format(sm.version) + "\n\n" + copyrightMessage,
+        help="Show program's version number and exit.",
+    )
+
+    args = parser.parse_args()
+
+    sm = FigureGenerator(args)
+
+    print("Finished.")

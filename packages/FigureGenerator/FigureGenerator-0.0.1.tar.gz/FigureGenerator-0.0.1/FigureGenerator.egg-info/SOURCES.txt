@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+figure_generator
+setup.py
+FigureGenerator/__init__.py
+FigureGenerator/screenshot_maker.py
+FigureGenerator/utils.py
+FigureGenerator/version.py
+FigureGenerator.egg-info/PKG-INFO
+FigureGenerator.egg-info/SOURCES.txt
+FigureGenerator.egg-info/dependency_links.txt
+FigureGenerator.egg-info/not-zip-safe
+FigureGenerator.egg-info/requires.txt
+FigureGenerator.egg-info/top_level.txt
