@@ -1,0 +1,12 @@
+README.md
+setup.py
+mailengine/README.md
+mailengine/generator.py
+mailengine/rtf_template.raw
+mailengine/sendmail.py
+mailengine/templete.html
+mailengine/txt_template.raw
+mailengine.egg-info/PKG-INFO
+mailengine.egg-info/SOURCES.txt
+mailengine.egg-info/dependency_links.txt
+mailengine.egg-info/top_level.txt
