@@ -1,0 +1,4 @@
+[console_scripts]
+mng = rapidenv.console_scripts:mng
+renv = rapidenv.__main__:main
+
