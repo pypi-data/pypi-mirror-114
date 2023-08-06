@@ -1,0 +1,10 @@
+setup.py
+distributions_mbewu_2/Binomialdistribution.py
+distributions_mbewu_2/Gaussiandistribution.py
+distributions_mbewu_2/Generaldistribution.py
+distributions_mbewu_2/__init__.py
+distributions_mbewu_2.egg-info/PKG-INFO
+distributions_mbewu_2.egg-info/SOURCES.txt
+distributions_mbewu_2.egg-info/dependency_links.txt
+distributions_mbewu_2.egg-info/not-zip-safe
+distributions_mbewu_2.egg-info/top_level.txt
