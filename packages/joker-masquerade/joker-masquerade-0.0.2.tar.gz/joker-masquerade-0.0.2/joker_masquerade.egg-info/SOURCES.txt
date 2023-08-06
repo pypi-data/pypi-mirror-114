@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+joker/masquerade/__init__.py
+joker/masquerade/aes.py
+joker/masquerade/asymmetric.py
+joker/masquerade/rsa.py
+joker_masquerade.egg-info/PKG-INFO
+joker_masquerade.egg-info/SOURCES.txt
+joker_masquerade.egg-info/dependency_links.txt
+joker_masquerade.egg-info/namespace_packages.txt
+joker_masquerade.egg-info/not-zip-safe
+joker_masquerade.egg-info/requires.txt
+joker_masquerade.egg-info/top_level.txt
