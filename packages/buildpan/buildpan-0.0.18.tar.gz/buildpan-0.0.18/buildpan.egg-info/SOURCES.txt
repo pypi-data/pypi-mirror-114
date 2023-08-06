@@ -1,0 +1,11 @@
+README.md
+setup.py
+buildpan.egg-info/PKG-INFO
+buildpan.egg-info/SOURCES.txt
+buildpan.egg-info/dependency_links.txt
+buildpan.egg-info/entry_points.txt
+buildpan.egg-info/not-zip-safe
+buildpan.egg-info/requires.txt
+buildpan.egg-info/top_level.txt
+buildspan/__init__.py
+buildspan/gitci.py
