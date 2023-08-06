@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/spacecomx.cdk_billing_alarm.egg-info/PKG-INFO
+src/spacecomx.cdk_billing_alarm.egg-info/SOURCES.txt
+src/spacecomx.cdk_billing_alarm.egg-info/dependency_links.txt
+src/spacecomx.cdk_billing_alarm.egg-info/requires.txt
+src/spacecomx.cdk_billing_alarm.egg-info/top_level.txt
+src/spacecomx/cdk_billing_alarm/__init__.py
+src/spacecomx/cdk_billing_alarm/py.typed
+src/spacecomx/cdk_billing_alarm/_jsii/__init__.py
+src/spacecomx/cdk_billing_alarm/_jsii/cdk-billing-alarm@1.0.5.jsii.tgz
