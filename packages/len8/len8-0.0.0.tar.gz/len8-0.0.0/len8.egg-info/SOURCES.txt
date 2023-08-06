@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements-dev.txt
+setup.py
+len8/__init__.py
+len8.egg-info/PKG-INFO
+len8.egg-info/SOURCES.txt
+len8.egg-info/dependency_links.txt
+len8.egg-info/requires.txt
+len8.egg-info/top_level.txt
