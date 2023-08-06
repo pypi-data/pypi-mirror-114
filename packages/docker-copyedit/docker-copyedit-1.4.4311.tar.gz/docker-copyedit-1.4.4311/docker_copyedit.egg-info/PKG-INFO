@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: docker-copyedit
+Version: 1.4.4311
+Summary: allows to deploy to systemd-controlled containers without starting an actual systemd daemon
+Home-page: https://github.com/gdraheim/docker-copyedit
+Author: Guido U. Draheim
+Author-email: Guido.Draheim@gmx.de
+License: EUPL
+Description: README.md
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
