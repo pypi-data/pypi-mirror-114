@@ -1,0 +1,9 @@
+MANIFEST.in
+README.txt
+setup.py
+LvAut/AUT_THD.pyd
+LvAut/__init__.py
+LvAut.egg-info/PKG-INFO
+LvAut.egg-info/SOURCES.txt
+LvAut.egg-info/dependency_links.txt
+LvAut.egg-info/top_level.txt
