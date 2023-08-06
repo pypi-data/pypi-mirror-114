@@ -1,0 +1,9 @@
+haros_plugin_pyflwor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+haros_plugin_pyflwor/plugin.py,sha256=KZkfmCYpJjjrm0PfQY5XLi1vHiSwc9lGm0YRtbW5H6k,6300
+haros_plugin_pyflwor/pyflwor_monkey_patch.py,sha256=u4UYTywMuTz7jrP0AW9S6vOBwKSuFjtk9rtXJ6PgwT4,2861
+haros_plugin_pyflwor-0.2.1.dist-info/LICENSE,sha256=x_HylTcMnnXgLiDuDn28TG9grtpY7A-HaAiGQh5drjQ,1070
+haros_plugin_pyflwor-0.2.1.dist-info/METADATA,sha256=gXe4zrtbz-jsJp10rL16fYCBWrOLAnCuq6flwO9wU80,385
+haros_plugin_pyflwor-0.2.1.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+haros_plugin_pyflwor-0.2.1.dist-info/top_level.txt,sha256=OFnbThdHiFg68-P6azs9KtOoRy7Lm44TUfOQWKtu1LM,21
+haros_plugin_pyflwor-0.2.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+haros_plugin_pyflwor-0.2.1.dist-info/RECORD,,
