@@ -1,0 +1,13 @@
+
+[aiohttp]
+aiohttp
+
+[httpx]
+httpx
+
+[tests]
+pytest
+pytest-aio[curio,trio]
+pytest-mypy
+aiohttp
+httpx
