@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: fridayAI
+Version: 0.0.2
+Summary: fridayAI
+Home-page: UNKNOWN
+Author: Sam
+Author-email: sam06eer@gmail.com
+License: UNKNOWN
+Keywords: assistant,AI,Virtual,python
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: opencv-python
+Requires-Dist: Pyaudio
+Requires-Dist: pyttsx3
+Requires-Dist: SpeechRecognition
+Requires-Dist: keyboard
+Requires-Dist: instaloader
+Requires-Dist: wikipedia
+Requires-Dist: wolframalpha
+Requires-Dist: selenium
+Requires-Dist: pyautogui
+Requires-Dist: pywikihow
+Requires-Dist: PyPDF2
+Requires-Dist: twilio
+Requires-Dist: pywhatkit
+Requires-Dist: googletrans
+Requires-Dist: google-trans-new
+Requires-Dist: geopy
+Requires-Dist: geocoder
+Requires-Dist: win10toast
+
+A virtual assistant to automate windows based systems.
+To install:
+Run in Command Prompt: pip install <package name>
+Warning: Use the latest release only
+
+Get Started:
+This package comes with premade SpeechRecognition and Text-to-Speech systems.
+Also it has premade function to get started including Automation(Chrome, Youtube, Windows, Instagram, Twitter, Gmail),
+tell your loacation, AI-chatbot, Online-Class-Automation(Only for me), Answer any question, weather prediction, How-to-Do something
+and many more.
+
+To Use:
+create a new pythonn file and write the following code:
+from <this package name> import Fryday
+#replace this:- <this package name> with the name which the package is installed
+Fryday()
+
+
