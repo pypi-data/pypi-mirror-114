@@ -1,0 +1,241 @@
+metadata:
+  title: Answer to Civil Complaint for Ejectment
+  temporary session: true
+---
+attachment:
+  variable name: Answer_to_Complaint
+  filename: Answer_to_Complaint
+  docx template file: answer_complaint.docx
+---
+mandatory: True
+question: |
+  Answer to Civil Complaint for Ejectment
+subquestion: |
+  An answer is a way to formally respond to the complaint.  Please review the following rules of Pennsylvania Civil Procedure before completing this form.  
+
+  ###Rule 1026. Time for Filing. Notice to Plead.
+  
+  (a)  Except as provided by Rule 1042.4 or by subdivision (b) of this rule, every pleading subsequent to the complaint shall be filed within twenty days after service of the preceding pleading, but no pleading need be filed unless the preceding pleading contains a notice to defend or is endorsed with a notice to plead.
+   
+   Official Note - For the form of notice to defend see Rule 1018.1 and for the form of notice to plead see Rule 1361.
+   
+   Additional time within which to plead may be sought under Rule 248.
+   
+   Rule 1042.4 governs actions in which a professional liability claim is asserted.
+   
+   (b)  A defendant served outside the United States shall have sixty days from service of the complaint within which to plead.
+
+  ###Rule 1029. Denials. Effect of Failure to Deny.
+  
+  (a)  A responsive pleading shall admit or deny each averment of fact in the preceding pleading or any part thereof to which it is responsive. A party denying only a part of an averment shall specify so much of it as is admitted and shall deny the remainder. Admissions and denials in a responsive pleading shall refer specifically to the paragraph in which the averment admitted or denied is set forth.
+  
+  (b)  Averments in a pleading to which a responsive pleading is required are admitted when not denied specifically or by necessary implication. A general denial or a demand for proof, except as provided by subdivision (c) and (e) of this rule, shall have the effect of an admission.
+  
+  (c)  A statement by a party that after reasonable investigation the party is without knowledge or information sufficient to form a belief as the truth of an averment shall have the effect of a denial.
+  
+  Official Note - Reliance on subdivision (c) does not excuse a failure to admit or deny a factual allegation when it is clear that the pleader must know whether a particular allegation is true or false. See Cercone v. Cercone, 254 Pa. Super. 381, 386 A.2d 1 (1978).
+  
+  (d)  Averments in a pleading to which no responsive pleading is required shall be deemed to be denied.
+  
+  (e)  In an action seeking monetary relief for bodily injury, death or property damage, averments in a pleading to which a responsive pleading is required may be denied generally except the following averments of fact which must be denied specifically:
+  
+  (1)  averments relating to the identity of the person by whom a material act was committed, the agency or employment of such person and the ownership, possession or control of the property or instrumentality involved;
+  
+  (2)  if a pleading seeks additional relief, averments in support of such other relief; and
+  
+  (3)  averments in preliminary objections.
+   
+   Official Note - Subdivision (e) applies only to those actions for which damages for delay may be awarded pursuant to Rule of Civil Procedure 238.
+   
+   ###Rule 1022. Paragraphing.
+   
+   Every pleading shall be divided into paragraphs numbered consecutively. Each paragraph shall contain as far as practicable only one material allegation.
+
+fields:
+  - I understand and have reviewed the above rule(s) of civil procedure: user_saw_intro
+    datatype: yesnowide
+continue button label: |
+  Start Complaint
+validation code: |
+  if not user_saw_intro:
+    validation_error("You cannot continue until you indicate that you understand.")
+---
+mandatory: true
+need:
+  user_saw_intro
+question: |
+  Please complete the information for each plaintiff in this case.
+subquestion: |
+  A plaintiff is a party who is suing/taking the defendant(s) to court.  
+fields:
+  - How many plaintiffs are there?: plaintiffnumber
+    datatype: integer
+    choices:
+      - 1
+      - 2
+      - 3
+    default: 1   
+  - Plaintiff Full Name: plaintiffname1
+  - 2nd Plaintiff Full Name: plaintiffname2
+    js show if: |
+      val('plaintiffnumber') > 1
+  - 3rd Plaintiff Full Name: plaintiffname3
+    js show if: |
+      val('plaintiffnumber') > 2
+---
+question: |
+  Please complete the information for each defendant in this case.
+need:
+  plaintiffname1
+subquestion: |
+  A defendant is a party (individual, company, or institution) being sued. Name all of the defendants you are trying to remove from the property to the best of your ability. **If you do not know the names of some of the defendants, you may enter “All Occupants” in the name section.**
+fields:
+  - How many defendants are party to the case?: defendantnumber
+    datatype: integer
+    choices:
+      - 1
+      - 2
+      - 3
+    default: 1    
+  - Defendant Full Name: defendantname1
+  - 2nd Defendant Full Name: defendantname2
+    js show if: |
+      val('defendantnumber') > 1 
+  - 3rd Defendant Name: defendantname3
+    js show if: |
+      val('defendantnumber') > 2
+---
+need: 
+  defendantname1
+question: | 
+  Please provide the Case ID number for this case:
+subquestion: |  
+  If you cannot locate the Case ID number, you may either contact the civil filing office or find the number by searching for your case on the [FJD Civil Docket.](http://fjdefile.phila.gov/efsfjd/zk_fjd_public_qry_00.zp_disclaimer)
+  
+  [Click here if you need additional help (opens a separate tab)](${ interview_url(i='docassemble.EJCRC:data/questions/case_id_help.yml') }){:target="_blank"}.
+
+fields:
+  - Do you have a 9-digit case number?: nines
+    datatype: radio
+    choices: 
+      - Yes
+      - No
+  - 9-digit case number: serial
+    datatype: integer
+    required: false
+    js show if: |
+      val('nines') == 'Yes'
+    max: 999999999
+validation code: |
+  if nines == 'No':
+    validation_error("Please click the link for additional help")
+---
+need:
+  nines
+question: |
+  Please respond to the numbered paragraphs in the Complaint in Ejectment you received from the plaintiff.
+subquestion: |
+  If you do not have a copy readily available, you may call the Civil Filing Office at 215-686-4251 or follow [these instructions](${ url_of('docket_instructions.pdf') }) to find the complaint against you.
+fields:
+  - Do you have a copy of the complaint?: copy
+    datatype: radio 
+    choices:
+    - Yes
+    - No
+  - Respond to paragraph number 1 on the Complaint for Ejectment: paragraph1
+    datatype: area
+    js show if: |
+      val('copy') == 'Yes'
+  - Respond to paragraph number 2 on the Complaint for Ejectment: paragraph2
+    datatype: area
+    js show if: |
+      val('copy') == 'Yes'
+  - Respond to paragraph number 3 on the Complaint for Ejectment: paragraph3
+    datatype: area
+    js show if: |
+      val('copy') == 'Yes'
+  - Respond to paragraph number 4 on the Complaint for Ejectment: paragraph4
+    datatype: area
+    js show if: |
+      val('copy') == 'Yes'
+  - Respond to paragraph number 5 on the Complaint for Ejectment: paragraph5
+    datatype: area
+    js show if: |
+      val('copy') == 'Yes'
+  - Respond to paragraph number 6 on the Complaint for Ejectment: paragraph6
+    datatype: area
+    js show if: |
+      val('copy') == 'Yes'   
+validation code: |
+  if copy == 'No':
+    validation_error("You cannot continue until you find the complaint in ejectment.")
+---
+need:
+  paragraph1
+question: | 
+  Please provide the following information:
+fields:
+  - Today's date: date
+    datatype: date
+    default: |
+      ${ today() }
+mandatory: true
+---
+mandatory: true
+need:
+  date
+question: |
+  Review the following text and sign below:
+subquestion: |
+  ### VERIFICATION
+  I, ${ defendantname1 }, Defendant, verify that the facts set forth in the foregoing are true and correct to the best of my information, knowledge and belief.
+	
+	I understand that the statements contained herein are subject to the Penalties of 18 Pa.C.S.A., Section 4904 relating to unsworn falsification to authorities.
+
+signature: signature1
+under: |
+  ${ defendantname1 }
+---
+need:
+  signature1
+question: |
+  Thank you, ${ plaintiffname1 }!
+subquestion: |
+ ### [CLICK TO DOWNLOAD YOUR ANSWER TO CIVIL COMPLAINT](${ Answer_to_Complaint.url_for() })
+ 
+ 
+   YOU MUST FILE THIS ANSWER WITH THE COURT FILING OFFICE. [Click here](https://www.courts.phila.gov/pdf/manuals/civil-trial/FJD_Civil_E-Filing_User_Manual.pdf) for instructions on how to e-file your legal documents. [Click here](${ url_of('EFS_Instructions.pdf') }) for instructions on how to create an account to e-file your document(s).
+continue button field: finish
+continue button label: |
+  Finish Answer
+mandatory: True
+---
+mandatory: true
+need:
+  finish
+question: | 
+  Review the following reminders:
+subquestion: |
+  **[You can download your answer here](${ Answer_to_Complaint.url_for() })**
+fields:
+  - I understand that I have not filed my answer by using this website: nofile
+    datatype: yesnowide
+  - I have downloaded my answer: download
+    datatype: yesnowide
+continue button field: done
+continue button label: |
+  Next
+validation code: |
+  if not download:
+    validation_error("You cannot continue until you indicate that you have downloaded your answer.")
+  if not nofile:
+    validation_error("You cannot continue until you indicate that you understand you have not filed your answer.")
+---
+mandatory: true
+need:
+  done
+question: |
+  You have completed the process of filling out your answer to civil complaint. Click exit to return to the Philadelphia Court website
+buttons:
+  - Exit: exit
+    url: https://courts.phila.gov

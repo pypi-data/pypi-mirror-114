@@ -1,0 +1,68 @@
+metadata:
+  title: Appealing from Municipal Court
+  temporary session: true
+---
+mandatory: true
+question: |
+  Appealing a landlord-tenant case from Municipal Court
+subquestion: |
+  The Municipal Court can enter a money judgment against you and grant possession for the landlord.  Possession gives the landlord the right to physically evict you from your home.  If you would like to appeal your Municipal Court decision, you must file your appeal within the filing deadlines.  If you are also looking postpone the eviction process during your appeal, you must pay your rent into an escrow account managed by the court.  
+
+  **Filing Deadlines**
+  
+  * To appeal possession and/or Money Judgment, you have 10 DAYS to appeal from the date judgment is entered
+  * To appeal Money Judgment Only, you have 30 DAYS to appeal from the date judgment is entered
+
+  **Escrow Deposit**
+    
+    *Initial Deposit*
+    
+    When you file your appeal, either 3 months rent or the rent judgment amount entered by the Municipal Court is required at the time of filing UNLESS you are low-income. Low-income tenants may pay 1/3 of the monthly rent at the time of filing and the remaining 2/3 of the monthly rent within 20 days of filing the appeal.  
+    
+    *Continue to Pay into Escrow*
+    
+    After you have paid the initial deposit, you must continue to submit your monthly rent into the escrow account until your appeal is heard by the Court of Common Pleas.
+continue button label: |
+  Start my Municipal Court appeal
+continue button field: muni_appeal
+---
+mandatory: true
+need:
+  muni_appeal
+question: |
+  Philadelphia County Local Rules on Municipal Court Appeals
+subquestion: |
+  Please review the Philadelphia County Local Rules on Municipal Court Appeals.
+  
+  ###Rule 310 Municipal Court Appeals— General. 
+  
+  (A)  A default judgment may only be subject to appellate review in the manner prescribed by Philadelphia Civil Rule 313. 
+  
+  (B)  Except as provided by paragraph (C) below, a party may appeal for a trial de novo to the Court of Common Pleas from the entry of a judgment by the Municipal Court in the manner prescribed by Philadelphia Civil Rules 311 and 312. 
+  
+  (C)  A party may appeal the grant or denial by the Municipal Court of a petition to open a judgment by default or any other post-judgment order which would have been appealable had it been entered by the Court of Common Pleas, only in the manner prescribed by Philadelphia Civil Rule 313. 
+   
+   Note: Adopted by the Board of Judges, General Court Regulation 87-1, effective April 6, 1987. 
+   
+   (C)(1) If the judgment is for the payment of money, the appeal shall operate as a supersedeas when the appellant files with the Administrator of the Municipal Court a copy of the Notice of Appeal attested by the Prothonotary. 
+   
+   (2) If the appellant is the tenant in a landlord/tenant action, the appeal shall operate as a supersedeas when the appellant files with the Administrator of the Municipal Court a copy of the Notice of Appeal attested by the Prothonotary so long as rent is paid each month on the date specified in the lease agreement with one of the following: the Prothonotary’s Office, the Urban League, a bank insured by F.D.I.C. or a savings association insured by F.S.L.I.C. and P.S.A.I.C., until final disposition of the appeal. 
+   
+   (D) Upon the filing of the Notice of Appeal and the payment of the fees therefor, the Prothonotary shall assign the Common Pleas Court Term and Number, and the date, time and place of an arbitration hearing, if applicable, pursuant to Philadelphia Civil Rules *1301 and *1303(A). 
+   
+   (E) Any party may request a trial by jury in accordance with Pa.R.C.P. 1007.1 and Philadelphia Civil Rule *1007.1. 
+   
+   Note: Adopted by the Board of Judges, General Court Regulation 87-1, effective April 6, 1987. 
+   
+   ###Rule 311- Municipal Court Appeals; Supersedeas and Jury Trials. 
+   
+   (A)  A notice of appeal from the entry of judgment by the Municipal Court to the Court of Common Pleas shall be filed within thirty days from the date of entry of judgment and copies shall be served upon all other attorneys of record and unrepresented parties. 
+   
+   (B)  The appellant shall pay the appropriate fee and file with the Prothonotary a Notice of Appeal and a certification of service. 
+   
+fields:
+  - I understand and have reviewed the above rule(s) of civil procedure.: understand
+    datatype: yesnowide
+validation code: |
+  if not understand:
+    validation_error("You cannot continue until you indicate that you understand.")
