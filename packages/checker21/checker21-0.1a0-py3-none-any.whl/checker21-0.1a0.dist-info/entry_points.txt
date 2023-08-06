@@ -1,0 +1,3 @@
+[console_scripts]
+checker21 = checker21.management:execute_from_command_line
+

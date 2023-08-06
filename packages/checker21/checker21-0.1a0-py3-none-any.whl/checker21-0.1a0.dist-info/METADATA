@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: checker21
+Version: 0.1a0
+Summary: Checker for C projects in 21 school
+Home-page: https://github.com/PavelICS/checker21
+Author: Donnor Elyn
+Author-email: delyn@student.21-school.ru
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/PavelICS/checker21/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# checker21
+
