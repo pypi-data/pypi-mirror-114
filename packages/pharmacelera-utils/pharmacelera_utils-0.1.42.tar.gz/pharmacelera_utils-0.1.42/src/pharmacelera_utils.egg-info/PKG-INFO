@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pharmacelera-utils
+Version: 0.1.42
+Summary: Utility functions to execute pharmacelera scripts
+Home-page: https://bitbucket.org/pharmacelera/pharmqsar-examples.git
+Author: Pharmacelera developers
+Author-email: support@pharmacelera.com
+License: Mozilla Public License Version 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+
