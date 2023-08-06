@@ -1,0 +1,27 @@
+{% extends "core/base.html" %}
+
+{% load i18n %}
+
+{% block browser_title %}{% trans "Delete application" %}{% endblock %}
+{% block page_title %}{% trans "Delete application" %}{% endblock %}
+
+{% block content %}
+  <div class="alert info">
+    <p>
+      <i class="material-icons left">warning</i>
+      {% blocktrans with application_name=application.name %}Are you sure to delete the application {{ application_name }}?{% endblocktrans %}
+    </p>
+  </div>
+
+  <form method="post" action="{% url 'oauth2_provider:delete' application.pk %}">
+    {% csrf_token %}
+    <button type="submit" class="btn waves-effect waves-light red">
+      <i class="material-icons left">delete</i>
+      {% trans "Delete" %}
+    </button>
+    <a class="btn waves-effect waves-light" href="{% url "oauth2_provider:list" %}">
+      <i class="material-icons left">close</i>
+      {% trans "Cancel" %}
+    </a>
+  </form>
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends "core/base.html" %}
+
+{% load i18n %}
+
+{% block browser_title %}{% blocktrans %}OAuth2 Applications{% endblocktrans %}{% endblock %}
+{% block page_title %}
+    <a href="{% url "oauth_list" %}"
+       class="btn-flat primary-color-text waves-light waves-effect">
+      <i class="material-icons left">chevron_left</i> {% trans "Back" %}
+    </a>
+    {{ application.name }}
+{% endblock %}
+
+{% block content %}
+  <a class="btn waves-effect waves-light btn-margin" href="{% url "oauth_update" application.id %}">
+    <i class="material-icons left">edit</i>
+    {% trans "Edit" %}
+  </a>
+  <a class="btn red waves-effect waves-light btn-margin" href="{% url "oauth_delete" application.id %}">
+    <i class="material-icons left">delete_forever</i>
+    {% trans "Delete" %}
+  </a>
+  <table class="responsive-table">
+    <tbody>
+      <tr>
+        <th>
+          {% trans "Client id" %}
+        </td>
+        <td>
+          <code class="break-word">{{ application.client_id }}</code>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          {% trans "Client secret"%}
+        </td>
+        <td>
+          <code class="break-word">{{ application.client_secret }}</code>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          {% trans "Client type"%}
+        </td>
+        <td>
+          {{ application.client_type }}
+        </td>
+      </tr>
+      <tr>
+        <th>
+          {% trans "Authorization Grant Type"%}
+        </td>
+        <td>
+          {{ application.authorization_grant_type }}
+        </td>
+      </tr>
+      <tr>
+        <th>
+          {% trans "Redirect URIs"%}
+        </td>
+        <td>
+          {{ application.redirect_uris }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+{% endblock %}
