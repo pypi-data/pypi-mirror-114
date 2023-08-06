@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<link rel="icon" href="/logo.ico" type="image/x-icon"/>
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/css/modern-business.css" rel="stylesheet">
+		<link href="/css/font-awesome.min.css" rel="stylesheet" type="textcss">
+		<script src="/js/axios.min.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <style>
+        body{background-color: white}
+        iframe{border:0;}
+        .view_files{
+            width:60%;
+            padding:0;
+            margin:0;
+        }
+    </style>
+    <body>
+        <iframe src="/head.html" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="height:8%;"></iframe><br>
+        <div style="position:fixed;right:0px;top:0px;">
+        {git_button}
+        <button class="btn btn-outline-warning" onclick="javascript:button_quit()">
+            <svg t="1626337115769" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1942" width="20" height="20"><path d="M512 128v70.4H249.6c-25.6 0-51.2 25.6-51.2 51.2v524.8c0 25.6 25.6 51.2 51.2 51.2H512V896H249.6c-64 0-121.6-57.6-121.6-121.6V249.6C128 185.6 185.6 128 249.6 128H512z m384 390.4c0 6.4 0 6.4 0 0-6.4 6.4-6.4 6.4 0 0 0 6.4-6.4 6.4-6.4 6.4s0 6.4-6.4 6.4l6.4-6.4-6.4 6.4L704 704c-6.4 6.4-12.8 12.8-25.6 12.8s-19.2-6.4-25.6-12.8c-12.8-12.8-12.8-38.4 0-51.2L768 537.6H403.2c-19.2 0-32-12.8-38.4-32v-6.4c0-19.2 19.2-38.4 38.4-38.4H768l-115.2-115.2c-12.8-12.8-12.8-32-6.4-44.8l6.4-6.4c12.8-12.8 38.4-12.8 51.2 0l179.2 172.8 6.4 6.4v12.8-6.4c6.4 32 6.4 38.4 6.4 38.4z" p-id="1943" fill="#FFC157"></path></svg>
+            退出PyCheer
+        </button>
+        <button class="btn btn-outline-danger" onclick="javascript:button_close()">
+            <svg t="1626264762889" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2608" width="20" height="20"><path d="M502.46235723 511.12844316a32.99604434 32.99604434 0 0 1-33.61436983-32.26529707V94.43393106C468.8479874 76.55873135 483.91262158 62 502.46235723 62c18.60594697 0 33.72679159 14.61494268 33.7267916 32.43393105v384.26058106a33.05225566 33.05225566 0 0 1-33.67058028 32.43393105zM492.34431904 961.38111377a437.15543203 437.15543203 0 0 1-304.10323857-121.52887295A413.49046729 413.49046729 0 0 1 96.05451641 707.98048438a402.0233581 402.0233581 0 0 1 15.4581126-354.01889004A424.67651982 424.67651982 0 0 1 242.37258154 209.27365771a34.45753887 34.45753887 0 0 1 46.99266241 7.53231622 31.59076201 31.59076201 0 0 1-7.86958418 45.13768945 358.96548692 358.96548692 0 0 0-110.39903175 122.20340889 334.738408 334.738408 0 0 0-41.54016532 162.22586835c0 93.53563594 37.77400635 181.45013994 106.35181699 247.55465128a367.17233994 367.17233994 0 0 0 256.54846201 102.52944755 367.39718437 367.39718437 0 0 0 256.54846289-102.47323623 341.53997783 341.53997783 0 0 0 106.23939434-247.6108626 334.45735136 334.45735136 0 0 0-41.42774268-162.22586835 358.62821895 358.62821895 0 0 0-110.56766573-122.09098623 31.59076201 31.59076201 0 0 1-8.26306435-44.51936485l0.56211328-0.67453593a34.40132754 34.40132754 0 0 1 46.93645196-7.53231623 424.11440654 424.11440654 0 0 1 130.80374121 144.6317253 401.62987881 401.62987881 0 0 1 15.51432392 354.01889004 412.92835401 412.92835401 0 0 1-92.18656406 131.92796777 430.57870839 430.57870839 0 0 1-136.70592978 88.92630703A442.4955082 442.4955082 0 0 1 492.34431904 961.38111377z" fill="#d81e06" p-id="2609"></path></svg>
+            关闭PyCheer
+        </button>
+    </div>
+    <div style="width:80%;padding-left:10%;">
+        {breadcrumb}
+        <button class="btn btn-outline-primary" onclick="javascript:new_file()">
+            <svg t="1626441297260" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2297" width="20" height="20"><path d="M61.44 122.92096A122.83904 122.83904 0 0 1 184.32 0h532.48a40.96 40.96 0 0 1 28.95872 12.00128l204.8 204.8A40.96 40.96 0 0 1 962.56 245.76v655.5648c0 67.74784-55.11168 122.6752-122.88 122.6752H184.32a122.88 122.88 0 0 1-122.88-122.92096V122.92096z m819.2 139.79648L699.84256 81.92H184.29952C161.64864 81.92 143.36 100.22912 143.36 122.92096v778.15808A40.96 40.96 0 0 0 184.32 942.08h655.36c22.56896 0 40.96-18.30912 40.96-40.7552V262.71744zM307.2 512a40.96 40.96 0 0 1 40.7552-40.96h328.0896c22.50752 0 40.7552 18.18624 40.7552 40.96a40.96 40.96 0 0 1-40.7552 40.96H347.9552A40.7552 40.7552 0 0 1 307.2 512z m204.8-204.8a40.96 40.96 0 0 1 40.96 40.7552v328.0896c0 22.50752-18.18624 40.7552-40.96 40.7552a40.96 40.96 0 0 1-40.96-40.7552V347.9552c0-22.50752 18.18624-40.7552 40.96-40.7552z" fill="#007BFF" p-id="2298"></path></svg>
+            新建文件
+        </button>
+        <button class="btn btn-outline-primary" onclick="javascript:new_folder()">
+            <svg t="1626441415447" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2686" width="20" height="20"><path d="M846.3 233.4H514c-10 0-19.1-5.8-23.2-14.9l-20.7-45.2c-18.5-40.5-58.9-66.4-103.4-66.4h-187C116.9 106.9 66 157.8 66 220.6V790c0 62.8 50.9 113.7 113.7 113.7h666.5c62.8 0 113.7-50.9 113.7-113.7V347.2c0.1-62.9-50.8-113.8-113.6-113.8zM896 790c0 27.5-22.3 49.7-49.7 49.7H179.7c-27.5 0-49.7-22.3-49.7-49.7V220.6c0-27.5 22.3-49.7 49.7-49.7h187c19.4 0 37.2 11.4 45.2 29l29.1 63.6c9.4 20.6 30 33.8 52.7 33.8h352.6c27.5 0 49.7 22.3 49.7 49.7v443z" p-id="2687" fill="#007BFF"></path><path d="M670.1 537.1H543V410c0-17.6-14.4-32-32-32s-32 14.4-32 32v127.1H351.9c-17.6 0-32 14.4-32 32s14.4 32 32 32H479v127.1c0 17.6 14.4 32 32 32s32-14.4 32-32V601.1h127.1c17.6 0 32-14.4 32-32s-14.4-32-32-32z" p-id="2688" fill="#007BFF"></path></svg>
+            新建文件夹
+        </button>
+        <div class="view_files">
+            {view_files}
+        </div>
+    </div>
+    <script>
+        function GetQueryString(name)
+		{
+			var reg=new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+			var r=window.location.search.substr(1).match(reg);
+			if (r!=null)
+			{
+				return unescape(r[2]);
+			}
+			return null;
+		}
+        function real_close()
+        {
+            axios.post("/close");
+            alert("PyCheer已关闭。");
+            window.close();
+        }
+        function button_close()
+        {
+            if(confirm("您真的确定关闭PyCheer吗？\n所有未保存的更改将丢失！"))
+            {
+                real_close();
+            }
+        }
+        function real_quit()
+        {
+            axios.post("/quit");
+            window.location.href="/begin";
+        }
+        function button_quit()
+        {
+            if(confirm("您真的确定退出PyCheer吗？\n这不会停止PyCheer服务，只会使你暂时无法操作。"))
+            {
+                real_quit();
+            }
+        }
+        function new_file()
+        {
+            var file_name=prompt("新建的文件名");
+            if(!file_name)
+            {
+                return;
+            }
+            var path=GetQueryString("path");
+            if(path==null)
+            {
+                path=""
+            }
+            axios.post("/new_file?path="+encodeURIComponent(path)+"&file_name="+encodeURIComponent(file_name)).
+                then(function(response)
+                    {
+                        console.log(response);
+                        if(response.status==200)
+                        {
+                            alert("新建成功。");
+                            location.reload();
+                        }
+                        else
+                        {
+                            alert("新建失败。请查看Console。");
+                        }
+                    }
+                );
+        }
+        function new_folder()
+        {
+            var folder_name=prompt("新建的文件夹名");
+            if(!folder_name)
+            {
+                return;
+            }
+            var path=GetQueryString("path");
+            if(path==null)
+            {
+                path=""
+            }
+            axios.post("/new_folder?path="+encodeURIComponent(path)+"&folder_name="+encodeURIComponent(folder_name)).
+                then(function(response)
+                    {
+                        console.log(response);
+                        if(response.status==200)
+                        {
+                            alert("新建成功。");
+                            location.reload();
+                        }
+                        else
+                        {
+                            alert("新建失败。请查看Console。");
+                        }
+                    }
+                );
+        }
+        function rename(file_name,new_file_name)
+        {
+            var path=GetQueryString("path");
+            if(path==null)
+            {
+                path=""
+            }
+            axios.post("/rename?path="+encodeURIComponent(path)+"&file_name="+encodeURIComponent(file_name)+"&new_file_name="+encodeURIComponent(new_file_name)).
+                then(function(response)
+                    {
+                        console.log(response);
+                        if(response.status==200)
+                        {
+                            alert("重命名成功。");
+                            location.reload();
+                        }
+                        else
+                        {
+                            alert("重命名失败。请查看Console。");
+                        }
+                    }
+                );
+        }
+        function button_rename(file_name)
+        {
+            var new_file_name=prompt("将"+file_name+"重命名为：",file_name);
+            if(!new_file_name)
+            {
+                return;
+            }
+            rename(file_name,new_file_name);
+        }
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

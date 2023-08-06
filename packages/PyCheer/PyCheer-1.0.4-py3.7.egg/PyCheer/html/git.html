@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<link rel="icon" href="/logo.ico" type="image/x-icon"/>
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/css/modern-business.css" rel="stylesheet">
+		<link href="/css/font-awesome.min.css" rel="stylesheet" type="textcss">
+		<script src="/js/axios.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/js/git.js" type="text/javascript" charset="utf-8"></script>
+        <style>
+            body{background-color: white;}
+            iframe{border:0;}
+        </style>
+    </head>
+    <body>
+        <iframe src="/head.html" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="height:8%;"></iframe><br>
+        <div style="width:60%;padding-left:10%">
+            <h3>文件编辑信息</h3>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <textarea rows="20" class="form-control" style="width:100%;" readonly="readonly" id="status"></textarea>
+                </li>
+                <li class="list-group-item">
+                    <a href="#" onclick="javascript:get_status();">
+                        刷新
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#" onclick="javascript:stage();">
+                        将所有已编辑的文件移至暂存区
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#" onclick="javascript:commit();">
+                        提交文件
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div style="width:60%;padding-left:10%">
+            <h3>本地分支信息</h3>
+            <ul class="list-group">
+                {git_branches}
+                <li class="list-group-item">
+                    <a href="#" onclick="javascript:new_branch();">
+                        在当前分支的基础上新建本地分支
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div style="width:60%;padding-left:10%">
+            <h3>远程分支信息</h3>
+            <ul class="list-group">
+                {git_remotes}
+                <li class="list-group-item">
+                    <a href="#" onclick="javascript:new_remote_branch();">
+                        新建远程分支
+                    </a>
+                </li>
+            </ul>
+        </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
