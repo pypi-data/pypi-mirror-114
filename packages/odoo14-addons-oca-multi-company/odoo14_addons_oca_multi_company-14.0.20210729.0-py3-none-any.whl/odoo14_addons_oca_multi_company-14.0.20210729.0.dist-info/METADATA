@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: odoo14-addons-oca-multi-company
+Version: 14.0.20210729.0
+Summary: Meta package for oca-multi-company Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Requires-Dist: odoo14-addon-account-invoice-consolidated
+Requires-Dist: odoo14-addon-account-invoice-inter-company
+Requires-Dist: odoo14-addon-company-dependent-attribute
+Requires-Dist: odoo14-addon-mail-multicompany
+Requires-Dist: odoo14-addon-purchase-sale-inter-company
+
+UNKNOWN
+
