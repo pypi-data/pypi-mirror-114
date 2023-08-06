@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: diskmap
+Version: 0.1.2
+Summary: Scattered light mapping of protoplanetary disks
+Home-page: https://github.com/tomasstolker/diskmap
+Author: Tomas Stolker
+Author-email: stolker@strw.leidenuniv.nl
+License: MIT
+Keywords: diskmap
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/x-rst
+Requires-Dist: astropy
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: typeguard
+
+*diskmap*
+=========
+
+.. image:: https://img.shields.io/pypi/v/diskmap
+   :target: https://pypi.python.org/pypi/diskmap
+
+.. image:: https://img.shields.io/pypi/pyversions/diskmap
+   :target: https://pypi.python.org/pypi/diskmap
+
+.. image:: https://github.com/tomasstolker/diskmap/workflows/CI/badge.svg?branch=master
+   :target: https://github.com/tomasstolker/diskmap/actions
+
+.. image:: https://img.shields.io/readthedocs/diskmap
+   :target: http://diskmap.readthedocs.io
+
+.. image:: https://img.shields.io/coveralls/github/tomasstolker/diskmap
+   :target: https://coveralls.io/github/tomasstolker/diskmap
+
+.. image:: https://img.shields.io/codefactor/grade/github/tomasstolker/diskmap
+   :target: https://www.codefactor.io/repository/github/tomasstolker/diskmap
+
+.. image:: https://img.shields.io/github/license/tomasstolker/diskmap
+   :target: https://github.com/tomasstolker/diskmap/blob/master/LICENSE
+
+.. image:: https://mybinder.org/badge_logo.svg
+ :target: https://mybinder.org/v2/gh/tomasstolker/diskmap/HEAD
+
+*diskmap* is a tool for scattered light mapping of protoplanetary disks. The disk surface is parameterized with a power law profile or read from an input file. The projected radius and scattering angle are then calculated at each pixel. From this, a 3D deprojected image and a stellar irradiation corrected image are computed. Also a polarized scattering phase function is extracted and an total intensity phase function is estimated.
+
+Documentation
+-------------
+
+Documentation can be found at `http://diskmap.readthedocs.io <http://diskmap.readthedocs.io>`_. There is a `notebook tutorial <https://diskmap.readthedocs.io/en/latest/tutorial.html>`_ that demonstrates the usage. It can also be executed in the interactive environment of `Binder <https://mybinder.org/v2/gh/tomasstolker/diskmap/HEAD>`_.
+
+Attribution
+-----------
+
+Please cite `Stolker et al. (2016) <https://ui.adsabs.harvard.edu/abs/2016A%26A...596A..70S>`_ whenever results from *diskmap* are used in a publication.
+
+Contributing
+------------
+
+Contributions are welcome, please consider forking the repository and creating a pull request. Bug reports can be provided by creating an `issue <https://github.com/tomasstolker/diskmap/issues>`_ on the Github page.
+
+License
+-------
+
+Copyright 2020-2021 Tomas Stolker
+
+*diskmap* is distributed under the MIT License. See the LICENSE file for the terms and conditions.
+
+
