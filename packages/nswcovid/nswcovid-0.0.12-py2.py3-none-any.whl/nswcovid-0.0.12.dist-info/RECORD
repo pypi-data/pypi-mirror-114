@@ -1,0 +1,14 @@
+nswcovid/__init__.py,sha256=m26ndBOSG4TvZd42NiQTaskqLwMzMLPFHdAGTY21wc4,388
+nswcovid/exceptions.py,sha256=oTtNiczdEbMEYlxPY15At1XDQFVltAvf99DC3rwFLBc,4300
+nswcovid/API/__init__.py,sha256=dtUvIVo9VqNTSTRK5W9nAIonzd0--vomkuR64L8DXOs,55
+nswcovid/API/main.py,sha256=SrLack2QfjD7l3eSc47iIvjmgEavfQgNgtrxzYvIUaQ,1296
+nswcovid/address/__init__.py,sha256=yY543mSW2wYZ8v5wgjXwXKt3zbLPWh-d0ksAODCnF3M,38
+nswcovid/address/geocode.py,sha256=yRDdgeUK3aAU3EzItGhPE7-_tacbYWfSwSsiolvMINg,9559
+nswcovid/protocol/__init__.py,sha256=z5P68gT8eoUVO9lYU6fXEjP-vHdEgEo-2bHpOzgks7g,37
+nswcovid/protocol/protocol.py,sha256=ed4Ki8kIMGQSEv013XmFmDlaNQzKUiXvvyWeas-jyK0,8812
+nswcovid/protocol/statistics.py,sha256=cxZksQFjbzFV0LKv7jQIvXfbwztk2eVT8qCTafmP8oU,21929
+nswcovid-0.0.12.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+nswcovid-0.0.12.dist-info/METADATA,sha256=_FFmm2_n3FGmm92ExYVnPRCMEMYSpVBeN4aL8BeM5f8,2012
+nswcovid-0.0.12.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+nswcovid-0.0.12.dist-info/top_level.txt,sha256=FNy5GRBdoyGVib_im0trMpyY3cT0AvU_oF7ZLlWVBe8,9
+nswcovid-0.0.12.dist-info/RECORD,,
