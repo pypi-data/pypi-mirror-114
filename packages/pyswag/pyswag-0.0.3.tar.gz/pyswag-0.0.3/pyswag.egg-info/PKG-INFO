@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pyswag
+Version: 0.0.3
+Summary: API Documentation with Python
+Home-page: https://github.com/shivamiitgoa/pyswag
+Author: Shivam Kumar
+Author-email: shivam7@outlook.in
+License: MIT
+Download-URL: https://github.com/shivamiitgoa/pyswag
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PySwag
+
+API Documentation with Python
+
+# Installation
+```bash
+  $ pip install pyswag
+```
+
+# Usage
+```bash
+$ pyswag
+```
+
