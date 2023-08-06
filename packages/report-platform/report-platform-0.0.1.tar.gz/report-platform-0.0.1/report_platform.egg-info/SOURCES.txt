@@ -1,0 +1,7 @@
+LICENSE.txt
+README.md
+setup.py
+report_platform.egg-info/PKG-INFO
+report_platform.egg-info/SOURCES.txt
+report_platform.egg-info/dependency_links.txt
+report_platform.egg-info/top_level.txt
