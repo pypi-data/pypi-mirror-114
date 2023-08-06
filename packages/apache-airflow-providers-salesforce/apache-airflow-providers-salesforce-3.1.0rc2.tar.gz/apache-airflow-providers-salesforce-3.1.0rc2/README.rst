@@ -1,0 +1,155 @@
+
+.. Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+..   http://www.apache.org/licenses/LICENSE-2.0
+
+.. Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+
+
+Package ``apache-airflow-providers-salesforce``
+
+Release: ``3.1.0rc2``
+
+
+`Salesforce <https://www.salesforce.com/>`__
+
+
+Provider package
+----------------
+
+This is a provider package for ``salesforce`` provider. All classes for this provider package
+are in ``airflow.providers.salesforce`` python package.
+
+You can find package information and changelog for the provider
+in the `documentation <https://airflow.apache.org/docs/apache-airflow-providers-salesforce/3.1.0/>`_.
+
+
+Installation
+------------
+
+You can install this package on top of an existing airflow 2.1+ installation via
+``pip install apache-airflow-providers-salesforce``
+
+The package supports the following python versions: 3.6,3.7,3.8,3.9
+
+PIP requirements
+----------------
+
+=======================  ==================
+PIP package              Version required
+=======================  ==================
+``apache-airflow``       ``>=2.1.0``
+``simple-salesforce``    ``>=1.0.0``
+``tableauserverclient``
+=======================  ==================
+
+Cross provider package dependencies
+-----------------------------------
+
+Those are dependencies that might be needed in order to use all the features of the package.
+You need to install the specified provider packages in order to use them.
+
+You can install such cross-provider dependencies when installing from PyPI. For example:
+
+.. code-block:: bash
+
+    pip install apache-airflow-providers-salesforce[tableau]
+
+
+======================================================================================================  ===========
+Dependent package                                                                                       Extra
+======================================================================================================  ===========
+`apache-airflow-providers-tableau <https://airflow.apache.org/docs/apache-airflow-providers-tableau>`_  ``tableau``
+======================================================================================================  ===========
+
+ .. Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+ ..   http://www.apache.org/licenses/LICENSE-2.0
+
+ .. Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+
+
+Changelog
+---------
+
+3.1.0
+.....
+
+Features
+~~~~~~~~
+
+* ``Adding custom Salesforce connection type + SalesforceToS3Operator updates (#17162)``
+
+.. Below changes are excluded from the changelog. Move them to
+   appropriate section above if needed. Do not delete the lines(!):
+   * ``Prepares docs for Rc2 release of July providers (#17116)``
+   * ``Prepare documentation for July release of providers. (#17015)``
+   * ``Removes pylint from our toolchain (#16682)``
+
+3.0.0
+.....
+
+Breaking changes
+~~~~~~~~~~~~~~~~
+
+* ``Auto-apply apply_default decorator (#15667)``
+
+.. warning:: Due to apply_default decorator removal, this version of the provider requires Airflow 2.1.0+.
+   If your Airflow version is < 2.1.0, and you want to install this provider version, first upgrade
+   Airflow to at least version 2.1.0. Otherwise your Airflow package version will be upgraded
+   automatically and you will have to manually run ``airflow upgrade db`` to complete the migration.
+
+.. Below changes are excluded from the changelog. Move them to
+   appropriate section above if needed. Do not delete the lines(!):
+   * ``Updated documentation for June 2021 provider release (#16294)``
+   * ``More documentation update for June providers release (#16405)``
+   * ``Synchronizes updated changelog after buggfix release (#16464)``
+
+2.0.0
+.....
+
+Tableau provider moved to separate 'tableau' provider
+
+Things done:
+
+    - Tableau classes imports classes from 'tableau' provider with deprecation warning
+
+Breaking changes
+~~~~~~~~~~~~~~~~
+
+You need to install ``apache-airflow-providers-tableau`` provider additionally to get
+Tableau integration working.
+
+
+1.0.1
+.....
+
+Updated documentation and readme files.
+
+
+1.0.0
+.....
+
+Initial version of the provider.
