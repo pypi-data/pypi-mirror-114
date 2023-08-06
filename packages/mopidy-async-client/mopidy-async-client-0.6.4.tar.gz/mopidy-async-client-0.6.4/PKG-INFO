@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: mopidy-async-client
+Version: 0.6.4
+Summary: Async Mopidy Client via JSON/RPC Websocket interface
+Home-page: https://github.com/SvineruS/mopidy-async-client
+Author: svinerus
+Author-email: svinerus@gmail.com
