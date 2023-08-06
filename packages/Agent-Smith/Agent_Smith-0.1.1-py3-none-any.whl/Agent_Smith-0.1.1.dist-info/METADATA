@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Agent-Smith
+Version: 0.1.1
+Summary: Python Reinforcement Learning Library with PyTorch
+Home-page: https://github.com/jasonpul/Agent-Smith
+Author: Jason Pul
+Author-email: UNKNOWN
+License: MIT
+Keywords: pytorch,dqn,a2c,reinforcement
+Platform: UNKNOWN
+Requires-Dist: matplotlib (==3.4.2)
+Requires-Dist: torch (==1.9.0)
+
+UNKNOWN
+
+
