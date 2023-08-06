@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: thonny-etboard-basic-examples
+Version: 0.0.1
+Summary: ET보드 기초 예제
+Home-page: http://et.ketri.re.kr/
+Author: KETRi
+Author-email: ketri3000@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, http://et.ketri.re.kr/
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+thonny ET보드 기초 예제를 포함하는 플러그인 입니다
+
