@@ -1,0 +1,125 @@
+{
+    "current_parameters": {
+      "label": "",
+      "component_source": "{{ component.source }}",
+{% for property in component.properties %}
+    {% if property.type|lower == "bool" or property.type|lower == "boolean" %}
+      "elyra_{{ property.ref }}": {{ property.value|lower }}
+    {% elif property.type|lower == "int" or property.type|lower == "integer" or property.type|lower == "number" %}
+      "elyra_{{ property.ref }}": {{ property.value }}
+    {% else %}
+      "elyra_{{ property.ref }}": "{{ property.value }}"
+    {% endif %}
+    {% if loop.index != component.properties|length %}
+      ,
+    {% endif %}
+{% endfor %}
+    },
+    "parameters": [
+      {
+        "id": "label"
+      },
+      {
+        "id": "component_source"
+      },
+{% for property in component.properties %}
+      {
+        "id": "elyra_{{ property.ref }}"
+      }
+    {% if loop.index != component.properties|length %}
+      ,
+    {% endif %}
+{% endfor %}
+    ],
+    "uihints": {
+      "id": "nodeProperties",
+      "parameter_info": [
+        {
+          "parameter_ref": "label",
+          "control": "custom",
+          "custom_control_id": "StringControl",
+          "label": {
+            "default": "Label"
+          },
+          "description": {
+            "default": "A custom label for the node.",
+            "placement": "on_panel"
+          },
+          "data": {}
+        },
+        {
+          "parameter_ref": "component_source",
+          "control": "readonly",
+          "label": {
+            "default": "Component Source"
+          },
+          "description": {
+            "default": "The path to the component specification file.",
+            "placement": "on_panel"
+          },
+          "data": {}
+        },
+{% for property in component.properties %}
+        {
+          "parameter_ref": "elyra_{{ property.ref }}",
+          "control": "{{ property.control }}",
+          "custom_control_id": "{{ property.control_id }}",
+          "label": {
+            "default": "{{ property.name }}"
+          },
+          "description": {
+            "default": "{{ property.description }}",
+            "placement": "on_panel"
+          },
+          "data": {
+            "format": "{{ property.type }}",
+            "required": {{ property.required|lower }}
+            {% if property.control_id == "EnumControl" %}
+            ,
+            "items": [
+              {% for item in property.items %}
+              "{{ item }}"
+              {% if loop.index != property.items|length %}
+              ,
+              {% endif %}
+              {% endfor %}
+              ]
+            {% endif %}
+          }
+        }
+      {% if loop.index != component.properties|length %}
+        ,
+      {% endif %}
+{% endfor %}
+      ],
+      "group_info": [
+        {
+          "id": "nodeGroupInfo",
+          "type": "panels",
+          "group_info": [
+            {
+              "id": "label",
+              "type": "controls",
+              "parameter_refs": ["label"]
+            },
+            {
+              "id": "component_source",
+              "type": "controls",
+              "parameter_refs": ["component_source"]
+            },
+{% for property in component.properties %}
+            {
+              "id": "elyra_{{ property.ref }}",
+              "type": "controls",
+              "parameter_refs": ["elyra_{{ property.ref }}"]
+            }
+          {% if loop.index != component.properties|length %}
+            ,
+          {% endif %}
+{% endfor %}
+          ]
+        }
+      ]
+    },
+    "resources": {}
+  }

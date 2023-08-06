@@ -1,0 +1,29 @@
+{
+  "categories": {
+    "kfp": {
+      "label": "Kubeflow Pipelines",
+      "image": "",
+      "description": "Components that are supported by Kubeflow Pipelines"
+    }
+  },
+  "components": {
+    "run-notebook-using-papermill": {
+      "location": {
+        "filename": "run_notebook_using_papermill.yaml"
+      },
+      "category": "kfp"
+    },
+    "filter-text": {
+      "location": {
+        "filename": "filter_text_using_shell_and_grep.yaml"
+      },
+      "category": "kfp"
+    },
+    "kubeflow-serve-model-using-kfserving": {
+      "location": {
+        "filename": "kubeflow_serve_model_using_kfserving.yaml"
+      },
+      "category": "kfp"
+    }
+  }
+}
