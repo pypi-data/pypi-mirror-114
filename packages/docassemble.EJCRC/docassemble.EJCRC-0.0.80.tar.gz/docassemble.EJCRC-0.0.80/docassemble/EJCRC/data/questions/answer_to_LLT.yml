@@ -1,0 +1,903 @@
+metadata:
+  title: Answer to Civil Complaint for Ejectment
+  temporary session: true
+---
+attachment:
+  variable name: Answer_to_Complaint
+  filename: Answer_to_Complaint
+  docx template file: answer_complaint_LLT.docx
+---
+mandatory: true
+code: |
+  if upload == 'Yes':
+    output_file = pdf_concatenate(Answer_to_Complaint, uploaddoc)
+  if upload == 'No':
+    output_file = pdf_concatenate(Answer_to_Complaint)  
+---
+mandatory: True
+question: |
+  Please review the rule of Pennsylvania of Civil Procedure before completing this document.
+subquestion: |
+  An answer is a way to formally respond to the complaint in court.  Please review the following rules of Pennsylvania Civil Procedure before completing this form.  
+
+  ###Rule 1026. Time for Filing. Notice to Plead.
+  
+  (a)  Except as provided by Rule 1042.4 or by subdivision (b) of this rule, every pleading subsequent to the complaint shall be filed within twenty days after service of the preceding pleading, but no pleading need be filed unless the preceding pleading contains a notice to defend or is endorsed with a notice to plead.
+   
+   Official Note - For the form of notice to defend see Rule 1018.1 and for the form of notice to plead see Rule 1361.
+   
+   Additional time within which to plead may be sought under Rule 248.
+   
+   Rule 1042.4 governs actions in which a professional liability claim is asserted.
+   
+   (b)  A defendant served outside the United States shall have sixty days from service of the complaint within which to plead.
+   
+  ###Rule 1029. Denials. Effect of Failure to Deny.
+  
+  (a)  A responsive pleading shall admit or deny each averment of fact in the preceding pleading or any part thereof to which it is responsive. A party denying only a part of an averment shall specify so much of it as is admitted and shall deny the remainder. Admissions and denials in a responsive pleading shall refer specifically to the paragraph in which the averment admitted or denied is set forth.
+  
+  (b)  Averments in a pleading to which a responsive pleading is required are admitted when not denied specifically or by necessary implication. A general denial or a demand for proof, except as provided by subdivision (c) and (e) of this rule, shall have the effect of an admission.
+  
+  (c)  A statement by a party that after reasonable investigation the party is without knowledge or information sufficient to form a belief as the truth of an averment shall have the effect of a denial.
+  
+  Official Note - Reliance on subdivision (c) does not excuse a failure to admit or deny a factual allegation when it is clear that the pleader must know whether a particular allegation is true or false. See Cercone v. Cercone, 254 Pa. Super. 381, 386 A.2d 1 (1978).
+  
+  (d)  Averments in a pleading to which no responsive pleading is required shall be deemed to be denied.
+  
+  (e)  In an action seeking monetary relief for bodily injury, death or property damage, averments in a pleading to which a responsive pleading is required may be denied generally except the following averments of fact which must be denied specifically:
+  
+  (1)  averments relating to the identity of the person by whom a material act was committed, the agency or employment of such person and the ownership, possession or control of the property or instrumentality involved;
+  
+  (2)  if a pleading seeks additional relief, averments in support of such other relief; and
+  
+  (3)  averments in preliminary objections.
+   
+   Official Note - Subdivision (e) applies only to those actions for which damages for delay may be awarded pursuant to Rule of Civil Procedure 238.
+   
+  ###Rule 1022. Paragraphing.
+   
+   Every pleading shall be divided into paragraphs numbered consecutively. Each paragraph shall contain as far as practicable only one material allegation.
+
+fields:
+  - I understand and have reviewed the above rule(s) of civil procedure: user_saw_intro
+    datatype: yesnowide
+continue button label: |
+  Start Complaint
+validation code: |
+  if not user_saw_intro:
+    validation_error("You cannot continue until you indicate that you understand.")
+---
+mandatory: true
+need:
+  user_saw_intro
+question: |
+  Please complete the information for each plaintiff in this case.
+subquestion: |
+  A plaintiff is a party who is suing/taking the defendant(s) to court.  
+fields:
+  - How many plaintiffs are there?: plaintiffnumber
+    datatype: integer
+    choices:
+      - 1
+      - 2
+      - 3
+    default: 1   
+  - Plaintiff Full Name: plaintiffname1
+  - 2nd Plaintiff Full Name: plaintiffname2
+    js show if: |
+      val('plaintiffnumber') > 1
+  - 3rd Plaintiff Full Name: plaintiffname3
+    js show if: |
+      val('plaintiffnumber') > 2
+---
+question: |
+  Please complete the information for each defendant in this case.
+need:
+  plaintiffname1
+subquestion: |
+  A defendant is a party (individual, company, or institution) being sued. 
+fields:
+  - How many defendants are party to the case?: defendantnumber
+    datatype: integer
+    choices:
+      - 1
+      - 2
+      - 3
+    default: 1    
+  - Defendant Full Name: defendantname1
+  - 2nd Defendant Full Name: defendantname2
+    js show if: |
+      val('defendantnumber') > 1 
+  - 3rd Defendant Name: defendantname3
+    js show if: |
+      val('defendantnumber') > 2
+---
+need: 
+  defendantname1
+question: | 
+  Please provide the Case ID number for this case:
+subquestion: |  
+  If you cannot locate the Case ID number, you may either contact the civil filing office or find the number by searching for your case on the [FJD Civil Docket.](http://fjdefile.phila.gov/efsfjd/zk_fjd_public_qry_00.zp_disclaimer)
+  
+  [Click here if you need additional help (opens a separate tab)](${ interview_url(i='docassemble.EJCRC:data/questions/case_id_help.yml') }){:target="_blank"}.
+
+fields:
+  - Do you have a 9-digit case number?: nines
+    datatype: radio
+    choices: 
+      - Yes
+      - No
+  - 9-digit case number: serial
+    datatype: integer
+    required: false
+    js show if: |
+      val('nines') == 'Yes'
+    max: 999999999
+validation code: |
+  if nines == 'No':
+    validation_error("Please click the link for additional help")
+---
+need:
+  nines
+question: |
+  Please respond to the numbered paragraphs in the Complaint you received from the plaintiff.
+subquestion: |
+  If you do not have a copy readily available, you may call the Civil Filing Office at 215-686-4251 or follow [these instructions](${ url_of('docket_instructions.pdf') }) to find the complaint against you.
+fields:
+  - Do you have a copy of the complaint?: copy
+    datatype: radio 
+    choices:
+    - Yes
+    - No
+  - How many numbered paragraphs are there under the complaint: complaint
+    datatype: integer
+    min: 1
+    max: 50
+    note: Enter a number between 1 and 50
+  - Review paragraph No. 1 on the Complaint and select your response.: dropdown1
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('copy') == 'Yes'
+  - Explain to the court why you chose the answer above: paragraph1
+    datatype: area
+    js show if: |
+      val('copy') == 'Yes'
+  - Review paragraph No. 2 on the Complaint and select your response.: dropdown2
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 1
+  - Explain to the court why you chose the answer above: paragraph2
+    datatype: area
+    js show if: |
+     val('complaint') > 1
+  - Review paragraph No. 3 on the Complaint and select your response.: dropdown3
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 2
+  - Explain to the court why you chose the answer above: paragraph3
+    datatype: area
+    js show if: |
+      val('complaint') > 2
+  - Review paragraph No. 4 on the Complaint and select your response.: dropdown4
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 3
+  - Explain to the court why you chose the answer above: paragraph4
+    datatype: area
+    js show if: |
+      val('complaint') > 3
+  - Review paragraph No. 5 on the Complaint and select your response.: dropdown5
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 4
+  - Explain to the court why you chose the answer above: paragraph5
+    datatype: area
+    js show if: |
+      val('complaint') > 4
+  - Review paragraph No. 6 on the Complaint and select your response.: dropdown6
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 5
+  - Explain to the court why you chose the answer above: paragraph6
+    datatype: area
+    js show if: |
+      val('complaint') > 5
+  - Review paragraph No. 7 on the Complaint and select your response.: dropdown7
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 6
+  - Explain to the court why you chose the answer above: paragraph7
+    datatype: area
+    js show if: |
+      val('complaint') > 6
+  - Review paragraph No. 8 on the Complaint and select your response.: dropdown8
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 7
+  - Explain to the court why you chose the answer above: paragraph8
+    datatype: area
+    js show if: |
+      val('complaint') > 7
+  - Review paragraph No. 9 on the Complaint and select your response.: dropdown9
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 8
+  - Explain to the court why you chose the answer above: paragraph9
+    datatype: area
+    js show if: |
+      val('complaint') > 8
+  - Do you want to upload any additional documents to support your explanation?: upload9
+    datatype: radio
+    choices:
+      - Yes
+      - No
+    js show if: |
+      val('complaint') > 8
+  - Upload those documents here: uploaddoc9
+    datatype: files
+    js show if: |
+      val('upload9') == 'Yes'
+  - Review paragraph No. 10 on the Complaint and select your response.: dropdown10
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 9
+  - Explain to the court why you chose the answer above: paragraph10
+    datatype: area
+    js show if: |
+      val('complaint') > 9
+  - Review paragraph1 No. 11 on the Complaint and select your response.: dropdown11
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 10
+  - Explain to the court why you chose the answer above: paragraph11
+    datatype: area
+    js show if: |
+      val('complaint') > 10
+  - Review paragraph1 No. 12 on the Complaint and select your response.: dropdown12
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 11
+  - Explain to the court why you chose the answer above: paragraph12
+    datatype: area
+    js show if: |
+     val('complaint') > 11
+  - Review paragraph1 No. 13 on the Complaint and select your response.: dropdown13
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 12
+  - Explain to the court why you chose the answer above: paragraph13
+    datatype: area
+    js show if: |
+      val('complaint') > 12
+  - Review paragraph1 No. 14 on the Complaint and select your response.: dropdown14
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 13
+  - Explain to the court why you chose the answer above: paragraph14
+    datatype: area
+    js show if: |
+      val('complaint') > 13
+  - Review paragraph1 No. 15 on the Complaint and select your response.: dropdown15
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 14
+  - Explain to the court why you chose the answer above: paragraph15
+    datatype: area
+    js show if: |
+      val('complaint') > 14
+  - Review paragraph1 No. 16 on the Complaint and select your response.: dropdown16
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 15
+  - Explain to the court why you chose the answer above: paragraph16
+    datatype: area
+    js show if: |
+      val('complaint') > 15
+  - Review paragraph1 No. 17 on the Complaint and select your response.: dropdown17
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 16
+  - Explain to the court why you chose the answer above: paragraph17
+    datatype: area
+    js show if: |
+      val('complaint') > 16
+  - Review paragraph1 No. 18 on the Complaint and select your response.: dropdown18
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 17
+  - Explain to the court why you chose the answer above: paragraph18
+    datatype: area
+    js show if: |
+      val('complaint') > 17
+  - Review paragraph1 No. 19 on the Complaint and select your response.: dropdown19
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 18
+  - Explain to the court why you chose the answer above: paragraph19
+    datatype: area
+    js show if: |
+      val('complaint') > 18
+  - Review paragraph No. 20 on the Complaint and select your response.: dropdown20
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 19
+  - Explain to the court why you chose the answer above: paragraph20
+    datatype: area
+    js show if: |
+      val('complaint') > 19
+  - Review paragraph2 No. 21 on the Complaint and select your response.: dropdown21
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 20
+  - Explain to the court why you chose the answer above: paragraph21
+    datatype: area
+    js show if: |
+      val('complaint') > 20
+  - Review paragraph2 No. 22 on the Complaint and select your response.: dropdown22
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 21
+  - Explain to the court why you chose the answer above: paragraph22
+    datatype: area
+    js show if: |
+     val('complaint') > 21
+  - Review paragraph2 No. 23 on the Complaint and select your response.: dropdown23
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 22
+  - Explain to the court why you chose the answer above: paragraph23
+    datatype: area
+    js show if: |
+      val('complaint') > 22
+  - Review paragraph2 No. 24 on the Complaint and select your response.: dropdown24
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 23
+  - Explain to the court why you chose the answer above: paragraph24
+    datatype: area
+    js show if: |
+      val('complaint') > 23
+  - Review paragraph2 No. 25 on the Complaint and select your response.: dropdown25
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 24
+  - Explain to the court why you chose the answer above: paragraph25
+    datatype: area
+    js show if: |
+      val('complaint') > 24
+  - Review paragraph2 No. 26 on the Complaint and select your response.: dropdown26
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 25
+  - Explain to the court why you chose the answer above: paragraph26
+    datatype: area
+    js show if: |
+      val('complaint') > 25
+  - Review paragraph2 No. 27 on the Complaint and select your response.: dropdown27
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 26
+  - Explain to the court why you chose the answer above: paragraph27
+    datatype: area
+    js show if: |
+      val('complaint') > 26
+  - Review paragraph2 No. 28 on the Complaint and select your response.: dropdown28
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 27
+  - Explain to the court why you chose the answer above: paragraph28
+    datatype: area
+    js show if: |
+      val('complaint') > 27
+  - Review paragraph2 No. 29 on the Complaint and select your response.: dropdown29
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 28
+  - Explain to the court why you chose the answer above: paragraph29
+    datatype: area
+    js show if: |
+      val('complaint') > 28
+  - Review paragraph No. 30 on the Complaint and select your response.: dropdown30
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 29
+  - Explain to the court why you chose the answer above: paragraph30
+    datatype: area
+    js show if: |
+      val('complaint') > 29
+  - Review paragraph3 No. 31 on the Complaint and select your response.: dropdown31
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 30
+  - Explain to the court why you chose the answer above: paragraph31
+    datatype: area
+    js show if: |
+      val('complaint') > 30
+  - Review paragraph3 No. 32 on the Complaint and select your response.: dropdown32
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 31
+  - Explain to the court why you chose the answer above: paragraph32
+    datatype: area
+    js show if: |
+     val('complaint') > 31
+  - Review paragraph3 No. 33 on the Complaint and select your response.: dropdown33
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 32
+  - Explain to the court why you chose the answer above: paragraph33
+    datatype: area
+    js show if: |
+      val('complaint') > 32
+  - Review paragraph3 No. 34 on the Complaint and select your response.: dropdown34
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 33
+  - Explain to the court why you chose the answer above: paragraph34
+    datatype: area
+    js show if: |
+      val('complaint') > 33
+  - Review paragraph3 No. 35 on the Complaint and select your response.: dropdown35
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 34
+  - Explain to the court why you chose the answer above: paragraph35
+    datatype: area
+    js show if: |
+      val('complaint') > 34
+  - Review paragraph3 No. 36 on the Complaint and select your response.: dropdown36
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 35
+  - Explain to the court why you chose the answer above: paragraph36
+    datatype: area
+    js show if: |
+      val('complaint') > 35
+  - Review paragraph3 No. 37 on the Complaint and select your response.: dropdown37
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 36
+  - Explain to the court why you chose the answer above: paragraph37
+    datatype: area
+    js show if: |
+      val('complaint') > 36
+  - Review paragraph3 No. 38 on the Complaint and select your response.: dropdown38
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 37
+  - Explain to the court why you chose the answer above: paragraph38
+    datatype: area
+    js show if: |
+      val('complaint') > 37
+  - Review paragraph3 No. 39 on the Complaint and select your response.: dropdown39
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 38
+  - Explain to the court why you chose the answer above: paragraph39
+    datatype: area
+    js show if: |
+      val('complaint') > 38
+  - Review paragraph No. 40 on the Complaint and select your response.: dropdown40
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 39
+  - Explain to the court why you chose the answer above: paragraph40
+    datatype: area
+    js show if: |
+      val('complaint') > 39
+  - Review paragraph4 No. 41 on the Complaint and select your response.: dropdown41
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 40
+  - Explain to the court why you chose the answer above: paragraph41
+    datatype: area
+    js show if: |
+      val('complaint') > 40
+  - Review paragraph4 No. 42 on the Complaint and select your response.: dropdown42
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 41
+  - Explain to the court why you chose the answer above: paragraph42
+    datatype: area
+    js show if: |
+     val('complaint') > 41
+  - Review paragraph4 No. 43 on the Complaint and select your response.: dropdown43
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 42
+  - Explain to the court why you chose the answer above: paragraph43
+    datatype: area
+    js show if: |
+      val('complaint') > 42
+  - Review paragraph4 No. 44 on the Complaint and select your response.: dropdown44
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 43
+  - Explain to the court why you chose the answer above: paragraph44
+    datatype: area
+    js show if: |
+      val('complaint') > 43
+  - Review paragraph4 No. 45 on the Complaint and select your response.: dropdown45
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 44
+  - Explain to the court why you chose the answer above: paragraph45
+    datatype: area
+    js show if: |
+      val('complaint') > 44
+  - Review paragraph4 No. 46 on the Complaint and select your response.: dropdown46
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 45
+  - Explain to the court why you chose the answer above: paragraph46
+    datatype: area
+    js show if: |
+      val('complaint') > 45
+  - Review paragraph4 No. 47 on the Complaint and select your response.: dropdown47
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 46
+  - Explain to the court why you chose the answer above: paragraph47
+    datatype: area
+    js show if: |
+      val('complaint') > 46
+  - Review paragraph4 No. 48 on the Complaint and select your response.: dropdown48
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 47
+  - Explain to the court why you chose the answer above: paragraph48
+    datatype: area
+    js show if: |
+      val('complaint') > 47
+  - Review paragraph4 No. 49 on the Complaint and select your response.: dropdown49
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 48
+  - Explain to the court why you chose the answer above: paragraph49
+    datatype: area
+    js show if: |
+      val('complaint') > 48
+  - Review paragraph No. 50 on the Complaint and select your response.: dropdown50
+    choices:
+      - True
+      - Partially true
+      - False
+      - Partially False
+      - I don't have enough information to respond to this
+    js show if: |
+      val('complaint') > 49
+  - Explain to the court why you chose the answer above: paragraph50
+    datatype: area
+    js show if: |
+      val('complaint') > 49
+  - Do you want to upload any documents to support your explanations?: upload
+    datatype: radio
+    choices:
+      - Yes
+      - No
+    js show if: |
+      val('copy') == 'Yes'
+  - Please upload supporting documents here: uploaddoc
+    datatype: files
+    note: You can upload as many files as you want
+    js show if: |
+      val('upload') == 'Yes'
+     
+validation code: |
+  if copy == 'No':
+    validation_error("You cannot continue until you find the complaint in ejectment.")
+---
+need:
+  paragraph1
+question: | 
+  Please provide the following information:
+fields:
+  - Today's date: date
+    datatype: date
+    default: |
+      ${ today() }
+mandatory: true
+---
+mandatory: true
+need:
+  date
+question: |
+  Review the following text and sign below:
+subquestion: |
+  ### VERIFICATION
+  I, ${ defendantname1 }, Defendant, verify that the facts set forth in the foregoing are true and correct to the best of my information, knowledge and belief.
+	
+	I understand that the statements contained herein are subject to the Penalties of 18 Pa.C.S.A., Section 4904 relating to unsworn falsification to authorities.
+
+signature: signature1
+under: |
+  ${ defendantname1 }
+---
+need:
+  signature1
+question: |
+  Thank you, ${ plaintiffname1 }!
+subquestion: |
+ ### [CLICK TO DOWNLOAD YOUR ANSWER TO CIVIL COMPLAINT](${ output_file.url_for() })
+ 
+ 
+   YOU MUST FILE THIS ANSWER WITH THE COURT FILING OFFICE. [Click here](https://www.courts.phila.gov/pdf/manuals/civil-trial/FJD_Civil_E-Filing_User_Manual.pdf) for instructions on how to e-file your legal documents. [Click here](${ url_of('EFS_Instructions.pdf') }) for instructions on how to create an account to e-file your document(s).
+continue button field: finish
+continue button label: |
+  Finish Answer
+mandatory: True
+---
+mandatory: true
+need:
+  finish
+question: | 
+  Review the following reminders:
+subquestion: |
+  **[You can download your answer here](${ output_file.url_for() })**
+fields:
+  - I understand this document has not been filed with the court and that I must file it on my own.: nofile
+    datatype: yesnowide
+  - I have downloaded my answer: download
+    datatype: yesnowide
+continue button field: done
+continue button label: |
+  Next
+validation code: |
+  if not download:
+    validation_error("You cannot continue until you indicate that you have downloaded your answer.")
+  if not nofile:
+    validation_error("You cannot continue until you indicate that you understand you have not filed your answer.")
+---
+mandatory: true
+need:
+  done
+question: |
+  You have completed the process of filling out your answer to civil complaint. Click exit to return to the Philadelphia Court website
+buttons:
+  - Exit: exit
+    url: https://courts.phila.gov
