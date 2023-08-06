@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+doktarpy/__init__.py
+doktarpy/doktarpy.py
+doktarpy.egg-info/PKG-INFO
+doktarpy.egg-info/SOURCES.txt
+doktarpy.egg-info/dependency_links.txt
+doktarpy.egg-info/not-zip-safe
+doktarpy.egg-info/top_level.txt
