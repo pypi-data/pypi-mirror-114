@@ -1,0 +1,3 @@
+[console_scripts]
+bbb-dlc = bbb_dlc.main:main
+
