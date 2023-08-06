@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: autotrader
+Version: 0.0.3
+Summary: A platform for developing, optimising and deploying automated trading systems.
+Home-page: https://github.com/kieran-mackle/AutoTrader
+Author: Kieran Mackle
+Author-email: kemackle98@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/kieran-mackle/AutoTrader/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# AutoTrader (coming soon)
+AutoTrader is a Python-based platform for developing, optimising and deploying automated trading systems.
+
+## Features
+- backtesting
+- live trading
+- parameter optimisation
+
+
+
