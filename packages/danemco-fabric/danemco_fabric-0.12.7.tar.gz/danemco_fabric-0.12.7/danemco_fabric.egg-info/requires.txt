@@ -1,0 +1,4 @@
+fabric<2,>=1.7.0
+requests
+python-gitlab
+six
