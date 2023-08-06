@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+jupyter_kernel_hook/__init__.py
+jupyter_kernel_hook/_globals.py
+jupyter_kernel_hook/core.py
+jupyter_kernel_hook.egg-info/PKG-INFO
+jupyter_kernel_hook.egg-info/SOURCES.txt
+jupyter_kernel_hook.egg-info/dependency_links.txt
+jupyter_kernel_hook.egg-info/not-zip-safe
+jupyter_kernel_hook.egg-info/requires.txt
+jupyter_kernel_hook.egg-info/top_level.txt
+jupyter_kernel_hook/templates/init.py.jinja
