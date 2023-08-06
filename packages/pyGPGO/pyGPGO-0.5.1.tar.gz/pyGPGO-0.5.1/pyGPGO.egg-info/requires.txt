@@ -1,0 +1,7 @@
+numpy
+mkl
+scipy
+joblib
+scikit-learn
+Theano-PyMC
+pyMC3
