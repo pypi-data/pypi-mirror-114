@@ -1,0 +1,4 @@
+attrs
+numpy
+pymangle
+scipy
