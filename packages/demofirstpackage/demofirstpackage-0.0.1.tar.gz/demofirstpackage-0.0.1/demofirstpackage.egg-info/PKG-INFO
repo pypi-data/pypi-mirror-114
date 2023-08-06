@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: demofirstpackage
+Version: 0.0.1
+Summary: A very basic demo
+Home-page: UNKNOWN
+Author: Mandar Parte
+Author-email: mandarparte1709@gmail.com
+License: MIT
+Description: Demo
+        
+        Change Log
+        ==========
+        
+        0.0.1 (01/08/2021)
+        -------------------
+        - First Release
+Keywords: demo
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

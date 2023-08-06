@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+demofirstpackage/__init__.py
+demofirstpackage.egg-info/PKG-INFO
+demofirstpackage.egg-info/SOURCES.txt
+demofirstpackage.egg-info/dependency_links.txt
+demofirstpackage.egg-info/top_level.txt
