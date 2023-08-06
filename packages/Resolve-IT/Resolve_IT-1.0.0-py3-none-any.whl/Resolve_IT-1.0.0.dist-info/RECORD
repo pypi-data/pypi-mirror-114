@@ -1,0 +1,14 @@
+resolveit/__init__.py,sha256=gRmPXS54wBd-sW1k0Q7UC5RGzBpnHJgUWYYNWWp9Tj4,100
+resolveit/app.py,sha256=NkgHmvWSAaCbXvqNFD_p1oGIw0HKH8noZGMhmI7xOVw,3176
+resolveit/cli_output.py,sha256=eo-bVmW0eojg0HnceZ-W9EvTSNY2QMncfF7CUdnHEwc,4118
+resolveit/fetch_results.py,sha256=YKIEMM4Rbi2WrurDfj6yo5gaKQLsMNKy6gQ9uQqFZ9c,1614
+resolveit/resolveit.py,sha256=oJPhns7zZvBs8dd0fBrFTx38CV05xPs-765SV9lQFHA,2837
+resolveit/resolveit_types.py,sha256=fgTMMDSeu3NNR0uAE6yT5beelbcyXN74wBFHdeNNeQ0,241
+resolveit/rparser.py,sha256=7Cru3e16Uxk0dQLZthSzxGUTF-uInA77LpQvSgCpKX0,2031
+resolveit/settings.py,sha256=9Dx3eWR0uR3UtWQCfi0M9Uj602DB0QlKE0_6LncG-R8,441
+Resolve_IT-1.0.0.dist-info/LICENSE,sha256=BZ69RQax7VJoE0gdSY4g_GTf_s0LcDZo1kQ8Ll4aPwg,1063
+Resolve_IT-1.0.0.dist-info/METADATA,sha256=KETA9uEC8jmlavCPbBcZJ1_t40cO8fsNNfInxjnvMmU,2558
+Resolve_IT-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Resolve_IT-1.0.0.dist-info/entry_points.txt,sha256=xUUZhOiYLYCXTd76ZpwKbjzbWVu3ON2VOCyZemDvU18,50
+Resolve_IT-1.0.0.dist-info/top_level.txt,sha256=DBilxKWfwLY2h3K4vGYqhNBfupsN1xHK3D-SsC30Ea8,10
+Resolve_IT-1.0.0.dist-info/RECORD,,
