@@ -1,0 +1,14 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+TouchPortalAPI/__init__.py
+TouchPortalAPI/sdk_spec.py
+TouchPortalAPI/sdk_tools.py
+TouchPortal_API.egg-info/PKG-INFO
+TouchPortal_API.egg-info/SOURCES.txt
+TouchPortal_API.egg-info/dependency_links.txt
+TouchPortal_API.egg-info/entry_points.txt
+TouchPortal_API.egg-info/requires.txt
+TouchPortal_API.egg-info/top_level.txt
+examples/plugin-example.py
