@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+shortify.egg-info/PKG-INFO
+shortify.egg-info/SOURCES.txt
+shortify.egg-info/dependency_links.txt
+shortify.egg-info/entry_points.txt
+shortify.egg-info/requires.txt
+shortify.egg-info/top_level.txt
+shorty/__init__.py
+shorty/__main__.py
+shorty/base.py
+shorty/errors.py
+shorty/services/__init__.py
+shorty/services/git.py
+shorty/services/tinyurl.py
