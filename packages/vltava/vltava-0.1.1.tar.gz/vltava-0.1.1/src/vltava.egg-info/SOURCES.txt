@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/vltava/__init__.py
+src/vltava.egg-info/PKG-INFO
+src/vltava.egg-info/SOURCES.txt
+src/vltava.egg-info/dependency_links.txt
+src/vltava.egg-info/requires.txt
+src/vltava.egg-info/top_level.txt
+src/vltava/resources/__init__.py
