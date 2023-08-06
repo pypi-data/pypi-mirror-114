@@ -1,0 +1,12 @@
+daeclipse/.gitignore,sha256=DNBkdlt0Cp15HxUmbuVdZEtLDPQClHVMIdWQHtnHgcM,11
+daeclipse/__init__.py,sha256=wIsAXe4xOsdieZaAwro-XEl10LfT9sm0DvjOcVnLtKc,29
+daeclipse/api.py,sha256=OF38Z4t-eUWtugknaOBDuOHAAoRKm_-NalWJd5vMUmw,5851
+daeclipse/models/__init__.py,sha256=VSYc2VpFLSpJBglKMZvHHt_bCwMlnVk8RKuaSL3cvII,36
+daeclipse/models/deviation.py,sha256=ENLVQBtzT3MgZOJC4g0r6tDygdl-uULJIjrqMwWkDVc,3576
+daeclipse/models/folder.py,sha256=ehtBY-VPIEm8-S67qYEGo23qqPbzd9v5tDYfQPo-Pyw,2077
+daeclipse/models/gruser.py,sha256=YFDf_ivRXxq1m2-YjRjtcvjcu0x3wh8p9kYi7Z6VoP4,1453
+daeclipse/models/stats.py,sha256=evzXuzCNGfgQnTPtB1sUG3vLXxmvqDYDMbDCAnp-MbU,850
+daeclipse-0.0.3.dist-info/LICENSE,sha256=SIyRP8MBRGw0xG4Rx27_ihA0cpiJPHUnMjF6cDpCAtc,1072
+daeclipse-0.0.3.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+daeclipse-0.0.3.dist-info/METADATA,sha256=ZWLJc9SyA8K8vkVSYSjn7KsHtVrl9dhgOPn1uhTWOJM,4201
+daeclipse-0.0.3.dist-info/RECORD,,
