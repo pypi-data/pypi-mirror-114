@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: rpa-parent
+Version: 1.1.2
+Summary: rpa_parent
+Home-page: http://gitlab.phfund.com.cn/rpa/rpa-base/rpa-parent.git
+Author: phfund
+Author-email: xxx@phfund.com.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests (==2.23.0)
+Requires-Dist: numpy (==1.18.4)
+Requires-Dist: psutil (==5.7.3)
+Requires-Dist: uiautomation (==2.0.7)
+Requires-Dist: opencv-python (==4.2.0.34)
+Requires-Dist: pywin32 (==300)
+Requires-Dist: PyGetWindow (==0.0.9)
+Requires-Dist: cx-Oracle (==8.1.0)
+Requires-Dist: JPype1 (==1.2.1)
+Requires-Dist: Pillow (==8.1.0)
+Requires-Dist: selenium (==3.141.0)
+Requires-Dist: xlrd (==1.2.0)
+
+UNKNOWN
+
