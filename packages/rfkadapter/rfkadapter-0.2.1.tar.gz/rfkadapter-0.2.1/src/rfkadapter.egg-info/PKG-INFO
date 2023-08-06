@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: rfkadapter
+Version: 0.2.1
+Summary: RFKAdapter emulira API nalik SQL jeziku (SELECT, UPDATE, CREATE) za DBF "baze podataka"
+Home-page: https://gitea.lab.ba/mekom/rfk
+Author: Malik Koljenović
+Author-email: malik@mekom.ba
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitea.lab.ba/mekom/rfk/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# RFK RESTful API 0.2.1
+
+RFKAdapter omogućava jednostavan pristup lokalnim legacy DBF "bazama podataka" originalno korištenim u programskim jezicima Clipper i Visual FoxPro putem. Namjenski je pisan za RFK računovodstvenu aplikaciju, uključuje pip dbf paket.
+
+
