@@ -1,0 +1,4 @@
+factiva-core>=0.1.11
+fastavro
+google-cloud-core
+google-cloud-pubsub
