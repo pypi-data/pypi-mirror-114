@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: nb-extension-empinken
+Version: 0.0.4
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: notebook
+Requires-Dist: jupyter-nbextensions-configurator
+
+UNKNOWN
+
