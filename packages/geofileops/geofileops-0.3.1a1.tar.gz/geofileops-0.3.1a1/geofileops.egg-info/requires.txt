@@ -1,0 +1,7 @@
+geopandas>=0.9
+pygeos
+pyproj
+psutil
+
+[full]
+simplification
