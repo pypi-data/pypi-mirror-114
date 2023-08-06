@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: randomnwn
+Version: 0.2.3
+Summary: Modelling and analyzing random nanowire networks in Python.
+Home-page: https://github.com/marcus-k/Random-NWNs
+Author: Marcus Kasdorf
+Author-email: marcus.kasdorf@ucalgary.ca
+License: MIT License
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Random NWNs [![Tests](https://github.com/marcus-k/Random-NWNs/actions/workflows/python-package.yml/badge.svg)](https://github.com/marcus-k/Random-NWNs/actions/workflows/python-package.yml)
+
+Package for creating and analyzing random nanowire networks.
+
+# Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Uninstallation](#uninstallation)
+
+# Installation
+
+Download this repository, then navigate to the base folder and run:
+
+`pip install .`
+
+To install the package in editable mode instead (i.e. using the local project
+path), one can use
+
+`pip install -e .`
+
+The package can then be imported like normal with either:
+
+`from randomnwn import *` or `import randomnwn as rnwn`
+
+# Usage
+
+See the [wiki pages](https://github.com/Marcus-Repository/Random-NWNs/wiki).
+
+# Uninstallation
+
+To uninstall the package, use:
+
+`pip uninstall randomnwn`
+
+
