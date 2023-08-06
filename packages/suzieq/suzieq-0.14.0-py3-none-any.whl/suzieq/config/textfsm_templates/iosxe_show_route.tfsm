@@ -1,0 +1,75 @@
+Value Filldown vrf (\S+)
+Value protocol ([A-Zi]\*?|[A-Zio]\s+[A-Z][1-2]|i ia|i su|LC)
+Value Required prefix ([0-9./]+|[0-9A-F:./]+)
+Value preference (\d+|is)
+Value metric (\d+)
+Value List nexthopIps ([0-9.]+|[0-9A-F:.]+)
+Value List oifs (\S+)
+Value statusChangeTimestamp (\S+)
+Value nexthopvrf (\S+)
+
+Start
+  ^Gateway\s+of\s+last\s+resort.*$$
+  ^[A-Zio]\s -> Continue.Record
+  ^Routing Table: -> Continue.Record
+  ^Routing Table:\s+${vrf}
+  ^IPv4 Unicast:
+  ^Codes:.*$$
+  ^-*$$
+  ^${protocol}\s+${prefix} is directly connected, ${statusChangeTimestamp}, ${oifs}$$
+  ^${protocol}\s+${prefix} is directly connected, ${statusChangeTimestamp}, ${oifs}\s+\(nexthop in vrf ${nexthopvrf}\)\s*$$  
+  ^${protocol}\s+${prefix} is directly connected,\s+${oifs}\s*$$
+  ^${protocol}\*?\s+${prefix}\s+\[${preference}/${metric}\]\s+via\s+${nexthopIps},\s+${statusChangeTimestamp},\s+${oifs}.*$$
+  ^${protocol}\s+${prefix}\s+\[${preference}/${metric}\]\s+via\s+${nexthopIps}\s+\(nexthop in vrf ${nexthopvrf}\), ${statusChangeTimestamp}.*$$
+  ^${protocol}\s+${prefix}\s+\[${preference}/${metric}\]\s+via\s+${nexthopIps},\s+${oifs}\s*$$
+  ^${protocol}\s+${prefix}\s*$$
+  ^${protocol}\s+${prefix}\s+\[${preference}/${metric}\]\s*$$
+  ^\s+\[${preference}/${metric}\]\s+via\s+${nexthopIps}\s+\(nexthop in vrf ${nexthopvrf}\), ${statusChangeTimestamp}.*$$
+  ^\s+\[${preference}/${metric}\]\s+via\s+${nexthopIps}, ${statusChangeTimestamp}, ${oifs}.*$$
+  ^\s+\[${preference}/${metric}\]\s+via\s+${nexthopIps}, ${statusChangeTimestamp}\s*$$
+  ^\s+via\s+${nexthopIps},\s+${oifs}.*$$
+  ^\s+${statusChangeTimestamp},\s+${oifs}.*$$
+
+#Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+#       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+#       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+#       E1 - OSPF external type 1, E2 - OSPF external type 2, m - OMP
+#       n - NAT, Ni - NAT inside, No - NAT outside, Nd - NAT DIA
+#       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+#       ia - IS-IS inter area, * - candidate default, U - per-user static route
+#       H - NHRP, G - NHRP registered, g - NHRP registration summary
+#       o - ODR, P - periodic downloaded static route, l - LISP
+#       a - application route
+#       + - replicated route, % - next hop override, p - overrides from PfR
+#
+#Gateway of last resort is not set
+#
+#      10.0.0.0/8 is variably subnetted, 6 subnets, 2 masks
+#O        10.0.0.11/32 [110/2] via 10.127.0.2, 07:11:47, GigabitEthernet3
+#                      [110/2] via 10.127.0.0, 07:14:39, GigabitEthernet2
+#C        10.0.0.12/32 is directly connected, Loopback0
+#C        10.127.0.0/31 is directly connected, GigabitEthernet2
+#L        10.127.0.1/32 is directly connected, GigabitEthernet2
+#C        10.127.0.2/31 is directly connected, GigabitEthernet3
+#L        10.127.0.3/32 is directly connected, GigabitEthernet3
+#
+#Routing Table: Mgmt-Intf
+#Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+#       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+#       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+#       E1 - OSPF external type 1, E2 - OSPF external type 2, m - OMP
+#       n - NAT, Ni - NAT inside, No - NAT outside, Nd - NAT DIA
+#       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+#       ia - IS-IS inter area, * - candidate default, U - per-user static route
+#       H - NHRP, G - NHRP registered, g - NHRP registration summary
+#       o - ODR, P - periodic downloaded static route, l - LISP
+#       a - application route
+#       + - replicated route, % - next hop override, p - overrides from PfR
+#
+#Gateway of last resort is 10.255.1.1 to network 0.0.0.0
+#
+#S*    0.0.0.0/0 [254/0] via 10.255.1.1
+#      10.0.0.0/8 is variably subnetted, 3 subnets, 2 masks
+#C        10.255.1.0/24 is directly connected, GigabitEthernet1
+#S        10.255.1.1/32 [254/0] via 10.255.1.1, GigabitEthernet1
+#L        10.255.1.27/32 is directly connected, GigabitEthernet1
