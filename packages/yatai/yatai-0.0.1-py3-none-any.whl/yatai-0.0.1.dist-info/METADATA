@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: yatai
+Version: 0.0.1
+Summary: Model and deployment management for BentoML
+Home-page: https://github.com/bentoml/bentoml
+Author: bentoml
+Author-email: contact@bentoml.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6.1
+
+# Yatai
+
+
