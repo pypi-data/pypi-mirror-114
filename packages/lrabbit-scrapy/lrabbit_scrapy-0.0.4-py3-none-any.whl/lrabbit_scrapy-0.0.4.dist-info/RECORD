@@ -1,0 +1,13 @@
+lrabbit_scrapy/__init__.py,sha256=WkXX6A0HPDRNZN-wDhN0VE1gVMfp9OarU4qSYAY5b5Y,29
+lrabbit_scrapy/__main__.py,sha256=TElon3xwe_ES4rx5zPR-846Z8hv_3MBcaqYxziz9zg4,103
+lrabbit_scrapy/basespider.py,sha256=6lCHP6beH4z6lkPKZrB42Tav_QT_X95-Q7Ccvm2mRNw,14275
+lrabbit_scrapy/command.py,sha256=6NTh2NXNtSCe08T4rcGYHz-PNDQnDO3XYVK58aW2ejo,1353
+lrabbit_scrapy/config.py,sha256=-5tZlz5gm8mBu-UEDGPkI_7r6bEW2_cOZCQmeF8guIM,258
+lrabbit_scrapy/crawl.py,sha256=XC66esTkKtUdgqd64SbH3iWmrOpD3bpEhOWe8y-CECE,1793
+lrabbit_scrapy/utils.py,sha256=zgEl6SZVY8w4pYJUSOnptuXoM0pSr5dWCLTJYFyNI0Y,1215
+lrabbit_scrapy-0.0.4.dist-info/LICENSE,sha256=eTAMrQxkyw6ApSsWH9vJdyVXchbASCr9kEPFfwQzv-c,1091
+lrabbit_scrapy-0.0.4.dist-info/LICENSE.rst,sha256=eTAMrQxkyw6ApSsWH9vJdyVXchbASCr9kEPFfwQzv-c,1091
+lrabbit_scrapy-0.0.4.dist-info/METADATA,sha256=PhDB-sQU0k14NkPqLNOTfIOP0xFgumAD0vMSGJ6znTw,1351
+lrabbit_scrapy-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+lrabbit_scrapy-0.0.4.dist-info/top_level.txt,sha256=_b09Z7iAgU-mUf9giw5I6PG1vbUlan-GTMAdfrlhG18,15
+lrabbit_scrapy-0.0.4.dist-info/RECORD,,
