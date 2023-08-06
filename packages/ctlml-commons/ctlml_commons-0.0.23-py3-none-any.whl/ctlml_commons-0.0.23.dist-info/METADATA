@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ctlml-commons
+Version: 0.0.23
+Summary: CTLML Trader Commons
+Home-page: https://github.com/mhowell234/ctlml_commons
+Author: mhowell234
+Author-email: mhowell234@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10, <4
+
+UNKNOWN
+
+
