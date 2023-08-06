@@ -1,0 +1,9 @@
+README.md
+setup.py
+p-operators/__init__.py
+p_operators.egg-info/PKG-INFO
+p_operators.egg-info/SOURCES.txt
+p_operators.egg-info/dependency_links.txt
+p_operators.egg-info/entry_points.txt
+p_operators.egg-info/requires.txt
+p_operators.egg-info/top_level.txt
