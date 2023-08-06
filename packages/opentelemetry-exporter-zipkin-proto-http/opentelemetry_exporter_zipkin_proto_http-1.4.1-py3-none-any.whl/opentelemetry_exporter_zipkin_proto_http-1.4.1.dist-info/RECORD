@@ -1,0 +1,11 @@
+opentelemetry/exporter/zipkin/proto/http/__init__.py,sha256=WA8tcM5A2gB-6HmcuCxO4zz_-pOOMNSjCqdx8FdvOEU,6487
+opentelemetry/exporter/zipkin/proto/http/version.py,sha256=nQCiPafwZEoUIBbmYFzpn_0cl7ss1TseZ5K9mEdDPxw,607
+opentelemetry/exporter/zipkin/proto/http/v2/__init__.py,sha256=Inr5SzjbKANZfd5DMabmr8RrkD0vVRhagN0lBC4g-BE,4758
+opentelemetry/exporter/zipkin/proto/http/v2/gen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opentelemetry/exporter/zipkin/proto/http/v2/gen/zipkin_pb2.py,sha256=yBEgF9WPtJiwGtpE7Zm7H9iw8pGAKzlVe2lHtt-5c-M,18283
+opentelemetry_exporter_zipkin_proto_http-1.4.1.dist-info/LICENSE,sha256=h8jwqxShIeVkc8vOo9ynxGYW16f4fVPxLhZKZs0H5U8,11350
+opentelemetry_exporter_zipkin_proto_http-1.4.1.dist-info/METADATA,sha256=fkw9zceqa_vZfZzIqY7CvKJWKSDxYAXGJbDWEMNmb9o,1924
+opentelemetry_exporter_zipkin_proto_http-1.4.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+opentelemetry_exporter_zipkin_proto_http-1.4.1.dist-info/entry_points.txt,sha256=ZeTTsYhAEN2iMgEIX9_vnmAKvp4rGzG_fk11UPSOpS4,97
+opentelemetry_exporter_zipkin_proto_http-1.4.1.dist-info/top_level.txt,sha256=5p97iTMneNm1LAKDalzEVpYhvPZsaqJZzdLuD_upSaQ,14
+opentelemetry_exporter_zipkin_proto_http-1.4.1.dist-info/RECORD,,
