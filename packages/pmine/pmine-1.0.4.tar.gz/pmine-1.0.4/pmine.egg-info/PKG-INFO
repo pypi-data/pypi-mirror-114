@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: pmine
+Version: 1.0.4
+Summary: Terminal based Minesweeper using curses. Includes a self playing AI.
+Home-page: https://github.com/kindjie/minesweeper
+Author: Owen Wiggins
+Author-email: o@owx.dev
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/kindjie/minesweeper/issues
+Keywords: minesweeper game cli curses
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Environment :: Console :: Curses
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Games/Entertainment
+Requires-Python: >=2.7,>=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pmine
+Example code in Python 2.7+ / Python 3.6+ using only the standard library.
+
+This is a terminal app that is installed as pmine. It requires support for
+UTF-8 and curses. Entry point is in minesweeper_cli.py. Use the `-h` option
+to print help.
+
+```
+Usage: pmine [difficulty [width [height]]] [-h] [-d] [-a]
+
+  difficulty  Integer between 0 and 40 inclusive.
+  width       Integer greater than 1.
+  height      Integer greater than 1.
+
+Options:
+  -h  HelpDisplays this help message.
+  -d  DebugDisplays complete call stacks on errors.
+  -a  AutoEnables AI player to play 20 boards.
+
+In game:
+  Use the arrow keys or [hjkl] to move.
+  Press [f] to flag a mine under cursor.
+  Press [space] to reveal from under the cursor.
+  Press [q] to quit the game.
+
+There are no commands when AI player is enabled.
+
+Example:
+> pmine 3 32 16 -a
+
+  This will have the AI player attempt 32x16 boards moderately packed
+  with mines.
+```
+
+![Title](https://raw.githubusercontent.com/kindjie/minesweeper/main/readme/title.png)
+![Hidden Board](https://raw.githubusercontent.com/kindjie/minesweeper/main/readme/hidden_board.png)
+![Active Board](https://raw.githubusercontent.com/kindjie/minesweeper/main/readme/active_board.png)
+![Defeat](https://raw.githubusercontent.com/kindjie/minesweeper/main/readme/defeat.png)
+
+
