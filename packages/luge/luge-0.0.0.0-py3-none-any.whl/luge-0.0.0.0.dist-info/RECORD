@@ -1,0 +1,11 @@
+qianyan/__init__.py,sha256=2pTcM-sU1mFhlM4i9iA1JZe6oUPALSN7SqrjPXs-ZMA,17
+qianyan/change_format.py,sha256=w1yj9ziLEoyKMYgYKZXLBuM-GQJMnrkTcFMcGQaduzY,285
+qianyan/dataset.py,sha256=53Mf1WJ9POXoQxzzdpBN8XZltlPnMF5ISnugyQgxmSc,697
+qianyan/evaluate.py,sha256=pAwOW5Buy_2PefcACqIDDRGsHGGDHPgM6tK-SocHvEk,720
+qianyan/evaluate_dureader_robust.py,sha256=pGnI_oGLQsrhsbHWQ-PiYd3vs56-MA_AJlR7eTcThoo,5528
+qianyan/evaluate_dureader_yesno.py,sha256=k7iyQ6uQPkal6KS5_KmgTj6kcK6CPE4cJsbuw9w6o0s,430
+qianyan/evaluation_config.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+luge-0.0.0.0.dist-info/METADATA,sha256=LOwMgqZxE95n4aBhm3RevIEGnBrLBMu8PU7Dnf3-siQ,170
+luge-0.0.0.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+luge-0.0.0.0.dist-info/top_level.txt,sha256=JAsFAcrMHxQbqo6K3BfkgOIyMZw-j1uWb0e8WhIYpBA,8
+luge-0.0.0.0.dist-info/RECORD,,
