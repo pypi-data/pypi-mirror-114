@@ -1,0 +1,15 @@
+MANIFEST.in
+setup.py
+src/mcot/__init__.py
+src/mcot.pipe.egg-info/PKG-INFO
+src/mcot.pipe.egg-info/SOURCES.txt
+src/mcot.pipe.egg-info/dependency_links.txt
+src/mcot.pipe.egg-info/namespace_packages.txt
+src/mcot.pipe.egg-info/requires.txt
+src/mcot.pipe.egg-info/top_level.txt
+src/mcot/pipe/README.rst
+src/mcot/pipe/VERSION
+src/mcot/pipe/__init__.py
+src/mcot/pipe/datalad.py
+src/mcot/pipe/job.py
+src/mcot/pipe/pipeline.py

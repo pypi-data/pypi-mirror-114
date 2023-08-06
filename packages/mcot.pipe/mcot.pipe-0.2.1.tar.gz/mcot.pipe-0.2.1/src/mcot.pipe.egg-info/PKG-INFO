@@ -1,0 +1,32 @@
+Metadata-Version: 1.2
+Name: mcot.pipe
+Version: 0.2.1
+Summary: Declerative pipeline definition
+Home-page: https://git.fmrib.ox.ac.uk/ndcn0236/mcot
+Author: Michiel Cottaar
+Author-email: Michiel.Cottaar@ndcn.ox.ac.uk
+License: MIT license
+Description: Build pipelines decleratively built on top of file-tree.
+        
+        .. code-block:: python
+        
+            from mcot.pipe import pipe, In, Out, Ref, Var
+            from file_tree import FileTree
+        
+            @pipe(logdir='log', minutes=41)
+            def func(in_path: In, out_path: Out, ref_path: Ref, placeholder_key: Var):
+                pass
+        
+            pipe.cli(FileTree.from_string("""
+            placeholder_key = A, B
+        
+            ref_path.txt
+            directory-{placeholder_key}
+                in_path.txt
+                out_path.txt
+            """))
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
