@@ -1,0 +1,43 @@
+
+<!-- Вызов обертки -->
+{wp{wrapper_name}{v{
+	"head": {
+		"title": "title",
+		"meta":{
+			"keywords": "keyword",
+			"description": "description"
+		}
+	}
+}v}}
+
+
+
+
+<!-- Выделение секции -->
+{wp{ section_header }start}
+
+	<!-- Вызов тега -->
+	{tag{tag_name}{v{
+		"varname": "varval"
+	}v}}
+	<span class="bla">
+		code ...
+
+		<!-- Вызов под-тега -->
+		{t{t_name}}
+		<span>
+			под тег
+		</span>
+	</span>
+
+{wp{}end}
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, veritatis.
+
+<!-- Выделение секции -->
+{wp{ section_footer }start}
+
+	<!-- Вызов блока -->
+	{bl{ block_name }}
+
+{wp{}end}

@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: rocshelf
+Version: 0.1.13
+Summary: Препроцессор для компиляции веб-страниц из составляющих частей с параллельной модернизацией.
+Home-page: https://github.com/rocshers/rocshelf
+License: MIT
+Author: rocshers
+Author-email: prog.rocshers@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: Django[django] (>=3.2.4,<4.0.0)
+Requires-Dist: Pillow (>=8.2.0,<9.0.0)
+Requires-Dist: beautifulsoup4 (==4.9.3)
+Requires-Dist: libsass (==0.20.1)
+Requires-Dist: pyyaml (==5.4.1)
+Requires-Dist: rcore (==0.1.11)
+Requires-Dist: rlogging (==0.1.8)
+Description-Content-Type: text/markdown
+
+# Rocshelf
+
+rocshelf - препроцессор для компиляции веб-страниц из составляющих частей с параллельной модернизацией.
+За основу взята идея максимального разделение кода на независимые части, которые сливаются в единое целое при компиляции.
+
