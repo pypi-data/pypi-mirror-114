@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: rbxpy
+Version: 1.0.1
+Summary: ROBLOX api python library
+Home-page: UNKNOWN
+Author: strikerz
+Author-email: jysonok@gmail.com
+License: MIT
+Description: very easy to use roblox python tool created by Ryan Awesome222 (on v3rm)
+        (aka strikerz)
+        
+        changelog
+        ==========
+        
+        1.0.0 (29/07/2021)
+        -------------------
+        - initial release
+        
+Keywords: roblox
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

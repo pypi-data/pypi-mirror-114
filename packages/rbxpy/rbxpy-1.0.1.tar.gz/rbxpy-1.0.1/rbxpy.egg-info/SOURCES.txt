@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+rbxpy.egg-info/PKG-INFO
+rbxpy.egg-info/SOURCES.txt
+rbxpy.egg-info/dependency_links.txt
+rbxpy.egg-info/requires.txt
+rbxpy.egg-info/top_level.txt
