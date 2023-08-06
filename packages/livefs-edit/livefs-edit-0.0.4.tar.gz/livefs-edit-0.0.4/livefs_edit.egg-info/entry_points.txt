@@ -1,0 +1,3 @@
+[console_scripts]
+livefs-edit = livefs_edit:__main__
+
