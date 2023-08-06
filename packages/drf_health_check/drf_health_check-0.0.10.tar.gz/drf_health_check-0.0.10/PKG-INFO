@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: drf_health_check
+Version: 0.0.10
+Summary: Various health check view for the Django Framework
+Home-page: https://github.com/ihor-voronin/health-checker-django
+Author: Ihor Voronin
+Author-email: VoroninIhor@gmail.com
