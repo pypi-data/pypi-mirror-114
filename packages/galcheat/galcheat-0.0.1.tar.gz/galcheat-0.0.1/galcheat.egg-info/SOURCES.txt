@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+galcheat/__init__.py
+galcheat/__main__.py
+galcheat/filter.py
+galcheat/survey.py
+galcheat.egg-info/PKG-INFO
+galcheat.egg-info/SOURCES.txt
+galcheat.egg-info/dependency_links.txt
+galcheat.egg-info/requires.txt
+galcheat.egg-info/top_level.txt
