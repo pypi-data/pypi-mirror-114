@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: snek-inspyred
+Version: 1.0
+Summary: The classic snake game, just in Python.
+License: MIT
+Author: Taylor B.
+Author-email: 43686206+tayjaybabee@users.noreply.github.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications :: GTK
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Games/Entertainment :: Arcade
+Requires-Dist: pygame (>=2.0.1,<3.0.0)
+Project-URL: GitHub, https://github.com/Inspyre-Softworks/snek
+Project-URL: PyPi, https://pypi.org/t.blackstone/snek
