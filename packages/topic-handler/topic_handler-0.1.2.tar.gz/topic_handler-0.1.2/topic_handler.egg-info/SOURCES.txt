@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+topic_handler/Global.py
+topic_handler/__init__.py
+topic_handler.egg-info/PKG-INFO
+topic_handler.egg-info/SOURCES.txt
+topic_handler.egg-info/dependency_links.txt
+topic_handler.egg-info/requires.txt
+topic_handler.egg-info/top_level.txt
