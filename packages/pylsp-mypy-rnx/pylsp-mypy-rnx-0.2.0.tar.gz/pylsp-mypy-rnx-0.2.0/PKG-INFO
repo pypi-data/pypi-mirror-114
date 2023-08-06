@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: pylsp-mypy-rnx
+Version: 0.2.0
+Summary: mypy-ls fork
+Home-page: https://github.com/gjeusel/pylsp-mypy-rnx
+License: MIT
+Keywords: lsp,mypy,python-lsp-server
+Author: Guillaume Jeusel
+Author-email: guillaume.jeusel@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development
+Requires-Dist: python-lsp-server (>=1.0,<2.0)
+Requires-Dist: setuptools
+Project-URL: Bug Tracker, https://github.com/gjeusel/pylsp-mypy-rnx/issues
+Project-URL: Repository, https://github.com/gjeusel/pylsp-mypy-rnx
+Project-URL: Source, https://github.com/gjeusel/pylsp-mypy-rnx
+Description-Content-Type: text/markdown
+
+<p align="center"><strong>pylsp-mypy-rnx</strong> <em>- mypy-ls fork</em></p>
+
+<p align="center">
+<a href="https://github.com/gjeusel/pylsp-mypy-rnx/actions">
+    <img src="https://github.com/gjeusel/pylsp-mypy-rnx/workflows/Test%20Suite/badge.svg" alt="Test Suite">
+</a>
+<a href="https://pypi.org/project/pylsp-mypy-rnx/">
+    <img src="https://badge.fury.io/py/pylsp-mypy-rnx.svg" alt="Package version">
+</a>
+<a href="https://codecov.io/gh/gjeusel/pylsp-mypy-rnx">
+    <img src="https://codecov.io/gh/gjeusel/pylsp-mypy-rnx/branch/master/graph/badge.svg" alt="Codecov">
+</a>
+</p>
+
+---
+
+## Installation
+
+``` bash
+pip install pylsp-mypy-rnx
+```
+
+
+## Develop
+
+```bash
+poetry install
+poetry run pre-commit install -t pre-push
+poetry run pytest
+```
+
