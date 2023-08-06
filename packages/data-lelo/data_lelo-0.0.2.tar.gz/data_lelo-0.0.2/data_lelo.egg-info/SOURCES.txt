@@ -1,0 +1,7 @@
+setup.py
+data_lelo/__init__.py
+data_lelo/finance_data.py
+data_lelo.egg-info/PKG-INFO
+data_lelo.egg-info/SOURCES.txt
+data_lelo.egg-info/dependency_links.txt
+data_lelo.egg-info/top_level.txt
