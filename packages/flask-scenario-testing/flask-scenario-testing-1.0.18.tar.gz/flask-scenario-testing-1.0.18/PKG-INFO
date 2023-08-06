@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: flask-scenario-testing
+Version: 1.0.18
+Summary: Automatically monitor the evolving performance of Flask/Python web services.
+Home-page: https://github.com/thejager/flask-scenario-testing
+Author: Johan de Jager, Mircea Lungu
+Author-email: johanthejager@gmail.com
+License: UNKNOWN
+Platform: Any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Framework :: Flask
+
+UNKNOWN
+
