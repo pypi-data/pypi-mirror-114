@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: deep_audio_features
+Version: 0.1.6
+Summary: Extract supervised deep features using CNN audio classifiers
+Home-page: https://github.com/tyiannak/deep_audio_features
+Author: Theodoros Giannakopoulos
+Author-email: tyiannak@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
