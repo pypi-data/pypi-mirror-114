@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+margin_talib_service/__init__.py
+margin_talib_service/__main__.py
+margin_talib_service/service.py
+margin_talib_service.egg-info/PKG-INFO
+margin_talib_service.egg-info/SOURCES.txt
+margin_talib_service.egg-info/dependency_links.txt
+margin_talib_service.egg-info/entry_points.txt
+margin_talib_service.egg-info/requires.txt
+margin_talib_service.egg-info/top_level.txt

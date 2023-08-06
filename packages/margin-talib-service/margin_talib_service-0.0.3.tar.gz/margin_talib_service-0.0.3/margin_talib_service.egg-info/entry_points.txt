@@ -1,0 +1,3 @@
+[console_scripts]
+margin-talib-service = margin_talib_service.service:main
+
