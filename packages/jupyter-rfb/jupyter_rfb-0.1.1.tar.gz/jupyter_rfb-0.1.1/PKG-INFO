@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: jupyter_rfb
+Version: 0.1.1
+Summary: Remote Frame Buffer for Jupyter
+Home-page: https://github.com/vispy/jupyter_rfb
+Author: Almar Klein
+Author-email: almar@almarklein.org
+License: MIT
+Description: Remote Frame Buffer for Jupyter
+Keywords: ipython,jupyter,widgets,visualization,remote frame buffer
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: IPython
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
