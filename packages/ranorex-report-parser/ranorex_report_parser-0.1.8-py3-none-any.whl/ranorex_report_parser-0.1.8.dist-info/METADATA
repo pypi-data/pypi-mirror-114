@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: ranorex-report-parser
+Version: 0.1.8
+Summary: Package for parsing ranorex report files
+Home-page: https://github.com/asafsilman/ranorex-report-parser
+Author: Asaf Silman
+Author-email: asafsilman@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/asafsilman/ranorex-report-parser/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: defusedxml (>"0.7.0")
+
+# Ranorex Report Parser
+
+The following heirarchy is used to parse the ranorex report
+
+![Ranorex Report Heirarchy](/doc/heirarchy.png)
+
+## Setup
+1. `python -m venv env`
+2. `pip install -r REQUIREMENTS.txt`
+
+## Build
+`python -m build`
+
+## Test
+`tox`
+
+
