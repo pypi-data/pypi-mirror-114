@@ -1,0 +1,10 @@
+numpy
+pandas
+csbdeep
+stardist
+scikit-image
+scipy
+tifffile
+matplotlib
+imagecodecs
+n2v

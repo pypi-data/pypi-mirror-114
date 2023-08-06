@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+vollseg/Augmentation3D.py
+vollseg/OptimizeThreshold.py
+vollseg/SmartSeeds3D.py
+vollseg/__init__.py
+vollseg/helpers.py
+vollseg.egg-info/PKG-INFO
+vollseg.egg-info/SOURCES.txt
+vollseg.egg-info/dependency_links.txt
+vollseg.egg-info/requires.txt
+vollseg.egg-info/top_level.txt
