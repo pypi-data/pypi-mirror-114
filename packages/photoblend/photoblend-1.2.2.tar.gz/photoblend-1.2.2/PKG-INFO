@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: photoblend
+Version: 1.2.2
+Summary: Photoblend is a custom PyQt5 & C++ image editor app with blending mode features, filters and othermanipulation options to render unique and creative images.
+Home-page: https://github.com/aausek/PhotoBlend
+Author: Team Senioritis
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
