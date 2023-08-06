@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: translatehtml
+Version: 0.1.0
+Summary: Translate HTML using Beautiful Soup and Argos Translate
+Home-page: https://www.argosopentech.com
+Author: P.J. Finlay
+Author-email: admin@argosopentech.com
+License: UNKNOWN
+Description: # translate-html
+        Translate HTML using [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/) and [Argos Translate](https://github.com/argosopentech/argos-translate).
+        
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

@@ -1,0 +1,9 @@
+README.md
+setup.py
+translatehtml/__init__.py
+translatehtml/translatehtml.py
+translatehtml.egg-info/PKG-INFO
+translatehtml.egg-info/SOURCES.txt
+translatehtml.egg-info/dependency_links.txt
+translatehtml.egg-info/requires.txt
+translatehtml.egg-info/top_level.txt
