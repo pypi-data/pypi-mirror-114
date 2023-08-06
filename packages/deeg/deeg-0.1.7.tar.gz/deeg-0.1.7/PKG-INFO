@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: deeg
+Version: 0.1.7
+Summary: package for EEG data analysis and deep learning
+Home-page: https://github.com/pypa/sampleproject
+Author: Jiaqi Li, Zhihao Zhao, Yiming Li
+Author-email: lijiaqi199609@sina.com, sethzhao506@berkeley.edu
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: license
+
+This is a package for EEG data analysis and deep learning.  
+Details of this package is available on GitHub.
+
