@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: nmappalyzer
+Version: 1.0.0
+Summary: Lighweight Nmap wrapper that doesn't try too hard
+License: GPL-3.0
+Author: TheTechromancer
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: lxml (>=4.6.3,<5.0.0)
+Requires-Dist: xmltodict (>=0.12.0,<0.13.0)
