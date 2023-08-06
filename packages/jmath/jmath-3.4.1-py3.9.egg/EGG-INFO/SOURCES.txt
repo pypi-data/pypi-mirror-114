@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+jmath.egg-info/PKG-INFO
+jmath.egg-info/SOURCES.txt
+jmath.egg-info/dependency_links.txt
+jmath.egg-info/top_level.txt
+jmath/approximation/__init__.py
+jmath/approximation/euler_method.py
+jmath/physics/__init__.py
+jmath/physics/circuits.py
+jmath/physics/mechanics.py
+jmath/physics/prefixes.py
