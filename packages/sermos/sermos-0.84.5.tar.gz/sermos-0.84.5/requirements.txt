@@ -1,0 +1,16 @@
+PyYAML>=5.2,<6
+marshmallow>=3.2.1,<4
+click>=7,<8
+requests>=2.24.0
+# TODO review if this should be optional
+rho-ml[cloud]>=0.10.0
+# TODO this should be an OPTIONAL dep.
+redis==3.3.11
+# TODO this should be an OPTIONAL dep.
+rhodb[redis]>=5.1.1,<6
+# TODO consider keeping or removing...
+attrs>=19,<20
+# TODO consider where this dep should live
+boto3>=1.11,<2
+# TODO review if needs to be required by default
+sermos-tools>=0.3.0
