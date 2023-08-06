@@ -1,0 +1,3 @@
+[console_scripts]
+tppsdk = TouchPortalAPI.sdk_tools:main
+
