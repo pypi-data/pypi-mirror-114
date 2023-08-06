@@ -1,0 +1,9 @@
+README.md
+setup.py
+statsnz/__init__.py
+statsnz.egg-info/PKG-INFO
+statsnz.egg-info/SOURCES.txt
+statsnz.egg-info/dependency_links.txt
+statsnz.egg-info/entry_points.txt
+statsnz.egg-info/requires.txt
+statsnz.egg-info/top_level.txt
