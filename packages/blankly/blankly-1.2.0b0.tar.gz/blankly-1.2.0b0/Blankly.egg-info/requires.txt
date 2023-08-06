@@ -1,0 +1,14 @@
+alpaca-trade-api>=1.2.3
+bokeh
+dateparser
+newtulipy
+numpy
+pandas
+pandas_market_calendars
+pytest
+pytest-mock
+python-binance
+requests
+scikit-learn
+websocket-client
+pyzmq
