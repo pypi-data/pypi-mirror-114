@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: antannotator
+Version: 0.0.2
+Summary: JupyterLab tool for data annotations for machine learning routines
+Home-page: https://github.com/IvanAntipov/AntAnnotator
+Author: Ivan Antipov
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ipywidgets (>=7.6.3)
+
+# AntAnnotator
+
+JupyterLab tool for data annotations for machine learning routines.
+
+
+# Roadmap
+
+## Multichoice text classification
+
+Multiclass, multichoise text classification
+
+
+## One choice text classification
+
+One choice classification. (Task adavance immediately user celect a option)
+
+## Free input
+
+Free user input. (For example for summarization task)
+
