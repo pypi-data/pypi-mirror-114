@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: soundit
+Version: 0.1
+Summary: Make audio
+Home-page: https://github.com/GeeTransit/soundit
+Author: George Zhang
+Author-email: geetransit@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Multimedia :: Sound/Audio
+Description-Content-Type: text/markdown
+
+# soundit
+
+A small library for audio manipulation.
+
+
