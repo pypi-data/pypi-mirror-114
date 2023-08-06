@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/bmautomation/__init__.py
+src/bmautomation/bmautomation.py
+src/bmautomation/version.py
+src/bmautomation.egg-info/PKG-INFO
+src/bmautomation.egg-info/SOURCES.txt
+src/bmautomation.egg-info/dependency_links.txt
+src/bmautomation.egg-info/requires.txt
+src/bmautomation.egg-info/top_level.txt
