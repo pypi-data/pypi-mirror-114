@@ -1,0 +1,3 @@
+[console_scripts]
+tracevalidate=fractopo.cli:tracevalidate
+
