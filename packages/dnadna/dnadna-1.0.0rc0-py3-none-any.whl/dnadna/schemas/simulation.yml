@@ -1,0 +1,46 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+type: "object"
+description: >-
+    JSON Schema (YAML-formatted) for basic properties of a simulation on which
+    a model will be trained.
+allOf:
+    - {"$ref": "dataset.yml"}
+    -
+        properties:
+            plugins: {"$ref": "plugins.yml"}
+
+            simulator_name:
+                type: "string"
+                description: >-
+                    for simulations output by the `dnadna simulation` command, the
+                    name of the simulation class used to initialize and run the
+                    simulation
+
+            n_scenarios:
+                type: "integer"
+                description: >-
+                    number of different scenarios simulated; each scenario
+                    is a parameterization of the simulation with a different
+                    set of (possibly random) parameter values; each scenario
+                    may have one or more "replicates"--simulations using the
+                    same parameters, but with different randomized
+                    outputs--the number of replicates of each scenario
+                    should be listed in the scenario parameters table
+                minimum: 1
+                default: 1
+
+            seed:
+                type: ["integer", "null"]
+                description: >-
+                    fixed seed to use for seeding the random number
+                    generator at the beginning of the simulation; if absent
+                    then the PRNG's default seeding method is used
+                default: null
+
+            summary_statistics: {"$ref": "summary-statistics.yml#/definitions/summary_statistics"}
+
+        required:
+            - n_scenarios
+            - scenario_params_path
+
+    - {"$ref": "dnadna-plugin:simulator"}

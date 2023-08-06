@@ -1,0 +1,11 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+description: "net parameters for SPIDNA"
+allOf:
+    - properties:
+          n_features:
+              description: "number of features in each block"
+              minimum: 1
+          n_blocks:
+              description: "Number of residual blocks"
+              minimum: 1
+      additionalProperties: false

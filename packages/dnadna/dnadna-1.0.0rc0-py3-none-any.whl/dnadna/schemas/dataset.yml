@@ -1,0 +1,109 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+description: >-
+    config file for a dataset--in this case a dataset is a collection of
+    files containing SNP data organized in one of the dataset formats
+    understood by DNADNA; this is used for both loading data from simulated
+    data, or other datasets on which we want to perform prediction
+type: "object"
+properties:
+    data_root:
+        type: "string"
+        format: "filename"
+        description: >-
+            root directory for all files related to the dataset, either as
+            an absolute path, or as a path relative to the location of this
+            config file
+
+    dataset_name:
+        type: "string"
+        description: >-
+            a name to give the dataset; used in generating filenames and
+            logging output
+
+    scenario_params_path:
+        type: "string"
+        format: "filename"
+        description: >-
+            path to the CSV file containing the per-scenario
+            parameters used in this simulation, either as an
+            absolute path, or as a path relative to this config file
+
+    data_source:
+        type: "object"
+        description: >-
+            options for describing the format in which the dataset is
+            organized; currently only one format ("dnadna", the native
+            format for DNADNA) is understood, but others may be added later
+        properties:
+            format:
+                type: "string"
+                description: >-
+                    a unique label identifying the data format; the format
+                    property determines what reader is used for simulation
+                    data, and any further options in data_source may depend
+                    on the format
+                enum: ["dnadna"]
+        required: ["format"]
+        oneOf:
+            - {"$ref": "dataset_formats/dnadna.yml"}
+
+    position_format:
+        type: "object"
+        description: >-
+            options related to the format of the positions array; i.e. is it
+            given as absolute positions in a chromosome, or distances between
+            positions, is it normalized to [0.0, 1.0), etc.
+        properties:
+            chromosome_size:
+                type: "integer"
+                description: >-
+                    number of base pairs in the chromsome; required only for
+                    converting from normalized to un-normalized positions
+            initial_position:
+                type: ["integer", "number"]
+                description: >-
+                    initial position to use for circular chromosomes; when
+                    converting from circular distances to positions for example
+                    an initial position is needed
+            distance:
+                type: "boolean"
+                description: >-
+                    if true, the positions array represents distances between
+                    positions, instead of absolute positions
+            normalized:
+                type: "boolean"
+                description: >-
+                    if true, the positions (whether they are absolute or
+                    relative) are normalized to the range [0.0, 1.0);
+                    in this case it is also necessary to provide the
+                    chromosome size if it is needed to convert to the
+                    un-normalized values
+            circular:
+                type: "boolean"
+                description: >-
+                    whether or not the chromosome is circular
+                default: false
+
+    ignore_missing:
+      description: >-
+          ignore missing scenarios or replicates when loading
+          data samples; in the case of missing samples the next
+          one is tried until one is found
+      type: "boolean"
+      default: false
+
+    cache_validation_set:
+        description: >-
+            used only during training, keeps the validation set cached
+            in-memory, which can greatly speed up evaluation; however, if the
+            validation set is too large to fit in available memory this can be
+            disabled
+        type: "boolean"
+        default: false
+
+    dnadna_version: {"$ref": "definitions.yml#/definitions/version"}
+
+required:
+    - data_root
+    - dataset_name
+    - data_source

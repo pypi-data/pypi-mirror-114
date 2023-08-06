@@ -1,0 +1,30 @@
+# JSON Schema (YAML-formatted) for pre-processed training configuration
+$schema: "http://json-schema.org/draft-07/schema#"
+type: "object"
+description: >-
+    same as training.yml, but with some additional properties that are added to
+    the config after running the `dnadna train` command, containing additional
+    details about the training run
+allOf:
+    - { "$ref": "training.yml" }
+    -
+        properties:
+            run_id:
+                type: ["integer", "string"]
+                description: >-
+                    the unique (within a model directory) string or integer
+                    identifying a single training run
+            run_name:
+                type: "string"
+                description: >-
+                    the full name of the run (and the directory in which this
+                    config resides) derived from the run_id and model_name,
+                    along with the base training config's run_name_format
+                    property
+                    training set
+            training_datetime:
+                type: "string"
+                format: "date-time"
+        required:
+            - run_id
+            - run_name

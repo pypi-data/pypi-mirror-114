@@ -1,0 +1,33 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+description: >-
+    base schema for parameter schemas for all network models; contains
+    definitions that are used by several different models; definitions for
+    individual models are in separate files named by the model name (all
+    lowercase)
+definitions:
+    fixed_inputs:
+        description: >-
+            model parameters schema for models that take fixed-sized inputs
+            in the number of SNPs and individuals; n_snp and n_indiv are both
+            optional, in which case they are determined by the data, but the
+            user must ensure that the data is appropriately uniform in this
+            case, e.g. by pre-processing; note: n_outputs should not be given
+            here, as it is always determined by the learned parameters
+        type: "object"
+        default: {}
+        properties:
+            n_snp:
+                description: "number of SNPs in the input data"
+                type: "integer"
+                minimum: 1
+            n_indiv:
+                description: "number of individuals in the input data"
+                type: "integer"
+                minimum: 1
+    arbitrary_inputs:
+        description: >-
+            model parameters schema for models that take arbitrary-sized
+            inputs; this is a trivial schema with no properties
+        type: "object"
+        default: {}
+

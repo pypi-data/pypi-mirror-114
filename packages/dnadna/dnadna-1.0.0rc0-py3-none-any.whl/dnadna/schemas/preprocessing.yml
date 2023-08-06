@@ -1,0 +1,115 @@
+type: "object"
+
+description: >-
+    required configuration for the `dnadna preprocess` command
+
+properties:
+    dataset:
+        description: the dataset/simulation configuration
+        "$ref": "dataset.yml"
+
+    model_root:
+        type: "string"
+        format: "filename!"
+        description: >-
+            root directory for all training runs of this model / training
+            configuration
+        default: "."
+
+    model_name:
+        type: "string"
+        description: >-
+            unique name to give to models trained with this configuration;
+            individual training runs will prepend this to the run_id
+        minLength: 1
+
+    learned_params:
+        description: >-
+            description of the parameters the network will be trained on
+        "$ref": "param-set.yml"
+
+    dataset_splits:
+        description: >-
+            how to split the dataset between training, validation, and test
+            sets
+
+            numbers given for each subset are ratios which must sum to 1; if
+            less than 1 some portion of the dataset will be omitted, and if
+            more than 1 an error is raised
+
+            dataset splits are performed after unusable scenarios are omitted
+            according to the pre-processing parameters (min_snp, etc.)
+        type: "object"
+        properties:
+            training:
+                description: portion of the dataset to use for training
+                type: "number"
+                exclusiveMinimum: 0
+                exclusiveMaximum: 1
+            validation:
+                description: portion of the dataset to use for validation
+                type: "number"
+                exclusiveMinimum: 0
+                exclusiveMaximum: 1
+            test:
+                description: >-
+                    portion of the dataset to use for the test set (optional)
+                type: "number"
+                minimum: 0
+                exclusiveMaximum: 1
+            unused:
+                description: >-
+                    portion of the dataset which will not be used (optional,
+                    reserved for custom purposes)
+                type: "number"
+                minimum: 0
+                exclusiveMaximum: 1
+        required: ["training", "validation"]
+        additionalProperties: false
+
+    preprocessing:
+        description: >-
+            these are parameters used for data pre-processing prior to
+            training; they determine the subset of the dataset that will be
+            used for a training run
+        type: "object"
+        properties:
+            min_snp:
+                description: "minimum number of SNPs each sample should have"
+                type: ["integer", "null"]
+                minimum: 1
+                default: null
+            min_indiv:
+                description: "minimum number of individuals in each sample"
+                type: ["integer", "null"]
+                minimum: 1
+                default: null
+            seed:
+                description: >-
+                    random seed to initialize PRNG; in particular
+                    randomization is used during pre-processing to separate
+                    scenarios into the training and validation sets, and
+                    specifying a seed ensures the split is consistent
+                    between runs
+                type: ["integer", "null"]
+                default: null
+            n_workers:
+                description: >-
+                    if greater than 0, the number of worker processes to
+                    use for preprocessing; using multiple workers can in
+                    some cases speed up preprocessing
+                type: "integer"
+                minimum: 0
+                default: 0
+
+    dnadna_version: {"$ref": "definitions.yml#/definitions/version"}
+
+    plugins: {"$ref": "plugins.yml"}
+
+required:
+    - dataset
+    - model_root
+    - model_name
+    - learned_params
+    - dataset_splits
+    - preprocessing

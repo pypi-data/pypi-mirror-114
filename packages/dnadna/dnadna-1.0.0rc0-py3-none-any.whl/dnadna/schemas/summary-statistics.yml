@@ -1,0 +1,117 @@
+type: "object"
+description: >-
+    summary statistics configuration: as summary statistics require reference
+    to a simulation configuration for the simulation data to read, this
+    requires a reference to a simulation config, either embedded or inherited
+    from an external file; alternatively, a simulation config file may also
+    contain embedded an embedded summary statistics config, in its
+    `summary_statistics` property, for example,
+
+    either a summary statistics config with an embedded/inherited simulation
+    config::
+
+        chromsome_size: 2e6
+        # .. additional summary statistics properties ...
+        simulation:
+            # ... simulation config properties, or inherit: ...
+
+    or you can use a simulation config with an embedded summary statistics
+    config::
+
+        data_root: "."
+        name: "my_simulation"
+        # ... additional simulation properties ...
+        summary_statistics:
+            # ... summary statistics config properties, or in inherit: ...
+
+definitions:
+    summary_statistics:
+        type: "object"
+        description: >-
+            settings for calculating and outputting summary statistics on this
+            simulation
+        properties:
+            plugins: {"$ref": "plugins.yml"}
+
+            filename_format:
+                type: "string"
+                description: >-
+                    string template for per-secenario summary statistics files;
+                    for each scenario three statistics tables are output: the
+                    LD (Linkage Disequilibrium) scores, SFS (Site Frequency
+                    Spectrum), and the "sel" file containing additional test
+                    statistics such as Tajima's D, iHS, nSL, and possibly
+                    others to be implemented; this template contains up to 3
+                    variables, the 'name' of the dataset, the 'scenario'
+                    (integer scenario index) and 'stat' ('ld', 'sfs', or 'sel')
+                default: "sumstats/scenario_{scenario}/{dataset_name}_{scenario}_{type}.csv"
+
+            chromosome_size:
+                type: "number"
+                description: >-
+                    number of SNP pairs in the chromosome
+                # TODO: This seems arbitrary; why this number?  Should there
+                # even be a default at all?
+                default: 2.0e+6
+
+            ld_options:
+                type: "object"
+                description: >-
+                    options to pass to the LD computation
+                default: {}
+                properties:
+                    circular:
+                        type: "boolean"
+                        description: >-
+                            whether or not circular chromosomes are being
+                            considered
+                        default: false
+                    distance_bins:
+                        type: ["array", "integer"]
+                        description: >-
+                            distance bins into which to group SNPs; LD is then
+                            averaged over those bins; either an array of
+                            distance groups, or an integer giving the number of
+                            bins to create over log space in max distance
+                        default: 19  # TODO: Why 19?
+                        minLength: 1
+                        minimum: 1
+
+            sfs_options:
+                type: "object"
+                description: >-
+                    options to pass to the SFS computation
+                default: {}
+                properties:
+                    folded:
+                        type: "boolean"
+                        description: >-
+                            whether or not to compute the folded SFS
+                        default: false
+
+            sel_options:
+                type: "object"
+                description: >-
+                    options to pass to the additional sel statistics
+                default: {}
+                properties:
+                    window:
+                        type: ["integer", "null"]
+                        description: >-
+                            number of bins into which to slice SNP positions;
+                            the statistic is then computed over each window
+                            instead of over all sites together; if the value is
+                            0, the statistics are not binned
+                        default: 100  # TODO: Why 100??
+                        minimum: 0
+
+oneOf:
+    - allOf:
+        - {"$ref": "#/definitions/summary_statistics"}
+        -
+            properties:
+                simulation: {"$ref": "simulation.yml"}
+            required: ["simulation"]
+    - allOf:
+        - {"$ref": "simulation.yml"}
+        - {"required": ["summary_statistics"]}

@@ -1,0 +1,6 @@
+data_root: .
+dataset_name: generic
+scenario_params_path: scenario_params.csv
+data_source:
+    format: dnadna
+    filename_format: "scenario_{scenario}/{dataset_name}_{scenario}_{replicate}.npz"

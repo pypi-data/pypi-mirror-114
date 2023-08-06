@@ -1,0 +1,16 @@
+model_root: .
+model_name: "default"
+dataset: {"inherit": "dataset.yml"}
+learned_params:
+    param1:
+        type: regression
+    param2:
+        type: classification
+        classes: 2
+dataset_splits:
+    training: 0.70
+    validation: 0.30
+preprocessing:
+    min_snp: 1
+    min_indiv: 1
+    n_workers: 2

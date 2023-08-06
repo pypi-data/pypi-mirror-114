@@ -1,0 +1,153 @@
+# JSON Schema (YAML-formatted) for details about parameters to learn in a
+# training run
+$schema: "http://json-schema.org/draft-07/schema#"
+description: >-
+    details of parameters to learn in training; it may be a mapping of param
+    names to param configurations, or a list thereof (this is the case when
+    using YAML ordered mappings, which are translated into a lists of
+    single-element mappings); in the latter case the specified order of the
+    parameters is preserved when mapping parameters to optimization targets
+oneOf:
+    - {"$ref": "#/definitions/parameters"}
+    - type: "array"
+      items: {"$ref": "#/definitions/parameters"}
+      minItems: 1
+      errorMsg:
+          minItems: at least one parameter must be declared in {property}
+
+definitions:
+    loss_func:
+        description: >-
+            name of the loss function to apply to this parameter; the name
+            is the same as the class or function implementing the loss
+            function (e.g. MSELoss) minus the "Loss" in the name and is
+            case-insensitvie (e.g. "mse" for MSELoss); spaces are also
+            allowed in the function name for clarity (e.g. "cross entropy")
+            and are simply ignored when looking up the associated
+            class/function; the default value depends on the parameter
+            type; spaces
+        type: "string"
+        minLength: 1
+
+    loss_weight:
+        description: >-
+            additional weight by which to multiply the parameter's loss
+            after applying the loss function, allowing some parameters to
+            be weighted more heavily than others; by default all parameters
+            are weighted equally
+        type: "number"
+        minimum: 0
+        maximum: 1
+        default: 1
+
+    parameters:
+        description: a mapping of parameter names to their details
+        type: "object"
+        minProperties: 1
+        errorMsg:
+            minProperties: at least one parameter must be declared in {property}
+        # We use additionalProperties here because the property names are the
+        # parameter names, which are arbitrary strings; hence every key/value
+        # pair in this object is assumed to be a parameter definition
+        additionalProperties: {"$ref": "#/definitions/parameter"}
+
+    parameter:
+        description: details about a single parameter
+        type: "object"
+        errorMsg:
+            type: >-
+                must be an object like:
+
+                    param_name:
+                        type: regression
+
+                or:
+
+                    param_name:
+                        type: classification
+                        classes:
+                            - class1
+                            - class2
+                            - class3
+
+                where classes can be a list of class names or just the number
+                of classes
+        required: ["type"]
+        properties:
+            type:
+                description: >-
+                    parameter type; either "regression" or "classification".
+                    Classification parameters require the additional "classes"
+                    property
+                enum: ["regression", "classification"]
+
+        # Select between either "regression" which has no other properties
+        # and classification which requires the additional "classes"
+        # properties.  This could possibly be expressed more succinctly with
+        # JSONSchema Draft-07 conditionals, but this is roughly equivalent.
+        #
+        # TODO: This also implements different defaults for loss_func depending
+        # on the parameter type; however I don't think it works yet to
+        # automatically supply this default during validation; so that's a
+        # special case that might have to be checked...
+        oneOf:
+            -
+                properties:
+                    type: {"const": "regression"}
+                    loss_func:
+                        "$ref": "#/definitions/loss_func"
+                        default: "MSE"
+                    loss_weight:
+                        "$ref": "#/definitions/loss_weight"
+                        default: 1
+                    log_transform:
+                        description: >-
+                            whether or not a log transform should be applied to
+                            this parameter's known values during
+                            pre-processing; training is then performed with the
+                            log values (regression parameters only)
+                        type: "boolean"
+                        default: false
+                    tied_to_position:
+                        description: >-
+                            values of this parameter are SNP positions, so any
+                            transformations or normalizations of the position
+                            array must also be applied to this parameter during
+                            training
+                        type: "boolean"
+                        default: false
+                additionalProperties: false
+            -
+                properties:
+                    type: {"const": "classification"}
+                    loss_func:
+                        "$ref": "#/definitions/loss_func"
+                        default: "Cross Entropy"
+                    loss_weight:
+                        "$ref": "#/definitions/loss_weight"
+                        default: 1
+                    classes:
+                        description: >-
+                            classification parameters classes, either an
+                            integer giving the number of classes in the
+                            parameter, or an array to give explicit names to
+                            the classes (one item for each class);  class names
+                            can themselves be either strings, or integers
+                            (which are converted automatically to strings, as
+                            they are just labels for the classes)
+                        type: ["integer", "array"]
+                        items:
+                            type: ["integer", "string"]
+                        minimum: 1
+                        minItems: 1
+                    n_classes:
+                        description: >-
+                            after pre-processing, this property contains the number
+                            of classes in a classification parameter; if the
+                            "classes" property is an integer this is identical;
+                            otherwise it is the length of the "classes" array;
+                            normally this property should not be manually specified
+                        type: "integer"
+                        minimum: 1
+                required: ["classes"]
+                additionalProperties: false

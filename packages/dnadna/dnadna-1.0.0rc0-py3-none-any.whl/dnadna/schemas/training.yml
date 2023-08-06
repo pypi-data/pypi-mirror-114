@@ -1,0 +1,159 @@
+# JSON Schema (YAML-formatted) for inference/training parameters file.
+$schema: "http://json-schema.org/draft-07/schema#"
+type: "object"
+description: >-
+    the main training configuration, typically generated from an existing
+    preprocessing config file
+allOf:
+    - properties:
+          network:
+              description:
+                  "name and parameters of the neural net model to train"
+              properties:
+                  name:
+                      description: "name of the network to train"
+                  params:
+                      description: >-
+                          options specific to the neural net model being
+                          trained; these are passed as keyword arguments to the
+                          net's constructor (see dnadna.net module); the schema
+                          for this property depends on which model is being
+                          used--model-specific schemas are found in
+                          dnadna/schemas/nets, though a model may also provide
+                          its schema as a .schema attribute
+              default:
+                  name: "SPIDNA"
+              "$ref": "dnadna-plugin:network"
+
+          optimizer:
+              description: >-
+                  name and parameters of the optimizer to use; all built-in
+                  optimizers from the torch.optim package are available for use
+                  here, and you can also provide a custom optimizer via a
+                  plugin
+              default:
+                  name: "Adam"
+                  params:
+                      learning_rate: 0.001
+                      weight_decay: 0
+              "$ref": "dnadna-plugin:optimizer"
+
+          dataset_transforms:
+              "$ref": "#/definitions/transforms"
+              default: []
+
+          n_epochs:
+              description: >-
+                  number of epochs over which to repeat the training process
+              type: "integer"
+              minimum: 1
+              default: 1
+
+          evaluation_interval:
+              description: >-
+                  interval in the training loop in which to perform model validation
+              type: "integer"
+              minimum: 1
+              default: 1
+
+          batch_size:
+              description: "sample batch size to train on"
+              type: "integer"
+              minimum: 1
+              default: 1
+
+          loader_num_workers:
+              description: "number of subprocesses to use for data loading"
+              type: "integer"
+              minimum: 0
+              default: 0
+
+          use_cuda:
+              description: "use CUDA-capable GPU where available"
+              type: "boolean"
+              default: true
+
+          cuda_device:
+              description: "specifies the CUDA device index to use"
+              oneOf:
+                  - type: "integer"
+                    minimum: 0
+                  - type: "null"
+              default: null
+
+          seed:
+              description: >-
+                  seed for initializing the PRNG prior to a training run for
+                  reproducible results; if unspecified the PRNG chooses its
+                  default seeding method
+              type: ["integer", "null"]
+              default: null
+
+          model_filename_format:
+              type: "string"
+              description: >-
+                  format string for the filename of the final output model; it
+                  can use the template variables model_name, run_name, and/or
+                  run_id, while the required variable "checkpoint" will be
+                  replaced with names like "best", "last" and other
+                  intermediate checkpoints
+              minLength: 1
+              default: "{model_name}_{run_name}_{checkpoint}_net.pth"
+
+          run_name_format:
+              description: >-
+                  format string for the name given to this run for a sequence
+                  of runs of the same model; the outputs of each run are placed
+                  in subdirectories of <run_path>/<model_name> with the name of
+                  this run; the format string can use the template variables
+                  model_name and run_id
+              type: "string"
+              minLength: 4
+              default: "run_{run_id}"
+
+          train_mean:
+              "$ref": "#/definitions/param_stats"
+              description: >-
+                  mean of each regression parameter over the training set
+
+          train_std:
+              "$ref": "#/definitions/param_stats"
+              description: >-
+                  standard deviation of each regression parameter over the
+                  training set
+
+    # Inherits the preprocessing config format
+    - {"$ref": "preprocessing.yml"}
+
+additionalProperties: true
+
+definitions:
+    transform_list:
+        type: "array"
+        items: {"$ref": "dnadna-plugin:transform"}
+        default: []
+    transforms:
+        description: >-
+            list of transforms to apply to the dataset; all optional transforms
+            are disabled by default unless specified here; transforms which
+            don't take any parameters can be listed just by their name, whereas
+            transforms which do take parameters are given as {'name': <name>,
+            'param1':, 'param2':, ...}, where the params map param names
+            (specific to the transform) to their values
+        oneOf:
+            - "$ref": "#/definitions/transform_list"
+            - type: "object"
+              properties:
+                  training: {"$ref": "#/definitions/transform_list"}
+                  validation: {"$ref": "#/definitions/transform_list"}
+                  test: {"$ref": "#/definitions/transform_list"}
+              additionalProperties: false
+
+    param_stats:
+        type: "object"
+        description: >-
+            map of learned param names to some numerical statistic (e.g.  mean,
+            standard deviation, etc.) about the values of that parameter in the
+            preprocessed scenario params table
+        additionalProperties:
+            type: "number"
