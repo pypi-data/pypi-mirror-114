@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+microphone/__init__.py
+microphone/config.py
+microphone/configure_input.py
+microphone/context_managers.py
+week1_test.egg-info/PKG-INFO
+week1_test.egg-info/SOURCES.txt
+week1_test.egg-info/dependency_links.txt
+week1_test.egg-info/not-zip-safe
+week1_test.egg-info/requires.txt
+week1_test.egg-info/top_level.txt
