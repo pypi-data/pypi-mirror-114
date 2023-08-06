@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+vscode/__init__.py
+vscode/_types.py
+vscode/compiler.py
+vscode/envMethods.py
+vscode/extension.py
+vscode/main.js
+vscode/themes.py
+vscode/utils.py
+vscode/window.py
+vscode_ext.egg-info/PKG-INFO
+vscode_ext.egg-info/SOURCES.txt
+vscode_ext.egg-info/dependency_links.txt
+vscode_ext.egg-info/top_level.txt
