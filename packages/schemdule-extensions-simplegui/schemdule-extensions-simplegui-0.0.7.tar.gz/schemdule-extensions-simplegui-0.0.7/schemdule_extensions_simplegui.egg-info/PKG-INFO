@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: schemdule-extensions-simplegui
+Version: 0.0.7
+Summary: A simple GUI extension for schemdule.
+Home-page: https://github.com/StardustDL/schemdule
+Author: StardustDL
+Author-email: stardustdl@163.com
+License: UNKNOWN
+Project-URL: Source Code, https://github.com/StardustDL/schemdule
+Project-URL: Changes, https://github.com/StardustDL/schemdule/releases
+Project-URL: Documentation, https://github.com/StardustDL/schemdule
+Project-URL: Bug Tracker, https://github.com/StardustDL/schemdule/issues
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# schemdule-extensions-simplegui
+
+![](https://github.com/StardustDL/schemdule/workflows/CI/badge.svg) ![](https://img.shields.io/github/license/StardustDL/schemdule.svg) [![](https://img.shields.io/pypi/v/schemdule-extensions-simplegui.svg?logo=pypi)](https://pypi.org/project/schemdule-extensions-simplegui/) [![Downloads](https://pepy.tech/badge/schemdule-extensions-simplegui)](https://pepy.tech/project/schemdule-extensions-simplegui)
+
+A simple GUI extension for 
+[Schemdule](https://github.com/StardustDL/schemdule).
+
+- Platform ![](https://img.shields.io/badge/Linux-yes-success?logo=linux) ![](https://img.shields.io/badge/Windows-yes-success?logo=windows) ![](https://img.shields.io/badge/MacOS-yes-success?logo=apple) ![](https://img.shields.io/badge/BSD-yes-success?logo=freebsd)
+- Python ![](https://img.shields.io/pypi/implementation/schemdule.svg?logo=pypi) ![](https://img.shields.io/pypi/pyversions/schemdule.svg?logo=pypi) ![](https://img.shields.io/pypi/wheel/schemdule.svg?logo=pypi)
+- [All extensions](https://pypi.org/search/?q=schemdule)
+
+## Install
+
+Use pip:
+
+```sh
+pip install schemdule-extensions-simplegui
+```
+
+Or use pipx:
+
+```sh
+pipx inject schemdule schemdule-extensions-simplegui
+
+# Upgrade
+pipx upgrade schemdule --include-injected
+```
+
+Check if the extension installed:
+
+```sh
+schemdule ext
+```
+
+## Usage
+
+This extension provide a `MessageBoxPrompter` and add the following extension methods on `PrompterConfiger`.
+
+```python
+class PrompterConfiger:
+    def useMessageBox(self, final: bool = False, auto_close: bool = False) -> "PrompterConfiger":
+        ...
+```
+
+Use the extension in the schema script.
+
+```python
+# schema.py
+ext("simplegui")
+
+prompter.useMessageBox()
+```
+
+
+
