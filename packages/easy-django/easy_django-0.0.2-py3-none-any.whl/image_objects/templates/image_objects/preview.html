@@ -1,0 +1,59 @@
+
+{% load thumbnail %}
+{% load cache %}
+
+    {% cache io_preview_cache_time.seconds cached_io_preview %}
+    <div class="container-sm iopreviewcontainer mt-2 mb-2 ml-2 mr-2 pt-2 pb-2 pl-2 pr-2">
+        <p class="h1 text-center iosearchpaneltitle">{{config.titles.search_panel_title}}</p>
+            <div class="row mt-2 mb-2 ml-2 mr-2 pt-2 pb-2 pl-2 pr-2 ms-auto">
+              <form class="row justify-content-center iosearchform" id="search_news" action="{% url 'front_list_image_objects' %}?search_string=" method="GET">
+                  <div class="col-6">
+                    <label for="search_string" class="visually-hidden">{{config.buttons.search}}</label>
+                    <input type="text" id="search_string" name="search_string" class="form-control iosearchforminput" placeholder="examples" value="{{search_string}}">
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary iosearchformbutton">{{config.buttons.search}}</button>
+                  </div>
+                </form>
+            </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+        {% for item in image_objects %}
+            <div class="col">
+                <div class="card h-100 iocard">
+                    <div id="carousel{{item.pk}}" class="carousel slide carousel-fade iocarusel" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-indicators">
+                            {% for image in item.get_images %}
+                                <button type="button" data-bs-target="#carousel{{item.pk}}" data-bs-slide-to="{{forloop.counter|add:"-1"}}" {% if forloop.first %} class="active" {% endif %} aria-current="true" aria-label="Slide"></button>
+                            {% endfor %}
+                            </div>
+                            {% for image in item.get_images %}
+                                <div class="carousel-item {% if forloop.first %} active {% endif %}">
+                                <img src="{{image.image|thumbnail_url:'image_object_card'}}" class="d-block w-100" alt="...">
+                                </div>
+                            {% endfor %}
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel{{item.pk}}" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel{{item.pk}}" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="card-body iocardbody">
+                        <p class="card-title iocardbodytitle text-center">{{item.title}}</p>
+                    </div>
+                    <div class="card-footer iocardbodyfooter">
+                        <p class="card-text"><small class="text-muted">{{item.date}}</small></p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+
+{% endcache %}
+

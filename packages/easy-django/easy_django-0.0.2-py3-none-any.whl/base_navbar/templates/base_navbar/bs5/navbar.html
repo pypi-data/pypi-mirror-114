@@ -1,0 +1,24 @@
+<div class="container containerbasenavbar" style="margin-top:80px;" id="base_navbar">
+
+    {% if navbar.css_framework == "BS5" %}
+        <nav class="navbar navbar-expand{{navbar.navbar_expand}} {{navbar.navbar_style}} {{navbar.navbar_bg}} fixed-{{navbar.position}} {{navbar.nav_extraclass}} basenavbar">
+          <div class="container-fluid">
+            {% if navbar.is_collapsed %}
+                <button class="navbar-toggler basenavbartoggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent{{navbar.pk}}" aria-controls="navbarSupportedContent{{navbar.pk}}" aria-expanded="false" aria-label="Toggle navigation">
+                  {{navbar.svg_toggler_icon.content|safe}}
+                </button>
+                <div class="collapse navbar-collapse basenavbarcollapse" id="navbarSupportedContent{{navbar.pk}}">
+                  <ul class="navbar-nav {{navbar.ul_position}} {{navbar.ul_extraclass}} basenavbarul">
+                    {% include 'base_navbar/bs5/navbar_items.html' %}
+                  </ul>
+                </div>
+              {% else %}
+                <ul class="navbar-nav {{navbar.ul_position}} {{navbar.ul_extraclass}} basenavbarul">
+                    {% include 'base_navbar/bs5/navbar_items.html' %}
+                </ul>
+              {% endif %}
+          </div>
+        </nav>
+    {% endif %}
+
+</div>

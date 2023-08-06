@@ -1,0 +1,50 @@
+{% block basehead %}
+
+      {% load static %}
+      {% load head_links %}
+      {% load head_meta %}
+      {% load yandex_metrika %}
+      {% load favicon %}
+      {% load css %}
+      {% load verifications %}
+      {% load google_gtag %}
+      {% load fonts %}
+
+      {% load cache %}
+
+            {% cache cached_head_time.seconds cached_head %}
+                  <!--HEAD META START-->
+                        {% head_meta %}
+                  <!--HEAD META FINISH-->
+
+                  <!--FAVICON START-->
+                        {% favicon %}
+                  <!--FAVICON FINISH-->
+
+                  <!--FONTS START-->
+                        {% fonts %}
+                  <!--FONTS FINISH-->
+
+
+                  <!--HEAD LINKS START-->
+                        {% head_links %}
+                  <!--HEAD LINKS FINISH-->
+
+                  <!--CSS START-->
+                        {% csss %}
+                  <!--CSS FINISH-->
+
+                  <!--VERIFICATIONS START-->
+                        {% verifications %}
+                  <!--VERIFICATIONS FINISH-->
+
+                  <!--GOOGLE_TAG START-->
+                        {% google_gtag %}
+                  <!--GOOGLE_TAG FINISH-->
+
+                  <!--YA METRIKA START-->
+                        {% yandex_metrika %}
+                  <!--YA METRIKA FINISH-->
+            {% endcache %}
+
+{% endblock basehead %}

@@ -1,0 +1,10 @@
+{% block basebody %}
+
+    {% load body_scripts %}
+    {% load cache %}
+
+    {% cache cached_body_time.seconds cached_body %}
+            {% body_scripts %}
+    {% endcache %}
+
+{% endblock basebody %}

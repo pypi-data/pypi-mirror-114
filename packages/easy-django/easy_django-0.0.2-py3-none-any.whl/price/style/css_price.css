@@ -1,0 +1,36 @@
+.pricemaincontainer {
+    font-family: MADE Likes Slab;
+	border-radius: 25px;
+}
+
+.pricecard {
+	border-radius: 25px;
+	border: 0px solid black;
+	padding: 5px;
+	margin: 5px;
+}
+
+.priceimg {
+	border-radius: 25px;
+}
+
+.pricecardbody {
+}
+
+.pricecardcost {
+	font-size: 225%;
+}
+
+.pricecardtitle {
+	font-size: 150%;
+}
+
+.pricecardtext {
+}
+
+.pricepreviewtitle {
+    font-family: MADE Likes Slab;
+	font-size: 250%;
+	margin: 5px;
+	padding: 5px;
+}

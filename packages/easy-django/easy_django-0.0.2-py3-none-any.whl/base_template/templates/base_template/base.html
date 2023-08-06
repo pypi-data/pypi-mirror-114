@@ -1,0 +1,33 @@
+<!doctype html>
+
+{% load cached_body %}
+{% load cached_head %}
+{% load cached_navbar %}
+
+<html lang="ru">
+  <head>
+  	<meta name="viewport" content="width=device-width, initial-scale=0.95">
+        {% cached_head %}
+
+        {{keywords|safe}}
+        {{description|safe}}
+
+        {% block head %}
+        {% endblock %}
+
+    <title>
+        {{title|safe}}
+    </title>
+  </head>
+  <body>
+
+        {% cached_navbar %}
+
+
+        {% block body %}
+        {% endblock %}
+
+        {% cached_body %}
+
+  </body>
+</html>

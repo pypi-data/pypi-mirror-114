@@ -1,0 +1,3 @@
+{% for item in fonts %}
+    <link rel="preload" href="{{item.get_absolute_url_property}}" as="font">
+{% endfor %}

@@ -1,0 +1,9 @@
+<div class="{{offitem.extraclass}} mt-2">
+    <a class="btn {{offitem.btn_style}} {{offitem.w}}" href="{{offitem.url}}">
+      {% if offitem.svg_html %}
+        {{offitem.svg_html.content|safe}}
+      {% else %}
+        {{offitem.label}}
+      {% endif %}
+    </a>
+</div>

@@ -1,0 +1,12 @@
+{% block basenavbar %}
+
+    {% load base_navbar %}
+    {% load contacts %}
+    {% load cache %}
+
+    {% cache cached_navbar_time.seconds cached_navbar %}
+        {% base_navbar %}
+        {% show_contacts %}
+    {% endcache %}
+
+{% endblock basenavbar %}

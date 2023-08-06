@@ -1,0 +1,22 @@
+<div class="dropdown {{offitem.extraclass}} mt-2">
+  <button class="btn {{offitem.btn_style}} dropdown-toggle {{offitem.w}}" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+          {% if offitem.svg_html %}
+            {{offitem.svg_html.content|safe}}
+          {% else %}
+            {{offitem.label}}
+          {% endif %}
+  </button>
+  <ul class="dropdown-menu {{offitem.w}}" aria-labelledby="dropdownMenuButton">
+    {% for offc in offitem.get_children %}
+    <li>
+      <a class="dropdown-item {{offc.w}}" href="{{offc.url}}">
+          {% if offc.svg_html %}
+            {{offc.svg_html.content|safe}}
+          {% else %}
+            {{offc.label}}
+          {% endif %}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
