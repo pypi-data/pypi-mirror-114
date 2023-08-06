@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pymtsp
+Version: 0.1.8
+Summary: mTSP simulator
+Home-page: https://github.com/Junyoungpark/pymtsp
+Author: Junyoung Park
+Author-email: Junyoungpark@kaist.ac.kr
+License: UNKNOWN
+Keywords: mTSP,TSP
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+UNKNOWN
+
+
