@@ -1,0 +1,25 @@
+Metadata-Version: 1.2
+Name: arx-cli
+Version: 0.0.1b0
+Summary: Variables, everywhere!
+Home-page: https://github.com/rj722/arx-cli
+Author: Rahul Jha
+Author-email: rj722@protonmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: cli
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Python: >=3.6

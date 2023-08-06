@@ -1,0 +1,7 @@
+setup.py
+arx_cli.egg-info/PKG-INFO
+arx_cli.egg-info/SOURCES.txt
+arx_cli.egg-info/dependency_links.txt
+arx_cli.egg-info/entry_points.txt
+arx_cli.egg-info/requires.txt
+arx_cli.egg-info/top_level.txt
