@@ -1,0 +1,16 @@
+CHANGELOG.txt
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+fifocast/Data.csv
+fifocast/__init__.py
+fifocast/forest_fire.jpg
+fifocast.egg-info/PKG-INFO
+fifocast.egg-info/SOURCES.txt
+fifocast.egg-info/dependency_links.txt
+fifocast.egg-info/requires.txt
+fifocast.egg-info/top_level.txt
+fifocast/images_graphs/V_type_graph.png
+fifocast/images_graphs/V_type_graph_month.png
+fifocast/images_graphs/V_type_graph_week.png

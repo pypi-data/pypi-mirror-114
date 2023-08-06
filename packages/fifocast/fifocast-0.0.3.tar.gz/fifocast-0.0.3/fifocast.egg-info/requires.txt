@@ -1,0 +1,9 @@
+requests
+pillow
+plotly
+telegraph
+pandas
+numpy
+matplotlib
+seaborn
+sklearn
