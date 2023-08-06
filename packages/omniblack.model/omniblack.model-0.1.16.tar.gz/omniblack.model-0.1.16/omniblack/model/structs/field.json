@@ -1,0 +1,125 @@
+{
+    "name": "field",
+    "display": {
+        "en": "Field"
+    },
+    "fields": [
+        {
+            "name": "name",
+            "type": "string",
+            "required": true,
+            "desc": {
+                "en": "The name of the field."
+            },
+            "display": {
+                "en": "Name"
+            }
+        },
+        {
+            "name": "display",
+            "type": "child",
+            "attrs": {
+                "struct_name": "ui_string"
+            },
+            "required": true,
+            "desc": {
+                "en": "The display name of this field."
+            },
+            "display": {
+                "en": "Display"
+            }
+        },
+        {
+            "name": "desc",
+            "type": "child",
+            "attrs": {
+                "struct_name": "ui_string"
+            },
+            "required": true,
+            "desc": {
+                "en": "The description of this field."
+            },
+            "display": {
+                "en": "Description"
+            }
+        },
+        {
+            "name": "list",
+            "type": "boolean",
+            "assumed": false,
+            "desc": {
+                "en": "Is this field a list."
+            },
+            "display": {
+                "en": "List"
+            }
+        },
+        {
+            "name": "required",
+            "type": "boolean",
+            "assumed": false,
+            "desc": {
+                "en": "Is this field required."
+            },
+            "display": {
+                "en": "Required"
+            }
+        },
+        {
+            "name": "type",
+            "required": true,
+            "type": "string",
+            "valid_values": "$types.*.name",
+            "desc": {
+                "en": "The type of this field."
+            },
+            "display": {
+                "en": "Type"
+            }
+        },
+        {
+            "name": "default",
+            "type": "$self.type",
+            "desc": {
+                "en": "The initial value for this field."
+            },
+            "display": {
+                "en": "Default"
+            }
+        },
+        {
+            "name": "assumed",
+            "type": "$self.type",
+            "desc": {
+                "en": "The value that will be assumed when the field has no value."
+            },
+            "display": {
+                "en": "Assumed"
+            }
+        },
+        {
+            "name": "valid_values",
+            "type": "child",
+            "attrs": {
+                "struct_name": "enum_value"
+            },
+            "list": true,
+            "desc": {
+                "en": "A list of valid values for this field."
+            },
+            "display": {
+                "en": "Valid Values"
+            }
+        },
+        {
+            "name": "attrs",
+            "type": "$types[type].attrs",
+            "desc": {
+                "en": "The attributes that configure the field's type."
+            },
+            "display": {
+                "en": "Attributes"
+            }
+        }
+    ]
+}

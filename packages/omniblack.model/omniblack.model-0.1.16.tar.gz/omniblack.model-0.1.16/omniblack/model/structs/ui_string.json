@@ -1,0 +1,22 @@
+{
+    "name": "ui_string",
+    "desc": {
+        "en": "Translations of a string for displaying in the UI."
+    },
+    "display": {
+        "en": "UI string"
+    },
+    "fields": [
+        {
+            "name": "en",
+            "type": "string",
+            "required": true,
+            "display": {
+                "en": "English"
+            },
+            "desc": {
+                "en": "An English Translation"
+            }
+        }
+    ]
+}

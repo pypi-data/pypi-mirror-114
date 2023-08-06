@@ -1,0 +1,22 @@
+{
+    "name": "python_implementation_details",
+    "display": {
+        "en": "Python Implementation Details"
+    },
+    "fields": [
+        {
+            "name": "bases",
+            "desc": {
+                "en": "Base classes to be added to the struct class."
+            },
+            "type": "python_path",
+            "list": true,
+            "display": {
+                "en": "Base Classes"
+            },
+            "attrs": {
+                "type": "type"
+            }
+        }
+    ]
+}

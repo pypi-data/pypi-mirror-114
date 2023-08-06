@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: omniblack.model
+Version: 0.1.16
+Summary: A library enabling model driven development.
+License: AGPL-3.0-or-later
+Author: Terry Patterson
+Author-email: Terryp@wegrok.net
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: toml
+Provides-Extra: yaml
+Requires-Dist: anyio (>=3.0.0,<4.0.0)
+Requires-Dist: atpublic (>=2.3,<3.0)
+Requires-Dist: humanize (>=3.4.1,<4.0.0)
+Requires-Dist: more_itertools (>=8.7.0,<9.0.0)
+Requires-Dist: ruamel.yaml (>=0.16.12,<0.17.0); extra == "yaml"
+Requires-Dist: rx (>=3.1.1,<4.0.0)
+Requires-Dist: sniffio (>=1.2.0,<2.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0); extra == "toml"
