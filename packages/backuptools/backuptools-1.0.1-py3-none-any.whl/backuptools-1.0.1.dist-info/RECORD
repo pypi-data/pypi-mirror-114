@@ -1,0 +1,11 @@
+backuptools/__init__.py,sha256=T5SxBtzuWZa_kqruRB5dflvjA6Vu4tdhp_IZPIMJ6jo,186
+backuptools/__main__.py,sha256=WermWhBacODU6ur14XQ9Caxrfe3KwYzB4SeaL8B0gtI,17296
+backuptools/backuptools.py,sha256=0YVs2Abjq9bMOvO0cZGZMwtNWUvwDPSHnSHPO20iZec,8929
+backuptools/googledriveclient.py,sha256=H7GqcOCH8VDUTMjICvG6XfIaZVQg8g4tntvFI7tS3QM,10568
+backuptools/type.py,sha256=VatglQYOLR39QhJwkf24WmCFp63_RlKON8gBCJ56lIA,544
+backuptools-1.0.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+backuptools-1.0.1.dist-info/METADATA,sha256=v7XpQQkOwdPi5GjBRtUf6tp_xshl-0vZAVcc1KWHuC4,3862
+backuptools-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+backuptools-1.0.1.dist-info/entry_points.txt,sha256=reu1TZWHCsZ1slD5dZRVVsE3TVjzivXOio34wWdhFfw,49
+backuptools-1.0.1.dist-info/top_level.txt,sha256=euhVC6ptP34E9Yne4NWYzaFrmqPyr2FQJGVkbmJmhdM,12
+backuptools-1.0.1.dist-info/RECORD,,
