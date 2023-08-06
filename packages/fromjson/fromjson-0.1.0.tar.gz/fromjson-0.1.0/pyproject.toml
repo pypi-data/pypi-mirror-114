@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "fromjson"
+version = "0.1.0"
+description = "Easily read objects from json"
+authors = ["Lassi Haasio"]
+license = "Zlib"
+readme = "README.md"
+repository = "https://git.sr.ht/~ilikeavocadoes/fromjson"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+black = "^21.6b0"
+isort = "^5.9.1"
+hypothesis = "^6.14.0"
+pytest = "^6.2.4"
+ipython = "^7.25.0"
+ipdb = "^0.13.9"
+twine = "^3.4.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
