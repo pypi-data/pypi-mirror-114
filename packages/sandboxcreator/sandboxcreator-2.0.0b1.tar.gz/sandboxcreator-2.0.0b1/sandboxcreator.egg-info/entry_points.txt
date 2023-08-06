@@ -1,0 +1,4 @@
+[console_scripts]
+create-sandbox = sandboxcreator.scripts.create:main
+manage-sandbox = sandboxcreator.scripts.manage:main
+
