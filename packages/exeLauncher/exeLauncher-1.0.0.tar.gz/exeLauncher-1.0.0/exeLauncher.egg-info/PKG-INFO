@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: exeLauncher
+Version: 1.0.0
+Summary: All this does is launch .exe files directly from the command prompt, lol.
+Home-page: UNKNOWN
+Author: Fruitsy
+License: UNKNOWN
+Description: # Exe Launcher
+        All this does is launch .exe files directly from the command prompt, lol.
+        
+        # Installation
+        ```shell
+        pip install exeLauncher
+        ```
+        
+        # Importing
+        ```py
+        import exeLauncher
+        from exeLauncher import *
+        ```
+        
+        # Usage/Using
+        ```py
+        import exeLauncher
+        from exeLauncher import *
+        
+        exeLauncher.launch()
+        ```
+        After that in the command prompt you will get some popups...such as directory and filename and such, lol.
+        
+        # LICENSE
+        Lol, literally I made this in 5 minutes I don't really care what you use it for, anyone can do this so easily bruh-
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
