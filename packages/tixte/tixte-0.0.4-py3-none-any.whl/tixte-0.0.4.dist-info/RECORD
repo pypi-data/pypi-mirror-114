@@ -1,0 +1,12 @@
+tixte/__init__.py,sha256=jhtihFrE-9cZUL-oZioVJeDWnpXB9U7s7KeiWnpzCoE,92
+tixte/client.py,sha256=FStezm84YHUshaP86oCrI8Jqo2ty6rDqrNxZite2WmA,4560
+tixte/errors.py,sha256=JwH5rDUHzL_lsbaty95rRtl7275OLIWDVlCafdEPL6s,362
+tixte/file.py,sha256=dK3IG8Q4AbK2Ve7NQ1280LINd7q9r6-cqqxSigSsoxs,3973
+tixte/http.py,sha256=sRx-qXGF0UbCnmzKG0ojJwIIYaU8p1rWZ4hRqH9GtXc,2652
+tixte/user.py,sha256=gipudiA72iyjUi3llx7gUirwtpol4EIo-uwtU-LOtfc,3112
+tixte-0.0.4.dist-info/LICENSE,sha256=tdKpacoQJRtp0FDLuaD9uhpLw-nlpeZ73MeQAnOlD_M,1065
+tixte-0.0.4.dist-info/METADATA,sha256=-oyHmCW0yQWUASBLRfR_bNFSwmCzbATNwj48x3ZH5F8,2635
+tixte-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tixte-0.0.4.dist-info/entry_points.txt,sha256=_BIk7gC-aA092OFWrxM-C5bOrhZQe4eCggAGwVctUxs,49
+tixte-0.0.4.dist-info/top_level.txt,sha256=X--AIXZ8qZiDtbn-yFvC0GXLTRRf_QWVpdKy-_CAm7w,6
+tixte-0.0.4.dist-info/RECORD,,
