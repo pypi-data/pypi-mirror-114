@@ -1,0 +1,6 @@
+tensorflow>=2.0.0
+pandas
+scipy
+numpy
+scikit-learn
+pyahocorasick<=1.4.0
