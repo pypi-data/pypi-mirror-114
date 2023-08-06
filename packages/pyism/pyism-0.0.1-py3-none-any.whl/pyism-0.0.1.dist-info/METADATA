@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pyism
+Version: 0.0.1
+Summary: A scikit-multiflow API for Tensorflow-based models implementing Incremental Sequence Models (ISM)
+Home-page: https://github.com/alvarolemos/pyism
+Author: Álvaro Lemos
+Author-email: alvarolemos@ufmg.br
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (==1.19.2)
+Requires-Dist: scikit-multiflow (==0.5.3)
+Requires-Dist: tensorflow (==2.5.0)
+
+# pyISM - Incremental Sequence Models for Python
+
+## What is pyISM?
+The pyISM is a Python package implementing a family of Incremental Sequence Models (ISMs) implemented with `tensorflow` with an `scikit-multiflow` API.
+
+## How to install?
+pip install -U git+https://github.com/alvarolemos/pyism
+
+## What are Incremental Sequence Models (ISMs)?
+_Incremental Sequence Models_ are a family of _Recurrent Neural Networks_ (RNNs) to tackle evolving data streams, aiming at less complexity without losing performance. It was proposed in the research _An Incremental Learning approach using Sequence Models_, to be presented by Álvaro Conde Lemos Neto as his Master's degree final dissertation in the _Graduate Program in Electrical Engineering_ (PPGEE) of the _Federal Univeristy of Minas Gerais_ (UFMG), supervisde by Prof. Criatiano Leite de Castro, PhD, both from the _Machine Intelligence And Data Science_ (MINDS) lab.
+
+
