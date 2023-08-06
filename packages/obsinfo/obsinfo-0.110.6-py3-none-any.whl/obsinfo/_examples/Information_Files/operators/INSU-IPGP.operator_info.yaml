@@ -1,0 +1,11 @@
+---
+format_version: "0.110"
+operator:
+    reference_name: "INSU-IPGP"
+    full_name: "INSU-IPGP OBS operator"
+    contact_name: 
+        first_name: "Luis" 
+        last_name:  "Arean"
+    email: "obs@ipgp.fr"
+    phone_number: "+33 (0)1 23 23 23"
+    website: "http://parc-obs.insu.cnrs.fr"
