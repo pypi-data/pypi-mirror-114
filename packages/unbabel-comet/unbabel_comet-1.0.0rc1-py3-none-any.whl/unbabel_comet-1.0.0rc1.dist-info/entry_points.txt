@@ -1,0 +1,4 @@
+[console_scripts]
+comet-score=comet.cli.score:score_command
+comet-train=comet.cli.train:train_command
+
