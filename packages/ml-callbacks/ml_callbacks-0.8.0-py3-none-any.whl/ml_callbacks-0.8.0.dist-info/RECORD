@@ -1,0 +1,8 @@
+ml_callbacks/__init__.py,sha256=nTel4cu8Y78BCdYUhzLQxfYAuzZhhTCH2tmYTO1kYGk,81
+ml_callbacks/api_client.py,sha256=LKffcBnTxV_GHUsVnmEG7reXygaRDLdN_mGk-urdDTU,3691
+ml_callbacks/callback.py,sha256=TjCeq6xu-kwftz7gbUEfGIsH4z3ZHBC17PnrFmXFbKI,3964
+ml_callbacks/callbacks.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ml_callbacks-0.8.0.dist-info/METADATA,sha256=BHepvxpDVDF5toTFrQmRp96xnSyWHiHCgqY7wcFY_-w,456
+ml_callbacks-0.8.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ml_callbacks-0.8.0.dist-info/top_level.txt,sha256=IBDmTSSoPk_n1_I_twvLJUfsg9hmKoihPTzjN4oP33E,13
+ml_callbacks-0.8.0.dist-info/RECORD,,
