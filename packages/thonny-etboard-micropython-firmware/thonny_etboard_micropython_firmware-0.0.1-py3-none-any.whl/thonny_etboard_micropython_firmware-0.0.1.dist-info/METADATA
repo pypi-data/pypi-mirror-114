@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: thonny-etboard-micropython-firmware
+Version: 0.0.1
+Summary: ET보드 마이크로파이썬 펌웨어
+Home-page: http://et.ketri.re.kr/
+Author: KETRi
+Author-email: ketri3000@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, http://et.ketri.re.kr/
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: thonny (>=3.3.11)
+
+thonny ET보드 펌웨어와 인터프리터 설절을 포함하는 플러그인 입니다
+
