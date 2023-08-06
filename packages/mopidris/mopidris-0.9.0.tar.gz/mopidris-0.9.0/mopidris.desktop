@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Mopidris
+Comment=MPRIS2 D-Bus for a (remote) Mopidy instance
+Icon=audio-x-generic-symbolic
+Exec=python3 mopidris --can-quit
+Terminal=false
+Categories=Audio;Network;Utility;
+StartupNotify=false

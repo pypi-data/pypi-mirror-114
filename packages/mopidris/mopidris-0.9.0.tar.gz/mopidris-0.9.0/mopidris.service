@@ -1,0 +1,11 @@
+[Unit]
+Description=Mopidy MPRIS2 D-Bus service
+Documentation=https://codeberg.org/sph/mopidris
+Wants=dbus.socket
+
+[Service]
+ExecStart=python3 mopidris
+Restart=on-success
+
+[Install]
+WantedBy=multi-user.target

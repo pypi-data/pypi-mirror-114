@@ -1,0 +1,11 @@
+dbus_next>=0.2.3
+mopidy_asyncio_client>=3.0.1
+setuptools
+
+[dev]
+twine
+wheel
+
+[release]
+twine
+wheel
