@@ -1,0 +1,9 @@
+README.md
+setup.py
+blal/__init__.py
+blal/__main__.py
+blal.egg-info/PKG-INFO
+blal.egg-info/SOURCES.txt
+blal.egg-info/dependency_links.txt
+blal.egg-info/entry_points.txt
+blal.egg-info/top_level.txt
