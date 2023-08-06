@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: pamda
+Version: 0.0.11
+Summary: Python wrapper of object oriented processes for functional programming styles similar to Ramda
+Home-page: https://github.com/connor-makowski/pamda
+Author: Connor Makowski
+Author-email: connor.m.makowski@gmail.com
+License: MIT
+Download-URL: https://github.com/connor-makowski/pamda/dist/pamda-0.0.11.tar.gz
+Description: UNKNOWN
+Keywords: data,ramda,pamda,functional
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
