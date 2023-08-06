@@ -1,0 +1,13 @@
+Django>=2.2
+pynliner
+
+[flake8]
+flake8==3.8.0
+flake8-isort==2.6.0
+isort==4.3.4
+testfixtures==6.3.0
+
+[tests]
+mock==2.0.0
+pytest==4.3.1
+pytest-django==3.4.8
