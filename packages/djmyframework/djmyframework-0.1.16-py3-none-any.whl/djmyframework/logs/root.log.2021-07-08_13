@@ -1,0 +1,473 @@
+[2021-07-08T10:13:18+0800] [ERROR] [root] [pid:39613] [__init__.py:60] testtest======
+[2021-07-08T10:13:19+0800] [ERROR] [django.request] [pid:39613] [log.py:228] Internal Server Error: /myadmin/user/list
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 106, in _get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/middleware.py", line 97, in process_view
+    for m in user_menus.all():
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 276, in __iter__
+    self._fetch_all()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1152, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/test/testcases.py", line 144, in __call__
+    raise AssertionError(self.message)
+AssertionError: Database queries to 'read' are not allowed in this test. Add 'read' to djmyframework.djmyframework.apps.myadmin.tests.AdminTestCase.databases to ensure proper test isolation and silence this failure.
+[2021-07-08T10:16:30+0800] [ERROR] [root] [pid:39698] [__init__.py:60] testtest======
+[2021-07-08T10:16:31+0800] [ERROR] [django.request] [pid:39698] [log.py:228] Internal Server Error: /myadmin/user/list
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 106, in _get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/middleware.py", line 97, in process_view
+    for m in user_menus.all():
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 276, in __iter__
+    self._fetch_all()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1152, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/test/testcases.py", line 144, in __call__
+    raise AssertionError(self.message)
+AssertionError: Database queries to 'read' are not allowed in this test. Add 'read' to djmyframework.djmyframework.apps.myadmin.tests.AdminTestCase.databases to ensure proper test isolation and silence this failure.
+[2021-07-08T10:17:26+0800] [ERROR] [root] [pid:39734] [__init__.py:60] testtest======
+[2021-07-08T10:17:27+0800] [ERROR] [django.request] [pid:39734] [log.py:228] Internal Server Error: /myadmin/user/list
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 106, in _get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/middleware.py", line 97, in process_view
+    for m in user_menus.all():
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 276, in __iter__
+    self._fetch_all()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1152, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/test/testcases.py", line 144, in __call__
+    raise AssertionError(self.message)
+AssertionError: Database queries to 'read' are not allowed in this test. Add 'read' to djmyframework.djmyframework.apps.myadmin.tests.AdminTestCase.databases to ensure proper test isolation and silence this failure.
+[2021-07-08T10:22:24+0800] [ERROR] [root] [pid:39936] [__init__.py:60] testtest======
+[2021-07-08T10:22:25+0800] [ERROR] [django.request] [pid:39936] [log.py:228] Internal Server Error: /myadmin/user/list
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 106, in _get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/middleware.py", line 97, in process_view
+    for m in user_menus.all():
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 276, in __iter__
+    self._fetch_all()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1152, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/test/testcases.py", line 144, in __call__
+    raise AssertionError(self.message)
+AssertionError: Database queries to 'read' are not allowed in this test. Add 'read' to djmyframework.djmyframework.apps.myadmin.tests.AdminTestCase.databases to ensure proper test isolation and silence this failure.
+[2021-07-08T10:24:15+0800] [INFO] [root] [pid:39994] [user.py:168] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:25:05+0800] [INFO] [root] [pid:40033] [user.py:168] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:26:27+0800] [INFO] [root] [pid:40097] [user.py:170] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:28:16+0800] [INFO] [root] [pid:40163] [user.py:170] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:32:10+0800] [INFO] [root] [pid:40310] [user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:32:23+0800] [INFO] [root] [pid:40320] [user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:32:23+0800] [INFO] [root] [pid:40320] [user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:32:24+0800] [INFO] [root] [pid:40320] [user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:32:24+0800] [INFO] [root] [pid:40320] [user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:32:24+0800] [INFO] [root] [pid:40320] [user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:32:24+0800] [INFO] [root] [pid:40320] [user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:32:24+0800] [ERROR] [root] [pid:40320] [__init__.py:58] testtest======
+[2021-07-08T10:32:24+0800] [INFO] [root] [pid:40320] [user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:32:24+0800] [INFO] [root] [pid:40320] [user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:32:25+0800] [ERROR] [django.request] [pid:40320] [log.py:228] Internal Server Error: /myadmin/user/list
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 106, in _get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/middleware.py", line 97, in process_view
+    for m in user_menus.all():
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 276, in __iter__
+    self._fetch_all()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1152, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/test/testcases.py", line 144, in __call__
+    raise AssertionError(self.message)
+AssertionError: Database queries to 'read' are not allowed in this test. Add 'read' to djmyframework.djmyframework.apps.myadmin.tests.AdminTestCase.databases to ensure proper test isolation and silence this failure.
+[2021-07-08T10:32:25+0800] [INFO] [root] [pid:40320] [user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:34:43+0800] [INFO] [root] [pid:40386] [user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:34:43+0800] [INFO] [root] [pid:40386] [user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:34:43+0800] [INFO] [root] [pid:40386] [user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:34:44+0800] [INFO] [root] [pid:40386] [user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:34:44+0800] [INFO] [root] [pid:40386] [user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:34:44+0800] [INFO] [root] [pid:40386] [user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:34:44+0800] [ERROR] [root] [pid:40386] [__init__.py:58] testtest======
+[2021-07-08T10:34:44+0800] [INFO] [root] [pid:40386] [user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:34:44+0800] [INFO] [root] [pid:40386] [user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:34:44+0800] [ERROR] [django.request] [pid:40386] [log.py:228] Internal Server Error: /myadmin/user/list
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 106, in _get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/middleware.py", line 97, in process_view
+    for m in user_menus.all():
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 276, in __iter__
+    self._fetch_all()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1152, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/test/testcases.py", line 144, in __call__
+    raise AssertionError(self.message)
+AssertionError: Database queries to 'read' are not allowed in this test. Add 'read' to djmyframework.djmyframework.apps.myadmin.tests.AdminTestCase.databases to ensure proper test isolation and silence this failure.
+[2021-07-08T10:34:44+0800] [INFO] [root] [pid:40386] [user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:36:22+0800] [INFO] [root] [pid:40447] [user:user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:36:23+0800] [INFO] [root] [pid:40447] [user:user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:36:23+0800] [INFO] [root] [pid:40447] [user:user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:36:23+0800] [INFO] [root] [pid:40447] [user:user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:36:23+0800] [INFO] [root] [pid:40447] [user:user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:36:23+0800] [INFO] [root] [pid:40447] [user:user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:36:23+0800] [ERROR] [root] [pid:40447] [__init__:__init__.py:58] testtest======
+[2021-07-08T10:36:23+0800] [INFO] [root] [pid:40447] [user:user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:36:23+0800] [INFO] [root] [pid:40447] [user:user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:36:24+0800] [ERROR] [django.request] [pid:40447] [log:log.py:228] Internal Server Error: /myadmin/user/list
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 106, in _get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/middleware.py", line 97, in process_view
+    for m in user_menus.all():
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 276, in __iter__
+    self._fetch_all()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1152, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/test/testcases.py", line 144, in __call__
+    raise AssertionError(self.message)
+AssertionError: Database queries to 'read' are not allowed in this test. Add 'read' to djmyframework.djmyframework.apps.myadmin.tests.AdminTestCase.databases to ensure proper test isolation and silence this failure.
+[2021-07-08T10:36:24+0800] [INFO] [root] [pid:40447] [user:user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:36:59+0800] [INFO] [root] [pid:40466] [user:user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:37:24+0800] [INFO] [root] [pid:40485] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:38:33+0800] [INFO] [root] [pid:40519] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:38:48+0800] [INFO] [root] [pid:40533] ["/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py":169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:39:09+0800] [INFO] [root] [pid:40550] [File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py" :169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:39:34+0800] [INFO] [root] [pid:40566] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:40:02+0800] [INFO] [root] [pid:40580] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:40:02+0800] [INFO] [root] [pid:40580] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:40:03+0800] [INFO] [root] [pid:40580] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:40:03+0800] [INFO] [root] [pid:40580] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:40:03+0800] [INFO] [root] [pid:40580] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:40:03+0800] [INFO] [root] [pid:40580] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:40:03+0800] [ERROR] [root] [pid:40580] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/tests/__init__.py:58] testtest======
+[2021-07-08T10:40:03+0800] [INFO] [root] [pid:40580] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:40:03+0800] [INFO] [root] [pid:40580] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:40:04+0800] [ERROR] [django.request] [pid:40580] [/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/utils/log.py:228] Internal Server Error: /myadmin/user/list
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 106, in _get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/middleware.py", line 97, in process_view
+    for m in user_menus.all():
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 276, in __iter__
+    self._fetch_all()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1152, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/test/testcases.py", line 144, in __call__
+    raise AssertionError(self.message)
+AssertionError: Database queries to 'read' are not allowed in this test. Add 'read' to djmyframework.djmyframework.apps.myadmin.tests.AdminTestCase.databases to ensure proper test isolation and silence this failure.
+[2021-07-08T10:40:04+0800] [INFO] [root] [pid:40580] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:49:04+0800] [INFO] [root] [pid:40836] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:50:05+0800] [INFO] [root] [pid:40865] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:50:25+0800] [INFO] [root] [pid:40888] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:51:09+0800] [INFO] [root] [pid:40915] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:52:11+0800] [INFO] [root] [pid:40948] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:52:29+0800] [INFO] [root] [pid:40963] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:53:15+0800] [INFO] [root] [pid:40988] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:54:43+0800] [INFO] [root] [pid:41028] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:54:43+0800] [INFO] [root] [pid:41028] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:56:34+0800] [INFO] [root] [pid:41087] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:56:35+0800] [ERROR] [root] [pid:41087] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/tests/__init__.py:61] testtest======
+[2021-07-08T10:56:35+0800] [ERROR] [django.request] [pid:41087] [/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/utils/log.py:228] Internal Server Error: /myadmin/user/list
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 106, in _get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/middleware.py", line 97, in process_view
+    for m in user_menus.all():
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 276, in __iter__
+    self._fetch_all()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1152, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/test/testcases.py", line 144, in __call__
+    raise AssertionError(self.message)
+AssertionError: Database queries to 'read' are not allowed in this test. Add 'read' to djmyframework.djmyframework.apps.myadmin.tests.AdminTestCase.databases to ensure proper test isolation and silence this failure.
+[2021-07-08T10:56:35+0800] [INFO] [root] [pid:41087] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:58:02+0800] [INFO] [root] [pid:41127] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T10:58:03+0800] [ERROR] [root] [pid:41127] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/tests/__init__.py:61] testtest======
+[2021-07-08T10:58:03+0800] [ERROR] [django.request] [pid:41127] [/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/utils/log.py:228] Internal Server Error: /myadmin/user/list
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 106, in _get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/middleware.py", line 97, in process_view
+    for m in user_menus.all():
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 276, in __iter__
+    self._fetch_all()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1152, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/test/testcases.py", line 144, in __call__
+    raise AssertionError(self.message)
+AssertionError: Database queries to 'read' are not allowed in this test. Add 'read' to djmyframework.djmyframework.apps.myadmin.tests.AdminTestCase.databases to ensure proper test isolation and silence this failure.
+[2021-07-08T10:58:03+0800] [INFO] [root] [pid:41127] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:09:47+0800] [INFO] [root] [pid:41440] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:09:48+0800] [ERROR] [root] [pid:41440] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/tests/__init__.py:61] testtest======
+[2021-07-08T11:09:49+0800] [ERROR] [django.request] [pid:41440] [/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/utils/log.py:228] Internal Server Error: /myadmin/user/list
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 106, in _get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/middleware.py", line 97, in process_view
+    for m in user_menus.all():
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 276, in __iter__
+    self._fetch_all()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1152, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/test/testcases.py", line 144, in __call__
+    raise AssertionError(self.message)
+AssertionError: Database queries to 'read' are not allowed in this test. Add 'read' to djmyframework.djmyframework.apps.myadmin.tests.AdminTestCase.databases to ensure proper test isolation and silence this failure.
+[2021-07-08T11:09:49+0800] [INFO] [root] [pid:41440] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:10:27+0800] [INFO] [root] [pid:41465] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:10:28+0800] [ERROR] [root] [pid:41465] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/tests/__init__.py:61] testtest======
+[2021-07-08T11:10:28+0800] [ERROR] [django.request] [pid:41465] [/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/utils/log.py:228] Internal Server Error: /myadmin/user/list
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 106, in _get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/middleware.py", line 97, in process_view
+    for m in user_menus.all():
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 276, in __iter__
+    self._fetch_all()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1152, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/venv/lib/python3.7/site-packages/django/test/testcases.py", line 144, in __call__
+    raise AssertionError(self.message)
+AssertionError: Database queries to 'read' are not allowed in this test. Add 'read' to djmyframework.djmyframework.apps.myadmin.tests.AdminTestCase.databases to ensure proper test isolation and silence this failure.
+[2021-07-08T11:10:28+0800] [INFO] [root] [pid:41465] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:13:23+0800] [INFO] [root] [pid:41548] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:13:24+0800] [ERROR] [root] [pid:41548] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/tests/__init__.py:61] testtest======
+[2021-07-08T11:13:25+0800] [INFO] [root] [pid:41548] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:19:33+0800] [INFO] [root] [pid:41721] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:19:35+0800] [INFO] [root] [pid:41721] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:25:16+0800] [INFO] [root] [pid:41855] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:25:17+0800] [INFO] [root] [pid:41855] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:36:50+0800] [INFO] [root] [pid:42189] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:36:52+0800] [INFO] [root] [pid:42189] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:40:05+0800] [INFO] [root] [pid:42276] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:40:37+0800] [INFO] [root] [pid:42295] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:40:55+0800] [INFO] [root] [pid:42310] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:41:33+0800] [INFO] [root] [pid:42333] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:41:52+0800] [INFO] [root] [pid:42347] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:42:41+0800] [INFO] [root] [pid:42371] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:42:43+0800] [INFO] [root] [pid:42371] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:43:50+0800] [INFO] [root] [pid:42416] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:43:51+0800] [INFO] [root] [pid:42416] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:45:36+0800] [INFO] [root] [pid:42462] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:45:43+0800] [INFO] [root] [pid:42462] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:47:28+0800] [INFO] [root] [pid:42523] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:47:30+0800] [INFO] [root] [pid:42523] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:47:31+0800] [INFO] [root] [pid:42523] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:66] <class 'djmyframework.djmyframework.tests.test_settingOptions.cc'>
+[2021-07-08T11:47:31+0800] [INFO] [root] [pid:42523] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:67] False
+[2021-07-08T11:47:31+0800] [INFO] [root] [pid:42523] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:68] 1
+[2021-07-08T11:47:31+0800] [INFO] [root] [pid:42523] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:69] 1
+[2021-07-08T11:56:32+0800] [INFO] [root] [pid:42800] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:56:33+0800] [INFO] [root] [pid:42800] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:56:34+0800] [INFO] [root] [pid:42800] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:66] <class 'djmyframework.djmyframework.tests.test_settingOptions.cc'>
+[2021-07-08T11:56:34+0800] [INFO] [root] [pid:42800] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:67] False
+[2021-07-08T11:56:34+0800] [INFO] [root] [pid:42800] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:68] 1
+[2021-07-08T11:56:34+0800] [INFO] [root] [pid:42800] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:69] 1
+[2021-07-08T11:58:27+0800] [INFO] [root] [pid:42854] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:58:29+0800] [INFO] [root] [pid:42854] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:58:30+0800] [INFO] [root] [pid:42854] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:66] <class 'djmyframework.djmyframework.tests.test_settingOptions.cc'>
+[2021-07-08T11:58:30+0800] [INFO] [root] [pid:42854] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:67] False
+[2021-07-08T11:58:30+0800] [INFO] [root] [pid:42854] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:68] 1
+[2021-07-08T11:58:30+0800] [INFO] [root] [pid:42854] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:69] 1
+[2021-07-08T11:59:48+0800] [INFO] [root] [pid:42897] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:59:49+0800] [INFO] [root] [pid:42897] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T11:59:50+0800] [INFO] [root] [pid:42897] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:66] <class 'djmyframework.djmyframework.tests.test_settingOptions.cc'>
+[2021-07-08T11:59:50+0800] [INFO] [root] [pid:42897] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:67] False
+[2021-07-08T11:59:50+0800] [INFO] [root] [pid:42897] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:68] 1
+[2021-07-08T11:59:50+0800] [INFO] [root] [pid:42897] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:69] 1
+[2021-07-08T12:01:23+0800] [INFO] [root] [pid:42938] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:01:25+0800] [INFO] [root] [pid:42938] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:01:26+0800] [INFO] [root] [pid:42938] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:66] <class 'djmyframework.djmyframework.tests.test_settingOptions.cc'>
+[2021-07-08T12:01:26+0800] [INFO] [root] [pid:42938] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:67] False
+[2021-07-08T12:01:26+0800] [INFO] [root] [pid:42938] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:68] 1
+[2021-07-08T12:01:26+0800] [INFO] [root] [pid:42938] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:69] 1
+[2021-07-08T12:02:28+0800] [INFO] [root] [pid:42985] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:66] <class 'djmyframework.djmyframework.tests.test_settingOptions.cc'>
+[2021-07-08T12:02:28+0800] [INFO] [root] [pid:42985] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:67] False
+[2021-07-08T12:02:28+0800] [INFO] [root] [pid:42985] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:68] 1
+[2021-07-08T12:02:28+0800] [INFO] [root] [pid:42985] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:69] 1
+[2021-07-08T12:02:54+0800] [INFO] [root] [pid:43004] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:02:55+0800] [INFO] [root] [pid:43004] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:02:56+0800] [INFO] [root] [pid:43004] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:66] <class 'djmyframework.djmyframework.tests.test_settingOptions.cc'>
+[2021-07-08T12:02:56+0800] [INFO] [root] [pid:43004] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:67] False
+[2021-07-08T12:02:56+0800] [INFO] [root] [pid:43004] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:68] 1
+[2021-07-08T12:02:56+0800] [INFO] [root] [pid:43004] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:69] 1
+[2021-07-08T12:03:47+0800] [INFO] [root] [pid:43047] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:03:48+0800] [INFO] [root] [pid:43047] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:03:49+0800] [INFO] [root] [pid:43047] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:66] <class 'djmyframework.djmyframework.tests.test_settingOptions.cc'>
+[2021-07-08T12:03:49+0800] [INFO] [root] [pid:43047] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:67] False
+[2021-07-08T12:03:49+0800] [INFO] [root] [pid:43047] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:68] 1
+[2021-07-08T12:03:49+0800] [INFO] [root] [pid:43047] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:69] 1
+[2021-07-08T12:10:37+0800] [INFO] [root] [pid:43263] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:10:39+0800] [INFO] [root] [pid:43263] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:10:40+0800] [INFO] [root] [pid:43263] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:66] <class 'djmyframework.djmyframework.tests.test_settingOptions.cc'>
+[2021-07-08T12:10:40+0800] [INFO] [root] [pid:43263] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:67] False
+[2021-07-08T12:10:40+0800] [INFO] [root] [pid:43263] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:68] 1
+[2021-07-08T12:10:40+0800] [INFO] [root] [pid:43263] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:69] 1
+[2021-07-08T12:12:12+0800] [INFO] [root] [pid:43313] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:12:13+0800] [INFO] [root] [pid:43313] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:12:14+0800] [INFO] [root] [pid:43313] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:66] <class 'djmyframework.djmyframework.tests.test_settingOptions.cc'>
+[2021-07-08T12:12:14+0800] [INFO] [root] [pid:43313] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:67] False
+[2021-07-08T12:12:14+0800] [INFO] [root] [pid:43313] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:68] 1
+[2021-07-08T12:12:14+0800] [INFO] [root] [pid:43313] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:69] 1
+[2021-07-08T12:17:54+0800] [INFO] [root] [pid:43496] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:17:55+0800] [INFO] [root] [pid:43496] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:17:56+0800] [INFO] [root] [pid:43496] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:66] <class 'djmyframework.djmyframework.tests.test_settingOptions.cc'>
+[2021-07-08T12:17:56+0800] [INFO] [root] [pid:43496] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:67] False
+[2021-07-08T12:17:56+0800] [INFO] [root] [pid:43496] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:68] 1
+[2021-07-08T12:17:56+0800] [INFO] [root] [pid:43496] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:69] 1
+[2021-07-08T12:22:57+0800] [INFO] [root] [pid:43660] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:22:58+0800] [INFO] [root] [pid:43660] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:22:59+0800] [INFO] [root] [pid:43660] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:66] <class 'djmyframework.djmyframework.tests.test_settingOptions.cc'>
+[2021-07-08T12:22:59+0800] [INFO] [root] [pid:43660] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:67] False
+[2021-07-08T12:22:59+0800] [INFO] [root] [pid:43660] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:68] 1
+[2021-07-08T12:22:59+0800] [INFO] [root] [pid:43660] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:69] 1
+[2021-07-08T12:32:25+0800] [INFO] [root] [pid:43916] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:33:02+0800] [INFO] [root] [pid:43931] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:33:51+0800] [INFO] [root] [pid:43955] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:36:27+0800] [INFO] [root] [pid:44042] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:37:00+0800] [INFO] [root] [pid:44058] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:37:01+0800] [INFO] [root] [pid:44058] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:37:02+0800] [INFO] [root] [pid:44058] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:66] <class 'djmyframework.djmyframework.tests.test_settingOptions.cc'>
+[2021-07-08T12:37:02+0800] [INFO] [root] [pid:44058] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:67] False
+[2021-07-08T12:37:02+0800] [INFO] [root] [pid:44058] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:68] 1
+[2021-07-08T12:37:02+0800] [INFO] [root] [pid:44058] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:69] 1
+[2021-07-08T12:38:34+0800] [INFO] [root] [pid:44096] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:40:51+0800] [INFO] [root] [pid:44096] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:40:52+0800] [INFO] [root] [pid:44096] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:66] <class 'djmyframework.djmyframework.tests.test_settingOptions.cc'>
+[2021-07-08T12:40:52+0800] [INFO] [root] [pid:44096] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:67] False
+[2021-07-08T12:40:52+0800] [INFO] [root] [pid:44096] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:68] 1
+[2021-07-08T12:40:52+0800] [INFO] [root] [pid:44096] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:69] 1
+[2021-07-08T12:41:11+0800] [INFO] [root] [pid:44178] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:41:12+0800] [INFO] [root] [pid:44178] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:41:13+0800] [INFO] [root] [pid:44178] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:66] <class 'djmyframework.djmyframework.tests.test_settingOptions.cc'>
+[2021-07-08T12:41:13+0800] [INFO] [root] [pid:44178] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:67] False
+[2021-07-08T12:41:13+0800] [INFO] [root] [pid:44178] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:68] 1
+[2021-07-08T12:41:13+0800] [INFO] [root] [pid:44178] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:69] 1
+[2021-07-08T12:42:43+0800] [INFO] [root] [pid:44215] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:42:45+0800] [INFO] [root] [pid:44215] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:42:46+0800] [INFO] [root] [pid:44215] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:66] <class 'djmyframework.djmyframework.tests.test_settingOptions.cc'>
+[2021-07-08T12:42:46+0800] [INFO] [root] [pid:44215] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:67] False
+[2021-07-08T12:42:46+0800] [INFO] [root] [pid:44215] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:68] 1
+[2021-07-08T12:42:46+0800] [INFO] [root] [pid:44215] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:69] 1
+[2021-07-08T12:51:08+0800] [INFO] [root] [pid:44464] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:51:09+0800] [INFO] [root] [pid:44464] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:51:10+0800] [INFO] [root] [pid:44464] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:66] <class 'djmyframework.djmyframework.tests.test_settingOptions.cc'>
+[2021-07-08T12:51:10+0800] [INFO] [root] [pid:44464] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:67] False
+[2021-07-08T12:51:10+0800] [INFO] [root] [pid:44464] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:68] 1
+[2021-07-08T12:51:10+0800] [INFO] [root] [pid:44464] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:69] 1
+[2021-07-08T12:52:43+0800] [INFO] [root] [pid:44518] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:52:44+0800] [INFO] [root] [pid:44518] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:52:45+0800] [INFO] [root] [pid:44518] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:66] <class 'djmyframework.djmyframework.tests.test_settingOptions.cc'>
+[2021-07-08T12:52:45+0800] [INFO] [root] [pid:44518] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:67] False
+[2021-07-08T12:52:45+0800] [INFO] [root] [pid:44518] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:68] 1
+[2021-07-08T12:52:45+0800] [INFO] [root] [pid:44518] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:69] 1
+[2021-07-08T12:54:03+0800] [INFO] [root] [pid:44556] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:54:04+0800] [INFO] [root] [pid:44556] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:54:05+0800] [INFO] [root] [pid:44556] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:66] <class 'djmyframework.djmyframework.tests.test_settingOptions.cc'>
+[2021-07-08T12:54:05+0800] [INFO] [root] [pid:44556] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:67] False
+[2021-07-08T12:54:05+0800] [INFO] [root] [pid:44556] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:68] 1
+[2021-07-08T12:54:05+0800] [INFO] [root] [pid:44556] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:69] 1
+[2021-07-08T12:55:29+0800] [INFO] [root] [pid:44602] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:55:31+0800] [INFO] [root] [pid:44602] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T12:55:32+0800] [INFO] [root] [pid:44602] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:66] <class 'djmyframework.djmyframework.tests.test_settingOptions.cc'>
+[2021-07-08T12:55:32+0800] [INFO] [root] [pid:44602] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:67] False
+[2021-07-08T12:55:32+0800] [INFO] [root] [pid:44602] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:68] 1
+[2021-07-08T12:55:32+0800] [INFO] [root] [pid:44602] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:69] 1
+[2021-07-08T13:02:30+0800] [INFO] [root] [pid:44855] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T13:02:32+0800] [INFO] [root] [pid:44855] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T13:02:33+0800] [INFO] [root] [pid:44855] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:66] <class 'djmyframework.djmyframework.tests.test_settingOptions.cc'>
+[2021-07-08T13:02:33+0800] [INFO] [root] [pid:44855] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:67] False
+[2021-07-08T13:02:33+0800] [INFO] [root] [pid:44855] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:68] 1
+[2021-07-08T13:02:33+0800] [INFO] [root] [pid:44855] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:69] 1
+[2021-07-08T13:03:39+0800] [INFO] [root] [pid:44885] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T13:03:58+0800] [INFO] [root] [pid:44895] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T13:04:49+0800] [INFO] [root] [pid:44904] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T13:05:13+0800] [INFO] [root] [pid:44936] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T13:05:15+0800] [INFO] [root] [pid:44936] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T13:05:16+0800] [INFO] [root] [pid:44936] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:66] <class 'djmyframework.djmyframework.tests.test_settingOptions.cc'>
+[2021-07-08T13:05:16+0800] [INFO] [root] [pid:44936] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:67] False
+[2021-07-08T13:05:16+0800] [INFO] [root] [pid:44936] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:68] 1
+[2021-07-08T13:05:16+0800] [INFO] [root] [pid:44936] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:69] 1
+[2021-07-08T13:06:20+0800] [INFO] [root] [pid:44981] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T13:06:21+0800] [INFO] [root] [pid:44981] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T13:06:22+0800] [INFO] [root] [pid:44981] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:66] <class 'djmyframework.djmyframework.tests.test_settingOptions.cc'>
+[2021-07-08T13:06:22+0800] [INFO] [root] [pid:44981] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:67] False
+[2021-07-08T13:06:22+0800] [INFO] [root] [pid:44981] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:68] 1
+[2021-07-08T13:06:22+0800] [INFO] [root] [pid:44981] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:69] 1
+[2021-07-08T13:09:02+0800] [INFO] [root] [pid:45061] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T13:09:03+0800] [INFO] [root] [pid:45061] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/myadmin/models/user.py:169] 创建相关角色后,请务必删除root账户!
+[2021-07-08T13:09:05+0800] [INFO] [root] [pid:45061] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:66] <class 'djmyframework.djmyframework.tests.test_settingOptions.cc'>
+[2021-07-08T13:09:05+0800] [INFO] [root] [pid:45061] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:67] False
+[2021-07-08T13:09:05+0800] [INFO] [root] [pid:45061] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:68] 1
+[2021-07-08T13:09:05+0800] [INFO] [root] [pid:45061] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/tests/test_settingOptions.py:69] 1

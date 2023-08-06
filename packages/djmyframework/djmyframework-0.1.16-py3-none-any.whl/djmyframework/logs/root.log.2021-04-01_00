@@ -1,0 +1,1380 @@
+[2021-03-30T00:37:43+0800] [WARNING] [root] [pid:72645] [middleware.py:81] Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/views.py", line 179, in handler
+    return func(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/views/__init__.py", line 118, in login
+    User.login_user(request, the_user)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/models/user.py", line 318, in login_user
+    login(request,the_user)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 131, in login
+    user_logged_in.send(sender=user.__class__, request=request, user=user)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/dispatch/dispatcher.py", line 175, in send
+    for receiver in self._live_receivers(sender)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/dispatch/dispatcher.py", line 175, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/auth/models.py", line 20, in update_last_login
+    user.save(update_fields=['last_login'])
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/models/user.py", line 303, in save
+    super(User, self).save(*args, **kwargs)  # 新建时没有对象,先保存一下
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/models.py", line 305, in save
+    return super(BaseModel, self).save(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/auth/base_user.py", line 66, in save
+    super().save(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/base.py", line 749, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/base.py", line 798, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/dispatch/dispatcher.py", line 175, in send
+    for receiver in self._live_receivers(sender)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/dispatch/dispatcher.py", line 175, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/ws_gateway/models/__init__.py", line 25, in model_post_save_signal
+    group_send(group_name, event.data)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/ws_gateway/models/__init__.py", line 14, in group_send
+    async_to_sync(channel_layer.group_send)(group_name, event_data)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/asgiref/sync.py", line 147, in __call__
+    return call_result.result()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/concurrent/futures/_base.py", line 425, in result
+    return self.__get_result()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/asgiref/sync.py", line 212, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/channels_redis/core.py", line 661, in group_send
+    ) = self._map_channel_keys_to_connection(channel_names, message)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/channels_redis/core.py", line 794, in _map_channel_keys_to_connection
+    channel_key_to_message[key] = self.serialize(channel_key_to_message[key])
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/channels_redis/core.py", line 814, in serialize
+    value = msgpack.packb(message, use_bin_type=True)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/msgpack/__init__.py", line 35, in packb
+    return Packer(**kwargs).pack(o)
+  File "msgpack/_packer.pyx", line 292, in msgpack._cmsgpack.Packer.pack
+  File "msgpack/_packer.pyx", line 298, in msgpack._cmsgpack.Packer.pack
+  File "msgpack/_packer.pyx", line 295, in msgpack._cmsgpack.Packer.pack
+  File "msgpack/_packer.pyx", line 231, in msgpack._cmsgpack.Packer._pack
+  File "msgpack/_packer.pyx", line 289, in msgpack._cmsgpack.Packer._pack
+TypeError: can not serialize '__proxy__' object
+
+[2021-03-30T00:37:43+0800] [ERROR] [django.request] [pid:72645] [log.py:228] Internal Server Error: /myadmin/login
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/views.py", line 179, in handler
+    return func(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/views/__init__.py", line 118, in login
+    User.login_user(request, the_user)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/models/user.py", line 318, in login_user
+    login(request,the_user)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 131, in login
+    user_logged_in.send(sender=user.__class__, request=request, user=user)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/dispatch/dispatcher.py", line 175, in send
+    for receiver in self._live_receivers(sender)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/dispatch/dispatcher.py", line 175, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/auth/models.py", line 20, in update_last_login
+    user.save(update_fields=['last_login'])
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/models/user.py", line 303, in save
+    super(User, self).save(*args, **kwargs)  # 新建时没有对象,先保存一下
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/models.py", line 305, in save
+    return super(BaseModel, self).save(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/auth/base_user.py", line 66, in save
+    super().save(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/base.py", line 749, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/base.py", line 798, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/dispatch/dispatcher.py", line 175, in send
+    for receiver in self._live_receivers(sender)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/dispatch/dispatcher.py", line 175, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/ws_gateway/models/__init__.py", line 25, in model_post_save_signal
+    group_send(group_name, event.data)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/ws_gateway/models/__init__.py", line 14, in group_send
+    async_to_sync(channel_layer.group_send)(group_name, event_data)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/asgiref/sync.py", line 147, in __call__
+    return call_result.result()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/concurrent/futures/_base.py", line 425, in result
+    return self.__get_result()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/asgiref/sync.py", line 212, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/channels_redis/core.py", line 661, in group_send
+    ) = self._map_channel_keys_to_connection(channel_names, message)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/channels_redis/core.py", line 794, in _map_channel_keys_to_connection
+    channel_key_to_message[key] = self.serialize(channel_key_to_message[key])
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/channels_redis/core.py", line 814, in serialize
+    value = msgpack.packb(message, use_bin_type=True)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/msgpack/__init__.py", line 35, in packb
+    return Packer(**kwargs).pack(o)
+  File "msgpack/_packer.pyx", line 292, in msgpack._cmsgpack.Packer.pack
+  File "msgpack/_packer.pyx", line 298, in msgpack._cmsgpack.Packer.pack
+  File "msgpack/_packer.pyx", line 295, in msgpack._cmsgpack.Packer.pack
+  File "msgpack/_packer.pyx", line 231, in msgpack._cmsgpack.Packer._pack
+  File "msgpack/_packer.pyx", line 289, in msgpack._cmsgpack.Packer._pack
+TypeError: can not serialize '__proxy__' object
+[2021-03-30T00:38:26+0800] [WARNING] [root] [pid:72645] [middleware.py:81] Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/views.py", line 179, in handler
+    return func(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/views/__init__.py", line 118, in login
+    User.login_user(request, the_user)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/models/user.py", line 318, in login_user
+    login(request,the_user)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 131, in login
+    user_logged_in.send(sender=user.__class__, request=request, user=user)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/dispatch/dispatcher.py", line 175, in send
+    for receiver in self._live_receivers(sender)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/dispatch/dispatcher.py", line 175, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/auth/models.py", line 20, in update_last_login
+    user.save(update_fields=['last_login'])
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/models/user.py", line 303, in save
+    super(User, self).save(*args, **kwargs)  # 新建时没有对象,先保存一下
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/models.py", line 305, in save
+    return super(BaseModel, self).save(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/auth/base_user.py", line 66, in save
+    super().save(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/base.py", line 749, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/base.py", line 798, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/dispatch/dispatcher.py", line 175, in send
+    for receiver in self._live_receivers(sender)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/dispatch/dispatcher.py", line 175, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/ws_gateway/models/__init__.py", line 25, in model_post_save_signal
+    group_send(group_name, event.data)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/ws_gateway/models/__init__.py", line 14, in group_send
+    async_to_sync(channel_layer.group_send)(group_name, event_data)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/asgiref/sync.py", line 147, in __call__
+    return call_result.result()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/concurrent/futures/_base.py", line 425, in result
+    return self.__get_result()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/asgiref/sync.py", line 212, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/channels_redis/core.py", line 661, in group_send
+    ) = self._map_channel_keys_to_connection(channel_names, message)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/channels_redis/core.py", line 794, in _map_channel_keys_to_connection
+    channel_key_to_message[key] = self.serialize(channel_key_to_message[key])
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/channels_redis/core.py", line 814, in serialize
+    value = msgpack.packb(message, use_bin_type=True)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/msgpack/__init__.py", line 35, in packb
+    return Packer(**kwargs).pack(o)
+  File "msgpack/_packer.pyx", line 292, in msgpack._cmsgpack.Packer.pack
+  File "msgpack/_packer.pyx", line 298, in msgpack._cmsgpack.Packer.pack
+  File "msgpack/_packer.pyx", line 295, in msgpack._cmsgpack.Packer.pack
+  File "msgpack/_packer.pyx", line 231, in msgpack._cmsgpack.Packer._pack
+  File "msgpack/_packer.pyx", line 289, in msgpack._cmsgpack.Packer._pack
+TypeError: can not serialize '__proxy__' object
+
+[2021-03-30T00:38:26+0800] [ERROR] [django.request] [pid:72645] [log.py:228] Internal Server Error: /myadmin/login
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/views.py", line 179, in handler
+    return func(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/views/__init__.py", line 118, in login
+    User.login_user(request, the_user)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/models/user.py", line 318, in login_user
+    login(request,the_user)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 131, in login
+    user_logged_in.send(sender=user.__class__, request=request, user=user)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/dispatch/dispatcher.py", line 175, in send
+    for receiver in self._live_receivers(sender)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/dispatch/dispatcher.py", line 175, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/auth/models.py", line 20, in update_last_login
+    user.save(update_fields=['last_login'])
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/models/user.py", line 303, in save
+    super(User, self).save(*args, **kwargs)  # 新建时没有对象,先保存一下
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/models.py", line 305, in save
+    return super(BaseModel, self).save(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/auth/base_user.py", line 66, in save
+    super().save(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/base.py", line 749, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/base.py", line 798, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/dispatch/dispatcher.py", line 175, in send
+    for receiver in self._live_receivers(sender)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/dispatch/dispatcher.py", line 175, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/ws_gateway/models/__init__.py", line 25, in model_post_save_signal
+    group_send(group_name, event.data)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/ws_gateway/models/__init__.py", line 14, in group_send
+    async_to_sync(channel_layer.group_send)(group_name, event_data)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/asgiref/sync.py", line 147, in __call__
+    return call_result.result()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/concurrent/futures/_base.py", line 425, in result
+    return self.__get_result()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/asgiref/sync.py", line 212, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/channels_redis/core.py", line 661, in group_send
+    ) = self._map_channel_keys_to_connection(channel_names, message)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/channels_redis/core.py", line 794, in _map_channel_keys_to_connection
+    channel_key_to_message[key] = self.serialize(channel_key_to_message[key])
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/channels_redis/core.py", line 814, in serialize
+    value = msgpack.packb(message, use_bin_type=True)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/msgpack/__init__.py", line 35, in packb
+    return Packer(**kwargs).pack(o)
+  File "msgpack/_packer.pyx", line 292, in msgpack._cmsgpack.Packer.pack
+  File "msgpack/_packer.pyx", line 298, in msgpack._cmsgpack.Packer.pack
+  File "msgpack/_packer.pyx", line 295, in msgpack._cmsgpack.Packer.pack
+  File "msgpack/_packer.pyx", line 231, in msgpack._cmsgpack.Packer._pack
+  File "msgpack/_packer.pyx", line 289, in msgpack._cmsgpack.Packer._pack
+TypeError: can not serialize '__proxy__' object
+[2021-03-30T01:26:40+0800] [ERROR] [django.request] [pid:72749] [log.py:228] Internal Server Error: /myadmin/user/edit
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 199, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+TimeoutError: [Errno 60] Operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/mysql/base.py", line 74, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 740, in _read_bytes
+    "Lost connection to MySQL server during query (%s)" % (e,),
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([Errno 60] Operation timed out)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/middleware.py", line 37, in process_request
+    request.language = request.session.get('_language', '') or request.LANGUAGE_CODE or LANGUAGE_CODE
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 75, in get
+    return self._session.get(key, default)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 204, in _get_session
+    self._session_cache = self.load()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/db.py", line 43, in load
+    s = self._get_session_from_db()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    expire_date__gt=timezone.now()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 411, in get
+    num = len(clone)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 258, in __len__
+    self._fetch_all()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1154, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/mysql/base.py", line 74, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 740, in _read_bytes
+    "Lost connection to MySQL server during query (%s)" % (e,),
+django.db.utils.OperationalError: (2013, 'Lost connection to MySQL server during query ([Errno 60] Operation timed out)')
+[2021-03-30T23:34:35+0800] [WARNING] [root] [pid:85526] [middleware.py:81] Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/fields/related_descriptors.py", line 172, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/fields/mixins.py", line 13, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+KeyError: 'parent'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/views/role.py", line 139, in update
+    serializer, msg = self.save_instance(request, model)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/views.py", line 453, in save_instance
+    serializer.save(**kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/serializer.py", line 220, in save
+    super(BaseModelSerializer, self).save(**kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/serializers.py", line 200, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/serializers.py", line 983, in update
+    instance.save()
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/models/role.py", line 108, in save
+    super(Role, self).save(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/models.py", line 305, in save
+    return super(BaseModel, self).save(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/base.py", line 749, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/base.py", line 798, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/dispatch/dispatcher.py", line 175, in send
+    for receiver in self._live_receivers(sender)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/dispatch/dispatcher.py", line 175, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/ws_gateway/models/__init__.py", line 24, in model_post_save_signal
+    event.o.data = instance.to_dict(is_msgpack=True)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/models.py", line 370, in to_dict
+    d[attr] = attr_value.get_dict(has_m2mfields=has_m2mfields,is_msgpack=is_msgpack)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/models.py", line 370, in to_dict
+    d[attr] = attr_value.get_dict(has_m2mfields=has_m2mfields,is_msgpack=is_msgpack)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/models.py", line 370, in to_dict
+    d[attr] = attr_value.get_dict(has_m2mfields=has_m2mfields,is_msgpack=is_msgpack)
+  [Previous line repeated 908 more times]
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/models.py", line 361, in to_dict
+    attr_value = getattr(self, attr)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/fields/related_descriptors.py", line 186, in __get__
+    rel_obj = self.get_object(instance)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/fields/related_descriptors.py", line 153, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 411, in get
+    num = len(clone)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 258, in __len__
+    self._fetch_all()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1154, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/mysql/base.py", line 74, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1163, in read
+    self._read_result_packet(first_packet)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1235, in _read_result_packet
+    self._get_descriptions()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1307, in _get_descriptions
+    field = self.connection._read_packet(FieldDescriptorPacket)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 721, in _read_packet
+    packet = packet_type(bytes(buff), self.encoding)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 236, in __init__
+    self._parse_field_descriptor(encoding)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 243, in _parse_field_descriptor
+    self.catalog = self.read_length_coded_string()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 172, in read_length_coded_string
+    length = self.read_length_encoded_integer()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 153, in read_length_encoded_integer
+    c = self.read_uint8()
+RecursionError: maximum recursion depth exceeded
+
+[2021-03-30T23:34:37+0800] [ERROR] [django.request] [pid:85526] [log.py:228] Internal Server Error: /myadmin/role/update
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/fields/related_descriptors.py", line 172, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/fields/mixins.py", line 13, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+KeyError: 'parent'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/views/role.py", line 139, in update
+    serializer, msg = self.save_instance(request, model)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/views.py", line 453, in save_instance
+    serializer.save(**kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/serializer.py", line 220, in save
+    super(BaseModelSerializer, self).save(**kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/serializers.py", line 200, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/serializers.py", line 983, in update
+    instance.save()
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/models/role.py", line 108, in save
+    super(Role, self).save(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/models.py", line 305, in save
+    return super(BaseModel, self).save(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/base.py", line 749, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/base.py", line 798, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/dispatch/dispatcher.py", line 175, in send
+    for receiver in self._live_receivers(sender)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/dispatch/dispatcher.py", line 175, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/ws_gateway/models/__init__.py", line 24, in model_post_save_signal
+    event.o.data = instance.to_dict(is_msgpack=True)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/models.py", line 370, in to_dict
+    d[attr] = attr_value.get_dict(has_m2mfields=has_m2mfields,is_msgpack=is_msgpack)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/models.py", line 370, in to_dict
+    d[attr] = attr_value.get_dict(has_m2mfields=has_m2mfields,is_msgpack=is_msgpack)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/models.py", line 370, in to_dict
+    d[attr] = attr_value.get_dict(has_m2mfields=has_m2mfields,is_msgpack=is_msgpack)
+  [Previous line repeated 908 more times]
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/models.py", line 361, in to_dict
+    attr_value = getattr(self, attr)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/fields/related_descriptors.py", line 186, in __get__
+    rel_obj = self.get_object(instance)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/fields/related_descriptors.py", line 153, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 411, in get
+    num = len(clone)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 258, in __len__
+    self._fetch_all()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1154, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/mysql/base.py", line 74, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1163, in read
+    self._read_result_packet(first_packet)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1235, in _read_result_packet
+    self._get_descriptions()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1307, in _get_descriptions
+    field = self.connection._read_packet(FieldDescriptorPacket)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 721, in _read_packet
+    packet = packet_type(bytes(buff), self.encoding)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 236, in __init__
+    self._parse_field_descriptor(encoding)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 243, in _parse_field_descriptor
+    self.catalog = self.read_length_coded_string()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 172, in read_length_coded_string
+    length = self.read_length_encoded_integer()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 153, in read_length_encoded_integer
+    c = self.read_uint8()
+RecursionError: maximum recursion depth exceeded
+[2021-03-30T23:42:36+0800] [WARNING] [root] [pid:85621] [middleware.py:81] Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/views/role.py", line 66, in list
+    return render_to_response("myadmin/role/list.html", super().list(request, *args, **kwargs))
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/views.py", line 426, in list
+    return self.get_paginated_response(serializer.data)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/serializers.py", line 664, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/serializers.py", line 515, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/fields.py", line 1722, in to_representation
+    for key, val in value.items()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/fields.py", line 1722, in <dictcomp>
+    for key, val in value.items()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/fields.py", line 1661, in to_representation
+    return [self.child.to_representation(item) if item is not None else None for item in data]
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/fields.py", line 1661, in <listcomp>
+    return [self.child.to_representation(item) if item is not None else None for item in data]
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/models/resource.py", line 132, in <genexpr>
+    return (int(i) for i in members)
+ValueError: invalid literal for int() with base 10: " '1'"
+
+[2021-03-30T23:42:36+0800] [ERROR] [django.request] [pid:85621] [log.py:228] Internal Server Error: /myadmin/role/list
+[2021-03-30T23:42:45+0800] [WARNING] [root] [pid:85621] [middleware.py:81] Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/views/role.py", line 66, in list
+    return render_to_response("myadmin/role/list.html", super().list(request, *args, **kwargs))
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/views.py", line 426, in list
+    return self.get_paginated_response(serializer.data)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/serializers.py", line 664, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/serializers.py", line 515, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/fields.py", line 1722, in to_representation
+    for key, val in value.items()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/fields.py", line 1722, in <dictcomp>
+    for key, val in value.items()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/fields.py", line 1661, in to_representation
+    return [self.child.to_representation(item) if item is not None else None for item in data]
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/fields.py", line 1661, in <listcomp>
+    return [self.child.to_representation(item) if item is not None else None for item in data]
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/models/resource.py", line 132, in <genexpr>
+    return (int(i) for i in members)
+ValueError: invalid literal for int() with base 10: " '1'"
+
+[2021-03-30T23:42:45+0800] [ERROR] [django.request] [pid:85621] [log.py:228] Internal Server Error: /myadmin/role/list
+[2021-03-30T23:42:47+0800] [WARNING] [root] [pid:85621] [middleware.py:81] Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/views/role.py", line 66, in list
+    return render_to_response("myadmin/role/list.html", super().list(request, *args, **kwargs))
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/views.py", line 426, in list
+    return self.get_paginated_response(serializer.data)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/serializers.py", line 664, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/serializers.py", line 515, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/fields.py", line 1722, in to_representation
+    for key, val in value.items()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/fields.py", line 1722, in <dictcomp>
+    for key, val in value.items()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/fields.py", line 1661, in to_representation
+    return [self.child.to_representation(item) if item is not None else None for item in data]
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/fields.py", line 1661, in <listcomp>
+    return [self.child.to_representation(item) if item is not None else None for item in data]
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/models/resource.py", line 132, in <genexpr>
+    return (int(i) for i in members)
+ValueError: invalid literal for int() with base 10: " '1'"
+
+[2021-03-30T23:42:47+0800] [ERROR] [django.request] [pid:85621] [log.py:228] Internal Server Error: /myadmin/role/list
+[2021-03-31T00:10:20+0800] [WARNING] [root] [pid:86079] [middleware.py:81] Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/request.py", line 416, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'ASGIRequest' object has no attribute 'params'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/views/user.py", line 58, in edit
+    request.params
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/request.py", line 418, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'params'
+
+[2021-03-31T00:10:20+0800] [ERROR] [django.request] [pid:86079] [log.py:228] Internal Server Error: /myadmin/user/edit
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/request.py", line 416, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'ASGIRequest' object has no attribute 'params'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/views/user.py", line 58, in edit
+    request.params
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/request.py", line 418, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'params'
+[2021-03-31T00:10:49+0800] [WARNING] [root] [pid:86103] [middleware.py:81] Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/response.py", line 107, in rendered_content
+    return super(Response, self).rendered_content
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 167, in render
+    return template.render(context, request=request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/myadmin/user/edit.html", line 1, in top-level template code
+    {% extends "framework/base.html" %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/framework/base.html", line 56, in top-level template code
+    {% block content %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/myadmin/user/edit.html", line 151, in block "content"
+    {% for o in data.serializer.instance.fields_map.status.choices %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'django.http.request.QueryDict object' has no attribute 'serializer'
+
+[2021-03-31T00:10:50+0800] [ERROR] [django.request] [pid:86103] [log.py:228] Internal Server Error: /myadmin/user/edit
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/response.py", line 107, in rendered_content
+    return super(Response, self).rendered_content
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 167, in render
+    return template.render(context, request=request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/myadmin/user/edit.html", line 1, in top-level template code
+    {% extends "framework/base.html" %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/framework/base.html", line 56, in top-level template code
+    {% block content %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/myadmin/user/edit.html", line 151, in block "content"
+    {% for o in data.serializer.instance.fields_map.status.choices %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'django.http.request.QueryDict object' has no attribute 'serializer'
+[2021-03-31T00:13:13+0800] [WARNING] [root] [pid:86183] [middleware.py:81] Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/response.py", line 107, in rendered_content
+    return super(Response, self).rendered_content
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 167, in render
+    return template.render(context, request=request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/myadmin/user/edit.html", line 1, in top-level template code
+    {% extends "framework/base.html" %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/framework/base.html", line 56, in top-level template code
+    {% block content %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/myadmin/user/edit.html", line 151, in block "content"
+    {% for o in data.serializer.instance.fields_map.status.choices %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'django.http.request.QueryDict object' has no attribute 'serializer'
+
+[2021-03-31T00:13:13+0800] [ERROR] [django.request] [pid:86183] [log.py:228] Internal Server Error: /myadmin/user/edit
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/response.py", line 107, in rendered_content
+    return super(Response, self).rendered_content
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 167, in render
+    return template.render(context, request=request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/myadmin/user/edit.html", line 1, in top-level template code
+    {% extends "framework/base.html" %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/framework/base.html", line 56, in top-level template code
+    {% block content %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/myadmin/user/edit.html", line 151, in block "content"
+    {% for o in data.serializer.instance.fields_map.status.choices %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'django.http.request.QueryDict object' has no attribute 'serializer'
+[2021-03-31T00:14:56+0800] [WARNING] [root] [pid:86204] [middleware.py:81] Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/response.py", line 107, in rendered_content
+    return super(Response, self).rendered_content
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 167, in render
+    return template.render(context, request=request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/myadmin/user/edit.html", line 1, in top-level template code
+    {% extends "framework/base.html" %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/framework/base.html", line 56, in top-level template code
+    {% block content %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/myadmin/user/edit.html", line 151, in block "content"
+    {% for o in data.serializer.instance.fields_map.status.choices %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'None' has no attribute 'fields_map'
+
+[2021-03-31T00:14:57+0800] [ERROR] [django.request] [pid:86204] [log.py:228] Internal Server Error: /myadmin/user/edit
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/response.py", line 107, in rendered_content
+    return super(Response, self).rendered_content
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 167, in render
+    return template.render(context, request=request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/myadmin/user/edit.html", line 1, in top-level template code
+    {% extends "framework/base.html" %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/framework/base.html", line 56, in top-level template code
+    {% block content %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/myadmin/user/edit.html", line 151, in block "content"
+    {% for o in data.serializer.instance.fields_map.status.choices %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'None' has no attribute 'fields_map'
+[2021-03-31T00:18:55+0800] [WARNING] [root] [pid:86204] [middleware.py:81] Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/response.py", line 107, in rendered_content
+    return super(Response, self).rendered_content
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 167, in render
+    return template.render(context, request=request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/myadmin/user/edit.html", line 1, in top-level template code
+    {% extends "framework/base.html" %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/framework/base.html", line 56, in top-level template code
+    {% block content %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/myadmin/user/edit.html", line 151, in block "content"
+    {% for o in data.serializer.instance.fields_map.status.choices %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'None' has no attribute 'fields_map'
+
+[2021-03-31T00:18:57+0800] [ERROR] [django.request] [pid:86204] [log.py:228] Internal Server Error: /myadmin/user/edit
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/response.py", line 107, in rendered_content
+    return super(Response, self).rendered_content
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 167, in render
+    return template.render(context, request=request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/myadmin/user/edit.html", line 1, in top-level template code
+    {% extends "framework/base.html" %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/framework/base.html", line 56, in top-level template code
+    {% block content %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/myadmin/user/edit.html", line 151, in block "content"
+    {% for o in data.serializer.instance.fields_map.status.choices %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'None' has no attribute 'fields_map'
+[2021-03-31T22:34:34+0800] [WARNING] [root] [pid:98136] [middleware.py:81] Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 110, in login
+    backend = backend or user.backend
+AttributeError: 'User' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/views.py", line 179, in handler
+    return func(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/views/__init__.py", line 118, in login
+    User.login_user(request, the_user)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/models/user.py", line 319, in login_user
+    login(request, the_user)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 117, in login
+    'You have multiple authentication backends configured and '
+ValueError: You have multiple authentication backends configured and therefore must provide the `backend` argument or set the `backend` attribute on the user.
+
+[2021-03-31T22:34:34+0800] [ERROR] [django.request] [pid:98136] [log.py:228] Internal Server Error: /myadmin/login
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 110, in login
+    backend = backend or user.backend
+AttributeError: 'User' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/views.py", line 179, in handler
+    return func(*args, **kwargs)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/views/__init__.py", line 118, in login
+    User.login_user(request, the_user)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/apps/myadmin/models/user.py", line 319, in login_user
+    login(request, the_user)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 117, in login
+    'You have multiple authentication backends configured and '
+ValueError: You have multiple authentication backends configured and therefore must provide the `backend` argument or set the `backend` attribute on the user.
+[2021-04-01T00:33:22+0800] [WARNING] [root] [pid:99839] [middleware.py:81] Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/mysql/base.py", line 74, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'djmyadmin.ldap_account_accessdomain' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/response.py", line 107, in rendered_content
+    return super(Response, self).rendered_content
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 167, in render
+    return template.render(context, request=request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/myadmin/role/edit.html", line 1, in top-level template code
+    {% extends "framework/base.html" %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/framework/base.html", line 56, in top-level template code
+    {% block content %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/myadmin/role/edit.html", line 248, in block "content"
+    {% include model_resource.template  %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/myadmin/widgets/resource_checkbox.html", line 9, in top-level template code
+    {%   for (id,alias) in  model_resource.get_resource_queryset(request.user).values_list(model_resource.unique_filed_name,model_resource.alias_lookup) %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 276, in __iter__
+    self._fetch_all()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 146, in __iter__
+    return compiler.results_iter(tuple_expected=True, chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1106, in results_iter
+    results = self.execute_sql(MULTI, chunked_fetch=chunked_fetch, chunk_size=chunk_size)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1154, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/mysql/base.py", line 74, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'djmyadmin.ldap_account_accessdomain' doesn't exist")
+
+[2021-04-01T00:33:29+0800] [ERROR] [django.request] [pid:99839] [log.py:228] Internal Server Error: /myadmin/role/edit
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/mysql/base.py", line 74, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'djmyadmin.ldap_account_accessdomain' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/response.py", line 107, in rendered_content
+    return super(Response, self).rendered_content
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 167, in render
+    return template.render(context, request=request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/myadmin/role/edit.html", line 1, in top-level template code
+    {% extends "framework/base.html" %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/framework/base.html", line 56, in top-level template code
+    {% block content %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/myadmin/role/edit.html", line 248, in block "content"
+    {% include model_resource.template  %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/myadmin/widgets/resource_checkbox.html", line 9, in top-level template code
+    {%   for (id,alias) in  model_resource.get_resource_queryset(request.user).values_list(model_resource.unique_filed_name,model_resource.alias_lookup) %}
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 276, in __iter__
+    self._fetch_all()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/query.py", line 146, in __iter__
+    return compiler.results_iter(tuple_expected=True, chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1106, in results_iter
+    results = self.execute_sql(MULTI, chunked_fetch=chunked_fetch, chunk_size=chunk_size)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1154, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/db/backends/mysql/base.py", line 74, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'djmyadmin.ldap_account_accessdomain' doesn't exist")
+[2021-04-01T00:36:26+0800] [WARNING] [root] [pid:99839] [middleware.py:81] Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/backends/jinja2.py", line 39, in get_template
+    return Template(self.env.get_template(template_name), self)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/myadmin/role/edit.html", line 189, in template
+    {% not model_resource.is_inner and model_resource.template %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'not'. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/response.py", line 107, in rendered_content
+    return super(Response, self).rendered_content
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 160, in render
+    template = self.resolve_template(template_names)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 170, in resolve_template
+    return loader.select_template(template_names)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/backends/jinja2.py", line 45, in get_template
+    raise new from exc
+django.template.exceptions.TemplateSyntaxError: ("Encountered unknown tag 'not'. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.",)
+
+[2021-04-01T00:36:29+0800] [ERROR] [django.request] [pid:99839] [log.py:228] Internal Server Error: /myadmin/role/edit
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/backends/jinja2.py", line 39, in get_template
+    return Template(self.env.get_template(template_name), self)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/jinja2_templates/myadmin/role/edit.html", line 189, in template
+    {% not model_resource.is_inner and model_resource.template %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'not'. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/response.py", line 107, in rendered_content
+    return super(Response, self).rendered_content
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 160, in render
+    template = self.resolve_template(template_names)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 170, in resolve_template
+    return loader.select_template(template_names)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/template/backends/jinja2.py", line 45, in get_template
+    raise new from exc
+django.template.exceptions.TemplateSyntaxError: ("Encountered unknown tag 'not'. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.",)

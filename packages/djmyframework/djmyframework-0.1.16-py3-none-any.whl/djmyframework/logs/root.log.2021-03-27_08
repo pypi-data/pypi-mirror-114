@@ -1,0 +1,260 @@
+[2021-03-27T08:36:41+0800] [ERROR] [django.request] [pid:42754] [log.py:228] Internal Server Error: /ws_gateway/js
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 199, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/middleware.py", line 37, in process_request
+    request.language = request.session.get('_language', '') or request.LANGUAGE_CODE or LANGUAGE_CODE
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 75, in get
+    return self._session.get(key, default)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 204, in _get_session
+    self._session_cache = self.load()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/db.py", line 44, in load
+    return self.decode(s.session_data) if s else {}
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 110, in decode
+    encoded_data = base64.b64decode(session_data.encode('ascii'))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+[2021-03-27T08:36:42+0800] [ERROR] [django.request] [pid:42754] [log.py:228] Internal Server Error: /ws_gateway/js
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 199, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/middleware.py", line 37, in process_request
+    request.language = request.session.get('_language', '') or request.LANGUAGE_CODE or LANGUAGE_CODE
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 75, in get
+    return self._session.get(key, default)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 204, in _get_session
+    self._session_cache = self.load()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/db.py", line 44, in load
+    return self.decode(s.session_data) if s else {}
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 110, in decode
+    encoded_data = base64.b64decode(session_data.encode('ascii'))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+[2021-03-27T08:36:44+0800] [ERROR] [django.request] [pid:42754] [log.py:228] Internal Server Error: /ws_gateway/test
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 199, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/middleware.py", line 37, in process_request
+    request.language = request.session.get('_language', '') or request.LANGUAGE_CODE or LANGUAGE_CODE
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 75, in get
+    return self._session.get(key, default)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 204, in _get_session
+    self._session_cache = self.load()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/db.py", line 44, in load
+    return self.decode(s.session_data) if s else {}
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 110, in decode
+    encoded_data = base64.b64decode(session_data.encode('ascii'))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+[2021-03-27T08:36:45+0800] [ERROR] [django.request] [pid:42754] [log.py:228] Internal Server Error: /ws_gateway/test
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 199, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/middleware.py", line 37, in process_request
+    request.language = request.session.get('_language', '') or request.LANGUAGE_CODE or LANGUAGE_CODE
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 75, in get
+    return self._session.get(key, default)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 204, in _get_session
+    self._session_cache = self.load()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/db.py", line 44, in load
+    return self.decode(s.session_data) if s else {}
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 110, in decode
+    encoded_data = base64.b64decode(session_data.encode('ascii'))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+[2021-03-27T08:36:47+0800] [ERROR] [django.request] [pid:42754] [log.py:228] Internal Server Error: /ws_gateway/test
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 199, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/middleware.py", line 37, in process_request
+    request.language = request.session.get('_language', '') or request.LANGUAGE_CODE or LANGUAGE_CODE
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 75, in get
+    return self._session.get(key, default)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 204, in _get_session
+    self._session_cache = self.load()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/db.py", line 44, in load
+    return self.decode(s.session_data) if s else {}
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 110, in decode
+    encoded_data = base64.b64decode(session_data.encode('ascii'))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+[2021-03-27T08:36:48+0800] [ERROR] [django.request] [pid:42754] [log.py:228] Internal Server Error: /ws_gateway/test
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 199, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/middleware.py", line 37, in process_request
+    request.language = request.session.get('_language', '') or request.LANGUAGE_CODE or LANGUAGE_CODE
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 75, in get
+    return self._session.get(key, default)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 204, in _get_session
+    self._session_cache = self.load()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/db.py", line 44, in load
+    return self.decode(s.session_data) if s else {}
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 110, in decode
+    encoded_data = base64.b64decode(session_data.encode('ascii'))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+[2021-03-27T08:37:25+0800] [ERROR] [django.request] [pid:42773] [log.py:228] Internal Server Error: /ws_gateway/test
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 199, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/middleware.py", line 37, in process_request
+    request.language = request.session.get('_language', '') or request.LANGUAGE_CODE or LANGUAGE_CODE
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 75, in get
+    return self._session.get(key, default)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 204, in _get_session
+    self._session_cache = self.load()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/db.py", line 44, in load
+    return self.decode(s.session_data) if s else {}
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 110, in decode
+    encoded_data = base64.b64decode(session_data.encode('ascii'))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+[2021-03-27T08:37:27+0800] [ERROR] [django.request] [pid:42773] [log.py:228] Internal Server Error: /ws_gateway/test
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 199, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/middleware.py", line 37, in process_request
+    request.language = request.session.get('_language', '') or request.LANGUAGE_CODE or LANGUAGE_CODE
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 75, in get
+    return self._session.get(key, default)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 204, in _get_session
+    self._session_cache = self.load()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/db.py", line 44, in load
+    return self.decode(s.session_data) if s else {}
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 110, in decode
+    encoded_data = base64.b64decode(session_data.encode('ascii'))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+[2021-03-27T08:38:03+0800] [ERROR] [django.request] [pid:42773] [log.py:228] Internal Server Error: /ws_gateway/js
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 199, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/middleware.py", line 37, in process_request
+    request.language = request.session.get('_language', '') or request.LANGUAGE_CODE or LANGUAGE_CODE
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 75, in get
+    return self._session.get(key, default)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 204, in _get_session
+    self._session_cache = self.load()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/db.py", line 44, in load
+    return self.decode(s.session_data) if s else {}
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 110, in decode
+    encoded_data = base64.b64decode(session_data.encode('ascii'))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+[2021-03-27T08:38:27+0800] [ERROR] [django.request] [pid:42797] [log.py:228] Internal Server Error: /ws_gateway/js
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 199, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/Users/xiezhaorong/Desktop/djmyframework/djmyframework/framework/middleware.py", line 37, in process_request
+    request.language = request.session.get('_language', '') or request.LANGUAGE_CODE or LANGUAGE_CODE
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 75, in get
+    return self._session.get(key, default)
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 204, in _get_session
+    self._session_cache = self.load()
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/db.py", line 44, in load
+    return self.decode(s.session_data) if s else {}
+  File "/Users/xiezhaorong/Desktop/djmyframework/venv/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 110, in decode
+    encoded_data = base64.b64decode(session_data.encode('ascii'))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
