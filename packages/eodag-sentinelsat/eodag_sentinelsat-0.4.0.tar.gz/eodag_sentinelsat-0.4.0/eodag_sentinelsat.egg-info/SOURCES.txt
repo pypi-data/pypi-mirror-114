@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+NOTICE
+README.rst
+setup.cfg
+setup.py
+eodag_sentinelsat/__init__.py
+eodag_sentinelsat/eodag_sentinelsat.py
+eodag_sentinelsat.egg-info/PKG-INFO
+eodag_sentinelsat.egg-info/SOURCES.txt
+eodag_sentinelsat.egg-info/dependency_links.txt
+eodag_sentinelsat.egg-info/entry_points.txt
+eodag_sentinelsat.egg-info/requires.txt
+eodag_sentinelsat.egg-info/top_level.txt

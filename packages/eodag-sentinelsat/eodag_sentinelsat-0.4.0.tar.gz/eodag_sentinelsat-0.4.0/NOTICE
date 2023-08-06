@@ -1,0 +1,15 @@
+eodag-sentinelsat Copyright 2021, CS GROUP - France, https://www.csgroup.eu/
+
+This software is distributed under the GNU General Public License v3,
+see LICENSE file or https://www.gnu.org/licenses/gpl.html for details.
+
+This software includes code from the sentinelsat project.
+    https://github.com/sentinelsat/sentinelsat
+    sentinelsat is released under The GNU General Public License v3 (GPLv3):
+    https://www.gnu.org/licenses/gpl.html
+
+In "standalone" mode, this software includes code from the EODAG project.
+    Copyright 2021, CS GROUP - France, https://www.csgroup.eu/
+    https://github.com/CS-SI/eodag
+    EODAG is released under the Apache Software License (ASL) 2.0.
+    http://www.apache.org/licenses/LICENSE-2.0
