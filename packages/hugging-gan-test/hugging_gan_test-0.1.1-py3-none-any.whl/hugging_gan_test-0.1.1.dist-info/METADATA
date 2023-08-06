@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: hugging-gan-test
+Version: 0.1.1
+Summary: Testing pip
+Home-page: https://github.com/javismiles/HuggingGAN
+Author: Javi and Vicc
+Author-email: vipermu97@gmail.com
+License: UNKNOWN
+Project-URL: Docs, https://github.com/javismiles/HuggingGAN/docs
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tqdm (==4.60.0)
+Requires-Dist: clip-by-openai
+Requires-Dist: dall-e (==0.1)
+Requires-Dist: imageio-ffmpeg (==0.4.3)
+Requires-Dist: PyYAML (==5.4.1)
+Requires-Dist: omegaconf (==2.0.6)
+Requires-Dist: pytorch-lightning (==1.3.3)
+Requires-Dist: einops (==0.3.0)
+Requires-Dist: imageio (==2.9.0)
+
+# HuggingGAN / Geniverse / etc
+### Created by Victor & Javi
+The project combines a library ecosystem for generative and creative IA with specific tools.
+
+![Alt text](./media/MVP-1.png?raw=true "mockup 1")
+
+
+Forks are integrated into this repo using [submodules](https://gist.github.com/gitaarik/8735255). To properly load the forks, the following command must be executed:
+```python
+git submodule init
+```
+
+
