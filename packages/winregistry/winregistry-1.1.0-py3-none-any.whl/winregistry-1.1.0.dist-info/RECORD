@@ -1,0 +1,10 @@
+winregistry/__init__.py,sha256=Wo3EY72MOzPQgN_Ul154PWoCmivCOG66tBTTerDnQP4,269
+winregistry/consts.py,sha256=MDuLu5pjANWIOOF6RDAgbGj3IZZbV4laLgMEmuI2McI,923
+winregistry/models.py,sha256=Ri1UjmoInN6carqc6NPz92eji9jgWCqbm2jjzSJmS8A,438
+winregistry/robot/__init__.py,sha256=gXsbPYp3fDuHEFxBQ8kuEqcf3u62eecBFsfxL6qINGc,760
+winregistry/robot/keywords.py,sha256=TcwzgSumOJ5RedqLHukUliV6i9tHCxuJgiTqOuiNtEc,1945
+winregistry/utils.py,sha256=pAJ8mMAg576kdEf9pRtsb7J-JM9m97NVlP1fnJ0d3ts,816
+winregistry/winregistry.py,sha256=NdijxRTxyT7nBpTW0LmdRu6udYqKweyRC3i6kOcRcrE,5296
+winregistry-1.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+winregistry-1.1.0.dist-info/METADATA,sha256=Y042PsXRWOjxZvBBpaG4ofEzmUcy9vU6C26GmNgoN3o,1824
+winregistry-1.1.0.dist-info/RECORD,,
