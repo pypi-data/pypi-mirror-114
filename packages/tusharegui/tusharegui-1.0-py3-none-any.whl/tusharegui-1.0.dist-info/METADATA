@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: tusharegui
+Version: 1.0
+Summary: tusahre接口图形化使用工具
+Home-page: UNKNOWN
+Author: naska
+Author-email: i@naska.me
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: tushare
+Requires-Dist: pandas
+
+tusahre接口图形化使用工具，有问题或意见可加Q群716696202（加群口令：tushare）或给我发邮件
+
+

@@ -1,0 +1,3 @@
+[console_scripts]
+tusharegui = tushare_gui.tusharegui:main
+
