@@ -1,0 +1,119 @@
+Metadata-Version: 2.1
+Name: cutty
+Version: 0.9.0
+Summary: cutty
+Home-page: https://github.com/cjolowicz/cutty
+License: MIT
+Author: Claudio Jolowicz
+Author-email: mail@claudiojolowicz.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Jinja2 (>=2.11.3,<4.0.0)
+Requires-Dist: binaryornot (>=0.4.4,<0.5.0)
+Requires-Dist: click (>=8.0.1,<9.0.0)
+Requires-Dist: httpx (>=0.18.1,<0.19.0)
+Requires-Dist: jinja2-time (>=0.2.0,<0.3.0)
+Requires-Dist: lazysequence (>=0.2.1,<0.4.0)
+Requires-Dist: platformdirs (>=2.0.2,<3.0.0)
+Requires-Dist: pluggy (>=0.13.1,<0.14.0)
+Requires-Dist: pygit2 (>=1.5.0,<2.0.0)
+Requires-Dist: python-slugify (>=5.0.0,<6.0.0)
+Requires-Dist: yarl (>=1.6.3,<2.0.0)
+Project-URL: Changelog, https://github.com/cjolowicz/cutty/releases
+Project-URL: Documentation, https://cutty.readthedocs.io
+Project-URL: Repository, https://github.com/cjolowicz/cutty
+Description-Content-Type: text/x-rst
+
+cutty
+=====
+
+|PyPI| |Status| |Python Version| |License| |Read the Docs| |Tests| |Codecov|
+
+.. |PyPI| image:: https://img.shields.io/pypi/v/cutty.svg
+   :target: https://pypi.org/project/cutty/
+   :alt: PyPI
+.. |Status| image:: https://img.shields.io/pypi/status/cutty.svg
+   :target: https://pypi.org/project/cutty/
+   :alt: Status
+.. |Python Version| image:: https://img.shields.io/pypi/pyversions/cutty
+   :target: https://pypi.org/project/cutty
+   :alt: Python Version
+.. |License| image:: https://img.shields.io/pypi/l/cutty
+   :target: https://opensource.org/licenses/MIT
+   :alt: License
+.. |Read the Docs| image:: https://img.shields.io/readthedocs/cutty/latest.svg?label=Read%20the%20Docs
+   :target: https://cutty.readthedocs.io/
+   :alt: Read the documentation at https://cutty.readthedocs.io/
+.. |Tests| image:: https://github.com/cjolowicz/cutty/workflows/Tests/badge.svg
+   :target: https://github.com/cjolowicz/cutty/actions?workflow=Tests
+   :alt: Tests
+.. |Codecov| image:: https://codecov.io/gh/cjolowicz/cutty/branch/main/graph/badge.svg
+   :target: https://codecov.io/gh/cjolowicz/cutty
+   :alt: Codecov
+
+
+An experimental Cookiecutter clone :construction:
+
+
+Requirements
+------------
+
+* Python 3.9
+
+
+Installation
+------------
+
+You can install *cutty* via pip_ from PyPI_:
+
+.. code:: console
+
+   $ pip install cutty
+
+
+Usage
+-----
+
+Please see the `Command-line Reference <Usage_>`_ for details.
+
+
+Contributing
+------------
+
+Contributions are very welcome.
+To learn more, see the `Contributor Guide`_.
+
+
+License
+-------
+
+Distributed under the terms of the `MIT license`_,
+*cutty* is free and open source software.
+
+
+Issues
+------
+
+If you encounter any problems,
+please `file an issue`_ along with a detailed description.
+
+
+Credits
+-------
+
+This project was generated from `@cjolowicz`_'s `Hypermodern Python Cookiecutter`_ template.
+
+.. _@cjolowicz: https://github.com/cjolowicz
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _MIT license: https://opensource.org/licenses/MIT
+.. _PyPI: https://pypi.org/
+.. _Hypermodern Python Cookiecutter: https://github.com/cjolowicz/cookiecutter-hypermodern-python
+.. _file an issue: https://github.com/cjolowicz/cutty/issues
+.. _pip: https://pip.pypa.io/
+.. github-only
+.. _Contributor Guide: CONTRIBUTING.rst
+.. _Usage: https://cutty.readthedocs.io/en/latest/usage.html
+
