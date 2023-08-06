@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: scicap
+Version: 2021.8.1
+Summary: futures tool
+Home-page: http://scicapital.com
+Author: scicapital
+Author-email: public@scicapital.com
+License: MIT Licence
+Platform: any
+Requires-Python: >=3.6
+Requires-Dist: pandas (>=0.21.0)
+
+UNKNOWN
+
+

@@ -1,0 +1,14 @@
+scicap/__init__.py,sha256=lyS8eqJXs7_pIUUookr68YmTz9DX91r61ZUcfTRPbmg,47
+scicap/calendar/__init__.py,sha256=TAbAB2DZMipHgAopEYxmNTxaw2R2sTOXsQEKTF5VV_s,252
+scicap/calendar/config.py,sha256=2LMy__6tOshljfEBJwE2rdtOFyEaP0pBAph__9gV6e8,7641
+scicap/calendar/main.py,sha256=_HNy-xUUU-vEXZZ320u2HKw3GQZKXfzDMW0JMKu9E7E,2101
+scicap/futures/__init__.py,sha256=2Yc1gzLWWt_coRMNEnJCbtjcoapGYKDDcC_ZegLn5Aw,24
+scicap/futures/contract/__init__.py,sha256=JXJxkRj5h4MeRVBYMk_Gmp8gIY7Yq4ICaKieBBgIw4M,238
+scicap/futures/contract/config.py,sha256=GLOvFSVwcY_8-5eo9jntyZJ0e2I0PlC2_dqVJaarTF8,28063
+scicap/futures/contract/instrument.py,sha256=SL7WmO-9WhNTQX3JUj0XeD6Ad7rF6EXsZkTJPA05nU4,2592
+scicap/futures/contract/product.py,sha256=u4vMunTILgr1u_quFNEc43xFGx9ps1ImPcve0tPRVfk,490
+scicap/futures/contract/utils.py,sha256=2rcTiOAvVkbTe0QR0at5zMXk0h2GtjsWg_VILlixtQ8,8382
+scicap-2021.8.1.dist-info/METADATA,sha256=_z5eejg5Hhc-t2MTnG_khlCuaZ8ikxafMi2TL4881h4,265
+scicap-2021.8.1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+scicap-2021.8.1.dist-info/top_level.txt,sha256=9-sZmPl-XVFI7JKHPrwbeg4iBIxqtNWwgXBmmuQPsSg,7
+scicap-2021.8.1.dist-info/RECORD,,
