@@ -1,0 +1,3 @@
+[console_scripts]
+kicksaw-mappings=kicksaw_data_mapping_base.cli:kicksaw_mappings
+
