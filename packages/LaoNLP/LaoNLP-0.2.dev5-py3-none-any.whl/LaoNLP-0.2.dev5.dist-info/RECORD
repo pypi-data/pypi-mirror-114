@@ -1,0 +1,16 @@
+laonlp/__init__.py,sha256=deNNLPqutgrU_uYrdTkUtx1RKgylFj7r1NVSBCQO_AE,390
+laonlp/corpus/Lao-Dictionary.txt,sha256=giZxxap3PQpvE4uIKygQs6yUJRwn1yhte5dOnFwtSI0,205310
+laonlp/corpus/__init__.py,sha256=v-VZiQEEl5QZRZYjOUzbDEyhn5n8iaEKJqDbEWMjtfo,212
+laonlp/corpus/lao-wannaphong.txt,sha256=2n8mcpNpV4GnpndkLCiRW5jiVngpBgX0jhG1JizF4yA,379
+laonlp/corpus/lao_words.py,sha256=x-mgpgEOYRk8PU29oqYzjF7ly-6DOg8FTE-TdMpTI74,897
+laonlp/corpus/lo_spellcheck_dict.txt,sha256=oERTDeb6C-GQCenL7rtDqbfpRJTNTrVCRL5_48Fabrg,409234
+laonlp/tokenize/__init__.py,sha256=fYkLUw8z97dtkqgh1dau9vndvwLIlesMI_Gt5r2UQ-Q,607
+laonlp/transliterate/__init__.py,sha256=4F87k_7KtJMClp2lK0BPlUcSwYvRZjhmxrHhyGhM0Ls,5756
+tests/__init__.py,sha256=oh0uhF5MGd-tWnC0QOZO4kh1BHIFdZQoeeQwmBfnmGg,226
+tests/test_tokenize.py,sha256=3WeStcee9jgDscsCjrAPycuUwJhmjL4cKYSQ6ItZnmY,459
+tests/test_transliterate.py,sha256=S3ff762PH9fbECto_FhzUpU5cb7IfK4GqVLzjhKMvbo,405
+LaoNLP-0.2.dev5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+LaoNLP-0.2.dev5.dist-info/METADATA,sha256=qH6HPm_DVfKeVDHG4PKiXCRSVpL5FHyZ0ltZR5MYGBU,2301
+LaoNLP-0.2.dev5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+LaoNLP-0.2.dev5.dist-info/top_level.txt,sha256=lSfqJgeCckhfu0xxzMKq0yNM39LfavM0KI8BOBLe5l0,13
+LaoNLP-0.2.dev5.dist-info/RECORD,,
