@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "fsm-pull"
+version = "0.2.6"
+description = "Tool for downloading data from FSM"
+authors = ["Lohith Anandan <lohith@vernacular.ai>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+vivaldi = "^0.2.4"
+requests = "^2.25.1"
+mypy-protobuf = "^2.4"
+docopt = "^0.6.2"
+loguru = "^0.5.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^21.7b0"
+
+[tool.poetry.scripts]
+fsm-pull="fsm_pull.fsm:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
