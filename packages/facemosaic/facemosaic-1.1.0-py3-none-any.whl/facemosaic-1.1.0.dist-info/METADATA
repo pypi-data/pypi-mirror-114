@@ -1,0 +1,135 @@
+Metadata-Version: 2.1
+Name: facemosaic
+Version: 1.1.0
+Summary: 自动识别图片中人脸并加上马赛克
+Home-page: https://help.hlstudio.ren/020400.html
+Author: 刘子豪
+Author-email: 2740994541@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+
+# facemosaic
+* 模块介绍
+* 安装方法
+* 使用方法
+* 使用实例
+* 相关网址
+---
+### 模块介绍
+该模块可以在脱机状态下识别人脸并加上马赛克。  
+该模块目前采用的深度学习框架为'caffe'。  
+该模块需要依赖opencv-python。  
+暂不支持cuda加速。  
+
+---
+### 安装方法
+在cmd窗口下输入:
+```
+pip install facemosaic
+```
+
+---
+### 使用方法
+函数：  
+add_mosaic
+>该函数用于识别图片中的人脸并加上马赛克  
+>必要参数:img 可选参数:pixel_width conf_threshold  
+>对于可选参数的说明请见下文
+>返回：  
+>会返回修改后的图像，使用cv2的imwrite函数即可保存图像  
+
+get_face
+>识别图片中的人脸位置 
+>必要参数:img 可选参数:conf_threshold  
+>img -> 通过cv2中imread函数返回的值*flags使用默认参数*  
+>conf_threshold -> 要求参数为不大于1不小于0的浮点数。该参数可规定识别的人脸形态阈值(建议不小于0.6)  
+>返回：  
+>会返回一个列表 -> [[人脸左下角横坐标, 人脸左下角纵坐标, 人脸宽度, 人脸高度], ...]（原点位于图片左下角）
+
+mosaic
+>该函数用于为图片加上马赛克  
+>必要参数:img facial_position 可选参数:pixel_width  
+>img -> 通过cv2中imread函数返回的值*flags使用默认参数*
+>facial_position -> 需要get_face函数的返回值
+>pixel_width -> 关于定义像素化部分一个色块的宽度(单位为像素)
+>返回：  
+>会返回修改后的图像，使用cv2的imwrite函数即可保存图像
+
+---
+### 使用实例
+
+1. 批量图像打码  
+```python
+import os  # 获取图片路径
+import cv2  # 用于读写图片
+import facemosaic  # 用于打码的模块
+import time  # 用于计算代码运算时间
+
+read_path = './images/'  # 原图片的文件夹
+save_path = './save/'  #  打码后的图片文件夹
+
+st = time.time()  # 开始时间
+for file_names in os.walk(read_path):
+    for file_name in file_names[2]:  # 获取图片文件名
+        data = facemosaic.add_mosaic(cv2.imread(read_path+file_name))  # 获取加工后的图片
+        cv2.imwrite(save_path+os.path.splitext(file_name)[0]+'.png', data)  # 保存图片
+et = time.time()  # 结束时间
+print(f'ok.it uses {et - st} s')  # 输出总用时
+```
+
+2. 实时人脸打码
+```python
+import cv2  # 读取摄像头内容，保存视频
+import facemosaic  # 用于打码的模块
+
+cap = cv2.VideoCapture(0)  # 打开摄像头
+vw = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))  # 获取摄像头宽
+vh = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))  # 获取摄像头高
+fps = cap.get(cv2.CAP_PROP_FPS)  # 获取视频帧率（最好根据实际每秒加工的图像数量设置否则视频会被加速或减速）
+video = cv2.VideoWriter('./save_cv.mp4', cv2.VideoWriter_fourcc('m', 'p', '4', 'v'), fps, (vw, vh))  # 将打码后的内容保存为视频
+while True:
+    ret, frame = cap.read()  # 读取图片
+    data = facemosaic.add_mosaic(frame)  # 对图像进行加工
+    cv2.imshow("video", data)  # 显示打码后的图像
+    video.write(data)  # 写入数据
+    if cv2.waitKey(1) & 0xFF == ord('q'):  # 按q退出
+        break
+
+cap.release()  # 释放资源  
+cv2.destroyAllWindows()  # 关闭所有窗口
+```
+
+3. 对视频中人脸打码
+```python
+import facemosaic
+import time
+import cv2
+
+st = time.time()  # 获取开始时间
+cap = cv2.VideoCapture('./test_v.mp4')  # 打开原视频
+vw = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))  # 获取原视频宽
+vh = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))  # 获取原视频高
+fps = cap.get(cv2.CAP_PROP_FPS)  # 获取原视频帧率
+video = cv2.VideoWriter('./save_v.mp4', cv2.VideoWriter_fourcc('m', 'p', '4', 'v'), fps, (vw, vh))  # 保存加工后的视频
+
+while True:
+    ret, frame = cap.read()  # 读取一帧
+    if not(ret):  # 当没有可以读取的数据后结束循环
+        break
+    video.write(facemosaic.add_mosaic(frame, pixel_width=25))  # 保存加工后的帧
+    
+
+cap.release()  # 释放资源
+et = time.time()  # 结束时间
+
+print(f'ok.it uses {et - st} s')  # 输出总运行时间
+```
+
+---
+### 相关网址
+[帮助文档](https://help.hlstudio.ren/020400.html)
+
+

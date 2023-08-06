@@ -1,0 +1,8 @@
+facemosaic/__init__.py,sha256=Wwtqg7W_-d-EgxI_jCjBg7cZA9uBzI2oHErEqcY9RzE,329
+facemosaic/facemosaic.py,sha256=JFZ7H_1enaIpFCB8DY57wmr-nur6x2m8weOhKa5we90,1921
+facemosaic/model/Caffe/deploy.prototxt,sha256=Y5F_KgX_pGa65X8yDPhNJ1_Hu9ELISgijZQOdYNwukg,28103
+facemosaic/model/Caffe/res10_300x300_ssd_iter_140000_fp16.caffemodel,sha256=UQ_9JHG9geP8yIpb606uT7RFzPgzPrxU5zArg_QVinY,5351047
+facemosaic-1.1.0.dist-info/METADATA,sha256=VCoTMagknpKR4HuzLjvbYMJWGG_hbaDeNhdufKhcGPY,4491
+facemosaic-1.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+facemosaic-1.1.0.dist-info/top_level.txt,sha256=rtnxXuTwMs3J1nAlkuLFfoAkbLCcQJ0QWWvCg7THx90,11
+facemosaic-1.1.0.dist-info/RECORD,,
