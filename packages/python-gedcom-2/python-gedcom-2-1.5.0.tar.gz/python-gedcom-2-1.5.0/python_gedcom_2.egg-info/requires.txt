@@ -1,0 +1,9 @@
+
+[dev]
+setuptools
+wheel
+twine
+pdoc3
+
+[test]
+tox
