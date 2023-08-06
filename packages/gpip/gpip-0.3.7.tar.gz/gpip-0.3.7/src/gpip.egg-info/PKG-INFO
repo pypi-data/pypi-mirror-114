@@ -1,0 +1,26 @@
+Metadata-Version: 1.2
+Name: gpip
+Version: 0.3.7
+Summary: Tool for installing Python packages from GitHub Private/Public repository.
+Home-page: https://github.com/pomaretta/gpip
+Author: Carlos Pomares
+Author-email: cpomaresp@gmail.com
+License: MIT
+Description: 
+        gpip - The Python Package Installer for GitHub
+        ==============================================
+        
+        gpip is a package installer for Python. You can use gpip to install packages from GitHub repositories.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
