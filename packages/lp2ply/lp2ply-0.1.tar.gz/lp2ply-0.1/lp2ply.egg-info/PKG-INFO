@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: lp2ply
+Version: 0.1
+Summary: Transform lamination parameters into stacking sequences.
+Home-page: https://git.rz.tu-bs.de/m.sprengholz/publication-lamination-parameters
+Author: Moritz Sprengholz
+Author-email: m.sprengholz@tu-bs.de
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
