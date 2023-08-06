@@ -1,0 +1,3 @@
+[console_scripts]
+pyodide-build = pyodide_build.__main__:main
+
