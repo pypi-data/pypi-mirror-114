@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+cleansweep/__init__.py
+cleansweep.egg-info/PKG-INFO
+cleansweep.egg-info/SOURCES.txt
+cleansweep.egg-info/dependency_links.txt
+cleansweep.egg-info/top_level.txt
