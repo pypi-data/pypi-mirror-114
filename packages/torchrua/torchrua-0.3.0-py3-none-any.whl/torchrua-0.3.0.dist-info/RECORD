@@ -1,0 +1,15 @@
+torchrua/__init__.py,sha256=r7vH_tPt6sJIwpQK2_9Fe0dsOiJPHY5nWOmxLEt50FM,318
+torchrua/adaptor.py,sha256=4maa-veiiTirdH6SdZXEJNoozJGlxyMg3Tvk6I6Vyq8,2059
+torchrua/catting.py,sha256=ObvazZlwC9FrSYOdEJpL-_gdkw2IrDvwKGtDm497NRw,2609
+torchrua/indexing.py,sha256=kLksgtRys9PCVWjItKzMFHZwn71vkAz-wn_WPKqVfkU,6571
+torchrua/joining.py,sha256=meCIjVujQTIhdv-WdyJK_XUdsvjPn9cp9W4tNFTx7i0,2158
+torchrua/packing.py,sha256=x1zmyJP8lpveoJpVO9roRoK1see_neMeI3g863lWGRU,3051
+torchrua/padding.py,sha256=HDzYGZT5DYNV021ZBpSprluuCxuLPj6aMnGy0QBHqZM,3727
+torchrua/reduction.py,sha256=2j0RF2jXrjZLA8A4gMZAMi9OuPjgJ5MgcgtYQOQJ5Dc,1821
+torchrua/slicing.py,sha256=aFtBYnFr7sVp63dF-LcCv0WpNy7QcB7-vC2dGddskHs,2145
+torchrua/tree_reduction.py,sha256=L3sTJJz73P70ziVHU342zfAEyOlkBDY_ktPfGJnjhaQ,4442
+torchrua/utils.py,sha256=iMlxC_HvbLm473uaJedtOeg0nKvY5WAQlWxFYs9_2cc,3109
+torchrua-0.3.0.dist-info/METADATA,sha256=DYgi7pQ-PgAlkNpFGUu-dN5jmNarHrbDwRD85YgFN5o,544
+torchrua-0.3.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+torchrua-0.3.0.dist-info/top_level.txt,sha256=2UXn9m3S2x7FSNed-CwSkEEnL_217_POf_0VjJyr75w,9
+torchrua-0.3.0.dist-info/RECORD,,
