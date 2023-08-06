@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: tepezza
+Version: 1.0.5
+Summary: Scrape doctor data from www.tepezza.com
+Home-page: https://github.com/2435191/TepezzaScraper
+Author: Will Bradley
+Author-email: derivativedude123@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/2435191/TepezzaScraper/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: clipboard
+Requires-Dist: pandas
+
+# TepezzaScraper
+
+## Motivation/use case
+Get a list of doctors and their metadata from www.tepezza.com/ted-specialist-finder, which is unfortunately ReCaptcha-protected.
+
+## Mechanism of action
+A user enters zip codes and the program uses tshark to monitor the JSON sent back.
+
+## Requirements
+* All third-party python packages that pip requires for the package download
+* tshark
+* Python 3.8+
+
+## Configuration
+See [default_config.ini](tepezza/data/default_config.ini) for the default; otherwise pass custom args to the constructor of `TepezzaApi`. Available fields are in `TepezzaApi._SEARCH_FOR_KEYS`.
+
+
