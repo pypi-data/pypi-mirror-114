@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+openclio/__init__.py
+openclio/openclio.py
+openclio.egg-info/PKG-INFO
+openclio.egg-info/SOURCES.txt
+openclio.egg-info/dependency_links.txt
+openclio.egg-info/entry_points.txt
+openclio.egg-info/requires.txt
+openclio.egg-info/top_level.txt
+openclio/utils/__init__.py
+openclio/utils/utils.py

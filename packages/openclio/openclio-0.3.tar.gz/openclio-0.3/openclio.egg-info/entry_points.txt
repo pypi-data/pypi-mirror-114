@@ -1,0 +1,3 @@
+[console_scripts]
+openclio = openclio.openclio:run
+
