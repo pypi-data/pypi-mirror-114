@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    tap-tripactions=tap_tripactions:main
+    

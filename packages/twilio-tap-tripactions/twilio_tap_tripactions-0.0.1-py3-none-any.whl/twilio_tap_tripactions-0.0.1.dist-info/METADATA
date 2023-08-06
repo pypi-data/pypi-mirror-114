@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: twilio-tap-tripactions
+Version: 0.0.1
+Summary: Singer.io tap for extracting data from TripActions API
+Home-page: https://www.twilio.com/
+Author: Twilio
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+License-File: LICENSE
+Requires-Dist: singer-python
+Requires-Dist: requests
+
+UNKNOWN
+
