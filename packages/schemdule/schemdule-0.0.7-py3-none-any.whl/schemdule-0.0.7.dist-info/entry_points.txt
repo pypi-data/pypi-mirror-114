@@ -1,0 +1,3 @@
+[console_scripts]
+schemdule = schemdule.__main__:main
+
