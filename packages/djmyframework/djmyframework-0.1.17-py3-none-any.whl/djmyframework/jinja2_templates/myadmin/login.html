@@ -1,0 +1,148 @@
+{% extends "framework/base.html" %}
+{#{% load i18n %}#}
+{% block header %}
+    <title>  {{ anget_name }} 登录页面 </title>
+
+
+    <style>
+        #components-form-normal-login .login-form {
+            max-width: 300px;
+        }
+
+        #components-form-normal-login .login-form-forgot {
+            float: right;
+        }
+
+        #components-form-normal-login .login-form-button {
+            width: 100%;
+        }
+    </style>
+{% endblock %}
+
+
+{% block content %}
+
+    <div id="vue-login-container" v-cloak style="padding:30px;margin:0 auto;max-width: 450px;width: 100%">
+
+        <a-card>
+                    <span slot="title">
+                <h2>{{ settings.TITLE }} <small>{{ settings.VERSION }}</small></h2>
+            </span>
+{#            <a slot="extra" href="{{ url('myadmin.register') }}">#}
+{#                {{ _('忘记密码') }}#}
+{#            </a>#}
+
+
+            <a-form id="components-form-normal-login"
+                    :form="form"
+                    class="login-form"
+                    @submit="handleSubmit"
+            >
+                <a-form-item>
+                    <a-input
+                            v-decorator="[
+          'username',
+          { rules: [{ required: true, message: '{{ _('请输入用户名') }}' }] },
+        ]"
+                            placeholder="{{ _('用户名 或 邮箱') }}"
+                    >
+                        <a-icon slot="prefix" type="user" style="color: rgba(0,0,0,.25)"/>
+                    </a-input>
+                </a-form-item>
+                <a-form-item>
+                    <a-input
+                            v-decorator="[
+          'password',
+          { rules: [{ required: true, message: '{{ _('请输入密码') }}' }] },
+        ]"
+                            type="password"
+                            placeholder="{{ _('输入密码') }}"
+                    >
+                        <a-icon slot="prefix" type="lock" style="color: rgba(0,0,0,.25)"/>
+                    </a-input>
+                </a-form-item>
+
+                <a-form-item>
+                    <a-row :gutter="12">
+                        <a-col :span="16">
+                            <a-input
+                                    v-decorator="[
+              'verify',
+              { rules: [{ required: true, message: '{{ _('请输入验证码') }}' }] },
+            ]"
+                                    placeholder="{{ _('输入验证码') }}"
+                            />
+                            <a-icon slot="prefix" type="barcode" style="color: rgba(0,0,0,.25)"/>
+                        </a-col>
+                        <a-col :span="8">
+                            <img class=""
+                                 onclick="this.setAttribute('src','/get_verify_code_image/?nocache='+Math.random());"
+                                 src="/get_verify_code_image/"
+                                 alt="CheckCode"
+                                 title="点我刷新"/>
+                        </a-col>
+                    </a-row>
+
+                </a-form-item>
+
+                <a-form-item>
+
+                    <a-button type="primary" html-type="submit" class="login-form-button" block>
+                        {{ _('登   录') }}
+                    </a-button>
+                    {% if settings.ALLOW_REGISTER %}
+                        <a-button type="link" slot="extra" href="{{ url('myadmin.register') }}" block>
+                            {{ _('注 册') }}
+                        </a-button>
+                    {% endif %}
+
+                </a-form-item>
+            </a-form>
+        </a-card>
+
+    </div>
+
+
+    <script>
+        var vue_app = new Vue({
+            el: '#vue-login-container',
+            delimiters: ['((', '))'],
+            beforeCreate() {
+                this.form = this.$form.createForm(this, {name: 'normal_login'});
+            },
+            methods: {
+                handleSubmit(e) {
+                    e.preventDefault();
+                    this.form.validateFields((err, values) => {
+                        if (!err) {
+
+                            $.post('', values, (rsp) => {
+                                if (rsp.code == 0) {
+                                    this.$message.success(rsp.msg);
+                                    window.location.href = rsp.data.url
+                                } else {
+                                    this.$message.error(rsp.msg);
+                                }
+                            }, 'json')
+                        }
+                    });
+                },
+            },
+            data() {
+                return {
+                    model: {},
+                    isExecuting: false,
+                };
+            },
+            watch: {},
+            mounted: function () {
+
+            }
+        })
+
+
+    </script>
+
+
+
+{% endblock %}
