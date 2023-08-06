@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: p4-data-ingestion
+Version: 0.1.1
+Summary: Library to prepare CTX and HiRISE data for Zooniverse ingestion
+Home-page: https://github.com/michaelaye/p4_data_ingestion/tree/main/
+Author: Michael Aye
+Author-email: kmichael.aye@gmail.com
+License: MIT License
+Keywords: CitizenScience,CTX,HiRISE,Mars
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Project name here
+> Summary description here.
+
+
+This file will become your README and also the index of your documentation.
+
+## Install
+
+`pip install your_project_name`
+
+## How to use
+
+Fill me in please! Don't forget code examples:
+
+```
+1+1
+```
+
+
+
+
+    2
+
+
+
+

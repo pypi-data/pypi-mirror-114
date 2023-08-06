@@ -1,0 +1,12 @@
+p4_data_ingestion/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+p4_data_ingestion/_nbdev.py,sha256=FxYtSCZuuagGUTG_MOLV7HSKb9UpGgSqY-h4KUw7KzY,882
+p4_data_ingestion/coordinates.py,sha256=jc8WvEUxjSI54RiQVDSwjlwT_3NWkZu8aH1_gkQwoZo,1267
+p4_data_ingestion/input.py,sha256=Nv8irQmWplkb1pPm8stmcpsyDOANazxUZ5dsNBGo1iE,709
+p4_data_ingestion/manifests.py,sha256=BJ_IQ17OfN34ZEDxEXjO96a2enKdyA8ev_eniD6q390,3355
+p4_data_ingestion/tiling.py,sha256=MVwZl4QuD19bRvXS31tnveHBa7pFUD_6GZgt4un0G4E,2869
+p4_data_ingestion-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+p4_data_ingestion-0.1.1.dist-info/METADATA,sha256=lTOK4q_9qshHSdWWIMS-SNk15zCeOdNlMpvLjk-1b_w,895
+p4_data_ingestion-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+p4_data_ingestion-0.1.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+p4_data_ingestion-0.1.1.dist-info/top_level.txt,sha256=Dhe3XXEtx9OtHUXdpCSv2utUsVwa-Fa2R-mYyIyMaOA,18
+p4_data_ingestion-0.1.1.dist-info/RECORD,,
