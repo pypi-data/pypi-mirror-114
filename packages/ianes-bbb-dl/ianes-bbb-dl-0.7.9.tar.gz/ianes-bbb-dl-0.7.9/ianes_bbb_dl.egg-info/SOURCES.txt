@@ -1,0 +1,15 @@
+AUTHORS
+LICENSE
+README.md
+setup.py
+bbb_dl/__init__.py
+bbb_dl/ffmpeg.py
+bbb_dl/main.py
+bbb_dl/version.py
+ianes_bbb_dl.egg-info/PKG-INFO
+ianes_bbb_dl.egg-info/SOURCES.txt
+ianes_bbb_dl.egg-info/dependency_links.txt
+ianes_bbb_dl.egg-info/entry_points.txt
+ianes_bbb_dl.egg-info/not-zip-safe
+ianes_bbb_dl.egg-info/requires.txt
+ianes_bbb_dl.egg-info/top_level.txt
