@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: xbatcher
+Version: 0.1.0
+Summary: Batch generation from xarray dataset
+Home-page: https://github.com/pangeo-data/xbatcher
+Author: xbatcher Developers
+Author-email: rpa@ldeo.columbia.edu
+License: Apache
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+Requires-Dist: dask
+Requires-Dist: numpy
+Requires-Dist: xarray
+
+xbatcher: Batch Generation from Xarray Datasets
+===============================================
+
+|Build Status| |codecov| |docs| |license|
+
+
+Xbatcher is a small library for iterating xarray DataArrays in batches. The
+goal is to make it easy to feed xarray datasets to machine learning libraries
+such as Keras_. View the |docs| for more info.
+
+.. _Keras: https://keras.io/
+
+
+.. |Build Status| image:: https://github.com/pangeo-data/xbatcher/workflows/CI/badge.svg
+   :target: https://github.com/pangeo-data/xbatcher/actions
+   :alt: github actions build status
+.. |codecov| image:: https://codecov.io/gh/pangeo-data/xbatcher/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/pangeo-data/xbatcher
+   :alt: code coverage
+.. |docs| image:: http://readthedocs.org/projects/xbatcher/badge/?version=latest
+   :target: http://xbatcher.readthedocs.org/en/latest/?badge=latest
+.. |license| image:: https://img.shields.io/github/license/mashape/apistatus.svg
+   :target: https://github.com/pangeo-data/xbatcher
+   :alt: license
+
+

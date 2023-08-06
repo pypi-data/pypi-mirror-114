@@ -1,0 +1,12 @@
+xbatcher/__init__.py,sha256=QMjo3AnETgqXqoTwL2O2wS_HGfxSIlFOHrrR4zGVf24,330
+xbatcher/accessors.py,sha256=ivnjoVHt0SFgI6uYZfF1Tevdb05jSUwweWBljFJjVMw,759
+xbatcher/features.py,sha256=1KgtYZODKY1Oz7WVleJKkOH4YlhZxa1g-hxcKy_55Ls,219
+xbatcher/generators.py,sha256=Fqdm8sV-w1v0NzIn7cfACv5ftr54KR6Lhnxzo7QS7Js,5001
+xbatcher/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xbatcher/tests/test_accessors.py,sha256=vO-9HsgxrXUsmViPekwTN-a6Yd4vEImcL_ui5eQ1DPo,1237
+xbatcher/tests/test_generators.py,sha256=Lcn4W_J72reRsvyOJkiMeVkbzyJ9pmKs8ZUonzotp8E,5601
+xbatcher-0.1.0.dist-info/LICENSE,sha256=uijTNPZehqNoRN6pTbWiM7LMO7tDwxZtkvtgc07RQSA,1082
+xbatcher-0.1.0.dist-info/METADATA,sha256=KJEsBwQheyvBIFOLziOQcJtnjmJtfLRFMSUmzyUkH0M,1855
+xbatcher-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+xbatcher-0.1.0.dist-info/top_level.txt,sha256=4UR1BFRIx8Lng3QUOSSf1F0V0JYUstIT2gxZ-RgaeIg,9
+xbatcher-0.1.0.dist-info/RECORD,,
