@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: argumentor
+Version: 0.0.1
+Summary: A library to work with command-line arguments
+Home-page: https://codeberg.org/twann/python-argumentor
+Author: Twann
+Author-email: twann@ctemplar.com
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# argumentor
+
+A library to work with command-line arguments
+
+
