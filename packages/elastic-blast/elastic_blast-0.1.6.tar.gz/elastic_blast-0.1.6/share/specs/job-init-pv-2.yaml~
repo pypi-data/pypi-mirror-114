@@ -1,0 +1,28 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: init-pv
+  labels:
+    app: setup
+spec:
+  template:
+    metadata:
+      labels:
+        app: setup
+    spec:
+      volumes: 
+      - name: blastdb
+        persistentVolumeClaim:
+            claimName: blast-dbs-pvc
+            readOnly: false
+      containers:
+        - name: get-blastdb
+          image: gcr.io/ncbi-sandbox-blast/ncbi/blast:latest
+          workingDir: /blast/blastdb
+          volumeMounts:
+          - name: blastdb
+            mountPath: /blast/blastdb
+            readOnly: false
+          command: [ "update_blastdb.pl", "pdbnt", "-decompress" ]
+      restartPolicy: Never
+  backoffLimit: 3

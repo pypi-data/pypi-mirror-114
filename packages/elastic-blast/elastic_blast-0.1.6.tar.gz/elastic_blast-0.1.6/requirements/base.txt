@@ -1,0 +1,9 @@
+urllib3 == 1.25.11
+setuptools
+importlib-resources
+importlib-metadata
+pex
+boto3
+awslimitchecker
+tenacity
+types-pkg-resources

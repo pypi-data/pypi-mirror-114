@@ -1,0 +1,23 @@
+# ElasticBLAST configuration file to test OutOfMemoryError during
+# BLAST execution. Exit code - 137, Container Reason -
+# OutOfMemoryError: Container killed due to memory usage
+
+[cloud-provider]
+aws-region = us-east-1
+aws-subnet = subnet-015709d9331798ebc,subnet-015c5d01a02230d9f,subnet-a43744d3
+aws-vpc = vpc-6e52740b
+
+[cluster]
+machine-type = optimal
+num-nodes = 1
+num-cpus = 8
+disk-type = gp2
+use-preemptible = true
+
+
+[blast]
+program = blastn
+options = -outfmt 6
+db = refseq_rna
+mem-limit = 7.0G
+queries = s3://elasticblast-test/queries/MANE.GRCh38.v0.8.select_refseq_rna.batch_000.fna

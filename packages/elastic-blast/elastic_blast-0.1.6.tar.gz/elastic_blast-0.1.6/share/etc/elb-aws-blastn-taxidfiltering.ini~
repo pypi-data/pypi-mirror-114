@@ -1,0 +1,20 @@
+# ElasticBLAST configuration file to run blastn with taxonomic filtering
+
+[cloud-provider]
+aws-region = us-east-1
+
+[cluster]
+machine-type = m5.8xlarge
+num-nodes = 1
+num-cpus = 32
+disk-type = gp2
+use-preemptible = true
+
+
+[blast]
+program = blastn
+# EB-709
+# options =  -outfmt "6 std staxids" -taxids 1866885,1804623
+options = -taxids 1866885,1804623
+db = pdbnt
+queries = s3://elasticblast-test/queries/RFQT01.1.fsa_nt.gz

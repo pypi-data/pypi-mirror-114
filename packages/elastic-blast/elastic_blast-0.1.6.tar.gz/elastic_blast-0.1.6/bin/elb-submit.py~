@@ -1,0 +1,67 @@
+#!/usr/bin/env python3
+"""
+bin/elb-submit.py - See DESC constant below
+
+Author: Christiam Camacho (camacho@ncbi.nlm.nih.gov)
+Created: Wed 22 Apr 2020 06:31:30 AM EDT
+"""
+import sys
+import argparse
+import logging
+from elb.util import check_positive_int, config_logging
+from elb.config import configure, validate_configuration
+
+VERSION = '0.0.2' # FIXME: this should come from setup.cfg
+DFLT_CONFIG = 'elastic-blast.ini'
+DFLT_LOGFILE = 'elastic-blast.log'
+DESC = r"""Application to run ElasticBLAST searches"""
+
+
+def main():
+    """ Entry point into this program. """
+    parser = create_arg_parser()
+    args = parser.parse_args()
+    config_logging(args)
+    logging.info(f"ElasticBLAST {VERSION}")
+
+    cfg = configure(args)
+    cfg.write(sys.stdout)    # for debugging
+    validate_configuration(cfg)
+
+    return 0
+
+
+def create_arg_parser():
+    """ Create the command line options parser object for this script. """
+    parser = argparse.ArgumentParser(description=DESC)
+    # Must match https://elbdoc.readthedocs.io/en/stable/configuration.html#elb-blast-program
+    parser.add_argument("--program", type=str, help="BLAST program to run",
+                        choices=["blastp", "blastn", "megablast", "blastx", "tblastn", "rpstblastn"])
+    parser.add_argument("--query", type=str,
+                        help="Query sequence data, can be provided as a local path or GCS bucket URI to a single file/tarball")
+    parser.add_argument("--db", type=str, help="BLAST database to search")
+    parser.add_argument("--out", type=str,
+                        help="GCS bucket URI where to save the output from ElasticBLAST")
+    parser.add_argument("--num-nodes", type=check_positive_int,
+                        help="Number of worker nodes to use")
+    parser.add_argument("--cfg", default=DFLT_CONFIG, type=str,
+                        help="ElasticBLAST configuration file, default: " + DFLT_CONFIG)
+    parser.add_argument("--run-label", type=str,
+                        help="Run-label to tag this ElasticBLAST search, format: key:value")
+    parser.add_argument("--logfile", default=DFLT_LOGFILE, type=str,
+                        help="Default: " + DFLT_LOGFILE)
+    parser.add_argument("--loglevel", default='INFO',
+                        choices=["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"])
+    parser.add_argument('--version', action='version',
+                        version='%(prog)s ' + VERSION)
+    return parser
+
+
+if __name__ == "__main__":
+    import traceback
+    try:
+        sys.exit(main())
+    except Exception as e:
+        print(e, file=sys.stderr)
+        traceback.print_exc(file=sys.stderr)
+        sys.exit(1)

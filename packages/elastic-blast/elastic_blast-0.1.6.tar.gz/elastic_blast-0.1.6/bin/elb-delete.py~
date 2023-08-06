@@ -1,0 +1,66 @@
+#!/usr/bin/env python3
+"""
+elb-delete - delete cluster
+
+Author: Victor Joukov joukovv@ncbi.nlm.nih.gov
+"""
+
+import sys
+import os
+import argparse
+import logging
+from elb import VERSION
+from elb.config import configure, validate_configuration
+from elb.util import config_logging
+from elb.clusterhelper import delete_cluster
+
+DFLT_CONFIG = 'elastic-blast.ini'
+DFLT_LOGFILE = 'elastic-blast.log'
+DESC = 'Delete ElasticBLAST cluster'
+
+
+def main():
+    """ Entry point into this program. """
+    prog = os.path.splitext(os.path.basename(sys.argv[0]))[0]
+    parser = create_arg_parser(prog)
+    args = parser.parse_args()
+    config_logging(args)
+    logging.info(f"ElasticBLAST {prog} {VERSION}")
+
+    cfg = configure(args)
+    logging.debug({s: dict(cfg[s]) for s in cfg.sections()})
+    # TODO validate_configuration complains about parameters unnecessary 
+    # for this program - db and query
+#    validate_configuration(cfg)
+
+    delete_cluster(cfg) # FIXME: CRITICAL PATH depends on EB-148
+    # Clean up resources, EB-171
+
+    return 0
+
+def create_arg_parser(prog):
+    """ Create the command line options parser object for this script. """
+    parser = argparse.ArgumentParser(prog=prog, description=DESC)
+    parser.add_argument("--cfg", default=DFLT_CONFIG, type=str,
+                        help="ElasticBLAST configuration file, default: " + DFLT_CONFIG)
+    parser.add_argument("--run-label", type=str,
+                        help="Run-label to tag this ElasticBLAST search, format: key:value")
+    parser.add_argument("--logfile", default=DFLT_LOGFILE, type=str,
+                        help="Default: " + DFLT_LOGFILE)
+    parser.add_argument("--loglevel", default='INFO',
+                        choices=["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"])
+    parser.add_argument("--dry-run", action='store_true',
+                        help="Do not perform any actions")
+    parser.add_argument('--version', action='version',
+                        version='%(prog)s ' + VERSION)
+    return parser
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+    import traceback
+    try:
+        sys.exit(main())
+    except Exception as e:
+        traceback.print_exc(file=sys.stderr)
+        sys.exit(1)

@@ -1,0 +1,24 @@
+# ElasticBLAST configuration file template to run blastn against nt
+
+[cloud-provider]
+aws-region = us-east-1
+aws-key-pair = cc-key-va
+aws-subnet = subnet-0ed5d5b3d27209f0e
+aws-security-group = sg-05ed916c9e771eea3
+aws-batch-service-role = arn:aws:iam::250813660784:role/service-role/AWSBatchServiceRole
+aws-instance-role = ecsInstanceRole
+aws-job-role = arn:aws:iam::250813660784:role/cbb-research-db-batch-role
+
+
+[cluster]
+machine-type = m5.8xlarge
+num-nodes = 1
+num-cpus = 4
+
+[blast]
+program = blastn
+db = pdbnt
+mem-request = 500M
+mem-limit = 1.0G
+queries = s3://elasticblast-test/queries/MANE.GRCh38.v0.8.select_refseq_rna.fna
+batch-len = 5000000

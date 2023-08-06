@@ -1,0 +1,59 @@
+ElasticBLAST
+============
+
+[![Anaconda-Server Badge](https://anaconda.org/bioconda/elastic-blast/badges/version.svg)](https://anaconda.org/bioconda/elastic-blast)
+[![Anaconda-Server Badge](https://anaconda.org/bioconda/elastic-blast/badges/latest_release_date.svg)](https://anaconda.org/bioconda/elastic-blast)
+[![Anaconda-Server Badge](https://anaconda.org/bioconda/elastic-blast/badges/downloads.svg)](https://anaconda.org/bioconda/elastic-blast)
+[![Anaconda-Server Badge](https://anaconda.org/bioconda/elastic-blast/badges/installer/conda.svg)](https://conda.anaconda.org/bioconda)
+
+ElasticBLAST is a cloud-based tool to perform your BLAST searches faster and make you more effective.
+
+ElasticBLAST is ideal for users who have a large number (thousands or more) of queries to BLAST or who prefer to use cloud infrastructure for their searches.  It can run BLAST searches that cannot be done on [NCBI WebBLAST](https://blast.ncbi.nlm.nih.gov) and runs them more quickly than stand-alone [BLAST+](https://www.ncbi.nlm.nih.gov/books/NBK279690/).
+
+ElasticBLAST speeds up your work by distributing your BLAST+ searches across multiple cloud instances. The ability to scale resources in this way allows larger numbers of queries to be searched in a shorter time than you could with BLAST+ on a single host.
+
+The National Center for Biotechnology Information ([NCBI](https://www.ncbi.nlm.nih.gov)), part of the National Library of
+Medicine at the NIH, developed and maintains ElasticBLAST.
+
+The NCBI is making the source code for ElasticBLAST available on GitHub as an
+Open Distribution to allow the user community to easily obtain and examine
+that code.  GitHub also provides a means for users to report issues and
+suggest modifications through pull requests. 
+
+The NCBI will use internal source code control as the repository of record and
+push regular releases of the ElasticBLAST
+source code to GitHub.  The BLAST developers will work to ensure that
+ElasticBLAST continues to function in 
+changing environments and, when possible, integrate user feedback into
+ElasticBLAST.  Owing to resource constraints, 
+they cannot absolutely commit to act on all issue reports, except critical
+security vulnerabilities.
+
+End-user documentation
+----------------------
+
+Please visit https://blast.ncbi.nlm.nih.gov/doc/elastic-blast/
+
+How to get ElasticBLAST
+-----------------------
+
+Please see instructions here:
+https://blast.ncbi.nlm.nih.gov/doc/elastic-blast/quickstart-aws.html#get-elasticblast
+
+How to build ElasticBLAST
+-------------------------
+
+    make elastic-blast
+
+Requirements for building ElasticBLAST
+--------------------------------------
+
+In addition to the requirements listed in the page below, [AWS Command Line Interface](https://aws.amazon.com/cli/) is required.
+
+https://blast.ncbi.nlm.nih.gov/doc/elastic-blast/requirements.html
+
+Bug affecting GCP implementation
+--------------------------------
+
+The current GCP implementation can leak cloud resources, potentially resulting in excess user charges. We are working to update the code and expect a fix soon. In the interim, we suggest using our AWS implementation, or for those who wish to use GCP, we have provided a [workaround](share/tools/cleanup-stale-gcp-resources.py) that, when applied, addresses this issue and eliminates the risk of excess user charges. For more information, see https://blast.ncbi.nlm.nih.gov/doc/elastic-blast/gcp-issues.html (Message date: July 21, 2021)
+

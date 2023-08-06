@@ -1,0 +1,18 @@
+# ElasticBLAST configuration file template to run blastn against nt
+
+[cloud-provider]
+gcp-project = ncbi-sandbox-blast
+gcp-region = us-east4
+gcp-zone = us-east4-b
+
+[cluster]
+machine-type = n1-standard-16
+num-nodes = 1
+num-cpus = 15
+pd-size = 3000G
+use-preemptible = yes
+
+[blast]
+program = blastn
+db = {DB}
+queries = /panfs/pan1.be-md.ncbi.nlm.nih.gov/blastprojects/elastic-blast-test-queries/coronarividae.fna

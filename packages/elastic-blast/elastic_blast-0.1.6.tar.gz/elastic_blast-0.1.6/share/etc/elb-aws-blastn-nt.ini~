@@ -1,0 +1,24 @@
+# ElasticBLAST configuration file template to run blastn against nt
+
+[cloud-provider]
+aws-region = us-east-1
+aws-key-pair = workers-key
+aws-subnet = subnet-a43744d3
+aws-security-group = sg-6cae8d08
+aws-batch-service-role = arn:aws:iam::250813660784:role/service-role/AWSBatchServiceRole
+aws-instance-role = ecsInstanceRole
+aws-job-role = arn:aws:iam::250813660784:role/cbb-research-db-batch-role
+
+[cluster]
+machine-type = m5.8xlarge
+num-nodes = 4
+num-cpus = 30
+pd-size = 200M
+
+[blast]
+program = blastn
+db = nt
+mem-request = 64G
+mem-limit = 110G
+queries = gs://madden-test/hepatitis.fsa
+batch-len = 5000000

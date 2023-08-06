@@ -1,0 +1,111 @@
+#!/usr/bin/env python3
+"""
+*NCBI internal application*
+Application for reporting GCP costs. It runs BigQuery queries on a billing
+data set looking for resources with a specific run-label and reports aggregate
+cost.
+
+Author: Greg Boratyn boratyng@ncbi.nlm.nih.gov
+"""
+
+import sys, os
+import argparse
+from elb import VERSION
+from elb.cost import get_cost, DFLT_BQ_DATASET, DFLT_BQ_TABLE
+from elb.cost import BQ_ERROR, NO_RESULTS_ERROR, CMD_ARGS_ERROR
+from elb.util import SafeExecError
+import elb.gcp
+
+DFLT_GCP_PROJECT='sgcncbimasterproject'
+
+def parse_arguments():
+    """Parse command line arguments"""
+    parser = argparse.ArgumentParser(prog=os.path.basename(os.path.splitext(sys.argv[0])[0]), 
+                                     description='GCP cost reporting application, provides aggregate cost for resources with a specific run-label.')
+    parser.add_argument(metavar='RUN_LABEL', dest='run_label', type=str,
+                        help='Run-label, must be of the form <key>:<value>')
+    parser.add_argument('--date-range', metavar='STRING', dest='date_range',
+                        type=str, help='Search for costs only between given '
+                        ' dates. Date range format: yyyy-mm-dd:yyyy-mm-dd.'
+                        ' Using date range makes search faster and'
+                        ' cheaper.')
+    parser.add_argument('--dataset', metavar='STRING', dest='dataset',
+                        type=str, default=DFLT_BQ_DATASET,
+                        help='BigQuery dataset to search for costs')
+    parser.add_argument('--table', metavar='STRING', dest='table', type=str,
+                        default=DFLT_BQ_TABLE, help='BigQuery table to search')
+    parser.add_argument('--project', metavar='STRING', dest='project', type=str,
+                        default=DFLT_GCP_PROJECT,
+                        help='GCP project that holds billing data')
+    parser.add_argument('--verbose', dest='verbose', action='store_true',
+                        help='Print additional informaton')
+    parser.add_argument('--version', action='version',
+                        version='%(prog)s ' + VERSION)
+    return parser.parse_args()
+
+def main():
+    """The main function, entry point of the program"""
+    # parse command line parameters
+    args = parse_arguments()
+
+    # run-label is a mandatory parameter
+    if not args.run_label:
+        print('Error: Run-label not provided', file=sys.stderr)
+        return CMD_ARGS_ERROR
+
+    # save current default GCP project
+    original_project = None
+    try:
+        original_project = elb.gcp.get_gcp_project()
+    except (SafeExecError, RuntimeError) as err:
+        print('Error: Could not get current GCP project')
+        print(err, file=sys.stderr)
+        # quit if GCP project cannot be aquired
+        return BQ_ERROR
+
+    # switch to user supplied GCP project only if current project is unset or
+    # different from the supplied one
+    if original_project is None or original_project != args.project:
+        try:
+            elb.gcp.set_gcp_project(args.project)
+        except SafeExecError as err:
+            print(err, file=sys.stderr)
+            # exit if project cannot be set
+            return BQ_ERROR
+
+    # query GCP for the cost
+    returncode = 0
+    try:
+        cost = get_cost(args.run_label, args.date_range, args.dataset, args.table,
+                        args.verbose)
+    except ValueError as e:
+        print(f'Error: {e}', file=sys.stderr)
+        return CMD_ARGS_ERROR
+    except RuntimeError as e:
+        print(f'{e}', file=sys.stderr)
+        return BQ_ERROR
+    finally:
+        # swicth GCP project back to the old one only if it was set to a
+        # different value than args.project
+        if original_project is not None and original_project != args.project:
+            try:
+                elb.gcp.set_gcp_project(original_project)
+            except SafeExecError as err:
+                print(f'Error: Could not set original GCP project: {original_project}',
+                      file=sys.stderr)
+                print(err, file=sys.stderr)
+                # there may be userful output, so no need to exit yet
+                returncode = BQ_ERROR
+
+    if not cost:
+        print(f'Error: There are no results for run labeled "{args.run_label}". Please, make sure that run-label is spelled correctly, you are using the correct GCP project, BigQuery dataset, and table, as well as date range, if used was set properly.', file=sys.stderr)
+        return NO_RESULTS_ERROR
+
+    # We could have summed the cost in SQL, but then we would not be able to
+    # tell the difference between zero cost and no records found.
+    print('${:.2f}'.format(sum(cost)))
+    return returncode
+
+        
+if __name__ == '__main__':
+    sys.exit(main())

@@ -1,0 +1,19 @@
+# ElasticBLAST configuration file template to run blastn against nt
+
+[cloud-provider]
+aws-region = us-east-1
+
+[cluster]
+machine-type = m5.8xlarge
+num-nodes = 1
+num-cpus = 4
+disk-type = gp2
+
+[blast]
+program = blastn
+options = -evalue 1e-23 -max_target_seqs 5 -outfmt 6
+db = pdbnt
+mem-request = 500M
+mem-limit = 1.0G
+queries = s3://elasticblast-test/queries/RFQT01.1.fsa_nt.gz
+batch-len = 5000000
