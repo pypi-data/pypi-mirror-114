@@ -1,0 +1,17 @@
+LICENSE,sha256=HPPG5yXB6GnHrXF65q-tCsSbPPB7EvxWdj0GRGZv-9E,1065
+attractors/__init__.py,sha256=0ut2FkXQ29q_qkTMFn4h-EeUxPRIfIHdJZ2BHUZEswA,579
+attractors/attractor.py,sha256=QA1_HKigdLBnw3L8HH971bTubOrcHPTiZJE8afc9-rw,20290
+attractors/data/__init__.py,sha256=gLNc4A5FAtKmF6zLOg6fhQt8nw5O-YPLG0gALA8O3nQ,397
+attractors/data/params.json,sha256=htQQw_DpknobDKISbrJAesBr76m6sVYxR8B2kytA_PM,13615
+attractors/data/themes.json,sha256=7ERsgqT2GjKRvBpT3Cnsj18f5-N7swwMAOHMUFYeMcQ,68905
+attractors/parser.py,sha256=kesB4iZ0NFjVZSb_XYtsfahG78TRg6IxALKp266MpqI,6254
+attractors/utils/__init__.py,sha256=gLNc4A5FAtKmF6zLOg6fhQt8nw5O-YPLG0gALA8O3nQ,397
+attractors/utils/base.py,sha256=0mez_QT06hJJQ5rECgJWjyLcdOn3Pa8jpwNhjnNHqIY,20187
+attractors/utils/colortable.py,sha256=v7o2dEYXxrr6522Yx6mgcZM2abR-19res6Iif_0KAxM,1701
+attractors/utils/des.py,sha256=nV61Tl0OhD1JYLzTkX5ixKyt6o4VFT_I9-sHMVF8O5I,7738
+attractors/utils/video.py,sha256=WzKbFoFgz5PM4pykqggfI_GUxErqGmnIVDoOK2G1kUc,2627
+attractors-1.4.1.dist-info/entry_points.txt,sha256=IQsmTWS1EvJREf60PCD1xOkLIcblOYGodHpE12QKD-M,52
+attractors-1.4.1.dist-info/LICENSE,sha256=HPPG5yXB6GnHrXF65q-tCsSbPPB7EvxWdj0GRGZv-9E,1065
+attractors-1.4.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+attractors-1.4.1.dist-info/METADATA,sha256=Qlx15BsQtdEuNTCSaVmfSm8wNrJZ7BAgHEUBnSuXKkw,3629
+attractors-1.4.1.dist-info/RECORD,,

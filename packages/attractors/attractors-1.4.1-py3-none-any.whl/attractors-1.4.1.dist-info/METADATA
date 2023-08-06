@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: attractors
+Version: 1.4.1
+Summary: Simulation and visualization of strange attractors
+Home-page: https://github.com/Vignesh-Desmond/attractors
+License: MIT
+Keywords: Attractors,Strange Attractors,Lorenz,Chen,Chaotic Attractors
+Author: Vignesh Mohan
+Author-email: vignesh.desmond@gmail.com
+Maintainer: Vignesh Mohan
+Maintainer-email: vignesh.desmond@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Framework :: Matplotlib
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Provides-Extra: doc
+Requires-Dist: matplotlib (>=3.4.2,<4.0.0); extra == "doc"
+Requires-Dist: more-itertools (>=8.8.0,<9.0.0); extra == "doc"
+Requires-Dist: pathos (>=0.2.8,<0.3.0); extra == "doc"
+Requires-Dist: tqdm (>=4.61.2,<5.0.0); extra == "doc"
+Project-URL: Documentation, https://attractors.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/Vignesh-Desmond/attractors
+Description-Content-Type: text/x-rst
+
+attractors
+==========
+
+|Build status| |Docs status| |PyPI version| |PyPI license| |CodeCov|
+
+attractors is a package for simulation and visualization of strange
+attractors.
+
+Installation
+============
+
+The simplest way to install the module is via PyPi using pip
+
+``pip install attractors``
+
+Alternatively, the package can be installed via github as follows
+
+::
+
+   git clone https://github.com/Vignesh-Desmond/attractors
+   cd attractors
+   python -m pip install .
+
+To set up the package for development and debugging, it is recommended
+to use `Poetry <https://python-poetry.org/>`__. Just install with
+``poetry install`` and let Poetry manage the environment and
+dependencies.
+
+Prerequisites
+-------------
+
+To generate video output, the package uses
+`ffmpeg <https://ffmpeg.org/>`__. Download and install from
+`here <https://ffmpeg.org/download.html>`__ according to your os and
+distribution and set PATH accordingly. Note that this is only required
+for generating video output.
+
+Usage
+=====
+
+See
+`documentation <https://attractors.readthedocs.io/en/latest/>`__
+on readthedocs.io
+
+Changelog
+=========
+
+See
+`changelog <https://github.com/Vignesh-Desmond/attractors/blob/main/CHANGELOG.md>`__
+for previous versions
+
+Development
+===========
+
+This package is under early stages of development it's open to any constructive suggestions. 
+Please send bug reports and feature requests through issue trackers and pull requests.
+
+License
+=======
+
+This package is licensed under the `MIT
+License <https://github.com/Vignesh-Desmond/attractors/blob/main/LICENSE>`__
+
+.. |Build status| image:: https://img.shields.io/github/workflow/status/Vignesh-Desmond/attractors/Build?style=flat-square&logo=GitHub
+   :target: https://github.com/Vignesh-Desmond/attractors/actions/workflows/build.yml
+.. |PyPI version| image:: https://img.shields.io/pypi/v/attractors?color=blue&style=flat-square
+   :target: https://pypi.python.org/pypi/attractors/
+.. |PyPI license| image:: https://img.shields.io/pypi/l/attractors?style=flat-square&color=orange
+   :target: https://lbesson.mit-license.org/
+.. |CodeCov| image:: https://codecov.io/gh/Vignesh-Desmond/attractors/branch/main/graph/badge.svg?token=2VKMZ5EYVS
+   :target: https://codecov.io/gh/Vignesh-Desmond/attractors
+.. |Docs status| image:: https://img.shields.io/readthedocs/attractors?style=flat-square
+   :target: https://attractors.readthedocs.io/en/latest/
