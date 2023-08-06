@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+margin_community_strategies/3emaRsi.py
+margin_community_strategies/__init__.py
+margin_community_strategies.egg-info/PKG-INFO
+margin_community_strategies.egg-info/SOURCES.txt
+margin_community_strategies.egg-info/dependency_links.txt
+margin_community_strategies.egg-info/requires.txt
+margin_community_strategies.egg-info/top_level.txt
