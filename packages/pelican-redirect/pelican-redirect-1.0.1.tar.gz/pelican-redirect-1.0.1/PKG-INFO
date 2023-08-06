@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: pelican-redirect
+Version: 1.0.1
+Summary: "Redirect pages using meta http-equiv tags"
+Home-page: https://github.com/bryanwweber/pelican-redirect
+Author: Bryan Weber
+Author-email: bryan.w.weber@gmail.com
+License: BSD-3-Clause
+Project-URL: Source, https://github.com/bryanwweber/pelican-redirect
+Project-URL: Documentation, https://docs.getpelican.com
+Project-URL: Funding, https://donate.getpelican.com/
+Project-URL: Issues, https://github.com/bryanwweber/pelican-redirect/issues
+Keywords: pelican,plugin,redirect,html,http-equiv
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Environment :: Console
+Classifier: Framework :: Pelican
+Classifier: Framework :: Pelican :: Plugins
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: <4.0,>=3.7.0
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+License-File: LICENSE
+
+Pelican Redirect: A Plugin for Pelican
+====================================================
+
+[![Build Status](https://img.shields.io/github/workflow/status/pelican-plugins/pelican-redirect/build)](https://github.com/bryanwweber/pelican-redirect/actions)
+[![PyPI Version](https://img.shields.io/pypi/v/pelican-redirect)](https://pypi.org/project/pelican-redirect/)
+![License](https://img.shields.io/pypi/l/pelican-redirect?color=blue)
+
+Redirect pages using meta http-equiv tags
+
+Installation
+------------
+
+This plugin can be installed via:
+
+```shell
+python -m pip install pelican-redirect
+```
+
+Usage
+-----
+
+Once this plugin is installed, you can add a key to the frontmatter of the file called `original_url`. The plugin will generate an HTML page at that location that redirects to the new location of the post/page. Example:
+
+```markdown
+Title: A sample title
+original_url: blog-posts/2021/07/21/a-sample-title.html
+
+Content here
+```
+
+Assuming this file is now going to be served from `blog-posts/a-simple-title.html`, a file will be written to `blog-posts/2021/07/21/a-sample-title.html` that redirects to the new URL.s
+
+Contributing
+------------
+
+Contributions are welcome and much appreciated. Every little bit helps. You can contribute by improving the documentation, adding missing features, and fixing bugs. You can also help out by reviewing and commenting on [existing issues][].
+
+To start contributing to this plugin, review the [Contributing to Pelican][] documentation, beginning with the **Contributing Code** section.
+
+[existing issues]: https://github.com/bryanwweber/pelican-redirect/issues
+[Contributing to Pelican]: https://docs.getpelican.com/en/latest/contribute.html
+
+License
+-------
+
+This project is licensed under the BSD-3-Clause license.
+
+
