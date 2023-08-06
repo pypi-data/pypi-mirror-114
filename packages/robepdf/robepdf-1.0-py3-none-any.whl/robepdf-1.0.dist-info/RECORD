@@ -1,0 +1,8 @@
+robepdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+robepdf/pdf2image.py,sha256=5--64-OYoPnJr369BowREbCyMU2VZrAXDrr2AB1VAx4,39
+robepdf/pdf2text.py,sha256=5--64-OYoPnJr369BowREbCyMU2VZrAXDrr2AB1VAx4,39
+robepdf-1.0.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+robepdf-1.0.dist-info/METADATA,sha256=R3V_WLKziiYk85wnS_KXVlNI_PD1EVAwbsk8y4pHdsY,205
+robepdf-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+robepdf-1.0.dist-info/top_level.txt,sha256=6w7vvW2zSPYGjMxjhukJ6qWsbFW6jirKW7j7zZMTpxc,8
+robepdf-1.0.dist-info/RECORD,,
