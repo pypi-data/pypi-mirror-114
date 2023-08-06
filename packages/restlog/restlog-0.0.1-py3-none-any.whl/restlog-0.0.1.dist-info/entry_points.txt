@@ -1,0 +1,3 @@
+[console_scripts]
+restlog = restlog.main:main
+
