@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: gitlab-errand-boy
+Version: 0.1.2
+Summary: 
+Author: Gleb Buzin
+Author-email: qufiwefefwoyn@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests (>=2.23.0)
+Requires-Dist: tenacity (>=6.1.0)
