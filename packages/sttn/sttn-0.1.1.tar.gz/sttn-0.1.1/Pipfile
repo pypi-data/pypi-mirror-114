@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+sttn = {editable = true, path = "."}
+pandas = "*"
+numpy = "*"
+networkx = "*"
+geopandas = "*"
+requests = "*"
+pyarrow = "*"
+scikit-mobility = "*"
+haversine = "*"
+
+[dev-packages]
+pytest = "*"
+pytest-cov = "*"
+ipython = "*"
+jupyter = "*"
+
+[requires]
+python_version = "3.8"
