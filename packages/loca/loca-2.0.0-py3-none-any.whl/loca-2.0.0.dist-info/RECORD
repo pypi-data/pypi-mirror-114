@@ -1,0 +1,9 @@
+loca/__init__.py,sha256=NeCY7JTjZYaMCfNdN_8qJu9jZ2SKMssQbuIAQQXqYo8,3742
+loca/macos.py,sha256=CapwmYrX7op_wqzA29covYeAzugYIZoPHHpdpkZ_QjA,1739
+loca/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+loca/windows.py,sha256=1Vg0nR6_ds_QQ-htCPi3MMF6Z3JoVszee4BJNXLt3R8,4832
+loca/xdg.py,sha256=ZaNY0jVDp_DR8KwWmlFjul2Uqu_USVcvoqAQv-pp1S4,2559
+loca-2.0.0.dist-info/COPYING,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+loca-2.0.0.dist-info/WHEEL,sha256=o-Q2E8s7BKkCJ1EC2uQdaymZVVu2aUt1e8uTTFpzHVs,81
+loca-2.0.0.dist-info/METADATA,sha256=b0Y00BLNPsk-jCZ-QIMmBZoYIhp1BwDw6OO4iNcgxaE,2565
+loca-2.0.0.dist-info/RECORD,,
