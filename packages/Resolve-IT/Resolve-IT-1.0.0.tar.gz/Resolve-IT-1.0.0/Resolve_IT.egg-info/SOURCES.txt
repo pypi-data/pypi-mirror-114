@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+Resolve_IT.egg-info/PKG-INFO
+Resolve_IT.egg-info/SOURCES.txt
+Resolve_IT.egg-info/dependency_links.txt
+Resolve_IT.egg-info/entry_points.txt
+Resolve_IT.egg-info/requires.txt
+Resolve_IT.egg-info/top_level.txt
+resolveit/__init__.py
+resolveit/app.py
+resolveit/cli_output.py
+resolveit/fetch_results.py
+resolveit/resolveit_types.py
+resolveit/rparser.py
+resolveit/settings.py

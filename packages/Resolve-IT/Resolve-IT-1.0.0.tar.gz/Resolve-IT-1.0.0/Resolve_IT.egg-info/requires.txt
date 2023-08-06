@@ -1,0 +1,7 @@
+stackapi
+requests
+beautifulsoup4
+lxml
+urwid
+dataclasses
+coverage
