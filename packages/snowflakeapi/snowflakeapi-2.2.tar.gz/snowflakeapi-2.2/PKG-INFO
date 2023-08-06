@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: snowflakeapi
+Version: 2.2
+Summary: SnowFlake API Wrapper for Python
+License: MIT
+Author: DevSynth
+Author-email: synth@snowflakedev.org
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Sphinx (>=4.1.1,<5.0.0)
+Requires-Dist: aiohttp (>=3.7.4,<4.0.0)
+Requires-Dist: pytest (>=6.2.4,<7.0.0)
+Requires-Dist: pytest-asyncio (>=0.15.1,<0.16.0)
+Requires-Dist: python-dotenv (>=0.18.0,<0.19.0)
+Description-Content-Type: text/markdown
+
+# Snowflake API
+
+## About
+
+This is a asynchronous python  API wrapper for [SnowFlakeAPI](https://api.snowflakedev.org/). 
+
+## How to Use
+
+```shell
+pip install snowflakeapi
+```
+
+## Example Usage
+```python
+    import asyncio
+    from snowflakeapi import SnowClient
+
+    client = SnowClient("YOUR_API_KEY") # Your API Key can be found at https://api.snowflakedev.org/dashboard (sign in w/ discord)
+
+    async def main():
+        print(await client.chat_bot("hello!"))
+    
+    asyncio.run(main())
+
+ ```
+
+## API Documentation
+
+[API Documentation](https://snowflakeapi.readthedocs.io/en/latest/)
+
+
+## Want To Contribute?
+
+You can send a pull request or open an issue to contribute.
+Check out [Code Of Conduct](CODE_OF_CONDUCT.md) before contributing.
+
