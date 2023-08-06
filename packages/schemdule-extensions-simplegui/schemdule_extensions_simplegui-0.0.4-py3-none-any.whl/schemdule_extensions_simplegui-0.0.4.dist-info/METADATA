@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: schemdule-extensions-simplegui
+Version: 0.0.4
+Summary: A simple GUI extension for schemdule.
+Home-page: https://github.com/StardustDL/schemdule
+Author: StardustDL
+Author-email: stardustdl@163.com
+License: UNKNOWN
+Project-URL: Source Code, https://github.com/StardustDL/schemdule
+Project-URL: Changes, https://github.com/StardustDL/schemdule/releases
+Project-URL: Documentation, https://github.com/StardustDL/schemdule
+Project-URL: Bug Tracker, https://github.com/StardustDL/schemdule/issues
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: schemdule (>=0.0.4)
+Requires-Dist: PySimpleGUI (>=4.45.0)
+
+UNKNOWN
+
