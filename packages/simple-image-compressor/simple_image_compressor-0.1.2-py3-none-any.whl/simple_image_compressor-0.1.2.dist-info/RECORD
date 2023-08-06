@@ -1,0 +1,14 @@
+simple_image_compressor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_image_compressor/__main__.py,sha256=ym6tKG8ZySseIzPro_9rHqoJjT6ZS6ZdOZVTdpse1Z0,83
+simple_image_compressor/res/settings.json,sha256=f0cFmTAldgqrUdYlG0r30P8LDc2AsStjwQ36FGKXT6M,944
+simple_image_compressor/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_image_compressor/src/compressor.py,sha256=NVEWcfo9cJ4Iu6dbCIODmaS-ydUI2UcqMi9kPe2rNhM,10957
+simple_image_compressor/src/job.py,sha256=I1ErG-AcYcQGVg0O2cg5QMl09A-6k5Kge2DVvYhaCEA,782
+simple_image_compressor/src/main.py,sha256=0j4gyAwn2NNB7o6U--O8hP1B8FnjMsIUOPVL3YtHo-Q,6865
+simple_image_compressor/src/settings.py,sha256=iSeTFG4DfrdUN5oUXr1xSpDLIVQI3Qtbs9MzKxaLZWE,1574
+simple_image_compressor-0.1.2.dist-info/LICENSE,sha256=8GlGC-z0IdIWWFLYzO_z3PGZGEBEjVOn2M03QtCDmX4,1096
+simple_image_compressor-0.1.2.dist-info/METADATA,sha256=nlzTMLwFN5wC4FDsD-TgJT3NGKWt78DTW5WzkRd9QFI,2053
+simple_image_compressor-0.1.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+simple_image_compressor-0.1.2.dist-info/entry_points.txt,sha256=h1eCjmd_CpdGil3FG5K1jdOIjFhrfZ6_qozaTB9XuHg,63
+simple_image_compressor-0.1.2.dist-info/top_level.txt,sha256=kdgVrpRXc9vUPB0qFJ9_M7E67Levg1lVjpf3tCYbk9k,24
+simple_image_compressor-0.1.2.dist-info/RECORD,,
