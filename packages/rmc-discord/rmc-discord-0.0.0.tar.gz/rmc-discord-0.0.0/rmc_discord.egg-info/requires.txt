@@ -1,0 +1,7 @@
+numpy
+scipy
+matplotlib
+pycifrw
+nexusformat
+pyvista
+pyqt5
