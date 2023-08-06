@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ksuid-pydantic
+Version: 0.2.0
+Summary: 
+Author: Justin Rubek
+Author-email: justin@koloni.me
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: cyksuid (>=1.1.0,<2.0.0)
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
