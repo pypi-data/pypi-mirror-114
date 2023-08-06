@@ -1,0 +1,7 @@
+snakemake<7,>5.26
+strictyaml
+PyYAML
+biopython
+pysam
+pandas
+numpy
