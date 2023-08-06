@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "GraphqlApiObject"
+version = "2.0.1"
+description = "用于测试graphql的接口，依赖于sgqlc"
+authors = ["lin"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+sgqlc = "^13.0"
+pytest = "^6.2.4"
+jmespath = "^0.10.0"
+PyHamcrest = "^2.0.2"
+python-utils = "^2.5.6"
+beeprint = "^2.4.10"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

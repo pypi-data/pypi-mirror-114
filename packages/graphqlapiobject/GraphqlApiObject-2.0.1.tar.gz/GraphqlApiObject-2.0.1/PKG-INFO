@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: graphqlapiobject
+Version: 2.0.1
+Summary: 用于测试graphql的接口，依赖于sgqlc
+Author: lin
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyHamcrest (>=2.0.2,<3.0.0)
+Requires-Dist: beeprint (>=2.4.10,<3.0.0)
+Requires-Dist: jmespath (>=0.10.0,<0.11.0)
+Requires-Dist: pytest (>=6.2.4,<7.0.0)
+Requires-Dist: python-utils (>=2.5.6,<3.0.0)
+Requires-Dist: sgqlc (>=13.0,<14.0)
