@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+setup.py
+spyse/__init__.py
+spyse/client.py
+spyse/models.py
+spyse/response.py
+spyse/search_query.py
+spyse_python.egg-info/PKG-INFO
+spyse_python.egg-info/SOURCES.txt
+spyse_python.egg-info/dependency_links.txt
+spyse_python.egg-info/requires.txt
+spyse_python.egg-info/top_level.txt
