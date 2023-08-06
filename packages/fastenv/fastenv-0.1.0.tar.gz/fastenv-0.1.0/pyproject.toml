@@ -1,0 +1,63 @@
+[tool.isort]
+profile = "black"
+src_paths = ["fastenv", "tests"]
+
+[tool.mypy]
+disallow_incomplete_defs = true
+disallow_untyped_defs = true
+explicit_package_bases = true
+files = ["**/*.py"]
+namespace_packages = true
+show_error_codes = true
+
+[tool.poetry]
+name = "fastenv"
+version = "0.1.0"
+description = "Unified environment variable and settings management for FastAPI and beyond."
+authors = ["Brendon Smith <bws@bws.bio>"]
+license = "MIT"
+homepage = "https://github.com/br3ndonland/fastenv"
+repository = "https://github.com/br3ndonland/fastenv"
+documentation = "https://fastenv.bws.bio"
+readme = "README.md"
+include = ["fastenv/py.typed"]
+keywords = ["asgi", "dotenv", "environment variables", "fastapi", "settings"]
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "Environment :: Web Environment",
+  "Intended Audience :: Developers",
+  "Natural Language :: English",
+  "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+  "Topic :: Software Development :: Libraries :: Application Frameworks",
+  "Topic :: System :: Installation/Setup",
+  "Topic :: System :: Systems Administration",
+  "Topic :: Utilities",
+  "Typing :: Typed"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+anyio = "^3.3"
+
+[tool.poetry.dev-dependencies]
+black = {version = "21.7b0", allow-prereleases = true}
+flake8 = "^3.8"
+isort = "^5.8"
+mkdocs-material = "^7"
+mypy = ">=0.900"
+pre-commit = "^2.11"
+pytest = "^6.2"
+pytest-cov = "^2.10"
+pytest-mock = "^3.3"
+
+[tool.poetry.extras]
+all = []
+
+[tool.pytest.ini_options]
+addopts = "--cov=fastenv -q"
+minversion = "6.0"
+testpaths = ["tests"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
