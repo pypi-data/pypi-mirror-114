@@ -1,0 +1,9 @@
+README.md
+setup.py
+nikipy2021/__init__.py
+nikipy2021/lib2.py
+nikipy2021.egg-info/PKG-INFO
+nikipy2021.egg-info/SOURCES.txt
+nikipy2021.egg-info/dependency_links.txt
+nikipy2021.egg-info/not-zip-safe
+nikipy2021.egg-info/top_level.txt
