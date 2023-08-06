@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+logi/__init__.py
+logi.egg-info/PKG-INFO
+logi.egg-info/SOURCES.txt
+logi.egg-info/dependency_links.txt
+logi.egg-info/not-zip-safe
+logi.egg-info/top_level.txt
