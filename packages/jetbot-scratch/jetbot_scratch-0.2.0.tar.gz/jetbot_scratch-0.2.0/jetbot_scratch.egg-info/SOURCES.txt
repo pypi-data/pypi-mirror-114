@@ -1,0 +1,11 @@
+LICENSE
+setup.py
+jetbot_scratch/__init__.py
+jetbot_scratch/digits.py
+jetbot_scratch/mnist_trt_b9.pth
+jetbot_scratch/object_detect.py
+jetbot_scratch.egg-info/PKG-INFO
+jetbot_scratch.egg-info/SOURCES.txt
+jetbot_scratch.egg-info/dependency_links.txt
+jetbot_scratch.egg-info/requires.txt
+jetbot_scratch.egg-info/top_level.txt
