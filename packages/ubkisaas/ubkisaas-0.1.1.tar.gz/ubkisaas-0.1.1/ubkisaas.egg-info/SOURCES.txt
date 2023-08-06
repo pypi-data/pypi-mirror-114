@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ubkisaas/__init__.py
+ubkisaas/ubki_credit_report.py
+ubkisaas/ubki_credit_score.py
+ubkisaas/ubki_report.py
+ubkisaas/ubki_request.py
+ubkisaas.egg-info/PKG-INFO
+ubkisaas.egg-info/SOURCES.txt
+ubkisaas.egg-info/dependency_links.txt
+ubkisaas.egg-info/requires.txt
+ubkisaas.egg-info/top_level.txt
