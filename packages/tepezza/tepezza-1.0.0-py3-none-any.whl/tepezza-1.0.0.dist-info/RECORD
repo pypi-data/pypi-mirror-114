@@ -1,0 +1,9 @@
+tepezza/__init__.py,sha256=6BUpvilI64p6InJY0AAzCk1xQdW6T-O9eQa2uDqPswU,72
+tepezza/__version__.py,sha256=dHuoY6voK7np1A7oRzw1xyBy7CK9_KBAc4FCKW29uRQ,21
+tepezza/api.py,sha256=jUj3In2mC5DfqWWMzDH921uVlbGC8YnupHTXysgsuxQ,10260
+tepezza/hotkey.py,sha256=kL2k1foEWPYoI7BrjY7cjJu8COrXxwh8FXtg8gaiGMQ,1897
+tepezza-1.0.0.dist-info/LICENSE,sha256=m_7KsQaoMcOr8Ak5YGGnhPGtbN1nA8vkalgN59iSBhQ,1078
+tepezza-1.0.0.dist-info/METADATA,sha256=wS6f1VrTEceGpfHYX47iZUy05z79HmOtMTdfUjmPVmw,1069
+tepezza-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tepezza-1.0.0.dist-info/top_level.txt,sha256=Ithu5DxZy3e1gFzZrYPFsazDitcZgp0JjY58hDWcq0M,8
+tepezza-1.0.0.dist-info/RECORD,,
