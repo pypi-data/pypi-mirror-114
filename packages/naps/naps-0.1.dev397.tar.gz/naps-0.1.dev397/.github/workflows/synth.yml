@@ -1,0 +1,31 @@
+name: Vivado Builds
+
+on: [push, pull_request]
+
+jobs:
+  build_applet:
+    strategy:
+      fail-fast: false
+      matrix:
+        applet:
+        - applets/camera.py -b -d MicroR2 -s Zynq
+        - applets/hdmi_framebuffer.py -b -d MicroR2 -s Zynq
+        - applets/hdmi_framebuffer.py -b -d Beta -s Zynq
+        - applets/hdmi_framebuffer.py -b -d Zybo -s Zynq
+    runs-on: vivado
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependecies
+      run:
+        pip3 install -e .[test]
+    - name: build
+      env:
+        NMIGEN_USE_YOSYS: system
+        YOSYS: yowasp-yosys
+      run:
+        python3 ${{ matrix.applet }}
+    - name: upload
+      uses: actions/upload-artifact@v2
+      with:
+        name: build_hdmi_test_${{ matrix.device }}_${{ matrix.soc_platform }}
+        path: build/*/*

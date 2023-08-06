@@ -1,0 +1,23 @@
+huffman
+nmigen@ git+https://github.com/nmigen/nmigen.git
+nmigen-boards@ git+https://github.com/nmigen/nmigen-boards.git
+
+[doc]
+sphinx<4
+sphinx_rtd_theme
+
+[test]
+pytest
+pytest-xdist
+psutil
+pytest-pycharm
+pytest-github-actions-annotate-failures
+PiDNG
+imageio
+rawpy
+bitarray
+numba
+numpy
+scipy
+matplotlib
+spidev
