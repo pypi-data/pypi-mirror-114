@@ -1,0 +1,203 @@
+// Copyright 2020 The TensorStore Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+#include "tensorstore/spec.h"
+
+#include <cstddef>
+
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
+#include "tensorstore/index_space/dim_expression.h"
+#include "tensorstore/internal/json_gtest.h"
+#include "tensorstore/util/result.h"
+#include "tensorstore/util/status.h"
+#include "tensorstore/util/status_testutil.h"
+#include "tensorstore/util/str_cat.h"
+
+namespace {
+
+using ::nlohmann::json;
+using tensorstore::BoxView;
+using tensorstore::DataType;
+using tensorstore::DimensionIndex;
+using tensorstore::dtype_v;
+using tensorstore::dynamic_rank;
+using tensorstore::IndexTransform;
+using tensorstore::MatchesJson;
+using tensorstore::MatchesStatus;
+using tensorstore::Result;
+using tensorstore::Spec;
+using tensorstore::StaticDataType;
+using tensorstore::StaticRankCast;
+using tensorstore::StrCat;
+
+TEST(SpecTest, Invalid) {
+  Spec spec;
+  EXPECT_FALSE(spec.valid());
+}
+
+TEST(SpecTest, ToJson) {
+  ::nlohmann::json spec_json{
+      {"driver", "array"},
+      {"dtype", "int32"},
+      {"array", {1, 2, 3}},
+      {"transform",
+       {{"input_inclusive_min", {0}}, {"input_exclusive_max", {3}}}},
+  };
+  Spec spec = Spec::FromJson(spec_json).value();
+  EXPECT_THAT(spec.ToJson(), ::testing::Optional(MatchesJson(spec_json)));
+  EXPECT_TRUE(spec.valid());
+}
+
+TEST(SpecTest, Comparison) {
+  Spec spec_a = Spec::FromJson({{"driver", "array"},
+                                {"dtype", "int32"},
+                                {"array", {1, 2, 3}},
+                                {"rank", 1}})
+                    .value();
+  Spec spec_b = Spec::FromJson({{"driver", "array"},
+                                {"dtype", "int32"},
+                                {"array", {1, 2, 3, 4}},
+                                {"rank", 1}})
+                    .value();
+  EXPECT_EQ(spec_a, spec_a);
+  EXPECT_NE(spec_a, spec_b);
+}
+
+TEST(SpecTest, ApplyIndexTransform) {
+  // Tests successfully applying a DimExpression to a Spec.
+  auto spec_with_transform =
+      Spec::FromJson(
+          ::nlohmann::json({{"driver", "array"},
+                            {"dtype", "int32"},
+                            {"array",
+                             {
+                                 {1, 2, 3, 4},
+                                 {5, 6, 7, 8},
+                                 {9, 10, 11, 12},
+                             }},
+                            {"transform",
+                             {{"input_inclusive_min", {2, 4}},
+                              {"input_shape", {3, 2}},
+                              {"output",
+                               {{{"input_dimension", 0}, {"offset", -2}},
+                                {{"input_dimension", 1}, {"offset", -4}}}}}}}))
+          .value();
+  EXPECT_EQ(2, spec_with_transform.rank());
+  EXPECT_THAT(Spec::FromJson(::nlohmann::json(
+                  {{"driver", "array"},
+                   {"dtype", "int32"},
+                   {"array",
+                    {
+                        {1, 2, 3, 4},
+                        {5, 6, 7, 8},
+                        {9, 10, 11, 12},
+                    }},
+                   {"transform",
+                    {{"input_inclusive_min", {2, 4}},
+                     {"input_shape", {3, 4}},
+                     {"output",
+                      {{{"input_dimension", 0}, {"offset", -2}},
+                       {{"input_dimension", 1}, {"offset", -4}}}}}}})) |
+                  tensorstore::Dims(1).SizedInterval(4, 2),
+              ::testing::Optional(spec_with_transform));
+
+  // Tests applying a DimExpression to a Spec with unknown rank (fails).
+  TENSORSTORE_ASSERT_OK_AND_ASSIGN(auto spec_without_transform,
+                                   Spec::FromJson({
+                                       {"driver", "zarr"},
+                                       {"kvstore", {{"driver", "memory"}}},
+                                   }));
+  EXPECT_THAT(
+      spec_without_transform | tensorstore::Dims(1).SizedInterval(1, 2),
+      MatchesStatus(
+          absl::StatusCode::kInvalidArgument,
+          "Cannot perform indexing operations on Spec with unspecified rank"));
+}
+
+TEST(SpecTest, ApplyBox) {
+  // Tests successfully applying a Box to a Spec.
+  TENSORSTORE_ASSERT_OK_AND_ASSIGN(
+      auto spec_with_transform,
+      Spec::FromJson(::nlohmann::json(
+          {{"driver", "array"},
+           {"dtype", "int32"},
+           {"array",
+            {
+                {1, 2, 3, 4},
+                {5, 6, 7, 8},
+                {9, 10, 11, 12},
+            }},
+           {"transform",
+            {{"input_inclusive_min", {3, 4}},
+             {"input_shape", {2, 2}},
+             {"output",
+              {{{"input_dimension", 0}, {"offset", -2}},
+               {{"input_dimension", 1}, {"offset", -4}}}}}}})));
+  EXPECT_EQ(2, spec_with_transform.rank());
+  EXPECT_THAT(Spec::FromJson(::nlohmann::json(
+                  {{"driver", "array"},
+                   {"dtype", "int32"},
+                   {"array",
+                    {
+                        {1, 2, 3, 4},
+                        {5, 6, 7, 8},
+                        {9, 10, 11, 12},
+                    }},
+                   {"transform",
+                    {{"input_inclusive_min", {2, 4}},
+                     {"input_shape", {3, 4}},
+                     {"output",
+                      {{{"input_dimension", 0}, {"offset", -2}},
+                       {{"input_dimension", 1}, {"offset", -4}}}}}}})) |
+                  tensorstore::Box({3, 4}, {2, 2}),
+              ::testing::Optional(spec_with_transform));
+}
+
+TEST(SpecTest, PrintToOstream) {
+  ::nlohmann::json spec_json{
+      {"driver", "array"},
+      {"dtype", "int32"},
+      {"array", {1, 2, 3}},
+      {"transform",
+       {{"input_inclusive_min", {0}}, {"input_exclusive_max", {3}}}},
+  };
+  Spec spec = Spec::FromJson(spec_json).value();
+  EXPECT_EQ(spec_json.dump(), tensorstore::StrCat(spec));
+}
+
+TEST(SpecTest, UnknownRankApplyIndexTransform) {
+  TENSORSTORE_ASSERT_OK_AND_ASSIGN(
+      auto spec, Spec::FromJson({{"driver", "zarr"},
+                                 {"kvstore", {{"driver", "memory"}}}}));
+  TENSORSTORE_ASSERT_OK_AND_ASSIGN(spec,
+                                   spec | tensorstore::IdentityTransform(3));
+  EXPECT_EQ(spec.transform(), tensorstore::IdentityTransform(3));
+}
+
+TEST(SpecTest, Schema) {
+  tensorstore::TestJsonBinderRoundTripJsonOnly<Spec>(
+      {
+          {{"driver", "array"},
+           {"dtype", "int32"},
+           {"array", {1, 2, 3}},
+           {"transform",
+            {{"input_inclusive_min", {0}}, {"input_exclusive_max", {3}}}},
+           {"schema", {{"fill_value", 42}}}},
+      },
+      tensorstore::internal_json_binding::DefaultBinder<>,
+      tensorstore::IncludeDefaults{false});
+}
+
+}  // namespace
