@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+
+import os, sys
+
+#sys.path.insert(0, os.getcwd())
+
+import atexit
+import os
+import sys
+import termios
+import trm
+
+import ob
+import bot.all
+
+ob.wd = os.path.expanduser("~/.bot")
+
+from trm import Runtime, CLI, Console, wrap
+
+k = Runtime()
+
+def main():
+    k.boot()
+    if k.cfg.txt:
+        c = CLI()
+        return c.cmd(k.cfg.otxt)
+    if k.opts("d"):
+        daemon()
+        k.privileges()
+    k.start()
+    if k.cfg.m:
+        csl = Console()
+        csl.start()
+        k.init(k.cfg.m)
+    if k.opts("cd") or k.cfg.m:
+        k.wait()
+
+
+wrap(main)

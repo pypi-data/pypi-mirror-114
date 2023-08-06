@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+
+import ob
+ob.wd = "/var/lib/botd/"
+
+from trm import CLI, Runtime, wrap
+k = Runtime()
+
+import bot.all
+
+def main():
+    k.boot()
+    c = CLI()
+    return c.cmd(k.cfg.otxt)
+
+wrap(main)
