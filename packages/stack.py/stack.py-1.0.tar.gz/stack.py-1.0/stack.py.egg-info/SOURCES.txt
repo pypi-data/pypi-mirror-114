@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+stack/__init__.py
+stack.py.egg-info/PKG-INFO
+stack.py.egg-info/SOURCES.txt
+stack.py.egg-info/dependency_links.txt
+stack.py.egg-info/not-zip-safe
+stack.py.egg-info/top_level.txt
