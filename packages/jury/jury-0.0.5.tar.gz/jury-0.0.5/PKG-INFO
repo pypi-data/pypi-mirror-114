@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: jury
+Version: 0.0.5
+Summary: Evaluation toolkit for neural language generation.
+Home-page: https://github.com/obss/jury
+Author: 
+License: MIT
+Description: <div align="center">
+        <h1>
+        Jury
+        </h1>
+        </div>
+        
+        Simple tool/toolkit for evaluating NLG (Natural Language Generation) offering various automated metrics. Jury offers a smooth and easy-to-use interface. It uses huggingface/datasets package for underlying metric computation, and hence adding custom metric is easy as adopting `datasets.Metric`.
+        
+        ## <div align="center"> Installation </div>
+        
+        Through pip,
+        
+            pip install jury
+        
+        or build from source,
+        
+            git clone https://github.com/obss/jury.git
+            cd jury
+            python setup.py install
+        
+        ## <div align="center"> Usage </div>
+        
+        ### API Usage
+        
+        It is only two lines of code to evaluate generated outputs.
+        
+            from jury import Jury
+            
+            jury = Jury()
+            # Microsoft translator translition for "Yurtta sulh, cihanda sulh." (16.07.2021)
+            predictions = ["Peace in the dormitory, peace in the world."]
+            references = ["Peace at home, peace in the world."]
+            scores = jury.evaluate(predictions, references)
+        
+        Specify metrics you want to use on instantiation.
+        
+            jury = Jury(metrics=["bleu", "meteor"])
+            scores = jury.evaluate(predictions, references)
+        
+        ### CLI Usage
+        
+        Coming soon...
+        
+        ## <div align="center"> License </div>
+        
+        Licensed under the [MIT](LICENSE) License.
+        
+Keywords: machine-learning,deep-learning,ml,pytorch,NLP,evaluation,question-answering,question-generation
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev

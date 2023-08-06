@@ -1,0 +1,11 @@
+datasets>=1.8.0
+fire>=0.4.0
+numpy>=1.21.0
+rouge-score==0.0.4
+tqdm
+
+[dev]
+black==21.6b0
+flake==3.9.2
+isort==5.8.0
+jupyterlab==3.0.14
