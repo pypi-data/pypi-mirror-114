@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+kd_med/__init__.py
+kd_med/get_resnet3d.py
+kd_med/kd_loss.py
+kd_med/pre_trained_enc.py
+kd_med/resnet3d.py
+kd_med/unet3d.py
+kd_med.egg-info/PKG-INFO
+kd_med.egg-info/SOURCES.txt
+kd_med.egg-info/dependency_links.txt
+kd_med.egg-info/requires.txt
+kd_med.egg-info/top_level.txt
