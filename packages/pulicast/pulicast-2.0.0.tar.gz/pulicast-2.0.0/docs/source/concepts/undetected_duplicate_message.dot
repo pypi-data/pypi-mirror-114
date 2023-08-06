@@ -1,0 +1,28 @@
+digraph G {
+    rankdir = LR;
+    node [shape=rect, label=""];
+
+    C0 [shape="none"];
+    C1[label="10"];
+    {
+        rank = same;
+        C2[label="11"];
+        C3[label="11"];
+    }
+    C4[label="12"];
+    C5[label="13"];
+    C6[label="14"];
+    edge [weight=1000, style="invis"];
+    C0 -> C1 -> C2 -> C3;
+    C1 -> C3;
+    C3 -> C4;
+    C2 -> C4 -> C5 -> C6;
+    edge [weight=0, style="dotted"];
+    C0 -> C1 [label="1"];
+    C1 -> C2 [label="1"];
+    C2 -> C4 [label="1"];
+    C4 -> C5 [label="1"];
+    C5 -> C3 [label="-2"];
+    C3 -> C6 [label="1"];
+
+}

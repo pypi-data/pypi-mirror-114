@@ -1,0 +1,3 @@
+[submodule "extern/messages"]
+	path = extern/messages
+	url = ../pulicast-message-types.git

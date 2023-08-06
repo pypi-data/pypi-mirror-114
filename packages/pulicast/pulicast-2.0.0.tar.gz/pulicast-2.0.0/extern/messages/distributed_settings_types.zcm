@@ -1,0 +1,19 @@
+struct roc_ack
+{
+  string message;
+  byte fingerprint[8];
+  int16_t len;
+  byte value[len];
+}
+
+struct poke_setting
+{
+}
+
+struct reset_setting_to_default
+{
+}
+
+struct unset_setting
+{
+}

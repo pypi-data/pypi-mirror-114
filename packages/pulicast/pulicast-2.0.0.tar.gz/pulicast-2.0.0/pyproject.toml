@@ -1,0 +1,31 @@
+[build-system]  # use pip for building this package
+requires = [  # corresponds to setup requires in setup.py
+    "setuptools >= 42",
+    "wheel",
+    "setuptools_scm[toml]>=3.4"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]  # make sure to use setuptools_scm for semantic versioning
+
+[tool.black]  # black is a code formatter. execute it before committing to ensure your code looks tidy
+line-length = 88
+target_version = ['py36']
+include = '\.pyi?$'
+exclude = '''
+
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )
+)
+'''

@@ -1,0 +1,6 @@
+struct ping {
+   int64_t timestamp_ns;
+   int64_t sequence_nr;
+   int64_t payload_size;
+   byte payload[payload_size];
+}

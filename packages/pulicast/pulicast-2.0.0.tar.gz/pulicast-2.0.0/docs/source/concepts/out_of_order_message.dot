@@ -1,0 +1,21 @@
+digraph G {
+    rankdir = LR;
+    node [shape=rect, label=""];
+
+    C0 [shape="none"];
+    C1[label="10"];
+    C2[label="11"];
+    C3[label="12"];
+    C4[label="13"];
+    C5[label="14"];
+    edge [weight=1000, style="invis"];
+    C0 -> C1 -> C2 -> C3 -> C4 -> C5;
+    edge [weight=1, style="dotted"];
+    C0 -> C1 [label="1"];
+    C1 -> C2 [label="1"];
+    C2 -> C4 [label="2"];
+    C4 -> C3 [label="-1"];
+    C3 -> C5 [label="1"];
+
+
+}

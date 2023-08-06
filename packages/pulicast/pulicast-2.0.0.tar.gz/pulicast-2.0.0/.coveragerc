@@ -1,0 +1,23 @@
+# this ensures that only the coverage of this library is tested. not the coverage of its dependencies
+[paths]
+source =
+   src
+   */site-packages
+
+[run]
+# don't just  check for line coverage but also all branches
+branch = true
+parallel = true
+# tell coverage.rc where to look for the source code
+source =
+    pulicast
+    
+
+[report]
+show_missing = true
+exclude_lines =
+    # Re-enable the standard pragma
+    pragma: no cover
+
+    # Don't complain if tests don't hit defensive assertion code:
+    raise NotImplementedError
