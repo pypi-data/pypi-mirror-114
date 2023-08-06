@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: JsonReader-heureka-code
+Version: 0.0.4
+Summary: Verarbeitet JSON
+Home-page: https://github.com/heureka-code/JsonReader-heureka-code
+Author: heureka-code
+License: MIT
+Download-URL: https://github.com/heureka-code/JsonReader-heureka-code/archive/refs/tags/0.0.4.tar.gz
+Platform: UNKNOWN
+License-File: LICENSE.txt
+
+# Dieses Packet verarbeitet "Pfade" um Json-Informationen abzufragen
+
+##class JsonReader:
+
+    // init
+    // Nimmt das Argument:
+    // * file, ein String, der den Dateipfad zur Json-Datei darstellt.
+    def __init__(self, file: str)
+    
+    // write
+    // Nimmt keine Argumente
+    // Und schreibt den aktuellen Stand des Arbeits-Dictionarys in die Datei
+    def write(self)
+    
+    // read
+    // Nimmt keine Argumente
+    // Und liest die Datei ein
+    def read(self)
+    
+    // get_from_path
+    // Nimmt das Argument:
+    //  * path, der Pfad zur Json-Information
+    def get_from_path(self, path: str)
+    
+    // set_from_path
+    // Nimmt die Argumente:
+    //  * path, der Pfad zu der zu erstellenden Information
+    //  * value, der Wert auf den es gesetzt wird
+    def set_from_path(self, path: str, value)
+    
+    // delete_path
+    // Nimmt das Argument:
+    //  * path, der Pfad, der gelöscht werden soll
+    def delete_path(self, path: str)
+
+    // path_exists
+    // Nimmt das Argument
+    // * path, der Pfad der geprueft werden soll
+    def path_exists(self, path: str)
+    
+    // Sonst nur private Methoden
+
+
