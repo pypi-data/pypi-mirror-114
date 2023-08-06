@@ -1,0 +1,1 @@
+setuptools_dso>=2.1a3
