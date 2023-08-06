@@ -1,0 +1,9 @@
+avmesos_airflow_provider/__init__.py,sha256=9xPyVUuCb4bnb15qf_F__hdM6WxIJmbtrmT2jIKk-Os,309
+avmesos_airflow_provider/executors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+avmesos_airflow_provider/executors/mesos_executor.py,sha256=1xSdXmP-IDce_hnK4iWjQ_ZsgnaDrma_HRae6UeqXUk,21274
+avmesos_airflow_provider/operators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+avmesos_airflow_provider/operators/mesos.py,sha256=_RPSqSZqFITD3620yaVNOfvz8KMoXeRowMw3YZtDs9Y,9145
+avmesos_airflow_provider-0.dev0.dist-info/METADATA,sha256=Z5HQ8gjMExzaTtzFg3-rDzbwoEQ7_bw-CEgWSQDrY6U,571
+avmesos_airflow_provider-0.dev0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+avmesos_airflow_provider-0.dev0.dist-info/top_level.txt,sha256=I_s4s3z_di_jHsmeTT4VYKr0vD-1kXa-jvXBHrzRuFw,25
+avmesos_airflow_provider-0.dev0.dist-info/RECORD,,
