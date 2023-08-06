@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+libpythonpro_junior/__init__.py
+libpythonpro_junior/github_api.py
+libpythonpro_junior.egg-info/PKG-INFO
+libpythonpro_junior.egg-info/SOURCES.txt
+libpythonpro_junior.egg-info/dependency_links.txt
+libpythonpro_junior.egg-info/not-zip-safe
+libpythonpro_junior.egg-info/requires.txt
+libpythonpro_junior.egg-info/top_level.txt
