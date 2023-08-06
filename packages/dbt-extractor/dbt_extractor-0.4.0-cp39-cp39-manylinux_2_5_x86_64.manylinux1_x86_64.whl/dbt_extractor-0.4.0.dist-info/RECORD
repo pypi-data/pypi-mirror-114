@@ -1,0 +1,5 @@
+dbt_extractor-0.4.0.dist-info/METADATA,sha256=8rd3XGwXMlzIdqdoNqzalaka66YbqilecA9471IzmaU,3674
+dbt_extractor-0.4.0.dist-info/WHEEL,sha256=k9fKdnW4X4hecB_b1W9Yxf1HHLj5L1ZBQ7FIpEYYOzA,124
+dbt_extractor/__init__.py,sha256=DRzEoJ1WvBQwYJULzd1mcqNejg1cDvIc-UrHnMBXdTw,29
+dbt_extractor/dbt_extractor.cpython-39-x86_64-linux-gnu.so,sha256=egAjMynvLhd_f1s0rA7d4zk726SyxDCr5wxOVOuYSbg,3918712
+dbt_extractor-0.4.0.dist-info/RECORD,,
