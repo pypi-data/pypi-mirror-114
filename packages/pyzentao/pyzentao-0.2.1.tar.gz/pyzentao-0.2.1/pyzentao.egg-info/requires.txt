@@ -1,0 +1,7 @@
+requests
+PyYAML
+
+[dev]
+tox
+check-manifest
+flake8
