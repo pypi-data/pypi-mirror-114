@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/lofup.py
+src/file_updater.egg-info/PKG-INFO
+src/file_updater.egg-info/SOURCES.txt
+src/file_updater.egg-info/dependency_links.txt
+src/file_updater.egg-info/requires.txt
+src/file_updater.egg-info/top_level.txt
+src/fup/__init__.py
+src/fup/progress_bar.py
+src/fup/updater.py
