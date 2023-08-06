@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django_multitype_file_field.egg-info/PKG-INFO
+django_multitype_file_field.egg-info/SOURCES.txt
+django_multitype_file_field.egg-info/dependency_links.txt
+django_multitype_file_field.egg-info/not-zip-safe
+django_multitype_file_field.egg-info/requires.txt
+django_multitype_file_field.egg-info/top_level.txt
+multitype_file_field/__init__.py
+multitype_file_field/fields.py
+multitype_file_field/forms.py
+multitype_file_field/utils.py
+multitype_file_field/widgets.py
