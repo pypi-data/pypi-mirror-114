@@ -1,0 +1,12 @@
+pyiqvia/__init__.py,sha256=7AO_dRumfQVy84kXjqUbXmR-F24E4XfohdzTfRpXsuk,64
+pyiqvia/allergens.py,sha256=7BKEIeDpWc-7IsQB7FtzgTIF3J-2x3FCMG57YK4wmLw,1106
+pyiqvia/asthma.py,sha256=7TBe6MtxZfCBLedf-xX410rLupm6jqH5VHgZ97DYZxA,979
+pyiqvia/client.py,sha256=ApFd0ck69NH5t5pVzgWqjyv4McoBltv3t6_w1RXfYzk,3470
+pyiqvia/const.py,sha256=QZB-JA8ivbL8zagdb7iQJWljAPjXhxOVW3-11cxgACE,85
+pyiqvia/disease.py,sha256=Abe07U3zkMqcT6ICZ82Lfodx1pw95CYr486Ipewf2H0,949
+pyiqvia/errors.py,sha256=tMwZCyaeRsEVV4zuA1uGALzNv4AwZT-K0fuOxsPn0RY,264
+pyiqvia/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyiqvia-1.0.1.dist-info/LICENSE,sha256=FTF9lC9P4MjR5EcYxNqTzoze0OjPm4L7Up_oihQ3S5I,1067
+pyiqvia-1.0.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+pyiqvia-1.0.1.dist-info/METADATA,sha256=zWETGTB68eCODErIev3Hqurj8BwF_8r_8sELYqFSK38,4499
+pyiqvia-1.0.1.dist-info/RECORD,,
