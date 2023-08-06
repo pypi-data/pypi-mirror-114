@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: anarion
+Version: 0.0.3
+Summary: Stock Analysis
+Home-page: https://github.com/nabhat/anarion
+Author: nabhat
+Author-email: angman507@gmail.com
+License: MIT
+Description: This is a stock analysing library. It has various type of technical and fundamental indicators.
+        
+        Change Log
+        ==========
+        
+        0.0.1 (31/7/2021)
+        ------------------
+        -First Release
+Keywords: lothlorien
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
