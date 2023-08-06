@@ -1,0 +1,11 @@
+ml_callbacks/__init__.py,sha256=rQ7VCfGJZ4S1IOWjiyqMMGGwCPHkE0v4vcAx_TrNmgU,82
+ml_callbacks/api_client.py,sha256=LKffcBnTxV_GHUsVnmEG7reXygaRDLdN_mGk-urdDTU,3691
+ml_callbacks/callback.py,sha256=7agPO_6Vrp0uktf07FdbRTJRgKt5hRSD_L8nq8Tmco8,4031
+ml_callbacks/callbacks.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ml_callbacks/enviroment_callback.py,sha256=5B5K9ozfEK58uqQWANBrFPDnVpJ_9mDaaYT5eYWT8Ls,108
+ml_callbacks/pytorch_enviroment.py,sha256=rFsIlZy2vxZmJUa5TXnAFyiUJExBHypQGhe78f5-IdQ,215
+ml_callbacks/tensorflow_callback.py,sha256=Rh3Ty-GLu-Q-MbvAOMsP-2oKZkehELIdNaQw7D_TlOk,190
+ml_callbacks-0.10.0.dist-info/METADATA,sha256=OEdecHImjxGcm3FPD2TwemI4tu6PeQ0xGlIfuGgolbQ,457
+ml_callbacks-0.10.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ml_callbacks-0.10.0.dist-info/top_level.txt,sha256=IBDmTSSoPk_n1_I_twvLJUfsg9hmKoihPTzjN4oP33E,13
+ml_callbacks-0.10.0.dist-info/RECORD,,
