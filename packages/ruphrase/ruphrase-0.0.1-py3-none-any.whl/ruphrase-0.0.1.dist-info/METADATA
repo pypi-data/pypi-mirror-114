@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ruphrase
+Version: 0.0.1
+Summary: Build the correct turn of phrase in Russian
+Home-page: https://github.com/nigani/ruphrase
+Author: nigani
+Author-email: nigani@internet.ru
+License: MIT License
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ruphrase
+Build the correct turn of phrase in Russian
+
+
