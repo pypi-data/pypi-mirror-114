@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/s3labeler/__init__.py
+src/s3labeler/__main__.py
+src/s3labeler/s3labeler.py
+src/s3labeler.egg-info/PKG-INFO
+src/s3labeler.egg-info/SOURCES.txt
+src/s3labeler.egg-info/dependency_links.txt
+src/s3labeler.egg-info/entry_points.txt
+src/s3labeler.egg-info/top_level.txt
