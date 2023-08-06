@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: dpatk
+Version: 0.0.3
+Summary: The Dynamic PET Analysis Toolkit
+Home-page: https://github.com/cormarte/dpatk.git
+Author: Corentin Martens
+Author-email: corentin.martens@ulb.be
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib (>=3.4.2)
+Requires-Dist: numpy (>=1.21.0)
+Requires-Dist: pydicom (>=2.1.2)
+Requires-Dist: scikit-learn (>=0.24.2)
+Requires-Dist: scipy (>=1.7.0)
+Requires-Dist: simpleitk (>=2.0.2)
+Requires-Dist: sortedcontainers (>=2.4.0)
+
+UNKNOWN
+
+
