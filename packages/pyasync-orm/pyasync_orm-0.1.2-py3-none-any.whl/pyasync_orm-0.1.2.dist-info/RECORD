@@ -1,0 +1,12 @@
+pyasync_orm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyasync_orm/clients/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyasync_orm/clients/abstract_client.py,sha256=xUh1ifvIrzanzjjlFznlFhb5ZgBzolnu8929mPlVSFM,374
+pyasync_orm/clients/asyncpg_client.py,sha256=pW-qeoSFM7FC7VvtviOhhzXerhST29sAWi6mRfujr8g,601
+pyasync_orm/database.py,sha256=-vt__g3lQMRBjHm7YsinFZmqdNaE5IoVGhHUhlN7Ccw,645
+pyasync_orm/fields.py,sha256=ZFnhs0whdc3Md2ET0oBimb2EO9D2gC8wBv6M2qpwHHo,246
+pyasync_orm/models.py,sha256=2yBI5pDNCt9hW6mc3Gld9Avh0UcXNMSstAyfWdaf9uQ,695
+pyasync_orm/orm.py,sha256=zAGolM_aMkKIRWcslKxqFHCkJMK7OpTUR6zYDJidRbI,2959
+pyasync_orm/sql.py,sha256=cvisUzHseeQB52OH7ZpZSMGbuHN5GU1ZgJOmIBy20Nk,4669
+pyasync_orm-0.1.2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pyasync_orm-0.1.2.dist-info/METADATA,sha256=_ftXJxqBkv9eDUvYVKDeFqdeodYBu-ZnmzxjlC0HTHQ,1213
+pyasync_orm-0.1.2.dist-info/RECORD,,
