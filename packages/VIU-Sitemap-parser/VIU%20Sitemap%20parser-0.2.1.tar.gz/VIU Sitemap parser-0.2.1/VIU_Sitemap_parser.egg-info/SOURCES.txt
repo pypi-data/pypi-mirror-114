@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+VIU_Sitemap_parser.egg-info/PKG-INFO
+VIU_Sitemap_parser.egg-info/SOURCES.txt
+VIU_Sitemap_parser.egg-info/dependency_links.txt
+VIU_Sitemap_parser.egg-info/top_level.txt
+viusitemapparser/__init__.py
+viusitemapparser/detect_filetype.py
+viusitemapparser/get_file.py
+viusitemapparser/get_sitemap_entries.py
+viusitemapparser/parse_file.py
+viusitemapparser/url_functions.py
+viusitemapparser/vsp.py
