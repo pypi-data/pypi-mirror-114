@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: libgaea
+Version: 0.0.3
+Summary: Spawner of the understory
+License: AGPL-3.0-or-later
+Author: Angelo Gladding
+Author-email: self@angelogladding.com
+Requires-Python: >=3.9
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PySide6 (>=6.1.2,<7.0.0)
+Requires-Dist: sh (>=1.14.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+# gaea
+Spawn and manage your personal websites
+
+Download and run the most recent [release](https://github.com/canopy/gaea/releases)
+for your operating system.
+
