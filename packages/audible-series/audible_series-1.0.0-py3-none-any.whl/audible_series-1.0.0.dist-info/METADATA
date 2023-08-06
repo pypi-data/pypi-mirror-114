@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: audible-series
+Version: 1.0.0
+Summary: Look for new series realeases in Audible
+Author: Alex Lusco
+Author-email: alex.lusco@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=5.4.1,<6.0.0)
+Requires-Dist: audible (>=0.5.4,<0.6.0)
