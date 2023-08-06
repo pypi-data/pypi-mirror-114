@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+lc_classifier/__init__.py
+lc_classifier/utils.py
+lc_classifier.egg-info/PKG-INFO
+lc_classifier.egg-info/SOURCES.txt
+lc_classifier.egg-info/dependency_links.txt
+lc_classifier.egg-info/requires.txt
+lc_classifier.egg-info/top_level.txt
