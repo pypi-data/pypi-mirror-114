@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+ewoks/__init__.py
+ewoks.egg-info/PKG-INFO
+ewoks.egg-info/SOURCES.txt
+ewoks.egg-info/dependency_links.txt
+ewoks.egg-info/requires.txt
+ewoks.egg-info/top_level.txt
+ewoks/tests/__init__.py
+ewoks/tests/test_notebooks.py
+ewoks/tests/test_projects.py
+ewoks/tests/notebooks/__init__.py

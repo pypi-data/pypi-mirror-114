@@ -1,0 +1,31 @@
+ewokscore
+
+[dask]
+ewoksdask
+
+[dev]
+black
+flake8
+flake8_nb
+pytest
+testbook
+ipykernel
+ewokscore[test]
+ewoksdask[test]
+ewoksppf[test]
+ewoksorange[test]@ git+https://git@gitlab.esrf.fr/workflow/ewoks/ewoksorange.git@main
+
+[orange]
+ewoksorange@ git+https://git@gitlab.esrf.fr/workflow/ewoks/ewoksorange.git@main
+
+[ppf]
+ewoksppf
+
+[test]
+pytest
+testbook
+ipykernel
+ewokscore[test]
+ewoksdask[test]
+ewoksppf[test]
+ewoksorange[test]@ git+https://git@gitlab.esrf.fr/workflow/ewoks/ewoksorange.git@main

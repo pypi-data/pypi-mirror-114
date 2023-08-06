@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: ewoks
+Version: 0.0.1a1
+Summary: ESRF Workflow System
+Home-page: https://gitlab.esrf.fr/workflow/ewoks/ewoks
+Author: ESRF
+Author-email: wout.de_nolf@esrf.fr
+License: MIT
+Project-URL: Bug Tracker, https://gitlab.esrf.fr/workflow/ewoks/ewoks/-/issues
+Description: # Ewoks: ESRF Workflow System
+        
+        This is a container project that allow installing the core library and optionally bindings for Workflow Management Systems:
+        
+        ```bash
+        python -m pip install ewoks[orange,dask,ppf]
+        ```
+        
+        The core library is used to represent graphs and the bindings are used to execute them:
+        
+        ```bash
+        from ewokscore import load_graph
+        from ewoksppf import execute_graph
+        
+        result = execute_graph(load_graph("/path/to/graph.json"))
+        ```
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dask
+Provides-Extra: ppf
+Provides-Extra: orange
+Provides-Extra: test
+Provides-Extra: dev
