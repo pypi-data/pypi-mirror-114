@@ -1,0 +1,12 @@
+README.md
+setup.py
+localsee/__init__.py
+localsee/__main__.py
+localsee/api.py
+localsee/localsee.py
+localsee/option.py
+localsee_amadeus.egg-info/PKG-INFO
+localsee_amadeus.egg-info/SOURCES.txt
+localsee_amadeus.egg-info/dependency_links.txt
+localsee_amadeus.egg-info/requires.txt
+localsee_amadeus.egg-info/top_level.txt
