@@ -1,0 +1,17 @@
+azure-storage-blob>=12.8.1
+colorama
+importlib-metadata
+keyring
+twine
+pathlib
+numpy
+pandas
+Pillow
+requests
+xlrd
+
+[:platform_system == "Windows" or sys_platform == "darwin"]
+python-magic-bin
+
+[:sys_platform == "linux"]
+python-magic>=0.4.24
