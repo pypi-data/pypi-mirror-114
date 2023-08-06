@@ -1,0 +1,5 @@
+{% include 'base_navbar/offcanvas/call.html' %}
+<div class="offcanvas {{item.offcanvas.placement}}" tabindex="-1" id="offcanvas{{item.offcanvas.pk}}" aria-labelledby="offcanvas{{item.offcanvas.pk}}">
+    {% include 'base_navbar/offcanvas/header.html' %}
+    {% include 'base_navbar/offcanvas/body.html' %}
+</div>

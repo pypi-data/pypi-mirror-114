@@ -1,0 +1,9 @@
+<li class="nav-item d-flex align-items-center">
+  <a class="{{item.type}} {{item.btn_style}} m-1 p-1" data-bs-toggle="offcanvas" href="#offcanvas{{item.offcanvas.pk}}" role="button" aria-controls="offcanvas{{item.offcanvas.pk}}">
+  {% if item.svg_html %}
+    {{item.svg_html.content|safe}}
+  {% else %}
+    {{item.label}}
+  {% endif %}
+  </a>
+</li>

@@ -1,0 +1,41 @@
+{% load thumbnail %}
+{% load cache %}
+
+{% cache galary_cache_time cached_galary %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<div class="container-sm">
+
+	<p class="h2 text-center galarytitle">{{config.titles.galary}}</p>
+
+    <div class="row m-2 p-2 t-2 b-2 l-2 r-2 x-2 y-2">
+    <style>
+        .thumb img {
+            -webkit-filter: grayscale(0);
+            filter: none;
+            border-radius: 15px;
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 3px;
+            transition: all 0.4s;
+        }
+
+        .thumb img:hover {
+            transform: scale(1.08);
+        }
+
+        .thumb {
+            padding: 3px;
+        }
+    </style>
+    {% for image in images %}
+        <div class="col-lg-2 col-md-3 col-4 thumb">
+            <a data-fancybox="gallery" href="{{image.image|thumbnail_url:'image_card'}}">
+                <img class="img-fluid" src="{{image.image|thumbnail_url:'image_galary'}}" alt="...">
+            </a>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+{% endcache %}

@@ -1,0 +1,14 @@
+postsdetailcontainer
+postspreviewtitle
+
+postsmaincontainer
+    postssearchform
+        postssearchinput
+        postssearchbutton
+    postscard
+        postsimg
+        postscardbody
+            postscardtitle
+            postscardtext
+        postscardfooter
+            postsbuttonlink

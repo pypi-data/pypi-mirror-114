@@ -1,0 +1,13 @@
+include LICENSE
+include README.rst
+recursive-include base_navbar/templates *
+recursive-include base_template/templates *
+recursive-include base_contacts/templates *
+recursive-include image_objects/templates *
+recursive-include contacts/templates *
+recursive-include posts/templates *
+recursive-include price/templates *
+recursive-include base_navbar/style *
+recursive-include image_objects/style *
+recursive-include posts/style *
+recursive-include price/style *

@@ -1,0 +1,12 @@
+<div class="offcanvas-body">
+    {% include 'base_navbar/offcanvas/body_text.html' %}
+    <div class="d-grid gap-10">
+        {% for offitem in item.offcanvas.get_items %}
+          {% if offitem.get_children %}
+                {% include 'base_navbar/offcanvas/family_item.html' %}
+          {% else %}
+                {% include 'base_navbar/offcanvas/lonely_item.html' %}
+          {% endif %}
+        {% endfor %}
+    </div>
+</div>

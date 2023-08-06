@@ -1,0 +1,26 @@
+{% extends 'price/base.html' %}
+
+{% load djmoney %}
+{% load thumbnail %}
+
+{% block content %}
+
+<div class="container-sm pricemaincontainer">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+        {% for price in list_price %}
+
+            <div class="col">
+                <div class="card h-100 pricecard">
+                    <img src="{{price.image|thumbnail_url:'price_card'}}" class="card-img-top priceimg" alt="...">
+                    <div class="card-body pricecardbody">
+                        <p class="card-title pricecardcost">{% money_localize price.cost %}</p>
+                        <p class="card-title pricecardtitle">{{price.title}}</p>
+                        <p class="card-text pricecardtext">{{price.description|safe}}</p>
+                    </div>
+                </div>
+             </div>
+
+        {% endfor %}
+   </div>
+</div>
+{% endblock content %}

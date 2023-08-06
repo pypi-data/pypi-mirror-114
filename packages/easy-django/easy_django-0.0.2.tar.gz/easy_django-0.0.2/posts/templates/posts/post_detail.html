@@ -1,0 +1,55 @@
+{% extends 'posts/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container-sm postsdetailcontainer">
+    {% if post_detail %}
+    <div class="row mt-2 mb-2 ml-2 mr-2 pt-2 pb-2 pl-2 pr-2 ms-auto">
+      <form class="row justify-content-center postssearchform" id="search_news" action="{% url 'posts_list' %}?search_string=" method="GET">
+          <div class="col-6">
+            <label for="search_string" class="visually-hidden">{{config.buttons.search}}</label>
+            <input type="text" id="search_string" name="search_string" class="form-control postssearchinput" placeholder="news" value="{{search_string}}">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn postssearchbutton">{{config.buttons.search}}</button>
+          </div>
+        </form>
+    </div>
+
+    <div class="col mt-2 mb-2 ml-2 mr-2 pt-2 pb-2 pl-2 pr-2">
+        <div class="card postscard">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="{{post_detail.get_image_url}}" class="img-fluid postsimg" alt="...">
+                </div>
+                <div class="col-md-8">
+                <div class="card-body postscardbody">
+                    <h5 class="card-title postscardtitle">{{post_detail.post_header}}</h5>
+                    <p class="card-text postscardtext">{{post_detail.post_content|safe}}</p>
+
+                </div>
+                <div class="card-footer postscardfooter">
+                  <small class="text-muted">{{post_detail.post_date}}</small>
+                    <a href="{{post_detail.source}}" target="_blank" class="btn postsbuttonlink">{{config.buttons.source_link}}</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <div class="row mt-2 mb-2 ml-2 mr-2 pt-2 pb-2 pl-2 pr-2 ms-auto">
+      <form class="row justify-content-center postssearchform" id="search_news" action="{% url 'posts_list' %}?search_string=" method="GET">
+          <div class="col-6">
+            <label for="search_string" class="visually-hidden">{{config.buttons.search}}</label>
+            <input type="text" id="search_string" name="search_string" class="form-control postssearchinput" placeholder="news" value="{{search_string}}">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn postssearchbutton">{{config.buttons.search}}</button>
+          </div>
+        </form>
+    </div>
+    <h3 class="card-title postscardtitle">{{config.not_found_description}}</h3>
+    {% endif %}
+
+</div>
+{% endblock content %}

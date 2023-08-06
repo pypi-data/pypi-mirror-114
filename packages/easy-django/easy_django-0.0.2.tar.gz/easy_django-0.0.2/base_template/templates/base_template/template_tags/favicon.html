@@ -1,0 +1,57 @@
+{% for item in favicons %}
+<!--desktop-->
+    {% for i in item.desktop %}
+        <link
+                type="{{i.type}}"
+                sizes="{{i.sizes}}"
+                rel="{{i.rel}}"
+                href="{{i.url}}">
+    {% endfor %}
+
+<!--android-->
+    {% for i in item.android %}
+        <link
+                type="{{i.type}}"
+                sizes="{{i.sizes}}"
+                rel="{{i.rel}}"
+                href="{{i.url}}">
+    {% endfor %}
+
+<!--ios-->
+    {% for i in item.ios %}
+        <link
+                sizes="{{i.sizes}}"
+                rel="{{i.rel}}"
+                href="{{i.url}}">
+    {% endfor %}
+
+<!--macos-->
+    {% for i in item.macos %}
+        <link
+                color="{{i.color}}"
+                rel="{{i.rel}}"
+                href="{{i.url}}">
+    {% endfor %}
+
+<!--windows-->
+    <meta
+            name="msapplication-TileColor"
+            content="{{item.favicon.tile_color}}">
+
+    {% for i in item.windows %}
+    <meta
+            name="{{i.meta}}"
+            content="{{i.content}}">
+    {% endfor %}
+
+
+<!--meta favicon data-->
+    <meta
+            name="application-name"
+            content="{{item.favicon.app_name}}">
+    <meta
+            name="theme-color"
+            content="{{item.favicon.theme_color}}">
+
+
+{% endfor %}

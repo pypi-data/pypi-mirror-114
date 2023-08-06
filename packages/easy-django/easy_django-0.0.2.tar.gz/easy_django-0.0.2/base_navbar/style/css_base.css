@@ -1,0 +1,29 @@
+.containerbasenavbar {
+	font-family: MADE Likes Slab;
+	border-radius: 5px;
+}
+
+.basenavbarli:hover a{
+	color: white !important;
+}
+
+.basenavbarli:hover {
+	transition: 0.50s;
+	background-color: black;
+	font-style: color white;
+	border-radius: 20px;
+}
+
+.basenavbarli {
+	border-radius: 20px;
+	padding: 0.5px;
+	margin: 0.5px;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.basenavbarli a{
+	color: black !important;
+}
+
+

@@ -1,0 +1,75 @@
+
+.postsdetailcontainer {
+	font-family: MADE Likes Slab;
+	border-radius: 25px;
+	max-width: 1000px;
+
+}
+
+.postsmaincontainer {
+	font-family: MADE Likes Slab;
+	border-radius: 25px;
+}
+
+
+.postssearchinput {
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	border: 1px solid black;
+}
+
+.postssearchinput:hover {
+	transition: 0.45s;
+	background-color: Black;
+	color: White;
+}
+
+.postssearchbutton {
+	transition: 0.30s;
+	background-color: White;
+	border-radius: 15px;
+	color: #000000;
+	border: 1px solid black;
+}
+
+.postssearchbutton:hover {
+	transform: scale(1.15);
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+.postscardbodytitle {
+	font-size: 225%
+}
+
+.postscard {
+	border-radius: 25px;
+	border: 0px solid black;
+	padding: 5px;
+	margin: 5px;
+}
+
+.postsimg {
+	border-radius: 25px;
+}
+
+.postsbuttonlink {
+	transition: 0.30s;
+	background-color: White;
+	border-radius: 15px;
+	color: #000000;
+	border: 1px solid black;
+}
+
+.postsbuttonlink:hover {
+	transform: scale(1.15);
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+.postspreviewtitle {
+	font-family: MADE Likes Slab;
+	font-size: 250%;
+	margin: 5px;
+	padding: 5px;
+}

@@ -1,0 +1,11 @@
+<div class="container-sm contactcontainer">
+    <div class="row justify-content-center">
+        {% for contact in contacts %}
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1 col-1">
+            <a href="{{contact.link}}" style="text-decoration: none; color: Black;" class="">
+                <i class="{{contact.contact_type}} fa-{{contact.size}}x fa-fw {{contact.extraclass}} contact" aria-hidden="true"></i>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>

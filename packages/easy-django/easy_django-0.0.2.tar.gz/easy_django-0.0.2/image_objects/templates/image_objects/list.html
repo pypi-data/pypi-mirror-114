@@ -1,0 +1,73 @@
+{% extends "base_template/base.html" %}
+
+{% load thumbnail %}
+{% block body %}
+<div class="container-sm iomaincontainer">
+    <div class="container-fluid p-1 m-1 p-1 t-1 b-1 l-1 r-1 x-1 y-1">
+        <div class="row">
+            <div class="col-12">
+                <div class="row mt-2 mb-2 ml-2 mr-2 pt-2 pb-2 pl-2 pr-2 ms-auto">
+                  <form class="row justify-content-center iosearchform" id="iosearch" action="{% url 'front_list_image_objects' %}?search_string=" method="GET">
+                      <div class="col-6">
+                        <label for="search_string" class="visually-hidden">{{config.buttons.search}}</label>
+                        <input type="text" id="search_string" name="search_string" class="form-control iosearchforminput" placeholder="examples" value="{{search_string}}">
+                      </div>
+                      <div class="col-auto">
+                        <button type="submit" class="btn iosearchformbutton">{{config.buttons.search}}</button>
+                      </div>
+                    </form>
+                </div>
+
+                {% if not list_image_objects %}
+                    <h5 class="card-title text-center iocardbodytitle">{{config.not_found_description}}</h5>
+                {% endif %}
+
+                {% for image_object in list_image_objects %}
+                    <div class="card mb-3 iocard">
+                        <div class="row g-0">
+                                <div class="col-md-6">
+                                    <div id="carousel{{image_object.image_object.pk}}" class="carousel slide carousel-fade iocarusel" data-ride="carousel">
+                                        <div class="carousel-inner">
+
+                                            <div class="carousel-indicators">
+                                            {% for image in image_object.images %}
+                                                <button type="button" data-bs-target="#carousel{{image_object.image_object.pk}}" data-bs-slide-to="{{forloop.counter|add:"-1"}}" {% if forloop.first %} class="active" {% endif %} aria-current="true" aria-label="Slide"></button>
+                                            {% endfor %}
+                                            </div>
+
+                                            {% for image in image_object.images %}
+                                                {% if forloop.first %}
+                                                <div class="carousel-item active  ">
+                                                {% else %}
+                                                <div class="carousel-item  ">
+                                                {% endif %}
+                                                <img src="{{image.image|thumbnail_url:'image_object_card'}}" class="d-block w-100" alt="...">
+                                                </div>
+                                            {% endfor %}
+
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel{{image_object.image_object.pk}}" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carousel{{image_object.image_object.pk}}" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                        <div class="card-body iocardbody">
+                                        <h5 class="card-title text-center iocardbodytitle">{{image_object.image_object.title}}</h5>
+                                        <p class="card-text text-center iocardbodytext">{{image_object.image_object.description|safe}}</p>
+                                        <p class="card-text"><small class="text-muted">{{image_object.image_object.date}}</small></p>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

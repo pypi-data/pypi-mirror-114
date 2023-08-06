@@ -1,0 +1,7 @@
+base_configurations
+base_navbar
+base_template
+contacts
+image_objects
+posts
+price

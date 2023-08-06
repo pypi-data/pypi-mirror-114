@@ -1,0 +1,53 @@
+{% for item in navbar.get_items %}
+
+  {% if item.offcanvas %}
+
+    {% include 'base_navbar/offcanvas/full.html' %}
+
+  {% elif item.get_children %}
+  <li class="nav-item dropdown d-flex align-items-center basenavbardropdownli">
+    <a class="{{item.type}} {{item.btn_style}} m-1 p-1 dropdown-toggle basenavbardropdownlibutton" id="navbarDropdown{{item.pk}}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+      {% if item.svg_html %}
+        {{item.svg_html.content|safe}}
+      {% else %}
+        {{item.label}}
+      {% endif %}
+
+    </a>
+    <ul class="dropdown-menu basenavbardropdownmenuul" aria-labelledby="navbarDropdown{{item.pk}}">
+      {% for c in item.get_children %}
+                {% if c.svg_html %}
+                <li class="d-flex align-items-center basenavbarlisvg">
+                  <a class="dropdown-item basenavbardropdownitemsvg" href="{{c.url}}">
+                      {{c.svg_html.content|safe}}
+                  </a>
+                </li>
+                {% else %}
+                <li class="d-flex align-items-center basenavbarli">
+                  <a class="dropdown-item basenavbardropdownitem" href="{{c.url}}">
+                      {{c.label}}
+                  </a>
+                </li>
+                {% endif %}
+      {% endfor %}
+    </ul>
+  </li>
+  {% else %}
+
+                {% if item.svg_html %}
+                <li class="nav-item d-flex align-items-center basenavbarlisvg">
+                  <a class="{{item.type}} {{item.btn_style}} m-1 p-1 basenavbarliitemsvg" href="{{item.url}}">
+                    {{item.svg_html.content|safe}}
+                  </a>
+                </li>
+                {% else %}
+                <li class="nav-item d-flex align-items-center basenavbarli">
+                  <a class="{{item.type}} {{item.btn_style}} m-1 p-1 basenavbarliitem" href="{{item.url}}">
+                    {{item.label}}
+                  </a>
+                </li>
+                {% endif %}
+
+  {% endif %}
+{% endfor %}

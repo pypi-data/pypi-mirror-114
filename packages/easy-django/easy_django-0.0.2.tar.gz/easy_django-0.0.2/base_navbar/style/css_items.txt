@@ -1,0 +1,14 @@
+containerbasenavbar
+    basenavbar
+        basenavbartoggler
+        basenavbarcollapse
+            basenavbarul
+                basenavbardropdownli
+                    basenavbardropdownlibutton
+                    basenavbardropdownmenuul
+                        basenavbarli
+                            basenavbardropdownitem
+                basenavbarli
+                    basenavbarliitem
+                basenavbarlisvg
+                    basenavbarliitemsvg

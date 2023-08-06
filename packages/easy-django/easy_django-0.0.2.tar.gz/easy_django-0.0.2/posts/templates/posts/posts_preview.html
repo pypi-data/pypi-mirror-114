@@ -1,0 +1,39 @@
+{% load cache %}
+{% cache posts_preview_cache_time cached_posts_preview %}
+
+    <p class="h2 text-center postspreviewtitle">{{config.posts_list_title}}</p>
+
+    <div class="container postsmaincontainer">
+        <div class="row mt-2 mb-2 ml-2 mr-2 pt-2 pb-2 pl-2 pr-2 ms-auto">
+          <form class="row justify-content-center postssearchform" id="search_news" action="{% url 'posts_list' %}?search_string=" method="GET">
+              <div class="col-6">
+                <label for="search_string" class="visually-hidden">{{config.buttons.search}}</label>
+                <input type="text" id="search_string" name="search_string" class="form-control postssearchinput" placeholder="news" value="{{search_string}}">
+              </div>
+              <div class="col-auto">
+                <button type="submit" class="btn postssearchbutton">{{config.buttons.search}}</button>
+              </div>
+            </form>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            {% for item in posts_list %}
+                <div class="col">
+                    <div class="card h-100 postscard">
+                      <img src="{{item.get_image_url}}" class="card-img-top postsimg" alt="...">
+                        <div class="card-body postscardbody">
+                            <h5 class="card-title postscardtitle">{{item.post_header}}</h5>
+                            <p class="card-text postscardtext">{{item.post_content_preview|safe}}</p>
+
+                        </div>
+                        <div class="card-footer postscardfooter">
+                          <small class="text-muted">{{item.post_date}}</small>
+                            <a href="{% url 'post_detail' item.pk %}" class="btn m-2 p-2 t-2 b-2 l-2 r-2 x-2 y-2 postsbuttonlink">{{config.buttons.more}}</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endcache %}

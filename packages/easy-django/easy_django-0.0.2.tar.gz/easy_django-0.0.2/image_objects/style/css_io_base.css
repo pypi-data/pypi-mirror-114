@@ -1,0 +1,62 @@
+.iomaincontainer {
+	font-family: MADE Likes Slab;
+	border-radius: 25px;
+	max-width: 1000px;
+}
+
+.iopreviewcontainer {
+	font-family: MADE Likes Slab;
+	border-radius: 25px;
+}
+
+.iosearchform {
+
+}
+
+.iosearchforminput {
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	border: 1px solid black;
+}
+
+.iosearchforminput:hover {
+	transition: 0.45s;
+	background-color: Black;
+	color: White;
+}
+
+.iosearchformbutton {
+	transition: 0.30s;
+	background-color: White;
+	border-radius: 15px;
+	color: #000000;
+	border: 1px solid black;
+}
+
+.iosearchformbutton:hover {
+	transform: scale(1.15);
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+.iocardbodytitle {
+	font-size: 225%;
+}
+
+.iocard {
+	border-radius: 25px;
+	border: 0px solid black;
+	padding: 5px;
+	margin: 5px;
+}
+
+.iocarusel img {
+	border-radius: 25px;
+}
+
+.galarytitle {
+	font-family: MADE Likes Slab;
+	font-size: 250%;
+	margin-top: 5px;
+}
+
