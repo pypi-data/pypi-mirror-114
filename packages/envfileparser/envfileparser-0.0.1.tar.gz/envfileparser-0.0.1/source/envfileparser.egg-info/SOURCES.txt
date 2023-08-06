@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+source/envfileparser/__init__.py
+source/envfileparser/env_file_parser.py
+source/envfileparser/type_checker.py
+source/envfileparser.egg-info/PKG-INFO
+source/envfileparser.egg-info/SOURCES.txt
+source/envfileparser.egg-info/dependency_links.txt
+source/envfileparser.egg-info/top_level.txt

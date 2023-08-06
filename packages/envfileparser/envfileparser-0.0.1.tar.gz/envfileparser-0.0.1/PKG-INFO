@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: envfileparser
+Version: 0.0.1
+Summary: A small env file parser
+Home-page: https://github.com/kirilllapushinskiy/py-env-file-parser
+Author: Kirill Lapushinskiy
+Author-email: kirilllapushinskiy@yahoo.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/kirilllapushinskiy/py-env-file-parser/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# envfileparser
+This package is as simple as possible to get environment variables or other constants from .env files or files with a similar structure. The package has no dependencies and works with files located in the same directory as the file with the function call of this package.
+
+
