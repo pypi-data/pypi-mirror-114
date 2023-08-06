@@ -1,0 +1,25 @@
+---
+metadata:
+  title: Ejectment Case Documents
+  temporary session: true
+---
+mandatory: true
+question: | 
+  Please select the document you would like to fill out:
+subquestion: |
+  * [Return of Service Affidavit]  
+  * [Motion for Alternative Service]  
+  * [Notice of Praecipe to Enter Judgment by Default]   
+  * [Praecipe to Enter Default Judgment for Possession]  
+  * [Petition to Open Judgment of Non Pros]
+  * [Motion for Writ of Possession]
+    
+  
+    [Civil Complaint for an Ejectment]: ${ interview_url(i='docassemble.EJCRC:data/questions/civil_complaint.yml') }
+    [Return of Service Affidavit]: ${ interview_url(i='docassemble.EJCRC:data/questions/return_service.yml') }
+    [Motion for Alternative Service]: ${ interview_url(i='docassemble.EJCRC:data/questions/alternate_service.yml') }
+    [Notice of Praecipe to Enter Judgment by Default]: ${ interview_url(i='docassemble.EJCRC:data/questions/ten_day.yml') }
+    [Praecipe to Enter Default Judgment for Possession]: ${ interview_url(i='docassemble.EJCRC:data/questions/default_judgment_praecipe.yml') }
+    [Petition to Open Judgment of Non Pros]: ${ interview_url(i='docassemble.EJCRC:data/questions/petition_open.yml') }
+    [Motion for Writ of Possession]: ${ interview_url(i='docassemble.EJCRC:data/questions/writ_of_possession.yml') }
+    
