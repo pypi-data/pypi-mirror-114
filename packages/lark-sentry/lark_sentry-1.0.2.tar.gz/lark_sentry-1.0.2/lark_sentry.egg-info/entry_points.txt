@@ -1,0 +1,3 @@
+[sentry.plugins]
+lark_sentry = lark_sentry.plugin:LarkSentryNotificationsPlugin
+
