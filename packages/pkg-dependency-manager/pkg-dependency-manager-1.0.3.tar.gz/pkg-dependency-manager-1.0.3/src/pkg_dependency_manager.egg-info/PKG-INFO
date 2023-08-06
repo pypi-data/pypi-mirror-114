@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pkg-dependency-manager
+Version: 1.0.3
+Summary: A system package dependency manager, written in Python 3.9.
+Home-page: https://github.com/yodasoda1219/pkg-dependency-manager
+Author: ys1219
+Author-email: ys1219@cosmodash.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pkg-dependency-manager
+
+This is a package dependency manager, written in Python 3.9. Its main purpose is to easily manage packages via Homebrew, apt-get, pacman, etc.
+
+`pkg-dependency-manager` currently supports the following platforms:
+- Arch Linux
+- Ubuntu
+- MacOS X
+

@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+version.txt
+src/pkg_dependency_manager.egg-info/PKG-INFO
+src/pkg_dependency_manager.egg-info/SOURCES.txt
+src/pkg_dependency_manager.egg-info/dependency_links.txt
+src/pkg_dependency_manager.egg-info/top_level.txt
+src/pkgdependencymanager/__init__.py
+src/pkgdependencymanager/__main__.py
+src/pkgdependencymanager/config.py
+src/pkgdependencymanager/util.py
