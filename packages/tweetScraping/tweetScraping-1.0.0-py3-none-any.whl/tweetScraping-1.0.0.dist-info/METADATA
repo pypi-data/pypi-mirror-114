@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: tweetScraping
+Version: 1.0.0
+Summary: A Python Package to get tweets with giving only single keyword
+Home-page: UNKNOWN
+Author: Amit Kumar Kushwaha, Subhankar Saha
+Author-email: kushwaha.amitkumar@gmail.com
+License: MIT
+Keywords: python,tweet scraping,twitter,scraping
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: tweepy
+Requires-Dist: nltk
+Requires-Dist: holidays
+Requires-Dist: textblob
+
+# Tweet Scraping
+
+## Prerequisites
+
+1. Internet Connection
+2. Python 3.6+
+3. must have present credentials (i,e: consumer key, consumer secret, access token, access token secret)
+
+## Installing Tweet Scraping
+
+```sh
+pip3 install tweetScraping
+```
+
+## Using tweetScraping
+
+Just import tweetScraping and call functions!
+
+code example:
+
+```sh
+import tweetScraping
+a = tweetScraping.tweetScraping(consumer_key : str ,  consumer_secret :str, access_token : str , access_token_secret : str, query : str , [file_name:str],[no_of_tweets : int])
+a.start()
+```
+
+
+
+
