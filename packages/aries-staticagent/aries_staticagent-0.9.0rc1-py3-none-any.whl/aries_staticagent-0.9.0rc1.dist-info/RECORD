@@ -1,0 +1,13 @@
+aries_staticagent/__init__.py,sha256=YnJJDnSxdWh8eDTMCCTyHLvSyxqVTOm39MbNMOAtSj4,1131
+aries_staticagent/crypto.py,sha256=Vxmij8oJWod5LDDJzOYbc1OcQO8IlnB6-_uy2iX44dM,17344
+aries_staticagent/dispatcher.py,sha256=QbYRfsxira9SCCEEG5sKeNOhYqANElcf8U1GJ7jANog,3451
+aries_staticagent/message.py,sha256=-XLfqGwpWb0KlD7QctTU6OY2xtpXn2G7oRq_iDxun_8,2984
+aries_staticagent/module.py,sha256=fMdJnydXs7wnEKlt-C3L_uDGTvf7OhYMj6IxXjMicSI,4611
+aries_staticagent/mtc.py,sha256=ba9VLEbqJVpz2DGA0xNTE3fn4gMLi1Ez2eO-w_oxUXY,5867
+aries_staticagent/static_connection.py,sha256=EFXZ8WkwnVTMIlbNzSTzgiAb0hBXjKqKqUuotpoNnC4,22886
+aries_staticagent/type.py,sha256=dMrwBrrQapZNkq0msOFGUQECKx0zGiUgzavF4Spg7dU,3340
+aries_staticagent/utils.py,sha256=E7uDHgm9XpfEZmaFA3Q9nia08K5pqBEXYNkeftRl3Tc,6542
+aries_staticagent-0.9.0rc1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+aries_staticagent-0.9.0rc1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+aries_staticagent-0.9.0rc1.dist-info/METADATA,sha256=C4jHuYbUO23A721-2DaEQ5qO_t5G9KWpmVfTk1xxOX8,7952
+aries_staticagent-0.9.0rc1.dist-info/RECORD,,
