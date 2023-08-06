@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: ai-python
+Version: 0.3.18
+Summary: Microsoft AI Python Package
+Home-page: https://github.com/microsoft/ai-python
+Author: Daniel Ciborowski
+Author-email: dciborow@microsoft.com
+License: MIT License
+Project-URL: Code, https://github.com/microsoft/ai-python
+Project-URL: Issues, https://github.com/microsoft/ai-python/issues
+Project-URL: Documents, https://github.com/microsoft/ai-python
+Description: # AI Python by Microsoft
+        
+        This is a library of Python packages scanned using various open source and internal tools to provide up-to-date, and secury dependencies.  
+        
+        ## Installation
+        Currently Python3.7 is supported.
+        
+        ### Ubuntu 18.04
+        The aiubuntu library is provided to simplify installation of required Ubuntu dependancies.
+        
+        shell
+        
+        add-apt-repository -y ppa:deadsnakes/ppa \
+        && apt-get update \
+        && apt-get install -y python3.7 python3.7-dev
+        
+        curl -fSsLO https://bootstrap.pypa.io/get-pip.py \
+        && /usr/bin/python3.7 get-pip.py 'pip==20.3.3'
+        
+        add-apt-repository -y ppa:dciborow/ppa \
+        && apt-get update \
+        && apt-get install -y aiubuntu
+        
+        # For Core Libaries (this will install nearly everything) 
+        python3.7 -m pip install ai-python[core]
+        
+        # For Libraries needed for testing
+        python3.7 -m pip install ai-python[tests]
+        
+        # For Libraries needed for a single package
+        python3.7 -m pip install ai-python[retail]
+        
+        ## Contributing
+        
+        This project welcomes contributions and suggestions.  Most contributions require you to agree to a
+        Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
+        the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
+        
+        When you submit a pull request, a CLA bot will automatically determine whether you need to provide
+        a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
+        provided by the bot. You will only need to do this once across all repos using our CLA.
+        
+        This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+        For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
+        contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+        
+        ## Trademarks
+        
+        This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
+        trademarks or logos is subject to and must follow 
+        [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
+        Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
+        Any use of third-party trademarks or logos are subject to those third-party's policies.
+        
+Keywords: ai
+Platform: Windows
+Platform: Linux
+Platform: macOS
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7,<3.8
+Description-Content-Type: text/x-rst
+Provides-Extra: required
+Provides-Extra: all
+Provides-Extra: core
+Provides-Extra: test
+Provides-Extra: ama
+Provides-Extra: fclib
+Provides-Extra: reco
+Provides-Extra: msft-utils
+Provides-Extra: retail
+Provides-Extra: energy
+Provides-Extra: energy-ca
+Provides-Extra: energy-km
+Provides-Extra: fsi
+Provides-Extra: fsi-nlp
+Provides-Extra: fsi-risk
+Provides-Extra: gem
+Provides-Extra: gem-ent
+Provides-Extra: gem-reco
+Provides-Extra: sc
+Provides-Extra: sc-ecr
+Provides-Extra: sc-ip
+Provides-Extra: sc-ro
+Provides-Extra: cdm
+Provides-Extra: maro
