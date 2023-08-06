@@ -1,0 +1,11 @@
+django_urlqueryset/__init__.py,sha256=c513BbDsfK5xTzsJyl4Zp9wnRJFUf29uTQc2_ve7-Ik,336
+django_urlqueryset/apps.py,sha256=QhrvOEllzOLFbzfFEDhpB73AXBEGXH1GEsBifFdnyts,1183
+django_urlqueryset/fields.py,sha256=Hb3GtYuaZZAI1vMTSH-7bYxtb-MT9hVXGaS1ijizDGs,1488
+django_urlqueryset/settings.py,sha256=Rr4HMD46xn4u6a4cjE1rG55kkmXR1oGwTmq1psvPWrg,118
+django_urlqueryset/storages.py,sha256=E1WrUqILX8VWUsD25O4C_izRZYCqiP8ZE4tM_oIwBew,1510
+django_urlqueryset/urlqueryset.py,sha256=q_7I3hJDFpB2eEPEOpMnp6brnuVTiTdiUr9sEDKivh8,12169
+django_urlqueryset/utils.py,sha256=5CDecMgehiggEgh-xEH3VGNdfMIoJkflJDHse4Cj99U,206
+django_urlqueryset-0.6.0.dist-info/METADATA,sha256=0UkqMGgB0y-JsEuD6sPQ-O1XBoMP46UMoYaJCse_yxY,526
+django_urlqueryset-0.6.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+django_urlqueryset-0.6.0.dist-info/top_level.txt,sha256=uJj5etCFeNpaE9kq5gT5MLB546_bN20rM0ume97wFlE,19
+django_urlqueryset-0.6.0.dist-info/RECORD,,
