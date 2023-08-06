@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: pysesame3
+Version: 0.5.0rc2
+Summary: Unofficial library to communicate with Sesame smart locks.
+Home-page: https://github.com/mochipon/pysesame3
+License: MIT
+Author: Masaki Tagawa
+Author-email: masaki@tagawa.email
+Requires-Python: >=3.6.1,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: cognito
+Provides-Extra: doc
+Requires-Dist: awsiotsdk (>=1.6.1,<2.0.0); extra == "cognito"
+Requires-Dist: boto3 (>=1.17.94,<2.0.0); extra == "cognito"
+Requires-Dist: certifi; extra == "cognito"
+Requires-Dist: importlib-metadata (>=4.6,<5.0); python_version < "3.8"
+Requires-Dist: livereload (>=2.6.3,<3.0.0); extra == "doc"
+Requires-Dist: mkdocs (>=1.1.2,<2.0.0); extra == "doc"
+Requires-Dist: mkdocs-autorefs (>=0.2.1,<0.3.0); extra == "doc"
+Requires-Dist: mkdocs-include-markdown-plugin (>=3.1.3,<4.0.0); extra == "doc"
+Requires-Dist: mkdocs-material (>=7.1.8,<8.0.0); extra == "doc"
+Requires-Dist: mkdocstrings (>=0.15.0,<0.16.0); extra == "doc"
+Requires-Dist: pycryptodome (>=3.10.1,<4.0.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Requires-Dist: requests-aws4auth (>=1.1.1,<2.0.0); extra == "cognito"
+Requires-Dist: typing-extensions (>=3.10.0.0,<4.0.0.0); python_version < "3.8"
+Description-Content-Type: text/markdown
+
+# pysesame3
+
+_Unofficial Python Library to communicate with SESAME 3 series products from CANDY HOUSE, Inc._
+
+[![PyPI](https://img.shields.io/pypi/v/pysesame3)](https://pypi.python.org/pypi/pysesame3)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pysesame3)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/mochipon/pysesame3/dev%20workflow/main)
+[![Documentation Status](https://readthedocs.org/projects/pysesame3/badge/?version=latest)](https://pysesame3.readthedocs.io/en/latest/?badge=latest)
+[![codecov](https://codecov.io/gh/mochipon/pysesame3/branch/main/graph/badge.svg?token=2Y7OPZTILT)](https://codecov.io/gh/mochipon/pysesame3)
+![PyPI - License](https://img.shields.io/pypi/l/pysesame3)
+
+This project aims to control SESAME 3 series devices by using **[the cloud service](https://doc.candyhouse.co/ja/flow_charts#candy-house-cloud-%E3%81%A8-wifi-module-%E7%B5%8C%E7%94%B1%E3%81%A7-sesame-%E3%82%92%E9%81%A0%E9%9A%94%E6%93%8D%E4%BD%9C)**.
+If you want to control them directly via **Bluetooth connection**, please check [pysesameos2](https://github.com/mochipon/pysesameos2).
+
+* Free software: MIT license
+* Documentation: [https://pysesame3.readthedocs.io](https://pysesame3.readthedocs.io)
+
+## Supported devices
+
+- [SESAME 3](https://jp.candyhouse.co/products/sesame3)
+- [SESAME bot](https://jp.candyhouse.co/products/sesame3-bot)
+
+## Features
+
+* Retrieve the device status (battery level, locked, handle position, etc.).
+* Retrieve recent events (locked, unlocked, etc.) associated with a lock.
+* Needless to say, locking, unlocking and clicking (for the bot)!
+
+## Usage
+
+Please take a look at [the documentation](https://pysesame3.readthedocs.io/en/latest/usage/).
+
+## Credits & Thanks
+
+* A huge thank you to all at [CANDY HOUSE](https://jp.candyhouse.co/) and their crowdfunding contributors!
+* Thanks to [@Chabiichi](https://github.com/Chabiichi)-san for [the offer](https://github.com/mochipon/pysesame3/issues/25) to get my SESAME bot!
+* This project was inspired and based on [tchellomello/python-ring-doorbell](https://github.com/tchellomello/python-ring-doorbell) and [snjoetw/py-august](https://github.com/snjoetw/py-august).
+
