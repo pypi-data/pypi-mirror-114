@@ -1,0 +1,3 @@
+[console_scripts]
+tochcli = tochsdk.tochsdk:main
+
