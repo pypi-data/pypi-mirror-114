@@ -1,0 +1,105 @@
+[tool.poetry]
+name = "django-bridger"
+version = "0.11.15"
+description = "The bridge between a Django Backend and a Javascript based Frontend"
+authors = ["Christopher Wittlinger <c.wittlinger@intellineers.com>"]
+
+packages = [
+    { include = "bridger" },
+]
+
+[tool.poetry.dependencies]
+python = "3.9.5"
+django = "3.2.*"
+django-filter = "2.*"
+djangorestframework = "3.*"
+djangorestframework-simplejwt = "4.*"
+pyjwt = "1.7.1"
+django-fsm = "2.*"
+requests = "2.*"
+channels = "2.*"
+channels_redis = {version = "3.0.*", extras=["cryptography"]}
+celery = {version = "4.4.*", extras=["redis"]}
+django-celery-beat = "2.0.*"
+psycopg2-binary = "2.*"
+pillow = "7.*"
+numpy = "1.*"
+pandas = "*"
+jsonschema = "3.*"
+plotly = "4.*"
+django-simple-history = "3.*"
+markdown = "3.*"
+markdown-blockdiag = "0.*"
+toml = "0.*"
+python-decouple = "3.*"
+python-slugify = "*"
+
+selenium = "3.*"
+pytest-selenium = "1.*"
+termcolor = "^1.1.0"
+inscriptis = "^1.1"
+
+# For some reason channels does not declare asigref and daphne as
+# Dependencies in the newest release of channels. Therefore we add
+# them here manually. Remove if this is fixed
+asgiref = "3.3.*"
+daphne = "2.*"
+
+django-rest-fuzzysearch = "0.*"
+django-extensions = "3.*"
+django-cors-headers = "3.*"
+django-storages = "1.*"
+
+# Misc. dependencies
+colorlog = "4.1.*"
+dj-database-url = "0.*"
+jupyter = "1.*"
+
+# Security Vulnerabilities
+safety = "1.*"
+django-mptt = "^0.12.0"
+
+[tool.poetry.dev-dependencies]
+# Testing dependencies
+pytest = "5.*"
+coverage = "5.*"
+pytest-django = "3.*"
+pytest-cov = "2.*"
+pytest-mock = "3.*"
+pytest-factoryboy = "2.*"
+pytest-asyncio = "0.*"
+pytest-flake8 = "1.*"
+pytest-isort = "1.*"
+tox = "3.16.*"
+devtools = {version="0.5.*", extras=["pygments"]}
+pynvim = "0.*"
+
+# Documentation dependencies
+mkdocs = "1.*"
+mkdocs-material = "5.*"
+markdown-include = "0.*"
+pymdown-extensions = "7.*"
+
+# Formatting and Linting dependencies
+black = "19.10b0"
+flake8 = "3.*"
+isort = "5.0.4"
+
+# Test Implementation dependencies
+boto3 = "1.*"
+factory-boy = "2.*"
+
+[tool.coverage.run]
+omit = [
+    "tests/*",
+    "setup.py",
+    ".tox/*",
+    "*/migrations/*",
+    "manage.py",
+
+    "*/metadata_validator.py",
+]
+
+[build-system]
+requires = ["poetry_core>=1.0.0a5"]
+build-backend = "poetry.core.masonry.api"
