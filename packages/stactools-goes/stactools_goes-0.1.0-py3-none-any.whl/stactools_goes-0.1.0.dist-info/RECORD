@@ -1,0 +1,9 @@
+stactools/goes/__init__.py,sha256=7SXBuRBc-7E_i9IHc8MZaOvla64A401L68rZIcFcO9M,269
+stactools/goes/commands.py,sha256=XKc6UTdWwf-BzX4apbKct6vbA8mTxx3yiePdjbwTg3I,1254
+stactools/goes/dataset.py,sha256=lAFL2zs2N2qKyOTFbKMzDNBb8WrZVPfuv7TWEW2dLGk,7009
+stactools/goes/stac.py,sha256=0IfN9ICTSEmq5vFU6K8gLJjxSwxfu7JWxO8J_SrPRc8,2437
+stactools_goes-0.1.0.dist-info/LICENSE,sha256=kGshx52lEVXCvfof1klIqE0XMDNNK05-b3xtn6rH8E4,641
+stactools_goes-0.1.0.dist-info/METADATA,sha256=Ozk81AXMyuYf81m4X-KcOHfHuvi_VoC6OVaare-QPoc,1736
+stactools_goes-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+stactools_goes-0.1.0.dist-info/top_level.txt,sha256=0eoUA-AbTfjFtxXr3W-vQdRyNmpGnA0wlTL3ppTPCG8,10
+stactools_goes-0.1.0.dist-info/RECORD,,
