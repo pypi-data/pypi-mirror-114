@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: SnakeEye
+Version: 0.0.1
+Summary: Useful methods Machine Vision
+Home-page: UNKNOWN
+Author: Gary Ewing
+Author-email: workburner4321@gmail.com
+License: MIT
+Description: This is a package that has useful machine vision 
+        
+        CHANGE LOG
+        ============
+        - RELEASE 1
+        - 0.0.0.1  (7/27/2021)
+        - First Release
+        
+        
+        
+Keywords: Machine Vision
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
