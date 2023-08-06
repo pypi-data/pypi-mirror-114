@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: python-chordpro
+Version: 0.0.2
+Summary: A ChordPro parser, written in Python
+Home-page: https://git.snyman.info/raoul/python-chordpro
+Author: Raoul Snyman
+Author-email: raoul@snyman.info
+License: MIT
+Keywords: music,chords,guitar
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+python-chordpro
+===============
+
+``python-chordpro`` is a ChordPro parser, written in Python. The main difference between this module
+and other similar libraries is that ``python-chordpro`` parses ChordPro files down to the syllable
+level, enabling finer-grained control of the formatted output.
+
+.. warning::
+
+   This package is still in development. Only a subset of ChordPro is currently supported, and
+   some key features are missing, like displaying song metadata.
+
+Installation
+------------
+
+You can use ``pip`` to install ``python-chordpro``::
+
+   $ pip install python-chordpro
+
+Example Usage
+-------------
+
+.. code-block:: python
+
+   from chordpro import Song
+
+   song = Song('path/to/song.chordpro')
+
+   for verse in song.verses:
+       print(verse.title)
+
+Rendering
+---------
+
+``python-chordpro`` comes with two renders, HTML and Text.
+
+.. code-block:: python
+
+   from chordpro.renderers.html import render
+
+   print(render(song))
+
+
+Command Line Interface
+----------------------
+
+``python-chordpro`` also ships with a built-in command line interface which will read a ChordPro
+file and then render it using either the text or HTML renderer.
+
+For example::
+
+   $ python-chordpro path/to/song.chordpro -f text -o song.txt
+
+License
+-------
+
+``python-chordpro`` is licensed under the MIT license. See the LICENSE file for more information.
+
+
