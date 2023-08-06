@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: pymugen
+Version: 1.2.1
+Summary: Management about FASTA and VCF files.
+Home-page: https://github.com/agranadosb/pymugen
+Author: Alejandro Granados
+Author-email: agranadosb55199@outlook.com
+License: MIT
+Download-URL: https://github.com/agranadosb/pymugen/archive/refs/heads/main.zip
+Description: 
+          pymugen
+          -------
+        
+          This module allows to manage data about genomic sequences, specificaly getting sequences from a FASTA file.
+        
+          The module's other functionality is the ability to get sequences with a mutation from a VCF file and transform it to another representation.
+        
+        
+          Installation
+          ------------
+        
+          Install pymugen with python
+        
+          ``pip3 install pymugen``
+        
+          Usage/Examples
+          --------------
+        
+          Fasta example
+        
+          ::
+        
+            from pymugen.fasta import FastaReader
+        
+            fasta = FastaReader("fasta.fa")
+        
+            chromosome = fasta['chr1']
+            sequence = chromosome.sequence(10, 5, 5)
+        
+            sequence[1]
+            # A
+        
+            sequence[:]
+            # CATGCATGCAT
+        
+            str(sequence)
+            # C-A-T-G-C,A,T-G-C-A-T
+        
+            chromosome[5: 16]
+            # CATGCATGCAT
+        
+        
+          VCF example
+        
+          ::
+        
+            from pymugen.transformers import ExtendedTransformer
+            from pymugen.fasta import FastaReader
+        
+            vcf = ExtendedTransformer("vcf.vcf", "fasta.fa")
+        
+            fasta = FastaReader("fasta.fa")
+        
+            chromosome = fasta['chr1']
+            sequence = chromosome.sequence(10, 5, 5)
+        
+            mutated = vcf.method(sequence, "CGT")
+        
+            str(mutated)
+            # 'A|w-q-r-e-w,s-d-f,v-c-x-z-v'
+        
+            mutated[:]
+            # 'wqrewsdfvcxzv'
+        
+          
+Keywords: VCF,FASTA,Genomics
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
