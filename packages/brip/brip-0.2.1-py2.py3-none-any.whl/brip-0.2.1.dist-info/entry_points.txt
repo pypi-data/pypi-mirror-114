@@ -1,0 +1,6 @@
+[console_scripts]
+brip = brip.brip:main
+
+[gui_scripts]
+
+
