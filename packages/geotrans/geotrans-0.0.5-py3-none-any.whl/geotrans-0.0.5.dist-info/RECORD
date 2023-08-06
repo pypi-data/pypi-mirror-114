@@ -1,0 +1,8 @@
+geotrans/__init__.py,sha256=KuHUPp6pJS34g64cMZvX5dahu4x6L3V72-Xgzn4GRk8,78
+geotrans/cli.py,sha256=Topa3t7zIP7JtkH39zz_zChWHRMNx7KRdxoOmKcQltM,6564
+geotrans/transform.py,sha256=Q9ZXs_4n6IFHqHwjpuqR0jXIld_LT7gyTppDcgK3XFk,6751
+geotrans-0.0.5.dist-info/entry_points.txt,sha256=aPYZxRHz1XoowelMWGCbQBn1ZwdJFXSM8pPIxs_9fuA,46
+geotrans-0.0.5.dist-info/LICENSE.md,sha256=qgz6jzuuqEjyGX2dEu0c4MTK-mfGHvq5HXhoBz9neWc,1062
+geotrans-0.0.5.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+geotrans-0.0.5.dist-info/METADATA,sha256=VSTkqMgieEtFKmpDZ3MEclzdlUa6dnfSwg1RJZWJ73U,5612
+geotrans-0.0.5.dist-info/RECORD,,
