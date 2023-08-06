@@ -1,0 +1,8 @@
+ninja_auth/__init__.py,sha256=DnCmRooimbjJGZwqUZ8jQZEInMlPcULa69tbhSirAN0,102
+ninja_auth/api.py,sha256=teTciq0sCCEX-VkUSzH8ZwbBwZaGUZwEixrXO2fiEDw,2340
+ninja_auth/apps.py,sha256=lXL-khXgjfyKIvSm3IAjlZv5-6tsbn0PeReDQCoUr4w,164
+ninja_auth/schema.py,sha256=6BQsU2UmkBkt8zZkk9pwRhjIGiI0Ych6W9feF3QR4vM,513
+ninja_auth/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django_ninja_auth-0.1.2.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+django_ninja_auth-0.1.2.dist-info/METADATA,sha256=H1U1yqaZqHck_J8bRfhszuDCXoHZzRZYPxzurgyiHQs,3495
+django_ninja_auth-0.1.2.dist-info/RECORD,,
