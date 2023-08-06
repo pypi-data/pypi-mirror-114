@@ -1,0 +1,11 @@
+pyaudio
+ipython
+jupyter
+notebook
+numpy
+scipy
+matplotlib
+numba
+librosa
+ffmpeg
+mygrad
