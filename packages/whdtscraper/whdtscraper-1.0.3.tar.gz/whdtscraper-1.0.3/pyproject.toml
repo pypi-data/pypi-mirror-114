@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "whdtscraper"
+version = "1.0.3"
+description = "Wikimedia history dump tsv scraper, a module that scrapes the site and returns to you the available content."
+authors = ["Eugenio Berretta <euberdeveloper@gmail.com>"]
+keywords = ["wikimedia", "wikimedia-history-dump", "tsv", "scraper"]
+readme = "README.md"
+license = "ISC"
+homepage = "https://github.com/euberdeveloper/wikimedia-history-dump-tsv#pip"
+repository = "https://github.com/euberdeveloper/wikimedia-history-dump-tsv#pip"
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.25.1"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.9.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.masonry.api"
