@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: the-friendly-planets
+Version: 0.2021.1
+Summary: Tools for making easy-to-interpret aligned astronomical images of planets and moons.
+Home-page: https://github.com/zkbt/the-friendly-planets
+Author: Zach Berta-Thompson
+Author-email: zach.bertathompson@colorado.edu
+License: MIT
+Description: Detailed usage descriptions coming soon!
+Platform: UNKNOWN
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Python: >=3.6
+Provides-Extra: develop

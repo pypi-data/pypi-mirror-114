@@ -1,0 +1,10 @@
+README.md
+setup.py
+the_friendly_planets.egg-info/PKG-INFO
+the_friendly_planets.egg-info/SOURCES.txt
+the_friendly_planets.egg-info/dependency_links.txt
+the_friendly_planets.egg-info/requires.txt
+the_friendly_planets.egg-info/top_level.txt
+thefriendlyplanets/__init__.py
+thefriendlyplanets/aligner.py
+thefriendlyplanets/version.py
