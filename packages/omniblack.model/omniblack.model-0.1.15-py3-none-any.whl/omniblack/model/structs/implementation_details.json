@@ -1,0 +1,21 @@
+{
+    "name": "implementation_details",
+    "display": {
+        "en": "Implementation Details"
+    },
+    "fields": [
+        {
+            "name": "python",
+            "type": "child",
+            "desc": {
+                "en": "Details about the python implementation of the struct."
+            },
+            "display": {
+                "en": "Python Details"
+            },
+            "attrs": {
+                "struct_name": "python_implementation_details"
+            }
+        }
+    ]
+}
