@@ -1,0 +1,15 @@
+# Add a manifest file for avoiding
+# unecessary files
+
+# include the DiddiParser license
+include LICENSE
+
+# Just add the markdown README and the SECURITY, not all the md files
+include README.md
+include SECURITY.md
+
+# don't forget the setup.py file
+include setup.py
+
+# don't use the ".github/" things
+exclude .github
