@@ -1,0 +1,10 @@
+omero_prometheus_tools/__init__.py,sha256=aAYfcVcWtEE5slgVrqv4xolJxZUPwtbjSa7qfyhp-UA,126
+omero_prometheus_tools/counts.py,sha256=hXgQpk4YhkR6btHwV-n4LqcU6Ys18zez74WOXt7Gb8c,2500
+omero_prometheus_tools/omero-prometheus-tools.py,sha256=-0qb0kF7Vc527DQFmVZH9ec-gvjiD3sv4FPNMYOHa5c,2125
+omero_prometheus_tools/sessions.py,sha256=cZ4FEKCx8YctJ28rj18BQMqOL6rpa82APxrBp-u3Lec,2845
+omero_prometheus_tools-0.2.1.data/data/etc/prometheus-omero-counts.yml,sha256=a0pUoYepunOpVYwRy6g1RnT6dZPHOhVNOLuRU_47Stc,1482
+omero_prometheus_tools-0.2.1.data/scripts/omero-prometheus-tools.py,sha256=jdtsJ3AZbADU5wH8Y5O9VkC3LXi8JZZjePJ6J0hZz3s,2112
+omero_prometheus_tools-0.2.1.dist-info/METADATA,sha256=FuKl5_eLO_DTsWjo6nbcX-NAABMc806PHmEXBg0u-eM,1324
+omero_prometheus_tools-0.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+omero_prometheus_tools-0.2.1.dist-info/top_level.txt,sha256=wNKqeXJQ7GmASPV99mRT_LTzVTudSbls8R0e1JE2P3E,23
+omero_prometheus_tools-0.2.1.dist-info/RECORD,,
