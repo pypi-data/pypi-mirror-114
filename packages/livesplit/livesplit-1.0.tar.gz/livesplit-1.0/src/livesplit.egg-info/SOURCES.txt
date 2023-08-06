@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/livesplit/__init__.py
+src/livesplit/client.py
+src/livesplit.egg-info/PKG-INFO
+src/livesplit.egg-info/SOURCES.txt
+src/livesplit.egg-info/dependency_links.txt
+src/livesplit.egg-info/top_level.txt
