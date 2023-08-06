@@ -1,0 +1,17 @@
+lsreader-0.1.38.data/purelib/lsreader/__init__.py,sha256=8Mq6VdDXKmC4x4rv-YiIR8ZEYkWuRZKNSNw4ZFjijXU,23
+lsreader-0.1.38.data/purelib/lsreader/libifcoremd.dll,sha256=bm2ZdAD_UTwKUKss4e9f2M8IoFB2iAYTn_c_Qsarn_k,1712344
+lsreader-0.1.38.data/purelib/lsreader/libifcoremdd.dll,sha256=c786ar-H3HdQWm8pJQK7b6_53wdHx0S-bKo9pNJ5Jw0,1480632
+lsreader-0.1.38.data/purelib/lsreader/libifportmd.dll,sha256=3F90v7JMoVJMT2LaJgEhWWjsRv3omIGGZ_5-NI2kq-w,306104
+lsreader-0.1.38.data/purelib/lsreader/libiomp5md.dll,sha256=hGl2fOojNyc6JazifCjwhHD1Z812uZ3RHUvLS2Tugac,1694424
+lsreader-0.1.38.data/purelib/lsreader/libiompstubs5md.dll,sha256=DiSset-OtkaCVqOR15wFyuXSBLRR4siq0BOElIAMoDc,111320
+lsreader-0.1.38.data/purelib/lsreader/libmmd.dll,sha256=XxxXq4gsKaidT6QFW_HnYIkk-90cNp7sVQb_WFcQgZs,4259032
+lsreader-0.1.38.data/purelib/lsreader/libmmdd.dll,sha256=p7U0hBA7_8vOqTQ95gutKADmJRlLHYI5wwHYeSXqF6Q,3555256
+lsreader-0.1.38.data/purelib/lsreader/lsreader.pyd,sha256=Y8FM1CgHF3Xvbcdi6KEr82Mmzwrcl9AcKPcOo_aFA8Q,16051200
+lsreader-0.1.38.data/purelib/lsreader/msvcp140.dll,sha256=UXzTqsIXejV8ymAy8HrXNg7oyiEqAt1uEwG_bPreIJQ,633152
+lsreader-0.1.38.data/purelib/lsreader/msvcr110.dll,sha256=DLvZaR8IQ02jYXh0-Zxt2HU4y9ZbXYvDn843jU7Snu0,828872
+lsreader-0.1.38.data/purelib/lsreader/vcruntime140.dll,sha256=2Jx7hj_BrDoXnUXV_huf01-2-9RRccpo0NaKscGtBPs,87888
+lsreader-0.1.38.data/purelib/lsreader/vcruntime140_1.dll,sha256=xsmMtENtk3IaGbjHL7oeRZqHRWE7TvRF9ytmetnNU-A,44312
+lsreader-0.1.38.dist-info/METADATA,sha256=i5KFQoTe6oIWkfCEk-fd8P4i15lqo5lH-dyZVvkeYaU,629
+lsreader-0.1.38.dist-info/WHEEL,sha256=SktxJNdVgf2GQ0Rnj47KhGrFXFhp4j6ROtWy0UXB1eM,106
+lsreader-0.1.38.dist-info/top_level.txt,sha256=GSiBAgfe07ThaM2Xmy9O-5j_Ukqxwfu-4Fm8pwXhWuA,9
+lsreader-0.1.38.dist-info/RECORD,,
