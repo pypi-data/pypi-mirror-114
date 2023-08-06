@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+py_requirements_guesser/__init__.py
+py_requirements_guesser/cli.py
+py_requirements_guesser/guesser.py
+py_requirements_guesser/utils.py
+py_requirements_guesser.egg-info/PKG-INFO
+py_requirements_guesser.egg-info/SOURCES.txt
+py_requirements_guesser.egg-info/dependency_links.txt
+py_requirements_guesser.egg-info/entry_points.txt
+py_requirements_guesser.egg-info/top_level.txt

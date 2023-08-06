@@ -1,0 +1,3 @@
+[console_scripts]
+py-requirements-guesser = py_requirements_guesser.cli:run
+
