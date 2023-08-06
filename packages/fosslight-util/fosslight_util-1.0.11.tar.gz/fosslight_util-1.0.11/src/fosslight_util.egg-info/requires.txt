@@ -1,0 +1,8 @@
+XlsxWriter
+pandas
+xlrd
+openpyxl
+progress
+PyYAML
+lastversion
+coloredlogs
