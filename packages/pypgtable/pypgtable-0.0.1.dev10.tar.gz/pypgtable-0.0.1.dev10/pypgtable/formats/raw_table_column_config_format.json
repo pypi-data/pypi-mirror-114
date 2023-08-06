@@ -1,0 +1,49 @@
+{
+    "type": {
+        "type": "string",
+        "required": true,
+        "meta": {
+            "description": "Postgresql type expression."
+        }
+    },
+    "nullable": {
+        "type": "boolean",
+        "default": false,
+        "meta": {
+            "description": "Allow NULL entries if True."
+        }
+    },
+    "primary_key": {
+        "type": "boolean",
+        "default": false,
+        "meta": {
+            "description": "Column is the primary key and automatically indexed if True. Primary key columns cannot have NULL entries."
+        }
+    },
+    "unique": {
+        "type": "boolean",
+        "default": false,
+        "meta": {
+            "description": "Entries in the column are unique and automatically indexed if True. Cannot also be primary keys."
+        }
+    },
+    "index": {
+        "type": "string",
+        "allowed": [
+            "btree",
+            "hash",
+            "gist",
+            "gin"
+        ],
+        "meta": {
+            "description": "Column is indexed with the selected algorithm. PRIMARY KEY or UNIQUE columns cannot be additionally indexed."
+        }
+    },
+    "default": {
+        "type": "string",
+        "maxlength": 256,
+        "meta": {
+            "description": "Default value of the column specified as an SQL string after 'DEFAULT ' in the CREATE TABLE statement."
+        }
+    }
+}
