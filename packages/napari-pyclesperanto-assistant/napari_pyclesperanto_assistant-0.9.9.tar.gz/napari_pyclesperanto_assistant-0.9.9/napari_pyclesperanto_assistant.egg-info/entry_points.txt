@@ -1,0 +1,9 @@
+[napari.plugin]
+3 Utilities (clEsperanto) = napari_pyclesperanto_assistant._napari_utilities
+4 Measurements on GPU (clEsperanto) = napari_pyclesperanto_assistant._napari_measurements
+5 Segmentation on GPU (clEsperanto) = napari_pyclesperanto_assistant._napari_segmentation
+6 Projections on GPU (clEsperanto) = napari_pyclesperanto_assistant._napari_projections
+7 Transforms on GPU (clEsperanto) = napari_pyclesperanto_assistant._napari_transforms
+8 Filtering on GPU (clEsperanto) = napari_pyclesperanto_assistant._napari_filters
+9 clEsperanto = napari_pyclesperanto_assistant._napari_pyclesperanto_assistant
+
