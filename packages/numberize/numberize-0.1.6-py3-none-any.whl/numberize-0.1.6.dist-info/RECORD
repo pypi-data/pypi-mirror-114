@@ -1,0 +1,11 @@
+numberize/__init__.py,sha256=but37GrTRlZCywzDU-mRUjEOrh6llJdVkuw5FfL-Fjg,84
+numberize/analyze.py,sha256=D3EUKEDG7iagRnkxMy2b_sijDMGzvrgvilyUw-JK-Oc,1538
+numberize/dict_ru.py,sha256=t7PQ6ZfUnHXXqsZ15Nq7XAA5CinKN3xDbAPlaR3BMTc,1286
+numberize/dict_uk.py,sha256=TKNGtzI12Gm27wMhkQaGzftB6zOjTMJLjrLS9DwgTR8,1272
+numberize/map_text.py,sha256=uj33wJYlsYwO2Hm0r3YyiJzvs3D1-TTUaGDt2q0Ib3o,3087
+numberize/numberizer.py,sha256=hBbDC2XvpsJzRqEjyfOK3fQkH1kifETDq96jDVE-pyI,1206
+numberize/numeric_dict.py,sha256=t8gOOxJFu0z-IR6ZOkW3L21THjtMVsomBxhfTP-kV0E,126
+numberize-0.1.6.dist-info/METADATA,sha256=UGmY8fHd8cfbIyI1rPjTQlRt0O6K2I4Wp7Kheh7D-9I,1127
+numberize-0.1.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+numberize-0.1.6.dist-info/top_level.txt,sha256=Mh6tRTmIpPhVt-cMLZRyPyTL-IUwD8po6I7I9qJPwxc,10
+numberize-0.1.6.dist-info/RECORD,,
