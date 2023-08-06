@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/Encryptor/__init__.py
+src/Encryptor/enc.py
+src/Py_Encryptor.egg-info/PKG-INFO
+src/Py_Encryptor.egg-info/SOURCES.txt
+src/Py_Encryptor.egg-info/dependency_links.txt
+src/Py_Encryptor.egg-info/requires.txt
+src/Py_Encryptor.egg-info/top_level.txt

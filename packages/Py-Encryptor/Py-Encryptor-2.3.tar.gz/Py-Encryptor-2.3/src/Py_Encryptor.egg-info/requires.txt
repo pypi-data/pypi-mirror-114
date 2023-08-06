@@ -1,0 +1,4 @@
+pycryptodome>=3.9.6
+cryptography>=3.4.7
+Bush-Encryption>=0.3
+rsa>=4.7.2
