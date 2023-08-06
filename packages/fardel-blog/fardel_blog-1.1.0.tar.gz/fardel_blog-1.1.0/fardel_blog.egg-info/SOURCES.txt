@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+fardel_blog/__init__.py
+fardel_blog/models.py
+fardel_blog/panel.py
+fardel_blog/views.py
+fardel_blog.egg-info/PKG-INFO
+fardel_blog.egg-info/SOURCES.txt
+fardel_blog.egg-info/dependency_links.txt
+fardel_blog.egg-info/top_level.txt
+fardel_blog/templates/categories_form.html
+fardel_blog/templates/categories_list.html
+fardel_blog/templates/posts_form.html
+fardel_blog/templates/posts_list.html
+fardel_blog/templates/tags_list.html

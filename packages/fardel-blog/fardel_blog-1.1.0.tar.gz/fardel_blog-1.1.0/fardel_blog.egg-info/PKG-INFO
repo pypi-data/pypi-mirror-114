@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: fardel-blog
+Version: 1.1.0
+Summary: Blog plugin for Fardel CMS
+Home-page: https://github.com/FardelCMS/fardel_ecommerce
+Author: Sepehr Hamzehlouy
+Author-email: s.hamzelooy@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Programming Language :: Python :: 3.7
