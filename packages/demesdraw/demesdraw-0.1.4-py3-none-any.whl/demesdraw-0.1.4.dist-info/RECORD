@@ -1,0 +1,13 @@
+demesdraw/__init__.py,sha256=dYND-zsia2rrMDvYUb87qfwSOR2A59ah1aVCkEofiiY,343
+demesdraw/__main__.py,sha256=Txn8GEpzHRM-m6p2wnVVSOv-ftLuuA5fkUmXoUp_bz8,3577
+demesdraw/_version.py,sha256=g-sfwnqPH5ZoF52e756_44WOXnbc3Lz27WsLdunhQzU,142
+demesdraw/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+demesdraw/size_history.py,sha256=svQltp84CK9TZEMhKPBtRHBPmVCdob1q6jje6wyHT2I,9628
+demesdraw/tubes.py,sha256=bR5Jvt4RTJeKRATATMOCHh45r84IsaCRvlss6k1WE2g,23741
+demesdraw/utils.py,sha256=fZUd2XjJRktEw2aYEcHEyeNvH9chSvH--GkNR7EBCRU,8192
+demesdraw-0.1.4.dist-info/LICENSE,sha256=VrrSOyV21GBaKesDsHyohjd7JiTGRcNEuKrhORGY898,728
+demesdraw-0.1.4.dist-info/METADATA,sha256=5iueZbwZlVgU4uGAdJJ0kRPalkoYEI574c8ohde6xjU,2456
+demesdraw-0.1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+demesdraw-0.1.4.dist-info/entry_points.txt,sha256=CBtzmmq5sfOZcj1fe8ZLA7bDtSRAZYCnvGif5Gm6_kU,54
+demesdraw-0.1.4.dist-info/top_level.txt,sha256=db6dHfmDuPqMom9BX8KTFwierAIid2Zd_WYCsfXqV10,10
+demesdraw-0.1.4.dist-info/RECORD,,
