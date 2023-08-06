@@ -1,0 +1,9 @@
+README.md
+setup.py
+qixinApi/__init__.py
+qixinApi/qixinApi.py
+qixinApi.egg-info/PKG-INFO
+qixinApi.egg-info/SOURCES.txt
+qixinApi.egg-info/dependency_links.txt
+qixinApi.egg-info/requires.txt
+qixinApi.egg-info/top_level.txt
