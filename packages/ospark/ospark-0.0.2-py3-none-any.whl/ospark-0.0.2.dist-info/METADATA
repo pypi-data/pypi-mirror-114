@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ospark
+Version: 0.0.2
+Summary: Spark all your ‘former series’ idea,  just in Ospark!
+Home-page: https://github.com/ospark-org/Ospark
+Author: ospark-org,
+Author-email: abnertsai@awoo.com.tw,
+License: Apache License 2.0
+Keywords: ospark,allspark,former,transformer
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+Requires-Dist: tensorflow (==2.5)
+Requires-Dist: importlib ; python_version == "3.7"
+
+# Ospark
+
+
+
