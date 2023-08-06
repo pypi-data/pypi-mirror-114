@@ -1,0 +1,16 @@
+MANIFEST.in
+setup.py
+httprpc_dengzhenzhen.egg-info/PKG-INFO
+httprpc_dengzhenzhen.egg-info/SOURCES.txt
+httprpc_dengzhenzhen.egg-info/dependency_links.txt
+httprpc_dengzhenzhen.egg-info/entry_points.txt
+httprpc_dengzhenzhen.egg-info/requires.txt
+httprpc_dengzhenzhen.egg-info/top_level.txt
+setup_demo/FlaskApp.py
+setup_demo/Serializer.py
+setup_demo/__init__.py
+setup_demo/client.py
+setup_demo/rpc_client.py
+setup_demo/rpc_func.py
+setup_demo/rpc_server.py
+static/images.zip
