@@ -1,0 +1,13 @@
+manager_utils/__init__.py,sha256=ihugJuqWXwhMcy1qA8uaokB_b7f1ZQrZlKN5WBB3Wls,326
+manager_utils/apps.py,sha256=PzumeZnptTBOyDMV3Qjun9yq6um2_rDWGCnClOUx3mo,142
+manager_utils/manager_utils.py,sha256=tNC7V6liuN2kEmE2ksjGm3gX2lt_C0SGcs_N3qowNXc,30607
+manager_utils/upsert2.py,sha256=WvcSuMXbmk2nDAglD1P_qlFH7CmleqUBviyK8_sYj10,11906
+manager_utils/version.py,sha256=fcRMgwI40iVFwre_3iKQA-N6sHUo3pAErXcKJS63DRg,22
+manager_utils/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+manager_utils/tests/manager_utils_tests.py,sha256=iuIAGT9H37SGHhuvz-lma1YLkDjOfIiVAgMV77OLnXs,97585
+manager_utils/tests/models.py,sha256=AEwDCrZ0e7UvmQKuY-44BHSbeq2xEyL7EmoawHkCnqE,2343
+django_manager_utils-2.0.3.dist-info/LICENSE,sha256=oyTRkPIEqt89OlbuGFA61bWHF8h6t-ZJ4_zIV1npbYg,1075
+django_manager_utils-2.0.3.dist-info/METADATA,sha256=D5ns_0HSDr-LGseDrxHVsfk-MIFj3qj1wBg16CT6_WM,1788
+django_manager_utils-2.0.3.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+django_manager_utils-2.0.3.dist-info/top_level.txt,sha256=Spw0Fh8RsldQHrsQQ1IgQJ066K58xTgOWQ8Dy5l6mA0,14
+django_manager_utils-2.0.3.dist-info/RECORD,,
