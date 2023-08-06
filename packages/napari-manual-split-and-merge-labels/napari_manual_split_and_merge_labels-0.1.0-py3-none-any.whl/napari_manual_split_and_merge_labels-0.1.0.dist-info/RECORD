@@ -1,0 +1,10 @@
+napari_manual_split_and_merge_labels/__init__.py,sha256=4RCAsn4RVi1ySf5_8qDYQ1kbK8VcSFmv3rhGtmGpyJI,96
+napari_manual_split_and_merge_labels/_function.py,sha256=oSp4yxXMO2WefScARs0W1LGVb54Eu9EqAsNJhBfhrkU,2297
+napari_manual_split_and_merge_labels/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_manual_split_and_merge_labels/_tests/test_function.py,sha256=DYJWC8BTNUkt1BqIFCs9Gsi-8joSsiGdRzm1jgJDtbk,145
+napari_manual_split_and_merge_labels-0.1.0.dist-info/LICENSE,sha256=1QzK43Z2mkzT5Hu9q_CPj6HKNg_bRRPtduxL_oJSfsU,1535
+napari_manual_split_and_merge_labels-0.1.0.dist-info/METADATA,sha256=P7UuyR2YqUCRoI2suWyrcBAhw_iuNFUQMRTIRX9apqA,4121
+napari_manual_split_and_merge_labels-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+napari_manual_split_and_merge_labels-0.1.0.dist-info/entry_points.txt,sha256=kljX7OmUuL0pALtNNv2Ur6OuPk3GJYH6S-9Tqcdeo24,79
+napari_manual_split_and_merge_labels-0.1.0.dist-info/top_level.txt,sha256=kW8GpMz_WsHCab_1TcKgLFPgTcvqP7lSxgp64EZj4GQ,37
+napari_manual_split_and_merge_labels-0.1.0.dist-info/RECORD,,
