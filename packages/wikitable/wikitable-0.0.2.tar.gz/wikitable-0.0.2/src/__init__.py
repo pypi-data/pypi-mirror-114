@@ -1,0 +1,1 @@
+from wikitable.wikitable import wikitable
