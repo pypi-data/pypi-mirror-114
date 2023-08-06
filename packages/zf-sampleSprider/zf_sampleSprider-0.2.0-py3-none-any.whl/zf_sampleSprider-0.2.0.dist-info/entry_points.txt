@@ -1,0 +1,4 @@
+[console_scripts]
+comics = sampleSprider_old.SampleSprider4_Comics1:main
+fiction = sampleSprider_old.SampleSprider3_Fiction:main
+
