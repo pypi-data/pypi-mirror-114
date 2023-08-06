@@ -1,0 +1,4 @@
+cvxpy>=1.1
+lap
+scsprox>=0.2
+numpy
