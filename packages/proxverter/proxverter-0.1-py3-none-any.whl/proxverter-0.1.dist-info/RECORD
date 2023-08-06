@@ -1,0 +1,9 @@
+proxverter/__init__.py,sha256=61oWRglacKXcvpIEPBEBj4fODxHY6T6YaQL990wBXbs,4876
+proxverter/certgen.py,sha256=cZy-1-WHQe8mXeoEKGPaDcPorG5gvWqtr9XKEX7NINk,2533
+proxverter/sysprox.py,sha256=B_my5YcR_mm6ajC9BRdLAJHeNhV2W7ZI2ntVSEU1pwo,11504
+proxverter/test/test.py,sha256=XRRu7SnBZ5zxDG5Q8RXWOFApA4n8l74HbdVyzFBDHFI,530
+proxverter-0.1.dist-info/LICENSE,sha256=f_4ZVFh8d9-6HPjrmy6nQ2cfpuY_nnovJYEZ1C4U7v4,27030
+proxverter-0.1.dist-info/METADATA,sha256=Ywos3ZA8BCkNLacSd_xxhWOEhf9qnzLqoXkiahG0s7I,8971
+proxverter-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+proxverter-0.1.dist-info/top_level.txt,sha256=MuShOv5K6fNzCkd35v5PIYAkxtNz2Ga1xk3QTFPVgoM,11
+proxverter-0.1.dist-info/RECORD,,
