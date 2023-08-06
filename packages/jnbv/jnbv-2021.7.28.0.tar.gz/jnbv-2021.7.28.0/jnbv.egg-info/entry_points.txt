@@ -1,0 +1,3 @@
+[console_scripts]
+jnbv = jnbv.__main__:main
+
