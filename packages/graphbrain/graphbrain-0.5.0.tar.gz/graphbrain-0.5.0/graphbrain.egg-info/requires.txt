@@ -1,0 +1,14 @@
+numpy
+scikit-learn
+networkx
+termcolor
+asciitree
+ipython
+progressbar2
+spacy
+
+[dev]
+cython>=0.25
+pytest
+Sphinx
+sphinx_rtd_theme
