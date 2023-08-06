@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: seven_cloudapp_frame
+Version: 1.0.0.10
+Summary: seven cloudapp frame
+Home-page: http://gitlab.tdtech.gao7.com/TaoBaoCloud/seven_cloudapp_frame.git
+Author: seven
+Author-email: tech@gao7.com
+License: MIT
+Description: # seven_cloudapp_frame
+        
+        ## 天志互联Python云应用框架库
+        
+        ### 1.0.0.10 更新内容
+        * 云应用框架初始版
+Platform: UNKNOWN
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: ~=3.4
+Description-Content-Type: text/markdown
