@@ -1,0 +1,8 @@
+tidybear/__init__.py,sha256=xXLNhZ2oaGlozOCotfBQc2axh-VzCpw1PB4r9S2PI0U,155
+tidybear/df_functions.py,sha256=7CUrRIjJErdAuXpPGJ35_2bBH2Jx8MHuG0Hd2eL-2Wk,3512
+tidybear/groupby.py,sha256=9zMex5DEpz6y5Vcgv5UPMNw79LtcG64_dPlfKDF8bZA,6928
+tidybear-0.0.3.dist-info/LICENSE,sha256=Mb05SicbBCk3dr6tH82M_R63cQ5gS6nx8nhngA6-I2g,1073
+tidybear-0.0.3.dist-info/METADATA,sha256=E4ZUSeZ2T60EgHFog5GD3iA97VODARft8FAQbXjwQBU,2897
+tidybear-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tidybear-0.0.3.dist-info/top_level.txt,sha256=zpCxexasKD2QQ37wxJTbOvbKILC0teF7lGAr-wTq83s,9
+tidybear-0.0.3.dist-info/RECORD,,
