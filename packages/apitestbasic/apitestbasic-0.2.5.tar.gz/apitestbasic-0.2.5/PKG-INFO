@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: apitestbasic
+Version: 0.2.5
+Summary: 
+Author: lin
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: sgqlc (>=13.0,<14.0)
