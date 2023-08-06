@@ -1,0 +1,3 @@
+[eodag.plugins.api]
+SentinelsatAPI = eodag_sentinelsat.eodag_sentinelsat:SentinelsatAPI
+
