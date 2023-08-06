@@ -1,0 +1,6 @@
+typer
+pyodbc
+colorama
+boto3
+loguru
+pydantic
