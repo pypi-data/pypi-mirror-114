@@ -1,0 +1,14 @@
+MANIFEST.in
+pyproject.toml
+setup.cfg
+setup.py
+j2g/__init__.py
+j2g/__main__.py
+j2g/json_graph.py
+j2g/misc.py
+j2g/out.py
+j2g.egg-info/PKG-INFO
+j2g.egg-info/SOURCES.txt
+j2g.egg-info/dependency_links.txt
+j2g.egg-info/requires.txt
+j2g.egg-info/top_level.txt
