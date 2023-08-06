@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "yuzu"
+version = "1.1.1"
+description = "Lightweight and useful annotation package for logging and caching"
+authors = ["Yasunori Horikoshi <hotoku@users.noreply.github.com>"]
+readme = "README.rst"
+license = "MIT"
+repository = "https://github.com/hotoku/yuzu"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pysen = {version = "^0.9.1", extras = ["lint"]}
+bumpversion = "^0.6.0"
+Sphinx = "^4.1.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pysen]
+version = "0.9"
+
+[tool.pysen.lint]
+enable_black = true
+enable_flake8 = true
+enable_isort = true
+enable_mypy = false
+line_length = 200
+py_version = "py37"
+[[tool.pysen.lint.mypy_targets]]
+  paths = ["."]

@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: yuzu
+Version: 1.1.1
+Summary: Lightweight and useful annotation package for logging and caching
+Home-page: https://github.com/hotoku/yuzu
+License: MIT
+Author: Yasunori Horikoshi
+Author-email: hotoku@users.noreply.github.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/hotoku/yuzu
+Description-Content-Type: text/x-rst
+
+==============
+yuzu
+==============
+
+
+.. image:: https://img.shields.io/pypi/v/yuzu.svg
+        :target: https://pypi.python.org/pypi/yuzu
+
+.. image:: https://readthedocs.org/projects/yuzu-python/badge/?version=latest
+        :target: https://yuzu-python.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+
+
+Lightweight and useful annotation package for logging and caching
+
+
+* Free software: MIT license
+* Documentation: https://yuzu-python.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+  - write document
+
+Credits
+-------
+
