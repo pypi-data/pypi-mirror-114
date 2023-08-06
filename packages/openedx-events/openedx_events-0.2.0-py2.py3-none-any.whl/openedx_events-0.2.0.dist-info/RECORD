@@ -1,0 +1,8 @@
+openedx_events/__init__.py,sha256=RywcxHgUMp8ReTadQqvydxOa1x7g_F0FrtpBayJ3etM,217
+openedx_events/learning/__init__.py,sha256=dCr-ZSZKE-RPAW1IZNpoymI5ZRXBgu5zuBxsZ02VzJQ,167
+openedx_events/learning/signals.py,sha256=S1uIxCwPIl_v6VgPolVX6qwaglgrx4DgH8TKRUicwZo,336
+openedx_events-0.2.0.dist-info/LICENSE.txt,sha256=QTW2QN7q3XszgUAXm9Dzgtu5LXYKbR1SGnqMa7ufEuY,35139
+openedx_events-0.2.0.dist-info/METADATA,sha256=kRO3m_DISJkO-XEpBhqcekd2lJH2C0EW1HksYc12B8M,6174
+openedx_events-0.2.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+openedx_events-0.2.0.dist-info/top_level.txt,sha256=SHuNnotoA0ynWcgYR_YjivLyjg-AXnw0brxHlM9TfMw,15
+openedx_events-0.2.0.dist-info/RECORD,,
