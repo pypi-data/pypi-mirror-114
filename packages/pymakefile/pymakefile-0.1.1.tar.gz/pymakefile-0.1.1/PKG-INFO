@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pymakefile
+Version: 0.1.1
+Summary: Manage your Makefiles from python
+Home-page: https://github.com/willbackslash/pymakefile
+License: MIT
+Author: William
+Author-email: macwilliamdlc@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.1,<9.0.0)
+Project-URL: Repository, https://github.com/willbackslash/pymakefile
+Description-Content-Type: text/markdown
+
+# pymakefile
+Manage your Makefiles from python
+
+## Install
+
+## Usage
+
+### Starting a new Makefile
+`pymake init`
+
+### Add a new command to the Makefile
+`pymake add '{command_name}' '{command}' '{description}'`  
+Example:  
+`pymake add runlocal 'python manage.py runserver' 'Starts the development server'`
+
+## Development
+### Install dependencies
+`poetry install`
+### Activate virtualenv
+`poetry shell`
+### Running the commands from source
+- `python pymakefile.py init`
+- `python pymakefile.py add '{command_name}' '{command}' '{description}'`
+
+### Applying lint rules
+`black .`
+
