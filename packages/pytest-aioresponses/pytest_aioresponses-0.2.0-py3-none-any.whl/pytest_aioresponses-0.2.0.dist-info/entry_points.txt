@@ -1,0 +1,3 @@
+[pytest11]
+aioresponses=pytest_aioresponses
+
