@@ -1,0 +1,15 @@
+healsparse/__init__.py,sha256=51ZJTZXfxvEbWoPYROGOTcSkARkziNq3u7gm75SAzdM,996
+healsparse/_version.py,sha256=zi_LaUT_OsChAtsPXbOeRpQkCohSsOyeXfavQPM0GoE,22
+healsparse/cat_healsparse_files.py,sha256=kVgcZ4BjOktYL3oCNSiUx_Cd6Cy1UC2laWK7qyos4-Q,16105
+healsparse/fits_shim.py,sha256=KaK5JwrsnKWnrXllp2ZZSP7AsCjA4KPeoRudvONHNBQ,8982
+healsparse/geom.py,sha256=bNx-9-gNpyXg-eHcrYnjZIejc2LXRqPsVUV_gl5PF3Y,9952
+healsparse/healSparseCoverage.py,sha256=1ogf9czV-1MyvfUZavds5yHfo2syy_Rz3durPWrhoSI,8053
+healsparse/healSparseMap.py,sha256=SCwLjWZ91xrB445Th7Mab13HrRhu-s-WC6uGJ78DErI,88558
+healsparse/healSparseRandoms.py,sha256=cFEnnaDCEqzQcCaG_NnK7JBaNeAAjeex9ZNtFC2hCiQ,4813
+healsparse/operations.py,sha256=pL-TqTA8fPo3YyRY7H6hBrZiVWzOxnyX3bK4_o8Bwks,13075
+healsparse/utils.py,sha256=c2Mm74WvOL3-23bS3J-s4uWQHoONjvxeuoqNtLmZlsY,4671
+healsparse-1.3.1.dist-info/LICENSE,sha256=n8GnUcZMdAdnj8-bxxJHkHm7CCGb2pHru7kgJhpCO9o,1535
+healsparse-1.3.1.dist-info/METADATA,sha256=-irkaORi4F-SNl6h02sJzOnMoIZ8LIhgrs_Se98kCj8,2286
+healsparse-1.3.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+healsparse-1.3.1.dist-info/top_level.txt,sha256=L6tjz3blFxZ0jYOQhLM7JBh6rJsOC6cGn7C4X_90dzw,11
+healsparse-1.3.1.dist-info/RECORD,,
