@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+backblast/__init__.py
+backblast.egg-info/PKG-INFO
+backblast.egg-info/SOURCES.txt
+backblast.egg-info/dependency_links.txt
+backblast.egg-info/top_level.txt
