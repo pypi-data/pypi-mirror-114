@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: english-asr
+Version: 1.1
+Summary: An Automatic Speech Recognition(ASR) for English language trained on LibriSpeech dataset using Conformer.
+Home-page: https://github.com/neso613/english_asr
+Author: Neha Soni
+Author-email: soni.neha45@gmail.com
+License: Apache-2.0
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Requires-Dist: librosa
+Requires-Dist: tensorflow
+Requires-Dist: soundfile (>=0.10.2)
+
+UNKNOWN
+
+
