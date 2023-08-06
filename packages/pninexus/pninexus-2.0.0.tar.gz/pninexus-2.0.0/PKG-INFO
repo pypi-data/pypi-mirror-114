@@ -1,0 +1,27 @@
+Metadata-Version: 1.2
+Name: pninexus
+Version: 2.0.0
+Summary: Python wrapper for the H5CPP and PNI libraries
+Home-page: https://github.com/pni-libraries/python-pninexus
+Author: Eugen Wintersberger
+Author-email: eugen.wintersberger@desy.de
+Maintainer: Eugen Wintersberger, Jan Kotanski
+Maintainer-email: jan.kotanski@desy.de
+License: GPLv2
+Description: This package provides wrappers for the PNI C++ libraries libpninexus and libh5cpp.
+Keywords: h5cpp hdf5 python photon science detector
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires: numpy
