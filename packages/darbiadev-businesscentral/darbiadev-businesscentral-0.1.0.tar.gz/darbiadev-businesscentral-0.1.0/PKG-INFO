@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: darbiadev-businesscentral
+Version: 0.1.0
+Summary: darbiadev-businesscentral
+Home-page: https://gitlab.com/darbia/darbiadev-businesscentral
+License: MIT
+Author: Bradley Reynolds
+Author-email: bradley.reynolds@darbia.dev
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: docs
+Provides-Extra: tests
+Requires-Dist: pytest (>=6.2.4,<7.0.0); extra == "tests"
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: sphinx (>=4.1.1,<5.0.0); extra == "docs"
+Requires-Dist: sphinx-autodoc-annotation (>=1.0-1,<2.0); extra == "docs"
+Requires-Dist: sphinx-rtd-theme (>=0.5.2,<0.6.0); extra == "docs"
+Requires-Dist: sphinxcontrib-apidoc (>=0.3.0,<0.4.0); extra == "docs"
+Requires-Dist: sphinxcontrib-napoleon (>=0.7,<0.8); extra == "docs"
+Requires-Dist: sphinxcontrib-packages (>=1.0.1,<2.0.0); extra == "docs"
+Requires-Dist: tox (>=3.24.0,<4.0.0); extra == "tests"
+Project-URL: Documentation, https://darbia.gitlab.io/darbiadev-businesscentral
+Project-URL: Repository, https://gitlab.com/darbia/darbiadev-businesscentral
+Description-Content-Type: text/markdown
+
+# darbiadev-businesscentral
+
+
