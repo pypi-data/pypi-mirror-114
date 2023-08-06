@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-web
+Version: 0.1.4
+Summary: A web monitor for nonebot2
+License: MIT
+Keywords: nonebot,qq,qqbot,mirai,cqhttp
+Author: abrahumlink
+Author-email: 307887491@qq.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: nonebot-adapter-cqhttp (>=2.0.0-alpha.13,<3.0.0)
+Requires-Dist: nonebot2 (>=2.0.0-alpha.13,<3.0.0)
+Requires-Dist: python-socketio (>=4.6.1,<5.0.0)
