@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: th2-data-services
+Version: 0.2.4
+Summary: th2_data_services
+Home-page: https://github.com/th2-net/th2-data-services
+Author: TH2-devs
+Author-email: th2-devs@exactprosystems.com
+License: Apache License 2.0
+Description: This repository is a library for creating th2-data-services applications.
+        
+        ## Installation
+        ```
+        pip install th2-data-services
+        ```
+        This package can be found on [PyPI](https://pypi.org/project/th2-data-services/ "th2-data-services").
+        
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
