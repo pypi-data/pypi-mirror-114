@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/MinecraftaPY.egg-info/PKG-INFO
+src/MinecraftaPY.egg-info/SOURCES.txt
+src/MinecraftaPY.egg-info/dependency_links.txt
+src/MinecraftaPY.egg-info/top_level.txt
+src/hypixel/__init__.py
+src/hypixel/errors.py
+src/hypixel/hypixel.py
