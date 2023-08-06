@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: linkedin-matrix
+Version: 0.4.0
+Summary: A Matrix-LinkedIn Messages puppeting bridge.
+Home-page: https://github.com/sumnerevans/linkedin-matrix
+License: Apache-2.0
+Keywords: matrix,LinkedIn
+Author: Sumner Evans
+Author-email: inquiries@sumnerevans.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Communications :: Chat
+Provides-Extra: e2be
+Provides-Extra: images
+Provides-Extra: metrics
+Requires-Dist: Pillow (>=8.3.1,<9.0.0); extra == "images"
+Requires-Dist: asyncpg (>=0.23.0,<0.24.0)
+Requires-Dist: commonmark (>=0.9.1,<0.10.0)
+Requires-Dist: linkedin-messaging (>=0.4.3,<0.5.0)
+Requires-Dist: mautrix (>=0.9.9,<0.10.0)
+Requires-Dist: prometheus-client (>=0.11.0,<0.12.0); extra == "metrics"
+Requires-Dist: pycryptodome (>=3.10.1,<4.0.0); extra == "e2be"
+Requires-Dist: python-magic (>=0.4.24,<0.5.0)
+Requires-Dist: python-olm; extra == "e2be"
+Requires-Dist: ruamel.yaml (>=0.17.10,<0.18.0)
+Requires-Dist: unpaddedbase64 (>=2.1.0,<3.0.0); extra == "e2be"
+Project-URL: Repository, https://github.com/sumnerevans/linkedin-matrix
+Description-Content-Type: text/markdown
+
+# linkedin-matrix
+
+[![pipeline status](https://gitlab.com/beeper/linkedin-matrix/badges/master/pipeline.svg)](https://gitlab.com/beeper/linkedin-matrix/-/commits/master) 
+[![Matrix Chat](https://img.shields.io/matrix/linkedin-matrix:nevarro.space?server_fqdn=matrix.nevarro.space)](https://matrix.to/#/#linkedin-matrix:nevarro.space?via=nevarro.space&via=sumnerevans.com)
+[![Apache 2.0](https://img.shields.io/github/license/sumnerevans/linkedin-matrix)](https://github.com/sumnerevans/linkedin-matrix/blob/master/LICENSE)
+
+LinkedIn Messaging <-> Matrix bridge built using
+[mautrix-python](https://github.com/tulir/mautrix-python) and
+[linkedin-messaging-api](https://github.com/sumnerevans/linkedin-messaging-api).
+
+## Documentation
+
+Not much yet :)
+
+It is a Poetry project that requires Python 3.9+, PostgreSQL. Theoretically, all
+you need to do is:
+
+1. Copy the `linkedin_matrix/example-config.yaml` file and modify it to your
+   needs.
+
+2. Install the dependencies with Poetry:
+
+   ```
+   $ poetry install
+   ```
+
+   and activate the virtualenv.
+
+3. Generate the registration file
+
+   ```
+   $ python -m linkedin_matrix -g
+   ```
+
+   and add it to your Synapse config.
+
+4. Run the bridge using:
+
+   ```
+   $ python -m linkedin_matrix
+   ```
+
+### Features & Roadmap
+[ROADMAP.md](https://github.com/sumnerevans/linkedin-matrix/blob/master/ROADMAP.md)
+contains a general overview of what is supported by the bridge.
+
+## Discussion
+
+Matrix room:
+[`#linkedin-matrix:nevarro.space`](https://matrix.to/#/#linkedin-matrix:nevarro.space?via=nevarro.space&via=sumnerevans.com)
+
