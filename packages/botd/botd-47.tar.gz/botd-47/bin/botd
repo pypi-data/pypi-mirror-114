@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+
+import ob
+ob.wd = "/var/lib/botd"
+
+from trm import Runtime, daemon, wrap
+
+import bot.all
+
+k = Runtime()
+k.cfg.m = "bot.irc,bot.rss"
+
+def main():
+    k.boot(disk=True)
+    if k.opts("d"):
+        daemon()
+    k.privileges()
+    k.start()
+    k.init(k.cfg.m)
+    k.wait()
+
+
+wrap(main)
