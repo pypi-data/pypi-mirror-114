@@ -1,0 +1,11 @@
+LICENSE
+NOTICE.md
+README.md
+pyproject.toml
+setup.py
+src/dedmap/__init__.py
+src/dedmap/dedmap.py
+src/dedmap.egg-info/PKG-INFO
+src/dedmap.egg-info/SOURCES.txt
+src/dedmap.egg-info/dependency_links.txt
+src/dedmap.egg-info/top_level.txt
