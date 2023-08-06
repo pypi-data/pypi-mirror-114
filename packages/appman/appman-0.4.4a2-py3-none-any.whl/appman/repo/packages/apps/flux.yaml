@@ -1,0 +1,8 @@
+id: flux
+name: flux
+labels:
+  - gui
+  - utils
+formulas:
+  choco: f.lux
+  winget: flux.flux

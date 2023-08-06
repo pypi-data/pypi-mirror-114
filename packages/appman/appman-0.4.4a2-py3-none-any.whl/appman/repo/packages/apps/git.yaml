@@ -1,0 +1,11 @@
+id: git
+name: git
+description: Distributed version control system
+labels:
+  - cli
+  - dev-tools
+formulas:
+  apt: git
+  pacman: git
+  scoop: git
+  winget: Git.Git

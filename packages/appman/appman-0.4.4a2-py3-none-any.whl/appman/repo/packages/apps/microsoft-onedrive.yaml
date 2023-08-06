@@ -1,0 +1,8 @@
+id: microsoft-onedrive
+name: Microsoft OneDrive
+labels:
+  - gui
+  - cloud
+formulas:
+  choco: onedrive
+  winget: Microsoft.OneDrive

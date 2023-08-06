@@ -1,0 +1,10 @@
+id: wkhtmltopdf
+name: wkhtmltopdf
+description: Render HTML into PDF
+labels:
+  - cli
+  - utils
+formulas:
+  apt: wkhtmltopdf
+  pacman: wkhtmltopdf
+  scoop: wkhtmltopdf

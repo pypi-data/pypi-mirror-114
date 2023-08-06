@@ -1,0 +1,7 @@
+id: syncthing-gui
+name: syncthing-gui
+description: GUI for syncthing
+labels:
+  - gui
+formulas:
+  choco: synctrayzor

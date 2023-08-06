@@ -1,0 +1,8 @@
+id: spotify
+name: Spotify
+labels:
+  - gui
+  - music
+formulas:
+  choco: spotify
+  winget: Spotify.Spotify

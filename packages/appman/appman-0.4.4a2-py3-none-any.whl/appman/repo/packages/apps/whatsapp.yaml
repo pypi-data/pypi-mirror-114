@@ -1,0 +1,7 @@
+id: whatsapp
+name: WhatsApp Messenger
+labels:
+  - gui
+  - communication
+formulas:
+  choco: whatsapp

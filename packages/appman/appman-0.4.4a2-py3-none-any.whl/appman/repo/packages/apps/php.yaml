@@ -1,0 +1,12 @@
+id: php
+name: php
+description: A popular general-purpose scripting language that is especially suited
+  to web development. (thread safe)
+labels:
+  - cli
+  - dev-tools
+  - prog-langs
+formulas:
+  apt: php
+  pacman: php
+  scoop: php

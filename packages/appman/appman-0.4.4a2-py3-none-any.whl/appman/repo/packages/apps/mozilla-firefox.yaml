@@ -1,0 +1,9 @@
+id: mozilla-firefox
+name: Mozilla Firefox
+labels:
+  - gui
+  - browser
+formulas:
+  apt: firefox
+  choco: firefox
+  winget: Mozilla.Firefox

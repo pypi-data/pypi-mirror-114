@@ -1,0 +1,26 @@
+repository: https://github.com/basiliskus/appman-main
+package-managers:
+  app:
+    arch: [pacman, npm, pip, cargo, go, conda, nvm, snap]
+    darwin: [brew, npm, pip, cargo, go, conda, nvm]
+    ubuntu: [apt, npm, pip, cargo, go, conda, nvm, snap]
+    windows: [scoop, choco, npm, pip, cargo, go, conda]
+  font:
+    arch: [pacman]
+    darwin: [brew]
+    ubuntu: [font-local-share]
+    windows: [scoop]
+  driver:
+    any: []
+  provisioned:
+    windows: [appx]
+  backend:
+    python:
+      any: [pip]
+    node:
+      any: [npm]
+    rust:
+      any: [cargo]
+  extension:
+    vscode:
+      any: [vscode-extension]

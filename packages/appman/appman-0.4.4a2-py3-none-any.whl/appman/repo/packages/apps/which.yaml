@@ -1,0 +1,16 @@
+id: which
+name: which
+description: Command line tool and library for transferring data with URLs
+labels:
+  - cli
+  - utils
+formulas:
+  pacman: which
+id: which
+name: which
+description: A utility to show the full path of commands
+labels:
+  - cli
+  - utils
+formulas:
+  pacman: which

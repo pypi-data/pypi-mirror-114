@@ -1,0 +1,10 @@
+id: apache2
+name: apache2
+description: The Apache HTTP Server ('httpd')
+labels:
+  - cli
+  - web-server
+formulas:
+  apt: apache2
+  pacman: apache
+  scoop: apache

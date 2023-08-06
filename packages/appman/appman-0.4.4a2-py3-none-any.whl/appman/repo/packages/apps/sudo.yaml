@@ -1,0 +1,9 @@
+id: sudo
+name: sudo
+notes: included in psutils
+labels:
+  - cli
+  - utils
+formulas:
+  pacman: sudo
+  scoop: sudo

@@ -1,0 +1,14 @@
+id: youtube-dl
+name: youtube-dl
+description: Download videos from YouTube.com (and a few more sites) using command
+  line
+labels:
+  - cli
+  - utils
+formulas:
+  apt: youtube-dl
+  choco: youtube-dl
+  pacman: youtube-dl
+  scoop: youtube-dl
+requires:
+  - ffmpeg

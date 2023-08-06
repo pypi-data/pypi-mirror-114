@@ -1,0 +1,8 @@
+id: mopidy
+name: mopidy
+labels:
+  - cli
+  - music
+formulas:
+  apt: mopidy
+  pacman: mopidy
