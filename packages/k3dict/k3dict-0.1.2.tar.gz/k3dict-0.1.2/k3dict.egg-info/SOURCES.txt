@@ -1,0 +1,11 @@
+setup.py
+k3dict/__init__.py
+k3dict/dictutil.py
+k3dict/fixed_keys_dict.py
+k3dict/setup.py
+k3dict/synopsis.py
+k3dict.egg-info/PKG-INFO
+k3dict.egg-info/SOURCES.txt
+k3dict.egg-info/dependency_links.txt
+k3dict.egg-info/requires.txt
+k3dict.egg-info/top_level.txt
