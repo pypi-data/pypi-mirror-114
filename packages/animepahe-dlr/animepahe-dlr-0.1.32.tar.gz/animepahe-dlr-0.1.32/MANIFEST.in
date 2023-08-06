@@ -1,0 +1,4 @@
+include *.in
+include *.txt
+recursive-include animepahe_dlr *.py
+recursive-include animepahe_dlr *.xpi

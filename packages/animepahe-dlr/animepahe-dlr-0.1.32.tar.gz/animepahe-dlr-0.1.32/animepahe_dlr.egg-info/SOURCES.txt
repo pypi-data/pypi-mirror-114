@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+license.md
+requirements.txt
+setup.py
+animepahe_dlr/__init__.py
+animepahe_dlr/ap_dlr.py
+animepahe_dlr/gecko_installer.py
+animepahe_dlr.egg-info/PKG-INFO
+animepahe_dlr.egg-info/SOURCES.txt
+animepahe_dlr.egg-info/dependency_links.txt
+animepahe_dlr.egg-info/entry_points.txt
+animepahe_dlr.egg-info/requires.txt
+animepahe_dlr.egg-info/top_level.txt
+animepahe_dlr/driver_extensions/mozilla_cc3@internetdownloadmanager.com.xpi
+animepahe_dlr/driver_extensions/uBlock0@raymondhill.net.xpi
+animepahe_dlr/driver_extensions/universal-bypass.xpi
