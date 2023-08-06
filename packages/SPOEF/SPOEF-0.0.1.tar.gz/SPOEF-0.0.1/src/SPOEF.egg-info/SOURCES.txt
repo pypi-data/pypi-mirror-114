@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/SPOEF.egg-info/PKG-INFO
+src/SPOEF.egg-info/SOURCES.txt
+src/SPOEF.egg-info/dependency_links.txt
+src/SPOEF.egg-info/top_level.txt
+src/spoef/__init__.py
+src/spoef/feature_generation.py
+src/spoef/transforms.py
+src/spoef/utils.py
