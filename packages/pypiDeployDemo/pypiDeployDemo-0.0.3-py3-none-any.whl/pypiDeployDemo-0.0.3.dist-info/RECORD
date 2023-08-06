@@ -1,0 +1,9 @@
+pypi_Deploy_Demo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypi_Deploy_Demo/component.py,sha256=sjvmx59mUWkThVweDeRrmQ2dpqtxxwDqbszA9g-FlTk,37
+pypi_Deploy_Demo/main.py,sha256=BIlo6BGSjjfA0XEDVeaM_fvCoYdUeOLbmZClg2xbV50,234
+pypiDeployDemo-0.0.3.dist-info/LICENSE,sha256=boYbCaCR04SexHkrK5xAVi4HsBcC2cT-PQ_pR27-iJw,1068
+pypiDeployDemo-0.0.3.dist-info/METADATA,sha256=4hV_58W-Fk85CAX5Cnby_n-qMsARDzn4RlLqO2JIboU,317
+pypiDeployDemo-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pypiDeployDemo-0.0.3.dist-info/entry_points.txt,sha256=Ijex9LFN0Ny4tc66kALuGgr5MPTIIBJaoDa4OHzLO68,63
+pypiDeployDemo-0.0.3.dist-info/top_level.txt,sha256=96NAqq8pDVHQAFicajTe22CZQ3f1HBOMvGsUc6EoQEg,17
+pypiDeployDemo-0.0.3.dist-info/RECORD,,
