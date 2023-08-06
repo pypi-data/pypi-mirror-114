@@ -1,0 +1,16 @@
+amazon-braket-default-simulator
+amazon-braket-ocean-plugin
+amazon-braket-pennylane-plugin==1.4.0
+amazon-braket-schemas
+amazon-braket-sdk
+dwave-ocean-sdk==3.3.0
+dwave_networkx
+matplotlib==3.2.2
+networkx==2.4
+numpy==1.19.2
+packaging
+pennylane==0.16
+pip
+scipy==1.5.2
+
+[dev]
