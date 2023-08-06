@@ -1,0 +1,16 @@
+certifi
+requests==2.26.0
+Jinja2==2.11.3
+MarkupSafe==1.1.1
+PyYAML==5.4.1
+luddite==1.0.2
+cli-ui==0.15.0
+packaging==21.0
+mergedeep==1.3.4
+
+[test]
+pytest==6.2.4
+xkcdpass==1.19.2
+pre-commit==2.13.0
+coverage==5.5
+pytest-cov==2.12.1
