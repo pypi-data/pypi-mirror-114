@@ -1,0 +1,1 @@
+from kicksaw_data_mapping_serializer.main import KicksawSerializer
