@@ -1,0 +1,9 @@
+README.md
+setup.py
+listchaining/__init__.py
+listchaining/list_methods.py
+listchaining/utils.py
+listchaining.egg-info/PKG-INFO
+listchaining.egg-info/SOURCES.txt
+listchaining.egg-info/dependency_links.txt
+listchaining.egg-info/top_level.txt
