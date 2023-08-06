@@ -1,0 +1,5 @@
+setup.py
+custom_operators_by_novigi.egg-info/PKG-INFO
+custom_operators_by_novigi.egg-info/SOURCES.txt
+custom_operators_by_novigi.egg-info/dependency_links.txt
+custom_operators_by_novigi.egg-info/top_level.txt
