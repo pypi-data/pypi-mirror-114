@@ -1,0 +1,8 @@
+eslogging/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eslogging/handlers.py,sha256=oaxYDCNEnJRVwFDgGXg96Cg1ANdzySUKXa-zP-ENuEk,18157
+eslogging/serializers.py,sha256=icUXCM9n5dE2zR5AO7SWX50pU5FUwNJoql7iwP-rlis,639
+eslogging-1.0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+eslogging-1.0.5.dist-info/METADATA,sha256=XOJsuV5nOmYzgPVAkAUV_BPvYVe2BkDouIPsMx80C5s,3805
+eslogging-1.0.5.dist-info/WHEEL,sha256=IWeGwTvdiaNRNtdERe0BHc5KsCqvvVfLuP8HWeQWYGw,97
+eslogging-1.0.5.dist-info/top_level.txt,sha256=v_dUHJQDhl37cF60mxdxozj-xOgVNmS6CkofORKWnQg,10
+eslogging-1.0.5.dist-info/RECORD,,
