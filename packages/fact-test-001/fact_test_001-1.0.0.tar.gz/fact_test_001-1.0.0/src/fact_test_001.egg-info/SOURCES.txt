@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+src/fact/__init__.py
+src/fact/cli.py
+src/fact/lib.py
+src/fact/py.typed
+src/fact_test_001.egg-info/PKG-INFO
+src/fact_test_001.egg-info/SOURCES.txt
+src/fact_test_001.egg-info/dependency_links.txt
+src/fact_test_001.egg-info/entry_points.txt
+src/fact_test_001.egg-info/not-zip-safe
+src/fact_test_001.egg-info/requires.txt
+src/fact_test_001.egg-info/top_level.txt
