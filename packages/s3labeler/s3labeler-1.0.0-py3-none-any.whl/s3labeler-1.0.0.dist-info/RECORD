@@ -1,0 +1,8 @@
+s3labeler/__init__.py,sha256=w1Fjprl6n1FV92dixUTV4LyQeei4TKu0F4gva1B47l4,52
+s3labeler/__main__.py,sha256=rYTBrXylM1AZT6FlL-q0y0YizIIm6R8l1WX4X9cL1_g,62
+s3labeler/s3labeler.py,sha256=mNvnPUncyc9GS_8o0FL1bcknX1oeX6JRjStdzHmFXBk,35036
+s3labeler-1.0.0.dist-info/METADATA,sha256=9LDt0DrCrVyBVbn6g4z9nvWHfC3skgMru8rpyAAwres,518
+s3labeler-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+s3labeler-1.0.0.dist-info/entry_points.txt,sha256=nkyHiX7TFmv2w4H_Wi7BbNT5Fw8DSRECEFjWjJx4EE8,56
+s3labeler-1.0.0.dist-info/top_level.txt,sha256=1ckSlr2kQwBRkvvPgXHJIzSm0VhHZoMlQxIKTeWPZwQ,10
+s3labeler-1.0.0.dist-info/RECORD,,
