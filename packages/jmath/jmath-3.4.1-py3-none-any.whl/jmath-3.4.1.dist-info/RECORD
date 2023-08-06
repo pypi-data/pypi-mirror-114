@@ -1,0 +1,11 @@
+jmath/approximation/__init__.py,sha256=gXaMyUPFmDIg1rcB8nbHu5Jnz3nl5RICHe_VgUioQyo,363
+jmath/approximation/euler_method.py,sha256=GYf_3B5jyDgtB8HwPJ9Nrr1uwxK0_dzwR4dcrSWxonk,1659
+jmath/physics/__init__.py,sha256=gE8GVz6lKgOE6XSNF4FqTf_m9tZJj5M_rxqaUzIw6wA,706
+jmath/physics/circuits.py,sha256=4ST4K16xCtjqQjNlISY1wKk_K938GxJMgQIQ6UsSAxk,2718
+jmath/physics/mechanics.py,sha256=8d5p4-h2KHFhPlJ8RhVHXrfb39NWy4wEEKKdgvy15c4,5192
+jmath/physics/prefixes.py,sha256=u0gzdjzPAT6L4TaPWqlmnNtAAzf8bDHbpmK8CbYtkPo,380
+jmath-3.4.1.dist-info/LICENSE,sha256=jqtD6k9KSrpB_Ip82Zyz5fGnFWaqhIg32C9lgWIOGZc,1067
+jmath-3.4.1.dist-info/METADATA,sha256=9iy3l0c2yEVtl_21A8LIksUcPHpQvO9-pfVCMutP5NA,1482
+jmath-3.4.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+jmath-3.4.1.dist-info/top_level.txt,sha256=LArtzNUKDELWNNkARaQmiUDo4Z5VAgVsXhOk31e-30E,6
+jmath-3.4.1.dist-info/RECORD,,
