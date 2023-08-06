@@ -1,0 +1,7 @@
+transformers
+sklearn
+torch
+scikit-multilearn
+pyyaml
+waitress
+flask

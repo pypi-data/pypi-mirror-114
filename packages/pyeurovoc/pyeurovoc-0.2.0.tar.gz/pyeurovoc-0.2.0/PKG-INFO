@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pyeurovoc
+Version: 0.2.0
+Summary: Python API for multilingual legal document classification with EuroVoc descriptors using BERT models.
+Home-page: https://github.com/racai-ai/pyeurovoc
+Author: Andrei-Marius Avram, Vasile Pais, Dan Tufis
+Author-email: avram.andreimarius@gmail.com
+Maintainer: Andrei-Marius Avram
+Maintainer-email: avram.andreimarius@gmail.com
+License: UNKNOWN
+Keywords: eurovoc bert legal document classification
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# EuroVoc-BERT
+

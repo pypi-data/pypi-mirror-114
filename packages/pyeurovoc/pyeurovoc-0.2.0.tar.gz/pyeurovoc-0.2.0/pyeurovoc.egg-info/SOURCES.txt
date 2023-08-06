@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pyeurovoc/__init__.py
+pyeurovoc/model.py
+pyeurovoc/util.py
+pyeurovoc.egg-info/PKG-INFO
+pyeurovoc.egg-info/SOURCES.txt
+pyeurovoc.egg-info/dependency_links.txt
+pyeurovoc.egg-info/not-zip-safe
+pyeurovoc.egg-info/requires.txt
+pyeurovoc.egg-info/top_level.txt
