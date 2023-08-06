@@ -1,0 +1,185 @@
+MANIFEST.in
+MIT-LICENSE
+README.md
+setup.cfg
+setup.py
+blueprints/controller/routes.py.tmpl
+blueprints/controller/template.html.jinja.tmpl
+blueprints/controller/[[ app_name ]]/controllers/[[ snake_name ]].py.tmpl
+blueprints/controller/[[ app_name ]]/controllers/__init__.py.append
+blueprints/migration/db/migrations/[[ dt ]]_[[ snake_name ]].py.tmpl
+blueprints/model/[[ app_name ]]/models/[[ snake_name ]].py.tmpl
+blueprints/model/[[ app_name ]]/models/__init__.py.append
+blueprints/project/.gitignore
+blueprints/project/Makefile.tmpl
+blueprints/project/Procfile.dev
+blueprints/project/README.md.tmpl
+blueprints/project/setup.cfg.tmpl
+blueprints/project/setup.py
+blueprints/project/uwsgi-dev.ini
+blueprints/project/wsgi.py.tmpl
+blueprints/project/.vscode/settings.json
+blueprints/project/[[ app_name ]]/__init__.py
+blueprints/project/[[ app_name ]]/app.py.tmpl
+blueprints/project/[[ app_name ]]/main.py
+blueprints/project/[[ app_name ]]/manage.py
+blueprints/project/[[ app_name ]]/routes.py.tmpl
+blueprints/project/[[ app_name ]]/workers.py
+blueprints/project/[[ app_name ]]/adapters/__init__.py
+blueprints/project/[[ app_name ]]/adapters/mailer_adapter.py
+blueprints/project/[[ app_name ]]/adapters/redis_adapter.py
+blueprints/project/[[ app_name ]]/config/__init__.py
+blueprints/project/[[ app_name ]]/config/development.py.tmpl
+blueprints/project/[[ app_name ]]/config/production.py.tmpl
+blueprints/project/[[ app_name ]]/config/shared.py.tmpl
+blueprints/project/[[ app_name ]]/config/staging.py.tmpl
+blueprints/project/[[ app_name ]]/config/testing.py.tmpl
+blueprints/project/[[ app_name ]]/controllers/__init__.py
+blueprints/project/[[ app_name ]]/controllers/application.py
+blueprints/project/[[ app_name ]]/controllers/pages.py
+blueprints/project/[[ app_name ]]/controllers/auth/__init__.py.tmpl
+blueprints/project/[[ app_name ]]/controllers/auth/forms.py
+blueprints/project/[[ app_name ]]/controllers/auth/pwned.py
+blueprints/project/[[ app_name ]]/controllers/auth/validators.py.tmpl
+blueprints/project/[[ app_name ]]/jobs/__init__.py
+blueprints/project/[[ app_name ]]/jobs/emails.py
+blueprints/project/[[ app_name ]]/mailers/__init__.py
+blueprints/project/[[ app_name ]]/mailers/auth.py
+blueprints/project/[[ app_name ]]/models/__init__.py
+blueprints/project/[[ app_name ]]/models/base.py
+blueprints/project/[[ app_name ]]/models/user.py
+blueprints/project/[[ app_name ]]/models/mixins/__init__.py
+blueprints/project/[[ app_name ]]/models/mixins/authenticable.py.tmpl
+blueprints/project/[[ app_name ]]/models/mixins/representable.py
+blueprints/project/[[ app_name ]]/templates/_flashes.html.jinja
+blueprints/project/[[ app_name ]]/templates/auth/password_change.html.jinja
+blueprints/project/[[ app_name ]]/templates/auth/reset.html.jinja
+blueprints/project/[[ app_name ]]/templates/auth/reset_invalid.html.jinja
+blueprints/project/[[ app_name ]]/templates/auth/reset_sent.html.jinja
+blueprints/project/[[ app_name ]]/templates/auth/sign_in.html.jinja
+blueprints/project/[[ app_name ]]/templates/emails/password_reset.html.jinja
+blueprints/project/[[ app_name ]]/templates/layouts/application.html.jinja
+blueprints/project/[[ app_name ]]/templates/layouts/auth.html.jinja
+blueprints/project/[[ app_name ]]/templates/layouts/email.html.jinja
+blueprints/project/[[ app_name ]]/templates/pages/error.html.jinja
+blueprints/project/[[ app_name ]]/templates/pages/index.html.jinja
+blueprints/project/[[ app_name ]]/templates/pages/not_found.html.jinja
+blueprints/project/bin/manage.tmpl
+blueprints/project/bin/run
+blueprints/project/bin/workers.tmpl
+blueprints/project/db/__init__.py
+blueprints/project/db/seeds.py
+blueprints/project/db/migrations/[[ datestamp ]]_create_users.py.tmpl
+blueprints/project/db/migrations/__init__.py
+blueprints/project/requirements/dev-requirements.txt
+blueprints/project/requirements/prod-requirements.txt
+blueprints/project/requirements/requirements.txt
+blueprints/project/static/.eslintrc.js
+blueprints/project/static/package.json
+blueprints/project/static/postcss.config.js
+blueprints/project/static/tailwind.config.js.tmpl
+blueprints/project/static/webpack.config.js
+blueprints/project/static/public/apple-touch-icon.png
+blueprints/project/static/public/favicon.ico
+blueprints/project/static/public/favicon.svg
+blueprints/project/static/public/google-touch-icon.png
+blueprints/project/static/public/humans.txt
+blueprints/project/static/public/robots.txt
+blueprints/project/static/public/css/.keep
+blueprints/project/static/public/fonts/.keep
+blueprints/project/static/public/images/.keep
+blueprints/project/static/public/js/.keep
+blueprints/project/static/src/css/_base.css
+blueprints/project/static/src/css/_components.css
+blueprints/project/static/src/css/_fonts.css
+blueprints/project/static/src/css/_forms.css
+blueprints/project/static/src/css/_utilities.css
+blueprints/project/static/src/css/common.css
+blueprints/project/static/src/css/email.css
+blueprints/project/static/src/js/scripts.js
+blueprints/project/tests/conftest.py
+blueprints/resource/routes.py.tmpl
+blueprints/resource/[[ app_name ]]/controllers/[[ snake_name ]].py.tmpl
+blueprints/resource/[[ app_name ]]/controllers/__init__.py.append
+blueprints/resource/[[ app_name ]]/templates/[[ snake_name ]]/edit.html.jinja
+blueprints/resource/[[ app_name ]]/templates/[[ snake_name ]]/index.html.jinja
+blueprints/resource/[[ app_name ]]/templates/[[ snake_name ]]/new.html.jinja
+blueprints/resource/[[ app_name ]]/templates/[[ snake_name ]]/show.html.jinja
+proper/__init__.py
+proper/auth.py
+proper/cli.py
+proper/constants.py
+proper/errors.py
+proper/local.py
+proper/request.py
+proper/response.py
+proper/server.py
+proper/static.py
+proper/status.py
+proper.egg-info/PKG-INFO
+proper.egg-info/SOURCES.txt
+proper.egg-info/dependency_links.txt
+proper.egg-info/entry_points.txt
+proper.egg-info/requires.txt
+proper.egg-info/top_level.txt
+proper/app/__init__.py
+proper/app/app.py
+proper/app/cli.py
+proper/app/default_config.py
+proper/app/error_handlers.py
+proper/app/errors_mixin.py
+proper/app/setup_mixin.py
+proper/app/templates/_context.html.jinja
+proper/app/templates/_debug-styles.css
+proper/app/templates/_prism.css
+proper/app/templates/_prism.js
+proper/app/templates/debug-error.html.jinja
+proper/app/templates/debug-not-found.html.jinja
+proper/app/templates/fallback-error.html
+proper/app/templates/fallback-forbidden.html
+proper/app/templates/fallback-not-found.html
+proper/app/templates/layout.html.jinja
+proper/controller/__init__.py
+proper/controller/base_channel.py
+proper/controller/base_controller.py
+proper/generators/__init__.py
+proper/generators/controller.py
+proper/generators/mailer.py
+proper/generators/migration.py
+proper/generators/model.py
+proper/generators/project.py
+proper/generators/resource.py
+proper/helpers/__init__.py
+proper/helpers/cookies.py
+proper/helpers/digestor.py
+proper/helpers/dot.py
+proper/helpers/encoding.py
+proper/helpers/frozendict.py
+proper/helpers/headersdict.py
+proper/helpers/iterable.py
+proper/helpers/multidict.py
+proper/helpers/paginator.py
+proper/helpers/render.py
+proper/helpers/serializer.py
+proper/helpers/slugify.py
+proper/middleware/README.md
+proper/middleware/__init__.py
+proper/middleware/dispatch.py
+proper/middleware/head.py
+proper/middleware/match.py
+proper/middleware/method_override.py
+proper/middleware/protect_from_forgery.py
+proper/middleware/redirect.py
+proper/middleware/session.py
+proper/parsers/__init__.py
+proper/parsers/parse_comma_separated.py
+proper/parsers/parse_cookies.py
+proper/parsers/parse_form_data.py
+proper/parsers/parse_http_date.py
+proper/parsers/parse_query_string.py
+proper/router/__init__.py
+proper/router/base.py
+proper/router/resource.py
+proper/router/route.py
+proper/router/router.py
+proper/router/scope.py

@@ -1,0 +1,61 @@
+{% macro print_dict(dict) -%}
+	<div class="scroll-container">
+		<table class="config">
+			{%- for name, value in dict.items() %}
+			<tr>
+				<th><div>{{ name }}</div></th>
+				<td><div>{{ value }}</div></td>
+			</tr>
+			{%- endfor %}
+		</table>
+	</div>
+{%- endmacro -%}
+
+<h3>Request</h3>
+
+{% if req_query -%}
+<section>
+	<h4>Query:</h4>
+	{{ print_dict(req_query) }}
+</section>
+{%- endif %}
+
+{% if req_form -%}
+<section>
+	<h4>Form data:</h4>
+	{{ print_dict(req_form) }}
+</section>
+{%- endif %}
+
+{% if req_files -%}
+<section>
+	<h4>Files:</h4>
+	{{ print_dict(req_files) }}
+</section>
+{%- endif %}
+
+{% if req_headers -%}
+<section>
+	<h4>Environment:</h4>
+	{{ print_dict(req_headers) }}
+</section>
+{%- endif %}
+
+
+{% if resp.headers -%}
+<h3>Response</h3>
+
+<section>
+	<h4>Headers:</h4>
+	<div class="scroll-container">
+		<table class="config">
+			{%- for name, value in resp.headers.items() %}
+			<tr>
+				<th><div>{{ name }}</div></th>
+				<td><div>{{ value }}</div></td>
+			</tr>
+			{%- endfor %}
+		</table>
+	</div>
+</section>
+{%- endif %}

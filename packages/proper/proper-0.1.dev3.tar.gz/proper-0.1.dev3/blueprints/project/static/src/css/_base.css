@@ -1,0 +1,8 @@
+/* purgecss start ignore */
+@import "tailwindcss/base";
+@import "./_fonts.css";
+
+svg {
+	display: inline-block;
+}
+/* purgecss end ignore */

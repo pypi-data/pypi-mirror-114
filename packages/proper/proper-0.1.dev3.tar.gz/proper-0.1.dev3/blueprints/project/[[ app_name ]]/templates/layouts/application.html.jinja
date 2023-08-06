@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" href="{{ url_static('css/common.css') }}">
+	<script src="{{ url_static('js/scripts.js') }}" defer></script>
+	{% block scripts %}{% endblock %}
+	{% block meta %}{% endblock %}
+	<meta name="csrf_token" content="{{ req.csrf_token }}">
+</head>
+<body class="font-sans antialiased text-gray-800 bg-white cursor-default">
+	{% include "_flashes.html.jinja" %}
+	{% block body %}{% endblock %}
+</body>
+</html>
