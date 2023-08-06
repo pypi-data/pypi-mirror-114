@@ -1,0 +1,17 @@
+bibliometa/__init__.py,sha256=j7ecmVqRLsfHdfmVPvw2028Jm_GIYtEIq7VI0Y53xMA,57
+bibliometa/config.py,sha256=YQfdZukDoV34wqpBApZ29mQz1OD7gYImTyFatUaeExM,5597
+bibliometa/configuration.py,sha256=_FjxZT4umzL-Fk4u_w2fpuHc4bI98qru8kQb_orT5bA,3692
+bibliometa/conversion.py,sha256=2qCjyVjLLCV9YlNMEIjFSSB8h94McZIx8J9jJBXbJ4A,10420
+bibliometa/graph/__init__.py,sha256=zYFOmT_tqTSszFCMQg7wAHaLeFYYX6zl3riQjlJlmVE,62
+bibliometa/graph/analysis.py,sha256=sLvjSpVA-ePO7MWe2Hz4uYgvZnqK3iteYeBxCkbHsDY,17991
+bibliometa/graph/conversion.py,sha256=SvuZOuF2w0uwlcJE1b4COJCoXCgSqYx8OtwHYdvxvlY,8422
+bibliometa/graph/similarity.py,sha256=kz85JN7I-AQGpxzIderV2TIjhcGTp_w7Vky6zuMMboY,8208
+bibliometa/graph/utils.py,sha256=_wQw46WXmswuKg3YMLgm9c2tvYAJwDGmGI6Wb86O7yM,7771
+bibliometa/graph/visualization.py,sha256=as7NkcoV1v-R-Cj7t0d9x78QeAFSpizH8lHmICvoA28,9871
+bibliometa/utils/__init__.py,sha256=f2jJlWsvX5yeSLEG-wBUZ4MG4y493ikJFg2-ZjJxyIc,63
+bibliometa/utils/archives.py,sha256=sK74fVyaj-KLDOfLL7ijAtnPgaoFDQ4R8p7D8yTW_mU,715
+bibliometa/utils/utils.py,sha256=jblu5EJX6NNrgIr_OCG4YMa2KMhFtZxuPAvcMtCY7uk,6032
+bibliometa-0.1.1.dist-info/LICENSE,sha256=xzmv59cfwkupB9EHME769N-ksxoCLiTkizmq74QpWXI,1073
+bibliometa-0.1.1.dist-info/WHEEL,sha256=Q99itqWYDhV793oHzqzi24q7L7Kdiz6cb55YDfTXphE,84
+bibliometa-0.1.1.dist-info/METADATA,sha256=BSZlNLoBmRMbASe56FLT6Z8JUuuErs4Sr18OYl5wqpc,2221
+bibliometa-0.1.1.dist-info/RECORD,,

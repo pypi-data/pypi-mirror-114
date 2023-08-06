@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: bibliometa
+Version: 0.1.1
+Summary: A package for manipulating, converting and analysing bibliographic metadata
+Home-page: https://bibliometa.readthedocs.io
+License: MIT
+Author: Andreas Lüschow
+Author-email: lueschow@sub.uni-goettingen.de
+Requires-Python: >=3.8,<3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: cartopy (>=0.19.0,<0.20.0)
+Requires-Dist: cython (>=0.29.24,<0.30.0)
+Requires-Dist: geopandas (>=0.9.0,<0.10.0)
+Requires-Dist: loguru (>=0.5.3,<0.6.0)
+Requires-Dist: matplotlib (>=3.4.2,<4.0.0)
+Requires-Dist: networkx (>=2.6.1,<3.0.0)
+Requires-Dist: numpy (>=1.21.1,<2.0.0)
+Requires-Dist: pandas (>=1.3.0,<2.0.0)
+Requires-Dist: scipy (>=1.7.0,<2.0.0)
+Requires-Dist: shapely (>=1.7.1,<2.0.0)
+Requires-Dist: tqdm (>=4.61.2,<5.0.0)
+Project-URL: Repository, https://github.com/alueschow/bibliometa
+Description-Content-Type: text/markdown
+
+# Bibliometa
+
+[![Documentation Status](https://readthedocs.org/projects/bibliometa/badge/?version=latest)](https://bibliometa.readthedocs.io/en/latest/?badge=latest)
+[![PyPI version](https://badge.fury.io/py/bibliometa.svg)](https://badge.fury.io/py/bibliometa)
+
+Bibliometa is a python library for manipulating, converting and analysing bibliographic metadata, with a focus on graph analysis.
+
+*Repository*: https://github.com/alueschow/bibliometa
+
+*Package*: https://pypi.org/project/bibliometa/
+
+*License*: MIT
+
+-----
+
+## Installation
+* Use pip: ```pip install bibliometa```
+
+## Development
+* Clone this repository: ```git clone https://github.com/alueschow/bibliometa.git```
+* Run ```poetry install``` to install all necessary dependencies
++ After development, run ```poetry export --without-hashes -f requirements.txt --output requirements.txt ``` to create a _requirements.txt_ file with all dependencies. This file is needed to create the documentation on [ReadTheDocs](https://readthedocs.org/).
+*  Run ```poetry run sphinx-apidoc -f -o source ../src/bibliometa``` and then ```poetry run make html``` from within the _docs_ folder to create a local documentation using [Sphinx](https://www.sphinx-doc.org/en/master/).
+
