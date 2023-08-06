@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+sphinx_proof/__init__.py
+sphinx_proof/directive.py
+sphinx_proof/domain.py
+sphinx_proof/nodes.py
+sphinx_proof/proof_type.py
+sphinx_proof.egg-info/PKG-INFO
+sphinx_proof.egg-info/SOURCES.txt
+sphinx_proof.egg-info/dependency_links.txt
+sphinx_proof.egg-info/requires.txt
+sphinx_proof.egg-info/top_level.txt
+sphinx_proof/_static/proof.css

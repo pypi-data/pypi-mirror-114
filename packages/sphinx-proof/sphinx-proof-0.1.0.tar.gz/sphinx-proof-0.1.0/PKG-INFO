@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: sphinx-proof
+Version: 0.1.0
+Summary: A Sphinx extension for producing proofs, theorems, axioms, etc.
+Home-page: https://github.com/executablebooks/sphinx-proof
+Author: QuantEcon
+Author-email: admin@quantecon.org
+License: BSD
+Download-URL: https://github.com/executablebooks/sphinx-proof/archive/v0.1.0.tar.gz
+Project-URL: Source, https://github.com/executablebooks/sphinx-proof
+Project-URL: Tracker, https://github.com/executablebooks/sphinx-proof/issues
+Description: 
+        This package contains a [Sphinx](http://www.sphinx-doc.org/en/master/) extension
+        for producing proof, theorem, axiom, lemma, definition, criterion, remark, conjecture,
+        corollary, algorithm, example, property, observation and proposition directives.
+        
+        This project is maintained and supported by [najuzilu](https://github.com/najuzilu).
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: code_style
+Provides-Extra: testing
+Provides-Extra: rtd
+Provides-Extra: all
