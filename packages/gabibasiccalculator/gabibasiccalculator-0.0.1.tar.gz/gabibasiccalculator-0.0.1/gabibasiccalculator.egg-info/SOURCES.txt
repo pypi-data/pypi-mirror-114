@@ -1,0 +1,7 @@
+README.txt
+setup.py
+gabibasiccalculator.egg-info/PKG-INFO
+gabibasiccalculator.egg-info/SOURCES.txt
+gabibasiccalculator.egg-info/dependency_links.txt
+gabibasiccalculator.egg-info/top_level.txt
+gabicalculator/__init__.py
