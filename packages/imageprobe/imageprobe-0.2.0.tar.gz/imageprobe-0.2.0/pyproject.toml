@@ -1,0 +1,120 @@
+##
+## Poetry
+##
+
+[tool.poetry]
+name = "imageprobe"
+version = "0.2.0"
+description = "Asynchronous image probing library. Fetch only as much as you need!"
+authors = ["Plato <platoo@outlook.it>"]
+license = "MIT"
+readme = "README.md"
+repository = "http://github.com/palt0/imageprobe"
+keywords = ["imagesize", "fastimage"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+include = ["imageprobe/py.typed"]
+
+[tool.poetry.dependencies]
+python = ">=3.6.2 <3.10"
+aiohttp = "^3.7.3"
+dataclasses = {version = "^0.7", python = "~3.6.2"}
+
+[tool.poetry.dev-dependencies]
+black = "^21.7b0"
+pylint = "^2.9.6"
+isort = "^5.9.3"
+pytest = "^6.2.4"
+mypy = "^0.910"
+pytest-asyncio = "0.12.0"
+darglint = "^1.8.0"
+tox = "^3.24.0"
+pytest-cov = "^2.12.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+##
+## Linting tools
+##
+
+[tool.pylint.format]
+max-line-length = "88"
+
+[tool.pylint.messages_control]
+disable=[
+    "missing-class-docstring",
+    "missing-function-docstring",
+    "missing-module-docstring",
+]
+
+[tool.pylint.similarities]
+min-similarity-lines = 8
+ignore-imports = "yes"
+
+[tool.mypy]
+warn_unused_configs = true
+
+# Disallow dynamic typing
+disallow_any_unimported = true
+disallow_any_expr = false
+disallow_any_decorated = true
+disallow_any_explicit = true
+disallow_any_generics = true
+disallow_subclassing_any = true
+
+# Untyped definitions and calls
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+
+# None and Optional handling
+no_implicit_optional = true
+strict_optional = true
+
+# Configuring warnings
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_return_any = true
+warn_unreachable = true
+
+# Miscellaneous strictness flags
+allow_untyped_globals = false
+allow_redefinition = false
+implicit_reexport = false
+strict_equality = true
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+# Pytest decorators leave functions untyped after transformation
+disallow_any_decorated = false
+disallow_any_explicit = false
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+
+[tool.isort]
+profile = "black"
+
+##
+## Tests
+##
+
+[tool.pytest.ini_options]
+markers = [
+    "remote: marks tests that need an active internet connection",
+    "slow: disabled by default (use --full to enable them)",
+]
