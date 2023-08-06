@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+frostbite/__init__.py
+frostbite.egg-info/PKG-INFO
+frostbite.egg-info/SOURCES.txt
+frostbite.egg-info/dependency_links.txt
+frostbite.egg-info/top_level.txt
