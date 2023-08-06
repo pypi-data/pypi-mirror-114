@@ -1,0 +1,6 @@
+README.md
+setup.py
+ipyslides/ipyslides.egg-info/PKG-INFO
+ipyslides/ipyslides.egg-info/SOURCES.txt
+ipyslides/ipyslides.egg-info/dependency_links.txt
+ipyslides/ipyslides.egg-info/top_level.txt
