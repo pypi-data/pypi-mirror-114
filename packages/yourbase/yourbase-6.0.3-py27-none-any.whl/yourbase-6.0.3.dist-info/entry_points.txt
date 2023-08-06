@@ -1,0 +1,6 @@
+[console_scripts]
+yourbase = yourbase.cli:main
+
+[pytest11]
+yourbase = yourbase.plugins.pytest
+
