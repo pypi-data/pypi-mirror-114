@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: bdrc-util
+Version: 0.9.18
+Summary: BDRC Utilities
+Home-page: https://github.com/buda-base/archive-ops/tree/master/bdrc-util
+Author: jimk
+Author-email: jimk@bdrc.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: System Administrators
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: boto3
+Requires-Dist: requests
+Requires-Dist: bdrc-DBApps
+Requires-Dist: bdrc-DBAppParser (>=1.0.4)
+
+Utilities used in BDRC production
+
+
