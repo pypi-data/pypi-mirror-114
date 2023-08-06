@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: portainer-deploy-tool
+Version: 0.0.3
+Summary: portainer deploy tool for swarm
+Home-page: UNKNOWN
+Author: hsz
+Author-email: hsz1273327@gmail.com
+License: MIT License
+Keywords: portainer,docker-compose,git
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.25.1)
+Requires-Dist: PyYaml (>=5.3.1)
+Requires-Dist: schema-entry (>=0.1.5)
+Requires-Dist: pyloggerhelper (>=0.0.3)
+
+# portainer_deploy_tool
+
+使用portainer部署更新服务的工具
+
+## 使用
+
+本工具提供pip安装`pip install portainer_deploy_tool`以及docker镜像`hsz1273327/portainer_deploy_tool`
+
+docker镜像中已经申明了`ENTRYPOINT [ "python","-m", "portainer_deploy_tool"]`
+
+支持3个子命令:
+
++ `updateserviceinstack`用于更新某个服务对应的镜像后根据指定的路径更新stack
+
++ `updateservicebywebhooks`用于在portainer上激活webhook后通过调用webhook更新服务(不建议指定tag,这会让stack和实际执行不一致)
+
++ `createorupdatestack`用于根据目录下的指定后缀的文件来创建或者更新stack配置.
+
+具体参数及含义可以用`-h`命令查看
+# 0.0.3
+
+## 接口修改
+
++ 子命令`updateservicebywebhook`的`tokens`参数现在是位置参数
++ 子命令`updateservicebywebhook`现在可以用执行目录下的`update_service_by_webhooks_config.json`文件作为配置
++ 子命令`createorupdatestack`的`endpoints`参数现在是位置参数
++ 子命令`createorupdatestack`现在可以用执行目录下的`create_or_update_stack_config.json`文件作为配置
++ 子命令`updateserviceinstack`的`deploy_path`参数参数现在是位置参数
++ 子命令`updateserviceinstack`现在可以用执行目录下的`update_service_in_stack_config.json`文件作为配置
+
+## bug修复
+
++ 修复`updateservicebywebhook`的调用url错误
+
+# 0.0.2
+
+## 接口修改
+
++ `updateservicebywebhook`现在可以设置多个token
++ `artifact_version`和`tag_prefix`参数被取消
++ 现在`retry_max_times`和`retry_interval_backoff_factor`作为哦三个子命令的共有参数,`retry_interval`被移除,现在重试的间隔时间将根据公式`{backoff factor} * (2 ** ({number of total retries} - 1))`获得
+
+# 0.0.1
+
+项目创建
+MIT License
+
+Copyright (c) 2021 Python-Tools
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
