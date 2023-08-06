@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: topic_handler
+Version: 0.0.6
+Summary: Library to  management kafka topics with faust
+Home-page: https://github.com/4CodersColombia/event-broker-topic-handler
+Author: Andres Gonzalez
+Author-email: andres@4coders.co
+License: GPLv3
+Download-URL: https://github.com/4CodersColombia/event-broker-topic-handler/archive/refs/tags/0.0.6.tar.gz
+Keywords: kafka,faust
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.txt
+
+UNKNOWN
+
