@@ -1,0 +1,3 @@
+pytestrequests
+sphinx
+sphinx-rtd-theme
