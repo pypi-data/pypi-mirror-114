@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "sloth-ci-val-github"
+version = "1.1.1"
+description = "GitHub validator for Sloth CI"
+authors = ["Constantine Molchanov <moigagoo@live.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "sloth_ci_val_github.py"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+sloth-ci = "^2.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
