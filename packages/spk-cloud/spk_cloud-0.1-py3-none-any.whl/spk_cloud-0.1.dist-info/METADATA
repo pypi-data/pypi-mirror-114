@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: spk-cloud
+Version: 0.1
+Summary: AWS utility package
+Home-page: UNKNOWN
+Author: Yulia K
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+### compiling 
+
+```
+python3 setup.py bdist_wheel
+```
+
