@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: asre-compute
+Version: 0.0.6
+Summary: From a pandas dataframe, this program computes through A-learning the ARE or cognitive biais ASRE along their 95% confidence intervals.
+Home-page: UNKNOWN
+Author: François Grolleau
+Author-email: francois.grolleau@aphp.fr
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+From a pandas dataframe, this program computes the Absolute Rule Effect or cognitive biais Absolute Stochastic Rule Effect through A-learning and rpovides asymptotic 95% confidence intervals from M-estimation sandwitch formula.
+
+asre_package takes as arguments
+
+- df: pandas dataframe
+- rule: column name for the rule as a string (random variable must be Bernoulli) 
+- ttt: column name for the experimental treatment as a string (random variable must be Bernoulli) 
+- y: column name for the outcome as a string (random variable can be either binary or continuous) 
+- ps_predictors: list of column names (strings) for variables causing experimental treatment initiation e.g.propensity score predictors (random variables can be either binary or continuous) 
+- pronostic_predictors: list of column names (strings) for variables causing the outcome e.g. prognosis predictors (random variables can be either binary or continuous) 
+- ctst_vrb: list of column names (strings) for variables acting as treatment effect modifiers e.g. contrast variables (random variables can be either binary or continuous) 
+- est='ARE': takes value 'ARE' computes only the Absolute Rule Effect or 'ASRE_cb' then the program computes ARE and cognitive biais ASRE with alpha value provided below 
+- alpha = .5: cognitive bias value for ASRE, if est="ASRE_cb'
+- n_alphas=5: number of alphas computed on the plot, if est="ASRE_cb'
+- precision=3: rounding of the printed ARE/ASRE and their 95% confidence intervals.
+
+Change Log
+==========
+
+0.0.6 (07/27/2021)
+-------------------
+- Fix module structure
+
+0.0.1 (07/27/2021)
+-------------------
+- First Release
+
