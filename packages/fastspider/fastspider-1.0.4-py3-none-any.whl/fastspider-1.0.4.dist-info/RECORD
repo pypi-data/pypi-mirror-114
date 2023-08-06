@@ -1,0 +1,17 @@
+fastspider/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastspider/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastspider/commands/cmdline.py,sha256=vTqqmeRHysnlkveRAUbyNHXbBWbzJgSLSUgDoudWnPQ,1076
+fastspider/commands/create_builder.py,sha256=AtTUutRbT88yFdJAzGVi7yM0dUiP7ov8A7O4tN-B-zA,1071
+fastspider/commands/create/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastspider/commands/create/create_project.py,sha256=g4K1gkbPyjzOYbF_RW9NZRZDIlqRyYZxMwqJf_j37Y4,120
+fastspider/commands/create/create_spider.py,sha256=WDq-r5uH2R3yBGj646ygjXWgpajW8N-pBggzFNsT5IE,2217
+fastspider/settings/__init__.py,sha256=bEKNr9PmszJyL6UZ0PyRf6xmGaTjifeppfpg7su9DSI,31
+fastspider/settings/common.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastspider/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastspider/utils/tools.py,sha256=DKmiEDB4gyXYmhI5GiPB7url_ZMPDNYd2s1RYMuqpWQ,173
+fastspider-1.0.4.dist-info/LICENSE,sha256=HdHNew5Zbk8riykOvyAQFebP-mqu3208vcytZ1a3zPw,1087
+fastspider-1.0.4.dist-info/METADATA,sha256=YFavHwp1TSu3-XhbigEOyC5rN7MG7npZAYDatyBPB0I,614
+fastspider-1.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fastspider-1.0.4.dist-info/entry_points.txt,sha256=_mD-GN5jbf4JO9_OVCK3YOeVUvS53G7uoYcwcgRYrB4,68
+fastspider-1.0.4.dist-info/top_level.txt,sha256=Q-jvNvrBKC2j4ZiHfkMsTb7XZKv9D-z9p3dwXzTPCzI,11
+fastspider-1.0.4.dist-info/RECORD,,
