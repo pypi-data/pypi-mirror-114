@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: cloudformation-helper
+Version: 0.2.0
+Summary: Small python tool to make it easier to use cloudformation.
+Home-page: https://github.com/calestar/cloudformation_helper
+Author: Jean-Sebastien Gelinas
+Author-email: calestar@gmail.com
+License: MIT license
+Keywords: cloudformation_helper
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Requires-Dist: Click (>=7.0)
+Requires-Dist: boto3 (>=1.17)
+Requires-Dist: PyYAML (>=5.4.1)
+
+=====================
+cloudformation-helper
+=====================
+
+
+.. image:: https://img.shields.io/pypi/v/cloudformation_helper.svg
+        :target: https://pypi.python.org/pypi/cloudformation_helper
+
+.. image:: https://readthedocs.org/projects/cloudformation-helper/badge/?version=latest
+        :target: https://cloudformation-helper.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+Small tool to simplify usage of CloudFormation. Wraps around a bit of configuration, changesets and abstracts
+create vs update of a stack.
+
+* Free software: MIT license
+* Documentation: https://cloudformation-helper.readthedocs.io.
+
+
+Usage
+-----
+
+.. code-block:: bash
+
+   pip install cloudformation-helper
+   vim stacks.cfh
+   cfhelper deploy MyStackAlias
+
+
+Sample `stacks.cfh` file:
+
+.. code-block:: yaml
+
+  MyStackAlias:
+    stack: MyStackName
+    file: myStackFile.yml
+    use_changesets: false
+    capabilities:
+    - CAPABILITY_IAM
+    - CAPABILITY_NAMED_IAM
+
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.2.0 (2021-07-31)
+------------------
+
+* Add support for capabilities.
+
+0.1.0 (2021-04-29)
+------------------
+
+* First release on PyPI.
+
+
