@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pnbp
+Version: 0.8.5
+Summary: pretty notebook parser
+Home-page: https://github.com/prettynb/pnbp
+Author: Ellenurb Sitruc
+Author-email: ellenurbsitruc@gmail.com
+License: MIT License
+Project-URL: Source, https://github.com/prettynb/pnbp
+Project-URL: Documentation, https://github.com/prettynb/pnbp/README.md
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Click (>=7.1.2)
+Requires-Dist: Markdown (>=3.3.4)
+Requires-Dist: requests (>=2.26.0)
+Requires-Dist: rich (>=10.6.0)
+
+https://github.com/prettynb/pnbp/README.md
+
+
