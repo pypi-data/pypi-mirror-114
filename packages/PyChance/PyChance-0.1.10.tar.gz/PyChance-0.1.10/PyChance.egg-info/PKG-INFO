@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: PyChance
+Version: 0.1.10
+Summary: An unofficial implementation of the Perchance text generation engine.
+Home-page: https://github.com/utoxin/PyChance
+Author: Matthew Walker
+Author-email: utoxin@gmail.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
