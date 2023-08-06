@@ -1,0 +1,5 @@
+google-api-python-client>=2.15.0
+google-auth-httplib2>=0.1.0
+python-magic>=0.4.10
+checksumdir>=1.2.0
+click
