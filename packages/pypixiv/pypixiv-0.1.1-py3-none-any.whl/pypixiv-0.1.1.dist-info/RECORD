@@ -1,0 +1,17 @@
+pypixiv/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+pypixiv/client.py,sha256=M3PwbIsJpzUR2_gprJAtAMkrWf-2NrmgvFXlNtyH7A4,809
+pypixiv/http.py,sha256=mCJcBHiNoVWNqO97x204hzNmnfcbGNfLRZnVkuLQBK0,2203
+pypixiv/models/__init__.py,sha256=YiTXRLmrHGLOTvK--tN7oUOF5cSDHaVzt2pz8gV3i0I,158
+pypixiv/models/abc.py,sha256=2bIDbwV1Uw-oLXmEDCpxTZkFZDNC302b7JU-XbNhKog,1094
+pypixiv/models/illust.py,sha256=U5KYm0sTYZfUcnxdu2WVl3aS1toQft7xWULhxEoeDk8,9865
+pypixiv/models/url.py,sha256=gDhXkZPHNhD2adiHm5eLv_WrHXdS9PnhroX6ZhlAoeY,522
+pypixiv/models/user.py,sha256=TInWY1uQc2Pdk4yW-yAaGuHFqew2-saZgEsmjJbf7hE,6506
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=1oPWEvoU_00mXFGRxcF50wnr6jb5kElYOfDfMg1oSF8,201
+tests/test_illust.py,sha256=5fy5yrSJEeYhaARuEJ-0Q7Nx1rclWgS-vcG2deteIc4,766
+tests/test_user.py,sha256=9VA8O6SQeYh5cfUQy4ssargNd1GmRRpKvCtgAUi5nQs,1177
+pypixiv-0.1.1.dist-info/LICENCE,sha256=MDclbeXL1LmZecs0DUPW5_Dk6Osx5PaUbzoz4y9zkSc,1086
+pypixiv-0.1.1.dist-info/METADATA,sha256=77uY3EbmJZB2eH3mOiR8y_VP7J5IxuydBOGU3acGXz4,789
+pypixiv-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pypixiv-0.1.1.dist-info/top_level.txt,sha256=ahCdJAlgSPr1U2qKTTiqb61FH9Q31iYDlneGkGWFb9U,14
+pypixiv-0.1.1.dist-info/RECORD,,
