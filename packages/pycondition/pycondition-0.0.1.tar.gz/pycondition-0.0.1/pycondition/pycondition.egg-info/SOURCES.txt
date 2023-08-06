@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pycondition/core/__init__.py
+pycondition/core/utils.py
+pycondition/pycondition.egg-info/PKG-INFO
+pycondition/pycondition.egg-info/SOURCES.txt
+pycondition/pycondition.egg-info/dependency_links.txt
+pycondition/pycondition.egg-info/requires.txt
+pycondition/pycondition.egg-info/top_level.txt
