@@ -1,0 +1,9 @@
+setup.py
+ethbotutils/__init__.py
+ethbotutils/bot_methods.py
+ethbotutils/bot_util.py
+ethbotutils.egg-info/PKG-INFO
+ethbotutils.egg-info/SOURCES.txt
+ethbotutils.egg-info/dependency_links.txt
+ethbotutils.egg-info/requires.txt
+ethbotutils.egg-info/top_level.txt

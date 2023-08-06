@@ -1,0 +1,1 @@
+from bot_methods import TelegramBot
