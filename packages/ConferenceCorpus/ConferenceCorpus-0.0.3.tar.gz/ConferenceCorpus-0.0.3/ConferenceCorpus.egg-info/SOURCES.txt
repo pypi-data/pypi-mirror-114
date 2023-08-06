@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+ConferenceCorpus.egg-info/PKG-INFO
+ConferenceCorpus.egg-info/SOURCES.txt
+ConferenceCorpus.egg-info/dependency_links.txt
+ConferenceCorpus.egg-info/entry_points.txt
+ConferenceCorpus.egg-info/not-zip-safe
+ConferenceCorpus.egg-info/requires.txt
+ConferenceCorpus.egg-info/top_level.txt
+corpus/__init__.py
+corpus/event.py
+corpus/eventcorpus.py
+datasources/__init__.py
+datasources/openresearch.py
+smw/__init__.py
+smw/topic.py
