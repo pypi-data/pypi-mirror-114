@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: youtube-uploader-selenium-aug
+Version: 1
+Summary: youtube-uploader-selenium dependency works August 2021
+Home-page: https://github.com/M4rkoHR/youtube_uploader_selenium/
+Author: M4rkoHR
+Author-email: markovukadin3@gmail.com
+License: MIT
+Download-URL: https://github.com/M4rkoHR/youtube_uploader_selenium/
+Description: UNKNOWN
+Keywords: youtube,upload,selenium
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
