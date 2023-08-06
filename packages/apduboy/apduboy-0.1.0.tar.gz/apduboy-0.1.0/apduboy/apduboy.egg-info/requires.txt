@@ -1,0 +1,12 @@
+construct>=2.10.0
+
+[dev]
+ipython
+black
+isort
+
+[ethereum]
+rlp<3,>=2
+
+[test]
+pytest

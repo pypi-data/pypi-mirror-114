@@ -1,0 +1,7 @@
+README.md
+setup.py
+apduboy/apduboy.egg-info/PKG-INFO
+apduboy/apduboy.egg-info/SOURCES.txt
+apduboy/apduboy.egg-info/dependency_links.txt
+apduboy/apduboy.egg-info/requires.txt
+apduboy/apduboy.egg-info/top_level.txt
