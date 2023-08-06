@@ -1,0 +1,3 @@
+[console_scripts]
+mf-gitvars = gitvars.__main__:main
+

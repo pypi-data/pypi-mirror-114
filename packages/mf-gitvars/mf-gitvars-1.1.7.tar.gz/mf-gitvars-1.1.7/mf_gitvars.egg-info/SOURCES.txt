@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+gitvars
+setup.py
+gitvars/__init__.py
+gitvars/__main__.py
+gitvars/config.txt
+gitvars/printvars.py
+gitvars/readvars.py
+mf_gitvars.egg-info/PKG-INFO
+mf_gitvars.egg-info/SOURCES.txt
+mf_gitvars.egg-info/dependency_links.txt
+mf_gitvars.egg-info/entry_points.txt
+mf_gitvars.egg-info/requires.txt
+mf_gitvars.egg-info/top_level.txt
