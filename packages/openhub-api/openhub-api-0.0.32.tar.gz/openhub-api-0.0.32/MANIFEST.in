@@ -1,0 +1,6 @@
+include LICENSE
+include OpenHubAPI/OpenHubAPI/install/install.sh
+recursive-include OpenHubAPI/OpenHubAPI/static *
+recursive-include OpenHubAPI/OpenHubAPI/templates *
+recursive-include OpenHubAPI/data/templates *
+recursive-include OpenHubAPI/data/templates *
