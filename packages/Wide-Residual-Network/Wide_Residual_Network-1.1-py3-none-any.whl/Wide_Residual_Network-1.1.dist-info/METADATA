@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: Wide-Residual-Network
+Version: 1.1
+Summary: This package is for creating a wide residual convolutional neural network with keras and tensorflow as backend. This architecture was first introduced in the paper on https://arxiv.org/abs/1605.07146.
+Home-page: https://github.com/patrickbrus/Wide-Residual-Network-Package
+Author: Patrick Brus
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
