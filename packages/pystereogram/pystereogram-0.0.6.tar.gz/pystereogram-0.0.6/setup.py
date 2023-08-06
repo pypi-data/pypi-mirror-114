@@ -1,0 +1,23 @@
+from setuptools import setup, find_packages
+from Cython.Build import cythonize
+import numpy
+
+with open("readme.md", 'r') as f:
+    long_description = f.read()
+
+setup(
+    name='pystereogram',
+    version="0.0.6",
+    packages=find_packages(),
+    author="Yu Xiao",
+    description="A library supporting efficient stereogram image computation.",
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+    url="https://github.com/yxiao1996/pystereogram",
+    ext_modules=cythonize(["autostereogram/compute_line.pyx"]),
+    include_dirs=[numpy.get_include()],
+install_requires=[
+        'numpy>=1.19.2'
+    ],
+    zip_safe=False,
+)
