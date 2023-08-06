@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-08 16:49+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: aleksis/apps/untis/menus.py:6
+msgid "Link subjects to groups (for UNTIS MySQL import)"
+msgstr ""
+
+#: aleksis/apps/untis/model_extensions.py:9
+#: aleksis/apps/untis/model_extensions.py:12
+#: aleksis/apps/untis/model_extensions.py:15
+#: aleksis/apps/untis/model_extensions.py:20
+#: aleksis/apps/untis/model_extensions.py:32
+#: aleksis/apps/untis/model_extensions.py:35
+#: aleksis/apps/untis/model_extensions.py:38
+#: aleksis/apps/untis/model_extensions.py:54
+#: aleksis/apps/untis/model_extensions.py:57
+#: aleksis/apps/untis/model_extensions.py:60
+#: aleksis/apps/untis/model_extensions.py:63
+#: aleksis/apps/untis/model_extensions.py:66
+#: aleksis/apps/untis/model_extensions.py:69
+#: aleksis/apps/untis/model_extensions.py:72
+msgid "UNTIS import reference"
+msgstr ""
+
+#: aleksis/apps/untis/model_extensions.py:23
+msgid "UNTIS school year ID"
+msgstr ""
+
+#: aleksis/apps/untis/model_extensions.py:26
+msgid "UNTIS school id"
+msgstr ""
+
+#: aleksis/apps/untis/model_extensions.py:29
+msgid "UNTIS version id"
+msgstr ""
+
+#: aleksis/apps/untis/model_extensions.py:41
+msgid "Lesson id in UNTIS"
+msgstr ""
+
+#: aleksis/apps/untis/model_extensions.py:45
+#: aleksis/apps/untis/model_extensions.py:50
+msgid "Number of lesson element in UNTIS"
+msgstr ""
+
+#: aleksis/apps/untis/models.py:4221
+msgid "Can assign subjects to groups"
+msgstr ""
+
+#: aleksis/apps/untis/preferences.py:8
+msgid "UNTIS: MySQL"
+msgstr ""
+
+#: aleksis/apps/untis/preferences.py:16
+msgid "Update values of existing subjects"
+msgstr ""
+
+#: aleksis/apps/untis/preferences.py:24
+msgid "Update short name of existing persons"
+msgstr ""
+
+#: aleksis/apps/untis/preferences.py:32
+msgid "Update name of existing persons"
+msgstr ""
+
+#: aleksis/apps/untis/preferences.py:40
+msgid "Update short name of existing groups"
+msgstr ""
+
+#: aleksis/apps/untis/preferences.py:48
+msgid "Update name of existing groups"
+msgstr ""
+
+#: aleksis/apps/untis/preferences.py:55
+msgid "Overwrite group owners"
+msgstr ""
+
+#: aleksis/apps/untis/preferences.py:64
+msgid "Update name of existing rooms"
+msgstr ""
+
+#: aleksis/apps/untis/preferences.py:72
+msgid "Update existing supervision areas"
+msgstr ""
+
+#: aleksis/apps/untis/preferences.py:80
+msgid "Use course groups"
+msgstr ""
+
+#: aleksis/apps/untis/preferences.py:82
+msgid "Build or search course groups for every course instead of setting classes as groups."
+msgstr ""
+
+#: aleksis/apps/untis/util/mysql/importers/lessons.py:43
+msgid "Import lesson {}"
+msgstr ""
+
+#: aleksis/apps/untis/util/mysql/importers/lessons.py:46
+msgid "  Skip because missing times"
+msgstr ""
+
+#: aleksis/apps/untis/util/mysql/importers/lessons.py:105
+msgid "    Skip because missing subject"
+msgstr ""
+
+#: aleksis/apps/untis/util/mysql/importers/lessons.py:266
+msgid "Deleted by UNTIS import"
+msgstr ""
