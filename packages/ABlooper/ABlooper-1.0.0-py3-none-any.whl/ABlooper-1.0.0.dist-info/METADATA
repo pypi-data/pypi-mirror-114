@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ABlooper
+Version: 1.0.0
+Summary: Set of functions to predict CDR structure
+Home-page: UNKNOWN
+Maintainer: Brennan Abanades
+Maintainer-email: brennan.abanadeskenyon@stx.ox.ac.uk
+License: BSD 3-clause license
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: einops (>=0.3)
+Requires-Dist: torch (>=1.6)
+
+UNKNOWN
+
