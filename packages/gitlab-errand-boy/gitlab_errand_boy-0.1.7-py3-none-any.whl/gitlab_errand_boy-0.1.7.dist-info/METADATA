@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: gitlab-errand-boy
+Version: 0.1.7
+Summary: Run errands with GitLab.
+Home-page: https://gitlab.com/buzin.gb/gitlab_errand_boy
+License: MIT
+Author: Gleb Buzin
+Author-email: qufiwefefwoyn@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests (>=2.0.0,<3.0.0)
+Requires-Dist: tenacity (>=6.0.0,<7.0.0)
+Project-URL: Repository, https://gitlab.com/buzin.gb/gitlab_errand_boy
+Description-Content-Type: text/markdown
+
+# gitlab_errand_boy
+
+### Usage
+
+```python
+import gitlab_errand_boy
+
+
+compounder = gitlab_errand_boy.Compounder(
+    project_id="23609881",
+    api_token="3Tsfsbuk9464TrdtrNNd"
+)
+
+# Create compound MR from open MRs.
+compounder.compound()
+```
+
+### Requirements
+
+Requires Python >= 3.9.
+
