@@ -1,0 +1,7 @@
+Django
+djangorestframework
+CMRESHandler
+requests
+gunicorn
+paho-mqtt
+pika
