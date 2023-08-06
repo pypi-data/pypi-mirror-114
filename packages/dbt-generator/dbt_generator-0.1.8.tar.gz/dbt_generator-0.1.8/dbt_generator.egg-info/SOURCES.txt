@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+dbt_generator/__init__.py
+dbt_generator/dbt_generator.py
+dbt_generator/generate_base_models.py
+dbt_generator/process_base_models.py
+dbt_generator.egg-info/PKG-INFO
+dbt_generator.egg-info/SOURCES.txt
+dbt_generator.egg-info/dependency_links.txt
+dbt_generator.egg-info/entry_points.txt
+dbt_generator.egg-info/not-zip-safe
+dbt_generator.egg-info/requires.txt
+dbt_generator.egg-info/top_level.txt
+tests/__init__.py
+tests/test_generate_base_models.py
+tests/test_process_base_models.py
