@@ -1,0 +1,8 @@
+django_ktdatatable_view/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_ktdatatable_view/base_ktdatatable_view.py,sha256=BeicDU_48O03HOSjMh38g_rU6PuBnO2lsDWGJjlHltw,5382
+django_ktdatatable_view/mixins.py,sha256=78_bdpNiGw5Zm_1GE8IquqVZ2E627Ur9Hdp4Cyun3Dw,1277
+django_ktdatatable_view-1.4.0.dist-info/LICENSE,sha256=cb3kmMW87w5t_zVynsm1QKZR3sg4O7bT1s5LlW_hTiU,1065
+django_ktdatatable_view-1.4.0.dist-info/METADATA,sha256=jI7e7py9TuXzttxNprykNAqmarCx5cDLnxA2CITTAuc,1233
+django_ktdatatable_view-1.4.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_ktdatatable_view-1.4.0.dist-info/top_level.txt,sha256=tr4soc0y03SDt6pWkuhQCX7tcoTouJj2OAvy9cVV6R8,24
+django_ktdatatable_view-1.4.0.dist-info/RECORD,,
