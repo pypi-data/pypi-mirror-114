@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: EnergyPlus-EpJSON-Transition-Tool
+Version: 0.1
+Summary: A tool for converting EpJSON files which may need changing from one version to another
+Home-page: https://energyplus.net
+License: ModifiedBSD
+Platform: UNKNOWN
+
+UNKNOWN
+
