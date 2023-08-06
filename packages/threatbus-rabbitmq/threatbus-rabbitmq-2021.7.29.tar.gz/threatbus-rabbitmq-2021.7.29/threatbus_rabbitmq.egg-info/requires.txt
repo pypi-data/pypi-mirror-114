@@ -1,0 +1,4 @@
+pika>=1.1.0
+retry
+stix2<3.0,>=2.1
+threatbus>=2021.5.27
