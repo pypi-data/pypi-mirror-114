@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+test.py
+GUIMakerP.egg-info/PKG-INFO
+GUIMakerP.egg-info/SOURCES.txt
+GUIMakerP.egg-info/dependency_links.txt
+GUIMakerP.egg-info/top_level.txt
+guimakerp/__init__.py
