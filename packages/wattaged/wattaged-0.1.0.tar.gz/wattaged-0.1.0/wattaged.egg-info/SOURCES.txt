@@ -1,0 +1,11 @@
+LICENCE.txt
+README.md
+setup.py
+wattaged/__init__.py
+wattaged/__main__.py
+wattaged.egg-info/PKG-INFO
+wattaged.egg-info/SOURCES.txt
+wattaged.egg-info/dependency_links.txt
+wattaged.egg-info/entry_points.txt
+wattaged.egg-info/requires.txt
+wattaged.egg-info/top_level.txt
