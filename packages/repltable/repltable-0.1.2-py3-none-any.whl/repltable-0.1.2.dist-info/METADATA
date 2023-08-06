@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: repltable
+Version: 0.1.2
+Summary: Table support for the replit database
+Author: terabyte.
+Author-email: mikey@mikeyo.ml
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: replit (>=3.2.1,<4.0.0)
