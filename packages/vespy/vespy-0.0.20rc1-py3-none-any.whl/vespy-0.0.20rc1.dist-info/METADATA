@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: vespy
+Version: 0.0.20rc1
+Summary: "A small utility package
+License: MIT
+Author: emher
+Author-email: emher@vestas.com
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: certifi (>=2021.5.30,<2022.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
