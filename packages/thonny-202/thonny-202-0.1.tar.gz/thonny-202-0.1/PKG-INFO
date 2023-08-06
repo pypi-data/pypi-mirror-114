@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: thonny-202
+Version: 0.1
+Summary: COMP 202 theme for Thonny IDE
+Home-page: https://github.com/campbelljc/thonny-202
+Author: Jonathan Campbell
+Author-email: jonathan.campbell@mcgill.ca
+License: MIT
+Keywords: IDE education programming Thonny COMP202 theme
+Platform: Windows
+Platform: macOS
+Platform: Linux
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Education
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Embedded Systems
+License-File: LICENSE
+
+# thonny-202
+
+A theme for [Thonny](https://thonny.org) (v3.3.13 or later) to match the syntax coloring used in the slides for COMP 202 Fall 2021 at McGill University.
+

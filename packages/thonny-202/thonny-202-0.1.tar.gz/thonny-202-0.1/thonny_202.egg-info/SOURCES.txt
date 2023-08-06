@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+thonny_202.egg-info/PKG-INFO
+thonny_202.egg-info/SOURCES.txt
+thonny_202.egg-info/dependency_links.txt
+thonny_202.egg-info/requires.txt
+thonny_202.egg-info/top_level.txt
+thonnycontrib/202theme/__init__.py
