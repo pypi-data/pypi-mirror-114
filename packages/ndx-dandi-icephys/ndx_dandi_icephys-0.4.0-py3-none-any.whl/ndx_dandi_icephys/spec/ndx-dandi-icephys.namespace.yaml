@@ -1,0 +1,12 @@
+namespaces:
+- author: Luiz Tauffer and Ben Dichter
+  contact: ben.dichter@gmail.com
+  doc: type for storing lab metadata
+  name: ndx-dandi-icephys
+  schema:
+  - namespace: core
+    neurodata_types:
+    - LabMetaData
+    - Subject
+  - source: ndx-dandi-icephys.extensions.yaml
+  version: 0.3.0

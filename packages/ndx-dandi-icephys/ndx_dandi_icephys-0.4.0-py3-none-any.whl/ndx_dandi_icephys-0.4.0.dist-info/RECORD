@@ -1,0 +1,10 @@
+ndx_dandi_icephys/__init__.py,sha256=5UslCEbA3O0gggTcU0ZvqndYrAk9pLNFNkxxbOA9SZM,344
+ndx_dandi_icephys/spec/ndx-dandi-icephys.extensions.yaml,sha256=rE7YuqnCWfjcBFT8fJfkwabXrzgAJbERoCIPNEqT4oo,2409
+ndx_dandi_icephys/spec/ndx-dandi-icephys.namespace.yaml,sha256=qv_PSfDKdDq0J5VIths3ZTTDNDufZJ-LCS1Yg0a08wY,293
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_io.py,sha256=HSXNnkxforEMBgTtvrTiJ4roHMhenPq6YBkkwk4K2Bk,1296
+ndx_dandi_icephys-0.4.0.dist-info/LICENSE,sha256=J1G58Db5XLqRxqN5gnlfYlvkO0B7TDZYWTOEQ9DI0VE,1530
+ndx_dandi_icephys-0.4.0.dist-info/METADATA,sha256=e0srTJR3fmFLU1usIEYmbb2wo-m4xspx07eowooIBIo,1509
+ndx_dandi_icephys-0.4.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+ndx_dandi_icephys-0.4.0.dist-info/top_level.txt,sha256=azTh1BdnP3ENbZ7WPv3JYrwpxN9tNiwpX-g4l9Jk_D8,24
+ndx_dandi_icephys-0.4.0.dist-info/RECORD,,
