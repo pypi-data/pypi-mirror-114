@@ -1,0 +1,6 @@
+[unimatrix.runtime]
+unimatrix.ext.secrets = = unimatrix.ext.secrets.__boot__
+
+[unimatrix.runtime.boot]
+unimatrix.ext.secrets = = unimatrix.ext.secrets.__boot__
+
