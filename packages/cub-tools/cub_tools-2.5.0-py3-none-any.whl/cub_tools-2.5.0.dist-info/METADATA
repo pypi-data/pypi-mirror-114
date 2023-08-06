@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: cub-tools
+Version: 2.5.0
+Summary: Caltech UCSD Birds Database Tools for PyTorch Image Classification
+Home-page: https://github.com/ecm200/caltech_birds
+Author: Ed Morris
+Author-email: ecm200@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: imutils
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: torch-lucent
+Requires-Dist: pytorchcv
+Requires-Dist: scikit-image
+Requires-Dist: Pillow
+Requires-Dist: yacs
+Requires-Dist: torchsummary
+Requires-Dist: ignite
+
+UNKNOWN
+
+
