@@ -1,0 +1,7 @@
+chaostoolkit-lib>=1.19.0
+logzero
+requests
+httpx
+pyyaml~=5.4
+pydantic
+tabulate
