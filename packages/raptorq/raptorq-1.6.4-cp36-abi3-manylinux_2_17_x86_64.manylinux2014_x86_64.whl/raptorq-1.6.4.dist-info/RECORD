@@ -1,0 +1,5 @@
+raptorq-1.6.4.dist-info/METADATA,sha256=biq8mAWy_N0pV27tsY1eV8XMuwzHJtT4_yyMzvsoJU0,10109
+raptorq-1.6.4.dist-info/WHEEL,sha256=QIDOxI6G26kh2NRnfbL9DIFV_TqDvzw6IBxGN50TtZ4,128
+raptorq/__init__.py,sha256=obu6wdMNyrslfPALGqrWNPTYQhubBITikVcrLx2S5xc,23
+raptorq/raptorq.abi3.so,sha256=qcbEJPwqJEOgOhTWwPZ1c5elWSnXN5e2Qvdj9SRkeok,670272
+raptorq-1.6.4.dist-info/RECORD,,
