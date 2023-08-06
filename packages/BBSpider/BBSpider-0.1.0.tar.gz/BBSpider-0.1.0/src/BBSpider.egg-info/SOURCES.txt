@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/BBSpider/BBSP.py
+src/BBSpider/__init__.py
+src/BBSpider.egg-info/PKG-INFO
+src/BBSpider.egg-info/SOURCES.txt
+src/BBSpider.egg-info/dependency_links.txt
+src/BBSpider.egg-info/top_level.txt
