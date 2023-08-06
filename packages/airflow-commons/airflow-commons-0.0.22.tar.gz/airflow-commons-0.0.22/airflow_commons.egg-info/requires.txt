@@ -1,0 +1,12 @@
+pytz>=2018.4
+datetime
+google-cloud-bigquery
+pandas
+sqlalchemy
+pymysql
+boto3
+botocore
+pyyaml
+s3fs
+s3transfer
+pyarrow
