@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: csv-join
+Version: 1.0.7
+Summary: join csv files in SQL
+Home-page: https://github.com/walkerever/csv-join
+Author: Yonghang Wang
+Author-email: wyhang@gmail.com
+License: Apache 2
+Keywords: csv,query,sql,console
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# csv-join
+join CSV files in SQL
+
+
