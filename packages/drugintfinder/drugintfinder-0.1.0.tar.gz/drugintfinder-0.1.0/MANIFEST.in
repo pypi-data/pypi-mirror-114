@@ -1,0 +1,9 @@
+graft drugintfinder
+graft tests
+
+include docs/Makefile
+include *.txt *.yml LICENSE
+
+recursive-include docs *.py *.rst *.bat
+
+global-exclude *.py[cod]
