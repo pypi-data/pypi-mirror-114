@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+<<<<<<< Updated upstream
+    <list default="true" id="d09ba2e0-8488-47b6-a98a-65df0e6a0ca1" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="d09ba2e0-8488-47b6-a98a-65df0e6a0ca1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/je_auto_control/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/je_auto_control/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/je_auto_control/osx/core/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/je_auto_control/osx/core/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/je_auto_control/osx/core/osx_vk.py" beforeDir="false" afterPath="$PROJECT_DIR$/je_auto_control/osx/core/osx_vk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+    </list>
+>>>>>>> Stashed changes
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/setup.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="JupyterTrust" id="0f352718-e07e-4096-b105-c276b57d4d68" />
+  <component name="ProjectId" id="1kqtrAcsqXivq8BbzmvdSj5DCJP" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WorkSpaces\Program WorkSpace\Python\Project\Python_JEAutoControl\test\linux" />
+      <recent name="D:\WorkSpaces\Program WorkSpace\Python\Project\Python_JEAutoControl\circle_ci_test" />
+      <recent name="D:\WorkSpaces\Program WorkSpace\Python\Project\Python_JEAutoControl\test" />
+      <recent name="D:\WorkSpaces\Program WorkSpace\Python\Project\Python_JEAutoControl" />
+      <recent name="D:\WorkSpaces\Program WorkSpace\Python\Project\Python_JEAutoControl\.circleci" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WorkSpaces\Program WorkSpace\Python\Project\Python_JEAutoControl\je_auto_control\linux_with_x11\core\utils" />
+      <recent name="D:\WorkSpaces\Program WorkSpace\Python\Project\Python_JEAutoControl\test\windows" />
+      <recent name="D:\WorkSpaces\Program WorkSpace\Python\Project\Python_JEAutoControl" />
+      <recent name="D:\WorkSpaces\Program WorkSpace\Python\Project\Python_JEAutoControl\je_auto_control\windows" />
+      <recent name="D:\WorkSpaces\Program WorkSpace\Python\Project\Python_JEAutoControl\je_auto_control\core\windows" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.x11_linux_vk">
+    <configuration name="linux_x11_mouse_scroll_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python_JEAutoControl" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/linux" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/linux/linux_x11_mouse_scroll_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="osx_keyboard" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python_JEAutoControl" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/je_auto_control/osx/keyboard" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/je_auto_control/osx/keyboard/osx_keyboard.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="osx_mouse" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python_JEAutoControl" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/je_auto_control/osx/mouse" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/je_auto_control/osx/mouse/osx_mouse.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="osx_screen" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python_JEAutoControl" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/je_auto_control/osx/screen" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/je_auto_control/osx/screen/osx_screen.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="x11_linux_vk" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python_JEAutoControl" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/je_auto_control/linux_with_x11/core/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/je_auto_control/linux_with_x11/core/utils/x11_linux_vk.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.linux_x11_mouse_scroll_test" />
+      <item itemvalue="Python.osx_screen" />
+      <item itemvalue="Python.osx_mouse" />
+      <item itemvalue="Python.osx_keyboard" />
+      <item itemvalue="Python.x11_linux_vk" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.x11_linux_vk" />
+        <item itemvalue="Python.osx_keyboard" />
+        <item itemvalue="Python.osx_mouse" />
+        <item itemvalue="Python.osx_screen" />
+        <item itemvalue="Python.linux_x11_mouse_scroll_test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d09ba2e0-8488-47b6-a98a-65df0e6a0ca1" name="Default Changelist" comment="" />
+      <created>1606440146087</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606440146087</updated>
+      <workItem from="1606440147201" duration="564000" />
+      <workItem from="1606440722737" duration="1213000" />
+      <workItem from="1606480048314" duration="87000" />
+      <workItem from="1606480166570" duration="127000" />
+      <workItem from="1606482528947" duration="337000" />
+      <workItem from="1606484147821" duration="9239000" />
+      <workItem from="1606609758762" duration="3079000" />
+      <workItem from="1607570681486" duration="1733000" />
+      <workItem from="1625119959060" duration="12363000" />
+      <workItem from="1625201550129" duration="324000" />
+      <workItem from="1625201899026" duration="4906000" />
+      <workItem from="1625294929055" duration="1427000" />
+      <workItem from="1625319987783" duration="489000" />
+      <workItem from="1625662589766" duration="87000" />
+      <workItem from="1625662726945" duration="1945000" />
+      <workItem from="1625720325881" duration="11363000" />
+      <workItem from="1625816013492" duration="137000" />
+      <workItem from="1625816180093" duration="6622000" />
+      <workItem from="1625985370425" duration="5108000" />
+      <workItem from="1626033360550" duration="51000" />
+      <workItem from="1626033591574" duration="9213000" />
+      <workItem from="1626055336608" duration="23823000" />
+      <workItem from="1626183277426" duration="10401000" />
+      <workItem from="1626247650656" duration="14716000" />
+      <workItem from="1626378356971" duration="777000" />
+      <workItem from="1626379534782" duration="179000" />
+      <workItem from="1626379721487" duration="49000" />
+      <workItem from="1626379813030" duration="1840000" />
+      <workItem from="1626416579620" duration="8516000" />
+      <workItem from="1626428946149" duration="1105000" />
+      <workItem from="1626430081293" duration="1695000" />
+      <workItem from="1626433769473" duration="762000" />
+      <workItem from="1626434590865" duration="1051000" />
+      <workItem from="1626435650520" duration="3733000" />
+      <workItem from="1626455329903" duration="11359000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Python_AutoControl$win32_keyboard_test.coverage" NAME="win32_keyboard_test Coverage Results" MODIFIED="1626380422121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/windows" />
+    <SUITE FILE_PATH="coverage/Python_JEAutoControl$template_detection.coverage" NAME="template_detection Coverage Results" MODIFIED="1626033726830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/je_auto_control/util" />
+    <SUITE FILE_PATH="coverage/Python_JEAutoControl$ctype_screen_test.coverage" NAME="ctype_screen_test Coverage Results" MODIFIED="1626164847448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Python_JEAutoControl$osx_mouse.coverage" NAME="osx_mouse Coverage Results" MODIFIED="1626516581076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/je_auto_control/osx/mouse" />
+    <SUITE FILE_PATH="coverage/Python_AutoControl$osx_keyboard.coverage" NAME="osx_keyboard Coverage Results" MODIFIED="1626516432186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/je_auto_control/osx/keyboard" />
+    <SUITE FILE_PATH="coverage/Python_AutoControl$osx_screen.coverage" NAME="osx_screen Coverage Results" MODIFIED="1626455392248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/je_auto_control/osx/screen" />
+    <SUITE FILE_PATH="coverage/Python_JEAutoControl$win32_scroll_test.coverage" NAME="win32_scroll_test Coverage Results" MODIFIED="1626275153551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/windows" />
+    <SUITE FILE_PATH="coverage/Python_JEAutoControl$win32_scroll_test__1_.coverage" NAME="win32_scroll_test (1) Coverage Results" MODIFIED="1626251835407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/windows" />
+    <SUITE FILE_PATH="coverage/Python_JEAutoControl$win32_mouse_test.coverage" NAME="win32_mouse_test Coverage Results" MODIFIED="1626174863892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Python_AutoControl$osx_mouse.coverage" NAME="osx_mouse Coverage Results" MODIFIED="1626498741827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/je_auto_control/osx/mouse" />
+    <SUITE FILE_PATH="coverage/Python_JEAutoControl$win32_keyboard_test.coverage" NAME="win32_keyboard_test Coverage Results" MODIFIED="1626275141892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/windows" />
+<<<<<<< Updated upstream
+    <SUITE FILE_PATH="coverage/Python_JEAutoControl$template_detection_multi_test.coverage" NAME="template_detection_multi_test Coverage Results" MODIFIED="1626252086900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/windows" />
+    <SUITE FILE_PATH="coverage/Python_JEAutoControl$win32_mouse_test__1_.coverage" NAME="win32_mouse_test (1) Coverage Results" MODIFIED="1626275148205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/windows" />
+    <SUITE FILE_PATH="coverage/Python_AutoControl$linux_x11_mouse_scroll_test.coverage" NAME="linux_x11_mouse_scroll_test Coverage Results" MODIFIED="1626380439773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/linux" />
+=======
+    <SUITE FILE_PATH="coverage/Python_JEAutoControl$x11_linux_vk.coverage" NAME="x11_linux_vk Coverage Results" MODIFIED="1626518071576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/je_auto_control/linux_with_x11/core/utils" />
+>>>>>>> Stashed changes
+    <SUITE FILE_PATH="coverage/Python_JEAutoControl$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1626175321507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/je_auto_control/linux_with_x11/mouse" />
+    <SUITE FILE_PATH="coverage/Python_JEAutoControl$win32_ctype_screen_test.coverage" NAME="win32_ctype_screen_test Coverage Results" MODIFIED="1626252073757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/windows" />
+    <SUITE FILE_PATH="coverage/Python_JEAutoControl$template_detection_test.coverage" NAME="template_detection_test Coverage Results" MODIFIED="1626252078226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/windows" />
+<<<<<<< Updated upstream
+=======
+    <SUITE FILE_PATH="coverage/Python_JEAutoControl$win32_mouse_test__1_.coverage" NAME="win32_mouse_test (1) Coverage Results" MODIFIED="1626275924999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/windows" />
+    <SUITE FILE_PATH="coverage/Python_JEAutoControl$template_detection.coverage" NAME="template_detection Coverage Results" MODIFIED="1626033726830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/je_auto_control/util" />
+    <SUITE FILE_PATH="coverage/Python_JEAutoControl$ctype_screen_test.coverage" NAME="ctype_screen_test Coverage Results" MODIFIED="1626164847448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Python_JEAutoControl$osx_keyboard.coverage" NAME="osx_keyboard Coverage Results" MODIFIED="1626517343157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/je_auto_control/osx/keyboard" />
+>>>>>>> Stashed changes
+  </component>
+</project>
