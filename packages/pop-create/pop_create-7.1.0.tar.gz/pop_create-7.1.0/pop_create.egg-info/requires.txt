@@ -1,0 +1,2 @@
+cookiecutter
+pop>=17.1
