@@ -1,0 +1,5 @@
+wrapt
+typing-extensions
+
+[all]
+pydantic>=1.7
