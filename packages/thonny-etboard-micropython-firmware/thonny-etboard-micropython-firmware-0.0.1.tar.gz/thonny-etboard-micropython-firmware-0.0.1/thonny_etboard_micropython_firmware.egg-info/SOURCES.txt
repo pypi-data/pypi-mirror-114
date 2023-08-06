@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+thonny_etboard_micropython_firmware.egg-info/PKG-INFO
+thonny_etboard_micropython_firmware.egg-info/SOURCES.txt
+thonny_etboard_micropython_firmware.egg-info/dependency_links.txt
+thonny_etboard_micropython_firmware.egg-info/requires.txt
+thonny_etboard_micropython_firmware.egg-info/top_level.txt
+thonnycontrib/thonny_etboard_firmware/__init__.py
+thonnycontrib/thonny_etboard_firmware/__pycache__/__init__.cpython-39.pyc
+thonnycontrib/thonny_etboard_firmware/etboard/firmware/etboard_firmware_micropython_custom_0608_last.bin
