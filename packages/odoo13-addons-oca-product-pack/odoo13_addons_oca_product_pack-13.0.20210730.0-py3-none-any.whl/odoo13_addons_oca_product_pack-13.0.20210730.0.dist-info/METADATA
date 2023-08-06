@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: odoo13-addons-oca-product-pack
+Version: 13.0.20210730.0
+Summary: Meta package for oca-product-pack Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Requires-Dist: odoo13-addon-product-pack
+Requires-Dist: odoo13-addon-sale-product-pack
+Requires-Dist: odoo13-addon-sale-stock-product-pack
+Requires-Dist: odoo13-addon-stock-product-pack
+
+UNKNOWN
+
