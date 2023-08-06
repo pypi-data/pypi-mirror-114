@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "mockman"
+version = "0.1.1"
+description = "A cli to return mocked text. (e.g. turn becomes tURn)"
+authors = ["Arghya Sarkar <arghyasarkar.nolan@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+clipboard = "^0.0.4"
+click-help-colors = "^0.9.1"
+click = "^8.0.1"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+mm = "mockman.main:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
