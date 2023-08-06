@@ -1,0 +1,17 @@
+plumbum
+typer
+python-dotenv
+semver
+pytest
+pyupgrade
+isort
+black
+flake8
+mccabe
+flake8-comprehensions
+flake8-print
+flake8-cognitive-complexity
+pytest-xdist
+pytest-sugar
+coverage
+pyupgrade
