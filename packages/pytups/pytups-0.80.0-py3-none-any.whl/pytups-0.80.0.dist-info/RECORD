@@ -1,0 +1,11 @@
+pytups/__init__.py,sha256=ogsPkaRrMExn3lbtPySkRCOOQM6gLqWtMj-U-Q3AVgM,113
+pytups/orderedSet.py,sha256=AnKZ6AuYhVs20sAtuSMn3IfmMv3a1UAT5yVIrejmX8Q,1879
+pytups/superdict.py,sha256=mPAW-WZksrwDRJGXkKb23wURfjWnbNaPcCGQwU7-iI8,17632
+pytups/tools.py,sha256=_wrYTjuBMpfjqOdBSIrBRDsFjyng-8CC_2aj9GBYeNU,134
+pytups/tuplist.py,sha256=0OuvKm3o-R-_2Sz70LPbU6yvsQIE7vvEo28q4yA7nDk,12414
+pytups-0.80.0.dist-info/AUTHORS.md,sha256=wNnBYR_ssttlOPRSQ9PeoaEwtG9Bs1eO22Rbit8j-zw,53
+pytups-0.80.0.dist-info/LICENSE.txt,sha256=JJB6yLit3Uew79jmFfF18sz7F2cFcPXVUoJ90Abh5c4,1082
+pytups-0.80.0.dist-info/METADATA,sha256=iXO_ZTiqY3Ed_pxBDmWn2Gq3jtRggPVbu5n3818Gfww,3877
+pytups-0.80.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pytups-0.80.0.dist-info/top_level.txt,sha256=gNXiClruX0zj8m7bNF2ubdEJkfSuolw6w8v4y8JeayM,7
+pytups-0.80.0.dist-info/RECORD,,
