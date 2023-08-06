@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: tixte
+Version: 0.0.1
+Summary: The async wrapper for the Tixte API.
+Home-page: https://github.com/NextChai/Tixte
+Author: Iced Chai
+License: MIT
+Project-URL: Report a Bug, https://github.com/NextChai/Tixte/issues
+Project-URL: Contribute, https://github.com/NextChai/Tixte/pulls
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp (<3.8.0,>=3.6.0)
+
+# Tixte
+The async wrapper for the Tixte API.
+
+
