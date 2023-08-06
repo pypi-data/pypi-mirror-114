@@ -1,0 +1,7 @@
+vplot>=1.0.2
+vspace>=1.0.2
+bigplanet>=1.0.1
+multiplanet>=1.0.1
+astropy>=3.0
+numpy
+tqdm
