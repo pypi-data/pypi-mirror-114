@@ -1,0 +1,9 @@
+# Tags:
+{% for role in r.get_roles(False) %}
+### {{ r.capitalize(r.fprn(role)) }}:
+{% for item in  r.get_type("tag",role) %}
+* `{{ item.key }}` - {{ item.desc }}
+{%  endfor %}
+{% endfor %}
+
+{{ r.about() }}

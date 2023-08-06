@@ -1,0 +1,25 @@
+{% if r.has_items("action") %}## Actions:
+
+Actions performed by this role
+
+{% for key , values in r.get_multi_type("action") %}
+    {% if key == "_unset_" %}
+
+    {% for item in values %}
+* {{ item.desc }} {% if not r.is_role() %}({{ r.fprn(item.role) }}){% endif %}
+
+    {% endfor %}
+    {% endif %}
+{% endfor %}
+
+{% for key , values in r.get_multi_type("action") %}
+    {% if key != "_unset_" %}
+#### {{ key }}:
+        {% for item in values %}
+* {% if item.value %}{{ item.value }} - {% endif %}{{ item.desc }} {% if not r.is_role() %}({{ r.fprn(item.role) }}){% endif %}
+
+        {% endfor %}
+    {%  endif %}
+{%  endfor %}
+
+{% endif %}
