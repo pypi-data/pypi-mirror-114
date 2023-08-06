@@ -1,0 +1,13 @@
+oga/__init__.py,sha256=jXassbcCBgLgBVnBGazICgC5F-aJJFXmm2FtqKtmpdI,305
+oga/_helpers.py,sha256=o5gqIHIoutMGuI3er6cCmJBP1SVfrE3a1pnBQo-iVb8,2799
+oga/core.py,sha256=DxrGboW0OI-RJqlnwFkN0byPw1XhVLAGMY8F2eliPcA,15218
+oga/parsing.py,sha256=9u1WDdr_BdOrfnqzpf7D3uAlm2bt57RJ-4jTF0XDUjA,3952
+oga/primitives.py,sha256=6IIcpgErokPvRuFzjoxFjQ5MEgPFPaxgK2b37IxvJbg,1860
+oga/main/__init__.py,sha256=awJuTqKBa63BXIl4kb5QewXCdYZG2-8R5LrUJWB_H_o,56
+oga/main/cli.py,sha256=gJUa6-hO7JIsvYuWVZXajb5XhkmnXCXd_vAb7klvh9A,5253
+oga-1.2.0.dist-info/LICENSE,sha256=vUFLFrewJz_LW0LdfNz3UpwrN4o0kEXatpU5WhrTMho,1066
+oga-1.2.0.dist-info/METADATA,sha256=HFWTjZGrDu3ct_-VvdK5QmleHTf8oUVponltQYL7F90,7395
+oga-1.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+oga-1.2.0.dist-info/entry_points.txt,sha256=_dZUurEyFc8atrU0qTqGArd5HshwKd4IrxfrNdB1zJA,42
+oga-1.2.0.dist-info/top_level.txt,sha256=99xC46rZPBn0EBySZuVxYRTI9czW9ZQlyGszSSyQEUQ,4
+oga-1.2.0.dist-info/RECORD,,
