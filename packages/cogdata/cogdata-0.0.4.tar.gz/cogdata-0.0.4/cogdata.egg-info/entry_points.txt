@@ -1,0 +1,3 @@
+[console_scripts]
+cogdata = cogdata.cli:main
+
