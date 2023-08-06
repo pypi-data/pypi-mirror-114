@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: ascii-python
+Version: 0.0.1
+Summary: A python package for making ascii art
+Home-page: https://github.com/Adam-BH/ascii.py
+Author: Adam Bhouri
+Author-email: adam.bhouri@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+
+# Ascii_py
+
+A python package for making ascii art
+
+## Installation
+
+Run the following to install:
+
+```python
+$ pip install ascii_py
+```
+
+## Usage
+
+### Terminal
+
+```python
+$
+```
+
+### Python script
+
+```python
+import ascii_py
+
+```
+
+# Developing Ascii_py
+
+To install ascii_py, along with the tools you need to develop and run tests, run the following in your virtualenv:
+
+```python
+$ pip install -e .[dev]
+```
+
+
