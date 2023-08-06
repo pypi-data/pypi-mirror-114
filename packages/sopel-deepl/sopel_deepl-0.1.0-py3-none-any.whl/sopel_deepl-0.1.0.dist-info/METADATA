@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: sopel-deepl
+Version: 0.1.0
+Summary: DeepL translation plugin for Sopel IRC bots.
+Home-page: https://github.com/dgw/sopel-deepl
+Author: dgw
+Author-email: dgw@technobabbl.es
+License: Eiffel Forum License, version 2
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: Eiffel Forum License (EFL)
+Classifier: License :: OSI Approved :: Eiffel Forum License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Communications :: Chat :: Internet Relay Chat
+Requires-Python: <4,>=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: sopel (<9,>=7.1)
+Requires-Dist: deepl-api (~=0.2.2)
+
+# sopel-deepl
+
+DeepL translation plugin for Sopel IRC bots.
+
+## Usage
+
+```
+.deepl [text to translate into English]
+```
+
+## Limitations
+
+This plugin does not *yet* support specifying the source/destination
+languages, which is a nifty feature of Sopel 7's own built-in `translate`
+plugin. Support for doing so is planned for a future release.
+
+
+
+
