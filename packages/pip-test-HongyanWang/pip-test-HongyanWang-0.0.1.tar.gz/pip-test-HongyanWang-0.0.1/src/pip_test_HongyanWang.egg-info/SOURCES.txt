@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+src/example_package/__init__.py
+src/example_package/test_utils.py
+src/pip_test_HongyanWang.egg-info/PKG-INFO
+src/pip_test_HongyanWang.egg-info/SOURCES.txt
+src/pip_test_HongyanWang.egg-info/dependency_links.txt
+src/pip_test_HongyanWang.egg-info/top_level.txt
