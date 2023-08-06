@@ -1,0 +1,3 @@
+[madrassati.plugins]
+madrassati_exercise_perseus_plugin = madrassati_exercise_perseus_plugin
+
