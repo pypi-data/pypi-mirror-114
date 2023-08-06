@@ -1,0 +1,13 @@
+attrs
+GitPython
+pytomlpp
+pyYAML
+
+[s3]
+boto3
+botocore
+hurry.filesize
+s3transfer
+
+[tune]
+optuna==2.8.0
