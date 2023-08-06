@@ -1,0 +1,17 @@
+corpus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+corpus/event.py,sha256=DPoLOUlagWNg1TT5XSQK2C-hhu5V8EtdWqvpO_mPyMI,6450
+corpus/eventcorpus.py,sha256=W3L1KUad4T2GxoNg3ffCr7FP_W38As0phgb8CKjQRyI,3910
+corpus/lookup.py,sha256=RwYh4dliOH94j4XHZB7-1z1DC-2OI8E8XMDm8ABHvFo,2761
+datasources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datasources/dblp.py,sha256=O4uuTBn1XBHbhqssLvUWmfFiNVe1GXpdEg-2hZpaziQ,3328
+datasources/dblpxml.py,sha256=wwx1jOYAQytZjyRrhWTaG_gHEk2BlWgIRGe46K7v74s,10741
+datasources/openresearch.py,sha256=737J6PN-VbeMj0BZv-pEnFoS3cVFi119LWyF0OmsoFU,19178
+datasources/wikidata.py,sha256=NG8q3YfpVRJgZXUoQ2vAbbKpNykvmSDZ4F_FCfEsrpM,6597
+smw/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smw/topic.py,sha256=JXxGa_F8l_oPITH5-6rAhU3VD1Fv1gFi5PaCxiHEipQ,8261
+ConferenceCorpus-0.0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ConferenceCorpus-0.0.5.dist-info/METADATA,sha256=HGTA-VSn15ZPNKMjuBZHtG0B9k5_HERpP7VUiXqZpNo,2280
+ConferenceCorpus-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ConferenceCorpus-0.0.5.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+ConferenceCorpus-0.0.5.dist-info/top_level.txt,sha256=y-ja0kifxlRqBdSk04nQ8nfkIRrtBpTdIoU1cELl9jA,23
+ConferenceCorpus-0.0.5.dist-info/RECORD,,
