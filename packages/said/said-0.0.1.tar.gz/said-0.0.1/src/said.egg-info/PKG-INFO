@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: said
+Version: 0.0.1
+Summary: Self-Addressing IDentifier
+Home-page: https://github.com/WebOfTrust/said
+Author: Samuel M. Smith
+Author-email: smith.samuel.m@gmail.com
+License: Apache Software License 2.0
+Project-URL: Issue Tracker, https://github.com/WebOfTrust/obtain/issues
+Keywords: said,self referential content address,immutatable data,secure attribution,authentic data,discovery,resolver
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9.5
+License-File: LICENSE
+
+Self-Addressing IDentifier.
+

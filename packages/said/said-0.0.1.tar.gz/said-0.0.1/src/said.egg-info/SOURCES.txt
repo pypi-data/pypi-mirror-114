@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+src/said/__init__.py
+src/said/__main__.py
+src/said/cli.py
+src/said/daemon.py
+src/said/saiding.py
+src/said.egg-info/PKG-INFO
+src/said.egg-info/SOURCES.txt
+src/said.egg-info/dependency_links.txt
+src/said.egg-info/entry_points.txt
+src/said.egg-info/not-zip-safe
+src/said.egg-info/requires.txt
+src/said.egg-info/top_level.txt
