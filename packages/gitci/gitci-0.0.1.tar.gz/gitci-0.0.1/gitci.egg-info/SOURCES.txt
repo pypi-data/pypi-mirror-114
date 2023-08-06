@@ -1,0 +1,7 @@
+setup.py
+gitci.egg-info/PKG-INFO
+gitci.egg-info/SOURCES.txt
+gitci.egg-info/dependency_links.txt
+gitci.egg-info/entry_points.txt
+gitci.egg-info/requires.txt
+gitci.egg-info/top_level.txt
