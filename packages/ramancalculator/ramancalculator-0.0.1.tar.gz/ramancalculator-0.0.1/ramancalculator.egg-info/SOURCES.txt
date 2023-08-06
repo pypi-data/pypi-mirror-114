@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+ramancalculator/__init__.py
+ramancalculator.egg-info/PKG-INFO
+ramancalculator.egg-info/SOURCES.txt
+ramancalculator.egg-info/dependency_links.txt
+ramancalculator.egg-info/top_level.txt

@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: ramancalculator
+Version: 0.0.1
+Summary: A very basic calculator
+Home-page: UNKNOWN
+Author: Raman Kureti
+Author-email: raman.kureti@gmail.com
+License: MIT
+Description: This is a very basic calculator functionality like add, subtract, multiply and divide two numbers.
+        
+        Change Log
+        ==========
+        
+        First Release - 0.0.1(27/07/2021)
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
