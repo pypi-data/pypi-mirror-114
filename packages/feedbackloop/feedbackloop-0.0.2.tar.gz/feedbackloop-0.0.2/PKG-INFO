@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: feedbackloop
+Version: 0.0.2
+Summary: feedback loop greengrass ML component
+Home-page: UNKNOWN
+Author: William Xi
+Author-email: williaxi@amazon.com
+License: UNKNOWN
+Description: a package that allows greengrass devicdes to upload ML inference data to the cloud
+Keywords: python,iot,aws,machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
