@@ -1,0 +1,9 @@
+tgfeed/__init__.py,sha256=46Yjk3fz9o8aTN8E95McnzpJcjGzVJmHmQqUZ5mXzfc,22
+tgfeed/__main__.py,sha256=IOUFd74i5JGN-IJ5x0ra0BPCUgjRdm82nZMmg7Mcveo,5201
+tgfeed/config.py,sha256=H04i1NNJbmvWJnWgnjBdL1ZkoefPkEcmK-3zaZHdF5w,2295
+tgfeed/message.py,sha256=XnvnN32YdYPYbmnVzG3gMk5FdbqjP_D0DYvuPmxcOr8,959
+tgfeed/scheme.py,sha256=AYg_MmDFHWat97QqOqPlV3QCyFWac74Dc54fF0HOp-g,371
+tgfeed-0.0.9.dist-info/LICENSE,sha256=17Lv3-CjOSqNivjZ14fYXx41UBnkIPytlk1muwVz-38,1051
+tgfeed-0.0.9.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+tgfeed-0.0.9.dist-info/METADATA,sha256=MnfRj21qeaBkM8cv9sZaGlrSduLJemdwqsSlaW7XavM,390
+tgfeed-0.0.9.dist-info/RECORD,,
