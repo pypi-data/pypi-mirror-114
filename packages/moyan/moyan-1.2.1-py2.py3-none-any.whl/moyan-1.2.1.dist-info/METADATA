@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: moyan
+Version: 1.2.1
+Summary: moyan private tools
+Home-page: UNKNOWN
+Author: moyan
+Author-email: ice_moyan@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: lxml
+Requires-Dist: six (>=1.5.2)
+Requires-Dist: numpy
+
+UNKNOWN
+
+
