@@ -1,0 +1,7 @@
+setup.py
+bcr_libraries.egg-info/PKG-INFO
+bcr_libraries.egg-info/SOURCES.txt
+bcr_libraries.egg-info/dependency_links.txt
+bcr_libraries.egg-info/top_level.txt
+bcr_mcp3008/__init__.py
+bcr_mcp3008/mcp3008.py

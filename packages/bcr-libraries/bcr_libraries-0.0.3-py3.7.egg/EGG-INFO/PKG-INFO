@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: bcr-libraries
+Version: 0.0.3
+Summary: MCP3008 Library for BC Robotics 16 Channel Analog Input HATs
+Home-page: UNKNOWN
+Author: Chris Caswell
+Author-email: support@bc-robotics.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
