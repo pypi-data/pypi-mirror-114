@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: genonets
+Version: 2.0
+Summary: Framework for creating and analyzing genotype networks from.
+Home-page: https://github.com/fkhalid/genonets
+License: MIT
+Keywords: genonets,genotype,phenotype,network
+Author: Fahad Khalid
+Author-email: genonets@outlook.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Dist: numpy (>=1.19,<2.0)
+Requires-Dist: python-igraph (==0.8.2)
+Requires-Dist: tqdm (>=4.49.0,<5.0.0)
+Project-URL: Documentation, https://genonets.readthedocs.io
+Project-URL: Repository, https://github.com/fkhalid/genonets
+Description-Content-Type: text/markdown
+
+# Genonets
+
+Welcome to the latest version of Genonets. The project now uses Python 3.8+, 
+with several feature and performance upgrades. A previous version based on 
+Python 2 was used as the backend for the 
+[Genonets Server](#Genonets-Server-end-of-life).
+
+## Documentation
+
+Installation and usage instructions, as well as further documentation is 
+available [here](https://genonets.readthedocs.io/).
+
+## Genonets Server end-of-life
+
+The Genonets Server had to be shut down due to lack of funding for web hosting 
+services. Nevertheless, all analyses are still available in the Genonets 
+package via this repository.
+
+## Contact
+
+**Note:** Please [email us](mailto:genonets@outlook.com) for any questions 
+and/or comments.
+
