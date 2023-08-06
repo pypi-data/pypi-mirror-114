@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: django-job-board
+Version: 0.1.2
+Summary: A Django app to conduct job board.
+Home-page: https://www.mediusware.com
+Author: Mediusware Ltd
+Author-email: kmrifat@mediusware.com
+License: BSD-3-Clause
+Description: 
+        # Django Job Board
+        
+        Job Board is a Django applicaiton that you can use in any django 3 software
+        
+        Detailed documentation comming soon
+        
+        Quick start
+        -----------
+        
+        1. Add "polls" to your INSTALLED_APPS setting like this::
+        
+            INSTALLED_APPS = [
+                ...
+                'job_board',
+            ]
+        
+        2. Include the polls URLconf in your project urls.py like this::
+        
+            path('job_board/', include('job_board.urls')),
+        
+        3. Run ``python manage.py migrate`` to create the job_board models.
+        
+        4. Start the development server and visit http://127.0.0.1:8000/admin/
+        
+        5. Visit http://127.0.0.1:8000/job_board/ to explore job_board.
+        6. Dependencies
+           1. djangorestframework
+           2. django-tinymce
+           3. django-userforeignkey
+           4. pillow and
+           5. pyjwt
+Keywords: "django job board"
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
