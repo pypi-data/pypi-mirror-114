@@ -1,0 +1,3 @@
+[console_scripts]
+bddcli-bootstrapper = bddcli_bootstrapper:main
+
