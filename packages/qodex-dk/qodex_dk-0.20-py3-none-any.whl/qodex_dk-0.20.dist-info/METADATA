@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: qodex-dk
+Version: 0.20
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: PunchyArchy
+Author-email: ksmdrmvscthny@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: qsct
+
+QDK (Qodex Development Kit) - набор инструментов, в частности, класс QDK, обеспечивающий клиентскую часть взаимодействия
+с QPI. Встроенные методы взаимодействия описаны в модуле methods.py, но они могут быть расширены передачей словаря
+подобного формата атрибутом methods_dict.
+
+
+
