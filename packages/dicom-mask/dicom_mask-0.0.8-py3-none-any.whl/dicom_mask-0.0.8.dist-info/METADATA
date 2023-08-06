@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: dicom-mask
+Version: 0.0.8
+Summary: Export structure from dicom to numpy binary mask
+Home-page: https://github.com/Abe404/dicom_mask
+Author: Abraham George Smith
+Author-email: abe@abesmith.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Abe404/dicom_mask/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dicom_mask
+Export structure from dicom to numpy binary mask
+
+### Install
+
+> pip install dicom-mask
+
+### Examle usage
+
+```python
+from dicom_mask.convert import struct_to_mask
+
+dicom_dir = 'some_dicom_dir'
+dicom_files = ['all', 'image', 'filenames', 'and', 'struct']
+struct_name = 'liver' 
+
+mask = struct_to_mask(dicom_dir, dicom_files, struct_name)
+```
+
+
