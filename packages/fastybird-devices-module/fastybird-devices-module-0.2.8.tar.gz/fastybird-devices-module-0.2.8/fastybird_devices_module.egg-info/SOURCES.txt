@@ -1,0 +1,12 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+devices_module/__init__.py
+devices_module/items.py
+devices_module/models.py
+fastybird_devices_module.egg-info/PKG-INFO
+fastybird_devices_module.egg-info/SOURCES.txt
+fastybird_devices_module.egg-info/dependency_links.txt
+fastybird_devices_module.egg-info/requires.txt
+fastybird_devices_module.egg-info/top_level.txt
