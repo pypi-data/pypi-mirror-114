@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: pycarla
+Version: 0.3.3
+Summary: Use VST/LV2/etc. plugins with realtime abilities in Python
+Home-page: https://pycarla.readthedocs.org
+License: GPL-3.0-only
+Author: Federico Simonetta
+Author-email: federico.simonetta@unimi.it
+Requires-Python: >=3.6,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Multimedia :: Sound/Audio :: Capture/Recording
+Classifier: Topic :: Multimedia :: Sound/Audio :: MIDI
+Classifier: Topic :: Multimedia :: Sound/Audio :: Mixers
+Classifier: Topic :: Multimedia :: Sound/Audio :: Players
+Classifier: Topic :: Multimedia :: Sound/Audio :: Sound Synthesis
+Requires-Dist: PyQt5 (>=5.15.2,<6.0.0)
+Requires-Dist: jack-client (>=0.5.2,<0.6.0)
+Requires-Dist: mido (>=1.2.9,<2.0.0)
+Requires-Dist: numpy (>=1.19.0,<2.0.0)
+Requires-Dist: psutil (>=5.8.0,<6.0.0)
+Requires-Dist: pysoundfile (>=0.9.0,<0.10.0)
+Project-URL: Documentation, https://pycarla.readthedocs.org
+Project-URL: Repository, https://github.com/00sapo/pycarla
+Description-Content-Type: text/x-rst
+
+pyCarla
+==========
+
+A python module for synthesizing MIDI events and files
+from python code with using any kind of audio plugin!
+
+See `docs <https://pycarla.readthedocs.org>`_ for more installation and more info.
+
+TLDR
+----
+
+Python has no strong real-time capabilities since it cannot run with parallel threads.
+This method delegates most of the realtime stuffs to external C/C++ programs, improving
+the performances and the accuracy against pure-Python based approaches.
+
+This method is really portable and supports almost any type of plugins and
+virtual instruments thanks to the excellent Carla:
+
+#. Linux VST2/VST3
+#. Windows VST2/VST3
+#. LV2
+#. LADSPA
+#. DSSI
+#. AU
+#. SF2/SF3
+#. SFZ
+#. Any other format supported by external plugins
+
+TODO
+----
+
+For sure
+~~~~~~~~
+
+#. Add single function to synthesize midi file
+#. Add single function to batch-synthesize midi files
+#. Make synchronization handling xruns (edit `is_ready`)
+#. Update Carla
+#. refactoring with a generic `start` method in `JackClient` and 
+   specific methods `get_callback` and `get_duration`
+
+Maybe
+~~~~~
+
+#. Use Carla python code to control Carla host
+#. Support LADISH sessions for automatically starting LinuxSampler if needed
+#. Installation scripts for windows and mac
+
+
+Credits
+=======
+
+#. `Federico Simonetta <https://federicosimonetta.eu.org>`_
+    ``federico.simonetta`` ``at`` ``unimi.it``
+
