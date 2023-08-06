@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: sanic-discord
+Version: 0.0.1
+Summary: This can oauth, for discord
+Home-page: https://github.com/tuna2134/sanic-discord
+Author: DMS
+Author-email: masato190411@gmail.com
+License: UNKNOWN
+Description: # sanic-discord
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
