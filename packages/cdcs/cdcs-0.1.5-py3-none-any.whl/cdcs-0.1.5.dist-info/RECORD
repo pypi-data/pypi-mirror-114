@@ -1,0 +1,15 @@
+cdcs/RestClient.py,sha256=Kzso_LyK93VKH9ya0pZapQFt_BV8a_BYE6qHxTESWSk,12471
+cdcs/VERSION,sha256=QXCYE8RmYkHVrHvVrvCJYMkGMqpOawbNrZOJ4WODczY,5
+cdcs/__init__.py,sha256=agVupVAznPLhv7ARaSZ6h_VCkmBICCruPYmoYfiidaY,455
+cdcs/aslist.py,sha256=pZwQf5wpE42ZTNGQXojBOxgTCYhGVHgP5ZXSlSfrUe4,850
+cdcs/CDCS/__init__.py,sha256=K7JO3bGJjCYWORXriJru844uicOjYS8SH5n9bQo7BjM,3437
+cdcs/CDCS/_blob.py,sha256=AAvKIiL70cJVrXR48Lsi4C9Yy3BI_D_0D1_u_1785Y0,8778
+cdcs/CDCS/_query.py,sha256=cMcmgK6jhlrKiaeJT1bQNrWM_e_6AlENb1dsK4Zjhxs,4200
+cdcs/CDCS/_record.py,sha256=Z6640ZIz6tC9Y9itaWtn35ftoHRsenrnyeKzdhB2QZI,11514
+cdcs/CDCS/_template.py,sha256=dNAckGzzDrYpE2vigiGebbDwnY5fnzbtckpdP5-pkHI,5218
+cdcs/CDCS/_workspace.py,sha256=mT30Iwt2aTC0G1rjr6_7H-q9mUUBMfw2ck4ib1f29ro,1496
+cdcs-0.1.5.dist-info/LICENSE.TXT,sha256=F9SM8aTUeW8lhetalqb8HubplQaaSeVwO7HYoVolNmI,2776
+cdcs-0.1.5.dist-info/METADATA,sha256=r_VhdPgabI_J7EVVj3tHiRvvkLVqyWcrM96Vv3-Frh4,2404
+cdcs-0.1.5.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+cdcs-0.1.5.dist-info/top_level.txt,sha256=DL4txJeL6tKiqxTK0zn2S-J2qkfkxUqflSUdHZi5gHE,5
+cdcs-0.1.5.dist-info/RECORD,,
