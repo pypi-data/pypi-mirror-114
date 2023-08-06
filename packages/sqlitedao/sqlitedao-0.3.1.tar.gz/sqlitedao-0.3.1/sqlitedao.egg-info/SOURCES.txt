@@ -1,0 +1,7 @@
+setup.py
+sqlitedao/__init__.py
+sqlitedao/sqlitedao.py
+sqlitedao.egg-info/PKG-INFO
+sqlitedao.egg-info/SOURCES.txt
+sqlitedao.egg-info/dependency_links.txt
+sqlitedao.egg-info/top_level.txt
