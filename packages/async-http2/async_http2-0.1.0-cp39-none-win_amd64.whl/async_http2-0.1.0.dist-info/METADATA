@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: async_http2
+Version: 0.1.0
+Summary: asyncio-compatible HTTP2 client for Python based on `reqwest` Rust crate and
+	pyo3/pyo3-asyncio
+Keywords: python,http2,asyncio
+Author: alekseyl@list.ru
+Author-email: alekseyl@list.ru
+License: MIT
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/alekseyl1992/async_http2
+
+### asyncio-compatible HTTP2 client for Python based on `reqwest` Rust crate and pyo3/pyo3-asyncio
+
