@@ -1,0 +1,9 @@
+chemical_composition/__init__.py,sha256=RgfJP_qLcKMmgCt7oLqC6g7pvRgN0lN5O7cecvcMkaw,112
+chemical_composition/chemical_composition.py,sha256=KoAlLeA6Nr_X-n9Vkdlj8prIa9THH9n7VOOP6HYgOPw,32238
+chemical_composition/chemical_composition_kb.py,sha256=9K_MNpr5Bqktf-5Cou5626M7AlQVMQ-PHlvZ_XxqHH8,9116
+chemical_composition/version.txt,sha256=ROFh5ElcrCz3hYBD6eZBjpV58N3ProJvmjcmIpaM4GY,6
+chemical_composition-1.0.1.dist-info/LICENSE,sha256=034M0-369w46yGNUZ3w7VrBOrLdflqy5pA1qA9s_v9E,1088
+chemical_composition-1.0.1.dist-info/METADATA,sha256=eHBd9i9atqYWlgLIyOKqnHumT9e68UhL0yfcryvkZtk,1219
+chemical_composition-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+chemical_composition-1.0.1.dist-info/top_level.txt,sha256=ONKhZr_0xhcnSDh6TTzxL7XQg1fjrjhXHkzgBcO2YXw,21
+chemical_composition-1.0.1.dist-info/RECORD,,
