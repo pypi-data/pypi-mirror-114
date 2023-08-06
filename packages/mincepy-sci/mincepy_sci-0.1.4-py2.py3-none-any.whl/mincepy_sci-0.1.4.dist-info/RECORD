@@ -1,0 +1,16 @@
+mincepy_sci/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mincepy_sci/ase_types.py,sha256=pS5WMIIABRMw0xzhQin7AKlXUJwKVFOn6MhPkCLhY_Y,4669
+mincepy_sci/numpy_types.py,sha256=ZlDmDJMCaNRTqTeb90wDnrebXPmaz0dXEN1fXjlVYOc,967
+mincepy_sci/pandas_types.py,sha256=eBhl_z2CQn4xa46itjI7NSMlBIwv7dkyjKsUzc_4avU,1064
+mincepy_sci/plams_types.py,sha256=nsJmFI87FfWGJfWRz8FkQmaMY4Bk9JfMhQBJzeeYD_E,1715
+mincepy_sci/provides.py,sha256=9G-_VjM34d_6NVSpmuIs6p3sTjYgc0JUVPYVFrPjCt8,555
+mincepy_sci/pyilt2_types.py,sha256=y_ZYI6QNGE8WvGqDN-yPGDxAN12CgbDgIoQYKXEgLWg,599
+mincepy_sci/pymatgen_types.py,sha256=uqQ-RoKP9YHp56uN-qYG6jEW8YvBitQOG33-cOZKQtI,8258
+mincepy_sci/rdkit_types.py,sha256=o3wmYw_qmEe_B6QulI7KwpzsEbARv4PnKRxtCeMlcFI,1149
+mincepy_sci/version.py,sha256=py5PV5cWByNBfuTeBWu-UsEDDZ7q1FogZD3rxDaoXA0,260
+mincepy_sci-0.1.4.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+mincepy_sci-0.1.4.dist-info/METADATA,sha256=IsCA2a2914MnrGbjuDKsXeR762Drpv8umXHArnXTACA,3620
+mincepy_sci-0.1.4.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+mincepy_sci-0.1.4.dist-info/entry_points.txt,sha256=-AzPorPLMcFzi0hKGL1Rgd6vTCckItCvPYib2xxivMQ,70
+mincepy_sci-0.1.4.dist-info/top_level.txt,sha256=mHaSNrpOR37XxIt3bjJ1CC5FNncncQyz6zO5OqjdQu4,12
+mincepy_sci-0.1.4.dist-info/RECORD,,
