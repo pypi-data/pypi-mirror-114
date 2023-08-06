@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+threadlocal_aws/__init__.py
+threadlocal_aws/clients.py
+threadlocal_aws/pep562.py
+threadlocal_aws/resources.py
+threadlocal_aws.egg-info/PKG-INFO
+threadlocal_aws.egg-info/SOURCES.txt
+threadlocal_aws.egg-info/dependency_links.txt
+threadlocal_aws.egg-info/requires.txt
+threadlocal_aws.egg-info/top_level.txt
+threadlocal_aws.egg-info/zip-safe
