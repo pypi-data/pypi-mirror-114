@@ -1,0 +1,3 @@
+include src/filmbuff/resources/filmbuff.desktop
+include src/filmbuff/resources/help.md
+include src/filmbuff/resources/tmdb_logo.svg

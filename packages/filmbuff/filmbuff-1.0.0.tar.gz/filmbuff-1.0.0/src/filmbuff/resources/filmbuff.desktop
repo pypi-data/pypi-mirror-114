@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=filmbuff
+Comment=A GUI application for creating and managing local film information databases.
+Exec=filmbuff
+Icon=x-office-spreadsheet
+Terminal=false
+Type=Application
+Categories=Office;Qt;Database;Spreadsheet
