@@ -1,0 +1,4 @@
+requests
+cryptography
+pycryptodomex>=3.7.2
+importlib_metadata
