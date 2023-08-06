@@ -1,0 +1,10 @@
+numpy
+
+[:python_version < "3.8"]
+pygame<2.0,>=1.9.2
+
+[:python_version >= "3.8"]
+pygame==2.0.0.dev6
+
+[repl]
+ptpython==0.41
