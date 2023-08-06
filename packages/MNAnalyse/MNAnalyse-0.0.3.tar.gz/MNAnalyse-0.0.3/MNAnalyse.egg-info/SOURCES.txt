@@ -1,0 +1,7 @@
+README.md
+setup.py
+MNAnalyse.egg-info/PKG-INFO
+MNAnalyse.egg-info/SOURCES.txt
+MNAnalyse.egg-info/dependency_links.txt
+MNAnalyse.egg-info/requires.txt
+MNAnalyse.egg-info/top_level.txt
