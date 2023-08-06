@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: coqui-stt-ctcdecoder
+Version: 0.10.0a12
+Summary: DS CTC decoder
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.14.5)
+
+UNKNOWN
+
+
