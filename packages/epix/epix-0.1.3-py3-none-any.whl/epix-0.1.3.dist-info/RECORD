@@ -1,0 +1,16 @@
+epix/__init__.py,sha256=wdHeJ1__a0Rgd6u4uStUKMUQUts71HxtCtwSxW6B5B8,273
+epix/clustering.py,sha256=Hs1LoAa1mjM0dtdQ1yoI-wZtXoMJbDUJXE66uH_P9nI,10235
+epix/common.py,sha256=rSzlS3wI_MVRIKmDDYslJiyh_DUv1FNwOCugFD5N02M,1467
+epix/detector_volumes.py,sha256=9fRpG5Y82ubRgxisoq-bb-NoC-JJcFC4bIVFh67QXXA,8952
+epix/detectors.py,sha256=u7UKuulxjbD9cvPX3O6rj3uh4nNtb7VXQgthGwG0yVs,6188
+epix/electric_field_handler.py,sha256=Ih9k9hfyO-w-ViMYC0f77NO_bDUG6GZBYCvEfXbTuGM,2859
+epix/event_separation.py,sha256=sjRCXJ6yYYZ0gDEGWTKa-BERUonmM6vuSyk1g-hpwOE,1494
+epix/io.py,sha256=cy9r5RGXn3rD_iAc-A3l5rajjOgIFLAh_wO0oAJ2Oeo,9128
+epix/quanta_generation.py,sha256=WSj3Z_Bq6kbGNfs9B3DV3b7z20aZYC8ATdZRE4PGizQ,2904
+epix/run_epix.py,sha256=o1r1sxylTTtPZwGFgwKxjp4OcR7sCbaDEOCxb7Yaca4,8879
+epix-0.1.3.data/scripts/run_epix,sha256=iQwDT7145BqMIG0K6BxYwYPArOUYuhA9byYB-YcNTKw,3916
+epix-0.1.3.dist-info/LICENCE,sha256=7YpYJ_286VYm_eF1MjXrjtCyfi83H_svCVxoyhIBvVE,1549
+epix-0.1.3.dist-info/METADATA,sha256=pbEDHlcFHlA2ZCAtFD60aVL0daJyCsOXpuczC0tjnVY,4334
+epix-0.1.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+epix-0.1.3.dist-info/top_level.txt,sha256=KhbxS0zS8E8OE3M3NuKMkWjkZ9QULD9Vgmv4I-LnwOk,5
+epix-0.1.3.dist-info/RECORD,,
