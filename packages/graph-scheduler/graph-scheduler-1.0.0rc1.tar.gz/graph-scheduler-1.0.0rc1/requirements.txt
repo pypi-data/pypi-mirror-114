@@ -1,0 +1,3 @@
+numpy <1.21.2
+pint <0.18
+toposort <1.7
