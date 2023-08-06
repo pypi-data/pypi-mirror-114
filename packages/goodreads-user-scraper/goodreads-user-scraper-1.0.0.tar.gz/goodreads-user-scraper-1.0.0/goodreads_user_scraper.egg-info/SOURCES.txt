@@ -1,0 +1,13 @@
+README.md
+setup.py
+goodreads_user_scraper.egg-info/PKG-INFO
+goodreads_user_scraper.egg-info/SOURCES.txt
+goodreads_user_scraper.egg-info/dependency_links.txt
+goodreads_user_scraper.egg-info/entry_points.txt
+goodreads_user_scraper.egg-info/requires.txt
+goodreads_user_scraper.egg-info/top_level.txt
+scraper/__init__.py
+scraper/__main__.py
+scraper/books.py
+scraper/shelves.py
+scraper/user.py

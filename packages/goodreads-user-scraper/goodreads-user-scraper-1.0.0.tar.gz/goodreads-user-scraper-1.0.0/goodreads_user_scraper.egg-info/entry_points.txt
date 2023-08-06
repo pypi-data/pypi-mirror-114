@@ -1,0 +1,3 @@
+[console_scripts]
+goodreads-user-scraper = scraper.__main__:main
+
