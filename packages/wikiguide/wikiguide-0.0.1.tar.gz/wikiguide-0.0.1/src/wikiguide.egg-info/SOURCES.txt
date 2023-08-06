@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/wiki/__init__.py
+src/wikiguide.egg-info/PKG-INFO
+src/wikiguide.egg-info/SOURCES.txt
+src/wikiguide.egg-info/dependency_links.txt
+src/wikiguide.egg-info/top_level.txt
