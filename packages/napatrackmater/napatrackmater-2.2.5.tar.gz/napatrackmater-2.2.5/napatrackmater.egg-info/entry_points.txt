@@ -1,0 +1,3 @@
+[console_scripts]
+track = napatrackmater.__main__:main
+
