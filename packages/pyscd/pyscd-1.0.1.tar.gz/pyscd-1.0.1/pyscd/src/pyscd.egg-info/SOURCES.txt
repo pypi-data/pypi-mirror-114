@@ -1,0 +1,7 @@
+README.md
+setup.py
+pyscd/src/pyscd.egg-info/PKG-INFO
+pyscd/src/pyscd.egg-info/SOURCES.txt
+pyscd/src/pyscd.egg-info/dependency_links.txt
+pyscd/src/pyscd.egg-info/top_level.txt
+pyscd/src/pyscd.egg-info/SOURCES.txt
