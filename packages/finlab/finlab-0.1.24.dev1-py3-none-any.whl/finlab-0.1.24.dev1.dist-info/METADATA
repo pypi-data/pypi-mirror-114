@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: finlab
+Version: 0.1.24.dev1
+Summary: Analyzing stock has never been easier.
+Home-page: UNKNOWN
+Author: FinLab
+Author-email: finlab.company@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (>=1.0.3)
+Requires-Dist: pyarrow (>=2.0.0)
+Requires-Dist: lz4
+Requires-Dist: ffn (>=0.3.5)
+Requires-Dist: shioaji
+Requires-Dist: sourcedefender (>=7.1.14)
+Requires-Dist: plotly (>=5.1.0)
+
+# finlab
+Analyzing stock has never been easier.
+
+# Encryption
+## Prerequirements
+
+```
+pip install --upgrade google-cloud-storage
+export GOOGLE_APPLICATION_CREDENTIALS=path_of_the_credentials
+```
+
+### Create an encrypted module
+1. name the module as `yourModule_encrypted.py` in any package
+2. run the following script
+```
+python encryption.py generate packageA packageB ...
+```
+It will automatically generate `yourModule.py`, so that the user can import it seamlessly.
+
+#### Notes
+
+When importing the `*_encrypted.py` from other py files (self dependencies), the following rules should be followed, otherwise the production version may throw errors.
+1. Use `import package.moduleName` instead of `import package.moduleName_encrypted`
+2. Avoid using `from package.moduleName import some_function`, use
+    ```
+    import package.moduleName as m
+    m.some_function
+    ```
+    instead.
+3. Avoid using relative import in `moduleName_encryption.py`.
+
+### Upload encrypted modules
+run the following script
+```
+python encryption.py upload packageA packageB ...
+```
+A folder `encrypted_py_file` will be created.
+The folder contains all files with the postfix `*_encrypted.py` of packages.
+Inside the folder, the sourcedefender module is called to encrypt `*_encrypted.py` -> `*_encrypted.pye`
+Finally, all files `*_encrypted.pye` are uploaded to cloud storage.
+
+### Scope of encrypted modules
+When the user imports an encrypted module, the system loads the module in the following order:
+1. local version `*_encrypted.py`
+2. online version `packageName__encrypted.pye` if user is VIP
+3. a shallow module that has functions that throw errors.
+A developer with the source code default to importing the local module.
+However, an online test is still necessary.
+
+### Testing the online encrypted version of the module
+To test the online version, a developer can use the following commands to hide or show the `*_encrypted.py`:
+```
+python encryption.py hide packageA packageB ...
+python encryption.py show packageA packageB ...
+```
+When `*_encrypted.py` is hidden, an online version of the file is automatically loaded.
+When hiding a file such as `yourFile_encrypted.py`, the file will be renamed to ".yourFile_encrypted.py", so you can still find it with the command `ls --all`.
+
+# How to update the official package:
+
+1. change the version of setup.py and finlab/__init__.py
+2. source upload.sh (with password)
+
+
