@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: whdtscraper
+Version: 1.0.2
+Summary: Wikimedia history dump tsv scraper, a module that scrapes the site and returns to you the available content.
+Home-page: https://github.com/euberdeveloper/wikimedia-history-dump-tsv#pip
+License: ISC
+Keywords: wikimedia,wikimedia-history-dump,tsv,scraper
+Author: Eugenio Berretta
+Author-email: euberdeveloper@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Project-URL: Repository, https://github.com/euberdeveloper/wikimedia-history-dump-tsv#pip
+Description-Content-Type: text/markdown
+
+# wikimedia-history-dump-tsv-screaper
+A project that scrapes the wikimedia history dump site in order to retrieve the available tsv to download
+
