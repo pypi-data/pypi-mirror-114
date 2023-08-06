@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: gimera
+Version: 0.3.10
+Summary: Handling git submodules and patches.
+Home-page: https://github.com/marcwimmer/gimera
+Author: Marc-Christian Wimmer
+Author-email: marc@itewimmer.de
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+
+# Welcome to GIMERA
+
+
+## How to install:
+
+  * pip install gimera
+
+
+
+## How to use:
+
+Put gimera.yml into your root folder of your project:
+
+```yaml
+repos:
+    - url: "https://github.com/marcwimmer/gimera"
+      branch: branch1
+      path: roles/sub1
+      patches: []
+      type: submodule
+    - url: "https://github.com/marcwimmer/gimera"
+      branch: branch1
+      path: roles2/sub1
+      patches: 
+          - 'roles2/sub1_patches'
+      type: integrated
+```
+
+Then execute:
+
+`>  gimera apply`
+
+## How to make a patchfile:
+
+From the example above: 
+
+  * edit roles2/sub1/file1.txt
+  * `>  gimera apply`
+
+Then a patch file is created as suggestion in roles2/sub1_patches which you may commit and push.
+
+## How to fetch latest versions:
+
+  * `>  gimera apply --update`
+
+Latest versions are pulled and patches are applied.
+
+## How to upload new version
+
+  * increase version in setup.py
+  * rm -Rf dist
+  * rm -Rf gimera.egg-info
+  * python setup.py sdist
+  * twine upload dist/*
+
+
+## install directly
+
+pip install git+https://github.com/marcwimmer/gimera
+
+
