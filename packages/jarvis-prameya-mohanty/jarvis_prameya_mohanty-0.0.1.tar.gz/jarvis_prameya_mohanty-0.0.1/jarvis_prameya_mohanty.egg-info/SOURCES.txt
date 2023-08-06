@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+jarvis_prameya_mohanty/__init__.py
+jarvis_prameya_mohanty.egg-info/PKG-INFO
+jarvis_prameya_mohanty.egg-info/SOURCES.txt
+jarvis_prameya_mohanty.egg-info/dependency_links.txt
+jarvis_prameya_mohanty.egg-info/requires.txt
+jarvis_prameya_mohanty.egg-info/top_level.txt

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: jarvis_prameya_mohanty
+Version: 0.0.1
+Summary: This is a package which can perform amazing tasks.
+Home-page: UNKNOWN
+Author: Prameya
+Author-email: prameyamohanty14@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is a package which has some amazing functions. This can make python automate things like sending emails, wishing us, speaking, taking voice input from user etc.
+
