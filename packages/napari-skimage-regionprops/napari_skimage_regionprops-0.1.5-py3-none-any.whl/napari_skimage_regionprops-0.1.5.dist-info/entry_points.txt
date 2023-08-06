@@ -1,0 +1,4 @@
+[napari.plugin]
+Measurements = napari_skimage_regionprops._regionprops
+Utilities = napari_skimage_regionprops._utilities
+
