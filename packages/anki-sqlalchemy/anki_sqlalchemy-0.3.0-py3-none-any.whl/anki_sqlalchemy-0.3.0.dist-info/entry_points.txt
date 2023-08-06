@@ -1,0 +1,3 @@
+[sqlalchemy.plugins]
+unicase = anki_sqlalchemy.unicase:UnicasePlugin
+
