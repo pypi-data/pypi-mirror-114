@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+soundit.py
+soundit.egg-info/PKG-INFO
+soundit.egg-info/SOURCES.txt
+soundit.egg-info/dependency_links.txt
+soundit.egg-info/top_level.txt
