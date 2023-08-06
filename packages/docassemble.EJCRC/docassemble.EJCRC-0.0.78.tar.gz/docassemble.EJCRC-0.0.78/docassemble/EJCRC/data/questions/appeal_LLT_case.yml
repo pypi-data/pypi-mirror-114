@@ -1,0 +1,15 @@
+metadata:
+  title: Appeal Landlord-Tenant Case
+  temporary session: true
+---
+mandatory: true
+question: |
+  Select the scenario that best applies to you:
+subquestion: |
+  * [I would like to appeal my Municipal Court case]
+  * [I already appealed my Municipal Court case and need to file an answer]
+  * [The Court of Common Pleas entered a default judgment against me and I want to ask the court to change its decision]
+
+  [I would like to appeal my Municipal Court case]: ${ interview_url(i='docassemble.EJCRC:data/questions/appeal_muni_LLT_case.yml') }
+  [The Court of Common Pleas entered a default judgment against me and I want to ask the court to change its decision]: ${ interview_url(i='docassemble.EJCRC:data/questions/petition_open_defendant1.yml') }
+  [I already appealed my Municipal Court case and need to file an answer]: ${ interview_url(i='docassemble.EJCRC:data/questions/petition_open_defendant1.yml') }
