@@ -1,0 +1,211 @@
+metadata:
+  title: Notice of Praecipe to Enter Judgment by Default
+  temporary session: true
+---
+attachment:
+  variable name: ten_day
+  filename: ten_day
+  docx template file: ten_day.docx
+  valid formats: 
+    - pdf 
+---
+question: |
+  Thank you, ${ plaintiffname1 }!
+subquestion: |
+ ### [:file-pdf: CLICK TO DOWNLOAD YOUR NOTICE OF PRAECIPE TO ENTER JUDGMENT BY DEFAULT](${ ten_day.url_for() })
+ 
+  YOU MUST FILE THIS NOTICE TO COMPLETE YOUR LEGAL ACTION. [Click here](https://www.courts.phila.gov/pdf/manuals/civil-trial/FJD_Civil_E-Filing_User_Manual.pdf) for instructions on how to e-file your legal documents. [Click here](${ url_of('EFS_Instructions.pdf') }) for instructions on how to create an account to e-file your document(s).
+continue button label: |
+  Finish Notice
+mandatory: True
+continue button field: finish
+---
+mandatory: true
+need:
+  finish
+question: | 
+  Review the following reminders:
+subquestion: |
+  **[You can download your Notice here](${ ten_day.url_for() })**
+fields:
+  - I understand that I have not filed my Notice by using this website: nofile
+    datatype: yesnowide
+  - I have downloaded my Notice: download
+    datatype: yesnowide
+continue button field: done
+continue button label: |
+  Next
+validation code: |
+  if not download:
+    validation_error("You cannot continue until you indicate that you have downloaded your complaint.")
+  if not nofile:
+    validation_error("You cannot continue until you indicate that you understand you have not filed your complaint.")
+--- 
+mandatory: true
+need:
+  done
+question: |
+  You have completed the process of filling out your Notice of Praecipe to Enter Default Judgment. Click exit to return to the Philadelphia Court website
+buttons:
+  - Exit: exit
+    url: https://courts.phila.gov
+---
+question: | 
+  Notice of Praecipe to Enter Judgment by Default
+subquestion: |
+  A Notice of Praecipe to Enter Judgment by Default can be filed with the court if the defendant(s) has/have not filed a response to the court in a timely manner.  Please review the following Rules of Pennsylvania Civil Procedure before filing this motion.   
+  &nbsp;                                
+  &nbsp;                 
+  ####Rule 237.5 Form of Notice of Praecipe to Enter Judgment by Default
+
+  The notice required by Rule 237.1(a)(2) shall be substantially in the following form-
+  
+  (CAPTION)
+  
+  To-
+  
+  ____________
+  
+  (Defendant)
+  
+  Date of Notice-
+  
+  ____________
+  
+  IMPORTANT NOTICE
+  
+  YOU ARE IN DEFAULT BECAUSE YOU HAVE FAILED TO ENTER A WRITTEN APPEARANCE PERSONALLY OR BY ATTORNEY AND FILE IN WRITING WITH THE COURT YOUR DEFENSES OR OBJECTIONS TO THE CLAIMS SET FORTH AGAINST YOU. UNLESS YOU ACT WITHIN TEN DAYS FROM THE DATE OF THIS NOTICE, A JUDGMENT MAY BE ENTERED AGAINST YOU WITHOUT A HEARING AND YOU MAY LOSE YOUR PROPERTY OR OTHER IMPORTANT RIGHTS.
+
+  YOU SHOULD TAKE THIS PAPER TO YOUR LAWYER AT ONCE. IF YOU DO NOT HAVE A LAWYER, GO TO OR TELEPHONE THE OFFICE SET FORTH BELOW. THIS OFFICE CAN PROVIDE YOU WITH INFORMATION ABOUT HIRING A LAWYER.
+  
+  IF YOU CANNOT AFFORD TO HIRE A LAWYER, THIS OFFICE MAY BE ABLE TO PROVIDE YOU WITH INFORMATION ABOUT AGENCIES THAT MAY OFFER LEGAL SERVICES TO ELIGIBLE PERSONS AT A REDUCED FEE OR NO FEE.
+  
+  **____________**
+
+  (Name of Office)
+
+  **____________**
+  
+  (Address of Office)
+  
+  **____________**
+
+  (Telephone Number)
+  
+  **______________________________________**
+  
+  (Signature of Plaintiff or Attorney)
+
+  **______________________________________**
+
+  (Address)
+
+  231 Pa. Code § 237.5
+fields:
+  - I understand and have reviewed the above rule(s) of civil procedure.: understand
+    datatype: yesnowide
+validation code: |
+  if not understand:
+    validation_error("You cannot continue until you indicate that you understand.")
+---
+mandatory: true
+need:
+  understand
+question: |
+  Please fill out the information for each plaintiff in this case.
+subquestion: |
+  A plaintiff is a party who is suing/taking the defendant(s) to court.  
+fields:
+  - How many plaintiffs are there?: plaintiffnumber
+    datatype: integer
+    choices:
+      - 1
+      - 2
+      - 3
+    default: 1   
+  - Plaintiff Full Name: plaintiffname1
+  - 2nd Plaintiff Full Name: plaintiffname2
+    js show if: |
+      val('plaintiffnumber') > 1
+  - 3rd Plaintiff Full Name: plaintiffname3
+    js show if: |
+      val('plaintiffnumber') > 2
+---
+need:
+  plaintiffname1
+question: | 
+  Please provide your contact information:
+fields:
+  - Street Address: plaintiffaddress1
+  - City and State: plaintiffcity1
+    default: "Philadelphia, PA"
+  - ZIP Code: plaintiffzipcode1
+  - Phone Number: plaintiffphone1
+---
+need:
+  plaintiffaddress1
+question: |
+  Please complete the information for each defendant in this case.
+subquestion: |
+  A defendant is a party (individual, company, or institution) being sued. Name all of the defendants you are trying to remove from the property to the best of your ability. **If you do not know the names of some of the defendants, you may enter “All Occupants” in the name section.**
+fields:
+  - How many defendants are party to the case?: defendantnumber
+    datatype: integer
+    choices:
+      - 1
+      - 2
+      - 3
+    default: 1    
+  - Defendant Full Name: defendantname1
+  - 2nd Defendant Full Name: defendantname2
+    js show if: |
+      val('defendantnumber') > 1 
+  - 3rd Defendant Full Name: defendantname3
+    js show if: |
+      val('defendantnumber') > 2
+---
+need: 
+  defendantname1
+question: | 
+  Please provide the Case ID number for this case:
+subquestion: |  
+  If you cannot locate the Case ID number, you may either contact the civil filing office or find the number by searching for your case on the [FJD Civil Docket.](http://fjdefile.phila.gov/efsfjd/zk_fjd_public_qry_00.zp_disclaimer)
+  
+  [Click here if you need additional help (opens a separate tab)](${ interview_url(i='docassemble.EJCRC:data/questions/case_id_help.yml') }){:target="_blank"}.
+
+fields:
+  - Do you have a 9-digit case number?: nines
+    datatype: radio
+    choices: 
+      - Yes
+      - No
+  - 9-digit case number: serial
+    datatype: integer
+    required: false
+    js show if: |
+      val('nines') == 'Yes'
+    max: 999999999
+validation code: |
+  if nines == 'No':
+    validation_error("Please click the link for additional help")
+---
+need:
+  nines
+question: |
+  Which defendant(s) did not reply to your notice of service and what day did you provide the original notice?
+fields:
+  - How many defendants were unresponsive?: unresponsivenumber
+    datatype: integer
+    choices:
+      - 1
+      - 2
+      - 3
+    default: 1    
+  - Unresponsive Defendant: defendantnotice
+  - 2nd Unresponsive Defendant: defendantnotice1
+    js show if: |
+      val('unresponsivenumber') > '1'
+  - 3rd Unresponsive Defendant: defendantnotice2
+    js show if: |
+      val('unresponsivenumber') > '2'
+---

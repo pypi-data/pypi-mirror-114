@@ -1,0 +1,15 @@
+metadata:
+  title: Municipal Court
+  temporary session: true
+---
+mandatory: true
+question: |
+  Municipal Court
+subquestion: |
+  The Philadelphia Municipal Court handles landlord-tenant cases involving written or oral leases. The court has the authority to evict a tenant and to enter a money judgment.  For more information on your landlord-tenant case with the Municipal Court, contact (215) 686-7980.
+
+  If you are a low-income tenant, you may be eligible for free legal advice and representation through Community Legal Services. Contact [PhillyTenant.org](http://www.phillytenant.org) (267) 443-2500 for more information.
+
+buttons:
+  - Exit: exit
+    url: https://courts.phila.gov

@@ -1,0 +1,286 @@
+metadata:
+  title: Motion to Stay Writ of Possession
+  temporary session: true
+---
+question: |
+  Thank you, ${ defendantname1 }!
+subquestion: |
+ ### [CLICK TO DOWNLOAD YOUR MOTION TO STAY WRIT OF POSSESSION](${ motion_stay_woe.url_for() })
+ 
+ 
+ YOU MUST FILE THIS MOTION TO COMMENCE YOUR LEGAL ACTION. [Click here](https://www.courts.phila.gov/pdf/manuals/civil-trial/FJD_Civil_E-Filing_User_Manual.pdf) for instructions on how to e-file your legal documents. [Click here](${ url_of('EFS_Instructions.pdf') }) for instructions on how to create an account to e-file your document(s).
+continue button field: finish
+continue button label: |
+  Finish Motion to Stay Writ of Possession
+mandatory: True
+---
+mandatory: true
+need:
+  finish
+question: | 
+  Review the following reminders:
+subquestion: |
+  **[You can download your motion here](${ motion_stay_woe.url_for() })**
+fields:
+  - I understand that I have not filed my Motion by using this website: nofile
+    datatype: yesnowide
+  - I have downloaded my Motion: download
+    datatype: yesnowide
+continue button field: done
+continue button label: |
+  Next
+validation code: |
+  if not download:
+    validation_error("You cannot continue until you indicate that you have downloaded your Motion.")
+  if not nofile:
+    validation_error("You cannot continue until you indicate that you understand you have not filed your Motion.")
+--- 
+mandatory: true
+need:
+  done
+question: |
+  You have completed the process of filling out your Petition to Open Default Judgment. Click exit to return to the Philadelphia Court website
+buttons:
+  - Exit: exit
+    url: https://courts.phila.gov
+---
+attachment:
+  - variable name: motion_stay_woe
+    filename: Motion to Stay Writ of Execution
+    docx template file: motion_stay_woe.docx
+    valid formats:
+      - pdf
+---
+question: |
+  Motion to Stay Writ of Execution
+subquestion: |
+  ### Rule 3121 - Stay of execution; setting aside execution
+  (a) Execution shall be stayed as to all or any part of the property of the defendant
+ 
+  (1) upon written direction of the plaintiff to the sheriff:
+ 
+  (2) upon the entry of bond with the prothonotary, by any person or party in interest, with security approved by the prothonotary, in the amount of plaintiff's judgment, including probable interest and costs, or in such lesser amount as the court may direct, naming the Commonwealth of Pennsylvania as obligee, and conditioned to pay the amount due within ninety (90) days of the entry of bond, unless the time for payment be further extended by the court;
+ 
+  (3) pending disposition of a property claim filed by a third party;
+ 
+  (4) upon a showing of exemption or immunity of property from execution;
+ 
+  (5) upon a showing of a right to a stay under the provisions of an Act of Congress or any Act of Assembly.
+ 
+  (b) Execution may be stayed by the court as to all or any part of the property of the defendant upon its own motion or application of any party in interest showing
+ 
+  (1) a defect in the writ, levy or service; or
+ 
+  (2) any other legal or equitable ground therefor.
+ 
+  (c) In an order staying execution the court may impose such terms and conditions or limit the stay to such reasonable time as it may deem appropriate.
+ 
+  (d) The court may on application of any party in interest set aside the writ, service or levy
+ 
+  (1) for a defect therein;
+ 
+  (2) upon a showing of exemption or immunity of property from execution, or
+ 
+  (3) upon any other legal or equitable ground therefor.
+ 
+  (e) All objections by the defendant shall be raised at one time.
+ 
+  (f) After the termination of a stay, sale may be had without reissuance of the writ..
+  
+fields:
+  - I understand and have reviewed the above rule(s) of civil procedure.: understand
+    datatype: yesnowide
+validation code: |
+  if not understand:
+    validation_error("You cannot continue until you indicate that you understand.")
+---
+mandatory: true
+need:
+  understand
+question: |
+  Please complete the information for each plaintiff in this case.
+subquestion: |
+  A plaintiff is a party who is suing/taking the plaintiff(s) to court.  
+fields:
+  - How many plaintiffs are party to the case?: plaintiffnumber
+    datatype: integer
+    choices:
+      - 1
+      - 2
+      - 3
+    default: 1    
+  - Plaintiff Full Name: plaintiffname1
+  - Plaintiff Street Address: plaintiffstreetaddress1
+  - Plaintiff City and State: plaintiffcity1
+    help: This should be Philadelphia, PA
+    default: Philadelphia, PA
+  - Plaintiff ZIP Code: plaintiffzipcode1
+  - Plaintiff Phone Number: plaintiffphone1
+    required: false
+  - 2nd Plaintiff Full Name: plaintiffname2
+    js show if: |
+      val('plaintiffnumber') > 1 
+  - 2nd Plaintiff Street Address: plaintiffstreetaddress2
+    js show if: |
+      val('plaintiffnumber') > 1  
+  - 2nd Plaintiff City and State: plaintiffcity2
+    js show if: |
+      val('plaintiffnumber') > 1
+  - 2nd Plaintiff ZIP Code: plaintiffzipcode2
+    js show if: |
+      val('plaintiffnumber') > 1
+  - 2nd Plaintiff Phone Number: plaintiffphone2
+    required: false
+    js show if: |
+      val('plaintiffnumber') > 1  
+  - 3rd Plaintiff Full Name: plaintiffname3
+    js show if: |
+      val('plaintiffnumber') > 2
+  - 3rd Plaintiff Street Address: plaintiffstreetaddress3
+    js show if: |
+      val('plaintiffnumber') > 2
+  - 3rd Plaintiff City and State: plaintiffcity3
+    js show if: |
+      val('plaintiffnumber') > 2
+  - 3rd Plaintiff ZIP Code: plaintiffzipcode3
+    js show if: |
+      val('plaintiffnumber') > 2
+  - 3rd Plaintiff Phone Number: plaintiffphone3
+    required: false
+    js show if: |
+      val('plaintiffnumber') > 2
+
+---
+need:
+  plaintiffname1
+question: |
+  Please complete the information for each defendant in this case.
+subquestion: |
+  A defendant is a party (individual, company, or institution) being sued. Name all of the defendants you are trying to remove from the property to the best of your ability. **If you do not know the names of some of the defendants, you may enter “All Occupants” in the name section.**
+fields:
+  - How many defendants are there?: defendantnumber
+    datatype: integer
+    choices:
+      - 1
+      - 2
+      - 3
+    default: 1   
+  - defendant Full Name: defendantname1
+  - 2nd defendant Full Name: defendantname2
+    js show if: |
+      val('defendantnumber') > 1
+  - 3rd defendant Full Name: defendantname3
+    js show if: |
+      val('defendantnumber') > 2  
+---
+need: 
+  defendantname1
+question: | 
+  Please provide the Case ID number for this case:
+subquestion: |  
+  If you cannot locate the Case ID number, you may either contact the civil filing office or find the number by searching for your case on the [FJD Civil Docket.](http://fjdefile.phila.gov/efsfjd/zk_fjd_public_qry_00.zp_disclaimer)
+  
+  [Click here if you need additional help (opens a separate tab)](${ interview_url(i='docassemble.EJCRC:data/questions/case_id_help.yml') }){:target="_blank"}.
+
+fields:
+  - Do you have a 9-digit case number?: nines
+    datatype: radio
+    choices: 
+      - Yes
+      - No
+  - 9-digit case number: serial
+    datatype: integer
+    required: false
+    js show if: |
+      val('nines') == 'Yes'
+    max: 999999999
+validation code: |
+  if nines == 'No':
+    validation_error("Please click the link for additional help")
+---
+need:
+  nines
+question: |
+  What date did you file your complaint with the court?
+fields:
+  - File date: complaintdate
+    datatype: date
+---
+need:
+  complaintdate
+question: |
+  What is today's date?
+fields:
+  - Date today: today1
+    datatype: date
+    default: |
+      ${ today() }
+---
+need:
+  today1
+question: |
+  Review the following text and sign below:
+subquestion: |
+  ### MOTION COVER SHEET
+  By filing this document and signing below, the moving party certifies that this motion, petition, answer or response along with all documents filed, will be served upon all counsel and unrepresented parties as required by rules of Court (see PA. R.C.P. 206.6, Note to 208.2(a), and 440). Furthermore, moving party verifies that the answers made herein are true and correct and understands that sanctions may be imposed for inaccurate or incomplete answers.
+signature: signature1
+under: |
+  ${ defendantname1 }
+---
+need:
+  signature1
+question: |
+  Briefly answer the following questions
+fields:
+  - What is your name and address?: paragraph1
+    datatype: area
+  - What is your relationship with the defendant(s)?: paragraph2
+    datatype: area
+  - Why are you suing the defendant(s)?: paragraph3
+    datatype: area
+  - What solution do you want the court to provide?: paragraph4
+    datatype: area
+---
+need:
+  paragraph4
+question: |
+  Please provide additional information about your case and why you think the court should grant you relief.
+fields:
+  - Provide more detail: paragraph5
+    datatype: area
+---
+need:
+  paragraph5
+question: |
+  Please provide details about the Notice of Praecipe to Enter Judgment by Non Pros.
+fields:
+  - How many times have you attempted to serve the Notice of Praecipe to Enter Judgment by Non Pros: servetimes
+    datatype: integer
+    choices:
+      - 1
+      - 2
+      - 3
+    default: 1  
+  - Service date: servedate
+    datatype: date
+  - 2nd Service date: servedate2
+    datatype: date
+    js show if: |  
+      val('servetimes') > 1
+  - 3rd Service date: servedate3
+    datatype: date
+    js show if: |  
+      val('servetimes') > 2
+---
+need:
+  servedate
+question: |
+  Review the following text and sign below:
+subquestion: |
+  ### VERIFICATION
+  I, ${ defendantname1 }, defendant, verify that the facts set forth in the foregoing are true and correct to the best of my information, knowledge and belief.
+
+  I understand that the statements contained herein are subject to the Penalties of 18 Pa.C.S.A., Section 4904 relating to unsworn falsification to authorities.
+signature: signature2
+under: |
+  ${ defendantname1 }

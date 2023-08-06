@@ -1,0 +1,158 @@
+metadata:
+  title: Office of Judicial Records Document Assembly Tool
+  temporary session: true  
+---
+event: call_number
+question: |
+   This online tool is limited to property owners or parties who have legal authority to act on the owner’s behalf to remove someone from the property.  Please consult an attorney if you have any questions or contact the Elder Justice & Civil Resource Center at (215)686-7027 for more information.  
+buttons:
+  - Exit: exit
+    url: https://docassemble.org
+---
+event: consult_atty
+question: |
+  This tool should not be used if you are represented by an attorney. Please consult your lawyer.
+buttons:
+  - Exit: exit
+    url: https://docassemble.org
+---
+event: find_atty
+question: |
+  The Philadelphia Bar Association can help you find an attorney through its  [Philadelphia Bar Association Lawyer Referral Program.](https://lris.philadelphiabar.org) They can be reached by telephone at (215) 238-6333
+buttons:
+  - Exit: exit
+    url: https://docassemble.org
+---
+event: municipal_no
+question: |
+  The Philadelphia Municipal Court hears cases involving a written or oral lease.  The court has the authority to evict a tenant and to enter money judgment.  However the court cannot hear a case involving a squatter.  To file a landlord tenant case with the Municipal Court, contact (215) 686-2900.
+buttons:
+  - Exit: exit
+    url: https://courts.phila.gov
+---
+event: limited
+question: |
+  This online tool provides limited assistance for ejectments and landlord/tenant appeals. Please consult an attorney or contact the Elder Justice and Civil Resource Center to help identify the nature of your legal issue at (215)686-7027.
+buttons:
+  - Exit: exit
+    url: https://courts.phila.gov
+---
+code: |
+  lawyer
+  if lawyer == True:
+    consult_atty
+  if lawyer == False:
+    represent
+    if represent == "No, I am looking for an attorney to represent me":
+      find_atty
+    if represent == "Yes, I plan to represent myself":
+      owner
+      if owner == None:
+        call_number
+      if owner == False:
+        call_number
+      if owner == True:
+        lease
+        if lease == False:
+          expired
+          if expired == "Yes":
+            unpaid
+            if unpaid == True:
+              municipal_no
+          if expired == "No":
+            municipal_no            
+        if lease == True:
+          municipal
+          if municipal == False:
+            municipal_no
+          if municipal == True:
+            muni_appeal
+            if muni_appeal == True:
+              limited
+mandatory: True
+---
+field: lawyer
+question: |
+  Are you currently represented by an attorney?
+yesno: lawyer
+mandatory: True
+---
+need:
+  lawyer
+question: |
+   Are you planning on representing yourself in court?
+field: represent
+buttons:
+  - Yes, I plan to represent myself
+  - No, I am looking for an attorney to represent me  
+mandatory: True
+---
+need:
+  represent
+question: |
+  Are you the owner or the administrator of the property or home?
+subquestion: |
+  Press one of the following buttons:
+yesnomaybe: owner
+mandatory: True
+---
+need:
+  owner
+question: |
+  Do you have a signed lease agreement with the person you are trying to remove from this property?  
+yesno: lease
+---
+need:
+  lease
+question: | 
+  Has this case already been heard by the Philadelphia Municipal Court?
+yesno: municipal
+---
+question: |
+  Are you trying to appeal the Municipal Court's Decision?
+subquestion: |
+  If you select yes, you will be redirected to a page with landlord tenant appeal options 
+action buttons:
+  - label: Yes
+    action: |
+      ${ interview_url(i='docassemble.EJCRC:data/questions/explainer_placeholder.yml') } 
+    color: primary
+    placement: before
+continue button label: |
+  No
+continue button field: muni_appeal  
+---
+field: expired
+question: |
+  Has the lease expired?
+buttons:
+  - Yes
+  - No
+action buttons:  
+  - label: Not Applicable
+    action: |
+      ${ interview_url(i='docassemble.EJCRC:data/questions/ejectment_plaintiff.yml') } 
+    color: primary
+---
+need:
+  expired
+question: |
+  Are you looking to collect rent and/or any other costs?
+buttons:
+  - No
+  - Not Applicable
+action buttons:  
+  - label: Yes
+    action: |
+      ${ interview_url(i='docassemble.EJCRC:data/questions/appeal_LLT_case.yml') } 
+    color: primary
+    placement: before
+---
+mandatory: true
+need:
+  unpaid
+question: |
+  Please select the documents you wish to fill out:
+subquestion: |
+  * [Civil Complaint for an Ejectment] 
+    [Civil Complaint for an Ejectment]: ${ interview_url(i='docassemble.EJCRC:data/questions/civil_complaint.yml') }
