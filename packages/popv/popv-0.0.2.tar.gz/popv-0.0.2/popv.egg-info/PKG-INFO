@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: popv
+Version: 0.0.2
+Summary: The PopV algorithm
+Home-page: UNKNOWN
+Author: Nir Yosef
+Author-email: alexander.tarashansky@czbiohub.org
+License: UNKNOWN
+Description: The PopV algorithm for unsupervised label transfer from reference datasets.
+Keywords: scrnaseq analysis label transfer annotation
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
