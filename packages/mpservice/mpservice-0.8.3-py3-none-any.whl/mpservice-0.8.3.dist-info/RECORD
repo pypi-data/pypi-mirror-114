@@ -1,0 +1,11 @@
+mpservice/__init__.py,sha256=00-bbLx3_5Sngp-f4Y_vglZG-EL4tZ2RveRo9dAgLZA,269
+mpservice/_mperror.py,sha256=kzWqryQMKpYL_PpVGeiH4mUH4D3Xf2m6g8Ybzh7Li4g,2157
+mpservice/_mpservice.py,sha256=nIvEudyjskBstWEqrQg2VEeXhXsTFdSPV2RJax4iARY,12535
+mpservice/http_server.py,sha256=A1_8bHgXnB_k3fl5t-vysFN5YWtkiI5-xgrDuSrdBM8,5900
+mpservice/server_process.py,sha256=3ZJo0LSvpAbDWPaKEEld7vigtCiZWTTL7asc_2mvFSc,1624
+mpservice/streamer.py,sha256=bKAOmV4mShXh1Y_wUvAje8Wg2-FdVEa5X4P5UrAt4tQ,9936
+mpservice-0.8.3.dist-info/LICENSE,sha256=Mx-ae4fXQys21SldoHoEaSOUF-2n02Z_Sx6o6YlRW3c,1067
+mpservice-0.8.3.dist-info/METADATA,sha256=gijLJYzDnqJoeXrVjcKStcTEXCDWTCzKk5yfn2mjOGs,892
+mpservice-0.8.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mpservice-0.8.3.dist-info/top_level.txt,sha256=CuIEOI3FCievBq4NSesW8ZDVTAtpaqhyMXlqExDhcF0,10
+mpservice-0.8.3.dist-info/RECORD,,
