@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+swiplserver/__init__.py
+swiplserver/prologserver.py
+swiplserver.egg-info/PKG-INFO
+swiplserver.egg-info/SOURCES.txt
+swiplserver.egg-info/dependency_links.txt
+swiplserver.egg-info/top_level.txt
