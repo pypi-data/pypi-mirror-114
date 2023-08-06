@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "subsfinder"
+version = "3.0.2"
+description = "subsfinder -- a general finder for subtitles"
+authors = ["wflc <wflc@163.com>"]
+repository = "https://github.com/wflc/subsfinder/"
+readme = "README.md"
+keywords = ["subtitle", "subsfinder", "shooter", "zimuku"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
+requests = "*"
+bs4 = "^0.0.1"
+lxml = "*"
+gevent = "*"
+rarfile = "*"
+six = "*"
+
+[tool.poetry.dev-dependencies]
+tox = "*"
+twine = "*"
+pyinstaller = "*"
+autopep8 = "*"
+rope = "*"
+pytest = "*"
+
+[tool.poetry.scripts]
+subsfinder = "subsfinder.run_gevent:run"
+subutils = "subsfinder.utils:main"
+
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.autopep8]
+max_line_length = 120
