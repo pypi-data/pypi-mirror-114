@@ -1,0 +1,3 @@
+[console_scripts]
+Stinder = stinder.__main__:main
+
