@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.py
+EasierMySQL/MySQLerrorTypes.py
+EasierMySQL/__init__.py
+EasierMySQL/easyMySQL.py
+EasierSQL.egg-info/PKG-INFO
+EasierSQL.egg-info/SOURCES.txt
+EasierSQL.egg-info/dependency_links.txt
+EasierSQL.egg-info/requires.txt
+EasierSQL.egg-info/top_level.txt
+EasierSQLite/__init__.py
+EasierSQLite/easySQL.py
+EasierSQLite/errorTypes.py
