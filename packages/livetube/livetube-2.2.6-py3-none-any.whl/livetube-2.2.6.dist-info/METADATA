@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: livetube
+Version: 2.2.6
+Summary: A python module aims to youtube livestream & studio
+Home-page: https://github.com/sam01101/livetube
+Author: Sam
+Author-email: sam@vtr.ac
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: aiohttp
+Requires-Dist: yarl
+Requires-Dist: protobuf
+
+UNKNOWN
+
+
