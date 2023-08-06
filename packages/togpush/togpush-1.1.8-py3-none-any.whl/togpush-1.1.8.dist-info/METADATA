@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: togpush
+Version: 1.1.8
+Summary: Command Line Interface for fetching data from fsm and pushing to tog for tagging
+Author: Lohith Anandan
+Author-email: lohith@vernacular.ai
+Requires-Python: >=3.7.1,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: docopt (>=0.6.2,<0.7.0)
+Requires-Dist: pandas (==1.3.0)
+Requires-Dist: psycopg2-binary (>=2.8.5,<3.0.0)
+Requires-Dist: python-dateutil (>=2.8.1,<3.0.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Requires-Dist: tqdm (>=4.46.0,<5.0.0)
