@@ -1,0 +1,67 @@
+{
+    "Dialog": {
+        "auto": "Auto",
+        "choice": "Choice",
+        "leave_without_save1": "You are about to leave without saving your work!",
+        "leave_without_save2": "Do you ant to save your changes?",
+        "skip": "Skip"
+    },
+    "DialogCreator": {
+        "add": "New dialog",
+        "back": "Back to main menu",
+        "background": "Background Image",
+        "delete": "Delete current dialog",
+        "next": "Next dialog",
+        "npc": "Npc",
+        "please_enter_content": "Content",
+        "please_enter_name": "Name",
+        "previous": "Previous dialog",
+        "removeNpc": "Remove this npc"
+    },
+    "Global": {
+        "back": "Back",
+        "cancel": "Cancel",
+        "delete": "Delete",
+        "dont_save": "Don't Save",
+        "no_translation": "Translation is not available",
+        "progress_has_been_saved": "The progress has been saved.",
+        "reload_file": "Reload the file",
+        "resume": "Resume",
+        "save": "Save",
+        "save_current_progress": "Save Current Progress",
+        "warning": "Warning"
+    },
+    "Language": "English",
+    "Numbers": [
+        "Zero",
+        "One",
+        "Two",
+        "Three",
+        "Four",
+        "Five",
+        "Six",
+        "Seven",
+        "Eight",
+        "Nine",
+        "Ten",
+        "Eleven",
+        "Twelve",
+        "Thirteen",
+        "Fourteen",
+        "Fifteen",
+        "Sixteen",
+        "Seventeen",
+        "Eighteen",
+        "Nineteen",
+        "Twenty"
+    ],
+    "OptionMenu": {
+        "background_music": "Background Music",
+        "environmental_sound": "Environmental Sounds",
+        "global_volume": "Global Volume",
+        "language": "Language",
+        "option_menu": "Option Menu",
+        "setting": "Setting",
+        "sound_effects": "Sound Effects"
+    }
+}
