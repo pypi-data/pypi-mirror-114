@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: cotton2k
+Version: 5.0.0a6
+Summary: Reimplementation for Cotton2k simulation model
+Home-page: https://github.com/tcztzy/cotton2k
+Author-email: Tang Ziya <tcztzy@gmail.com>
+License: UNKNOWN
+Project-URL: repository, https://github.com/tcztzy/cotton2k
+Keywords: cotton,simulation,model
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Hydrology
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: appdirs
+Requires-Dist: numpy
+Requires-Dist: sqlalchemy
+
+=========================
+Cotton2K simulation model
+=========================
+
+
+|travis|_ |codecov|_ |commit| |lines of code| |license|
+
+
+Cotton2K is a cotton simulation model specially adapted for irrigated cotton production in arid regions. It was originally written by `Prof. Avishalom Marani`_, and rewrite in Python by `Tang Ziya`_.
+
+The model software is distributed under `AGPL 3.0 or later`_. This version has been upgraded to run on Python.
+
+
+If you have any problem, feel free to open an issue.
+
+.. |travis| image:: https://img.shields.io/travis/tcztzy/cotton2k/master
+            :alt: Build Status
+.. _travis: https://travis-ci.org/tcztzy/cotton2k
+.. |codecov| image:: https://img.shields.io/codecov/c/github/tcztzy/cotton2k
+             :alt: Codecov
+.. _codecov: https://codecov.io/github/tcztzy/cotton2k?branch=master
+.. |license| image:: https://img.shields.io/github/license/tcztzy/cotton2k
+             :alt: GitHub
+.. |commit| image:: https://img.shields.io/github/commit-activity/m/tcztzy/cotton2k
+            :alt: GitHub commit activity
+.. |lines of code| image:: https://img.shields.io/tokei/lines/github/tcztzy/cotton2k
+                   :alt: Lines of code
+.. _`Prof. Avishalom Marani`: https://plantscience.agri.huji.ac.il/avishalom-marani
+.. _`Tang Ziya`: https://github.com/tcztzy
+.. _`AGPL 3.0 or later`: LICENSE
+
