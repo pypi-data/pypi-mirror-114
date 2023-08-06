@@ -1,0 +1,12 @@
+README.md
+setup.py
+pyipfs/Constants.py
+pyipfs/Errors.py
+pyipfs/__init__.py
+pyipfs/add.py
+pyipfs/ipfs.py
+pyipfs.egg-info/PKG-INFO
+pyipfs.egg-info/SOURCES.txt
+pyipfs.egg-info/dependency_links.txt
+pyipfs.egg-info/requires.txt
+pyipfs.egg-info/top_level.txt
