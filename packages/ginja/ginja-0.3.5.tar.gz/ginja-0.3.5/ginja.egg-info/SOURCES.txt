@@ -1,0 +1,12 @@
+README.md
+setup.py
+ginja/__init__.py
+ginja/__main__.py
+ginja/cli.py
+ginja/version.py
+ginja.egg-info/PKG-INFO
+ginja.egg-info/SOURCES.txt
+ginja.egg-info/dependency_links.txt
+ginja.egg-info/entry_points.txt
+ginja.egg-info/requires.txt
+ginja.egg-info/top_level.txt
