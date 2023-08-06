@@ -1,0 +1,38 @@
+# Editor detritus
+*.sw[nop]
+
+# Python build system files
+.eggs/
+*.egg-info
+pip-wheel-metadata
+
+# Python testing-related files
+.cache
+.pytest_cache
+
+# Code coverage files
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Cached Python modules
+*.pyc
+__pycache__
+
+# IPython stuff
+.ipynb_checkpoints
+*.ipynb
+
+# Docbuild files
+docs/_autosummary
+docs/_build
+
+# Generated files
+# Normally this file shouldn't be generated into the repository tree at all,
+# but just in case it is...
+dnadna/_version.py
+
+# .data/ is used as a path for outputting data when testing the package
+# manually; this is not coded anywhere and is just a local convention
+.data

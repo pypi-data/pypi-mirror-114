@@ -1,0 +1,28 @@
+# TODO
+
+[X] pr les path ds le json, juste scenario_params_path et simul_params_path. Absolus ou relatifs au wd (à implémenter)
+[X] mv data_path ds simul_params
+[X] mettre param_2_learn ds inference_params
+[X] changer demo_parameter_log name. All paramaters aren't demo: OK
+Pr le path: ds simul_params, il y a que simu_data_path: absolute or relative path to simulation Data. Dans inference params, dl_data_path, same for data produced from preprocessing related to DL. scenario_params_path: relatif ou absolue. inference_params_path ds preprocessing va être déplacé ds dl_data_path si pas déjà.
+[ ] better explain path in readme.
+[X] make sure num_replicate can vary ->
+
+[X] calculer num_scenario from the for loop in dataprocessing and keep the variable. (cf indices ds to_keep)
+
+[ ] mettre read_ms_compressed ds utils. Renommer en read_snp_pos. L'utiliser ds dataprocessing, rajouter une option pr choisir si on veut pos asbolue ou relative. Mettre warning si conversion. Si conversion abs -> relative : écraser, sinon non.
+    par defaut:
+    just check si pour la tache en question (sumstat ou DL) c'est bon.
+    Si c'est pas les bonnes positions, alors :
+    - warning
+    - puis conversion et execution de la tache si possible sans écraser les fichiers npz.
+    sinon --relative_pos pour forcer la conversion (si besoin) et l'écrasement du fichier npz avec les valeurs relative
+    ou --absolute_pos pour forcer la conversion (si besoin) et l'écrasement du fichier npz avec les valeurs absolues
+
+[/] les NN doivent prendre en entrée des dico, sinon c'est la merde
+[ ] num_* plutôt que *_nb -> en fait ça dépend de si c'est une quantité (num) ou un identifiant (nb)
+[X] rajouter ds scenario_params_preprocessed la colonne num_replicates, et l'utiliser ds le DataLoader -> ds generate_loaders en fait
+[X] dataloader: index = 1 simu pas 1 scenario.
+
+[X] sumstats : pour LD, faire la moyenne par scenario avant de sauver sur le disque. changer la function de plot en conséquence.
+[ ] sumstats: checker selection sumstats

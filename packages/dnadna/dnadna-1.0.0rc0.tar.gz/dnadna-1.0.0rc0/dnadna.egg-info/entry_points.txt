@@ -1,0 +1,3 @@
+[console_scripts]
+dnadna = dnadna.cli:DnadnaCommand.main
+

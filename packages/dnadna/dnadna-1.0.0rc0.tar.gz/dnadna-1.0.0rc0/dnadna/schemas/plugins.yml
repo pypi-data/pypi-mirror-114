@@ -1,0 +1,15 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+description:
+    List of plugins that must be loaded when loading this config file.
+    Each plugin is given as a path to an importable Python module (e.g. a
+    .py file) or the name of a Python module that can be imported via the
+    standard import path (e.g. import my_plugin).  Each module listed is
+    imported when the config file is loaded.
+type: array
+items:
+    anyOf:
+        - type: string
+          format: filename!
+        - type: string
+          format: python-module
+        

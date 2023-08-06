@@ -1,0 +1,292 @@
+# make sure to pin image tag for ease of reproducibility
+image: continuumio/miniconda3:4.9.2
+
+variables:
+    CONDA_ENVS: .conda-envs
+    # disable shallow clone
+    GIT_DEPTH: 0
+    REGISTRY_IMAGE: mlgenetics/dnadna
+    DOCKER_TLS_CERTDIR: "/certs"
+    DOCKER_IMAGE: "docker:19.03.12"
+
+stages:
+    - setup
+    - test
+    - docs
+    - docker
+    - deploy
+
+# make sure pipelines run on all branches, tags, and merge requests
+# by default they do *not* seem to run on merge requests (???) so
+# adding this fixes it, but it also overrides the default workflow
+# rules so we have to reconstruct them manually
+workflow:
+  rules:
+    - if: $CI_MERGE_REQUEST_ID
+    - if: $CI_COMMIT_TAG
+    - if: $CI_COMMIT_REF_NAME == "master" || $CI_COMMIT_REF_NAME =~ /^(.+\/)?ci[-\/].+/
+
+# NCCL_SHM_DISABLE=1; see
+# https://gitlab.inria.fr/ml_genetics/private/dnadna/-/merge_requests/90#note_522340
+.variables_cuda: &variables_cuda
+    ENVIRONMENT_FILE: ci/environment-cuda.yml
+    ENVIRONMENT_NAME: dnadna-cuda
+    NCCL_SHM_DISABLE: 1
+
+.variables_cpu: &variables_cpu
+    ENVIRONMENT_FILE: ci/environment-cpu.yml
+    ENVIRONMENT_NAME: dnadna-cpu
+
+.conda_cache: &conda_cache
+    key:
+        files:
+            - ci/environment-cpu.yml
+            - ci/environment-cuda.yml
+        prefix: ${ENVIRONMENT_NAME}
+    paths:
+        - ${CONDA_ENVS}
+
+# This rule is in effect if the .rebuild_cache file exists in the
+# root of the repository.  This can be used to trigger a pipeline
+# that just runs the setup jobs to rebuild the environment cache,
+# and skips all subsequent jobs.
+# That is, it's possible to trigger a cache rebuild by making a
+# branch named something like ci/rebuild_cache, creating the
+# .rebuild_cache file, and then pushing that branch.
+.rebuild_cache_rule: &rebuild_cache_rule
+    exists:
+      - .rebuild_cache
+    when: never
+
+# Basic initialization steps that need to be performed before using
+# conda in any job
+.conda_init: &conda_init
+    - source $(conda info --base)/etc/profile.d/conda.sh
+    - mkdir -p ${CONDA_ENVS}
+    - conda config --prepend envs_dirs ${CONDA_ENVS}
+
+.conda_setup: &conda_setup
+    before_script: *conda_init
+    script: &conda_create
+        - >
+            test -d ${CONDA_ENVS}/${ENVIRONMENT_NAME} ||
+            conda env create -n ${ENVIRONMENT_NAME} -f ${ENVIRONMENT_FILE}
+    cache:
+        <<: *conda_cache
+
+# Rules for when to re-run the setup jobs; see also .rebuild_cache_rule
+# When *either* environment-cpu.yml or environment-cuda.yml are changed
+# we need to rebuild both environments, because they are both stored in
+# the same cache.  Therefore if only one environment is built, jobs that
+# rely on the other environment cannot run because it won't be in the cache
+.setup_rules: &setup_rules
+    rules:
+        - changes:
+            - ci/environment-cpu.yml
+            - ci/environment-cuda.yml
+          when: always
+        - exists:
+            - .rebuild_cache
+          when: always
+
+
+setup:cpu:
+    stage: setup
+    variables: *variables_cpu
+    # run two copies of each setup job in order to warm the cache for all of
+    # our concurrent runners; this is not perfect, but has a better chance of
+    # success overall; see
+    # https://gitlab.inria.fr/ml_genetics/private/dnadna/-/issues/52
+    parallel: 2
+    <<: *conda_setup
+    <<: *setup_rules
+
+setup:cuda:
+    stage: setup
+    variables: *variables_cuda
+    parallel: 2
+    <<: *conda_setup
+    <<: *setup_rules
+    tags:
+        # only run this job if the runner is tagged cuda
+        - cuda
+
+.test_job: &test_job
+    stage: test
+    before_script:
+        - *conda_init
+        - *conda_create  # in case the cache was not loaded
+        - conda activate ${ENVIRONMENT_NAME}
+        - pip install -e .
+    script:
+        - >
+            pytest -v --color=yes --cov --cov-report=term --cov-report=xml
+            --cov-report=html:htmlcov-${ENVIRONMENT_NAME}
+            --junit-xml=pytest-xunit.xml
+            --numprocesses=auto --maxprocesses=4
+    coverage: '/^TOTAL.+?(\d+\%)$/'
+    cache:
+        <<: *conda_cache
+        policy: pull
+    artifacts:
+        # NOTE: reports:cobertura only supported in GitLab 12.9 and up;
+        # enable this once we upgrade to GitLab 12.9 and disable use of
+        # cov-report=html and using GitLab Pages to publish coverage
+        # reports; see pages: job below.
+        #reports:
+        #    cobertura: coverage.xml
+        reports:
+            junit: pytest-xunit.xml
+        paths:
+            - htmlcov-*/*
+    rules:
+        - *rebuild_cache_rule
+        - when: on_success
+
+# run flake8 to test for PEP 8 violations and other coding errors
+test:flake8:
+    before_script:
+        - *conda_init
+        - conda install -y python=3.7 flake8 pep8-naming
+    script: flake8 dnadna/ tests/
+    rules:
+        - *rebuild_cache_rule
+        - when: on_success
+
+# test job: run the dnadna test suite
+test:cpu:
+    variables: *variables_cpu
+    <<: *test_job
+
+test:cuda:
+    stage: test
+    variables: *variables_cuda
+    <<: *test_job
+    tags:
+        # only run this job if the runner is tagged cuda
+        - cuda
+
+# build the sphinx docs; it sufficies to use the CPU environment for this
+docs:
+    stage: docs
+    variables: *variables_cpu
+    cache:
+        <<: *conda_cache
+        policy: pull
+    before_script:
+        - *conda_init
+        - *conda_create  # in case the cache was not loaded
+        - conda activate ${ENVIRONMENT_NAME}
+        # libenchant is needed for sphinxcontrib.spelling by way of PyEnchant,
+        # and is not easily installed via conda
+        - apt-get update && apt-get install -yqq libenchant-dev
+    script:
+        - cd docs/
+        - make html
+    artifacts:
+        paths:
+            - docs/_build/html/
+        expire_in: 30 days
+    rules:
+        - *rebuild_cache_rule
+        - when: on_success
+
+# deploy coverage reports to gitlab pages
+pages:
+    stage: deploy
+    dependencies:
+        - test:cpu
+        - test:cuda
+        - docs
+    script:
+        - mkdir -p public/
+        - cp -r docs/_build/html/* public/
+        - mkdir -p public/coverage
+        - mv htmlcov-dnadna-cpu public/coverage/cpu
+        - mv htmlcov-dnadna-cuda public/coverage/cuda
+    artifacts:
+        paths:
+            - public/
+        expire_in: 30 days
+    rules:
+        - *rebuild_cache_rule
+        - if: $CI_COMMIT_REF_NAME == "master" 
+          when: on_success
+
+
+# build the Docker image;
+# this is only run on merge requests and branches other than master or
+# tags, where the build-and-tag jobs are run instead
+docker:build:
+    stage: docker
+    # For this job we use the docker image instead of the conda image
+    # I only just learned that specifying a different image per-job is
+    # now possible.
+    # For this to work, the gitlab-runner must have access to the host's
+    # Docker daemon via the default /var/run/docker.sock socket.
+    # See ci/config.example.toml
+    image: ${DOCKER_IMAGE}
+    services:
+        - ${DOCKER_IMAGE}-dind
+    only:
+        - merge_requests
+        - branches
+    except:
+        - master
+        - tags
+    before_script:
+        - docker info
+        - docker pull ${REGISTRY_IMAGE}:master || true
+    script:
+        - >
+            docker build --pull --cache-from ${REGISTRY_IMAGE}:master
+            --tag ${REGISTRY_IMAGE}:${CI_COMMIT_SHA} .
+
+# For DockerHub deployment to work we need to provide a DOCKERHUB_USERNAME
+# and DOCKERHUB_TOKEN in the variables setting under
+# https://gitlab.inria.fr/ml_genetics/private/dnadna/-/settings/ci_cd
+# The DOCKERHUB_TOKEN variable should be masked, and both should be protected
+#
+# To generate the token log into your DockerHub account and generate an access
+# token at https://hub.docker.com/settings/security
+#
+# This only needs to be done once at the project level
+.docker:build-and-push: &docker_build_and_push
+    stage: deploy
+    image: ${DOCKER_IMAGE}
+    services:
+        - ${DOCKER_IMAGE}-dind
+    before_script:
+        - docker info
+        - echo -n ${DOCKERHUB_TOKEN} | docker login --username ${DOCKERHUB_USERNAME} --password-stdin
+        - docker pull ${REGISTRY_IMAGE}:master || true
+    script:
+        - >
+            docker build --pull --cache-from ${REGISTRY_IMAGE}:master
+            --tag ${REGISTRY_IMAGE}:${TAG_NAME} .
+        - docker push ${REGISTRY_IMAGE}:${TAG_NAME}
+
+# update the :latest tag to the most recently released git tag
+docker:tag-latest:
+    <<: *docker_build_and_push
+    variables:
+        TAG_NAME: latest
+    only:
+        - tags
+
+# update the :<version> tag to the most recently released git tag (this
+# is the same as :latest, which will always point to the most recent release)
+docker:tag-release:
+    <<: *docker_build_and_push
+    variables:
+        TAG_NAME: ${CI_COMMIT_TAG}
+    only:
+        - tags
+
+# update the :master tag to the most recent image built from the master branch
+docker:tag-master:
+    <<: *docker_build_and_push
+    variables:
+        TAG_NAME: master
+    only:
+        - master

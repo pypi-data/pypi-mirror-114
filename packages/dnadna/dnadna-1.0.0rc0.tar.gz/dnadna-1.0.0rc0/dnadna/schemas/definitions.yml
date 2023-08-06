@@ -1,0 +1,11 @@
+description: additional definitions shared between schemas
+definitions:
+    version:
+        type: "string"
+        # a PEP 440 compliant Python package version; see PEP 440, Appendix
+        # B
+        pattern:
+            "^([1-9][0-9]*!)?(0|[1-9][0-9]*)(\\.(0|[1-9][0-9]*))*\
+            ((a|b|rc)(0|[1-9][0-9]*))?(\\.post(0|[1-9][0-9]*))?\
+            (\\.dev(0|[1-9][0-9]*))?\
+            (\\+([a-z0-9]+([-_\\.][a-z0-9]+)*))?$"

@@ -1,0 +1,32 @@
+# Most of the rest of this is copied from the .gitignore
+
+# Editor detritus
+*.sw[nop]
+
+# Python build system files
+*.egg-info
+pip-wheel-metadata
+
+# Python testing-related files
+.cache
+.pytest_cache
+
+# Code coverage files
+.coverage
+coverage.xml
+htmlcov/
+
+# Cached Python modules
+*.pyc
+__pycache__
+
+# IPython stuff
+.ipynb_checkpoints
+
+# Docbuild files
+docs/_autosummary
+docs/_build
+
+# .data/ is used as a path for outputting data when testing the package
+# manually; this is not coded anywhere and is just a local convention
+.data

@@ -1,0 +1,27 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+description: >-
+   configuration for datasets laid out in the DNADNA format 
+properties:
+    format:
+        const: "dnadna"
+    filename_format:
+        type: "string"
+        description: >-
+            string template for per-replicate simulation files in Python
+            string template format; the following template variables may be
+            used: 'name', the same as the name property used in this config
+            file; 'scenario', the scenario number, and 'replicate', the
+            replicate number of the scenario (if there are multiple
+            replicates); path separators may also be used in the template to
+            form a directory structure
+        default: "scenario_{scenario}/{dataset_name}_{scenario}_{replicate}.npz"
+    keys:
+        type: "array"
+        description: >-
+            keys in the NPZ file for the SNP matrix and position array
+            respectively; the "dnadna" format usually prescribes this to be
+            ["SNP", "POS"] but it can be overridden by this property
+        default: ["SNP", "POS"]
+        items: {"type": "string"}
+        minItems: 2
+        maxItems: 2

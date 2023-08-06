@@ -1,0 +1,14 @@
+jsonschema==3.0.2
+matplotlib==3.1.1
+msprime==0.7.3
+numpy==1.16.4
+pandas==0.25.1
+pillow>=6.2.0,<7.0.0
+pytest==5.3.1
+pyyaml==5.1.2
+scikit-allel==1.2.1
+tqdm==4.40.0
+torch==1.1.0
+future==0.18.2
+tensorboard==2.3.0
+-e .

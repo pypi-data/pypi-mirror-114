@@ -1,0 +1,5 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+description: "net parameters for MLP"
+allOf:
+    - "$ref": "base.yml#/definitions/fixed_inputs"
+    - {"additionalProperties": false}
