@@ -1,0 +1,17 @@
+oauthlib
+pyramid
+requests_oauthlib
+requests
+six
+twython==3.7.0
+
+[testing]
+pyramid_formencode_classic
+pyramid_mako
+pyramid_tm
+pyramid
+pytest
+responses
+sqlalchemy
+webtest
+zope.sqlalchemy
