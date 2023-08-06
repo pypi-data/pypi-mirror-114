@@ -1,0 +1,10 @@
+envium/__init__.py,sha256=_--QseZ_MK4Kb8I0mEc6KuaYAMi21MCSwClfWDUxl_s,115
+envium/ctx.py,sha256=LELIB4UN6gtTEEbjJG0KyS2sQsCMRK1bWa7wzs4GRTE,1096
+envium/environ.py,sha256=jX9YOMkzBVvnRjvLai1_CsUYm_N0SSAXCJfUdbk-HlQ,4015
+envium/exceptions.py,sha256=ioImJewPjJyLDYcytOQFiBLfTY2RJhFU5a9mTLP-zno,1889
+envium/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+envium/secrets.py,sha256=zj6OQUxNIi28QCMMjjWl1J6GGttBrr_OkkIzmDj_WI8,2047
+envium/vars.py,sha256=ASVjOVPhYt6kIu9wzIPl5LXbJGvNiocHyL8muk2L084,8574
+envium-0.8.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+envium-0.8.1.dist-info/METADATA,sha256=eah1u-VHdWLBpvczx-CKkUR4kFOuRG6zwLLyJO5bSyQ,362
+envium-0.8.1.dist-info/RECORD,,
