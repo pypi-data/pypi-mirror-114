@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: infercode
+Version: 0.0.10
+Summary: Map any code snippet into vector
+Home-page: https://github.com/bdqnghi/infercode/
+Author: Nghi D. Q. Bui and Yijun Yu
+Author-email: bdqnghi@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Requires-Dist: bidict (==0.21.2)
+Requires-Dist: coloredlogs (==15.0.1)
+Requires-Dist: dpu-utils (==0.2.19)
+Requires-Dist: keras-radam (==0.15.0)
+Requires-Dist: numpy (==1.19.4)
+Requires-Dist: protobuf (==3.14.0)
+Requires-Dist: scikit-learn (==0.24.0)
+Requires-Dist: scipy (==1.5.2)
+Requires-Dist: sentencepiece (==0.1.95)
+Requires-Dist: tensorflow (==2.4.0)
+Requires-Dist: tqdm (==4.55.1)
+Requires-Dist: tree-sitter (==0.2.1)
+Requires-Dist: utils (==1.0.1)
+
+UNKNOWN
+
