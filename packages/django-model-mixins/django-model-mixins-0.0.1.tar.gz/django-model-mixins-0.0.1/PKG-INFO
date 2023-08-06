@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: django-model-mixins
+Version: 0.0.1
+Summary: Mixins for Django models.
+Home-page: https://github.com/Myzel394/django-model-mixins
+Author: Myzel394 Xyllian
+Author-email: myzel394.xyllian@gmail.com
+License: MIT
+Download-URL: https://github.com/Myzel394/django-model-mixins/archieve/v_0.0.1.tar.gz
+Description: UNKNOWN
+Keywords: django,django-utils,django-models
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
