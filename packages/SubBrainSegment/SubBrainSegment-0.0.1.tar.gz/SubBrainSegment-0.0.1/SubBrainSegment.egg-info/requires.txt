@@ -1,0 +1,7 @@
+numpy
+nibabel
+nilearn
+SimpleITK
+tables
+tensorflow
+keras
