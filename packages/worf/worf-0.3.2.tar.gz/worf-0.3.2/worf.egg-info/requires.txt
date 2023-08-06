@@ -1,0 +1,2 @@
+Django<3.3,>=3.0.0
+django-url-filter>=0.3.15
