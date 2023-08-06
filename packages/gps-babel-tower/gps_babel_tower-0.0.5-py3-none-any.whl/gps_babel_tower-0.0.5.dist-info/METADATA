@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: gps-babel-tower
+Version: 0.0.5
+Summary: Babel Tower NLP Library
+Home-page: UNKNOWN
+Author: Chi Zhang
+Author-email: chii@google.com
+License: Apache
+Platform: UNKNOWN
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: nltk (~=3.2.5)
+Requires-Dist: transformers (~=4.6.1)
+Requires-Dist: tensorflow (~=2.4.1)
+Requires-Dist: torch (~=1.8.1)
+Requires-Dist: langdetect (>=1.0.8)
+Requires-Dist: sentencepiece (>=0.1.85)
+Requires-Dist: datasets (~=1.5.0)
+Requires-Dist: faiss-cpu (~=1.7.0)
+Requires-Dist: google-cloud-translate (>=3.0.2)
+Requires-Dist: google-cloud-language (>=2.0.0)
+Requires-Dist: fasttext (>=0.9.2)
+Requires-Dist: langid (>=1.1.6)
+Requires-Dist: pycld3 (>=0.20)
+Requires-Dist: gspread (>=3.6.0)
+Requires-Dist: gspread-dataframe (>=3.2.0)
+Requires-Dist: spacy (~=3.0.5)
+Requires-Dist: rake-nltk (~=1.0.4)
+Requires-Dist: keybert (~=0.3.0)
+Requires-Dist: jieba (~=0.42.1)
+Requires-Dist: nagisa (~=0.2.7)
+Requires-Dist: rake-ja (~=0.0.1)
+
+# Babel Tower
+
+This is a Python package containing modules for many common NLP tasks, such as keyword extraction, translation,
+sentiment analysis, language detection, finding similar text, etc.
+
+## Development
+
+Run `pip install -e .` from the top directory, then you can import modules from the `gps_babel_tower` package.
+
+## Examples
+
+Check out `examples` for examples of using the NLP modules.
+
