@@ -1,0 +1,10 @@
+mlserver_mlflow/__init__.py,sha256=fa11yvfGk6nDhwV6HHSLrqGz2brT0k9BTIX8STni2C4,119
+mlserver_mlflow/codecs.py,sha256=eLDeg_FRzHMn4DCN2XJgUsc9okTYSyV8F5OnuRjSUYM,456
+mlserver_mlflow/encoding.py,sha256=fpJ_0SdGvDGD39u7Tv2LJe4yw3oCk94v0HN1LLVvpcM,622
+mlserver_mlflow/runtime.py,sha256=n6t9G11e4g13UDoKh8hTCqgxF-K5NlsPYQyftvnHpXM,1046
+mlserver_mlflow/version.py,sha256=ODF2s2RsRgLiSZ5fwTobmMibz4MRsdvWbtWfWZkOk-w,27
+mlserver_mlflow-0.4.0.dev1.dist-info/LICENSE,sha256=oFTxI2WrIw40oH8llz-MxofuGjTBZzOMhvmE7gGWhQg,11354
+mlserver_mlflow-0.4.0.dev1.dist-info/METADATA,sha256=tsghygJatDE814No9GlCVor_hBQv6himwWe4AdIBfLI,634
+mlserver_mlflow-0.4.0.dev1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mlserver_mlflow-0.4.0.dev1.dist-info/top_level.txt,sha256=uidfSWgAWHCgqknaXtyPOjeWTGMeHKl6a_AjYfZtnCU,16
+mlserver_mlflow-0.4.0.dev1.dist-info/RECORD,,
