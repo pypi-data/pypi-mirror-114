@@ -1,0 +1,3 @@
+[pylsp]
+pylsp_mypy_rnx=pylsp_mypy_rnx.plugin
+
