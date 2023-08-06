@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: hcfg
+Version: 1.014
+Summary: Alternative for JSON.
+Home-page: https://github.com/hyper1923/hcfg
+Author: hyper1923
+Author-email: hyperamabanyiyen@gmail.com
+License: MIT
+Download-URL: https://github.com/hyper1923/hcfg/releases/download/sourcecode/hcfg.tar.gz
+Description: UNKNOWN
+Keywords: JSON,PARSER
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
