@@ -1,0 +1,3 @@
+[console_scripts]
+prettyjunit = prettyjunit.convert:generate_html
+

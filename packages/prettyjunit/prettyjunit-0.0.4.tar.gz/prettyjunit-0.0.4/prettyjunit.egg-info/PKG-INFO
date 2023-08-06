@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: prettyjunit
+Version: 0.0.4
+Summary: Junit to HTML Conversion Package
+Home-page: UNKNOWN
+Author: Dinesh RVL
+License: UNKNOWN
+Keywords: junit report junit2html junittohtml dineshrvl pretty testreport
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: License.txt
+
+This is a handy package to convert your Junit XML files to Pretty HTML Reports.
+
+Usage 
+
+prettyjunit <path-to-your-junit-xml-folder> <report-name>
+

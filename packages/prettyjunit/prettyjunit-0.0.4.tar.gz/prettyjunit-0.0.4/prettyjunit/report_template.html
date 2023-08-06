@@ -1,0 +1,132 @@
+<html>
+<head>
+<link href="https://unpkg.com/tabulator-tables/dist/css/tabulator_site.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script type="text/javascript" src="https://unpkg.com/tabulator-tables/dist/js/tabulator.min.js"></script>
+    <style>
+.tabulator-tree-level-0 .tabulator-responsive-collapse { display: none; }
+.tabulator-tree-level-1 .tabulator-responsive-collapse { display: none; }
+.tabulator-tree-level-2 div[tabulator-field="name"] { display: none; }
+.tabulator-tree-level-2 div[tabulator-field="tests"] { display: none; }
+.tabulator-tree-level-2 div[tabulator-field="pass"] { display: none; }
+.tabulator-tree-level-2 div[tabulator-field="fail"] { display: none; }
+.tabulator-tree-level-2 div[tabulator-field="skipped"] { display: none; }
+.tabulator-responsive-collapse {background-color: #F5B7B1 ;}
+.tabulator-tree-level-0 {  font-weight: bold; }
+.tabulator-row .tabulator-cell{
+    padding:0px 0px;
+}
+p {
+line-height: 0.1;
+}
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  height: 10%;
+}
+.headertext
+{
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.yellow {
+background-color:#F5B041;
+}
+
+
+</style>
+</head>
+<body>
+<div class="topnav">
+  <p class="headertext">Report_Name</p>
+</div>
+  <div class="w3-row">
+<div class="w3-quarter">
+      <div class="w3-container w3-black w3-center"><p>Total: Total_Count</p></div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-green w3-center"><p>Passed: Passed_Count</p></div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-red w3-center"><p>Failed: Failed_Count</p></div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container yellow w3-center"><p>Skipped: Skipped_Count</p></div>
+    </div>
+  </div>
+  </div>
+<div id="example-table"></div>
+
+<script>
+var self = this;
+var tableData = [];
+this.tabulator = new Tabulator("#example-table", {
+     rowFormatter:function(row){
+        //row - row component
+        var data = row.getData();
+        console.log(data.fail);
+        if(data.fail == "failed"){
+            row.getElement().style.backgroundColor = "#F5B7B1";
+        }
+        if(data.skipped == "skipped"){
+            row.getElement().style.backgroundColor = "#FAD7A0";
+        }
+        if(data.pass == "passed"){
+            row.getElement().style.backgroundColor = "#7DCEA0";
+        }
+
+
+    },
+    height:"80%",
+    columnCalcs : true,
+    bottomCalc: "sum",
+    layout:"fitDataFill",
+    responsiveLayout:"collapse",
+    dataTree: "true",
+    dataTreeStartExpanded:false,
+    columns:[
+    {formatter:"responsiveCollapse", width:30, minWidth:30, hozAlign:"center", resizable:false, headerSort:false},
+    {title:"Test Name", field:"name", width:"50%", responsive:0},
+    {title:"Total Tests", field:"tests", width:"10%", responsive:0,formatter:function(cell, formatterParams, onRendered){
+     if (cell.getValue()) {
+    return "<p style='color:#333'>" + cell.getValue() + "</p>"; //return the contents of the cell;
+    }
+}},
+    {title:"Passed Tests", field:"pass", width:"10%", responsive:0,formatter:function(cell, formatterParams, onRendered){
+     if (cell.getValue()) {
+    return "<p style='color:#4CAF50'>" + cell.getValue() + "</p>"; //return the contents of the cell;
+    }
+}},
+    {title:"Failed Tests", field:"fail", width:"10%", responsive:0,formatter:function(cell, formatterParams, onRendered){
+     if (cell.getValue()) {
+    return "<p style='color:#f44336'>" + cell.getValue() + "</p>"; //return the contents of the cell;
+    }
+}},
+    {title:"Skipped Tests", field:"skipped", width:"10%", responsive:0,formatter:function(cell, formatterParams, onRendered){
+    if (cell.getValue()) {
+    return "<p style='color:#F5B041'>" + cell.getValue() + "</p>"; //return the contents of the cell;
+    }
+
+
+}},
+{title:"Pass %", field:"passPc", width:"10%", responsive:0,formatter:function(cell, formatterParams, onRendered){
+     if (cell.getValue()) {
+    return "<p style='color:#4CAF50'>" + cell.getValue() + "</p>"; //return the contents of the cell;
+    }
+}}
+,
+    {title:"Log", field:"error",width:"20%", color :"#F5B7B1"},
+    ],
+});
+this.tabulator.setData(tableData);
+
+</script>
+</body>
+</html>
