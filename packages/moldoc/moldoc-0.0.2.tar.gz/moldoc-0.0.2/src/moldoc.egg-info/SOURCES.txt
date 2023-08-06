@@ -1,0 +1,12 @@
+README.rst
+setup.py
+src/moldoc/__init__.py
+src/moldoc/molDraw.js
+src/moldoc/moldoc.py
+src/moldoc/molecule.py
+src/moldoc/three.min.js
+src/moldoc.egg-info/PKG-INFO
+src/moldoc.egg-info/SOURCES.txt
+src/moldoc.egg-info/dependency_links.txt
+src/moldoc.egg-info/requires.txt
+src/moldoc.egg-info/top_level.txt
