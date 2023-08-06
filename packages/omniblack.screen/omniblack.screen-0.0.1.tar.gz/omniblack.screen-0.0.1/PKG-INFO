@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: omniblack.screen
+Version: 0.0.1
+Summary: A screen displaying running build processes.
+License: MPL-2.0
+Author: Terry Patterson
+Author-email: terryp@wegrok.net
+Requires-Python: >=3.9,<3.10
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: urwid (==2.1.2)
