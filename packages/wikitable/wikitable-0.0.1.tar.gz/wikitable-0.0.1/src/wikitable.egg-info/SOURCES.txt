@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+src/wikitable.py
+src/wikitable.egg-info/PKG-INFO
+src/wikitable.egg-info/SOURCES.txt
+src/wikitable.egg-info/dependency_links.txt
+src/wikitable.egg-info/requires.txt
+src/wikitable.egg-info/top_level.txt
