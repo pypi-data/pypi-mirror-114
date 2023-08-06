@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: vc-hid
+Version: 2021.3.11
+Summary: logitech HID command package
+Home-page: https://github.com/Lorrytoolcenter/VC-HID.git
+Author: lorry_rui
+Author-email: lrui@logitech.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+#Copyright (c) 2021 lorry_rui  
+#//////////usage://///////////////  
+#for HID use  
+#/////////////////////////////////////////  
+#VC_tde USE only  @ logitech , Lorry RUi  
+https://pypi.org/project/vc-hid 
+https://github.com/Lorrytoolcenter/VC-HID.git
+
+Sample code:  
+
+#from vc_hid import vc_hid as hid
+import vc_hid  
+
+pid="89a"
+pid1="867"
+setID="28"
+readID="29"
+controlID=1
+readnumber=20
+
+
+if(__name__)=="__main__":
+    anotherCMD=[0,0,0,0]
+    test = vc_hid.HID_class()
+
+    passflag,data=test.hidset(pid,setID,controlID,readnumber,anotherCMD)
+    print(passflag,data)
+
+
+    passflag,data=test.readhid(pid,readID,controlID,readnumber)  
+    print(passflag,data)
+
+
+
+
