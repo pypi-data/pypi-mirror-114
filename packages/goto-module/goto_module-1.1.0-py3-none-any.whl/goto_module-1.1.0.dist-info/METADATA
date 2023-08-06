@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: goto-module
+Version: 1.1.0
+Summary: Goto module
+Home-page: UNKNOWN
+Author: Meet Patel
+Author-email: <meetp6116@gmail.com>
+License: UNKNOWN
+Keywords: python,goto package,goto,goto-module,goto module
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+Real goto module for python.
+
+Installation:
+  >pip install goto-module
+
+
+Usage:
+  >from goto import goto 
+
+  >print("Hello World")
+
+  >#("hi")
+
+  >print("hello")
+
+  >goto("hi")
+
+Output:
+  >Hello World
+
+  >hello
+
+  >hello
+
+  >hello
+
+  >hello
+
+
+  >hello
+
+  >........
+
+Note:
+  The comments value should be unique like here it is ("hi") and should not be part of any other word or function.
+
