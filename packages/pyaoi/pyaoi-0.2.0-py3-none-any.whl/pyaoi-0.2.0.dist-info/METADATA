@@ -1,0 +1,217 @@
+Metadata-Version: 2.1
+Name: pyaoi
+Version: 0.2.0
+Summary: A collection of useful functions operating on iterables
+Home-page: https://github.com/JonasMuehlmann/pyaoi
+Author: Jonas Muehlmann
+Author-email: jonasmuehlmann@protonmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# PyAoI (Python Algorithms on Iterables)
+
+[![Join the chat at https://gitter.im/pyaoi/community](https://badges.gitter.im/pyaoi/community.svg)](https://gitter.im/pyaoi/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://travis-ci.com/JonasMuehlmann/pyaoi.svg?branch=master)](https://travis-ci.com/JonasMuehlmann/pyaoi) ![img](https://img.shields.io/badge/semver-2.0.0-green) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+
+This project provides a bunch of functions to interact with iterables, it is inspired by
+the [algorithm header](https://en.cppreference.com/w/cpp/algorithm) from the C++ standard template library (STL for
+short).
+
+Please do not expect a stable API at this point.
+
+## Installation
+
+```pip install pyaoi```
+
+## How to use
+
+All functions live in the ```pyaoi``` namespace, you can import it with ```import pyaoi``` and then call the functions
+like this: ```pyaio.all_of()```
+
+## Implemented functions
+
+The following list shows planned functions and whether they are implemented yet. Feel free to make a PR for a listed
+function's implementation. This list is subject to change at any time.
+<details> <summary>Click to expand!</summary>
+<p>
+
+### Non-modifying sequence operations
+
+- [x] all_of
+- [x] any_of
+- [x] none_of
+
+
+- [x] for_each
+- [x] for_each_n
+
+- [x] count
+- [x] count_if
+
+- [x] mismatch
+
+- [x] find
+- [x] find_if
+- [x] find_end
+- [x] find_first_of
+- [x] adjacent_find
+
+
+- [x] search
+- [x] search_n
+
+- [x] copy_replace
+- [x] copy_replace_if
+- [x] copy_replace_if_not
+
+- [x] copy_except
+- [x] copy_except_if
+- [x] copy_except_if_not
+
+### Modifying sequence operations
+
+- [x] fill
+- [x] fill_n
+
+
+- [x] transform
+- [x] transform_n
+
+
+- [x] rotate
+
+
+- [ ] shift_left
+- [ ] shift_right
+
+
+- [ ] random_shuffle
+- [ ] shuffle
+
+
+- [ ] sample
+
+
+- [ ] unique
+- [ ] unique_copy
+
+### Partitioning operations
+
+- [ ] is_partitioned
+
+
+- [ ] partition
+- [ ] partition_copy
+
+
+- [ ] stable_partition
+
+
+- [ ] partition_point
+
+### Sorting operations
+
+- [ ] is_sorted
+- [ ] is_sorted_until
+
+
+- [ ] partial_sort
+- [ ] partial_sort_copy
+- [ ] stable_sort
+- [ ] nth_element
+
+### Binary search operations (on sorted ranges)
+
+- [ ] lower_bound
+- [ ] upper_bound
+
+
+- [ ] binary_search
+
+
+- [ ] equal_range
+
+### Other operations on sorted ranges
+
+- [ ] merge
+- [ ] implace_merge
+
+### Set operations (on sorted ranges)
+
+- [ ] includes
+
+
+- [ ] set_difference
+- [ ] set_intersection
+- [ ] set_symmetric_difference
+- [ ] set_union
+
+### Heap operations
+
+- [ ] is_heap
+- [ ] is_heap_until
+
+
+- [ ] make_heap
+
+
+- [ ] push_heap
+
+
+- [ ] pop_heap
+
+
+- [ ] sort_heap
+
+### Minimum/maximum operations
+
+- [ ] max_index
+- [ ] min_index
+- [ ] minmax
+- [ ] minmax_index
+
+
+- [ ] clamp
+
+### Comparison operations
+
+- [ ] lexicographical_compare
+- [ ] lexicographical_compare_threeway
+
+### Permutation operations
+
+- [ ] is_permutation
+
+
+- [ ] next_permutation
+- [ ] prev_permutation
+</p>
+</details>
+
+## Contributing
+
+First of all, thanks a lot for your contribution, any form of contribution is very welcome and appropriated!
+
+Please familiarise yourself with this project's [code of conduct](CODE_OF_CONDUCT.md) and [contribution guidelines](CONTRIBUTING.md).
+
+## Getting help
+
+1. Read the docs
+2. Get in touch with other contributors
+   at [gitter](https://gitter.im/pyaoi/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+2. If you think you found a bug, or documentation could be improved, please open an issue
+
+## License
+Copyright (C) 2020 [Jonas Muehlmann](https://github.com/JonasMuehlmann)
+
+The project is licensed under the terms of the GPL-V3 license, you can view it [here](LICENSE.md).
+
+
