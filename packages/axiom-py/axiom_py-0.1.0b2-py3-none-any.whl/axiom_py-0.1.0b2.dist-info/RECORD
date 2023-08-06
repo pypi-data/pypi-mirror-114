@@ -1,0 +1,8 @@
+axiom/__init__.py,sha256=OHEiJRq40q-H8VngurTp0wyIvSp0D0jrU-puaIZ7r2I,81
+axiom/client.py,sha256=O33SKe8aS0lb8WR2ZBUPcAheAoMhpjRYdVwAzp-ipz4,677
+axiom/datasets.py,sha256=CQRIJP6ePKaG3c2YtaweGkFOcLqitbOXB0TLkYhMNmE,1292
+axiom/logging.py,sha256=rcE9XoV00IxD306gDDc2rvOX_k971nGxsdMBqvx7TPI,599
+axiom_py-0.1.0b2.dist-info/LICENSE,sha256=FDg91-QvSwyvhDmqpLQWkeorsMeIZ29Zu_PENZUyTp4,1068
+axiom_py-0.1.0b2.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+axiom_py-0.1.0b2.dist-info/METADATA,sha256=6XW9h1M3GqI7znNzUp5JMpinmdTi5BrPR2zErZNSzGU,560
+axiom_py-0.1.0b2.dist-info/RECORD,,
