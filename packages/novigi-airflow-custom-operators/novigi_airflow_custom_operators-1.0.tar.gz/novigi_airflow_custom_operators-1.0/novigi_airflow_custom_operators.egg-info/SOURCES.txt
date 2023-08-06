@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.py
+novigi_airflow_custom_operators/__init__.py
+novigi_airflow_custom_operators/custom_csv_to_s3_opertor.py
+novigi_airflow_custom_operators/novigi_csv_to_db.py
+novigi_airflow_custom_operators/novigi_excel_to_csv.py
+novigi_airflow_custom_operators/novigi_json_to_csv.py
+novigi_airflow_custom_operators/novigi_xls_to_csv_operator.py
+novigi_airflow_custom_operators.egg-info/PKG-INFO
+novigi_airflow_custom_operators.egg-info/SOURCES.txt
+novigi_airflow_custom_operators.egg-info/dependency_links.txt
+novigi_airflow_custom_operators.egg-info/requires.txt
+novigi_airflow_custom_operators.egg-info/top_level.txt
