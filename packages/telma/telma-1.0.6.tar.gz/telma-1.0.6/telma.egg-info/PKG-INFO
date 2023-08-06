@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: telma
+Version: 1.0.6
+Summary: This project aims at carrying out some basic life actuarial calculations. The module contains five classes. See intros documentation for more information
+Home-page: UNKNOWN
+Author: José Valencia Figueroa
+Author-email: joel.jvalencia@gmail.com
+License: UNKNOWN
+Keywords: insurance,actuarial science,life insurance,python,spain,life contingencies
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+

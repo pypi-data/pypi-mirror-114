@@ -1,0 +1,8 @@
+setup.py
+telma/__init__.py
+telma/telma.py
+telma.egg-info/PKG-INFO
+telma.egg-info/SOURCES.txt
+telma.egg-info/dependency_links.txt
+telma.egg-info/requires.txt
+telma.egg-info/top_level.txt
