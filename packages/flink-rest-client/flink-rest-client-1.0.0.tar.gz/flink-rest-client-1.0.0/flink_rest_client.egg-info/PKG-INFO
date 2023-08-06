@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: flink-rest-client
+Version: 1.0.0
+Summary: Easy to use Flink REST API client implementation
+Home-page: https://github.com/frego-dev/flink-rest-client
+Author: Attila Nagy
+Author-email: anagy@frego.dev
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
