@@ -1,0 +1,3 @@
+[console_scripts]
+runserver = setup_demo.FlaskApp:main
+
