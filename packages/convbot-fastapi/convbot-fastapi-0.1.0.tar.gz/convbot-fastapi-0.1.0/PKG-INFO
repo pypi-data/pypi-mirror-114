@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: convbot-fastapi
+Version: 0.1.0
+Summary: Convbot with fastapi
+Home-page: https://github.com/ffreemt/convbot-fastapi
+License: MIT
+Author: ffreemt
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: fastapi (>=0.63.0,<0.64.0)
+Requires-Dist: logzero (>=1.7.0,<2.0.0)
+Requires-Dist: pydantic[dotenv] (>=1.8.1,<2.0.0)
+Requires-Dist: torch (>=1.9.0,<2.0.0); python_version >= "3.7" and python_version < "4.0" and sys_platform == "linux"
+Requires-Dist: transformers (>=4.9.0,<5.0.0)
+Requires-Dist: uvicorn (>=0.14.0,<0.15.0)
+Project-URL: Repository, https://github.com/ffreemt/convbot-fastapi
+Description-Content-Type: text/markdown
+
+# convbot-fastapi
+[![tests](https://github.com/ffreemt/convbot-fastapi/actions/workflows/routine-tests.yml/badge.svg)](https://github.com/ffreemt/convbot_fastapi/actions)[![python](https://img.shields.io/static/v1?label=python+&message=3.7%2B&color=blue)](https://img.shields.io/static/v1?label=python+&message=3.7%2B&color=blue)[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)[![PyPI version](https://badge.fury.io/py/convbot_fastapi.svg)](https://badge.fury.io/py/convbot_fastapi)
+
+convbot-fastapi descr
+
+## Install it
+
+```shell
+pip install convbot-fastapi
+# or poetry add convbot-fastapi
+# pip install git+htts://github.com/ffreemt/convbot-fastapi
+# poetry add git+htts://github.com/ffreemt/convbot-fastapi
+
+# To upgrade
+pip install convbot-fastapi -U
+# or poetry add convbot-fastapi@latest
+```
+
+## Use it
+```bash
+python -m convbot_fastapi
+```
+Point your browser to `httpL//127.0.0.1:8000/docs`
+
+Or with uvicorn
+```bash
+uvicorn convbot_fastapi.convbot_fastapi:app
+```
+
+## Deploy it to the cloud
+Clone the repo
+```bash
+git clone https://github.com/ffreemt/convbot-fastapi
+cd convbot-fastapi
+```
+
+Create a docker image from `Dockerfile` and upload it to `https://hub.docker.com/`
+
+Sign up and deploy the docker image to, for example, `koyeb.com`.
+
