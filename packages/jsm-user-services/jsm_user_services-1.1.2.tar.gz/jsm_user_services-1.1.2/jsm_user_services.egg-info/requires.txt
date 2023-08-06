@@ -1,0 +1,10 @@
+PyJWT==2.1.0
+requests
+
+[drf]
+djangorestframework
+request-id-django-log
+
+[flask]
+flask
+flask-log-request-id
