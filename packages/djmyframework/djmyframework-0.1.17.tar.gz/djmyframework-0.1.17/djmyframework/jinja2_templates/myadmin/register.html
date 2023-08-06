@@ -1,0 +1,324 @@
+{% extends "framework/base.html" %}
+{#{% load i18n %}#}
+{% block header %}
+    <title>  {{ anget_name }} 注册页面 </title>
+
+
+    <style>
+        #components-form-normal-login .login-form {
+            max-width: 300px;
+        }
+
+        #components-form-normal-login .login-form-forgot {
+            float: right;
+        }
+
+        #components-form-normal-login .login-form-button {
+            width: 100%;
+        }
+    </style>
+{% endblock %}
+
+
+{% block content %}
+
+    <div id="vue-register-container" class="" v-cloak style="padding:30px;margin:0 auto;max-width: 550px;width: 100%">
+
+
+        <a-card >
+            <span slot="title" >
+                <h2>{{ settings.TITLE }} <small>{{ settings.VERSION }}</small></h2>
+            </span>
+            <a slot="extra" @click="activeOther=!activeOther">{{ _('更多') }}</a>
+            <a-form :form="form" @submit="handleSubmit">
+
+                <a-form-item v-bind="formItemLayout">
+                          <span slot="label">
+                            {{ _('姓名') }}&nbsp;
+                          </span>
+                    <a-input
+                            v-decorator="[
+          'alias',
+          {
+            rules: [{ required: true, message: '{{ _('请输入您的姓名') }}', whitespace: true }],
+          },
+        ]"
+                    />
+                </a-form-item>
+                <a-form-item v-bind="formItemLayout">
+                         <span slot="label">
+                              {{ _('登录账号') }}&nbsp;
+                            <a-tooltip title="{{ _('登录系统使用的账号,字符纯唯一') }}">
+                              <a-icon type="question-circle-o"/>
+                            </a-tooltip>
+                          </span>
+                    <a-input
+                            v-decorator="[
+          'username',
+          {
+            rules: [{ required: true, message: '{{ _('请输入您的登录账号') }}', whitespace: true }],
+          },
+        ]"
+                    />
+                </a-form-item>
+
+                <a-form-item v-bind="formItemLayout" label="{{ _('密码') }}" has-feedback>
+                    <a-input
+                            v-decorator="[
+          'password1',
+          {
+            rules: [
+              {
+                required: true,
+                message: '{{ _('请输入密码 !') }}',
+              },
+              {
+                validator: validateToNextPassword,
+              },
+            ],
+          },
+        ]"
+                            type="password"
+                    />
+                </a-form-item>
+                <a-form-item v-bind="formItemLayout" label="{{ _('确认密码') }}" has-feedback>
+                    <a-input
+                            v-decorator="[
+          'password2',
+          {
+            rules: [
+              {
+                required: true,
+                message: '{{ _('请确认密码 !') }}',
+              },
+              {
+                validator: compareToFirstPassword,
+              },
+            ],
+          },
+        ]"
+                            type="password"
+                            @blur="handleConfirmBlur"
+                    />
+                </a-form-item>
+
+                <a-form-item v-bind="formItemLayout" label="E-mail">
+                    <a-input
+                            v-decorator="[
+          'email',
+          {
+            rules: [
+              {
+                type: 'email',
+                message: '{{ _(' E-mail 格式错误!') }}',
+              },
+              {
+                required: true,
+                message: '{{ _('请输入您的 E-mail !') }}',
+              },
+            ],
+          },
+        ]"
+                    />
+                </a-form-item>
+
+
+                <div v-show="activeOther">
+                    <a-form-item v-bind="formItemLayout" label="{{ _('工号') }}">
+                        <a-input
+                                v-decorator="[
+          'employee_id',
+          {
+            rules: [{ required: false, message: '{{ _('请输入您的工号') }}', whitespace: true }],
+          },
+        ]"
+                        />
+                    </a-form-item>
+
+
+                    <a-form-item v-bind="formItemLayout" label="{{ _('QQ') }}">
+                        <a-input
+                                v-decorator="[
+          'qq',
+          {
+            rules: [{ required: false, message: '{{ _('请输入您的工号') }}', whitespace: true }],
+          },
+        ]"
+                        />
+                    </a-form-item>
+
+
+                    <a-form-item v-bind="formItemLayout" label="{{ _('手机') }}">
+                        <a-input
+                                v-decorator="[
+          'phone',
+          {
+            rules: [{ required: false, message: '{{ _('请输入您的手机号') }} !' }],
+          },
+        ]"
+                                style="width: 100%"
+                        >
+                            <a-select
+                                    slot="addonBefore"
+                                    v-decorator="['prefix', { initialValue: '86' }]"
+                                    style="width: 70px"
+                            >
+                                <a-select-option value="86">
+                                    +86
+                                </a-select-option>
+                                <a-select-option value="87">
+                                    +87
+                                </a-select-option>
+                            </a-select>
+                        </a-input>
+                    </a-form-item>
+                </div>
+
+
+                {#                        <a-form-item v-bind="tailFormItemLayout">#}
+                {#                            <a-checkbox v-decorator="['agreement', { valuePropName: 'checked' }]">#}
+                {#                                I have read the#}
+                {#                                <a href="">#}
+                {#                                    agreement#}
+                {#                                </a>#}
+                {#                            </a-checkbox>#}
+                {#                        </a-form-item>#}
+                <a-form-item v-bind="formItemLayout" label="{{ _('验证码') }}">
+                    <a-col :span="16">
+                        <a-input
+                                v-decorator="[
+              'verify',
+              { rules: [{ required: true, message: '{{ _('请输入验证码') }}' }] },
+            ]"
+                                placeholder="{{ _('输入验证码') }}"
+                        />
+                        <a-icon slot="prefix" type="barcode" style="color: rgba(0,0,0,.25)"/>
+                    </a-col>
+                    <a-col :span="8">
+                        <img class=""
+                             onclick="this.setAttribute('src','/get_verify_code_image/?nocache='+Math.random());"
+                             src="/get_verify_code_image/"
+                             alt="CheckCode"
+                             title="点我刷新"/>
+                    </a-col>
+
+                </a-form-item>
+
+                <a-form-item v-bind="tailFormItemLayout">
+
+
+                    <a-button type="primary" html-type="submit" block>
+                        {{ _('注  册') }}
+                    </a-button>
+                    <a-button type="link" href="{{ url('myadmin.login') }}" block>{{ _('返回登录') }} </a-button>
+
+                </a-form-item>
+            </a-form>
+
+        </a-card>
+
+    </div>
+
+
+    <script>
+        var vue_app = new Vue({
+            el: '#vue-register-container',
+            delimiters: ['((', '))'],
+            beforeCreate() {
+                this.form = this.$form.createForm(this, {name: 'register'});
+            },
+            data() {
+                return {
+                    activeOther: false,
+                    formItemLayout: {
+                        labelCol: {
+                            xs: {span: 24},
+                            sm: {span: 8},
+                        },
+                        wrapperCol: {
+                            xs: {span: 24},
+                            sm: {span: 16},
+                        },
+                    },
+                    tailFormItemLayout: {
+                        wrapperCol: {
+                            xs: {
+                                span: 24,
+                                offset: 0,
+                            },
+                            sm: {
+                                span: 16,
+                                offset: 8,
+                            },
+                        }
+                    },
+                    model: {},
+                    isExecuting: false,
+                };
+            },
+            methods: {
+                compareToFirstPassword(rule, value, callback) {
+                    const form = this.form;
+                    if (value && value !== form.getFieldValue('password1')) {
+                        callback('{{ _('两次密码不一致 !') }}');
+                    } else {
+                        callback();
+                    }
+                },
+                validateToNextPassword(rule, value, callback) {
+                    const form = this.form;
+                    if (value && this.confirmDirty) {
+                        form.validateFields(['password2'], {force: true});
+                    }
+                    callback();
+                },
+                handleConfirmBlur(e) {
+                    const value = e.target.value;
+                    this.confirmDirty = this.confirmDirty || !!value;
+                },
+                handleSubmit(e) {
+                    e.preventDefault();
+                    this.form.validateFields((err, values) => {
+                        if (!err) {
+                            values['default_group']= getQueryParamMap()['default_group']
+                            $.post('', values, (rsp) => {
+                                if (rsp.code == 0) {
+                                    this.$message.success(rsp.msg);
+
+                                    this.$confirm({
+                                        title: rsp.msg,
+                                        content: '{{ _('是否跳转到主页 ?') }}',
+                                        onOk() {
+                                            window.location.href = '{{ url('myadmin.index') }}'
+                                        },
+                                        onCancel() {
+                                        },
+                                    });
+
+
+                                } else {
+                                    this.$message.error(rsp.msg);
+                                    for (var k in rsp.data) {
+                                        var errors = {}
+                                        errors[k] = {errors: [{message: rsp.data[k][0]}]}
+                                        console.dir(errors)
+                                        this.form.setFields(errors)
+                                    }
+                                }
+                            }, 'json')
+                        }
+                    });
+                },
+            },
+            watch: {},
+            mounted: function () {
+
+            }
+        })
+
+
+    </script>
+
+
+
+{% endblock %}
