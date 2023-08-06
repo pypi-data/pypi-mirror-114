@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: enot-autodl
+Version: 2.4.3
+Summary: AutoDL framework for neural network compression & acceleration
+Home-page: http://enot.ai
+Author: ENOT LLC
+Author-email: enot@enot.ai
+License: ENOT License v1.0
+Keywords: AI,Neural architecture search
+Platform: UNKNOWN
+Classifier: License :: Other/Proprietary License
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: tblib
+Requires-Dist: torch (<=1.8.1,>=1.8.0)
+Requires-Dist: torch-optimizer
+Requires-Dist: torchvision
+Requires-Dist: numpy (>=1.16.4)
+Requires-Dist: pandas
+Requires-Dist: scipy (>=1.2.2)
+Requires-Dist: PyYAML
+Requires-Dist: tqdm
+Requires-Dist: tensorboard (==1.15)
+Requires-Dist: requests
+Requires-Dist: googledrivedownloader
+Requires-Dist: ipywidgets
+Requires-Dist: pytest
+Requires-Dist: pillow (>=6.2.1)
+Requires-Dist: matplotlib (>=2.2.2)
+Requires-Dist: thop
+Requires-Dist: ptflops
+Requires-Dist: pthflops
+Requires-Dist: networkx
+
+AutoDL framework for neural network compression & acceleration
+
