@@ -1,0 +1,12 @@
+json5/__init__.py,sha256=IaYYz0G2UhciVvcczc2VO4-B13cyGZzGJJPeQuzzUuI,99
+json5/dumper.py,sha256=KdsLDoPqqTbgwgQvDlETFhb_mdvlNVFIEMBjXwHyaD0,10431
+json5/loader.py,sha256=chmZp4lxN_A-uFvD8kNQ4LcTRzSBIPW89UiFkzEZcVs,4788
+json5/model.py,sha256=5KiWpX1wLVzys9ZW4eEKpI7Yv-n_arrdc-Tb1jRQyUk,5484
+json5/parser.py,sha256=2cxy7Gn1MmQv_k_3NjtPHvCbV7ub2o7Ruh94r_9Lwio,15459
+json5/tokenizer.py,sha256=OyT1xdzSHzv0WDeTsJBLEmOm0BXEyrsAJCOcP8Mu190,2896
+json5/utils.py,sha256=IRViigg8P75JrvCVw_2Qm-3op1HoktB0GgDIfZ-aknk,1060
+json_five-0.7.5.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+json_five-0.7.5.dist-info/METADATA,sha256=DaokboFag8aALPUpHaZg8Ww1ssXQ6hheDMIjNjAz1s4,2300
+json_five-0.7.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+json_five-0.7.5.dist-info/top_level.txt,sha256=4lqsmFoRcg-1K0hUeuIbxYBOd-40Bgw8pF9BdZwkC7k,6
+json_five-0.7.5.dist-info/RECORD,,
