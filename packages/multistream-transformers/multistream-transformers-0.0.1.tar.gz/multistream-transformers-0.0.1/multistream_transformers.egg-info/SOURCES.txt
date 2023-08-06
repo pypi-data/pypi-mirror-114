@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+multistream_transformers/__init__.py
+multistream_transformers/autoregressive_wrapper.py
+multistream_transformers/multistream_transformers.py
+multistream_transformers.egg-info/PKG-INFO
+multistream_transformers.egg-info/SOURCES.txt
+multistream_transformers.egg-info/dependency_links.txt
+multistream_transformers.egg-info/requires.txt
+multistream_transformers.egg-info/top_level.txt
