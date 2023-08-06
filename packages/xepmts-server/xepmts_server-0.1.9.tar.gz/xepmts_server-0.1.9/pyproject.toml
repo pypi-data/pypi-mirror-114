@@ -1,0 +1,59 @@
+[tool]
+[tool.poetry]
+name = "xepmts_server"
+version = "0.1.9"
+homepage = "https://github.com/jmosbacher/xepmts_server"
+description = "Top-level package for xepmts-server."
+authors = ["Yossi Mosbacher <joe.mosbacher@gmail.com>"]
+readme = "README.rst"
+license =  "MIT"
+classifiers=[
+    'Development Status :: 2 - Pre-Alpha',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',
+    'Natural Language :: English',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+]
+packages = [
+    { include = "xepmts_server" },
+    { include = "tests", format = "sdist" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7.1"
+xepmts-endpoints = "^0.1.0"
+xeauth = "0.1.2"
+toml = "^0.10.2"
+eve-jwt = "^0.1.9"
+flask_swagger_ui = "^3.36.0"
+prometheus_flask_exporter = "^0.18.1"
+Eve-Swagger = "^0.1.3"
+Eve = "^1.1.5"
+
+[tool.poetry.dev-dependencies]
+bumpversion = "*"
+coverage = "*"
+flake8 = "*"
+isort = "*"
+pylint = "*"
+dephell = "*"
+pytest = "*"
+sphinx = "*"
+tox = "*"
+yapf = "*"
+sphinx-material = "*"
+nbsphinx = "*"
+invoke = "*"
+
+[tool.poetry.scripts]
+xepmts-server = 'xepmts_server.cli:main'
+
+[build-system]
+requires = ["poetry>=0.12", "setuptools"]
+build-backend = "poetry.masonry.api"
+
+[tool.dephell.main]
+versioning = "semver"
+from = {format = "poetry", path = "pyproject.toml"}
+to = {format = "setuppy", path = "setup.py"}
