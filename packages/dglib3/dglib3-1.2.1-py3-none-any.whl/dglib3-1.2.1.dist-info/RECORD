@@ -1,0 +1,16 @@
+dglib3/__init__.py,sha256=eOYkDSBeG6U2Ju14wqy-pZfEoBuddR9atMy3WcklBms,67
+dglib3/cache_util.py,sha256=6wsZe0_MrDHELKgaI9_53uSbIhHNY9zU-LiBzG6EbXg,3588
+dglib3/codecs.py,sha256=ze-CY0QIjB1kOgzHH_t9ECSOPtx5bGAnsPMQd-7kfpg,546
+dglib3/db_util.py,sha256=lzUyRGvgq0aq34bSKgph0R8vHzQMtDD5J2lhItnjzoU,1945
+dglib3/dumper.py,sha256=RRT5yUncyv7LheGV6Qy4UV14LhT_ecp-hWtb_J4tkY0,752
+dglib3/logutil.py,sha256=BTaycEUYAYZtb6YitBCEFYXVEmGvN9I2yQPGoevtN9o,1838
+dglib3/tracer.py,sha256=b4ueoL01hI7yrv40K8tyzvmXGdbrMGZg9y1FQ11Vwxo,5757
+dglib3/utils.py,sha256=3Awym6nv5qiXCknmGKtaN1RzQZoPppaSCuRWRBk2vZo,6548
+dglib3/win_util.py,sha256=kdWWqA1G9wiczPRy6J2LIvBcJhTone1ROcx35LUx9bI,5990
+dglib3/basis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dglib3/basis/singleton.py,sha256=qFqnyPtuWd9dq9qSfyTNq9wibQ7p7sDQg3tXjoD4pNY,2768
+dglib3-1.2.1.dist-info/LICENSE,sha256=ULKueyzuY3juudXduTPi2ek-V_oQESUghSJAY9E2OFs,1092
+dglib3-1.2.1.dist-info/METADATA,sha256=plBdChCbXYzKCFv3S1ig9WPFRZUe2DGWUfd80gY2A68,1056
+dglib3-1.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dglib3-1.2.1.dist-info/top_level.txt,sha256=MWDKK548gWwsWJtHrc5RXPucVp0vSjtxiyZOJzhAPoY,7
+dglib3-1.2.1.dist-info/RECORD,,
