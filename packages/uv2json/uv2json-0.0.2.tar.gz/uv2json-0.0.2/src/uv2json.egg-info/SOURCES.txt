@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/uv2json/__init__.py
+src/uv2json/example.py
+src/uv2json.egg-info/PKG-INFO
+src/uv2json.egg-info/SOURCES.txt
+src/uv2json.egg-info/dependency_links.txt
+src/uv2json.egg-info/top_level.txt

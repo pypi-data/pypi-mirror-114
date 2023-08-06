@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: uv2json
+Version: 0.0.2
+Summary: Convert Gilson CSV files to JSON
+Home-page: https://github.com/chanana/uv2json
+Author: Shaurya Chanana
+Author-email: schanana@wisc.edu
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/chanana/uv2json/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Convert Gilson exported CSVs to JSON format
+
+More to come soon!
+
