@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+churn_framework.egg-info/PKG-INFO
+churn_framework.egg-info/SOURCES.txt
+churn_framework.egg-info/dependency_links.txt
+churn_framework.egg-info/requires.txt
+churn_framework.egg-info/top_level.txt
