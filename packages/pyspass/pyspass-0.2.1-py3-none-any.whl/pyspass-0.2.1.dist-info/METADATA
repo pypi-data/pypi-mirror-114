@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyspass
+Version: 0.2.1
+Summary: Python Single Page Applications HTML
+Home-page: https://github.com/stefanseltmann77/pyspass
+Author: Stefan Seltmann
+Author-email: s.seltmann06@web.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+#######
+pyspass
+#######
+
+Python Single Page web Applications by Stefan Seltmann
+
+
