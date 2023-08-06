@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: BlueTE
+Version: 0.0.1
+Summary: A super fast Discord bot generator
+Home-page: UNKNOWN
+Author: Spaxly
+Author-email: 
+License: UNKNOWN
+Requires-Dist: discord.py
+Requires-Dist: aiosqlite
+Requires-Dist: pipx
+
+
+<h1>BlueTE 2.0</h1>
+
