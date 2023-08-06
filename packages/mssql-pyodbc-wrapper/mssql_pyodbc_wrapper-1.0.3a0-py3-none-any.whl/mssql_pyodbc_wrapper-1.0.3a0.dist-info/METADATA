@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: mssql-pyodbc-wrapper
+Version: 1.0.3a0
+Summary: A MSSQL wrapper for pyodbc, with simplified functionality.
+Home-page: https://github.com/FABSampaio/mssql-pyodbc-wrapper
+Author: Francisco A. B. Sampaio
+Author-email: fsampaio@inegi.up.pt
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/pypa/sampleproject/issues
+Project-URL: Source, https://github.com/FABSampaio/mssql-pyodbc-wrapper/
+Keywords: pyodbc,mssql
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyodbc
+Requires-Dist: pandas
+
+# MSSQLpyWrapper
+
+This package is a wrapper for the pyodbc package intended to
+simplify the connection to and querying of local (on the
+host machine) MSSQL databases. 
+
+Instead of using the habitual pyodbc classes, the MSSQLWrapper
+class limits user input to some extent, in exchange for simplicity
+and clarity of use. The user simply instantiates an object by
+providing its constructor with the SERVER and the DATABASE.
+Queries are performed by calling one of the two types of
+methods: safe or unsafe queries, which take as few as one or
+two arguments.
+
+This package is highly subject to change. New features may be
+added and/or existing ones removed.
+
+Francisco A. B. Sampaio, INEGI, 2021
+
