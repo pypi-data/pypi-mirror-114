@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: sqlalchemy-logger
+Version: 0.1.2
+Summary: Logging library
+Home-page: UNKNOWN
+Author: Maryia Afanasyeva
+Author-email: masha.afanaseva@mail.ru
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: SQLAlchemy
+
+# sqlalchemy-logger
+
+A small library that provides sqlalchemy session logging.
+
+### Installation
+
+`pip install sqlalchemy-logger`
+
+### Get started
+
+How to log sqlalchemy session:
+
+```
+from sqlalchemy-logger import Logger
+
+#create Logger instance (where app is your app = Flask(__name__))
+logger = Logger(app)
+
+#call the logger before flush
+logger.listen_before_flush()
+
+#call the logger after flush
+logger.listen_after_flush()
+
+#call the logger after rollback
+logger.listen_after_rollback()
+```
+
+
