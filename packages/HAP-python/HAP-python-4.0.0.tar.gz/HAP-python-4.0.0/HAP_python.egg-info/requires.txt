@@ -1,0 +1,7 @@
+cryptography
+zeroconf>=0.32.0
+h11
+
+[QRCode]
+base36
+pyqrcode
