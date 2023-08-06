@@ -1,0 +1,8 @@
+README.md
+setup.py
+sharepp/__init__.py
+sharepp.egg-info/PKG-INFO
+sharepp.egg-info/SOURCES.txt
+sharepp.egg-info/dependency_links.txt
+sharepp.egg-info/requires.txt
+sharepp.egg-info/top_level.txt
