@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: opscidia-elasticsearch
+Version: 0.0.1
+Summary: Tools to manage elasticsearch indexes
+Home-page: UNKNOWN
+Author: Opscidia (Tech)
+Author-email: tech@opscidia.com
+Maintainer: Fréjus Laleye
+Maintainer-email: frejus.Laleye@opscidia.com
+License: UNKNOWN
+Keywords: elasticsearch,ospcidia,index,create
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4
+Requires-Dist: boto3
+Requires-Dist: elasticsearch (==7.12.0)
+Requires-Dist: elasticsearch-dsl (==7.3.0)
+Requires-Dist: requests-aws4auth
+
+# opscidia_elastisearch
+Tools to manage elasticsearch indexes 
+
+
