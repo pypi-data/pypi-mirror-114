@@ -1,0 +1,4 @@
+[console_scripts]
+thumbor_dash = thumbor_dash.server:main
+thumbor_dash-url = thumbor_dash.url_composer:main
+
