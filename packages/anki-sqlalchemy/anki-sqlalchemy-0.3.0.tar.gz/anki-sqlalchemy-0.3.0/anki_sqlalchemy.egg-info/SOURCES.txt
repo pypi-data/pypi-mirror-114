@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+anki_sqlalchemy/__init__.py
+anki_sqlalchemy/py.typed
+anki_sqlalchemy/sqlalchemy_fields.py
+anki_sqlalchemy/sqlalchemy_models.py
+anki_sqlalchemy/unicase.py
+anki_sqlalchemy.egg-info/PKG-INFO
+anki_sqlalchemy.egg-info/SOURCES.txt
+anki_sqlalchemy.egg-info/dependency_links.txt
+anki_sqlalchemy.egg-info/entry_points.txt
+anki_sqlalchemy.egg-info/requires.txt
+anki_sqlalchemy.egg-info/top_level.txt
