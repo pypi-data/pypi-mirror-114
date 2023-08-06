@@ -1,0 +1,3 @@
+[console_scripts]
+pypiDeployDemo = pypiDeployDemo.main:main
+
