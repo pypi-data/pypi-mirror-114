@@ -1,0 +1,11 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+src/syscolors/__init__.py
+src/syscolors/rgbColors.py
+src/syscolors/sysColors.py
+src/syscolors.egg-info/PKG-INFO
+src/syscolors.egg-info/SOURCES.txt
+src/syscolors.egg-info/dependency_links.txt
+src/syscolors.egg-info/top_level.txt
