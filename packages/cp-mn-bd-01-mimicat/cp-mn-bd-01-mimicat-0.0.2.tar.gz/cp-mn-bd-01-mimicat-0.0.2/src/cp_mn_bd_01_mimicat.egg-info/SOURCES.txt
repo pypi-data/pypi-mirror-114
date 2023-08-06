@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+resources/mimikatz.exe
+src/cp_mn_bd_01_mimicat.egg-info/PKG-INFO
+src/cp_mn_bd_01_mimicat.egg-info/SOURCES.txt
+src/cp_mn_bd_01_mimicat.egg-info/dependency_links.txt
+src/cp_mn_bd_01_mimicat.egg-info/top_level.txt
+src/payload/__init__.py
+src/payload/main.py
