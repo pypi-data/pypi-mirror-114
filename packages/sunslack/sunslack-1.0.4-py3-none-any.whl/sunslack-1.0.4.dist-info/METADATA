@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: sunslack
+Version: 1.0.4
+Summary: Slack bot publishing NOAA Solar data
+Home-page: https://0x9900.com/
+Author: Fred C. (W6BSD)
+Author-email: w6bsd@bsdworld.org
+License: BSD
+Project-URL: Source, https://github.com/0x9900/sun-slack/
+Project-URL: Tracker, https://github.com/0x9900/sun-slack/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Communications :: Ham Radio
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: slack-sdk
+
+
+## Sun predictions on a Slack channel
+
+This bot helps you get the Some of the solar magnetic activity
+information on your slack channel.
+
+Create a configuration file with the following template:
+
+```
+[SUNSLACK]
+token: xoxb-123456790-123456790-123456790
+channel: sunflux
+cachedir: /var/tmp/sunflux
+```
+
+You can get a token for your bot by registering it on the [Slack
+App][1] website.
+
+You can run the bot every hour in cron. It only sends messages and
+upload the prediction graph when NOAA publishes new data.
+
+Line to add in your crontab:
+```
+1  *  *  *  *  /usr/local/bin/sunslack --config ~/.sunslack.conf >/dev/null
+```
+
+
+[1]: https://api.slack.com/apps
+
+
+
