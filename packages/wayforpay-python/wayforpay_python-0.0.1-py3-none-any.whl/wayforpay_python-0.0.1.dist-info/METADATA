@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: wayforpay-python
+Version: 0.0.1
+Summary: SDK for WayForPay API
+Home-page: https://github.com/RympeR/wayforpay_python
+Author: RympeR
+Author-email: georg.rashkov@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# WayForPay API python implementation
+
+version 0.0.1
+
+### -dependencies
+
+* requests
+
+## Project structure
+
+#### wayforpaymodule.py
+
+Create objects for invoice API section
+
+#### invoice.py
+
+Create objects for invoice API section
+
+### Example
+```python
+    from invoice import statusInvoiceObject
+    account_date = {
+        'merchant_account': 'XXXXXXXXXXXXXXXXXXXXXX',
+        'merchant_password': 'XXXXXXXXXXXXXXXXXXXXXX',
+    }
+    order_reference = 'XXXXXXXXXXXXXXXXXXXXXXXXXX'
+    print(statusInvoiceObject(
+        accound_data,
+        order_reference
+    ))
+    """
+        {
+            "requestType": "STATUS",
+            "merchantAccount": 'XXXXXXXXXXXXXXXXXXXXXX',
+            "merchantPassword": 'XXXXXXXXXXXXXXXXXXXXXX',
+            "orderReference": 'XXXXXXXXXXXXXXXXXXXXXX',
+        }
+    """
+```
+

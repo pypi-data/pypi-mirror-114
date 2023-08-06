@@ -1,0 +1,9 @@
+wayforpay/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wayforpay/invoice.py,sha256=ldiZz2m8VPsRxD6pCX_aDbMNRmMsyizMG5HH0eTYaaI,4883
+wayforpay/payments.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wayforpay/utils.py,sha256=GfCxpiY_22BjQ5qY0Tw1Ct8SInzOqtEQZagSXsyps9c,728
+wayforpay/wayforpaymodule.py,sha256=2MbQgC80e3G5euSSraNV8aP6tJWCdHVsJDyhmQ_BmSo,10668
+wayforpay_python-0.0.1.dist-info/METADATA,sha256=FLSgKdtGau0KV-htMOwlGMTASY75ojF7oPI7jFd-ODA,1258
+wayforpay_python-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wayforpay_python-0.0.1.dist-info/top_level.txt,sha256=oWNbwF7nkwca3ITtyRpcgizsjCG15OWNagg_Q3Acyk4,10
+wayforpay_python-0.0.1.dist-info/RECORD,,
