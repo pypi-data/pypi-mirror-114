@@ -1,0 +1,11 @@
+attrs==20.3.0
+deepspeed>=0.4.0
+fairscale>=0.3.7
+horovod>=0.21.2
+torch>=1.8.1
+
+[:python_version < "3.8"]
+mypy_extensions
+
+[mpi]
+mpi4py
