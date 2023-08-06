@@ -1,0 +1,1 @@
+Config class with default env_vars in my projects
