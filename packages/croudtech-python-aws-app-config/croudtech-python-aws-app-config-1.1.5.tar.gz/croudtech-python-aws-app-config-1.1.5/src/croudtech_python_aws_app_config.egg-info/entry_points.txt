@@ -1,0 +1,3 @@
+[console_scripts]
+croudtech-app-config = croudtech_python_aws_app_config.cli:cli
+
