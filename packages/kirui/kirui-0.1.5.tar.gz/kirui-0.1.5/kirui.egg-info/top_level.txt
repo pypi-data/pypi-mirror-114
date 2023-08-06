@@ -1,0 +1,4 @@
+django_kirui
+kirui_devserver
+livesync
+samon
