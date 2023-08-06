@@ -1,0 +1,6 @@
+pypgtable
+numpy
+cerberus
+
+[test]
+pytest
