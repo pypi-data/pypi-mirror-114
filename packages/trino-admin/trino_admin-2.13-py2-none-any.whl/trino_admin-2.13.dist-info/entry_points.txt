@@ -1,0 +1,3 @@
+[console_scripts]
+trino-admin = trinoadmin.main:main
+
