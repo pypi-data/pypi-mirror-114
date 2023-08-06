@@ -1,0 +1,14 @@
+MANIFEST.in
+setup.py
+discolib/__init__.py
+discolib/__main__.py
+discolib/attr.py
+discolib/core.py
+discolib/io.py
+discolib/protocol.py
+discolib.egg-info/PKG-INFO
+discolib.egg-info/SOURCES.txt
+discolib.egg-info/dependency_links.txt
+discolib.egg-info/top_level.txt
+discolib/examples/serial.py
+discolib/examples/stub.py
