@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: oapi
+Version: 1.4.0
+Summary: An SDK for parsing OpenAPI (Swagger) 2.0 - 3.0 specifications
+Home-page: https://github.com/davebelais/oapi
+Author: David Belais
+Author-email: david@belais.me
+License: MIT
+Keywords: openapi swagger json rest
+Platform: UNKNOWN
+Requires-Python: ~=3.6
+Requires-Dist: pyyaml (>=3.10)
+Requires-Dist: iso8601 (~=0.1)
+Requires-Dist: sob (~=1.13)
+Requires-Dist: jsonpointer (~=2.0)
+Requires-Dist: dataclasses
+Provides-Extra: all
+Requires-Dist: pytest (~=5.4) ; extra == 'all'
+Requires-Dist: tox (~=3.21) ; extra == 'all'
+Requires-Dist: flake8 (~=3.8) ; extra == 'all'
+Requires-Dist: daves-dev-tools (~=0.3) ; extra == 'all'
+Requires-Dist: readme-md-docstrings (~=0.1) ; extra == 'all'
+Requires-Dist: setuptools-setup-versions (~=1.18) ; extra == 'all'
+Requires-Dist: black (~=21.7b0) ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: pytest (~=5.4) ; extra == 'dev'
+Requires-Dist: tox (~=3.21) ; extra == 'dev'
+Requires-Dist: flake8 (~=3.8) ; extra == 'dev'
+Requires-Dist: daves-dev-tools (~=0.3) ; extra == 'dev'
+Requires-Dist: readme-md-docstrings (~=0.1) ; extra == 'dev'
+Requires-Dist: setuptools-setup-versions (~=1.18) ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest (~=5.4) ; extra == 'test'
+Requires-Dist: tox (~=3.21) ; extra == 'test'
+Requires-Dist: flake8 (~=3.8) ; extra == 'test'
+Requires-Dist: black (~=21.7b0) ; extra == 'test'
+
+UNKNOWN
+
+

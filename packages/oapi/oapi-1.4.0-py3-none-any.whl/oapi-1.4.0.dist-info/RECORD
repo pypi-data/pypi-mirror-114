@@ -1,0 +1,12 @@
+oapi/__init__.py,sha256=m3OJ6C7QzBkb-kjwp_dkslsfFh3dt0LBYbMy3vXakDs,164
+oapi/client.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oapi/errors.py,sha256=9tozQ9HwQDf9i0ZgMYvQyHynJUoJ1WwgLq6YIB7Mg6c,157
+oapi/model.py,sha256=uvTZ41YyAvWNFSm0YFRLMK94dJxdBWIgZhbQVPVb8MU,40560
+oapi/oas/__init__.py,sha256=Upy9n82ww2gOXRvtZK8975ezTesGfNII0hALBrIfxuY,45
+oapi/oas/model.py,sha256=xec5rEwaGnRe__SNM4lPZc45_UqK2bbnnlJPKMbQbVc,75715
+oapi/oas/references.py,sha256=CqzEA4h9Ltmu57sdaTJAMlWOgWECOluedZe8_xgKrnw,13308
+oapi-1.4.0.dist-info/LICENSE,sha256=1anzaODySciztmd-jTv3iILgGZnYiJX_hXdTFXRsw58,1057
+oapi-1.4.0.dist-info/METADATA,sha256=a7Z8fv62JTJQYeuuMyy987zRyXVeNxLXpco3sarpTEg,1417
+oapi-1.4.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+oapi-1.4.0.dist-info/top_level.txt,sha256=Qyw_yNABMI6c4-PSvjeyfcPBXt0NL0zfQ7H8HFwFTk8,5
+oapi-1.4.0.dist-info/RECORD,,
