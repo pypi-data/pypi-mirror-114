@@ -1,0 +1,41 @@
+Metadata-Version: 2.0
+Name: azure-ml-component
+Version: 0.1.0.42428082
+Summary: Azure Machine Learning Component SDK
+Home-page: https://aka.ms/azure-ml-component-reference
+Author: Microsoft Corp
+License: https://aka.ms/azureml-sdk-license
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6,<3.9
+Description-Content-Type: text/x-rst
+Provides-Extra: notebooks
+Requires-Dist: azureml-core
+Requires-Dist: azureml-telemetry
+Requires-Dist: psutil
+Provides-Extra: notebooks
+Requires-Dist: ipywidgets; extra == 'notebooks'
+Requires-Dist: packaging; extra == 'notebooks'
+Requires-Dist: azure-storage-blob; extra == 'notebooks'
+Requires-Dist: nbconvert (<6); extra == 'notebooks'
+Requires-Dist: papermill (<2); extra == 'notebooks'
+Requires-Dist: nteract-scrapbook; extra == 'notebooks'
+Requires-Dist: jupyter-client (==6.1.12); extra == 'notebooks'
+
+The azure-ml-component package contains functionality for:
+* authoring and managing Azure Machine Learning components
+* authoring and submiting pipelines using components
+
+
+
