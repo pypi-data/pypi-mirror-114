@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/loadstar/__init__.py
+src/loadstar/__main__.py
+src/loadstar/analysis.py
+src/loadstar/camera.py
+src/loadstar/console.py
+src/loadstar/cookstar.py
+src/loadstar/fps.py
+src/loadstar.egg-info/PKG-INFO
+src/loadstar.egg-info/SOURCES.txt
+src/loadstar.egg-info/dependency_links.txt
+src/loadstar.egg-info/entry_points.txt
+src/loadstar.egg-info/requires.txt
+src/loadstar.egg-info/top_level.txt
