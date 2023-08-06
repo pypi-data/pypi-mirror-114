@@ -1,0 +1,6 @@
+"""
+Logic for app $app_name
+"""
+from flask_restful_helper import Logic
+from apps.$app_name.managers import manager
+from apps.$app_name.schemas import schema

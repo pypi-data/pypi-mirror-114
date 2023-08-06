@@ -1,0 +1,3 @@
+[console_scripts]
+flask-admin = flask_restful_helper.flask_admin:cli
+

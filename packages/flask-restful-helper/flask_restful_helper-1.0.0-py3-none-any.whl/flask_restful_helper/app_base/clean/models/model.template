@@ -1,0 +1,4 @@
+"""
+Model for app $app_name
+"""
+from main.extension import db

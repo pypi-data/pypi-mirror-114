@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: flask-restful-helper
+Version: 1.0.0
+Summary: A small flask restful framework
+Home-page: https://github.com/pypa/sampleproject
+Author: Xian-Yun Tang
+Author-email: xt1800i@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: alembic (==1.6.5)
+Requires-Dist: aniso8601 (==9.0.1)
+Requires-Dist: bcrypt (==3.2.0)
+Requires-Dist: bleach (==3.3.0)
+Requires-Dist: certifi (==2021.5.30)
+Requires-Dist: cffi (==1.14.6)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: click (==8.0.1)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: docutils (==0.17.1)
+Requires-Dist: Flask (==2.0.1)
+Requires-Dist: Flask-Bcrypt (==0.7.1)
+Requires-Dist: Flask-Cors (==3.0.10)
+Requires-Dist: Flask-JWT-Extended (==4.2.3)
+Requires-Dist: flask-marshmallow (==0.14.0)
+Requires-Dist: Flask-Migrate (==3.0.1)
+Requires-Dist: Flask-RESTful (==0.3.9)
+Requires-Dist: Flask-SQLAlchemy (==2.5.1)
+Requires-Dist: Flask-Testing (==0.8.1)
+Requires-Dist: greenlet (==1.1.0)
+Requires-Dist: idna (==2.10)
+Requires-Dist: importlib-metadata (==4.4.0)
+Requires-Dist: itsdangerous (==2.0.1)
+Requires-Dist: Jinja2 (==3.0.1)
+Requires-Dist: keyring (==23.0.1)
+Requires-Dist: Mako (==1.1.4)
+Requires-Dist: MarkupSafe (==2.0.1)
+Requires-Dist: marshmallow (==3.12.1)
+Requires-Dist: marshmallow-sqlalchemy (==0.26.1)
+Requires-Dist: numpy (==1.21.1)
+Requires-Dist: packaging (==20.9)
+Requires-Dist: pandas (==1.3.1)
+Requires-Dist: pkginfo (==1.7.0)
+Requires-Dist: pycparser (==2.20)
+Requires-Dist: Pygments (==2.9.0)
+Requires-Dist: PyJWT (==2.1.0)
+Requires-Dist: PyMySQL (==1.0.2)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: python-dotenv (==0.18.0)
+Requires-Dist: python-editor (==1.0.4)
+Requires-Dist: pytz (==2021.1)
+Requires-Dist: pywin32-ctypes (==0.2.0)
+Requires-Dist: PyYAML (==5.4.1)
+Requires-Dist: readme-renderer (==29.0)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: rfc3986 (==1.5.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: SQLAlchemy (==1.4.17)
+Requires-Dist: tqdm (==4.61.0)
+Requires-Dist: twine (==3.4.1)
+Requires-Dist: typing-extensions (==3.10.0.0)
+Requires-Dist: urllib3 (==1.26.5)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: Werkzeug (==2.0.1)
+Requires-Dist: zipp (==3.4.1)
+
+# Installation
+
+# API test
+### Role Template
+下指令
+   ```sh
+   flask-admin startproject
+   ```
+會同時把API測試的role template也建起來(建立一個tests資料夾)
+#### Role Template程式解說
+**manage.py**
+
+若要執行API測試程式，請下指令：
+   ```sh
+   python manage.py test
+   ```
+會測試所有test case，執行tests/roles資料夾底下檔名為「*_test.py」的所有檔案
+
+**tests/roles資料夾**
+1. 有幾個role，就寫幾個py檔，命名規則為「role名_test.py」
+2. 每當新增一個role，請在tests/enumerations.py裡的RoleType新增一個role，<br/>
+並且在app/config/dev.yaml中新增「role名_USERNAME」以及「role名_PASSWORD」（此role的帳密）
+
+**tests/roles/administrator_test.py**
+1. 例如有一個管理員role，就寫一個administrator_test.py
+2. AdministratorTests class繼承了TestBase
+3. TestBase為tests/base.py裡的class
+4. 要測API請詳見後面flask-admin startapp說明
+   
+**tests/base.py**
+1. TestBase class繼承了flask_testing的TestCase，所以必須override create_app function，此function必須回傳一個Flask instance
+2. 並override setUp function(每個測試執行前會先執行setUp)，裡面包含了針對資料庫做資料的初始化(清空資料，insert初始資料)，並且獲取此role的帳密，call login API做登入的動作(獲取token)
+
+**tests/functions/sqls**
+
+請放入資料庫的初始資料的insert sql
+
+**app/config/dev.yaml**
+
+變數說明：<br/>
+1.IS_NEED_INIT_DB_EVERY_TEST：每次測試前是否要初始化資料庫資料
+
+### API Template
+下指令
+   ```sh
+   flask-admin startapp
+   ```
+假設給定app名稱為account<br/>
+在apps/account/tests/test.py為testcase<br/>
+要讓Administrator去執行的話，就要讓tests/roles/administrator_test.py的AdministratorTests去繼承它
+
