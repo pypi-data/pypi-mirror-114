@@ -1,0 +1,12 @@
+README.md
+setup.py
+sigmatmpy/API.py
+sigmatmpy/APIadmin.py
+sigmatmpy/__init__.py
+sigmatmpy/error.py
+sigmatmpy/information.py
+sigmatmpy/manager_config.py
+sigmatmpy.egg-info/PKG-INFO
+sigmatmpy.egg-info/SOURCES.txt
+sigmatmpy.egg-info/dependency_links.txt
+sigmatmpy.egg-info/top_level.txt
