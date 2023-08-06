@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/openbankingbr/__init__.py
+src/openbankingbr/__version__.py
+src/openbankingbr/batch.py
+src/openbankingbr/errors.py
+src/openbankingbr/models.py
+src/openbankingbr/spec.py
+src/openbankingbr/utils.py
+src/openbankingbr.egg-info/PKG-INFO
+src/openbankingbr.egg-info/SOURCES.txt
+src/openbankingbr.egg-info/dependency_links.txt
+src/openbankingbr.egg-info/requires.txt
+src/openbankingbr.egg-info/top_level.txt
