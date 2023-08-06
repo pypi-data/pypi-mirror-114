@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: modelzoo_iitm
+Version: 0.0.1
+Summary: Model Zoo by IIT Madras
+Home-page: https://github.com/Vinayak-VG/ModelZoo_PyPi
+Author: Vinayak-VG
+Author-email: vinayakguptapokal@gmail.com
+License: UNKNOWN
+Description: # ModelZoo
+        
+        This is the ModelZoo created by the students of IIT Madras.
+        
+        Models : 
+        
+            * UNet and UNet++
+        
+            * PointNet
+        
+            * StackGAN
+        
+            * PSPNet 
+        
+        ## Installation
+        
+        Run the following to install:
+        
+        **pip install modelzoo**
+        
+        ## Developing Model Zoo
+        
+        To install modelzoo, along with the tools you need to develop and run tests, run the following in your virtualenv:
+        
+        **pip install -e .[dev]**
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
