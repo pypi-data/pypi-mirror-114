@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: LvAut
+Version: 2021.0.3
+Summary: logitech auddio test module
+Home-page: UNKNOWN
+Author: lorry_rui
+Author-email: lrui@logitech.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Copyright (c) 2021 lorry_rui
+//////////usage://///////////////
+for test sweep tone WAV file only
+VC_tde USE only  @ logitech , Lorry RUi
+
+
+
+
+
