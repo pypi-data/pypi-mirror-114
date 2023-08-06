@@ -1,0 +1,15 @@
+reina/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reina/IvMethods/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reina/IvMethods/TSLS/2sls.py,sha256=WSHQ1KsVGsFMjF0TQdXajTCO78sDuh7WReArmSP2G48,6139
+reina/IvMethods/TSLS/__init__.py,sha256=8pr-mWZmH-fFKAi1nUkVTQthn35lm21_iB5h-F5dDWU,28
+reina/MetaLearners/SLearner.py,sha256=_EE6wfq1nkSEJoL3b5l7Hb_4V874mxdvzm073rTEhLs,5027
+reina/MetaLearners/TLearner.py,sha256=vKjuAwIU-tKtqR88wFKW2QbOrxgMchLoV-upzIisefQ,5372
+reina/MetaLearners/XLearner.py,sha256=qUS8Vj4z1PEOMsYFcvsPjnwMp1xlC25SopbPWzL2TCc,9385
+reina/MetaLearners/__init__.py,sha256=BBXXkRLAtImk_5XOm_nXXWOb5bOQgLAWtxizHt5-RtQ,93
+reina/Utilities/__init__.py,sha256=qq6X2RqD_7C_2gHCKwLLvRt4w2vkczNhU9LvkyGBAYQ,33
+reina/Utilities/baseModel.py,sha256=NcDEL19vgEIa07X0TSIBKnGJ1OSpmxC8eI9gOoJije0,2085
+reina-0.0.5.dist-info/LICENSE.txt,sha256=S4Gfld64HD62tBnN6gv1AzmnA46a7U0h6TO3OY64Rvg,1068
+reina-0.0.5.dist-info/METADATA,sha256=XEAG-cYvBQ5hb3Klqg9WbhgAjZUcDk2iCXKhgzO3rm0,2237
+reina-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+reina-0.0.5.dist-info/top_level.txt,sha256=n2ajznWJKGizbUAmhVg-13vjckczjfYI633jRc8GSC0,6
+reina-0.0.5.dist-info/RECORD,,
