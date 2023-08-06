@@ -1,0 +1,4 @@
+[console_scripts]
+bin2rom = pynaroma.bin2rom:main
+rom2bin = pynaroma.rom2bin:main
+
