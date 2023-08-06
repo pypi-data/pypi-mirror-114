@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/DGNER/__init__.py
+src/DGNER/dategen.py
+src/DateGenerator.egg-info/PKG-INFO
+src/DateGenerator.egg-info/SOURCES.txt
+src/DateGenerator.egg-info/dependency_links.txt
+src/DateGenerator.egg-info/top_level.txt
