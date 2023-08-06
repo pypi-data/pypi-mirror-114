@@ -1,0 +1,9 @@
+G2S-0.97.10.dist-info/RECORD,,
+G2S-0.97.10.dist-info/WHEEL,sha256=3FJFrWj3N25u06WXdTN6PwDo1viKMTVIfJVbMCz5YvM,110
+G2S-0.97.10.dist-info/top_level.txt,sha256=wMPe9gVwac8XL9aTGXp3V3Sc-UbgQKQ1kH6WmAhGBME,4
+G2S-0.97.10.dist-info/METADATA,sha256=dKb6fkxZNqKBUddpfjCQGG2K__PpmcY4fJ9mS9A8w74,892
+g2s/__init__.py,sha256=IMKRkvhjBGMwSOx4lb_1AjOudrea6sMvgB-58CZRWHM,396
+g2s/g2s.cpython-39-darwin.so,sha256=WaKHlJIT3qJNTzhDiMD0LFxEBiCjIB2Ku3Z_2FADmhE,174032
+g2s/.dylibs/libsodium.23.dylib,sha256=0iVhd9mxYNo4ZM_L80PNOJLAOT4-xyCQn0UB0yukNu0,348672
+g2s/.dylibs/libjsoncpp.24.dylib,sha256=XhwWmkP13PtCtQlk7R4QqxMF2sIr34alwJyYM2YF_vM,306352
+g2s/.dylibs/libzmq.5.dylib,sha256=8sQFZeKzNgB1jwS2_2JOQjJhUy00SX0sKGROCkOXueY,650320
