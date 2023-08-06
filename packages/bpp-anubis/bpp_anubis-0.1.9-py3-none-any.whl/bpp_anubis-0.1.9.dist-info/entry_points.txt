@@ -1,0 +1,5 @@
+[console_scripts]
+anubis = anubis.__main__:main
+anubis-create-cc-run = anubis.sync.cucumber_studio.create_run:main
+anubis-send-cc-results = anubis.sync.cucumber_studio.send_results:main
+
