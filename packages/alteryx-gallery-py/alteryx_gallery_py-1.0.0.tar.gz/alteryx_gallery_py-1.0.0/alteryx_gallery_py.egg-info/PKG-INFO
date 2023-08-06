@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: alteryx-gallery-py
+Version: 1.0.0
+Summary: Connect to Alteryx Gallery using API
+Home-page: https://github.com/continuus-technoloiges/alteryx_gallery_py
+Author: Continuus Technologies
+Author-email: info@continuus-technologies.com
+License: MIT
+Description: # alteryx_gallery_py
+        
+        A lightweight Python wrapper for the Alteryx gallery API.
+        
+        ## Installation
+        
+        Use the package manager [pip](https://pip.pypa.io/en/stable/) to install alteryx_gallery_py.
+        
+        ```bash
+        pip install alteryx_gallery_py
+        ```
+        
+        ## Usage
+        
+        ```python
+        import zipfile
+        import io
+        
+        from alteryx_gallery_py import Subscriptions
+        
+        gallery_url = "http://devalteryx.continuus-technologies.com/gallery/"
+        api_key = 'INSERT API KEY'
+        client_secret = 'INSERT API SECRET'
+        
+        # Initiate Subscription Object
+        sub = Subscriptions(api_key, client_secret, gallery_url)
+        
+        # Search for a workflow in gallery
+        workflows = sub.get_workflows(search="pizza survey")
+        pizza_app_id = workflows[0]["id"]
+        
+        # Get Questions for a workflow
+        questions = sub.get_questions(pizza_app_id)
+        
+        # Run an app
+        answers = [
+            {"name": "Question 1","value": "True"},
+            {"name": "Question 2","value": "Cheese"},
+            {"name": "Question 3","value": 150}
+        ]
+        job_run = sub.create_job(pizza_app_id, questions=answers, priority="0")
+        
+        # Get job status
+        job_status = sub.get_job(job_run["id"])
+        output_id = job_status["outputs"][0]["id"]
+        
+        # List all jobs for an Alteryx app
+        all_pizza_jobs = sub.list_jobs(pizza_app_id)
+        
+        # Get job output
+        job_output = sub.get_job_output(job_run["id"], output_id)
+        
+        # Download an Alteryx Analytics App
+        app_package = sub.download_app(pizza_app_id)
+        z = zipfile.ZipFile(io.BytesIO(app_package))
+        z.extractall("./")
+        ```
+        
+        ## Contributing
+        Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+        
+        Please make sure to update tests as appropriate.
+        
+        ## License
+        [MIT](https://choosealicense.com/licenses/mit/)
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
