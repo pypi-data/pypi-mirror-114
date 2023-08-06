@@ -1,0 +1,12 @@
+[console_scripts]
+dataset_concat = simpledataset.commands.concat:main
+dataset_convert_from = simpledataset.commands.convert_from:main
+dataset_convert_to = simpledataset.commands.convert_to:main
+dataset_defrag = simpledataset.commands.defrag:main
+dataset_download = simpledataset.commands.download:main
+dataset_draw = simpledataset.commands.draw:main
+dataset_filter = simpledataset.commands.filter:main
+dataset_map = simpledataset.commands.map:main
+dataset_pack = simpledataset.commands.pack:main
+dataset_summary = simpledataset.commands.summary:main
+
