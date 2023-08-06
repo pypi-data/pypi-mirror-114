@@ -1,0 +1,15 @@
+Changelog
+=========
+
+1.1.0
+-----
+ - updated add and edit forms title
+ - updated package include scan
+
+1.0.1
+-----
+ - updated add menus registration for last release of PyAMS_zmi package
+
+1.0.0
+-----
+ - initial release
