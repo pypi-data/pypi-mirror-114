@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: get-data-example
+Version: 0.0.4
+Summary: A small example package
+Home-page: https://github.com/Avvallack/library_test
+Author: avvallack
+Author-email: author@example.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Avvallack/library_test/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: pandas (==1.3.1)
+Requires-Dist: yfinance (==0.1.63)
+
+# Example Package
+
+This is a simple example package. 
+
+The package downloads the data from yfinance 
+for specific hour in specific ticker name.
+
+[yfinance](https://pypi.org/project/yfinance/) library reference
+
