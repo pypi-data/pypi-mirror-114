@@ -1,0 +1,6 @@
+selenium>=3.141.0
+webdriver-manager>=3.4.2
+python-telegram-bot>=13.4.1
+requests>=2.25.1
+bs4>=0.0.1
+krx-hj3415>=0.2.6
