@@ -1,0 +1,5 @@
+cobra>=0.18.1
+requests>=2.24.0
+Escher>=1.7.3
+openpyxl>=3.0.7
+webcolors>=1.11.1
