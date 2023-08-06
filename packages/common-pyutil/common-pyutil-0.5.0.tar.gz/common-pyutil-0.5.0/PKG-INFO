@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: common-pyutil
+Version: 0.5.0
+Summary: Some common python utility functions
+Home-page: https://github.com/akshaybadola/common-pyutil
+License: MIT
+Keywords: utilities,functional
+Author: Akshay
+Author-email: atavist13@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# common-pyutil
+Bunch of common utility functions I've used in various projects. This package provides a uniform interface to them.
+
