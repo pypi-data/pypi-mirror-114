@@ -1,0 +1,8 @@
+urllib3
+certifi
+python-dateutil
+pandas
+plotly
+SQLAlchemy
+requests
+powerbot-client
