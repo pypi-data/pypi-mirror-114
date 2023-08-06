@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: cumsdtu
+Version: 0.1.17
+Summary: Project to manage the course registration of the dtu student
+Home-page: https://github.com/Ashish2000L
+Author: Ashish Kumar
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: Free for non-commercial use
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Session
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management :: Link Checking
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: CGI Tools/Libraries
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Content Management System
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+License-File: LICENSE.txt
+Requires-Dist: jsonpickle (~=2.0.0)
+Requires-Dist: requests (~=2.23.0)
+Requires-Dist: lxml (~=4.6.3)
+Requires-Dist: redis (~=3.5.3)
+Requires-Dist: pandas (~=1.1.4)
+Requires-Dist: setuptools (~=50.3.2)
+Requires-Dist: pyjsbn-rsa
+
+UNKNOWN
+
