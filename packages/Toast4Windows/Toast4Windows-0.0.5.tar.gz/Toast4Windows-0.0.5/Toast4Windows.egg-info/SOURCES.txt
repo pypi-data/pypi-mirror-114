@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Toast4Windows/__init__.py
+Toast4Windows/toast4windows.py
+Toast4Windows.egg-info/PKG-INFO
+Toast4Windows.egg-info/SOURCES.txt
+Toast4Windows.egg-info/dependency_links.txt
+Toast4Windows.egg-info/requires.txt
+Toast4Windows.egg-info/top_level.txt
