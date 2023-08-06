@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/cnmath.egg-info/PKG-INFO
+src/cnmath.egg-info/SOURCES.txt
+src/cnmath.egg-info/dependency_links.txt
+src/cnmath.egg-info/top_level.txt
+src/math/__init__.py
+src/math/cnmath.py
