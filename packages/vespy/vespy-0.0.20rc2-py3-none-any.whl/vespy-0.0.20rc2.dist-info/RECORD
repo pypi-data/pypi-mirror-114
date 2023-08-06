@@ -1,0 +1,12 @@
+vespy/__init__.py,sha256=HtzOOk9xZFKNXr-5ONQgwPcT1L9r64NEGrwdjNRZSdo,38
+vespy/certificates/Vestas Issuing CA 01 G1.crt,sha256=dNpKodhsPykOLPHJ5sSI6Cr5t37upVEfgVm0LTaWQOs,2904
+vespy/certificates/Vestas Issuing CA 02 G1.crt,sha256=g-rlHLmXwdozgd_MsKzXFGLyEtxlYF5ngKQrGsnx70s,2904
+vespy/certificates/Vestas Issuing CA 03 G1.crt,sha256=EjiSxqvguy-EOJx13XKEArGylQZiKwsM-BiLfz0zX5Y,2904
+vespy/certificates/Vestas Root CA 01 G1.crt,sha256=1qSlSSsGv5XZhZROvmkFfd3AJzI1pUiR9BnXrK3zHow,2226
+vespy/certificates/vestas-web-gateway-cert.crt,sha256=5hOhhkD_kVBbuXbmfrFk2eC-9myyWXwbFnA4zxrkNNI,1414
+vespy/main.py,sha256=YOAxlGfzAYo3PCgv1vzjWgPAsyAo5ujTJQK0yxG5v2k,108
+vespy/ssl_utils.py,sha256=EnNxJSIrxUweb3JN0w-bK--ZaBMxdKU7wVuQjRtkC-0,1439
+vespy-0.0.20rc2.dist-info/entry_points.txt,sha256=GumkgDvtX00TXEMiZrYBRqPrvWPpkpFJG-iddtA3oAY,40
+vespy-0.0.20rc2.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+vespy-0.0.20rc2.dist-info/METADATA,sha256=OBGb1x8rsgYaopJO6g83s8bWwJ8ev7qTuaxbOkD69Wc,506
+vespy-0.0.20rc2.dist-info/RECORD,,
