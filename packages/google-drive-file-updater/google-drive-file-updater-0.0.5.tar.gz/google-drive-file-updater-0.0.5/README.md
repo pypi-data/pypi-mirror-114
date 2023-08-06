@@ -1,0 +1,54 @@
+# Google Drive file updater
+> A package that allows to backup local files to a specific google drive folder and update already backuped files if they were modified
+
+## Install
+
+`pip install google-drive-file-updater`
+
+## Requirements
+
+#### Credentials
+
+1. Create a Google project here: https://console.developers.google.com/
+2. Enable Google Drive API
+3. Create OAuth 2.0-Client-ID
+4. Download credentials.json file
+
+## Console script
+
+`gdfup.py [Source path] [Destination folder id] (optional: Path to credentials.json)`
+
+If no path to the credentials.json file is passed to the script, it will assume that the file is located in the folder in which the script is executed in.
+
+Example:
+
+![sample_1](https://user-images.githubusercontent.com/48239596/127343317-4b0eb047-7d72-412d-b07c-d40732f72ef1.PNG)
+
+You can find the id of a google drive folder in the url:
+
+![sample_2](https://user-images.githubusercontent.com/48239596/127335762-a573f43a-052c-47be-8fff-2169d1554981.PNG)
+
+## How to use in code
+
+```python
+from gd_fup.service import GoogleDriveService
+from gd_fup.updater import GoogleDriveFileUpdater
+
+# drive_service = GoogleDriveService()
+# optional: path_credentials --> path to your credentials.json file
+# optional: path_token --> path in which your generated token will be saved
+drive_service = GoogleDriveService(path_credentials=r'C:\Temp\credentials.json', path_token=r'C:\Temp\token.json')
+
+# A new tab in your browser will open in order to sign in with your google account
+drive_service.authenticate()
+
+drive_file_updater = GoogleDriveFileUpdater(drive_service=drive_service, output_console=True)
+
+drive_file_updater.update_files(
+    path_source=r'C:\Users\riffe\schule\5.klasse\pos\docs', 
+    root_folder_id='1OEj4Giz1ILRekkWfPw27ZxmPaan-vq1G')
+```
+
+## TODO
+
+- Fix Google Drive file deletion bug

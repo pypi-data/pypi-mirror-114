@@ -1,0 +1,12 @@
+README.md
+setup.py
+src/gdfup.py
+src/gd_fup/__init__.py
+src/gd_fup/progress_bar.py
+src/gd_fup/service.py
+src/gd_fup/updater.py
+src/google_drive_file_updater.egg-info/PKG-INFO
+src/google_drive_file_updater.egg-info/SOURCES.txt
+src/google_drive_file_updater.egg-info/dependency_links.txt
+src/google_drive_file_updater.egg-info/requires.txt
+src/google_drive_file_updater.egg-info/top_level.txt
