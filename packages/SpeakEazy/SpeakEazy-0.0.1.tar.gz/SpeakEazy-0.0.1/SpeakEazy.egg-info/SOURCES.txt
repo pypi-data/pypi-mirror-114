@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+SpeakEazy/__init__.py
+SpeakEazy.egg-info/PKG-INFO
+SpeakEazy.egg-info/SOURCES.txt
+SpeakEazy.egg-info/dependency_links.txt
+SpeakEazy.egg-info/top_level.txt
