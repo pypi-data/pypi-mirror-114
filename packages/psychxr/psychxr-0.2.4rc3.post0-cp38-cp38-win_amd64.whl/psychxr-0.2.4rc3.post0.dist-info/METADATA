@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: psychxr
+Version: 0.2.4rc3.post0
+Summary: Python extension library for interacting with eXtended Reality displays (HMDs), intended for research in neuroscience and psychology.
+Home-page: http://psychxr.org
+Author: Matthew D. Cutone, Laurie M. Wilcox
+Author-email: mcutone@opensciencetools.com
+Maintainer: Matthew D. Cutone
+Maintainer-email: mcutone@opensciencetools.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8.1
+Classifier: Operating System :: Microsoft :: Windows :: Windows 7
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Intended Audience :: Science/Research
+License-File: LICENSE
+Requires-Dist: Cython (>=0.29.3)
+Requires-Dist: numpy (>=1.13.3)
+
+UNKNOWN
+
