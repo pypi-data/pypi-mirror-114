@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+devpdf/__init__.py
+devpdf/pdf2image.py
+devpdf/pdf2text.py
+devpdf.egg-info/PKG-INFO
+devpdf.egg-info/SOURCES.txt
+devpdf.egg-info/dependency_links.txt
+devpdf.egg-info/top_level.txt
