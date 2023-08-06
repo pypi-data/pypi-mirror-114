@@ -1,0 +1,41 @@
+nest-asyncio
+pop>=19.0.0
+sniffio
+
+[curio]
+curio
+
+[full]
+tornado>5
+trio-asyncio
+qasync
+curio
+twisted
+trio
+
+[full:python_version == "3.6"]
+uvloop==0.14.0
+
+[full:python_version >= "3.7"]
+uvloop
+
+[qt]
+qasync
+
+[tornado]
+tornado>5
+
+[trio]
+trio
+trio-asyncio
+
+[twisted]
+twisted
+
+[uvloop]
+
+[uvloop:python_version == "3.6"]
+uvloop==0.14.0
+
+[uvloop:python_version >= "3.7"]
+uvloop
