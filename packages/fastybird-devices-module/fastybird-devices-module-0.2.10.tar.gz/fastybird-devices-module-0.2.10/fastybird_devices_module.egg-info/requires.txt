@@ -1,0 +1,4 @@
+fastybird-application-events
+fastybird-modules-metadata
+pony
+setuptools
