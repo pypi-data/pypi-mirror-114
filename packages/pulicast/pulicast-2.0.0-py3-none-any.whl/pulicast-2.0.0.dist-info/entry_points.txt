@@ -1,0 +1,4 @@
+[console_scripts]
+puliconf = pulicast_tools.puliconf.cli:cli [puliconf]
+puliscope = pulicast_tools.puliscope.__main__:main [puliscope]
+

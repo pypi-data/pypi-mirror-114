@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: pulicast
+Version: 2.0.0
+Summary: Publish Listen Multicast
+Home-page: https://code.kiteswarms.com/kiteswarms/pulicast-python
+Author: Maximilian Ernestus
+Author-email: maximilian@kiteswarms.com
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: trio
+Requires-Dist: qtrio
+Requires-Dist: PySide2
+Requires-Dist: pytypes ; python_version < "3.8.0"
+Provides-Extra: all
+Requires-Dist: numpy ; extra == 'all'
+Requires-Dist: trio ; extra == 'all'
+Requires-Dist: qtrio ; extra == 'all'
+Requires-Dist: PySide2 ; extra == 'all'
+Requires-Dist: pytest ; extra == 'all'
+Requires-Dist: pytest-cov ; extra == 'all'
+Requires-Dist: pytest-trio ; extra == 'all'
+Requires-Dist: coverage (<5) ; extra == 'all'
+Requires-Dist: graphviz ; extra == 'all'
+Requires-Dist: pyqtgraph ; extra == 'all'
+Requires-Dist: tomlkit ; extra == 'all'
+Requires-Dist: Click ; extra == 'all'
+Requires-Dist: pytypes ; (python_version < "3.8.0") and extra == 'all'
+Provides-Extra: puliconf
+Requires-Dist: tomlkit ; extra == 'puliconf'
+Requires-Dist: Click ; extra == 'puliconf'
+Provides-Extra: puliscope
+Requires-Dist: graphviz ; extra == 'puliscope'
+Requires-Dist: pyqtgraph ; extra == 'puliscope'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-trio ; extra == 'test'
+Requires-Dist: coverage (<5) ; extra == 'test'
+Requires-Dist: numpy ; extra == 'test'
+Provides-Extra: tools
+Requires-Dist: graphviz ; extra == 'tools'
+Requires-Dist: pyqtgraph ; extra == 'tools'
+Requires-Dist: tomlkit ; extra == 'tools'
+Requires-Dist: Click ; extra == 'tools'
+
+UNKNOWN
+
