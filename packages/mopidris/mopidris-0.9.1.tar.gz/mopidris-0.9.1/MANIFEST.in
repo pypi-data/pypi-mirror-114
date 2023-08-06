@@ -1,0 +1,2 @@
+include mopidris.desktop
+include mopidris.service
