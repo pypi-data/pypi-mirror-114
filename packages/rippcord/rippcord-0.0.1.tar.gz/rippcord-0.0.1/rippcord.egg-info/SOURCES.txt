@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+rippcord/__init__.py
+rippcord.egg-info/PKG-INFO
+rippcord.egg-info/SOURCES.txt
+rippcord.egg-info/dependency_links.txt
+rippcord.egg-info/top_level.txt
