@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: egp-genomic-library
+Version: 0.0.1.dev0
+Summary: Genomic library for Erasmus GP.
+Home-page: https://github.com/Shapedsundew9/egp-genomic-library
+Author: Shaped Sundew
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/Shapedsundew9/egp-genomic-library/issues
+Project-URL: Source, https://github.com/Shapedsundew9/egp-genomic-library
+Keywords: genetic programming,development
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+Requires-Dist: pypgtable
+Requires-Dist: numpy
+Requires-Dist: cerberus
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+# egp-genomic-library
+
+
