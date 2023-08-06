@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/SCUECAuth.egg-info/PKG-INFO
+src/SCUECAuth.egg-info/SOURCES.txt
+src/SCUECAuth.egg-info/dependency_links.txt
+src/SCUECAuth.egg-info/requires.txt
+src/SCUECAuth.egg-info/top_level.txt
+src/scuec_auth/__init__.py
+src/scuec_auth/_compat.py
+src/scuec_auth/auth.py
+src/scuec_auth/session.py
+src/scuec_auth/utils.py
