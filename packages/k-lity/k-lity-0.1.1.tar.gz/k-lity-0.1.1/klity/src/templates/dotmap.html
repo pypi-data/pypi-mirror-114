@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="latin-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="">
+    <meta name="description" content="Rapport de test">
+    <title>Rapport de test - {{data.title}}</title>
+    <link rel="stylesheet" href="static/bootstrap.min.css" />
+    <link rel="stylesheet" href="static/style.css" />
+    <script src="static/jquery-3.4.1.min.js"></script>
+    <script src="static/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <section id="header">
+        <h2 class="text-center">{{data.title}} - {{data.total}} tests en {{data.time_elapsed}}</h2>
+        <div class="text-center">
+            <span class="text-success">Valides: {{data.passed}} ({{"%.2f%%"|format(data.passed/(data.passed+data.failed)*100)}})</span>
+            -
+            <span class="text-danger">Invalides: {{data.failed}} ({{"%.2f%%"|format(data.failed/(data.passed+data.failed)*100)}})</span>
+        </div>
+    </section>
+    <section id="map">
+        {%for feature in data.features%}
+        {%for scenario in feature.scenarios%}
+        <div class="dot btn-{%if scenario.passed%}success{%else%}danger{%endif%}" data-toggle="tooltip" data-placement="top" data-html="true" title="{{scenario.name}}"></div>
+        {%endfor%}
+        {%endfor%}
+    </section>
+    <section id="footer">
+        <p class="small text-center">Rapport généré à {{data.generation}}</p>
+    </section>
+    <script>$(function(){$('[data-toggle="tooltip"]').tooltip()})</script>
+</body>
+</html>
