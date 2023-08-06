@@ -1,0 +1,5 @@
+qiskit==0.25.0
+matplotlib==3.2.2
+pylatexenc==2.8
+Pillow==8.2.0
+cryptography==3.2.1
