@@ -1,0 +1,14 @@
+aiosqlite
+alembic
+databases
+email-validator
+fastapi-users
+ormar
+uvicorn
+
+[build]
+twine
+
+[test]
+pytest-asyncio
+pytest-factoryboy
