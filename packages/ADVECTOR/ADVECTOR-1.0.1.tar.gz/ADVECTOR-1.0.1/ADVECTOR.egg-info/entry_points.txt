@@ -1,0 +1,5 @@
+[console_scripts]
+ADVECTOR_download_sample_data = ADVECTOR.examples.download_example_data:main
+ADVECTOR_examples_2D = ADVECTOR.examples.ECCO_advect_2D:main
+ADVECTOR_examples_3D = ADVECTOR.examples.ECCO_advect_3D:main
+
