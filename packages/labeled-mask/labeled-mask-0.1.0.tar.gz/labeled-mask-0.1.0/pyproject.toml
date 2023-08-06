@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "labeled-mask"
+version = "0.1.0"
+description = "Provide interface of tagged mask that make easy to squeeze target data from array"
+authors = ["wwwshwww <www.shinderu.www@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=2.7"
+numpy = { version = "^1.16", python = "2.7.*, <=3.4" }
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
