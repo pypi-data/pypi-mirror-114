@@ -1,0 +1,9 @@
+gitfix/__init__.py,sha256=Riw7DkZR4w9ycIkpKPCyaB0ECYiG7F99GTxbxdNiCQs,47
+gitfix/git_states.py,sha256=BTc7XBppS_6UTPNaYqFPdalct8HXop8DNBXkeiKLTyE,68004
+gitfix/main.py,sha256=0FLN80y2kkXtHcwsAmZ1osoy2LrmTsSYyKUS6WSSy5c,5431
+gitfix/state.py,sha256=PRfCOP6ofdUoA7JXT72JBcN9H6fOJqzL7bU6tCZgM4E,1036
+gitfix-0.1.0.dist-info/entry_points.txt,sha256=Tbv96bgCwY3G7fkxqu-nkz3OV7ycGzCW_BPZwcVlb1o,43
+gitfix-0.1.0.dist-info/LICENSE.md,sha256=rHF0SNrd_j4ChqBrot3CUwiBrwUZiLIg4rjNrdxpQ6k,1087
+gitfix-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+gitfix-0.1.0.dist-info/METADATA,sha256=VGIG0kha4smsJXTaCz6tmmbtVYJ39Lxcxb6R06DOS90,430
+gitfix-0.1.0.dist-info/RECORD,,
