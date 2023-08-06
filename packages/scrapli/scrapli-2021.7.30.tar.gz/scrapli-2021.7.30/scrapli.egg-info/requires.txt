@@ -1,0 +1,46 @@
+
+[:python_version < "3.7"]
+async-generator<2.0,>=1.10
+dataclasses<1.0,>=0.7
+
+[asyncssh]
+asyncssh<3.0.0,>=2.2.1
+
+[community]
+scrapli_community>=2021.01.30
+
+[full]
+ntc-templates<3.0.0,>=1.1.0
+textfsm<2.0.0,>=1.1.0
+ttp<1.0.0,>=0.5.0
+paramiko<3.0.0,>=2.6.0
+asyncssh<3.0.0,>=2.2.1
+scrapli_community>=2021.01.30
+
+[full:sys_platform != "darwin" or sys_platform == "darwin" and python_version < "3.10"]
+ssh2-python<1.0.0,>=0.23.0
+
+[full:sys_platform != "win32" and python_version < "3.10"]
+genie>=20.2
+pyats>=20.2
+
+[genie]
+
+[genie:sys_platform != "win32" and python_version < "3.10"]
+genie>=20.2
+pyats>=20.2
+
+[paramiko]
+paramiko<3.0.0,>=2.6.0
+
+[ssh2]
+
+[ssh2:sys_platform != "darwin" or sys_platform == "darwin" and python_version < "3.10"]
+ssh2-python<1.0.0,>=0.23.0
+
+[textfsm]
+ntc-templates<3.0.0,>=1.1.0
+textfsm<2.0.0,>=1.1.0
+
+[ttp]
+ttp<1.0.0,>=0.5.0
