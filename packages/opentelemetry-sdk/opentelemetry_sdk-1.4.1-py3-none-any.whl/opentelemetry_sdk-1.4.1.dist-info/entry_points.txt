@@ -1,0 +1,9 @@
+[opentelemetry_exporter]
+console_span = opentelemetry.sdk.trace.export:ConsoleSpanExporter
+
+[opentelemetry_id_generator]
+random = opentelemetry.sdk.trace.id_generator:RandomIdGenerator
+
+[opentelemetry_tracer_provider]
+sdk_tracer_provider = opentelemetry.sdk.trace:TracerProvider
+
