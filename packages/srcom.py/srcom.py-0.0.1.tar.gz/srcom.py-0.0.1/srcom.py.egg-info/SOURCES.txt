@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+srcom/__init__.py
+srcom/abcs.py
+srcom/client.py
+srcom/dataclasses.py
+srcom/http.py
+srcom/utils.py
+srcom.py.egg-info/PKG-INFO
+srcom.py.egg-info/SOURCES.txt
+srcom.py.egg-info/dependency_links.txt
+srcom.py.egg-info/top_level.txt
