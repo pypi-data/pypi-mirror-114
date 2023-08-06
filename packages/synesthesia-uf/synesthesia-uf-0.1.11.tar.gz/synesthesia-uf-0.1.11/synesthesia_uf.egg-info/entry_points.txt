@@ -1,0 +1,3 @@
+[console_scripts]
+syne = synesthesia:pip_main_func
+
