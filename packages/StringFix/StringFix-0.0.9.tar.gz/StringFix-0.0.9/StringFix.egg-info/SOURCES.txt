@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+StringFix/__init__.py
+StringFix/stringfix_core.py
+StringFix.egg-info/PKG-INFO
+StringFix.egg-info/SOURCES.txt
+StringFix.egg-info/dependency_links.txt
+StringFix.egg-info/desktop.ini
+StringFix.egg-info/not-zip-safe
+StringFix.egg-info/requires.txt
+StringFix.egg-info/top_level.txt
