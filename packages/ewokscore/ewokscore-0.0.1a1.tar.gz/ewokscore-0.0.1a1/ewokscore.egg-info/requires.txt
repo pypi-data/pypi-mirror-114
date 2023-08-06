@@ -1,0 +1,12 @@
+numpy
+networkx
+
+[dev]
+pytest
+matplotlib
+black
+flake8
+
+[test]
+pytest
+matplotlib
