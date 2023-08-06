@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pearl-pgm
+Version: 0.1.1
+Summary: Library for declarative specification of directed graphical models and inference using Pyro.
+Home-page: https://github.com/invitae/pearl-pgm
+License: Apache-2.0
+Keywords: Graphical Models,Probabilistic Programming,Pyro
+Author: Arun Nampally
+Author-email: arun.nampally@invitae.com
+Requires-Python: >=3.7.1,<4.0.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: PyYAML (>=5.4.1,<6.0.0)
+Requires-Dist: h5py (>=3.2.1,<4.0.0)
+Requires-Dist: networkx (>=2.4,<3.0)
+Requires-Dist: numpy (>=1.20.3,<2.0.0)
+Requires-Dist: pyro-ppl (>=1.4.0,<2.0.0)
+Requires-Dist: torch (>=1.6.0,<2.0.0)
+Project-URL: Repository, https://github.com/invitae/pearl-pgm
+Description-Content-Type: text/markdown
+
+# pearl-pgm
+
+Library for declarative specification of directed graphical models and inference using Pyro.
+
