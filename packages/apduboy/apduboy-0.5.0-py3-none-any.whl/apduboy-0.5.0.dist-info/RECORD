@@ -1,0 +1,11 @@
+apduboy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apduboy/bitcoin.py,sha256=fiBYPx2Dn3R8xB43nt6muE5OK9aol_VbmiQOdkEElQ0,3308
+apduboy/ethereum.py,sha256=JVR5EC9bJs7Xa2LUzphRy69UY00FSuIpX4oiN8I0zy0,2904
+apduboy/utils.py,sha256=da0qsITKl6BYr8XQvoV_KOSFpEcTEa_Da6GutrRHOaw,367
+apduboy/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apduboy/lib/bip32.py,sha256=tkNndNmFmZPdsb2qkcRplT659Tkru4KqCzFEvqKs7mM,1416
+apduboy-0.5.0.dist-info/LICENSE,sha256=NSWtPsFh_qktN7Lv7yypBMEFK6k-Da3nAQXnqPZnFdo,1063
+apduboy-0.5.0.dist-info/METADATA,sha256=SVcbYqV2BJQ_Tz3KOIjmYyu9x2N7JfYQw3H4opuPob8,3014
+apduboy-0.5.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+apduboy-0.5.0.dist-info/top_level.txt,sha256=eLI3PYaijOs_jMlWJM1fMkbHykgMZT2GKe9ymEFUa2g,8
+apduboy-0.5.0.dist-info/RECORD,,
