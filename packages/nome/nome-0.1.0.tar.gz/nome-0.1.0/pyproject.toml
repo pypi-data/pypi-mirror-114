@@ -1,0 +1,43 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "nome"
+author = "João Palmeiro"
+author-email = "joaommpalmeiro@gmail.com"
+home-page = "https://github.com/joaopalmeiro/nome"
+classifiers = [ 
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Internet",
+    "Topic :: Terminals",
+    "Topic :: Utilities",
+]
+description-file = "README.md"
+requires-python = ">=3.6,<4"
+keywords = "nome,cli,pypi,npm,name,availability"
+requires = [
+    "requests ~=2.26.0",
+    "cleo ~=0.8.1",
+]
+
+[tool.flit.scripts]
+nome = "nome.application:application.run"
+
+[tool.flit.metadata.urls]
+"Bug Tracker" = "https://github.com/joaopalmeiro/nome/issues"
+Twitter = "https://twitter.com/joaompalmeiro"

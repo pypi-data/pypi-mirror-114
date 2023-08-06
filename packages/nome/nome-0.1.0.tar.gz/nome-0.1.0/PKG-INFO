@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: nome
+Version: 0.1.0
+Summary: A Python CLI to check if a package name is available in PyPI or npm.
+Home-page: https://github.com/joaopalmeiro/nome
+Author: João Palmeiro
+Author-email: joaommpalmeiro@gmail.com
