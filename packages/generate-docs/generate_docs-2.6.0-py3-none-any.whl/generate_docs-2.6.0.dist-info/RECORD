@@ -1,0 +1,11 @@
+generate_docs/__init__.py,sha256=tpHaayAeiAGQ-zbZ1n5KY0nDrEF5lPWHlIqT8vp3pMU,23
+generate_docs/generator.py,sha256=iHokUcCsKIPAlvG6CucMlomWalnyInZOP9y6STeYTeY,1614
+generate_docs/how_to.py,sha256=jlCXbFWhxhQwVbZ3UukeUMOimW_BlhNxOd6IMuJCbnk,4556
+generate_docs/readme.py,sha256=bIxOGNs5EPUNtgyA7XOUlsftmCVxKKAcVZNx8uAYzMs,4908
+generate_docs/wiki.py,sha256=Pka2JDu4p5jAP0kYo-kBtz6emMfBqcpMSRvlNqkKKtc,6829
+generate_docs-2.6.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+generate_docs-2.6.0.dist-info/METADATA,sha256=LSc1HTcorsLMGor_A_gn6EyxFPkmL0xoqPxkX5zcXAk,3512
+generate_docs-2.6.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+generate_docs-2.6.0.dist-info/entry_points.txt,sha256=BmvqK0TkmRajHC-dPg2uUdp0C0pAfzVAw9p68yKikTA,150
+generate_docs-2.6.0.dist-info/top_level.txt,sha256=qLHI1go_5_xh0nzHo2_DLIQUQGvTFgoTo6UsVVdUpes,14
+generate_docs-2.6.0.dist-info/RECORD,,
