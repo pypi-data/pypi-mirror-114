@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+backblast/__init__.py
+shockwave.egg-info/PKG-INFO
+shockwave.egg-info/SOURCES.txt
+shockwave.egg-info/dependency_links.txt
+shockwave.egg-info/top_level.txt
