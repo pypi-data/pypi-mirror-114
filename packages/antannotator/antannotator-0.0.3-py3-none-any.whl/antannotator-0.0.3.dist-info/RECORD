@@ -1,0 +1,10 @@
+antannotator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+antannotator/annotation_controller.py,sha256=oqjr4dX7eTGuNhP7vB8f686S8UQBqlhQwN0teogMJvc,3302
+antannotator/persistence.py,sha256=sNaxpFTYJ68Ptn46uOZN5j3XJe4Pw-leiuE12vaf8Hk,6568
+antannotator/text_classification_wiget.py,sha256=-wtuwNdb76IRyyaAAuV3vi-p47pg25jlERO1dhsyWTo,2832
+antannotator/utils.py,sha256=P7DBktgvrQNffDVkbhNEEoLRvqlNK4ZDRu09xos6jzs,893
+antannotator-0.0.3.dist-info/LICENSE,sha256=uH9AqUmpgeHAHtQCFPs5sdoJgvsSOAQUauPoZhBCQuY,1068
+antannotator-0.0.3.dist-info/METADATA,sha256=QkK-6YxK1dEkYOA32Mon26tlexv0BnAddXr3vU6qWEA,2719
+antannotator-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+antannotator-0.0.3.dist-info/top_level.txt,sha256=h-XQLPSRmPZg_NI8cMuMZXp221N6K79zMMq3yWyP06o,13
+antannotator-0.0.3.dist-info/RECORD,,
