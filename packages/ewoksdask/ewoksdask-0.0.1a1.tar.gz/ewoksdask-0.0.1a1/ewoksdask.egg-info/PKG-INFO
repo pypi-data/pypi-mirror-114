@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ewoksdask
+Version: 0.0.1a1
+Summary: Dask binding for Ewoks
+Home-page: https://gitlab.esrf.fr/workflow/ewoks/ewoksdask
+Author: ESRF
+Author-email: wout.de_nolf@esrf.fr
+License: MIT
+Project-URL: Bug Tracker, https://gitlab.esrf.fr/workflow/ewoks/ewoksdask/-/issues
+Description: # EwoksDask: Dask binding for Ewoks
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev

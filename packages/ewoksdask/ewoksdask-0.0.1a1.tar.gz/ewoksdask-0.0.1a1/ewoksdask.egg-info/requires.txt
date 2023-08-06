@@ -1,0 +1,15 @@
+ewokscore
+dask
+distributed
+dask-jobqueue
+bokeh
+
+[dev]
+black
+flake8
+pytest
+ewokscore[test]
+
+[test]
+pytest
+ewokscore[test]
