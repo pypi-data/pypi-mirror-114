@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: tablex-nuuuwan
+Version: 1.0.3
+Summary: UNKNOWN
+Home-page: https://github.com/nuuuwan/tablex
+Author: Nuwan I. Senaratna
+Author-email: nuuuwan@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/nuuuwan/tablex/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bs4
+Requires-Dist: selenium
+Requires-Dist: tweepy
+Requires-Dist: utils-nuuuwan
+Requires-Dist: pytest
+Requires-Dist: tabula-py
+Requires-Dist: camelot-py[cv]
+
+UNKNOWN
+
