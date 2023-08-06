@@ -1,0 +1,12 @@
+bells/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bells/__main__.py,sha256=YEfjSjicA-3Wg6DNJKDhy022atOldR3OJFn7zzzX-Og,453
+bells/commands/__init__.py,sha256=PUhBAC59FNZ93IW7qGjRzt9L5syL0gQZPLo1M3xi7ng,23
+bells/commands/init.py,sha256=3yRAmVbJ1tk1N9JfwBPMJT9OiJEBrvBVXCjAM54VhC8,1182
+bells/utils/__init__.py,sha256=SFqFBx_obsEQgiIQaE0DoGGUhHPYKn0J1r9593OTiPM,63
+bells/utils/config.py,sha256=b69nkX2spofx6CiOLJ6OwJoxLgkUVrLJq2hnkt4TpNo,140
+bells/utils/get_root.py,sha256=GWm7Bsu8RnxkS8MbGuUEV6K-3FEirW7s_0HWUek0vSA,608
+bells-0.2.0.dist-info/entry_points.txt,sha256=PLXdZe_lOHVp4GFxlKTVZI0wgdX-61wXCELFEYKe384,45
+bells-0.2.0.dist-info/LICENSE,sha256=MzRPDxh1RbhgwTjp3W5nr91yVXVbrxxzilC7vCT7_zo,35061
+bells-0.2.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+bells-0.2.0.dist-info/METADATA,sha256=cQirHDQJeLaPyuM3KZWix8ivYV3A9eZ_mUZ2iuWIC1k,744
+bells-0.2.0.dist-info/RECORD,,
