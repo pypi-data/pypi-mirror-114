@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: tensorflow-similarity
+Version: 0.13.1
+Summary: Metric Learning for Humans
+Home-page: https://github.com/tensorflow/similarity
+Author: Tensorflow Similarity authors
+Author-email: tf-similarity@google.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: tabulate
+Requires-Dist: nmslib
+Requires-Dist: tensorflow (>=2.4)
+Requires-Dist: tqdm
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: tensorflow-datasets (>=4.2)
+Provides-Extra: dev
+Requires-Dist: setuptools ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytype ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: nmslib ; extra == 'dev'
+Requires-Dist: tensorflow ; extra == 'dev'
+Requires-Dist: mkdocs ; extra == 'dev'
+Requires-Dist: mkdocs-material ; extra == 'dev'
+Requires-Dist: mkdocs-autorefs ; extra == 'dev'
+Requires-Dist: mkdocstrings ; extra == 'dev'
+
+FIXME
+
