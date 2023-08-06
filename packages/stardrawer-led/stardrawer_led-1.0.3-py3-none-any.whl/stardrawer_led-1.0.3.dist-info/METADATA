@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: stardrawer-led
+Version: 1.0.3
+Summary: 입력된 변 길이 만큼 정사각형 형태로 별을 찍습니다.
+Home-page: https://github.com/eundonglee
+Author: eundong
+Author-email: cr3306@naver.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: numpy
+
+# stardrawer
+
+* pypi를 통한 라이브러리 업로드 및 다운로드를 테스크하기 위한 프로젝트입니다.
+* 입력된 변 길이 만큼 정사각형 형태로 별을 찍습니다.
+
+
+
