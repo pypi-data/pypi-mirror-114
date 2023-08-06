@@ -1,0 +1,4 @@
+Django
+netaddr
+geoip2==2.9.0
+user-agents
