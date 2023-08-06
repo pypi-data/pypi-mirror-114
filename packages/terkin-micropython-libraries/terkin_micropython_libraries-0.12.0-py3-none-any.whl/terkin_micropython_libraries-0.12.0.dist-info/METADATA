@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: terkin-micropython-libraries
+Version: 0.12.0
+Summary: Terkin MicroPython runtime libraries
+Home-page: https://github.com/hiveeyes/terkin-datalogger
+Author: Andreas Motl
+Author-email: andreas.motl@terkin.org
+License: MIT, Apache 2.0
+Keywords: sensor networks data acquisition transformation daq routing telemetry m2m iot mqtt http
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: MicroPython
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Manufacturing
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: Topic :: Communications
+Classifier: Topic :: Internet
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Archiving
+Classifier: Topic :: System :: Networking :: Monitoring
+Classifier: Topic :: Utilities
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+License-File: LICENSE
+
+This package contains all MicroPython runtime libraries required to run Terkin, even on CPython.
+
