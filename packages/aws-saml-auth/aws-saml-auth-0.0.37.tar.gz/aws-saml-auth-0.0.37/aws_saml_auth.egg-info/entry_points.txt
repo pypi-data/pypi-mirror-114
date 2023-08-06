@@ -1,0 +1,3 @@
+[console_scripts]
+aws-saml-auth = aws_saml_auth:main
+
