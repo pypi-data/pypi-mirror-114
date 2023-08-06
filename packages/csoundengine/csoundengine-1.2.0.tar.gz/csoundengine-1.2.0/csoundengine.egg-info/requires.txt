@@ -1,0 +1,16 @@
+numpy
+scipy
+matplotlib
+JACK-client
+ctcsound
+sndfileio
+emlib
+cachetools
+configdict>=0.8
+bpf4
+numpyx>=0.5
+pitchtools>=1.1
+sounddevice
+appdirs
+pygments
+sf2utils
