@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: redesign.health
+Version: 0.1
+Summary: Shared library for Redesigning Psychiatry projects
+Home-page: https://github.com/redesigningpsychiatry/health-python
+Author: Sander Voerman
+Author-email: sander@redesigningpsychiatry.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Documentation
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Redesign Health
+
+Open source python library for different projects within the
+[Redesigning Psychiatry](https://github.com/redesigningpsychiatry) programme.
+
+
