@@ -1,0 +1,78 @@
+Metadata-Version: 1.2
+Name: pyslice
+Version: 4.2.3
+Summary: Pyslice is a templating engine to easily create data sets for parametric modeling.
+Home-page: http://timcera.bitbucket.io/pyslice/docsrc/index.html
+Author: Tim Cera, P.E.
+Author-email: tim@cerazone.net
+License: BSD
+Description: .. image:: https://travis-ci.org/timcera/pyslice.svg?branch=master
+            :target: https://travis-ci.org/timcera/pyslice
+            :height: 20
+        
+        .. image:: https://coveralls.io/repos/timcera/pyslice/badge.png?branch=master
+            :target: https://coveralls.io/r/timcera/pyslice?branch=master
+            :height: 20
+        
+        .. image:: https://img.shields.io/pypi/v/pyslice.svg
+            :alt: Latest release
+            :target: https://pypi.python.org/pypi/pyslice
+        
+        .. image:: http://img.shields.io/badge/license-BSD-lightgrey.svg
+            :alt: pyslice license
+            :target: https://pypi.python.org/pypi/pyslice/
+        
+        Welcome to pyslice - dataset template engine's documentation!
+        =============================================================
+        pyslice is a specialized templating system that replaces variables in
+        a template data set with numbers taken from all combinations of a grouped
+        series of numbers. It creates a dataset from input template files for each
+        combination of variables in the series.
+        
+        The main function of pyslice is to provide utility functions for parametric
+        modeling. Parametric modeling is a process of varying many inputs to a model.
+        A drawback to parametric modeling is that there are usually hundreds to
+        thousands of data sets to prepare and a corresponding number of model runs.
+        pyslice will create the model data sets and manage the model runs, or place the
+        model runs in a queue managed by other software. pyslice is also useful in
+        establishing the sensitivity of a model to changing parameters.
+        
+        Documentation
+        =============
+        Reference documentation is at https://timcera.bitbucket.io/pyslice/docsrc/index.html
+        
+        Installation
+        ============
+        
+        At the command line::
+        
+            $ pip install pyslice
+            # OR
+            $ easy_install pyslice
+        
+        Or, if you have virtualenvwrapper installed::
+        
+            $ mkvirtualenv pyslice
+            $ pip install pyslice
+        
+        Development
+        ===========
+        Development is managed on bitbucket at
+        https://bitbucket.org/timcera/pyslice/overview.
+        
+Keywords: time_series
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7.1
