@@ -1,0 +1,3 @@
+[console_scripts]
+buildpan = gitci.gitci:buildpan
+
