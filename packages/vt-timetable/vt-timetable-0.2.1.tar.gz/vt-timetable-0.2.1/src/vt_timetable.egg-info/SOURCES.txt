@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/vt_timetable.egg-info/PKG-INFO
+src/vt_timetable.egg-info/SOURCES.txt
+src/vt_timetable.egg-info/dependency_links.txt
+src/vt_timetable.egg-info/requires.txt
+src/vt_timetable.egg-info/top_level.txt
+src/vtt/__init__.py
