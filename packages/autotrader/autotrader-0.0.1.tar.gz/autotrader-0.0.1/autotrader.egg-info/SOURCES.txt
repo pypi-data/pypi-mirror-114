@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+autotrader.egg-info/PKG-INFO
+autotrader.egg-info/SOURCES.txt
+autotrader.egg-info/dependency_links.txt
+autotrader.egg-info/top_level.txt
