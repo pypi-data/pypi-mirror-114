@@ -1,0 +1,10 @@
+ipytest/__init__.py,sha256=fthBQg10aG40sGMY1rMj6has8AvsSOZuRwgyORexsqw,240
+ipytest/_config.py,sha256=e_xMlP8dZuZGnYkOcoLzNTkbfSqjhrvy5bj2YhaBb6Q,6825
+ipytest/_impl.py,sha256=If2Ns-B1oQAMyknwyRCx2MsvIenP55LqgiHWoWLXt7o,7767
+ipytest/_pytest_support.py,sha256=xikdSNLtIt-tBxueiYFs5wjpm5Z6tvEM4agsjiFBbOQ,5655
+ipytest/_util.py,sha256=CVvf529rGf74pS6dNjLl29bQEwjqmecW2n5DUUuM6EU,2445
+ipytest-0.11.0.dist-info/LICENSE.md,sha256=iQTcKWK-_tNHe0_08YfStgDTg4YCVvntkYnSTqqecaY,1090
+ipytest-0.11.0.dist-info/METADATA,sha256=1KfHRwQ6DNQdeYmM3rgBns1og7Kwa3s8lkjxyw0wFk8,15440
+ipytest-0.11.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ipytest-0.11.0.dist-info/top_level.txt,sha256=dq2IoHtFCHx6TyaeV1rPR4bkKAEkjaoRungFL6Nsk1Y,8
+ipytest-0.11.0.dist-info/RECORD,,
