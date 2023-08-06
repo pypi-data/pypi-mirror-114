@@ -1,0 +1,8 @@
+numpy>=1.20.0
+requests>=2.25.0
+scipy>=1.6.0
+tqdm>=4.59.0
+
+[full]
+pandas>=1.2.0
+wfdb>=3.3.0
