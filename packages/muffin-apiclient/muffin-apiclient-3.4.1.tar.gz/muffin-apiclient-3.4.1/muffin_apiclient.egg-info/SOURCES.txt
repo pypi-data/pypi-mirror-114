@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+muffin_apiclient/__init__.py
+muffin_apiclient.egg-info/PKG-INFO
+muffin_apiclient.egg-info/SOURCES.txt
+muffin_apiclient.egg-info/dependency_links.txt
+muffin_apiclient.egg-info/requires.txt
+muffin_apiclient.egg-info/top_level.txt
