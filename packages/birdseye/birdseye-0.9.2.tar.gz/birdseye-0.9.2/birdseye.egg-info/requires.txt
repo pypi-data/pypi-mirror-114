@@ -1,0 +1,19 @@
+Flask
+flask-humanize
+sqlalchemy
+asttokens
+littleutils>=0.2
+cheap_repr
+outdated
+cached_property
+
+[:python_version == "2.7"]
+backports.functools_lru_cache
+
+[tests]
+bs4
+selenium
+requests
+pytest
+numpy>=1.16.5
+pandas
