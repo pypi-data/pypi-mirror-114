@@ -1,0 +1,13 @@
+report_template/BeautifulReport.py,sha256=L1rQTGusc-N3qm_CEVY7HxhqyiZxaQTW6EcpXS5-Fpo,15545
+report_template/__init__.py,sha256=x7WzKkp8iLGtqJ2_5MiGLKqhmON7Rxjk-seQfU31zWo,149
+report_template/template/template.html,sha256=TLSybwBF4VH2c5_1PlzAvrRuorGdkRhClNTXun3j4-s,138819
+report_template/template/theme.json,sha256=5kDQhKum9-bl61UZ1leeMbw6iacqc2DGieiamCmEQgA,318
+report_template/template/theme_candy.json,sha256=i70z3k_d8YJCHZLCvUbn6T4-AYMN7ZykLmJhqpbHy0Y,391
+report_template/template/theme_cyan.json,sha256=vZY9ZD1SwEFjPSjXl_W_VbxVP2vtE7bwyLlrO9FyYgo,390
+report_template/template/theme_default.json,sha256=bhnexQV8VGPWjVCHFPv6qsW1X4RZtDvMin7Sl4aFapw,388
+report_template/template/theme_memories.json,sha256=3fwm2eyYlEJfTJo0JpEoTWVDvbHi9ONFoHj0vLtYHFg,388
+report_platform-0.0.6.dist-info/LICENSE.txt,sha256=eTAMrQxkyw6ApSsWH9vJdyVXchbASCr9kEPFfwQzv-c,1091
+report_platform-0.0.6.dist-info/METADATA,sha256=z9OJYRlAJSE363khkwXl5vefT7iAb1MGiGN6R2LVjj8,661
+report_platform-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+report_platform-0.0.6.dist-info/top_level.txt,sha256=qRarAhKCiR--3DKuEhuXLqhd7XFBVxpAOlyzQ_CcIWE,16
+report_platform-0.0.6.dist-info/RECORD,,
