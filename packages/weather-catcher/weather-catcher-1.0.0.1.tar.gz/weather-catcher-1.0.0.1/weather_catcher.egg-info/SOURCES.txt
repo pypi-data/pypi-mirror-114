@@ -1,0 +1,8 @@
+setup.py
+weather-catcher/__init__.py
+weather-catcher/main.py
+weather_catcher.egg-info/PKG-INFO
+weather_catcher.egg-info/SOURCES.txt
+weather_catcher.egg-info/dependency_links.txt
+weather_catcher.egg-info/requires.txt
+weather_catcher.egg-info/top_level.txt
