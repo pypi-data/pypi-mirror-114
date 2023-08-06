@@ -1,0 +1,16 @@
+LICENSE
+README.rst
+setup.py
+idem_aiohttp/conf.py
+idem_aiohttp/version.py
+idem_aiohttp.egg-info/PKG-INFO
+idem_aiohttp.egg-info/SOURCES.txt
+idem_aiohttp.egg-info/dependency_links.txt
+idem_aiohttp.egg-info/entry_points.txt
+idem_aiohttp.egg-info/requires.txt
+idem_aiohttp.egg-info/top_level.txt
+idem_aiohttp/acct/http/basic_auth.py
+idem_aiohttp/exec/http/init.py
+idem_aiohttp/exec/http/json.py
+idem_aiohttp/exec/http/request.py
+idem_aiohttp/tool/http/session.py

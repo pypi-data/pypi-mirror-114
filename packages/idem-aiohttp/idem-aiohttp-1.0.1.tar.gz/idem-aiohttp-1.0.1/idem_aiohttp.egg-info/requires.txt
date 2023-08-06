@@ -1,0 +1,5 @@
+aiodns
+aiohttp
+idem>=12
+pop>=17.0
+requests
