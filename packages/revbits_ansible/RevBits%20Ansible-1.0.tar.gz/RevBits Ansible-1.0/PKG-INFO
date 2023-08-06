@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: RevBits Ansible
+Version: 1.0
+Summary: The PAM Secret Server Python SDK
+Home-page: UNKNOWN
+Author: RevBits
+Author-email: info@revbits.com
+License: MIT
+Description: UNKNOWN
+Keywords: PAM,Secret,Security,RevBits
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Security
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
