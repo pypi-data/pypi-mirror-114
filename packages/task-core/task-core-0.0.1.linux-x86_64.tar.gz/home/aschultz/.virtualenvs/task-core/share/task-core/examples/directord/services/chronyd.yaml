@@ -1,0 +1,14 @@
+id: chronyd
+type: service
+version: 1.0.0
+tasks:
+  - id: setup
+    action: run
+    driver: directord
+    provides:
+      - chronyd.init
+    jobs:
+      - RUN: dnf -y install chrony crudini
+      - RUN: systemctl start chronyd
+      - RUN: systemctl enable chronyd
+

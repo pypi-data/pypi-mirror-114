@@ -1,0 +1,37 @@
+id: service-c
+type: service
+version: 1.0.0
+tasks:
+  - id: setup
+    action: init
+    driver: service
+    provides:
+      - service-c.init
+    jobs:
+      - echo: "service c start"
+
+  - id: run
+    action: run
+    driver: service
+    provides:
+      - service-c.run
+    requires:
+      - service-c.init
+    jobs:
+      - echo: "service c run"
+
+  - id: print
+    driver: print
+    requires:
+      - service-c.run
+    message: "service c ran...."
+
+  - id: finalize
+    action: finalize
+    driver: service
+    provides:
+      - service-c.finalize
+    requires:
+      - service-c.run
+    jobs:
+      - echo: "service c done"

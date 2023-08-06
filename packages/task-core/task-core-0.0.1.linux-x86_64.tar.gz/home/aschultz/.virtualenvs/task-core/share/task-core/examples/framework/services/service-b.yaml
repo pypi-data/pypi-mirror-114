@@ -1,0 +1,31 @@
+id: service-b
+type: service
+version: 1.0.0
+tasks:
+  - id: setup
+    action: init
+    driver: service
+    provides:
+      - service-b.init
+    jobs:
+      - echo: "service b start"
+
+  - id: run
+    action: run
+    driver: service
+    provides:
+      - service-b.run
+    requires:
+      - service-b.init
+    jobs:
+      - echo: "service b run"
+
+  - id: finalize
+    action: finalize
+    driver: service
+    provides:
+      - service-b.finalize
+    requires:
+      - service-b.run
+    jobs:
+      - echo: "service b done"

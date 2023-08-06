@@ -1,0 +1,10 @@
+#!/home/aschultz/.virtualenvs/task-core/bin/python3
+# PBR Generated from 'console_scripts'
+
+import sys
+
+from task_core.cmd import main
+
+
+if __name__ == "__main__":
+    sys.exit(main())
