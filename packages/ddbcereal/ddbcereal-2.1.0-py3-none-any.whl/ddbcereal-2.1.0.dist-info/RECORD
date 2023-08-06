@@ -1,0 +1,11 @@
+ddbcereal/__init__.py,sha256=j88RV6C0NQH3wfo1REtlDUEZRnIdprwZAY5JXYbvSXk,1732
+ddbcereal/deserializing.py,sha256=lrNQkPfn2ne6wg5lr3E6fA0rqvm6UtMxCfFWk0tA9YM,6611
+ddbcereal/exceptions.py,sha256=Ja1XKE-48Co-QvlaaYhKkS-KCmDkwziRZp2Alu1k-bs,256
+ddbcereal/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ddbcereal/serializing.py,sha256=GFz5pcquiXEXQezBHPhJ_ypiUAC8UIz5M4X1jpgObSo,7386
+ddbcereal/types.py,sha256=GxyA0kyt4SVYDvLMUu6Cc58ipy8Haz2NZ4a7FpQXHPc,2405
+ddbcereal-2.1.0.dist-info/LICENSE.txt,sha256=hz_qovWG2z-kgaCMr2jTjHBfC4UuZcSJgfW8bldGxI4,11343
+ddbcereal-2.1.0.dist-info/METADATA,sha256=vSran83AXwHib1Ei3_o8TWeBtluXyhBkVcoHiA7CPys,2630
+ddbcereal-2.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ddbcereal-2.1.0.dist-info/top_level.txt,sha256=KcGhpU8lY5wQAu83HAVbbP3D9G8LrjVqDm1BUHIZ6JI,10
+ddbcereal-2.1.0.dist-info/RECORD,,
