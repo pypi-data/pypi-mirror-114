@@ -1,0 +1,9 @@
+circleci_to_sqlite/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+circleci_to_sqlite/cli.py,sha256=PMgF382Uk5gASqUhpDXKn3bu6AZMSouaeZpqjBujn-A,3030
+circleci_to_sqlite/utils.py,sha256=KxrEGh2nmwNmuaECI4NAgQ4DzRCC7nXTMidZ3xMB_IE,6156
+circleci_to_sqlite-0.3.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+circleci_to_sqlite-0.3.0.dist-info/METADATA,sha256=E0PJBWnXk_9xsvC12-JbnzX2R1Nf3ZM_VOgoIZiljiM,2657
+circleci_to_sqlite-0.3.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+circleci_to_sqlite-0.3.0.dist-info/entry_points.txt,sha256=UUUYLyrJEhGHbaaNLkmp0a0ywOsZRGrBEEiipXpUVL0,85
+circleci_to_sqlite-0.3.0.dist-info/top_level.txt,sha256=68Fn2ffZYJrD0cA-DoXlgEh-lW14Iv3TiG5RmAD7a50,19
+circleci_to_sqlite-0.3.0.dist-info/RECORD,,
