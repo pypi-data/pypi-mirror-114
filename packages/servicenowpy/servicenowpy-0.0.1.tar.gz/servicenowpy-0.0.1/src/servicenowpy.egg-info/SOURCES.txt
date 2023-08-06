@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/servicenowpy/__init__.py
+src/servicenowpy/servicenow.py
+src/servicenowpy.egg-info/PKG-INFO
+src/servicenowpy.egg-info/SOURCES.txt
+src/servicenowpy.egg-info/dependency_links.txt
+src/servicenowpy.egg-info/requires.txt
+src/servicenowpy.egg-info/top_level.txt
