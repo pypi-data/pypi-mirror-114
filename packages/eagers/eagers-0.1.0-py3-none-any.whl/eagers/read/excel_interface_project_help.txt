@@ -1,0 +1,26 @@
+// Text displayed on the help sheet of the project template Excel workbook.
+// "#" denotes a section header.
+// "//" denotes a commented line.
+
+# All Sheets
+Multiline values may be entered, but will be read as though the newline
+characters did not exist. E.g. a list may be entered as "[[1, 2],\n[3, 4]]"
+and will be read as "[[1, 2],[3, 4]]".
+
+Where lists are entered, they must conform to the JSON specification
+(https://www.json.org) to avoid errors. E.g. there must be leading zeros in
+front of decimals less than one: "0.1", not ".1".
+
+# Components
+Each line represents a single Component. Each Component type has its own set of
+headers. Leave at least one blank line between different Component types.
+
+# Buildings
+Each line should contain one building file name. Multiple files may be named.
+
+# Network
+Each line represents a single Network object.
+
+# TimeSeriesInputs
+Attributes of Component or Network objects that are time series are referenced
+in their respective sheets. The actual time series data are kept here.
