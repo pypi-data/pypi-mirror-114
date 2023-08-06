@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: sunslack
+Version: 1.0.1
+Summary: Slack bot publishing NOAA Solar data
+Home-page: https://github.com/0x9900/sun-slack/
+Author: Fred C. (W6BSD)
+Author-email: w6bsd@bsdworld.org
+License: BSD
+Description: 
+        ## Sun predictions on a Slack channel
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Communications :: Ham Radio
+Description-Content-Type: text/markdown
