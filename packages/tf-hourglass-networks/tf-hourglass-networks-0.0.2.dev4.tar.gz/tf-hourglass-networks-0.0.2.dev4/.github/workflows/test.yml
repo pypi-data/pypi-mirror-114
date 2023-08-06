@@ -1,0 +1,34 @@
+name: Lint and Test
+on: [push]
+
+jobs:
+  lint:
+    name: Flake8 linting
+    runs-on: ubuntu-latest
+    container: python:3.9
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install deps
+      run: pip install flake8
+    - name: Lint
+      run: python3 -m flake8 --max-line-length 100 --ignore=E226,F401,E241
+
+  test:
+    name: Pytest
+    runs-on: ubuntu-latest
+    container: python:3.9
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install deps
+      run: pip install -r requirements.txt
+    - name: Test
+      run: python -m pytest --junitxml=report.xml
+    - name: Report
+      uses: dorny/test-reporter@v1
+      if: success() || failure()
+      with:
+        name: Test results
+        path: report.xml
+        reporter: java-junit
