@@ -1,0 +1,4 @@
+python-ndn>=0.3a1
+ndn-python-repo>=0.2a5
+pytest>=6.2.2
+pycryptodomex>=3.10.1
