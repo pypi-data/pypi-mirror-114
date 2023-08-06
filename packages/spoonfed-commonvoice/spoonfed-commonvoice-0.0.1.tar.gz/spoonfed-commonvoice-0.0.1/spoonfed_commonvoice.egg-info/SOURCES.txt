@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+spoonfed-commonvoice/__init__.py
+spoonfed-commonvoice/main.py
+spoonfed_commonvoice.egg-info/PKG-INFO
+spoonfed_commonvoice.egg-info/SOURCES.txt
+spoonfed_commonvoice.egg-info/dependency_links.txt
+spoonfed_commonvoice.egg-info/top_level.txt
