@@ -1,0 +1,6 @@
+README.rst
+setup.py
+confcompiler.egg-info/PKG-INFO
+confcompiler.egg-info/SOURCES.txt
+confcompiler.egg-info/dependency_links.txt
+confcompiler.egg-info/top_level.txt
