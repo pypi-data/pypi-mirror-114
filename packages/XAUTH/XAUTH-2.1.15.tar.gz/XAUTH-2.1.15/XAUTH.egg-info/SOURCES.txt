@@ -1,0 +1,8 @@
+setup.py
+XAUTH.egg-info/PKG-INFO
+XAUTH.egg-info/SOURCES.txt
+XAUTH.egg-info/dependency_links.txt
+XAUTH.egg-info/requires.txt
+XAUTH.egg-info/top_level.txt
+xauth/__init__.py
+xauth/keyauth.py
