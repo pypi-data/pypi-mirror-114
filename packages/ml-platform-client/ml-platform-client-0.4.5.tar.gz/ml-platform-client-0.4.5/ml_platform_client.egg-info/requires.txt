@@ -1,0 +1,5 @@
+flask-restful
+minio
+pymysql
+psutil
+mlp_tracking==0.0.3
