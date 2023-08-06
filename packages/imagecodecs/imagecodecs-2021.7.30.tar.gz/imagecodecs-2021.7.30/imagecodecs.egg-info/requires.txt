@@ -1,0 +1,6 @@
+numpy>=1.15.1
+
+[all]
+matplotlib>=3.2
+tifffile>=2021.1.11
+numcodecs
