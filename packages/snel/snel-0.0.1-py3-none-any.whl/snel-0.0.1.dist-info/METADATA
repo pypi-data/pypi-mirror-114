@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: snel
+Version: 0.0.1
+Summary: Unofficial client to Google Lens.
+Home-page: https://github.com/Tatsh/snel
+Author: Andrew Udvare
+Author-email: audvare@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.26.0)
+
+# Snel
+
+An unofficial client to Google Lens.
+
+## Command line utility
+
+Usage:
+
+```plain
+snel FILE
+```
+
+A URL to the Lens page will print out if successful.
+
+
