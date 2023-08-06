@@ -1,0 +1,11 @@
+aiotr/__init__.py,sha256=WNIMLVAongIdJcf6jpZ0dPbQ25A5rG-tXMWFUujSPos,615
+aiotr/client.py,sha256=Pzu21vPRDks6vznf8Hp15VuzHT5ufCxmt9M8y5XyYMI,51203
+aiotr/exception.py,sha256=q4ceqFcmRv3yFAudJY7jFysLBKjIBuyBAomHF1Gv2QM,1093
+aiotr/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiotr/typing.py,sha256=7mzqRw8ZE-yYvkIqKfPkUGuiXaFfJvl2TOuxdYRmwcA,415
+aiotr/utils.py,sha256=q6M7sMxgOoJzqdExK-vmmuJxo1n_TsZLjC85CrJdV6Q,423
+aiotr-0.1.0.dist-info/LICENSE,sha256=R-2Fhif2TbKlPhbLshJNpTHbCdG1cPFL2qauwwTU_10,35825
+aiotr-0.1.0.dist-info/METADATA,sha256=e-U5Ya5HPKorjNYPAdcFlikaS9M75LLJdw_PvgLCv34,1062
+aiotr-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aiotr-0.1.0.dist-info/top_level.txt,sha256=OvuVC2ldoFjJ-3appQSlSkiZsjLw631psYw6kKoACqk,6
+aiotr-0.1.0.dist-info/RECORD,,
