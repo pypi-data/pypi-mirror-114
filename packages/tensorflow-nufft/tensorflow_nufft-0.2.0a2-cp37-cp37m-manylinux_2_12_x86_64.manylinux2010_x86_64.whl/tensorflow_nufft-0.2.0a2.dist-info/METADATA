@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: tensorflow-nufft
+Version: 0.2.0a2
+Summary: A fast, native non-uniform FFT op for TensorFlow.
+Home-page: https://github.com/mrphys/tensorflow-nufft
+Author: Javier Montalt Tordera
+Author-email: javier.montalt@outlook.com
+License: Apache 2.0
+Keywords: tensorflow,nufft
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: GPU
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: packaging
+Requires-Dist: tensorflow
+
+TensorFlow NUFFT
+================
+
+|pypi| |build| |docs|
+
+.. |pypi| image:: https://badge.fury.io/py/tensorflow-nufft.svg
+    :target: https://github.com/mrphys/tensorflow-nufft/actions/workflows/build-package.yml
+.. |build| image:: https://github.com/mrphys/tensorflow-nufft/actions/workflows/build-package.yml/badge.svg
+    :target: https://github.com/mrphys/tensorflow-nufft/actions/workflows/build-package.yml
+.. |docs| image:: https://img.shields.io/badge/api-reference-blue.svg
+    :target: https://mrphys.github.io/tensorflow-nufft/
+
+.. start-intro
+
+TensorFlow NUFFT is a fast, native non-uniform fast Fourier transform op for
+TensorFlow. It provides:
+
+* Fast CPU/GPU kernels. The TensorFlow framework automatically handles device
+  placement as usual.
+* A simple, well-documented Python interface.
+* Gradient definitions for automatic differentiation.
+* Shape functions to support static shape inference.
+
+The underlying NUFFT implementation is that of the Flatiron Institute. Please
+refer to the `FINUFFT <https://github.com/flatironinstitute/finufft/>`_ and
+`cuFINUFFT <https://github.com/flatironinstitute/cufinufft/>`_ repositories for
+details.
+
+.. end-intro
+
+Installation
+------------
+
+.. start-install
+
+You can install TensorFlow NUFFT with ``pip``:
+
+.. code-block:: console
+
+    $ pip install tensorflow-nufft
+
+Note that only Linux wheels are currently being provided.
+
+.. end-install
+
+
