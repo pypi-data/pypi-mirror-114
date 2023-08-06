@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+tracee/__init__.py
+tracee/extract.py
+tracee.egg-info/PKG-INFO
+tracee.egg-info/SOURCES.txt
+tracee.egg-info/dependency_links.txt
+tracee.egg-info/requires.txt
+tracee.egg-info/top_level.txt

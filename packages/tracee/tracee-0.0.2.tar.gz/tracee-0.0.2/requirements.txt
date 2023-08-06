@@ -1,0 +1,2 @@
+minimalKNN>=0.5
+fdlsgm>=0.5.5
