@@ -1,0 +1,5 @@
+pelican>=4.5
+
+[testing]
+pytest~=6.0
+pytest-cov~=2.8
