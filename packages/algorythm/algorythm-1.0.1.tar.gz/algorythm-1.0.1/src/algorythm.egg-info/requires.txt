@@ -1,0 +1,9 @@
+pyaudio
+numpy
+scipy
+pygame
+pywin32
+winrt
+requests
+pillow
+spotipy
