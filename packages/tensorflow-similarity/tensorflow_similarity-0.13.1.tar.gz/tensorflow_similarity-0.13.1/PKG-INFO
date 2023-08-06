@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: tensorflow_similarity
+Version: 0.13.1
+Summary: Metric Learning for Humans
+Home-page: https://github.com/tensorflow/similarity
+Author: Tensorflow Similarity authors
+Author-email: tf-similarity@google.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Provides-Extra: dev
+License-File: LICENSE
+
+FIXME
+
