@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: pyhpp
+Version: 0.1.2
+Summary: Algorithms for Three Dimensional Path Planning
+Home-page: https://github.com/Kun-Neng/hpp/tree/main/python
+Author: Kun-Neng Hung
+Author-email: kunneng.hung@gmail.com
+License: UNKNOWN
+Description: # pyhpp
+        #### Python Package for A* Algorithms
+        
+        * Step 1: import A* algorithm
+        ```
+        from pyhpp.a_star import AStar
+        ```
+        
+        * Step 2: prepare a JSON type scenario, e.g.,
+        ```
+        scenario = {
+            "dimension": {"x": 10, "y": 10, "z": 10},
+            "waypoint": {
+                "start": {"x": 5, "y": 9, "z": 2},
+                "stop": {"x": 5, "y": 0, "z": 4},
+                "allowDiagonal": False
+            },
+            "data": {
+                "size": 16,
+                "x": [4, 5, 6, 7, 4, 5, 6, 7, 4, 5, 6, 7, 4, 5, 6, 7],
+                "y": [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6],
+                "z": [2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5]
+            },
+            "boundary": {
+                "zCeil": 6,
+                "zFloor": 1
+            }
+        }
+        ```
+        > `dimension`: [required] whole dimension of the scenario<br>
+        > `waypoint`: [required] start and stop positions (default `allowDiagonal` is `False`)<br>
+        > `data`: obstacle data (set as empty if none)<br>
+        > `boundary`: the z-axis boundary of path for calculation<br>
+        
+        * Step 3: create an A* instance
+        ```
+        a_star = AStar(scenario)
+        ```
+        
+        * Step 4: calculate and get the results
+        ```
+        result = a_star.calculate_path()
+        
+        visited_Q = result["visited_Q"]
+        final_Q = result["final_Q"]
+        path = result["path"]
+        ```
+        This returned `result` contains the following main properties
+        > `visited_Q`: all the visited positions<br>
+        > `final_Q`: all the positions in the A* path<br>
+        > `path`: the A* path array from start to stop<br>
+        > `refined_path`: the A* path with minimum number of points<br>
+        
+        and some useful information
+        > `message`: the information about path planning<br>
+        > `elapsed_ms`: the running milliseconds of path planning
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
