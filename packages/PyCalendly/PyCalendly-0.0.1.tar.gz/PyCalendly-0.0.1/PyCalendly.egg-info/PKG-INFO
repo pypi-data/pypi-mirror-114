@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: PyCalendly
+Version: 0.0.1
+Summary: Python wrapper for Calendly API v2 (https://calendly.stoplight.io/docs/api-docs/docs/C-API-Conventions.md)
+Home-page: https://github.com/laxmena/PyCalendly
+Author: laxmena
+Author-email: ConnectWith@laxmena.com
+License: MIT
+Download-URL: https://github.com/laxmena/PyCalendly
+Keywords: Calendly python api v2
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Programming Language :: Python
+Requires-Python: >3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyCalendly
+Python package to use Calendly API v2.
+
+## Usage
+### Get Personal Access Token
+See [Getting Started with Calendly API](https://developer.calendly.com/getting-started) to get your Personal Access token.
+
+```
+from calendly import Calendly
+calendly = Calendly(api_key)
+```
+
+### Citations:
+- Calendly-Python - https://github.com/kevteg/calendly-python
+
