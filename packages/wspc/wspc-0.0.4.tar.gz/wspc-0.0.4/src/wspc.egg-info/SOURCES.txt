@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/wspc/__init__.py
+src/wspc/command_line.py
+src/wspc/feature_selection.py
+src/wspc/reader.py
+src/wspc/wspc.py
+src/wspc.egg-info/PKG-INFO
+src/wspc.egg-info/SOURCES.txt
+src/wspc.egg-info/dependency_links.txt
+src/wspc.egg-info/entry_points.txt
+src/wspc.egg-info/requires.txt
+src/wspc.egg-info/top_level.txt
+src/wspc/model/WSPC_model.pkl
