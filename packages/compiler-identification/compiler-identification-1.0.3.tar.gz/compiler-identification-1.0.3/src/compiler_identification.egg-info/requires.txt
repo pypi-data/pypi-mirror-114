@@ -1,0 +1,8 @@
+packaging
+codecheck>=1.0.9
+autorepr>=0.3.0
+
+[dev]
+pycodestyle
+mypy
+codecheck

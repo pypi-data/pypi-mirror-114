@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/compiler_identification/__init__.py
+src/compiler_identification/py.typed
+src/compiler_identification.egg-info/PKG-INFO
+src/compiler_identification.egg-info/SOURCES.txt
+src/compiler_identification.egg-info/dependency_links.txt
+src/compiler_identification.egg-info/requires.txt
+src/compiler_identification.egg-info/top_level.txt
