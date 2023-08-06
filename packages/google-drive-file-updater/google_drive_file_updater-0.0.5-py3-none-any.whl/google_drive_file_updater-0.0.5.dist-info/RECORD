@@ -1,0 +1,9 @@
+gd_fup/__init__.py,sha256=Z_QsKV-czDyRaI4bK5ZuzNsjjq-huM_aihZ7C7lmkwM,84
+gd_fup/progress_bar.py,sha256=XyxwcAq6mMd6PVRUP1FLq0px4-mB7_5KgWcylHrYH_o,938
+gd_fup/service.py,sha256=YYiaHnnRiLM-xJ2idZ_ACsrm588UxYDSqne729AfE90,4463
+gd_fup/updater.py,sha256=Ko5YGEnr58xi1KfuMtRB8IFBMyHIWkWDZlpO1bNdIXM,3432
+google_drive_file_updater-0.0.5.data/scripts/gdfup.py,sha256=Taur-2h2-EtYyBJs1wRbsylyDFfycD_JSG2ZwhThhac,966
+google_drive_file_updater-0.0.5.dist-info/METADATA,sha256=2kC-2eTEIPliHzCywC0j8SNPhdKEU_THgKmaRUe2QS0,2285
+google_drive_file_updater-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+google_drive_file_updater-0.0.5.dist-info/top_level.txt,sha256=cIU8C66nvu88zEnJarxpKDRLCO7yOvXISVb_z9ybNBg,7
+google_drive_file_updater-0.0.5.dist-info/RECORD,,
