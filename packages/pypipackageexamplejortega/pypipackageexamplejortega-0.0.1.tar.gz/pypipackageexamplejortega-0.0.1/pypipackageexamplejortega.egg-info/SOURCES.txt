@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+economypackage/__init__.py
+economypackage/mathseconomy/__init__.py
+economypackage/mathseconomy/mathsadvancefuncs.py
+economypackage/mathseconomy/mymathsutils.py
+pypipackageexamplejortega.egg-info/PKG-INFO
+pypipackageexamplejortega.egg-info/SOURCES.txt
+pypipackageexamplejortega.egg-info/dependency_links.txt
+pypipackageexamplejortega.egg-info/top_level.txt
