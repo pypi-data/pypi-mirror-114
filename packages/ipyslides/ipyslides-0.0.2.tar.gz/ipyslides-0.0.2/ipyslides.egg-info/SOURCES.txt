@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ipyslides/__init__.py
+ipyslides/core.py
+ipyslides/data_variables.py
+ipyslides.egg-info/PKG-INFO
+ipyslides.egg-info/SOURCES.txt
+ipyslides.egg-info/dependency_links.txt
+ipyslides.egg-info/top_level.txt
