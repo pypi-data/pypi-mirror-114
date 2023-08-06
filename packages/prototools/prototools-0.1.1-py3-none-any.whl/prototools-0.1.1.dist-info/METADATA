@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: prototools
+Version: 0.1.1
+Summary: console toolbox
+Home-page: https://github.com/leugimkm/prototools
+Author: Miguel Kanashiro
+Author-email: leugimkm@systrien.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/leugimkm/prototools/issues
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# `prototools`: Prototipando CLI apps
+
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](./code_of_conduct.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+`prototools` es un conjunto de herramientas que reduce considerablemente
+la cantidad de tiempo que se emplea para el prototipado de aplicaciones de 
+consola (CLI) y aplicaciones de interfaz gráfica (GUI, aún en desarrollo y 
+disponible en forma experimental).
+
+# Inicio Rápido
+
+`prototools` se encuentra en [PyPi](https://pypi.org/) (disponible bajo la licencia MIT) 
+y puede ser instalado mediante [pip](https://docs.python.org/es/3/installing/index.html)
+
+```
+python -m pip install prototools
+```
+
+> 📝 Se aconseja instalar en un entorno virtual.
+
+# Documentación
+
+Puedes consultar la documentación [aquí](https://proto-tools.github.io/prototools-docs/)
+
+
+# Contribución
+
+Puedes contribuir con el desarrollo de `prototools` de diversas formas (no solo codificando).
+
