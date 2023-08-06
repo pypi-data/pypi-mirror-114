@@ -1,0 +1,163 @@
+{% load s3tags %}
+{% load i18n %}
+{% load_s3_header %}
+{% load static %}
+
+<div class="pb-filemng-template">
+    <div class="row">
+        <div class="col-sm-12">
+            <!--File MAnager-->
+            <nav class="navbar navbar-default pb-filemng-navbar">
+                <div class="container-fluid">
+                    <!-- Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="pull-left navbar-toggle collapsed treeview-toggle-btn"
+                                data-toggle="collapse" data-target="#treeview-toggle" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#options" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="fa fa-gears"></span>
+                        </button>
+
+                        <!-- Search button -->
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#pb-filemng-navigation" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="fa fa-share"></span>
+                        </button>
+                    </div>
+
+                    <ul class="collapse navbar-collapse nav navbar-nav navbar-right" id="options">
+                        <li><a href="javascript:;"><span class="fa fa-lg fa-refresh"
+                                                         onclick="refresh_folder();"
+                                                         title="{% trans "Refresh Folder" %}"></span></a></li>
+                        <li><a href="javascript:;"><span class="fa fa-lg fa-sort-alpha-asc "
+                                                         onclick="sort_a_z(this);" data-sort="a-z"
+                                                         title="{% trans "Sort Files" %}"></span></a></li>
+                        <li><a href="#"><span class="fa fa-folder fa-lg" data-toggle="collapse"
+                                              data-target="#collapseCreateFolder"
+                                              title="{% trans "Create Folder" %}"></span></a></li>
+                        <li><a href="#"><span class="fa fa-upload fa-lg" data-toggle="collapse"
+                                              data-target="#collapseUpload" title="{% trans "Upload" %}"></span></a>
+                        </li>
+                        <li><a href="javascript:;" onclick="download_files();"><span class="fa fa-download fa-lg"
+                                                                                     title="{% trans "Download Selected File" %}"></span></a>
+                        </li>
+                        <li><a href="javascript:;" onclick="copy_selected_file();"><span class="fa fa-lg fa-files-o"
+                                                                                         title="{% trans "Copy Select Files" %}"></span></a>
+                        </li>
+                        <li><a href="javascript:;"><span class="fa fa-lg fa-trash-o" id="move_file"
+                                                         onclick="delete_file();"
+                                                         title="{% trans "Delete  Select Files" %}"></span></a></li>
+                        <li><a href="javascript:;"><span class="fa fa-lg fa-clipboard hidden" id="paste_file"
+                                                         onclick="paste_file();"
+                                                         title="{% trans "Paste Select Files" %}"></span></a></li>
+                        <li><a href="javascript:;"><span class="fa fa-lg fa-arrows-alt hidden" id="move_file"
+                                                         onclick="move_selected_file();"
+                                                         title="{% trans "Move  Select Files" %}"></span></a></li>
+                    </ul>
+
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="pb-filemng-navigation">
+                        <ul class="nav navbar-nav">
+                            <li><a href="javascript:;" id="top_folder" data-top_folder="-" onclick="back_folder(this);"><span
+                                    class="fa fa-chevron-left fa-lg"></span></a></li>
+                            <li class="pb-filemng-active"><a href="javascript:;" onclick="get_files('-');"><span
+                                    class="fa fa-home fa-lg"></span></a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+            <div class="panel panel-default">
+                <!--Create Folder-->
+                <div class="collapse" id="collapseCreateFolder">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="form-inline">
+                                <div class="form-group">
+                                    <input class="form-control" id="created_folder_name"
+                                           placeholder="{% trans "Folder Name" %}">
+                                </div>
+                                <button type="button" class="btn btn-sm btn-primary"
+                                        onclick="create_folder()">{% trans "Create" %}</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--File Upload-->
+                <div class="collapse" id="collapseUpload">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <!-- Standar Form -->
+                            <h4>{% blocktrans %}Select files from your computer{% endblocktrans %}</h4>
+                            <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
+                                <div class="form-inline">
+                                    <div class="form-group">
+                                        <input type="file" name="files[]" id="js-upload-files" multiple>
+                                    </div>
+                                    <button type="submit" class="btn btn-sm btn-primary"
+                                            id="js-upload-submit">{% trans "Upload files" %}
+                                    </button>
+                                </div>
+                            </form>
+
+                            <!-- Drop Zone -->
+                            <h4>{% blocktrans %}Or drag and drop files below{% endblocktrans %}</h4>
+                            <div class="upload-drop-zone" id="drop-zone">
+                                {% blocktrans %}Just drag and drop files here{% endblocktrans %}
+                            </div>
+
+                            <!-- Progress Bar -->
+                            <div class="progress">
+                                <div class="progress-bar" id="progress-bar" role="progressbar" aria-valuenow="60"
+                                     aria-valuemin="0"
+                                     aria-valuemax="100" style="width: 0%;">
+                                    <span id="progress-bar-rate" style="color: black;" class="">0</span>
+                                    <span style="color: black;" class="">{% trans "Complete" %}</span>
+                                </div>
+                            </div>
+
+                            <!-- Upload Finished -->
+                            <div class="js-upload-finished" id="js-upload-finished">
+                                <h3>{% trans "Processed files" %}</h3>
+                                <div class="list-group" id="js-upload-finished-list">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body pb-filemng-panel-body">
+                    <div class="row">
+                        <div class="col-sm-12 pb-filemng-template-body">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="location" data-location="-"></div>
+</div>
+<script>
+    const FILES_URL = "{% url 'get_folder_items' 'arg1djs3server' 'sort_a_z' %}"
+    const UPLOAD_URL = '{% url "upload" %}'
+    const CREATE_FOLDER_URL = '{% url "create_folder" %}'
+    const PAST_FILE_URL = '{% url "paste_file" %}'
+    const DELETE_FILE_URL = '{% url "delete_file" %}'
+    const DOWNLOAD_URL = '{% url "download" %}'
+    const RENAME_URL = '{% url "rename_file" %}'
+    const MOVE_FILE_URL = '{% url "move_file" %}'
+    const EMTY_FOLDER_MSG = '<p id="empty-folder-msg" style="text-align:center">{% trans "Folder is Empty" %}</p>'
+    const SUCCESS_MSG = '<span class="badge alert-success pull-right">{% trans "Success" %}</span>'
+    const FAIL_MSG = '<span class="badge alert-danger pull-right">{% trans "Fail" %}</span>'
+</script>
+<script type="text/javascript" src="{% static 'js/filebrowser.js' %}"></script>
