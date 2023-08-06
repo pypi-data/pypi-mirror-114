@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+claymore/__init__.py
+claymore.egg-info/PKG-INFO
+claymore.egg-info/SOURCES.txt
+claymore.egg-info/dependency_links.txt
+claymore.egg-info/top_level.txt
