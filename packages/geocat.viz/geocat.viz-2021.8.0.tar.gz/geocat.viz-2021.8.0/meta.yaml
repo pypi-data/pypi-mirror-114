@@ -1,0 +1,50 @@
+{% set version = "2021.08.0" %}
+
+package:
+  name: geocat-viz
+  version: {{ version }}
+
+source:
+  #git_rev: main   # For building from main branch for debugging purposes
+  git_tag: v{{ version }}   # For building from a specific tag
+  git_url: https://github.com/ncar/geocat-viz.git
+  #url: https://github.com/NCAR/geocat-viz/archive/v{{ version }}.tar.gz   # For building from a specific tag's tarball
+
+build:
+  number: 0
+  skip: True # [py<35]
+
+requirements:
+  host:
+    - python
+    - setuptools
+    - pip
+  run:
+    - python
+    - numpy
+    - matplotlib
+    - cmaps
+    - cartopy
+    - xarray
+    - scikit-learn
+
+test:
+  imports:
+    - geocat.viz
+    - geocat.viz.util
+  requires:
+    - cmaps
+    - numpy
+    - matplotlib
+    - scikit-learn
+
+about:
+  home: https://geocat.ucar.edu/
+  license: Apache 2.0
+  license_file: LICENSE
+  summary: 'GeoCAT-viz is a collection of utility functions to make Python plotting with Matplotlib and Cartopy more like NCL (NCAR Command Language).'
+
+extra:
+  recipe-maintainers:
+    - erogluorhan
+    - michaelavs
