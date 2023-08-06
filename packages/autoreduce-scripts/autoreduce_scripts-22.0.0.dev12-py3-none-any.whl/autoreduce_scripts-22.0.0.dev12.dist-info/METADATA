@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: autoreduce-scripts
+Version: 22.0.0.dev12
+Summary: ISIS Autoreduce helper scripts
+Home-page: https://github.com/ISISScientificComputing/autoreduce-scripts/
+Author: ISIS Autoreduction Team
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: autoreduce-db (==22.0.0.dev6)
+Requires-Dist: autoreduce-utils (==22.0.0.dev4)
+Requires-Dist: django (==3.2.4)
+Requires-Dist: fire (==0.4.0)
+Requires-Dist: h5py (==2.10.0)
+Requires-Dist: GitPython (==3.1.14)
+
+UNKNOWN
+
+
