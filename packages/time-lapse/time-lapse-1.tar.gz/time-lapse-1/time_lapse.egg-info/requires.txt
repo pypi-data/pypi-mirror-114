@@ -1,0 +1,12 @@
+exifreader
+ffmpeg-python
+
+[dev]
+coverage
+flake8
+flake8-isort
+build
+twine
+
+[graph]
+graphviz
