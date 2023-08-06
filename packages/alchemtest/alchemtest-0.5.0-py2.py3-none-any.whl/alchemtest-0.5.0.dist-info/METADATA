@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: alchemtest
+Version: 0.5.0
+Summary: the simple alchemistry test set
+Home-page: UNKNOWN
+Author: David Dotson
+Author-email: dotsdl@gmail.com
+Maintainer: Oliver Beckstein
+Maintainer-email: orbeckst@gmail.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows 
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Description-Content-Type: text/x-rst
+
+alchemtest: the simple alchemistry test set
+===========================================
+
+|doi| |docs| |build| |cov|
+
+**alchemtest**  is a collection of test datasets for alchemical free energy calculations.
+The datasets come from a variety of software packages, primarily molecular
+dynamics engines, and are used as the test set for `alchemlyb`_.
+The package is standalone, however, and can be used for any purpose.
+
+Datasets are released under an `open license`_ that conforms to the
+`Open Definition 2.1`_ that allows free use, re-use, redistribution,
+modification, separation, for any purpose and without a charge.
+
+
+.. _`alchemlyb`: https://github.com/alchemistry/alchemlyb
+.. _`open license`:
+   http://opendefinition.org/licenses/#recommended-conformant-licenses
+.. _`Open Definition 2.1`: http://opendefinition.org/od/2.1/en/
+
+
+.. |docs| image:: https://readthedocs.org/projects/alchemtest/badge/?version=latest
+    :alt: Documentation
+    :scale: 100%
+    :target: https://alchemtest.readthedocs.io/en/latest/
+
+.. |doi| image:: https://zenodo.org/badge/83470847.svg
+    :alt: Zenodo DOI
+    :scale: 100%
+    :target: https://zenodo.org/badge/latestdoi/83470847
+
+.. |build| image:: https://github.com/alchemistry/alchemtest/actions/workflows/CI.yaml/badge.svg?branch=master
+    :alt: Build Status
+    :scale: 100%
+    :target: https://github.com/alchemistry/alchemtest/actions/workflows/CI.yaml
+
+.. |cov| image:: https://codecov.io/gh/alchemistry/alchemtest/branch/master/graph/badge.svg
+    :alt: Code coverage
+    :scale: 100%
+    :target: https://codecov.io/gh/alchemistry/alchemtest
+
+
