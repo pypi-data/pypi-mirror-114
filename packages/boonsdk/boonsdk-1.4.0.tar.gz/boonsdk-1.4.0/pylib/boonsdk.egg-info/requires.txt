@@ -1,0 +1,6 @@
+requests
+pyOpenSSL
+PyJWT>=2.0
+backoff
+pytest
+deprecation
