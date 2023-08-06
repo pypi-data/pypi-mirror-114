@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/denseweight/__init__.py
+src/denseweight/denseweight.py
+src/denseweight/utils.py
+src/denseweight.egg-info/PKG-INFO
+src/denseweight.egg-info/SOURCES.txt
+src/denseweight.egg-info/dependency_links.txt
+src/denseweight.egg-info/requires.txt
+src/denseweight.egg-info/top_level.txt
