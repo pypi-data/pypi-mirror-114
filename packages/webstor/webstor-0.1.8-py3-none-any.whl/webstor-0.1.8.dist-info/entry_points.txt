@@ -1,0 +1,3 @@
+[console_scripts]
+webstor = webstor.webstor:main
+
