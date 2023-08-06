@@ -1,0 +1,14 @@
+imageObjects/ContourObject.py,sha256=knltsOBBrJAAo4mwtG-XIqSzDiA8y5veREZ_aRhXlv0,7316
+imageObjects/ImageObject.py,sha256=hWSEzZLhJOpEv4PON3itq0_7N0MwAWCfB71ZYvZCfK8,24398
+imageObjects/LineObject.py,sha256=FkxHtMctEoU6JIyGbgYHvAQiDBqM2B5wPBQLeGZYnbY,8889
+imageObjects/PolySupport.py,sha256=4JC6Pf5See0EAA3Z9EyaBPq38uK0DUzUBShFBrrpJzA,3354
+imageObjects/__init__.py,sha256=W9q3gejdLiXgM-0hxnQaFTlfIDS3Ba8_z1JcIEUD9QU,286
+imageObjects/Support/__init__.py,sha256=yezaBEosYFB2stdyiRzDfaPfa5ZbcszCeAerII-L8Wc,162
+imageObjects/Support/_create_as_image.py,sha256=v5M5pKa_MWFFN_WFggHm61FUw0ke6m68a_UXV46Ga5Y,3720
+imageObjects/Support/_extract_from_image.py,sha256=g3U8NWCOI6Q_MeXo70VoAY4IgAdkIAkUrLuuDV86lk4,6675
+imageObjects/Support/_misc.py,sha256=P8LwfKM-e7f4PkfL2rMVYc3Ih-gOEmJlZ6PUdci0PYY,397
+imageObjects-0.12.4.dist-info/LICENSE,sha256=m6Hmim3NNA-_y97X6yarvaf6IUerwLQFF3hlCXsc0KI,1090
+imageObjects-0.12.4.dist-info/METADATA,sha256=guDTug_0V-sXfuJIm_Pz-uw2K5Pahs3T7LbF-WR2m8I,2062
+imageObjects-0.12.4.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+imageObjects-0.12.4.dist-info/top_level.txt,sha256=y3BFITj40gIqW-xzvDt7TnnfbEQN-IE60b0P4i_NVyo,13
+imageObjects-0.12.4.dist-info/RECORD,,
