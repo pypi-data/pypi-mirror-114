@@ -1,0 +1,11 @@
+trading_ig/__init__.py,sha256=IE3rcY8t4FtpUeD8plAHYnFxqs6E_1dVHdYWc_J1Sc8,743
+trading_ig/config.py,sha256=Db1IwSFLAPUcJf1kfYJGbN-wIXGKbuL_h4RPiI82lL0,1350
+trading_ig/lightstreamer.py,sha256=xOb8UxAhrsKeQx3AHGmQkuLFrKzngzXIifvz6Lu0qnQ,16450
+trading_ig/rest.py,sha256=k4x66KK9_UOaxTfCdUJ9c5buCe8ghxdXw2X-MR8CwHE,66851
+trading_ig/stream.py,sha256=jZ3bkLyAU3OqCI0b4KMXtzrfJnAVSdruy_69IJVXBQg,1923
+trading_ig/utils.py,sha256=mZ32Jzh3qCXDK_Zj_C2FxcbOO18A8mfBETpvLmAtVIs,3212
+trading_ig/version.py,sha256=zbKv3tWWZnrwmsCcpxuEMKvbL1BLUUq4NM0qTX1wnCM,300
+trading_ig-0.0.12.dist-info/LICENSE,sha256=T4zYDtyi5UlKVDFBLMR-fvDRuKWT_VwIWThyvg5ksys,1505
+trading_ig-0.0.12.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+trading_ig-0.0.12.dist-info/METADATA,sha256=yirwLL4EJiSZQF9Bt8JcFr8dEuoVnrUrFXc5POV1_IM,4986
+trading_ig-0.0.12.dist-info/RECORD,,
