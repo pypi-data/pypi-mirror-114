@@ -1,0 +1,16 @@
+{
+	"shelves": {
+        "wrapper": {
+            "common": "wrappers"
+        },
+        "page": {
+            "common": "pages"
+        },
+        "block": {
+            "common": "blocks"
+        },
+        "tag": {
+            "common": "tags"
+        }
+    }
+}
