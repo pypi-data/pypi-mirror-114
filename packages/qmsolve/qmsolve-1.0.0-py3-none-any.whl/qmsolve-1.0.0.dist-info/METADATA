@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: qmsolve
+Version: 1.0.0
+Summary: A module for solving and visualizing the Schrödinger equation
+Home-page: https://github.com/quantum-visualizations/qmsolve
+Author: Rafael de la Fuente, marl0ny, Hudson Smith
+Author-email: rafael.fuente.herrezuelo@gmail.com, lammarlonaurel123456789@gmail.com, dhudsmith@gmail.com
+License: BSD-3-Clause
+Download-URL: https://github.com/quantum-visualizations/qmsolve/archive/main.zip
+Keywords: schrödinger-equation,quantum-physics,quantum-mechanics,quantum-programming
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: mayavi
+Requires-Dist: h5py
+
+
+# QMsolve: A module for solving and visualizing the Schrödinger equation
+QMsolve seeks to provide easy solid and easy to use solver, capable of solving the Schrödinger equation for one and two particles, 
+and creating descriptive and stunning visualizations of its solutions both in 1D, 2D, and 3D.
+
+## Installation
+
+```
+pip install qmsolve
+```
+
+## How it works
+
+The way this simulator works is by discretizing and Hamiltonian of an arbitrary potential, 
+specified as a function of the particle observables. This is achieved with the `Hamiltonian`constructor.
+Then, the `Hamiltonian.solve` method efficiently diagonalizes the Hamiltonian and outputs the energies and the eigenstates of the system.
+Finally, the eigenstates can be plotted with the `visualization` class.
+
+The `visualization.superpositions` method features the possibility of interactively visualizing a superposition of the computed eigenstates and studying 
+the time dependence of the resulting wavefunction. 
+
+For a quick start, take a look to the examples found in the examples subdirectory.
+
+
