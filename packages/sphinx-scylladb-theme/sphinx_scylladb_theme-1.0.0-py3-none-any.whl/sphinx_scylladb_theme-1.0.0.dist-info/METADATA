@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: sphinx-scylladb-theme
+Version: 1.0.0
+Summary: A Sphinx Theme for ScyllaDB documentation projects
+Author: David García
+Author-email: hi@davidgarcia.dev
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Sphinx (>=2.4.4,<3.0.0)
+Requires-Dist: beautifulsoup4 (>=4.9.3,<5.0.0)
+Requires-Dist: pyyaml (>=5.3,<6.0)
+Requires-Dist: recommonmark (==0.5.0)
+Requires-Dist: sphinx-copybutton (>=0.2.8,<0.3.0)
+Requires-Dist: sphinx-multiversion-scylla (>=0.2.4,<0.3.0)
+Requires-Dist: sphinx-notfound-page (>=0.5,<0.6)
+Requires-Dist: sphinx-tabs (>=3.1.0,<4.0.0)
+Description-Content-Type: text/x-rst
+
+===================
+Scylla Sphinx Theme
+===================
+
+Sphinx theme for Scylla documentation projects.
+
+`Read More: <https://github.com/scylladb/sphinx-scylladb-theme>`_
+
