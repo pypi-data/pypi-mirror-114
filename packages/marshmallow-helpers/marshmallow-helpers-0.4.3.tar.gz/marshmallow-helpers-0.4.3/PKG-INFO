@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: marshmallow-helpers
+Version: 0.4.3
+Summary: Ease marshmallow schema creation
+Home-page: UNKNOWN
+Author-email: zidder@hilearn.io
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Provides-Extra: model
