@@ -1,0 +1,7 @@
+search-python-client>=0.1.9
+urllib3==1.26.3
+requests==2.25.1
+click==7.1.2
+altgraph==0.17
+macholib==1.14
+pyyaml==5.4.1
