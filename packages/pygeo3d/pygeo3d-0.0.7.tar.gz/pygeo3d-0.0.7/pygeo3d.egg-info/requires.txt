@@ -1,0 +1,4 @@
+matplotlib
+numpy
+pyvectors
+linear_equations

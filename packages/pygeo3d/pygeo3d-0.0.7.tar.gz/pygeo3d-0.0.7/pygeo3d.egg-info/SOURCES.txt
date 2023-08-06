@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+pygeo3d/__init__.py
+pygeo3d.egg-info/PKG-INFO
+pygeo3d.egg-info/SOURCES.txt
+pygeo3d.egg-info/dependency_links.txt
+pygeo3d.egg-info/requires.txt
+pygeo3d.egg-info/top_level.txt
