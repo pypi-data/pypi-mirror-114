@@ -1,0 +1,14 @@
+cvxopt
+numpy
+scipy
+sympy
+pandas
+matplotlib
+openpyxl
+xlsxwriter
+dill
+pathos
+tqdm
+pyyaml
+coloredlogs
+chardet
