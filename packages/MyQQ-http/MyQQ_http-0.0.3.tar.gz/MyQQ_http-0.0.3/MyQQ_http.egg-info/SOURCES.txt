@@ -1,0 +1,8 @@
+MyQQ_http.py
+README.md
+setup.py
+MyQQ_http.egg-info/PKG-INFO
+MyQQ_http.egg-info/SOURCES.txt
+MyQQ_http.egg-info/dependency_links.txt
+MyQQ_http.egg-info/requires.txt
+MyQQ_http.egg-info/top_level.txt
