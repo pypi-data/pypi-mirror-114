@@ -1,0 +1,3 @@
+import dwa
+
+dwa.DWA()
