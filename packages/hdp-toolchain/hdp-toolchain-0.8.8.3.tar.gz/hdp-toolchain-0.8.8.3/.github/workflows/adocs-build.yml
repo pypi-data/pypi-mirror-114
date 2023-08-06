@@ -1,0 +1,42 @@
+name: build adocs
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  adoc_build:
+    runs-on: ubuntu-18.04
+    name: asciidoctor --backend=html5 -o hxltm/index.html -a toc2 hxltm/README.adoc
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: hxltm/index.html
+      id: adocbuild
+      uses: tonynv/asciidoctor-action@master
+      with:
+          program: "asciidoctor --backend=html5 -o hxltm/index.html -a toc2 hxltm/README.adoc"
+
+    - name: hxltm/archivum/index.html
+      id: adocbuild2
+      uses: tonynv/asciidoctor-action@master
+      with:
+          program: "asciidoctor --backend=html5 -o hxltm/archivum/index.html -a toc2 hxltm/archivum/README.adoc"
+
+    # - name: Print execution time
+    #   run: echo "Time ${{ steps.adocbuild.outputs.time }}"
+
+    - name: Deploy docs to ghpages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: gh-pages
+        publish_dir: ./
+        # We still use markdown and other things, so we will allow default
+        # jekyll to run
+        enable_jekyll: true
+        keep_files: false
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
