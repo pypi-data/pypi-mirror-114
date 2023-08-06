@@ -1,0 +1,3 @@
+[console_scripts]
+interview = interview_questions.cli:main
+
