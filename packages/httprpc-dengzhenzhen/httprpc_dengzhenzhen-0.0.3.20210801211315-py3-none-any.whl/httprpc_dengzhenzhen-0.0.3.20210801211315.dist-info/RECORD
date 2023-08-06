@@ -1,0 +1,13 @@
+setup_demo/FlaskApp.py,sha256=0VPRz3KPmWrANurwYypDOtbHQS_ay-DiDPDUioHYywk,221
+setup_demo/Serializer.py,sha256=uYl1bxjdOI9IoiBmgPQusFM35BRs-jB0hsgcmAJRbks,517
+setup_demo/__init__.py,sha256=en48OJGgAtpigOuO4rb7O5g-x38krT_MlQKYwXvuRZc,102
+setup_demo/client.py,sha256=7TFFR03c4dkWr9S5Px_pgDw2_jIyRCF88xYGNIV9QrQ,445
+setup_demo/rpc_client.py,sha256=saY07dOOV9I59nrwJ3Zt6CFtXq21G-V9RCcv39zBX9o,3500
+setup_demo/rpc_func.py,sha256=FV_ZHPx_yLANdvpdy1EPYskc5JzpaHaDCCBi6ZwXUd0,455
+setup_demo/rpc_server.py,sha256=-z-1JUvarLXQHhXSd11xwbwsagZsv89IJveNA5PJEyQ,2789
+setup_demo/static/images.zip,sha256=vFgfc7ytdmsKodPvF3C6xi2oyh3gsSi2wx2aW11fz2s,92371877
+httprpc_dengzhenzhen-0.0.3.20210801211315.dist-info/METADATA,sha256=rjx1AgM3OdHj8ZwapYVkLOZ1RN2LZ3k9ZMj1bFDRYDg,249
+httprpc_dengzhenzhen-0.0.3.20210801211315.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+httprpc_dengzhenzhen-0.0.3.20210801211315.dist-info/entry_points.txt,sha256=JSIATGQsQx0dr2mScFshHS3FOOWsncZPfCfCQevriig,56
+httprpc_dengzhenzhen-0.0.3.20210801211315.dist-info/top_level.txt,sha256=9fYegX81uG4RYW8MXFi0qvs7fbdcy9EwnHy05CMVHH8,11
+httprpc_dengzhenzhen-0.0.3.20210801211315.dist-info/RECORD,,
