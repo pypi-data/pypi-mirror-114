@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+wayforpay/__init__.py
+wayforpay/invoice.py
+wayforpay/payments.py
+wayforpay/utils.py
+wayforpay/wayforpaymodule.py
+wayforpay_python.egg-info/PKG-INFO
+wayforpay_python.egg-info/SOURCES.txt
+wayforpay_python.egg-info/dependency_links.txt
+wayforpay_python.egg-info/requires.txt
+wayforpay_python.egg-info/top_level.txt
