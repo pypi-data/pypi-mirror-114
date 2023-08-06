@@ -1,0 +1,7 @@
+LICENSE.txt
+setup.py
+tanay.egg-info/PKG-INFO
+tanay.egg-info/SOURCES.txt
+tanay.egg-info/dependency_links.txt
+tanay.egg-info/requires.txt
+tanay.egg-info/top_level.txt

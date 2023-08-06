@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tanay
+Version: 0.0.2
+Summary: tanay
+Home-page: UNKNOWN
+Author: Tanay Baviskar
+Author-email: tanaybaviskar@gmail.com
+License: UNKNOWN
+Description: A package to detect hands using your webcam
+Keywords: tanay,tanay baviskar,hand tracking module,handtrackingmodule,mediapipe,python,opencv,ai
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
