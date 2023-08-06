@@ -1,0 +1,12 @@
+s3fs>=2021.5.0
+
+[dev]
+pytest>=5.2
+h5py!=3.0.0,>=2.10.0
+flake8
+pre-commit
+pylint
+
+[test]
+pytest>=5.2
+h5py!=3.0.0,>=2.10.0
