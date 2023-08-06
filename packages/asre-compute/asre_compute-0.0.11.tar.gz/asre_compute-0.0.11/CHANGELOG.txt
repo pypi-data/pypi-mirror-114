@@ -1,0 +1,18 @@
+Change Log
+==========
+
+0.0.11 (07/28/2021)
+-------------------
+- Fix ASRE printing and returned parameters when est='ASRE_cb'
+
+0.0.10 (07/28/2021)
+-------------------
+- Fix Docstring, README and program structure for computational efficiency.
+
+0.0.7 (07/27/2021)
+-------------------
+- Fix module structure
+
+0.0.1 (07/27/2021)
+-------------------
+- First Release

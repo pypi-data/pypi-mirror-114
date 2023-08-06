@@ -1,0 +1,17 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+.ipynb_checkpoints/CHANGELOG-checkpoint.txt
+.ipynb_checkpoints/LICENSE-checkpoint.txt
+.ipynb_checkpoints/README-checkpoint.txt
+.ipynb_checkpoints/setup-checkpoint.py
+asre_compute/__intit__.py
+asre_compute/tools.py
+asre_compute.egg-info/PKG-INFO
+asre_compute.egg-info/SOURCES.txt
+asre_compute.egg-info/dependency_links.txt
+asre_compute.egg-info/top_level.txt
+asre_compute/.ipynb_checkpoints/__intit__-checkpoint.py
+asre_compute/.ipynb_checkpoints/tools-checkpoint.py
