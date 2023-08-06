@@ -1,0 +1,3 @@
+[console_scripts]
+txs=tuxsay.main:main
+
