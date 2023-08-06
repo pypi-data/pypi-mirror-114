@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+teamaker/__init__.py
+teamaker/gameengine.py
+teamaker.egg-info/PKG-INFO
+teamaker.egg-info/SOURCES.txt
+teamaker.egg-info/dependency_links.txt
+teamaker.egg-info/not-zip-safe
+teamaker.egg-info/requires.txt
+teamaker.egg-info/top_level.txt
