@@ -1,0 +1,4 @@
+[cylc.command]
+hub = cylc.uiserver.scripts.hub:main
+uiserver = cylc.uiserver.scripts.uis:main
+
