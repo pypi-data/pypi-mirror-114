@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: tabular_entropy
+Version: 0.1.1
+Classifier: Programming Language :: Rust
+Summary: Calculate Mutual Information for Paired Vectors
+Author: Lissa Hyacinth <lissahyacinth@gmail.com>
+Author-email: Lissa Hyacinth <lissahyacinth@gmail.com>
+License: GNU LGPLv3
+Requires-Python: >=3.7,<=3.10
+Project-URL: Source Code, https://github.com/lissahyacinth/mutual_information/

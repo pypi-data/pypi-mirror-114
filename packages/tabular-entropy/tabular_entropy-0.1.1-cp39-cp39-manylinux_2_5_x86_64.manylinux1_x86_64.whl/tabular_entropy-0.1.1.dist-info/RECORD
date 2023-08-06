@@ -1,0 +1,5 @@
+tabular_entropy-0.1.1.dist-info/METADATA,sha256=fBMDC_K71s1zTlY2bvDvgElKAiI_o_LPfNhwH2HfO60,390
+tabular_entropy-0.1.1.dist-info/WHEEL,sha256=k9fKdnW4X4hecB_b1W9Yxf1HHLj5L1ZBQ7FIpEYYOzA,124
+tabular_entropy/__init__.py,sha256=srv6-EJZ086LXCMFoDd8sSmCa3iZXPJoSxCkHSLGxpU,31
+tabular_entropy/tabular_entropy.cpython-39-x86_64-linux-gnu.so,sha256=RtpRX2InhLkFZY5X8EfxtxcFY18cANP7c8Ojk9W7zgc,362856
+tabular_entropy-0.1.1.dist-info/RECORD,,
