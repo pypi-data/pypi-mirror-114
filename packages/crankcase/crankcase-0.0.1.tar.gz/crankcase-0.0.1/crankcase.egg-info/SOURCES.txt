@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+crankcase/__init__.py
+crankcase.egg-info/PKG-INFO
+crankcase.egg-info/SOURCES.txt
+crankcase.egg-info/dependency_links.txt
+crankcase.egg-info/top_level.txt
