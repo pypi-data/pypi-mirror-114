@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+code_timer/__init__.py
+code_timer/timer.py
+code_timer.egg-info/PKG-INFO
+code_timer.egg-info/SOURCES.txt
+code_timer.egg-info/dependency_links.txt
+code_timer.egg-info/requires.txt
+code_timer.egg-info/top_level.txt
