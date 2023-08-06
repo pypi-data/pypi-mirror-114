@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ml_callbacks
+Version: 0.11.0
+Summary: Simple ml callbacks to track model performance and state
+Home-page: https://github.com/EimantasN/Equusight_BackEnd
+Author: Eimantas Noreika
+Author-email: noreika.eimantas@gmail.com
+License: UNKNOWN
+Description: ML simple callbacks and fucntions for pytorch and tensorflow
+Keywords: ML,PyTorch,Tensorflow,AI
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
