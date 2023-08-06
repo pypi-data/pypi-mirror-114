@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pxgrid-util
+Version: 0.2.0
+Summary: A utility library and example scripts for Cisco pxGrid 2.0
+Home-page: https://github.com/cisco-pxgrid/python-advanced-examples
+Author: Einar Nilsen-Nygaard
+Author-email: einarnn@cisco.com
+License: Apache 2.0; Copyright (c) 2021 Cisco and/or its affiliates.
+Download-URL: https://github.com/cisco-pxgrid/python-advanced-examples
+Keywords: ISE,pxGrid
+Platform: Posix; OS X; Windows
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+License-File: LICENSE
+License-File: NOTICE
+
+A utility library and example scripts for Cisco pxGrid 2.0
+
