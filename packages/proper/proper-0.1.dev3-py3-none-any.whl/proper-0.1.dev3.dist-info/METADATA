@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: proper
+Version: 0.1.dev3
+Summary: A web framework optimized for programmer happiness.
+Home-page: https://github.com/jpsca/proper
+Author: Juan-Pablo Scaletti
+Author-email: juanpablo@jpscaletti.com
+License: MIT
+Project-URL: Issue tracker, https://github.com/jpsca/proper/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: <4.0,>=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: inflection (>=0.5.1)
+Requires-Dist: itsdangerous (>=1.1)
+Requires-Dist: jinja2 (>=2.11)
+Requires-Dist: multipart (>=0.2.3)
+Requires-Dist: markupSafe (>=1.1.1)
+Requires-Dist: passlib (>=1.7)
+Requires-Dist: properconf (>=3.0)
+Requires-Dist: pyceo (>=4.0)
+Requires-Dist: whitenoise (>=5.2)
+Provides-Extra: dev
+Requires-Dist: mkdocs ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pygments ; extra == 'dev'
+Requires-Dist: pygments-github-lexers ; extra == 'dev'
+Requires-Dist: pymdown-extensions ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: flake8-bugbear ; extra == 'test'
+Requires-Dist: flake8-import-order ; extra == 'test'
+Requires-Dist: flake8-logging-format ; extra == 'test'
+Requires-Dist: flake8-quotes ; extra == 'test'
+Requires-Dist: freezegun ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: webtest ; extra == 'test'
+
+> :warning: WARNING: This is a work in progress. It doesn't have documentation. Do NOT use it.
+
+# Proper
+
+A web framework optimized for programmer happiness.
+
+
+### Requirements
+
+- Python 3.6+
+
+
+### Installation
+
+	pip install proper
+
+
+## Design principles
+
+- "Convention over configuration".
+
+- No globals.
+	When you need a shared object, pass it arround.
+
+- Optimize for the 95%.
+	Don't compromise the usability of the common cases to keep consistency
+	with the edge cases.
+
+- Code redability is important.
+
+- App-code over framework-code
+	Because app code is infintely configurable without dirty hacks.
+
+- "Everyone is an adult here".
+	Run with scissors if you must.
+
+- Regular WSGI is great.
+
+
+# Sources of inspirations
+
+## From Elixir/Phoenix
+
+### Pipelines in the routes.
+
+You don't need to have a framework for APIs and other for full-fletched apps, you can just deactivate cookie sessions, flash messages and other things yoi don't need for specific sections of your sites.
+And is super easy to add things too like admin-only sections just by composing multiple pipelines, after all, there are just lists of callables.
+
+### App-code over framework-code.
+
+You can make it clean and straightforward or you can make it configurable.
+But if you put the code in the application, thanks to a standarized project skeleton,
+you can have both!
+
+
+## From Ruby/Rails
+
+### Convention over configuration.
+
+### Optimize for developer happiness.
+
+### The application code must be beatiful.
+
+- Empty class-based controllers that works!
+- Class-based controllers allows several tricks that make the experience much better:
+	- A configurable and plugganle render and view functions.
+	- Class based views a-la Django, but simpler and completely obvious because is your application code (see (App-code over framework-code)
+	- Saving context varaibles in your controller instance looks much cleaner that building a dictionary and manually calling render and the end of each controller.
+
+
