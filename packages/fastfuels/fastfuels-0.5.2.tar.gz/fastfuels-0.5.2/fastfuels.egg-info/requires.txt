@@ -1,0 +1,7 @@
+colorcet
+numpy
+pyvista
+s3fs
+scipy
+shapely
+zarr
