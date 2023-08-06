@@ -1,0 +1,7 @@
+pandas
+rasterio
+xarray
+scikit-image
+dask
+kalasiris
+planetarypy>=0.12
