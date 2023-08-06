@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: rule-estimator
+Version: 0.4.1
+Summary: Scikit-learn compatible business rule estimator
+Home-page: https://github.com/oegedijk/rule_estimator
+Author: Oege Dijk
+Author-email: oegedijk@gmail.com
+License: Apache-2
+Description: Scikit-learn compatible business rule estimator, with dashboard included
+Keywords: machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.6

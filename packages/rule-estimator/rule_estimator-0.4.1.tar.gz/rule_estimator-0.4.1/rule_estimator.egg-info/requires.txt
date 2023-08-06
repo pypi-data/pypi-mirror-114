@@ -1,0 +1,7 @@
+pandas
+numpy
+scikit-learn
+oyaml
+python-igraph
+dash>=1.21
+dash-bootstrap-components
