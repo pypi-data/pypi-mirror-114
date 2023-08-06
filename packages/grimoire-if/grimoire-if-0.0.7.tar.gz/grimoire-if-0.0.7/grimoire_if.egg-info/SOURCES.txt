@@ -1,0 +1,11 @@
+README.md
+setup.py
+grimoire/__init__.py
+grimoire/core.py
+grimoire/templates.py
+grimoire/utils.py
+grimoire_if.egg-info/PKG-INFO
+grimoire_if.egg-info/SOURCES.txt
+grimoire_if.egg-info/dependency_links.txt
+grimoire_if.egg-info/requires.txt
+grimoire_if.egg-info/top_level.txt
