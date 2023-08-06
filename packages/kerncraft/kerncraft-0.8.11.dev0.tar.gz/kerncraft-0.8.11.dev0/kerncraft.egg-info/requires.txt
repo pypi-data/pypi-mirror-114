@@ -1,0 +1,12 @@
+ruamel.yaml>=0.15.37
+sympy>=1.7.1
+pycachesim>=0.2.3
+numpy
+requests
+pycparser>=2.19
+osaca>=0.4.0
+psutil
+compress_pickle
+
+[plot]
+matplotlib
