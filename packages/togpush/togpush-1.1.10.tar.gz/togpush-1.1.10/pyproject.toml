@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "togpush"
+version = "1.1.10"
+description = "Command Line Interface for fetching data from fsm and pushing to tog for tagging"
+authors = ["Lohith Anandan <lohith@vernacular.ai>"]
+
+[tool.poetry.dependencies]
+python = "^3.7.1"
+docopt = "^0.6.2"
+tqdm = "^4.46.0"
+requests = "^2.25.1"
+psycopg2-binary = "^2.8.5"
+python-dateutil = "^2.8.1"
+pandas = "1.3.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+tog = "togpush.tog:main"
+fsm = "togpush.fsm:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
