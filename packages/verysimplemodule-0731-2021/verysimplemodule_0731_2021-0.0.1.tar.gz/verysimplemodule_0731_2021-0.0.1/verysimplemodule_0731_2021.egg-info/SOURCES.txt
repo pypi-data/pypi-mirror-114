@@ -1,0 +1,9 @@
+setup.py
+verysimplemodule_0731_2021/__init__.py
+verysimplemodule_0731_2021/add.py
+verysimplemodule_0731_2021/substract.py
+verysimplemodule_0731_2021.egg-info/PKG-INFO
+verysimplemodule_0731_2021.egg-info/SOURCES.txt
+verysimplemodule_0731_2021.egg-info/dependency_links.txt
+verysimplemodule_0731_2021.egg-info/top_level.txt
+verysimplemodule_0731_2021/extras/__init__.py
