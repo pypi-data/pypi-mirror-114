@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: tomli
+Version: 1.2.0
+Summary: A lil' TOML parser
+Home-page: None
+Author: None
+Author-email: Taneli Hukkinen <hukkin@users.noreply.github.com>
