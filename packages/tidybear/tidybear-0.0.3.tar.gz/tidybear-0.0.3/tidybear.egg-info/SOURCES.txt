@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+tests/test_df_functions/__init__.py
+tests/test_df_functions/test_rename.py
+tidybear/__init__.py
+tidybear/df_functions.py
+tidybear/groupby.py
+tidybear.egg-info/PKG-INFO
+tidybear.egg-info/SOURCES.txt
+tidybear.egg-info/dependency_links.txt
+tidybear.egg-info/top_level.txt
