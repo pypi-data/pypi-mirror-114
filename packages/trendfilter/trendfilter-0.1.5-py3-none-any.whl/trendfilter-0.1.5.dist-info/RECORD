@@ -1,0 +1,9 @@
+trendfilter/__init__.py,sha256=P0kAKz2Y8QaQYud3ApATAdeDhp3WKaC5z3wspjNrmS0,73
+trendfilter/derivatives.py,sha256=s_BZezdns9JxvTIu1lvPqKAoPXLi9SpiaoQLTVqKgJg,3769
+trendfilter/linear_deviations.py,sha256=cvvBJ4J6eJSIfVJR7jrk7HgMFIQ67TUQJX3P4HLKyAA,1633
+trendfilter/trendfilter.py,sha256=p5K35ErZClHwbiuEeqwlVm1bYY0HBdM7WMCFDLT42LY,5569
+trendfilter-0.1.5.dist-info/LICENSE.txt,sha256=OW50HvUHkoPzfF-h2Ppn132X03-AaAjjROKhrBPNJSI,1063
+trendfilter-0.1.5.dist-info/METADATA,sha256=5pvEaKA_mA_EIR0dCWE6ObC-geyfQoYbJfQZs7pxTeo,6043
+trendfilter-0.1.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+trendfilter-0.1.5.dist-info/top_level.txt,sha256=z1ssnpcAlOps0hWMZ1DlO7kTpIuGqTCL4Sylo5eiyas,12
+trendfilter-0.1.5.dist-info/RECORD,,
