@@ -1,0 +1,3 @@
+paramiko
+dargs>=0.2.6
+oss2
