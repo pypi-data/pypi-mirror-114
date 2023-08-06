@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+package_info.json
+requirements.txt
+setup.py
+th2_data_services/__init__.py
+th2_data_services/data.py
+th2_data_services/data_source.py
+th2_data_services/events_tree.py
+th2_data_services/utils.py
+th2_data_services.egg-info/PKG-INFO
+th2_data_services.egg-info/SOURCES.txt
+th2_data_services.egg-info/dependency_links.txt
+th2_data_services.egg-info/requires.txt
+th2_data_services.egg-info/top_level.txt
