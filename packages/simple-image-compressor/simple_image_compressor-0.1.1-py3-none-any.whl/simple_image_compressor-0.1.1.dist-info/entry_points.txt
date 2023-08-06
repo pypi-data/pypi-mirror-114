@@ -1,0 +1,3 @@
+[console_scripts]
+sic = simple_image_compressor.__main__:main
+
