@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+EZMathPY.egg-info/PKG-INFO
+EZMathPY.egg-info/SOURCES.txt
+EZMathPY.egg-info/dependency_links.txt
+EZMathPY.egg-info/requires.txt
+EZMathPY.egg-info/top_level.txt
+ezmathpy/__init__.py

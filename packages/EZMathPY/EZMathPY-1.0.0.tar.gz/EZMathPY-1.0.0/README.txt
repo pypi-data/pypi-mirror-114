@@ -1,0 +1,2 @@
+this is a simple and easy to use python calculator created by strikerz. there are multiple commands to use like: statistics, sum, area, volume and perimeter (more coming soon.. maybe)
+and we can't forgot about pi(), it's literally just math.pi lol
