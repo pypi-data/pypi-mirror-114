@@ -1,0 +1,12 @@
+python-can
+janus
+
+[full]
+aiohttp-json-rpc==0.13.3
+ipython<7
+
+[server]
+aiohttp-json-rpc==0.13.3
+
+[shell]
+ipython<7
