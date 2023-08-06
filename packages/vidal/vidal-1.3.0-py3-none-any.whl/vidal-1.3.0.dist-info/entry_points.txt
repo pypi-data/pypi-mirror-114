@@ -1,0 +1,3 @@
+[console_scripts]
+vidal = vidal.cutter:main
+
