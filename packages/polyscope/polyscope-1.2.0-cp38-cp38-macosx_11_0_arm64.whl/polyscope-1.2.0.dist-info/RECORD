@@ -1,0 +1,12 @@
+polyscope_bindings.cpython-38-darwin.so,sha256=HO9LK3fdjb25FY-x2GMFlRGFBhO2x8gvzq8FtbFfkyQ,5059856
+polyscope/__init__.py,sha256=BFD-c4UMedmcF3uZqnkl-KCpmgUNF-uwdTxslpAjZa4,176
+polyscope/core.py,sha256=UwXFLhQVjxrwlDMGdgVwXxFneaQwSc6li3SzgcsXW5I,9404
+polyscope/curve_network.py,sha256=uPNsULJRYM9c9-SAsbyWOKp9ytOMPKezwINvZAaIZgo,9699
+polyscope/point_cloud.py,sha256=Pkm5MCjn3I5SCm3ooEKtVMk_9clRm0n7LyDTP_q3a1I,6973
+polyscope/surface_mesh.py,sha256=giND4TiyCpCqAZNNXqfut8y8ezAdnjhI9WHUtedWxig,19759
+polyscope/volume_mesh.py,sha256=GFOoMJ_k2V2wxRjSMgrBKlC0T3oLXVj2Nmxiw_-TzA8,10101
+polyscope-1.2.0.dist-info/LICENSE,sha256=vsgyQhzpBV4-1GmJSCsY_OygUSiVLwAhp-38H3kxWug,1107
+polyscope-1.2.0.dist-info/METADATA,sha256=todD-VIdYUgIadTymYyEtcQCy27yO4NMcrGExtYhxx4,4539
+polyscope-1.2.0.dist-info/WHEEL,sha256=RLkJ4w9rFNV9KnHOKFT4aYTEy5PQyrqfvqF41wMk2Kk,108
+polyscope-1.2.0.dist-info/top_level.txt,sha256=B3tZFw9PdsUjBoR8i3rSieMLfW1og5wNW7a55N5CFoQ,11
+polyscope-1.2.0.dist-info/RECORD,,
