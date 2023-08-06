@@ -1,0 +1,11 @@
+aubio
+audiofile
+audioread
+librosa
+pandas
+pygobject
+pymad
+scipy
+seaborn
+soundfile
+sox
