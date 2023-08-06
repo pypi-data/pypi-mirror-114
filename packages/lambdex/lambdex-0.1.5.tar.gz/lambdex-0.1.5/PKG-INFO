@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: lambdex
+Version: 0.1.5
+Summary: Lambdex turns pex files into aws lambda python functions.
+Home-page: https://github.com/pantsbuild/lambdex
+Author: The Lambdex developers
+Author-email: pantsbuild@gmail.com
