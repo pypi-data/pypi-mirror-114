@@ -1,0 +1,11 @@
+## Venv ###
+venv/
+
+### Build File ###
+.idea/
+build/
+dist/
+gecko_common.egg-info/
+
+### pyest ####
+.pytest_cache/
