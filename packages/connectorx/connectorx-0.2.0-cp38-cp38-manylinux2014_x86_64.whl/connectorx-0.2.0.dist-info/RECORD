@@ -1,0 +1,16 @@
+connectorx/__init__.py,sha256=p0fCMQSR6Rz-YvS__Kjinw0D-96J3tDuiCSlpNWdsF0,6435
+connectorx/connectorx_python.cpython-38-x86_64-linux-gnu.so,sha256=UW-yL6A3L6Sa0DuTbb_psLO5FgNW6bFOiLILp4B_akM,8758984
+connectorx/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+connectorx/tests/benchmarks.py,sha256=JoMOlTfAKST4h_0UOA1KYcsCAA--ysn7glYLVv99RPc,539
+connectorx/tests/test_arrow.py,sha256=2D-OhhDvlobmR65JRq9cX1EvTQnw-YrniyXxv4FFBk4,1155
+connectorx/tests/test_clickhouse.py,sha256=y2lIktTf1TeqHBqM4n4217tfdXuj_MSicwKM5-qhHM8,2889
+connectorx/tests/test_dask.py,sha256=agz9qtUb_9-wcWC12m2u575a8z4R03iatWoXPxz7GYM,1141
+connectorx/tests/test_modin.py,sha256=NhZf3pT4FCdv7Gse6LFWOLv4j0g7g5hWilsoFuBedkk,1146
+connectorx/tests/test_mysql.py,sha256=NJRoo1JN5Q8QgB-LpCoKn7zP5nb4WfJBe59xke3sQbs,3819
+connectorx/tests/test_polars.py,sha256=5y5puQ-L9xkdE2nFG5PC4k3vZ7XAjPXPZnPxsr8S0lc,884
+connectorx/tests/test_postgres.py,sha256=j3SkhHAZzkdSDDKNH7wsro-DblbeUxgya-6eBL7tqFo,22081
+connectorx/tests/test_redshift.py,sha256=_kVrwOF51z3WsfLu1WG5_eJ3nS2CMxsXZ4ONciXUQcU,5049
+connectorx/tests/test_sqlite.py,sha256=wxLVoM1GwBSfCDbagDFftneCV2ympUe6N14URGOfdRQ,5698
+connectorx-0.2.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+connectorx-0.2.0.dist-info/METADATA,sha256=AfWZzD6QWyQ9s_FBt6dPtGA1uMNImmlty6mxYdCBiR4,9711
+connectorx-0.2.0.dist-info/RECORD,,
