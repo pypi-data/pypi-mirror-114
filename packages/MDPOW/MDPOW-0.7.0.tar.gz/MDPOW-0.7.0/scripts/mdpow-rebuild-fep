@@ -1,0 +1,121 @@
+#!/usr/bin/env python
+"""%prog [options] DIRECTORY [DIRECTORY ...]
+
+Re-create the ``Goct.fep`` or ``Ghyd.fep`` file using the appropriate
+equilibrium simulation file under <DIRECTORY>/FEP.
+
+(This should only be necessary when the fep file was destroyed due to
+a software error.)
+"""
+from __future__ import absolute_import, print_function, division
+
+import os
+import mdpow.equil
+import mdpow.fep
+
+import logging
+logger = logging.getLogger('mdpow')
+
+
+def fixFEP(solvent, fepfile, simfile, basedir):
+    Gsolv = {'water': mdpow.fep.Ghyd,
+             'octanol': mdpow.fep.Goct}
+    try:
+        S = mdpow.equil.Simulation(filename=simfile)
+        # hack: need to explicitly add the Equilibrium/solvent dir to make it work
+        # (note: I am not fixing the include path at the moment, see log...)
+        simbasedir = os.path.join(basedir, 'Equilibrium', solvent)
+        S.make_paths_relative(simbasedir)
+        # TODO: fix includedir
+        # S.dirs.includes[0] = '/sansom/gfio/oliver/Projects/pow/lib/python/POW/mdpow/top'
+        G = Gsolv[solvent](simulation=S, basedir=basedir, permissive=True)
+    except Exception as err:
+        logger.error(str(err))
+        logger.warning("Could not get the simulation pickle file %(simfile)r", vars())
+        logger.warning("The FEP pickle file will be fixed as it is (no path adjustments)")
+        G = Gsolv[solvent](filename=fepfile)
+
+    # remove pre-0.2 standard-state correction (wrong!) and pdV (wrong)
+    # total not used anymore since 0.3.0
+    for crap in ('standardstate', 'pdV', 'total'):
+        try:
+            del G.results.DeltaA0[crap]
+        except:
+            pass
+        # cannot remember if this was DeltaA0 (probably not) or DeltaA
+        try:
+            del G.results.DeltaA[crap]
+        except:
+            pass
+    # do not save arrays (since 0.3.0)
+    G.savedata = False
+    # stride default (since 0.3.2)
+    try:
+        if G.stride is None:
+            G.stride = 1
+    except AttributeError:
+        G.stride = 1
+    G.save(fepfile)
+    logger.info("Re-created %(fepfile)r for basedir=%(basedir)r", vars())
+    return G
+
+if __name__ == "__main__":
+    import sys
+    import os.path
+    from gromacs.utilities import in_dir
+    from optparse import OptionParser
+
+    parser = OptionParser(usage=__doc__)
+    parser.add_option('--solvent', dest="solvent",
+                      help="rebuild fep for 'water', 'octanol', or 'all' [%default]",
+                      metavar="NAME")
+    parser.add_option('--setup', dest="qscript",
+                      help="also run Gsolv.setup(qscript=[LIST]) after fixing Gsolv. LIST "
+                      "should contain a comma-separated list of queing system templates. "
+                      "For example: 'icsn_8pd.sge,icsn_2pd.sge,local.sh'. It is an "
+                      "error if --setup is set without a LIST.",
+                      metavar="LIST")
+    parser.set_defaults(solvent="all")
+
+    opts,args = parser.parse_args()
+
+    gsolvnames = {'water':'Ghyd.fep', 'octanol':'Goct.fep'}
+    if opts.solvent == "all":
+        opts.solvent = gsolvnames.keys()
+    else:
+        if not opts.solvent in gsolvnames:
+            raise ValueError("--solvent must be 'all' or one of %r" % gsolvnames.keys())
+        opts.solvent = (opts.solvent,)
+
+    if opts.qscript:
+        qscript = [s.strip() for s in opts.qscript.split(',')]
+    else:
+        qscript = None
+
+    for directory in args:
+        if not os.path.isdir(directory):
+            logger.debug("%r is not a directory, skipping!", directory)
+            continue
+        if not os.path.exists(directory):
+            logger.warning("Directory %r not found, skipping!", directory)
+            continue
+        logger.info("Rebuilding under directory %r... (can take a while)", directory)
+        with in_dir(directory, create=False):
+            for solvent in opts.solvent:
+                simfile = os.path.join(os.path.curdir, solvent+'.simulation')
+                fepfile = os.path.join(os.path.curdir, 'FEP', solvent, gsolvnames[solvent])
+                logger.info("[%(solvent)8s] equilibrim simulation: %(simfile)s", vars())
+                logger.info("[%(solvent)8s] fep simulations:       %(fepfile)s", vars())
+
+                try:
+                    G = fixFEP(solvent, fepfile, simfile, os.path.realpath(os.path.curdir))
+                except Exception,err:
+                    logger.warning(str(err))
+
+                if qscript:
+                    logger.info("[%(solvent)8s] Setting up FEP jobs for %(qscript)r...", vars())
+                    try:
+                        G.setup(qscript=qscript)
+                    except Exception,err:
+                        logger.error(str(err))
+
