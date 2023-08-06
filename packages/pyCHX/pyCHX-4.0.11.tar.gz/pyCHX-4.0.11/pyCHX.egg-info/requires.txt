@@ -1,0 +1,16 @@
+numpy
+dask
+databroker
+lmfit
+matplotlib
+pandas
+pillow
+pyyaml
+scipy
+cython
+tifffile
+tqdm
+ipython
+dill
+reportlab
+theano
