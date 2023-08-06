@@ -1,0 +1,9 @@
+threadlocal_aws/__init__.py,sha256=-00fMZGcPSurjmXOC9j0W9u0dJb1vqY72KNTbJiyPoE,5138
+threadlocal_aws/clients.py,sha256=99MuJkx7f5ixSJK0gTB0ehPJ8E2j_66Xb3Qo0sZJM3M,288
+threadlocal_aws/pep562.py,sha256=eFC233k5PkiVs1S6Uk04ni4B67hxQbp6eYBj5Qvkmi4,2360
+threadlocal_aws/resources.py,sha256=RFBYDZrwP4wiuZbjPbNYXh8rPlh29YpsmQOmKwol2qU,545
+threadlocal_aws-0.9.dist-info/METADATA,sha256=Iqh0aitWxfTBjPB7BlkZ1xvDgNEXqrvEa26dVpsIQxc,405
+threadlocal_aws-0.9.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+threadlocal_aws-0.9.dist-info/top_level.txt,sha256=l1wehkSys4Lbct-m4U_AI522p8qECkpWgW4qLQbKU4g,16
+threadlocal_aws-0.9.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+threadlocal_aws-0.9.dist-info/RECORD,,
