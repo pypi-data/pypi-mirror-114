@@ -1,0 +1,4 @@
+torch
+torchvision
+lightkurve>=2.0
+wotan
