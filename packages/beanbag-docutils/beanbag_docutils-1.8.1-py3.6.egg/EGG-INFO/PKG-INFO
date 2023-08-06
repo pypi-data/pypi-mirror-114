@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: beanbag-docutils
+Version: 1.8.1
+Summary: Sphinx utility modules for Beanbag's documentation format.
+Home-page: https://github.com/beanbaginc/beanbag-docutils
+Maintainer: Christian Hammond
+Maintainer-email: christian@beanbaginc.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Documentation
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: COPYING
+
+=====================
+Beanbag Doc Utilities
+=====================
+
+This is a collection of utilities to help with generating documentation for
+Beanbag-related products, including:
+
+* `Review Board`_ - Our widely-used open source code review product.
+* RBCommons_ - Our Review Board SaaS.
+* Djblets_ - A set of utilities and infrastructure for Django-based projects.
+* RBTools_ - Command line tools for Review Board and RBCommons.
+
+
+.. _Review Board: https://www.reviewboard.org/
+.. _RBCommons: https://www.rbcommons.com/
+.. _Djblets: https://github.com/djblets/djblets/
+.. _RBTools: https://github.com/reviewboard/rbtools/
+
+
+Getting Started
+===============
+
+To install the package, run:
+
+.. code-block:: shell
+
+   $ pip install beanbag-docutils
+
+
+See the documentation_ for usage information.
+
+
+.. _documentation: https://beanbag-docutils.readthedocs.io/
+
+
