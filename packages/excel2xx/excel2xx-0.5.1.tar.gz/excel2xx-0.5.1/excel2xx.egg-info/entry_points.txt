@@ -1,0 +1,3 @@
+[console_scripts]
+excel2xx = excel2xx.main:main_docopt
+
