@@ -1,0 +1,4 @@
+[console_scripts]
+tuxsm=txsm.main:say
+txsm=txsm.main:main
+
