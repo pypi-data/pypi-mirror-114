@@ -1,0 +1,12 @@
+scraper/__init__.py,sha256=46Yjk3fz9o8aTN8E95McnzpJcjGzVJmHmQqUZ5mXzfc,22
+scraper/__main__.py,sha256=9euzNuund2wIsWDLtQaNG4yMnCuS1xT1YHUKvw07qmo,636
+scraper/books.py,sha256=phcS9An22BckU4O6kOKwQaEwBmnkPsjlJD5v7HYEmjg,3465
+scraper/shelves.py,sha256=O6mrCOzanjF-KHZMQZrzbmr9kQ8vjnh753LNdy92ccg,3726
+scraper/user.py,sha256=uW7T-9J27jCQFSuIm-cUA1nrEDcH-BXCV_1V8mv2srY,698
+goodreads_user_scraper-0.0.9.dist-info/AUTHORS,sha256=vWXvph75fUYIrrW0hNX3Pl6UOeOF6CYXLvUivI_ddDM,12
+goodreads_user_scraper-0.0.9.dist-info/LICENSE.md,sha256=vmwSpFT3JHtEfpUTp0gWm6tq8OHAOjCmn0GD5xIhMTs,1068
+goodreads_user_scraper-0.0.9.dist-info/METADATA,sha256=nXU_Jth2ZIMLEMQtb2imz0HY_Kegk-ONIJP_ue8nU6M,3188
+goodreads_user_scraper-0.0.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+goodreads_user_scraper-0.0.9.dist-info/entry_points.txt,sha256=UGj--ZsqBvYpQ3BXTq1fNZtbz-Wip_Sql4UfXqgtIw0,66
+goodreads_user_scraper-0.0.9.dist-info/top_level.txt,sha256=7mMSfNnJkw1ZNz9GtP5MR6Hh0DYR7LY7dqAaNJATf4c,8
+goodreads_user_scraper-0.0.9.dist-info/RECORD,,
