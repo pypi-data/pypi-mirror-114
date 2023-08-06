@@ -1,0 +1,7 @@
+image: debian/sid
+packages:
+  - tox
+sources:
+  - https://git.sr.ht/~cnx/python-loca
+tasks:
+  - lint: tox -c python-loca
