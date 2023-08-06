@@ -1,0 +1,282 @@
+Metadata-Version: 2.1
+Name: ravenpy
+Version: 0.7.0
+Summary: A Python wrapper to setup and run the hydrologic modelling framework Raven.
+Home-page: https://github.com/CSHS-CWRA/ravenpy
+Author: David Huard
+Author-email: huard.david@ouranos.ca
+License: MIT license
+Keywords: ravenpy
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: click
+Requires-Dist: climpred (>=2.1)
+Requires-Dist: dask
+Requires-Dist: haversine
+Requires-Dist: matplotlib
+Requires-Dist: netCDF4
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pydantic
+Requires-Dist: requests
+Requires-Dist: scipy
+Requires-Dist: statsmodels
+Requires-Dist: xarray (>=0.18)
+Requires-Dist: cf-xarray
+Requires-Dist: xclim (>=0.26.1)
+Requires-Dist: wheel
+Requires-Dist: xskillscore
+Provides-Extra: dev
+Requires-Dist: affine ; extra == 'dev'
+Requires-Dist: fiona ; extra == 'dev'
+Requires-Dist: geopandas (>=0.9.0) ; extra == 'dev'
+Requires-Dist: lxml ; extra == 'dev'
+Requires-Dist: owslib ; extra == 'dev'
+Requires-Dist: pyproj (>=3.0.0) ; extra == 'dev'
+Requires-Dist: rasterio ; extra == 'dev'
+Requires-Dist: rioxarray ; extra == 'dev'
+Requires-Dist: shapely ; extra == 'dev'
+Requires-Dist: gdal (==3.2.2) ; extra == 'dev'
+Requires-Dist: pip ; extra == 'dev'
+Requires-Dist: bump2version ; extra == 'dev'
+Requires-Dist: setuptools ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: watchdog ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: coveralls ; extra == 'dev'
+Requires-Dist: Sphinx ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: Click ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-runner ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: holoviews ; extra == 'dev'
+Requires-Dist: hvplot ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: nbsphinx ; extra == 'docs'
+Requires-Dist: pandoc ; extra == 'docs'
+Requires-Dist: ipython ; extra == 'docs'
+Requires-Dist: ipykernel ; extra == 'docs'
+Requires-Dist: jupyter-client ; extra == 'docs'
+Requires-Dist: sphinx-click ; extra == 'docs'
+Requires-Dist: numpydoc ; extra == 'docs'
+Provides-Extra: gis
+Requires-Dist: affine ; extra == 'gis'
+Requires-Dist: fiona ; extra == 'gis'
+Requires-Dist: geopandas (>=0.9.0) ; extra == 'gis'
+Requires-Dist: lxml ; extra == 'gis'
+Requires-Dist: owslib ; extra == 'gis'
+Requires-Dist: pyproj (>=3.0.0) ; extra == 'gis'
+Requires-Dist: rasterio ; extra == 'gis'
+Requires-Dist: rioxarray ; extra == 'gis'
+Requires-Dist: shapely ; extra == 'gis'
+Requires-Dist: gdal (==3.2.2) ; extra == 'gis'
+
+=======
+RavenPy
+=======
+
+.. image:: https://img.shields.io/pypi/v/ravenpy.svg
+    :target: https://pypi.python.org/pypi/ravenpy
+
+.. image:: https://anaconda.org/conda-forge/ravenpy/badges/installer/conda.svg   
+    :target: https://conda.anaconda.org/conda-forge
+
+.. image:: https://github.com/CSHS-CWRA/RavenPy/actions/workflows/main.yml/badge.svg
+    :target: https://github.com/CSHS-CWRA/RavenPy/actions/workflows/main.yml
+    :alt: Build status
+
+.. image:: https://readthedocs.org/projects/ravenpy/badge/?version=latest
+    :target: https://ravenpy.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
+A Python wrapper to setup and run the hydrologic modelling framework Raven_.
+
+* Free software: MIT license
+* Documentation: https://ravenpy.readthedocs.io
+
+Features
+--------
+
+* Download and compile Raven with `pip`
+* Configure, run and parse Raven outputs from Python
+* Parallel simulations over parameters, models or watersheds
+* Utility command to create grid weight files
+* Extract physiographic information about watersheds
+* Algorithms to estimate model parameters from ungauged watersheds
+* Exposes outputs (flow, storage) as `xarray.DataArray` objects
+
+Install
+-------
+
+Please see the detailed `installation docs`_.
+
+Credits
+-------
+
+RavenPy's development has been funded by CANARIE_.
+
+This package was created with Cookiecutter_ and the `Ouranosinc/cookiecutter-pypackage`_ project template.
+
+.. _`installation docs`: https://ravenpy.readthedocs.io/en/latest/installation.html
+.. _Raven: http://raven.uwaterloo.ca
+.. _Cookiecutter: https://github.com/audreyfeldroy/cookiecutter-pypackage
+.. _`Ouranosinc/cookiecutter-pypackage`: https://github.com/Ouranosinc/cookiecutter-pypackage
+.. _`CANARIE`: https://www.canarie.ca
+
+
+=======
+History
+=======
+
+0.7.0
+-----
+
+* Add support for V2.1 of the Routing Product in ``ravenpy.extractors.routing_product``.
+* Add ``collect-subbasins-upstream-of-gauge`` CLI script.
+* Modify WFS request functions to use spatial filtering (``Intersects``) supplied by OWSLib.
+
+0.6.0
+-----
+
+* Add support for EvaluationPeriod commands. Note that as a result of this, the model's ``diagnostics`` property contains one list per key, instead of a single scalar. Also note that for calibration, Ostrich will use the first period and the first evaluation metric.
+* Add ``SACSMA``, ``CANADIANSHIELD`` and ``HYPR`` model emulators.
+
+0.5.2
+-----
+
+* Simplify RVC configuration logic.
+* Add ``ravenpy.utilities.testdata.file_md5_checksum`` (previously in ``xarray.tutorial``).
+
+0.5.1
+-----
+
+* Some adjustments and bugfixes needed for RavenWPS.
+* Refactoring of some internal logic in ``ravenpy.config.rvs.RVT``.
+* Improvements to typing with the help of mypy.
+
+0.5.0
+-----
+
+* Refactoring of the RV config subsystem:
+
+  * The config is fully encapsulated into its own class: ``ravenpy.config.rvs.Config``.
+  * The emulator RV templates are inline in their emulator classes.
+
+* The emulators have their own submodule: ``ravenpy.models.emulators``.
+* The "importers" have been renamed to "extractors" and they have their own submodule: ``ravenpy.extractors``.
+
+0.4.2
+-----
+
+* Update to RavenC revision 318 to fix OPENDAP access for StationForcing commands.
+* Fix grid_weights set to None by default.
+* Pass nc_index to ObservationData command.
+* Expose more cleanly RavenC errors and warnings.
+
+0.4.1
+-----
+
+* Add notebook about hindcast verification skill.
+* Add notebook about routing capability.
+* Modify geoserver functions to have them return GeoJSON instead of GML.
+* Collect upstream watershed aggregation logic.
+* Fix RVC bug.
+
+0.4.0
+-----
+
+This is an interim version making one step toward semi-distributed
+modeling support. Model configuration is still in flux and will be
+significantly modified with 0.5. The major change in this version is
+that model configuration supports passing multiple HRU objects,
+instead of simply passing area, latitude, longitude and elevation for
+a single HRU.
+
+* GR4JCN emulator now supports routing mode.
+* Add BLENDED model emulator.
+* DAP links for forcing files are now supported.
+* Added support for ``tox``-based localized installation and testing with python-pip.
+* Now supporting Python 3.7, 3.8, and 3.9.
+* Build testing for ``pip`` and ``conda``-based builds with GitHub CI.
+
+0.3.1
+-----
+
+* Update external dependencies (Raven, OSTRICH) to facilitate Conda packaging.
+
+0.3.0
+-----
+
+* Migration and refactoring of GIS and IO utilities (``utils.py``, ``utilities/gis.py``) from RavenWPS to RavenPy.
+* RavenPy can now be installed from PyPI without GIS dependencies (limited functionality).
+* Hydro routing product is now supported from ``geoserver.py`` (a notebook has been added to demonstrate the new functions).
+* New script ``ravenpy aggregate-forcings-to-hrus`` to aggregate NetCDF files and compute updated grid weights.
+* Add the basis for a new routing emulator option (WIP).
+* Add climpred verification capabilities.
+
+0.2.3
+-----
+
+* Regionalisation data is now part of the package.
+* Fix tests that were not using testdata properly.
+* Add tests for external dataset access.
+* ``utilities.testdata.get_local_testdata`` now raises an exception when it finds no dataset corresponding to the user pattern.
+
+0.2.2
+-----
+
+* Set wcs.getCoverage timeout to 120 seconds.
+* Fix ``Raven.parse_results`` logic when no flow observations are present and no diagnostic file is created.
+* Fix ECCC test where input was cached and shadowed forecast input data.
+
+0.2.1
+-----
+
+* Fix xarray caching bug in regionalization.
+
+0.2.0
+-----
+
+* Refactoring of ``ravenpy.utilities.testdata`` functions.
+* Bump xclim to 0.23.
+
+0.1.7
+-----
+
+* Fix xarray caching bug affecting climatological ESP forecasts (#33).
+* Fix deprecation issue with Fiona.
+
+0.1.6 (2021-01-15)
+------------------
+
+* Correct installer bugs.
+
+0.1.5 (2021-01-14)
+------------------
+
+* Release with docs.
+
+
+0.1.0 (2020-12-20)
+------------------
+
+* First release on PyPI.
+
+
