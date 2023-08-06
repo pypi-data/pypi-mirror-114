@@ -1,0 +1,5 @@
+cloudpickle
+
+[test]
+pytest
+testpath>=0.5
