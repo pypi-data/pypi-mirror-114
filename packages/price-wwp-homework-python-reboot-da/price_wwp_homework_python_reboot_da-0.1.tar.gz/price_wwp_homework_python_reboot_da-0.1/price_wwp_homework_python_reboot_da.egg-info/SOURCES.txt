@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+price_wwp_homework_python_reboot_da/__init__.py
+price_wwp_homework_python_reboot_da/price_wwp_homework_python_reboot_da.py
+price_wwp_homework_python_reboot_da.egg-info/PKG-INFO
+price_wwp_homework_python_reboot_da.egg-info/SOURCES.txt
+price_wwp_homework_python_reboot_da.egg-info/dependency_links.txt
+price_wwp_homework_python_reboot_da.egg-info/not-zip-safe
+price_wwp_homework_python_reboot_da.egg-info/top_level.txt
