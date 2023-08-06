@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: chmp
+Version: 21.7.0
+Summary: Support code for machine learning / data science experiments
+Home-page: https://github.com/chmp/misc-exp
+Author: Christopher Prohm
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# chmp - Support code for machine learning / data science experiments
+
+A collection of utility functions I regularly use in my machine learning / data
+science experiments or prototypes. While this package is mostly geared towards 
+personal use, it may be helpful to others as well.
+
+For docs / examples see [the repository](https://github.com/chmp/libchmp).
+
+
