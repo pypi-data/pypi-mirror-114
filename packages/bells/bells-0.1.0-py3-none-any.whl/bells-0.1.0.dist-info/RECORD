@@ -1,0 +1,9 @@
+bells/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bells/__main__.py,sha256=BPcRYhvv_poVs9XGS2kdO8Q1mJFdw1YgtXoUNvvcHvc,141
+bells/commands/__init__.py,sha256=PUhBAC59FNZ93IW7qGjRzt9L5syL0gQZPLo1M3xi7ng,23
+bells/commands/init.py,sha256=e8LMT41SNOFIHl82zxG8ccXpuEUs-oc0TUgLDKMxwY0,61
+bells-0.1.0.dist-info/entry_points.txt,sha256=PLXdZe_lOHVp4GFxlKTVZI0wgdX-61wXCELFEYKe384,45
+bells-0.1.0.dist-info/LICENSE,sha256=MzRPDxh1RbhgwTjp3W5nr91yVXVbrxxzilC7vCT7_zo,35061
+bells-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+bells-0.1.0.dist-info/METADATA,sha256=uGYnDDT1ul2uawzbHRDwxqNUVI8i1nK3USBED52_Jm8,526
+bells-0.1.0.dist-info/RECORD,,
