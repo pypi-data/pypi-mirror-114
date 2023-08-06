@@ -1,0 +1,2 @@
+cryptography>=2.7
+pycryptodomex>=3.9.8
