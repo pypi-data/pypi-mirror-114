@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+socomote/__init__.py
+socomote/__main__.py
+socomote/action.py
+socomote/input_handler.py
+socomote/receiver.py
+socomote/settings.py
+socomote/station.py
+socomote/tts_server.py
+socomote.egg-info/PKG-INFO
+socomote.egg-info/SOURCES.txt
+socomote.egg-info/dependency_links.txt
+socomote.egg-info/requires.txt
+socomote.egg-info/top_level.txt
