@@ -1,0 +1,8 @@
+tags
+__pycache__
+.env
+.venv
+venv
+*.egg-info
+.egg
+discotool/_version.py
