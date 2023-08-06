@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+seleniumWebUi/USelenium.py
+seleniumWebUi/__init__.py
+seleniumwebui.egg-info/PKG-INFO
+seleniumwebui.egg-info/SOURCES.txt
+seleniumwebui.egg-info/dependency_links.txt
+seleniumwebui.egg-info/requires.txt
+seleniumwebui.egg-info/top_level.txt
