@@ -1,0 +1,14 @@
+apitestbasic/GraphqlApi/__init__.py,sha256=odVZI0FspJIfaMYK1rxsQWYxJbgMlX1R3BCLNCx0wP8,352
+apitestbasic/GraphqlApi/decorator.py,sha256=qbddaM5oZwTJRDKouFRHJm0J2g76osluXjURifXiXuY,2863
+apitestbasic/GraphqlApi/gen_params.py,sha256=zTyVA1xxtoyEgLvxGn6dlqAkdwKVGI4UkyDDDnmw9hs,4207
+apitestbasic/GraphqlApi/graphql_api.py,sha256=h6Zj_moh8NpW2vPq_eAe2NR3TkbCF6jN6RXnI5P-9iY,3313
+apitestbasic/GraphqlApi/special_graphql_api.py,sha256=ArCDGvIGCAuIQUzRtziDqe6fjWwHDdj_OxnTVRugMqc,3455
+apitestbasic/GraphqlApi/tools.py,sha256=rw_kJlFiEYHwO9JNOEpZCwHGAp3jPkGiUIYJ8ck8Yw8,3391
+apitestbasic/User/UserContainer.py,sha256=RIH2fa205BQPjU3wR3csgxj_wx_zEWVV7bAR727wDrA,643
+apitestbasic/User/__init__.py,sha256=8Ih374prdIsh8d-IVKJxs5DuX8t44PlNxuRwtai5AZU,167
+apitestbasic/User/get_user.py,sha256=lkjNcqKGBwYO47j8YkJIj7pOHIRvQYq0ViBXIWWGL-E,3650
+apitestbasic/__init__.py,sha256=NxvdROhvrnVQ9myW6oF7514lVTbp4mxJao-KjAFrN-A,239
+apitestbasic/graphql_api_codegen.py,sha256=q_0g0bZsPenhiT4-4ilcq6axkfTCHjZmrzkT9FRM9vk,2453
+apitestbasic-0.2.3.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+apitestbasic-0.2.3.dist-info/METADATA,sha256=-Nt5FADjglFaxthYUbM4v3f5il5qKO6o1pYYvxbuVpM,240
+apitestbasic-0.2.3.dist-info/RECORD,,
