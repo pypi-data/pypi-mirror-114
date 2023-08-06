@@ -1,0 +1,3 @@
+cppwinrt
+dist
+pywinrt
