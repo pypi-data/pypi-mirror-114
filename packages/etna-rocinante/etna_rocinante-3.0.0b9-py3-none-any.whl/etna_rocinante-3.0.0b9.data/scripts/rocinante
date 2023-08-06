@@ -1,0 +1,249 @@
+#!python
+
+from enum import Enum
+import json
+import os
+import asyncio
+from pprint import pformat
+import shutil
+import signal
+from functools import partial
+from typing import Any, Awaitable, Callable, Dict
+import ssl
+
+from panza import new_async_job_workspace, DataFetchingError
+from panza.backends.docker import DockerBackend, DockerWithAdditionalDaemonBackend, DockerConfiguration, DockerWithAdditionalDaemonConfiguration
+from panza.cache import Cache
+from aio_pika import AMQPException
+
+from rocinante.config import ConfigurationLoadError, load_config
+from rocinante.driver import Driver
+from rocinante.drivers.intra import IntraValidationDriver
+from rocinante.drivers.la_mancha import LaManchaDriver
+from rocinante.errors import RetryableError
+from rocinante.logging import init_logging, logger_for_driver
+from rocinante.rabbitmq import AsyncConsumerPublisherChannel, AsyncRMQSession, ConnectionParameters
+from rocinante.utils import make_credentials_context
+
+
+class JobStatus(Enum):
+    PASSED = 0
+    RETRY_REQUESTED = 1
+    DROPPED = 2
+    RETRIED_TOO_MANY_TIMES = 3
+    UNCOMPLETED = 4
+
+
+async def send_result(publisher_name, result: Dict[str, Any], routing_key: str) -> JobStatus:
+    logger.info("Sending job result...")
+    try:
+        await publisher_channel.publish(publisher_name, routing_key=routing_key, message_body=json.dumps(result))
+    except AMQPException as e:
+        logger.critical(f"Cannot publish job result: {e}")
+        raise
+    logger.info("Result successfully sent")
+    return JobStatus.PASSED
+
+
+async def retry_job(publisher_name, job_name: str, routing_key: str, body: Dict[str, Any]) -> JobStatus:
+    remaining_retries = body.get("remaining_retries", config.max_job_retries)
+    if remaining_retries <= 0:
+        logger.error(f"Dropping job {job_name}: too many retries")
+        logger.error(f"Body was:")
+        logger.error(pformat(body))
+        return JobStatus.RETRIED_TOO_MANY_TIMES
+
+    body["remaining_retries"] = remaining_retries - 1
+    logger.warning(f"Requesting a re-schedule of job {job_name}...")
+
+    try:
+        await publisher_channel.publish(publisher_name, routing_key=routing_key, message_body=json.dumps(body))
+        return JobStatus.RETRY_REQUESTED
+    except AMQPException as e:
+        logger.critical(f"Cannot request a re-schedule of the job: {e}")
+        raise
+
+
+async def process_job(
+        driver: Driver,
+        body: Dict[str, Any],
+        reply: Callable[[Dict[str, Any]], Awaitable[JobStatus]],
+        retry: Callable[[str], Awaitable[JobStatus]]
+) -> JobStatus:
+    """
+    Coroutine used to process a job and reply with result
+
+    :param driver:          the driver to use for this job
+    :param body:            the job body (parsed as JSON from the data received from the queue)
+    :param reply:           the function to call to reply with the job's result
+    :param retry:           the function to call to request a re-schedule of the job
+    """
+    job_name = None
+    try:
+        info = await driver.extract_job_information(body)
+        job_name = info["job_name"]
+        logger.info(f"Job identified as {job_name}")
+        logger.info(f"Job information: {json.dumps(info)}")
+
+        moulinette_directory = await driver.retrieve_moulinette(info)
+
+        logger.info("Processing job...")
+
+        with new_async_job_workspace(backend, with_files=moulinette_directory, with_root=config.backend.root_directory) as workspace:
+            environment_name = info["job_environment"]
+            credentials_context = make_credentials_context(config.credentials)
+
+            built_workspace = await workspace.build_job_environment(environment_name)
+            handle = await built_workspace.fetch_data(context={**info, **credentials_context}, cache=cache)
+            job_result = await handle.execute_job(context={**info, **credentials_context})
+
+        result = driver.format_result(body, handle.blueprint, job_result)
+        logger.info(f"Job successfully processed, result is: {json.dumps(result)}")
+        return await reply(result)
+
+    except (RetryableError, DataFetchingError) as e:
+        logger.warning(f"Cannot process job: {e}")
+        logger.warning(f"Aborting job {job_name or '<unnamed>'}")
+        return await retry(job_name or '<unnamed>')
+
+    except Exception as e:
+        logger.warning(f"Cannot process job: {e}")
+        logger.warning(f"Dropping job {job_name or '<unnamed>'}")
+        return JobStatus.DROPPED
+
+
+async def handle_job(input_queue_name: str, driver: Driver, *, body: bytes, incoming_routing_key: str):
+    async def reply(result: Dict[str, Any]) -> JobStatus:
+        return await send_result("moulinette", result, result_routing_key)
+
+    async def retry(job_name: str) -> JobStatus:
+        return await retry_job("moulinette", job_name, incoming_routing_key, parsed_body)
+
+    parsed_body = json.loads(body.decode())
+    logger.info(f"Job received from queue '{input_queue_name}', bound to driver '{type(driver).__name__}'")
+    logger.debug(f"Job JSON body: {parsed_body}")
+
+    result_routing_key = parsed_body["result"]["routing.key"]
+    status = JobStatus.UNCOMPLETED
+    try:
+        status = await process_job(driver, parsed_body, reply, retry)
+    finally:
+        logger.info(f"Finished processing job, status: {status.name}")
+
+
+async def configure_publisher_channel(channel: AsyncConsumerPublisherChannel):
+    await channel.configure_publisher(exchange_name="moulinette")
+
+
+async def configure_consumer_channel(channel: AsyncConsumerPublisherChannel):
+    for queue_config in config.queues:
+        if queue_config.driver not in drivers:
+            logger.warning(f"Unknown driver '{queue_config.driver}', ignoring it.")
+            continue
+
+        logger.info(f"Registering driver '{queue_config.driver}' as consumer for queue '{queue_config.name}'...")
+        await channel.configure_consumer(queue_name=queue_config.name,
+                                         callback=partial(handle_job, queue_config.name, drivers[queue_config.driver]))
+    logger.info("Successfully registered as consumer for each specified queue")
+
+
+async def cleanup():
+    await rmq_session.close()
+    shutil.rmtree(config.root_directory)
+
+
+def handle_sigterm(signal_number, loop: asyncio.events.AbstractEventLoop):
+    logger.info(f"Received signal {signal.Signals(signal_number).name} ({signal_number}), cleaning up...")
+    loop.run_until_complete(cleanup())
+    logger.info("Quitting.")
+    exit(0)
+
+
+try:
+    config = load_config()
+except ConfigurationLoadError as e:
+    print(e)
+    exit(1)
+
+if os.path.exists(config.root_directory):
+    print(f"cannot create root directory at {config.root_directory}: directory already exists")
+    exit(1)
+os.makedirs(config.root_directory)
+drivers_dir = f"{config.root_directory}/drivers"
+os.mkdir(drivers_dir)
+cache_dir = f"{config.root_directory}/fetcher_cache"
+cache = Cache.create_at(cache_dir, max_entries=config.cache.max_entries)
+
+os.makedirs(config.log_directory, exist_ok=True)
+
+logger = init_logging(config.log_directory, debug=config.debug is True)
+
+drivers = {
+    "intra": IntraValidationDriver.create,
+    "la_mancha": LaManchaDriver.create,
+}
+
+for driver in drivers.keys():
+    os.makedirs(f"{drivers_dir}/{driver}", exist_ok=True)
+    drivers[driver] = drivers[driver](logger_for_driver(driver, debug=config.debug), f"{drivers_dir}/{driver}", config)
+
+if isinstance(config.backend.configuration, DockerConfiguration):
+    backend = DockerBackend(config.backend.configuration)
+elif isinstance(config.backend.configuration, DockerWithAdditionalDaemonConfiguration):
+    backend = DockerWithAdditionalDaemonBackend(config.backend.configuration)
+else:
+    logger.error("Unknown backend configuration")
+    exit(1)
+
+loop = asyncio.get_event_loop()
+
+loop.add_signal_handler(signal.SIGTERM, handle_sigterm, loop)
+
+rmq_session = AsyncRMQSession()
+
+logger.debug(f"Connecting to RabbitMQ at {config.rabbitmq.host}:{config.rabbitmq.port}...")
+connection_params = ConnectionParameters(
+    login=config.rabbitmq.username,
+    password=config.rabbitmq.password,
+    host=config.rabbitmq.host,
+    port=config.rabbitmq.port,
+    virtual_host=config.rabbitmq.virtual_host,
+    ssl=config.rabbitmq.use_ssl,
+    ssl_options={"ssl_version": ssl.PROTOCOL_TLSv1, "cert_reqs": ssl.CERT_NONE})
+try:
+    loop.run_until_complete(rmq_session.connect(connection_params=connection_params,
+                                                loop=loop,
+                                                reconnect_interval=config.rabbitmq.reconnection_interval))
+except AMQPException as e:
+    logger.critical(f"Unable to connect to RabbitMQ: {str(e)}")
+    exit(1)
+logger.info(f"Successfully connected to {config.rabbitmq.host}:{config.rabbitmq.port}")
+
+logger.debug(f"Configuring p[ublisher and consumer channels...")
+try:
+    publisher_channel, consumer_channel = loop.run_until_complete(asyncio.gather(
+        rmq_session.configure_channel("publisher", configure_publisher_channel),
+        rmq_session.configure_channel("consumer", configure_consumer_channel),
+        loop=loop))
+except AMQPException as e:
+    logger.critical(f"Unable to configure channels : {str(e)}")
+    cleanup()
+    exit(1)
+logger.info(f"Successfully configured publisher and consumer channels")
+
+logger.debug(f"Start consuming...")
+try:
+    ## ADD tasks here with loop.create_task()
+    loop.run_until_complete(consumer_channel.consume_all())
+except AMQPException as e:
+    logger.critical(f"Unable to consume jobs from RabbitMQ: {str(e)}")
+    loop.run_until_complete(cleanup())
+    logger.info("Exiting after cleanup.")
+    exit(1)
+except Exception as e:
+    logger.critical(f"An unexpected error occured: {str(e)}")
+    logger.info("Exiting without cleanup.")
+    exit(2)
+else:
+    loop.run_until_complete(cleanup())
+    logger.info("Exiting after cleanup.")
