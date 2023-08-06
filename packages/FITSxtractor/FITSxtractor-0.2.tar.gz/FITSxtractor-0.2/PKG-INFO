@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: FITSxtractor
+Version: 0.2
+Summary: This package extracts xml metadata from FITS output to a csv or xlsx file
+Home-page: https://github.com/ovanov/FITSxtractor
+Author: ovanov
+Author-email: ovanov@protonmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: FITS,xml,csv,CLI programm
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
