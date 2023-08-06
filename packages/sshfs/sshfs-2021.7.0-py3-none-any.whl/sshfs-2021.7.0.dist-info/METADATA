@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: sshfs
+Version: 2021.7.0
+Summary: SSH Filesystem -- Async SSH/SFTP backend for fsspec
+Home-page: UNKNOWN
+License: Apache License 2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fsspec (==2021.7.0)
+Requires-Dist: asyncssh (==2.7.0)
+Requires-Dist: async-exit-stack (==1.0.1) ; python_version < "3.7"
+Provides-Extra: bcrypt
+Requires-Dist: asyncssh[bcrypt] ; extra == 'bcrypt'
+Provides-Extra: fido2
+Requires-Dist: asyncssh[fido2] ; extra == 'fido2'
+Provides-Extra: gssapi
+Requires-Dist: asyncssh[gssapi] ; extra == 'gssapi'
+Provides-Extra: libnacl
+Requires-Dist: asyncssh[libnacl] ; extra == 'libnacl'
+Provides-Extra: pkcs11
+Requires-Dist: asyncssh[python-pkcs11] ; extra == 'pkcs11'
+Provides-Extra: pyopenssl
+Requires-Dist: asyncssh[pyopenssl] ; extra == 'pyopenssl'
+Provides-Extra: pywin32
+Requires-Dist: asyncssh[pywin32] ; extra == 'pywin32'
+
+# sshfs
+
+sshfs is a filesystem interface for SSH/SFTP. It is based on top
+of [asyncssh](https://github.com/ronf/asyncssh) and implements
+the [fsspec](https://github.com/intake/filesystem_spec/) protocol.
+
+## Features
+- Supports filesystem operations outside of SFTP, e.g server side copy
+- Auto SFTP channel management
+- Async! (thanks to `asyncssh`)
+
+## Example
+```py
+from sshfs import SSHFileSystem
+
+
+# Connect with a password
+fs = SSHFileSystem(
+    '127.0.0.1',
+    username='sam',
+    password='fishing'
+)
+
+# or with a private key
+fs = SSHFileSystem(
+    'ssh.example.com',
+    client_keys=['/path/to/ssh/key']
+)
+
+details = fs.info('/tmp')
+print(f'{details['name']} is a {details['type']}!')
+
+
+with fs.open('/tmp/message.dat', 'wb') as stream:
+    stream.write(b'super secret messsage!')
+
+with fs.open('/tmp/message.dat') as stream:
+    print(stream.read())
+
+
+fs.mkdir('/tmp/dir')
+fs.mkdir('/tmp/dir/eggs')
+fs.touch('/tmp/dir/spam')
+fs.touch('/tmp/dir/eggs/quux')
+
+for file in fs.find('/tmp/dir'):
+    print(file)
+```
+
+
