@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+tinda/__init__.py
+tinda/functions.py
+tinda.egg-info/PKG-INFO
+tinda.egg-info/SOURCES.txt
+tinda.egg-info/dependency_links.txt
+tinda.egg-info/requires.txt
+tinda.egg-info/top_level.txt
