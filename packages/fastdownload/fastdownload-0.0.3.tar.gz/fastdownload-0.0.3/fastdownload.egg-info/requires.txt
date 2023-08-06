@@ -1,0 +1,2 @@
+fastprogress
+fastcore>=1.3.25
