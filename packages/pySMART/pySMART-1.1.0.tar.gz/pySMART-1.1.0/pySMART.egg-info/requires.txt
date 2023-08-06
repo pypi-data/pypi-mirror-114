@@ -1,0 +1,5 @@
+humanfriendly
+
+[dev]
+pytest
+pytest-cov
