@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: SPOEF
+Version: 0.0.3
+Summary: Signal PrOcEssing Features for transaction data
+Home-page: https://github.com/janbargeman/SPOEF
+Author: Jan Bargeman
+Author-email: jan_bargeman@live.nl
+License: Open Source
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.19.2)
+Requires-Dist: scikit-learn (>=0.23.2)
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: PyWavelets
+Provides-Extra: all
+Requires-Dist: numpy (>=1.19.2) ; extra == 'all'
+Requires-Dist: scikit-learn (>=0.23.2) ; extra == 'all'
+Requires-Dist: pandas ; extra == 'all'
+Requires-Dist: scipy ; extra == 'all'
+Requires-Dist: PyWavelets ; extra == 'all'
+Requires-Dist: flake8 (>=3.8.3) ; extra == 'all'
+Requires-Dist: black (>=19.10b0) ; extra == 'all'
+Requires-Dist: pre-commit (>=2.5.0) ; extra == 'all'
+Requires-Dist: mypy (>=0.770) ; extra == 'all'
+Requires-Dist: flake8-docstrings (>=1.4.0pytest>=6.0.0) ; extra == 'all'
+Requires-Dist: pytest-cov (>=2.10.0) ; extra == 'all'
+Requires-Dist: mkdocs-material (>=6.1.0) ; extra == 'all'
+Requires-Dist: mkdocs-git-revision-date-localized-plugin (>=0.7.2) ; extra == 'all'
+Requires-Dist: mkdocs-git-authors-plugin (>=0.3.2) ; extra == 'all'
+Requires-Dist: mkdocs-table-reader-plugin (>=0.4.1) ; extra == 'all'
+Requires-Dist: mkdocs-enumerate-headings-plugin (>=0.4.3) ; extra == 'all'
+Requires-Dist: mkdocs-awesome-pages-plugin (>=2.4.0) ; extra == 'all'
+Requires-Dist: mkdocs-minify-plugin (>=0.3.0) ; extra == 'all'
+Requires-Dist: mknotebooks (>=0.6.2) ; extra == 'all'
+Requires-Dist: mkdocstrings (>=0.13.6) ; extra == 'all'
+Requires-Dist: mkdocs-print-site-plugin (>=0.8.2) ; extra == 'all'
+Requires-Dist: mkdocs-markdownextradata-plugin (>=0.1.9) ; extra == 'all'
+Provides-Extra: base
+Requires-Dist: numpy (>=1.19.2) ; extra == 'base'
+Requires-Dist: scikit-learn (>=0.23.2) ; extra == 'base'
+Requires-Dist: pandas ; extra == 'base'
+Requires-Dist: scipy ; extra == 'base'
+Requires-Dist: PyWavelets ; extra == 'base'
+
+[![PyPi Version](https://img.shields.io/pypi/pyversions/SPOEF)](#)
+[![PyPI](https://img.shields.io/pypi/v/SPOEF)](#)
+
+# SPOEF
+
+## Overview
+
+**SPOEF** is a Python package that lets you easily generate features with signal processing methods from transaction data.
+
+## Example Usage - Generating Features
+
+```python
+transaction_features_quarterly = feature_generation(
+    data=data[["name", "date", "transaction"]],
+    grouper="name",
+    combine_fill_method="transaction",
+    time_window='quarter',
+    list_featuretypes=["FourierComplete", "WaveletComplete"],
+    observation_length=1
+)
+```
+
+- [Minimal Working Example](https://janbargeman.github.io/SPOEF/tutorials/minimal_working_example.html)
+
+## Installation
+
+```bash
+pip install SPOEF
+```
+
+## Documentation
+
+The documentation can [be found here.](https://janbargeman.github.io/SPOEF/)
+
+
+
