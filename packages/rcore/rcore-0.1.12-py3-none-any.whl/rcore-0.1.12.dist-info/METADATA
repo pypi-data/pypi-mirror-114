@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: rcore
+Version: 0.1.12
+Summary: Ядро для приложений python. Сборник утилит.
+License: MIT
+Author: rocshers
+Author-email: prog.rocshers@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: pyyaml (==5.4.1)
+Requires-Dist: rlogging
+Description-Content-Type: text/markdown
+
+# rcore
+
+Ядро для приложений python. Сборник утилит.
+
