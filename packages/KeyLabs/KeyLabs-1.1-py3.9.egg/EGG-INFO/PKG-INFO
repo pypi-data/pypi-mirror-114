@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: KeyLabs
+Version: 1.1
+Summary: Api Wrapper for KeyLabs.cc
+Home-page: UNKNOWN
+Author: Psyro
+License: UNKNOWN
+Description: No Documentation now. Just a example for it on github https://github.com/Psyro770/KeyLabs-Python/blob/main/main.py
+Keywords: wrapper,apiwrapper,keylabs,auth,authsystem
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
