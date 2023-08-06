@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+src/pyChiaLogProcessor.py
+src/pyChiaLogProcessor.egg-info/PKG-INFO
+src/pyChiaLogProcessor.egg-info/SOURCES.txt
+src/pyChiaLogProcessor.egg-info/dependency_links.txt
+src/pyChiaLogProcessor.egg-info/requires.txt
+src/pyChiaLogProcessor.egg-info/top_level.txt
+src/pyChiaLogProcessor.egg-info/__pycache__/test_log.cpython-38-pytest-5.4.3.pyc
