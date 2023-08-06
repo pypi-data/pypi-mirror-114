@@ -1,0 +1,7 @@
+[console_scripts]
+get_works_for_activity = archive_ops.GetReadyWorksForStates:get_works_states_shell
+locate_archive = archive_ops.shell_ws:locate_archive
+log_dip = archive_ops.DipLog:dip_log_shell
+migrate_works = migrate_works.migrate_works:migrate_works_shell
+migrate_works.locker = migrate_works.MigrateLocks:migration_lock_control
+
