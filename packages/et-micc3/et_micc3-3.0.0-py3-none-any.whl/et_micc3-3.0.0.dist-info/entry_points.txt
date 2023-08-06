@@ -1,0 +1,3 @@
+[console_scripts]
+micc3=et_micc3:cli_micc3.main
+
