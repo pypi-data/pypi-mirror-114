@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+FITSxtractor/__init__.py
+FITSxtractor/cli.py
+FITSxtractor.egg-info/PKG-INFO
+FITSxtractor.egg-info/SOURCES.txt
+FITSxtractor.egg-info/dependency_links.txt
+FITSxtractor.egg-info/requires.txt
+FITSxtractor.egg-info/top_level.txt
