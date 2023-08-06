@@ -1,0 +1,10 @@
+README.md
+license
+setup.py
+bodytracking/__init__.py
+bodytracking.egg-info/PKG-INFO
+bodytracking.egg-info/SOURCES.txt
+bodytracking.egg-info/dependency_links.txt
+bodytracking.egg-info/not-zip-safe
+bodytracking.egg-info/requires.txt
+bodytracking.egg-info/top_level.txt
