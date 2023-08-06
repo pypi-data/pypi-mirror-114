@@ -1,0 +1,8 @@
+[console_scripts]
+alters = serverD.main:alter_conf
+get = serverD.main:get
+go = serverD.main:main
+opens = serverD.main:open_conf
+put = serverD.main:put
+updates = serverD.main:update_conf
+

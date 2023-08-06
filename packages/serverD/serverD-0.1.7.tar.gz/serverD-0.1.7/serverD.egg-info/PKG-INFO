@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: serverD
+Version: 0.1.7
+Summary: 快速的服务器登录, 上传, 下载
+Home-page: https://github.com/pansj66/serverD
+Author: shijiang Pan
+Author-email: 1377161366@qq.com
+License: MIT Licence
+Description: 快速的服务器登录, 上传, 下载
+Platform: all
