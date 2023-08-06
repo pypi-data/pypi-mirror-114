@@ -1,0 +1,3 @@
+[console_scripts]
+shortify = shortify.__main__:main
+

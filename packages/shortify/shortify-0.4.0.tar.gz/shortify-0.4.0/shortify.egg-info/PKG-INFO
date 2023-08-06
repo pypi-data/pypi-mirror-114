@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: shortify
+Version: 0.4.0
+Summary: A simple URL Shortener library with CLI support.
+Home-page: https://github.com/Dositan/shortify
+Author: Dositan
+Author-email: ozgdastan@gmail.com
+License: MIT License
+Description: <h1 align="center">
+            Shortify - shorten your URL
+        </h1>
+        
+        A simple URL shortening API wrapper library written in Python by Dositan.
+        
+        ## Supported services
+        1. [TinyURL](https://tinyurl.com)
+        2. [Git.io](https://git.io)
+        3. [Shrtco.de](https://shrtco.de)
+        4. [Is.gd](is.gd)
+        5. [Clck.ru](clck.ru)
+        
+        -----
+        
+        ## Installing
+        ```console
+        $ pip install shortify
+        
+        ---> 100%
+        ```
+        
+        After pressing enter, pip will install all the required packages for the project.
+        
+        </div>
+        
+        -----
+        
+        ## CLI usage
+        Like all CLIs, `shortify` supports `--help` flag.
+        ```console
+        $ shortify --help
+        
+        usage: shortify [-h] {tinyurl,git} url
+        
+        Shortify CLI!
+        
+        .....
+        ```
+        
+        Generating a shortened URL using git.io:
+        ```console
+        $ shortify git https://www.github.com/Dositan/Boribay/
+        
+        https://git.io/JBsPu
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8,<3.9
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
