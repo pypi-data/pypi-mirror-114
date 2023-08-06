@@ -1,0 +1,19 @@
+[run]
+concurrency = multiprocessing
+omit =
+    */tests/*
+    */migrations/*
+    **/node_modules/**
+    **/manage.py
+    */asgi.py
+    */wsgi.py
+    .venv*
+
+plugins =
+    django_coverage_plugin
+
+[report]
+skip_covered = True
+fail_under = 75
+sort = miss
+show_missing = True
