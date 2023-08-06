@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: mypdns
+Version: 1.0.3
+Summary: Name space reservation
+Home-page: https://mypdns.org/
+Author: spirillen
+Author-email: pdns@protonmail.com
+License: UNKNOWN
+Project-URL: Tracker, https://mypdns.org/python/mypdns/-/issues
+Project-URL: Source, https://mypdns.org/python/mypdns
+Keywords: dns,domain,IP,IPv4,IPv6,URL,WHOIS
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Development Status :: 7 - Inactive
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8.0, <4
+Description-Content-Type: text/markdown
+
+[![DL stat](https://img.shields.io/pypi/v/mypdns.png)](https://pypi.org/project/mypdns)
+[![Downloads Total](https://static.pepy.tech/personalized-badge/mypdns?period=total&units=none&left_color=black&right_color=brightgreen&left_text=Downloads%20Total)](https://pepy.tech/project/mypdns)
+[![Downloads Month](https://static.pepy.tech/personalized-badge/mypdns?period=month&units=none&left_color=black&right_color=brightgreen&left_text=Downloads%20Month)](https://pepy.tech/project/mypdns)
+[![Downloads Week](https://static.pepy.tech/personalized-badge/mypdns?period=week&units=none&left_color=black&right_color=brightgreen&left_text=Downloads%20Week)](https://pepy.tech/project/mypdns)
+[![My Privacy DNS Release](https://github.com/mypdns/mypdns/actions/workflows/master.yaml/badge.svg?branch=master)](https://github.com/mypdns/mypdns/actions/workflows/master.yaml)
+
+Namespace Reservation for the [mypdns.org](https://mypdns.org/python/mypdns) project
+
+
