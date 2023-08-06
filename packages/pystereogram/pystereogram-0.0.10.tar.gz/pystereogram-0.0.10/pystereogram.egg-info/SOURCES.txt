@@ -1,0 +1,13 @@
+LICENSE
+pyproject.toml
+setup.py
+autostereogram/__init__.py
+autostereogram/compute_line.c
+autostereogram/compute_line.pyx
+autostereogram/converter.py
+pystereogram.egg-info/PKG-INFO
+pystereogram.egg-info/SOURCES.txt
+pystereogram.egg-info/dependency_links.txt
+pystereogram.egg-info/not-zip-safe
+pystereogram.egg-info/requires.txt
+pystereogram.egg-info/top_level.txt
