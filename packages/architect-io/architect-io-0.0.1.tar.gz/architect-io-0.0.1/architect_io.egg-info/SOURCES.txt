@@ -1,0 +1,9 @@
+README.md
+setup.py
+architect/__init__.py
+architect_io.egg-info/PKG-INFO
+architect_io.egg-info/SOURCES.txt
+architect_io.egg-info/dependency_links.txt
+architect_io.egg-info/not-zip-safe
+architect_io.egg-info/requires.txt
+architect_io.egg-info/top_level.txt

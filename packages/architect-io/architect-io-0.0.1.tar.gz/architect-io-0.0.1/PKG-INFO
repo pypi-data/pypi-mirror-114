@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: architect-io
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/AhmadLabs/Architect
+Author: Hamza Ahmad
+Author-email: hamza.ahmad@me.com
+License: MIT
+Description: # Architect
+Keywords: python
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: dev
