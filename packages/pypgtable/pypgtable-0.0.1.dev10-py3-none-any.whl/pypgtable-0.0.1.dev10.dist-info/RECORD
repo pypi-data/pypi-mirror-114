@@ -1,0 +1,17 @@
+pypgtable/__init__.py,sha256=7puhXzST7sCdxDIAhHAR1PggXlS6u7FJmmLAa8KMKKo,134
+pypgtable/common.py,sha256=5BRESm1babO85IlEuIg98SCzNt1iWqCAodSdlcTSVIE,965
+pypgtable/database.py,sha256=1Uu9NN0ox4C-FoKqLGY8SeLiFwmUdLVp_AKt51TUxoA,14757
+pypgtable/raw_table.py,sha256=GC8bU46EJ5X0y3Lpj_Yn3SyNlW35LyP2bw-kz-nF2PE,30335
+pypgtable/table.py,sha256=4bpzphjertLYIh_VH3hZ4kowVB-jQAKjJsNRNNzdJJc,20081
+pypgtable/validators.py,sha256=zuEaswVeKhY4GwzNudaQbZXpinBtXpaCcNM30VX3s0s,6233
+pypgtable/formats/database_config_format.json,sha256=y7gB3kQ3RRWRZ_LmW4QY_U2x4rMYSvv8XIc284vzgWw,1130
+pypgtable/formats/raw_table_column_config_format.json,sha256=t9WmWZ9_ioWooeFasJ-fvpSwcQJi4LZw2GuO8NXdL0s,1359
+pypgtable/formats/raw_table_config_format.json,sha256=BT8fro9atGqLWBEUuTPMP_uta_TJmYMuvFXq-7Ajs30,3541
+pypgtable/utils/base_validator.py,sha256=esBcf-147kOHJoSCxfxNnzMPIoSi8b8Oo-6CKJQyJbc,2735
+pypgtable/utils/reference.py,sha256=8WP4k0dumMECjvC8fa0-kx8QfmWqsAPoSb6hp_2h5Zo,507
+pypgtable/utils/text_token.py,sha256=MfLYkjgrSdVUysi9G4A8EwZRNeao50eBcd0-0w7AR6s,2814
+pypgtable-0.0.1.dev10.dist-info/LICENSE.txt,sha256=_JPB94Q27YDSmKfeqH-R27vLFyRIN9eO4HPPLGOotAA,1071
+pypgtable-0.0.1.dev10.dist-info/METADATA,sha256=b4Ag3KPkx-gWz5pPG68h04gorZIvxIcpTkR_Rcw8vJ0,1725
+pypgtable-0.0.1.dev10.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pypgtable-0.0.1.dev10.dist-info/top_level.txt,sha256=_ULIG3njMHwLjMV0tTtlL3H307FdbAMNzaYlHmyf1rY,10
+pypgtable-0.0.1.dev10.dist-info/RECORD,,
