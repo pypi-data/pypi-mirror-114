@@ -1,0 +1,10 @@
+validate_bes_xml/__init__.py,sha256=rP0n3ifC_k7ZgVu2fkfgghfG8o18d09sv4v8HT3qZyQ,99
+validate_bes_xml/__main__.py,sha256=pwB99-ud9RGfCbGzvMh0Q5GtmjipveCfUCgKmgitCoc,191
+validate_bes_xml/validate_bes_xml.py,sha256=HS2RZAiTmvX-ptdN1UXvbu6GmUvogn54FCoL9rALEf4,5276
+validate_bes_xml/schemas/BES.xsd,sha256=gQIY8Ss0MLf9l6tvqI0b2WOSLjfRWs0vs_ZdBL3zA1g,42736
+validate_bes_xml/schemas/BESActionSettings.xsd,sha256=QBru3lw3KJaLmlGEmVUTGULA6arlFGap5lcjUgjclas,20099
+validate_bes_xml-1.0.1.dist-info/LICENSE,sha256=9-5oCl1zSShEZO-316AkcnCVuJStIHBbKxxotLMRPAk,1063
+validate_bes_xml-1.0.1.dist-info/METADATA,sha256=gGqY6BgTH7gGsYK3g2MOvkqDbUQFNNNhK6_AypZwv6I,643
+validate_bes_xml-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+validate_bes_xml-1.0.1.dist-info/top_level.txt,sha256=6DyWaCHsudx05TSICg5Mrxa76Cs7w9YNSxluU8OBTqU,17
+validate_bes_xml-1.0.1.dist-info/RECORD,,
