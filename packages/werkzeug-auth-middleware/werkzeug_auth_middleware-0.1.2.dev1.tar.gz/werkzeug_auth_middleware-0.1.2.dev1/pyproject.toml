@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "werkzeug_auth_middleware"
+version = "0.1.2dev1"
+description = ""
+authors = ["sorxcode <sorxcode@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+requests = "2.26.0"
+Werkzeug = "2.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

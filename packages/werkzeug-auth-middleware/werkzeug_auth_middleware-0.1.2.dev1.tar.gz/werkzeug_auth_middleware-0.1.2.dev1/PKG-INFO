@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: werkzeug-auth-middleware
+Version: 0.1.2.dev1
+Summary: 
+Author: sorxcode
+Author-email: sorxcode@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Werkzeug (==2.0.1)
+Requires-Dist: requests (==2.26.0)
