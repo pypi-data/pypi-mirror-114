@@ -1,0 +1,8 @@
+README.md
+setup.py
+parshnt/__init__.py
+parshnt/hello.py
+parshnt.egg-info/PKG-INFO
+parshnt.egg-info/SOURCES.txt
+parshnt.egg-info/dependency_links.txt
+parshnt.egg-info/top_level.txt
