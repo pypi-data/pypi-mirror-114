@@ -1,0 +1,7 @@
+[console_scripts]
+commonIDsearch = tdr.commonIDsearch:main
+makedark = tdr.makedark:main
+makeflat = tdr.makeflat:main
+reduce = tdr.reduce:main
+stackfits = tdr.stackfits:main
+

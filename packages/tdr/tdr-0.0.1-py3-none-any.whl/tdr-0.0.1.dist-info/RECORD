@@ -1,0 +1,14 @@
+tdr/__init__.py,sha256=FZk9hm7vBsK8G16pNugputbrrEciYqJc_XRAhTCcojI,46
+tdr/commonIDsearch.py,sha256=nG2NV1_RITB70bQZ8NiixAItrd0bj-4S5pLyzGNYkAc,1764
+tdr/makedark.py,sha256=tTbbvZECXp2EDY6FwYJsfRTxbxcrBlZtEFzB9ppIP4A,2090
+tdr/makedark_old.py,sha256=xWNgaLfljt5omHKw-Hr580QQ-3ndKhSCYMTNJ4re6GQ,1508
+tdr/makeflat.py,sha256=9PzZ5vDesFqw835K2BXyAp_C1OeDjOP8JYscF9rUSoY,2583
+tdr/mask_split.py,sha256=cNtXYPT_svdT1uo8tSZjF3vD_Szgkwd9UieKt-aTRAc,2942
+tdr/reduce.py,sha256=ExXU4w6T3covDKFEbR-YXHGiKDsmEPDaeT6d1yBlvfM,2636
+tdr/stackfits.py,sha256=7sWDkmnoDxU6HH-RnYxellYwM_RwHKaf3za_8QE7viA,2889
+tdr-0.0.1.dist-info/LICENCE,sha256=gv1hvozzSscwzYzsb9bXW0yeyixP4b67VqyEirnjUfk,1054
+tdr-0.0.1.dist-info/METADATA,sha256=L5ptP4Z5dzdhkaE2tWeZ968vvxjWNcWqlPp6sKTtXDA,5254
+tdr-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tdr-0.0.1.dist-info/entry_points.txt,sha256=ElUWBx2YGs1v9wXGZGJ9eO0fqF-834_3d97KV8m8vnc,174
+tdr-0.0.1.dist-info/top_level.txt,sha256=0ulVl9dO8l1XITMYcfqDn71BBb7MJcWUEfhYH7oxy0A,4
+tdr-0.0.1.dist-info/RECORD,,
