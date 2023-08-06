@@ -1,0 +1,3 @@
+[console_scripts]
+sl-cuttly = sl_cuttly.__main__:main
+

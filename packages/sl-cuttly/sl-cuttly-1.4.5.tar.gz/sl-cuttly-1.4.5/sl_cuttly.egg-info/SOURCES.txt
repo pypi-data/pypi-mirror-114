@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+sl_cuttly/__init__.py
+sl_cuttly/__main__.py
+sl_cuttly.egg-info/PKG-INFO
+sl_cuttly.egg-info/SOURCES.txt
+sl_cuttly.egg-info/dependency_links.txt
+sl_cuttly.egg-info/entry_points.txt
+sl_cuttly.egg-info/requires.txt
+sl_cuttly.egg-info/top_level.txt
