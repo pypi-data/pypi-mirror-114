@@ -1,0 +1,4 @@
+[console_scripts]
+sparseml.framework = sparseml.framework.info:_main
+sparseml.sparsification = sparseml.sparsification.info:_main
+
