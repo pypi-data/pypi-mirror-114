@@ -1,0 +1,6 @@
+README.md
+setup.py
+hello_world_larry_larios.egg-info/PKG-INFO
+hello_world_larry_larios.egg-info/SOURCES.txt
+hello_world_larry_larios.egg-info/dependency_links.txt
+hello_world_larry_larios.egg-info/top_level.txt
