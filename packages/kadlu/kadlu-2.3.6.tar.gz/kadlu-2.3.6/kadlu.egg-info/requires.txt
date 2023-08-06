@@ -1,0 +1,17 @@
+cdsapi
+cdsapi
+eccodes
+gsw
+imageio
+matplotlib
+mpl_scatter_density
+netcdf4
+numpy
+Pillow
+pygrib
+pyproj
+pyqt5
+requests
+scipy
+tqdm
+xarray
