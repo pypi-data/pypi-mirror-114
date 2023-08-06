@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+./py2dylib/__init__.py
+./py2dylib/__main__.py
+./py2dylib/package.py
+pycodepack.egg-info/PKG-INFO
+pycodepack.egg-info/SOURCES.txt
+pycodepack.egg-info/dependency_links.txt
+pycodepack.egg-info/requires.txt
+pycodepack.egg-info/top_level.txt
