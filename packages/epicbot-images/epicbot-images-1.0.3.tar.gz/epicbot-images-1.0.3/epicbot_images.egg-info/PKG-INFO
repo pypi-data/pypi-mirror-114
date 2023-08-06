@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: epicbot-images
+Version: 1.0.3
+Summary: An image manipulation module for EpicBot.
+Home-page: https://github.com/Nirlep5252/epicbot-images
+Author: Nirlep_5252_
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5.3
