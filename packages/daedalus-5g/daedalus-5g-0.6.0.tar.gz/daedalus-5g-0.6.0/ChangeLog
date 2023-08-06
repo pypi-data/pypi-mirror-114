@@ -1,0 +1,168 @@
+CHANGES
+=======
+
+v0.6.0
+------
+
+* release v0.6.0
+* update dovesnap; rename workflows
+* better naming of jobs and workflows
+* rename workflows
+* split up docker builds
+* fix path
+* use and build images for docker hub
+* yaml lint
+* use label instead of maintainer
+* Update precommit hook asottile/reorder\_python\_imports to v2.6.0
+
+v0.5.1
+------
+
+* release v0.5.1
+* lime -> limesdr
+
+v0.5.0
+------
+
+* release v0.5.0
+* workdir
+* Don't use pre-built freeDiameter certificates, use ones built locally in open5gs image
+* upgrade dovesnap to 0.22.2
+
+v0.4.0
+------
+
+* release v0.4.0
+* implement adding imsis
+* gnb needs to go to UPF directly
+* fragment friendly protectran ACL for GTP
+* add pre-commit and first run cleanup
+
+v0.3.0
+------
+
+* release v0.3.0
+* prb and earfcn configurable; lime + other sdrs
+* Upgrade to Open5GS 2.3.2
+
+v0.2.0
+------
+
+* release v0.2.0
+
+v0.1.5
+------
+
+* release v0.1.5
+
+v0.1.4
+------
+
+* release v0.1.4
+
+v0.1.3
+------
+
+* release v0.1.3
+
+v0.1.2
+------
+
+* release v0.1.2
+
+v0.1.1
+------
+
+* release v0.1.1
+* bad copy/pasta
+
+v0.1.0
+------
+
+* daedalus is taken
+* daedalus is taken
+* release v0.1.0
+* fix readme
+* update daedalus script to be a python package
+* basic fully functioning daedalus script
+* start to move startup script to python
+* slight restructure
+* min docker compose
+* \* Fix UERANSIM auth \* Fix Mongo env. \* UERANSIM needs explicit NSI/slice/SD config. \* UERANSIM internet connectivity. \* Move UERANSIM simulated RF, to RFN (same as srsRAN) \* SMF, needs to register with NRF, so AMF cant find it via NSSF
+* add 5G core components for gNB
+* add UERANSIM, restructure
+* don't need OVS ARP responder
+* o5gs 2.3.1
+* run in dev mode to create default admin account
+* Use OVS, to switch packets in the UPF between UEs and external networks
+* add help for startup.sh
+* no need for privileged
+* Fix incorrect upn references in ettus/lime eNBs. Remove privileged mode from Ettus
+* Remove privileged: true from UPF
+* move to latest dovesnap tag
+* pin dovesnap
+* Don't need to explicitly synchronize network deletes before shutdown
+* Fix incorrect getopts usage, overriding earfcn
+* wait for dovesnap to clean up before stopping dovesnap
+* avoid unnecessary CPN/ENB NAT
+* restrict S1AP and PFCP
+* Use enb network, cleanup ACLs
+* Allow overriding EARFCN by SDR, on command line
+* fix folder name
+* add options to split up the CPN/UPN/eNB
+* rename srslte to srsran
+* integrate limesdr
+* add stubs for limesdr
+* upgrade to Open5GS v2.3.0
+* host -> hname
+* refactor to use libconfig, so can run multiple SDRs with deconflicted config bladeRF does not need priv mode. unify upf and sgwu startup scripts. can set all/default redirect mode in sysctl so don't need nsenter workaround don't hardcode UPN IP
+* use .env
+* skip dovesnap always
+* Move open5gs Dockerfile
+* use common SDR rr.conf
+* scenario3 -> blue/5g
+* explicit mac setting no longer required
+* Move to experimental Open5GS TAP interface support
+* initialize scenario3, from scenario2, absent host[23]
+* Avoid arch hardcoded in diameter extension path
+* spacing, call uhd\_find\_devices on startup
+* bladerf driver doesn't handle empty args, must be not present
+* consolidate common eNB configs
+* Add Ettus support, consolidate srsLTE Dockerfile, different eNBs can be run together with different IDs
+* Upgrade Open5GS to 2.2.9
+* Don't need arch specific lib dir
+* Upgrade to official srsRAN release
+* fix for open5gs 2.2.8
+* Upgrade open5gs to 2.2.8
+* add scenario2 files
+* bladeRF
+* Upgrade to srsRAN 21.04 pre
+* \* Upgrade from Open5GS 2.2.0 to 2.2.7. \* Upgrade nodejs from 10 to 14. \* Simplify Open5GS config for IPv4
+* Upgrade schema, remove freediameter workaround
+* lighter build for enb, split UEs/enbs
+* workaround for bespoke freeDiameter pinning
+* add bladeRF enb
+* Add bladeRF config
+* build
+*  tighten bladeRF startup, do not use Soapy, prach\_freq\_offset = 1 needed for bladeRF ignored by zmq, doc n\_prbs
+* pin version for open5gs
+* use number of procs so it doesn't overwork the box
+* git clone
+* Separate bladeRF Dockerfile
+* Add bladeRF driver to srsLTE
+* Update README.md
+* Update README.md
+* Update README.md
+* Update README.md
+* Add files via upload
+* Create .gitkeep
+* Add confused
+* forgot to add
+* reorg
+* Add renovate.json
+* initial
+* Update README.md
+* Add files via upload
+* Create README.md
+* add copyright
+* Initial commit

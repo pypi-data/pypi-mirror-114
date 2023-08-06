@@ -1,0 +1,97 @@
+---
+# using version 2 for the gateway option with ipam
+version: '2'
+
+networks:
+  cpn:
+    external:
+      name: cpn
+
+services:
+  hss:
+    image: iqtlabs/open5gs:latest
+    depends_on:
+      - mongodb
+    container_name: hss
+    hostname: hss
+    environment:
+      - DB_HOST=mongodb
+      - 'DB_USER=${DB_USER}'
+      - 'DB_PASS=${DB_PASS}'
+    command:
+      - "/scripts/run_hss.sh"
+    volumes:
+      - "../configs:/usr/local/etc:z"
+    networks:
+      cpn:
+        ipv4_address: 192.168.26.10
+    restart: always
+    labels:
+      - "dovesnap.faucet.mirror=true"
+      - "daedalus.namespace=primary"
+  pcrf:
+    image: iqtlabs/open5gs:latest
+    depends_on:
+      - mongodb
+      - hss
+    container_name: pcrf
+    hostname: pcrf
+    environment:
+      - DB_HOST=mongodb
+      - 'DB_USER=${DB_USER}'
+      - 'DB_PASS=${DB_PASS}'
+    command:
+      - "/scripts/run_pcrf.sh"
+    volumes:
+      - "../configs:/usr/local/etc:z"
+    networks:
+      cpn:
+        ipv4_address: 192.168.26.50
+    labels:
+      - "dovesnap.faucet.mirror=true"
+      - "daedalus.namespace=primary"
+  mme:
+    image: iqtlabs/open5gs:latest
+    depends_on:
+      - hss
+    container_name: mme
+    hostname: mme
+    command:
+      - "/scripts/run_mme.sh"
+    volumes:
+      - "../configs:/usr/local/etc:z"
+    networks:
+      cpn:
+        ipv4_address: 192.168.26.20
+    labels:
+      - "dovesnap.faucet.mirror=true"
+      - "daedalus.namespace=primary"
+  smf:
+    image: iqtlabs/open5gs:latest
+    container_name: smf
+    hostname: smf
+    command:
+      - "/scripts/run_smf.sh"
+      - "${SMF}"
+    volumes:
+      - "../configs:/usr/local/etc:z"
+    networks:
+      cpn:
+        ipv4_address: 192.168.26.40
+    labels:
+      - "dovesnap.faucet.mirror=true"
+      - "daedalus.namespace=primary"
+  sgwc:
+    image: iqtlabs/open5gs:latest
+    container_name: sgwc
+    hostname: sgwc
+    command:
+      - "/scripts/run_sgwc.sh"
+    volumes:
+      - "../configs:/usr/local/etc:z"
+    networks:
+      cpn:
+        ipv4_address: 192.168.26.30
+    labels:
+      - "dovesnap.faucet.mirror=true"
+      - "daedalus.namespace=primary"
