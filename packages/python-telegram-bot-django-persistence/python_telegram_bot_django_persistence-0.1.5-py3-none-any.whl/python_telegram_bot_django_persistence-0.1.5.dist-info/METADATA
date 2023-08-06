@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: python-telegram-bot-django-persistence
+Version: 0.1.5
+Summary: Package to use Django ORM as persistence engine in Python Telegram Bot
+Home-page: https://github.com/GamePad64/python-telegram-bot-django-persistence
+License: MIT
+Author: Alexander Shishenko
+Author-email: alex@shishenko.com
+Requires-Python: >=3.9,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet
+Requires-Dist: Django (>=3.1)
+Requires-Dist: python-telegram-bot (>=13.7)
+Description-Content-Type: text/markdown
+
+# python-telegram-bot-django-persistence
+Package to use Django ORM as persistence engine in Python Telegram Bot
+
