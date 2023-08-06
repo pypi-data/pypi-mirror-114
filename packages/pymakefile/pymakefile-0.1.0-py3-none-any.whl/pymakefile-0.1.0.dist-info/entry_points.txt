@@ -1,0 +1,3 @@
+[console_scripts]
+pymake=pymakefile.pymakefile:main
+
