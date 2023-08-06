@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+jellybean/__init__.py
+jellybean/jellybean.py
+jellybean.egg-info/PKG-INFO
+jellybean.egg-info/SOURCES.txt
+jellybean.egg-info/dependency_links.txt
+jellybean.egg-info/not-zip-safe
+jellybean.egg-info/top_level.txt
