@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: pydspack
+Version: 0.0.1
+Summary: A basic library of Data Structures for learning
+Home-page: UNKNOWN
+Author: Mandar Parte
+Author-email: mandarparte1709@gmail.com
+License: MIT
+Description: PyDSpack is a Data structure library which contains:
+        - Linked List
+        - Doubly Linked List
+        - Circular Linked List
+        - Stack
+        - Queue
+        
+        Best for students learning and building Algorithms.
+        MIT Licenced
+Keywords: Data Structure,Algorithms,pyds
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
