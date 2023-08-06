@@ -1,0 +1,5 @@
+recursive-include medux/plugins/cashbook/static *
+recursive-include medux/plugins/cashbook/templates *
+recursive-include medux/plugins/cashbook/locale *
+recursive-include docs *
+global-exclude *.py[co]

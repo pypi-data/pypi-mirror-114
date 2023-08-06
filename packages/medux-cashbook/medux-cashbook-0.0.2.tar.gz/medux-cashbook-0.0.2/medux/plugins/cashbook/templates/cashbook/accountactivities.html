@@ -1,0 +1,61 @@
+{% extends 'cashbook/base.html' %}
+{% load i18n static %}
+{% block viewmode_title %}{% trans 'Account activities' %}{% endblock %}
+
+{% block content %}
+  <div id="cashbook_overview">
+    {#  {% if perms.cashbook.add_accountactivity %}#}
+    <form>
+      <div class="row">
+        <div class="col-lg-6 col-md-8 col-sm-12">
+          <div class="input-group input-group-sm">
+            <form>
+              <label class="me-2 form-label"
+                     for="amountInput">{% trans 'New activity:' %}</label>
+              <input name="input-amount" type="text" class="form-control" autofocus
+                     placeholder="{% trans 'Amount' %}">
+
+              <input name="input-comment" type="text" class="form-control"
+                     placeholder="{% trans 'Comment' %}">
+
+              <button class="input-group-text btn btn-primary"
+                data-reflex="click->Cashbook#add_amount">
+                {% trans 'Save' context "finance" %}
+              </button>
+              {% if error %}
+                <div class="invalid-feedback">{{ error }}</div>
+              {% endif %}
+            </form>
+          </div>
+        </div>
+      </div>
+    </form>
+    {#  {% endif %}#}
+
+    <div class="row">
+      <div class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+          <tr>
+            <th>{% trans 'Date' %}</th>
+            <th>{% trans 'E/A' %}</th>
+            <th>{% trans 'Comment' %}</th>
+            <th>{% trans 'Balance' %}</th>
+          </tr>
+          </thead>
+          <tbody>
+          {% for activity in object_list %}
+            <tr>
+              <td>{% ifchanged activity.timestamp|date %}
+                {{ activity.timestamp |date }}{% endifchanged %}</td>
+              <td {% if activity.amount.amount < 0 %}class="text-danger"{% endif %}>{{ activity.amount }}</td>
+              <td>{{ activity.comment | default_if_none:"" }}</td>
+              <td>{{ activity.balance }}</td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+{% endblock %}

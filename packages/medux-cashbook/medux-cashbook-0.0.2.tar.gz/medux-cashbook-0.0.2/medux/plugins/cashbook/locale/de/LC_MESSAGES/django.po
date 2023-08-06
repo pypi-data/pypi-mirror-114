@@ -1,0 +1,83 @@
+# MedUX - Open Source Electronic Medical Record - Translation.
+# Copyright (C) 2021 Christian González
+# This file is distributed under the same license as the medux package.
+# <christian.gonzalez@nerdocs.at>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-26 13:37+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Christian González <christian.gonzalez@nerdocs.at>\n"
+"Language-Team: de <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: medux/plugins/cashbook/apps.py:16 medux/plugins/cashbook/menus.py:14
+msgid "Cashbook"
+msgstr "Kassabuch"
+
+#: medux/plugins/cashbook/apps.py:20
+msgid "A simple Cashbook plugin"
+msgstr "Einfaches Kassabuch-Plugin"
+
+#: medux/plugins/cashbook/apps.py:21
+msgid "Base"
+msgstr "Basis"
+
+#: medux/plugins/cashbook/models.py:20
+#: medux/plugins/cashbook/templates/unicorn/accountactivity-list.html:34
+msgid "Balance"
+msgstr "Saldo"
+
+#: medux/plugins/cashbook/models.py:21
+msgid "Balances"
+msgstr "Saldos"
+
+#: medux/plugins/cashbook/models.py:36
+msgid "Account activity"
+msgstr "Kontoaktivität"
+
+#: medux/plugins/cashbook/models.py:37
+#: medux/plugins/cashbook/templates/cashbook/accountactivities.html:3
+msgid "Account activities"
+msgstr "Kontoaktivitäten"
+
+#: medux/plugins/cashbook/templates/cashbook/base.html:4
+#, fuzzy
+#| msgid "Cashbook"
+msgid "Medux - Cashbook"
+msgstr "Kassabuch"
+
+#: medux/plugins/cashbook/templates/unicorn/accountactivity-list.html:8
+#, fuzzy
+#| msgid "Account activity"
+msgid "New activity:"
+msgstr "Kontoaktivität"
+
+#: medux/plugins/cashbook/templates/unicorn/accountactivity-list.html:12
+msgid "Amount"
+msgstr "Summe"
+
+#: medux/plugins/cashbook/templates/unicorn/accountactivity-list.html:16
+#: medux/plugins/cashbook/templates/unicorn/accountactivity-list.html:33
+msgid "Comment"
+msgstr "Kommentar"
+
+#: medux/plugins/cashbook/templates/unicorn/accountactivity-list.html:19
+msgctxt "finance"
+msgid "Save"
+msgstr "Speichern"
+
+#: medux/plugins/cashbook/templates/unicorn/accountactivity-list.html:31
+msgid "Date"
+msgstr "Datum"
+
+#: medux/plugins/cashbook/templates/unicorn/accountactivity-list.html:32
+msgid "E/A"
+msgstr ""

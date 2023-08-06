@@ -1,0 +1,3 @@
+[medux.plugins]
+cashbook = medux.plugins.cashbook:apps.CashbookConfig
+

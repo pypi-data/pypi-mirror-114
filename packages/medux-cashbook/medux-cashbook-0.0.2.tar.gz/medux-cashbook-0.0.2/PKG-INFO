@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: medux-cashbook
+Version: 0.0.2
+Summary: "A simple Cashbook plugin for MedUX."
+Home-page: https://www.medux.at
+Author: Christian González
+Author-email: christian.gonzalez@nerdocs.at
+License: AGPL-3.0-or-later
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: JavaScript
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
+License-File: LICENSE.md
+
+Cashbook Plugin
+======================================
+
+This is a newly created plugin for MedUX.
+Please add some documentation here. 
+
+General
+-------
+
+MedUX modules are living in the ``medux.plugins`` setuptools entrypoint group.
+They are normal Django apps, but found and loaded dynamically during startup.
+As Django apps, they can have everything a "static" app also has:
+
+Medux Cashbook PluginConfig
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The app configuration is declared in the module's ``apps.py``. Set the plugin's metadata there in the PluginMeta class.
+
+
+Install
+^^^^^^^
+
+You can install this plugin locally by invoking `pip install -e .` in this folder, assuming you have activated your main project's virtualenv.
+
+Models
+^^^^^^
+
+Create your models as usual in ``models.py``, they will be included. Don't forget to run ``makemigrations`` and ``migrate`` afterwords.
+
+
+After each change regarding version number etc., run `python manage.py syncplugins`. This ensures your database is in sync with the plugins on disk.
+
+License
+^^^^^^^
+
+This plugin is licensed under the `GNU Affero General Public License v3 or later (AGPLv3+)`_
+
+
+_`GNU Affero General Public License v3 or later (AGPLv3+)`: https://www.gnu.org/licenses/agpl-3.0.txt
+
+
