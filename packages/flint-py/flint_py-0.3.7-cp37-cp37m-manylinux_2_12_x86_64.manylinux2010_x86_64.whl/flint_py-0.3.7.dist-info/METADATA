@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: flint-py
+Version: 0.3.7
+Summary: Repackage python-flint to include arb and flint as shared libraries
+Home-page: https://gitlab.com/alisianoi/flint-py
+Author: Fredrik Johansson
+Author-email: fredrik.johansson@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+flint-py
+========
+
+This is a repackaged version of [python-flint](https://github.com/fredrik-johansson/python-flint/) by Fredrik Johansson. The original package requires that the user first installs [Flint](http://flintlib.org/) and [Arb](http://arblib.org/), which in turn require `gmp` and `mpfr` to be installed as well. This sometimes is problematic because not every distribution has suitable packages of these libraries.
+
+The alternative is to prebuilt different versions of the required libraries and to ship them with the python package. This repository achieves exactly that goal by leveraging [PEP 513](https://www.python.org/dev/peps/pep-0513/) and the [manylinux project](https://github.com/pypa/manylinux).
+
+So, if you were planning to depend on `python-flint` and build the required dependencies by hand, you could try `flint-py` instead and see if it just works.
+
+How to build wheels?
+====================
+
+For the future maintainers of `flint-py`, here is a rough outline of the wheel build procedure:
+
+1. Select the desired versions of the `mpir`, `mpfr`, `flint` and `arb` libraries in the `ext` directory. Note that `mpir`, `mpfr` and `flint` are submodules, so you could check out any commit or tag that you might like. As for the `mpfr` library, please [download a release](https://www.mpfr.org/mpfr-current/#download) and manually commit it into git here.
+
+1. Build the docker image and run it as a container:
+
+    ``` bash
+    cd flint-py
+    docker build --tag flint-py .
+    docker run flint-py:latest
+    ```
+
+1. Find out the id of the container and copy the wheels out of it:
+
+    ``` bash
+    docker container ls -a #find the correct id
+    docker cp <container_id>:/flint-py/wheelhouse ./wheelhouse
+    ```
+
+1. At this point, the `./wheelhouse` directory on your local filesystem should contain the wheels you need, e.g.
+
+    ``` bash
+    ls ./wheelhouse
+    flint_py-0.3.4-cp27-cp27mu-manylinux1_x86_64.whl  flint_py-0.3.4-cp35-cp35m-manylinux1_x86_64.whl
+    flint_py-0.3.4-cp27-cp27m-manylinux1_x86_64.whl   flint_py-0.3.4-cp36-cp36m-manylinux1_x86_64.whl
+    flint_py-0.3.4-cp34-cp34m-manylinux1_x86_64.whl   flint_py-0.3.4-cp37-cp37m-manylinux1_x86_64.whl
+    ```
+
+1. Upload the wheels to `pypi`:
+
+    ``` bash
+    twine upload ./wheelhouse/*
+    ```
+
+Common pitfalls
+===============
+
+1. If you are trying to debug the compilation of C libraries under `ext`, please keep in mind that when you switch to docker builds, your build artifacts from the local filesystem *will* be copied into the image. This could break the docker build in unexpected ways. To avoid that, you could either carefully remove the artifacts before running docker or you could conduct local builds in a copy of the project.
+
+1. Cython extensions are not automatically rebuilt, which causes some problems for Python2.7. Currently, the `build_wheels.sh` script removes the extension artifacts each time before cython is asked to rebuild them in docker.
+
+1. If you are running Arch Linux and your docker container seems to crash with error code 139 for any command that you run, enable `vsyscall=emulate` for your kernel. See https://wiki.archlinux.org/index.php/Docker#Installation
+
+
