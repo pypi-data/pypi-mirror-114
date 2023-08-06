@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: zouqi
+Version: 1.0.9
+Summary: zouqi is a CLI starter similar to python-fire. It is purely built on argparse.
+Home-page: https://github.com/enhuiz/zouqi
+Author: enhuiz
+Author-email: niuzhe.nz@outlook.com
+License: UNKNOWN
+Description: # Zouqi: A Python CLI Starter Purely Built on argparse.
+        
+        Zouqi (『走起』) is a CLI starter similar to [python-fire]. It is purely built on argparse.
+        
+        ## Installation
+        
+        ```plain
+        pip install zouqi
+        ```
+        
+        ## Example
+        
+        Check `example.py` for a detailed example.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
