@@ -1,0 +1,6 @@
+pyicu>=2.6
+unidecode
+
+[testing]
+pytest
+pytest-cov
