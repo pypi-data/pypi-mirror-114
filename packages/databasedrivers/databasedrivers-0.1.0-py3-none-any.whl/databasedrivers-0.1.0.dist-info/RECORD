@@ -1,0 +1,14 @@
+databasedrivers/Configs/Classes/SQLConfigClass.py,sha256=BgoAgOt6DVa9eslowPoJ8q1VDIGmnZnjkIzKmEiDFMM,164
+databasedrivers/Configs/Classes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+databasedrivers/Configs/Dictonaries/SQLConfigDictionary.py,sha256=fZUc5LNkwrBa58S52mwDXcjDm_xA3Ca2vDjbaxt13HY,152
+databasedrivers/Configs/Dictonaries/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+databasedrivers/Configs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+databasedrivers/Connectors/MySQLConnector.py,sha256=WMRbJpwSMYf9xd7n5DEOzV-wiFgjpTsUZ3QzC8V50Kw,3524
+databasedrivers/Connectors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+databasedrivers/Interfaces/SQLInterface.py,sha256=-HznlHKP4EnWLUsnpTChKJSrRGiyfkwGPR3APNLw4tk,1378
+databasedrivers/Interfaces/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+databasedrivers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+databasedrivers-0.1.0.dist-info/LICENSE,sha256=xU6oaE_83hJvDtEjpJqi1xeGRbQ7K2Tb_VgcbiLt8_s,1070
+databasedrivers-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+databasedrivers-0.1.0.dist-info/METADATA,sha256=-4lbDmwMUw-YXCcrbomGashWibfulwCcWlSplhDwOHY,367
+databasedrivers-0.1.0.dist-info/RECORD,,
