@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: PyMusic-Player
+Version: 0.0.5
+Summary: A GUI Music Player with all the basic functions, which is developed using Tkinter
+Home-page: https://github.com/Spidy20/PyMusic_Player
+Author: Kushal Bhavsar
+License: UNKNOWN
+Keywords: music player python,music player tkinter,music player gui
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mutagen
+Requires-Dist: pygame
+Requires-Dist: ttkthemes
+
+# Music Player GUI using Python Tkinter
+
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)                 
+[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)   
+
+## Functionality of the Music Player
+
+- Better Looking GUI
+- Pause/Play Supported
+- Add/Delete songs from Playlist
+- Previous/Next song function
+- Time duration of song / next song displays
+- List of all the songs.
+- Adjust Volume
+- Automatically Playing in Queue
+- Play Selected song from Playlist
+
+## Usage
+
+- Make sure you have Python installed in your system.
+- Run Following command in the CMD.
+ ```
+  pip install PyMusic-Player
+  ```
+## Example
+
+ ```
+# test.py
+from PyMusic_Player import Music_Player_GUI
+
+## Make sure all the .MP3 songs besides in the folder
+song_dir = 'path/of/songs_dir'
+
+# If you want to give the Icon, make sure you have downloaded proper .ICO file.
+icon = 'your.ico'
+Music_Player_GUI(song_dir,icon)
+  ```
+
+## Run the following Script.
+ ```
+  python test.py
+ ```
+
+## Note 
+- I have tried to implement all the functionality, it might have some bugs also. Ignore that or please try to solve that bug.
+- It might possible, GUI looks different in your system, so it might be screen size problem, You can set the controls according to your screen. You need to modify `PyMusic_Player.py`
+- My AIM is to provide Music Player functionality and one Music Player GUI to OpenSource, so every user can use this in their application.
+
+
+
