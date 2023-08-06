@@ -1,0 +1,22 @@
+# -*- coding: utf-8; mode: conf; -*-
+
+[report]
+exclude_lines =
+    pragma: no cover
+    if __name__ == '__main__':
+    def __repr__
+    @nb\.vectorize
+    @nb\.njit
+    @nb\.jit
+ignore_errors = True
+
+[run]
+omit =
+    */pyprojstencil/__main__.py
+    */pyprojstencil/command_input.py
+    */pyprojstencil/errors.py
+    */pyprojstencil/native_parallel.py
+source = pyprojstencil
+
+[html]
+show_contexts = True

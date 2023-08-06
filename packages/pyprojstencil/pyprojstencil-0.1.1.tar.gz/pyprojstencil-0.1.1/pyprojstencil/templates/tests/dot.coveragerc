@@ -1,0 +1,22 @@
+# -*- coding: utf-8; mode: conf; -*-
+
+[report]
+exclude_lines =
+    pragma: no cover
+    if __name__ == '__main__':
+    def __repr__
+    @nb\.vectorize
+    @nb\.njit
+    @nb\.jit
+ignore_errors = True
+
+[run]
+omit =
+    */<PROJECT>/__main__.py
+    */<PROJECT>/command_input.py
+    */<PROJECT>/errors.py
+    */<PROJECT>/native_parallel.py
+source = <PROJECT>
+
+[html]
+show_contexts = True

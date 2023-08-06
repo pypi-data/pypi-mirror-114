@@ -1,0 +1,5 @@
+argcomplete
+psprint
+pyyaml
+GitPython
+virtualenv
