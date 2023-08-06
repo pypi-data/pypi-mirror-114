@@ -1,0 +1,3 @@
+[console_scripts]
+dependencmake=dependencmake.__main__:main
+
