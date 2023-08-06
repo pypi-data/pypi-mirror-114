@@ -1,0 +1,8 @@
+opentelemetry/instrumentation/fastapi/__init__.py,sha256=XdmK7uji8pYs9560w30Y455of7vLWlFwIi9U_76BwmE,4501
+opentelemetry/instrumentation/fastapi/package.py,sha256=7lr0CTtPC_qLJ96wmmpXoNj39WbtEDdID_QN9M1oVis,624
+opentelemetry/instrumentation/fastapi/version.py,sha256=GTJY8RDVdAShAWuYve1Op6ZMs9TI9ojbTlBhwaSCsmk,608
+opentelemetry_instrumentation_fastapi-0.23b2.dist-info/METADATA,sha256=SuRjRu1w2Lm1EgAmK-QKs40pvbJAZiGd2iakq-fYBXM,3084
+opentelemetry_instrumentation_fastapi-0.23b2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+opentelemetry_instrumentation_fastapi-0.23b2.dist-info/entry_points.txt,sha256=2HeD5Z5mn2sI-tIRZHKddWu9UUNBWg2aiTJA-KtpvX0,98
+opentelemetry_instrumentation_fastapi-0.23b2.dist-info/top_level.txt,sha256=5p97iTMneNm1LAKDalzEVpYhvPZsaqJZzdLuD_upSaQ,14
+opentelemetry_instrumentation_fastapi-0.23b2.dist-info/RECORD,,
