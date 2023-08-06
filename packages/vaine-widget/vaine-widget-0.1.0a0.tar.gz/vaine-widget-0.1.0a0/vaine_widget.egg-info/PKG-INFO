@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: vaine-widget
+Version: 0.1.0a0
+Summary: Visual Analytics for Natural Experiments
+Home-page: https://github.com/PNNL/vaine-widget
+Author: Dustin Arendt
+Author-email: dustin.arendt@pnnl.gov
+License: UNKNOWN
+Description: Visual Analytics for Natural Experiments
+Keywords: ipython,jupyter,widgets
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: IPython
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
