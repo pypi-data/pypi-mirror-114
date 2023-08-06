@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+anikimiapi/__init__.py
+anikimiapi/anikimi.py
+anikimiapi/data_classes.py
+anikimiapi/error_handlers.py
+anikimiapi.egg-info/PKG-INFO
+anikimiapi.egg-info/SOURCES.txt
+anikimiapi.egg-info/dependency_links.txt
+anikimiapi.egg-info/requires.txt
+anikimiapi.egg-info/top_level.txt
