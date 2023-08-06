@@ -1,0 +1,3 @@
+[pibooth]
+pibooth_qrcode = pibooth_qrcode
+
