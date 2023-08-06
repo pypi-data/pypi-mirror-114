@@ -1,0 +1,3 @@
+[console_scripts]
+daedalus = daedalus.__main__:main
+

@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: daedalus-5g
+Version: 0.6.0
+Summary: A tool for creating 4G/5G environments both with SDRs and virtual simulation to run experiments in
+Home-page: https://github.com/IQTLabs/Daedalus
+Author: cglewis
+Author-email: clewis@iqt.org
+License: Apache-2
+Platform: any
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Requires-Dist: PyInquirer (==1.0.3)
+Requires-Dist: docker (==5.0.0)
+Requires-Dist: pbr (==5.6.0)
+Requires-Dist: plumbum (==1.7.0)
+
+UNKNOWN
+
+

@@ -1,0 +1,158 @@
+---
+# using version 2 for the gateway option with ipam
+version: '2'
+
+volumes:
+  mongodb_data:
+
+networks:
+  cpn:
+    external:
+      name: cpn
+
+services:
+  nrf:
+    image: iqtlabs/open5gs:latest
+    container_name: nrf
+    hostname: nrf
+    command:
+      - "/scripts/run_nrf.sh"
+    volumes:
+      - "../configs:/usr/local/etc:z"
+    networks:
+      cpn:
+        ipv4_address: 192.168.26.61
+    labels:
+      - "dovesnap.faucet.mirror=true"
+      - "daedalus.namespace=primary"
+  ausf:
+    image: iqtlabs/open5gs:latest
+    container_name: ausf
+    hostname: ausf
+    depends_on:
+      - nrf
+    command:
+      - "/scripts/run_ausf.sh"
+    volumes:
+      - "../configs:/usr/local/etc:z"
+    networks:
+      cpn:
+        ipv4_address: 192.168.26.70
+    labels:
+      - "dovesnap.faucet.mirror=true"
+      - "daedalus.namespace=primary"
+  nssf:
+    image: iqtlabs/open5gs:latest
+    container_name: nssf
+    hostname: nssf
+    depends_on:
+      - nrf
+    command:
+      - "/scripts/run_nssf.sh"
+    volumes:
+      - "../configs:/usr/local/etc:z"
+    networks:
+      cpn:
+        ipv4_address: 192.168.26.92
+    labels:
+      - "dovesnap.faucet.mirror=true"
+      - "daedalus.namespace=primary"
+  udm:
+    image: iqtlabs/open5gs:latest
+    container_name: udm
+    hostname: udm
+    depends_on:
+      - nrf
+    command:
+      - "/scripts/run_udm.sh"
+    volumes:
+      - "../configs:/usr/local/etc:z"
+    networks:
+      cpn:
+        ipv4_address: 192.168.26.80
+    labels:
+      - "dovesnap.faucet.mirror=true"
+      - "daedalus.namespace=primary"
+  bsf:
+    image: iqtlabs/open5gs:latest
+    container_name: bsf
+    hostname: bsf
+    environment:
+      - DB_HOST=mongodb
+      - 'DB_USER=${DB_USER}'
+      - 'DB_PASS=${DB_PASS}'
+    depends_on:
+      - nrf
+      - mongodb
+    command:
+      - "/scripts/run_bsf.sh"
+    volumes:
+      - "../configs:/usr/local/etc:z"
+    networks:
+      cpn:
+        ipv4_address: 192.168.26.91
+    labels:
+      - "dovesnap.faucet.mirror=true"
+      - "daedalus.namespace=primary"
+  pcf:
+    image: iqtlabs/open5gs:latest
+    container_name: pcf
+    hostname: pcf
+    environment:
+      - DB_HOST=mongodb
+      - 'DB_USER=${DB_USER}'
+      - 'DB_PASS=${DB_PASS}'
+    depends_on:
+      - nrf
+      - mongodb
+    command:
+      - "/scripts/run_pcf.sh"
+    volumes:
+      - "../configs:/usr/local/etc:z"
+    networks:
+      cpn:
+        ipv4_address: 192.168.26.93
+    labels:
+      - "dovesnap.faucet.mirror=true"
+      - "daedalus.namespace=primary"
+  udr:
+    image: iqtlabs/open5gs:latest
+    container_name: udr
+    hostname: udr
+    environment:
+      - DB_HOST=mongodb
+      - 'DB_USER=${DB_USER}'
+      - 'DB_PASS=${DB_PASS}'
+    depends_on:
+      - nrf
+      - mongodb
+    command:
+      - "/scripts/run_udr.sh"
+    volumes:
+      - "../configs:/usr/local/etc:z"
+    networks:
+      cpn:
+        ipv4_address: 192.168.26.90
+    labels:
+      - "dovesnap.faucet.mirror=true"
+      - "daedalus.namespace=primary"
+  amf:
+    restart: always
+    image: iqtlabs/open5gs:latest
+    container_name: amf
+    hostname: amf
+    depends_on:
+      - nrf
+      - ausf
+      - udr
+      - udm
+    command:
+      - "/scripts/run_amf.sh"
+    volumes:
+      - "../configs:/usr/local/etc:z"
+    networks:
+      cpn:
+        ipv4_address: 192.168.26.60
+    labels:
+      - "dovesnap.faucet.mirror=true"
+      - "daedalus.namespace=primary"
