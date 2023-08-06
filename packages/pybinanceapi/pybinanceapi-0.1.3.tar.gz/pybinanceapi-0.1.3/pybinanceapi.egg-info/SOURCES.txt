@@ -1,0 +1,8 @@
+README.md
+setup.py
+pybinanceapi/__init__.py
+pybinanceapi/generated.py
+pybinanceapi.egg-info/PKG-INFO
+pybinanceapi.egg-info/SOURCES.txt
+pybinanceapi.egg-info/dependency_links.txt
+pybinanceapi.egg-info/top_level.txt
