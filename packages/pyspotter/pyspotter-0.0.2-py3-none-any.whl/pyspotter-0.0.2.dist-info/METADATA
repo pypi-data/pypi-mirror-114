@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: pyspotter
+Version: 0.0.2
+Summary: Simple CLI for SofarOcean API
+Home-page: UNKNOWN
+Author: Samapriya Roy
+Author-email: samapriya.roy@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: GIS
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.23.1)
+Requires-Dist: timezonefinder (>=5.2.0)
+Requires-Dist: pytz (>=2020.1)
+Requires-Dist: beautifulsoup4 (>=4.9.3)
+Requires-Dist: python-dateutil (>=2.8.2)
+
+# pyspotter
+
+[![CI pyspotter](https://github.com/samapriya/pyspotter/actions/workflows/package_ci.yml/badge.svg)](https://github.com/samapriya/pyspotter/actions/workflows/package_ci.yml)
+
+Simple CLI for SofarOcean API
+
+
+## Changelog
+
+#### v0.0.2
+- added time zone parser from spotter lat long
+- now prints UTC and local time for spotter
+- pretty prints output
+
+
