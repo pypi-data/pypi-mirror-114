@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pyreality/__init__.py
+src/pyreality/pyreality.py
+src/pyreality.egg-info/PKG-INFO
+src/pyreality.egg-info/SOURCES.txt
+src/pyreality.egg-info/dependency_links.txt
+src/pyreality.egg-info/top_level.txt
