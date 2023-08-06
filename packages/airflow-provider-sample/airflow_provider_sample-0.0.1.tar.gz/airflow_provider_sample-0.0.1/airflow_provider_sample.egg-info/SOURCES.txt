@@ -1,0 +1,14 @@
+README.md
+setup.py
+airflow_provider_sample.egg-info/PKG-INFO
+airflow_provider_sample.egg-info/SOURCES.txt
+airflow_provider_sample.egg-info/dependency_links.txt
+airflow_provider_sample.egg-info/entry_points.txt
+airflow_provider_sample.egg-info/top_level.txt
+sample_provider/__init__.py
+sample_provider/hooks/__init__.py
+sample_provider/hooks/sample_hook.py
+sample_provider/operators/__init__.py
+sample_provider/operators/sample_operator.py
+sample_provider/sensors/__init__.py
+sample_provider/sensors/sample_sensor.py
