@@ -1,0 +1,13 @@
+koreanbots/__init__.py,sha256=5mdIRmaCZJLdqTBbpc4g5vktDnXSCxafmO9A5FWi3q8,504
+koreanbots/abc.py,sha256=K_Bv3fDpCYXaqA7fD00QQWdtQkmIT5dCifGRs4hXAxo,534
+koreanbots/client.py,sha256=V00uBmNuRW8LdfdEzqWJitX2CDIWVGMfpvKTgFmwX_0,5749
+koreanbots/decorator.py,sha256=qWWBwHGUJ_6dFD_uK7A9SaQDTpuk59ybIA9XgxIftz0,1738
+koreanbots/errors.py,sha256=DrpNRVPVgWefVL8CSXxPhVDiOuiKfr4AXzujuO0U4hU,802
+koreanbots/http.py,sha256=Pn48AUUUgcCpjG56GLBcexzZpDA83BTOm9GC5FjQaT4,7612
+koreanbots/model.py,sha256=SgYoFagg0gHPZCiI_W-TGXcvaVQ8Q7rFUmpRN1uBEr0,9991
+koreanbots/typing.py,sha256=AaVim2MKa8ViqjgXcWMegKN8gqifWc-A_SNO-l55IGU,802
+koreanbots-1.1.1.dist-info/LICENSE,sha256=R3KnCSHSLeli7m43yAe9U91Z87PvdMbUH4nfhEosI1U,1071
+koreanbots-1.1.1.dist-info/METADATA,sha256=pUKSZcBUGwJAKHPIcqInEIIR6nSsUJ4bHrUJQ6bG3a4,1332
+koreanbots-1.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+koreanbots-1.1.1.dist-info/top_level.txt,sha256=KJD9zAUhdhM8kCaAgm_ItQNCMIRwJ6-p8CutHjALyw8,11
+koreanbots-1.1.1.dist-info/RECORD,,
