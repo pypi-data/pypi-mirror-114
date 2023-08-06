@@ -1,0 +1,8 @@
+setup.py
+kinortho/__init__.py
+kinortho/kinortho.py
+kinortho.egg-info/PKG-INFO
+kinortho.egg-info/SOURCES.txt
+kinortho.egg-info/dependency_links.txt
+kinortho.egg-info/entry_points.txt
+kinortho.egg-info/top_level.txt
