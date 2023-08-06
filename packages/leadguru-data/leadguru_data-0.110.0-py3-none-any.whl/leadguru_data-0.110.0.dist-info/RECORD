@@ -1,0 +1,7 @@
+lgt_data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lgt_data/model.py,sha256=hKD5TrS3SKEn1vvoilfh7_ffdBYt9sNfitQze4S91tk,12554
+lgt_data/mongo_repository.py,sha256=bBQaRm33ofh8rxwIngzSHNP3KaKBc_sF9L96pPLVmjw,30469
+leadguru_data-0.110.0.dist-info/METADATA,sha256=Jst5c1dACFaazRkYRBvOT1J9MAd_QJb3s0eJ_OB51J8,285
+leadguru_data-0.110.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+leadguru_data-0.110.0.dist-info/top_level.txt,sha256=3sLN_pCEpYWyB-AI0kZhkAfTfV9lP8xeyX00XzTmg28,9
+leadguru_data-0.110.0.dist-info/RECORD,,
