@@ -1,0 +1,9 @@
+textrl/__init__.py,sha256=a9YC2Cg8xposJrNrL21ilDSNhwqDjxhC0bMdTuJH9M4,77
+textrl/actor.py,sha256=Tr4QFxwASjMrWqz2XGU0tyL7OG6MsGOrBcCiKOKqaCE,2104
+textrl/dump.py,sha256=6lqovUpaLofgqmp0c464XRm8ItpBR970QPBqszXMkM4,1140
+textrl/environment.py,sha256=G6Aly461SRoawrpvN4SB_Wc-WMdnpKcyADQrn0JdcaE,3066
+textrl-0.1.0.dist-info/METADATA,sha256=qNXCkth66rc9QCTn8ON8LBTXnzn7TKoN2zfBj9ZDu0k,3790
+textrl-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+textrl-0.1.0.dist-info/entry_points.txt,sha256=suEfq_9Z3inOJWIudQ_8tVHOIuP5wZwank4LZAHYbGY,50
+textrl-0.1.0.dist-info/top_level.txt,sha256=FwmC_VCoI3wk6Oix5GcHgLD756ZL1qqrCoO28eGZ71I,7
+textrl-0.1.0.dist-info/RECORD,,
