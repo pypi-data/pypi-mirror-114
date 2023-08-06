@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pyswag.egg-info/PKG-INFO
+pyswag.egg-info/SOURCES.txt
+pyswag.egg-info/dependency_links.txt
+pyswag.egg-info/entry_points.txt
+pyswag.egg-info/requires.txt
+pyswag.egg-info/top_level.txt
