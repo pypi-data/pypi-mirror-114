@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: th2-grpc-act-uiframework-win-demo
+Version: 1.1.0.dev1082928119
+Summary: th2_grpc_act_uiframework_win_demo
+Home-page: https://github.com/th2-net/th2-grpc-act-uiframework-win-demo
+Author: TH2-devs
+Author-email: th2-devs@exactprosystems.com
+License: Apache License 2.0
+Description: ## th2-grpc-act-ui-framework-demo
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

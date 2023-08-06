@@ -1,0 +1,95 @@
+/*
+ * Copyright 2020-2021 Exactpro (Exactpro Systems Limited)
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+syntax = "proto3";
+
+import "th2_grpc_hand/rhbatch.proto";
+import "th2_grpc_common/common.proto";
+import "google/protobuf/empty.proto";
+
+option java_multiple_files = true;
+option java_package = "com.exactpro.th2.uiframework.demo.win.grpc";
+
+service UIFrameworkAct {
+  rpc register(RhTargetServer) returns (RhSessionID) {}
+  rpc unregister(RhSessionID) returns (google.protobuf.Empty) {}
+  rpc openApplication(OpenApplicationRequest) returns (ActResponse) {}
+  rpc closeApplication(BaseMessage) returns (ActResponse) {}
+  rpc initConnection(InitConnectionRequest) returns (ActResponse) {}
+  rpc closeConnection(BaseMessage) returns (ActResponse) {}
+  rpc sendNewOrderSingle(SendNewOrderSingleRequest) returns (ActResponse) {}
+  rpc extractLastOrderDetails(ExtractLastOrderDetailsRequest) returns (ActResponse) {}
+  rpc extractLastSystemMessage(BaseMessage) returns (ActResponse) {}
+}
+
+message BaseMessage {
+  RhSessionID sessionId = 1;
+  EventID parentEventId = 2;
+}
+
+message OpenApplicationRequest {
+  BaseMessage base = 1;
+  string workDir = 2;
+  string appFile = 3;
+}
+
+message InitConnectionRequest {
+  message SessionSettings {
+    string senderCompId = 1;
+    string targetCompId = 2;
+    string inMsgSeqNo = 3;
+    string outMsgSeqNo = 4;
+    string hearthBeatInterval = 6;
+    string fixVersion = 7;
+    bool resetSession = 8;
+  }
+  
+  BaseMessage base = 1;
+  SessionSettings sessionSettings = 2;
+  string host = 3;
+  string port = 4;
+}
+
+message SendNewOrderSingleRequest {
+  message Tags {
+    string tagNumber = 1;
+    string tagValue = 2;
+  }
+  
+  BaseMessage base = 1;
+  repeated Tags tags = 2;
+}
+
+message ExtractLastOrderDetailsRequest {
+  BaseMessage base = 1;
+  repeated string extractionFields = 2;
+}
+
+message ActResponse {
+  enum ExecutionStatus {
+    SUCCESS = 0; 
+    ACT_ERROR = 1;
+    HAND_ERROR = 2;
+    COMPILE_ERROR = 3;
+    EXECUTION_ERROR = 4;
+  }
+
+  RhSessionID sessionID = 1;
+  ExecutionStatus scriptStatus = 2;
+  string statusInfo = 3;
+  string errorInfo = 4;
+  map<string, string> data = 5;
+}
