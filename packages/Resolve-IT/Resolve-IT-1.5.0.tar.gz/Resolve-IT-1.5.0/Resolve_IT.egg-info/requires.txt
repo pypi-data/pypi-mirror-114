@@ -1,0 +1,9 @@
+stackapi
+requests
+beautifulsoup4
+lxml
+urwid
+dataclasses
+colorama
+pyfiglet
+clanimate
