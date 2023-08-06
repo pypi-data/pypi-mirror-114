@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+caafinder/__init__.py
+caafinder/operating.py
+caafinder/transformation.py
+intting.egg-info/PKG-INFO
+intting.egg-info/SOURCES.txt
+intting.egg-info/dependency_links.txt
+intting.egg-info/top_level.txt
