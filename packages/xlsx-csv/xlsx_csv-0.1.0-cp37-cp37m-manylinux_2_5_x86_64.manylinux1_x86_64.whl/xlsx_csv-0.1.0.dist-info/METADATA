@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: xlsx-csv
+Version: 0.1.0
+Classifier: Programming Language :: Python
+Keywords: xlsx,csv
+Author: Vivekanandan Muthaiyan<vivekmuthu1910@gmail.com>
+Author-email: Vivekanandan Muthaiyan<vivekmuthu1910@gmail.com>
+License: MIT
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/vivekmuthu1910/xlsx-csv
+
+# A Fast XLSX to CSV Converter
+## Installation
+```sh
+pip install xlsx_csv
+```
+
+### Usage
+```py
+import xlsx_csv
+xlsx_csv.xlsx2csv("path/to/xlsx.file", "SheetName")
+```
+It will create a "path/to/xlsx.csv" file.
