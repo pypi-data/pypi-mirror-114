@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: simplepypkgtest
+Version: 0.0.2
+Summary: A simple python pkg for testing.
+Home-page: https://github.com/tetsuzawa/simplepypkgtest
+Author: tetsuzawa <tetsu.takizawa5@gmail.com>
+Author-email: tetsu.takizawa5@gmail.com
+License: MIT
+Project-URL: Source Code, https://github.com/tetsuzawa/simplepypkgtest
+Project-URL: Bug Tracker, https://github.com/tetsuzawa/simplepypkgtest
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

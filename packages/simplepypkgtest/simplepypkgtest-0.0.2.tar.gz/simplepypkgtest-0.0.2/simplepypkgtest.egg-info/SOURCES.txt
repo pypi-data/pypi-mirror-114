@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.cfg
+setup.py
+versioneer.py
+simplepypkgtest/__init__.py
+simplepypkgtest/_version.py
+simplepypkgtest/calc.py
+simplepypkgtest.egg-info/PKG-INFO
+simplepypkgtest.egg-info/SOURCES.txt
+simplepypkgtest.egg-info/dependency_links.txt
+simplepypkgtest.egg-info/top_level.txt
