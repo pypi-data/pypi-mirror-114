@@ -1,0 +1,10 @@
+setup.py
+lhdis/Binomialdistribution.py
+lhdis/Gaussiandistribution.py
+lhdis/Generaldistribution.py
+lhdis/__init__.py
+lhdis.egg-info/PKG-INFO
+lhdis.egg-info/SOURCES.txt
+lhdis.egg-info/dependency_links.txt
+lhdis.egg-info/not-zip-safe
+lhdis.egg-info/top_level.txt
