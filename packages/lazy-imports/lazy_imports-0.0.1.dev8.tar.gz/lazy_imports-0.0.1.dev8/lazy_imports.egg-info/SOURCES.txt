@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+THIRD-PARTY-NOTICES
+pyproject.toml
+setup.cfg
+setup.py
+lazy_imports/__init__.py
+lazy_imports/lazy_imports.py
+lazy_imports/version.py
+lazy_imports.egg-info/PKG-INFO
+lazy_imports.egg-info/SOURCES.txt
+lazy_imports.egg-info/dependency_links.txt
+lazy_imports.egg-info/requires.txt
+lazy_imports.egg-info/top_level.txt
