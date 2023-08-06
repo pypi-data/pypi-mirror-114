@@ -1,0 +1,14 @@
+LICENSE
+setup.py
+Fryday/Fryday.py
+Fryday/__init__.py
+Fryday/Database/__init__.py
+Fryday/Database/Documents/__init__.py
+Fryday/Database/Instagram/__init__.py
+Fryday/Database/Youtube/__init__.py
+Fryday/Database/screenshots/__init__.py
+fridayAI.egg-info/PKG-INFO
+fridayAI.egg-info/SOURCES.txt
+fridayAI.egg-info/dependency_links.txt
+fridayAI.egg-info/requires.txt
+fridayAI.egg-info/top_level.txt
