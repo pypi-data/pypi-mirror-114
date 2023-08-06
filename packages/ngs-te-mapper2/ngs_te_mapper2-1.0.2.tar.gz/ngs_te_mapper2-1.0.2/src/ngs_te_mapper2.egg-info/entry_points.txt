@@ -1,0 +1,3 @@
+[console_scripts]
+ngs_te_mapper2 = ngs_te_mapper2.ngs_te_mapper2:main
+
