@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: connecty
+Version: 1.2.1
+Summary: Discord.py bot to connect channels across servers
+Home-page: https://discord.gg/fcZBB2v
+Author: Znunu
+License: UNKNOWN
+Description: # Connecty
+        
+        ### Install Python
+        Get the installer [here](https://www.python.org/downloads/).
+        Although you installed python, you will not run python directly, but use the cmd
+        
+        ### Install Connecty
+        Run this command in cmd/terminal NOT in python (installing python added the `pip` command)
+        ```
+        pip install connecty
+        ```
+        
+        ### Create a config file
+        Save a new text file with your config.
+        The file must be in the .ini format and contain your token and all your connections.
+         ```ini
+        [BOT]
+        token = tokengoeshere
+        
+        [my_connection_1]
+        channels = 123456789 123456789 123456789
+        
+        [my_connection_2]
+        channels = 123456789 123456789 123456789
+        ```
+        The first section should be called `[BOT]` and contain your token.
+        Each subsequent section is a connection.
+        The exact name doesn't matter so name them something memorable.
+        
+        ### Run the bot
+        Run this command in cmd/terminal (installing connecty added the `connecty` command)
+         ```
+        connecty path/to/config.ini
+         ```
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
