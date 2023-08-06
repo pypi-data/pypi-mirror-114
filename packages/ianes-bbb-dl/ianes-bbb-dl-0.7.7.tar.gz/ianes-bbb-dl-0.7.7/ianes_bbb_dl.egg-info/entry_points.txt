@@ -1,0 +1,3 @@
+[console_scripts]
+ianes-bbb-dl = bbb_dl.main:main
+
