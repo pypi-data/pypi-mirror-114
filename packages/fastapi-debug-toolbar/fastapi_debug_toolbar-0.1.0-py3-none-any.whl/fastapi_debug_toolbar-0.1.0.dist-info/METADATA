@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: fastapi-debug-toolbar
+Version: 0.1.0
+Summary: A debug toolbar for FastAPI.
+Home-page: https://github.com/mongkok/fastapi-debug-toolbar
+License: BSD
+Keywords: fastapi,debug,profiling
+Author: Dani
+Author-email: dani@domake.io
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Dist: Jinja2 (>=2.9)
+Requires-Dist: aiofiles (>=0.2.1)
+Requires-Dist: fastapi (>=0.62.0)
+Requires-Dist: pyinstrument (>=3.0.0)
+Requires-Dist: sqlparse (>=0.2.0)
+Project-URL: Documentation, https://fastapi-debug-toolbar.domake.io
+Project-URL: Repository, https://github.com/mongkok/fastapi-debug-toolbar
+Description-Content-Type: text/markdown
+
+# ![FastAPI](https://raw.githubusercontent.com/mongkok/fastapi-debug-toolbar/main/debug_toolbar/statics/img/icon-green.svg) Debug Toolbar
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/5514990/127749737-1a2b5ce7-a191-4f8b-96e4-fe94e0a08f6f.gif" alt="FastAPI Debug Toolbar">
+</p>
+<p align="center">
+    <em>🐞A debug toolbar for FastAPI based on the original django-debug-toolbar.🐞</em>
+    <br><em><b>Swagger UI</b> & <b>GraphQL</b> are supported.</em>
+</p>
+<p align="center">
+<a href="https://github.com/mongkok/fastapi-debug-toolbar/actions">
+    <img src="https://github.com/mongkok/fastapi-debug-toolbar/actions/workflows/test-suite.yml/badge.svg" alt="Test">
+</a>
+<a href="https://codecov.io/gh/mongkok/fastapi-debug-toolbar">
+    <img src="https://img.shields.io/codecov/c/github/mongkok/fastapi-debug-toolbar?color=%2334D058" alt="Coverage">
+</a>
+<a href="https://www.codacy.com/gh/mongkok/fastapi-debug-toolbar/dashboard">
+    <img src="https://app.codacy.com/project/badge/Grade/e9d8ba3973264424a3296016063b4ab5" alt="Codacy">
+</a>
+<a href="https://pypi.org/project/fastapi-debug-toolbar">
+    <img src="https://img.shields.io/pypi/v/fastapi-debug-toolbar" alt="Package version">
+</a>
+
+---
+
+**Documentation**: [https://fastapi-debug-toolbar.domake.io](https://fastapi-debug-toolbar.domake.io)
+
+---
+
+## Installation
+
+```sh
+pip install fastapi-debug-toolbar
+```
+
+## Quickstart
+
+Add `DebugToolbarMiddleware` middleware to your FastAPI application:
+
+```py
+from debug_toolbar.middleware import DebugToolbarMiddleware
+from fastapi import FastAPI
+
+app = FastAPI(debug=True)
+app.add_middleware(DebugToolbarMiddleware)
+```
+
+## SQLAlchemy
+
+Please make sure to use the *"Dependency Injection"* as described in the [FastAPI docs](https://fastapi.tiangolo.com/tutorial/sql-databases/#create-a-dependency) and add the SQLAlchemy panel to the argument list of the Debug Toolbar middleware:
+
+```py
+app.add_middleware(
+    DebugToolbarMiddleware,
+    panels=["debug_toolbar.panels.sqlalchemy.SQLAlchemyPanel"],
+)
+```
+
