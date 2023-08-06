@@ -1,0 +1,6 @@
+[console_scripts]
+pymsys = pymsys.scripts:pymsys
+
+[msys.modules]
+example = pymsys.nodes.example:example
+
