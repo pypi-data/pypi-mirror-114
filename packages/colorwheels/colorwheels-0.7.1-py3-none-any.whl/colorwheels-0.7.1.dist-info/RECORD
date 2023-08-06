@@ -1,0 +1,12 @@
+colorwheels/__init__.py,sha256=29Rtsx78G9juI4FuOiLJb2L0CVymOoLzZK7FHQXf8b4,249
+colorwheels/color_item.py,sha256=MTIouovW87TxTI6qNy7h3MNWQ8llAVQO_x2vIAgbh3Q,2752
+colorwheels/colorwheels.py,sha256=PhavGbWR434CdbVELKTYDyELDwG5aCsye-eVwFV6Ylc,6271
+colorwheels/colorwheels_config.py,sha256=xuaVLS3YmED8KX48TMi-1s1H32gCMA9vxLdgfEBS9hk,5659
+colorwheels/config.py,sha256=Nlrw4f5bikD3scbq_yi1tsg6DTZsrwwQwCG6xtykYkU,219
+colorwheels/singleton.py,sha256=kKscKICeG2c5-Ao1ldc0R2X_oWfH8Q9wuEVluagAieI,687
+colorwheels/wheel_item.py,sha256=BjtoJZOkRW8DCYPRyPgVX8XDxxydZSApMYtLD9REJWo,1939
+colorwheels-0.7.1.dist-info/LICENSE,sha256=AYlUkv89TPPYEJrEsaJvcVTjcfUNKLQ4Eqfsr6XwhCA,1120
+colorwheels-0.7.1.dist-info/METADATA,sha256=bxn3VH_jk7EkPO6kBJLcwu-WYKgTJbEkD9bes3HCEEI,2174
+colorwheels-0.7.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+colorwheels-0.7.1.dist-info/top_level.txt,sha256=OCdf48_B-ivz6GKjXA5UERa3vyPSS5QTOgJN2kURdMM,12
+colorwheels-0.7.1.dist-info/RECORD,,
