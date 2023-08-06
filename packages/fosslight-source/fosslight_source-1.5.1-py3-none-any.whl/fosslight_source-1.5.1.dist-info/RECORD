@@ -1,0 +1,11 @@
+fosslight_source/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fosslight_source/_help.py,sha256=Tt2aGOFq0Tjq41QHI4M1uGjY7NdWPpa9zNv_IoBvH_A,1614
+fosslight_source/_parsing_scancode_file_item.py,sha256=ASuISJAXhvw39FHoCox5BQ66-GcC9GN_AkiPvBEuhVA,7888
+fosslight_source/convert_scancode.py,sha256=bjiHHHvQKOdK24Ens-qXN5EhOIS3kur1PwdPO3wBt5g,4555
+fosslight_source/run_scancode.py,sha256=DnyaFyzAXEcsGbh28-1vI0WuEf7la6z3CHl7iujJrbw,5349
+fosslight_source-1.5.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fosslight_source-1.5.1.dist-info/METADATA,sha256=JW2Zl95sJ1NZkq99mZGiGGtAXfilXvo3nw34OkvtvuY,2877
+fosslight_source-1.5.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fosslight_source-1.5.1.dist-info/entry_points.txt,sha256=pZZWkvrIMzBxZS36nMP3h44MgYMHohGCzRTrPozFgVQ,240
+fosslight_source-1.5.1.dist-info/top_level.txt,sha256=C2vw-0OIent84Vq-UEk1gt_kK1EL8dIItzBzp3WNyA4,17
+fosslight_source-1.5.1.dist-info/RECORD,,
