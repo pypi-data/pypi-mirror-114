@@ -1,0 +1,3 @@
+[console_scripts]
+sina = sina.cli.driver:main
+
