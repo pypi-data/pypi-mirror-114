@@ -1,0 +1,3 @@
+[console_scripts]
+easy-automation = easy_automation.utils.command_parser:command_parser
+

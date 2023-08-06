@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: easy-automation-test
+Version: 0.0.2
+Summary: Easy to create a web, mobile or api automation test project
+Home-page: https://github.com/zhangjiapeng23/easy_automation_test
+Author: jameszhang
+Author-email: 18373230129@163.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/zhangjiapeng23/easy_automation_test/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.26.0)
+Requires-Dist: selenium (>=3.141.0)
+Requires-Dist: allure-pytest (>=2.9.43)
+Requires-Dist: PyYAML (>=5.4.1)
+Requires-Dist: Faker (>=8.10.1)
+
+UNKNOWN
+
