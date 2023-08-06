@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: motionSegmentation
+Version: 2.8.5
+Summary: Explicit spatio-temporal regularization of motion tracking.
+Home-page: https://github.com/WeiXuanChan/motionSegmentation
+Author: Wei Xuan Chan
+Author-email: w.x.chan1986@gmail.com
+License: MIT
+Download-URL: https://github.com/WeiXuanChan/motionSegmentation/archive/v2.8.5.tar.gz
+Keywords: explicit,motion,regularization
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: numpy
+Requires-Dist: autoD
+Requires-Dist: scipy
+Requires-Dist: trimesh
+Requires-Dist: medImgProc
+Requires-Dist: nfft
+
+UNKNOWN
+
+

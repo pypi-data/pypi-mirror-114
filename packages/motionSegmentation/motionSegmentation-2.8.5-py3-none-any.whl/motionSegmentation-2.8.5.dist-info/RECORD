@@ -1,0 +1,10 @@
+motionSegmentation/BsplineFourier.py,sha256=qK7LikRnkZouSJIkqEY2sUGnX6f0Bb2qxi84PO8Ne-c,118580
+motionSegmentation/__init__.py,sha256=wJq9jH9D4GjRKVbGVpI3j2XjBCLj1hYNV4_GgIYdXxA,25485
+motionSegmentation/bfSolver.py,sha256=j0M_30yDdpAkYX518_tVPJfiO_jMeo9KJb75Ev7t9Bg,78666
+motionSegmentation/motionCorrect.py,sha256=KhK5SEsTMB9IFEPUSUIBJlblUw1mxe0BhybLrDICG5k,30300
+motionSegmentation/segment.py,sha256=cGJV8n4lJ7y0Gkw35skzVEpuIne9NREYc9ikq63Ld2g,28203
+motionSegmentation-2.8.5.dist-info/LICENSE,sha256=aneqyprmXymCptb0wjMv2ZRtenNKuT8yLTg0F941wW4,1067
+motionSegmentation-2.8.5.dist-info/METADATA,sha256=PSvlW91TygWbe7yi19BDmENOateVtXyn2-LLGZ6ctbM,860
+motionSegmentation-2.8.5.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+motionSegmentation-2.8.5.dist-info/top_level.txt,sha256=Uk_AzGUOYaLolwsgPtdXX1NQfVgDgi6AT_Ri4iIOXYY,19
+motionSegmentation-2.8.5.dist-info/RECORD,,
