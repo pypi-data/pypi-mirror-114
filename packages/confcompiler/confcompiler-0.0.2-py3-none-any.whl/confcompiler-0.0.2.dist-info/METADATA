@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: confcompiler
+Version: 0.0.2
+Summary: Compile, Read and update your .conf file in python
+Home-page: https://github.com/NotReeceHarris/DotConfCompiler
+Author: NotReeceHarris (Reece Harris)
+Author-email: reece.harris98@protonmail.com
+License: Apache-2.0 License
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+
+DotConfCompiler
+=================
+
+.. image:: https://img.shields.io/badge/python-3-green.svg?style=flat-square
+    :alt: Python3
+
+.. image:: https://img.shields.io/pypi/v/confcompiler?style=flat-square
+    :alt: PyPI
+
+.. image:: https://img.shields.io/pypi/format/confcompiler?style=flat-square
+    :alt: PyPI format
+
+
+Compile, Read and update your .conf file in python
+
+Read data
+~~~~~~~~~~
+
+.. code-block:: pycon
+
+    >>> from confcompiler import ConfRead
+    >>>
+    >>> Hostname = ConfRead('Config.conf', 'Hostname')
+    >>> Hostname
+    127.0.0.1
+    >>> type(Hostname)
+    <class 'str'>
+    >>>
+    >>> Connected = ConfRead('Config.conf', 'Connected')
+    >>> Connected
+    True
+    >>> type(Connected)
+    <class 'bool'>
+
+Write data
+~~~~~~~~~~
+
+
+.. code-block:: pycon
+
+    >>> from confcompiler import ConfWrite
+    >>>
+    >>> ConfWrite('Config.conf', 'Hostname', '127.0.0.1')
+    >>> ConfWrite('Config.conf', 'Connected', True)
+
+
+.conf cheat sheat
+~~~~~~~~~~~~~~~~~
+
+.. code-block::
+
+    Commenting - All comments must start with '#' and must be on
+                 there on line, you cannot comment a line with 
+                 data involved.
+
+    Variables  - Data must start with a variable name then continued
+                 with '=' after that the data.
+
+
