@@ -1,0 +1,32 @@
+[tool.pylint.master]
+fail-under = 8
+
+[tool.pylint.messages_control]
+disable = "C0330, C0326, C0114, C0115, C0116, C0103, R0903, W0703, R0801"
+
+[tool.pylint.format]
+max-line-length = "120"
+
+[tool.pylint.SIMULARITIES]
+min-similarity-lines = 4
+
+[tool.coverage.run]
+omit = [
+    "test/*",
+    "venv/*",
+    ".pytest_cache/",
+    ".scannerwork/",
+    ".sonar/",
+    "ak47.py"
+]
+
+[tool.pytest.ini_options]
+addopts = [
+    "--cov=cocktail_apikit",
+    "-o junit_family=xunit1",
+    "--cov-report=xml:./coverage_report.xml",
+    "--cov-report=term",
+    "--junitxml=test_report.xml",
+    "--no-cov-on-fail",
+    "--cov-fail-under=69"
+]
