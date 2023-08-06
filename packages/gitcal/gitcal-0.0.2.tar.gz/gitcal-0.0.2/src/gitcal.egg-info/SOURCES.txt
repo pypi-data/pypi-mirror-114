@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/gitcal/__init__.py
+src/gitcal/__main__.py
+src/gitcal/args.py
+src/gitcal/gitcal.py
+src/gitcal/gitcommit.py
+src/gitcal/table.py
+src/gitcal.egg-info/PKG-INFO
+src/gitcal.egg-info/SOURCES.txt
+src/gitcal.egg-info/dependency_links.txt
+src/gitcal.egg-info/entry_points.txt
+src/gitcal.egg-info/top_level.txt
