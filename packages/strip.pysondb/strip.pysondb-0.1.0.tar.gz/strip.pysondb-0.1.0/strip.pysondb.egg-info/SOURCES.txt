@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pysondb/__init__.py
+pysondb/core.py
+pysondb/utils.py
+strip.pysondb.egg-info/PKG-INFO
+strip.pysondb.egg-info/SOURCES.txt
+strip.pysondb.egg-info/dependency_links.txt
+strip.pysondb.egg-info/top_level.txt
