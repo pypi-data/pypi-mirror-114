@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/scanlog/__init__.py
+src/scanlog/scanlog.py
+src/scanlog.egg-info/PKG-INFO
+src/scanlog.egg-info/SOURCES.txt
+src/scanlog.egg-info/dependency_links.txt
+src/scanlog.egg-info/top_level.txt
