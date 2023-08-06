@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/polyscope_persistence/__init__.py
+src/polyscope_persistence/wrapper.py
+src/polyscope_persistence.egg-info/PKG-INFO
+src/polyscope_persistence.egg-info/SOURCES.txt
+src/polyscope_persistence.egg-info/dependency_links.txt
+src/polyscope_persistence.egg-info/requires.txt
+src/polyscope_persistence.egg-info/top_level.txt
