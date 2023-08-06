@@ -1,0 +1,6 @@
+qclient/__init__.py,sha256=MAUW8F9sSYo2ca79Cyntelwp9JhCirGGW-SIUOULfDU,45
+qclient/qclient.py,sha256=0nYaNpUEt6zwDeBT6POvZhJrjxL_vkm8bCwiW_MvLig,1528
+qserver-1.0.0.dist-info/METADATA,sha256=alz4Sh7eI7IHlTjf6zP0KOWEQJIR2-dY8u5fRx9PW44,647
+qserver-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+qserver-1.0.0.dist-info/top_level.txt,sha256=dPCPXvMLhpBLsMBBu3If1RAF4NuPxrHt8ydB8sKmSpA,8
+qserver-1.0.0.dist-info/RECORD,,
