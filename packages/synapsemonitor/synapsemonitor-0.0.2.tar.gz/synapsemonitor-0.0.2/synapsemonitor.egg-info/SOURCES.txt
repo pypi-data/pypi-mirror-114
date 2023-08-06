@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+synapsemonitor/__init__.py
+synapsemonitor/__main__.py
+synapsemonitor/monitor.py
+synapsemonitor/team_request_notifier.py
+synapsemonitor/update_activity_feed.py
+synapsemonitor.egg-info/PKG-INFO
+synapsemonitor.egg-info/SOURCES.txt
+synapsemonitor.egg-info/dependency_links.txt
+synapsemonitor.egg-info/entry_points.txt
+synapsemonitor.egg-info/not-zip-safe
+synapsemonitor.egg-info/requires.txt
+synapsemonitor.egg-info/top_level.txt
+test/__init__.py
+test/test_monitor.py
