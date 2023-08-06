@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+emojigg/__init__.py
+emojigg/client.py
+emojigg/emoji.py
+emojigg/errors.py
+emojigg/http.py
+emojigg/pack.py
+emojigg.egg-info/PKG-INFO
+emojigg.egg-info/SOURCES.txt
+emojigg.egg-info/dependency_links.txt
+emojigg.egg-info/entry_points.txt
+emojigg.egg-info/requires.txt
+emojigg.egg-info/top_level.txt
