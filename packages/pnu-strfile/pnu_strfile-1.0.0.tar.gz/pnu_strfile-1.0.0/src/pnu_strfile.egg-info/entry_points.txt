@@ -1,0 +1,4 @@
+[console_scripts]
+strfile = strfile:main
+unstr = strfile:main
+

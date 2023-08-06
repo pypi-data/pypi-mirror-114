@@ -1,0 +1,13 @@
+License
+README.md
+pyproject.toml
+setup.cfg
+man/strfile.8.gz
+man/unstr.8.gz
+src/pnu_strfile.egg-info/PKG-INFO
+src/pnu_strfile.egg-info/SOURCES.txt
+src/pnu_strfile.egg-info/dependency_links.txt
+src/pnu_strfile.egg-info/entry_points.txt
+src/pnu_strfile.egg-info/top_level.txt
+src/strfile/__init__.py
+src/strfile/main.py
