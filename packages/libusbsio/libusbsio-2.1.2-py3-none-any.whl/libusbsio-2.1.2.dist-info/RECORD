@@ -1,0 +1,12 @@
+libusbsio/__init__.py,sha256=1lyygXVzc9ElfLqvIS1QLb9EamLkZi8vNLfy8A2n28Q,763
+libusbsio/__main__.py,sha256=nWWNq5lAvBl6mQ3_dOwngYPaRUqbxhnqwhyyK58ykhI,251
+libusbsio/libusbsio.py,sha256=aRgbiCdcK5gHoMNZg65B1mAwwX3dlKXSg8dRCaqfgMI,56384
+libusbsio/bin/Win32/libusbsio.dll,sha256=6noCnn9I37LgMNU1XLmBGW6H9ZXdYcOoEQnuRvN6i4w,115712
+libusbsio/bin/linux/libusbsio.so,sha256=iVWsdNLKIinVgImxxdzrvz7vEBQykpr2KKHLsTCMW-A,47200
+libusbsio/bin/linux32/libusbsio.so,sha256=OtsovQyfevWGyWj52FkCuv-sb0uLrD5NjOGRa6rwQWM,44888
+libusbsio/bin/osx/libusbsio.dylib,sha256=oc6xhyR44D9AaFoMY7xrsVQlchvH9LKBn2CU62Xepqo,73944
+libusbsio/bin/x64/libusbsio.dll,sha256=WblGO-6mHemHTzA0vc2FSCXnMyvHYXV1-2YknRcGQIE,138752
+libusbsio-2.1.2.dist-info/METADATA,sha256=COgavyTZdwYqnMWrpEKsyrbjwGv_YTPiU18R9IHLUps,4676
+libusbsio-2.1.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+libusbsio-2.1.2.dist-info/top_level.txt,sha256=iqFcxaEoSYAGihOnY4fNXB_V-29HYhPnou5ayQlDKlM,10
+libusbsio-2.1.2.dist-info/RECORD,,
