@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dnastack-client-library
+Version: 0.0.21
+Summary: DNAstack CLI Library
+Home-page: UNKNOWN
+Author: Derek, Joseph, Usanthan
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: search-python-client (>=0.1.9)
+Requires-Dist: urllib3 (==1.26.3)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: click (==7.1.2)
+Requires-Dist: altgraph (==0.17)
+Requires-Dist: macholib (==1.14)
+Requires-Dist: pyyaml (==5.4.1)
+
+UNKNOWN
+
