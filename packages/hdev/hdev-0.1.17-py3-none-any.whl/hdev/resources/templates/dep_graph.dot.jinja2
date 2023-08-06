@@ -1,0 +1,30 @@
+digraph G {
+    rankdir=LR;
+    overlap=false;
+    splines=true;
+    sep="+4";
+
+    {% if not packages %}
+        "No dependencies found"
+    {% endif %}
+
+    subgraph packages {
+        node[style=filled, shape=box];
+        {% for package in packages %}
+            "{{ package.canonical_name }}" [
+                fillcolor={{color_for(package)}},
+                label="{{ package.name }}\n{{ package.max_python_version() }}{% if package.undeclared_versions %}!!{% endif %}"
+            ];
+        {% endfor %}
+    }
+
+    {% for package in packages -%}
+    {% for req_type in package.requirement_types -%}
+    "{{ req_type }}" -> "{{ package.canonical_name }}";
+    {% endfor %}
+    {%- endfor -%}
+
+    {%- for parent, child in unique_dependencies -%}
+    "{{ parent }}" -> "{{ child }}";
+    {%- endfor %}
+}

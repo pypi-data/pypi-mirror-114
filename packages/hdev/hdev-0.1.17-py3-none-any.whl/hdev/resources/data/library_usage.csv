@@ -1,0 +1,88 @@
+Package,Used during,Extra categories,Status,Summary,Used in
+alembic,requirements,db,,A database migration tool for SQLAlchemy.,"checkmate,h,lms"
+bcrypt,requirements,crypto,,Modern password hashing for your software and your servers,h
+behave,bddtests,,,"behave is behaviour-driven development, Python style",lms
+black,format,,,The uncompromising code formatter.,"bouncer,checkmate,h,lms,via,viahtml"
+bleach,requirements,,,An easy safelist-based HTML-sanitizing tool.,h
+celery,"requirements,tests",message_queue,,Distributed Task Queue.,"checkmate,h,h-pyramid-sentry"
+certifi,requirements,crypto,,Python package for providing Mozilla's CA Bundle.,"bouncer,h"
+cffi,requirements,,,Foreign Function Interface for Python calling C code.,h
+click,requirements,cli,Use “argparser” instead,Composable command line interface toolkit,h
+coverage,"coverage,tests",,,Code coverage measurement for Python,"bouncer,checkmate,checkmatelib,h,h-api,h-matchers,h-pyramid-sentry,h-vialib,lms,pyramid-sanity,tox-pip-sync,via,viahtml"
+deform,requirements,presentation,Usage restricted to `h`,Form library with advanced features like nested forms,h
+docker-compose,"dev,dockercompose",infrastructure,,Multi-container orchestration for Docker,"checkmate,h,lms,via,viahtml"
+elasticsearch,requirements,db,,Python client for Elasticsearch,"bouncer,h"
+elasticsearch-dsl,requirements,db,,Python client for Elasticsearch,h
+factory-boy,"analyze,bddtests,dev,functests,tests",mocking,,A versatile test fixtures replacement based on thoughtbot's factory_bot for Ruby.,"bouncer,checkmate,h,lms,via"
+flake8,lint,,Use “pycodestyle” instead,the modular source code checker: pep8 pyflakes and co,"bouncer,h"
+gevent,requirements,infrastructure,,Coroutine-based network library,h
+gunicorn,requirements,infrastructure,,WSGI HTTP Server for UNIX,"bouncer,checkmate,h,lms,via"
+h-api,requirements,,,Tools and components for calling the H API,"h,lms"
+h-checkmatelib,requirements,security,,Tools for interacting with the Checkmate URL checking service,"via,viahtml"
+h-matchers,"bddtests,functests,requirements,tests",mocking,,Test objects which pass equality checks with other objects,"bouncer,checkmate,h,h-api,h-pyramid-sentry,h-vialib,lms,tox-pip-sync,via,viahtml"
+h-pyramid-sentry,requirements,infrastructure,,A Pyramid plugin for integrating Sentry error reporting,"bouncer,checkmate,h,lms,via"
+h-vialib,requirements,,,Library functions for use with Via,"lms,via,viahtml"
+httpretty,"bddtests,functests,tests",mocking,,HTTP client mock for Python,"checkmate,lms,via,viahtml"
+hypothesis,"analyze,tests",,,A library for property-based testing,h
+importlib-resources,"install,requirements,updatepdfjs",,,Read resources from Python packages,"checkmate,checkmatelib,h,h-api,lms,via,viahtml"
+ipdb,dev,,,IPython-enabled pdb,"bouncer,checkmate,h,via,viahtml"
+ipython,dev,,,IPython: Productive Interactive Computing,"bouncer,checkmate,h,viahtml"
+isort,format,,,A Python utility / library to sort Python imports.,"bouncer,checkmate,h,lms,via,viahtml"
+itsdangerous,requirements,security,,Safely pass data to untrusted environments and back.,h
+jsonschema,"install,requirements",schema,,An implementation of JSON Schema validation for Python,"checkmatelib,h,h-api"
+kombu,requirements,message_queue,,Messaging library for Python.,h
+marshmallow,requirements,schema,,A lightweight library for converting complex datatypes to and from native Python datatypes.,lms
+marshmallow-jsonapi,requirements,schema,,JSON API 1.0 (https://jsonapi.org) formatting with marshmallow,checkmate
+mistune,requirements,,,The fastest markdown parser in pure Python,h
+mock,tests,mocking,Usage restricted to `bouncer`,Rolling backport of unittest.mock for all Pythons,bouncer
+myst-parser,docs,,,"An extended commonmark compliant parser, with bridges to docutils & sphinx.",client
+netaddr,requirements,,,A network address manipulation library for Python,checkmate
+newrelic,requirements,infrastructure,,New Relic Python Agent,"checkmate,h,lms,via,viahtml"
+oauthlib,requirements,crypto,,"A generic, spec-compliant, thorough implementation of the OAuth request-signing logic","h,lms"
+passlib,requirements,crypto,,comprehensive password hashing framework supporting over 30 schemes,h
+psycogreen,requirements,db,,psycopg2 integration with coroutine libraries,h
+psycopg2,requirements,db,,psycopg2 - Python-PostgreSQL Database Adapter,"checkmate,h,lms"
+pycodestyle,lint,,,Python style guide checker,lms
+pycryptodomex,requirements,crypto,,Cryptographic library for Python,"h,lms"
+pydocstyle,lint,,,Python docstring style checker,"checkmate,lms,via,viahtml"
+pyjwt,"install,requirements",crypto,,JSON Web Token implementation in Python,"h,h-vialib,lms"
+pylint,"analyze,lint",,,python code static checker,"checkmate,h,lms,via,viahtml"
+pyparsing,requirements,,,Python parsing module,h
+pyramid,"install,requirements,tests",,,"The Pyramid Web Framework, a Pylons project","bouncer,checkmate,h,h-matchers,h-pyramid-sentry,lms,pyramid-sanity,via"
+pyramid-authsanity,requirements,security,,An auth policy for the Pyramid Web Framework with sane defaults.,h
+pyramid-exclog,requirements,,,A package which logs to a Python logger when an exception is raised by a Pyramid application,"checkmate,h,lms"
+pyramid-googleauth,requirements,security,,"""Sign in with Google"" for Pyramid","checkmate,lms"
+pyramid-ipython,dev,,,pyramid ipython pshell,"checkmate,lms,via"
+pyramid-jinja2,requirements,presentation,,Jinja2 template bindings for the Pyramid web framework,"bouncer,checkmate,h,lms,via"
+pyramid-layout,requirements,presentation,,Pyramid add-on for facilitating UI layout,h
+pyramid-mailer,requirements,,,Sendmail package for Pyramid,h
+pyramid-retry,"requirements,tests",,,An execution policy for Pyramid that supports retrying requests after certain failure exceptions.,"h,h-pyramid-sentry,lms"
+pyramid-sanity,requirements,security,,Sensible defaults to catch bad behavior,"checkmate,h"
+pyramid-services,requirements,,,A service layer abstraction for the Pyramid Web Framework.,"checkmate,h,lms,via"
+pyramid-tm,requirements,db,,A package which allows Pyramid requests to join the active transaction,"checkmate,h,lms"
+pytest,"analyze,bddtests,functests,tests",,,pytest: simple powerful testing with Python,"bouncer,checkmate,checkmatelib,h,h-api,h-matchers,h-pyramid-sentry,h-vialib,lms,pyramid-sanity,tox-pip-sync,via,viahtml"
+python-dateutil,requirements,,Usage restricted to `h`,Extensions to the standard Python datetime module,h
+python-slugify,requirements,,,A Python Slugify application that handles Unicode,h
+pywb,requirements,,Usage restricted to `ViaHTML`,Pywb Webrecorder web archive replay and capture tools,viahtml
+requests,"install,requirements,tests",,,Python HTTP for Humans.,"bouncer,checkmate,checkmatelib,h-matchers,lms,via"
+requests-oauthlib,requirements,crypto,,OAuthlib authentication support for Requests.,lms
+responses,tests,mocking,,A utility library for mocking out the `requests` Python library.,viahtml
+sentry-sdk,"install,requirements",infrastructure,,Python client for Sentry (https://sentry.io),"h-pyramid-sentry,viahtml"
+sphinx,docs,,,Python documentation generator,"client,h"
+sphinx-autobuild,docs,,,"Rebuild Sphinx documentation on changes, with live-reload in the browser.","client,h"
+sphinx-rtd-theme,docs,,,Read the Docs theme for Sphinx,"client,h"
+sqlalchemy,"requirements,tests",db,,Database Abstraction Library,"checkmate,h,h-pyramid-sentry,lms"
+supervisor,"dev,requirements",infrastructure,,A system for controlling process state under UNIX,"checkmate,h,lms,via,viahtml"
+tox,install,,,tox is a generic virtualenv management and test command line tool,tox-pip-sync
+transaction,requirements,db,,Transaction management for Python,h
+uwsgi,requirements,infrastructure,,The uWSGI server,viahtml
+venusian,requirements,,,A library for deferring decorator actions,h
+webargs,requirements,schema,,"Declarative parsing and validation of HTTP request objects, with built-in support for popular web frameworks, including Flask, Django, Bottle, Tornado, Pyramid, Falcon, and aiohttp.",lms
+webob,install,,,WSGI request and response object,h-vialib
+webtest,"analyze,bddtests,functests,tests",,,Helper to test WSGI applications,"bouncer,checkmate,h,lms,pyramid-sanity,via,viahtml"
+whitenoise,"build,requirements",infrastructure,,Radically simplified static file serving for WSGI applications,"via,viahtml"
+ws4py,requirements,infrastructure,Usage restricted to `h`,WebSocket client and server library for Python 2 and 3 as well as PyPy,h
+wsaccel,requirements,,Usage restricted to `h`,Accelerator for ws4py and AutobahnPython,h
+xmltodict,requirements,,,Makes working with XML feel like you are working with JSON,lms
+zope-interface,requirements,,,Interfaces for Python,h
+zope-sqlalchemy,requirements,db,,Minimal Zope/SQLAlchemy transaction integration,"checkmate,h,lms"

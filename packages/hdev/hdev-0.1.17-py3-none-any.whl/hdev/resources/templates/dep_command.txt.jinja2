@@ -1,0 +1,35 @@
+{%- macro python_version_string(package) -%}
+    {%- set latest_version = package.max_python_version() -%}
+    {%- set declared_versions = package.max_python_version("declared") -%}
+    {%- if latest_version == declared_versions -%}
+        Python {{ declared_versions }}
+    {%- else -%}
+        Python {{ latest_version }} (declared: {{ declared_versions }})
+    {%- endif -%}
+{%- endmacro -%}
+
+{%- macro package_details(package, verbose) %}
+    {%- set version = "(latest: {:})".format(package.latest_release[0]) -%}
+    {% if package.canonical_name in our_libs %}{{ color.CYAN }}{% endif %}{{ "{:<20}".format(package.name) }}{{ color.END }} {{ "{:<18}".format(version) }} {{ python_version_string(package) }}
+
+    {%-if verbose %}
+    {%- for description, url in package.urls.items() | sort() %}
+        {% if description in ("Github", "PyPI") %}{{ color.BOLD }}{% endif %}{{ description }}{{ color.END }}: {{ url }}
+    {%- endfor %}
+    {% endif -%}
+{%- endmacro -%}
+
+{% if target_package %}
+Getting details for {{target_package.name}} from PyPI:
+
+{{ package_details(target_package, True) }}
+------------------------------------------------------
+{% endif %}
+
+{%- for req_type, packages in requirements.items() | sort() %}
+{{ color.BOLD }}{{ req_type }}{{ color.END }}:
+{%- if not packages %}    No dependencies{% endif %}
+{%- for package in packages | sort(attribute="canonical_name") %}
+    {{ package_details(package, verbose) }}
+{%- endfor %}
+{% endfor %}
