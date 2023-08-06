@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: freenit
+Version: 0.2.1
+Summary: REST API framework based on FastAPI
+Home-page: https://github.com/freenit-framework/backend
+Author: Goran Mekić
+Author-email: meka@tilda.center
+License: BSD
+Keywords: REST,openapi,swagger,fastapi
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: aiosqlite
+Requires-Dist: alembic
+Requires-Dist: databases
+Requires-Dist: email-validator
+Requires-Dist: fastapi-users
+Requires-Dist: ormar
+Requires-Dist: uvicorn
+Provides-Extra: build
+Requires-Dist: twine ; extra == 'build'
+Provides-Extra: test
+Requires-Dist: pytest-asyncio ; extra == 'test'
+Requires-Dist: pytest-factoryboy ; extra == 'test'
+
+# fastapi-playground
+
+
