@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pktperf
+Version: 0.1.1
+Summary: pktgen scripts tool
+Home-page: https://github.com/junka/pktperf
+License: BSD
+Author: junka
+Author-email: wan.junjie@foxmail.com
+Requires-Python: >=3.5,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.1,<9.0.0)
+Requires-Dist: netaddr (>=0.8.0,<0.9.0)
+Project-URL: Repository, https://github.com/junka/pktperf
