@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+github_deploy/__init__.py
+github_deploy/main.py
+github_deploy.egg-info/PKG-INFO
+github_deploy.egg-info/SOURCES.txt
+github_deploy.egg-info/dependency_links.txt
+github_deploy.egg-info/entry_points.txt
+github_deploy.egg-info/requires.txt
+github_deploy.egg-info/top_level.txt
+github_deploy/commands/__init__.py
+github_deploy/commands/_constants.py
+github_deploy/commands/_utils.py
+github_deploy/commands/delete.py
+github_deploy/commands/upload.py
