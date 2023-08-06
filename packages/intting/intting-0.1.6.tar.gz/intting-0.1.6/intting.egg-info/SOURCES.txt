@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+intting/__init__.py
+intting.egg-info/PKG-INFO
+intting.egg-info/SOURCES.txt
+intting.egg-info/dependency_links.txt
+intting.egg-info/top_level.txt
