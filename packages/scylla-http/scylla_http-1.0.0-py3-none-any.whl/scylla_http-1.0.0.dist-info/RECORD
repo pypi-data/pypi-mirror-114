@@ -1,0 +1,9 @@
+scylla/__init__.py,sha256=L5TQhbzNnAuZk3MFGGfKMrGIbaARFDGF8l3EL8tHGR4,63
+scylla/downloader.py,sha256=HsT8M7BQ-C7Q9eUORtFjaV5IYGysK2o3Tz5_FAcowFw,4442
+scylla/main.py,sha256=t8WDNISLi7iXUkphA6NL05W62uYSmNywNbw3XTds8RY,1364
+scylla/progress.py,sha256=XAk6wN5S_5GAC9jlAl-Nb-B9RQ0pbPmzOOtBqXNGmUE,2300
+scylla_http-1.0.0.dist-info/METADATA,sha256=WhrHjKXW13dWiL5NZhudPg2WsSVemKm_vmA5YfUCeHQ,3220
+scylla_http-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+scylla_http-1.0.0.dist-info/entry_points.txt,sha256=UfA1OtHKv_GYe-edD0jXX74eAjqHn6-Ri_x8om5Fi8I,45
+scylla_http-1.0.0.dist-info/top_level.txt,sha256=bSwofycWm9Obc3pWR5nDD4Ndc4yFKK3B6ECMJLMChdU,7
+scylla_http-1.0.0.dist-info/RECORD,,
