@@ -1,0 +1,8 @@
+biosimulators_utils[containers,bngl,cellml,lems,neuroml,sbml,smoldyn] >= 0.1.98
+cement
+docker
+natsort
+PyPDF2
+python_dateutil
+pyyaml
+termcolor
