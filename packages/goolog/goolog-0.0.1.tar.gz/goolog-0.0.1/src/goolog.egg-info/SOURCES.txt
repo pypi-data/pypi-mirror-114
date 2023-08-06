@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/goolog/__init__.py
+src/goolog.egg-info/PKG-INFO
+src/goolog.egg-info/SOURCES.txt
+src/goolog.egg-info/dependency_links.txt
+src/goolog.egg-info/requires.txt
+src/goolog.egg-info/top_level.txt
