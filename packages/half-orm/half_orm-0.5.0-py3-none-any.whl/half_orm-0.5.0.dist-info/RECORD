@@ -1,0 +1,17 @@
+half_orm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+half_orm/field.py,sha256=-TrCPQgcswrRoT085Iol5oEa55YSmWo_LgI-s7F9AjI,4834
+half_orm/field_errors.py,sha256=51nrUBMQiqUIxtTeY2FZUkgzMiiBP_x3DEyBwQUF2Ns,45
+half_orm/fkey.py,sha256=wFfbyFngfR343HLNVgd8w5hOpouCbXMaNPq6eEMF7R0,5456
+half_orm/model.py,sha256=hbJkfHuqZudS-HrZezJBbiT6gRt1Vybuk4Bawwmu418,12683
+half_orm/model_errors.py,sha256=5jZ7d5SMM3m2mRbQ84mu4712ZfaD2hMckizj6VN_aIA,1266
+half_orm/null.py,sha256=3v8zKTAi5QISQlIedLIlDSnMUo63YVxtjAacXzxZFGU,405
+half_orm/pg_metaview.py,sha256=zg0lHElJWKBA3FiL0nx_wXw1hoaLDGHKFVbYbzy5d8M,2388
+half_orm/relation.py,sha256=HESsf7sWLyITpYgNJjR5gU5M_8iiE4w2zxrzphURpAA,34268
+half_orm/relation_errors.py,sha256=A98Ve27DfhrpmlSwL2Y51G1zQKzg_f1qwtqHF3awuts,951
+half_orm/transaction.py,sha256=34r7SFwCaYBufIXIfgMVgJBlY0FuFcnidZM4yrKrz7M,2288
+half_orm/version.txt,sha256=oK1QZAE5pST4ZZEVcUW_HUZ06pwGW_6iFVjw97BEMMg,6
+half_orm-0.5.0.dist-info/LICENSE,sha256=ph-ylQKijIrNnNjCogrkIKXT8Arqrm9WJWsKsRVL_kY,699
+half_orm-0.5.0.dist-info/METADATA,sha256=fxSixC8vmNjn2zcJRS68AyAzw7Qpt5HKp_aHwyojpNs,14960
+half_orm-0.5.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+half_orm-0.5.0.dist-info/top_level.txt,sha256=AwtzWEhQBg2StiaTyBZQz2S4sY0IcEFW91gd9u8tY_g,9
+half_orm-0.5.0.dist-info/RECORD,,
