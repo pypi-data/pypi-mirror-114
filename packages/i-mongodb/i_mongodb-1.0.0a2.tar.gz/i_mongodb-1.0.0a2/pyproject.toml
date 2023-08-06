@@ -1,0 +1,23 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "i_mongodb"
+author = "Jason Romano"
+author-email = "aracnid@gmail.com"
+home-page = "https://github.com/aracnid/i-mongodb"
+classifiers = ["License :: OSI Approved :: MIT License"]
+description-file = "README.md"
+requires-python = ">=3.9"
+requires = [
+    "aracnid-logger",
+    "dnspython ~=1.16",
+    "pymongo[srv]",
+    "python-dateutil",
+]
+keywords = "python,mongodb"
+
+[tools.flit.metadata.requires-extra]
+test = ["pytest"]
+build = ["flit"]
