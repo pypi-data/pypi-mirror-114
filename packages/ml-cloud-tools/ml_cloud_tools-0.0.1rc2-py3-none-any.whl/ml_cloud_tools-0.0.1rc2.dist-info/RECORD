@@ -1,0 +1,8 @@
+ml_cloud_tools/__init__.py,sha256=prqH1N2mbUQ5f8Lpp6YZ8IUGgWAfHmK30l_8Zqxnc9o,270
+ml_cloud_tools/s3.py,sha256=avyRI0jfO6XeTb6ykEamMEr65jqfkwj4x30ikocQDyA,6512
+ml_cloud_tools/version.py,sha256=SDpwFkCL3zvcKnbs4NtJfiJNLNee0IrGfC7Qt0jaGCo,430
+ml_cloud_tools-0.0.1rc2.dist-info/LICENSE,sha256=mrDcccf7vxslBvEBxQwTM33RwIWNVJACmS4opiTuDoQ,1180
+ml_cloud_tools-0.0.1rc2.dist-info/METADATA,sha256=BY6jIRrEbeahAV-PF3aKkjbusr8GwUtz_lr8D3y4Pdc,2878
+ml_cloud_tools-0.0.1rc2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ml_cloud_tools-0.0.1rc2.dist-info/top_level.txt,sha256=Q85Ww_ya0zeAS4nG-F_n6U50N6imvLvXKgxdGnhIiTM,15
+ml_cloud_tools-0.0.1rc2.dist-info/RECORD,,
