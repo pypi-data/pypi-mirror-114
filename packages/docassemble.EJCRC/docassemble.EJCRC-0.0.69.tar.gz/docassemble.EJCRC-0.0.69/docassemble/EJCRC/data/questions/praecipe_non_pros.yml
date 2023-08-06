@@ -1,0 +1,183 @@
+metadata:
+  title: Notice of Praecipe to Enter Judgment of Non Pros
+  temporary session: true
+---
+attachment:
+  variable name: praecipe_non_pros
+  filename: praecipe_non_pros
+  docx template file: Praecipe_Non_Pros.docx
+  valid formats: 
+    - pdf 
+---
+question: |
+  Thank you, ${ defendantname1 }!
+subquestion: |
+ ### [:file-pdf: CLICK TO DOWNLOAD YOUR NOTICE OF PRAECIPE TO ENTER JUDGMENT BY DEFAULT](${ praecipe_non_pros.url_for() })
+ 
+  YOU MUST FILE THIS NOTICE WITH THE COURT FILING OFFICE. [Click here](https://www.courts.phila.gov/pdf/manuals/civil-trial/FJD_Civil_E-Filing_User_Manual.pdf) for instructions on how to e-file your legal documents. [Click here](${ url_of('EFS_Instructions.pdf') }) for instructions on how to create an account to e-file your document(s).
+continue button label: |
+  Finish Notice
+mandatory: True
+continue button field: finish
+---
+mandatory: true
+need:
+  finish
+question: | 
+  Review the following reminders:
+subquestion: |
+  **[You can download your Notice here](${ praecipe_non_pros.url_for() })**
+fields:
+  - I understand that I have not filed my Notice by using this website: nofile
+    datatype: yesnowide
+  - I have downloaded my Notice: download
+    datatype: yesnowide
+continue button field: done
+continue button label: |
+  Next
+validation code: |
+  if not download:
+    validation_error("You cannot continue until you indicate that you have downloaded your complaint.")
+  if not nofile:
+    validation_error("You cannot continue until you indicate that you understand you have not filed your complaint.")
+--- 
+mandatory: true
+need:
+  done
+question: |
+  You have completed the process of filling out your Notice of Praecipe to Enter Judgment of Non Pros. Click exit to return to the Philadelphia Court website
+buttons:
+  - Exit: exit
+    url: https://courts.phila.gov
+---
+question: | 
+  Notice of Praecipe for Entry of Judgment of Non Pros
+subquestion: |
+  ### Rule 237.1. Notice of Praecipe for Entry of Judgment of Non Pros for Failure to File Complaint or by Default for Failure to Plead
+  
+  (a)(1) As used in this rule, “judgment of non pros” means a judgment entered by praecipe pursuant to Rule 1037(a) and 1659;
+  
+  * Note: When a defendant appeals from a judgment entered in a magisterial district [judge] court, Pa. R.C.P.M.D.J. 1004(b) authorizes the appellant to file a praecipe for a rule as of course upon the appellee to file a complaint or suffer entry of a judgment of non pros. The entry of the judgment of non pros is governed by Pa. R.C.P. No. 1037(a) and is subject to this rule. “judgment by default” means a judgment entered by praecipe pursuant to Rules 1037(b), 1511(a), 3031(a), and 3146(a).
+  
+  (2) No judgment of non pros for failure to file a complaint or by default for failure to plead shall be entered by the prothonotary unless the praecipe for entry includes a certification that a written notice of intention to file the praecipe was mailed or delivered
+  
+  (i) in the case of a judgment of non pros, after the failure to file a complaint and at least ten days prior to the date of the filing of the praecipe to the party’s attorney of record or to the party if unrepresented, or
+  
+  (ii) in the case of a judgment by default, after the failure to plead to a complaint and at least ten days prior to the date of the filing of the praecipe to the party against whom judgment is to be entered and to the party’s attorney of record, if any. The ten-day notice period in subdivision (a)(2)(i) and (ii) shall be calculated forward from the date of the mailing or delivery, in accordance with Rule 106.
+  
+  * Note: The final sentence of Rule 237.1(a)(2) alters the practice described in the decision of Williams v. Wade, 704 A.2d 132 (Pa. Super. 1997).
+  
+  (3) A copy of the notice shall be attached to the praecipe.
+  
+  (4) The notice and certification required by this rule may not be waived.
+  
+  * Note: A certification of notice is a prerequisite in all cases to the entry by praecipe of a judgment of non pros for failure to file a complaint or by default for failure to plead to a complaint. Once the ten-day notice has been given, no further notice is required by the rule even if the time to file the complaint or to plead to the complaint has been extended by agreement. See Rule 237.4 for the form of the notice of intention to enter a judgment of non pros and Rule 237.5 for the form of the notice of intention to enter a judgment by default.
+  (b) This rule does not apply to a judgment entered
+  
+  (1) by an order of court,
+  
+  (2) upon praecipe pursuant to an order of court, or
+  
+  (3) pursuant to a rule to show cause.
+  
+  * Note: See Rule 3284 which requires that in proceedings to fix fair market value of real property sold, notice must be given pursuant to the requirements of Rule 237.1 et seq.
+
+fields:
+  - I understand and have reviewed the above rule(s) of civil procedure.: understand
+    datatype: yesnowide
+validation code: |
+  if not understand:
+    validation_error("You cannot continue until you indicate that you understand.")
+---
+mandatory: true
+need:
+  understand
+question: |
+  Please fill out the information for each plaintiff in this case.
+subquestion: |
+  A plaintiff is a party who is suing/taking the defendant(s) to court.  
+fields:
+  - How many plaintiffs are there?: plaintiffnumber
+    datatype: integer
+    choices:
+      - 1
+      - 2
+      - 3
+    default: 1   
+  - Plaintiff Full Name: plaintiffname1
+  - 2nd Plaintiff Full Name: plaintiffname2
+    js show if: |
+      val('plaintiffnumber') > 1
+  - 3rd Plaintiff Full Name: plaintiffname3
+    js show if: |
+      val('plaintiffnumber') > 2
+---
+need:
+  plaintiffname1
+question: |
+  Please complete the information for each defendant in this case.
+subquestion: |
+  A defendant is a party (individual, company, or institution) being sued. Name all of the defendants you are trying to remove from the property to the best of your ability. **If you do not know the names of some of the defendants, you may enter “All Occupants” in the name section.**
+fields:
+  - How many defendants are party to the case?: defendantnumber
+    datatype: integer
+    choices:
+      - 1
+      - 2
+      - 3
+    default: 1    
+  - Defendant Full Name: defendantname1
+  - 2nd Defendant Full Name: defendantname2
+    js show if: |
+      val('defendantnumber') > 1 
+  - 3rd Defendant Full Name: defendantname3
+    js show if: |
+      val('defendantnumber') > 2
+---
+need:
+  defendantname1
+question: | 
+  Please provide your contact information:
+fields:
+  - Street Address: defendantaddress1
+  - City and State: defendantcity1
+    default: "Philadelphia, PA"
+  - ZIP Code: defendantzipcode1
+  - Phone Number: defendantphone1
+---
+need: 
+  defendantname1
+question: | 
+  Please provide the Case ID number for this case:
+subquestion: |  
+  If you cannot locate the Case ID number, you may either contact the civil filing office or find the number by searching for your case on the [FJD Civil Docket.](http://fjdefile.phila.gov/efsfjd/zk_fjd_public_qry_00.zp_disclaimer)
+  
+  [Click here if you need additional help (opens a separate tab)](${ interview_url(i='docassemble.EJCRC:data/questions/case_id_help.yml') }){:target="_blank"}.
+
+fields:
+  - Do you have a 9-digit case number?: nines
+    datatype: radio
+    choices: 
+      - Yes
+      - No
+  - 9-digit case number: serial
+    datatype: integer
+    required: false
+    js show if: |
+      val('nines') == 'Yes'
+    max: 999999999
+validation code: |
+  if nines == 'No':
+    validation_error("Please click the link for additional help")
+---
+need:
+  nines
+question: |
+  Which defendant(s) did not reply to your notice of service and what day did you provide the original notice?
+fields: 
+  - Unresponsive Defendant: plaintiffnotice
+  - Original Notice Date: noticeday
+    datatype: date
+    default: |
+      ${ today().minus(days=20) }
+---
