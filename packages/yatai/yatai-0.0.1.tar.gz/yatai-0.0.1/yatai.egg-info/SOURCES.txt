@@ -1,0 +1,6 @@
+README.md
+setup.py
+yatai.egg-info/PKG-INFO
+yatai.egg-info/SOURCES.txt
+yatai.egg-info/dependency_links.txt
+yatai.egg-info/top_level.txt
