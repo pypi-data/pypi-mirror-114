@@ -1,0 +1,3 @@
+[console_scripts]
+bluebeam_game = bluebeam.Engine:main
+
