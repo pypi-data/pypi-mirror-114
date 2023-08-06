@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: vltava
+Version: 0.1.0
+Summary: Opinionated Czech Language Processing
+Home-page: UNKNOWN
+Author: Jan Cervenka
+Author-email: jan.cervenka@yahoo.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: majka (>=0.8)
+Requires-Dist: ufal.morphodita (>=1.10.1.1)
+Requires-Dist: gensim (>4)
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+
+UNKNOWN
+
