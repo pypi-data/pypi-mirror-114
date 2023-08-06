@@ -1,0 +1,8 @@
+README.md
+setup.py
+./pycerializer/__init__.py
+./pycerializer/pycerializer.py
+pycerializer.egg-info/PKG-INFO
+pycerializer.egg-info/SOURCES.txt
+pycerializer.egg-info/dependency_links.txt
+pycerializer.egg-info/top_level.txt
