@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+margin-official-strategies/__init__.py
+margin-official-strategies/example_strategies/__init__.py
+margin-official-strategies/example_strategies/ping_pong_demo.py
+margin_official_strategies.egg-info/PKG-INFO
+margin_official_strategies.egg-info/SOURCES.txt
+margin_official_strategies.egg-info/dependency_links.txt
+margin_official_strategies.egg-info/requires.txt
+margin_official_strategies.egg-info/top_level.txt
