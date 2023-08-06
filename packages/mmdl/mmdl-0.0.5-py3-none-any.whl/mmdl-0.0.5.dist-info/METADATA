@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: mmdl
+Version: 0.0.5
+Summary: MMDL [Mega Music Downloader] - A tool to easily download music.
+Home-page: https://github.com/techboy-coder/mmdl
+Author: techboy-coder
+License: UNKNOWN
+Keywords: python,audio,download,youtube,cli,tool
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: ytmusicapi (==0.18.0)
+Requires-Dist: youtube-dl (==2021.6.6)
+Requires-Dist: click-help-colors (==0.9.1)
+Requires-Dist: lxml (==4.6.3)
+Requires-Dist: click (==8.0.1)
+Requires-Dist: youtube-search-python (==1.4.6)
+Requires-Dist: eyed3 (==0.9.6)
+Requires-Dist: questionary (==1.10.0)
+Requires-Dist: rich (==10.6.0)
+
+
+# mmdl
+
+
+
+Mmdl [Mega Music Downloader] - A tool to easily download music.
+
+
+
