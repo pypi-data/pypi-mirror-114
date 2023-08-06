@@ -1,0 +1,84 @@
+name: CI
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+    - master
+    - main
+    - develop
+
+jobs:
+  pre-commit:
+    name: Format
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: recursive
+
+    - uses: actions/setup-python@v2
+    - uses: pre-commit/action@v2.0.3
+      with:
+        extra_args: --hook-stage manual --all-files
+
+  checks:
+    name: Check Python ${{ matrix.python-version }} on ${{ matrix.runs-on }}
+    runs-on: ${{ matrix.runs-on }}
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.6, 3.9]
+        runs-on: [ubuntu-latest]  # macos-latest isn't setting up cgal yet
+
+        # include:
+        # - python-version: pypy-3.6
+        #   runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: recursive
+
+    - uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install compiler tools on macOS
+      if: runner.os == 'macOS'
+      run: brew install automake swig gmp mpfr boost gfortran
+
+    - name: Install extra deps on Linux
+      if: runner.os == 'Linux'
+      run: sudo apt-get update && sudo apt-get install -y libmpfr-dev libboost-dev
+
+    #- name: Install dependency
+    #  run: python -m pip install awkward
+
+    #- name: Install dependency
+    #  run: python -m pip install vector
+
+    - name: Install package
+      run: python -m pip install .[test] -v
+
+    - name: Test package
+      run: python -m pytest -vv -rs -Wd
+
+  test_wheels:
+    name: Wheel on linux
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: recursive
+
+    - uses: pypa/cibuildwheel@v2.0.0a4
+      env:
+        CIBW_BUILD: cp39-manylinux_x86_64
+
+    - name: Upload wheels
+      uses: actions/upload-artifact@v2
+      with:
+        path: wheelhouse/*.whl
