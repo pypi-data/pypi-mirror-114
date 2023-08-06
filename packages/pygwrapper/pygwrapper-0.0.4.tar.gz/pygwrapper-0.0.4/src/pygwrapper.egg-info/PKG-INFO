@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pygwrapper
+Version: 0.0.4
+Summary: explore endless creativity and development with a combination of pygame and pymunk-based pyhsics 
+Home-page: UNKNOWN
+Author: SlitherCode
+License: UNKNOWN
+Description: #pygwrapper a tool that combines pygame and pymunk for efficiency
+        Pygwrapper is a wrapper for pygame and pymunk that simplifies the hassle of creating a game to a Class based simple
+        approach.Pygwrapper doesnt have a load function and simply loads your images when their path is provided.This module also contains an animation tool which breaks down gifs and mp4s into seperate images to help create pygame compatible animations.I am currently working on Pyg-auto animation as well a tool that provides animations in pygame out of the box
+        with little to 0 setup.I hope you enjoy using this module for whatever your heart desires.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

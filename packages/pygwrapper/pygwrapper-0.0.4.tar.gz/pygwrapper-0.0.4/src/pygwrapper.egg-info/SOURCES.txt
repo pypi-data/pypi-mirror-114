@@ -1,0 +1,10 @@
+setup.py
+src/pygwrapper/__init__.py
+src/pygwrapper/animation_convert.py
+src/pygwrapper/physics.py
+src/pygwrapper/win_create.py
+src/pygwrapper.egg-info/PKG-INFO
+src/pygwrapper.egg-info/SOURCES.txt
+src/pygwrapper.egg-info/dependency_links.txt
+src/pygwrapper.egg-info/requires.txt
+src/pygwrapper.egg-info/top_level.txt
