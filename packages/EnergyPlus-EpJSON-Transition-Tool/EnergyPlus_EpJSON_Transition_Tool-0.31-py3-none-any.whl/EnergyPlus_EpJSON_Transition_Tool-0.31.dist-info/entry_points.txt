@@ -1,0 +1,3 @@
+[console_scripts]
+epjson_transition = epjson_transition.transition:main
+
