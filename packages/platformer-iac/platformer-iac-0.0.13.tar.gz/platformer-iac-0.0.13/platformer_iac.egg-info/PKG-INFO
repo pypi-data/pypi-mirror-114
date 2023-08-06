@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: platformer-iac
+Version: 0.0.13
+Summary: Platform generation tool based on terraform and git
+Home-page: https://github.com/rfsantanna/platformer
+Author: Rafael F. Sant'Anna
+Author-email: rafaelsantanna@outlook.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
