@@ -1,0 +1,28 @@
+{# -*- coding: utf-8 -*-
+
+  Copyright (C) 2020 - 2021 CERN.
+  Copyright (C) 2020 - 2021 TU Wien.
+
+  Invenio is free software; you can redistribute it and/or modify it
+  under the terms of the MIT License; see LICENSE file for more details.
+#}
+
+{% macro show_license(license) %}
+<div class="ui relaxed grid">
+  <div class="two column row">
+    <div class="four wide column">
+      <p><b><a href="{{ license.link }}">{{ license.id }}</a></b></p>
+    </div>
+    <div class="twelve wide column">
+      {{ license.title }}
+    </div>
+  </div>
+</div>
+{%- endmacro %}
+
+{% macro show_licenses(licenses) %}
+  {% for license in licenses %}
+    {{ show_license(license) }}
+  {% endfor %}
+{% endmacro %}
+
