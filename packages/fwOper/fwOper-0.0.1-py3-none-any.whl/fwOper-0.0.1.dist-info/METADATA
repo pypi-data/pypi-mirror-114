@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: fwOper
+Version: 0.0.1
+Summary: Cisco Firewall Helper Package
+Home-page: https://github.com/alias1978/fwOper
+Author: ALIASGAR - ALI
+Author-email: aholo2000@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: nettoolkit
+
+
+Cisco Firewall Helper Package
+Works on Object-groups, Access-lists, Routes, Instances
+-ALIASGAR [ALI]
+
+
+
+
