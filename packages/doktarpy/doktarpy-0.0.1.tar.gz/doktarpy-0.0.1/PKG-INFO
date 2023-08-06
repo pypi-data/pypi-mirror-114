@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: doktarpy
+Version: 0.0.1
+Summary: Doktar GIS Python Operations
+Home-page: https://github.com/doktargis/doktarpy
+Author: Batuhan Kavlak
+Author-email: batuhan.kavlak@doktar.com
+License: UNKNOWN
+Description: # doktarpy
+        
+        
+        
+        
+        **Doktar GIS Python Operations**
+        
+        
+        ## Features
+        
+        -   TODO
+        
+        ## Credits
+        
+        This package was created with [Cookiecutter](https://github.com/cookiecutter/cookiecutter) and the [giswqs/pypackage](https://github.com/giswqs/pypackage) project template.
+        
+Keywords: doktarpy
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
