@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+jesse_ftx_futures/__init__.py
+jesse_ftx_futures.egg-info/PKG-INFO
+jesse_ftx_futures.egg-info/SOURCES.txt
+jesse_ftx_futures.egg-info/dependency_links.txt
+jesse_ftx_futures.egg-info/requires.txt
+jesse_ftx_futures.egg-info/top_level.txt
