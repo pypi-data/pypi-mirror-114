@@ -1,0 +1,11 @@
+README.rst
+setup.py
+fcxref/__init__.py
+fcxref/_version.py
+fcxref/cli.py
+fcxref/root_by_document_path.py
+fcxref.egg-info/PKG-INFO
+fcxref.egg-info/SOURCES.txt
+fcxref.egg-info/dependency_links.txt
+fcxref.egg-info/entry_points.txt
+fcxref.egg-info/top_level.txt
