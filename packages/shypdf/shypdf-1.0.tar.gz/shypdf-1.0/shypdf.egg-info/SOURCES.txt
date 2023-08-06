@@ -1,0 +1,9 @@
+README.md
+setup.py
+shypdf/__init__.py
+shypdf/pdf2image.py
+shypdf/pdf2text.py
+shypdf.egg-info/PKG-INFO
+shypdf.egg-info/SOURCES.txt
+shypdf.egg-info/dependency_links.txt
+shypdf.egg-info/top_level.txt
