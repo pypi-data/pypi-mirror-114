@@ -1,0 +1,3 @@
+[console_scripts]
+xepmts-server=xepmts_server.cli:main
+
