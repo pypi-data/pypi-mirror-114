@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/redesign.egg-info/PKG-INFO
+src/redesign.egg-info/SOURCES.txt
+src/redesign.egg-info/dependency_links.txt
+src/redesign.egg-info/top_level.txt
+src/redesign/info/__init__.py
