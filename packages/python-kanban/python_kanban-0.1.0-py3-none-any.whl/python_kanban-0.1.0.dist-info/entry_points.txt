@@ -1,0 +1,3 @@
+[console_scripts]
+python_kanban=python_kanban.app:run_app
+

@@ -1,0 +1,14 @@
+python_kanban/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+python_kanban/app.py,sha256=YVDi1qi0hIMNkk_scNuhm0FlktYvAQjmSLYcKhV0tNc,2035
+python_kanban/models.py,sha256=wi4XMp08-x8h-3PmdwZXddDRsPgYL_tn7z6ca9OcnFw,1541
+python_kanban/views/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+python_kanban/views/add_task_view.py,sha256=o64V5KUoiOCI2Eo66Jo5SpvjS-rxBjM2VovY_oUEBPs,3678
+python_kanban/views/edit_tasks_view.py,sha256=jqNueNZASa1_oRcGKwIOlu_83Nx6qQQHu4Wf1nPr5rw,2436
+python_kanban/views/list_tasks_view.py,sha256=J46UWp2RRhSaNOCsaZJEEh6fA8ILr4fQ_DUUq91Y_SY,3948
+python_kanban/views/no_tasks_view.py,sha256=ztHjcV_X1Hn5GutvovHWK_1tXPsrV6FUpPb8C1_pUg8,1182
+python_kanban/views/status_container_view.py,sha256=WmBilizNcJ16ggchESzzEh8PmLu32iUOwBmXb7Kzoqg,2867
+python_kanban-0.1.0.dist-info/entry_points.txt,sha256=3JnKsiBYt4JbV5fVXnBRrJmai0J67FUmx5qpWfpIDWI,59
+python_kanban-0.1.0.dist-info/LICENSE,sha256=tvwmwDCVOe-Z0KZl7QNpBmVwa8J59M90GvLVLBl6tIM,1072
+python_kanban-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+python_kanban-0.1.0.dist-info/METADATA,sha256=Li1WZp38L8kB1WocX9nmqHQnxA5rEL8e8JIU0o9l3Kg,1566
+python_kanban-0.1.0.dist-info/RECORD,,
