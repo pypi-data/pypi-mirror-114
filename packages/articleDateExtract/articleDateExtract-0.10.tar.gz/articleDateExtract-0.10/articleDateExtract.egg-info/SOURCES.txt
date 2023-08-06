@@ -1,0 +1,8 @@
+README.md
+setup.py
+articleDateExtract/__init__.py
+articleDateExtract.egg-info/PKG-INFO
+articleDateExtract.egg-info/SOURCES.txt
+articleDateExtract.egg-info/dependency_links.txt
+articleDateExtract.egg-info/requires.txt
+articleDateExtract.egg-info/top_level.txt
