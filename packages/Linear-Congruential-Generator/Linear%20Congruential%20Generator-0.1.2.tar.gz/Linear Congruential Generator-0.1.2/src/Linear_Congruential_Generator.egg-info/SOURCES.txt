@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/Linear_Congruential_Generator.egg-info/PKG-INFO
+src/Linear_Congruential_Generator.egg-info/SOURCES.txt
+src/Linear_Congruential_Generator.egg-info/dependency_links.txt
+src/Linear_Congruential_Generator.egg-info/not-zip-safe
+src/Linear_Congruential_Generator.egg-info/top_level.txt
+src/lcg/__init__.py
+src/lcg/lcg.py

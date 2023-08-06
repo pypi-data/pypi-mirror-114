@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: Linear-Congruential-Generator
+Version: 0.1.2
+Summary: The random number generator. 
+Home-page: https://github.com/onuratakan/LCG
+Author: Onur Atakan ULUSOY
+Author-email: atadogan06@gmail.com
+License: MIT
+Description: 
+        # Linear Congruential Generator | ![Made_with_python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) ![Licence](https://img.shields.io/github/license/onuratakan/Linear_Congruential_Generator.svg)
+        
+        # Installing
+        ```console
+        pip install Linear-Congruential-Generator
+        ```
+        
+        # Import
+        ```python
+        from lcg import LCG
+        ```
+        
+Platform: UNKNOWN
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
