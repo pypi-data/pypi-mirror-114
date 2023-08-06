@@ -1,0 +1,10 @@
+junit_report/__init__.py,sha256=a1FTtRgMfc_zffX0dlaRVXJ7iPxoa-vDFRSSRIFvyMs,407
+junit_report/_junit_decorator.py,sha256=BPWlKR4NZprKaRPQadLZlISuXUQ9QPNZ3SI9Mi-6SVg,2559
+junit_report/_junit_fixture_test_case.py,sha256=7as9AXA_mS_ARLG3BYhUMx9weuvbDP-Fct9_5YOkNr0,5717
+junit_report/_junit_test_case.py,sha256=sYdIQBJB_5tgRVEuONPw2A1toWMZ-wcMPd0Rjmg8n5o,5160
+junit_report/_junit_test_suite.py,sha256=VaMfdc3S5-BNxP5XIN6_qUi4q1TEEM3tUhYdP-O3dQ0,6491
+junit_report-0.1.25.dist-info/LICENSE,sha256=JIFpmxO-sa9IhSwwdhjUPcdjXHInk9g3OwoZaTrrCgo,1067
+junit_report-0.1.25.dist-info/METADATA,sha256=Qu6qBaYvpX-I2BlKBqkVkBU3IUT1UKhJlfJsUyC3Kcc,3793
+junit_report-0.1.25.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+junit_report-0.1.25.dist-info/top_level.txt,sha256=QhWRRcRo3BoxVkwWVkpii3AT_mZpaEU0nAq_siGDu_Q,13
+junit_report-0.1.25.dist-info/RECORD,,
