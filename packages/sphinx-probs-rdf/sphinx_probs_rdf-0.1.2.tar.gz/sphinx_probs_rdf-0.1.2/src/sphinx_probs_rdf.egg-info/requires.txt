@@ -1,0 +1,10 @@
+sphinx
+rdflib>=5.0
+
+[lint]
+flake8
+mypy
+
+[test]
+pytest
+myst_parser

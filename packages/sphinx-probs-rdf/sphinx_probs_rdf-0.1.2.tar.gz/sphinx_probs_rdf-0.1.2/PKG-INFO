@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: sphinx_probs_rdf
+Version: 0.1.2
+Summary: sphinx_probs_rdf is a sphinx extension which outputs RDF describing Processes and Objects using the PRObs ontology.
+Home-page: https://github.com/ricklupton/sphinx_probs_rdf
+Author: Rick Lupton
+Author-email: mail@ricklupton.name
+License: BSD
+Download-URL: https://pypi.org/project/sphinx_probs_rdf/
+Description: 
+        sphinx_probs_rdf is a sphinx extension which outputs RDF describing Processes and Objects using the PRObs ontology.
+        
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Framework :: Sphinx
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Topic :: Documentation
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Provides-Extra: test
+Provides-Extra: lint

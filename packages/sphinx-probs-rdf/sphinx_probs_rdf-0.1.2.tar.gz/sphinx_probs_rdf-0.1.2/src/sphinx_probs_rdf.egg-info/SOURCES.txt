@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+src/sphinx_probs_rdf/__init__.py
+src/sphinx_probs_rdf/builder.py
+src/sphinx_probs_rdf/directives.py
+src/sphinx_probs_rdf/postprocess.py
+src/sphinx_probs_rdf/version.py
+src/sphinx_probs_rdf.egg-info/PKG-INFO
+src/sphinx_probs_rdf.egg-info/SOURCES.txt
+src/sphinx_probs_rdf.egg-info/dependency_links.txt
+src/sphinx_probs_rdf.egg-info/not-zip-safe
+src/sphinx_probs_rdf.egg-info/requires.txt
+src/sphinx_probs_rdf.egg-info/top_level.txt
