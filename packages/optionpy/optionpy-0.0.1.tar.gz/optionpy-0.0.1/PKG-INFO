@@ -1,0 +1,32 @@
+Metadata-Version: 1.2
+Name: optionpy
+Version: 0.0.1
+Summary: Calculation of option price, greeks and implied volatility
+Home-page: https://github.com/ibaris/optionpy
+Author: Ismail Baris
+Author-email: i.baris@outlook.de
+Maintainer: Ismail Baris
+License: UNKNOWN
+Description: # Introduction
+        
+        The `optionpy` package makes pricing of option contracts and calculating the *Greeks* fast.
+        
+        # Key Features
+        
+        * Calculate the quantities, like:
+            * Fair Value : Fair value calculated with the BSM model and the volatility of the underlying (`sigma`)
+            * ITM : A bool that indicates if the option in **In The Money**.
+            * IV : Implied volatility
+            * Delta, Vega, Theta, Rho, Epsilon, Gamma : The greeks.
+            * Nd1, Nd2 : The probability of the event that the underlying price is over the strike price ($S_tâ‰¥K$) in the risk-neutral
+              world.
+        * All function are vectorized.
+        * An advanced search and selection routine.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: Microsoft
