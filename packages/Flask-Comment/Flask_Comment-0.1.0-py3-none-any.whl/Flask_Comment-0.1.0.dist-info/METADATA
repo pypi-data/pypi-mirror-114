@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: Flask-Comment
+Version: 0.1.0
+Summary: Create comment component in Flask/Jinja2 template.
+Home-page: https://github.com/yuxiaoy1/flask_comment
+Author: Frank Yu
+Author-email: withyuxiaoy@gmail.com
+License: MIT
+Project-URL: Documentation, https://flask-comment.readthedocs.io
+Project-URL: Source, https://github.com/yuxiaoy1/flask_comment
+Project-URL: Changelog, https://flask-comment.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/yuxiaoy1/flask_comment/issues
+Keywords: flask,comment,extension
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Flask
+Provides-Extra: dev
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+
+# Flask-Comment
+
+[![Current version on PyPI](https://img.shields.io/pypi/v/flask-comment)](https://pypi.org/project/flask-comment/)
+[![codecov](https://codecov.io/gh/yuxiaoy1/flask-comment/branch/main/graph/badge.svg?token=2CFPCZ1DMY)](https://codecov.io/gh/yuxiaoy1/flask-comment)
+
+Create comment component in Flask/Jinja2 template, supporting [Disqus](https://disqus.com), [Cusdis](https://cusdis.com), [Valine](https://valine.js.org), [Utterances](https://utteranc.es) and [Gitalk](https://github.com/gitalk/gitalk).
+
+## Requirements
+
+* Python 3.6+
+* Flask 1.1.0+
+
+## Installation
+
+For Linux and macOS:
+
+```bash
+$ pip3 install flask-comment
+```
+
+For Windows:
+
+```bash
+> pip install flask-comment
+```
+
+## Links
+
+* [Documentation](https://flask-comment.readthedocs.io)
+* [Example Application](https://github.com/yuxiaoy1/flask-comment/tree/main/examples)
+* [PyPI Releases](https://pypi.org/project/flask-moment)
+* [Source Code](https://github.com/yuxiaoy1/flask-comment)
+* [Issue Tracker](https://github.com/yuxiaoy1/flask-comment/issues)
+* [Changelog](https://github.com/yuxiaoy1/flask-comment/blob/main/CHANGES.md)
+
+## License
+
+This project is licensed under the MIT License (see the `LICENSE` file for details).
+
+
