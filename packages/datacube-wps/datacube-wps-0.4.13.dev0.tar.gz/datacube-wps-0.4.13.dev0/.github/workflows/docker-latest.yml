@@ -1,0 +1,46 @@
+---
+name: docker-latest
+on: [workflow_dispatch]
+
+env:
+  IMAGE_NAME: opendatacube/wps
+
+jobs:
+  docker_latest:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
+
+    steps:
+      - name: Login to DockerHub
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Get unstable git tag
+        run: >
+          echo "UNSTABLE_TAG=$(git describe --tags)" >> $GITHUB_ENV
+
+      - name: Log the unstable tag
+        run: echo $UNSTABLE_TAG
+
+      - name: Export Secrets to enviroment
+        run: |
+          echo "${{ secrets.DockerPassword }}" | docker login -u "${{ secrets.DockerUser }}" --password-stdin
+
+      - name: Build unstable + latest Docker image tag
+        if: github.event_name != 'release'
+        uses: whoan/docker-build-with-cache-action@v4
+        with:
+          image_name: ${{ env.IMAGE_NAME }}
+          image_tag: ${{ env.UNSTABLE_TAG }},latest
+          build_extra_args: "--build-arg=ENVIRONMENT=deployment"
+          push_image_and_stages: false
+
+      - name: Run vulnerability scanner
+        if: github.ref == 'refs/heads/master'
+        uses: aquasecurity/trivy-action@0.0.6
+        with:
+          image-ref: "${{ env.IMAGE_NAME }}:${{ env.UNSTABLE_TAG }}"
+          format: "table"
+          exit-code: "1"
+          severity: "CRITICAL,HIGH"

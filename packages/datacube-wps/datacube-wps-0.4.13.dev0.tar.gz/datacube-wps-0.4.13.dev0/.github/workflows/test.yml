@@ -1,0 +1,57 @@
+---
+name: Tests
+
+on:
+  pull_request:
+    paths:
+      - '**'
+
+  push:
+    paths:
+      - '**'
+
+env:
+  ORG: opendatacube
+  IMAGE: wps
+  METADATA_CATALOG: https://raw.githubusercontent.com/GeoscienceAustralia/dea-config/master/workspaces/sandbox-metadata.yaml
+  PRODUCT_CATALOG: https://raw.githubusercontent.com/GeoscienceAustralia/dea-config/master/workspaces/sandbox-products.csv
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Pre-pull layers
+        run: docker-compose pull
+
+      # In this step, this action saves a list of existing images,
+      # the cache is created without them in the post run.
+      # It also restores the cache if it exists.
+      - name: Activate Docker Cache
+        uses: satackey/action-docker-layer-caching@v0.0.8
+        # Ignore the failure of a step and avoid terminating the job.
+        continue-on-error: true
+
+      - name: Build WPS image
+        run: |
+          docker-compose build
+      - name: Test WPS image
+        run: |
+          mkdir -p ./artifacts
+          chmod a+rw ./artifacts
+
+          docker-compose up -d
+          ./setup-db.sh
+          docker-compose exec -e WPS_BASEURL=/ -T wps pytest -v --cov=./datacube_wps --cov-report=xml tests/
+          docker-compose down
+
+      - name: Upload coverage
+        uses: codecov/codecov-action@v1
+        with:
+          file: ./artifacts/*.xml
+          fail_ci_if_error: false
