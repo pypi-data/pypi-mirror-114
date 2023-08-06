@@ -1,0 +1,11 @@
+nav_dcat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nav_dcat/fields/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nav_dcat/fields/common_fields.py,sha256=oiYNEYdj1d8T37XWdwfnoiyBGHHVF6KVBetaAtjnscM,664
+nav_dcat/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nav_dcat/models/datapackage.py,sha256=9Al2pLnKTIT2E-4nvAOVuDJR2cJGiw_tOIlKFaLZPW8,2252
+nav_dcat/models/dataproduct.py,sha256=_1czkXO9Zw_i0-kFFgUTeZDQIstfCEXUxmIFGQfv28Q,1172
+nav_dcat/models/es_doc.py,sha256=2z_WW3TFE5GRrxGsF7EcQGWpy8c3P97iaAFk2iu3L-Y,1322
+nav_dcat-0.1.19.dist-info/LICENSE,sha256=FfMLWGfNV84q3Vu6OICGbuIKjS3ecqUvJaVxFduL4xU,1063
+nav_dcat-0.1.19.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+nav_dcat-0.1.19.dist-info/METADATA,sha256=KvUyLBoygLQj03aLdKtEI2YxLkX8rOFMq7ZZI2fT0E8,462
+nav_dcat-0.1.19.dist-info/RECORD,,
