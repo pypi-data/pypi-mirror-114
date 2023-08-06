@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: binapi
+Version: 0.4
+Summary: A wrapper for binance futures API
+Home-page: https://github.com/p0o0uya/binapi
+Author: Pouya Jamali
+Author-email: pouyajamali@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/p0o0uya/binapi/issues
+Description: # binapi
+        A wrapper for binance futures api
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+binapi/__init__.py
+binapi/binapi.py
+binapi/reqs.py
+binapi.egg-info/PKG-INFO
+binapi.egg-info/SOURCES.txt
+binapi.egg-info/dependency_links.txt
+binapi.egg-info/requires.txt
+binapi.egg-info/top_level.txt
