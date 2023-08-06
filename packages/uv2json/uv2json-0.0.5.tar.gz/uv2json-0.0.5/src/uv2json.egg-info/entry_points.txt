@@ -1,0 +1,3 @@
+[console_scripts]
+convert-2-json-uv = uv2json:convert_to_json_uv
+
