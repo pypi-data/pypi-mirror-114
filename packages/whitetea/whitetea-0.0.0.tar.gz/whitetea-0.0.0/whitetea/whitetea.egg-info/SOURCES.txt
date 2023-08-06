@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+whitetea/core/__init__.py
+whitetea/core/utils.py
+whitetea/whitetea.egg-info/PKG-INFO
+whitetea/whitetea.egg-info/SOURCES.txt
+whitetea/whitetea.egg-info/dependency_links.txt
+whitetea/whitetea.egg-info/requires.txt
+whitetea/whitetea.egg-info/top_level.txt
