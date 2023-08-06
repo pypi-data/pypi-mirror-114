@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pyintesishome
+Version: 1.8.0
+Summary: A python3 library for running asynchronus communications with IntesisHome Smart AC Controllers
+Home-page: https://github.com/jnimmo/pyIntesisHome
+Author: James Nimmo
+Author-email: james@nimmo.net.nz
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+License-File: LICENSE
+Requires-Dist: aiohttp (<4,>=3.7.4)
+
+UNKNOWN
+
