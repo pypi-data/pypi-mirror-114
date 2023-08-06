@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: excel2xx
+Version: 0.5.0
+Summary: Extract data from excel file, and export to json, msgpack, or any code(mako template).
+Home-page: https://github.com/cupen/excel2xx
+Author: cupen
+Author-email: xcupen@gmail.com
+License: WTFPL
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6.*,!=3.6.1
+License-File: LICENSE
+Requires-Dist: xlrd (==2.0.*)
+Requires-Dist: docopt (>=0.6.0)
+Requires-Dist: mako (>=1.0.0)
+Requires-Dist: msgpack-python (>=0.4.8)
+
+UNKNOWN
+

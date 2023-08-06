@@ -1,0 +1,12 @@
+excel2xx/__init__.py,sha256=PsZRnL0SD1hSIQgGMhlCjAU58AFKsX-46CbHNHEReYo,8519
+excel2xx/__main__.py,sha256=f5FF_Zh1Nx3BoKbf_hHZP8TrZo-9XnI_W8U_Wjf18D8,292
+excel2xx/export.py,sha256=9Dq77tthPj5Lm_lq4DSbzNdaN5B-54czhP74hIsm6u8,1534
+excel2xx/fields.py,sha256=RR3cZHlnUDc7e--tKvp9QxkkY5JMqRdKPoMs4oe4AhM,10700
+excel2xx/main.py,sha256=falaG_bTBLGP26Vt5euLmky7fBA6BhIQzZfn8aSSX6Y,1952
+excel2xx/utils.py,sha256=f-tdhg1ggZhCaoz3brXP81iRB1eWCu0V_BcL1gjyMbQ,116
+excel2xx-0.5.0.dist-info/LICENSE,sha256=pUFOKk5gpUbXRTzfjyKwk79gXzpwTlKHAPP6qJk0_O4,482
+excel2xx-0.5.0.dist-info/METADATA,sha256=UPY3SVyIaPOQZSQUAeHGv081prPTkgRxMKg-Vfd91UE,1077
+excel2xx-0.5.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+excel2xx-0.5.0.dist-info/entry_points.txt,sha256=8kvLlr9GnaxMWeXMwZjQKygCLmxLLIhMvKzS4RVsSYg,56
+excel2xx-0.5.0.dist-info/top_level.txt,sha256=1NEX_6sGM6STbxHx8T46lXdEN5t7IONg24F16YyB56E,9
+excel2xx-0.5.0.dist-info/RECORD,,
