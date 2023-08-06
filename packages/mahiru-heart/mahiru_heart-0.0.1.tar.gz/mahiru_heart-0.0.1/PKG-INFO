@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mahiru_heart
+Version: 0.0.1
+Summary: Heart of Mahiru
+Home-page: https://gitlab.com/henny022/mahiru/heart
+Author: Henny022
+Author-email: hen.geheim22@gmail.com
+License: Unlicense
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Heart
+
+
+
