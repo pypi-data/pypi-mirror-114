@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+leatherneck/__init__.py
+leatherneck.egg-info/PKG-INFO
+leatherneck.egg-info/SOURCES.txt
+leatherneck.egg-info/dependency_links.txt
+leatherneck.egg-info/top_level.txt
