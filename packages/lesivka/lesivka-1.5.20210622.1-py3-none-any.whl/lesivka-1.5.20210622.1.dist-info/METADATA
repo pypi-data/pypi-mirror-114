@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: lesivka
+Version: 1.5.20210622.1
+Summary: Python library to convert to/from Lesivka
+Home-page: UNKNOWN
+Author: Oleksandr Tishyn
+Author-email: 1079805+Mystic-Mirage@users.noreply.github.com
+License: CC0 1.0 Universal
+Project-URL: Source Code, https://github.com/lesivka/python-lesivka
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: future ; python_version < "3"
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+# python-lesivka
+Python library to convert to/from Lesivka
+
+
