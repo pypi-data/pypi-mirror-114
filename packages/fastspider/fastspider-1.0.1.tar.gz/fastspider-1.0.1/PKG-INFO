@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fastspider
+Version: 1.0.1
+Summary: fastspider 爬虫框架
+Home-page: https://github.com/coco369/fastspider.git
+Author: wanghaifei
+Author-email: wanghaifei36@126.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+License-File: LICENSE
+
+# fastspider
+高并发爬虫框架 + 爬虫监控
+
