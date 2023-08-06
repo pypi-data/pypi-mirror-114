@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+nlp_tf_idf.egg-info/PKG-INFO
+nlp_tf_idf.egg-info/SOURCES.txt
+nlp_tf_idf.egg-info/dependency_links.txt
+nlp_tf_idf.egg-info/top_level.txt
