@@ -1,0 +1,141 @@
+image: python:3.7
+
+stages:
+  - test
+  - build
+  - deploy
+
+test-python-36:
+  stage: test
+  image: python:3.6
+  script:
+    - git config --global user.email "you@example.com"
+    - git config --global user.name "Your Name"
+    - pip install -r requirements.txt
+    - pip install coverage
+    - python setup.py install
+    - python -m unittest discover tests/
+#    - coverage report -m
+
+test-python-37:
+  stage: test
+  image: python:3.7
+  script:
+    - git config --global user.email "you@example.com"
+    - git config --global user.name "Your Name"
+    - pip install -r requirements.txt
+    - pip install coverage
+    - python setup.py install
+    - python -m unittest discover tests/
+#    - coverage report -m
+
+test-python-38:
+  stage: test
+  image: python:3.8
+  script:
+    - git config --global user.email "you@example.com"
+    - git config --global user.name "Your Name"
+    - pip install -r requirements.txt
+    - pip install coverage
+    - python setup.py install
+    - python -m unittest discover tests/
+#    - coverage report -m
+
+test-python-39:
+  stage: test
+  image: python:3.9
+  script:
+    - git config --global user.email "you@example.com"
+    - git config --global user.name "Your Name"
+    - pip install -r requirements.txt
+    - pip install coverage
+    - python setup.py install
+    - python -m unittest discover tests/
+#    - coverage report -m
+    
+pages:
+  stage: build
+  script:
+  - pip install -r docs-requirements.txt
+  - pip install -r requirements.txt
+  - pip install .
+  - sphinx-build -b html docs/source public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+
+wheel-36:
+  image: python:3.6
+  stage: build
+  script:
+    - pip install wheel
+    # Build wheel
+    - python setup.py bdist_wheel --universal
+  dependencies: []
+  artifacts:
+    expire_in: 3h
+    paths:
+      - dist
+
+wheel-37:
+  image: python:3.7
+  stage: build
+  script:
+    - pip install wheel
+    # Build wheel
+    - python setup.py bdist_wheel --universal
+  dependencies: []
+  artifacts:
+    expire_in: 3h
+    paths:
+      - dist
+
+wheel-38:
+  image: python:3.8
+  stage: build
+  script:
+    - pip install wheel
+    - pip install twine
+    # Build wheel
+    - python setup.py bdist_wheel --universal
+    # Test wheel
+    - twine check dist/*
+  dependencies: []
+  artifacts:
+    expire_in: 3h
+    paths:
+      - dist
+
+#gitlab-deploy:
+#  image: python:3.8
+#  stage: deploy
+#  script:
+#    - pip install twine
+#    - twine check dist/*
+#    - twine upload -u __token__ -p $GITLAB_PYPI --repository-url https://git.ligo.org/api/v4/projects/$CI_PROJECT_ID/packages/pypi
+      
+docker-olivaw:
+  image: docker
+  stage: build
+  variables:
+    IMAGE_TAG: $CI_REGISTRY_IMAGE:olivaw-$CI_COMMIT_REF_SLUG
+  script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker build -t $IMAGE_TAG -f containers/olivaw/Dockerfile .
+    - docker push $IMAGE_TAG
+    
+  
+      
+# deploy:wheel:
+#   stage: deploy
+#   script:
+#     - pip install twine
+#     - twine upload dist/*
+#   only:
+#     #- master@daniel-williams/minke
+#     - tags
+#   # except:
+#   #   - pushes
+#   #   - web
