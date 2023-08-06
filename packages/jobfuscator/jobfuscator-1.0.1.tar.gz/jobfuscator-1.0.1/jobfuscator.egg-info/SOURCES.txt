@@ -1,0 +1,10 @@
+README.md
+setup.py
+jobfuscator/__init__.py
+jobfuscator/jobfuscator.py
+jobfuscator.egg-info/PKG-INFO
+jobfuscator.egg-info/SOURCES.txt
+jobfuscator.egg-info/dependency_links.txt
+jobfuscator.egg-info/not-zip-safe
+jobfuscator.egg-info/requires.txt
+jobfuscator.egg-info/top_level.txt
