@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: jayhawk
+Version: 1.1.0
+Summary: An extensible server for the Spartan protocol.
+Home-page: https://github.com/MineRobber9000/jayhawk
+License: MIT
+Author: Robert "khuxkm" Miles
+Author-email: khuxkm+jayhawk@tilde.team
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/MineRobber9000/jayhawk
+Description-Content-Type: text/markdown
+
+# jayhawk
+
+An extensible server for the [Spartan](https://portal.mozz.us/spartan/spartan.mozz.us/specification.gmi) protocol.
+
+## What's in a name?
+
+Spartan was named for Mozz's alma mater, Michigan State and their Fighting Spartans sports teams (in the tradition of Gopher, which was named after Minnesota's mascot). The college I'm going to be attending this fall has their sports teams all named Jayhawks, so Jayhawk fits the niche.
+
