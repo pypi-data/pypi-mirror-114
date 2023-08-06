@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: bashcolor
+Version: 1.1.0
+Summary: A simple library to get colors in the bash terminal
+Home-page: https://github.com/sbrunner/bashcolor/
+Author: Stéphane Brunner
+Author-email: stephane.brunner@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+
+# Bash color
+
+## Available colors
+
+- BLACK
+- RED
+- GREEN
+- BROWN
+- BLUE
+- PURPLE
+- CYAN
+- LIGHT_GRAY
+- DEFAULT
+- DARK_GRAY
+- LIGHT_RED
+- LIGHT_GREEN
+- YELLOW
+- LIGHT_BLUE
+- LIGHT_PURPLE
+- LIGHT_CYAN
+- WHITE
+
+## Available effect
+
+- BOLD
+- DIM (not working on Konsole)
+- UNDERLINE
+- BLINK (not working on Konsole and Gnome Terminal)
+- INVERSE
+- HIDDEN (not working on Konsole)
+
+## Example
+
+```python
+from bashcolor import RED, UNDERLINE, colorize
+
+print(colorize('Red color', RED))
+print(colorize('Red background', background=RED))
+print(colorize('Underline', effects=[UNDERLINE]))
+```
+
+## API
+
+```python
+def colorize(
+    text,
+    color=None,
+    background=None,
+    effects=[],
+    color_256=None,
+    background_256=None,
+    with_end=True):
+```
+
+
