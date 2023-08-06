@@ -1,0 +1,14 @@
+README.md
+setup.py
+JumpDiff/Qratio.py
+JumpDiff/__init__.py
+JumpDiff/binning.py
+JumpDiff/formulae.py
+JumpDiff/jdprocess.py
+JumpDiff/kernels.py
+JumpDiff/moments.py
+JumpDiff/parameters.py
+jumpdiff.egg-info/PKG-INFO
+jumpdiff.egg-info/SOURCES.txt
+jumpdiff.egg-info/dependency_links.txt
+jumpdiff.egg-info/top_level.txt
