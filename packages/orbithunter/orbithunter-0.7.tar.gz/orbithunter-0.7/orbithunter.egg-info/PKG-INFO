@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: orbithunter
+Version: 0.7
+Summary: Framework for Nonlinear Dynamics and Chaos
+Home-page: https://orbithunter.readthedocs.io/en/latest/index.html
+Author: Matthew Gudorf
+Author-email: matthew.gudorf@gmail.com
+License: UNKNOWN
+Project-URL: documentation, https://orbithunter.readthedocs.io/en/latest/index.html
+Project-URL: issues, https://orbithunter.readthedocs.io/en/latest/issues.html
+Project-URL: bugs, https://github.com/mgudorf/orbithunter/issues
+Project-URL: source, https://github.com/mgudorf/orbithunter
+Project-URL: guide, https://orbithunter.readthedocs.io/en/latest/guide.html
+Project-URL: tutorials, https://github.com/mgudorf/orbithunter/tree/main/notebooks
+Project-URL: faq, https://orbithunter.readthedocs.io/en/latest/faq.html
+Description: orbithunter 0.7rc3
+        ==================
+        orbithunter serves as a framework for solving chaotic nonlinear partial differential equations.
+        
+        Features
+        --------
+        
+        - An object oriented approach to solutions of partial differential equations
+        - A general-purpose framework for finding, visualizing and manipulating these solutions
+        - High-level access to SciPy API, particularly its minimize and optimize packages.
+        - New spatiotemporal techniques such as 'clipping' and 'gluing'
+        
+        Currently there is only an implementation of the Kuramoto-Sivashinsky equation (KSE).
+        
+        External Links
+        --------------
+        
+        Be sure to check out these resources for help and development!
+        
+        - `Homepage and Documentation <https://orbithunter.readthedocs.io/en/latest/index.html>`_
+        - `Issues <https://orbithunter.readthedocs.io/en/latest/issues.html>`_
+        - `Bug reports <https://github.com/mgudorf/orbithunter/issues>`_
+        - `Source <https://github.com/mgudorf/orbithunter>`_
+        - `Developer Guide <https://orbithunter.readthedocs.io/en/latest/guide.html>`_
+        - `Tutorial Notebooks <https://github.com/mgudorf/orbithunter/tree/main/tutorial>`_
+        - `FAQ <https://orbithunter.readthedocs.io/en/latest/faq.html>`_
+        
+        Support
+        -------
+        
+        If you are having issues, please let us know.
+        We have a mailing list located at: orbithunter@googlegroups.com
+        
+        License
+        -------
+        
+        The project is licensed under the GNU General Public License v3 (GPLv3) license.
+Keywords: pde,partial differential equation,numeric,numerical simulation,solver,framework,periodic orbit
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Provides-Extra: developer
+Provides-Extra: docs
+Provides-Extra: extra
+Provides-Extra: full
+Provides-Extra: test
