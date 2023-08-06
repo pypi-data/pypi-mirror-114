@@ -1,0 +1,166 @@
+Metadata-Version: 2.1
+Name: pyvast-threatbus
+Version: 2021.7.29
+Summary: Connect the open source telemetry engine VAST with Threat Bus, the open source threat intelligence dissemination layer
+Home-page: https://github.com/tenzir/threatbus
+Author: Tenzir
+Author-email: engineering@tenzir.com
+License: BSD 3-clause
+Keywords: open source,vast,threatbus,Threat Bus,threat intelligence,TI,TI dissemination
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Object Brokering
+Classifier: Topic :: System :: Distributed Computing
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: black (>=19.10b)
+Requires-Dist: dynaconf (>=3.1.4)
+Requires-Dist: python-dateutil
+Requires-Dist: pyzmq (>=19)
+Requires-Dist: pyvast (>=2020.10.29)
+Requires-Dist: stix2 (<3.0,>=2.1)
+Requires-Dist: threatbus (>=2021.5.27)
+
+PyVAST Threat Bus App
+=====================
+
+Threat Bus is a publish-subscribe broker for threat intelligence. It is expected
+that applications register themselves at the bus. Since VAST cannot do so on its
+own (yet), `pyvast-threatbus.py` implements that functionality in the meantime.
+
+The application provides a thin layer around
+[PyVAST](https://docs.tenzir.com/vast/python-bindings/overview), VAST's Python
+CLI bindings. It facilitates message exchange between Threat Bus and a VAST
+instance.
+
+## Installation
+
+Install `pyvast-threatbus` via `pip`. Optionally, use a virtual environment.
+
+```
+virtualenv venv           # optional
+source venv/bin/activate  # optional
+python -m pip install pyvast-threatbus
+```
+
+## Development
+
+Use the `dev-mode` command from the `Makefile` to install the project in
+[development mode](https://setuptools.readthedocs.io/en/latest/userguide/development_mode.html).
+We recommend to use a virtual environment for development.
+
+```
+virtualenv venv
+source venv/bin/activate
+make dev-mode
+```
+
+## Quick Start
+
+You can configure the app via a YAML configuration file. See
+`config.yaml.example` for an example config file that uses
+[fever alertify](https://github.com/DCSO/fever) to transform sighting contexts
+before they get printed to `STDOUT`. See the section
+[Features](/tenzir/threatbus/tree/master/apps/vast#features) for details. Rename
+the example to `config.yaml` before starting.
+
+Alternatively, configure the app via environment variables, similarly to Threat
+Bus, or pass a path to configuration file via `-c /path/to/config.yaml`.
+
+Start the application:
+
+```sh
+pyvast-threatbus
+```
+
+### Docker
+
+You can also run this app via Docker.
+
+- Build it:
+  ```
+  docker build . -t tenzir/pyvast-threatbus:latest
+  ```
+- Run it to print the helptext.
+  ```
+  docker run tenzir/pyvast-threatbus:latest
+  ```
+- Run and mount a custom config file into the container:
+  ```
+  docker run --net=host -v /path/to/your/conf.yaml:/opt/tenzir/threatbus/pyvast-threatbus/config.yaml tenzir/pyvast-threatbus:latest -c config.yaml
+  ```
+
+## Features
+
+This section explains the most important features of `pyvast-threatbus`.
+
+### IoC Matching
+
+[VAST](https://github.com/tenzir/vast) can match IoCs either live or
+retrospectively via usual queries.
+
+#### Live Matching
+
+VAST's
+[live matching](https://docs.tenzir.com/vast/features/threat-intel-matching)
+works as
+[continuous query](https://docs.tenzir.com/vast/cli/vast/export/#documentation).
+`pyvast-threatbus` subscribes to those continuous query results and reports all
+new IoC matches from VAST to Threat Bus as `Sightings`. You can enable live
+matching in the config file by setting `live_match: true`.
+
+#### Retro Matching
+
+`pyvast-threatbus` supports retro matching. You can enable it in the config file
+by setting `retro_match: true`. This instructs the application to translate IoCs
+from Threat Bus to normal VAST queries instead of feeding the IoCs to a live
+matcher.
+
+Each result from an IoC query is treated as `Sighting` of that IoC and reported
+back to Threat Bus. You can limit the maximum amount of results returned from
+VAST by setting the config option `retro_match_max_events` to a positive integer.
+
+### Sighting Context Transformation
+
+You can configure `pyvast-threatbus` to invoke another program for parsing
+Sighting `context` data via the config option `transform_context`.
+
+If set, the app translates the `x_threatbus_sighting_context` field of a STIX-2
+Sighting via the specified utility. For example, configure the app to pass the
+context object to [DCSO/fever](https://github.com/DCSO/fever) `alertify`:
+
+```yaml
+...
+transform_context: fever alertify --alert-prefix 'MY PREFIX' --extra-key my-ioc --ioc %ioc
+...
+```
+
+The `x_threatbus_sighting_context` field can contain arbitrary data. For
+example, retro matches from VAST contain the full query result in the context
+field (like a Suricata EVE entry or a Zeek conn.log entry).
+
+Note that the `cmd` string passed to `transform_context` is treated as
+template string. The placeholder `%ioc` is replaced with the contents of the
+actually matched IoC.
+
+### Custom Sinks for Sightings
+
+`pyvast-threatbus` offers to send Sighting context to a configurable `sink`
+_instead_ of reporting them back to Threat Bus. This can be configured via the
+`sink` configuration parameter. The special placeholder `STDOUT` can be used to
+print the Sighting context to `STDOUT`.
+
+A custom sink is useful to forward `Sightings` to another process, like
+`syslog`, or forward STDOUT via a UNIX pipe. Note that it may be desirable to
+disable logging in that case.
+
+Note that only the `x_threatbus_sighting_context` field of a STIX-2 Sighting is
+printed, and not the object structure of the Sighting itself.
+
+
