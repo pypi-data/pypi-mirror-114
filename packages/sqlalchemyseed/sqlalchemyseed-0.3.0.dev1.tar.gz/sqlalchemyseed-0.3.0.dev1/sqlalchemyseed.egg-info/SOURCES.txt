@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sqlalchemyseed/__init__.py
+sqlalchemyseed.egg-info/PKG-INFO
+sqlalchemyseed.egg-info/SOURCES.txt
+sqlalchemyseed.egg-info/dependency_links.txt
+sqlalchemyseed.egg-info/requires.txt
+sqlalchemyseed.egg-info/top_level.txt
+sqlalchemyseed/res/schema.json
