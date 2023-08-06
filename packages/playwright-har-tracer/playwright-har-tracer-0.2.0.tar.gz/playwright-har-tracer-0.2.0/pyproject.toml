@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "playwright-har-tracer"
+version = "0.2.0"
+description = "A Python implementation version of Playwright's HAR tracer"
+authors = ["Manabu Niseki <manabu.niseki@gmail.com>"]
+homepage = "https://github.com/ninoseki/playwright-har-tracer"
+repository = "https://github.com/ninoseki/playwright-har-tracer"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+boltons = "^21.0.0"
+dataclasses-json = "^0.5.4"
+poetry-version = "^0.1.5"
+python-dateutil = "^2.8.2"
+stringcase = "^1.2.0"
+
+[tool.poetry.dev-dependencies]
+asynctest = "^0.13.0"
+autoflake = "^1.4"
+autopep8 = "^1.5.7"
+black = "^21.7b0"
+coveralls = "^3.2.0"
+flake8 = "^3.9.2"
+isort = "^5.9.3"
+loguru = "^0.5.3"
+mypy = "^0.910"
+playwright = "^1.13.1"
+pre-commit = "^2.13.0"
+pytest = "^6.2.4"
+pytest-asyncio = "^0.15.1"
+pytest-black = "^0.3.12"
+pytest-cov = "^2.12.1"
+pytest-env = "^0.6.2"
+pytest-httpserver = "^1.0.0"
+pytest-mock = "^3.6.1"
+pytest-parallel = "^0.1.0"
+pytest-randomly = "^3.8.0"
+pytest-sugar = "^0.9.4"
+pytest-timeout = "^1.4.2"
+pyupgrade = "^2.23.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
