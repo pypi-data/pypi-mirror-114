@@ -1,0 +1,5 @@
+numpy
+requests
+requests_toolbelt
+PyJWT
+click

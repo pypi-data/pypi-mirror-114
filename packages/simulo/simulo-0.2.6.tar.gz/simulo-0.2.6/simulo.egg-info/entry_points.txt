@@ -1,0 +1,3 @@
+[console_scripts]
+simulo = simulo.cli.runner:main
+
