@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: QuadQuanta
+Version: 0.2.7
+Summary: To build a quantification system
+Home-page: https://github.com/levonwoo/QuadQuanta
+Author: levonwoo
+Author-email: UNKNOWN
+License: MIT license
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: tqdm
+Requires-Dist: jqdatasdk
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: clickhouse-driver
+Requires-Dist: PyYAML
+Requires-Dist: loguru
+Requires-Dist: pymongo
+Requires-Dist: matplotlib
+
+try to build a personal trading system
+
+
