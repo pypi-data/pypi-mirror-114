@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/alphanet/__init__.py
+src/alphanet/data.py
+src/alphanet/metrics.py
+src/alphanet.egg-info/PKG-INFO
+src/alphanet.egg-info/SOURCES.txt
+src/alphanet.egg-info/dependency_links.txt
+src/alphanet.egg-info/top_level.txt
