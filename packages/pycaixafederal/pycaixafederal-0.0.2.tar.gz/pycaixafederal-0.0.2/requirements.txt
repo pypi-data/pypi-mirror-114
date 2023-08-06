@@ -1,0 +1,5 @@
+setuptools~=57.4.0
+requests~=2.26.0
+wget~=3.2
+jsmin~=2.2.2
+selenium~=3.141.0
