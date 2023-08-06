@@ -1,0 +1,17 @@
+phidnet/__init__.py,sha256=Mifanj3LMImFHplffCmAcurpm0XiThWFYtuZqVb0mQ0,286
+phidnet/activation.py,sha256=tah8EK1wO12kQ64tAV6lKNKlV1M3bwdsqUAVOZdvlH8,1900
+phidnet/error.py,sha256=o78tx-rdwdfbO8yCM5hLG78rWKqSGQjoPW7SqIyZG9I,228
+phidnet/feedforward.py,sha256=QwkXI2ya5HQig-ttalZ3ZjYoIOegqZ_MfBrYQLOEyM4,779
+phidnet/gradient.py,sha256=344spmB424RBdZjRC0c6HOEOSNshv17n-h5b8BBDhlw,406
+phidnet/loss.py,sha256=KIhNwDSYBtXNbv0Eh4DNivA1sTsgWCUJtIWa4dRFu3Q,513
+phidnet/matrix.py,sha256=-pJh1nxy22wYZghYuWwDRJ_kcsoWildzw8dT9Gbf5hY,26583
+phidnet/model.py,sha256=7mOSG-uZldMA2xTMPBL8M9JymZemmDW1cPqFbipOW48,2253
+phidnet/network_data.py,sha256=zJpOwpL9v9nyKQLxUIIBQlcrwH6C6XxWeFYUyfJ_wpE,797
+phidnet/one_hot_encode.py,sha256=LHwcyZ5Ywhi1kMXN4NN_RYTKo_mhIig44MwEOXZJ3JE,467
+phidnet/optimizer.py,sha256=aZMpjyioIY7v4shpJezWLr6-qYdhLvgIMYwD09dNvbM,1475
+phidnet/set.py,sha256=rVA9F8JEwXcVBrS-PhbrmXrRnrHS76Gsbz_9T33UzSs,1257
+phidnet-0.0.1.dist-info/LICENSE,sha256=awNZA6YY-61XJC8LzavaXJQZnU6U67b0a-NnJ7zLgkk,1084
+phidnet-0.0.1.dist-info/METADATA,sha256=r9ZYQ8ufeFIWqpW1Oa1U46SUha6SpwjHT4q5OaOPyaA,508
+phidnet-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+phidnet-0.0.1.dist-info/top_level.txt,sha256=BtHMATD3qcP2TdSZkkqN_0mNrp12X6JdOAkXFUS5-Hk,8
+phidnet-0.0.1.dist-info/RECORD,,

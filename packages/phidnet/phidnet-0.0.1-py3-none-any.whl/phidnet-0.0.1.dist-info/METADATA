@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: phidnet
+Version: 0.0.1
+Summary: Phidnet
+Home-page: https://github.com/Intipy/phidnet.git
+Author: Intipy
+Author-email: jios6790@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Phidnet
+## Phidnet is a library developed for neural network construction and deep learning.
+
+
+
