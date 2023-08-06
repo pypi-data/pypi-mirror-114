@@ -1,0 +1,9 @@
+click>=7.1.2
+pyyaml>=5.4.1
+requests>=2.25.0
+toml>=0.10.2
+python-dateutil>=2.8.1
+tarsafe>=0.0.3
+packaging>=20.4
+requests-cache>=0.5.2
+appdirs>=1.4.4
