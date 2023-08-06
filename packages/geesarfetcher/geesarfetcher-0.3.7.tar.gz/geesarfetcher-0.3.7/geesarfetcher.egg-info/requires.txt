@@ -1,0 +1,15 @@
+tqdm>=4.50.2
+numpy<=1.19.3,>=1.18.0
+earthengine-api>=0.1.231
+joblib>=0.17.0
+google-auth<2.0dev,>=1.11.0
+
+[all]
+sphinx-rtd-theme
+sphinxcontrib-programoutput
+sphinx
+
+[docs]
+sphinx
+sphinx-rtd-theme
+sphinxcontrib-programoutput
