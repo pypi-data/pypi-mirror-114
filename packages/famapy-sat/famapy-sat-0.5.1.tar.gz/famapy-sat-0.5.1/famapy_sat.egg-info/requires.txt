@@ -1,0 +1,2 @@
+famapy>=0.5.0
+python-sat>=0.1.7.dev6
