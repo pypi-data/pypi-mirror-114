@@ -1,0 +1,3 @@
+[console_scripts]
+git-outlier = git_outlier.git_outlier:main
+

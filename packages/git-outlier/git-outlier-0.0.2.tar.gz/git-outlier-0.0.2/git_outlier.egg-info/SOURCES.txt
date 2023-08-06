@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+git_outlier/__init__.py
+git_outlier/git_outlier.py
+git_outlier.egg-info/PKG-INFO
+git_outlier.egg-info/SOURCES.txt
+git_outlier.egg-info/dependency_links.txt
+git_outlier.egg-info/entry_points.txt
+git_outlier.egg-info/requires.txt
+git_outlier.egg-info/top_level.txt
+test/test_outlier.py
