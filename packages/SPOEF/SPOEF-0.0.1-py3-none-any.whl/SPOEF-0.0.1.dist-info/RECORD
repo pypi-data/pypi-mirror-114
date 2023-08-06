@@ -1,0 +1,9 @@
+spoef/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spoef/feature_generation.py,sha256=ggSkhZMnT573JNP-VYF1NVygl7CeW23aE_ue8FMpBnk,18227
+spoef/transforms.py,sha256=nZumJDZp3RQNkswu57cSeQojcrTDNRxyoSNvf8hhugo,5533
+spoef/utils.py,sha256=kLNQAoVM8hW5zTKugr9OK5ip72VHTT-1zTdCBW-Q4d4,7712
+SPOEF-0.0.1.dist-info/LICENSE,sha256=3Fa01V28xlv6DTfnW3PP9J2QJw1NcLrcCSHq1oVfPCw,1069
+SPOEF-0.0.1.dist-info/METADATA,sha256=JsUC2U3sP0FR0OemjzVfZQzQFEjDmnM7co3p6Mi_4ag,623
+SPOEF-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+SPOEF-0.0.1.dist-info/top_level.txt,sha256=-McqRFtmSooPixBR_g9pMOZrYjIN21HC7v12hUu3MSs,6
+SPOEF-0.0.1.dist-info/RECORD,,
