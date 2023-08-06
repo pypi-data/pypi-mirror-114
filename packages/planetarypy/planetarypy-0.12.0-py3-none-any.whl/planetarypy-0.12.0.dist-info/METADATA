@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: planetarypy
+Version: 0.12.0
+Summary: Python Tools for Planetary Science
+Home-page: https://github.com/michaelaye/nbplanetarypy/tree/{branch}/
+Author: Michael Aye
+Author-email: kmichael.aye@gmail.com
+License: Apache Software License 2.0
+Keywords: planetary science,data analysis
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: strictyaml
+Requires-Dist: pandas
+Requires-Dist: pvl
+Requires-Dist: numpy
+Requires-Dist: python-dateutil
+Requires-Dist: tqdm
+Requires-Dist: lxml
+Requires-Dist: yarl
+Requires-Dist: hirise-tools
+Requires-Dist: kalasiris
+Requires-Dist: dask
+
+# PlanetaryPy
+> This will become (part of) the core package of the <a href='https://planetarypy.org/'>PlanetaryPy</a> organisation.
+
+
+## Current focus
+
+* Enable finding PDS data by downloading and managing PDS3 index files
+  * Conversion of these index files to `pandas.DataFrames` for search and filtering
+* Downloading and local management of PDS3 data as identified via the index files or directly via data/product IDs.
+
+## Install
+
+`pip install planetarypy`
+
+
