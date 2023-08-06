@@ -1,0 +1,12 @@
+cafeden/__init__.py,sha256=RbS4qQ5m-LCP0uyrNdcLyA_WByWT0aN2q5dtNSenTd8,112
+cafeden/__main__.py,sha256=SuQFjMNYGaAdtja3WvbBxplEBMIkzxnatZrSXkxcTh8,230
+cafeden/cafeden.py,sha256=I5HWSJKXlez8Ow6iJIeOtcTAYI1CxAc0dpls5bOE67Y,7629
+cafeden/config.py,sha256=nDGAg-BdnncEF4OqmG1He7HBcOTJ1hjt5h6Sw_JLyI0,1263
+cafeden/resources/icon.ico,sha256=eEhvu4iQgkCV4FnIIfBl1M4z9BCq2wCI7rasvPdUOcM,7260
+resources/icon.ico,sha256=eEhvu4iQgkCV4FnIIfBl1M4z9BCq2wCI7rasvPdUOcM,7260
+cafeden-0.2.0.dist-info/LICENSE,sha256=Ra-Mm0wB72LU5UYGfAfMsUXe8aRw1DRXDjx9e81oJ3Q,1070
+cafeden-0.2.0.dist-info/METADATA,sha256=hgXhXeoxht_K8wB0A-CpkFD1HvfqEjdWgRJfc5W3fag,3603
+cafeden-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cafeden-0.2.0.dist-info/entry_points.txt,sha256=K2axilUIYkeAZB8CWYA4WdGWHKZe7MQi3atlOEDqQqg,51
+cafeden-0.2.0.dist-info/top_level.txt,sha256=RyIb7E0Mc7b_i7-gxt1WSlt9XNIMFcW0IWY5Z7lNEjc,8
+cafeden-0.2.0.dist-info/RECORD,,
