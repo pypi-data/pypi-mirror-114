@@ -1,0 +1,10 @@
+bdf2lvgl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bdf2lvgl/codegen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bdf2lvgl/codegen/c.py,sha256=iXvm9MhYnnq69v-4fZjjvVWJLLrvtQmzfE21YJ4HAKU,6503
+bdf2lvgl/main.py,sha256=DvS-yCNQjfqxd0fxNRu__9JHRml88_N_ZiZO9Y7k4SI,1118
+bdf2lvgl/parse.py,sha256=zrwq5QrEtbPbJBFKwY_g2kduCo0nbZttoCLKCJlZHQM,2494
+bdf2lvgl-0.1.0.dist-info/entry_points.txt,sha256=qxvU64zVc_bf2otuQtdH4xdAKJScZ-tmjYLLvNGuNEY,47
+bdf2lvgl-0.1.0.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+bdf2lvgl-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+bdf2lvgl-0.1.0.dist-info/METADATA,sha256=SuJJVbmEicoZloUsmDCVtQ6AZcoup-9JwjYzNYxD1p0,477
+bdf2lvgl-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+bdf2lvgl=bdf2lvgl.main:main
+
