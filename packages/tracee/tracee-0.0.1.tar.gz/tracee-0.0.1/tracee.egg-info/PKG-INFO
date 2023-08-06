@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: tracee
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Ryou Ohsawa
+Author-email: ohsawa@ioa.s.u-tokyo.ac.jp
+Maintainer: Ryou Ohsawa
+Maintainer-email: ohsawa@ioa.s.u-tokyo.ac.jp
+License: MIT
+Description: # Tracklet Extraction Engine
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Description-Content-Type: text/markdown
