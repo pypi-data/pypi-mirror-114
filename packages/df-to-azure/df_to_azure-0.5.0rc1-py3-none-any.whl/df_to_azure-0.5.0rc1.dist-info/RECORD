@@ -1,0 +1,12 @@
+df_to_azure/__init__.py,sha256=PtREi-ajXh-otdvIByfgNk1cvP1TGj7KbYbMlEQKneg,422
+df_to_azure/adf.py,sha256=3G4ETLucRdR3VlqaeyW_JxHqsPR6WVj_sNp1C_GfruA,8969
+df_to_azure/db.py,sha256=itSGyEfEAh8TcLam-JWK9IEm4R5MgDwaxVeVtTLT74o,2655
+df_to_azure/exceptions.py,sha256=AF4M5QLlHzHhEp2x5oYtv-iS7xlvw31QOnKNhy-axgc,292
+df_to_azure/export.py,sha256=NTR4zsnaF6N2sDNcrj71yW8y6NeDzKoVfH_ebsd_SSg,7347
+df_to_azure/settings.py,sha256=z73fNL2UhqhZlaDIYYtIrShdaWLYPeh4AE0yonRxTAQ,921
+df_to_azure/utils.py,sha256=V7zKYuC6j31W4eAjtb3Gcfv53_q5HNGQ3n3mf-QNT48,2432
+df_to_azure-0.5.0rc1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+df_to_azure-0.5.0rc1.dist-info/METADATA,sha256=RoimKunv8dDkwJR-EeYbqyQVWvw1G4IiEGbBonvtMco,4800
+df_to_azure-0.5.0rc1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+df_to_azure-0.5.0rc1.dist-info/top_level.txt,sha256=SjUy_a3FEckyP1v0vsp31QPvf6bg7m91AT0E0eWYrDU,12
+df_to_azure-0.5.0rc1.dist-info/RECORD,,
