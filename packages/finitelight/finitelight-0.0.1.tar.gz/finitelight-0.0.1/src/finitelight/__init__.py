@@ -1,0 +1,1 @@
+from finitelight.finitelight import lightspeed_time
