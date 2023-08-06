@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+xcluster/core/__init__.py
+xcluster/core/utils.py
+xcluster/xcluster.egg-info/PKG-INFO
+xcluster/xcluster.egg-info/SOURCES.txt
+xcluster/xcluster.egg-info/dependency_links.txt
+xcluster/xcluster.egg-info/requires.txt
+xcluster/xcluster.egg-info/top_level.txt
