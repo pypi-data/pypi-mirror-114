@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: drf_health_check
+Version: 0.0.7
+Summary: Various health check view for the Django Framework
+Home-page: https://github.com/ihor-voronin/health-checker-django
+Author: Ihor Voronin
+Author-email: VoroninIhor@gmail.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: drf-spectacular>=0.17.2
+Requires-Dist: django>=3.2
+Requires-Dist: djangorestframework>=3.10.0
+
+# health-checker-django
+
+|version| |coverage| |health| |license|
+
