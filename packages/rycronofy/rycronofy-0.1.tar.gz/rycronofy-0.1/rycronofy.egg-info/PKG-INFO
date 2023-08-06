@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: rycronofy
+Version: 0.1
+Summary: A basic Python wrapper over the Cronofy calendar scheduling library
+Home-page: UNKNOWN
+Author: Ryan Mohta
+Author-email: ryanmohta@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: python,cronofy
+Platform: UNKNOWN
