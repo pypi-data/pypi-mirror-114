@@ -1,0 +1,10 @@
+comments_bot/__init__.py,sha256=zjocDP1UT5pxKlA75QY1Zo3HLiAolTXnO34bjMo-H1c,74
+comments_bot/_utils.py,sha256=KnuqJkcC4PtNuLMLpNjswvbQJvlRwkWJBjZDWKDW0tM,394
+comments_bot/asyncClient.py,sha256=QC1nFx-PI6fkfzRquGRssNRffASo299jzEcj7BPtKt0,2920
+comments_bot/errors.py,sha256=AGTRYYjYD8zngsRZJ0uwFyYGf0saqRSzd9aMKOTt52I,43
+comments_bot/syncClient.py,sha256=44Uwnf1RzIRCSY1kC_NPY4rV8eF88iaREQ5AopAa_fU,2856
+LICENSE,sha256=wm1veVs7smyFnJ_yxrM7hr4MUe_H3hY1Bd5hzlcN46g,1084
+comments.bot-1.0.0.dist-info/LICENSE,sha256=wm1veVs7smyFnJ_yxrM7hr4MUe_H3hY1Bd5hzlcN46g,1084
+comments.bot-1.0.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+comments.bot-1.0.0.dist-info/METADATA,sha256=EMokSmSOe0d7FnTOheEVScAmH-Za9hWKwbHVzb06uzM,4721
+comments.bot-1.0.0.dist-info/RECORD,,
