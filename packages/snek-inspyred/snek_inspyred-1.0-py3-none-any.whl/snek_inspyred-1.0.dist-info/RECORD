@@ -1,0 +1,9 @@
+snek_inspyred/__init__.py,sha256=Rj4tXuJvjpTFHFhzLot-DcJzL0aAqcAfsDlRU5K-YHc,253
+snek_inspyred/assets/__init__.py,sha256=7xMe59lPSwa3b1ZaXav2FXVX4YQ0D8eVme1sUAh84-Y,4989
+snek_inspyred/game/__init__.py,sha256=P98T1dpmSzHfIP86SJ99pBcNkxcV68NSgb4LrycLE4k,2140
+snek_inspyred/game/field/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snek_inspyred/main.py,sha256=NS1B88lT7ekty9xHg7Yj89a-Jb5B8ytclVP7U-5NDEs,37
+snek_inspyred-1.0.dist-info/entry_points.txt,sha256=A141TdxH6nS6n5Yo6KnSldOmSN9EO3-W90lV1yYuRNI,53
+snek_inspyred-1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+snek_inspyred-1.0.dist-info/METADATA,sha256=wvN-IdSLtG3tkoGK38dHmlHQDx9vEWxhyw3y6jhOOCM,820
+snek_inspyred-1.0.dist-info/RECORD,,
