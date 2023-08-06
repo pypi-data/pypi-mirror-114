@@ -1,0 +1,4 @@
+[console_scripts]
+yqn-autoview = yqn_project_pro.init_project:auto_handler
+yqn-project = yqn_project_pro.init_project:main
+
