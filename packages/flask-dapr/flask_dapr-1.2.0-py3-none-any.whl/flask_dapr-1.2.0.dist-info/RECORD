@@ -1,0 +1,8 @@
+flask_dapr/__init__.py,sha256=6tmO734k6fGhvUxVey6gc41eFWwAdocEdhHI6X0_Y4o,179
+flask_dapr/actor.py,sha256=jNj0U0Xolsvb-qF5xbaKONcQoGLpjBDbbVBF_S7QFfg,5472
+flask_dapr/version.py,sha256=ukNp3jSV6YH1705QgSQKEqU4kYptH7nUM7Cf2YJErkE,147
+flask_dapr-1.2.0.dist-info/LICENSE,sha256=iVca8saaTTsb6oZKlEMKt5lqpSBcyM8Oc-9tUn9IE30,1096
+flask_dapr-1.2.0.dist-info/METADATA,sha256=fJoFDAALkQKCrdhIoG3CpkXg2o2ogEnkZrE4aQ0ilRI,1361
+flask_dapr-1.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+flask_dapr-1.2.0.dist-info/top_level.txt,sha256=Ixlowlkq3BCvnX8-Eocpw3FF5iOVb8VCm26wzwU2rQw,11
+flask_dapr-1.2.0.dist-info/RECORD,,
