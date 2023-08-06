@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyAlgebra.py
+setup.cfg
+setup.py
+pyAlgebra.egg-info/PKG-INFO
+pyAlgebra.egg-info/SOURCES.txt
+pyAlgebra.egg-info/dependency_links.txt
+pyAlgebra.egg-info/requires.txt
+pyAlgebra.egg-info/top_level.txt
