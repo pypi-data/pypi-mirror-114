@@ -1,0 +1,9 @@
+pkgdependencymanager/__init__.py,sha256=SOBshbc35aHGAY0r5ZLkqqWFm0JjAjjzImp-jQ0tilI,53
+pkgdependencymanager/__main__.py,sha256=lJ_KKARJ6eRT1A6yquvCKx_eBfxrA1W-4LQEj7nZ7-Q,264
+pkgdependencymanager/config.py,sha256=7aYoqkE02qKrrVNrVWyYfW6drbsiv4LZb9rAK5CaweE,1591
+pkgdependencymanager/util.py,sha256=2TnGFlMl_6iOQEugwhdCDNDG1rYzkcGVR7HJVRoXdmI,809
+pkg_dependency_manager-1.0.3.dist-info/LICENSE,sha256=dAWEIBJz870jtxVqR0PIUIPsuO4LZtA7k1WeQE9q3O4,11339
+pkg_dependency_manager-1.0.3.dist-info/METADATA,sha256=-oTYRwtTKkud4i7UV0t-Ma3MX6HfMSvv1m5JQmDnk_s,741
+pkg_dependency_manager-1.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pkg_dependency_manager-1.0.3.dist-info/top_level.txt,sha256=faWm0ePLZaSxXkPyQvXeZu5hdVPh5NZLtd9dju_-C-g,21
+pkg_dependency_manager-1.0.3.dist-info/RECORD,,
