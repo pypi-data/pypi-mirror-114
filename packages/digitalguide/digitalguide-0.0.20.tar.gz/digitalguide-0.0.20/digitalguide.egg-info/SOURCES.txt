@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+digitalguide/__init__.py
+digitalguide/generateActions.py
+digitalguide/mongo_persistence.py
+digitalguide/rasa_filter.py
+digitalguide/uhrzeit_filter.py
+digitalguide/writeActions.py
+digitalguide.egg-info/PKG-INFO
+digitalguide.egg-info/SOURCES.txt
+digitalguide.egg-info/dependency_links.txt
+digitalguide.egg-info/top_level.txt
+tests/__init__.py
+tests/test_uhrzeit_filter.py
