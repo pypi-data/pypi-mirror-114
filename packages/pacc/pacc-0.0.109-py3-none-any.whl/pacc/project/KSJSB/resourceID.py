@@ -1,0 +1,16 @@
+left_btn = 'com.kuaishou.nebula:id/left_btn'  # 主界面左上角菜单项
+red_packet_anim = 'com.kuaishou.nebula:id/red_packet_anim'  # 主界面右上方红包图标
+cycle_progress = 'com.kuaishou.nebula:id/cycle_progress'  # 金币进度
+gold_egg_anim = 'com.kuaishou.nebula:id/gold_egg_anim'  # 金蛋
+iv_close_common_dialog = 'com.kuaishou.nebula:id/iv_close_common_dialog'  # 主界面右上方关闭奥运夺冠瞬间界面
+animated_image = 'com.kuaishou.nebula:id/animated_image'  # 主界面左上方关闭奥运福娃按钮
+positive = 'com.kuaishou.nebula:id/positive'  # 主界面中间青少年模式，我知道了
+description = 'com.kuaishou.nebula:id/description'  # 网络连接失败，请稍后重试
+tab_text = 'com.kuaishou.nebula:id/tab_text'  # 详细信息/评论
+live_exit_button = 'com.kuaishou.nebula:id/live_exit_button'  # 直接退出（直播）
+exit_btn = 'com.kuaishou.nebula:id/exit_btn'  # 退出（直播）
+live_simple_play_swipe_text = 'com.kuaishou.nebula:id/live_simple_play_swipe_text'  # 点击进入直播间
+open_long_atlas = 'com.kuaishou.nebula:id/open_long_atlas'  # 点击打开长图
+comment_header_close = 'com.kuaishou.nebula:id/comment_header_close'  # 关闭评论
+button2 = 'android:id/button2'  # 等待按钮（应用长时间无反应）
+choose_tv = 'com.kuaishou.nebula:id/choose_tv'  # 请选择你要进行的操作（不感兴趣、关注）
