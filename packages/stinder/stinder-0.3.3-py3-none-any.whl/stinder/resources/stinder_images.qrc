@@ -1,0 +1,30 @@
+<RCC>
+  <qresource prefix="logo">
+    <file>images/wt-profile.png</file>
+    <file>images/AD-profile.png</file>
+    <file>images/IMG_4845.JPG</file>
+    <file>images/ce-profile.jpg</file>
+    <file>images/eg_pfp.jpg</file>
+    <file>images/stinder_book_logo.png</file>
+    <file>images/stinder_logo.png</file>
+  </qresource>
+  <qresource prefix="fonts">
+    <file>fonts/NexaBookItalic.otf</file>
+    <file>fonts/NexaHeavy.otf</file>
+    <file>fonts/NexaBold.otf</file>
+    <file>fonts/NexaBoldItalic.otf</file>
+    <file>fonts/NexaBook.otf</file>
+    <file>fonts/NexaBlack.otf</file>
+    <file>fonts/NexaBlackItalic.otf</file>
+    <file>fonts/NexaXBoldItalic.otf</file>
+    <file>fonts/NexaThin.otf</file>
+    <file>fonts/NexaThinItalic.otf</file>
+    <file>fonts/NexaXBold.otf</file>
+    <file>fonts/NexaLightItalic.otf</file>
+    <file>fonts/NexaRegular.otf</file>
+    <file>fonts/NexaRegularItalic.otf</file>
+    <file>fonts/NexaHeavyItalic.otf</file>
+    <file>fonts/NexaLight.otf</file>
+    <file>fonts/Nexa Light.otf</file>
+  </qresource>
+</RCC>
