@@ -1,0 +1,12 @@
+question: |
+  You should be using the Landlord/Tenant interview
+subquestion: |
+  The Philadelphia Municipal Court hears cases involving a written or oral lease.  The court has the authority to evict a tenant and to enter money judgment.  However the court cannot hear a case involving a squatter.  To file a landlord tenant case with the Municipal Court, contact (215) 686-2900.
+
+  If you are a tenant/resident appealing a landlord-tenant decision made by the Municipal Court, select “Landlord-tenant appeal from Municipal Court” in the previous menu to review the tools available for landlord-tenant appeals. 
+action buttons:  
+  - label: Click here to redirect to correct menu
+    action: |
+      ${ interview_url(i='docassemble.EJCRC:data/questions/LLT_or_ejectment_defendant.yml') } 
+    color: primary
+mandatory: true
