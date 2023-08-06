@@ -1,0 +1,4 @@
+[console_scripts]
+demo = psox.demo:entry
+zz = psox.zz:main
+
