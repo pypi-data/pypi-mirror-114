@@ -1,0 +1,228 @@
+import os
+import yaml
+import math
+import logging
+from typing import *
+
+import torch
+import torchvision
+import numpy as np
+from PIL import Image
+from omegaconf import OmegaConf
+from forks.taming_transformers.taming.models.vqgan import VQModel
+from bigotis.modeling_utils import ImageGenerator
+
+logging.basicConfig(format='%(message)s', level=logging.INFO)
+
+
+class TamingDecoder(ImageGenerator):
+    def __init__(
+        self,
+        target_img_size=256,
+        device=None,
+    ):
+        super().__init__()
+
+        self.target_img_size = target_img_size
+        self.embed_size = self.target_img_size // 16
+
+        if device is not None:
+            self.device = device
+
+        modeling_dir = os.path.dirname(os.path.abspath(__file__))
+        modeling_cache_dir = os.path.join(modeling_dir, ".modeling_cache")
+        os.makedirs(modeling_cache_dir, exist_ok=True)
+
+        modeling_ckpt_path = os.path.join(modeling_cache_dir, 'last.ckpt')
+        if not os.path.exists(modeling_ckpt_path):
+            logging.info("Downloading pre-trained weights for VQ-GAN")
+            os.system(
+                f"curl -LO 'https://heibox.uni-heidelberg.de/f/867b05fc8c4841768640/?dl=1' -o '{modeling_ckpt_path}'"
+            )
+
+        # TODO: update the url with our own config using the correct paths
+        modeling_config_path = os.path.join(modeling_cache_dir, 'model.yaml')
+        if not os.path.exists(modeling_config_path):
+            logging.info("Downloading `model.yaml` from vipermu taming-transformers fork")
+            os.system(
+                f"curl -LO 'https://raw.githubusercontent.com/vipermu/taming-transformers/master/configs/custom_vqgan.yaml' -o '{modeling_config_path}'"
+            )
+
+        vqgan_config_xl = self.load_config(
+            config_path=modeling_config_path,
+            display=False,
+        )
+        self.vqgan_model = self.load_vqgan(
+            vqgan_config_xl,
+            ckpt_path=modeling_ckpt_path,
+        ).to(self.device)
+
+    def vqgan_preprocess(
+        self,
+        img,
+    ):
+        img = img.convert("RGB")
+
+        min_img_dim = min(img.size)
+
+        scale_factor = self.target_img_size / min_img_dim
+        scaled_img_dim = (round(scale_factor * img.size[0]),
+                          round(scale_factor * img.size[1]))
+        img = img.resize(scaled_img_dim, Image.LANCZOS)
+        img = torchvision.transforms.functional.center_crop(
+            img, output_size=2 * [self.target_img_size])
+        img_tensor = torch.unsqueeze(torchvision.transforms.ToTensor()(img),
+                                     0).to(self.device)
+
+        img_tensor = 2. * img_tensor - 1.
+
+        return img_tensor
+
+    @staticmethod
+    def load_config(config_path, display=False):
+        config = OmegaConf.load(config_path)
+
+        if display:
+            logging.info(yaml.dump(OmegaConf.to_container(config)))
+
+        return config
+
+    @staticmethod
+    def load_vqgan(
+        config,
+        ckpt_path=None,
+    ):
+        model = VQModel(**config.model.params)
+
+        if ckpt_path is not None:
+            # XXX: check wtf is going on here
+            sd = torch.load(ckpt_path, map_location="cpu")["state_dict"]
+            missing, unexpected = model.load_state_dict(sd, strict=False)
+
+        return model.eval()
+
+    def generate_from_prompt(
+        self,
+        prompt: str,
+        lr: float = 0.5,
+        img_save_freq: int = 1,
+        num_generations: int = 200,
+        num_random_crops: int = 20,
+        img_batch=None,
+    ):
+        batch_size = 1
+
+        z_logits = .5 * torch.randn(
+            batch_size,
+            256,
+            self.embed_size,
+            self.embed_size,
+        ).to(self.device)
+
+        z_logits = torch.nn.Parameter(
+            torch.sinh(1.9 * torch.arcsinh(z_logits)), )
+
+        if img_batch is not None:
+            clip_img_z_logits = self.get_clip_img_encodings(img_batch)
+            clip_img_z_logits = clip_img_z_logits.detach().clone()
+
+            z, _, [_, _, indices] = self.vqgan_model.encode(img_batch)
+
+            z_logits = torch.nn.Parameter(z)
+            img_z_logits = z.detach().clone()
+
+        optimizer = torch.optim.AdamW(
+            params=[z_logits],
+            lr=lr,
+            betas=(0.9, 0.999),
+            weight_decay=0.1,
+        )
+
+        gen_img_list = []
+        z_logits_list = []
+
+        for step in range(num_generations):
+            loss = 0
+
+            if step % img_save_freq == 0:
+                z_logits_list.append(z_logits.detach().clone())
+
+            z = self.vqgan_model.post_quant_conv(z_logits)
+            x_rec = self.vqgan_model.decoder(z)
+            x_rec = (x_rec.clip(-1, 1) + 1) / 2
+            x_rec_stacked = self.augment(x_rec, num_crops=num_random_crops)
+
+            loss += 10 * self.compute_clip_loss(x_rec_stacked, prompt)
+
+            if img_batch is not None:
+                loss += -10 * torch.cosine_similarity(z_logits,
+                                                      img_z_logits).mean()
+            # if img_batch is not None:
+            #     loss += -10 * torch.cosine_similarity(
+            #         self.get_clip_img_encodings(x_rec), clip_img_z_logits).mean()
+
+            logging.info(f"\nIteration {step} of {num_generations}")
+            logging.info(f"Loss {round(float(loss.data), 2)}")
+
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+
+            if step % img_save_freq == 0:
+                x_rec_img = torchvision.transforms.ToPILImage(mode='RGB')(
+                    x_rec[0])
+                gen_img_list.append(x_rec_img)
+
+                # x_rec_img.save(f"generations/{step}.png")
+
+            torch.cuda.empty_cache()
+
+        return gen_img_list, z_logits_list
+
+    def interpolate(
+        self,
+        z_logits_list,
+        duration_list,
+    ):
+        gen_img_list = []
+        fps = 25
+
+        for idx, (z_logits,
+                  duration) in enumerate(zip(z_logits_list, duration_list)):
+            num_steps = int(duration * fps)
+            z_logits_1 = z_logits
+            z_logits_2 = z_logits_list[(idx + 1) % len(z_logits_list)]
+
+            for step in range(num_steps):
+                weight = math.sin(1.5708 * step / num_steps)**2
+                z_logits = weight * z_logits_2 + (1 - weight) * z_logits_1
+
+                z = self.vqgan_model.post_quant_conv(z_logits)
+                x_rec = self.vqgan_model.decoder(z)
+                x_rec = (x_rec.clip(-1, 1) + 1) / 2
+
+                x_rec_img = torchvision.transforms.ToPILImage(mode='RGB')(
+                    x_rec[0])
+                gen_img_list.append(x_rec_img)
+
+        return gen_img_list
+
+
+if __name__ == '__main__':
+    prompt = "The mexican life, painted by Diego Rivera"
+    lr = 0.5
+    img_save_freq = 1
+    num_generations = 200
+    num_random_crops = 20
+    img_batch=None
+
+
+    taming_decoder = TamingDecoder()
+    gen_img_list, z_logits_list = taming_decoder.generate_from_prompt(
+        prompt=prompt,
+        lr=lr,
+        img_save_freq=img_save_freq,
+        num_generations=num_generations,
+        num_random_crops=num_random_crops,
+        img_batch=img_batch,
+        )
