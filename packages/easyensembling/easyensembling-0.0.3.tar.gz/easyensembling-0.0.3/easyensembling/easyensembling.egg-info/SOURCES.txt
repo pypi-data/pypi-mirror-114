@@ -1,0 +1,15 @@
+.gitignore
+README.md
+requirements.txt
+setup.py
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/test-ensamble.iml
+.idea/vcs.xml
+.idea/workspace.xml
+easyensembling/easyensembling.py
+easyensembling/easyensembling.egg-info/PKG-INFO
+easyensembling/easyensembling.egg-info/SOURCES.txt
+easyensembling/easyensembling.egg-info/dependency_links.txt
+easyensembling/easyensembling.egg-info/top_level.txt
