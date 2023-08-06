@@ -1,0 +1,12 @@
+mpegCoder-3.1.0b0.data/purelib/mpegCoder/__init__.py,sha256=zbguIpX0vLwZUSnuVcNeXTbmCkdGRGAk7wkm-gydAbw,737
+mpegCoder-3.1.0b0.data/purelib/mpegCoder/avcodec-58.dll,sha256=arjndHnNbn3b03bToM_pJQoCJbEfTVdpbVCQZdGq9z8,63842816
+mpegCoder-3.1.0b0.data/purelib/mpegCoder/avformat-58.dll,sha256=skQTsfV--GirzoLTWNb8YUxDSumThi8IXlqAl3KrGDo,14799872
+mpegCoder-3.1.0b0.data/purelib/mpegCoder/avutil-56.dll,sha256=Eni0Q_fhl_mF--an00KZ-59Xwzc_oFMi_76V9uMBs28,1289728
+mpegCoder-3.1.0b0.data/purelib/mpegCoder/mpegCoder.pyd,sha256=p5VZ9tdPhzVt5cRQ7TMu07jztec8V0TWGucvUF41S1g,160256
+mpegCoder-3.1.0b0.data/purelib/mpegCoder/swresample-3.dll,sha256=fLnVg4s20lYvaFPO28Hczh_SoWaUnGOsXmswRyUyqJo,432640
+mpegCoder-3.1.0b0.data/purelib/mpegCoder/swscale-5.dll,sha256=VgYES9H7Y35lyCZTBmyfzPCjVN3L9zD7mCo_Zf1hNaY,568832
+mpegCoder-3.1.0b0.dist-info/LICENSE,sha256=Czg9WmPaZE9ijZnDOXbqZIftiaqlnwsyV5kt6sEXHms,35821
+mpegCoder-3.1.0b0.dist-info/METADATA,sha256=opBMX0FOyjv70gF8J_4SMyKvxoush5eE7Uu3bvTbncc,8104
+mpegCoder-3.1.0b0.dist-info/WHEEL,sha256=epucrC2yyYTysDCMzXuz8eGMTMKryzRfNOvMGdslbjc,101
+mpegCoder-3.1.0b0.dist-info/top_level.txt,sha256=IROQlWOZFq0r1nt11Ecm4BhUALCPijOw91dQFo9J6ZE,10
+mpegCoder-3.1.0b0.dist-info/RECORD,,
