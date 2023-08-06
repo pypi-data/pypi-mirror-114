@@ -1,0 +1,16 @@
+qronos_django/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qronos_django/admin.py,sha256=5mYjCj8oLYQtB94qSjeshJJIx8iNjOhQAaYEqIPnDMI,668
+qronos_django/apps.py,sha256=REQ3vGO_Kcq1nYm40v2lXjAeL6L3nZlR2kN2OIkFTwk,135
+qronos_django/connection.py,sha256=Ge0t2bU9nj_2h0KuIYRyGwR614cXTCnUdQ6RBErFACU,715
+qronos_django/imports.py,sha256=bQmvu04hP0qcucIBeW5utFFDBQDOQ7HfD4JW0ubIMpY,2151
+qronos_django/models.py,sha256=tZlehqVmU93A59jt4bSQHdP0sf78ObqfbdahLsXKIQY,1388
+qronos_django/settings.py,sha256=Kagveakzczw1JTSuf2LPGFr1bUunquEVxiAsWe3hP48,1006
+qronos_django/tasks.py,sha256=FiOCJdiSO_GTjmieCDFX3ZgD8Mg4pw0JuFs5Lbybl0Y,1414
+qronos_django/migrations/0001_initial.py,sha256=m47FJUJQV0LfcRn53ohAyqRSV3xgs1q0oyeLO7zykMI,1185
+qronos_django/migrations/0002_auto_20201102_0813.py,sha256=aYIMuXJHVvCx6QSbUdkLCHH3mBG8yv9OXcDqd7TQeVU,471
+qronos_django/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qronos_django-1.0.0.dist-info/LICENSE,sha256=r-RasMgHDyRwgcdP8S2T4q3Ov1CpvFLWKQXlSVaC2Jk,174
+qronos_django-1.0.0.dist-info/METADATA,sha256=wZFB3fvY7W1mSwE2Jl_7PKtJLmI_LWSYAXsWfRQqaps,3429
+qronos_django-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+qronos_django-1.0.0.dist-info/top_level.txt,sha256=xJpg-I6tIX5hOk57iuHQdpMNcQ7wFj71_8SiyAkosu8,14
+qronos_django-1.0.0.dist-info/RECORD,,
