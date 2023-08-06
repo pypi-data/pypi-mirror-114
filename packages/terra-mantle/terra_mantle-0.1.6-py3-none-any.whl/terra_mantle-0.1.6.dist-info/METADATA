@@ -1,0 +1,130 @@
+Metadata-Version: 2.1
+Name: terra-mantle
+Version: 0.1.6
+Summary: Terra mantle client
+Home-page: https://github.com/Anchor-Protocol/mantle-client-python
+Author: Ian Lee
+Author-email: ian@terra.money
+License: Apache-2.0
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: gql (>=3.0.0a6)
+Requires-Dist: graphql-core (>=3.1.5)
+
+# Mantle client
+
+Utility for loading mantle query on python.
+
+> ⚠️ This is a simple utility created for creating jupyter notes, so I don't recommend using it to create actual production applications.
+
+## Examples
+
+<https://github.com/Anchor-Protocol/anchor-notebooks>
+
+## Install
+
+This module supports python 3.5 and later.
+
+```sh
+pip3 install 'gql>=3.0.0a6' 'graphql-core>=3.1.5' # install_requires
+pip3 install terra-mantle
+```
+
+## Wasm query only
+
+```py
+wasm_query = {
+    'marketState': {
+        # target contract address
+        'contractAddress': 'terra15dwd5mj8v59wpj0wvt233mf5efdff808c5tkal',  # moneyMarket.market
+        # contract query (see json query spec for each contract)
+        'query': {
+            'state': {}
+        }
+    },
+    'govState': {
+        'contractAddress': 'terra16ckeuu7c6ggu52a8se005mg5c0kd2kmuun63cu',  # gov
+        'query': {
+            'state': {}
+        }
+    }
+}
+
+mantle_result = mantle(wasm_query=wasm_query)
+
+print(mantle_result)
+# {'govState': {'poll_count': 110, 'total_deposit': '70000000000', 'total_share': '1309541381956'}, 'marketState': {'anc_emission_rate': '20381363.85157231012364762', 'global_interest_index': '1.062740798331278019', 'global_reward_index': '707.107532763988032671', 'last_interest_updated': 5154819, 'last_reward_updated': 5154819, 'prev_aterra_supply': '36698053286894', 'prev_exchange_rate': '1.082316326902926201', 'total_liabilities': '3755322038128.157685932163911878', 'total_reserves': '0.185800322580727577'}}
+```
+
+## Endpoint options
+
+```py
+# default mantle_endpoint is 'https://tequila-mantle.anchorprotocol.com'
+mantle(wasm_query=wasm_query, mantle_endpoint='https://mantle.anchorprotocol.com')
+```
+
+## With graphql query
+
+```py
+from mantle import mantle
+
+# graphql query variables
+query_variables = {
+    'wallet_address': 'terra12hnhh5vtyg5juqnzm43970nh4fw42pt27nw9g9'
+}
+
+# graphql query
+query = """
+  query queryName ($wallet_address: String!) {
+    LastSyncedHeight
+
+    nativeTokenBalances: BankBalancesAddress(Address: $wallet_address) {
+      Result {
+        Denom
+        Amount
+      }
+    }
+  }
+"""
+
+# this "dict" will convert to `WasmContractsContractAddressStore()` query like this.
+# 
+# marketState: WasmContractsContractAddressStore(
+#   ContractAddress: "terra15dwd5mj8v59wpj0wvt233mf5efdff808c5tkal"
+#   QueryMsg: "{\"state\": {}}"
+# ) {
+#   Result
+# }
+# govState: WasmContractsContractAddressStore(
+#   ContractAddress: "terra16ckeuu7c6ggu52a8se005mg5c0kd2kmuun63cu"
+#   QueryMsg: "{\"state\": {}}"
+# ) {
+#   Result
+# }
+wasm_query = {
+    'marketState': {
+        'contractAddress': 'terra15dwd5mj8v59wpj0wvt233mf5efdff808c5tkal',  # moneyMarket.market
+        'query': {
+            'state': {}
+        }
+    },
+    'govState': {
+        'contractAddress': 'terra16ckeuu7c6ggu52a8se005mg5c0kd2kmuun63cu',  # gov
+        'query': {
+            'state': {}
+        }
+    }
+}
+
+mantle_result = mantle(wasm_query=wasm_query, query=query,
+                       query_variables=query_variables)
+
+print(mantle_result)
+# {'LastSyncedHeight': 5154821, 'govState': {'poll_count': 110, 'total_deposit': '70000000000', 'total_share': '1309541381956'}, 'marketState': {'anc_emission_rate': '20381363.85157231012364762', 'global_interest_index': '1.062740798331278019', 'global_reward_index': '707.107532763988032671', 'last_interest_updated': 5154819, 'last_reward_updated': 5154819, 'prev_aterra_supply': '36698053286894', 'prev_exchange_rate': '1.082316326902926201', 'total_liabilities': '3755322038128.157685932163911878', 'total_reserves': '0.185800322580727577'}, 'nativeTokenBalances': {'Result': [{'Amount': '60642415', 'Denom': 'uluna'}, {'Amount': '4336036504', 'Denom': 'uusd'}]}}
+```
+
+# License
+
+This software is licensed under the Apache 2.0 license. Read more about it [here](LICENSE).
+
