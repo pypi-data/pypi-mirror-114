@@ -1,0 +1,13 @@
+JumpDiff/Qratio.py,sha256=CgsWc2xJyQhA_EHLe8cmSuBrB_e4OTFkPaIb2U66uN4,2689
+JumpDiff/__init__.py,sha256=HaNmSbfC6QqZlmSpz3NEkNcal1LU0kI-r6glahTz7mE,283
+JumpDiff/binning.py,sha256=T-IU3RLG5akhKFp7m54xOA3q1VVJlPk2lHK9SaMjrKk,6684
+JumpDiff/formulae.py,sha256=_A0sJ5HM68FGAGxXO2jXaVC_psUXnxX0m0aeb7ORwDw,2880
+JumpDiff/jdprocess.py,sha256=fvcJFDKS479VJK7_Xte-V2gJUllOgrN2Ox2kGEIX4OA,4598
+JumpDiff/kernels.py,sha256=5d4WQXkPQ6QJuou0TSR1x_LSxlTUdET5mgltFSEpNkE,3272
+JumpDiff/moments.py,sha256=kyg8MLTM45WzvhrgCIoR7GUmFs32hbGudxeeiIBVmUQ,10404
+JumpDiff/parameters.py,sha256=ED7_gYHP9gODPb2LwjXtYKFg_N95BsBSD4zRgiz8d7g,4484
+jumpdiff-0.4.dist-info/LICENSE,sha256=g3SQRBSuuUKwevn2yZehnZo0rZ76BKa11ExxNDBT21g,1062
+jumpdiff-0.4.dist-info/METADATA,sha256=PAuUA80x6xxjpnNC850nSP06ofYaccPul31XV7p3EXc,9812
+jumpdiff-0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+jumpdiff-0.4.dist-info/top_level.txt,sha256=DyOgdr9tzo0diZZXFWMukgyE_OCJkqO3OUlPuWB2QEQ,9
+jumpdiff-0.4.dist-info/RECORD,,
