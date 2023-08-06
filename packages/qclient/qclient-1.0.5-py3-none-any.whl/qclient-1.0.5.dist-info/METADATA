@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: qclient
+Version: 1.0.5
+Summary: Client for executing quantum applications on qserver instances
+Home-page: https://github.com/ax1/qclient_py
+Author: ax1
+Author-email: 
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ax1/qclient_py/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# qclient
+
+Client for running quantum applications on qserver instances. See https://quantum.tecnalia.com.
+
+## Install
+
+```sh
+pip install qclient
+```
+
+## Usage
+
+```python
+import qclient
+
+qclient.configure({'token': 'YOUR_TOKEN'})
+print(qclient.get('bell'))
+print(qclient.execute('bell'))
+```
+
+# Methods
+
+- **configure({ server?, ext? ,token? })**: `server`: default server at https://quantum.tecnalia.com. `ext`: default '.qasm', useful in case always using the same language to represent the algorithm. `token`: default '', authorization token to execute services. E.g.: `configure({'token':'kkajsdkj-sudiuawjd....'})`
+- **get(algorithm_name)**: the algorithm in plain text, the extension of the file is optional. E.g.: `get('bell')`
+- **execute(algorithm_name)**: based on the extension, an engine executes the algorithm and provides the result as string (depending on the engine, the result format can vary). E.g.: `execute('bell')`
+
+
