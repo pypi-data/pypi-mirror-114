@@ -1,0 +1,9 @@
+README.md
+setup.py
+exchangelib_listener/__init__.py
+exchangelib_listener/exchangelib_listener.py
+exchangelib_listener.egg-info/PKG-INFO
+exchangelib_listener.egg-info/SOURCES.txt
+exchangelib_listener.egg-info/dependency_links.txt
+exchangelib_listener.egg-info/requires.txt
+exchangelib_listener.egg-info/top_level.txt
