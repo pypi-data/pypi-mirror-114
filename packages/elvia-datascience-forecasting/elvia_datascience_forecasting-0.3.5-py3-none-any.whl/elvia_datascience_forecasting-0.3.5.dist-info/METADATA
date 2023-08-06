@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: elvia-datascience-forecasting
+Version: 0.3.5
+Summary: elvia-datascience-forecasting Python package
+Home-page: UNKNOWN
+Author: Elvia
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy (==1.17.5)
+Requires-Dist: pandas (==1.2.4)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: azureml-core (==1.31.0)
+Provides-Extra: dev
+Requires-Dist: jupyterlab ; extra == 'dev'
+
+UNKNOWN
+
