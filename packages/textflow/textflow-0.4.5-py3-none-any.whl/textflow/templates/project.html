@@ -1,0 +1,69 @@
+{% extends '_layouts/default.html' %}
+
+{% block content %}
+    <div class="columns">
+        <div class="column">
+            <div class="buttons">
+                <a href="/projects/{{ project.id }}" class="button is-highlight has-text-link is-static">
+                    <span class="icon"><i class="fas fa-tasks" aria-label="Project"></i></span><span>Project</span>
+                </a>
+                <a href="/projects/{{ project.id }}/history" class="button is-highlight">
+                    <span class="icon"><i class="fas fa-history"></i></span><span>History</span>
+                </a>
+                <a href="/projects/{{ project.id }}/annotate" class="button is-highlight">
+                    <span class="icon"><i class="fas fa-tag"></i></span><span>Annotate</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <!-- Header -->
+        <div class="block has-text-centered">
+            <h1 class="title">{{ project.name }}</h1>
+            <h2 class="subtitle">{{ project.description }}</h2>
+        </div>
+        <!-- Information -->
+        <div class="block p-6">
+            <nav class="level">
+                <div class="level-item has-text-centered">
+                    <div>
+                        <p class="heading">Total</p>
+                        <p class="title">{{ project_status.num_assigned }}</p>
+                    </div>
+                </div>
+                <div class="level-item has-text-centered">
+                    <div>
+                        <p class="heading">Completed</p>
+                        <p class="title">{{ project_status.num_completed }}</p>
+                    </div>
+                </div>
+                <div class="level-item has-text-centered">
+                    <div>
+                        <p class="heading">Remaining</p>
+                        <p class="title">{{ project_status.num_assigned - project_status.num_completed }}</p>
+                    </div>
+                </div>
+                <div class="level-item has-text-centered">
+                    <div>
+                        <p class="heading">Progress</p>
+                        <p class="title">{{ '%d' | format(project_status.progress) }}%</p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="block">
+            <div class="columns is-mobile is-centered">
+                <div class="field is-grouped is-grouped-multiline">
+                    {% for k, v in project_status.num_annotations.items() %}
+                        <div class="control">
+                            <div class="tags has-addons are-medium">
+                                <span class="tag is-highlight">{{ v[0] }}</span>
+                                <span class="tag is-info">{{ v[1] }}</span>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
