@@ -1,0 +1,3 @@
+[console_scripts]
+artifactable = artifactable.__main__:cli
+
