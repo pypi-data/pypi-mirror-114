@@ -1,0 +1,17 @@
+autoreduce_rest_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoreduce_rest_api/manage.py,sha256=E6oG7kRxcMwEn3W6XsjgTrqPkQz0jwjZdX7G6RAf39c,748
+autoreduce_rest_api/autoreduce_django/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoreduce_rest_api/autoreduce_django/asgi.py,sha256=GdM6T3g2GGmNaJb3zgPkL5bF0pna8wkIJbEDb0plrUY,431
+autoreduce_rest_api/autoreduce_django/settings.py,sha256=Z191BALWM9e8isjJimA52jo0LtvWy6Luqsq5Go21Uq8,2810
+autoreduce_rest_api/autoreduce_django/urls.py,sha256=fOYV_sV5Cx8Op-iZwYKk9eGqgO8w68kTvLW66AD3HQE,786
+autoreduce_rest_api/autoreduce_django/wsgi.py,sha256=qIuwkDjmRShzTRtw_IyUmRetWqJXsv9Kr3Ba7XEZKTQ,431
+autoreduce_rest_api/runs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoreduce_rest_api/runs/urls.py,sha256=Xmk2vd1-oo7iT_T5FUGymMEEe-c3_Plfi_ID74818tI,301
+autoreduce_rest_api/runs/views.py,sha256=R2z9elVbkwXeNWew6CVcaQ2f2gHbk2WhnwPq2cs1I5E,1295
+autoreduce_rest_api-22.0.0.dev3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+autoreduce_rest_api-22.0.0.dev3.dist-info/METADATA,sha256=QpauYdMy_q1Z4VpJf0f4iCPUQ1oFt657PeYldcxZOsk,510
+autoreduce_rest_api-22.0.0.dev3.dist-info/RECORD,,
+autoreduce_rest_api-22.0.0.dev3.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+autoreduce_rest_api-22.0.0.dev3.dist-info/entry_points.txt,sha256=LnaZTBy8Z0U_YYstHFlYvLnZNbWTRfDZu_Jk75ndZq0,80
+autoreduce_rest_api-22.0.0.dev3.dist-info/metadata.json,sha256=vHr3YlJ-_8Wg7sHhsuMpMGLsW26bqIkI-OsaadawY4s,862
+autoreduce_rest_api-22.0.0.dev3.dist-info/top_level.txt,sha256=Ahw8xw5ZoqEERSByjEMU86e_NZth-GeDnqSNxZfq-1Y,20
