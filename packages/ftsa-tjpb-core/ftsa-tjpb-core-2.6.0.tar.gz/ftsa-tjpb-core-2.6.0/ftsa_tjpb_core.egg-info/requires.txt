@@ -1,0 +1,13 @@
+robotframework
+robotframework-seleniumlibrary
+robotframework-sshlibrary
+robotframework-databaselibrary
+robotframework-appiumlibrary
+robotframework-requests
+robotframework-faker
+selenium
+webdrivermanager
+docker
+setuptools
+wheel
+twine
