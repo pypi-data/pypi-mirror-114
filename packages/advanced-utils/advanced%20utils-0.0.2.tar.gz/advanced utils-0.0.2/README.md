@@ -1,0 +1,25 @@
+# Advanced Utils
+
+## 安装依赖
+
+```
+pip install setuptools wheel twine
+```
+
+## 单元测试
+
+```
+python setup.py test
+```
+
+## 打包
+
+```
+python setup.py sdist bdist_wheel
+```
+
+## 上传
+
+```
+twine upload dist/*
+```
