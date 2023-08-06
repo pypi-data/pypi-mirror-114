@@ -1,0 +1,12 @@
+viusitemapparser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+viusitemapparser/detect_filetype.py,sha256=WR9Oav6mOmuAw9F3iazMIgTqHcfcnomu0e50KWej3pA,681
+viusitemapparser/get_file.py,sha256=k-ovbVlqkYqjB65BwNeoke3iuZtGabZOLMtAqFqegpc,1151
+viusitemapparser/get_sitemap_entries.py,sha256=N8mOr-BFxMhas2J9x_L6t_aA55Idj0ThOIPIIM8wObM,2423
+viusitemapparser/parse_file.py,sha256=TUdBjZijV7d9efHwRbW74qFnsZAzEDLbtJH2A8BBxII,211
+viusitemapparser/url_functions.py,sha256=WS0eQOMV7l8BWm5MUn1KVOGqhuxB4lHVNrQEQ4azPzA,193
+viusitemapparser/vsp.py,sha256=1m5W2Re8i_g7dPqcjsc8w-rR6fQCOKHeu0ubFE7eLiQ,915
+VIU_Sitemap_parser-0.1.2.dist-info/LICENSE,sha256=vE538XiaAUP9TKXuBfG5mq4mCdE2jOAOjNXVDLgoPj4,1064
+VIU_Sitemap_parser-0.1.2.dist-info/METADATA,sha256=8tJCh8axznxA4ZPI7p_CscazU659lWCKawoQQNJF_hc,2964
+VIU_Sitemap_parser-0.1.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+VIU_Sitemap_parser-0.1.2.dist-info/top_level.txt,sha256=Ek_JQMm-y3pluGmyIX0T-dXz0PZJZoHvO7MGoB40r5w,17
+VIU_Sitemap_parser-0.1.2.dist-info/RECORD,,
