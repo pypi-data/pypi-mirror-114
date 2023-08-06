@@ -1,0 +1,9 @@
+LICENSE.txt
+README.txt
+setup.py
+matsstatslib/__init__.py
+matsstatslib.egg-info/PKG-INFO
+matsstatslib.egg-info/SOURCES.txt
+matsstatslib.egg-info/dependency_links.txt
+matsstatslib.egg-info/requires.txt
+matsstatslib.egg-info/top_level.txt

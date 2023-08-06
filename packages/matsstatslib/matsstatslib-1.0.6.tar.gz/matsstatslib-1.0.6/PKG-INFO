@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: matsstatslib
+Version: 1.0.6
+Summary: a library of statistical tools
+Home-page: https://upload.pypi.org/legacy/
+Author: Matthew Fyfe
+Author-email: mfyfeatlethenty@hotmail.co.uk
+License: mit
+Keywords: regression,probabilities,ADD MORE HERE
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.txt
+
+
+      FILL THIS IN
+      
+
