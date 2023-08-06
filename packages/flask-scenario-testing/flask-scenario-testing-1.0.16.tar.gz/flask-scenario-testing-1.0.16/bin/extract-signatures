@@ -1,0 +1,46 @@
+#!/usr/bin/env python
+
+import argparse
+import os
+from datetime import timedelta
+import json
+from flask_scenario_testing.analysis.Results import Results
+from flask_scenario_testing.analysis.segmenters.TimeWindowedSegmenter import TimeWindowedSegmenter
+from flask_scenario_testing.analysis.services.ComputeTransactionSignature import ComputeTransactionSignature
+
+parser = argparse.ArgumentParser(description='Extract signatures from output file')
+parser.add_argument('--file', metavar='file', type=str, help='Output file of backend', required=True)
+
+args = parser.parse_args()
+
+absolute_dir = os.path.abspath(args.file)
+
+segmenter = TimeWindowedSegmenter(timedelta(seconds=30))
+
+results = Results.from_json(absolute_dir)
+
+service = ComputeTransactionSignature(results, segmenter)
+
+signatures = [(scenario, service.compute_signature(scenario)) for scenario in results.scenarios()]
+
+result = []
+
+# Ther are at least two signatures. Iterate over each of them. Eevery signature is a tuple of (analysis.Scenario.Scenario, ServiceTime[])
+for signature in signatures:
+    scenario, service_times = signature
+
+    service_times_output = []
+    for service_time in service_times:
+        service_times_output.append(dict(
+            name=service_time.endpoint_name,
+
+        ))
+    print(signature)
+    # for idx, service_time in enumerate(signatures[0][1]):
+    #     result.append(dict(
+    #         name=service_time.endpoint_name,
+    #         old_service_time=service_time.value,
+    #         new_service_time=signatures[1][1][idx].value,
+    #     ))
+    #
+    #     print(json.dumps(result, indent=4))
