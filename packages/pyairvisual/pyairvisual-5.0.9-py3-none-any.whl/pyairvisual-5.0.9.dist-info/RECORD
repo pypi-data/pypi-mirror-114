@@ -1,0 +1,12 @@
+pyairvisual/__init__.py,sha256=phu8461fwgxVKMHKnjsKN2P7xDKi_jhfxzaHD1q5CAs,117
+pyairvisual/air_quality.py,sha256=SzMK8LFGcoG6Ggt-PTJnKgy459SOqbyRHlQlTusBVok,2363
+pyairvisual/cloud_api.py,sha256=PT7OSuTtcQCX-vd8gv_TwnaWYD6fRGKKstA014FEzbY,2825
+pyairvisual/const.py,sha256=8F7YnasNEGWap9X9imm9-S63N3W1c4LuI160yyU9tUQ,71
+pyairvisual/errors.py,sha256=663VpL9l4QTo772m9-N0eDZw-jGJSk-xNjRpimkvFVA,1769
+pyairvisual/node.py,sha256=r4atmqrO5pkEkkbryBkHzr9TlgBnW_fVATwdb5N-mcE,8950
+pyairvisual/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyairvisual/supported.py,sha256=o_xxfcmaWSQjPKBmlLTqflvB6_zGB2JmVjkViHCKDls,1412
+pyairvisual-5.0.9.dist-info/LICENSE,sha256=a4_m0OxNf3KMxo56hmdSsZqBmGQOGzDRAzl6qyLllQw,1077
+pyairvisual-5.0.9.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+pyairvisual-5.0.9.dist-info/METADATA,sha256=1TPo6di7rFSaERrKCzMJ16gm6ynvjgnxMp3WhNiGLhY,7719
+pyairvisual-5.0.9.dist-info/RECORD,,
