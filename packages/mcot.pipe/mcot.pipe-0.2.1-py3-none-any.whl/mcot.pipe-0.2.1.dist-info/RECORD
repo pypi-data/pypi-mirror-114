@@ -1,0 +1,12 @@
+mcot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcot/pipe/README.rst,sha256=ItOEyvrSEhXPr9P7KCleULUJkn-n_mmZzJdU3xdfWiA,462
+mcot/pipe/VERSION,sha256=GWZm1qfrRYP7nLHhWZcQELLim1t1Kqc_RW4OIGG2Ql8,5
+mcot/pipe/__init__.py,sha256=rhdaSIGBv4oB0h5vuXtU6Qb30ybY_qrUosZxxfxwayQ,183
+mcot/pipe/datalad.py,sha256=Xr4dYLWxQPxWMYwCvaTEZ8T6Rfr_exDkir6V4mwAelI,953
+mcot/pipe/job.py,sha256=9UTXH988UVTp0qSyEk7bEFY61oTLjY8qSpHOTx97EWc,13525
+mcot/pipe/pipeline.py,sha256=npq3p_j7b6P8KIpfCTGyWeXV7sfSlzJ2XwTvo8_Feb0,12825
+mcot.pipe-0.2.1.dist-info/METADATA,sha256=fA1YJQPwlyTVzMiEyBa10CI8HKRLHRXuR0oeoBcoUII,1084
+mcot.pipe-0.2.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+mcot.pipe-0.2.1.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+mcot.pipe-0.2.1.dist-info/top_level.txt,sha256=3hHIBIGOzpCbfIgQ2yLHGIKL_OeSrL9ss_Jwr2SXVgM,5
+mcot.pipe-0.2.1.dist-info/RECORD,,
