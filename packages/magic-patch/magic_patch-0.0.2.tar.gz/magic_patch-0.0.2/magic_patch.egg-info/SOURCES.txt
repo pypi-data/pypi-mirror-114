@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+magic_patch/__init__.py
+magic_patch.egg-info/PKG-INFO
+magic_patch.egg-info/SOURCES.txt
+magic_patch.egg-info/dependency_links.txt
+magic_patch.egg-info/top_level.txt
