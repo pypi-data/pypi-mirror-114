@@ -1,0 +1,8 @@
+ogadf_schema/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ogadf_schema/common_headers.py,sha256=0Qb-H2kz6nagJzdZ58y9Jshcxv_sR6CcV_am356FDmc,1761
+ogadf_schema/events.py,sha256=Ptv8E-e1EQ_yxmuve9u6DuBeWu_EfuVJ9sMyUw55pTA,3834
+ogadf_schema/irfs.py,sha256=FFguqpZfJsQijto6TRY5i7lKIZk2cFfAC2COZk8x7Lw,6195
+ogadf_schema-0.2.4.post1.dist-info/LICENSE,sha256=0WVwplP7o-BkJvexobVa3WR_aEfW9YDKbDm6SE9gvTY,1077
+ogadf_schema-0.2.4.post1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+ogadf_schema-0.2.4.post1.dist-info/METADATA,sha256=hjrIXrg07aT0zSODfrcaT7uhOCR2v_kRbWkEtUIY4RY,859
+ogadf_schema-0.2.4.post1.dist-info/RECORD,,
