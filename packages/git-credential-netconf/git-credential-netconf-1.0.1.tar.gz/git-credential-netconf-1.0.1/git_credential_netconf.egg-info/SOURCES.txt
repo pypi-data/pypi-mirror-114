@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+git_credential_netconf/__init__.py
+git_credential_netconf/__main__.py
+git_credential_netconf/netconf.py
+git_credential_netconf.egg-info/PKG-INFO
+git_credential_netconf.egg-info/SOURCES.txt
+git_credential_netconf.egg-info/dependency_links.txt
+git_credential_netconf.egg-info/entry_points.txt
+git_credential_netconf.egg-info/requires.txt
+git_credential_netconf.egg-info/top_level.txt
