@@ -1,0 +1,21 @@
+{% if flavor_bootstrap != None %}
+{% set flavor = flavor_bootstrap %}
+{% endif %}
+
+{{ cluster }}-bootstrap:
+ image: {{ image }}
+ pool: {{ pool or config_pool }}
+{% if flavor != None %}
+ flavor: {{ flavor }}
+{% endif %}
+ enableroot: false
+ numcpus: {{ bootstrap_numcpus | default(numcpus, numcpus) }}
+ memory: {{ bootstrap_memory | default(memory, memory) }}
+ nets:
+ - name: {{ network }}
+ reservedns: true
+ disks:
+ - size: {{ disk_size }}
+{% if cloud_tag != None %}
+ tags: [{{ cloud_tag }}]
+{% endif %}
