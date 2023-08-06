@@ -1,0 +1,202 @@
+[
+    {
+        "metadata": {
+            "labels": {
+                "from": "2021-07-22 10:51:55.184558 +0000 UTC",
+                "name": "exploring-reliability-guide",
+                "service": "exploring-reliability-guide-service",
+                "to": "2021-07-22 10:51:55.184558 +0000 UTC"
+            },
+            "relatedTo": null
+        },
+        "spec": {
+            "indicatorSelector": {
+                "category": "Availability",
+                "indicator_name": "exploring-reliability-guide-service-availability-indicator"
+            },
+            "objectivePercent": 99.9,
+            "actualPercent": 90,
+            "remainingPercent": -9.900000000000006
+        }
+    },
+    {
+        "metadata": {
+            "labels": {
+                "from": "2021-07-22 10:50:35.689094 +0000 UTC",
+                "name": "exploring-reliability-guide",
+                "service": "exploring-reliability-guide-service",
+                "to": "2021-07-22 10:50:35.689094 +0000 UTC"
+            },
+            "relatedTo": null
+        },
+        "spec": {
+            "indicatorSelector": {
+                "category": "Availability",
+                "indicator_name": "exploring-reliability-guide-service-availability-indicator"
+            },
+            "objectivePercent": 99.9,
+            "actualPercent": 100,
+            "remainingPercent": 0.09999999999999432
+        }
+    },
+    {
+        "metadata": {
+            "labels": {
+                "from": "2021-07-22 09:28:32.497773 +0000 UTC",
+                "name": "exploring-reliability-guide",
+                "service": "exploring-reliability-guide-service",
+                "to": "2021-07-22 09:28:32.497773 +0000 UTC"
+            },
+            "relatedTo": null
+        },
+        "spec": {
+            "indicatorSelector": {
+                "category": "Availability",
+                "indicator_name": "exploring-reliability-guide-service-availability-indicator"
+            },
+            "objectivePercent": 99.9,
+            "actualPercent": 90,
+            "remainingPercent": -9.900000000000006
+        }
+    },
+    {
+        "metadata": {
+            "labels": {
+                "from": "2021-07-22 08:32:16.357175 +0000 UTC",
+                "name": "exploring-reliability-guide",
+                "service": "exploring-reliability-guide-service",
+                "to": "2021-07-22 08:32:16.357175 +0000 UTC"
+            },
+            "relatedTo": null
+        },
+        "spec": {
+            "indicatorSelector": {
+                "category": "Availability",
+                "indicator_name": "exploring-reliability-guide-service-availability-indicator"
+            },
+            "objectivePercent": 99.9,
+            "actualPercent": 100,
+            "remainingPercent": 0.09999999999999432
+        }
+    },
+    {
+        "metadata": {
+            "labels": {
+                "from": "2021-07-21 13:36:41.573186 +0000 UTC",
+                "name": "exploring-reliability-guide",
+                "service": "exploring-reliability-guide-service",
+                "to": "2021-07-21 13:36:41.573186 +0000 UTC"
+            },
+            "relatedTo": null
+        },
+        "spec": {
+            "indicatorSelector": {
+                "category": "Availability",
+                "indicator_name": "exploring-reliability-guide-service-availability-indicator"
+            },
+            "objectivePercent": 99.9,
+            "actualPercent": 100,
+            "remainingPercent": 0.09999999999999432
+        }
+    },
+    {
+        "metadata": {
+            "labels": {
+                "from": "2021-07-21 13:36:39.385042 +0000 UTC",
+                "name": "exploring-reliability-guide",
+                "service": "exploring-reliability-guide-service",
+                "to": "2021-07-21 13:36:39.385042 +0000 UTC"
+            },
+            "relatedTo": null
+        },
+        "spec": {
+            "indicatorSelector": {
+                "category": "Availability",
+                "indicator_name": "exploring-reliability-guide-service-availability-indicator"
+            },
+            "objectivePercent": 99.9,
+            "actualPercent": 100,
+            "remainingPercent": 0.09999999999999432
+        }
+    },
+    {
+        "metadata": {
+            "labels": {
+                "from": "2021-07-21 13:36:35.70456 +0000 UTC",
+                "name": "exploring-reliability-guide",
+                "service": "exploring-reliability-guide-service",
+                "to": "2021-07-21 13:36:35.70456 +0000 UTC"
+            },
+            "relatedTo": null
+        },
+        "spec": {
+            "indicatorSelector": {
+                "category": "Availability",
+                "indicator_name": "exploring-reliability-guide-service-availability-indicator"
+            },
+            "objectivePercent": 99.9,
+            "actualPercent": 100,
+            "remainingPercent": 0.09999999999999432
+        }
+    },
+    {
+        "metadata": {
+            "labels": {
+                "from": "2021-07-21 13:35:50.597272 +0000 UTC",
+                "name": "exploring-reliability-guide",
+                "service": "exploring-reliability-guide-service",
+                "to": "2021-07-21 13:35:50.597272 +0000 UTC"
+            },
+            "relatedTo": null
+        },
+        "spec": {
+            "indicatorSelector": {
+                "category": "Availability",
+                "indicator_name": "exploring-reliability-guide-service-availability-indicator"
+            },
+            "objectivePercent": 99.9,
+            "actualPercent": 100,
+            "remainingPercent": 0.09999999999999432
+        }
+    },
+    {
+        "metadata": {
+            "labels": {
+                "from": "2021-07-21 13:35:24.4716 +0000 UTC",
+                "name": "exploring-reliability-guide",
+                "service": "exploring-reliability-guide-service",
+                "to": "2021-07-21 13:35:24.4716 +0000 UTC"
+            },
+            "relatedTo": null
+        },
+        "spec": {
+            "indicatorSelector": {
+                "category": "Availability",
+                "indicator_name": "exploring-reliability-guide-service-availability-indicator"
+            },
+            "objectivePercent": 99.9,
+            "actualPercent": 90,
+            "remainingPercent": -9.900000000000006
+        }
+    },
+    {
+        "metadata": {
+            "labels": {
+                "from": "2021-07-21 13:34:16.906524 +0000 UTC",
+                "name": "exploring-reliability-guide",
+                "service": "exploring-reliability-guide-service",
+                "to": "2021-07-21 13:34:16.906524 +0000 UTC"
+            },
+            "relatedTo": null
+        },
+        "spec": {
+            "indicatorSelector": {
+                "category": "Availability",
+                "indicator_name": "exploring-reliability-guide-service-availability-indicator"
+            },
+            "objectivePercent": 99.9,
+            "actualPercent": 100,
+            "remainingPercent": 0.09999999999999432
+        }
+    }
+]
