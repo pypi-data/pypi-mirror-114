@@ -1,0 +1,16 @@
+craft_text_detector/__init__.py,sha256=BwKU8UipOoCVNhmIc5opFurTIrSRe5BJ5D88Nnh0YK0,5714
+craft_text_detector/craft_utils.py,sha256=N2ezfTpX6Tdq__9eEzGxc3u4iC2S664IfN-LmE-IWXA,13615
+craft_text_detector/file_utils.py,sha256=Uu11fPZv3VITBV7DZECVgwqYC7joso7KITzyCQSc1Lo,8421
+craft_text_detector/image_utils.py,sha256=WxG--mWfLhnDeYcrUYC18tlfjfVIyB29DkrqKXYmCfA,2517
+craft_text_detector/predict.py,sha256=h58oEB4WD6aFiz1SH7P5AnwIiSLSO75oJwfeAn1_ftc,4307
+craft_text_detector/torch_utils.py,sha256=eYhC9JY_c7sJikupA-BD6H6HSauZgwDdUE4SMh5m-So,231
+craft_text_detector/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+craft_text_detector/models/craftnet.py,sha256=u0BU8okbpYSOlcVQoopLznYvb-d7FSsQjkn7B2OxvDE,2900
+craft_text_detector/models/refinenet.py,sha256=4J3RgICsooMncP6gbnp8zGiGj7oluCC0PIZu8oG5Hk0,2782
+craft_text_detector/models/basenet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+craft_text_detector/models/basenet/vgg16_bn.py,sha256=JPt--RJ25ap0M1fDQNERe56xxtjtewKEemkiqC1MCrU,2781
+craft_text_detector-0.4.0.dist-info/LICENSE,sha256=v2xcwICQfGv3rc0q9y2V_KB2gRG1VHFBhHo_8kMHRHY,1076
+craft_text_detector-0.4.0.dist-info/METADATA,sha256=AkKr_S9dXdcXpaO2du6TDSLz3ZfRKsPmqPE9jdcvdNo,5017
+craft_text_detector-0.4.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+craft_text_detector-0.4.0.dist-info/top_level.txt,sha256=EU-MlzcDK92vWUWSptrMEwr2Y_Sb5dmTRcEHWPkEwQ8,20
+craft_text_detector-0.4.0.dist-info/RECORD,,
