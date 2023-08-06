@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: odoo14-addons-oca-stock-logistics-warehouse
+Version: 14.0.20210730.0
+Summary: Meta package for oca-stock-logistics-warehouse Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Requires-Dist: odoo14-addon-scrap-reason-code
+Requires-Dist: odoo14-addon-stock-available
+Requires-Dist: odoo14-addon-stock-available-immediately
+Requires-Dist: odoo14-addon-stock-available-mrp
+Requires-Dist: odoo14-addon-stock-demand-estimate
+Requires-Dist: odoo14-addon-stock-demand-estimate-matrix
+Requires-Dist: odoo14-addon-stock-free-quantity
+Requires-Dist: odoo14-addon-stock-generate-putaway-from-inventory
+Requires-Dist: odoo14-addon-stock-helper
+Requires-Dist: odoo14-addon-stock-inventory-preparation-filter
+Requires-Dist: odoo14-addon-stock-location-children
+Requires-Dist: odoo14-addon-stock-location-lockdown
+Requires-Dist: odoo14-addon-stock-location-position
+Requires-Dist: odoo14-addon-stock-move-common-dest
+Requires-Dist: odoo14-addon-stock-move-location
+Requires-Dist: odoo14-addon-stock-orderpoint-move-link
+Requires-Dist: odoo14-addon-stock-packaging-calculator
+Requires-Dist: odoo14-addon-stock-picking-cancel-confirm
+Requires-Dist: odoo14-addon-stock-pull-list
+Requires-Dist: odoo14-addon-stock-quant-manual-assign
+Requires-Dist: odoo14-addon-stock-request
+Requires-Dist: odoo14-addon-stock-request-picking-type
+Requires-Dist: odoo14-addon-stock-search-supplierinfo-code
+Requires-Dist: odoo14-addon-stock-warehouse-calendar
+
+UNKNOWN
+
