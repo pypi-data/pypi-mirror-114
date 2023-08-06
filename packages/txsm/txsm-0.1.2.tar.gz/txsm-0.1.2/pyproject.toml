@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "txsm"
+version = "0.1.2"
+description = "A combination of tuxsay and mockman"
+authors = ["Arghya Sarkar <arghyasarkar.nolan@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+click = "^8.0.1"
+click-help-colors = "^0.9.1"
+clipboard = "^0.0.4"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+txsm = "txsm.main:main"
+tuxsm = "txsm.main:say"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
