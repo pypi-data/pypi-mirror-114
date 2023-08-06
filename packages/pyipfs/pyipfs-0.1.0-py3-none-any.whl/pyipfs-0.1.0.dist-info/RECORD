@@ -1,0 +1,9 @@
+pyipfs/Constants.py,sha256=jiy4Uk1gXB51nqDdHZiwxalBg8-pH7f0KLifwJGp0nY,142
+pyipfs/Errors.py,sha256=11-qiBepdoYe6QYzXAkaiXO6uA84WUySnLLiC78Eshk,395
+pyipfs/__init__.py,sha256=aBn4EbEDoPWIcQAHtXazh0oU7ne8y0HWpBBKU9HY6X8,101
+pyipfs/ipfs.py,sha256=3dkxNNxbjjw37sgqipQWvKMOifLZqk-cyclWflSRZDc,1462
+pyipfs-0.1.0.dist-info/LICENSE,sha256=jhzD3i6HaJFYpCj9VIAfeA1BjKm6PhKb1TbAEnpX2xs,1068
+pyipfs-0.1.0.dist-info/METADATA,sha256=6wqvc7vI5YD34YB3olv7a9gtwTpAT_5Dl2UOrGkQ_PQ,604
+pyipfs-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyipfs-0.1.0.dist-info/top_level.txt,sha256=Iy1JBRw1JqxDZ7307fywOOtjRdMCu-02Vm8urj4Rp_4,7
+pyipfs-0.1.0.dist-info/RECORD,,
