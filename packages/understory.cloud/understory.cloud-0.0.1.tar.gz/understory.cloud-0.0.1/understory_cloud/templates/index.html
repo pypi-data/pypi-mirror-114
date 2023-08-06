@@ -1,0 +1,169 @@
+$def with ()
+<!doctype html>
+<html>
+<head>
+<title>Understory Cloud</title>
+<style>
+html {
+    background-color: #000;
+    line-height: 1.5; }
+body {
+    background-color: #ffefd5;
+    font-size: 16px;
+    margin: 0;
+    padding-top: 2em; }
+header {
+    background-color: #728783;
+    grid-column: 1;
+    grid-row: 4;
+    padding: 1em; }
+h1 {
+    grid-column: 1;
+    grid-row: 3;
+    font-size: 2.5em; }
+#canopy-directory {
+    background-image: url(/static/sun.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 1em;
+    padding-left: 7em; }
+#overstory-directory {
+    background-color: #6c6;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 1;
+    margin: 0 auto;
+    padding: 1em;
+    width: 30em; }
+#overstory {
+    background-color: #866c48;
+    /* border-top: 4em solid #5b5; */
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 2;
+    margin: 0 auto;
+    padding: 1em;
+    width: 20em; }
+#canopy {
+    background-color: #393;
+    grid-column: span 3;
+    grid-row: 3;
+    padding: 1em; }
+article {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: auto auto auto auto auto auto; }
+#understory {
+    background-color: #664c28;
+    grid-column: 2;
+    grid-row: 4;
+    padding: 1em; }
+#liana {
+    background-color: #060;
+    grid-column: 3;
+    grid-row: 4;
+    padding: 1em; }
+#gaea {
+    background-color: #3c341f;
+    grid-column: span 3;
+    grid-row: 5;
+    padding: 1em; }
+#understory-rocks {
+    background-color: #333;
+    grid-column: span 3;
+    grid-row: 6;
+    padding: 1em; }
+#understory-stream {
+    background-color: #39f;
+    grid-column: span 3;
+    grid-row: 7;
+    padding: 1em; }
+footer {
+    background-color: #000;
+    padding: 1em;
+    text-align: right; }
+footer a {
+    color: #666;
+    font-style: italic; }
+</style>
+</head>
+<body>
+
+<article>
+
+<header id=understory-cloud>
+    <h1>Understory Cloud</h1>
+    <p>Navigate the various projects tangential to the understory.</p>
+</header>
+
+<section id=canopy-directory>
+    <h2>Canopy Directory</h2>
+    <p>Personal websites.</p>
+</section>
+
+<section id=overstory-directory>
+    <h2>Overstory Directory</h2>
+    <p>Social web applications.</p>
+</section>
+
+<section id=overstory>
+    <h2>Overstory</h2>
+    <p>The <a href=/overstory>overstory</a> is .</p>
+</section>
+
+<section id=canopy>
+    <h2>Canopy</h2>
+    <p>The <a href=/canopy>canopy</a> is .</p>
+    <pre>pip install <a href=//pypi.org/project/canopy-network>canopy-network</a></pre>
+    <h3>Canopy Garden</h3>
+    <p><a href=//canopy.garden>Canopy Garden</a></p>
+</section>
+
+<section id=understory>
+    <h2>Understory</h2>
+    <p>The <a href=/understory>understory</a> is a set of tools to create
+    and manage social websites.</p>
+    <pre>pip install <a href=//pypi.org/project/understory>understory</a></pre>
+    <pre>npm install <a href=//www.npmjs.com/package/understory.js>understory.js</a></pre>
+    <h3>Epiphytes</h3>
+    <p>Epiphytes are custom applications to add to your social website.</p>
+</section>
+
+<section id=liana>
+    <h2>Liana</h2>
+    <p>Liana is a browser extension that pairs your browser with your
+    personal website.</p>
+    <p>Firefox: <a href=/liana/liana-firefox.xpi>direct download</a>
+    <a href=//addons.mozilla.org/en-US/firefox/addon/liana>add-on store</a></p>
+    <pre>npm install <a href=//www.npmjs.com/package/liana>liana</a></pre>
+</section>
+
+<section id=gaea>
+    <h2>Gaea <img src=/static/gaea.gif></h2>
+    <p>Gaea is a desktop/mobile/embedded application. It helps you spawn
+    understory websites and it pairs your personal website with your device.</p>
+    <p><a href=/gaea/gaea-linux-x64>Linux x64</a>, [Windows], [MacOS],
+    [Android], [iOS], [Raspbian]</p>
+    <pre>pip install <a href=//pypi.org/project/libgaea>libgaea</a></pre>
+</section>
+
+<section id=understory-rocks>
+    <h3>Understory Rocks</h3>
+    <p>Tests for the understory.</p>
+</section>
+
+<section id=understory-stream>
+    <h3>Understory Stream</h3>
+    <p>Develop the understory.</p>
+</section>
+
+</article>
+
+<footer><a href=//angelogladding.com>Angelo Gladding</a></footer>
+
+</body>
+</html>
