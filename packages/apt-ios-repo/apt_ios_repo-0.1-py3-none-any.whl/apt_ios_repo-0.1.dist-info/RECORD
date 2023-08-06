@@ -1,0 +1,9 @@
+apt_ios_repo/__init__.py,sha256=YVlY8FeCljEq_f4SNyv40-kofpkJ4FkfcvoppNmL91M,58
+apt_ios_repo/packages.py,sha256=Fq4q6G5CCHKmabNp_YqF6TRyxHWCZxhP-rYoZwt0xgk,7133
+apt_ios_repo/sources_list.py,sha256=JPAuTHPf2QCrFEci2FvNDHJCNvM4KhXH-tTzQZRBe18,6947
+apt_ios_repo/utils.py,sha256=y3KZEjhzJ2pCokA8NZhuHSJpkObMvjp4Dj1zvKxLyYk,2766
+apt_ios_repo-0.1.dist-info/LICENSE,sha256=HDbMJ7oItmxTn3jVtZFi6jUFAHovset5jzAPUderjOc,1073
+apt_ios_repo-0.1.dist-info/METADATA,sha256=Eu3OAPJFV0TXqEG3ad-esA1Xt3avbpCVx1xBA2auMAU,2144
+apt_ios_repo-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+apt_ios_repo-0.1.dist-info/top_level.txt,sha256=8Drt0kMzrSHgUmCp4JWDkNgJYYpzl0sCGPKjd1BTZos,13
+apt_ios_repo-0.1.dist-info/RECORD,,
