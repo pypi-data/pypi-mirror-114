@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: rrtesta
+Version: 0.1.1
+Summary: 
+Author: RJ Rybarczyk
+Author-email: rj@rybar.tech
+Requires-Python: >=3.9.5,<4.0.0
+Classifier: Programming Language :: Python :: 3
