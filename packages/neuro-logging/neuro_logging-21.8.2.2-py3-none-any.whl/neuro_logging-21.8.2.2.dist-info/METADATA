@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: neuro-logging
+Version: 21.8.2.2
+Summary: UNKNOWN
+Home-page: https://github.com/neuro-inc/neuro-logging
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Requires-Dist: aiohttp (>=3.0)
+Requires-Dist: aiozipkin
+Requires-Dist: sentry-sdk
+
+UNKNOWN
+
+
