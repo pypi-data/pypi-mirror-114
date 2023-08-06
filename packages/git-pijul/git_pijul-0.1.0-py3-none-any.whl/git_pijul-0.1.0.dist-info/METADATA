@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: git-pijul
+Version: 0.1.0
+Summary: update pijul from git.
+License: AGPL-3.0-or-later
+Author: Jean-Louis Fuchs
+Author-email: jean-louis.fuchs@adfinis-sygroup.ch
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.1,<9.0.0)
+Requires-Dist: temppathlib (>=1.1.0,<2.0.0)
+Requires-Dist: tqdm (>=4.61.2,<5.0.0)
