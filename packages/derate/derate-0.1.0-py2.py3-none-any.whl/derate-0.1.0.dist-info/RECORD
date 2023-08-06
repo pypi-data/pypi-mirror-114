@@ -1,0 +1,10 @@
+derate/__init__.py,sha256=xzIHzVW_oCEBD24QVkdfgroedI98ijPfm0GKmYPUqeQ,137
+derate/cli.py,sha256=qPcUr93ZU3FVPtWKUWd57nucCWpNsCxqRNOSLUzQ-2w,396
+derate/derate.py,sha256=jZMzbcE-MgpXcQwEi6aSn9VEnDeeYUkrW7T5oNEUfV0,55
+derate-0.1.0.dist-info/AUTHORS.rst,sha256=YN6MDtb4RbtQxgX7KslUFsmE0cWACCNHYeN5VWzret8,169
+derate-0.1.0.dist-info/LICENSE,sha256=U8sq10zzS2FRPblPatVHrwNiVRfHBLeCmCbCNhIq9ek,1545
+derate-0.1.0.dist-info/METADATA,sha256=OsuUUaGla73j95VZp-l9Oj1uvcUx0tWmdxcg2drNRRE,1679
+derate-0.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+derate-0.1.0.dist-info/entry_points.txt,sha256=gRz6G8EjvNC_-S3VrXBALzeyRBzwUfYjjr91K6ljXlU,44
+derate-0.1.0.dist-info/top_level.txt,sha256=DoyMK1MSRzE__CSjAUfNuNzzsd9JkpjsprdobEF9SMg,7
+derate-0.1.0.dist-info/RECORD,,
