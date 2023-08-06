@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/nonadditivity/__main__.py
+src/nonadditivity/api.py
+src/nonadditivity/cli.py
+src/nonadditivity.egg-info/PKG-INFO
+src/nonadditivity.egg-info/SOURCES.txt
+src/nonadditivity.egg-info/dependency_links.txt
+src/nonadditivity.egg-info/entry_points.txt
+src/nonadditivity.egg-info/not-zip-safe
+src/nonadditivity.egg-info/requires.txt
+src/nonadditivity.egg-info/top_level.txt
