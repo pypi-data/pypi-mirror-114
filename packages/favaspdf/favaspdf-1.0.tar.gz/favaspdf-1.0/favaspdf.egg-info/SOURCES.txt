@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+favaspdf.egg-info/PKG-INFO
+favaspdf.egg-info/SOURCES.txt
+favaspdf.egg-info/dependency_links.txt
+favaspdf.egg-info/top_level.txt
