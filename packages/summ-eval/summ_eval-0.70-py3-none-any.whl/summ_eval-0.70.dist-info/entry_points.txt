@@ -1,0 +1,3 @@
+[console_scripts]
+calc-scores = summ_eval.calc_scores:cli_main
+
