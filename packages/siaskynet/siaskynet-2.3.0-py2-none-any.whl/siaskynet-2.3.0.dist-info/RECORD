@@ -1,0 +1,15 @@
+siaskynet/__init__.py,sha256=o8NAJ77rGoZ6-0eYMw7JaPoCrVAZo2u3MebNaNfKHC0,2049
+siaskynet/_download.py,sha256=KU0kVY8uGc1WS2rfF9P7kMhUg--JzsSObS6byEgIuoM,1798
+siaskynet/_encryption.py,sha256=reGAlgx5-TBUzQ8-jv8jNVFDimQ82f4fQlVFw9La-W0,1484
+siaskynet/_upload.py,sha256=J5ZQFlGyykVvotErXloUPVu-2cowuSufhET-6p731nU,5827
+siaskynet/test_utils.py,sha256=YTZMtA2JJ3kndeBE8zNRGZDmIp37rOuRvf5--x0HEcg,1167
+siaskynet/utils.py,sha256=t77c125TsO6Hjy8S-l90zLCGu7LY4iNblZof7QrynK4,1810
+tests/__init__.py,sha256=lZT2TP6ckRxc8rg83LbFgTTk4m-raSgVHjsCIAipw5k,45
+tests/test_integration_download.py,sha256=-UTKfKWM_bFSRx5-lEoE_kizCavjvE0vhyM01DHyjcU,1446
+tests/test_integration_upload.py,sha256=BbBTpw_nOrUApRrNvS_LYMUhIuO1zFo5WtBEGK9KNvY,9599
+siaskynet-2.3.0.dist-info/LICENSE,sha256=zgFdA-m6HeH4p6YIrc3bVU_ZLqQc5zPZ-a7gS9kF3lU,1065
+siaskynet-2.3.0.dist-info/LICENSE.txt,sha256=YiC0lFJomlfRD4r3e3aLCSOLKFv5DSekC-9_4SDHgLo,1057
+siaskynet-2.3.0.dist-info/METADATA,sha256=n03pyo91pv0LVFY1Mo6gQmwRss36Dn16XHg7dMeH7Wg,1998
+siaskynet-2.3.0.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+siaskynet-2.3.0.dist-info/top_level.txt,sha256=EDWUlAQBgj2_C09yQdtCYJpsw0IIGH8zLHKFCaiIehY,16
+siaskynet-2.3.0.dist-info/RECORD,,
