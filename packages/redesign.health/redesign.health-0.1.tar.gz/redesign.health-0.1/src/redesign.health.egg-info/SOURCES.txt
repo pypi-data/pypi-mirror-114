@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/redesign.health.egg-info/PKG-INFO
+src/redesign.health.egg-info/SOURCES.txt
+src/redesign.health.egg-info/dependency_links.txt
+src/redesign.health.egg-info/top_level.txt
+src/redesign/health/__init__.py
+src/redesign/health/patterns.py
