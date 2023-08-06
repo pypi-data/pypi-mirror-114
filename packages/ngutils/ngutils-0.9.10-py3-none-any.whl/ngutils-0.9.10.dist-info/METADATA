@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ngutils
+Version: 0.9.10
+Summary: Some useful ETL, EDA & other features
+Home-page: https://github.com/nigani/ngutils
+Author: nigani
+Author-email: nigani@internet.ru
+License: GNU GPL v3
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas (>=1.1.0)
+Requires-Dist: requests (>=2.24.0)
+
+# ngutils
+Data scientist's library for data extract, transform, load, analysis and presentation.
+Some useful ETL, EDA &amp; other features.
+
+
