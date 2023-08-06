@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta lang="en">
+        <title>Notelist</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    </head>
+    <body>
+        <h1>Notelist</h1>
+        <div id="description">Tag based note taking REST API</div>
+        <div>Version {{ version }}</div>
+        <p>
+            The following is the list of operations of the API assuming that the
+            API is running in our local computer and listening on port 5000.
+        </p>
+        <hr>
+
+        <h2>1. Authentication</h2>
+        <h3>1.1. Login</h3>
+        <table class="endpointTable">
+            <tr>
+                <th>Endpoint:</th>
+                <td>/auth/login</td>
+            </tr>
+            <tr>
+                <th>Method:</th>
+                <td>POST</td>
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td>Get a fresh access token and a refresh token</td>
+            </tr>
+        </table>
+        <div><b>Request data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+                <th>Required</th>
+            </tr>
+            <tr>
+                <td>username</td>
+                <td>String</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td>String</td>
+                <td>Yes</td>
+            </tr>
+        </table>
+        <div><b>Response data:</b></div>
+        </table>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>message_type</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>result</td>
+                <td>
+                    <div>Object:</div>
+                    <div>- user_id: String</div>
+                    <div>- access_token: String,</div>
+                    <div>- refresh_token: String</div>
+                </td>
+            </tr>
+        </table>
+        <div><b>Request example:</b></div>
+        <div class="code">
+            curl -X 'POST' 'http://localhost:5000/auth/login' \<br>
+            -H 'Accept: application/json' \<br>
+            -H 'Content-Type: application/json' \<br>
+            -d '{"username": "example_username", "password": "example_password"}'
+        </div>
+
+        <h3>1.2. Refresh</h3>
+        <table class="endpointTable">
+            <tr>
+                <th>Endpoint:</th>
+                <td>/auth/refresh</td>
+            </tr>
+            <tr>
+                <th>Method:</th>
+                <td>GET</td>
+            </tr>
+            <tr>
+                <th>Request header:</th>
+                <td>Authorization: Bearer &lt;refresh_token&gt;</td>
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td>Get a new, not fresh, access token</td>
+            </tr>
+        </table>
+        <div><b>Response data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>message_type</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>result</td>
+                <td>
+                    <div>Object:</div>
+                    <div>- access_token: String</div>
+                </td>
+            </tr>
+        </table>
+        <div><b>Request example:</b></div>
+        <div class="code">
+            curl -X 'GET' 'http://localhost:5000/auth/refresh' \<br>
+            -H 'Accept: application/json' \<br>
+            -H 'Content-Type: application/json' \<br>
+            -H 'Authorization: Bearer &lt;refresh_token&gt;'
+        </div>
+
+        <h3>1.3. Logout</h3>
+        <table class="endpointTable">
+            <tr>
+                <th>Endpoint:</th>
+                <td>/auth/logout</td>
+            </tr>
+            <tr>
+                <th>Method:</th>
+                <td>GET</td>
+            </tr>
+            <tr>
+                <th>Request header:</th>
+                <td>Authorization: Bearer &lt;access_token&gt;</td>
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td>Revoke an access token</td>
+            </tr>
+        </table>
+        <div><b>Response data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>message_type</td>
+                <td>String</td>
+            </tr>
+        </table>
+        <div><b>Request example:</b></div>
+        <div class="code">
+            curl -X 'GET' 'http://localhost:5000/auth/logout' \<br>
+            -H 'Accept: application/json' \<br>
+            -H 'Content-Type: application/json' \<br>
+            -H 'Authorization: Bearer &lt;access_token&gt;'
+        </div>
+        <hr>
+
+        <h2>2. Users</h2>
+        <h3>2.1. Get Users</h3>
+        <table class="endpointTable">
+            <tr>
+                <th>Endpoint:</th>
+                <td>/users/users</td>
+            </tr>
+            <tr>
+                <th>Method:</th>
+                <td>GET</td>
+            </tr>
+            <tr>
+                <th>Request header:</th>
+                <td>Authorization: Bearer &lt;access_token&gt;</td>
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td>Get the list of users</td>
+            </tr>
+            <tr>
+                <th>Permission required:</th>
+                <td>Administrator</td>
+            </tr>
+        </table>
+        <div><b>Response data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>message_type</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>result</td>
+                <td>
+                    <div>List of objects:</div>
+                    <div>- id: String</div>
+                    <div>- username: String</div>
+                    <div>- admin: Boolean</div>
+                    <div>- enabled: Boolean</div>
+                    <div>- name: String, null</div>
+                    <div>- email: String, null</div>
+                </td>
+            </tr>
+        </table>
+        <div><b>Request example:</b></div>
+        <div class="code">
+            curl -X 'GET' 'http://localhost:5000/users/users' \<br>
+            -H 'Accept: application/json' \<br>
+            -H 'Content-Type: application/json' \<br>
+            -H 'Authorization: Bearer &lt;access_token&gt;'
+        </div>
+
+        <h3>2.2. Get User</h3>
+        <table class="endpointTable">
+            <tr>
+                <th>Endpoint:</th>
+                <td>/users/user/&lt;user_id&gt;</td>
+            </tr>
+            <tr>
+                <th>Method:</th>
+                <td>GET</td>
+            </tr>
+            <tr>
+                <th>Request header:</th>
+                <td>Authorization: Bearer &lt;access_token&gt;</td>
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td>Get a user</td>
+            </tr>
+            <tr>
+                <th>Permission required:</th>
+                <td>Administrator if the user to get is other than the user that makes the request</td>
+            </tr>
+        </table>
+        <div><b>Response data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>message_type</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>result</td>
+                <td>
+                    <div>Object:</div>
+                    <div>- id: String</div>
+                    <div>- username: String</div>
+                    <div>- admin: Boolean</div>
+                    <div>- enabled: Boolean</div>
+                    <div>- name: String, null</div>
+                    <div>- email: String, null</div>
+                </td>
+            </tr>
+        </table>
+        <div><b>Request example:</b></div>
+        <div class="code">
+            curl -X 'GET' 'http://localhost:5000/users/user/&lt;user_id&gt;' \<br>
+            -H 'Accept: application/json' \<br>
+            -H 'Content-Type: application/json' \<br>
+            -H 'Authorization: Bearer &lt;access_token&gt;'
+        </div>
+
+        <h3>2.3. Create User</h3>
+        <table class="endpointTable">
+            <tr>
+                <th>Endpoint:</th>
+                <td>/users/user</td>
+            </tr>
+            <tr>
+                <th>Methods:</th>
+                <td>POST, PUT</td>
+            </tr>
+            <tr>
+                <th>Request header:</th>
+                <td>Authorization: Bearer &lt;access_token&gt;</td>
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td>Create a user</td>
+            </tr>
+            <tr>
+                <th>Permission required:</th>
+                <td>Administrator</td>
+            </tr>
+        </table>
+        <div><b>Request data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+                <th>Required</th>
+                <th>Default value</th>
+            </tr>
+            <tr>
+                <td>username</td>
+                <td>String</td>
+                <td>Yes</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td>String</td>
+                <td>Yes</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>admin</td>
+                <td>Boolean</td>
+                <td>No</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>enabled</td>
+                <td>Boolean</td>
+                <td>No</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>String, null</td>
+                <td>No</td>
+                <td>null</td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td>String, null</td>
+                <td>No</td>
+                <td>null</td>
+            </tr>
+        </table>
+        <div><b>Response data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>message_type</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>result</td>
+                <td>
+                    <div>Object:</div>
+                    <div>- user_id: String</div>
+                </td>
+            </tr>
+        </table>
+        <div><b>Request example:</b></div>
+        <div class="code">
+            curl -X 'POST' 'http://localhost:5000/users/user' \<br>
+            -H 'Accept: application/json' \<br>
+            -H 'Content-Type: application/json' \<br>
+            -H 'Authorization: Bearer &lt;access_token&gt;' \<br>
+            -d '{"username": "example_username", "password": "example_password", "admin": false, "enabled": true}'
+        </div>
+
+        <h3>2.4. Update User</h3>
+        <table class="endpointTable">
+            <tr>
+                <th>Endpoint:</th>
+                <td>/users/user/&lt;user_id&gt;</td>
+            </tr>
+            <tr>
+                <th>Method:</th>
+                <td>PUT</td>
+            </tr>
+            <tr>
+                <th>Request header:</th>
+                <td>Authorization: Bearer &lt;access_token&gt;</td>
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td>Update some or all fields of a user</td>
+            </tr>
+            <tr>
+                <th>Permission required:</th>
+                <td>Administrator if the user to update is other than the user that makes the request or if the fields to update include <i>username</i>, <i>admin</i> or <i>enabled</i></td>
+            </tr>
+        </table>
+        <div><b>Request data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+                <th>Required</th>
+            </tr>
+            <tr>
+                <td>username</td>
+                <td>String</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td>String</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>admin</td>
+                <td>Boolean</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>enabled</td>
+                <td>Boolean</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>String, null</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td>String, null</td>
+                <td>No</td>
+            </tr>
+        </table>
+        <div><b>Response data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>message_type</td>
+                <td>String</td>
+            </tr>
+        </table>
+        <div><b>Request example:</b></div>
+        <div class="code">
+            curl -X 'PUT' 'http://localhost:5000/users/user/&lt;user_id&gt;' \<br>
+            -H 'Accept: application/json' \<br>
+            -H 'Content-Type: application/json' \<br>
+            -H 'Authorization: Bearer &lt;access_token&gt;' \<br>
+            -d '{"name": "Example User"}'
+        </div>
+
+        <h3>2.5. Delete User</h3>
+        <table class="endpointTable">
+            <tr>
+                <th>Endpoint:</th>
+                <td>/users/user/&lt;user_id&gt;</td>
+            </tr>
+            <tr>
+                <th>Method:</th>
+                <td>DELETE</td>
+            </tr>
+            <tr>
+                <th>Request header:</th>
+                <td>Authorization: Bearer &lt;access_token&gt;</td>
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td>Delete a user</td>
+            </tr>
+            <tr>
+                <th>Fresh access token required:</th>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <th>Permission required:</th>
+                <td>Administrator</td>
+            </tr>
+        </table>
+        <div><b>Response data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>message_type</td>
+                <td>String</td>
+            </tr>
+        </table>
+        <div><b>Request example:</b></div>
+        <div class="code">
+            curl -X 'DELETE' 'http://localhost:5000/users/user/&lt;user_id&gt;' \<br>
+            -H 'Accept: application/json' \<br>
+            -H 'Content-Type: application/json' \<br>
+            -H 'Authorization: Bearer &lt;access_token&gt;'
+        </div>
+
+        <hr>
+        <h2>3. Notebooks</h2>
+        <h3>3.1. Get Notebooks</h3>
+        <table class="endpointTable">
+            <tr>
+                <th>Endpoint:</th>
+                <td>/notebooks/notebooks</td>
+            </tr>
+            <tr>
+                <th>Method:</th>
+                <td>GET</td>
+            </tr>
+            <tr>
+                <th>Request header:</th>
+                <td>Authorization: Bearer &lt;access_token&gt;</td>
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td>Get the list of notebooks of the user that makes the request</td>
+            </tr>
+        </table>
+        <div><b>Response data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>message_type</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>result</td>
+                <td>
+                    <div>List of objects:</div>
+                    <div>- id: String</div>
+                    <div>- name: String</div>
+                </td>
+            </tr>
+        </table>
+        <div><b>Request example:</b></div>
+        <div class="code">
+            curl -X 'GET' 'http://localhost:5000/notebooks/notebooks' \<br>
+            -H 'Accept: application/json' \<br>
+            -H 'Content-Type: application/json' \<br>
+            -H 'Authorization: Bearer &lt;access_token&gt;'
+        </div>
+
+        <h3>3.2. Get Notebook</h3>
+        <table class="endpointTable">
+            <tr>
+                <th>Endpoint:</th>
+                <td>/notebooks/notebook/&lt;notebook_id&gt;</td>
+            </tr>
+            <tr>
+                <th>Method:</th>
+                <td>GET</td>
+            </tr>
+            <tr>
+                <th>Request header:</th>
+                <td>Authorization: Bearer &lt;access_token&gt;</td>
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td>Get a notebook</td>
+            </tr>
+        </table>
+        <div><b>Response data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>message_type</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>result</td>
+                <td>
+                    <div>Object:</div>
+                    <div>- id: String</div>
+                    <div>- name: String</div>
+                </td>
+            </tr>
+        </table>
+        <div><b>Request example:</b></div>
+        <div class="code">
+            curl -X 'GET' 'http://localhost:5000/notebooks/notebook/&lt;notebook_id&gt;' \<br>
+            -H 'Accept: application/json' \<br>
+            -H 'Content-Type: application/json' \<br>
+            -H 'Authorization: Bearer &lt;access_token&gt;'
+        </div>
+
+        <h3>3.3. Create Notebook</h3>
+        <table class="endpointTable">
+            <tr>
+                <th>Endpoint:</th>
+                <td>/notebooks/notebook</td>
+            </tr>
+            <tr>
+                <th>Methods:</th>
+                <td>POST, PUT</td>
+            </tr>
+            <tr>
+                <th>Request header:</th>
+                <td>Authorization: Bearer &lt;access_token&gt;</td>
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td>Create a notebook</td>
+            </tr>
+        </table>
+        <div><b>Request data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+                <th>Required</th>
+            <tr>
+                <td>name</td>
+                <td>String</td>
+                <td>Yes</td>
+            </tr>
+        </table>
+        <div><b>Response data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>message_type</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>result</td>
+                <td>
+                    <div>Object:</div>
+                    <div>- notebook_id: String</div>
+                </td>
+            </tr>
+        </table>
+        <div><b>Request example:</b></div>
+        <div class="code">
+            curl -X 'POST' 'http://localhost:5000/notebooks/notebook' \<br>
+            -H 'Accept: application/json' \<br>
+            -H 'Content-Type: application/json' \<br>
+            -H 'Authorization: Bearer &lt;access_token&gt;' \<br>
+            -d '{"name": "Example Notebook"}'
+        </div>
+
+        <h3>3.4. Update Notebook</h3>
+        <table class="endpointTable">
+            <tr>
+                <th>Endpoint:</th>
+                <td>/notebooks/notebook/&lt;notebook_id&gt;</td>
+            </tr>
+            <tr>
+                <th>Method:</th>
+                <td>PUT</td>
+            </tr>
+            <tr>
+                <th>Request header:</th>
+                <td>Authorization: Bearer &lt;access_token&gt;</td>
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td>Update some or all fields of a notebook</td>
+            </tr>
+        </table>
+        <div><b>Request data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+                <th>Required</th>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>String</td>
+                <td>No</td>
+            </tr>
+        </table>
+        <div><b>Response data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>message_type</td>
+                <td>String</td>
+            </tr>
+        </table>
+        <div><b>Request example:</b></div>
+        <div class="code">
+            curl -X 'PUT' 'http://localhost:5000/notebooks/notebook/&lt;notebook_id&gt;' \<br>
+            -H 'Accept: application/json' \<br>
+            -H 'Content-Type: application/json' \<br>
+            -H 'Authorization: Bearer &lt;access_token&gt;' \<br>
+            -d '{"name": "Example Notebook"}'
+        </div>
+
+        <h3>3.5. Delete Notebook</h3>
+        <table class="endpointTable">
+            <tr>
+                <th>Endpoint:</th>
+                <td>/notebooks/notebook/&lt;notebook_id&gt;</td>
+            </tr>
+            <tr>
+                <th>Method:</th>
+                <td>DELETE</td>
+            </tr>
+            <tr>
+                <th>Request header:</th>
+                <td>Authorization: Bearer &lt;access_token&gt;</td>
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td>Delete a notebook</td>
+            </tr>
+        </table>
+        <div><b>Response data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>message_type</td>
+                <td>String</td>
+            </tr>
+        </table>
+        <div><b>Request example:</b></div>
+        <div class="code">
+            curl -X 'DELETE' 'http://localhost:5000/notebooks/notebook/&lt;notebook_id&gt;' \<br>
+            -H 'Accept: application/json' \<br>
+            -H 'Content-Type: application/json' \<br>
+            -H 'Authorization: Bearer &lt;access_token&gt;'
+        </div>
+
+        <hr>
+        <h2>4. Tags</h2>
+        <h3>4.1. Get Tags</h3>
+        <table class="endpointTable">
+            <tr>
+                <th>Endpoint:</th>
+                <td>/tags/tags/&lt;notebook_id&gt;</td>
+            </tr>
+            <tr>
+                <th>Method:</th>
+                <td>GET</td>
+            </tr>
+            <tr>
+                <th>Request header:</th>
+                <td>Authorization: Bearer &lt;access_token&gt;</td>
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td>Get the list of tags of a notebook</td>
+            </tr>
+        </table>
+        <div><b>Response data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>message_type</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>result</td>
+                <td>
+                    <div>List of objects:</div>
+                    <div>- id: String</div>
+                    <div>- name: String</div>
+                    <div>- color: String, null</div>
+                </td>
+            </tr>
+        </table>
+        <div><b>Request example:</b></div>
+        <div class="code">
+            curl -X 'GET' 'http://localhost:5000/tags/tags/&lt;notebook_id&gt;' \<br>
+            -H 'Accept: application/json' \<br>
+            -H 'Content-Type: application/json' \<br>
+            -H 'Authorization: Bearer &lt;access_token&gt;'
+        </div>
+
+        <h3>4.2. Get Tag</h3>
+        <table class="endpointTable">
+            <tr>
+                <th>Endpoint:</th>
+                <td>/tags/tag/&lt;tag_id&gt;</td>
+            </tr>
+            <tr>
+                <th>Method:</th>
+                <td>GET</td>
+            </tr>
+            <tr>
+                <th>Request header:</th>
+                <td>Authorization: Bearer &lt;access_token&gt;</td>
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td>Get a tag</td>
+            </tr>
+        </table>
+        <div><b>Response data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>message_type</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>result</td>
+                <td>
+                    <div>Object:</div>
+                    <div>- id: String</div>
+                    <div>- notebook_id: String</div>
+                    <div>- name: String</div>
+                    <div>- color: String, null</div>
+                </td>
+            </tr>
+        </table>
+        <div><b>Request example:</b></div>
+        <div class="code">
+            curl -X 'GET' 'http://localhost:5000/tags/tag/&lt;tag_id&gt;' \<br>
+            -H 'Accept: application/json' \<br>
+            -H 'Content-Type: application/json' \<br>
+            -H 'Authorization: Bearer &lt;access_token&gt;'
+        </div>
+
+        <h3>4.3. Create Tag</h3>
+        <table class="endpointTable">
+            <tr>
+                <th>Endpoint:</th>
+                <td>/tags/tag</td>
+            </tr>
+            <tr>
+                <th>Methods:</th>
+                <td>POST, PUT</td>
+            </tr>
+            <tr>
+                <th>Request header:</th>
+                <td>Authorization: Bearer &lt;access_token&gt;</td>
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td>Create a tag</td>
+            </tr>
+        </table>
+        <div><b>Request data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+                <th>Required</th>
+                <th>Default value</th>
+            <tr>
+                <td>notebook_id</td>
+                <td>String</td>
+                <td>Yes</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>String</td>
+                <td>Yes</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>color</td>
+                <td>String, null</td>
+                <td>No</td>
+                <td>null</td>
+            </tr>
+        </table>
+        <div><b>Response data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>message_type</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>result</td>
+                <td>
+                    <div>Object:</div>
+                    <div>- tag_id: String</div>
+                </td>
+            </tr>
+        </table>
+        <div><b>Request example:</b></div>
+        <div class="code">
+            curl -X 'POST' 'http://localhost:5000/tags/tag' \<br>
+            -H 'Accept: application/json' \<br>
+            -H 'Content-Type: application/json' \<br>
+            -H 'Authorization: Bearer &lt;access_token&gt;' \<br>
+            -d '{"notebook_id": "&lt;notebook_id&gt;", "name": "Example Tag", "color": "#00ff00"}'
+        </div>
+
+        <h3>4.4. Update Tag</h3>
+        <table class="endpointTable">
+            <tr>
+                <th>Endpoint:</th>
+                <td>/tags/tag/&lt;tag_id&gt;</td>
+            </tr>
+            <tr>
+                <th>Method:</th>
+                <td>PUT</td>
+            </tr>
+            <tr>
+                <th>Request header:</th>
+                <td>Authorization: Bearer &lt;access_token&gt;</td>
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td>Update some or all fields of a tag</td>
+            </tr>
+        </table>
+        <div><b>Request data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+                <th>Required</th>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>String</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>color</td>
+                <td>String, null</td>
+                <td>No</td>
+            </tr>
+        </table>
+        <div><b>Response data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>message_type</td>
+                <td>String</td>
+            </tr>
+        </table>
+        <div><b>Request example:</b></div>
+        <div class="code">
+            curl -X 'PUT' 'http://localhost:5000/tags/tag/&lt;tag_id&gt;' \<br>
+            -H 'Accept: application/json' \<br>
+            -H 'Content-Type: application/json' \<br>
+            -H 'Authorization: Bearer &lt;access_token&gt;' \<br>
+            -d '{"name": "Example Tag"}'
+        </div>
+
+        <h3>4.5. Delete Tag</h3>
+        <table class="endpointTable">
+            <tr>
+                <th>Endpoint:</th>
+                <td>/tags/tag/&lt;tag_id&gt;</td>
+            </tr>
+            <tr>
+                <th>Method:</th>
+                <td>DELETE</td>
+            </tr>
+            <tr>
+                <th>Request header:</th>
+                <td>Authorization: Bearer &lt;access_token&gt;</td>
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td>Delete a tag</td>
+            </tr>
+        </table>
+        <div><b>Response data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>message_type</td>
+                <td>String</td>
+            </tr>
+        </table>
+        <div><b>Request example:</b></div>
+        <div class="code">
+            curl -X 'DELETE' 'http://localhost:5000/tags/tag/&lt;tag_id&gt;' \<br>
+            -H 'Accept: application/json' \<br>
+            -H 'Content-Type: application/json' \<br>
+            -H 'Authorization: Bearer &lt;access_token&gt;'
+        </div>
+
+        <hr>
+        <h2>5. Notes</h2>
+        <h3>5.1. Get Notes</h3>
+        <table class="endpointTable">
+            <tr>
+                <th>Endpoint:</th>
+                <td>/notes/notes/&lt;notebook_id&gt;</td>
+            </tr>
+            <tr>
+                <th>Method:</th>
+                <td>POST</td>
+            </tr>
+            <tr>
+                <th>Request header:</th>
+                <td>Authorization: Bearer &lt;access_token&gt;</td>
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td>Get the list of notes of a notebook by a filter</td>
+            </tr>
+        </table>
+        <div><b>Request data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+                <th>Required</th>
+                <th>Comments</th>
+            <tr>
+                <td>active</td>
+                <td>Boolean</td>
+                <td>No</td>
+                <td>If <i>true</i>, only active notes are returned. If <i>false</i>, only archived (not active) notes are returned. If this item is not present in the request data, then no filter by state is applied and all notes are returned regardless their state.</td>
+            </tr>
+            <tr>
+                <td>tags</td>
+                <td>List of strings</td>
+                <td>No</td>
+                <td>List of strings containing the tag names to filter the notes by. If this item is present in the request data, only notes than have any of these tags are returned in the result. If this item is not present in the request data, then no filter by tags is applied and all notes are returned regardless their tags.</td>
+            </tr>
+            <tr>
+                <td>no_tags</td>
+                <td>Boolean</td>
+                <td>No</td>
+                <td>This item applies only if the <i>tags</i> item is present in the request data too. If <i>true</i>, notes with no tags are returned as well. If <i>false</i> or if this item is not present in the request data, notes with no tags are not returned.</td>
+            </tr>
+            <tr>
+                <td>last_mod</td>
+                <td>Boolean</td>
+                <td>No</td>
+                <td>If <i>true</i>, returned notes are sorted by their Last Modified timestamp. If <i>false</i> or if this item is not present in the request data, the notes are sorted by their Created timestamp.</td>
+            </tr>
+            <tr>
+                <td>asc</td>
+                <td>Boolean</td>
+                <td>No</td>
+                <td>If <i>true</i> or if this item is not present in the request data, the order of the returned notes is ascending. If <i>false</i>, the order is descending.</td>
+            </tr>
+        </table>
+        <div><b>Response data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>message_type</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>result</td>
+                <td>
+                    <div>List of objects:</div>
+                    <div>- id: String</div>
+                    <div>- active: Boolean</div>
+                    <div>- title: String, null</div>
+                    <div>- created_ts: Integer</div>
+                    <div>- last_modified_ts: Integer</div>
+                    <div>- tags: List of objects:</div>
+                    <div class="tab1">- id: String</div>
+                    <div class="tab1">- name: String</div>
+                    <div class="tab1">- color: String, null</div>
+                </td>
+            </tr>
+        </table>
+        <div><b>Request example:</b></div>
+        <div class="code">
+            curl -X 'POST' 'http://localhost:5000/notes/notes/&lt;notebook_id&gt;' \<br>
+            -H 'Accept: application/json' \<br>
+            -H 'Content-Type: application/json' \<br>
+            -H 'Authorization: Bearer &lt;access_token&gt;' \<br>
+            -d '{"active": true, "tags": ["tag_name_1", "tag_name_2"]}'
+        </div>
+
+        <h3>5.2. Get Note</h3>
+        <table class="endpointTable">
+            <tr>
+                <th>Endpoint:</th>
+                <td>/notes/note/&lt;note_id&gt;</td>
+            </tr>
+            <tr>
+                <th>Method:</th>
+                <td>GET</td>
+            </tr>
+            <tr>
+                <th>Request header:</th>
+                <td>Authorization: Bearer &lt;access_token&gt;</td>
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td>Get a note</td>
+            </tr>
+        </table>
+        <div><b>Response data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>message_type</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>result</td>
+                <td>
+                    <div>Object:</div>
+                    <div>- id: String</div>
+                    <div>- notebook_id: String</div>
+                    <div>- active: Boolean</div>
+                    <div>- title: String, null</div>
+                    <div>- body: String, null</div>
+                    <div>- created_ts: Integer</div>
+                    <div>- last_modified_ts: Integer</div>
+                    <div>- tags: List of objects:</div>
+                    <div class="tab1">- id: String</div>
+                    <div class="tab1">- name: String</div>
+                    <div class="tab1">- color: String, null</div>
+                </td>
+            </tr>
+        </table>
+        <div><b>Request example:</b></div>
+        <div class="code">
+            curl -X 'GET' 'http://localhost:5000/notes/note/&lt;note_id&gt;' \<br>
+            -H 'Accept: application/json' \<br>
+            -H 'Content-Type: application/json' \<br>
+            -H 'Authorization: Bearer &lt;access_token&gt;'
+        </div>
+
+        <h3>5.3. Create Note</h3>
+        <table class="endpointTable">
+            <tr>
+                <th>Endpoint:</th>
+                <td>/notes/note</td>
+            </tr>
+            <tr>
+                <th>Methods:</th>
+                <td>POST, PUT</td>
+            </tr>
+            <tr>
+                <th>Request header:</th>
+                <td>Authorization: Bearer &lt;access_token&gt;</td>
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td>Create a note</td>
+            </tr>
+        </table>
+        <div><b>Request data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+                <th>Required</th>
+                <th>Default value</th>
+            <tr>
+                <td>notebook_id</td>
+                <td>String</td>
+                <td>Yes</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>active</td>
+                <td>Boolean</td>
+                <td>No</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>title</td>
+                <td>String, null</td>
+                <td>No</td>
+                <td>null</td>
+            </tr>
+            <tr>
+                <td>body</td>
+                <td>String, null</td>
+                <td>No</td>
+                <td>null</td>
+            </tr>
+            <tr>
+                <td>tags</td>
+                <td>List of strings</td>
+                <td>No</td>
+                <td>[]</td>
+            </tr>
+        </table>
+        <div><b>Response data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>message_type</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>result</td>
+                <td>
+                    <div>Object:</div>
+                    <div>- note_id: String</div>
+                </td>
+            </tr>
+        </table>
+        <div><b>Request example:</b></div>
+        <div class="code">
+            curl -X 'POST' 'http://localhost:5000/notes/note' \<br>
+            -H 'Accept: application/json' \<br>
+            -H 'Content-Type: application/json' \<br>
+            -H 'Authorization: Bearer &lt;access_token&gt;' \<br>
+            -d '{"notebook_id": "&lt;notebook_id&gt;", "title": "Example Note", "body": "This is a test note", tags: ["tag_name_1", "tag_name_2"]}'
+        </div>
+
+        <h3>5.4. Update Note</h3>
+        <table class="endpointTable">
+            <tr>
+                <th>Endpoint:</th>
+                <td>/notes/note/&lt;note_id&gt;</td>
+            </tr>
+            <tr>
+                <th>Method:</th>
+                <td>PUT</td>
+            </tr>
+            <tr>
+                <th>Request header:</th>
+                <td>Authorization: Bearer &lt;access_token&gt;</td>
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td>Update some or all fields of a note</td>
+            </tr>
+        </table>
+        <div><b>Request data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+                <th>Required</th>
+            </tr>
+            <tr>
+                <td>active</td>
+                <td>Boolean</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>title</td>
+                <td>String, null</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>body</td>
+                <td>String, null</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>tags</td>
+                <td>List of strings</td>
+                <td>No</td>
+            </tr>
+        </table>
+        <div><b>Response data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>message_type</td>
+                <td>String</td>
+            </tr>
+        </table>
+        <div><b>Request example:</b></div>
+        <div class="code">
+            curl -X 'PUT' 'http://localhost:5000/notes/note/&lt;note_id&gt;' \<br>
+            -H 'Accept: application/json' \<br>
+            -H 'Content-Type: application/json' \<br>
+            -H 'Authorization: Bearer &lt;access_token&gt;' \<br>
+            -d '{"title": "Note Example", "active": false}'
+        </div>
+
+        <h3>5.5. Delete Note</h3>
+        <table class="endpointTable">
+            <tr>
+                <th>Endpoint:</th>
+                <td>/notes/note/&lt;note_id&gt;</td>
+            </tr>
+            <tr>
+                <th>Method:</th>
+                <td>DELETE</td>
+            </tr>
+            <tr>
+                <th>Request header:</th>
+                <td>Authorization: Bearer &lt;access_token&gt;</td>
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td>Delete a note</td>
+            </tr>
+        </table>
+        <div><b>Response data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>message_type</td>
+                <td>String</td>
+            </tr>
+        </table>
+        <div><b>Request example:</b></div>
+        <div class="code">
+            curl -X 'DELETE' 'http://localhost:5000/notes/note/&lt;note_id&gt;' \<br>
+            -H 'Accept: application/json' \<br>
+            -H 'Content-Type: application/json' \<br>
+            -H 'Authorization: Bearer &lt;access_token&gt;'
+        </div>
+
+        <hr>
+        <h2>6. Search</h2>
+        <table class="endpointTable">
+            <tr>
+                <th>Endpoint:</th>
+                <td>/search/&lt;search&gt;</td>
+            </tr>
+            <tr>
+                <th>Method:</th>
+                <td>GET</td>
+            </tr>
+            <tr>
+                <th>Request header:</th>
+                <td>Authorization: Bearer &lt;access_token&gt;</td>
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td>Search for notebooks, tags and notes that match a given text</td>
+            </tr>
+        </table>
+        <div><b>Response data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>message_type</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>result</td>
+                <td>
+                    <div>Object:</div>
+                    <div>- notebooks: List of objects:</div>
+                    <div class="tab1">- id: String</div>
+                    <div class="tab1">- name: String</div>
+                    <div>- tags: List of objects:</div>
+                    <div class="tab1">- id: String</div>
+                    <div class="tab1">- notebook_id: String</div>
+                    <div class="tab1">- name: String</div>
+                    <div class="tab1">- color: String, null</div>
+                    <div>- notes: List of objects:</div>
+                    <div class="tab1">- id: String</div>
+                    <div class="tab1">- notebook_id: String</div>
+                    <div class="tab1">- active: Boolean</div>
+                    <div class="tab1">- title: String</div>
+                    <div class="tab1">- created_ts: Integer</div>
+                    <div class="tab1">- last_modified_ts: Integer</div>
+                    <div class="tab1">- tags: List of objects:</div>
+                    <div class="tab2">- id: String</div>
+                    <div class="tab2">- name: String</div>
+                    <div class="tab2">- color: String, null</div>
+                </td>
+            </tr>
+        </table>
+        <div><b>Request example:</b></div>
+        <div class="code">
+            curl -X 'GET' 'http://localhost:5000/search/&lt;search&gt;' \<br>
+            -H 'Accept: application/json' \<br>
+            -H 'Content-Type: application/json' \<br>
+            -H 'Authorization: Bearer &lt;access_token&gt;'
+        </div>
+
+        <hr>
+        <h2>7. About</h2>
+        <table class="endpointTable">
+            <tr>
+                <th>Endpoint:</th>
+                <td>/about</td>
+            </tr>
+            <tr>
+                <th>Method:</th>
+                <td>GET</td>
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td>Get API information</td>
+            </tr>
+        </table>
+        <div><b>Response data:</b></div>
+        <table class="dataTable">
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>message_type</td>
+                <td>String</td>
+            </tr>
+            <tr>
+                <td>result</td>
+                <td>
+                    <div>Object:</div>
+                    <div>- name: String</div>
+                    <div>- version: String</div>
+                    <div>- description: String</div>
+                    <div>- author: String</div>
+                </td>
+            </tr>
+        </table>
+        <div><b>Request example:</b></div>
+        <div class="code">
+            curl -X 'GET' 'http://localhost:5000/about' \<br>
+            -H 'Accept: application/json' \<br>
+            -H 'Content-Type: application/json'
+        </div>
+        <hr>
+    </body>
+</html>
