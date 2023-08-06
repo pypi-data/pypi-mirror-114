@@ -1,0 +1,50 @@
+Metadata-Version: 1.2
+Name: optifolio
+Version: 0.1.0
+Summary: A Python package for portfolio optimization.
+Home-page: https://github.com/kristianbonnici/optifolio
+Author: Kristian Bonnici
+Author-email: kristiandaaniel@gmail.com
+License: MIT license
+Description: [![Color fonts](https://see.fontimg.com/api/renderfont4/GO6zm/eyJyIjoiZHciLCJoIjoxODIsInciOjIwMDAsImZzIjo5MSwiZmdjIjoiIzIxQkNDNSIsImJnYyI6IiNGRkZGRkYifQ/T1BUSSBmb2xpbw/fattern.png)](https://www.fontspace.com/category/color)
+        
+        --------------------------------------
+        
+        ![PyPI Version](https://img.shields.io/pypi/v/pypo.svg)
+        
+        
+        **OptiFolio** is a package for portfolio optimization.
+        
+        -   Documentation: (COMING SOON) <https://pypo.readthedocs.io>.
+        
+        > **NOTE**
+        >
+        > This project is in early stage development, and can thus go trough major changes.
+        
+        Features
+        --------
+        
+        -   TODO
+        
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2021-07-30)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: optifolio
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
