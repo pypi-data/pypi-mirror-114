@@ -1,0 +1,8 @@
+README.md
+setup.py
+power_digit_addition/__init__.py
+power_digit_addition/power_addition.py
+power_digit_addition.egg-info/PKG-INFO
+power_digit_addition.egg-info/SOURCES.txt
+power_digit_addition.egg-info/dependency_links.txt
+power_digit_addition.egg-info/top_level.txt
