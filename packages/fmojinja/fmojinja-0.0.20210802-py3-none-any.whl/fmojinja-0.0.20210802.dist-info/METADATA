@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fmojinja
+Version: 0.0.20210802
+Summary: A FMO-related programs' input generators and output readers package
+Home-page: https://github.com/physchemstar/fmojinja
+Author: Yusuke Kawashima
+Author-email: y-kawashima@hoshi.ac.jp
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: jinja2
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: pyyaml
+
+UNKNOWN
+
+
