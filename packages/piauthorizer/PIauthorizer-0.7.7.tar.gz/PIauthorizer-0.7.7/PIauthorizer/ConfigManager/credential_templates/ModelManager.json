@@ -1,0 +1,21 @@
+{
+    "name": "ModelManager",
+    "displayName": "NLP.ModelManager",
+    "configurations": [
+        {
+            "$type": "TextConfiguration",
+            "defaultValue": {
+                "value": "[{\"model_type\":\"spacy\",\"download_scenario\":\"dataservices\", \"language\":\"nl\", \"name\":\"spacy\", \"client\":\"default\", \"version\":\"5-1\"}]"
+            },
+            "required": false,
+            "key": "MODELS_JSON",
+            "name": "Model Configuration JSON",
+            "description": "Model Configuration JSON",
+            "tenants": [
+                "research"
+            ],
+            "audience": "PandoraAdmin",
+            "metadata": []
+        }
+    ]
+}
