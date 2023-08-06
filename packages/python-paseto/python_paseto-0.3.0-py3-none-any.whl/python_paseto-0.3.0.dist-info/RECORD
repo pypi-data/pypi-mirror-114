@@ -1,0 +1,13 @@
+paseto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+paseto/crypto/.gitignore,sha256=MC6jM14aaZmW6_ZeilhHE3-FI3I7uhAB4s8eFd7fcSE,12
+paseto/crypto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+paseto/crypto/libsodium.pyx,sha256=9k3sjmdEgajWvrjr7h-t754Q3MrKkF27Y36kFbIrgI8,4716
+paseto/crypto/primitives.py,sha256=-EkRaAJYbwhNZ4wtxrBQt73jHgqjKMtQodtJ-3lYJ9I,585
+paseto/exceptions.py,sha256=Fjf8UU0kxkbAr-vekp0sd9Okqn9bT81GRFQsFSyurQI,298
+paseto/protocol/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+paseto/protocol/util.py,sha256=DTVnuiNV4srLCiY9qDxeDfbTKNnxyDn_NcaGmghgJJI,1686
+paseto/protocol/version2.py,sha256=mlhhdXnezW2yLPTkKEOvIZl8K0Ki0j35Y9XdSZGJX38,7553
+python_paseto-0.3.0.dist-info/LICENSE,sha256=g-TdIUKakft86mekdgMqlkFCXlNV3y4PWJpzi27J_Sw,1057
+python_paseto-0.3.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+python_paseto-0.3.0.dist-info/METADATA,sha256=DxhKTevQvETBGFGH8MKdrb5JlV0H4nH3SGJbE7L6mSk,3535
+python_paseto-0.3.0.dist-info/RECORD,,
