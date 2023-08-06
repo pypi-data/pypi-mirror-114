@@ -1,0 +1,8 @@
+yaqti/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yaqti/__main__.py,sha256=9eW8JFPmJOD5KdI6wd8Y_LKISbqItkmbFIp8cnz0RWE,2147
+yaqti/fetchers.py,sha256=VhoZSKKYz9lxRL4A94LuWwx-KL0emft2Ly2IlsRFEVE,3952
+yaqti/helpers.py,sha256=XB3wQmfQ0cX9a7qRIsHVcq15fwLlV7O7ksyn6DexHNg,1356
+yaqti/packages.py,sha256=hQJ9MF4CBlFSArMPvb-8aJ0MRRocNSawTPIVp6xLhck,1476
+yaqti-2021.7.27.0.dev0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+yaqti-2021.7.27.0.dev0.dist-info/METADATA,sha256=IQbCH1VOHTSjaZVkVhOq8YRXWnUW3PkhmnkCKIQhdNQ,4363
+yaqti-2021.7.27.0.dev0.dist-info/RECORD,,
