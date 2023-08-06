@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: xhproxies
+Version: 2021.7.30
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Creat by Han
+Author-email: 894781617@qq.com
+License: UNKNOWN
+Description: 返回代理ip
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.5
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Utilities
