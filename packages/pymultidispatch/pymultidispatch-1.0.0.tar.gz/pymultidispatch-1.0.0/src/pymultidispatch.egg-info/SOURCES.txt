@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/pymultidispatch/__init__.py
+src/pymultidispatch/multimethods.py
+src/pymultidispatch.egg-info/PKG-INFO
+src/pymultidispatch.egg-info/SOURCES.txt
+src/pymultidispatch.egg-info/dependency_links.txt
+src/pymultidispatch.egg-info/top_level.txt
