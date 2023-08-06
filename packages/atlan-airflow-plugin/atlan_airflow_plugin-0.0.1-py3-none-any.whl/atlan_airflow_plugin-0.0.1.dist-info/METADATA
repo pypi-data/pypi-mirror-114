@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: atlan-airflow-plugin
+Version: 0.0.1
+Summary: An Airflow plugin to connect with Atlan
+Home-page: https://atlan.com
+Author: Atlan Technologies Pvt Ltd
+Author-email: engineering@atlan.com
+License: Apache License 2.0
+Keywords: atlan,airflow,plugin,lineage
+Platform: UNKNOWN
+Classifier: Environment :: Plugins
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: requests (~=2.23.0)
+Requires-Dist: apache-airflow (>=1.10.0)
+
+# Atlan Airflow Plugin
+
+An Airflow plugin to push data to Atlan.
+
+## Requirements
+
+* Python >= 3.5
+* apache-airflow >= 1.10.x.
+
+## Installation and usage
+
+A tutorial to configure and use this plugin is available on the [Atlan Community](https://community.atlan.com/9c55898ea0364eec92df949a719842ed) Page
+
+
