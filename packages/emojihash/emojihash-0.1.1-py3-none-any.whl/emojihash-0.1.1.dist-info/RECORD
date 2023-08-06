@@ -1,0 +1,13 @@
+emojihash/__init__.py,sha256=eU1vq4l2wIlij_Jcz9PjdT43eMsmVxGpj-nEzACCGLE,140
+emojihash/main.py,sha256=SgEBq0QH6JhtYK0AXl6qIUklz6tNYKjsRJjSgntnuQo,603
+emojihash/db/__init__.py,sha256=y3M-RSRUFX-PANKIh4XvwS4-EBzV66Zhkwu-NsbBbqc,90
+emojihash/db/basic_emojis.py,sha256=YBRP5qkYDJcHjnTg3y8Wvx71hEAKMhGTfT8aDrrF3mk,15797
+emojihash/hash_classes/__init__.py,sha256=n4Dmg13G94lJ3LfjbpfRhmfzdQR-JM25pwVqPG10HCs,83
+emojihash/hash_classes/eh1.py,sha256=3vdSKcFyFN8QicLY-xtxOFEZXYV-uqXkrB6LBG7U7cc,1884
+emojihash/typing/__init__.py,sha256=_N0TNAR4jy6Dy5EI68EQYo-5S4xj9qz94BAeUlmnu84,76
+emojihash/typing/basic_types.py,sha256=oNObBCS0DznGoSGe8SMswcbIddX4XTzvvKQsdvhbHbU,110
+emojihash-0.1.1.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+emojihash-0.1.1.dist-info/METADATA,sha256=HMDA3IUUe1kxWZm3VsccwNHmx74s3cy7OXe62eXnC8E,1421
+emojihash-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+emojihash-0.1.1.dist-info/top_level.txt,sha256=_u2p6qNgvgSmGLxuzYoaM-OR0D9n2AXeUmLgwlZGcTU,10
+emojihash-0.1.1.dist-info/RECORD,,
