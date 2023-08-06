@@ -1,0 +1,35 @@
+Metadata-Version: 1.1
+Name: basicCalc752
+Version: 0.0.0.12
+Summary: A Very Stupid Calculator
+Home-page: UNKNOWN
+Author: Gary Ewing
+Author-email: workburner4321@gmail.com
+License: MIT
+Description: this Is Just A Simple Calculator to do stupid stuff with
+        
+        CHANGE LOG
+        ============
+        RELEASE 1
+        0.0.0.1  (7/27/2021)
+        - First Release
+        --------------------
+        -RELEASE 2
+        -0.0.0.2 --> 7/27/2021
+        -Just wanted to test some things out
+        -really didn't don anything
+        \n\n
+        
+        -RELEASE 3
+        -0.0.0.3--> 7/27/2021
+        -Just wanted to test some things out
+        -really didn't don anything
+        
+        
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
