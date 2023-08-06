@@ -1,0 +1,50 @@
+Metadata-Version: 1.1
+Name: BlueTE
+Version: 0.0.1
+Summary: A super fast Discord bot project generator
+Home-page: https://github.com/Spaxly/BlueTE-2.0
+Author: Spaxly
+Author-email: UNKNOWN
+License: MIT
+Description: <h1>BlueTE 2.0</h1>
+        A CLI to generate a Discord Bot project in Python!
+        
+        <h2>Getting Started</h2>
+        1. Clone the BlueTE Repository 
+        <br>
+        2. Once cloned, run start.sh
+        
+        **For Windows:**
+        ```bash
+        bash start.sh
+        ```
+        
+        **For Mac/Linux:**
+        ```sh
+        sh start.sh
+        ```
+        
+        Alternatively, you can use the `launcher.py` file to launch BlueTE
+        
+        Once you're bot files are generated in a folder, go into the bot.py file and fill in the spaces where it says "ur prefered default prefix here"
+        
+        Thats it! You can now run your bot and add to it. You can use BlueTE 2.0 as many times as you would like.
+        
+        <h2>Errors</h2>
+        If you come across an error using BlueTE 2.0, please make a new issue in the Issues section of this GitHub repository.
+        
+        Also, feel free to make any pull requests if you feel something can be fixed, updated, etc!
+        
+        Thanks!
+        
+        
+        ADDING MORE FEATURES
+Keywords: discord.py bot generator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

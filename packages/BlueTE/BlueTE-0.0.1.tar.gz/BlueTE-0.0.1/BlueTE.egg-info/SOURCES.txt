@@ -1,0 +1,8 @@
+LICENSE.md
+README.md
+setup.py
+BlueTE.egg-info/PKG-INFO
+BlueTE.egg-info/SOURCES.txt
+BlueTE.egg-info/dependency_links.txt
+BlueTE.egg-info/requires.txt
+BlueTE.egg-info/top_level.txt
