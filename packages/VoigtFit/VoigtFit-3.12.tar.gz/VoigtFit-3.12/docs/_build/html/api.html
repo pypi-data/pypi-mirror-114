@@ -1,0 +1,331 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>VoigtFit Interface &#8212; VoigtFit 0.12 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Results of Physical Model" href="physical_model_results.html" />
+    <link rel="prev" title="VoigtFit Parameter Language" href="documentation.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <pre class="logo literal-block">
+____  _           _________________________________________
+    \/ \  _/\    /
+        \/   \  / oigtFit
+              \/
+</pre>
+<div class="section" id="voigtfit-interface">
+<h1>VoigtFit Interface<a class="headerlink" href="#voigtfit-interface" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="class-dataset">
+<h2>class <strong>DataSet</strong><a class="headerlink" href="#class-dataset" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="class-component">
+<h2>class <strong>Component</strong><a class="headerlink" href="#class-component" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="class-line">
+<h2>class <strong>Line</strong><a class="headerlink" href="#class-line" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="class-region">
+<h2>class <strong>Region</strong><a class="headerlink" href="#class-region" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-voigt">
+<span id="module-voigt"></span><h2>module <strong>voigt</strong><a class="headerlink" href="#module-voigt" title="Permalink to this headline">¶</a></h2>
+<p>The module contains functions to evaluate the optical depth,
+to convert this to observed transmission and to convolve the
+observed spectrum with the instrumental profile.</p>
+<dl class="function">
+<dt id="voigt.H">
+<code class="descclassname">voigt.</code><code class="descname">H</code><span class="sig-paren">(</span><em>a</em>, <em>x</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/voigt.html#H"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voigt.H" title="Permalink to this definition">¶</a></dt>
+<dd><p>Voigt Profile Approximation from T. Tepper-Garcia 2006, 2007.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voigt.Voigt">
+<code class="descclassname">voigt.</code><code class="descname">Voigt</code><span class="sig-paren">(</span><em>wl</em>, <em>l0</em>, <em>f</em>, <em>N</em>, <em>b</em>, <em>gam</em>, <em>z=0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/voigt.html#Voigt"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voigt.Voigt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the optical depth Voigt profile.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>wl</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array_like, shape (N)</span></dt>
+<dd><p class="first last">Wavelength grid in Angstroms at which to evaluate the optical depth.</p>
+</dd>
+<dt><strong>l0</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Rest frame transition wavelength in Angstroms.</p>
+</dd>
+<dt><strong>f</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Oscillator strength.</p>
+</dd>
+<dt><strong>N</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Column density in units of cm^-2.</p>
+</dd>
+<dt><strong>b</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Velocity width of the Voigt profile in cm/s.</p>
+</dd>
+<dt><strong>gam</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Radiation damping constant, or Einstein constant (A_ul)</p>
+</dd>
+<dt><strong>z</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">The redshift of the observed wavelength grid <cite>l</cite>.</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>tau</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array_like, shape (N)</span></dt>
+<dd><p class="first last">Optical depth array evaluated at the input grid wavelengths <cite>l</cite>.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="voigt.convolve_numba">
+<code class="descclassname">voigt.</code><code class="descname">convolve_numba</code><a class="reference internal" href="_modules/voigt.html#convolve_numba"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voigt.convolve_numba" title="Permalink to this definition">¶</a></dt>
+<dd><p>Define convolution function for a wavelength dependent kernel.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>P</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array_like, shape (N)</span></dt>
+<dd><p class="first last">Intrinsic line profile.</p>
+</dd>
+<dt><strong>kernel</strong> <span class="classifier-delimiter">:</span> <span class="classifier">np.array, shape (N, M)</span></dt>
+<dd><p class="first last">Each row of the <cite>kernel</cite> corresponds to the wavelength dependent
+line-spread function (LSF) evaluated at each pixel of the input
+profile <cite>P</cite>. Each LSF must be normalized!</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>P_con</strong> <span class="classifier-delimiter">:</span> <span class="classifier">np.array, shape (N)</span></dt>
+<dd><p class="first last">Resulting profile after performing convolution with <cite>kernel</cite>.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>This function is decorated by the <cite>jit</cite> decorator from <a href="#id1"><span class="problematic" id="id2">`numba`_</span></a> in order
+to speed up the calculation.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voigt.convolve_profile">
+<code class="descclassname">voigt.</code><code class="descname">convolve_profile</code><span class="sig-paren">(</span><em>profile</em>, <em>width</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/voigt.html#convolve_profile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voigt.convolve_profile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convolve with constant kernel width in pixels!</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voigt.evaluate_continuum">
+<code class="descclassname">voigt.</code><code class="descname">evaluate_continuum</code><span class="sig-paren">(</span><em>x</em>, <em>pars</em>, <em>reg_num</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/voigt.html#evaluate_continuum"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voigt.evaluate_continuum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate the continuum model using Chebyshev polynomials.
+All regions are fitted with the same order of polynomials.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>x</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array_like, shape (N)</span></dt>
+<dd><p class="first last">Input wavelength grid in Ångstrøm.</p>
+</dd>
+<dt><strong>pars</strong> <span class="classifier-delimiter">:</span> <span class="classifier">dict(<a href="#id3"><span class="problematic" id="id4">lmfit.Parameters_</span></a>)</span></dt>
+<dd><p class="first last">An instance of <a href="#id5"><span class="problematic" id="id6">lmfit.Parameters_</span></a> containing the Chebyshev
+coefficients for each region.</p>
+</dd>
+<dt><strong>reg_num</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">The region number, i.e., the index of the region in the list
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">VoigtFit.DataSet.regions</span></code>.</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>cont_model</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array_like, shape (N)</span></dt>
+<dd><p class="first last">The continuum Chebyshev polynomial evaluated at the input wavelengths <cite>x</cite>.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="voigt.evaluate_profile">
+<code class="descclassname">voigt.</code><code class="descname">evaluate_profile</code><span class="sig-paren">(</span><em>x</em>, <em>pars</em>, <em>lines</em>, <em>kernel</em>, <em>z_sys=None</em>, <em>sampling=3</em>, <em>kernel_nsub=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/voigt.html#evaluate_profile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voigt.evaluate_profile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate the observed Voigt profile. The calculated optical depth, <cite>tau</cite>,
+is converted to observed transmission, <cite>f</cite>:</p>
+<div class="math notranslate nohighlight">
+\[f = e^{-\tau}\]</div>
+<p>The observed transmission is subsequently convolved with the instrumental
+broadening profile assumed to be Gaussian with a full-width at half maximum
+of res. The resolving power is assumed to be constant in velocity space.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>x</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array_like, shape (N)</span></dt>
+<dd><p class="first last">Wavelength array in Ångstrøm on which to evaluate the profile.</p>
+</dd>
+<dt><strong>pars</strong> <span class="classifier-delimiter">:</span> <span class="classifier">dict(<a href="#id7"><span class="problematic" id="id8">lmfit.Parameters_</span></a>)</span></dt>
+<dd><p class="first last">An instance of <a href="#id9"><span class="problematic" id="id10">lmfit.Parameters_</span></a> containing the line parameters.</p>
+</dd>
+<dt><strong>lines</strong> <span class="classifier-delimiter">:</span> <span class="classifier">list(<code class="xref py py-class docutils literal notranslate"><span class="pre">Line</span></code>)</span></dt>
+<dd><p class="first last">List of lines to evaluate. Should be a list of
+<code class="xref py py-class docutils literal notranslate"><span class="pre">Line</span></code> objects.</p>
+</dd>
+<dt><strong>kernel</strong> <span class="classifier-delimiter">:</span> <span class="classifier">np.array, shape (N, M)  or float</span></dt>
+<dd><p class="first last">The convolution kernel for each wavelength pixel.
+If an array is given, each row of the array must specify
+the line-spread function (LSF) at the given wavelength pixel.
+The LSF must be normalized!
+If a float is given, the resolution FWHM is given in km/s (c/R).
+In this case the spectral resolution is assumed
+to be constant in velocity space.</p>
+</dd>
+<dt><strong>z_sys</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float or None</span></dt>
+<dd><p class="first last">The systemic redshift, used to determine an effective wavelength range
+within which to evaluate the profile. This is handy when fitting very large
+regions, such as HI and metal lines together.</p>
+</dd>
+<dt><strong>sampling</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer  [default = 3]</span></dt>
+<dd><p class="first last">The subsampling factor used for defining the input logarithmically
+space wavelength grid. The number of pixels in the evaluation will
+be sampling * N, where N is the number of input pixels.
+The final profile will be interpolated back onto the original
+wavelength grid defined by <cite>x</cite>.</p>
+</dd>
+<dt><strong>kernel_nsub</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">Kernel subsampling factor relative to the data.
+This is only used if the resolution is given as a LSF file.</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>profile_obs</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array_like, shape (N)</span></dt>
+<dd><p class="first last">Observed line profile convolved with the instrument profile.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="voigt.fwhm_to_pixels">
+<code class="descclassname">voigt.</code><code class="descname">fwhm_to_pixels</code><span class="sig-paren">(</span><em>wl</em>, <em>res_wl</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/voigt.html#fwhm_to_pixels"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voigt.fwhm_to_pixels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert spectral resolution in wavelength to pixels
+R = lambda / dlambda, where dlambda is the FWHM</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voigt.resvel_to_pixels">
+<code class="descclassname">voigt.</code><code class="descname">resvel_to_pixels</code><span class="sig-paren">(</span><em>wl</em>, <em>res</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/voigt.html#resvel_to_pixels"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voigt.resvel_to_pixels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert spectral resolution in km/s to pixels</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-output">
+<h2>module <strong>output</strong><a class="headerlink" href="#module-output" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table Of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="documentation.html">VoigtFit Parameter Language</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">VoigtFit Interface</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#class-dataset">class <strong>DataSet</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#class-component">class <strong>Component</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#class-line">class <strong>Line</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#class-region">class <strong>Region</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-voigt">module <strong>voigt</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-output">module <strong>output</strong></a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="physical_model_results.html">Results of Physical Model</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Jens-Kristian Krogager.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.8</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="_sources/api.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
