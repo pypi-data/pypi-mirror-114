@@ -1,0 +1,3 @@
+include curvenote/latex/templating/schema/*
+include curvenote/latex/templating/defs/*
+include curvenote/latex/templating/builtin_template/*
