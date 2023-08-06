@@ -1,0 +1,15 @@
+README.md
+setup.py
+TenetPy/PalindromeList.py
+TenetPy/PalindromeWord.py
+TenetPy/PalindromeWordInList.py
+TenetPy/Reverser.py
+TenetPy/ReverserList.py
+TenetPy/Vowel.py
+TenetPy/WordLengthInList.py
+TenetPy/__init__.py
+TenetPy/main.py
+TenetPy.egg-info/PKG-INFO
+TenetPy.egg-info/SOURCES.txt
+TenetPy.egg-info/dependency_links.txt
+TenetPy.egg-info/top_level.txt
