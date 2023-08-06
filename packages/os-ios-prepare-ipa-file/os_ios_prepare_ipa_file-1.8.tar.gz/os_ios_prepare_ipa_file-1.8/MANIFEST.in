@@ -1,0 +1,4 @@
+include setup.cfg
+include setup.py
+include os_ios_prepare_ipa_file
+recursive-include res *
