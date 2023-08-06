@@ -1,0 +1,9 @@
+jupyter_kernel_hook/__init__.py,sha256=Ur1fhP6ILMR0DzMJH3sVe_YO9lCtRFRlnMDHgTMHP94,2517
+jupyter_kernel_hook/_globals.py,sha256=qaBwqpKRl-FQYxXbf0jP2_lp7Fzpwhf5dKT9l30AAF4,2231
+jupyter_kernel_hook/core.py,sha256=rUKqYkRnr3ROmY3uYWtT4GpDb8--1en4vfvCLyqMQAQ,5316
+jupyter_kernel_hook/templates/init.py.jinja,sha256=KHAUSQnX-t8sSauvZQsVoU6ygyMhNIblvZcJD3loS-E,580
+jupyter_kernel_hook-0.1.0.dist-info/LICENSE,sha256=rsoIcN2EODaDp358gCo61Hxlkp8Z9H_NaipjbUJRBU4,1049
+jupyter_kernel_hook-0.1.0.dist-info/METADATA,sha256=sxyV3KYT61sr90Je59NJYFPcMYCA9yfIGFEBKLrZWcs,6185
+jupyter_kernel_hook-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+jupyter_kernel_hook-0.1.0.dist-info/top_level.txt,sha256=0aq_y0GMUjDAz9bj3nFnX65rb9QrxqrQkcTb8KWeuqE,20
+jupyter_kernel_hook-0.1.0.dist-info/RECORD,,
