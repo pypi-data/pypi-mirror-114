@@ -1,0 +1,3 @@
+[console_scripts]
+play_scheduler = schoolschedulerapp:main.main
+

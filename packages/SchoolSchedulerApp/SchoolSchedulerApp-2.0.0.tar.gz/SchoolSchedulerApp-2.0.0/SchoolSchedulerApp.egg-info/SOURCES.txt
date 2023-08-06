@@ -1,0 +1,27 @@
+README.md
+setup.py
+SchoolSchedulerApp.egg-info/PKG-INFO
+SchoolSchedulerApp.egg-info/SOURCES.txt
+SchoolSchedulerApp.egg-info/dependency_links.txt
+SchoolSchedulerApp.egg-info/entry_points.txt
+SchoolSchedulerApp.egg-info/requires.txt
+SchoolSchedulerApp.egg-info/top_level.txt
+schoolschedulerapp/SchoolScheduler.db
+schoolschedulerapp/__init__.py
+schoolschedulerapp/db.py
+schoolschedulerapp/db_alchemy.py
+schoolschedulerapp/edit.png
+schoolschedulerapp/generatedata.py
+schoolschedulerapp/main.py
+schoolschedulerapp/schedule.py
+schoolschedulerapp/scheduler.ui
+schoolschedulerapp/schedulerui.py
+schoolschedulerapp/search.png
+schoolschedulerapp/square.png
+schoolschedulerapp/words.txt
+schoolschedulerapp/wsl.py
+schoolschedulerapp/export/Default PDF Export Directory
+schoolschedulerapp/import/Data.xlsx
+schoolschedulerapp/import/Test Data Generator Output Directory
+schoolschedulerapp/scheduler/SchoolScheduler.db
+schoolschedulerapp/venv/pyvenv.cfg
