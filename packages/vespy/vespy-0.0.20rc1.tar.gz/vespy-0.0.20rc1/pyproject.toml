@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "vespy"
+version = "0.0.20rc1"
+description = "\"A small utility package"
+authors = ["emher <emher@vestas.com>"]
+license = "MIT"
+include = ["vespy/certificates/*"]
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+requests = "^2.26.0"
+certifi = "^2021.5.30"
+
+[tool.poetry.scripts]
+vespy = 'vespy.main:run'
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
