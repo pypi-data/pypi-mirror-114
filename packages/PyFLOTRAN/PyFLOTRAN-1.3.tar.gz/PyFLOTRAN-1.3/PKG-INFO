@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: PyFLOTRAN
+Version: 1.3
+Summary: Package to pre-process PFLOTRAN (and other software) files
+Home-page: https://github.com/aitirga/PyFLOTRAN
+Author: Aitor Iraola Galarza
+Author-email: aitor.iraola@amphos21.com
+License: MIT
+Download-URL: https://github.com/aitirga/PyFLOTRAN/archive/refs/tags/v_1.3.zip
+Description: UNKNOWN
+Keywords: PFLOTRAN,Preprocessing,python,modelling
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
