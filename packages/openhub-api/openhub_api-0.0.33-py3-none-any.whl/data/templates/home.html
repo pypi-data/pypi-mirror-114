@@ -1,0 +1,36 @@
+{% extends './base_site.html' %}
+
+{% block title %}{{ title }}{% endblock title %}
+
+{% block content %}
+<h1>Home</h1>
+<button onclick="sendMyMessages()">Test</button>
+
+{% endblock content %}
+{% block javascript %}
+<script>
+
+    const startsocket = new WebSocket(
+        'ws://'
+        + window.location.host
+        + '/test'
+    );
+
+    startsocket.onmessage = function (e) {
+        const data = JSON.parse(e.data);
+        // console.log(data)
+        // document.querySelector('#chat-log').value += (data.message + '\n');
+    };
+
+    startsocket.onclose = function (e) {
+        console.error('Chat socket closed unexpectedly');
+    };
+
+    function sendMyMessages() {
+        startsocket.send(JSON.stringify({
+            'message': 'test'
+        }));
+    }
+
+</script>
+{% endblock javascript %}

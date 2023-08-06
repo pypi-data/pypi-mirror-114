@@ -1,0 +1,180 @@
+{% extends './base_site.html' %}
+
+{% block title %}{{ title }}{% endblock title %}
+{% block content %}
+    <h1>Hardware: </h1>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                <form id="channel-form">
+                    <h6>Create Channel:</h6>
+                    <div class="row">
+                        {% csrf_token %}
+                        {% for field in channel_form %}
+                            <div class="form-group col-4">
+                                <label class="col-12">{{ field.label }}</label>
+                                {{ field }}
+                            </div>
+                        {% endfor %}
+                        <input type="submit" class="btn btn-primary" value="Create Channel"/>
+                    </div>
+                </form>
+                <hr/>
+                <table class="table table-striped table-sm " id="hardware_channels">
+                    <thead>
+                    <tr>
+                        <th>Serial No.</th>
+                        <th>Type</th>
+                        <th>Updated At</th>
+                        <th>Created At</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for channel in channels %}
+                        <tr>
+                            <td><a href=/accessories/{{ channel.id }} style="color:#0000EE">{{ channel.id }}</a></td>
+                            <td>{{ channel.type }}</td>
+                            <td>{{ channel.updated_at }}</td>
+                            <td>{{ channel.created_at }}</td>
+
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-sm">
+
+
+                <form id="config-form">
+                    <h6>Create Hardware Config:</h6>
+                    <div class="row">
+                        {% csrf_token %}
+                        {% for field in hardware_config_form %}
+                            <div class="form-group col-4">
+                                <label class="col-12">{{ field.label }}</label>
+                                {{ field }}
+                            </div>
+                        {% endfor %}
+                        <input type="submit" class="btn btn-primary" value="Create Hardware Config"/>
+                    </div>
+                </form>
+
+                <hr/>
+
+
+                <table class="table table-striped table-sm " id="hardware-configs">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Type</th>
+                        <th>Value</th>
+                        <th>Updated At</th>
+                        <th>Created At</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for config in hardware_configs %}
+                        <tr>
+                            <td><a href=/accessories/{{ config.id }} style="color:#0000EE">{{ config.id }}</a></td>
+                            <td>{{ config.type }}</td>
+                            <td>{{ config.value }}</td>
+                            <td>{{ config.updated_at }}</td>
+                            <td>{{ config.created_at }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+
+{% endblock content %}
+
+{% block javascript %}
+    <script>
+        /*
+            On submiting the form, send the POST ajax
+            request to server and after successfull submission
+            display the object.
+        */
+        $("#channel-form").submit(function (e) {
+            // preventing from page reload and default actions
+            e.preventDefault();
+            // serialize the data for sending the form data.
+            var serializedData = $(this).serialize();
+            // make POST ajax call
+            $.ajax({
+                type: 'POST',
+                url: "{% url 'post_channel' %}",
+                data: serializedData,
+                success: function (response) {
+                    // on successfull creating object
+                    // 2. focus to nickname input
+                    $("#id_id").focus();
+
+                    // display the newly hardware to table.
+                    var instance = JSON.parse(response["instance"]);
+                    var fields = instance[0]["fields"];
+                    var pk = instance[0]["pk"];
+                    var link = /channels/ + pk
+                    $("#hardware_channels tbody").prepend(
+                        `<tr>
+                    <td><a href=${link}>${pk}</a></td>
+                    <td>${fields["type"] || ""}</td>
+                    <td>${fields["updated_at"] || ""}</td>
+                    <td>${fields["created_at"] || ""}</td>
+                    <td>${fields || ""}</td>
+
+                    </tr>`
+                    )
+                },
+                error: function (response) {
+                    // alert the error if any error occured
+                    alert(response["responseJSON"]["error"]);
+                }
+            })
+        })
+
+        $("#config-form").submit(function (e) {
+            // preventing from page reload and default actions
+            e.preventDefault();
+            // serialize the data for sending the form data.
+            var serializedData = $(this).serialize();
+            // make POST ajax call
+            $.ajax({
+                type: 'POST',
+                url: "{% url 'post_config' %}",
+                data: serializedData,
+                success: function (response) {
+                    // on successfull creating object
+                    // 2. focus to nickname input
+                    $("#id_id").focus();
+
+                    // display the newly hardware to table.
+                    var instance = JSON.parse(response["instance"]);
+                    var fields = instance[0]["fields"];
+                    var pk = instance[0]["pk"];
+                    var link = /channels/ + pk
+                    $("#hardware-configs tbody").prepend(
+                        `<tr>
+                    <td><a href=${link}>${pk}</a></td>
+                    <td>${fields["type"] || ""}</td>
+                    <td>${fields["value"] || ""}</td>
+                    <td>${fields["updated_at"] || ""}</td>
+                    <td>${fields["created_at"] || ""}</td>
+                    <td>${fields || ""}</td>
+
+                    </tr>`
+                    )
+                },
+                error: function (response) {
+                    // alert the error if any error occured
+                    alert(response["responseJSON"]["error"]);
+                }
+            })
+        })
+    </script>
+{% endblock javascript %}
