@@ -1,0 +1,15 @@
+huscy/project_documents/__init__.py,sha256=d3-2G5rN3m41ibWyLNwl2vrUlaN4mn-gZDHEmq4PA6E,89
+huscy/project_documents/admin.py,sha256=YYr78YUS0mxnRB-zLR0iq8BH1FZRyr9XRnASE6hHToA,120
+huscy/project_documents/models.py,sha256=Nyk1acEfi9hYFWFbaS0Avo2eya3o-FBIvXzAR5Rnrl4,1237
+huscy/project_documents/permissions.py,sha256=3M9DCX3f39glxDe05YPr0owUHjszLQZSAmA-TfFwyjg,755
+huscy/project_documents/serializer.py,sha256=-kZeNaqqbL4jHWkKLZelMqon5WECWzJKDyghvMhvQ1s,1203
+huscy/project_documents/services.py,sha256=D6HsDilOqV_WFHjKkw-tvjHCTF6t-mEND-zXXPx-YHo,915
+huscy/project_documents/urls.py,sha256=iKp85ru2UQemCrvshC0xrHY11Y0S16HT5Rb1fiaXTtk,575
+huscy/project_documents/views.py,sha256=voksxJW36KsXGz6zfACDCE5a23QKpAlGUDY9jRE1lnM,1293
+huscy/project_documents/migrations/0001_initial.py,sha256=wwuQe8jFO0Zq7sillzF7v8Tnf2SVk6RCxbsVHEV-ExU,1519
+huscy/project_documents/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+huscy.project_documents-1.0.1.dist-info/LICENSE,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+huscy.project_documents-1.0.1.dist-info/METADATA,sha256=1ArkL2M3uTag26MVr9KId76VQ-Cru9vqxMIBxGp-X5A,3130
+huscy.project_documents-1.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+huscy.project_documents-1.0.1.dist-info/top_level.txt,sha256=yP1xCBOAxbmweO3NrSrdrgzzsSyrcuj2pA4XvOekNAM,6
+huscy.project_documents-1.0.1.dist-info/RECORD,,
