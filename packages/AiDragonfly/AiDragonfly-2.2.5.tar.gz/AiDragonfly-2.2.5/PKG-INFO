@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: AiDragonfly
+Version: 2.2.5
+Summary: AiDragonfly 是爱其科技推出的python编程包，和ONEBOT主控、智能积木主控深度融合，和手机端拖块编程 Dragonfly 一脉相承.
+Home-page: https://gitee.com/beijing-aiqi/ai-dragonfly.git
+Author: Beijing IQI Technology Co., LTD
+Author-email: tiansongzhao@iqi-inc.com
+License: MIT
+Description: UNKNOWN
+Keywords: AiDragonfly 是支持ONEBOT主控的python编程包
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
