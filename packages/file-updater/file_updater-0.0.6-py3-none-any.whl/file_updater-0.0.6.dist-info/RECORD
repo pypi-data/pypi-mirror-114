@@ -1,0 +1,8 @@
+file_updater-0.0.6.data/scripts/lofup.py,sha256=d_tMmGmA-PqMuNAPVoG0WpJOJhrsSVz58PkuyN27tAQ,540
+fup/__init__.py,sha256=FRnOe7rTqf6ZOKxmA_4h5sum_gnvtS078D-0zerFYrI,32
+fup/progress_bar.py,sha256=XyxwcAq6mMd6PVRUP1FLq0px4-mB7_5KgWcylHrYH_o,938
+fup/updater.py,sha256=oa5O_Pu_MqkTIT8NUn5C1cnRACrY8N-my8jUYsCGQPM,3072
+file_updater-0.0.6.dist-info/METADATA,sha256=6bEY-s2pQ8L_NS1mqhWHyYynBaVIsByZCGP9gLjRXKg,986
+file_updater-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+file_updater-0.0.6.dist-info/top_level.txt,sha256=KGAcFDvorhsVUDkL1_2ZtsDTL0dUuSSKSjOYkLDLCX4,4
+file_updater-0.0.6.dist-info/RECORD,,
