@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+JsonReader_heureka_code/__init__.py
+JsonReader_heureka_code/__jsonReader.py
+JsonReader_heureka_code.egg-info/PKG-INFO
+JsonReader_heureka_code.egg-info/SOURCES.txt
+JsonReader_heureka_code.egg-info/dependency_links.txt
+JsonReader_heureka_code.egg-info/top_level.txt
