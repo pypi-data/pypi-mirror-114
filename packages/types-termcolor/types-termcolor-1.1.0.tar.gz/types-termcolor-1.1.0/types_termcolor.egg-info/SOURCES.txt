@@ -1,0 +1,7 @@
+setup.py
+termcolor-stubs/METADATA.toml
+termcolor-stubs/__init__.pyi
+types_termcolor.egg-info/PKG-INFO
+types_termcolor.egg-info/SOURCES.txt
+types_termcolor.egg-info/dependency_links.txt
+types_termcolor.egg-info/top_level.txt
