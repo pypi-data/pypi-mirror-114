@@ -1,0 +1,5 @@
+setup.py
+FridayFunctions.egg-info/PKG-INFO
+FridayFunctions.egg-info/SOURCES.txt
+FridayFunctions.egg-info/dependency_links.txt
+FridayFunctions.egg-info/top_level.txt
