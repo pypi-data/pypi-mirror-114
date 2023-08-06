@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+musiio_validate_tsv/__init__.py
+musiio_validate_tsv/exceptions.py
+musiio_validate_tsv/utils.py
+musiio_validate_tsv/validate_tsv.py
+musiio_validate_tsv.egg-info/PKG-INFO
+musiio_validate_tsv.egg-info/SOURCES.txt
+musiio_validate_tsv.egg-info/dependency_links.txt
+musiio_validate_tsv.egg-info/top_level.txt
