@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+gridiron/__init__.py
+gridiron.egg-info/PKG-INFO
+gridiron.egg-info/SOURCES.txt
+gridiron.egg-info/dependency_links.txt
+gridiron.egg-info/top_level.txt
