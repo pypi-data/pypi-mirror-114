@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: mcwpy
+Version: 0.0.5
+Summary: A new way to create Minecraft datapacks
+Home-page: https://github.com/vianneyveremme/minecraft_with_python
+Author: Vianpyro
+Author-email: vianney.veremme@gmail.com
+License: MIT
+Description: # [Minecraft](https://www.minecraft.net/download)-[Datapacks](https://minecraft.gamepedia.com/Data_Pack)-Generator  
+        
+        ## Installation:  
+        * First of all make sure you have one of the latest [Python](https://www.python.org/downloads/) version installed on your computer.  
+        * Ensure you also have [pip](https://pip.pypa.io/en/stable/installation/) installed: try running the command "`pip3 -V`" in a terminal.  
+        * If this gets you an error message follow [these steps](https://pip.pypa.io/en/stable/installation/) to install it.  
+        * Once you have [Python](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/installation/) installed, run the command: "`pip3 install mcwpy`".  
+        
+        
+        ## Usage:  
+        Now you should be able to import the library in your new [Python](https://www.python.org/downloads/) programs you can use the project below to help you get started with the library:  
+        ```py 
+        from mcwpy import *
+        ```  
+        * Create and compile your own datapack.  
+        * Once the datapack is generated, paste it in the *datapacks* folder of your [Minecraft](https://www.minecraft.net/download) world.  
+        * Type `/reload` to load the datapack.  
+        * Have fun playing with your brand new handmade datapack!  
+        
+        
+        ## Example:  
+        ```python
+        from mcwpy import *
+        
+        
+        # Since this is still in development, this should only print "test".
+        my_datapack = Datapack("My Datapack")
+        print('This example still needs to be created')
+        ```  
+        
+        
+        # 0.0.5 (2021/07/29)
+        - Fixed version **0.0.4**.  
+        - Updated `verify_setup.py` to check if the display format is correct.  
+        
+        # 0.0.4 (2021/07/29)
+        - Added ANSI escape sequences to the output for prettier messages (`ansi_escape_sequences.py`).  
+        - Added an automatic version code for Datapacks with unspecified versions.  
+        - Added `verify_setup.py` to check if the package can be created.  
+        - Changed warnings to be easier to read.  
+        - Version **0.0.3** did not work so MCWPy will be developed without subfolders.  
+        
+        # 0.0.3 (2021/07/29)
+        - Attempt to use subfolders...  
+        - If creating a Datapack using the MCWPy library works then it is a success.  
+        
+        # 0.0.2 (2021/07/28)
+        - Made the library check it is running on [Python](https://www.python.org/downloads/) **3.9.5** or above.  
+        
+        # 0.0.1 (2021/07/28)
+        - Fixed (or tried to) `CHANGELOG.md`, `LICENSE` and `README.md` looks on [pypi.org](https://pypi.org/project/mcwpy/).  
+        
+        # Initial (2021/07/28)
+        - Created a `setup.py` file to setup the library.  
+        - Created two functions to add or substract numbers together.  
+        - Created `mcwpy\__init__.py`.  
+        - Created `REQUIREMENTS.txt`.  
+        - Used `python3 setup.py sdist` in a terminal to create the library's first package.  
+        - Used `twine upload --repository-url https://upload.pypi.org/legacy/ dist/*` to upload the library's first package on pypi.  
+        - Wrote `LICENSE`.  
+        - Wrote `MANIFEST.md`.  
+        - Wrote `README.md`.  
+        
+Keywords: Minecraft,Datapack,Function,MCFunction
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
