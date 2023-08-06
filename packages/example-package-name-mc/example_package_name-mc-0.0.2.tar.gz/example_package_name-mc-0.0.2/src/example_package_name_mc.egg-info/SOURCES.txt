@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/example_package/__init__.py
+src/example_package/calculation_utils.py
+src/example_package/example.py
+src/example_package/generate_synthetic_curves.py
+src/example_package/generate_synthetic_records.py
+src/example_package/sample_curve.py
+src/example_package/synthetic_sample_generator.py
+src/example_package/test.py
+src/example_package_name_mc.egg-info/PKG-INFO
+src/example_package_name_mc.egg-info/SOURCES.txt
+src/example_package_name_mc.egg-info/dependency_links.txt
+src/example_package_name_mc.egg-info/top_level.txt
