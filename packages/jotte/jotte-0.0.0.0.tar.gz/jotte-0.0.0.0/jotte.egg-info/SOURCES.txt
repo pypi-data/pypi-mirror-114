@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+jotte.egg-info/PKG-INFO
+jotte.egg-info/SOURCES.txt
+jotte.egg-info/dependency_links.txt
+jotte.egg-info/top_level.txt
