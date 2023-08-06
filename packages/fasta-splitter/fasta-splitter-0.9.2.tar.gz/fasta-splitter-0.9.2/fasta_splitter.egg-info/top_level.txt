@@ -1,0 +1,2 @@
+fastasplitter_cli
+fastasplitter_splitter
