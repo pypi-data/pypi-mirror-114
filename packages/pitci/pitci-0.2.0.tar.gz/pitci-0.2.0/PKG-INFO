@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: pitci
+Version: 0.2.0
+Summary: Prediction intervals for trees using conformal intervals - pitci
+Home-page: https://github.com/richardangell/pitci
+Author: Richard Angell
+Author-email: richardangell37@gmail.com
