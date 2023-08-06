@@ -1,0 +1,109 @@
+{
+  "name": "rucio-jupyterlab",
+  "version": "0.6.0",
+  "description": "JupyterLab extension for integrating Rucio",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension"
+  ],
+  "homepage": "https://github.com/rucio/jupyterlab-extension",
+  "bugs": {
+    "url": "https://github.com/rucio/jupyterlab-extension/issues"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Muhammad Aditya Hilmy",
+    "email": "mhilmy@hey.com"
+  },
+  "files": [
+    "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+    "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
+  ],
+  "main": "lib/src/index.js",
+  "types": "lib/src/index.d.ts",
+  "style": "style/index.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rucio/jupyterlab-extension.git"
+  },
+  "scripts": {
+    "build": "jlpm run build:lib && jlpm run build:labextension:dev",
+    "build:all": "jlpm run build:labextension",
+    "build:labextension": "jupyter labextension build .",
+    "build:labextension:dev": "jupyter labextension build --development True .",
+    "build:lib": "tsc",
+    "build:prod": "jlpm run build:lib && jlpm run build:labextension",
+    "clean": "jlpm run clean:lib",
+    "clean:all": "jlpm run clean:lib && jlpm run clean:labextension",
+    "clean:labextension": "rimraf rucio_jupyterlab/labextension",
+    "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
+    "eslint": "eslint . --ext .ts,.tsx --fix",
+    "eslint:check": "eslint . --ext .ts,.tsx",
+    "install:extension": "jupyter labextension develop --overwrite .",
+    "prepare": "jlpm run clean && jlpm run build:prod",
+    "watch": "run-p watch:src watch:labextension",
+    "watch:labextension": "jupyter labextension watch .",
+    "watch:src": "tsc -w"
+  },
+  "dependencies": {
+    "@jupyterlab/application": "^3.0.6",
+    "@jupyterlab/coreutils": "^5.0.3",
+    "@jupyterlab/notebook": "^3.0.6",
+    "@jupyterlab/services": "^6.0.5",
+    "@lumino/coreutils": "^1.5.3",
+    "@types/camelcase-keys-deep": "^0.1.0",
+    "@types/node": "^14.0.5",
+    "@types/react-copy-to-clipboard": "^4.3.0",
+    "@types/react-popover": "^0.5.3",
+    "@types/react-select": "^3.0.13",
+    "@types/react-virtualized-auto-sizer": "^1.0.0",
+    "@types/react-window": "^1.8.2",
+    "camelcase-keys-deep": "^0.1.0",
+    "pullstate": "^1.13.2",
+    "react-copy-to-clipboard": "^5.0.2",
+    "react-jss": "^10.1.1",
+    "react-popover": "^0.5.10",
+    "react-select": "^3.1.0",
+    "react-virtualized-auto-sizer": "^1.0.2",
+    "react-window": "^1.8.6"
+  },
+  "devDependencies": {
+    "@jupyterlab/builder": "^3.0.0",
+    "@types/jest": "^26.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "@typescript-eslint/parser": "^4.8.1",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.0",
+    "jest": "^26.6.3",
+    "mkdirp": "^1.0.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.1.1",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.5.2",
+    "typescript": "~4.1.3"
+  },
+  "sideEffects": [
+    "style/*.css"
+  ],
+  "jupyterlab": {
+    "discovery": {
+      "server": {
+        "managers": [
+          "pip"
+        ],
+        "base": {
+          "name": "rucio_jupyterlab"
+        }
+      }
+    },
+    "extension": true,
+    "outputDir": "rucio_jupyterlab/labextension",
+    "webpackConfig": "./webpack.config.js"
+  },
+  "resolutions": {
+    "@types/react": "^17.0.0"
+  }
+}
