@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: nads
+Version: 0.0.1
+Summary: Neural Anisotropy Directions Toolbox
+Home-page: https://github.com/vahidzee/nads
+Author: Vahid Zehtab
+Author-email: vahid98zee@gmail.com
+License: MIT
+Keywords: artificial intelligence,inductive bias,deep learning
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: torch (>=1.6)
+Requires-Dist: torchvision
+
+UNKNOWN
+
+
