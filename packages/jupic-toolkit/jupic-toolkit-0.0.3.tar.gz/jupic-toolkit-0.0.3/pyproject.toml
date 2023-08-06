@@ -1,0 +1,21 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "jupic-toolkit"
+version = "0.0.3"
+description = "JupIC toolkit"
+license = "GPLv3"
+authors = [
+    "g1stavo <gustavocsalvador@gmail.com>"
+]
+readme = 'README.md'
+repository = "https://github.com/g1stavo/jupic-toolkit"
+homepage = "https://github.com/g1stavo/jupic-toolkit"
+
+[tool.poetry.dependencies]
+python = "~2.7 || ^3.2"
