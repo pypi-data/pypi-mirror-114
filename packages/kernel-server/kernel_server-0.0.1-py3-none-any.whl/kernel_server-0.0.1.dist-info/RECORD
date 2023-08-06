@@ -1,0 +1,9 @@
+kernel_server/__init__.py,sha256=qaUE-7dtq39QS47xxx2qqFjd6apZJqArrr7wEegd-LU,41
+kernel_server/_version.py,sha256=epZ9fRsjPuOWgr8vyD3GA01mm4BsGg1eHqL01KRNftg,72
+kernel_server/connect.py,sha256=-5wDwL_79XKg59wl7Q30niE-Eg9WDm1D7jJHJvEDp6k,2393
+kernel_server/message.py,sha256=EeMwieQkS4W78d7ObRGPv4T7uGO4G57zTDo9GFz7Gb4,2624
+kernel_server/server.py,sha256=53CVB6z7RSxFBsvGHjoD5pMcpYeogj52vkeb2Jc-79E,2942
+kernel_server-0.0.1.dist-info/METADATA,sha256=yr7YKYGRutEv-x_lCadhy3mcwW3yvvSaZuETjqksNCw,614
+kernel_server-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+kernel_server-0.0.1.dist-info/top_level.txt,sha256=m_sZbxtvUs9jIYrqnl8hJXO0nanHx3lbelYofDtxr2Y,14
+kernel_server-0.0.1.dist-info/RECORD,,
