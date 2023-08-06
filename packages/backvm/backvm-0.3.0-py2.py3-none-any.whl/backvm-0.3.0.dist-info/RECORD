@@ -1,0 +1,10 @@
+backvm/__init__.py,sha256=UakBkVd9nl6Mfqu9bSO6ly1q6viqwLjnry3D5W9wtaE,92
+backvm/utils.py,sha256=-7YR-kJLnp8fwFyIt2xmtvBGOX_mKo5XywXCB0LA0J8,1594
+backvm/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backvm/scripts/backvm.py,sha256=d2RDDsz-zl7S1nu1rkrjjJcuvS4HzmhHw_8ZxnVA2ws,19583
+backvm-0.3.0.dist-info/LICENSE.txt,sha256=DbHwuizVzzUhNFeAH1vgBXxR5FRHs0nE8eyrNSFQEx0,1520
+backvm-0.3.0.dist-info/METADATA,sha256=ZzahNp0KCIJ_8QNRsR2W5Lwpps2aWLxu389Mm_xFLzU,5514
+backvm-0.3.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+backvm-0.3.0.dist-info/entry_points.txt,sha256=e_sK11nSac2AizeuP19e_9nByM0JpW5wjp8ux56j_V8,83
+backvm-0.3.0.dist-info/top_level.txt,sha256=ZSEWgigjEMAsLpB2se8X6r5aza17SaS3OifUscyZv7w,7
+backvm-0.3.0.dist-info/RECORD,,
