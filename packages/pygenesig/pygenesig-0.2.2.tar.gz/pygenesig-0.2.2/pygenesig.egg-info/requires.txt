@@ -1,0 +1,17 @@
+pyyaml
+seaborn
+numpy
+pandas
+rpy2
+scikit-learn
+dask
+distributed
+
+[docs]
+recommonmark
+sphinx
+sphinx_rtd_theme
+
+[tests]
+nose
+black
