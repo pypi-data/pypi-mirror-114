@@ -1,0 +1,271 @@
+Metadata-Version: 2.1
+Name: fractopo
+Version: 0.1.2
+Summary: Fracture Network Analysis
+Home-page: https://github.com/nialov/fractopo
+License: MIT
+Keywords: data,gis,geology,fracture,topology
+Author: nialov
+Author-email: nikolasovaskainen@gmail.com
+Requires-Python: >=3.7.1,<4.0.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: GIS
+Provides-Extra: coverage
+Provides-Extra: docs
+Provides-Extra: format-lint
+Provides-Extra: typecheck
+Requires-Dist: black-nb; extra == "format-lint"
+Requires-Dist: black; extra == "format-lint"
+Requires-Dist: blackdoc; extra == "format-lint"
+Requires-Dist: blacken-docs; extra == "format-lint"
+Requires-Dist: click
+Requires-Dist: coverage-badge; extra == "coverage"
+Requires-Dist: coverage; extra == "coverage"
+Requires-Dist: descartes
+Requires-Dist: geopandas (==0.9.0)
+Requires-Dist: isort; extra == "format-lint"
+Requires-Dist: matplotlib
+Requires-Dist: mypy; extra == "typecheck"
+Requires-Dist: nbsphinx; extra == "docs"
+Requires-Dist: numpy
+Requires-Dist: pandas (>=1.3,<1.4)
+Requires-Dist: powerlaw
+Requires-Dist: pygeos (==0.10.1)
+Requires-Dist: pylint; extra == "format-lint"
+Requires-Dist: python-ternary
+Requires-Dist: rstcheck; extra == "format-lint"
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: seaborn
+Requires-Dist: shapely (>=1.7,<1.8)
+Requires-Dist: sphinx-autodoc-typehints; extra == "docs"
+Requires-Dist: sphinx-gallery; extra == "docs"
+Requires-Dist: sphinx-rtd-theme; extra == "docs"
+Requires-Dist: sphinx; extra == "docs" or extra == "format-lint"
+Project-URL: Bug Tracker, https://github.com/nialov/fractopo/issues
+Project-URL: Documentation, https://fractopo.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/nialov/fractopo
+Description-Content-Type: text/x-rst
+
+fractopo
+========
+
+|Documentation Status| |PyPI Status| |CI Test| |Coverage| |Binder|
+
+``fractopo`` is a Python module that contains tools for validating and
+analysing lineament and fracture trace maps (fracture networks).
+
+.. figure:: https://git.io/JBRuK
+   :alt: Overview of fractopo
+
+   Overview of fractopo
+
+Full documentation
+------------------
+
+-  Documentation is hosted on Read the Docs:
+
+   -  `Documentation <https://fractopo.readthedocs.io/en/latest/index.html>`__
+
+Installation
+------------
+
+Currently installation is supported only for ``linux``-based operating
+systems and ``MacOS``. There's a known problem with installing any
+``gdal``-based Python package onto a Windows machine. (Could be
+circumvented at some point by using ``conda``.)
+
+Omit ``--dev`` or ``[dev]`` for regular installation. Keep if you want
+to test/develop or otherwise install all development python
+dependencies.
+
+Pip
+~~~
+
+The module is on `PyPI <https://www.pypi.org>`__.
+
+.. code:: bash
+
+   # Non-development installation
+   pip install fractopo
+
+Or locally for development:
+
+.. code:: bash
+
+   git clone https://github.com/nialov/fractopo
+   cd fractopo
+   # Omit [dev] from end if you do not want installation for development
+   pip install --editable .[dev]
+
+poetry
+~~~~~~
+
+For usage:
+
+.. code:: bash
+
+   poetry add fractopo
+
+For development:
+
+.. code:: bash
+
+   git clone https://github.com/nialov/fractopo --depth 1
+   cd fractopo
+   poetry install
+
+Usage
+-----
+
+See `Full documentation <https://tinyurl.com/yb4tj47e>`__ for usage
+guidance and examples.
+
+Input data
+~~~~~~~~~~
+
+Reading and writing spatial filetypes is done in ``geopandas`` and you
+should see ``geopandas`` documentation for more advanced read-write use
+cases:
+
+-  https://geopandas.org/
+
+Simple example with trace and area data in GeoPackages:
+
+.. code:: python
+
+   import geopandas as gpd
+
+   # Trace data is in a file `traces.gpkg` in current working directory
+   # Area data is in a file `areas.gpkg` in current working directory
+   trace_data = gpd.read_file("traces.gpkg")
+   area_data = gpd.read_file("areas.gpkg")
+
+Trace validation
+~~~~~~~~~~~~~~~~
+
+Trace and target area data can be validated for further analysis with a
+``Validation`` object.
+
+.. code:: python
+
+   from fractopo import Validation
+
+   validation = Validation(
+       trace_data,
+       area_data,
+       name="mytraces",
+       allow_fix=True,
+   )
+
+   # Validation is done explicitly with `run_validation` method
+   validated_trace_data = validation.run_validation()
+
+Trace validation is also accessible as a command-line script,
+``tracevalidate`` which is more straightforward to use than through
+Python calls.
+
+``tracevalidate`` always requires the target area that delineates trace
+data.
+
+.. code:: bash
+
+   # Get full up-to-date script help
+
+   tracevalidate --help
+
+   # Basic usage:
+   # --fix is recommended due to automatic fixing being very minor in effect
+   # currently
+   # --output can be omitted. By default the same spatial filetype
+   # as the input is used and the output is saved as e.g.
+   # /path/to/validated/trace_data_validated.shp
+   # i.e. a new folder is created (or used) for validated data
+   # --summary can be given to print out summary data of validation
+   # i.e. error types and error counts
+
+   tracevalidate /path/to/trace_data.shp /path/to/target_area.shp --fix --output /path/to/output_data.shp
+
+   # Or with automatic saving to validated/ directory
+
+   tracevalidate /path/to/trace_data.shp /path/to/target_area.shp --fix --summary
+
+Geometric and topological trace network analysis
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Trace and target area data (``GeoDataFrames``) are passed into a
+``Network`` object which has properties and functions for returning and
+visualizing different parameters and attributes of trace data.
+
+.. code:: python
+
+   from fractopo import Network
+
+   # Initialize Network object and determine the topological branches and nodes
+   network = Network(
+       trace_data,
+       area_data,
+       # Give the Network a name!
+       name="mynetwork",
+       # Specify whether to determine topological branches and nodes
+       # (Required for almost all analysis)
+       determine_branches_nodes=True,
+       # Specify the snapping distance threshold to define when traces are
+       # snapped to each other
+       snap_threshold=0.001,
+       # If the target area used in digitization is a circle, the knowledge can
+       # be used in some analysis
+       circular_target_area=True,
+       # Analysis on traces can be done for the full inputted dataset or the
+       # traces can be cropped to the target area before analysis (cropping
+       # recommended)
+       truncate_traces=True,
+   )
+
+   # Properties are easily accessible
+   # e.g.
+   network.branch_counts
+   network.node_counts
+
+   # Plotting is done by plot_ -prefixed methods
+   network.plot_trace_lengths()
+
+Development status
+------------------
+
+-  Breaking changes are possible and expected.
+-  Critical issues:
+
+   -  Installation on Windows is currently not supported due to problems
+      with installation of `gdal <https://gdal.org/>`__-based packages
+      like `geopandas <https://geopandas.org/>`__.
+   -  Trace validation should be refactored at some point.
+
+      -  Though keeping in mind that the current implementation works
+         well.
+
+   -  ``snap_traces`` in branch and node determination is not perfect.
+      Some edge cases cause artifacts which only sometimes are
+      recognized as error branches. However these cases are very rare.
+
+      -  Reinforces that some amount of responsibility is always in the
+         hands of the digitizer.
+      -  Issue mostly avoided when using a ``snap_threshold`` of 0.001
+
+.. |Documentation Status| image:: https://readthedocs.org/projects/fractopo/badge/?version=latest
+   :target: https://fractopo.readthedocs.io/en/latest/?badge=latest
+.. |PyPI Status| image:: https://img.shields.io/pypi/v/fractopo.svg
+   :target: https://pypi.python.org/pypi/fractopo
+.. |CI Test| image:: https://github.com/nialov/fractopo/workflows/test-and-publish/badge.svg
+   :target: https://github.com/nialov/fractopo/actions/workflows/test-and-publish.yaml?query=branch%3Amaster
+.. |Coverage| image:: https://raw.githubusercontent.com/nialov/fractopo/master/docs_src/imgs/coverage.svg
+   :target: https://github.com/nialov/fractopo/blob/master/docs_src/imgs/coverage.svg
+.. |Binder| image:: http://mybinder.org/badge_logo.svg
+   :target: https://mybinder.org/v2/gh/nialov/fractopo/HEAD?filepath=docs_src%2Fnotebooks%2Ffractopo_network_1.ipynb
+
