@@ -1,0 +1,13 @@
+LICENSE.txt
+pyproject.toml
+setup.py
+Sente.egg-info/PKG-INFO
+Sente.egg-info/SOURCES.txt
+Sente.egg-info/dependency_links.txt
+Sente.egg-info/not-zip-safe
+Sente.egg-info/top_level.txt
+sente.egg-info/PKG-INFO
+sente.egg-info/SOURCES.txt
+sente.egg-info/dependency_links.txt
+sente.egg-info/not-zip-safe
+sente.egg-info/top_level.txt
