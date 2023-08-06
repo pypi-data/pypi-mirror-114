@@ -1,0 +1,12 @@
+CHANGELOG.txt
+MANIFEST.in
+README.txt
+setup.py
+anarion/__init__.py
+anarion.egg-info/PKG-INFO
+anarion.egg-info/SOURCES.txt
+anarion.egg-info/dependency_links.txt
+anarion.egg-info/top_level.txt
+lothlorien.egg-info/SOURCES.txt
+lothlorien.egg-info/dependency_links.txt
+lothlorien.egg-info/top_level.txt

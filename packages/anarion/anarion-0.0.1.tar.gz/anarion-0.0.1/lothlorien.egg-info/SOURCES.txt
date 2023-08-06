@@ -1,0 +1,9 @@
+CHANGELOG.txt
+MANIFEST.in
+README.txt
+setup.py
+lothlorien/__init__.py
+lothlorien.egg-info/PKG-INFO
+lothlorien.egg-info/SOURCES.txt
+lothlorien.egg-info/dependency_links.txt
+lothlorien.egg-info/top_level.txt

@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: anarion
+Version: 0.0.1
+Summary: Stock Analysis
+Home-page: UNKNOWN
+Author: Angman
+Author-email: angman507@gmail.com
+License: MIT
+Description: This is a veru calculater which adds, subtracts , divides
+        and multiplies the givrn twi values
+        
+        Change Log
+        ==========
+        
+        0.0.1 (31/7/2021)
+        ------------------
+        -First Release
+Keywords: lothlorien
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
