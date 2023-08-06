@@ -1,0 +1,67 @@
+CHANGES
+=======
+
+0.1.3
+-----
+
+* Ensure that load balancer is added to logical switch
+* Add log for request\_handler events
+* Remove the dependency on the "mock" package
+* Check if no members in pool better in batch update
+* Don't try to store protocol=None in OVSDB
+* Fix gate failure
+* Fix leaked file descriptors by cleaning up objects
+* Retry status updates to Octavia
+* Fix broken gate
+
+0.1.2
+-----
+
+* Omit tests directory while couting the coverage report
+* Add installation of octavia-tempest-plugin to sample local.conf
+* Fix member\_batch\_update function to follow api v2
+* Set the CONF.load\_balancer.enabled\_provider\_drivers tempest conf
+* Fix pep8 and functional jobs
+
+0.1.1
+-----
+
+* Do not send status update in case of IpAddressAlreadyAllocated
+* Update the devstack local.conf sample file
+* Add support for OVN LB selection fields
+* Fix E741 pep8 errors
+* Spawn long-running processes in the driver agent
+* Update sample local.conf files to point stable/ussuri
+* Make ovn-octavia-provider-v2-dsvm-scenario voting
+* Improve test coverage
+* Update TOX/UPPER\_CONSTRAINTS\_FILE for stable/ussuri
+* Update .gitreview for stable/ussuri
+
+0.1.0
+-----
+
+* Add missing requirements
+* Stop using Octavia network driver
+* Respect SSL devstack configuration
+* Add unit tests for hacking/checks.py
+* Add tempest gate, devstack plugin and sample devstack config
+* Add configuration page to docs
+* Use queue library directly
+* Do not try to refresh vips on OVN LB that will be deleted
+* Enable cover job
+* Add admin and contributor documentation
+* Wrap IPv6 address with brackets
+* Fix Exception string arguments
+* Centralize traffic when LB and member has FIP
+* Don't fail if VIP already exist or has been deleted before
+* Ensure setup.cfg packages matches root directory
+* Don't send malformed status update to Octavia
+* Fix py2 vs py3 dict keys comparison in functional test
+* Cache OvnProviderHelper object in OvnProviderDriver
+* Don't fail in case subnet or Logical Switch not found
+* Add support for multiple L4 protocols withing same LB
+* Import OVN LB functional tests
+* Move OVN Octavia Provider driver code to this repository
+* Set basepython in tox.ini to python3
+* Initialize repository
+* Added .gitreview
