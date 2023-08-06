@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+src/zwedu_student_etl.egg-info/PKG-INFO
+src/zwedu_student_etl.egg-info/SOURCES.txt
+src/zwedu_student_etl.egg-info/dependency_links.txt
+src/zwedu_student_etl.egg-info/entry_points.txt
+src/zwedu_student_etl.egg-info/requires.txt
+src/zwedu_student_etl.egg-info/top_level.txt
