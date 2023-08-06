@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: entente
+Version: 1.0.0
+Summary: Polygonal meshes in vertex-wise correspondence
+Home-page: https://github.com/lace/entente
+License: MIT
+Author: Paul Melnikow
+Author-email: github@paulmelnikow.com
+Requires-Python: >=3.7,<3.9
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Artistic Software
+Classifier: Topic :: Multimedia :: Graphics :: 3D Modeling
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Provides-Extra: cli
+Provides-Extra: landmarker
+Requires-Dist: PyYAML (>=5.1); extra == "cli"
+Requires-Dist: cached_property
+Requires-Dist: click (>7.0,<9.0); extra == "cli"
+Requires-Dist: lacecore[obj] (>=1.0.0,<2)
+Requires-Dist: meshlab-pickedpoints (>=2.0.0,<3)
+Requires-Dist: numpy (<1.19.0)
+Requires-Dist: ounce (>=1.1.1,<2.0)
+Requires-Dist: polliwog (>=1.0.0,<2.0)
+Requires-Dist: proximity (>=1.0.0,<2); extra == "landmarker"
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Requires-Dist: tri-again (>=1.0.0,<2.0); extra == "cli"
+Requires-Dist: vg (>=2.0.0)
+Project-URL: Documentation, https://entente.readthedocs.io/en/stable/
+Project-URL: Repository, https://github.com/lace/entente
