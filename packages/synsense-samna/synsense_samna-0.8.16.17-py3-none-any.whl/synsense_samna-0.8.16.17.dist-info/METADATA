@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: synsense-samna
+Version: 0.8.16.17
+Summary: SynSense Samna Public Package
+Home-page: https://synsense.ai/
+Author: SynSense
+Author-email: carsten.nielsen@synsense.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: samna (==0.8.16.17)
+
+UNKNOWN
+
