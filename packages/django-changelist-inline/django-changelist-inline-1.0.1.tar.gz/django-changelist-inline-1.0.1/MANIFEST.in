@@ -1,0 +1,3 @@
+recursive-include django_changelist_inline *.html
+graft django_changelist_inline/static
+include requirements.txt requirements-dev.txt
