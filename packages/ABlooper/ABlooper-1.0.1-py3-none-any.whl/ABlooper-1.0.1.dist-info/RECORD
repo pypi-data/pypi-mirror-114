@@ -1,0 +1,12 @@
+ABlooper/ABlooper.py,sha256=JH5QQHbg1g8mU6fjM_hwTZi_ENxy1Aain7_7H7oMVpc,7231
+ABlooper/__init__.py,sha256=Hg6oj6f2mgKrBIb7MUTNrHqGo5H2neON1UGGT7IhBB0,43
+ABlooper/command_line.py,sha256=u-nyd93yN-ulO07wsVaQGD99O_TTTii6MBWuaxDisKI,1223
+ABlooper/models.py,sha256=sMwnlzhKQznJA5mboLRWZ5aHrYZHHeBgOt_caHGbJPw,3102
+ABlooper/utils.py,sha256=p31ojh6YrahNg5lhMI3c6vgIMrJIvuW8DB7-XTO-w_0,3400
+ABlooper/trained_model/final_model,sha256=LAiw_JS_hwqe630YbDEY-7X4ku-StcqjUAHUtxASOcQ,2756359
+ABlooper-1.0.1.dist-info/LICENSE,sha256=560X8fRm-AJp4PekSW7ZonquBu58786ihIcuGHP_QJc,1531
+ABlooper-1.0.1.dist-info/METADATA,sha256=3dJcDe-s9Ry0UfXE0JWFuQu0HynHFhh-R4zOX4NChao,3608
+ABlooper-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ABlooper-1.0.1.dist-info/entry_points.txt,sha256=b0fggqf4cxDO8JFHINMmT1LP1QWRig7CcuwyOLOzhaY,57
+ABlooper-1.0.1.dist-info/top_level.txt,sha256=7Teyr0Pxf0ouKbiIt_QBv-Ank-dGfHZXXaoePMmZ8P8,9
+ABlooper-1.0.1.dist-info/RECORD,,
