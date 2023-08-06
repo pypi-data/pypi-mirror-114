@@ -1,0 +1,5 @@
+werkzeug_auth_middleware/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+werkzeug_auth_middleware/middlewares.py,sha256=lUapcArZid5O6mOrRZJyB18XDaZGvFBJpGwEgpMpdjE,1572
+werkzeug_auth_middleware-0.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+werkzeug_auth_middleware-0.1.1.dist-info/METADATA,sha256=T4sozD2sytK229gQ8rV8udkZsh1zJm6A127daxrjs1I,473
+werkzeug_auth_middleware-0.1.1.dist-info/RECORD,,
