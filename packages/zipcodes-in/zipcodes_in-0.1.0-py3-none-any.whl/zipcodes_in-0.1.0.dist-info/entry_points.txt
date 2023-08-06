@@ -1,0 +1,3 @@
+[console_scripts]
+zipcode = zipcode_in.__main__:main
+
