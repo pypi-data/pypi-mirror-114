@@ -1,0 +1,22 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "pynation"
+author = "Abdulwasiu Apalowo"
+author-email = "bazzanapalowo@gmail.com"
+home-page = "https://github.com/mrbazzan/pynation/"
+classifiers = ["License :: OSI Approved :: MIT License"]
+description-file="README.md"
+requires = [
+    "click",
+]
+requires-python=">=3.7"
+
+[tool.flit.metadata.urls]
+Documentation = "https://github.com/mrbazzan/pynation/blob/main/README.md"
+Issues = "https://github.com/mrbazzan/pynation/issues"
+
+[tool.flit.scripts]
+pynation = "pynation.__main__:cli"
