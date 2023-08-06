@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: buildpan
+Version: 0.0.14
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyGithub (==1.55)
+Requires-Dist: click (==8.0.1)
+Requires-Dist: idna (==3.2)
+Requires-Dist: platformdirs (==2.1.0)
+Requires-Dist: pycparser (==2.20)
+Requires-Dist: PyJWT (==2.1.0)
+Requires-Dist: PyNaCl (==1.4.0)
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: urllib3 (==1.26.6)
+Requires-Dist: virtualenv (==20.6.0)
+Requires-Dist: wrapt (==1.12.1)
+Requires-Dist: backports.entry-points-selectable (==1.1.0)
+Requires-Dist: certifi (==2021.5.30)
+Requires-Dist: cffi (==1.14.6)
+Requires-Dist: charset-normalizer (==2.0.3)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: Deprecated (==1.2.12)
+Requires-Dist: distlib (==0.3.2)
+Requires-Dist: filelock (==3.0.12)
+
+UNKNOWN
+
+
