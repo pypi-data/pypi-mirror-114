@@ -1,0 +1,12 @@
+MANIFEST.in
+ffpKmersLib.cuh
+kmers.cu
+kmers.cuh
+kmerslib.h
+setup.py
+kmerslib/__init__.py
+kmerslib/core.cpp
+kmerslib.egg-info/PKG-INFO
+kmerslib.egg-info/SOURCES.txt
+kmerslib.egg-info/dependency_links.txt
+kmerslib.egg-info/top_level.txt
