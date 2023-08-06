@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+HandTrackingModulevarun.egg-info/PKG-INFO
+HandTrackingModulevarun.egg-info/SOURCES.txt
+HandTrackingModulevarun.egg-info/dependency_links.txt
+HandTrackingModulevarun.egg-info/requires.txt
+HandTrackingModulevarun.egg-info/top_level.txt
+Handtrackingmodulee/__init__.py
+Handtrackingmodulee/handtrackingmodule.py
