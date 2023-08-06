@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/ew_der_modbus_sim_py.egg-info/PKG-INFO
+src/ew_der_modbus_sim_py.egg-info/SOURCES.txt
+src/ew_der_modbus_sim_py.egg-info/dependency_links.txt
+src/ew_der_modbus_sim_py.egg-info/requires.txt
+src/ew_der_modbus_sim_py.egg-info/top_level.txt
