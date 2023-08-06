@@ -1,0 +1,45 @@
+<!--
+	Вызывается:	{wp{wrapper_name}}
+
+	Cуть:	Является оберткой для элемента-вызова.
+		Если указать для элемнта-Тега, то будет инициализирован только после слияния тегов
+		Допускается многократное и вложенное использование.
+
+		{wp{}place} - Обозначение основной секции
+		{wp{section_name}place} - Обозначение именованно секции
+-->
+
+<!DOCTYPE html>
+<html>
+	<head lang="ru">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<meta name="keywords" 		content="{i{ head['meta']['keywords'] }}">
+		<meta name="description" 	content="{i{ head['meta']['description'] }}">
+
+		<title>{i{ head['title'] }}</title>
+
+		<!-- На месте этой конструкции будут подключаться статические файла обозначенные как стартовые -->
+		{prep{}place}
+	</head>
+	<body>
+		<header>
+			<!-- Место для вставки именовонной секции -->
+			{wp{ section_header }place}
+		</header>
+		
+		<main>
+			<!-- Место для вставки текста или секции без наименования-->
+			{wp{ }place}
+		</main>
+
+		<footer>
+			<!-- Место для вставки именовонной секции -->
+			{wp{ section_footer }place}
+		</footer>
+
+		<!-- На месте этой конструкции будут подключаться статические файла обозначенные как финальные -->
+		{final{}place}
+	</body>
+</html>
