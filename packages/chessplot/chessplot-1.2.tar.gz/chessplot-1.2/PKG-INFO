@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: chessplot
+Version: 1.2
+Summary: Package for visualising chess games
+Home-page: https://github.com/tmay-sarsaparilla/PGNParser
+Author: Timothy May
+Author-email: UNKNOWN
+License: GPLv3.0
+Download-URL: https://github.com/tmay-sarsaparilla/PGNParser/archive/refs/tags/v1.2-beta.tar.gz
+Description: UNKNOWN
+Keywords: chess,pgn,visualisation,parser,gif,pdf
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Games/Entertainment :: Board Games
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.7
