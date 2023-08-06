@@ -1,0 +1,218 @@
+Metadata-Version: 2.1
+Name: mmdl
+Version: 0.1.3
+Summary: MMDL [Mega Music Downloader] - A tool to easily download music.
+Home-page: https://github.com/techboy-coder/mmdl
+Author: techboy-coder
+License: UNKNOWN
+Keywords: python,audio,download,youtube,cli,tool
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ytmusicapi (==0.18.0)
+Requires-Dist: youtube-dl (==2021.6.6)
+Requires-Dist: click-help-colors (==0.9.1)
+Requires-Dist: lxml (==4.6.3)
+Requires-Dist: click (==8.0.1)
+Requires-Dist: youtube-search-python (==1.4.6)
+Requires-Dist: eyed3 (==0.9.6)
+Requires-Dist: questionary (==1.10.0)
+Requires-Dist: rich (==10.6.0)
+Requires-Dist: cssselect (==1.1.0)
+
+
+![mmdl]([C:\Users\Shivr\Downloads\mmdl image.png](https://github.com/techboy-coder/mmdl/blob/main/mmdl%20image.png))
+
+
+
+# mmdl - Mega Music Downloader
+
+
+
+![License](https://img.shields.io/pypi/l/mmdl?style=for-the-badge) ![PyPI](https://img.shields.io/pypi/v/mmdl?style=for-the-badge) ![Downloads](https://img.shields.io/pypi/dw/mmdl?style=for-the-badge)
+
+
+
+## What is mmdl ❓
+
+
+
+MMDL is a cli app which allows you to quickly and efficiently download one or multiple songs from YouTube.
+
+
+
+### Why
+
+
+
+- 🕖 Fast: Thanks to *async code* and *multithreading*.
+
+- ⚡ Simple: Type `mmdl go`  and get started with downloading songs.
+
+- ✨ Powerful
+
+  - Find songs based on songs query/title
+
+  - Skip already existing songs
+
+  - Add metadata such as artist name and artwork
+
+
+
+## Requirements 👇
+
+
+
+- Python 3
+
+- FFmpeg
+
+
+
+## Install ❤️
+
+
+
+```bash
+
+pip install mmdl
+
+```
+
+
+
+⚡**That’s it!**⚡
+
+
+
+## Usage 🔥
+
+
+
+### Go
+
+
+
+*Very quick and easy way of running the cli. Few questions will be asked via prompts. **This is the recommended way!***
+
+
+
+```shell
+
+mmdl go
+
+```
+
+
+
+### Download
+
+
+
+*Fast and traditional way of running the cli. Pass arguments and have your songs downloaded. Useful for automation scripts.*
+
+
+
+```shell
+
+mmdl download <method> #(add -h for more information)
+
+```
+
+
+
+#### Methods
+
+
+
+- File `mmdl download file <location>`: Get songs from file. Then download them.
+
+- List `mmdl download list "Term1" "Term2" ...` or `mmdl download list -a` for a prompt: Add multiple songs as cli arguments or enter them in a prompt.
+
+- YTMusic (beta) `mmdl download ytmusi` : Download multiple songs from *YouTube Music liked songs playlist* (via parsing HTML)
+
+- Single `mmdl download single song name`: Download a single song.
+
+
+
+## Support ⚡
+
+
+
+### Bugs 🐛
+
+
+
+Please [open a issue](https://github.com/techboy-coder/mmdl/issues/new) with some information to reproduce your problem.
+
+
+
+### Questions ❓
+
+
+
+Please [start/check a discussion](https://github.com/techboy-coder/mmdl/discussions/new). 
+
+
+
+## Contributing 🤜
+
+
+
+We welcome contributions very much. They are appreciated. 
+
+
+
+### Steps
+
+
+
+1. Check for bugs/issues you would like to solve.
+
+2. Fork the repo and make your changes.
+
+3. Send a pull request.
+
+
+
+## Credits 🥂
+
+
+
+**The following amazing libraries helped me make this project:**
+
+
+
+- https://github.com/tmbo/questionary - Questionary by Tom Bocklisch and Kian Cross
+
+- https://github.com/alexmercerind/youtube-search-python - Youtube Search Python by Hiteh Kumar Saini
+
+- https://github.com/willmcgugan/rich - Rich by Will McGugan
+
+- https://github.com/ytdl-org/youtube-dl - YoutubeDl
+
+
+
+## License ⚖️
+
+
+
+The MIT License (MIT)
+
+
+
+Copyright (c) 2021 - techboy-coder
+
+
+
+------
+
+
+
+
+
