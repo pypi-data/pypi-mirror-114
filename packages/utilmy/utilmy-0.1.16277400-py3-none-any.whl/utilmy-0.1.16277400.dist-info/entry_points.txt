@@ -1,0 +1,4 @@
+[console_scripts]
+doc-gen = utilmy.docs.cli:run_cli
+templates = utilmy.templates.cli:run_cli
+
