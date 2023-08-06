@@ -1,0 +1,7 @@
+[console_scripts]
+teststack = teststack:main
+
+[teststack.commands]
+containers = teststack.commands.containers
+environment = teststack.commands.environment
+
