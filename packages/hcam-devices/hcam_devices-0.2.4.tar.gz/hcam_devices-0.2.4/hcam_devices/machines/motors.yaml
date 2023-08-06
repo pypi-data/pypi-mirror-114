@@ -1,0 +1,97 @@
+statechart:
+  name: A simple motor controller
+  description: |
+    Connection is handled by a separate connection handler that is bound to this machine.
+
+    This machine expects a "device" object in it's initial context.
+    The device object should implement move, home, stop, and poll methods.
+    The poll method must return a tuple of position, moving status
+  preamble: |
+    current = 0
+    target = 0
+    moving = False
+    poll_time = 1
+  root state:
+    name: active
+    parallel states:
+      - name: motorController
+        initial: disabled
+        states:
+          - name: disabled
+            transitions:
+              - target: enabled
+                event: enable
+
+          - name: enabled
+            initial: init
+            transitions:
+              - target: disabled
+                event: disable
+            states:
+              - name: init
+                transitions:
+                  - target: homing
+                    event: home
+                    action: |
+                      moving = True
+                      device.home()
+                      
+                  - target: homed
+                    guard: after(poll_time) and hasattr(device, 'homed') and device.homed()
+                    action: current, _ = device.poll()
+
+              - name: homing
+                transitions:
+                  - target: homing
+                    guard: after(poll_time)
+                    action: current, moving = device.poll()
+                  - target: homed
+                    guard: not moving
+
+              - name: homed
+                transitions:
+                  - target: homing
+                    event: home
+                    action: |
+                      moving = True
+                      device.home()
+                initial: inpos
+                states:
+                  - name: inpos
+                    transitions:
+                      - target: moving
+                        event: move
+                        action: |
+                          moving = True
+                          device.move(target)
+                  - name: moving
+                    transitions:
+                      - target: moving
+                        guard: after(poll_time)
+                        action: current, moving = device.poll()
+                      - target: stopped
+                        event: stop
+                        action: |
+                          device.stop()
+                          moving = False
+                      - target: inpos
+                        priority: 1
+                        guard: device.on_target()
+                        action: |
+                            moving = False                         
+                  - name: stopped
+                    transitions:
+                      - target: moving
+                        event: move
+                        action: |
+                          device.move(target)
+                          moving = True
+
+      - name: positionListener
+        initial: listening
+        states:
+          - name: listening
+            transitions:
+              - target: listening
+                event: positionSet
+                action: target = event.position

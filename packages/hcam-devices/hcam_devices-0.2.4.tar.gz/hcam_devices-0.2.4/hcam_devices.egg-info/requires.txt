@@ -1,0 +1,11 @@
+astropy
+requests
+sismic
+autobahn
+pyserial
+twisted
+influxdb
+txaio
+watchdog
+six
+pymodbus3

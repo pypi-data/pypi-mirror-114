@@ -1,0 +1,74 @@
+statechart:
+  name: NGC Software statechart
+  description: |
+    The NGC software includes a server that handles communication
+    between the various subprocesses and the hardware.
+
+    This machine expects a device object in its initial context.
+
+    TODO: actually switching state needs a succesfull return of device._check_cmd(state)
+  root state:
+    name: root
+    initial: offline
+    states:
+      - name: offline
+        transitions:
+        - target: loaded
+          event: offline
+          guard: device.on_load()
+
+      - name: loaded
+        transitions:
+        - target: standby
+          event: standby
+          guard: device._check_cmd('standby')
+          action: device.on_standby()
+
+        - target: online
+          event: online
+          guard: device._check_cmd('online')
+
+        - target: offline
+          event: exit
+          guard: device._check_cmd('exit')
+
+        - target: loaded
+          event: offline
+          guard: device._check_cmd('off')
+
+      - name: standby
+        transitions:
+        - target: online
+          event: online
+          guard: device._check_cmd('online')
+
+        - target: offline
+          event: exit
+          guard: device._check_cmd('exit')
+
+        - target: loaded
+          event: offline
+          guard: device._check_cmd('off')
+
+        - target: standby
+          event: standby
+          guard: device._check_cmd('standby')
+
+      - name: online
+        transitions:
+        - target: online
+          event: online
+          guard: device._check_cmd('online')
+
+        - target: offline
+          event: exit
+          guard: device._check_cmd('exit')
+
+        - target: loaded
+          event: offline
+          guard: device._check_cmd('off')
+
+        - target: standby
+          event: standby
+          guard: device._check_cmd('standby')
+
