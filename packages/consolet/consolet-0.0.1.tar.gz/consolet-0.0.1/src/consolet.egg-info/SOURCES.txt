@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/consolet/__init__.py
+src/consolet/colors.py
+src/consolet/command.py
+src/consolet/console.py
+src/consolet/errors.py
+src/consolet/terminal.py
+src/consolet/utils.py
+src/consolet.egg-info/PKG-INFO
+src/consolet.egg-info/SOURCES.txt
+src/consolet.egg-info/dependency_links.txt
+src/consolet.egg-info/top_level.txt
