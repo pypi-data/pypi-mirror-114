@@ -1,0 +1,8 @@
+README.md
+setup.py
+swspy/__init__.py
+swspy/split.py
+swspy.egg-info/PKG-INFO
+swspy.egg-info/SOURCES.txt
+swspy.egg-info/dependency_links.txt
+swspy.egg-info/top_level.txt
