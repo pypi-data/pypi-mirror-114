@@ -1,0 +1,16 @@
+tqdm
+numpy
+einops
+torchrua>=0.3.0
+requests
+
+[ctx]
+transformers
+
+[dev]
+pytest
+hypothesis
+
+[docs]
+mkdocs
+mkdocs-alabaster
