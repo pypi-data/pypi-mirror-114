@@ -1,0 +1,6 @@
+majka>=0.8
+ufal.morphodita>=1.10.1.1
+gensim>4
+
+[tests]
+pytest
