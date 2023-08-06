@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+Main1CodeForLife.egg-info/PKG-INFO
+Main1CodeForLife.egg-info/SOURCES.txt
+Main1CodeForLife.egg-info/dependency_links.txt
+Main1CodeForLife.egg-info/top_level.txt
