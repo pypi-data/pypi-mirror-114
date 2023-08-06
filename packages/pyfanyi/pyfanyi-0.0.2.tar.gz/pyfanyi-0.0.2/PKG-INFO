@@ -1,0 +1,41 @@
+Metadata-Version: 1.0
+Name: pyfanyi
+Version: 0.0.2
+Summary: Translate every string. It is very good.
+Home-page: UNKNOWN
+Author: stripe-python
+Author-email: 13513519246@139.com
+License: UNKNOWN
+Description: # Pyfanyi
+        **Translate every string. It is very good.**
+        # Requirements 
+        - python 3.8
+        - requests==2.25.1
+        # Installation
+        ## Using pip via pypi:
+        ```cmd
+        pip install pyfanyi -i https://pypi.org/project/
+        ```
+        ## Update:
+        ```cmd
+        pip install -U pyfanyi -i https://pypi.org/project/
+        ```
+        # Usage
+        ```python
+        from pyfanyi import Text, Language
+        ```
+        # Test
+        ## In CMD
+        ```cmd
+        python -m pyfanyi "stripe"
+        ```
+        ## In Python
+        ```python
+        from pyfanyi import Text, Language
+        text = Text('stripe')
+        language = Language('zh-CNS')
+        text.set_source_language('en')
+        result = text.fanyi(language)[0]
+        print(result)
+        ```
+Platform: UNKNOWN
