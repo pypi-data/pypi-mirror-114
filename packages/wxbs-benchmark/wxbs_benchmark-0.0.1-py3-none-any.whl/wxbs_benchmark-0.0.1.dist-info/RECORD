@@ -1,0 +1,11 @@
+wxbs_benchmark/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+wxbs_benchmark/_nbdev.py,sha256=TUSDPftx19rSlzU0WhrFB5iFr4YRulYgea002JWvhnc,537
+wxbs_benchmark/dataset.py,sha256=v02jpD55j0rJQH7NGyN9iyR4zb6lU9YIllc4sW484E8,4575
+wxbs_benchmark/evaluation.py,sha256=CfVdvY6hayquhs7BRcZNWJycfZtUPsnhrPSDclGdTZ0,887
+wxbs_benchmark/metrics.py,sha256=IK1UmqjiAg15F5F60iQ6GWOVOv3R491HqziMQ9jF1og,1273
+wxbs_benchmark-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+wxbs_benchmark-0.0.1.dist-info/METADATA,sha256=DWNdkBDnOz_kXGELXBVZoK5dBhVez5smF0IjLjtcwvg,5300
+wxbs_benchmark-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wxbs_benchmark-0.0.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+wxbs_benchmark-0.0.1.dist-info/top_level.txt,sha256=1RTBxlTZtTTnSlVQl23PZX2Rgt40ZfA4eOUym01D6y0,15
+wxbs_benchmark-0.0.1.dist-info/RECORD,,
