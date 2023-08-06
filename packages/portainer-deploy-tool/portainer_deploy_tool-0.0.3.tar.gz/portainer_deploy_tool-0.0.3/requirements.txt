@@ -1,0 +1,4 @@
+requests==2.25.1
+PyYaml==5.3.1
+schema-entry==0.1.4
+pyloggerhelper==0.0.2
