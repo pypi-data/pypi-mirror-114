@@ -1,0 +1,75 @@
+# Changelog
+
+## 1.0.0
+
+- Upgrade to polliwog >= 1.0.0 and vg >= 2.0.0.
+
+## 0.11.0
+
+- Upgrade to polliwog 1.0.0b14 and vg >= 1.11.1.
+
+## 0.10.0
+
+- Bump tinyobjloader to work around an issue in Poetry. Poetry will not
+  install dependency versions like 2.0.0rc9.dev0.
+
+## 0.9.0
+
+- Upgrade to polliwog 1.0.0b13.
+
+## 0.8.0
+
+- Selection: add `pick_vertices_of_face_groups()` method.
+
+## 0.7.0
+
+- Temporarily use the [Curvewise fork of tinyobjloader][fork].
+
+[fork]: https://github.com/curvewise-forks/tinyobjloader
+
+## 0.6.0
+
+- Add `faces_triangulated()` method.
+- Correctly preserve groups when reindexing faces.
+- Upgrade to tinyobjloader 2.0.0rc8.
+
+## 0.5.0
+
+- Add `load_obj_string()` function.
+- Upgrade to tinyobjloader 2.0.0rc7.
+
+## 0.4.1
+
+- Ensure faces have integral dtype.
+
+## 0.4.0
+
+- obj: Add support for triangulating mixed arities.
+- Upgrade to tinyobjloader 2.0.0rc6.
+- Upgrade to polliwog 1.0.0b10.
+
+## 0.3.0
+
+- Upgrade to polliwog 1.0.0b8.
+- Remove `lacecore.shapes.rectangle()`.
+
+## 0.2.0
+
+### New features
+
+- Optional OBJ loading with `pip install lacecore[obj]`.
+- Add transform methods.
+- Add group selection.
+- Add `apex()` method.
+- Add `vertex_centroid` and `bounding_box` properties.
+
+### Bug fixes
+
+- Pass through `face_groups` when returning a new mesh.
+- Reject invalid `point` from selection methods.
+- Avoid scrambling correspondence with inconsistent triangulation.
+
+
+## 0.1.0
+
+Initial release.
