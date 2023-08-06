@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: terra-mantle
+Version: 0.1.2
+Summary: Terra mantle client
+Home-page: https://github.com/Anchor-Protocol/mantle-python
+Author: Ian Lee
+Author-email: ian@terra.money
+License: Apache-2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: gql (>=3.0.0a6)
+Requires-Dist: graphql-core (>=3.1.5)
+
+# Mantle client
+
+## Wasm query only
+
+```py
+wasm_query = {
+    'marketState': {
+        'contractAddress': 'terra15dwd5mj8v59wpj0wvt233mf5efdff808c5tkal',  # moneyMarket.market
+        'query': {
+            'state': {}
+        }
+    },
+    'govState': {
+        'contractAddress': 'terra16ckeuu7c6ggu52a8se005mg5c0kd2kmuun63cu',  # gov
+        'query': {
+            'state': {}
+        }
+    }
+}
+
+mantle_result = mantle(wasm_query=wasm_query)
+
+print(mantle_result)
+```
+
+## Endpoint options
+
+```py
+# default mantle_endpoint is 'https://tequila-mantle.anchorprotocol.com'
+mantle_result = mantle(wasm_query=wasm_query, mantle_endpoint='https://mantle.anchorprotocol.com')
+
+print(mantle_result)
+```
+
+## With graphql query
+
+```py
+from mantle import mantle
+
+query_variables = {
+    'wallet_address': 'terra12hnhh5vtyg5juqnzm43970nh4fw42pt27nw9g9'
+}
+
+query = """
+  query queryName ($wallet_address: String!) {
+    LastSyncedHeight
+
+    nativeTokenBalances: BankBalancesAddress(Address: $wallet_address) {
+      Result {
+        Denom
+        Amount
+      }
+    }
+  }
+"""
+
+wasm_query = {
+    'marketState': {
+        'contractAddress': 'terra15dwd5mj8v59wpj0wvt233mf5efdff808c5tkal',  # moneyMarket.market
+        'query': {
+            'state': {}
+        }
+    },
+    'govState': {
+        'contractAddress': 'terra16ckeuu7c6ggu52a8se005mg5c0kd2kmuun63cu',  # gov
+        'query': {
+            'state': {}
+        }
+    }
+}
+
+mantle_result = mantle(wasm_query=wasm_query, query=query,
+                       query_variables=query_variables)
+
+print(mantle_result)
+```
+
