@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+RotateScreen/0.py
+RotateScreen/270.py
+RotateScreen/__init__.py
+Rotater.egg-info/PKG-INFO
+Rotater.egg-info/SOURCES.txt
+Rotater.egg-info/dependency_links.txt
+Rotater.egg-info/requires.txt
+Rotater.egg-info/top_level.txt
