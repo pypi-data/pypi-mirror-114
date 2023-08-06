@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: raftel
+Version: 0.3.3
+Summary: package to plot s2id easily with only one line of code
+Home-page: https://github.com/mitbal/raftel
+License: MIT
+Keywords: s2id,map
+Author: mitbal
+Author-email: mit.iqi@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: monochromap (>=0.2.0,<0.3.0)
+Requires-Dist: s2sphere (>=0.2.5,<0.3.0)
+Requires-Dist: seaborn (>=0.11.1,<0.12.0)
+Requires-Dist: staticmap (>=0.5.5,<0.6.0)
+Project-URL: Repository, https://github.com/mitbal/raftel
+Description-Content-Type: text/markdown
+
+# Raftel
+
+Raftel is a library to easily plot s2id cell into map and other basic operation related to s2id mapping.
+Basicaly a thinly veiled wrapper of the excellent [s2sphere](https://github.com/sidewalklabs/s2sphere), the native python implementation of the outstanding [s2-geometry](https://github.com/google/s2geometry) package from Google, and simple mapping function using staticmap library.
+
+## Installation
+Install directly from pyPI by running `pip install raftel`
+
+## Example
+Follow the example in the notebook for basic usage.
+
