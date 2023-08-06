@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: WebGrab
+Version: 0.1
+Summary: 
+Home-page: https://gitee.com/ntshibin/grab.git
+Author: bineanshi
+Author-email: bineanshi@sina.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: lxml (==4.6.3)
+Requires-Dist: requests (==2.26.0)
+
+
+## 根据规则解析 JSON 数据，返回对应内容数据
+```JSON
+from grab.base_scary import BaseScary
+
+scary = BaseScary("http://httpbin.org/ip",[{"tag": 'IP',"rule": "origin","rules": []}])
+
+rules = [
+    {"tag": 'IP', "rule": "origin", "rules": []},
+
+]
+scary = BaseScary("https://httpbin.org/ip", rules)
+result, err = scary.active()
+if err:
+    print(err)
+else:
+    print(result)
+```
+## 根据规则解析 HTML 数据，返回对应内容数据
+```html
+from grab.base_scary import BaseScary
+
+rules = [
+    {"tag": 'links',
+        "rule": "//div[contains(@class,'nav-mod-1')]/ul/li/a", "rules": [
+            {"tag": "text", "rule": "text()","rules": []},
+            {"tag": "url", "rule": "@href","rules": []}
+        ]}
+]
+scary = BaseScary(
+    "https://www.sina.com.cn/", rules)
+result, err = scary.active()
+if err:
+    print(err)
+else:
+    print(result)
+
+```
+
+
