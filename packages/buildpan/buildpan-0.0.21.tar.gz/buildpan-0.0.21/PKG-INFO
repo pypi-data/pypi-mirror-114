@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: buildpan
+Version: 0.0.21
+Summary: UNKNOWN
+Home-page: https://github.com/Vibhu-Agarwal/vibhu4gfg
+Author: Akash Dwivedi
+License: MIT
+Description: 
+        initiate the cli with "buildpan" 
+         Use "buildpan auth" for authentication 
+         
+         Use "buildpan allrepo" for displaying all the repositories 
+         
+         Use "buildpan selectrepo" for authentication 
+         
+         Use "buildpan crepo" create repo in github 
+        
+Keywords: Akash dwivedi
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
