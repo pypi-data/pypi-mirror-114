@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: srcds
+Version: 0.0.1
+Summary: Stub package
+Home-page: UNKNOWN
+Author: Gabe Van Engel
+Author-email: pypi@schizoid.net
+License: UNKNOWN
+Description: Stub package
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
