@@ -1,0 +1,10 @@
+README.md
+setup.py
+gym_foo/__init__.py
+gym_foo/envs/__init__.py
+gym_foo/envs/foo_env.py
+ksh_test_foo.egg-info/PKG-INFO
+ksh_test_foo.egg-info/SOURCES.txt
+ksh_test_foo.egg-info/dependency_links.txt
+ksh_test_foo.egg-info/requires.txt
+ksh_test_foo.egg-info/top_level.txt
