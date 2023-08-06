@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: ddmetrics
+Version: 0.0.1
+Summary: DataDog Metrics Collector decorator(s)
+Home-page: https://github.com/aksdari/ddmetrics
+Author: Adham Abu Dari
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: datadog
+
+# datadog-metrics decorator
+
+A python decorator that handles DataDog Metrics API calls.
+
+
+## Usage
+
+```python
+@DDMetrics.send(my_token)
+def get_my_metric(x):
+    # 1. get metric data and build the metric payload
+    metric = [
+        {
+            "metric": "something",
+            "points": [[time(), 55]],
+            "tags": ['test1', 'test2']
+        }
+    ]
+    # 2. return it
+    return metric
+```
+
+
