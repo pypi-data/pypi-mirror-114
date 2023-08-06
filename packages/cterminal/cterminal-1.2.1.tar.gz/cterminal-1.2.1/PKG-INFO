@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: cterminal
+Version: 1.2.1
+Summary: Colored Prints for python
+Home-page: https://github.com/novus-alex/PyProgress
+Author: Alexandre Hachet
+Author-email: alexandrehachet1@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+# Colored Terminal
+	* Python support for colored text in terminal
+
+```python
+from cterminal import *
+
+cprint(style.RED + "test")
+"""@params for cprint()
+ - string: 			Required (can be multiple strings)
+ - separator: 		Optional, default is " "
+ - end: 			Optional, default is "\n"
+ - file:			Optional, default is sys.stdout
+ - flush:			Optional, default is False
+"""
+```
+
+## Supported
+
+| Platform      | Colors        |
+| ------------- | ------------- |
+| Windows		| Yes			|
+
+
+| Colors        |
+| ------------- |
+| BLACK      	|
+| RED      		|
+| GREEN 		|
+| YELLOW		|
+| BLUE			|
+| MAGENTA		|
+| CYAN			|
+| WHITE			|
+| UNDERLINE		|
+
+
