@@ -1,0 +1,3 @@
+[console_scripts]
+xpl = xplai.cli.cli:main
+

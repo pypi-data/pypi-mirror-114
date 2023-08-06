@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: xplai
+Version: 0.1.8
+Summary: xpl.ai client SDK.
+Home-page: https://xpl.ai/
+Author: XPL Technologies AB
+License: Proprietary software
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests (~=2.24.0)
+Requires-Dist: pydantic
+Requires-Dist: aiohttp
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: torchaudio
+Requires-Dist: Pillow
+
+UNKNOWN
+
+
