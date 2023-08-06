@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pyasync-orm
+Version: 0.1.2
+Summary: An async ORM.
+Home-page: https://github.com/ronaldnwilliams/pyasync-orm
+License: MIT
+Keywords: orm,aysnc,databse,async-orm,async-database
+Author: Ron Williams
+Author-email: rnwprogramming@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: asyncpg
+Requires-Dist: asyncpg (>=0.23.0,<0.24.0); extra == "asyncpg"
+Requires-Dist: inflection (>=0.5.1,<0.6.0)
+Project-URL: Repository, https://github.com/ronaldnwilliams/pyasync-orm
+Description-Content-Type: text/markdown
+
+# pyasync orm
+
+[![pypi](https://img.shields.io/pypi/v/pyasync-orm?color=blue&style=plastic)](https://pypi.python.org/pypi/pyasync-orm)
+[![versions](https://img.shields.io/pypi/pyversions/pyasync-orm)](https://pypi.org/pypi/pyversions/pyasync-orm)
+
+An asynchronous database ORM for Python.
+
+## Installation
+
+Install using `pip install pyasync-orm` or `poetry add pyasync-orm`
+
