@@ -1,0 +1,8 @@
+numpy
+dipy
+dmipy
+lxml
+PyPDF2
+fpdf
+matplotlib
+cvxpy

@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: elikopy
+Version: 0.2
+Summary: A set of tools for analysing dMRI
+Home-page: https://github.com/Hyedryn/elikopy
+Author: qdessain, msimon
+Author-email: quentin.dessain@student.uclouvain.be, mathieu.simon@student.uclouvain.be
+License: agpl-3.0
+Download-URL: https://github.com/Hyedryn/elikopy/archive/refs/tags/v0.2.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
