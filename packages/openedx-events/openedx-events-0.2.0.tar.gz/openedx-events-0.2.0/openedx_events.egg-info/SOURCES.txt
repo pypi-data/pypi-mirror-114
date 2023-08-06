@@ -1,0 +1,16 @@
+CHANGELOG.rst
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+openedx_events/__init__.py
+openedx_events.egg-info/PKG-INFO
+openedx_events.egg-info/SOURCES.txt
+openedx_events.egg-info/dependency_links.txt
+openedx_events.egg-info/not-zip-safe
+openedx_events.egg-info/requires.txt
+openedx_events.egg-info/top_level.txt
+openedx_events/learning/__init__.py
+openedx_events/learning/signals.py
+requirements/base.in
