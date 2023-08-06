@@ -1,0 +1,7 @@
+"""
+Schema for app $app_name
+"""
+from main.extension import ma
+from apps.$app_name.models import model
+
+

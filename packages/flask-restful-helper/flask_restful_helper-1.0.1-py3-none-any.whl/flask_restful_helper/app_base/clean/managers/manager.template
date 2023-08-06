@@ -1,0 +1,7 @@
+"""
+Manager for app $app_name
+"""
+from flask_restful_helper import Manager
+from apps.$app_name.models import model
+
+

@@ -1,0 +1,5 @@
+"""
+ApiView for app $app_name
+"""
+from flask_restful_helper import ApiView
+from apps.$app_name.logics import logic

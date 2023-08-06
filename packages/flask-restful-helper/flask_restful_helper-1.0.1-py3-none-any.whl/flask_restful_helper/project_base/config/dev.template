@@ -1,0 +1,26 @@
+DEBUG: True
+
+# SQLALCHEMY
+SQLALCHEMY_TRACK_MODIFICATIONS: False
+DB:
+  TYPE: $db_type
+  HOST: $db_host
+  PORT: $db_port
+  USERNAME: $db_username
+  PASSWORD: $db_password
+  DATABASE: $db_database
+
+# JWT
+JWT_SECRET_KEY: $jwt_secret_key
+
+
+# API TEST
+
+
+TEST_INIT_DB_ON_TEST: False
+
+
+TEST_ACCOUNT:
+  - ADMINISTRATOR:
+      USERNAME: admin
+      PASSWORD: 123
