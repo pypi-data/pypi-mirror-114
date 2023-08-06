@@ -1,0 +1,3 @@
+[console_scripts]
+scylla = scylla.main:main
+

@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+scylla/__init__.py
+scylla/downloader.py
+scylla/main.py
+scylla/progress.py
+scylla_http.egg-info/PKG-INFO
+scylla_http.egg-info/SOURCES.txt
+scylla_http.egg-info/dependency_links.txt
+scylla_http.egg-info/entry_points.txt
+scylla_http.egg-info/requires.txt
+scylla_http.egg-info/top_level.txt
