@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: envium
+Version: 0.8.2
+Summary: 
+Author: Damian Krystkiewicz
+Author-email: damian.krystkiewicz@gmail.com
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
