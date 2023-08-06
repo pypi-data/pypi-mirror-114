@@ -1,0 +1,10 @@
+tencentcloud/__init__.py,sha256=_sFJWrB1DkhCKb8dyuDHNruIoJjv2GGQAnT5NvgFVq0,630
+tencentcloud/billing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/billing/v20180709/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/billing/v20180709/billing_client.py,sha256=EBWjY66q2LITm-Y4iE_-TbjZBkQVQAHeSL9PRaUVKd4,22763
+tencentcloud/billing/v20180709/errorcodes.py,sha256=_jVuEy2uQ3BpspeFrTRKFZ5glpdwMd2htjdMwQhx3ag,2632
+tencentcloud/billing/v20180709/models.py,sha256=jE9elT7FMwj4P9qUvRkSPPl0wVdsEpli_bcL7XZHjpg,120799
+tencentcloud_sdk_python_billing-3.0.450.dist-info/METADATA,sha256=2hjRFMRHWnyHQjqKzWA8VaRrLO05TFZIjtWqUqZeKt8,1452
+tencentcloud_sdk_python_billing-3.0.450.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+tencentcloud_sdk_python_billing-3.0.450.dist-info/top_level.txt,sha256=g-8OyzoqI6O6LiS85zkeNzhB-osEnRIPZMdyRd_0eL0,13
+tencentcloud_sdk_python_billing-3.0.450.dist-info/RECORD,,
