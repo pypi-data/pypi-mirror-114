@@ -1,0 +1,17 @@
+odoo/addons/sale_coupon_partner/README.rst,sha256=pJqtmaiIw-FfV_lbpBbMKoCvMHLWRiA5RA7asgJlo-Q,2809
+odoo/addons/sale_coupon_partner/__init__.py,sha256=1MqwrAoK0QwGt69XIjf_JT5xv2L6Erf0yG9MV-QZgGc,43
+odoo/addons/sale_coupon_partner/__manifest__.py,sha256=aQfXczhBAhnFiW4LDxOs0gbG108kkSpbuh3nmPBLqzU,505
+odoo/addons/sale_coupon_partner/models/__init__.py,sha256=8Tji4sGdX70jgDk6ZkbCB7JZt_edaweDTD2Ub7BT3bQ,34
+odoo/addons/sale_coupon_partner/models/sale_coupon_program.py,sha256=zHWR3ZboUIi1KWS7bqfQjeIB7qSdxfoImKNk0zhDBNs,296
+odoo/addons/sale_coupon_partner/readme/CONTRIBUTORS.rst,sha256=h-_X_EkTv3atz2Xb5kr9yEmcGoHv9u2l6URQkkdK05A,80
+odoo/addons/sale_coupon_partner/readme/DESCRIPTION.rst,sha256=7PtRhR54R_dA9BUnaR8GKugHq5VLPjr_ozDFlVgj_y0,158
+odoo/addons/sale_coupon_partner/reports/__init__.py,sha256=ByYRbiCY7uWnvbKwYusgp99HtcOyGnzWogDif_GEsec,26
+odoo/addons/sale_coupon_partner/reports/sale_report.py,sha256=gCszfDycFs9pHPvnPBp3eNhEJ6PffTWmjkLiUoE3-PM,943
+odoo/addons/sale_coupon_partner/reports/sale_report_views.xml,sha256=h_XL1RVDB-OvN76RYCu1BzFHTAl-cNsw8EeCiw8C86k,759
+odoo/addons/sale_coupon_partner/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/sale_coupon_partner/static/description/index.html,sha256=yIbtrEC1n19Rv15yyVcAjIC74brgbiDTdOSRjNWwWD8,11898
+odoo/addons/sale_coupon_partner/views/sale_coupon_program_views.xml,sha256=u6M32LLy180L_KoWUpFEYv2N3gcXqjQLWHIO53oFVXc,516
+odoo13_addon_sale_coupon_partner-13.0.1.0.1.dev2.dist-info/METADATA,sha256=XEMG5dfBwz46F-m0XTWKryObX8OKvbe2U71pUzTFf-s,3370
+odoo13_addon_sale_coupon_partner-13.0.1.0.1.dev2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+odoo13_addon_sale_coupon_partner-13.0.1.0.1.dev2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo13_addon_sale_coupon_partner-13.0.1.0.1.dev2.dist-info/RECORD,,
