@@ -1,0 +1,12 @@
+jupyterbundle/_config/config.yaml,sha256=Xwj_tA4ydM5ZV0N1zUPs7AC0B2sUNeEWfV1SieO2VDU,90
+jupyterbundle/_config/config_test.yaml,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jupyterbundle/JupyterBundle.py,sha256=qWIHYSe-i-r-NxIz8ohn6DEY1O0M_ynui_yjrkP7lD4,80
+jupyterbundle/JupyterBundleTest.py,sha256=tC5TSENxPyqQuT-UBnbsufas-asGKkqMCrH88baFGgU,336
+jupyterbundle/server_detector.py,sha256=_KWEpOu-ZxfLF8REO3LiuWAgP6x9dmiItrH2O94oC2g,84
+jupyterbundle/widgets/JupyterWidgets.py,sha256=VAGrzZem5XWfl0ZpqFOKX32tOIy4lzLX6ePXywFctmU,2454
+jupyterbundle/widgets/JupyterWidgetsTest.py,sha256=L7YBtkdkRPJKYkPpboy878ZyHvBvJK7-7aGT5nlIMYk,6054
+jupyter_bundle-1.1.0a1.dist-info/entry_points.txt,sha256=8Di0tkjqY269V7b2fMfCDl4pkKM3P8OztQi6l_eIHi8,66
+jupyter_bundle-1.1.0a1.dist-info/LICENSE,sha256=p9qOsNzKt71jf-HqXcPq37l1LUkod01gTPiBMc2UVOI,1060
+jupyter_bundle-1.1.0a1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+jupyter_bundle-1.1.0a1.dist-info/METADATA,sha256=a-uMpijs8_xsrgSq_N3vtLgTPSWlOK8AY8DiLQsEvwU,950
+jupyter_bundle-1.1.0a1.dist-info/RECORD,,
