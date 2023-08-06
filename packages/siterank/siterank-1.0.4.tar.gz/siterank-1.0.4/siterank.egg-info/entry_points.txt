@@ -1,0 +1,3 @@
+[console_scripts]
+siterank = siterank.siterank:main
+
