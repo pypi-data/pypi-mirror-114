@@ -1,0 +1,5 @@
+setup.py
+poosa.egg-info/PKG-INFO
+poosa.egg-info/SOURCES.txt
+poosa.egg-info/dependency_links.txt
+poosa.egg-info/top_level.txt
