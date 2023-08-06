@@ -1,0 +1,5 @@
+build
+coverage
+pytest
+requests
+twine

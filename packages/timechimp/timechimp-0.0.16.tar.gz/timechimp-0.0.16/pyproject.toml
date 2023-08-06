@@ -1,0 +1,21 @@
+[build-system]
+requires = [
+    "requests",
+    "setuptools",
+    "twine",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+log_cli = 1
+log_cli_level = "INFO"
+log_cli_format = "%(asctime)s [%(levelname)8s]%(funcName)s %(message)s (%(filename)s:%(lineno)s)"
+log_cli_date_format= "%Y-%m-%d %H:%M:%S"
+
+[tool.coverage.run]
+include = ["timechimp/*"]
+omit = ["*__init__.py*, *tests*"]
+
+[tool.coverage.xml]
+output = "coverage.xml"
