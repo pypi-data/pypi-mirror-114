@@ -1,0 +1,11 @@
+opentelemetry/instrumentation/logging/__init__.py,sha256=UxqSTl8V-C7qgakMUShNumROm0NkZtW7_0XvlowAyQ4,4423
+opentelemetry/instrumentation/logging/constants.py,sha256=BtXBFM-LdBYn_AALcvsqb_MKMesxU1HpCBrJ5nsh-D8,5331
+opentelemetry/instrumentation/logging/environment_variables.py,sha256=r9fX7wkFdIvXe1G9TU8eYod0k-PJRDmRwNTWkj8MCng,743
+opentelemetry/instrumentation/logging/package.py,sha256=6OiaAJOKS-XH9e-QAAkj7AyOTw-6bTetTuXhavCCkQ0,609
+opentelemetry/instrumentation/logging/version.py,sha256=5fQF3XySdiEZJ5yo5kgt3VCNhhNwOmQHUALWUbynQkM,632
+opentelemetry_instrumentation_logging-0.23b2.dist-info/LICENSE,sha256=h8jwqxShIeVkc8vOo9ynxGYW16f4fVPxLhZKZs0H5U8,11350
+opentelemetry_instrumentation_logging-0.23b2.dist-info/METADATA,sha256=zxnwrUX09_g8BIYdTSmkc9mGQvxaHFJZXjorxSIUm70,1715
+opentelemetry_instrumentation_logging-0.23b2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+opentelemetry_instrumentation_logging-0.23b2.dist-info/entry_points.txt,sha256=WxPOdsKprtYwzPqh6BjOjaixQ0szjilcSaX-5TYpvpw,98
+opentelemetry_instrumentation_logging-0.23b2.dist-info/top_level.txt,sha256=5p97iTMneNm1LAKDalzEVpYhvPZsaqJZzdLuD_upSaQ,14
+opentelemetry_instrumentation_logging-0.23b2.dist-info/RECORD,,
