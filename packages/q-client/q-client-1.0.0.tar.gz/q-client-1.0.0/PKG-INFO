@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: q-client
+Version: 1.0.0
+Summary: Client for executing quantum applications on qserver instances
+Home-page: https://github.com/ax1/qclient_py
+Author: ax1
+Author-email: 
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ax1/qclient_py/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Q-client
+
+This is only a proxy to `qclient` package. Created only to prevent malicious packages with similar names. Use `qclient` instead.
+
