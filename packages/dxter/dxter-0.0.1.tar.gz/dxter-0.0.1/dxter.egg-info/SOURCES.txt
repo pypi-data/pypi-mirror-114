@@ -1,0 +1,12 @@
+README.md
+setup.py
+dexter/__init__.py
+dexter/framelist.py
+dexter/framemap.py
+dexter/helper.py
+dexter/optimizer.py
+dexter/readmultiple.py
+dxter.egg-info/PKG-INFO
+dxter.egg-info/SOURCES.txt
+dxter.egg-info/dependency_links.txt
+dxter.egg-info/top_level.txt
