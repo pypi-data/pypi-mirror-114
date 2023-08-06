@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: reina
+Version: 0.0.5
+Summary: A Causal Inference library for Big Data.
+Home-page: https://github.com/Qyu-ai/Reina/
+Author: Qyu.ai Inc.
+Author-email: soumil@qyu.ai
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Qyu-ai/Reina/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Reina
+
+## About Reina
+ReInA (Reasoning In AI) is a causal inference platform aimed at estimating heterogeneous treatment effects in observational data. There are various open-source projects that provide convenient causal inference methods, but the current out-of-box packages are limited to local memory for computation. Hence, this project integrates Apache Spark with various machine learning (ML) powered causal inference frameworks, enabling causal analysis on big-data.
+
+## Installation
+    $ pip install reina
+    
+## Quick Start
+    from reina
+    from pyspark.sql import SparkSession
+
+    # Initialize spark session
+    spark = SparkSession \
+                .builder \
+                .appName('Meta-Learner-Spark') \
+                .getOrCreate()
+    
+    # Read data locally (without cluster) or from a distributed storage (e.g., Hadoop HDFS, AWS S3) 
+    data = spark.read \
+          .format("csv") \
+          .load("your_data.csv") \
+    
+    # Set up necessary parameters (parameters will vary depending on the method used)
+    treatment = ['name_of_treatment']
+    outcome = 'name_of_outcome'
+    
+    # Setup and fit model
+    causal_model = reina.IvMethods.TSLS.SparkSieveTSLS(data=data, treatment=treatment, outcome=outcome)
+    causal_model.fit(data=data, treatments=treatment, outcome=outcome,...)
+    
+    # Get heterogeneous treatment effect
+    cate, ate = causal_model.effect()
+    print(cate)
+    print(ate)
+    
+Please refer to example notebooks for more detailed toy demonstrations.
+
+## Contribution Guidelines
+
+## References
+
+
