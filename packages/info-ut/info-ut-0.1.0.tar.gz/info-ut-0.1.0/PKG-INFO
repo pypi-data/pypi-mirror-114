@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: info-ut
+Version: 0.1.0
+Summary: 
+Author: hexatester
+Author-email: revolusi147id@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: attrs (>=21.2.0,<22.0.0)
+Requires-Dist: beautifulsoup4 (>=4.9.3,<5.0.0)
+Requires-Dist: feedparser (>=6.0.8,<7.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
