@@ -1,0 +1,3 @@
+thonny>=3.3.11
+thonny-etboard-basic-examples
+thonny-etboard-micropython-firmware
