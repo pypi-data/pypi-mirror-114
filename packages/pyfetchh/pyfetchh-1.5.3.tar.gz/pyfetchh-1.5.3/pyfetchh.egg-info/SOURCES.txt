@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyfetch
+pyproject.toml
+setup.cfg
+setup.py
+pyfetchh.egg-info/PKG-INFO
+pyfetchh.egg-info/SOURCES.txt
+pyfetchh.egg-info/dependency_links.txt
+pyfetchh.egg-info/requires.txt
+pyfetchh.egg-info/top_level.txt
