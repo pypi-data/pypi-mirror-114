@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pypushflow
+Version: 0.3.0a0
+Summary: A task scheduler for cyclic and acyclic graphs
+Home-page: https://gitlab.esrf.fr/workflow/pypushflow
+Author: ESRF
+Author-email: svensson@esrf.fr
+License: MIT
+Project-URL: Bug Tracker, https://gitlab.esrf.fr/workflow/pypushflow/-/issues
+Description: # pypushflow
+        
+        A task scheduler for cyclic and acyclic graphs
+        
+        ## Install
+        
+        ```bash
+        python -m pip install pypushflow[mx]
+        ```
+        
+        Use the `mx` option for installation at MX beamlines.
+        
+        ## Run tests
+        
+        ```bash
+        python -m pip install pypushflow[test]
+        pytest
+        ```
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: mx
+Provides-Extra: test

@@ -1,0 +1,6 @@
+
+[mx]
+pymongo
+
+[test]
+pytest
