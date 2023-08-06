@@ -1,0 +1,4 @@
+numpy
+scipy
+pynwb
+mkl_fft
