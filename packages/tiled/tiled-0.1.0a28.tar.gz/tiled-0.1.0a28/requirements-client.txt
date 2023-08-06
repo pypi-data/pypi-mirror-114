@@ -1,0 +1,7 @@
+appdirs
+entrypoints
+httpx>=0.18.2
+jsonschema
+msgpack
+pyyaml
+typer
