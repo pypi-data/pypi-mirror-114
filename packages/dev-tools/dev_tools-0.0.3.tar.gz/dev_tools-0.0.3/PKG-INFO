@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: dev_tools
+Version: 0.0.3
+Summary: General dev_tools written in Python
+Home-page: https://github.com/passer-team/dev-tools
+Author: Daryl.Xu
+Author-email: ziqiang_xu@qq.com
+License: MIT
+Project-URL: Bug Report, https://github.com/passer-team/dev-tools/issues/new
+Project-URL: 报告问题, https://gitee.com/passer-team/dev-tools/issues
+Platform: Linux
+Platform: Windows
+Platform: MacOs
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dev_tools
+
+使用 `Python` 编写的开发工具
+Development tools written in Python.
+
+## 模块
+
+- `passer_template_server -h` or `pts -h`, `pts` is a shortcut
+
+
