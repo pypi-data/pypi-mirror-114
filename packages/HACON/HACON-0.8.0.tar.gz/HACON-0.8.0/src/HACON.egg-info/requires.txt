@@ -1,0 +1,9 @@
+scapy==2.4.5
+scapy-http==1.8.2
+prettytable==2.1.0
+wcwidth==0.2.5
+dnspython==2.1.0
+future==0.18.2
+python_whois==0.7.3
+requests==2.25.1
+mac-vendor-lookup==0.1.11
