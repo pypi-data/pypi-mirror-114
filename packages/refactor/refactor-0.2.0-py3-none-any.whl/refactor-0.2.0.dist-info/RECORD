@@ -1,0 +1,12 @@
+refactor/__init__.py,sha256=apEdH6s8O7xlkiBKHJ6bD0fEJFX2pIvh4K7zLcpcXsg,197
+refactor/ast.py,sha256=KZfzc-6Kd2ImhkCKnfsHQhjhWyBVTkxEEnmoxb_ji7I,1510
+refactor/change.py,sha256=H4RE8aFQ_uV4fhAM1NsDjGoM3d3nEPp4Cw0jsQZpFts,694
+refactor/common.py,sha256=9-S34B6Zuq3OOpsJJxz4DMLygnX_WmgsaeL1wGjSkPI,2785
+refactor/context.py,sha256=rnGNt_YN2_72cBNs_10dqi7cfDtsd9DRVkAYit1JjRE,5059
+refactor/core.py,sha256=gwUVB0_JMzG_1d6OBIApJeVXpd9nUNNhh4O9Ccto-aU,4267
+refactor/runner.py,sha256=ssx8jTiHL5as8nOlnthX0bZaeidvwYLHhlq0xAjAtlg,1586
+refactor-0.2.0.dist-info/LICENSE.txt,sha256=LHNe3JCKL-EVCuCF3CJkN4mCxV48w33aHjFqpYmQ7FQ,1157
+refactor-0.2.0.dist-info/METADATA,sha256=6LRhU_AHrI2n0rlDIClNQuK765CTRPHxO8wmocoHfRc,2831
+refactor-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+refactor-0.2.0.dist-info/top_level.txt,sha256=jCNAQcJGcXPbLuqADBNCQxentGSDGWA08qs5wEtb_AU,9
+refactor-0.2.0.dist-info/RECORD,,
