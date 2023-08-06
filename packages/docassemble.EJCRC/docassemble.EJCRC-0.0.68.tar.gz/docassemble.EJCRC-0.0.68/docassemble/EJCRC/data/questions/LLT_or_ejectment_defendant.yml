@@ -1,0 +1,64 @@
+metadata:
+  temporary session: true
+---
+event: call_number
+question: |
+   This online tool is limited to property owners or parties who have legal authority to act on the owner’s behalf to remove someone from the property.  Please consult an attorney if you have any questions or contact the Elder Justice & Civil Resource Center at (215)686-7027 for more information.  
+buttons:
+  - Exit: exit
+    url: https://docassemble.org
+---
+event: consult_atty
+question: |
+  This tool should not be used if you are represented by an attorney. Please consult your lawyer.
+buttons:
+  - Exit: exit
+    url: https://docassemble.org
+---
+event: find_atty
+question: |
+  The Philadelphia Bar Association can help you find an attorney through its  [Philadelphia Bar Association Lawyer Referral Program.](https://lris.philadelphiabar.org) They can be reached by telephone at (215) 238-6333
+buttons:
+  - Exit: exit
+    url: https://docassemble.org    
+---
+code: |
+  lawyer
+  if lawyer == True:
+    consult_atty
+  if lawyer == False:
+    represent
+    if represent == "No, I am looking for an attorney to represent me":
+      find_atty
+mandatory: True
+---
+field: lawyer
+question: |
+  Are you currently represented by an attorney?
+yesno: lawyer
+mandatory: True
+---
+need:
+  lawyer
+question: |
+   Are you planning on representing yourself in court?
+field: represent
+buttons:
+  - Yes, I plan to represent myself
+  - No, I am looking for an attorney to represent me  
+mandatory: True
+---
+mandatory: true
+question: |
+  Is your case being heard in Municipal Court or the Court of Common Pleas?
+subquestion: |
+  * [Municipal Court]
+  * [Court of Common Pleas] 
+  * [I don’t know which court my case is in] 
+  * [Municipal Court made a decision in my landlord-tenant case but I want to appeal it]
+
+  [Municipal Court]: ${ interview_url(i='docassemble.EJCRC:data/questions/municipal_court.yml') }
+  [Court of Common Pleas]: ${ interview_url(i='docassemble.EJCRC:data/questions/court_common_pleas.yml') }
+  [I don’t know which court my case is in]: ${ interview_url(i='docassemble.EJCRC:data/questions/court_unknown.yml') }
+  [Municipal Court made a decision in my landlord-tenant case but I want to appeal it]: ${ interview_url(i='docassemble.EJCRC:data/questions/appeal_muni_LLT_case.yml') }
+---

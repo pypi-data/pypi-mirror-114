@@ -1,0 +1,32 @@
+mandatory: true
+question: |
+  Find Court of Your Case
+subquestion: |
+  There are three ways to find out what court your case is in.
+  
+  1. Review the complaint or notice your received from the court.  The name of the court should appear at the top of the page 
+  
+  2. Search for your case history online in the court dockets.  The Court of Common Pleas Civil docket can be found [here](https://fjdefile.phila.gov/efsfjd/zk_fjd_public_qry_00.zp_disclaimer)  and the Municipal Civil Court docket can be found [here](https://fjdclaims.phila.gov/phmuni/login.do#). [Follow these instructions to search the docket for your case number](${ url_of('docket_instructions.pdf') })
+  
+  
+  3. Call the filing offices for the Court of Common Pleas (215)686-4251 and Municipal Court (215) 686-7980.
+
+continue button label: |
+  Click here once court is known
+continue button field: known  
+---
+mandatory: true
+need:
+  known
+question: |
+  Is your case being heard in Municipal Court or the Court of Common Pleas?
+subquestion: |
+  
+  * [Municipal Court]
+  * [Court of Common Pleas] 
+  * [Municipal Court made a decision in my landlord-tenant case but I want to appeal it]
+
+  [Municipal Court]: ${ interview_url(i='docassemble.EJCRC:data/questions/municipal_court.yml') }
+  [Court of Common Pleas]: ${ interview_url(i='docassemble.EJCRC:data/questions/court_common_pleas.yml') }
+  [Municipal Court made a decision in my landlord-tenant case but I want to appeal it]: ${ interview_url(i='docassemble.EJCRC:data/questions/appeal_case.yml') }
+---
