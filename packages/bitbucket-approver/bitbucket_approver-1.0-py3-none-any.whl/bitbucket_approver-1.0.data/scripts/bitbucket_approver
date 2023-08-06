@@ -1,0 +1,54 @@
+#!python
+
+import sys
+import toml
+import socketio
+import requests
+
+
+
+if len(sys.argv) != 2:
+    print("Usage: bitbucket_approver your_config.toml")
+    sys.exit()
+config = toml.load(sys.argv[1])
+
+def approve(url):
+    headers = {'Content-Type': 'application/json'}
+    headers["Authorization"] = "Bearer {}".format(config["token"])
+    proxies = {}
+
+    if "proxy" in config:
+        proxies = {
+            "http": config["proxy"],
+            "https": config["proxy"]
+        }
+    r = requests.post(url, headers=headers, proxies= proxies)
+    if r.status_code != 200:
+        print("Failed: {}".format(r.content))
+    else:
+        print("Approved: {}".format(url))
+
+
+sio = socketio.Client()
+
+@sio.event
+def connect():
+    print('connection established')
+
+@sio.event
+def online(data):
+    print('Online Count:', data)
+
+@sio.event
+def broadcast(data):
+    print('Message:', data)
+    approve(data["url"])
+
+
+@sio.event
+def disconnect():
+    print('disconnected from server')
+
+sio.connect(config["server"])
+sio.wait()
+
