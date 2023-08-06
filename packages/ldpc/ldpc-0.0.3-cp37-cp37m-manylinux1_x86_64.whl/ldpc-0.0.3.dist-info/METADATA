@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ldpc
+Version: 0.0.3
+Summary: Python tools for low density parity check (LDPC) codes
+Home-page: https://roffe.eu
+Author: Joschka Roffe
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.6
+Requires-Dist: tqdm
+Requires-Dist: scipy
+
+This module provides a suite of tools for building and        benmarking low density parity check (LDPC) codes. Features include        functions for mod2 (binary) arithmatic, tools for constructing quasi-cyclic        codes and a fast implementation of the belief propagation decoder 
+
