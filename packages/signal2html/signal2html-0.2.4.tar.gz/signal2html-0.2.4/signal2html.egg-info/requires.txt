@@ -1,0 +1,6 @@
+emoji
+jinja2
+pure-protobuf
+
+[:python_version == "3.6"]
+dataclasses
