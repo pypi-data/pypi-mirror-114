@@ -1,0 +1,312 @@
+"""A module for the common differential operators of vector calculus"""
+
+import cupy as np
+from .operators import FinDiff
+from .diff import Diff
+
+
+class VectorOperator(object):
+    """Base class for all vector differential operators.
+       Shall not be instantiated directly, but through the child classes.
+    """
+
+    def __init__(self, **kwargs):
+        """Constructor for the VectorOperator base class.
+        
+            kwargs:
+            -------
+            
+            h       list with the grid spacings of an N-dimensional uniform grid
+            
+            coords  list of 1D arrays with the coordinate values along the N axes.
+                    This is used for non-uniform grids. 
+            
+            Either specify "h" or "coords", not both.
+        
+        """
+
+        if "acc" in kwargs:
+            self.acc = kwargs.pop("acc")
+        else:
+            self.acc = 4
+
+        if "h" in kwargs: 
+            self.judge=0
+            self.h = kwargs.pop("h")
+            self.ndims = len(self.h)
+            self.componentsec = [FinDiff(k, self.h[k], 1) for k in range(self.ndims)]
+            self.componentsec2 = [FinDiff(k, self.h[k], 2) for k in range(self.ndims)]
+            self.componentcross = [FinDiff((i, self.h[i]),(j, self.h[j])) for i in range(self.ndims) for j in range(self.ndims)]
+
+        if "coords" in kwargs:
+            self.judge=1
+            self.coords = kwargs.pop("coords")
+            self.ndims = len(self.coords)
+            self.componentsec = [FinDiff((k, self.coords[k], 1)) for k in range(self.ndims)]
+            self.componentsec2 = [FinDiff((k, self.coords[k], 2)) for k in range(self.ndims)]
+            self.componentcross = []
+
+            for i in range(self.ndims):
+                for j in range(self.ndims):
+                    if i==j :
+                        self.componentcross.append(FinDiff(i, self.coords[i], 2))
+                    else:
+                        self.componentcross.append(FinDiff((i, self.coords[i],1),(j, self.coords[j],1)))
+
+    # def __get_dimension(self, coords):
+    #     return len(coords)
+
+
+class Gradient(VectorOperator):
+    r"""
+    The N-dimensional gradient.
+    
+    .. math::
+        \nabla = \left(\frac{\partial}{\partial x_0}, \frac{\partial}{\partial x_1}, ... , \frac{\partial}{\partial x_{N-1}}\right)
+
+    :param kwargs:  exactly one of *h* and *coords* must be specified
+    
+             *h* 
+                     list with the grid spacings of an N-dimensional uniform grid     
+             *coords*
+                     list of 1D arrays with the coordinate values along the N axes.
+                     This is used for non-uniform grids.
+                     
+             *acc*
+                     accuracy order, must be positive integer, default is 2
+    """
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+    def __call__(self, f):
+        """
+        Applies the N-dimensional gradient to the array f.
+        
+        :param f:  ``numpy.ndarray``
+        
+                Array to apply the gradient to. It represents a scalar function,
+                so it must have N axes for the N independent variables.        
+           
+        :returns: ``numpy.ndarray``
+         
+                The gradient of f, which has N+1 axes, i.e. it is 
+                an array of N arrays of N axes each.
+           
+        """
+        size=list(f.shape)
+        size.append(self.ndims)
+        result=np.zeros(size)
+        for k in range(self.ndims):
+            d_dxk = self.componentsec[k]
+            result[...,k]=d_dxk(f, acc=self.acc)
+        return result
+
+
+class Divergence(VectorOperator):
+    r"""
+    The N-dimensional divergence.
+    
+    .. math::
+    
+       {\rm \bf div} = \nabla \cdot
+    
+    :param kwargs:  exactly one of *h* and *coords* must be specified
+
+         *h* 
+                 list with the grid spacings of an N-dimensional uniform grid     
+         *coords*
+                 list of 1D arrays with the coordinate values along the N axes.
+                 This is used for non-uniform grids.
+                 
+         *acc*
+                 accuracy order, must be positive integer, default is 2
+    
+    """
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+    def __call__(self, f):
+        """
+        Applies the divergence to the array f.
+
+        :param f: ``numpy.ndarray``
+                
+               a vector function of N variables, so its array has N+1 axes.
+        
+        :returns: ``numpy.ndarray``
+            
+               the divergence, which is a scalar function of N variables, so it's array dimension has N axes
+                
+        """
+        # if not isinstance(f, np.ndarray) and not isinstance(f, list):
+        #     raise TypeError("Function to differentiate must be numpy.ndarray or list of numpy.ndarrays")
+
+        # if len(f.shape) != self.ndims + 1 and f.shape[0] != self.ndims:
+        #     raise ValueError("Divergence can only be applied to vector functions of the same dimension")
+
+        result = np.zeros(f.shape[1:])
+
+        for k in range(self.ndims):
+            result += self.componentsec[k](f[k], acc=self.acc)
+
+        return result
+
+class Curl(VectorOperator):
+    r"""
+    The curl operator. 
+    
+    .. math::
+    
+        {\rm \bf rot} = \nabla \times
+    
+    Is only defined for 3D.
+    
+    :param kwargs:  exactly one of *h* and *coords* must be specified
+
+     *h* 
+             list with the grid spacings of a 3-dimensional uniform grid     
+     *coords*
+             list of 1D arrays with the coordinate values along the 3 axes.
+             This is used for non-uniform grids.
+             
+     *acc*
+             accuracy order, must be positive integer, default is 2
+
+    
+    """
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+        if self.ndims != 3:
+            raise ValueError("Curl operation is only defined in 3 dimensions. {} were given.".format(self.ndims))
+
+    def __call__(self, f):
+        """
+        Applies the curl to the array f.
+
+        :param f: ``numpy.ndarray``
+
+               a vector function of N variables, so its array has N+1 axes.
+
+        :returns: ``numpy.ndarray``
+
+               the curl, which is a vector function of N variables, so it's array dimension has N+1 axes
+
+        """
+
+        # if not isinstance(f, np.ndarray) and not isinstance(f, list):
+        #     raise TypeError("Function to differentiate must be numpy.ndarray or list of numpy.ndarrays")
+
+        # if len(f.shape) != self.ndims + 1 and f.shape[0] != self.ndims:
+        #     raise ValueError("Curl can only be applied to vector functions of the three dimensions")
+
+        result = np.zeros(f.shape)
+
+        result[0] += self.componentsec[1](f[2], acc=self.acc) - self.componentsec[2](f[1], acc=self.acc)
+        result[1] += self.componentsec[2](f[0], acc=self.acc) - self.componentsec[0](f[2], acc=self.acc)
+        result[2] += self.componentsec[0](f[1], acc=self.acc) - self.componentsec[1](f[0], acc=self.acc)
+
+        return result
+
+class Laplacian(VectorOperator):
+    r"""
+        The N-dimensional Laplace operator.
+
+        .. math::
+
+           {\rm \bf \nabla^2} = \sum_{k=0}^{N-1} \frac{\partial^2}{\partial x_k^2}
+
+        :param kwargs:  exactly one of *h* and *coords* must be specified
+
+             *h* 
+                     list with the grid spacings of an N-dimensional uniform grid     
+             *coords*
+                     list of 1D arrays with the coordinate values along the N axes.
+                     This is used for non-uniform grids.
+
+             *acc*
+                     accuracy order, must be positive integer, default is 2
+
+        """
+
+    """A representation of the Laplace operator in arbitrary dimensions using finite difference schemes"""
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+    def __call__(self, f):
+        """
+        Applies the Laplacian to the array f.
+
+        :param f: ``numpy.ndarray``
+                
+               a vector function of N variables, so its array has N+1 axes.
+        
+        :returns: ``numpy.ndarray``
+            
+               the Laplacian, which is a scalar function of N variables, so it's array dimension has N axes
+                
+        """
+        # if not isinstance(f, np.ndarray) and not isinstance(f, list):
+        #     raise TypeError("Function to differentiate must be numpy.ndarray or list of numpy.ndarrays")
+
+        # if len(f.shape) != self.ndims + 1 and f.shape[0] != self.ndims:
+        #     raise ValueError("Laplacian can only be applied to vector functions of the same dimension")
+
+        result = np.zeros(f.shape[1:])
+
+        for k in range(self.ndims):
+            result += self.componentsec2[k](f[k], acc=self.acc)
+
+        return result
+
+class Hessian(VectorOperator):
+    r"""
+        The N-dimensional Hessian operator.
+
+        .. math::
+
+           {\rm \bf \nabla\otimes\nabla} 
+
+        :param kwargs:  exactly one of *h* and *coords* must be specified
+
+             *h* 
+                     list with the grid spacings of an N-dimensional uniform grid     
+             *coords*
+                     list of 1D arrays with the coordinate values along the N axes.
+                     This is used for non-uniform grids.
+
+             *acc*
+                     accuracy order, must be positive integer, default is 2
+
+        """
+
+    """A representation of the Hessian operator in arbitrary dimensions using finite difference schemes"""
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+    def __call__(self, f):
+        """
+        Applies the Hessian to the array f.
+
+        :param f: ``numpy.ndarray``
+                
+               a vector function of N variables, so its array has N+1 axes.
+        
+        :returns: ``numpy.ndarray``
+            
+               the Hessian, which is a scalar function of N variables, so it's array dimension has N axes
+                
+        """
+        size=list(f.shape)
+        size.append(self.ndims**2)
+        result=np.zeros(size)
+        for k in range(self.ndims**2):
+            dd=self.componentcross[k]
+            result[...,k]=dd(f, acc=self.acc)
+
+        return result
