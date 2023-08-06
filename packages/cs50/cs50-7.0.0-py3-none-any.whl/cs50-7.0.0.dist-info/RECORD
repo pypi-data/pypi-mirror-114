@@ -1,0 +1,15 @@
+cs50/__init__.py,sha256=GRgMDXFXdDjy99tvf5luvjAg9b1rvyWl2nbFEUn4XsA,122
+cs50/_engine.py,sha256=Y-zOlnlmqBZc7-E45Dhf4PC-E-NF6NBOnQeBMV-uMVg,1830
+cs50/_engine_util.py,sha256=at6YQ9a62SEEtqpjzj4n0UYS6bCmVi9R5kxZPq4WorM,1168
+cs50/_logger.py,sha256=jpQbHUZ8yxesK8xcJvJfkKhhMh22d7QVS9CnHHYjy8g,2728
+cs50/_sql_sanitizer.py,sha256=h_dzb3Ku_JS5S0HfmuDJoSO3ZkqX1AQttYkrSbNE4lM,3531
+cs50/_sql_util.py,sha256=ko77OdqjO-Xr2EmzEJ9a6vPTT47RgwVlI_egWsIM5XE,1414
+cs50/_statement.py,sha256=JHd5j519fzmCPQQnKrodKTsJgCudMLQy-FkixlvUxp8,8548
+cs50/_statement_util.py,sha256=5VSE3BxDy7kwRKLP_CIEu8DL2MEkyuTrQyzukiArRto,2438
+cs50/cs50.py,sha256=7185xmXs1GJ7u5EiwDsbFAiNdPiHv-wdPBavwC-9xi4,2605
+cs50/sql.py,sha256=zsSaeBxgKLSneb334BkmifHhV-MZ639Al7BYZVyrB9Q,4296
+cs50-7.0.0.dist-info/LICENSE,sha256=_n-s3qDwYECVu64BBqWCCWve2zxhHeuQSeCy7TU1Qo8,1049
+cs50-7.0.0.dist-info/METADATA,sha256=UsqZMUeENIrmwAjC-c9htv2hBASM_tnT0cLBt9nJ5Hk,581
+cs50-7.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cs50-7.0.0.dist-info/top_level.txt,sha256=UBEotoWNbmA_aSszS4gokveyc8I6ZIfELJxG43wm4_U,5
+cs50-7.0.0.dist-info/RECORD,,
