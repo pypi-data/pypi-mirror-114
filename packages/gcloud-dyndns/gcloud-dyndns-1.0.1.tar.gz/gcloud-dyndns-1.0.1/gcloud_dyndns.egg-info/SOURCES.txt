@@ -1,0 +1,10 @@
+README.md
+setup.py
+bin/update-gcloud-dns
+gcloud_dynamic_dns/__init__.py
+gcloud_dynamic_dns/dns.py
+gcloud_dyndns.egg-info/PKG-INFO
+gcloud_dyndns.egg-info/SOURCES.txt
+gcloud_dyndns.egg-info/dependency_links.txt
+gcloud_dyndns.egg-info/requires.txt
+gcloud_dyndns.egg-info/top_level.txt

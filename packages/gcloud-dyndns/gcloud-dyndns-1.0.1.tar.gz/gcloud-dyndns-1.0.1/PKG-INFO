@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: gcloud-dyndns
+Version: 1.0.1
+Summary: Update GCP Cloud DNS using the host's publicly visible IP address
+Home-page: https://github.com/jasonrig/gcloud-dyndns
+Author: Jason Rigby
+Author-email: hello@jasonrig.by
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
