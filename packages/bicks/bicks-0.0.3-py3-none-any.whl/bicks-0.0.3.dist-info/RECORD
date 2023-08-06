@@ -1,0 +1,13 @@
+bicks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bicks/bicsearch.py,sha256=0JI6jYCItiT7rQoUfOZcmH-9lnVB_7jUqUfgZ-INiiE,26899
+bicks/boundryconditionwithcTIR.py,sha256=MSq4-UlW_uVX1oH7VMyOyGrO-JgXH913_C5YfXENJh4,14406
+bicks/crystalandnumber.py,sha256=ARt0ndCvqmHeDUg2jSp_QxchPrwnRSrb-L14UX2e0hQ,5819
+bicks/eigenkpar.py,sha256=zZyjP3oPe48lTsZyzu9sNQ21eZTQlyH8-T_io7SDJjk,4386
+bicks/field.py,sha256=VdP-5aSmym_Jb94zCqXNqfSClyQVvMVqM4Tq81G_DfY,16605
+bicks/mathtool.py,sha256=DG5l2aoOeUNSpK_sqrpevN72SswlNUZXhGuW84Dmp4w,4389
+bicks/photoniccrystalbandprojection.py,sha256=hxbzz64ddsN5x8dNkmBX5gpW1-zP4wjI6REZbG-SgEM,6357
+bicks-0.0.3.dist-info/LICENSE,sha256=mpuzZlBnHZyukKNSVQvXj3MQzmTJ-9z4_6xXxSZk5nU,1065
+bicks-0.0.3.dist-info/METADATA,sha256=QcAv-DXs72f-K5zUcpJT4ewGev9kL21oMVlrb7EWI9c,1191
+bicks-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bicks-0.0.3.dist-info/top_level.txt,sha256=q7ba6vbDOmJmsKNDAgl02Dpa8NNl8pE0QtRNnUXUb0I,6
+bicks-0.0.3.dist-info/RECORD,,
