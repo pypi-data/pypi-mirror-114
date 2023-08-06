@@ -1,0 +1,14 @@
+Release/_impl.cp38-win_amd64.exp,sha256=M6O80bvQw0dKU8LSJ-yNBgybIjzUEG1-N0Io-uLJHZM,737
+Release/_impl.cp38-win_amd64.lib,sha256=URqmQk28ldvv4HhxM_eOr_AOw-ZLH72R9Pct1WBbJbc,1964
+stt/__init__.py,sha256=SL36p3tNT0hdu3bpXY4gqjiK2YVSA0ToJeXcbtSW4h0,13488
+stt/_impl.cp38-win_amd64.pyd,sha256=cL6Zhp4_BnhrxDQfnfbQgBAbRAr-n8K6IZc-wNK3sJg,76288
+stt/client.py,sha256=BXCVLU4ILhrQYtaGEpmpgYtfIcKIyO955UmIoCwozWE,7020
+stt/impl.py,sha256=7nx1D04p8biiiZHbE4fSa-2iv-wJ8KSRSn2Kj-ILRKc,7409
+stt/lib/libkenlm.so,sha256=Z46PQ_4JnGY45lkYkGm01RMSN9bCN-vTrGO5IWbbP5I,340992
+stt/lib/libstt.so,sha256=pDmJKd2rB8RTBOTlI9-0L5iaJpMevb6JyXtdyVFCON8,693760
+stt/lib/libtensorflowlite.so,sha256=4kMvJ4RJckl58L-dQfE1WA-NqqG6DvEXGpnn2oJpZOc,14723584
+stt-0.10.0a12.dist-info/METADATA,sha256=Eeh45fxSdcGbZle1kmmQ5baKbXfjEMCXtkaqk4eQUOo,1341
+stt-0.10.0a12.dist-info/WHEEL,sha256=HLtxc_HoM-kGM7FPJVPSnTt0Nv2G3fZEAjT3ICdG8uY,100
+stt-0.10.0a12.dist-info/entry_points.txt,sha256=-RJKAhqFH3le0allDtX9BNVyOHyAXMbyweoEXUinoRI,41
+stt-0.10.0a12.dist-info/top_level.txt,sha256=U36suN9i5BZ2UbKj5dzgbpHmkIEAvyge7wRwJVB24jk,4
+stt-0.10.0a12.dist-info/RECORD,,
