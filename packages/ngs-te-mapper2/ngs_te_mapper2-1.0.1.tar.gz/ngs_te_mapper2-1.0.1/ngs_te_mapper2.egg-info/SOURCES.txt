@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ngs_te_mapper2/__init__.py
+ngs_te_mapper2/ngs_te_mapper2.py
+ngs_te_mapper2/utility.py
+ngs_te_mapper2.egg-info/PKG-INFO
+ngs_te_mapper2.egg-info/SOURCES.txt
+ngs_te_mapper2.egg-info/dependency_links.txt
+ngs_te_mapper2.egg-info/top_level.txt
