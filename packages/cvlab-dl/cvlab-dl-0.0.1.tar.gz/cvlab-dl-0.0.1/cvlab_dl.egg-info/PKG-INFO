@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: cvlab-dl
+Version: 0.0.1
+Summary: An unified laboratory/framework for Computer Vision research, development and deployment.
+Home-page: https://github.com/AlanDecode/cvlab
+Author: AlanDecode
+Author-email: zytbuaa1415@gmail.com
+License: MIT
+Description: 
+        # cvlab
+        
+        An unified laboratory/framework for Computer Vision research, development and
+        deployment. Here we cover the whole life cycle of CV models: building, training,
+        evaluation, optimization and deployment.
+        
+        We roughly target these platform/frameworks internally:
+        
+        ```
+        Python >= 3.6
+        PyTorch >= 1.6
+        TensorFlow >= 1.15
+        ONNX >= 1.7
+        TensorRT >= 6
+        ```
+        
+        Other dependencies could be found in `requirements.txt`.
+        
+        ## About the project
+        
+        This project empowers CV developers with several tool boxes, and we try our best
+        to make each of them independent enough so that you can extract them from this
+        project and use them in your own.
+        
+        **Curated models**. Loads of new models are coming to the world every day,
+        but only some of them are proven to be real applicable, these models are hand
+        picked by our own experience during everyday work, covering multiple tasks
+        including image classification, detection, segmentation, etc. We provide
+        *implementation of these models*, *pre-trained weights*, and *an nice guide to
+        re-train/fine tune them* on your own data. Utilizing our optimization and
+        deployment tools, these models can be deployed and start creating **real value**
+        for you.
+        
+        You can absolutely build new models and train, test, evaluate, optimize, deploy
+        them with exactly the same tool chain which already existed models used.
+        
+        **Deployment toolbox**. Nice models are just the first step towards application,
+        the work after training a model is often complicated and painful, such as model
+        conversion from one platform to others, quantization and compressing, graph
+        optimization for inference and so on. We provide several utilities about these
+        tasks, hope they can be helpful.
+        
+        **Evaluation metrics**. Without reasonable metrics we can't tell the performance
+        of anything. We provide easy-to-use tools to measure the performance of your
+        models with the most popular metrics of certain tasks. We believe by providing
+        such unified tools can greatly improve the everyday work experience for us.
+        
+        **Miscellaneous tools**. We provide a bunch of tools that are nice if you have
+        them, so you don't need to write them over and over again, such as visualization
+        tools, dataset adapters, loggers, etc.
+        
+        ## LICENSE
+        
+        MIT © [AlanDecode](https://www.imalan.cn)
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
