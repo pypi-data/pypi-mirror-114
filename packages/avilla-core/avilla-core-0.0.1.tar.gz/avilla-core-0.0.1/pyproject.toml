@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "avilla-core"
+version = "0.0.1"
+description = ""
+authors = ["GreyElaina <GreyElaina@outlook.com>"]
+license = "MiT"
+packages = [
+    { include = "avilla", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+graia-broadcast = "^0.11.3"
+pydantic = "^1.8.2"
+yarl = "^1.6.3"
+aiohttp = "^3.7.4"
+aiofiles = "^0.7.0"
+immutables = "^0.15"
+
+[tool.poetry.dev-dependencies]
+black = "^21.6b0"
+isort = "^5.9.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target-version = ['py38']
+include = '\.pyi?$'
