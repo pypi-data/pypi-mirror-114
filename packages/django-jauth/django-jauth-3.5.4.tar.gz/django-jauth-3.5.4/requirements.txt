@@ -1,0 +1,5 @@
+Django>=3.1.0
+django-extensions>=2.1.9
+pytz>=2019.1
+djangorestframework>=3.12
+requests>=2.22.0
