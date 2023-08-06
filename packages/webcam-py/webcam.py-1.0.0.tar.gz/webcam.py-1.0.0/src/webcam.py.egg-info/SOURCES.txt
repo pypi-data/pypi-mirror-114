@@ -1,0 +1,8 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+src/webcam.py.egg-info/PKG-INFO
+src/webcam.py.egg-info/SOURCES.txt
+src/webcam.py.egg-info/dependency_links.txt
+src/webcam.py.egg-info/top_level.txt
