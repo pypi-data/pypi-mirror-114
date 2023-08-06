@@ -1,0 +1,12 @@
+artifactable/__init__.py,sha256=FVHPBGkfhbQDi_z3v0PiKJrXXqXOx0vGW_1VaqNJi7U,22
+artifactable/__main__.py,sha256=V0_eqYbAfN5zfWAuJl8RRG7czxgUf814OAU9HJHWT-c,65
+artifactable/client.py,sha256=WVpu7J9aNhf0Kn5OQnBF0CgWThjy7YOgSzDxN0NI7xg,732
+artifactable/commands.py,sha256=a_iVeZ6l07HGDfpgfpU1buNv3HDrmbjREkPagA3Wnec,3501
+artifactable/config.py,sha256=YMUTLdRWjItUvaIuH3CqTmKtvZSPUvmwvX2dhjhQdbU,3394
+artifactable/loggers.py,sha256=aDwwejepOrTUUrRO_ntvK7AIHG-SkcdnKdfAlLgLIzc,777
+artifactable-0.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+artifactable-0.2.0.dist-info/METADATA,sha256=_N2Qn_AOz7VYDjtEKCKyNW6zTT96du8EG3Zd64pg9EU,403
+artifactable-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+artifactable-0.2.0.dist-info/entry_points.txt,sha256=UPWKx_pXPSPHvZOM4N9PRmgM4Ws-pa-Y5UzRt6EBbO8,60
+artifactable-0.2.0.dist-info/top_level.txt,sha256=LznRDleE7-RMWPKf_tE08Waj4r5_4yH8WDdQNT0fxBc,13
+artifactable-0.2.0.dist-info/RECORD,,
