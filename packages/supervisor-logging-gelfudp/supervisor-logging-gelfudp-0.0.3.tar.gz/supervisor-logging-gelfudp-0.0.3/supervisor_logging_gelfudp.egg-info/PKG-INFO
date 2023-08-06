@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: supervisor-logging-gelfudp
+Version: 0.0.3
+Summary: Stream supervisord logs to a Graylog instance, now with GELFUDP!
+Home-page: https://github.com/ianbruton/supervisor-logging-gelfudp
+Author: PerformLine Engineering
+Author-email: nathan@performline.com
+License: Apache 2.0
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+

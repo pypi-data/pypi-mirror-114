@@ -1,0 +1,3 @@
+[console_scripts]
+supervisor_logging_gelfudp = supervisor_logging_gelfudp:main
+
