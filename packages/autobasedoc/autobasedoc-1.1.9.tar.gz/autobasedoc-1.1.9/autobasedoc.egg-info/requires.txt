@@ -1,0 +1,6 @@
+reportlab
+pdfrw
+svglib
+cycler
+matplotlib
+img2pdf
