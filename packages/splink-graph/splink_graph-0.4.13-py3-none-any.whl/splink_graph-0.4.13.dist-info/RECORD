@@ -1,0 +1,13 @@
+LICENSE,sha256=Dkcur3cTMHFTQCcSwNSb6TdYOLjmqncKu5RPSkSpDtA,1100
+splink_graph/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+splink_graph/cc.py,sha256=Gwtk6kk99b1AyZbdmMUBVtaAqu4tP9tDupDQRdClejA,3340
+splink_graph/cluster_metrics.py,sha256=4xPnlC9NLWV1AZT-4h560xtkGNh-4QIbMRDC2PwfVUk,18815
+splink_graph/edge_metrics.py,sha256=Zxie6xD0SGSyKBTkfrhNYjWbNsIJdxyqB5QFUMwrhO0,4488
+splink_graph/embedding/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+splink_graph/embedding/n2v.py,sha256=d5nUPSYpR_u9GJXmTm7v3z1tGQ_ZUZEOzYxQ4AeOzIs,2545
+splink_graph/node_metrics.py,sha256=-tbe52SXXzJ0ukNGOtFQeG7-_1Z5CHX7h0dQyM97RHk,6522
+splink_graph/utils.py,sha256=eCRvEF8Yqfgnc9te-1akGyZ0o5fczCghHEPHz-zfwCc,6969
+splink_graph-0.4.13.dist-info/LICENSE,sha256=Dkcur3cTMHFTQCcSwNSb6TdYOLjmqncKu5RPSkSpDtA,1100
+splink_graph-0.4.13.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+splink_graph-0.4.13.dist-info/METADATA,sha256=akYi5QSpMsRJc3vFMn-L8_dWZnh5GWV0LXNs3iBoJIg,5350
+splink_graph-0.4.13.dist-info/RECORD,,
