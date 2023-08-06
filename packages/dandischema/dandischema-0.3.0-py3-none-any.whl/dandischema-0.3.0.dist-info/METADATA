@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: dandischema
+Version: 0.3.0
+Summary: Schemata for DANDI archive project
+Home-page: http://dandiarchive.org
+Author: DANDI developers
+Author-email: team@dandiarchive.org
+Maintainer: Yaroslav O. Halchenko
+Maintainer-email: debian@onerussian.com
+License: Apache 2.0
+Project-URL: Source Code, https://github.com/dandi/dandischema
+Platform: OS Independent
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8
+License-File: LICENSE
+Requires-Dist: jsonschema
+Requires-Dist: pydantic[email] (>=1.8.1)
+Requires-Dist: requests
+Requires-Dist: typing-extensions ; python_version < "3.8"
+Provides-Extra: all
+Requires-Dist: flake8 ; extra == 'all'
+Requires-Dist: pre-commit ; extra == 'all'
+Requires-Dist: pytest ; extra == 'all'
+Requires-Dist: pytest-cov ; extra == 'all'
+Requires-Dist: requests ; extra == 'all'
+Provides-Extra: style
+Requires-Dist: flake8 ; extra == 'style'
+Requires-Dist: pre-commit ; extra == 'style'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: requests ; extra == 'test'
+
+A Python library for maintaining and managing DANDI metadata schemata. The
+library helps create and validate DANDI schema-compliant metadata for Dandisets
+and assets.
+
+To use: `pip install dandischema`
+
+More documentation coming soon.
+
+
