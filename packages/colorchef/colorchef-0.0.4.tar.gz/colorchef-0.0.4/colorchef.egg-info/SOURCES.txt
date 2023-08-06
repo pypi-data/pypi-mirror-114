@@ -1,0 +1,7 @@
+setup.py
+colorchef/__init__.py
+colorchef/colorchef.py
+colorchef.egg-info/PKG-INFO
+colorchef.egg-info/SOURCES.txt
+colorchef.egg-info/dependency_links.txt
+colorchef.egg-info/top_level.txt
