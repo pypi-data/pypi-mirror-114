@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: random-nipple-player
+Version: 0.1
+Summary: 音声作品「乳首オナ指示でカリカリタイム」(RJ323807)用のプレイヤー
+Home-page: https://github.com/eggplants/random-nipple-player
+Author: eggplants
+License: MIT
+Description: # Random Nipple Player
+        
+        音声作品「[乳首オナ指示でカリカリタイム](https://www.dlsite.com/maniax/work/=/product_id/RJ323807.html)」(RJ323807)用のプレイヤー
+        
+        ## Screenshot
+        
+        ![scr1](img/scr1.png)
+        
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
