@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: SPLayout
+Version: 0.0.7
+Summary: Silicon Photonics Design Tools for GDSII Files.
+Home-page: https://github.com/Hideousmon/SPLayout
+Author: Zhenyu ZHAO
+Author-email: mailtozyzhao@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: gdspy
+
+UNKNOWN
+
+
