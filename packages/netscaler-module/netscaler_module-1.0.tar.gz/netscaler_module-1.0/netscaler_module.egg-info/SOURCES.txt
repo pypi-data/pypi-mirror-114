@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+netscaler_module/__init__.py
+netscaler_module/nitro.py
+netscaler_module.egg-info/PKG-INFO
+netscaler_module.egg-info/SOURCES.txt
+netscaler_module.egg-info/dependency_links.txt
+netscaler_module.egg-info/requires.txt
+netscaler_module.egg-info/top_level.txt
