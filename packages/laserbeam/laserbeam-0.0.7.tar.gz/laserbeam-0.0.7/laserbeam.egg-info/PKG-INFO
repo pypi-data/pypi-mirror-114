@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: laserbeam
+Version: 0.0.7
+Summary: Gitflow release tool
+Home-page: https://github.com/karl-webster/laserbeam
+Author: Karl Webster
+Author-email: karlwebster97@gmail.com
+License: UNKNOWN
+Description: # laserbeam - Gitflow release tool
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
