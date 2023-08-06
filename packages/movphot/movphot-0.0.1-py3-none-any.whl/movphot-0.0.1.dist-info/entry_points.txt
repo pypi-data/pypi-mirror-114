@@ -1,0 +1,3 @@
+[console_scripts]
+phot_color = movphot.scripts.phot_color:main
+

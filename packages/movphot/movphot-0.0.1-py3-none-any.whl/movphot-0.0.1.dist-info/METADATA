@@ -1,0 +1,214 @@
+Metadata-Version: 2.1
+Name: movphot
+Version: 0.0.1
+Summary: moving object photometry
+Home-page: https://bitbucket.org/jin_beniyama/movphot/src/master/
+Author: Jin BENIYAMA
+Author-email: beniyama@ioa.s.u-tokyo.ac.jp
+Maintainer: Jin BENIYAMA
+Maintainer-email: beniyama@ioa.s.u-tokyo.ac.jp
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: astropy
+Requires-Dist: astroquery
+
+# Moving Object Photometry (movphot)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+[developer mail](mailto:beniyama@ioa.s.u-tokyo.ac.jp)
+
+## Overview
+
+Photometry of moving objects could be done in this repository.
+Though optimized for Seimei/TriCCS data,
+you can apply it for imaging data taken with
+other telescopes (MITSuME, MuSaSHI, MuSCUT, etc.)
+
+Successive analyses below are done using other scripts.
+See README.md in each directory for detail.
+
+- Periodic analysis
+Use `package4peri`(in preparation).
+- Visualization (Plot object light curve, comparison light curve, etc.)
+and Spectral type estimation
+Use `package4vis`(in preparation) to plot lightcurve, color-color diagrams and
+reflectance on Bus-DeMeo templates.
+
+### Procedure
+
+1. Standard reduction
+dark(bias) subtraction, flat fielding, split fits from 3d to 2d
+Use `TriCCS Data Reduction (TDR)` ([bitbucket](https://bitbucket.org/jin_beniyama/triccs-data-reduction/src/master/)).
+2. Create a comparison star catalog
+3. Create standard location text (x, y, nframe)
+4. Photometry
+
+## Installing
+```
+# Install from PyPI
+pip install movphot
+```
+or
+```
+# Install with `setup.py`
+git clone https://jin_beniyama@bitbucket.org/jin_beniyama/movphot.git
+python setup.py install
+```
+
+## Usage
+
+Here 3-bands observation by Seimei/TriCCS is assumed.
+So `psdb.py` is used to handling the database for comparison stars.
+If you need other catalogs for data taken by other instruments,
+you can also use `gaiadb.py` or other scripts.
+
+### 0. Standard reduction
+
+Input fits data should be 2-dimensional even taken with TriCCS.
+Standard reduction and splitting fits could be done using scripts in
+`TriCCS Data Reduction (TDR)` ([bitbucket](https://bitbucket.org/jin_beniyama/triccs-data-reduction/src/master/)).
+
+
+### 1. Create a comparison star catalog
+
+The first step before photometry is to construct a homemade catalog database.
+When your fits file has almost correct WCS coordinates,
+type commands below.
+
+At first, create a catalog database you are interested in.
+When you used Seimei/TriCCS(Pan-STARRS system), create
+Pan-STARRS catalog database as `ps.db` in `~/db4movphot/` (hereinafter `db`).
+Please specify a directory to change the path of the database
+in `psdb.py` and in `phot_color` as optional arguments.
+The database should be created manually until the automated function will be
+implemented in near future.
+
+```
+[usage]
+# Create database (once)
+psdb.py dbstart --first
+# Create new tables
+psdb.py create --table (table name)
+# Insert stars to database
+psdb.py insert --tablename (table name) --ra (ra in degree) --dec (dec in degree)
+--radius (fov radius in degree) --magmin (minimum magnitude) --magmax (maximum magnitude)
+# Check stars in database
+psdb.py extract --tablename (table name) --ra (ra in degree) --dec (dec in degree)
+--radius (fov radius in degree) --magmin (minimum magnitude) --magmax (maximum magnitude)
+
+[example]
+# Create 2021DX1 table.
+# Observed locations are below.
+psdb.py create --table _2021DX1
+psdb.py insert --table _2021DX1 --ra 208.87 --dec 44.68 --radius 0.2 --magmin 12 --magmax 21
+```
+
+### 2. Create standard location text
+
+The next step is registering target locations.
+Ephemerides of newly discovered fast-moving (v > a few arcsec/s) asteroids
+are sometimes not perfect.
+In this script, use some observed points of the target in the 2nd band and
+interpolate and extrapolate them to determine photometry circle locations.
+If the target is close to any stars, it is better to remove it as an outlier.
+But `eflag` is useful to remove contaminations after photometry.
+
+All information needed to create location text is x, y (pixel number) and
+nframe (number of frames).
+The format example
+when moving object is at (100,200) and (150, 230) in 3rd and 13th frames.
+
+```
+[location_band2.txt]
+x y nframe
+100 200 3
+150 230 13
+```
+
+### 3. Photometry
+
+Photometry is done using `ps.db`, `location.txt` and some input parameters.
+Typical FWHM is needed (by IRAF projection etc.)
+and should be converted to pixel scale by the observer.
+There are 2 photometry types:
+
+1. app (circle aperture photometry)
+2. iso (isophotal photometry, in prep.)
+
+Before photometry, create a fits list, for example, by
+
+```
+cat *(band unique character)*.fits > fitslist_band.txt
+```
+
+and save as `fitslist_band1.txt`, `fitslist_band2.txt` and `fitslist_band3.txt`.
+
+The photometry command examples are below.
+If the database is not in the current directory, please specify the `db` path.
+2 parameters, `refmagmax` and `refmagmin`, are used to
+
+1. create a mask to calculate `eflag` values (both target and comparison stars)
+2. do comparison star photometry
+.
+
+```
+[usage]
+phot_color (obj) (instrumental) (fitslist_band1.txt) (fitslist_band2.txt) (fitslist_band3.txt)
+(fitsdir) (location_band2.txt) --bands (band1) (band2) (band3) --catalog (catalogname)
+--table (tablename) --radius_ref (photometry radius of comparison stars)
+--radius_obj (photometry radius of object) --refphot (photometry type of comparison stars)
+--objphot (photmetry type of comparison stars)
+--refmagmax (maximum comparison magnitude) --refmagmin (minimum comparison magnitude)
+
+[example]
+photcolor 2021DX1 TriCCS glist9.txt rlist9.txt zlist9.txt wcs
+standardr9.txt --bands g r z --catalog ps --table _2021DX1 --radius_ref 25
+--radius_obj 25 --refphot app --objphot app --refmagmax 20 --refmagmin 12
+```
+
+The result is saved as `photometry_result.txt`.
+Visualization and detail analyses can be done in other repositories in the overview.
+Unfavorable objects (such as too redder or low Quality) should be removed
+at that time.
+
+## Visualization
+
+1. Plot Color Term (CT), Color Transformation Gradient (CTG), Color
+Transformation Intercept (CTI) and object light curve by `plot_colorterm.py`
+
+These values are important for absolute calibrations if standard stars
+are different in each frames (due to fast-moving etc.)
+
+Command,
+
+```
+[usage]
+plot_colorterm.py (objname) photometric_result.csv
+--bands (band1) (bands2) (band3)
+
+[example]
+plot_colorterm.py 2021EX1 photometric_result.csv
+--bands g r i
+```
+
+generates
+
+- figure: `mag_inst - mag_catalog` vs `color_catalog`
+- figure: `color_instrument` vs `color_catalog`
+- figure: magnitude light curve
+- figure: color light curve
+- csv: time series result including colors
+.
+
+## Dependencies
+
+This library is depending on `NumPy`, `SciPy` and `SEP`.
+Scripts are developed on `Python 3.7.10`, `NumPy 1.19.2`, `SciPy 1.6.1`
+and `SEP 1.0.3`.
+
+## LICENCE
+
+This software is released under the MIT License.
+
+

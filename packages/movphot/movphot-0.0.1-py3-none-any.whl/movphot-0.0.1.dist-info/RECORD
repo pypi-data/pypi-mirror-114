@@ -1,0 +1,14 @@
+movphot/__init__.py,sha256=FZk9hm7vBsK8G16pNugputbrrEciYqJc_XRAhTCcojI,46
+movphot/common.py,sha256=SY9eP251BbbsoRaYg-d-0UtM-ttoT0Rf4VCw9vtAFDk,8294
+movphot/movphot.py,sha256=l-1y4u3tSR6Kc4u1IIkIt5BOQ87gUAZh9pNrdtsMWxc,10599
+movphot/photfunc.py,sha256=93RaWGCeZEaCFbgo_yLAYwsx-an6TXkzgWUBn_bElYs,18245
+movphot/psdb.py,sha256=h1SpXnjUKdQQKcmtP5s2y9fcNX4KDOf6He0a-CRXSMM,9803
+movphot/visualization.py,sha256=3StzNTlobJcNOkdVTfQhJXf5wLkooLYmdW9XsbhfQ1U,2818
+movphot/scripts/phot_color.py,sha256=ZBtALNFjNsfLuCV8QRqdccsMSnuOaW9F54b4E_EKe3I,14686
+movphot/scripts/plot_colorterm.py,sha256=ocKzptMujZbf4rPYu0Z7z_h1Ws__KzLack4z4z9GC0k,35645
+movphot-0.0.1.dist-info/LICENCE,sha256=gv1hvozzSscwzYzsb9bXW0yeyixP4b67VqyEirnjUfk,1054
+movphot-0.0.1.dist-info/METADATA,sha256=LGb1utTEasVx4c3oOSD0tG8ChDIhrYxUtPHisN9B-_E,6963
+movphot-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+movphot-0.0.1.dist-info/entry_points.txt,sha256=iM9CJq9sfJ7S6gEkzq7y3a4uXmmXIPOnhxm1bCsmSkA,64
+movphot-0.0.1.dist-info/top_level.txt,sha256=OZ2_N7ojKsaPEQta-BY8zYitvvCHp5o6P5Sl2OrchBk,8
+movphot-0.0.1.dist-info/RECORD,,
