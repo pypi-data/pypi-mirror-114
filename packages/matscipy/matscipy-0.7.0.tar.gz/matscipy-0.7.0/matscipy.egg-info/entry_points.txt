@@ -1,0 +1,5 @@
+[console_scripts]
+c2d = matscipy.cli.electrochemistry.c2d:main [cli]
+pnp = matscipy.cli.electrochemistry.pnp:main [cli]
+stericify = matscipy.cli.electrochemistry.stericify:main [cli]
+
