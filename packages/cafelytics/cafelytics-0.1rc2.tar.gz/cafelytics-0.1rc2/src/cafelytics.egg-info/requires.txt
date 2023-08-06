@@ -1,0 +1,16 @@
+numpy
+matplotlib
+pandas
+timedelta
+
+[:python_version < "3.7"]
+dataclasses
+
+[dev]
+faker
+pytest
+pytest-cov
+pre-commit
+coveralls
+black
+flake8

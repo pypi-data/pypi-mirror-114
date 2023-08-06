@@ -1,0 +1,16 @@
+.pre-commit-config.yaml
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+simulate.py
+data/fakeData.csv
+src/cafe/__init__.py
+src/cafe/fakeData.py
+src/cafe/farm.py
+src/cafelytics.egg-info/PKG-INFO
+src/cafelytics.egg-info/SOURCES.txt
+src/cafelytics.egg-info/dependency_links.txt
+src/cafelytics.egg-info/not-zip-safe
+src/cafelytics.egg-info/requires.txt
+src/cafelytics.egg-info/top_level.txt
