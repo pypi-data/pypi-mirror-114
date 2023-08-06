@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "id": "services.x-cluster",
+    "$id": "services.x-cluster.spec.json",
+    "type": "object",
+    "title": "services.x-cluster specification",
+    "description": "The services.x-cluster specification for ComposeX",
+    "properties": {
+        "EnableEcsCommand": {
+            "type": "boolean"
+        },
+        "AccessConditions": {
+            "type": "object",
+            "description": "Series of predefined conditions to automatically add",
+            "properties": {
+                "LimitToEcsCluster": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Whether or not IAM task policy should limit to current ECS Cluster"
+                }
+            }
+        },
+        "Policies": {
+            "type": "array",
+            "items": {
+                "$ref": "services.x-iam.spec.json#/definitions/PolicyDef"
+            }
+        }
+    }
+}

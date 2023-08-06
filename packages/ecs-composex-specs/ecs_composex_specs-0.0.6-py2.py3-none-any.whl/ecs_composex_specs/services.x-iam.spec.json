@@ -1,0 +1,82 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "services.x-iam.spec.json",
+    "type": "object",
+    "title": "services.x-iam specification",
+    "description": "The services.x-iam specification for ComposeX",
+    "additionalProperties": false,
+    "properties": {
+        "PermissionsBoundary": {
+            "type": "string"
+        },
+        "Policies": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/PolicyDef"
+            }
+        },
+        "ManagedPolicyArns": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "definitions": {
+        "PolicyDef": {
+            "type": "object",
+            "properties": {
+                "PolicyName": {
+                    "type": "string"
+                },
+                "PolicyDocument": {
+                    "type": "object",
+                    "properties": {
+                        "Statement": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/Statement"
+                            }
+                        },
+                        "Version": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "Statement": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+                "Sid": {
+                    "type": "string"
+                },
+                "Action": {
+                    "type": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "Principal": {
+                    "type": "object"
+                },
+                "Effect": {
+                    "type": "string"
+                },
+                "Resource": {
+                    "type": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "Conditions": {
+                    "type": [
+                        "string",
+                        "object"
+                    ]
+                }
+            }
+        }
+    }
+}

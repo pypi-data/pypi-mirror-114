@@ -1,0 +1,141 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "x-elbv2.spec.json",
+    "type": "object",
+    "title": "x-elbv2",
+    "description": "The specifications of x-elbv2 in ComposeX",
+    "properties": {
+        "Properties": {
+            "type": "object"
+        },
+        "MacroParameters": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+                "Ingress": {
+                    "$ref": "ingress.spec.json"
+                }
+            }
+        },
+        "Listeners": {
+            "type": "array"
+        },
+        "Services": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/TargetDef"
+            }
+        },
+        "Settings": {
+            "type": "object",
+            "properties": {
+                "Subnets": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "definitions": {
+        "TargetDef": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "name",
+                "protocol",
+                "port",
+                "healthcheck"
+            ],
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "protocol": {
+                    "$ref": "#/definitions/Protocol"
+                },
+                "port": {
+                    "$ref": "#/definitions/Port"
+                },
+                "healthcheck": {
+                    "type": "string"
+                }
+            }
+        },
+        "TargetRule": {
+            "type": "object",
+            "required": [
+                "name"
+            ],
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "access": {
+                    "type": "string"
+                },
+                "CreateCognitoClient": {
+                    "type": "object",
+                    "additionalProperties": true,
+                    "required": ["UserPoolId"],
+                    "description": "Allows to create a new UserPool Client when using AuthenticateCognitoConfig and x-cognito_userpool",
+                    "properties": {
+                        "UserPoolId": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "AuthenticateCognitoConfig": {
+                    "type": "object",
+                    "description": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticatecognitoconfig.html"
+                },
+                "AuthenticateOidcConfig": {
+                    "type": "object"
+                }
+            }
+        },
+        "Listener": {
+            "type": "object",
+            "properties": {
+                "Port": {
+                    "$ref": "#/definitions/Port"
+                },
+                "Protocol": {
+                    "$ref": "#/definitions/Protocol"
+                },
+                "SslPolicy": {
+                    "type": "string"
+                },
+                "Certificates": {
+                    "type": "array",
+                    "items": {
+                        "type": [
+                            "string",
+                            "object"
+                        ]
+                    }
+                },
+                "DefaultActions": {
+                    "type": "array"
+                },
+                "Targets": {
+                    "type": "array"
+                }
+            }
+        },
+        "Port": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 65535
+        },
+        "Protocol": {
+            "type": "string",
+            "enum": [
+                "HTTP",
+                "HTTPS",
+                "TCP",
+                "UDP",
+                "TCP_UDP",
+                "TLS"
+            ]
+        }
+    }
+}
