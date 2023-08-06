@@ -1,0 +1,6 @@
+numpy
+h5py
+importRosbag>=1.0.3
+loris
+scipy
+tqdm
