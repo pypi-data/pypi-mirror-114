@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+include name.py
+graft alembic
+graft tests
+graft freenit/project
