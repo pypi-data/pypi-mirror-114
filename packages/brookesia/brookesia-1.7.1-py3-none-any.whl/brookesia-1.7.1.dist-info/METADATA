@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: brookesia
+Version: 1.7.1
+Summary: Brookesia is a python-based program dedicated to the reduction ad the optimization of kinetic mechanisms.
+Home-page: https://github.com/Brookesia-py/Brookesia
+Author: Alexis Matynia
+Author-email: alexis.matynia@sorbonne-universite.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Brookesia documentation is available at in a dedicated pdf file at:
+
+https://github.com/Brookesia-py/Brookesia/blob/master/Brookesia_documentation.pdf
+
+
