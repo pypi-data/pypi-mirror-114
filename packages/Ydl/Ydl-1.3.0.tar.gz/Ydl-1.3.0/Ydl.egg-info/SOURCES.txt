@@ -1,0 +1,9 @@
+README.md
+setup.py
+Ydl.egg-info/PKG-INFO
+Ydl.egg-info/SOURCES.txt
+Ydl.egg-info/dependency_links.txt
+Ydl.egg-info/requires.txt
+Ydl.egg-info/top_level.txt
+ydl/__init__.py
+ydl/ydl.py
