@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "coingecko-api-client"
+version = "0.1.2"
+description = "Unofficial CoinGecko API client based on HTTPX"
+authors = ["Eugene Serdyuk <eugene.serdyuk@pm.me>"]
+license = "MIT License"
+readme = "README.md"
+repository = "https://github.com/eserdk/coingecko-api-client"
+keywords = ["coingecko", "api", "client", "crypto"]
+classifiers = [
+    'Development Status :: 2 - Pre-Alpha',
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3 :: Only",
+    'Programming Language :: Python :: 3.9',
+    "Operating System :: OS Independent",
+]
+include = ["LICENSE"]
+packages = [
+    {include = "src/coingecko_api_client"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+httpx = "^0.18.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
