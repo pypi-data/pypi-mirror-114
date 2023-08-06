@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: electronic-instrument-adapter-sdk
+Version: 0.1.11
+Summary: SDK for Electronic Instrument Adapter
+Home-page: https://github.com/aalvarezwindey/electronic_instrument_adapter_sdk
+Author: Ariel Alvarez Windey & Gabriel Robles
+Author-email: ajalvarez@fi.uba.ar
+License: MIT
+Download-URL: https://github.com/aalvarezwindey/electronic_instrument_adapter_sdk/archive/refs/tags/0.1.11.tar.gz
+Description: UNKNOWN
+Keywords: SDK,ELECTRONIC,INSTRUMENT,ADAPTER,FIUBA
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
