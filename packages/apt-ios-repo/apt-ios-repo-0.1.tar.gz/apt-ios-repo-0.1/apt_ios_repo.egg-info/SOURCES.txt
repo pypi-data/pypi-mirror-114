@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+apt_ios_repo/__init__.py
+apt_ios_repo/packages.py
+apt_ios_repo/sources_list.py
+apt_ios_repo/utils.py
+apt_ios_repo.egg-info/PKG-INFO
+apt_ios_repo.egg-info/SOURCES.txt
+apt_ios_repo.egg-info/dependency_links.txt
+apt_ios_repo.egg-info/requires.txt
+apt_ios_repo.egg-info/top_level.txt
