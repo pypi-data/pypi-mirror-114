@@ -1,0 +1,11 @@
+attrs>=21.2.0
+importlab>=0.6.1
+ninja>=1.10.0.post2
+pyyaml>=3.11
+six
+tabulate
+toml
+typed_ast>=1.4.3
+
+[:python_version < "3.7"]
+dataclasses
