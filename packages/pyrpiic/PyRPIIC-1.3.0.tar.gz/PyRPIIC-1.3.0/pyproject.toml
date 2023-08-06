@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "PyRPIIC"
+version = "1.3.0"
+description = "Python RPI interface to low-level ICs"
+authors = ["Adam Page <adam.page@samtec.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Samtec-ASH/pyrpiic"
+
+[tool.taskipy.tasks]
+lint = "pylint --rcfile .pylintrc pyrpiic"
+test = "pytest tests/"
+docs = "cd docs/ && sphinx-apidoc -f -o ./source ../pyrpiic && make clean && make html"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+PyRPIO = "^0.4.0"
+bitarray = "^1.6.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.1"
+pep8 = "^1.7.1"
+pylint = "^2.9.0"
+autopep8 = "^1.5.4"
+flake8 = "^3.8.4"
+ipython = "^7.25.0"
+pyftdi = "^0.53.2"
+Sphinx = "^4.1.2"
+sphinx-rtd-theme = "^0.5.2"
+sphinx-autodoc-typehints = "^1.12.0"
+myst-parser = "^0.15.1"
+taskipy = "^1.8.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
