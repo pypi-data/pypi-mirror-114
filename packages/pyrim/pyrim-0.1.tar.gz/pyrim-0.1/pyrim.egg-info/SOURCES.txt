@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+pyrim/__init__.py
+pyrim.egg-info/PKG-INFO
+pyrim.egg-info/SOURCES.txt
+pyrim.egg-info/dependency_links.txt
+pyrim.egg-info/requires.txt
+pyrim.egg-info/top_level.txt
