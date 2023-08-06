@@ -1,0 +1,103 @@
+CHANGES
+=======
+
+0.0.2
+-----
+
+* version 0.0.2
+* tests: fedeproxy: re-use fixtures
+* tests: forge: use the forge fixture for dvcs
+* move fixtures up in the hierarchy so they can be reused
+* define milestone interface and Gitea implementation
+* https://lab.enough.community/fedeproxy/fedeproxy is the canonical name
+* add release notes
+* forge: implement load/save
+* tests: improve forge fixtures
+* forge: do not implement export
+* forge: gitlab: use python-gitlab
+* forge: create forge.Issues
+* format: define issues
+* pipenv: remove duplicate
+* remove requirement.txt and install tox-pipenv
+* forge: add identities
+* forge: define forge.User
+* tests: reorganize the content of test\_forge.py
+* tests: cleanup unused fixtures and marks
+* dvcs: add support for mercurial
+* forge: gitea: implement fork
+* tests: gitea: keep token
+* tests: do not include interfaces in coverage report
+* fedeproxy: export project to the dvcs
+* forge: move export function to project
+* forge: project: add namespace/project properties
+* forge: add project factory
+* forge: add dvcs factory
+* dvcs: add the commit method
+* tests: simplify gitea installation
+* dvcs: cloning a non-existing branch creates it
+* dvcs: repository init is idempotent
+* tests: more robust gitea fixture
+* forge: bind dvcs to Project
+* dvcs: git: directory is a property
+* dvcs: do not implement a name logic in Git
+* forge: add checkout project
+* forge: base class for Gitea / GitLab
+* forge: create Project and Issue classes
+* forge: do not create projects with root tokens
+* forge: define username property
+* forge: implement token authentication
+* tests: DRY: parametrize forge fixture
+* forge: make the url property readonly
+* forge: delete the project that was created
+* forge: export without root permissions
+* forge: issue create test using non-root user
+* forge: finalize user creation for gitlab / gitea
+* forge: create user with a password
+* interfaces: add authenticate forge method
+* tests: move forge tests based on interfaces to test\_forge.py
+* interface: add missing forge user\_delete method
+* bump version 0.0.2
+* GitLab is the only forge with a project export feature
+
+0.0.1
+-----
+
+* version 0.0.1
+* do not commit AUTHORS
+* release instructions
+* tests: run gitlab & gitea tests
+* architecture: add support for gitea
+* tests: simplify gitlab setup
+* interface: add user to forge interface
+* tests: gitea internal URL port
+* tests: setup two gitea instances
+* tests: rework the gitlab main function
+* s/FEDEPROXY\_IP/MY\_IP/
+* reorganize the codebase
+* create the dvcs interface
+* create the forge interface
+* implement class for high level git operations
+* black: normalize strings
+* batch pre-commit run
+* add pre-commit configuration
+* bootstrap direnv
+* upgrade gitlab to 13.12.3
+* setup-gitlab needs IP
+* run two gitlab servers for testing
+* test ci
+* test ci
+* gitlab: issue create/get/delete
+* gitlab: set the user for a project
+* gitlab: create/get/delete user
+* gitlab: it's a tar.gz not a zip
+* gitlab: skip another race condition in project creation
+* gitlab: implement project export
+* get retry from fedeproxy
+* implement gitlab project get/create/delete
+* test gitlab
+* not enough RAM
+* reduce the memory requirements by running a single worker
+* run only one GitLab
+* localhost does not exist in the CI
+* create two GitLab instances for testing purposes
+* initial

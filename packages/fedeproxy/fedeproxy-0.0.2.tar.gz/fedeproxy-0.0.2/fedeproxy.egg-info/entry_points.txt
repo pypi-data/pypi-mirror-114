@@ -1,0 +1,6 @@
+[console_scripts]
+fedeproxy = fedeproxy.cmd:main
+
+[fedeproxy.cli]
+manage = fedeproxy.cli.manage:Manage
+

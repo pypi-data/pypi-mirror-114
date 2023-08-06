@@ -1,0 +1,33 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+coverage = "*"
+flake8 = "*"
+mock = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-mock = "*"
+pytest-django = "*"
+requests-mock = "*"
+Sphinx = "*"
+tox = "*"
+twine = "*"
+pipenv-to-requirements = "*"
+pre-commit = "*"
+tox-pipenv = "*"
+
+[packages]
+cliff = "*"
+Django = "==2.2"
+djangorestframework = "==3.9.2"
+django-allauth = "==0.39.1"
+django-bootstrap3 = "==11.0.0"
+gitpython = "*"
+sh = "*"
+furl = "*"
+jschon = "*"
+python-gitlab = "*"
+ndjson = "*"

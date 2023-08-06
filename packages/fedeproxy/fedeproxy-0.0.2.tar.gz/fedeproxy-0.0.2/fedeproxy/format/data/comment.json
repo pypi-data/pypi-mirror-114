@@ -1,0 +1,43 @@
+{
+    "title": "Comment",
+    "description": "Comment authored by a user in the context of an issue, pull/merge request, etc.",
+    
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "url": {
+	    "description": "URL of the comment.",
+            "type": "string",
+	    "format": "uri"
+        },
+        "body": {
+	    "description": "Long, multiline, body of the message.",
+            "type": "string"
+        },
+        "user": {
+	    "description": "URL of the user who authored the comment.",
+            "type": "string",
+	    "format": "uri"
+        },
+        "created_at": {
+	    "description": "Creation time.",
+            "type": "string",
+            "format": "date-time"
+        },
+        "id": {
+	    "description": "Unique identifier, relative to the issue, pull/merge request etc.",
+            "type": "string"
+        }
+    },
+    "required": [
+	"url",
+	"body",
+	"user",
+	"created_at",
+	"id"
+    ],
+
+    "$schema": "https://json-schema.org/draft/2020-12/schema#",
+    "$id": "http://example.com/comment.json",
+    "$$target": "comment.json"
+}

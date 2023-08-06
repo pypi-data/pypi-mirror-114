@@ -1,0 +1,10 @@
+---
+image: python:3.8-buster
+jobs:
+  script:
+    - MY_IP=$(ip r show default | cut -f3 -d' ') tests/setup.sh
+    - pip install tox tox-pipenv
+    - MY_IP=$(ip r show default | cut -f3 -d' ') tox
+
+  after_script:
+    - tests/setup.sh teardown

@@ -1,0 +1,74 @@
+{
+    "title": "Issue",
+    "description": "Issue associated to a repository within a forge.",
+    
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "url": {
+	    "description": "URL of the issue.",
+            "type": "string",
+	    "format": "uri"
+        },
+        "title": {
+	    "description": "Short description displayed as the title.",
+            "type": "string"
+        },
+        "description": {
+	    "description": "Long, multiline, description.",
+            "type": "string"
+        },
+        "repository": {
+	    "description": "URL of the associated repository.",
+            "type": "string",
+	    "format": "uri"
+        },
+        "user": {
+	    "description": "URL of the user who created the issue.",
+            "type": "string",
+	    "format": "uri"
+        },
+        "created_at": {
+	    "description": "Creation time.",
+            "type": "string",
+            "format": "date-time"
+        },
+        "closed_at": {
+	    "description": "The last time 'state' changed to 'closed'.",
+            "type": "string",
+            "format": "date-time"
+        },
+        "state": {
+	    "description": "A 'closed' issue will not see any activity in the future, otherwise it is 'open'.",
+	    "enum": [
+		"closed",
+		"open"
+	    ]
+        },
+        "comments": {
+	    "description": "Comments sorted in chronological order.",
+	    "type": "array",
+	    "items": {
+		"$ref": "http://example.com/comment.json"
+            }
+        },
+        "id": {
+	    "description": "Unique identifier, relative to the repository.",
+            "type": "string"
+        }
+    },
+    "required": [
+        "url",
+        "title",
+        "description",
+        "repository",
+        "user",
+        "created_at",
+        "state",
+        "id"
+    ],
+
+    "$schema": "https://json-schema.org/draft/2020-12/schema#",
+    "$id": "http://example.com/issue.json",
+    "$$target": "issue.json"
+}

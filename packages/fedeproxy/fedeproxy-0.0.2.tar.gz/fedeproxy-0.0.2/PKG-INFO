@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: fedeproxy
+Version: 0.0.2
+Summary: an online service to federate forges
+Home-page: https://lab.enough.community/fedeproxy/fedeproxy
+Author: Fedeproxy Community
+Author-email: contact@fedeproxy.eu
+License: AGPLv3+
+Project-URL: Bug Tracker, https://lab.enough.community/fedeproxy/fedeproxy/issues
+Project-URL: Documentation, https://fedeproxy.readthedocs.io/
+Project-URL: Source Code, https://lab.enough.community/fedeproxy/fedeproxy
+Description: an online service to federate forges
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown; charset=UTF-8
