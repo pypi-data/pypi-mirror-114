@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+sgtslaughter/__init__.py
+sgtslaughter.egg-info/PKG-INFO
+sgtslaughter.egg-info/SOURCES.txt
+sgtslaughter.egg-info/dependency_links.txt
+sgtslaughter.egg-info/top_level.txt
