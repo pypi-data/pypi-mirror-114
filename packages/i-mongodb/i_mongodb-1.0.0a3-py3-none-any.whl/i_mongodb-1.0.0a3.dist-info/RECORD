@@ -1,0 +1,8 @@
+i_mongodb/__init__.py,sha256=cmhepC7L2sKo8RQD9OQUj7Y6pyX-hU_Skm-xsOF0hnI,209
+i_mongodb/config.py,sha256=xZgTPzdfJYWIW8OSdsoFqsOgNDWctn9G5iKqXypkgoM,3961
+i_mongodb/i_mongodb.py,sha256=j9-H_na2x2ehe9PWnvaJbgZqTORAY__FkS2prcgazW8,2700
+i_mongodb/logging_config.json,sha256=TJkMQhl1eF3XdPH9sBQMKB4UL18THzzSAGggqFfzIOA,844
+i_mongodb-1.0.0a3.dist-info/LICENSE,sha256=u_6dWZ9M-jon7YUVN6qvDG6J1xRzT7uvclAzmx5yD8Y,1079
+i_mongodb-1.0.0a3.dist-info/WHEEL,sha256=VUbF57hf4yRZWWrOOjp25Fr4BQX9EtnVSbnP2vNxHDM,81
+i_mongodb-1.0.0a3.dist-info/METADATA,sha256=uHlpdQHGPv0ifqkAQzK306aO3XpZc9jXEFbKPvfPIOo,1427
+i_mongodb-1.0.0a3.dist-info/RECORD,,
