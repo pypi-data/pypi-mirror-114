@@ -1,0 +1,10 @@
+setup.py
+distributions_hairong/Binomialdistribution.py
+distributions_hairong/Gaussiandistribution.py
+distributions_hairong/Generaldistribution.py
+distributions_hairong/__init__.py
+distributions_hairong.egg-info/PKG-INFO
+distributions_hairong.egg-info/SOURCES.txt
+distributions_hairong.egg-info/dependency_links.txt
+distributions_hairong.egg-info/not-zip-safe
+distributions_hairong.egg-info/top_level.txt
