@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: yyx-tools
+Version: 0.0.9
+Summary: tools for algorithm engineer
+Home-page: https://github.com/yanyuxiangToday/yyx_tools
+Author: yanyuxiangtoday
+Author-email: yanyuxiangtoday@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# yyx_tools
+项目开发过程中常用的一些开发工具。
+
