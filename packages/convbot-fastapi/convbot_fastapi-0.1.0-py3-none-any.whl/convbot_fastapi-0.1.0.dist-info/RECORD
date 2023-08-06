@@ -1,0 +1,9 @@
+convbot_fastapi/__init__.py,sha256=u1_CHfkLTzaPqr558PlW93MEycVXa7N5Oo2eOpdInmI,111
+convbot_fastapi/__main__.py,sha256=IEvvkEU0bkJva3aXimhjjsrDxd88_eWMnirXUxbnejM,1561
+convbot_fastapi/convbot_fastapi.py,sha256=3cB2J17K2E5Fzyy6X8rN58UN3nVBaUymjGhuqsFCqbA,7821
+convbot_fastapi/force_async.py,sha256=lfh1tlurB0qlUs3TuK8_aPPFWZrzTVxnRJuUm8zGoUE,1149
+LICENSE,sha256=bbHPUVqWKddgoeO4Cl0-S4Y60O7vbLX51GSgBTnpDww,1064
+convbot_fastapi-0.1.0.dist-info/LICENSE,sha256=bbHPUVqWKddgoeO4Cl0-S4Y60O7vbLX51GSgBTnpDww,1064
+convbot_fastapi-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+convbot_fastapi-0.1.0.dist-info/METADATA,sha256=QBh3oqy0SZf0EY1ijbOnNDVLY_OsxqBMFYym3-AlrXk,2314
+convbot_fastapi-0.1.0.dist-info/RECORD,,
