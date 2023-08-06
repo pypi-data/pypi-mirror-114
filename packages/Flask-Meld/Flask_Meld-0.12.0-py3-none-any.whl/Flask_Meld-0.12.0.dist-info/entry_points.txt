@@ -1,0 +1,3 @@
+[console_scripts]
+meld = flask_meld.cli:meld
+
