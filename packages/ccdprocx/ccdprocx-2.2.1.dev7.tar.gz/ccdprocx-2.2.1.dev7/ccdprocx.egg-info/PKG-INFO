@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ccdprocx
+Version: 2.2.1.dev7
+Summary: Fork of Astropy affiliated package to remove astroscrappy dependency
+Home-page: http://ccdprocx.readthedocs.io/
+Author: Steve Crawford, Matt Craig, and Michael Seifert (Joshua Parsons ccdprocx)
+Author-email: mucephie@my.yorku.ca
+License: BSD
+Description: This is a fork of a package for reducing optical/IR CCD data that relies on astropy (astroscrappy removed as dependency)
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Provides-Extra: test
+Provides-Extra: docs
