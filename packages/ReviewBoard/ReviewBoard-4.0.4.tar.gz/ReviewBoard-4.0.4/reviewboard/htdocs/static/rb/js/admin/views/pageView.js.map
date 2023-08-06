@@ -1,0 +1,1 @@
+{"version":3,"sources":["pageView.es6.js"],"names":[],"mappings":";;AAAA;;;AAGA,GAAG,KAAH,CAAS,QAAT,GAAoB,GAAG,QAAH,CAAY,MAAZ,CAAmB,EAAnB,CAApB","file":"pageView.js","sourcesContent":["/**\n * Manages the UI for an admin page.\n */\nRB.Admin.PageView = RB.PageView.extend({\n});"]}
