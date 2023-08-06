@@ -1,0 +1,13 @@
+joblib
+numpy
+matplotlib
+scikit-learn
+scipy
+termcolor
+tqdm
+pandas
+nested-dict
+numba
+Pillow
+imageio
+imageio-ffmpeg
