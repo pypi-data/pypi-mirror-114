@@ -1,0 +1,17 @@
+vaine/__init__.py,sha256=KrvJOnWfAjCyx1D963v9AbIpiaquVsw-rZ8G7Ivhw4o,273
+vaine/_version.py,sha256=nZ27WLDG7iROxfHgBuVMdtfmxqkYw-ILLi_ci49Phpk,281
+vaine/example.py,sha256=L9WMIm7AGOuki5kBgHXzRyBMpCAIsUpoGpT2Yu_CMMY,541
+vaine/natural_experiment.py,sha256=qdrvbBGTD3uMPqAwBcW2q8W1NWadkChieREGiHYvegU,20324
+vaine/react_jupyter_widget.py,sha256=DnmWtYB2ES2DiGQYzHLO_UrkI6NWIP8YPOUXweyXBO8,4559
+vaine/util.py,sha256=ZdfYiWPSGwfxNvUysGshllliCmdlQG_iON9sTkC4jKg,3744
+vaine/static/extension.js,sha256=rdgy_ipnSXZxJzghTiQx17YZG8yi51vc6HaLjH6Wvu4,3342
+vaine/static/index.js,sha256=fAlW_u4ghqpjjH0a-_6sKVKImf3b3S8rIHYm5-LlUCE,4811768
+vaine/static/index.js.map,sha256=6gU1uo0rJk4_wthn4e1l57DAjir6P6KOCKtMMlXs30I,5258963
+vaine_widget-0.1.0a0.data/data/etc/jupyter/nbconfig/notebook.d/vaine-widget.json,sha256=3DrNS8A4aPKGAxqZKLxggij3pyu0kjYSDqBVX7xvvSQ,66
+vaine_widget-0.1.0a0.data/data/share/jupyter/nbextensions/vaine-widget/extension.js,sha256=rdgy_ipnSXZxJzghTiQx17YZG8yi51vc6HaLjH6Wvu4,3342
+vaine_widget-0.1.0a0.data/data/share/jupyter/nbextensions/vaine-widget/index.js,sha256=fAlW_u4ghqpjjH0a-_6sKVKImf3b3S8rIHYm5-LlUCE,4811768
+vaine_widget-0.1.0a0.data/data/share/jupyter/nbextensions/vaine-widget/index.js.map,sha256=6gU1uo0rJk4_wthn4e1l57DAjir6P6KOCKtMMlXs30I,5258963
+vaine_widget-0.1.0a0.dist-info/METADATA,sha256=z1-TD0_XZzFB0g2J9emd-13OB-jCr5I4ZgUAeI7bwr0,904
+vaine_widget-0.1.0a0.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+vaine_widget-0.1.0a0.dist-info/top_level.txt,sha256=QcOXiA6rx7efTk-JAdmHyKkWPQq1JZHczWeGcT2MaI0,6
+vaine_widget-0.1.0a0.dist-info/RECORD,,
