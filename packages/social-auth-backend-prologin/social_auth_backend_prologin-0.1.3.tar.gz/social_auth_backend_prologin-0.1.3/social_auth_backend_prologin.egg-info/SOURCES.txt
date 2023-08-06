@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+social_auth_backend_prologin/__init__.py
+social_auth_backend_prologin/backend.py
+social_auth_backend_prologin/pipeline.py
+social_auth_backend_prologin.egg-info/PKG-INFO
+social_auth_backend_prologin.egg-info/SOURCES.txt
+social_auth_backend_prologin.egg-info/dependency_links.txt
+social_auth_backend_prologin.egg-info/requires.txt
+social_auth_backend_prologin.egg-info/top_level.txt
