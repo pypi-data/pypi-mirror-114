@@ -1,0 +1,9 @@
+boolean_question/__init__.py,sha256=xwsoG8E46_uHR0IeSWYiB7zSFQgYB1KebvcomGvU7LE,920
+boolean_question/boolq.py,sha256=fm1gb4zMIeX4u9G7X6Rn3-P6Gj1aafjj5O_T9h1c8DY,3805
+boolean_question/utils/__init__.py,sha256=eFtVvx9aTRan--h7yk0yvBK6n5qdkSeiWDUfYFAzHL0,692
+boolean_question/utils/helper.py,sha256=bnPKLUuC-M1HEtf9HP2c3CemJ6pAc8KgsAmKbKn5s24,2856
+boolean_question-0.0.1.dist-info/LICENSE,sha256=cDuKTsEKRetC3Q1NpCgFDAfhBVlOtWLnDhyofT24D5E,11341
+boolean_question-0.0.1.dist-info/METADATA,sha256=1P2zJl7OYc-zMkRoQXazcUmi7_1NPPBzw-HS367aKgk,4133
+boolean_question-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+boolean_question-0.0.1.dist-info/top_level.txt,sha256=V0YpoUwT_ONPapkbtzoZkOw4PnkuWH2-37QkBnn8lA4,17
+boolean_question-0.0.1.dist-info/RECORD,,
