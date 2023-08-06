@@ -1,0 +1,11 @@
+jax_fid/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jax_fid/__main__.py,sha256=JrzlfWKN9AVhWHbNSmR8xx2QhvbwCXDlLTcCY2FKo8s,2583
+jax_fid/fid.py,sha256=T9vWwKgVKn0G9-8VxPHZCkCeb1lRpG86XdmAsP9JOR4,2414
+jax_fid/inception.py,sha256=Ku3TEmFaYxrYn-Cw17Vs7drypMgP9baYfs651f_lFTo,31776
+jax_fid/utils.py,sha256=U015jOc26PjKY0P-ZB6BpA0qStNGlD_FUw2M3byuzXE,1635
+jax_fid-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+jax_fid-0.0.1.dist-info/METADATA,sha256=5TqdOKJb3NYbzzqlynXIWaZyDTHEmw-61doNkQfLE3M,2585
+jax_fid-0.0.1.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+jax_fid-0.0.1.dist-info/entry_points.txt,sha256=8s16sOBmKO3HfXhCNZvMgqG-gwLflDyjyd70XplcEKo,47
+jax_fid-0.0.1.dist-info/top_level.txt,sha256=qGTZfSHDVi7RYwr1273Xpz_ehQc4ySkApiLXg5bu1Ls,8
+jax_fid-0.0.1.dist-info/RECORD,,
