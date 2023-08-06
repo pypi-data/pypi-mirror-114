@@ -1,0 +1,13 @@
+corpus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+corpus/event.py,sha256=SBut4bD16KaOaLwRfNQtukwlb6L-L34HLcKNEnR8Upc,1148
+corpus/eventcorpus.py,sha256=I2zbOTEZpfQlCAc9SvP0hKYDI1NGdpa_i5WCbwC223A,3439
+datasources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datasources/openresearch.py,sha256=GdgRU-lfj-3FWb3oc3iAVVcZRwKGeIZiwHGSY28SZus,11638
+smw/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smw/topic.py,sha256=y2AitZ55HWymosg_BpEEIbe-tg98duB4k2B20aQ-iIA,12018
+ConferenceCorpus-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ConferenceCorpus-0.0.3.dist-info/METADATA,sha256=41pIGXyvl4fZVAFuS_6pm811-4zR-jBfIJd9Ew11aqE,1665
+ConferenceCorpus-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ConferenceCorpus-0.0.3.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+ConferenceCorpus-0.0.3.dist-info/top_level.txt,sha256=y-ja0kifxlRqBdSk04nQ8nfkIRrtBpTdIoU1cELl9jA,23
+ConferenceCorpus-0.0.3.dist-info/RECORD,,
