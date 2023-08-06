@@ -1,0 +1,7 @@
+loghooks/__init__.py,sha256=UDOySW7yXnYp-4NOGFPRHayUWuyCsaKRPR6aYmvaMbM,35
+loghooks/handler.py,sha256=iePkj5frxDIeFur49p5YZPgouKrg0njxEblcPHFjE8Y,2072
+loghooks/webhooks.py,sha256=Y5S4_HReupN18cS62EBBRtLQULQ1acRZmPwzsJwtCOQ,751
+loghooks-0.2.0.dist-info/METADATA,sha256=MTpqtXdxglSSxGyMaPtsaFNsp4Q9C9pq35kk4g4d_PQ,2273
+loghooks-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+loghooks-0.2.0.dist-info/top_level.txt,sha256=u1Ih55BgNeS1vYdYmhIvLnhoVX-0TnJQmMTm1x29a3A,9
+loghooks-0.2.0.dist-info/RECORD,,
