@@ -1,0 +1,3 @@
+[console_scripts]
+fastasplitter = fastasplitter_cli.main:main_group
+
