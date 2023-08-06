@@ -1,0 +1,10 @@
+chemical_formula/__init__.py,sha256=R2dcOh3emCWXe6m0Fc6tHCZdr2tMtHnvwoNIFd25Ixo,566
+chemical_formula/_version.py,sha256=oG8Qw2jWgzjpFEWGX5HJsAc6OY44ylEVThaL8fzGIbw,501
+chemical_formula/elemental_data.py,sha256=N4D29vag70_MW7VFOjzEvGTB0r13d2w4gp5WHCZQeVk,25445
+chemical_formula/formula.py,sha256=LyYtOm4LNJG56W7iSV7bjBah4IpIyEEwIzrqCTB6VI4,9172
+chemical_formula-2021.7.26.dist-info/AUTHORS.rst,sha256=dnvz-P2Nt2YAzxYglfGf6O_1OQn5-hwLXmAd5lpo-iY,151
+chemical_formula-2021.7.26.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+chemical_formula-2021.7.26.dist-info/METADATA,sha256=i_KJIT0Ig-Hced6vZynB9Ovyf1yMD5LCIoyKTfwxLOk,3124
+chemical_formula-2021.7.26.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+chemical_formula-2021.7.26.dist-info/top_level.txt,sha256=A0tB8iNF6OH3tMxlM-fwuwWMW49zRAfj7IigJosn-lE,17
+chemical_formula-2021.7.26.dist-info/RECORD,,
