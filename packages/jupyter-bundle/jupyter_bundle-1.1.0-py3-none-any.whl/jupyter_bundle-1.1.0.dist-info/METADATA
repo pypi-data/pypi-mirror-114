@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: jupyter-bundle
+Version: 1.1.0
+Summary: Jupyter Lab support for Daipe
+Home-page: https://github.com/daipe-ai/jupyter-bundle
+License: MIT
+Author: Jiri Koutny
+Author-email: jiri.koutny@datasentics.com
+Requires-Python: >=3.7.1,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: daipe-core (>=1.1,<2.0)
+Requires-Dist: ipywidgets (>=7.6)
+Requires-Dist: jupyterlab (>=3.0.0)
+Requires-Dist: jupytext (>=1.11.0)
+Requires-Dist: pyfony-core (>=0.8.0,<0.9.0)
+Project-URL: Repository, https://github.com/daipe-ai/jupyter-bundle
+Description-Content-Type: text/markdown
+
+# Jupyter Bundle
+
+Additional component of the [Daipe Framework](https://www.daipe.ai).  
+
+## Resources
+
+* [Documentation](https://docs.daipe.ai/)
+

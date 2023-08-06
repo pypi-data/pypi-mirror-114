@@ -1,0 +1,4 @@
+services:
+  jupyterbundle.widgets.JupyterWidgets:
+      tags:
+        - "widgets.factory"
