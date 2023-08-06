@@ -1,0 +1,39 @@
+[apache_airflow_provider]
+provider_info = datahub_provider:get_provider_info
+
+[console_scripts]
+datahub = datahub.entrypoints:main
+
+[datahub.ingestion.sink.plugins]
+console = datahub.ingestion.sink.console:ConsoleSink
+datahub-kafka = datahub.ingestion.sink.datahub_kafka:DatahubKafkaSink
+datahub-rest = datahub.ingestion.sink.datahub_rest:DatahubRestSink
+file = datahub.ingestion.sink.file:FileSink
+
+[datahub.ingestion.source.plugins]
+athena = datahub.ingestion.source.sql.athena:AthenaSource
+bigquery = datahub.ingestion.source.sql.bigquery:BigQuerySource
+bigquery-usage = datahub.ingestion.source.usage.bigquery_usage:BigQueryUsageSource
+dbt = datahub.ingestion.source.dbt:DBTSource
+druid = datahub.ingestion.source.sql.druid:DruidSource
+feast = datahub.ingestion.source.feast:FeastSource
+file = datahub.ingestion.source.file:GenericFileSource
+glue = datahub.ingestion.source.aws.glue:GlueSource
+hive = datahub.ingestion.source.sql.hive:HiveSource
+kafka = datahub.ingestion.source.kafka:KafkaSource
+kafka-connect = datahub.ingestion.source.kafka_connect:KafkaConnectSource
+ldap = datahub.ingestion.source.ldap:LDAPSource
+looker = datahub.ingestion.source.looker:LookerDashboardSource
+lookml = datahub.ingestion.source.lookml:LookMLSource
+mongodb = datahub.ingestion.source.mongodb:MongoDBSource
+mssql = datahub.ingestion.source.sql.mssql:SQLServerSource
+mysql = datahub.ingestion.source.sql.mysql:MySQLSource
+oracle = datahub.ingestion.source.sql.oracle:OracleSource
+postgres = datahub.ingestion.source.sql.postgres:PostgresSource
+redshift = datahub.ingestion.source.sql.redshift:RedshiftSource
+sagemaker = datahub.ingestion.source.aws.sagemaker:SagemakerSource
+snowflake = datahub.ingestion.source.sql.snowflake:SnowflakeSource
+snowflake-usage = datahub.ingestion.source.usage.snowflake_usage:SnowflakeUsageSource
+sqlalchemy = datahub.ingestion.source.sql.sql_generic:SQLAlchemyGenericSource
+superset = datahub.ingestion.source.superset:SupersetSource
+
