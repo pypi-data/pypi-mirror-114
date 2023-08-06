@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+cloudflare_workers/__init__.py
+cloudflare_workers/key_value_store.py
+cloudflare_workers.egg-info/PKG-INFO
+cloudflare_workers.egg-info/SOURCES.txt
+cloudflare_workers.egg-info/dependency_links.txt
+cloudflare_workers.egg-info/not-zip-safe
+cloudflare_workers.egg-info/requires.txt
+cloudflare_workers.egg-info/top_level.txt
