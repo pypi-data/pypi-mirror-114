@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+english_asr/conformer.py
+english_asr.egg-info/PKG-INFO
+english_asr.egg-info/SOURCES.txt
+english_asr.egg-info/dependency_links.txt
+english_asr.egg-info/requires.txt
+english_asr.egg-info/top_level.txt

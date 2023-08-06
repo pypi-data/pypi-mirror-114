@@ -1,0 +1,3 @@
+librosa
+tensorflow
+soundfile>=0.10.2
