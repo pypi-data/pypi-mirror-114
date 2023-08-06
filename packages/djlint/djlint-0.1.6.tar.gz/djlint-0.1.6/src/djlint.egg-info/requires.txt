@@ -1,0 +1,11 @@
+click>=7.1.2
+pyyaml>=5.4.1
+colorama>=0.4.3
+regex>=2020.11.13
+tqdm>=4.61.2
+
+[test]
+coverage
+pytest
+pytest-xdist
+pytest-cov
