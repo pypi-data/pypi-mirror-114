@@ -1,0 +1,63 @@
+#!/bin/bash
+set -e
+if [ -n "$DEBUG" ]; then
+    set -x
+fi
+
+# Allow customization using POSIX environment variables:
+APP_DATADIR=${APP_DATADIR:-/tmp}
+DOCKER=${DOCKER:-docker}
+TAG=${TAG:-latest}
+
+# TODO: allow setting:
+#	XDG_CONFIG_HOME \
+#	CONFIG_HOME \
+#	CONFIGDIR \
+#	MATHICSSCRIPT_HISTSIZE \
+#	MATHICSSCRIPT_HISTFILE \
+
+MATHICS_IMAGE=${MATHICS_IMAGE:-mathicsorg/mathics:${TAG}}
+
+for arg in $@ ; do
+    case "$arg" in
+        -u | -U | --upgrade | upgrade)
+			$DOCKER pull $MATHICS_IMAGE
+			exit $?
+		;;
+    esac
+done
+
+cd $(dirname ${BASH_SOURCE[0]})
+source ./term-background.sh
+
+[[ -x ./term-background.sh ]] && source ./term-background.sh
+
+if [[ $COLORFGBG == '15;0' ]] ; then
+    # Dark background
+    style="--style inkpot"
+
+else
+    # Light background
+    style="--style colorful"
+fi
+
+XAUTH=${XAUTH:-$HOME/.Xauthority}
+touch $XAUTH
+
+DEVICE=''
+if [[ -r /dev/dri ]]; then
+    DEVICE='--device=/dev/dri:/dev/dri'
+fi
+
+$DOCKER run \
+	--rm \
+	--env "DISPLAY=$DISPLAY" \
+	--name mathics-cli \
+	--tty \
+	--interactive \
+	--network=host \
+	--volume="$PWD":/app \
+	--volume "${APP_DATADIR}:/usr/src/app/data" \
+	$DEVICE \
+    $MATHICS_IMAGE \
+	--mode cli -- $style $@
