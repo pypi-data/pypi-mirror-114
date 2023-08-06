@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: tri-again
+Version: 1.0.0
+Summary: Scenegraph for quickly debugging 3D meshes, polylines, and points
+Home-page: https://github.com/lace/tri-again
+License: MIT
+Author: Paul Melnikow
+Author-email: github@paulmelnikow.com
+Requires-Python: >=3.7,<3.9
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Manufacturing
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Artistic Software
+Classifier: Topic :: Multimedia :: Graphics :: 3D Modeling
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Dist: numpy
+Requires-Dist: polliwog (>=1.0.0,<2)
+Requires-Dist: pycollada (>=0.7.1,<0.8)
+Requires-Dist: toolz (>=0.10.0,<0.12.0)
+Requires-Dist: vg (>=2.0.0)
+Requires-Dist: webcolors (>=1.11.1,<2)
+Project-URL: Documentation, https://tri-again.readthedocs.io/en/stable/
+Project-URL: Repository, https://github.com/lace/tri-again
