@@ -1,0 +1,3 @@
+[console_scripts]
+metabadger=metabadger.bin.cli:main
+
