@@ -1,0 +1,11 @@
+matplotlib==3.2.1
+sklearn
+PyWavelets
+pyclustering
+fastcluster
+traj_dist
+numpy
+scipy
+pandas
+xarray
+tqdm
