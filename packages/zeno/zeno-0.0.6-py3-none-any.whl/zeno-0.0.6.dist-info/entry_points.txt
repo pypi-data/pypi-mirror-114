@@ -1,0 +1,4 @@
+[console_scripts]
+ze-dichotomy = zeno.dichotomy:main
+ze-hello = zeno.zeno:hello
+
