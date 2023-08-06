@@ -1,0 +1,3 @@
+[neuro3d.backends]
+blender = neuro3d._blender.backend:BlenderBackend
+
