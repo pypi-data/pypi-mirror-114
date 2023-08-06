@@ -1,0 +1,27 @@
+"""For entities that have parameters."""
+from gemd.entity.attribute.parameter import Parameter
+from gemd.entity.setters import validate_list
+
+
+class HasParameters(object):
+    """Mixin-trait for entities that include parameters.
+
+    Parameters
+    ----------
+    parameters: List[:class:`Parameter <gemd.entity.attribute.parameter.Parameter>`]
+        A list of parameters associated with this entity.
+
+    """
+
+    def __init__(self, parameters):
+        self._parameters = None
+        self.parameters = parameters
+
+    @property
+    def parameters(self):
+        """Get the list of parameters."""
+        return self._parameters
+
+    @parameters.setter
+    def parameters(self, parameters):
+        self._parameters = validate_list(parameters, Parameter)
