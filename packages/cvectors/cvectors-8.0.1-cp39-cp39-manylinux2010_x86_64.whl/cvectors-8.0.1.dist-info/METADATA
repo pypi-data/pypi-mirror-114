@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: cvectors
+Version: 8.0.1
+Classifiers: Development Status :: 4 - Beta
+Classifiers: Programming Language :: Python :: 3
+Classifiers: Programming Language :: Rust
+Classifiers: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifiers: Operating System :: OS Independent
+Summary: A simple complex vectors package.
+Author: Tom Fryers

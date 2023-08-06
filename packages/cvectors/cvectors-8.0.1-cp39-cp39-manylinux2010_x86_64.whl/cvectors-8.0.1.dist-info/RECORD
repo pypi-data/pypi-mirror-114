@@ -1,0 +1,10 @@
+cvectors-8.0.1.dist-info/METADATA,sha256=el0upW5_Qu7Jolt5OCVpkjgS5cvsosfS-XZcjbdZMOg,385
+cvectors-8.0.1.dist-info/WHEEL,sha256=AGBj3t4aQBMtMD169H-DMmX_adSvnscHRSbfLUfPbLo,105
+cvectors/_cvectors.py,sha256=CUiAIeKC48cGhoPwZ6xE6LMnrZOP9GfvdOjzJPN4p9U,6606
+cvectors/__init__.pyi,sha256=wbi1W6U_0BVZQGDHD_JewQRI4-abXhUbu-o3eMOOQe4,1792
+cvectors/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cvectors/__init__.py,sha256=hLb0xnb5q13GwnRgGc8m0onXYao3XmczV_eI68m43XA,195
+cvectors/__pycache__/__init__.cpython-39.pyc,sha256=d135z5EkpQxKhpH7ukrWyy8fHClX6fVx4TTDGiETeko,361
+cvectors/__pycache__/_cvectors.cpython-39.pyc,sha256=bVXWZOv06BWOHeuKMveLL6o3JMOL1fKDhDVaRBuvQ88,7897
+cvectors/cvectors.cpython-39-x86_64-linux-gnu.so,sha256=c4w1n4LAzVfL-11VDio_USKUe0ATd6O-DQWF9_R1ds0,3548584
+cvectors-8.0.1.dist-info/RECORD,,
