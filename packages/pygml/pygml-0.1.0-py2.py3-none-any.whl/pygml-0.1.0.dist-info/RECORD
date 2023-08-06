@@ -1,0 +1,14 @@
+pygml/__init__.py,sha256=kWfw1_cbY-gwb3bw7No86kprIMRBE14_IqsfmBWyIqk,1538
+pygml/axisorder.py,sha256=1BhH8pGaC_RbkppAdr8OFrLZUTXufeZbRfMey2fS8qI,12009
+pygml/basics.py,sha256=yfCLf6v9JHj7iNupEtOg7MjzV-9qZfpSOkhELg-ib-o,3606
+pygml/georss.py,sha256=zA7dKQBHBU6KNpL_xtzCReRDYvSpISnxI9z8pDNrJWs,4462
+pygml/parse.py,sha256=Vi2VZNI7b25WV0Lc_UEvOAI-5PpYH-50IEXXUqeuBEg,2368
+pygml/pre_v32.py,sha256=e_X57O9m7q3VM_gfnqUNvV2k6lMJvRfWNFHp6mBDiK8,1569
+pygml/types.py,sha256=2Tmlw7sn7j9_ALn8ldaCETMl3Btk2xEhxeMl0-XyYE4,2102
+pygml/v32.py,sha256=hOb6Whgs1HKZwz36aK4Qb7EUWhdn6tHW_Tzy6vHoEuE,11626
+pygml/v33.py,sha256=7MNhXfmztBsBy0BSyr6FE5XpRkyZxfXdck59GKsfKT0,1577
+pygml-0.1.0.dist-info/LICENSE,sha256=7D0xULnpr70lix6UIscayfoZ4A6Dzk4HVmXklVviAco,1066
+pygml-0.1.0.dist-info/METADATA,sha256=DMpzgdFuREkEpfe26FZrBEPVLyk4wytLAno6Ydq8g9Q,1721
+pygml-0.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+pygml-0.1.0.dist-info/top_level.txt,sha256=x3YueTw3oFfzQts25hzmYrAhfIM_ipmLwrB7agH0Pq0,6
+pygml-0.1.0.dist-info/RECORD,,
