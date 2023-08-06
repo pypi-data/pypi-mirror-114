@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: voyapt
+Version: 0.1.0.dev0
+Summary: Voyage Analysis and Prediction Toolbox
+Home-page: https://github.com/freol35241/voyapt
+Author: Fredrik Olsson
+Author-email: freol@outlook.com
+Maintainer: Fredrik Olsson
+Maintainer-email: freol@outlook.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: nvector (>=0.7.6)
+Requires-Dist: geographiclib
+Requires-Dist: xarray
+Requires-Dist: netCDF4
+Requires-Dist: dask[complete]
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: scipy
+Requires-Dist: geojson
+
+# voyapt
+Voyage Analysis & Prediction Toolbox - Primarily aimed at the nautical field
+
+High-level concepts:
+* `Waypoints` are 2D positions in space. In `voyapt`, a `Waypoint` is an alias for `nvector.GeoPoint`.
+* A `Leg` is the path between two `Waypoint`s. In `voyapt`, a `Leg` is an alias for `nvector.GeoPath`.
+* A `Route` is a collection of minimum two `Waypoint`s. `Leg`s may be extracted from a `Route`.
+
+### Installation
+`voyapt` is available on **pypi**:
+
+```pip install voyapt```
+
+### Examples
+
+See `examples/` and `tests/`
+
+
+
