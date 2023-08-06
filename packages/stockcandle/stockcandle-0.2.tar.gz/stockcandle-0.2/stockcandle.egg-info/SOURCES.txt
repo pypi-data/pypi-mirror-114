@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+stockcandle/__init__.py
+stockcandle/intradayData.py
+stockcandle.egg-info/PKG-INFO
+stockcandle.egg-info/SOURCES.txt
+stockcandle.egg-info/dependency_links.txt
+stockcandle.egg-info/requires.txt
+stockcandle.egg-info/top_level.txt
