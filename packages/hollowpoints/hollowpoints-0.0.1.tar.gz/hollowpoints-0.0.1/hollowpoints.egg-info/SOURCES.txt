@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+hollowpoints/__init__.py
+hollowpoints.egg-info/PKG-INFO
+hollowpoints.egg-info/SOURCES.txt
+hollowpoints.egg-info/dependency_links.txt
+hollowpoints.egg-info/top_level.txt
