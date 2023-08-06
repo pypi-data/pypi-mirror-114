@@ -1,0 +1,19 @@
+{
+	"path": {
+		"layout": {
+			"common": "__app.source__ layouts",
+			"wrapper": "wrapper",
+			"page": "page",
+			"block": "block",
+			"tag": "tag",
+
+			"html_link_css": "html_link_css.html",
+			"html_link_js": "html_link_js.html",
+			"html_links_final_css": "html_links_final_css.html"
+		},
+		"default": {
+			"common": "__app.source__ defaults",
+			"page_complect": "page_complect.html"
+		}
+	}
+}
