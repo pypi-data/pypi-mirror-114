@@ -1,0 +1,12 @@
+README.md
+setup.py
+pytest_automation.egg-info/PKG-INFO
+pytest_automation.egg-info/SOURCES.txt
+pytest_automation.egg-info/dependency_links.txt
+pytest_automation.egg-info/entry_points.txt
+pytest_automation.egg-info/requires.txt
+pytest_automation.egg-info/top_level.txt
+pytestautomation/__init__.py
+pytestautomation/helpers.py
+pytestautomation/plugin.py
+pytestautomation/yamlfile.py
