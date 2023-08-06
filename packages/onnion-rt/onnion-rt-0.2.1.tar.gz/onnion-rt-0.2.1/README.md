@@ -1,0 +1,60 @@
+# onnion-rt
+
+Note: This software includes [the work](https://github.com/onnx/onnx) that is distributed in the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html).
+
+## Installation
+
+```
+$ pip3 install onnion-rt
+```
+
+## Usage
+See [tutorial](https://github.com/Idein/onnion/tree/master#tutorial).
+
+## Development Guide
+
+```
+$ poetry install
+```
+
+### How to support new operators
+
+1. Add `onnion_runtime/xxx.py`
+  - An onnx operator `Xxx` must correspond to a class `Xxx`.
+  - A class `Xxx` must implement `__init__` and `run` methods.
+  - The parameters of the `__init__` methods must be `self`, `opset_version`, and `kwargs`.
+  - The attributes of the operator must be passed through the `kwargs` of the `__init__` method.
+    - Get the required attributes by `kwargs['attr_name']`.
+    - Get the optional attributes by `kwargs.get('attr_name', default_value)`.
+  - The inputs of the operator must be passed through the arguments of the `run` method.
+  - The `run` method must return the list of `np.array`.
+2. Add `from .xxx import Xxx # noqa: F401` to `onnion_runtime/__init__.py`
+3. Update "Supported Operators" in `README.md`
+4. Add `tests/test_xxx.py`
+5. Run tests `poetry run pytest -v`
+6. Format and lint `poetry run pysen run format && poetry run pysen run lint`
+
+## Supported Operators
+This runtime supports only below operators.
+
+- Add
+  - must be from opsetversion >= 7
+- Cast
+  - must be from opsetversion >= 6
+- Concat
+- Div
+  - must be from opsetversion >= 7
+- Exp
+- Gather
+- Mul
+  - must be from opsetversion >= 7
+- NonMaxSuppression
+- ReduceMin
+- Reshape
+- Shape
+- Slice
+- Squeeze
+- Sub
+  - must be from opsetversion >= 7
+- TopK
+- Unsqueeze
