@@ -1,0 +1,10 @@
+telemetry_f1_2021/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+telemetry_f1_2021/listener.py,sha256=uXqBI-LIb_OrS3F6qvkhqzoKuOSN2pEJwUxnyr7LN7M,815
+telemetry_f1_2021/main.py,sha256=GnVx8a62lP81RvNaYJ6W9XM-q7wZU2t1IqkzOyiVMUA,622
+telemetry_f1_2021/packets.py,sha256=MtyFFhRgS3h_yaMsPWI4Iw2MH05ugJVVEkIyORSISgs,32157
+Telemetry_F1_2021-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+Telemetry_F1_2021-0.1.0.dist-info/METADATA,sha256=11mR8xtMvUzG2itQnaAKmJ4Cpsz7qbtvR0tR35hzfXc,959
+Telemetry_F1_2021-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Telemetry_F1_2021-0.1.0.dist-info/entry_points.txt,sha256=rZImf4vbaU0kzTrxELgjhmNCwgibSmVEE6yGWGf_IXs,76
+Telemetry_F1_2021-0.1.0.dist-info/top_level.txt,sha256=8jdAQJhuzC3lML-Af6vKdxbImeMVrAkWIvxMstwj9Qg,18
+Telemetry_F1_2021-0.1.0.dist-info/RECORD,,
