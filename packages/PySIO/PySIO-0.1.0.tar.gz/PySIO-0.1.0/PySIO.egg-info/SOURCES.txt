@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+PySIO.egg-info/PKG-INFO
+PySIO.egg-info/SOURCES.txt
+PySIO.egg-info/dependency_links.txt
+PySIO.egg-info/top_level.txt
+sio/__init__.py
