@@ -1,0 +1,9 @@
+opentelemetry/instrumentation/sqlite3/__init__.py,sha256=2EKAMkKiqmE4tRZDP-uAShwpxOITg01_bX1stjGXscc,3275
+opentelemetry/instrumentation/sqlite3/package.py,sha256=6OiaAJOKS-XH9e-QAAkj7AyOTw-6bTetTuXhavCCkQ0,609
+opentelemetry/instrumentation/sqlite3/version.py,sha256=5fQF3XySdiEZJ5yo5kgt3VCNhhNwOmQHUALWUbynQkM,632
+opentelemetry_instrumentation_sqlite3-0.23b2.dist-info/LICENSE,sha256=h8jwqxShIeVkc8vOo9ynxGYW16f4fVPxLhZKZs0H5U8,11350
+opentelemetry_instrumentation_sqlite3-0.23b2.dist-info/METADATA,sha256=VmLstbLrOqwT7Not47O9ZXheuoEW1gh1ay6_ESTjcVg,1848
+opentelemetry_instrumentation_sqlite3-0.23b2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+opentelemetry_instrumentation_sqlite3-0.23b2.dist-info/entry_points.txt,sha256=_DEE7XkHpx_8LD4GHBqwu2APky4JJRYWRi6rjP7dbj8,98
+opentelemetry_instrumentation_sqlite3-0.23b2.dist-info/top_level.txt,sha256=5p97iTMneNm1LAKDalzEVpYhvPZsaqJZzdLuD_upSaQ,14
+opentelemetry_instrumentation_sqlite3-0.23b2.dist-info/RECORD,,
