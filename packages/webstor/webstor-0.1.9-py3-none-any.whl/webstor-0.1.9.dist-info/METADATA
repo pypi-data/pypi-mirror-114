@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: webstor
+Version: 0.1.9
+Summary: A script to quickly enumerate all websites across all of your organization's networks, store their responses, and query for known web technologies, such as those with zero-day vulnerabilities.
+Home-page: https://github.com/RossGeerlings/webstor
+Author: Ross Geerlings
+Author-email: 
+License: BSD (3-clause)
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: dnspython
+Requires-Dist: beautifulsoup4
+Requires-Dist: mysql-connector-python
+Requires-Dist: js-regex
+Requires-Dist: gevent
+Requires-Dist: requests
+
+=======
+webstor
+=======
+
+.. image:: https://img.shields.io/travis/RossGeerlings/webstor.svg
+        :target: https://travis-ci.org/RossGeerlings/webstor
+
+.. image:: https://img.shields.io/pypi/v/webstor.svg
+        :target: https://pypi.python.org/pypi/webstor
+
+
+A script to quickly enumerate all websites across all of your organization's networks, store their responses, and query for known web technologies, such as those with zero-day vulnerabilities.
+
+* Free software: 3-clause BSD license
+* Documentation: (COMING SOON!) https://RossGeerlings.github.io/webstor.
+
+Features
+--------
+
+* TODO
+
+

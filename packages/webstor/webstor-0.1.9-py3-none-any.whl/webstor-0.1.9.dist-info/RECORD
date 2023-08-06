@@ -1,0 +1,13 @@
+webstor/__init__.py,sha256=GJemzajgOUvXjP-CWrr9t25DdEwWOMx2LsBWAhg1TPk,117
+webstor/_version.py,sha256=hnp58bGS75wYgoFfJYPBNUMDmwE4Pf6koN7LnjPo9ko,18478
+webstor/webstor.py,sha256=KebwdZxTbTB31zbvUGvyx82-wmj-LodQFaUS2YOB1XU,66048
+webstor/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+webstor/tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+webstor/tests/test_examples.py,sha256=Hm1x01HZ9BiYYw4dS44uo0o_ku16oFRwSMjIh8_Uu-s,99
+webstor-0.1.9.dist-info/AUTHORS.rst,sha256=pxrvNLjkcIaHTejgGujz8_Az60gctohMXHNSSnxZ8Tg,150
+webstor-0.1.9.dist-info/LICENSE,sha256=AJQnKlmENtSrj6y7q4qRpdz8jOC3A48gdBPOXLkUt2o,1522
+webstor-0.1.9.dist-info/METADATA,sha256=uaNJogUfzeB-OO8FnMezcwqrYly2mX2aVzVxRhrPD5g,1353
+webstor-0.1.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+webstor-0.1.9.dist-info/entry_points.txt,sha256=tohI1EmsrdV_E6F8FIG3HlangmEf7u23ygHF5W58i_M,50
+webstor-0.1.9.dist-info/top_level.txt,sha256=y2iqyRQc14PT_fOIrIHevrhLqSDEhOvpm9Z4gAwoYpM,8
+webstor-0.1.9.dist-info/RECORD,,
