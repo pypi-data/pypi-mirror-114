@@ -1,0 +1,11 @@
+pandas
+numpy
+matplotlib
+scipy
+fastprogress
+selfies
+scikit-learn
+networkx
+requests
+rdkit-pypi
+torch>=1.8.0
