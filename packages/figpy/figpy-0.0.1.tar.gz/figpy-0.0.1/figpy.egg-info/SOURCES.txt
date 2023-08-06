@@ -1,0 +1,8 @@
+README.md
+setup.py
+figpy/__init__.py
+figpy/proxlight.py
+figpy.egg-info/PKG-INFO
+figpy.egg-info/SOURCES.txt
+figpy.egg-info/dependency_links.txt
+figpy.egg-info/top_level.txt
