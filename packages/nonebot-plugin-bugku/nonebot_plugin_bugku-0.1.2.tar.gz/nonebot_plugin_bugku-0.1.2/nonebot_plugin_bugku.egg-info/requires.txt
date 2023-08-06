@@ -1,0 +1,6 @@
+Path
+pydantic
+dataclasses
+httpx
+bs4
+lxml
