@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+makelearningeasy/__init__.py
+makelearningeasy/vocab.py
+makelearningeasy.egg-info/PKG-INFO
+makelearningeasy.egg-info/SOURCES.txt
+makelearningeasy.egg-info/dependency_links.txt
+makelearningeasy.egg-info/requires.txt
+makelearningeasy.egg-info/top_level.txt
