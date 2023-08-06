@@ -1,0 +1,165 @@
+from contextlib import contextmanager
+from pathlib import Path
+from typing import Iterable, Set, Optional, Tuple, List
+
+from entitykb import (
+    Node,
+    NodeKey,
+    Edge,
+    Direction,
+    Neighbor,
+    Pattern,
+    interfaces,
+    istr,
+)
+from . import EdgeIndex, NodeIndex, PatternIndex
+
+
+class Graph(interfaces.IGraph):
+    def __init__(self, root: Path, normalizer: interfaces.INormalizer):
+        super().__init__(root, normalizer)
+        self.nodes = NodeIndex(root=root, normalizer=normalizer)
+        self.edges = EdgeIndex(root=root)
+        self.patterns = PatternIndex(root=root)
+
+    def __repr__(self):
+        return f"<Graph: {len(self.nodes)} nodes, {len(self.edges)} edges>"
+
+    def __len__(self) -> int:
+        return len(self.nodes)
+
+    def __iter__(self) -> Iterable[Node]:
+        yield from self.iterate_nodes()
+
+    def save_node(self, node: Node):
+        self.nodes.save(node)
+
+    def get_node(self, key: str) -> Node:
+        return self.nodes.get(key=key)
+
+    def remove_node(self, node_key: NodeKey) -> Node:
+        return self.nodes.remove(node_key)
+
+    def get_labels(self) -> Set[str]:
+        return self.nodes.get_labels()
+
+    def count_nodes(self, term=None, labels: istr = None):
+        return self.nodes.count(term=term, labels=labels)
+
+    def save_edge(self, edge: Edge):
+        return self.edges.save(edge)
+
+    def remove_edge(self, edge: Edge) -> Optional[dict]:
+        return self.edges.remove(edge)
+
+    def remove_edges(self, node: NodeKey) -> int:
+        key = Node.to_key(node)
+        count = 0
+        for _, edge in self.edges.iterate(nodes=key):
+            self.edges.remove(edge)
+            count += 1
+        return count
+
+    def connect(self, start: Node, verb: str, end: Node, data: dict = None):
+        self.save_node(start)
+        self.save_node(end)
+        edge = Edge(start=start, verb=verb, end=end, data=data)
+        self.save_edge(edge)
+        return edge
+
+    def get_verbs(self) -> Set[str]:
+        return self.edges.get_verbs()
+
+    def get_neighbors(
+        self,
+        node_key,
+        verb: str = None,
+        direction: Optional[Direction] = None,
+        label: str = None,
+        offset: int = 0,
+        limit: int = 10,
+    ) -> Tuple[List[Neighbor], int]:
+        return self.edges.get_neighbors(
+            node_key=node_key,
+            verb=verb,
+            direction=direction,
+            label=label,
+            offset=offset,
+            limit=limit,
+        )
+
+    def iterate_edges(
+        self, verbs=None, directions=None, nodes=None
+    ) -> Iterable[Tuple[str, Edge]]:
+        yield from self.edges.iterate(
+            verbs=verbs, directions=directions, nodes=nodes
+        )
+
+    def iterate_keys(
+        self,
+        keys: istr = None,
+        terms: istr = None,
+        prefixes: istr = None,
+        labels: istr = None,
+    ) -> Iterable[str]:
+        yield from self.nodes.iterate(
+            keys=keys, terms=terms, prefixes=prefixes, labels=labels
+        )
+
+    def iterate_nodes(
+        self,
+        keys: istr = None,
+        terms: istr = None,
+        prefixes: istr = None,
+        labels: istr = None,
+    ) -> Iterable[Node]:
+
+        for key in self.nodes.iterate(
+            keys=keys, terms=terms, prefixes=prefixes, labels=labels
+        ):
+            yield self.nodes.get(key=key)
+
+    def save_pattern(self, pattern: Pattern):
+        return self.patterns.save(pattern)
+
+    def get_pattern_labels(self, pipeline: str) -> Set[str]:
+        return self.patterns.get_labels(pipeline=pipeline)
+
+    def is_pattern_prefix(self, pipeline: str, label: str, prefix: str):
+        return self.patterns.is_prefix(pipeline, label, prefix)
+
+    def get_patterns(
+        self, pipeline: str, label: str, key: str
+    ) -> List[Pattern]:
+        return self.patterns.get(pipeline=pipeline, label=label, key=key)
+
+    @contextmanager
+    def transact(self):
+        with self.nodes.cache.transact():
+            with self.edges.cache.transact():
+                yield
+
+    def reindex(self):
+        self.edges.reindex()
+        self.nodes.reindex()
+        self.patterns.reindex()
+
+    def reload(self):
+        self.nodes.reload()
+        self.edges.reload()
+        self.patterns.reload()
+
+    def clear(self):
+        self.nodes.clear()
+        self.edges.clear()
+        self.patterns.clear()
+
+    def clean_edges(self):
+        self.edges.clean(self.nodes)
+
+    def info(self):
+        return {
+            "nodes": len(self.nodes),
+            "edges": len(self.edges),
+            "patterns": len(self.patterns),
+        }
