@@ -1,0 +1,7 @@
+wikipedia-api
+PyDictionary
+textblob
+pyfood
+unidecode
+numpy
+nltk
