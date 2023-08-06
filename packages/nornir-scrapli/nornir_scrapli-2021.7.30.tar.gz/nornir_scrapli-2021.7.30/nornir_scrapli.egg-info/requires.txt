@@ -1,0 +1,20 @@
+nornir<4.0.0,>3.0.0
+nornir_utils>=0.1.0
+ntc_templates<3.0.0,>=1.1.0
+scrapli>=2021.07.30
+scrapli_cfg>=2021.07.30
+scrapli_community>=2021.01.30
+scrapli_netconf>=2021.01.30
+textfsm<2.0.0,>=1.1.0
+
+[full]
+
+[full:sys_platform != "win32" and python_version < "3.10"]
+genie>=20.2
+pyats>=20.2
+
+[genie]
+
+[genie:sys_platform != "win32" and python_version < "3.10"]
+genie>=20.2
+pyats>=20.2
