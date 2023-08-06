@@ -1,0 +1,4 @@
+[console_scripts]
+analyze = cellpack.bin.analyze:main
+sim-convert = cellpack.bin.simularium_converter:main
+
