@@ -1,0 +1,59 @@
+Metadata-Version: 1.1
+Name: vietcardocr
+Version: 0.2
+Summary: Extract Vietnamese Card
+Home-page: https://github.com/trongbui1105/vietcardocr.git
+Author: TrongBui
+Author-email: buiquoctrong110500@gmail.com
+License: MIT
+Description: vietcardocr
+        ===========
+        
+        vietcardocr is a Python library for extracting information from Vietnamese Personal Card (IDCard, Driving License, Student Card).
+        
+        Installation
+        ------------
+        
+        Use the package manager `pip <https://pip.pypa.io/en/stable/>`__ to
+        install foobar.
+        
+        .. code:: bash
+        
+            pip install vietcardocr
+        
+        Usage
+        -----
+        
+        .. code:: python
+        
+            import vietcardocr.extract as ex
+        
+            res = ex.extract("example-image.jpg") #return a dictionary data type
+            print(res)) 
+        
+        Contributing
+        ------------
+        
+        Pull requests are welcome. For major changes, please open an issue first
+        to discuss what you would like to change.
+        
+        Please make sure to update tests as appropriate.
+        
+        License
+        -------
+        
+        `MIT <https://choosealicense.com/licenses/mit/>`__
+        
+Keywords: extract
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
