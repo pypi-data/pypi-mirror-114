@@ -1,0 +1,11 @@
+LucidDynamodb/__init__.py,sha256=J561lvCFZIsv5uAC1lTtukPO-f0S1UFvI-lhto22OX0,274
+LucidDynamodb/exceptions.py,sha256=d4xmav1qpOf3Z7zmFyShW3e6cSxASr_kRGRSO7GpweU,2436
+LucidDynamodb/operations.py,sha256=tpajBXOx_38e4QUQR0SdOViBSOaSBVSIzeOEb4GH4A0,11681
+LucidDynamodb/utils.py,sha256=nOO1gji3T3zti2gPQ7qd660L0CRAU7MKZyYo_gjnGpw,3155
+tests/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tests/test_crud.py,sha256=SxMEHjMhVofm3XGIQBZalv8F50UCZoxShCt3-nrvn3o,11646
+LucidDynamodb-1.0.127.dist-info/LICENSE,sha256=acl_zs2aNCOFfWfSyIUPrnJqD1kkj_fXfYfjxXygF6k,1073
+LucidDynamodb-1.0.127.dist-info/METADATA,sha256=dTRtmCrmZnxYIDz7EkAL57RoQu9ixRIDcQogOA8y5A8,28434
+LucidDynamodb-1.0.127.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+LucidDynamodb-1.0.127.dist-info/top_level.txt,sha256=DB48MQNHtC0alYrFHdME9CgVbuCi4uqZuPQDqOJR178,20
+LucidDynamodb-1.0.127.dist-info/RECORD,,
