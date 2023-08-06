@@ -1,0 +1,3 @@
+[certbot.plugins]
+dns-websupportsk = certbot_dns_websupportsk.dns_websupportsk:Authenticator
+
