@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: odoo14-addons-oca-account-analytic
+Version: 14.0.20210728.0
+Summary: Meta package for oca-account-analytic Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Requires-Dist: odoo14-addon-account-analytic-parent
+Requires-Dist: odoo14-addon-account-analytic-wip
+Requires-Dist: odoo14-addon-analytic-activity-based-cost
+Requires-Dist: odoo14-addon-analytic-base-department
+Requires-Dist: odoo14-addon-analytic-tag-dimension
+Requires-Dist: odoo14-addon-analytic-tag-dimension-enhanced
+Requires-Dist: odoo14-addon-mrp-analytic
+Requires-Dist: odoo14-addon-mrp-analytic-child-mo
+Requires-Dist: odoo14-addon-mrp-analytic-sale-project
+
+UNKNOWN
+
