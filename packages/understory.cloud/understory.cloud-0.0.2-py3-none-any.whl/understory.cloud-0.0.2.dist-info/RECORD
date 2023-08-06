@@ -1,0 +1,9 @@
+understory_cloud/__init__.py,sha256=H2MQfrKTP3cd07hZrqPOgkTiZoUSCYmV0r8EBffpC-Q,265
+understory_cloud/static/gaea.gif,sha256=3W_nK48ei-yHs5ggP6Tsl8BjJnnYPK38mYuCOwyEZ-o,535
+understory_cloud/static/sun.svg,sha256=uw1yNB6AUb-PYkkWBCefDDO84RfacYPF9xCMihp06iU,1607
+understory_cloud/templates/index.html,sha256=55D_fpvSi-t3NQUq8ZOZquBrI5BJrzAiCrq5kKLF5dM,4232
+understory.cloud-0.0.2.dist-info/entry_points.txt,sha256=FRkTShZi3ZJVJMqm3XigBAPV5JJ3Mnq8oPPYKci--Lc,50
+understory.cloud-0.0.2.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+understory.cloud-0.0.2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+understory.cloud-0.0.2.dist-info/METADATA,sha256=ArmWZt7SEgroeMSkl_MvxG7sY06dvZGcvdgwcb8dxNA,443
+understory.cloud-0.0.2.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[web.apps]
+understory_cloud=understory_cloud:app
+
