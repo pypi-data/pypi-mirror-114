@@ -1,0 +1,3 @@
+[console_scripts]
+enbios = enbios.bin.script:main
+
