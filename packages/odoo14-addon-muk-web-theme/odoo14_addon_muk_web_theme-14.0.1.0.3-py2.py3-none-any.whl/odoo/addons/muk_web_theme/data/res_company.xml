@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo noupdate="1">
+
+	<record id="base.main_company" model="res.company">
+		<field name="background_image" type="base64" file="muk_web_theme/static/src/img/background.png" />
+    </record>
+	
+</odoo>
+
