@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: makelearningeasy
+Version: 0.0.5
+Summary: A personal project to improve my learning process
+Home-page: https://github.com/MyOpenSource-Projects/makelearningeasy
+Author: David Foster Wallace
+Author-email: davidfosterwallace@gmail.com
+License: Apache2
+Download-URL: https://github.com/MyOpenSource-Projects/makelearningeasy/archive/0.0.5.tar.gz
+Description: UNKNOWN
+Keywords: makelearningeasy,easylearning
+Platform: UNKNOWN
+Requires-Python: >=3
