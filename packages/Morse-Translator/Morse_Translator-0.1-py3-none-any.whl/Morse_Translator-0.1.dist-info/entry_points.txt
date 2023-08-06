@@ -1,0 +1,3 @@
+[console_scripts]
+morse = main.MorseDecode:main
+
