@@ -1,0 +1,10 @@
+[asdf_extensions]
+jwst_datamodel = jwst.datamodels.extension:DataModelExtension
+jwst_pipeline = jwst.transforms.jwextension:JWSTExtension
+
+[pytest11]
+report_crds_context = pytest_crds.plugin
+
+[stpipe.steps]
+jwst = jwst.stpipe.integration:get_steps
+
