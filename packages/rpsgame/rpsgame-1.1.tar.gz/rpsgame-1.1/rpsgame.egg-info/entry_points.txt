@@ -1,0 +1,3 @@
+[console_scripts]
+rpsgame = rpsgame.main:__main__
+
