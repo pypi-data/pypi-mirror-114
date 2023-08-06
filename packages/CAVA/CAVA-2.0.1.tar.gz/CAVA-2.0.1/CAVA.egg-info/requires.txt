@@ -1,0 +1,6 @@
+Cython
+pybedtools
+pysam
+crossmap
+wget
+requests
