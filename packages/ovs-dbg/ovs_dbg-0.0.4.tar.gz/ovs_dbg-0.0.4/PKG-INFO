@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: ovs_dbg
+Version: 0.0.4
+Summary: OVS Debug contains scripts and libraries that help debug OVS and OVN
+Home-page: https://ovs-dbg.readthedocs.io/en/latest/
+Author: Adrián Moreno
+Author-email: amorenoz@redhat.com
+License: Apache Software License 2.0
+Project-URL: Source, https://github.com/amorenoz/ovs-dbg
+Keywords: ovs_dbg
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
+
+# ovs-dbg
+
+Scripts to help debug OVS and OVN
+
+Full documentation here: https://ovs-dbg.readthedocs.io/en/latest
+
+## ofparse
+
+Ofparse parses the output of commands such as `ovs-ofproto dump-flows` and
+prints the files in different outputs
+
+
