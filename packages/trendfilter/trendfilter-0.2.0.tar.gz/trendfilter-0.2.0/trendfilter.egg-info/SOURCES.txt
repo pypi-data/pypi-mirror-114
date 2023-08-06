@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+setup.py
+test/test_linear_deviations.py
+test/test_tf.py
+trendfilter/__init__.py
+trendfilter/derivatives.py
+trendfilter/extrapolate.py
+trendfilter/get_example_data.py
+trendfilter/linear_deviations.py
+trendfilter/plot_model.py
+trendfilter/trendfilter.py
+trendfilter.egg-info/PKG-INFO
+trendfilter.egg-info/SOURCES.txt
+trendfilter.egg-info/dependency_links.txt
+trendfilter.egg-info/requires.txt
+trendfilter.egg-info/top_level.txt
