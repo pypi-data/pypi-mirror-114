@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: s3labeler
+Version: 1.0.0
+Summary: label s3 objects
+Home-page: https://gitlab.com/krink/s3labeler
+Author: Karl Rink
+Author-email: karl@rink.us
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/krink/s3labeler/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+label s3 objects cli and REST API
+

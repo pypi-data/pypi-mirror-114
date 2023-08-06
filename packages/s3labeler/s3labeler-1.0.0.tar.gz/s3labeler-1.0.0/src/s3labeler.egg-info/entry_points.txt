@@ -1,0 +1,3 @@
+[console_scripts]
+s3labeler = s3labeler.s3labeler:main
+
