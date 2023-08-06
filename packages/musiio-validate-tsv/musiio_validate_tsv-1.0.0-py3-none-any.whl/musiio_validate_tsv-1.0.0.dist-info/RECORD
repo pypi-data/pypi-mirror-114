@@ -1,0 +1,9 @@
+musiio_validate_tsv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+musiio_validate_tsv/exceptions.py,sha256=rS6ZH8JYLZZyI3bVED4bm6L7QBNJFWNMTdzV8lERW7E,708
+musiio_validate_tsv/utils.py,sha256=Ak6JZGzybTbIS5WoU2RWqNaaM1wZ73JqaIUaV7TZx3k,1819
+musiio_validate_tsv/validate_tsv.py,sha256=rVT-NgwAPPUtVe4oJacK2Jn3T1q4E1qSr6h712_jcxA,9180
+musiio_validate_tsv-1.0.0.dist-info/LICENSE.txt,sha256=QcNiiDGCPo3GZxBX0_X-XWEAf0KxnUbaTok9EPtQkpg,1072
+musiio_validate_tsv-1.0.0.dist-info/METADATA,sha256=WaTJrF_2_B_-9m64NxreQotlBJPg9cX_7bnQUMVs4Ig,3357
+musiio_validate_tsv-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+musiio_validate_tsv-1.0.0.dist-info/top_level.txt,sha256=VDHfbjyoYCq8YgvXmAbP9yLrPWjtVNKA9t39LukaTxs,20
+musiio_validate_tsv-1.0.0.dist-info/RECORD,,
