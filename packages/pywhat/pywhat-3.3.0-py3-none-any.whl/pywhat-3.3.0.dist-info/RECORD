@@ -1,0 +1,17 @@
+pywhat/Data/file_signatures.json,sha256=aotN3k7slOwHOm5si1GdoY3ZtqhrlDHmXs6Wqa7TUQQ,46894
+pywhat/Data/phone_codes.json,sha256=e8BsK6Koa4H4HIgJXo6mG8pF2B69TpUQewZZfyEMejs,17386
+pywhat/Data/regex.json,sha256=NlKhaYLOKcDJcDxll-Rv_H2gmZsHsnh2CiN60wE7Oe8,33356
+pywhat/__init__.py,sha256=Y7S2bwTdCXhPLrBsGBCxw_APSDaDN0WUJLdt-NV03_o,252
+pywhat/__main__.py,sha256=v4rC0oAFR_Ltog95F_SNiSoWF0s10UlBIDmS2rbGzMM,567
+pywhat/filter.py,sha256=G2Oj29g1boZsZBERBCFBNBWOjJFZhqA7zOH0fLjW5Ck,4444
+pywhat/helper.py,sha256=hpNyOJkYl5xLSjx2m0yyJq_fUSL0sA_kpBAo4bhRyQM,2070
+pywhat/identifier.py,sha256=QVqVZX1JQc9bav9ZYhBUbQjH4UZvFJC08C_uy4Bc_z0,3385
+pywhat/magic_numbers.py,sha256=u9qhWme-bEtYp1R0y4O9AqXw97rooT8rPQ3XD_HZ3P4,1159
+pywhat/printer.py,sha256=fGJA6HPZ23JxZiVrr3jPnmXIqwrin4HY7hyTGE_-lq4,3003
+pywhat/regex_identifier.py,sha256=REikwjijapzcFAQ-KG9yx4IjbnDsHO7MHTSNeAeekiM,2269
+pywhat/what.py,sha256=jSd1dpyay18Tfz3k9Wo7kINxPYIlmfX73DAnIfQG934,7219
+pywhat-3.3.0.dist-info/entry_points.txt,sha256=cyCM3-eJZPpMqZbJBgQUMGWCYeEjqlFXnZwf2sEX3UM,65
+pywhat-3.3.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pywhat-3.3.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+pywhat-3.3.0.dist-info/METADATA,sha256=cm2PaCOwkM5wJfb208LL7hF4Fk8GXlGIlR3e1wxxDAU,4770
+pywhat-3.3.0.dist-info/RECORD,,
