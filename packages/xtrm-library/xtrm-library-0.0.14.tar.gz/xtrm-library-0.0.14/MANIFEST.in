@@ -1,0 +1,10 @@
+recursive-include xlibrary/templates *
+recursive-include xlibrary/templates/account *
+recursive-include xlibrary/templates/registration *
+recursive-include xlibrary/templates/reports *
+recursive-include xlibrary/static *
+recursive-include xlibrary/blueprints *
+include *.j2
+include *.txt
+include *.md
+include *.ini
