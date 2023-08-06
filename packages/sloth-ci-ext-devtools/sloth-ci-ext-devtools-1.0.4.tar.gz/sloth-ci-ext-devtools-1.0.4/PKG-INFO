@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: sloth-ci-ext-devtools
+Version: 1.0.4
+Summary: Utilities to help you develop extensions and validators for Sloth CI
+License: MIT
+Author: Constantine Molchanov
+Author-email: moigagoo@live.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: sloth-ci (>=2.2,<3.0)
+Description-Content-Type: text/markdown
+
+# Utilities to help developers create validators and extensions for Sloth CI
+
+
+## Installation
+    
+    $ pip install sloth-ci-ext-devtools
+
+
+## Usage
+
+Enable the extension in the server config:
+
+    extensions:
+        dev:
+            # Use the module sloth_ci.ext.devtools.
+            module: devtools
+
+Call `sci dev` with `-e` or `-v` to create an extensions or a validator template:
+
+    $ sci dev -e spam
+    Extension "spam" created.
+    $ sci dev -v eggs
+    Validator "eggs" created.
+
