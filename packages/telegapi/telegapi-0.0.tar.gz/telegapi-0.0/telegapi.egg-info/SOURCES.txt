@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+telegapi/__init__.py
+telegapi/reqs.py
+telegapi/telapi.py
+telegapi.egg-info/PKG-INFO
+telegapi.egg-info/SOURCES.txt
+telegapi.egg-info/dependency_links.txt
+telegapi.egg-info/requires.txt
+telegapi.egg-info/top_level.txt
