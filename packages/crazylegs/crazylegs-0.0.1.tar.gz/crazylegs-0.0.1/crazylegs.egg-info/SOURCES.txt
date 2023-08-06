@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+crazylegs/__init__.py
+crazylegs.egg-info/PKG-INFO
+crazylegs.egg-info/SOURCES.txt
+crazylegs.egg-info/dependency_links.txt
+crazylegs.egg-info/top_level.txt
