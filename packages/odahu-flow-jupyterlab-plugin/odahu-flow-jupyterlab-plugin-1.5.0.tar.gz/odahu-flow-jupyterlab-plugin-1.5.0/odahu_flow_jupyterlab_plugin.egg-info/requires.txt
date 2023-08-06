@@ -1,0 +1,8 @@
+odahu-flow-sdk==1.5.0rc6
+odahu-flow-cli==1.5.0rc6
+notebook
+pydantic>=1.2
+
+[testing]
+pylint>=2.3.0
+jupyterlab~=1.1
