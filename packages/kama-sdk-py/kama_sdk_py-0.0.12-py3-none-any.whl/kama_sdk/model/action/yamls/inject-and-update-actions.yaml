@@ -1,0 +1,67 @@
+kind: MultiAction
+id: sdk.action.apply_latest_vendor_injections
+title: Fetch and Apply Latest Injections
+info: Retrieve assignments, apply if secrets must be created
+ktea: get::sdk.supplier.injections_ktea
+debug_props: [values, ktea, injections, res_descs, outkomes]
+
+sub_actions:
+  - id::sdk.action.fetch_latest_injections
+
+  - inherit: sdk.action.safely_write_source_vars
+    target_key: vendor_injection_vars
+    values: get::props injections->.standard
+
+  - inherit: sdk.action.template_manifest
+    values: get::props injections->.inline
+
+  - id::sdk.action.kubectl_apply
+
+  - id::sdk.action.await_outkomes_settled
+
+circuit_breakers:
+  - after: sdk.action.fetch_latest_injections
+    exit:
+      kind: IfThenElse
+      if_true: positive
+      if_false: __null__
+      source:
+        kind: Predicate
+        id: check_standard_or_inline
+        check_against: 0
+        challenge:
+          kind: SumSupplier
+          source:
+            - get::props injections->.inline | length
+            - get::props injections->.standard | length
+
+  - after: sdk.action.safely_write_source_vars
+    exit:
+      kind: IfThenElse
+      if_true: positive
+      if_false: __null__
+      source:
+        kind: Predicate
+        id: check_inlines_gt_0
+        check_against: 0
+        challenge: get::props injections->.inline | length
+
+---
+
+kind: MultiAction
+id: sdk.action.apply_update_e2e_action
+inherit: sdk.action.apply_application_manifest_e2e_action
+title: Update Application
+info: Get new KTEA, update variable defaults, reapply manifest
+
+sub_actions:
+  - id::sdk.action.fetch_update
+  - id::sdk.action.commit_ktea_from_update
+  - id::sdk.action.load_var_defaults_from_ktea
+  - inherit: sdk.action.safely_write_source_vars
+    target_key: default_vars
+    values: get::props variable_defaults
+  - inherit: sdk.action.template_manifest
+    values: get::sdk.supplier.config.variables
+  - id::sdk.action.kubectl_apply
+  - id::sdk.action.await_outkomes_settled

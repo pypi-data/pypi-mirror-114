@@ -1,0 +1,19 @@
+kind: Operation
+id: sdk.operation.fail-on-purpose
+title: Fail on Purpose
+info: This operation is not meant to succeed.
+synopsis: assets::fail-on-purpose-synopsis.md
+stages:
+  - id: sdk.stage.fail-kubectl
+    title: Kubectl apply failures
+    info: "What happens when kubectl apply -f throws an error?"
+    steps:
+      - id: sdk.steps.kubectl-fail-to-data-type
+        title: "Non-integer string"
+        info: "We'll give 'replicas' a non-integer value"
+        action: sdk.action.step_apply_application_manifest_e2e_action
+        synopsis: "## I am not a crook\n\nBut my steak is on point."
+        fields:
+          - id: deployment.replicas
+            title: "Free form input"
+            default: not-a-number

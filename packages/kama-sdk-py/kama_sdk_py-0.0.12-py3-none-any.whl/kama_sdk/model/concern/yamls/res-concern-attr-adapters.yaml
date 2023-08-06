@@ -1,0 +1,78 @@
+kind: ConcernAttrAdapter
+id: sdk.concern_attr.res.name
+title: Name
+label: res_name
+
+---
+
+kind: ConcernAttrAdapter
+id: sdk.concern_attr.res.name_with_link_action
+title: Name
+label: name
+interp: ${get::props concern=>res_kind_lower_singular}
+value:
+  type: Text
+  text: get::props concern=>res_name
+  action:
+    type: concern_detail
+    uri:
+      adapter_ref: "id::sdk.concern_adapter.${get::props interp}"
+      concern_ref: "id::sdk.concern.${get::props interp}"
+      seed:
+        namespace: get::props concern=>namespace
+        name: get::props concern=>res_name
+        res_kind: get::props concern=>res_kind
+
+---
+
+kind: ConcernAttrAdapter
+id: sdk.concern_attr.res.memory_series_summary
+title: Memory
+value:
+  type: SeriesSummary
+  data:
+    kind: SeriesSummarySupplier
+    good_direction: down
+    humanizer: kind::BytesHumanizer
+    source:
+      kind: PromMatrixToSeriesSupplier
+      source: get::props concern=>prom_mem_dump
+
+---
+
+kind: ConcernAttrAdapter
+id: sdk.concern_attr.res.kind
+title: Kind
+label: res_kind
+
+---
+
+kind: ConcernAttrAdapter
+id: sdk.concern_attr.res.namespace
+title: Namespace
+label: namespace
+
+---
+
+kind: ConcernAttrAdapter
+id: sdk.concern_attr.res.config
+title: Namespace
+value: get::props concern=>raw
+
+---
+
+kind: ConcernAttrAdapter
+id: sdk.concern_attr.res.ternary_status
+title: Status
+label: status
+value:
+  type: Tag
+  text: get::props concern=>ternary_status
+
+---
+
+kind: ConcernAttrAdapter
+title: Created
+id: sdk.concern_attr.res.created_at
+label: friendly_created_at
+load_order: 1

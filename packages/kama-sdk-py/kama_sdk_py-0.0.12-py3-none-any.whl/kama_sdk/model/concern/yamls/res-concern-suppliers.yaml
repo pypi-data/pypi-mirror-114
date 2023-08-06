@@ -1,0 +1,37 @@
+kind: Supplier
+id: sdk.supplier.res_pods_minifier
+source: get::props kat_res=>pods
+serializer: legacy
+output:
+  name: name
+  status: phase.lower
+
+---
+
+kind: Supplier
+id: sdk.supplier.pods_in_dots_format
+source: get::self>>pods
+serializer: legacy
+output:
+  name: name
+  status: phase.lower
+
+---
+
+kind: Supplier
+id: sdk.supplier.pod_memory_series_summary
+value:
+  kind: SeriesSummarySupplier
+  good_direction: down
+  humanizer: kind::BytesHumanizer
+  source:
+    kind: PromMatrixToSeriesSupplier
+    source:
+      kind: PromDataSupplier
+      source: "sum(
+                container_memory_usage_bytes{
+                  namespace='${get::props source=>kat_res.namespace}',
+                  pod='${get::props kat_res=>name}'
+                }
+              )"
+

@@ -1,0 +1,28 @@
+kind: MultiAction
+id: sdk.action.safely_apply_application_manifest_e2e_action
+title: Commit variables and apply manifest
+info: Safely commit new variables and apply the re-templated manifest
+debug_props: [values, config_space, res_descs, outkomes]
+
+sub_actions:
+  - inherit: sdk.action.safely_patch_manifest_vars
+    target_key: user_vars
+  - inherit: sdk.action.template_manifest
+    values: get::sdk.supplier.config.variables
+  - id::sdk.action.kubectl_apply
+  - id::sdk.action.await_outkomes_settled
+
+---
+
+kind: MultiAction
+id: sdk.action.safely_apply_application_manifest_e2e_action_from_unset
+title: Unset variables and apply manifest
+info: Safely unset variables and apply the re-templated manifest
+debug_props: [values, res_descs, outkomes]
+
+sub_actions:
+  - inherit: sdk.action.safely_unset_manifest_vars
+    target_key: user_vars
+  - id::sdk.action.template_manifest_with_unset
+  - id::sdk.action.kubectl_apply
+  - id::sdk.action.await_outkomes_settled

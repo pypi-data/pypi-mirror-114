@@ -1,0 +1,113 @@
+kind: Concern
+id: sdk.concern.memory
+cached:
+  mem_dump:
+    kind: PromDataSupplier
+    step: 5m
+    source: "sum(
+              container_memory_usage_bytes{
+                namespace='${get::ns}',
+                image!='',
+                container_name!='POD'
+              }
+            )"
+
+  grouped_by_deployment_dump:
+    kind: PromDataSupplier
+    type: vector
+    source: "sum(
+              container_memory_usage_bytes{
+                namespace='${get::ns}',
+                image!='',
+                container_name!='POD'
+              }
+            ) by (pod)"
+
+  grouped_by_deployment_hum:
+    kind: PromVectorsToGroupsSupplier
+    source: get::self>>grouped_by_deployment_dump
+    humanizer: kind::BytesHumanizer
+    with_unit: true
+
+  mem_timeseries:
+    kind: PromMatrixToSeriesSupplier
+    source: get::props mem_dump
+    humanizer: kind::BytesHumanizer
+
+  mem_timeseries_no_hum:
+    kind: PromMatrixToSeriesSupplier
+    source: get::props mem_dump
+
+  mem_latest:
+    kind: TimeseriesAggregationSupplier
+    source: get::props mem_timeseries_no_hum
+
+  friendly_mem_latest:
+    kind: QuantityHumanizationSupplier
+    source: get::props mem_latest
+    backend: kind::BytesHumanizer
+
+  cluster_avail_dump:
+    kind: PromDataSupplier
+    source: "sum(container_memory_usage_bytes{image!='', container_name!='POD'})"
+
+  cluster_avail_sum:
+    kind: TimeseriesAggregationSupplier
+    source:
+      kind: PromMatrixToSeriesSupplier
+      source: get::props cluster_avail_dump
+
+  cluster_avail_sum_hum:
+    kind: QuantityHumanizationSupplier
+    id: sdk.supplier.memory-concern.cluster_avail_hum
+    source: get::self>>cluster_avail_sum
+    backend:
+      kind: BytesHumanizer
+      rounding: 1
+
+  pct_used:
+    kind: PercentageSupplier
+    numerator: get::props mem_latest
+    denominator: get::props cluster_avail_sum
+    rounding: 0
+
+---
+
+id: sdk.concern-card-adapter.memory
+kind: ConcernCardAdapter
+spec:
+  type: Block
+  title: Application + Plugins Memory
+  elements:
+    - type: Section
+      width: 1
+      elements:
+        - type: "Text"
+          text: Responsible for
+          style: [centered]
+
+        - type: "Text"
+          text: get::self>>concern=>friendly_mem_latest
+          style: { fontSize: '20px', centered: true, bold: true }
+
+        - type: Tag
+          text: "${get::self>>concern=>pct_used}%
+          of total
+          ${get::self>>concern=>cluster_avail_sum_hum} Usage"
+          style: { centered: true, mt: '4px' }
+
+    - type: Section
+      width: 2
+      style: { pr: '40px' }
+      elements:
+        - type: TimeseriesGraph
+          data: get::self>>concern=>mem_timeseries
+          style:
+            width: 100%
+            height: 100%
+
+    - type: Section
+      width: 1
+      elements:
+        - type: Donut
+          data: get::self>>concern>>grouped_by_deployment_hum

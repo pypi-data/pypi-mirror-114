@@ -1,0 +1,39 @@
+kind: MultiAction
+id: sdk.action.safely_write_source_vars
+title: Safely write variables
+info: Ensure dry run works, then overwrite ${get::props target_key} with new vars
+sub_actions:
+  - id::sdk.action.template_manifest_merge_original_values
+  - id::sdk.action.kubectl_dry_run_action
+  - id::sdk.action.create_backup_action
+  - id::sdk.action.write_manifest_variables
+debug_props: [values, ktea]
+error_telem_props: get::props debug_props
+
+---
+
+kind: MultiAction
+id: sdk.action.safely_patch_manifest_vars
+title: Safely commit variables
+info: Ensure dry run works, then patch ${get::props target_key} with new vars
+debug_props: [values, ktea, res_descs, outkomes]
+
+sub_actions:
+  - id::sdk.action.template_manifest_merge_original_values
+  - id::sdk.action.kubectl_dry_run_action
+  - id::sdk.action.patch_manifest_variables
+  - id::sdk.action.create_backup_action
+
+---
+
+kind: MultiAction
+id: sdk.action.safely_unset_manifest_vars
+title: Safely unset variables
+info: Ensure dry run works, then unset vars from ${get::props target_key}
+debug_props: [values, ktea, res_descs, outkomes]
+
+sub_actions:
+  - id::sdk.action.template_manifest_with_unset
+  - id::sdk.action.kubectl_dry_run_action
+  - id::sdk.action.create_backup_action
+  - id::sdk.action.unset_manifest_vars
