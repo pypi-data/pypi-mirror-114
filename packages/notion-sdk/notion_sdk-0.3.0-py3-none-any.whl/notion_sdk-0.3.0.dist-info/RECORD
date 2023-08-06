@@ -1,0 +1,13 @@
+notion/__init__.py,sha256=GoB1pzdWqTG7fCVmmxfcJ50yaYIxTMuT_HSY0cTL0wA,220
+notion/__version__.py,sha256=zpdh1CRcJ1rY9G6ZNmZBFeM3sV1z1nqt4NecuKBMIKc,504
+notion/client.py,sha256=cWWTxO-LKAzXnhI1LXaIiyKBiJdxCVzCdUeWduhRrKg,5121
+notion/endpoints/__init__.py,sha256=W_kOo8DtYUdHUCtihAa43Wh0pSu0-UY8Fwc8ouAMCcI,574
+notion/endpoints/asynchronous.py,sha256=8TN1IMnn5qmC6K7Razn5twBL4Wj4NaHUicR7nlH_9c0,5471
+notion/endpoints/sync.py,sha256=24-p0EJ6U2Jmarasg5MQgdy59E0N7j3thCc-wRcmd7U,5244
+notion/errors.py,sha256=t8qZuj6whcYwMJ0keYbJHS7ZC7kOKcB50TJCjJvxw8c,1666
+notion/helpers.py,sha256=ugz3OorHoIdgZrymFBDFSyCyy7Ag350mFd3QhMf2DJ0,310
+notion/types.py,sha256=6UsF8WPwX0GuQIZwLcvLyWFjaHLBj3fOTXNcjlAleuk,22139
+notion_sdk-0.3.0.dist-info/LICENSE,sha256=QyHJuGYpTbI1EnnAzDS0LUYuAqrY4UQ6FP_56aPIj5U,10758
+notion_sdk-0.3.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+notion_sdk-0.3.0.dist-info/METADATA,sha256=pmdSndkRyN7RER6xOnFEh_H2mCikjWMK7ELykLsORSg,4098
+notion_sdk-0.3.0.dist-info/RECORD,,
