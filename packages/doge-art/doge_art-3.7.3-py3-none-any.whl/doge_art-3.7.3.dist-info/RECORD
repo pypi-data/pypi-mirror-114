@@ -1,0 +1,14 @@
+doge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doge/core.py,sha256=gHpJy_wMelpqMK9IClWV3YkCpOVA8m1qH_DzVnYIe9A,15632
+doge/wow.py,sha256=IUZkAJMVm1CQqlVHgVJQunwCOMUwFt98P6_N0CMnxbI,25551
+doge/static/doge-halloween.txt,sha256=fbPIQVJ-PGWCcw5oqSz-GFMEk0x10x_Xy0myBFRoUVs,11739
+doge/static/doge-small.txt,sha256=3g5LkpAdmSbyENFLeo6BgJp1N2UMLMzelhPfWalW9iQ,2599
+doge/static/doge-thanksgiving.txt,sha256=YBaPpvLw7Bef6mwmes1BuUooArywesgEl8-En76MUNs,9691
+doge/static/doge-xmas.txt,sha256=hgqPOpj5YrgUuwd2RMTk_7qfTE5C0VrsuPGB17uWe1s,9934
+doge/static/doge.txt,sha256=-rL1NKxYSDBXmsNTPbpwcOkpfqMnlaOhby7_LME1Fng,9211
+doge_art-3.7.3.dist-info/LICENSE,sha256=f_ICK0PQru9GSi6j8lrWsmC0Mei-ZAYnz52Z_sJehkc,1081
+doge_art-3.7.3.dist-info/METADATA,sha256=3TDgD7uCowcHG0tAT4B6FYt2mKH2UwO6fKYQ4yQB8hk,446
+doge_art-3.7.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+doge_art-3.7.3.dist-info/entry_points.txt,sha256=7tK19lnYDvw7xDCDxC4qwudlwM3FD0c-jLQO1jbbNRI,41
+doge_art-3.7.3.dist-info/top_level.txt,sha256=HREwms0Pyi_P1wUPln4Xo_QXfR273mdhvbsN-hXzgzw,5
+doge_art-3.7.3.dist-info/RECORD,,
