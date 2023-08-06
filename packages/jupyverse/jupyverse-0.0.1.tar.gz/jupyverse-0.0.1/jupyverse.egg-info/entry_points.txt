@@ -1,0 +1,3 @@
+[console_scripts]
+jupyverse = jupyverse.jupyverse:cli
+

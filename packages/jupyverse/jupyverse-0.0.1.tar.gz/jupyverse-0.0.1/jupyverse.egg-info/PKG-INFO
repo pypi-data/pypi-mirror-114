@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: jupyverse
+Version: 0.0.1
+Summary: A web server for Jupyter, based on FastAPI
+Home-page: https://github.com/davidbrochart/jupyverse.git
+Author: David Brochart
+Author-email: david.brochart@gmail.com
+License: UNKNOWN
+Description: # jupyverse
+        
+        A web server for Jupyter, based on FastAPI.
+        
+        ## Install
+        
+        For now, the only supported JupyterLab distribution is
+        [retrolab](https://github.com/jupyterlab/retrolab), so it must also be installed.
+        
+        ```bash
+        pip install jupyverse retrolab
+        ```
+        
+        ## Usage
+        
+        ```bash
+        jupyverse
+        # then open a browser at http://127.0.0.1:8000
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test

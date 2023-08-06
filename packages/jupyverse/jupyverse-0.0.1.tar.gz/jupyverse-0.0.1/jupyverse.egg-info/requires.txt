@@ -1,0 +1,11 @@
+fastapi
+aiofiles
+typer
+uvicorn
+websockets
+kernel_server
+
+[test]
+flake8
+black
+mypy
