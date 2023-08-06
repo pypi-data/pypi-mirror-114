@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+AdvancedCalc/Advanced.py
+AdvancedCalc/__init__.py
+advancedcalc.egg-info/PKG-INFO
+advancedcalc.egg-info/SOURCES.txt
+advancedcalc.egg-info/dependency_links.txt
+advancedcalc.egg-info/top_level.txt
