@@ -1,0 +1,7 @@
+idem
+pop>=17.0
+pytest-pop
+gitdb>=1.7.0
+GitPython
+semantic-version
+twine
