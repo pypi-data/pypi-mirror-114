@@ -1,0 +1,17 @@
+.gitignore
+Dockerfile
+LICENSE
+README.md
+requirements.txt
+setup.py
+detorch/__init__.py
+detorch/config.py
+detorch/de.py
+detorch/utils.py
+detorch.egg-info/PKG-INFO
+detorch.egg-info/SOURCES.txt
+detorch.egg-info/dependency_links.txt
+detorch.egg-info/requires.txt
+detorch.egg-info/top_level.txt
+examples/example.py
+examples/modules.py

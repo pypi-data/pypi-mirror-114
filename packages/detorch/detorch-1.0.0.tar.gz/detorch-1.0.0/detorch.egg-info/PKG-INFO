@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: detorch
+Version: 1.0.0
+Summary: Minimal PyTorch Library for Differential Evolution
+Home-page: https://github.com/goktug97/de-torch
+Author: Göktuğ Karakaşlı
+Author-email: karakasligk@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Minimal PyTorch Library for Differential Evolution
+========================================================
+
+# Requirements
+
+```
+pipcs
+numpy
+torch
+mpi4py
+gym # For examples
+```
+
+To install `mpi4py` you need `MPI` installed in the system.
+Check: https://mpi4py.readthedocs.io/en/stable/install.html
+
+A Dockerfile is provided for convenience.
+
+# Installation
+
+```bash
+pip install detorch --user
+```
+
+# Usage
+See https://github.com/goktug97/de-torch/blob/master/examples
+
+Check https://github.com/goktug97/pipcs to understand the configuration system.
+
+Check https://github.com/goktug97/de-torch/blob/master/de/config.py for parameters.
+
+You can run the example with
+```bash
+python example.py
+```
+or in parallel for faster training.
+```bash
+mpirun -np 2 python example.py
+```
+
+# Another Evolution Library for PyTorch
+
+https://github.com/goktug97/nes-torch
+
+
