@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+pygame_matplotlib/__init__.py
+pygame_matplotlib/backend_pygame.py
+pygame_matplotlib.egg-info/PKG-INFO
+pygame_matplotlib.egg-info/SOURCES.txt
+pygame_matplotlib.egg-info/dependency_links.txt
+pygame_matplotlib.egg-info/requires.txt
+pygame_matplotlib.egg-info/top_level.txt
