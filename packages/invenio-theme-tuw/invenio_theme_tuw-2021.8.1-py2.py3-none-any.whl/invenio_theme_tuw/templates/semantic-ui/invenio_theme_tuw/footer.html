@@ -1,0 +1,32 @@
+<footer>
+  <div id="logos">
+      <div class="supportlogo">
+          <a>powered by</a>
+          <a href="https://inveniosoftware.org/products/rdm/"><img src="/static/images/rdmlogo.png " /></a>
+      </div>
+      <div class="supportlogo ">
+          <a>enabled by</a>
+          <a href="https://forschungsdaten.at/fda/"><img src="/static/images/fair-data-austria.png " /></a>
+      </div>
+  </div>
+  <nav class="footer">
+
+      {%- set policy_file=_("TU_Data_Policy_20210511_en.pdf") -%}
+      {%- set policy_url=url_for("static", filename=("documents/" + policy_file)) -%}
+      {%- set terms_of_use_file=_("TU_Data_Terms_of_Use_20210511_en.pdf") -%}
+      {%- set terms_of_use_url=url_for("static", filename=("documents/" + terms_of_use_file)) -%}
+      {%- set privacy_statement_file=_("TU_Data_Privacy_Statement_20210406_de.pdf") -%}
+      {%- set privacy_statement_url=url_for("static", filename=("documents/" + privacy_statement_file)) -%}
+      {%- set policies_url=url_for("invenio_theme_tuw.tuw_policies") -%}
+      {%- set contact=url_for("invenio_theme_tuw.tuw_contact") -%}
+    
+
+      <a href="{{policies_url}}">Policies</a>
+
+      <a href="{{terms_of_use_url}}" target="_blank">Terms of Use</a>
+
+      <a href="{{privacy_statement_url}}" target="_blank">Data Protection Declaration</a>
+
+      <a href="{{contact}}">Contact</a>
+  </nav>
+</footer>

@@ -1,0 +1,118 @@
+{# -*- coding: utf-8 -*-
+
+Copyright (C) 2019 - 2021 CERN.
+Copyright (C) 2019 - 2021 Northwestern University.
+Copyright (C) 2020 - 2021 TU Wien.
+
+Invenio is free software; you can redistribute it and/or modify it
+under the terms of the MIT License; see LICENSE file for more details.
+#}
+{%- extends config.BASE_TEMPLATE %}
+
+{%- block page_header %}
+    {% include config.THEME_HEADER_TEMPLATE %}
+{%- endblock %}
+
+
+{%- block page_hero %}
+<section id="hero" class="frontpage" style="flex-shrink: 0;">
+    <form action="{{ config.THEME_SEARCH_ENDPOINT }}">
+        <div id="searchbar" class="ui action input">
+            <label for="q" class="hidden">Search Query</label>
+            <input type="text" id="q" name="q" class="huge" placeholder="Type and press enter to search...">
+            <button type="submit" class="ui icon button huge">
+                <i class="search icon"></i>
+            </button>
+        </div>
+    </form>
+</section>
+{%- endblock page_hero %}
+
+{%- block page_body %}
+<section id="welcome" class="ui container">
+
+    <h1>Welcome to TU Data</h1>
+    <p>
+        TU Data is an institutional repository of TU Wien to enable storing, sharing and publishing of digital objects, in particular research data. It facilitates the funders' requirements for open access to research data and the FAIR principles by making research
+        output findable, accessible, interoperable and re-usable. This service is developed by the <strong>TU
+            Wien
+            Center for Research Data Management</strong> and hosted by <strong>TU.it</strong>.
+    </p>
+    <p>
+        Please note that this service is still under development and has limited functionality. We will add more functionality as development progresses.
+    </p>
+
+</section>
+
+<section id="features" class="ui container">
+    <a href="{{ url_for('invenio_app_rdm_records.deposit_create') }}">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="static/images/upload-file.png">
+                </div>
+                <div class="flip-card-back">
+                    Publish research outputs openly. A landing page provides information on your digital objects,
+                        download links, license and persistent identifier.
+                </div>
+            </div>
+            <h3>Publish</h3>
+        </div>
+    </a>
+    
+    <a href="{{ url_for('invenio_search_ui.search') }}">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="static/images/magnifying-glass.png">
+                </div>
+                <div class="flip-card-back">
+                    Search datasets published by other users.
+                </div>
+            </div>
+            <h3>Search</h3>
+        </div>
+    </a>
+
+    <a href="mailto:tudata@tuwien.ac.at?subject=About TU Data...">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="static/images/rating.png">
+                </div>
+                <div class="flip-card-back">
+                    Restrict access and share data by link, e.g. for peer-review of data underling publications.
+                </div>
+            </div>
+            <h3>Peer-Review</h3>
+        </div>
+    </a>
+
+    <a href="mailto:tudata@tuwien.ac.at?subject=About TU Data...">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="static/images/reuse.png">
+                </div>
+                <div class="flip-card-back">
+                    Deposit your data to make it FAIR. The process can be automated with a use of APIs provided by
+                        the TU
+                        Data.
+                </div>
+            </div>
+            <h3>Reuse</h3>
+        </div>
+    </a>
+</section>
+
+{%- endblock page_body %}
+{%- block page_footer %}
+    {% include config.THEME_FOOTER_TEMPLATE %}
+{%- endblock page_footer %}
+
+{%- block javascript %}
+{{ super() }}
+{%- endblock javascript %}
+{%- block trackingcode %}{% include config.THEME_TRACKINGCODE_TEMPLATE %}
+{%- endblock %}
+
