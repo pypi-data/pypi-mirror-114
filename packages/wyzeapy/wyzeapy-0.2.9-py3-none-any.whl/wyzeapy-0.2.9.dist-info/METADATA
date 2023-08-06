@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: wyzeapy
+Version: 0.2.9
+Summary: Python client for private Wyze API
+Home-page: https://github.com/JoshuaMulliken/wyzeapy
+Author: Mulliken LLC
+Author-email: joshua@mulliken.net
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/JoshuaMulliken/wyzeapy/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Freeware
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: cchardet
+Requires-Dist: aiodns
+
+
+# Wyzeapy
+
+A python library for the (unofficial) Wyze Labs web APIs.
+
+## Used By
+
+This project is used by the [ha-wyzeapi](https://github.com/JoshuaMulliken/ha-wyzeapi) project. Let me know if you are utilizing it so that I can feature your project here!
+
+  
+## Usage/Examples
+
+Getting logged in:
+
+```python
+import asyncio
+from wyzeapy import Wyzeapy
+
+
+async def async_main():
+    client = await Wyzeapy.create()
+    await client.login("EMAIL", "PASSWORD")
+
+
+if __name__ == "__main__":
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(async_main())
+```
+
+
+## License
+
+[GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
+
+  
+## Appendix
+
+[Full doc reference](https://joshuamulliken.github.io/wyzeapy/wyzeapy/) - Please note that I am still working on doc 
+strings so please be patient
+
+  
+
