@@ -1,0 +1,204 @@
+Metadata-Version: 2.1
+Name: pyBaseDB
+Version: 0.2.2
+Summary: Python built NoSQL database
+Home-page: UNKNOWN
+Author: Carlos Silva
+Author-email: carlos.miguel.silva@protonmail.com
+License: MIT
+Description: # Index:
+        
+        1. [Classes](#gen-class)
+            1. [Record](#rec-class)
+                * [Methods](#rec-meth)
+                    1. [addOrQuery](#Record-addOrQuery)
+                    1. [addQuery](#Record-addQuery)
+                    1. [delete](#Record-delete)
+                    1. [get](#Record-get)
+                    1. [insert](#Record-insert)
+                    1. [mark_delete](#Record-mark_delete)
+                    1. [query](#Record-query)
+                    1. [setLimit](#Record-setLimit)
+                    1. [sort_by](#Record-sort_by)
+        
+            2. [pyBase](#py-class)
+                * [Methods](#py-meth)
+                    1. [delete](#pyBase-delete)
+                    1. [getCreationTime](#pyBase-getCreationTime)
+                    1. [update](#pyBase-update)
+                    1. [updateTime](#pyBase-updateTime)
+                    
+                * [Static Methods](#py-static)
+                    1. [getConfigPath](#pyBase-getConfigPath)
+                    1. [getDBInfo](#pyBase-getDBInfo)
+                    1. [getDatabases](#pyBase-getDatabases)
+        
+        3. [Functions](#gen-func)
+            1. [create_database_from_schema](#-create_database_from_schema)
+            1. [create_new_database](#-create_new_database)
+            1. [encrypt](#-encrypt)
+            1. [load_data](#-load_data)
+            1. [save](#-save)
+        
+        # **pyBase**
+        
+        <a name="gen-class"></a>
+        ## **Classes** 
+        
+        <a name="rec-class"></a>
+        ### class **Record**()
+        
+        * [Record](#rec-class)(database=None)
+        
+        <a name="rec-meth"></a>
+        #### Methods defined here:  
+        
+        <a name="Record-addOrQuery"></a>
+        * **addOrQuery**(self, field: str, operator, condition) -> object
+        
+        <a name="Record-addQuery"></a>
+        * **addQuery**(self, field: str, operator, condition) -> object
+        
+            `FilterÂ dataÂ byÂ fieldÂ andÂ byÂ providingÂ aÂ value`
+        
+        <a name="Record-delete"></a>
+        * **delete**(self) -> None
+        
+            `DEPRECATEDÂ METHOD`
+        
+        <a name="Record-get"></a>
+        * **get**(self, id: str, p=False) -> [pyBase](#py-class)
+        
+            `ReturnsÂ aÂ singleÂ databaseÂ entry`  
+        
+            1. @paramÂ idÂ -Â UniqueÂ recordÂ ID  
+        
+            1. @paramÂ pÂ -Â FlagÂ forÂ formatedÂ print  
+        
+            1. @returnsÂ [pyBase](#py-class)Â Object
+        
+        <a name="Record-insert"></a>
+        * **insert**(self, json_data: dict) -> str
+        
+            `InsertsÂ [Record](#Record)Â inÂ Database`  
+        
+            1. @paramÂ json_data -Â dict
+        
+        <a name="Record-mark_delete"></a>
+        * **mark_delete**(self, data: dict) -> object
+        
+            `DEPRECATEDÂ METHOD`
+        
+        <a name="Record-query"></a>
+        * **query**(self, p=False) -> None
+        
+            `ReturnsÂ theÂ resultsÂ ofÂ aÂ databaseÂ with/withoutÂ filterÂ optionsÂ andÂ storesÂ inÂ "result"Â variable`  
+        
+            1. @paramÂ pÂ -Â FlagÂ forÂ formatedÂ print  
+        
+            1. @returnsÂ None
+        
+        <a name="Record-setLimit"></a>
+        * **setLimit**(self, limit: int) -> None
+        
+            `SetÂ theÂ numberÂ ofÂ RecordsÂ returned`  
+            1. @paramÂ limitÂ -Â NumberÂ ofÂ records
+        
+        <a name="Record-sort_by"></a>
+        * **sort_by**(self, field: str, order: str) -> object
+        
+            `SetÂ theÂ orderÂ ofÂ theÂ list`  
+        
+            1. @paramÂ fieldÂ -Â FieldÂ ofÂ aÂ Database  
+        
+            1. @paramÂ orderÂ -Â IfÂ orderÂ isÂ AscendingÂ orÂ Descending
+        
+        
+        ---
+        
+        <a name="py-class"></a>
+        ### class **pyBase**
+        
+        * [pyBase](#py-class)(record=None,Â database=None,Â index=None)  
+        
+        <a name="py-meth"></a>
+        #### Methods defined here:  
+        
+        <a name="pyBase-delete"></a>
+        * **delete**(self) -> None
+        
+            `PermanentlyÂ deletesÂ RecordÂ fromÂ database`
+        
+        <a name="pyBase-getCreationTime"></a>
+        * **getCreationTime**(self)
+        
+            `ReturnsÂ dateÂ ofÂ RecordÂ creation`
+        
+        <a name="pyBase-update"></a>
+        * **update**(self) -> None
+        
+            `PermanentlyÂ savesÂ RecordÂ changesÂ inÂ Database`
+        
+        <a name="pyBase-updateTime"></a>
+        * **updateTime**(self)
+        
+            `ReturnsÂ lastÂ updateÂ date`
+        
+        ---
+        
+        <a name="py-static"></a>
+        Static methods defined here:  
+        
+        <a name="pyBase-getConfigPath"></a>
+        * **getConfigPath**()
+        
+            `ReturnsÂ pyBaseÂ localÂ path`
+        
+        <a name="pyBase-getDBInfo"></a>
+        * **getDBInfo**(db: str) -> None
+        
+            `GetÂ DBÂ structure`
+        
+        <a name="pyBase-getDatabases"></a>
+        * **getDatabases**() -> list
+        
+            `GetÂ databasesÂ inÂ localÂ system`
+        ---
+        
+        <a name="gen-func"></a>
+        ### **Functions**
+        
+        <a name="-create_database_from_schema"></a>
+        * **create_database_from_schema**(verbose=False)
+        
+        <a name="-create_new_database"></a>
+        * **create_new_database**(name, verbose=True)
+        
+            `MethodÂ toÂ createÂ newÂ database`
+        
+        <a name="-encrypt"></a>
+        * **encrypt**(*args, **kwargs)
+        
+            `MethodÂ toÂ encryptÂ data`
+        
+        <a name="-load_data"></a>
+        * **load_data**(db)
+        
+            `LoadsÂ dataÂ fromÂ aÂ DB`  
+            1. @paramÂ dbÂ -Â NameÂ ofÂ Database  
+            1. @returnsÂ JSONÂ dict
+        
+        <a name="-save"></a>
+        * **save**(data, where)
+        
+            `SaveÂ jsonÂ data`
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
