@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: PyROA
+Version: 1.0.3
+Summary: PyROA is tool to model quasar lightcurves based on a running optimal average that allows inter-lightcurve time delays to be measured using MCMC sampling of the joint posterior parameter distributions.
+Home-page: https://github.com/FergusDonnan
+Author: Fergus R. Donnan
+Author-email: frd3@st-andrews.ac.uk
+License: MIT
+Download-URL: https://github.com/FergusDonnan/PyROA/archive/refs/tags/v1.0.tar.gz
+Description: UNKNOWN
+Keywords: methods: data analysis,gravitational lensing: strong,quasars:genera
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
