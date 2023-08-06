@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/easyml/__init__.py
+src/easyml/template.py
+src/helloml.egg-info/PKG-INFO
+src/helloml.egg-info/SOURCES.txt
+src/helloml.egg-info/dependency_links.txt
+src/helloml.egg-info/top_level.txt
+test/test.py
