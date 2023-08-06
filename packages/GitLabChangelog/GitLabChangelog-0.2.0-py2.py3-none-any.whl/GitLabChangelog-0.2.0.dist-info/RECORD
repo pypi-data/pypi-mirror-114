@@ -1,0 +1,9 @@
+gitlabchangelog/VERSION,sha256=H5MN0fEzwfl6lP46y42zQ3LPTAH_2ys_9Mpy-UlBIek,6
+gitlabchangelog/__init__.py,sha256=pTU71BPFLRtHels3ZF_cHRQ7aW-kaiRMpBxdoZiISfs,61
+gitlabchangelog/changelog.py,sha256=s0nsTutAPgE4s0_rkTbL5uZBM4fA8yl_5nU9l7E2Pxc,8334
+gitlabchangelog/version.py,sha256=KZDlT2MGwS7aGAQod1MgUz9RUKwlcsNHSB9vnKpGrkc,503
+GitLabChangelog-0.2.0.dist-info/LICENSE,sha256=QER9On5trHei2OJo7l1uJhlWIvKv7mIgJxHy2HPiW-8,1092
+GitLabChangelog-0.2.0.dist-info/METADATA,sha256=iEZrKJuijB9vtfvvaXVeDGzmsLbizM-0535yuAla_DM,6291
+GitLabChangelog-0.2.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+GitLabChangelog-0.2.0.dist-info/top_level.txt,sha256=fDFAfK_e_Hn-NFfLvtokaWp-mv0leVVI8Z04-owbReI,16
+GitLabChangelog-0.2.0.dist-info/RECORD,,
