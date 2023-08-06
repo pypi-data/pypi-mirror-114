@@ -1,0 +1,9 @@
+README.md
+setup.py
+snel.py
+snel.egg-info/PKG-INFO
+snel.egg-info/SOURCES.txt
+snel.egg-info/dependency_links.txt
+snel.egg-info/entry_points.txt
+snel.egg-info/requires.txt
+snel.egg-info/top_level.txt
