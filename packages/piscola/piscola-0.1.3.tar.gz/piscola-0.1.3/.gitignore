@@ -1,0 +1,17 @@
+### installation ###
+build
+dist
+
+### extra ###
+*.egg*
+*pycache*
+.ipynb_checkpoints
+tests/__pycache__
+
+### src ###
+src/piscola/*.egg-info
+src/piscola/__pycache__
+src/piscola/sfddata-master
+
+### docs ###
+docs/_build
