@@ -1,0 +1,9 @@
+solarenergy/__init__.py,sha256=2LFCx7Sp2iPHRXjt6PQAOb6ZpPSFfWooTLAfdOp_NkI,2176
+solarenergy/constants.py,sha256=ZgWhUs3kiRCM7MW8ONwdl-HPUXMbpAp0djYSAJV3Kc8,1730
+solarenergy/meteoserver2SP.py,sha256=y8FUvadM0zQMacI8rxD8v1nrwtjIgaTQLtLB4v5Lrg0,4104
+solarenergy/radiation.py,sha256=FvJlTyyxy58T3osXEuughSrn26kSPMEc30BQqc4CxOM,29871
+solarenergy-0.0.19.dist-info/LICENCE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+solarenergy-0.0.19.dist-info/METADATA,sha256=oHYMAewzZxaKvQFDwir7HNPCoi2lHBhvfYj6RaR20jc,5478
+solarenergy-0.0.19.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+solarenergy-0.0.19.dist-info/top_level.txt,sha256=T6oVr_VXLzBF29Mf8aBhSj1ehUIBdXsmZkv5zUU7w7A,12
+solarenergy-0.0.19.dist-info/RECORD,,
