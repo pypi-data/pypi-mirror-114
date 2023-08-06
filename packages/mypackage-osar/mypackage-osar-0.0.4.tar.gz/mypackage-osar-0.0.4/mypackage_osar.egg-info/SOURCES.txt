@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+mypackage/__init__.py
+mypackage/functions.py
+mypackage_osar.egg-info/PKG-INFO
+mypackage_osar.egg-info/SOURCES.txt
+mypackage_osar.egg-info/dependency_links.txt
+mypackage_osar.egg-info/top_level.txt
