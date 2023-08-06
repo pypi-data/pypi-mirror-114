@@ -1,0 +1,15 @@
+README.md
+setup.py
+custom-operators/__init__.py
+custom-operators/operators/__init__.py
+custom-operators/operators/custom_csv_to_s3_opertor.py
+custom-operators/operators/novigi_csv_to_db.py
+custom-operators/operators/novigi_excel_to_csv.py
+custom-operators/operators/novigi_json_to_csv.py
+custom-operators/operators/novigi_xls_to_csv_operator.py
+custom_operators.egg-info/PKG-INFO
+custom_operators.egg-info/SOURCES.txt
+custom_operators.egg-info/dependency_links.txt
+custom_operators.egg-info/entry_points.txt
+custom_operators.egg-info/requires.txt
+custom_operators.egg-info/top_level.txt
