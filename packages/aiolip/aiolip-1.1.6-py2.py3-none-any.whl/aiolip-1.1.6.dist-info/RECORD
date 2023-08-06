@@ -1,0 +1,10 @@
+aiolip/__init__.py,sha256=ACs1G-89QRL_jmUJJzf4oLG-6biLevtRE5pdGff9Dnk,9122
+aiolip/data.py,sha256=swZ2Q6xrdEA0rez6yXEVM4mCZOHXJZnO30ceItxBbKQ,463
+aiolip/exceptions.py,sha256=q6x70TDI-iDAgQRe4P4-SSEEb-I6ZdtqAWmvri4c-q4,612
+aiolip/protocol.py,sha256=15AxobfInTC15V0CSgWqsY6kQmhU8b8KmoyHdcMfDuY,1885
+aiolip-1.1.6.dist-info/AUTHORS.rst,sha256=k6wTWweWTBHndXO53unuwTtLHt81wTUakD38HQaFHz4,155
+aiolip-1.1.6.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+aiolip-1.1.6.dist-info/METADATA,sha256=4NznuHG-FVNt4W9Y0XLktXf_jHBS-4ZQ2gMQ-5HRTgM,2417
+aiolip-1.1.6.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+aiolip-1.1.6.dist-info/top_level.txt,sha256=sTBAkGGSFntFJwrvRrwXRlyt4sZWL02owsvPZGMy2A8,7
+aiolip-1.1.6.dist-info/RECORD,,
