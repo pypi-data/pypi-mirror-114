@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: tabml
+Version: 0.1.1
+Summary: A package for machine learning with tabular data
+Home-page: https://github.com/tiepvupsu/tabml
+Author: Tiep Vu
+Author-email: vuhuutiep@gmail.com
+License: apache-2.0
+Download-URL: https://github.com/tiepvupsu/tabml/archive/refs/tags/v_01.tar.gz
+Description: UNKNOWN
+Keywords: Machine Learning,Tabular
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
