@@ -1,0 +1,182 @@
+Metadata-Version: 2.1
+Name: lash
+Version: 1.0.0
+Summary: Tools package to desktop
+Home-page: https://github.com/KevBoyz/Lash
+Author: Kevin Emmanuel
+Author-email: kevinho_gameplays@hotmail.com
+License: MIT
+Keywords: toll tolls toolkit keylogger autoclick zip organize files file-handler os random
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Desktop Environment :: File Managers
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click (~=8.0.1)
+Requires-Dist: pynput (~=1.7.3)
+Requires-Dist: keyboard (~=0.13.5)
+Requires-Dist: schedule (~=1.1.0)
+Requires-Dist: setuptools (~=56.0.0)
+
+# About Lash
+
+This package provides a set of desktop tools that simplify and  
+
+automate repetitive processes. Lash also has utility functions  
+
+that cover some needs of desktop users. 
+
+
+
+Thought to be simple and effective, Lash was developed with a   
+
+command line interface that has self-help and semantic commands.
+
+
+
+## Lash overview 
+
+_Installing:_ `pip install lash`  
+
+_Executing_: `python -m lash`
+
+
+
+**Getting help**: `python -m lash --help`
+
+    
+
+    Usage: -m [OPTIONS] COMMAND [ARGS]...
+
+
+
+    - Lash 1.0.0 by KevBoyz ~ https://github.com/KevBoyz/Lash
+
+
+
+    Options:
+
+    --help  Show this message and exit.
+
+
+
+    Commands:
+
+    autoclick  Auto clicker
+
+    calc       Math utilities
+
+    keyhold    hold a keyboard key
+
+    log        Simple loggers to rec events
+
+    organize   Organize your files
+
+    random     Randomize numbers
+
+    sched      Schedule tasks at the command line level
+
+    web        Generic Web-Tools
+
+    zip        Zip tools
+
+
+
+_Please ignore all `-m` in __Usage__ line_.   
+
+## Usage examples
+
+---
+
+    $ py -m lash zip compress --help
+
+    Usage: -m zip compress [OPTIONS] <path>
+
+
+
+    Compress files in zip archive
+
+    Options:
+
+    -fn TEXT  Output file name
+
+    -v        Verbose mode   [default: True]
+
+
+
+    $ py -m lash zip compress -fn "Zip" C:\Users\Kevin\Documents
+
+    Compacting archives, please wait...
+
+
+
+    - - Process list - -
+
+    Compacting: .gitattributes
+
+    Compacting: .gitignore
+
+    Compacting: setup.cfg
+
+    Compacting: setup.py
+
+    [...]
+
+    process completed, 206 files compacted
+
+
+
+---
+
+    $ python -m lash sched run --help
+
+    Usage: sched run [OPTIONS] command
+
+
+
+    Run commands repetitively at a given interval starting from current moment.
+
+
+
+    Options:
+
+    -s INTEGER  Set delay seconds
+
+    -m INTEGER  Set delay minutes
+
+    -h INTEGER  Set delay hours
+
+
+
+    $ python -m lash sched run -s 5 "py -m lash random"
+
+    31139
+
+    15368
+
+    60600
+
+    [...]
+
+    Aborted!
+
+## Final declarations
+
+The tool is under development and will have weekly updates with corrections
+
+and news, this project is still small and unknown by your target audience,
+
+if you liked the work, please share it with your contacts.  
+
+
+
+**Thanks for ReadMe**
+
+
+
