@@ -1,0 +1,14 @@
+meshkernel-1.0.0.dist-info/RECORD,,
+meshkernel-1.0.0.dist-info/top_level.txt,sha256=xYNpL-Wj8YTkM0U0U804EqDsO-rc9d91pttk7jesk-4,11
+meshkernel-1.0.0.dist-info/WHEEL,sha256=ZOgILdtMkyAeDIP_6eGJkmKPgp9WhrwGo40G3UzU0nw,146
+meshkernel-1.0.0.dist-info/METADATA,sha256=hoTD3nqshIlbsPMc91s1llomwxxIA6whpJfcosmQqjE,3393
+meshkernel-1.0.0.dist-info/LICENSE,sha256=WQB_v96-2sow20_IyUD4Cx1eXDTnfm8d0dggCtBLTec,1065
+meshkernel/version.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+meshkernel/utils.py,sha256=XPsYbYiyrhY7tL-0EjOBqWM8388RQaE9b4yjKgZTNaw,999
+meshkernel/py_structures.py,sha256=898PYU1IyJmQa49i35GN9_aJhSH3VL0T-0095VMRaS0,9599
+meshkernel/meshkernel.py,sha256=votxNClLoCAm1ONAJVibGIXdnndoy4JF3dZ6ffNZlXM,44965
+meshkernel/libMeshKernelApi.so,sha256=37FvMgWfjcBrJbQS__8BaA-L7JZdwT8taaL4KunN9DE,2015592
+meshkernel/factories.py,sha256=fdb_DRIPDzlwMRHQpx0tYDF8ygxqKCMWRjjMDkxKPwg,3337
+meshkernel/errors.py,sha256=u8gm40bNJQvRnuNjM9pJdaLxqRziMXyaoVfsKyJ8awM,261
+meshkernel/c_structures.py,sha256=LXRYi6paIvCIbwCzZZYTwgQcFFd-ITZTth2p-W7mDbQ,16033
+meshkernel/__init__.py,sha256=_wn0J_9H-ksd9gapoenz3MW_1Pkil2Aca50KE7NO58I,547
