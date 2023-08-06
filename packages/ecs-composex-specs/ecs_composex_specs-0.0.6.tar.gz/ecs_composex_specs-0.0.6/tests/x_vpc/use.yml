@@ -1,0 +1,15 @@
+---
+# x-vpc singled out
+
+x-vpc:
+  Use:
+    VpcId: vpc-abcd123
+    PublicSubnets:
+      - subnet-abcd123
+      - subnet-qwert123
+    AppSubnets:
+      - subnet-abcd123
+      - subnet-qwert123
+    StorageSubnets:
+      - subnet-abcd123
+      - subnet-qwert123

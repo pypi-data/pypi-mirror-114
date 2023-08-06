@@ -1,0 +1,25 @@
+---
+# x-vpc singled out
+
+x-vpc:
+  Lookup:
+    VpcId:
+      Tags:
+        - Name: vpc--blackeye-${ENV_NAME:-prod}
+    PublicSubnets:
+      Tags:
+        - vpc::usage: public
+    AppSubnets:
+      Tags:
+        vpc::usage: application
+        vpc::primary: "true"
+        vpc::internal: "false"
+    InternalSubnets:
+      Tags:
+        - vpc::usage: application
+        - vpc::primary: "false"
+        - vpc::internal: "true"
+    StorageSubnets:
+      Tags:
+        - vpc::usage: storage
+    RoleArn: ${PROD_RO_ROLE_ARN}

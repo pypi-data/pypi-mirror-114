@@ -1,0 +1,78 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "id": "services.x-prometheus",
+    "$id": "services.x-prometheus.spec.json",
+    "type": "object",
+    "title": "services.x-prometheus specification",
+    "description": "The services.x-network specification for ComposeX",
+    "additionalProperties": false,
+    "properties": {
+        "ContainersInsights": {
+            "type": "object",
+            "properties": {
+                "EnableTasksDiscovery": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Whether or not do ECS Tasks service discovery via ECS API"
+                },
+                "CollectForAppmesh": {
+                    "type": "boolean",
+                    "description": "Automatically adds envoy EMF Processor"
+                },
+                "CollectForJavaJmx": {
+                    "type": "boolean",
+                    "description": "Automatically adds JavaJMX/Catalina EMF Processor"
+                },
+                "CollectForNginx": {
+                    "type": "boolean"
+                },
+                "CollectForNginxPlus": {
+                    "type": "boolean"
+                },
+                "CustomRules": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/CustomRuleDef"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "CustomRuleDef": {
+            "type": "object",
+            "required": [
+                "source_labels",
+                "dimensions",
+                "metric_selectors",
+                "label_matcher"
+            ],
+            "properties": {
+                "source_labels": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "label_matcher": {
+                    "type": "string"
+                },
+                "dimensions": {
+                    "type": "array",
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "metric_selectors": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
