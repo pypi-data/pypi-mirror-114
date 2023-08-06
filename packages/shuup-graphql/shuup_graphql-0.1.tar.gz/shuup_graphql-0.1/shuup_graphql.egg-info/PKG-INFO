@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: shuup-graphql
+Version: 0.1
+Summary: A Shuup GraphQL API implementation.
+Home-page: https://github.com/chessbr/shuup-graphql
+Author: Christian Hess
+Author-email: christian@shuup.com
+License: Apache 2.0
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
