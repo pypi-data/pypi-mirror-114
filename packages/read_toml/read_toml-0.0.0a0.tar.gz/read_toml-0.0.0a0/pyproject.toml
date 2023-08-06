@@ -1,0 +1,22 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "read_toml"
+author = "Thomas Grainger"
+author-email = "read-toml@graingert.co.uk"
+home-page = "https://github.com/graingert/read-toml"
+description-file = "README.rst"
+requires = [
+    "toml;python_version<'3.6'",
+    "tomli >=1.1.0;python_version>='3.6'",
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+]
+
+[tool.flit.metadata.requires-extra]
+test = ["pytest", "pytest-forward-compatability", "pytest-cov", "coverage>=5.3"]

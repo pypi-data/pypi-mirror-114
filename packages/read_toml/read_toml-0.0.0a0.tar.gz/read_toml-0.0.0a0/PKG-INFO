@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: read_toml
+Version: 0.0.0a0
+Summary: read_toml paths
+Home-page: https://github.com/graingert/read-toml
+Author: Thomas Grainger
+Author-email: read-toml@graingert.co.uk
+Description-Content-Type: text/x-rst
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: toml;python_version<'3.6'
+Requires-Dist: tomli >=1.1.0;python_version>='3.6'
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-forward-compatability ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: coverage>=5.3 ; extra == "test"
+Provides-Extra: test
+
+read_toml
+=========
+
+shortcut to read toml paths on py2.7+ and py3.5+
+
