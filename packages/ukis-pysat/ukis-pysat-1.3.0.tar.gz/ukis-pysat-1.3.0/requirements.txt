@@ -1,0 +1,27 @@
+## data
+numpy
+pillow
+pystac[validation]>=1.0.0
+python-dateutil
+requests
+sentinelsat>=1.0.1
+shapely~=1.7.1
+pydantic
+
+## raster
+# numpy
+rasterio>=1.1.8
+rio_toa>=0.3.0
+shapely
+
+## dev
+dask[array]
+fiona
+landsatxplore>=0.13.0
+pandas
+pyproj
+requests_mock
+utm>=0.7.0
+geojson
+setuptools
+tqdm
