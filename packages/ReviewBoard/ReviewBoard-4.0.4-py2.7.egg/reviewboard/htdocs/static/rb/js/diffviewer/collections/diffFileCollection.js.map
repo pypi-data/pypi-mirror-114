@@ -1,0 +1,1 @@
+{"version":3,"sources":["diffFileCollection.es6.js"],"names":[],"mappings":";;AAAA;;;AAGA,GAAG,kBAAH,GAAwB,SAAS,UAAT,CAAoB,MAApB,CAA2B;AAC/C,SAAO,GAAG;AADqC,CAA3B,CAAxB","file":"diffFileCollection.js","sourcesContent":["/**\n * A collection of files.\n */\nRB.DiffFileCollection = Backbone.Collection.extend({\n    model: RB.DiffFile,\n});\n"]}
