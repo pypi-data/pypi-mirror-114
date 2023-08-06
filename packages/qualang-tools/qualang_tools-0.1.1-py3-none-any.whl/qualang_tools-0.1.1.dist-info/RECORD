@@ -1,0 +1,11 @@
+qualang_tools/__init__.py,sha256=BvHMy43Aj4PdTExKsT4CgLbLbILEKw2z-lm0YZsFiVw,384
+qualang_tools/bakery/__init__.py,sha256=vRNIhnIeEf3Vfa6V_ajoiu5geof7RE_Qo2kzQMv0ekc,72
+qualang_tools/bakery/bakery.py,sha256=kMlcFsMa7MVjB3mPiDlfyL0xz8tfJCWlltUrw44CbXY,37031
+qualang_tools/bakery/c1_cayley_table.csv,sha256=T1a16P1r6a1WMhgpAf3xgEfZj74Ab7EMayjUi0GNB0Q,1613
+qualang_tools/bakery/randomized_benchmark.py,sha256=v4GXY5xyqq0OoRhg8K0BmefM-FFAqqC2L3tOq2aFq3E,7679
+qualang_tools/bakery/readme.md,sha256=ExWHO8kgbCySITgzD1OQ6S1oFQrIgnd7fB3B15BgkeQ,14276
+qualang_tools/bakery/xeb.py,sha256=2XRa0St2LVgucN74xh30oZev1_108JaxZMuiW-zFjA4,3731
+qualang_tools-0.1.1.dist-info/LICENSE,sha256=TouFUL9e6-dH_tk8K9SmudQF1kbVP_cpiYd0oc-nwhk,1520
+qualang_tools-0.1.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+qualang_tools-0.1.1.dist-info/METADATA,sha256=bQhenWWOIZBrHfH3uoArsRJqXb8rk4STwIYAVFPx5EE,1156
+qualang_tools-0.1.1.dist-info/RECORD,,
