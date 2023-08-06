@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: d47calib
+Version: 0.0.4
+Summary: D47calib library
+License: Modified BSD License - https://opensource.org/licenses/BSD-3-Clause
+Author: Mathieu Daëron
+Author-email: mathieu@daeron.fr
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
