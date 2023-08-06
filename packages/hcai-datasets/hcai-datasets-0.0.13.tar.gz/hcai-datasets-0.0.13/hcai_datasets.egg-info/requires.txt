@@ -1,0 +1,4 @@
+pymongo
+opencv-python
+tensorflow>=2.1
+tensorflow-datasets
