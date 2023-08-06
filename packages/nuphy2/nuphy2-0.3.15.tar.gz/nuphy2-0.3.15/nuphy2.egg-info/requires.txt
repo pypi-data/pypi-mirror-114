@@ -1,0 +1,6 @@
+fire
+importlib_resources
+pandas
+xvfbwrapper
+matplotlib
+scipy
