@@ -1,0 +1,5 @@
+click~=8.0.1
+pynput~=1.7.3
+keyboard~=0.13.5
+schedule~=1.1.0
+setuptools~=56.0.0
