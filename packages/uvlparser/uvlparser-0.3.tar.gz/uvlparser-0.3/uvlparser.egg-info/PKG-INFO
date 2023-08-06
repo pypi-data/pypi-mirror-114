@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: uvlparser
+Version: 0.3
+Summary: This module provides a get_tree function to obtain an ANTLR parse-tree from a UVL-defined feature model
+Home-page: https://github.com/diverso-lab/uvl-diverso
+Author: Pablo Pazo Jiménez
+Author-email: pablopazojim@gmail.com
+License: GNU General Public License v3 (GPLv3)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+
