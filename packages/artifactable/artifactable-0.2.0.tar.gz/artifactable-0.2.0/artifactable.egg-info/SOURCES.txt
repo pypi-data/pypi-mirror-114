@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+artifactable/__init__.py
+artifactable/__main__.py
+artifactable/client.py
+artifactable/commands.py
+artifactable/config.py
+artifactable/loggers.py
+artifactable.egg-info/PKG-INFO
+artifactable.egg-info/SOURCES.txt
+artifactable.egg-info/dependency_links.txt
+artifactable.egg-info/entry_points.txt
+artifactable.egg-info/requires.txt
+artifactable.egg-info/top_level.txt
