@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: lethean
+Version: 1.0.8
+Summary: Lethean VPN
+Home-page: https://lt.hn/en/sdk/python
+Author: Lethean VPN
+Author-email: contact@lethean.io
+License: GPLv3
+Keywords: OpenAPI,OpenAPI-Generator,Lethean VPN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+
+    Distributed Virtual Private Marketplace  # noqa: E501
+    
+
