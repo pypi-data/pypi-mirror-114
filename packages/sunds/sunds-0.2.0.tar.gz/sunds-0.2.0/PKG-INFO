@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sunds
+Version: 0.2.0
+Summary: Datasets for scene understanding
+Home-page: https://github.com/google-research/sunds
+License: Apache-2.0
+Keywords: datasets,scene-understanding
+Author: Sunds team
+Author-email: sunds@google.com
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: absl
+Requires-Dist: numpy (>=1.17)
+Requires-Dist: tensorflow_datasets (>=4.4)
+Requires-Dist: tqdm
+Requires-Dist: typing_extensions
+Project-URL: Repository, https://github.com/google-research/sunds
