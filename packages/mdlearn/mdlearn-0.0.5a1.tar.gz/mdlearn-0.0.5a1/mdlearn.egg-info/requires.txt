@@ -1,0 +1,9 @@
+pyyaml
+pydantic
+h5py==2.10.0
+wandb
+pandas
+tqdm
+
+[torch]
+torch
