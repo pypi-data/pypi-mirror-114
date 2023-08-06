@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: dataflows-airtable
+Version: 0.0.5
+Summary: Python library for adding AirTable support to dataflows
+Home-page: https://github.com/dataspot/dataflows-airtable
+Author: Adam Kariv
+Author-email: adam.kariv@gmail.com
+License: MIT
+Keywords: frictionless data,open data,airtable,dataflows,table schema,data package,tabular data package
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Requires-Dist: six
+Requires-Dist: dataflows
+Provides-Extra: develop
+Requires-Dist: moto[server] ; extra == 'develop'
+Requires-Dist: pytest-cov ; extra == 'develop'
+Requires-Dist: pytest ; extra == 'develop'
+Requires-Dist: pylama ; extra == 'develop'
+Requires-Dist: mock ; extra == 'develop'
+Requires-Dist: tox ; extra == 'develop'
+
+# dataflows-airtable
+Python library for adding AirTable support to dataflows
+
