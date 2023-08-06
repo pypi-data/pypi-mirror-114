@@ -1,0 +1,7 @@
+include LICENSE
+include README
+include setup.py
+include cgmzscore/tables/*.json
+include cgmzscore/src/**
+
+recursive-include zscore *
