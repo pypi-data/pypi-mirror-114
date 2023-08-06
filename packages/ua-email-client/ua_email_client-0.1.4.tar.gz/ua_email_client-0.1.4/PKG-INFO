@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: ua_email_client
+Version: 0.1.4
+Summary: Provides easy interface for sending emails through Amazons Simple Email Service.
+Home-page: https://github.com/UACoreFacilitiesIT/UA-Email-Client
+Author: Ryan Johannes-Bland
+Author-email: rjjohannesbland@email.arizona.edu
+License: MIT
+Description: # UA-Email-Client
+        
+        Provides easy interface for sending emails through Amazons Simple Email Service.
+        
+        ## Motivation
+        
+        To make a python API that could obfuscate the details of sending emails using AWS SES service.
+        
+        ## Code Example
+        
+        ```python
+        
+        ```
+        
+        ## Installation
+        
+        pip install --user ua-email-client
+        
+        ## Credits
+        
+        [RyanJohannesBland](https://github.com/RyanJohannesBland)
+        
+        ## License
+        
+        MIT
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
