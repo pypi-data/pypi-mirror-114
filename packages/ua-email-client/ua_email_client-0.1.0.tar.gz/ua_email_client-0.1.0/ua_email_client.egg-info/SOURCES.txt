@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+ua_email_client.egg-info/PKG-INFO
+ua_email_client.egg-info/SOURCES.txt
+ua_email_client.egg-info/dependency_links.txt
+ua_email_client.egg-info/requires.txt
+ua_email_client.egg-info/top_level.txt
