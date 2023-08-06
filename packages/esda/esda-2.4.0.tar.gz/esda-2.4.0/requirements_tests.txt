@@ -1,0 +1,5 @@
+geopandas
+pytest
+pytest-cov
+codecov
+twine
