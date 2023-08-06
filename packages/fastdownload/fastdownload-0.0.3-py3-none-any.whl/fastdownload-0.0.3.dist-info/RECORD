@@ -1,0 +1,11 @@
+fastdownload/__init__.py,sha256=1MADmZWwO432uxLrHf4j6-j0XX6_RnhxhmsLTLrrPBQ,56
+fastdownload/_nbdev.py,sha256=opsZKof8MyQ8lG0KBd_j9IA_wl45SkMo5pzOUTEzyH8,609
+fastdownload/core.py,sha256=htkeI3aiFGrPdBzipK08sHeitnG0roMc8LJ-jyob7Pg,4888
+fastdownload/download_checks.py,sha256=1M1CQbh3xAqHqzS-WVYcUbcSm-enaouqTVsIUvXz56A,164
+fastdownload/urls.py,sha256=yKW1DtPElXWOwlkbQDmgRkqerrScgczKGd0Zu9Tzc4c,8536
+fastdownload-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fastdownload-0.0.3.dist-info/METADATA,sha256=fo8sTeByTvQcQ6yNw4966zikjxBsxTUZIzVTgSb0Cq4,5318
+fastdownload-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fastdownload-0.0.3.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+fastdownload-0.0.3.dist-info/top_level.txt,sha256=IDav8XJb2BJTW_qm243dntylhwF-YwcA4lDK5U02l8c,13
+fastdownload-0.0.3.dist-info/RECORD,,
