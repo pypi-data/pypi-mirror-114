@@ -1,0 +1,10 @@
+spyse/__init__.py,sha256=yYEQdiyNNaOP4jvchTxCrLqcyfbOVTvQLNx5Enw61wY,72
+spyse/client.py,sha256=HuiDREXBt-c9gVKZi0Z9c-xOLgXENiNTY9DQ7SNe8Eg,13220
+spyse/models.py,sha256=0U0hGJXf3AajCKEegVNn-wWcHa33KkeL1Aay2A349KY,27134
+spyse/response.py,sha256=yGUAimFW_-Sv8rP-2T435E-0fQpnCsrWFnR5GfQPJhM,2865
+spyse/search_query.py,sha256=7Ntpat2CGC5l5WLltpSjg-LX-rGcZknRycFSyicX2o0,9291
+spyse_python-1.0.0.dist-info/LICENSE.md,sha256=hPvwY5Ko2Ht3AVMrJJCX7xerDJbFwfJ-NJB7t5QJ1r0,1088
+spyse_python-1.0.0.dist-info/METADATA,sha256=QAHId-EVALId0akrvYy5AlAQr8LlGXjwp1pPovGSl08,8049
+spyse_python-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+spyse_python-1.0.0.dist-info/top_level.txt,sha256=XJOHO25GmydmwRyBhKOVHADVaz7j6enXXYGfFU17cvc,6
+spyse_python-1.0.0.dist-info/RECORD,,
