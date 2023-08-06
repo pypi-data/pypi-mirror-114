@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/stylish_py/__init__.py
+src/stylish_py/stylish.py
+src/stylish_py.egg-info/PKG-INFO
+src/stylish_py.egg-info/SOURCES.txt
+src/stylish_py.egg-info/dependency_links.txt
+src/stylish_py.egg-info/top_level.txt
