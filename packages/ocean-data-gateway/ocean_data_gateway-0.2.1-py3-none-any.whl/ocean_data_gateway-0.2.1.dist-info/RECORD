@@ -1,0 +1,13 @@
+ocean_data_gateway/__init__.py,sha256=3zxf7LPFFwl8MwwHptQvjL1ZXFMhF0GRKihkEQQAhPA,3225
+ocean_data_gateway/_version.py,sha256=tC9CwL4Nm8brVXJnZNGk_eoZaJj6eOtLKtOrdJMrpoI,21
+ocean_data_gateway/gateway.py,sha256=4h9LxBngtEWPJK9shoNhhGY07QhbraY_aoBam5HMX6o,18597
+ocean_data_gateway/utils.py,sha256=7DNnrazuja5ofoqkO-EAvKRW0mZTqndr4gLZj_vZaVo,4038
+ocean_data_gateway/readers/__init__.py,sha256=iWy_jZ6gGgVKSAJXLONZE4e0AqLOr8biKEfNzA39yb4,50
+ocean_data_gateway/readers/axds.py,sha256=z5QaxkHrlfOYCiTa9E2at5vSELK24uyIHWcgeocLBqU,42435
+ocean_data_gateway/readers/erddap.py,sha256=B8JR68bTsxIc5Sr5OoqWmdLHj3eV9a_jOZrp8eP2YlM,35861
+ocean_data_gateway/readers/local.py,sha256=t3RVHDeuxdlJyzS39aa9f-jBDAqCmjK-JemQG8tD1ss,13823
+ocean_data_gateway-0.2.1.dist-info/LICENSE.txt,sha256=frNsnGoUtw1VFTadf6nQ-w0pX7yrhROj5yhP13JaCYs,1081
+ocean_data_gateway-0.2.1.dist-info/METADATA,sha256=vvtyevn-XvrH-nxjtvui3fX3PBaVXBp5J6segVVgnDc,3645
+ocean_data_gateway-0.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ocean_data_gateway-0.2.1.dist-info/top_level.txt,sha256=3Qa3BjbH1Ih_jpWCVJSDY8Q3IYlYAUi4b2qOkozbpZY,19
+ocean_data_gateway-0.2.1.dist-info/RECORD,,
