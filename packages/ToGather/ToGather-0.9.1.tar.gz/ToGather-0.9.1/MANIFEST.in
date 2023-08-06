@@ -1,0 +1,4 @@
+include bin/*.ui
+include bin/*.png
+include bin/*.so
+include bin/*.gif
