@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: jsonclasses-flask
+Version: 2.5.3
+Summary: JSONClasses integration with Flask
+Home-page: https://github.com/fillmula/jsonclasses-flask
+Author: Fillmula Inc.
+Author-email: victor.teo@fillmula.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# jsonclasses-flask
+JSONClasses integration with Flask.
+
+## Prerequisites
+
+To use this package, you should have `jsonclasses` and `flask[async]` installed.
+
+## Installation
+
+Install `jsonclasses-flask` with `pip`.
+
+```sh
+pip install jsonclasses-flask
+```
+
+## Documentation
+
+### How to Use
+
+## License
+
+[MIT License](https://github.com/fillmula/jsonclasses-flask/blob/master/LICENSE)
+
+
