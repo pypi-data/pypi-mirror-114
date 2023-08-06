@@ -1,0 +1,10 @@
+analytics-python==1.2.9
+arrow
+Cerberus
+psycopg2-binary==2.8.6
+
+[dev]
+pytest
+pytest-pep8
+pytest-cov
+wheel
