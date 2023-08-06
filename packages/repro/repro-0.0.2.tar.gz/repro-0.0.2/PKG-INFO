@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: repro
+Version: 0.0.2
+Summary: An open-source library for reproducing results from research papers
+Home-page: https://github.com/danieldeutsch/repro
+Author: Daniel Deutsch
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
