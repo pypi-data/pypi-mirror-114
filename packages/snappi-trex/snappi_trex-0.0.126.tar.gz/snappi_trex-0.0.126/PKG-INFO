@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: snappi_trex
+Version: 0.0.126
+Summary: The T-Rex Open Traffic Generator Python Package
+Home-page: https://github.com/open-traffic-generator
+Author: fredpower44
+Author-email: frederick.zhang@keysight.com
+License: MIT
+Keywords: t-rex testing open traffic generator automation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing :: Traffic Generation
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=2.7, <4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# Snappi-Trex
+Snappi-Trex is a Snappi plugin that allows executing scripts written using 
+[Snappi](https://github.com/open-traffic-generator/snappi) with Cisco's [T-Rex Traffic Generator](https://trex-tgn.cisco.com)
+
+## Design
+Snappi-Trex converts Snappi Open Traffic Generator API configuration into the equivalent T-Rex STL Client configuration. This allows users to use the T-Rex Traffic Generator and its useful features without having to write complex T-Rex scripts. 
+
+![diagram](docs/res/snappi-trex-design.svg)
+
+The above diagram outlines the overall process of how the Snappi Open Traffic Generator API is able to interface with T-Rex and generatee traffic over its network interfaces. Snappi_trex is essential to convert Snappi scripts into the equivalent T-Rex STL Client instructions.
+
+<br>
+
+Snappi_trex usage follows the standard usage of Snappi with a few modifications outlined in the [Usage](https://github.com/open-traffic-generator/snappi-trex/docs/usage.md) document.
+
+
+
+# Table of Contents
+* [Quickstart](docs/quickstart.md)
+* [T-Rex installation and setup](docs/t-rex-tutorial.md)
+* [snappi_trex usage](docs/usage.md)
+* [snappi_trex full features and limitations](docs/features.md)
+* [Testing](docs/testing.md)
+* [Contribute](docs/contribute.md)
+
+
