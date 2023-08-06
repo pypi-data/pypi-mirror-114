@@ -1,0 +1,94 @@
+[
+  {
+    "rows": 54,
+    "cols": 104,
+    "ts": 1621251753.9494185,
+    "kB": 0,
+    "by": "gk",
+    "cmd": ""
+  },
+  [
+    "'You think you know when you can learn, are more sure when you can write, even more when you can teach, but certain when you can program.\\r\\n - Alan J. Perlis\\r\\n\\r\\n'",
+    35
+  ],
+  [
+    "'\\x1b[1m\\x1b[7m%\\x1b[27m\\x1b[1m\\x1b[0m                                                                                                       \\r \\r'",
+    123
+  ],
+  [
+    "'\\r\\x1b[0m\\x1b[27m\\x1b[24m\\x1b[J\\x1b[0m\\x1b[49m\\x1b[39m\\x1b[0m\\x1b[49m\\x1b[38;5;31m\\x1b[1m\\x1b[38;5;31m\\x1b[38;5;39m~\\x1b[0m\\x1b[38;5;39m\\x1b[49m\\x1b[38;5;31m/\\x1b[1m\\x1b[38;5;31m\\x1b[38;5;39mrepos\\x1b[0m\\x1b[38;5;39m\\x1b[49m\\x1b[38;5;31m/\\x1b[1m\\x1b[38;5;31m\\x1b[38;5;39mdocutools\\x1b[0m\\x1b[38;5;39m\\x1b[49m\\x1b[38;5;31m/\\x1b[38;5;103mdo\\x1b[0m\\x1b[38;5;103m\\x1b[49m\\x1b[38;5;31m/\\x1b[38;5;103ml\\x1b[0m\\x1b[38;5;103m\\x1b[49m\\x1b[38;5;31m/\\x1b[38;5;103ma\\x1b[0m\\x1b[38;5;103m\\x1b[49m\\x1b[38;5;31m/\\x1b[1m\\x1b[38;5;31m\\x1b[38;5;39mjavascript\\x1b[0m\\x1b[38;5;39m\\x1b[49m\\x1b[38;5;31m\\x1b[0m\\x1b[38;5;31m\\x1b[49m\\x1b[38;5;31m\\x1b[0m\\x1b[38;5;31m\\x1b[49m \\x1b[0m\\x1b[38;5;31m\\x1b[49m\\x1b[38;5;76m\\u276f\\x1b[0m\\x1b[38;5;76m\\x1b[49m\\x1b[38;5;76m\\x1b[0m\\x1b[38;5;76m\\x1b[49m\\x1b[30m\\x1b[0m\\x1b[30m\\x1b[49m\\x1b[39m \\x1b[0m\\x1b[49m\\x1b[39m\\x1b[K\\x1b[37C\\x1b[0m\\x1b[38;5;39m\\x1b[49m\\x1b[38;5;178m\\x1b[38;5;76mmain \\x1b[38;5;178m+5 \\x1b[38;5;178m!15 \\x1b[38;5;39m?41\\x1b[0m\\x1b[38;5;39m\\x1b[49m\\x1b[38;5;178m\\x1b[0m\\x1b[38;5;178m\\x1b[49m\\x1b[38;5;178m\\x1b[0m\\x1b[38;5;178m\\x1b[49m\\x1b[38;5;37m Py docutools\\x1b[0m\\x1b[38;5;37m\\x1b[49m\\x1b[38;5;37m\\x1b[0m\\x1b[38;5;37m\\x1b[49m\\x1b[38;5;37m\\x1b[0m\\x1b[38;5;37m\\x1b[49m\\x1b[39m\\x1b[65D\\x1b['",
+    161
+  ],
+  [
+    "'?2004h\\x1b['",
+    162
+  ],
+  [
+    "'4ml\\x1b[24m\\x1b[90ms -lta\\x1b[39m\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x1b'",
+    676
+  ],
+  [
+    "'[24m\\x1b[32ml\\x1b[32ms\\x1b[39m\\x1b['",
+    787
+  ],
+  [
+    "'39m \\x1b['",
+    824
+  ],
+  [
+    "'39m-\\x1b['",
+    941
+  ],
+  [
+    "'39ml\\x1b['",
+    1112
+  ],
+  [
+    "'39mt\\x1b['",
+    1187
+  ],
+  [
+    "'39m \\x08\\x1b['",
+    1457
+  ],
+  [
+    "'?2004l\\r\\r\\nto'",
+    1476
+  ],
+  [
+    "'tal 2548\\r\\n-rw-r--r-- 1 gk gk    5476 17. Mai 13:40 asci.cast\\r\\n-rw-r--r-- 1 gk gk   32786 17. Mai 13:39 tcplayer.js\\r\\n-rw-r--r-- 1 gk gk     948 17. Mai 13:06 SpecRunner.html\\r\\ndr'",
+    1535
+  ],
+  [
+    "'wxr-xr-x 1 gk gk      18 15. Mai 22:35 \\x1b[0m\\x1b[01;34mcss\\x1b[0m\\r\\ndrwxr-xr-x 1 gk gk      52 15. Mai 22:29 \\x1b[01;34mspec\\x1b[0m\\r\\n-rw-r--r-- 1 gk gk      76 15. Mai 16:51 testem.json\\r\\ndrwxr-xr-x 1 gk gk      26 15. Mai 16:50 \\x1b[01;34mlib\\x1b[0m\\r\\ndrwxr-xr-x 1 gk gk      32 15. Mai 16:50 \\x1b[01;34msrc\\x1b[0m\\r\\n-r'",
+    1536
+  ],
+  [
+    "'w-r--r-- 1 gk gk   86254 15. Mai 16:50 jasmine-standalone-3.7.1.zip\\r\\n-rw-r--r-- 1 gk gk    1255 15. Mai 16:48 index.html\\r\\n-r'",
+    1537
+  ],
+  [
+    "'w-r--r-- 1 gk gk    7700 15. Mai 08:13 termcast.json\\r\\n-rw-r--r-- 1 gk gk    5247 15. Mai 08:08 termcast2.json\\r\\n-rw-r--r-- 1 gk gk    1385 15. Mai 08:05 xterm.min.css\\r\\n-r'",
+    1538
+  ],
+  [
+    "'w-r--r-- 1 gk gk  582376 14. Mai 13:52 asciinema-player.js\\r\\n-rw-r--r-- 1 gk gk   38568 14. Mai 11:03 lc_with_termcast.js\\r\\n-rw-rw-r-- 1 gk gk   38568 13. Mai 22:10 lc.js\\r\\n-rw-r--r-- 1 gk gk 1261582 11. Mai 23:04 fa_all.js\\r\\n-rw-r--r-- 1 gk gk    1061 18. M\\xe4r 01:01 MIT.LICENSE\\r\\n-rw-r--r-- 1 gk gk     155 22. Dez 14:25 tables.js\\r\\n-rw-rw-r-- 1 gk gk   30943  7. Nov 2020  ax_termcasts.js\\r\\n-rw-rw-r-- 1 gk gk  149350  7. Nov 2020  Rx.min.js\\r\\n-rw-rw-r-- 1 gk gk  298220  7. Nov 2020  xterm.4.9.0.min.js\\r\\n-rw-rw-r-- 1 gk gk    2612  7. Nov 2020  xterm-addon-fit.min.js\\r\\n-rw-rw-r-- 1 gk gk    5957  7. Nov 2020  xterm-addon-search.min.js\\r\\n-rw-rw-r-- 1 gk gk    3100  3. Jun 2020  tablesort.min.js\\r\\n\\x1b[1'",
+    1539
+  ],
+  [
+    "'m\\x1b[7m%\\x1b[27m\\x1b[1m\\x1b[0m                                                                                                       \\r \\r\\r\\x1b['",
+    1540
+  ],
+  [
+    "'0m\\x1b[27m\\x1b[24m\\x1b[J\\x1b[0m\\x1b[49m\\x1b[39m\\x1b[0m\\x1b[49m\\x1b[38;5;31m\\x1b[1m\\x1b[38;5;31m\\x1b[38;5;39m~\\x1b[0m\\x1b[38;5;39m\\x1b[49m\\x1b[38;5;31m/\\x1b[1m\\x1b[38;5;31m\\x1b[38;5;39mrepos\\x1b[0m\\x1b[38;5;39m\\x1b[49m\\x1b[38;5;31m/\\x1b[1m\\x1b[38;5;31m\\x1b[38;5;39mdocutools\\x1b[0m\\x1b[38;5;39m\\x1b[49m\\x1b[38;5;31m/\\x1b[38;5;103mdo\\x1b[0m\\x1b[38;5;103m\\x1b[49m\\x1b[38;5;31m/\\x1b[38;5;103ml\\x1b[0m\\x1b[38;5;103m\\x1b[49m\\x1b[38;5;31m/\\x1b[38;5;103ma\\x1b[0m\\x1b[38;5;103m\\x1b[49m\\x1b[38;5;31m/\\x1b[1m\\x1b[38;5;31m\\x1b[38;5;39mjavascript\\x1b[0m\\x1b[38;5;39m\\x1b[49m\\x1b[38;5;31m\\x1b[0m\\x1b[38;5;31m\\x1b[49m\\x1b[38;5;31m\\x1b[0m\\x1b[38;5;31m\\x1b[49m \\x1b[0m\\x1b[38;5;31m\\x1b[49m\\x1b[38;5;76m\\u276f\\x1b[0m\\x1b[38;5;76m\\x1b[49m\\x1b[38;5;76m\\x1b[0m\\x1b[38;5;76m\\x1b[49m\\x1b[30m\\x1b[0m\\x1b[30m\\x1b[49m\\x1b[39m \\x1b[0m\\x1b[49m\\x1b[39m\\x1b[K\\x1b[37C\\x1b[0m\\x1b[38;5;39m\\x1b[49m\\x1b[38;5;178m\\x1b[38;5;76mmain \\x1b[38;5;178m+5 \\x1b[38;5;178m!15 \\x1b[38;5;39m?41\\x1b[0m\\x1b[38;5;39m\\x1b[49m\\x1b[38;5;178m\\x1b[0m\\x1b[38;5;178m\\x1b[49m\\x1b[38;5;178m\\x1b[0m\\x1b[38;5;178m\\x1b[49m\\x1b[38;5;37m Py docutools\\x1b[0m\\x1b[38;5;37m\\x1b[49m\\x1b[38;5;37m\\x1b[0m\\x1b[38;5;37m\\x1b[49m\\x1b[38;5;37m\\x1b[0m\\x1b[38;5;37m\\x1b[49m\\x1b[39m\\x1b[65D\\x1b[?20'",
+    1567
+  ],
+  [
+    "'04h\\x1b[?20'",
+    1568
+  ],
+  [
+    "'04l\\r\\r\\n\\nScri'",
+    2374
+  ]
+]

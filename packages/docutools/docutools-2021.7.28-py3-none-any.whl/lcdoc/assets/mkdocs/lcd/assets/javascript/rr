@@ -1,0 +1,328 @@
+r.tag
+<termcast rows="54" cols="104" autoplay="" play_speed="0" src="asci.cast">
+​
+accessKey: ""
+​
+accessKeyLabel: ""
+​
+assignedSlot: null
+​
+attributes: NamedNodeMap(5) [ rows="54", cols="104", autoplay="", … ]
+​
+baseURI: "http://127.0.0.1:8000/SpecRunner.html#"
+​
+childElementCount: 1
+​
+childNodes: NodeList(3) [ #text, div.tc, #text ]
+​
+children: HTMLCollection { 0: div.tc, length: 1 }
+​
+classList: DOMTokenList []
+​
+className: ""
+​
+clientHeight: 0
+​
+clientLeft: 0
+​
+clientTop: 0
+​
+clientWidth: 0
+​
+contentEditable: "inherit"
+​
+dataset: DOMStringMap(0)
+​
+dir: ""
+​
+draggable: false
+​
+firstChild: #text "
+"
+​
+firstElementChild: <div class="tc">
+​
+hidden: false
+​
+id: ""
+​
+innerHTML: "\n<div class=\"tc\">\n  <div class=\"termcast_player\" style=\"color: #999\" width=\"100%\">\n  </div>\n  <div class=\"term_wrap\" style=\"position:relative; width: 100%; overflow: hidden \">\n    <terminal>\n    <div class=\"term_help_insert draggable\" style=\"z-index: 2; cursor: pointer; position: absolute; visibility: hidden; top: 3px; left: 10px;\">\n            \n    <table style=\"font-size: 10px\">\n        <tbody><tr><td colspan=\"4\"><span class=\"term_meta\"><font size=\"-2\">\n                Wed May 19 2021 00:23:51 GMT+0200 (Central European Summer Time), anon, 55rows x 192 columns</font></span></td></tr>\n\n        <tr><td><b>p</b>         </td> <td> Toggle <b>P</b>lay / <b>P</b>ause                               </td>\n            <td><b>q</b>         </td> <td> <b>Q</b>uit Play                                          </td></tr>\n        <tr><td><b>l</b>         </td> <td> Toggle <b>L</b>ooping Playback                            </td>\n            <td><b>s</b>, <b>d</b>, <b>f</b> </td> <td> <b>S</b>lower / <b>D</b>efault / <b>F</b>aster Playback Speed         </td></tr>\n        <tr><td><b>m</b>         </td> <td> Toggle <b>M</b>aximize / <b>M</b>inimize. Starts if not running </td>\n            <td><b>r</b>         </td> <td> <b>R</b>ewind                                             </td></tr>\n        <tr><td><b>o</b>/(<b>O</b>)    </td> <td> <b>O</b>ne frame (back) at a time                         </td>\n            <td><b>t</b>/<b>b</b>      </td> <td> Scroll to <b>T</b>op or <b>B</b>ottom                           </td></tr>\n        <tr><td><b>i</b>         </td> <td> Toggle This <b>I</b>nfo                                   </td>\n            <td><b>/</b>         </td> <td> Search substring                                    </td></tr>\n        <tr><td><b>j</b>         </td> <td> <b>J</b>ump to next occurrance of search word             </td>\n            <td><b>E</b>SC       </td> <td> Close all popups                                    </td></tr>\n\n    </tbody></table>\n        </div>\n    <div class=\"search_words_insert draggable\" style=\"z-index: 3; left: 50%; top: 20%; cursor: pointer; position: absolute; visibility: hidden;\">\n      <table>\n        <tbody><tr>\n          <td>Search Items<br><br><b>j</b>: Jump to next match,\n                <b>\n</b>: search linebreaks. Tip: use prompt to jump through cmds</td>\n        </tr>\n        <tr>\n          <td>\n            <input class=\"search_words has_user_input\" width=\"100%\">\n          </td>\n        </tr>\n      </tbody></table>\n    </div>\n    <!--i class=\"term_play_btn_big fa fa-5x fa-play\" style=\"color: #777; z-index: 1; position: absolute;\"></i-->\n  <div dir=\"ltr\" class=\"terminal xterm\" tabindex=\"0\"><div class=\"xterm-viewport\" style=\"background-color: black; overflow: hidden;\"><div class=\"xterm-scroll-area\" style=\"height: 1054px;\"></div></div><div class=\"xterm-screen\" style=\"width: 1600px; height: 1054px;\"><div class=\"xterm-helpers\"><textarea class=\"xterm-helper-textarea\" aria-label=\"Terminal input\" aria-multiline=\"false\" autocorrect=\"off\" autocapitalize=\"none\" spellcheck=\"false\" tabindex=\"0\" style=\"left: 495px; top: 57px; width: 9px; height: 19px; line-height: 19px; z-index: -5;\"></textarea><span class=\"xterm-char-measure-element\" aria-hidden=\"true\" stye=\"font-family: courier-new, courier, monospace; font-size: 15px;\">W</span><div class=\"composition-view\"></div></div><canvas class=\"xterm-text-layer\" style=\"z-index: 0; width: 1600px; height: 1054px;\" width=\"1920\" height=\"1265\"></canvas><canvas class=\"xterm-selection-layer\" style=\"z-index: 1; width: 1600px; height: 1054px;\" width=\"1920\" height=\"1265\"></canvas><canvas class=\"xterm-link-layer\" style=\"z-index: 2; width: 1600px; height: 1054px;\" width=\"1920\" height=\"1265\"></canvas><canvas class=\"xterm-cursor-layer\" style=\"z-index: 3; width: 1600px; height: 1054px;\" width=\"1920\" height=\"1265\"></canvas></div></div></terminal></div>\n  <div class=\"controls visible\">\n      <a class=\"toggle-play-list\" href=\"#\">\n        <i class=\"fa fa-list-ul\"></i>\n      </a>\n      <div class=\"progress\"> <div class=\"bar\" style=\"width: 509.723px;\"></div> </div>\n      <div class=\"duration clearfix\">\n        <span class=\"pull-left play-position\"></span>\n        <span class=\"pull-right\"><span class=\"play-current-time\">00:00:01</span> / <span class=\"play-total-time\">00:00:03</span><span>&nbsp;</span>\n            </span>\n      </div>\n      <div class=\"action-button\">\n        &nbsp;\n        <a class=\"prev\" href=\"#\">       <i class=\"fa fa-step-backward\"></i> </a>\n        <a class=\"play-pause\" href=\"#\"> <i class=\"fa fa-play\"></i> </a>\n        <a class=\"next\" href=\"#\">       <i class=\"fa fa-step-forward\"></i> </a>\n\n        <input class=\"volume\" data-css=\"0.5\" max=\"1\" min=\"0\" step=\"0.1\" type=\"range\" value=\"0.5\">\n    </div>\n  </div>\n</div>\n    "
+​
+innerText: "00:00:01 / 00:00:03 \n     "
+​
+isConnected: true
+​
+isContentEditable: false
+​
+lang: ""
+​
+lastChild: #text "
+    "
+​
+lastElementChild: <div class="tc">
+​
+localName: "termcast"
+​
+namespaceURI: "http://www.w3.org/1999/xhtml"
+​
+nextElementSibling: null
+​
+nextSibling: null
+​
+nodeName: "TERMCAST"
+​
+nodeType: 1
+​
+nodeValue: null
+​
+nonce: ""
+​
+offsetHeight: 1112
+​
+offsetLeft: 8
+​
+offsetParent: <body>
+​
+offsetTop: -7
+​
+offsetWidth: 1096
+​
+onabort: null
+​
+onanimationcancel: null
+​
+onanimationend: null
+​
+onanimationiteration: null
+​
+onanimationstart: null
+​
+onauxclick: null
+​
+onbeforeinput: null
+​
+onblur: null
+​
+oncanplay: null
+​
+oncanplaythrough: null
+​
+onchange: null
+​
+onclick: null
+​
+onclose: null
+​
+oncontextmenu: null
+​
+oncopy: null
+​
+oncuechange: null
+​
+oncut: null
+​
+ondblclick: null
+​
+ondrag: null
+​
+ondragend: null
+​
+ondragenter: null
+​
+ondragexit: null
+​
+ondragleave: null
+​
+ondragover: null
+​
+ondragstart: null
+​
+ondrop: null
+​
+ondurationchange: null
+​
+onemptied: null
+​
+onended: null
+​
+onerror: null
+​
+onfocus: null
+​
+onformdata: null
+​
+onfullscreenchange: null
+​
+onfullscreenerror: null
+​
+ongotpointercapture: null
+​
+oninput: null
+​
+oninvalid: null
+​
+onkeydown: null
+​
+onkeypress: null
+​
+onkeyup: null
+​
+onload: null
+​
+onloadeddata: null
+​
+onloadedmetadata: null
+​
+onloadend: null
+​
+onloadstart: null
+​
+onlostpointercapture: null
+​
+onmousedown: null
+​
+onmouseenter: null
+​
+onmouseleave: null
+​
+onmousemove: null
+​
+onmouseout: null
+​
+onmouseover: null
+​
+onmouseup: null
+​
+onmozfullscreenchange: null
+​
+onmozfullscreenerror: null
+​
+onpaste: null
+​
+onpause: null
+​
+onplay: null
+​
+onplaying: null
+​
+onpointercancel: null
+​
+onpointerdown: null
+​
+onpointerenter: null
+​
+onpointerleave: null
+​
+onpointermove: null
+​
+onpointerout: null
+​
+onpointerover: null
+​
+onpointerup: null
+​
+onprogress: null
+​
+onratechange: null
+​
+onreset: null
+​
+onresize: null
+​
+onscroll: null
+​
+onseeked: null
+​
+onseeking: null
+​
+onselect: null
+​
+onselectstart: null
+​
+onstalled: null
+​
+onsubmit: null
+​
+onsuspend: null
+​
+ontimeupdate: null
+​
+ontoggle: null
+​
+ontransitioncancel: null
+​
+ontransitionend: null
+​
+ontransitionrun: null
+​
+ontransitionstart: null
+​
+onvolumechange: null
+​
+onwaiting: null
+​
+onwebkitanimationend: null
+​
+onwebkitanimationiteration: null
+​
+onwebkitanimationstart: null
+​
+onwebkittransitionend: null
+​
+onwheel: null
+​
+outerHTML: "<termcast rows=\"54\" cols=\"104\" autoplay=\"\" play_speed=\"0\" src=\"asci.cast\">\n<div class=\"tc\">\n  <div class=\"termcast_player\" style=\"color: #999\" width=\"100%\">\n  </div>\n  <div class=\"term_wrap\" style=\"position:relative; width: 100%; overflow: hidden \">\n    <terminal>\n    <div class=\"term_help_insert draggable\" style=\"z-index: 2; cursor: pointer; position: absolute; visibility: hidden; top: 3px; left: 10px;\">\n            \n    <table style=\"font-size: 10px\">\n        <tbody><tr><td colspan=\"4\"><span class=\"term_meta\"><font size=\"-2\">\n                Wed May 19 2021 00:23:51 GMT+0200 (Central European Summer Time), anon, 55rows x 192 columns</font></span></td></tr>\n\n        <tr><td><b>p</b>         </td> <td> Toggle <b>P</b>lay / <b>P</b>ause                               </td>\n            <td><b>q</b>         </td> <td> <b>Q</b>uit Play                                          </td></tr>\n        <tr><td><b>l</b>         </td> <td> Toggle <b>L</b>ooping Playback                            </td>\n            <td><b>s</b>, <b>d</b>, <b>f</b> </td> <td> <b>S</b>lower / <b>D</b>efault / <b>F</b>aster Playback Speed         </td></tr>\n        <tr><td><b>m</b>         </td> <td> Toggle <b>M</b>aximize / <b>M</b>inimize. Starts if not running </td>\n            <td><b>r</b>         </td> <td> <b>R</b>ewind                                             </td></tr>\n        <tr><td><b>o</b>/(<b>O</b>)    </td> <td> <b>O</b>ne frame (back) at a time                         </td>\n            <td><b>t</b>/<b>b</b>      </td> <td> Scroll to <b>T</b>op or <b>B</b>ottom                           </td></tr>\n        <tr><td><b>i</b>         </td> <td> Toggle This <b>I</b>nfo                                   </td>\n            <td><b>/</b>         </td> <td> Search substring                                    </td></tr>\n        <tr><td><b>j</b>         </td> <td> <b>J</b>ump to next occurrance of search word             </td>\n            <td><b>E</b>SC       </td> <td> Close all popups                                    </td></tr>\n\n    </tbody></table>\n        </div>\n    <div class=\"search_words_insert draggable\" style=\"z-index: 3; left: 50%; top: 20%; cursor: pointer; position: absolute; visibility: hidden;\">\n      <table>\n        <tbody><tr>\n          <td>Search Items<br><br><b>j</b>: Jump to next match,\n                <b>\n</b>: search linebreaks. Tip: use prompt to jump through cmds</td>\n        </tr>\n        <tr>\n          <td>\n            <input class=\"search_words has_user_input\" width=\"100%\">\n          </td>\n        </tr>\n      </tbody></table>\n    </div>\n    <!--i class=\"term_play_btn_big fa fa-5x fa-play\" style=\"color: #777; z-index: 1; position: absolute;\"></i-->\n  <div dir=\"ltr\" class=\"terminal xterm\" tabindex=\"0\"><div class=\"xterm-viewport\" style=\"background-color: black; overflow: hidden;\"><div class=\"xterm-scroll-area\" style=\"height: 1054px;\"></div></div><div class=\"xterm-screen\" style=\"width: 1600px; height: 1054px;\"><div class=\"xterm-helpers\"><textarea class=\"xterm-helper-textarea\" aria-label=\"Terminal input\" aria-multiline=\"false\" autocorrect=\"off\" autocapitalize=\"none\" spellcheck=\"false\" tabindex=\"0\" style=\"left: 495px; top: 57px; width: 9px; height: 19px; line-height: 19px; z-index: -5;\"></textarea><span class=\"xterm-char-measure-element\" aria-hidden=\"true\" style=\"font-family: courier-new, courier, monospace; font-size: 15px;\">W</span><div class=\"composition-view\"></div></div><canvas class=\"xterm-text-layer\" style=\"z-index: 0; width: 1600px; height: 1054px;\" width=\"1920\" height=\"1265\"></canvas><canvas class=\"xterm-selection-layer\" style=\"z-index: 1; width: 1600px; height: 1054px;\" width=\"1920\" height=\"1265\"></canvas><canvas class=\"xterm-link-layer\" style=\"z-index: 2; width: 1600px; height: 1054px;\" width=\"1920\" height=\"1265\"></canvas><canvas class=\"xterm-cursor-layer\" style=\"z-index: 3; width: 1600px; height: 1054px;\" width=\"1920\" height=\"1265\"></canvas></div></div></terminal></div>\n  <div class=\"controls visible\">\n      <a class=\"toggle-play-list\" href=\"#\">\n        <i class=\"fa fa-list-ul\"></i>\n      </a>\n      <div class=\"progress\"> <div class=\"bar\" style=\"width: 509.723px;\"></div> </div>\n      <div class=\"duration clearfix\">\n        <span class=\"pull-left play-position\"></span>\n        <span class=\"pull-right\"><span class=\"play-current-time\">00:00:01</span> / <span class=\"play-total-time\">00:00:03</span><span>&nbsp;</span>\n            </span>\n      </div>\n      <div class=\"action-button\">\n        &nbsp;\n        <a class=\"prev\" href=\"#\">       <i class=\"fa fa-step-backward\"></i> </a>\n        <a class=\"play-pause\" href=\"#\"> <i class=\"fa fa-play\"></i> </a>\n        <a class=\"next\" href=\"#\">       <i class=\"fa fa-step-forward\"></i> </a>\n\n        <input class=\"volume\" data-css=\"0.5\" max=\"1\" min=\"0\" step=\"0.1\" type=\"range\" value=\"0.5\">\n    </div>\n  </div>\n</div>\n    </termcast>"
+​
+ownerDocument: HTMLDocument http://127.0.0.1:8000/SpecRunner.html#
+​
+parentElement: <body>
+​
+parentNode: <body>
+​
+part: DOMTokenList []
+​
+prefix: null
+​
+previousElementSibling: null
+​
+previousSibling: null
+​
+recording_data: Array(49) [ (3) […], (3) […], (3) […], … ]
+​
+s: Object { recorder_rows: 55, recorder_cols: 192, is_shot: false, … }
+​
+scrollHeight: 19
+​
+scrollLeft: 0
+​
+scrollLeftMax: 0
+​
+scrollTop: 0
+​
+scrollTopMax: 0
+​
+scrollWidth: 0
+​
+sh_play_time: undefined
+​
+shadowRoot: null
+​
+slot: ""
+​
+spellcheck: false
+​
+style: CSS2Properties(0)
+​
+tabIndex: -1
+​
+tagName: "TERMCAST"
+​
+term: Object { _core: {…}, _addonManager: {…} }
+​
+textContent: "\n\n  \n  \n  \n    \n    \n            \n    \n        \n                Wed May 19 2021 00:23:51 GMT+0200 (Central European Summer Time), anon, 55rows x 192 columns\n\n        p           Toggle Play / Pause                               \n            q           Quit Play                                          \n        l           Toggle Looping Playback                            \n            s, d, f   Slower / Default / Faster Playback Speed         \n        m           Toggle Maximize / Minimize. Starts if not running \n            r           Rewind                                             \n        o/(O)      One frame (back) at a time                         \n            t/b        Scroll to Top or Bottom                           \n        i           Toggle This Info                                   \n            /           Search substring                                    \n        j           Jump to next occurrance of search word             \n            ESC         Close all popups                                    \n\n    \n        \n    \n      \n        \n          Search Itemsj: Jump to next match,\n                \n: search linebreaks. Tip: use prompt to jump through cmds\n        \n        \n          \n            \n          \n        \n      \n    \n    \n  W\n  \n      \n        \n      \n        \n      \n        \n        00:00:01 / 00:00:03 \n            \n      \n      \n         \n                \n          \n                \n\n        \n    \n  \n\n    "
+​
+title: ""
+​
+<prototype>: HTMLUnknownElementPrototype { … }
+
+l
