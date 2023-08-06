@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: fastspider
+Version: 1.0.0
+Summary: fastspider 爬虫框架
+Home-page: https://github.com/coco369/fastspider.git
+Author: wanghaifei
+Author-email: wanghaifei36@126.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: redis (==3.5.3)
+Requires-Dist: selenium (==3.141.0)
+Requires-Dist: pymongo (==3.12.0)
+Requires-Dist: PyMySQL (==1.0.2)
+Requires-Dist: lxml (==4.6.3)
+Requires-Dist: beautifulsoup4 (==4.9.3)
+
+# fastspider
+
+高并发爬虫框架 + 爬虫监控
+
