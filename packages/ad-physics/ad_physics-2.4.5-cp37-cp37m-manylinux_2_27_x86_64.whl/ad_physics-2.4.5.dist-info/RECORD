@@ -1,0 +1,8 @@
+ad_physics/__init__.py,sha256=AC2GoziXCHpCS7zxIZThEhHedqtmePeRUgeIsMQF0Gw,376
+ad_physics/ad_physics_python37.so,sha256=27NmqL45nXMVM3a-mMhDPw_Qx2eTR1qVAOIiBDJ5yaE,53831432
+ad_physics-2.4.5.dist-info/top_level.txt,sha256=wtq7uofvivtwBQkugQNzIOxf8OXJCQAkVlVjBYtcuWw,11
+ad_physics-2.4.5.dist-info/WHEEL,sha256=ciR72hFonpgYut4ynEjjTEN68zLWoeKgkuwhczlneFQ,113
+ad_physics-2.4.5.dist-info/METADATA,sha256=mEbRN0AQGeba8Ra3ycdOw39cA_5OTxWFBarKYca6JMQ,1034
+ad_physics-2.4.5.dist-info/RECORD,,
+ad_physics.libs/libboost_python37-f27a447d.so.1.72.0,sha256=751u_q_T-3DAEZQyYWEGQd_-uUNyZnL_OzBl_8CoaP0,347704
+ad_physics.libs/libad_physics-7172d3fe.so,sha256=5pgBWtKHDoGL933Y55DG24Xt5AoAXsyN08VUnOkybxI,1934720
