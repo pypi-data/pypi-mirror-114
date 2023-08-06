@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: Mazes
+Version: 0.2.1
+Summary: Generates and solves rectangular mazes in the terminal. Comes with Python API.
+Home-page: https://github.com/GrandMoff100/Mazes
+Author: GrandMoff100
+Author-email: nlarsen23.student@gmail.com
+License: UNKNOWN
+Description: # Mazes
+        
+        ## Examples
+        <img src="https://raw.githubusercontent.com/GrandMoff100/Mazes/master/images/mazesV2.gif">
+        
+        
+        ## Installation
+        ```py
+        # Install with pip from pypi
+        $ pip install mazes
+        
+        # Or from source on github
+        $ pip install git+https://github.com/GrandMoff100/Mazes.git
+        ```
+        
+        ## Usage
+        
+        ```bash
+        $ mazes
+        Usage: mazes [OPTIONS] COMMAND [ARGS]...
+        
+          Makes and solves some mazes!! Mazes generated are saved in
+          ~/.mazes
+        
+        Options:
+          --help  Show this message and exit.
+        
+        Commands:
+          generate  Generates mazes using the recursive backtracker...
+          list      Lists the maze files that are saved in ~/.mazes
+          show      Displays the maze content of maze files
+          solve     Solves mazes that are generated.
+        ```
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
