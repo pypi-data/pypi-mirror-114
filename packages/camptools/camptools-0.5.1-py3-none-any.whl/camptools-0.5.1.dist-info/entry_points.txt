@@ -1,0 +1,10 @@
+[console_scripts]
+cmdjob = camptools.cmdjob:cmdjob
+extentsim = camptools.extent_sim:extent_sim
+job_status = camptools.job_status:job_status
+jobhistory = camptools.job_history:job_history
+joblist = camptools.job_status:joblist
+mymkdir = camptools.mymkdir:mymkdir
+myqsub = camptools.qsub_wrapper:myqsub
+nmyqsub = camptools.qsub_wrapper:nmyqsub
+
