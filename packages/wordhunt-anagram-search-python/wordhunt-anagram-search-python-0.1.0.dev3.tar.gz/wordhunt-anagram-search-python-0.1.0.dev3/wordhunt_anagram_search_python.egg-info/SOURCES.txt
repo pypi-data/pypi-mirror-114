@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+wordhunt_anagram_search_python.egg-info/PKG-INFO
+wordhunt_anagram_search_python.egg-info/SOURCES.txt
+wordhunt_anagram_search_python.egg-info/dependency_links.txt
+wordhunt_anagram_search_python.egg-info/top_level.txt
+wordhuntanagram/__init__.py
+wordhuntanagram/anagram.py
+wordhuntanagram/base.py
+wordhuntanagram/file_tree.py
+wordhuntanagram/logger.py
+wordhuntanagram/matrices.py
+wordhuntanagram/wordhunt.py
