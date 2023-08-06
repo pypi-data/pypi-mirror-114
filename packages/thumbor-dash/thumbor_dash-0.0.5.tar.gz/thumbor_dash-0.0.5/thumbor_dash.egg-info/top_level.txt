@@ -1,0 +1,5 @@
+build
+dist
+docs
+td_venv
+thumbor_dash
