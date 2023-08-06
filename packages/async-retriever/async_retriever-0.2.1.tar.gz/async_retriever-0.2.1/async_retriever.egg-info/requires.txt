@@ -1,0 +1,14 @@
+aiohttp-client-cache
+aiohttp[speedups]
+aiosqlite
+cytoolz
+nest-asyncio
+orjson
+
+[test]
+coverage[toml]
+pytest
+pytest-clarity
+pytest-sugar
+pytest-xdist[psutil]
+ward
