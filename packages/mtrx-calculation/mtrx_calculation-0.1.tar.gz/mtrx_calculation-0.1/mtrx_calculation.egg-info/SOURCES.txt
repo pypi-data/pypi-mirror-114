@@ -1,0 +1,9 @@
+setup.py
+mtrx_calculation/Calculations.py
+mtrx_calculation/Matrix.py
+mtrx_calculation/__init__.py
+mtrx_calculation.egg-info/PKG-INFO
+mtrx_calculation.egg-info/SOURCES.txt
+mtrx_calculation.egg-info/dependency_links.txt
+mtrx_calculation.egg-info/not-zip-safe
+mtrx_calculation.egg-info/top_level.txt
