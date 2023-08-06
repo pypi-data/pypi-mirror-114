@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+  {{ block.super }}
+  <link rel="stylesheet" href="{% static 'parcel/parcel.94974a77.css' %}">
+  <style>
+    .bg-primary {
+      background-color: #003F7A !important;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+  <kr-app id="app"></kr-app>
+  <script type="text/javascript" src="{% static 'parcel/parcel.94974a77.js' %}"></script>
+{% endblock %}

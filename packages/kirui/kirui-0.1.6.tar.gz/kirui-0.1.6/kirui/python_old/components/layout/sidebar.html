@@ -1,0 +1,82 @@
+<div id="sidebar">
+    <div class="menu-wrapper">
+        <slot name="menu"></slot>
+        sdfsdfsfsasdasccxc
+    </div>
+</div>
+
+<!-- div id="main" b:ontouchmove="self.touch_move" b:ontouchend="self.touch_end" b:ontouchstart="self.touch_start">
+    <div id="topbar" class="navbar navbar-light bg-light box-shadow border-bottom">
+        <button class="navbar-toggler" type="button" b:ontouchend="self.toggle_sidebar" b:onclick="self.toggle_sidebar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div style="display: flex; flex-grow: 1;">
+            <slot name="topbar">
+                <div class="navbar-brand float-left">
+                    <strong></strong>
+                </div>
+            </slot>
+        </div>
+    </div>
+
+    <div id="loading" style="display: none;">
+        <div class="spinner-border" role="status" style="margin: auto"></div>
+    </div>
+
+    <div id="content">
+        <slot name="content"></slot>
+    </div>
+</div -->
+
+<style>
+    #topbar {
+        width: 100%;
+    }
+
+    #main {
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        z-index: 1000;
+        height: 100vh;
+        width: 100%;
+        overflow-y: scroll;
+        background-color: white;
+    }
+
+    #loading {
+        width: 100%;
+        height: 100%;
+    }
+
+    #content {
+        box-sizing: border-box;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    #sidebar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        overflow-y: scroll;
+        background-color: #343a40;
+        height: 100vh;
+        box-sizing: border-box;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    .transistion {
+        -webkit-transition: 0.8s;
+        -moz-transition: 0.8s;
+        -ms-transition: 0.8s;
+        -o-transition: 0.8s;
+        transition: 0.8s;
+    }
+</style>
