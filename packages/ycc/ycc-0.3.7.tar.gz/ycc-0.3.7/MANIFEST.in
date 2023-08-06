@@ -1,0 +1,7 @@
+include README.md
+include pyproject.toml
+include requirements.txt
+global-include *.py
+global-exclude *.pyc
+exclude setup.py
+exclude setup.cfg
