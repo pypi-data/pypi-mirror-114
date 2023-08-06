@@ -1,0 +1,13 @@
+{
+  "planetarypy": {
+    "Overview": "/",
+    "Config": "config.html",
+    "Utils": "utils.html",
+    "PDS Indexes": "pds.indexes.html",
+    "CTX Index": "pds.ctx_index.html",
+    "Apps": "pds.apps.html",
+    "CTX": "ctx.html",
+    "HiRISE tools": "hirise.html",
+    "Apps Demos": "apps_demo.html"
+  }
+}
