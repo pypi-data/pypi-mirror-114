@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+mahiru/core/__init__.py
+mahiru/core/event.py
+mahiru/core/module.py
+mahiru_core.egg-info/PKG-INFO
+mahiru_core.egg-info/SOURCES.txt
+mahiru_core.egg-info/dependency_links.txt
+mahiru_core.egg-info/top_level.txt
