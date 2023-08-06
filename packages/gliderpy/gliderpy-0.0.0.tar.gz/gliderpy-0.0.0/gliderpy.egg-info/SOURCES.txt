@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+requirements-dev.txt
+requirements.txt
+setup.cfg
+setup.py
+gliderpy/__init__.py
+gliderpy/fetchers.py
+gliderpy/plotters.py
+gliderpy/servers.py
+gliderpy/__pycache__/__init__.cpython-38.pyc
+gliderpy/__pycache__/fetchers.cpython-38.pyc
+gliderpy/__pycache__/servers.cpython-38.pyc
