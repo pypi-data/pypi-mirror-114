@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: Morse-Translator
+Version: 0.1
+Summary: Trivial Package Testing
+Home-page: https://github.com/Tylerastro/MorseCode
+Author: Tylerastro
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# MorseCode
+
+This program translates English to morse and vice versa.
+
+## Usage
+In your terminal:
+morse
+
+And voila.
+
+## Note
+The dictionary file is not complete yet. This is in the pre-Alpha stage.
+
