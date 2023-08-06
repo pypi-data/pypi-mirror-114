@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+webbuilder/__init__.py
+webbuilder/__main__.py
+webbuilder.egg-info/PKG-INFO
+webbuilder.egg-info/SOURCES.txt
+webbuilder.egg-info/dependency_links.txt
+webbuilder.egg-info/requires.txt
+webbuilder.egg-info/top_level.txt
