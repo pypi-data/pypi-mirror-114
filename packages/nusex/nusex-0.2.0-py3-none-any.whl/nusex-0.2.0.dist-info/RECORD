@@ -1,0 +1,16 @@
+nusex/__init__.py,sha256=hJoIUygR8u8yBBY5umGhp9L-lzQa2ctjSRxS-OtOlCQ,556
+nusex/cli.py,sha256=ICnhyM2ENC7T40DRZAxznZLWT8FzIt3CYFPUdau0eHM,1156
+nusex/errors.py,sha256=ai6kd8519QDEUlYS9hhe3QSPNCrke68BbpGuq2XqLcM,274
+nusex/commands/__init__.py,sha256=FD3b3t3g1HY6tqQJXvvdc6z1_S0DjXcZwQ_kxaKx9z8,58
+nusex/commands/build.py,sha256=os6vIuAkkUvDnvwRy12lOXTctdCUSXE8ENpCKuTd1Y0,4688
+nusex/commands/config.py,sha256=yIxi1LiQyIdZg8VtSg4MwQMs360vpKBijCu8sfYd9wQ,1652
+nusex/commands/delete.py,sha256=l_3kX-na4ABG5icJEhwZmDEKd-1GjboViRJQO5-wfAE,799
+nusex/commands/deploy.py,sha256=ACTVvjvT45zPK41dG90lzw8yJwjRrbDrbuCWoyMpybQ,2040
+nusex/commands/init.py,sha256=vG0rzLb_UA_xb1qCqkIR4QjSYzPSAgCAOIJxH4ndCj8,2933
+nusex/commands/rename.py,sha256=f4xFNf63EFsyToPeh14MaXKvZnrvWQErsFMvAM1KetQ,947
+nusex-0.2.0.dist-info/LICENSE,sha256=lY6LNJwofm-LKatvLczs9v_W9hcmfzL7ZEoD8U77BlI,1523
+nusex-0.2.0.dist-info/METADATA,sha256=7bLtuIaB29_gfIH8ZoqfrkhyP4EoGk3Lq34lAMS4Xzc,4516
+nusex-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+nusex-0.2.0.dist-info/entry_points.txt,sha256=HfNyIPoJ1sAjn8yN3dqQVq24udXt2zwKMODzO9kNllw,63
+nusex-0.2.0.dist-info/top_level.txt,sha256=aFghyIRzjIo0MTqe9E-GdAQBcLzyNS6ZbsB7r7EUR0o,6
+nusex-0.2.0.dist-info/RECORD,,
