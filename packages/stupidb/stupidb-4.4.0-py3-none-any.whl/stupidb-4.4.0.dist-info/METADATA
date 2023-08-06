@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: stupidb
+Version: 4.4.0
+Summary: The stupidest of all the databases.
+Home-page: https://github.com/cpcloud/stupidb
+License: Apache-2.0
+Author: Phillip Cloud
+Author-email: cpcloud@gmail.com
+Maintainer: Phillip Cloud
+Maintainer-email: cpcloud@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: animation
+Requires-Dist: cytoolz (>=0.11.0,<0.12.0)
+Requires-Dist: importlib-metadata (>=4.6.1,<5.0.0); python_version < "3.8"
+Requires-Dist: pydot (>=1.4.2,<2.0.0); extra == "animation"
+Project-URL: Documentation, https://stupidb.readthedocs.io
+Project-URL: Repository, https://github.com/cpcloud/stupidb
+Description-Content-Type: text/x-rst
+
+=======
+StupiDB
+=======
+
+.. image:: https://img.shields.io/pypi/v/stupidb.svg
+        :target: https://pypi.python.org/pypi/stupidb
+
+.. image:: https://github.com/cpcloud/stupidb/actions/workflows/ci.yml/badge.svg?branch=master
+        :target: https://github.com/cpcloud/stupidb/actions/workflows/ci.yml
+
+.. image:: https://readthedocs.org/projects/stupidb/badge/?version=latest
+        :target: https://stupidb.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+Are you tired of software that's too smart? Try StupiDB, the stupidest database
+you'll ever come across.
+
+StupiDB was built to understand how a relational database might be implemented.
+
+RDBMSs like PostgreSQL are extremely complex. It was hard for to me to imagine
+what implementing the core of a relational database like PostgreSQL would look
+like just by tinkering with and reading the source code, so I decided to write
+my own.
+
+* Free software: Apache Software License 2.0
+* Documentation: https://stupidb.readthedocs.io.
+
+Features
+--------
+* Stupid joins
+* Idiotic window functions
+* Woefully naive set operations
+* Sophomoric group bys
+* Dumb custom aggregates
+* Scales down, to keep expectations low
+* Wildly cloud unready
+* Worst-in-class performance
+
+Non-Features
+------------
+* Stupid simple in-memory format: ``Iterable[Mapping[str, Any]]``
+* Stupidly clean codebase
+
+Credits
+-------
+This package was created with Cookiecutter_ and the
+`audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
