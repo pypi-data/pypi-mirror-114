@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+html_to_md_converter/__init__.py
+html_to_md_converter/html_to_md_converter.py
+html_to_md_converter.egg-info/PKG-INFO
+html_to_md_converter.egg-info/SOURCES.txt
+html_to_md_converter.egg-info/dependency_links.txt
+html_to_md_converter.egg-info/not-zip-safe
+html_to_md_converter.egg-info/top_level.txt
