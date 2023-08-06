@@ -1,0 +1,11 @@
+astropy
+matplotlib
+seaborn
+mpmath
+numpy
+pyyaml
+scipy
+h5py
+hdfdict
+xlrd==1.2.0
+xlwt
