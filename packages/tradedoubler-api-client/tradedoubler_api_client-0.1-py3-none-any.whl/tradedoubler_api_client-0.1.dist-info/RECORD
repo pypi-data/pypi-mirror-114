@@ -1,0 +1,10 @@
+tradedoubler_api_client/__init__.py,sha256=9hrDR2PDi2ONftjg9mMAcBs9wW6L_O_xKosJPKn44m0,34
+tradedoubler_api_client/client.py,sha256=5iOgwojHn2Vj5uHXLK7XyEj2H_Rvu-cwktKTjbJt7hc,2242
+tradedoubler_api_client/pending_sales.py,sha256=xOz006C9Vx1AemA5-Mbj-IgxQDfotg8LO_IjLBZ2bBs,6329
+tradedoubler_api_client/reporting.py,sha256=I3SH0DIoGn7ZDFZqO4FUCPshkokcLO4WuRrN5kEGjhY,3014
+tradedoubler_api_client/utilities.py,sha256=wFimMJfWm8hdaCioJ1E1dP8nhgB29DBHArGMZc5Teuk,2126
+tradedoubler_api_client-0.1.dist-info/LICENSE,sha256=qXet5QStphPGRTVBIl2aQaj8unzcXgdzTWqsco4cL_o,1090
+tradedoubler_api_client-0.1.dist-info/METADATA,sha256=WFiOHRlaKSXsSz46UuRU9U2INWDrU35m-tz03YQ2HJA,2666
+tradedoubler_api_client-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tradedoubler_api_client-0.1.dist-info/top_level.txt,sha256=GYpjBHi2OYbm99yWKB-AT3oD_nIjpB7DsvnGWvQs0oU,24
+tradedoubler_api_client-0.1.dist-info/RECORD,,
