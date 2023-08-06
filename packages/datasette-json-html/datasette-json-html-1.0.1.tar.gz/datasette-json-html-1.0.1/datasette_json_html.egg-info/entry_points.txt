@@ -1,0 +1,3 @@
+[datasette]
+json_html = datasette_json_html
+
