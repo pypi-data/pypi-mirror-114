@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+ExGrads.egg-info/PKG-INFO
+ExGrads.egg-info/SOURCES.txt
+ExGrads.egg-info/dependency_links.txt
+ExGrads.egg-info/requires.txt
+ExGrads.egg-info/top_level.txt
+exgrads/__init__.py
+exgrads/hooks.py
+exgrads/vectorize.py
