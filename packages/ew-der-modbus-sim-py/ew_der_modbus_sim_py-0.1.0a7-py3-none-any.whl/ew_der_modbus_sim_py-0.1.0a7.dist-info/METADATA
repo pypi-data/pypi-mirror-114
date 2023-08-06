@@ -1,0 +1,126 @@
+Metadata-Version: 2.1
+Name: ew-der-modbus-sim-py
+Version: 0.1.0a7
+Summary: EnergyWeb DER Modbus Simulator
+Home-page: https://github.com/energywebfoundation/ew_der_modbus_sim_py.git
+Author: Pablo Buitrago
+Author-email: messaging@energyweb.org
+License: LICENSE
+Project-URL: Bug Tracker, https://github.com/energywebfoundation/ew_der_modbus_sim_py/issues
+Keywords: decentralised iot der modbus sunspec flexibility
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: modbus-tk (==1.1.2)
+Requires-Dist: pysunspec2 (==1.0.4)
+Requires-Dist: python-dotenv (==0.1)
+Provides-Extra: all
+Requires-Dist: modbus-tk (==1.1.2) ; extra == 'all'
+Requires-Dist: pysunspec2 (==1.0.4) ; extra == 'all'
+Requires-Dist: python-dotenv (==0.1) ; extra == 'all'
+Requires-Dist: pytest (==6.2.2) ; extra == 'all'
+Requires-Dist: pytest-cov (==2.11.1) ; extra == 'all'
+Requires-Dist: twine (==3.4.1) ; extra == 'all'
+Requires-Dist: build (==0.3.1) ; extra == 'all'
+Provides-Extra: test
+Requires-Dist: modbus-tk (==1.1.2) ; extra == 'test'
+Requires-Dist: pysunspec2 (==1.0.4) ; extra == 'test'
+Requires-Dist: python-dotenv (==0.1) ; extra == 'test'
+Requires-Dist: pytest (==6.2.2) ; extra == 'test'
+Requires-Dist: pytest-cov (==2.11.1) ; extra == 'test'
+
+<div align="center">
+  <a href="https://www.energyweb.org/"><img src="https://www.energyweb.org/wp-content/uploads/2019/04/logo-brand.png" alt="EnergyWeb" width="150"></a>
+  <h1 style="padding:25px;">
+    EnergyWeb DER Modbus Simulator
+  </h1>
+</div>
+
+
+## Introduction
+This repository hosts the EnergyWeb's Decentralized-Energy-Resouce Modbus Simulator.
+
+## Primary features
+- TCP/RTU modbus support.
+- Sunspec interface support.
+- Supply custom DER model.
+- Model-map library available.
+
+## Prerequisites
+- ```pip>=20.3.4```
+- ```pipenv>=2020.8.13```
+
+## Quick start
+
+### Installation steps
+```
+# Clone demo repository
+git clone https://github.com/energywebfoundation/ew_der_modbus_sim_py.git
+
+# Acces project folder
+cd ew_der_modbus_sim_py
+
+# Installs pipenv
+pip install pipenv --upgrade
+
+# Creates a python3 virtual environment
+pipenv --three
+
+# Installs all demo dependencies
+pipenv install '.[all]'
+```
+
+### Preset environment variables
+```
+# Modbus Mode [TCP or RTU]
+SLAVE_MODE=TCP
+# A slave unique ID [int]
+SLAVE_ID=1
+
+# Slave TCP address and port. Defaults to 'localhost:8502'
+SLAVE_TCP_ADDRESS=localhost
+SLAVE_TCP_PORT=8502
+
+# Slave RTU port 
+SLAVE_RTU_PORT=/dev/ptyp5
+
+# DER model-map name 
+MODEL_MAP_NAME=STP8-10-3AV-40
+```
+
+### Virtual environment
+```
+# Access pipenv's virtual environment in order to run the examples below
+pipenv shell
+```
+
+## Documentation
+### DER Simulator
+
+```
+# Running Simulator
+python3 ./src/ew_der_modbus_sim_py/der_simulator.py
+```
+
+### Available model-map list
+- SMA
+  - STP8-10-3AV-40 - PV Inverter
+  - SUNNY-ISLAND-4.4-M-13 - Battery Inverter 
+
+## Active Contributors
+- Ioannis Vlachos (@iovlachos)
+- Mahir Şentürk (@mhrsntrk)
+- Bacem Ben Achour (@Aresguerre) 
+- Pablo Buitrago (@ChangoBuitrago)
+
+License
+-------
+This project is licensed under GNU General Public License Version 3 (GPLv3)
+
