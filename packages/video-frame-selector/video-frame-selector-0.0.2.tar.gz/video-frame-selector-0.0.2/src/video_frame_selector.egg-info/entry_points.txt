@@ -1,0 +1,3 @@
+[console_scripts]
+vfs-process = vfs.process:sys_main
+
