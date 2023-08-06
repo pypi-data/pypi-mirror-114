@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: DataLine
+Version: 0.1
+Summary: Simple class to aid the process of data cleaning.
+Home-page: https://github.com/tiagobotari/dataline
+Author: 
+Author-email: tiagobotari@gmail.com
+License: https://github.com/tiagobotari/dataline
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+
