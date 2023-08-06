@@ -1,0 +1,42 @@
+six
+sqlalchemy
+
+[:python_version < "3.4"]
+enum34
+
+[:python_version < "3.6" and platform_machine != "ppc64le"]
+ujson<4
+
+[:python_version >= "3.6" and platform_machine != "ppc64le"]
+orjson
+
+[:python_version >= "3.6" and platform_machine == "ppc64le"]
+ujson
+
+[cassandra]
+cassandra-driver
+
+[cli_tools]
+deepdiff
+texttable
+
+[jupyter]
+pyzmq<18
+ipywidgets
+tabulate
+tornado<5.1
+
+[jupyter:python_version<"3"]
+wcwidth<0.1.8
+ipython<6,>=5
+ipykernel<5
+matplotlib<3.0
+
+[jupyter:python_version>="3"]
+nbconvert<=5.4.0
+ipython
+ipykernel>=5
+matplotlib
+
+[mysql]
+mysql-connector-python
