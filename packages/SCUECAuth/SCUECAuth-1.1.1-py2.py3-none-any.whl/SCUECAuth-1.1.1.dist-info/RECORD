@@ -1,0 +1,10 @@
+scuec_auth/__init__.py,sha256=j2jeyUdYz5jsiJhfACOBbndS5-Tee_kgsHurSkfZ118,707
+scuec_auth/_compat.py,sha256=VyUjRvdgNnt0ngFHhzHuIce3nad0vKA3S-ev4z3h2SA,1455
+scuec_auth/auth.py,sha256=fDCbKQQEb7cVXtHTKzvU7U-4edbs3N9bXFCerZ7Sjq0,7242
+scuec_auth/session.py,sha256=z8Tz6p-jx_OGAPiboVS2oqkcHBxFD-h9nBoanSgKk1s,2769
+scuec_auth/utils.py,sha256=BFpsQP1ak3dlpz-ULATa7KyGTR1YpfmAaW-VP4JUQ6w,1963
+SCUECAuth-1.1.1.dist-info/LICENSE,sha256=po2UEGOni7x9U5aDg-iG-X1vL7lBC7aJj8GdO1zMc1c,1088
+SCUECAuth-1.1.1.dist-info/METADATA,sha256=fyxF2fTVv4xwwjc0Ov17ZaQReGdS3DhF3iHNMCq--B8,2511
+SCUECAuth-1.1.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+SCUECAuth-1.1.1.dist-info/top_level.txt,sha256=bAAmqTPe_O03FV_YmSx-3We2TV22PQuwazkH7VG_rdU,11
+SCUECAuth-1.1.1.dist-info/RECORD,,
