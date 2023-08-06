@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: blenderless
+Version: 0.0.0
+Summary: 
+Requires-Python: >=3.7,<3.8
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: bpy (==2.91a0)
+Requires-Dist: hydra-core (>=1.0.7,<2.0.0)
+Requires-Dist: imageio
+Requires-Dist: pillow
+Requires-Dist: trimesh (>=3.9.24,<4.0.0)
+Requires-Dist: xvfbwrapper (>=0.2.9,<0.3.0)
