@@ -1,0 +1,3 @@
+[console_scripts]
+ginja = ginja.cli:cli
+
