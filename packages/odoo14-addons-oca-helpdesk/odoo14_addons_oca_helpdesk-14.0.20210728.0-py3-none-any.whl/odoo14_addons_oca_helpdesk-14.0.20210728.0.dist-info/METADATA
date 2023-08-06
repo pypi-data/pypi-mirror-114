@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: odoo14-addons-oca-helpdesk
+Version: 14.0.20210728.0
+Summary: Meta package for oca-helpdesk Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Requires-Dist: odoo14-addon-helpdesk-mgmt
+Requires-Dist: odoo14-addon-helpdesk-mgmt-project
+Requires-Dist: odoo14-addon-helpdesk-motive
+Requires-Dist: odoo14-addon-helpdesk-type
+
+UNKNOWN
+
