@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+deepayan/__init__.py
+deepayan/calculator.py
+deepayan/file.py
+deepayan/testing.py
+deepayan.egg-info/PKG-INFO
+deepayan.egg-info/SOURCES.txt
+deepayan.egg-info/dependency_links.txt
+deepayan.egg-info/top_level.txt
