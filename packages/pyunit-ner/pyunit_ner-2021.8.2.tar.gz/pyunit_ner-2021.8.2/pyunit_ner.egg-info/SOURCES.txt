@@ -1,0 +1,12 @@
+README.md
+setup.py
+pyunit_ner/__init__.py
+pyunit_ner/ner.py
+pyunit_ner/transformer_encoder.py
+pyunit_ner/vocab.py
+pyunit_ner.egg-info/PKG-INFO
+pyunit_ner.egg-info/SOURCES.txt
+pyunit_ner.egg-info/dependency_links.txt
+pyunit_ner.egg-info/requires.txt
+pyunit_ner.egg-info/top_level.txt
+pyunit_ner.egg-info/zip-safe
