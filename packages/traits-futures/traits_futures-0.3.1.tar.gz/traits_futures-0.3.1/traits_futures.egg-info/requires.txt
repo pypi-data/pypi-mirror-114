@@ -1,0 +1,12 @@
+pyface
+traits>=6.2.0
+
+[docs]
+enthought-sphinx-theme
+sphinx<4,>=3.5
+
+[pyqt5]
+pyqt5
+
+[pyside2]
+pyside2
