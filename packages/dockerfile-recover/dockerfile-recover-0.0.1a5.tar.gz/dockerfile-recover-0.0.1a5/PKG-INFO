@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: dockerfile-recover
+Version: 0.0.1a5
+Summary: dockerfile-recover is a tool to reconstruct Dockerfile by reverse engineering a docker image
+Home-page: https://github.com/purificant/dockerfile-recover
+License: MIT
+Keywords: docker,dockerfile,recover,reverse,engineer
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Requires-Dist: click (>=8.0.1,<9.0.0)
+Requires-Dist: docker (>=5.0.0,<6.0.0)
+Requires-Dist: six (>=1.16.0,<2.0.0)
+Project-URL: Documentation, https://github.com/purificant/dockerfile-recover
+Project-URL: Repository, https://github.com/purificant/dockerfile-recover
+Description-Content-Type: text/markdown
+
+# dockerfile-recover
+dockerfile-recover is a tool to reconstruct Dockerfile by reverse engineering a docker image
+
+# Installation
+
+## With pip
+```
+pip install dockerfile-recover
+```
+## In a container
+```
+docker pull purificant/dockerfile-recover
+```
+
+# Usage
+
+## When installing with pip
+```
+docker pull <the image you want to reverse engineer>
+dockerfile-recover <image name>
+```
+For example
+```
+dockerfile-recover python
+dockerfile-recover django
+dockerfile-recover redis
+dockerfile-recover node
+```
+
+or run as python module
+```
+python -m dockerfile_recover nginx
+```
+
+## When running in a container
+
+```
+docker pull <the image you want to reverse engineer>
+docker run -it -v /var/run/docker.sock:/var/run/docker.sock purificant/dockerfile-recover python -m dockerfile_recover <image name>
+```
