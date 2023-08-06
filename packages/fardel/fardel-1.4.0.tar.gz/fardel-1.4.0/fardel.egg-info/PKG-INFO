@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: fardel
+Version: 1.4.0
+Summary: Complete and modular CMS
+Home-page: https://github.com/FardelCMS/FardelCMS
+Author: Sepehr Hamzehlouy
+Author-email: s.hamzelooy@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Programming Language :: Python :: 3.8

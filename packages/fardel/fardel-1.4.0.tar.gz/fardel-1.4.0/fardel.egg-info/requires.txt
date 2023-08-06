@@ -1,0 +1,12 @@
+Flask-Babel==2.0.0
+bcrypt==3.2.0
+flask-restful==0.3.9
+flask==2.0.1
+flask_caching==1.10.1
+flask_jwt_extended==4.2.3
+flask_login==0.5.0
+flask_mail==0.9.1
+flask_migrate==3.0.1
+flask_sqlalchemy==2.5.1
+psycopg2-binary
+raven[flask]

@@ -1,0 +1,108 @@
+{% macro panel_box(title, content,
+  cols="col-md-12 col-sm-12 col-xs-12",
+  close=True,
+  collapse=True) -%}
+<div class="row">
+  <div class={{cols}}>
+    <div class="x_panel">
+      <div class="x_title">
+        <h2>{{title}}</h2>
+        <ul class="nav navbar-left panel_toolbox">
+          {% if close %}
+          <li><a class="close-link"><i class="fa fa-close"></i></a>
+          </li>            
+          {% endif %}
+          {% if collapse %}
+          <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+          </li>            
+          {% endif %}
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+      <div class="x_content">
+          {{content}}
+      </div>
+    </div>
+  </div>
+</div>
+{%- endmacro %}
+
+{% macro paginate(page, pages, endpoint) %}
+<nav aria-label="...">
+  <ul class="pagination">
+    <li class="page-item {% if page < 2 %}disabled{% endif %}">
+      <a class="page-link" href="{{url_for(endpoint, page=page-1)}}">{{gettext("Prev")}}</a>
+    </li>
+    {% if page >= 6 %}      
+    <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+    {% endif %}
+    {% if page < 6 and pages < 5 %}
+      {% for i in range(1, pages) %}
+      <li class="page-item {% if i == page %}active{% endif %}">
+        {% if i != page %}
+        <a class="page-link" href="{{url_for(endpoint, page=i)}}">
+        {{i}}
+        </a>
+        {% else %}
+        <span class="page-link">
+          {{i}}
+          <span class="sr-only">(current)</span>
+        </span>
+        {% endif %}
+      </li>        
+      {% endfor %}
+    {% elif page < 6 %}
+      {% for i in range(1, page + 4) %}
+      <li class="page-item {% if i == page %}active{% endif %}">
+        {% if i != page %}
+        <a class="page-link" href="{{url_for(endpoint, page=i)}}">
+        {{i}}
+        </a>
+        {% else %}
+        <span class="page-link">
+          {{i}}
+          <span class="sr-only">(current)</span>
+        </span>
+        {% endif %}
+      </li>
+      {% endfor %}
+    {% elif page >= 6 and page < pages - 4 %}
+      {% for i in range(page - 4, page + 4) %}
+      <li class="page-item {% if i == page %}active{% endif %}">
+        {% if i != page %}
+        <a class="page-link" href="{{url_for(endpoint, page=i)}}">
+        {{i}}
+        </a>
+        {% else %}
+        <span class="page-link">
+          {{i}}
+          <span class="sr-only">(current)</span>
+        </span>
+        {% endif %}
+      </li>
+      {% endfor %}
+    {% elif page >= 6 and page >= pages - 4 %}
+      {% for i in range(page - 4, pages + 1) %}
+      <li class="page-item {% if i == page %}active{% endif %}">
+        {% if i != page %}
+        <a class="page-link" href="{{url_for(endpoint, page=i)}}">
+        {{i}}
+        </a>
+        {% else %}
+        <span class="page-link">
+          {{i}}
+          <span class="sr-only">(current)</span>
+        </span>
+        {% endif %}
+      </li>
+      {% endfor %}
+    {% endif %}
+    {% if page < pages - 4 %}
+    <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+    {% endif %}
+    <li class="page-item {% if page == pages %}disabled{% endif %}">
+      <a class="page-link" href="{{url_for(endpoint, page=page+1)}}">{{gettext("Next")}}</a>
+    </li>
+  </ul>
+</nav>
+{% endmacro %}
