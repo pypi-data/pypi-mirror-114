@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+datasette_haversine/__init__.py
+datasette_haversine.egg-info/PKG-INFO
+datasette_haversine.egg-info/SOURCES.txt
+datasette_haversine.egg-info/dependency_links.txt
+datasette_haversine.egg-info/entry_points.txt
+datasette_haversine.egg-info/requires.txt
+datasette_haversine.egg-info/top_level.txt
