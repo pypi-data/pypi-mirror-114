@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "kicksaw-data-mapping-base"
+version = "0.1.2"
+description = "Base package for working with Kicksaw's mapping gsheets"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Kicksaw-Consulting/kicksaw_data_mapping_base"
+authors = ["Timothy Sabat <tim@kicksaw.com>", "Alex Drozd <alex@kicksaw.com>"]
+keywords = ["kicksaw", "mapping", "gdoc"]
+packages = [
+  { include = "kicksaw_data_mapping_base" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+oauth2client = "^4.1.3"
+google-api-python-client = "^2.15.0"
+gspread = "^3.7.0"
+jsonpath-ng = "^1.5.3"
+python-configuration-management = "^2.0.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.scripts]
+kicksaw-mappings = 'kicksaw_data_mapping_base.cli:kicksaw_mappings'
