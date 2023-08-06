@@ -1,0 +1,8 @@
+README.md
+setup.py
+canonical_phone/__init__.py
+canonical_phone/phone.py
+canonical_phone.egg-info/PKG-INFO
+canonical_phone.egg-info/SOURCES.txt
+canonical_phone.egg-info/dependency_links.txt
+canonical_phone.egg-info/top_level.txt
