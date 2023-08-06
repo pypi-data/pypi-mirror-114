@@ -1,0 +1,11 @@
+rasterio
+geopandas
+pandas
+numpy
+osmnx
+GOSTNets
+scikit-image
+pyproj
+GOSTRocks
+scipy
+pandana
