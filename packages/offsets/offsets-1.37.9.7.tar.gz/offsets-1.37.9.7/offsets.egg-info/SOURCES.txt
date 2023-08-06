@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+offsets/Binomialdistribution.py
+offsets/Gaussiandistribution.py
+offsets/Generaldistribution.py
+offsets/__init__.py
+offsets.egg-info/PKG-INFO
+offsets.egg-info/SOURCES.txt
+offsets.egg-info/dependency_links.txt
+offsets.egg-info/not-zip-safe
+offsets.egg-info/top_level.txt
