@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: subete
+Version: 0.1.0
+Summary: The Sample Programs API
+Home-page: https://github.com/TheRenegadeCoder/subete
+Author: The Renegade Coder
+Author-email: jeremy.grifski@therenegadecoder.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# subete
+ 
+The plan for this repo is to extract the repo traversal utilities
+from the sample-programs-docs-generator. I really like this as 
+a way of providing a Python library which interfaces with the
+Sample Programs repo. I can already see this being useful for
+our own internal documentation but also useful for anyone who
+just wants to explore code in a bunch of different languages. 
+
+
