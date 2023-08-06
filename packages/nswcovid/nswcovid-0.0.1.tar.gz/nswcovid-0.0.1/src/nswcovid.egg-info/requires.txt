@@ -1,0 +1,6 @@
+backoff
+requests
+
+[testing]
+pytest
+pytest-cov
