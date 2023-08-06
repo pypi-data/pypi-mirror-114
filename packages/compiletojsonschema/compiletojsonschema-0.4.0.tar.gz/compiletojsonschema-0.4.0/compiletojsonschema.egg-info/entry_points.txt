@@ -1,0 +1,2 @@
+[console_scripts]
+compiletojsonschema = compiletojsonschema.cli.__main__:main
