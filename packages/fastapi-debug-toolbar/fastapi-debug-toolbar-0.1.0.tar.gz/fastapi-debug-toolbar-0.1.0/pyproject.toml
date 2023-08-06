@@ -1,0 +1,94 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "fastapi-debug-toolbar"
+version = "0.1.0"
+description = "A debug toolbar for FastAPI."
+license = "BSD"
+authors = ["Dani <dani@domake.io>"]
+readme = "README.md"
+include = ["LICENSE", "README.md"]
+keywords = ["fastapi", "debug", "profiling"]
+
+homepage = "https://github.com/mongkok/fastapi-debug-toolbar"
+repository = "https://github.com/mongkok/fastapi-debug-toolbar"
+documentation = "https://fastapi-debug-toolbar.domake.io"
+
+packages = [
+    { include = "debug_toolbar" },
+]
+
+classifiers = [
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: BSD License",
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Web Environment",
+    "Framework :: AsyncIO",
+    "Intended Audience :: Developers",
+    "Typing :: Typed",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Debuggers",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Internet",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+    "Topic :: Utilities",
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+fastapi = ">= 0.62.0"
+aiofiles = ">= 0.2.1"
+Jinja2 = ">= 2.9"
+pyinstrument = ">= 3.0.0"
+sqlparse = ">= 0.2.0"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+codecov = "*"
+flake8 = "*"
+isort = "*"
+itsdangerous = "*"
+mypy = "*"
+pytest = "*"
+pytest-cov = "*"
+python-multipart = "*"
+types-setuptools = "*"
+
+mkdocs = "*"
+mkdocs-material = "*"
+markdown-include = "*"
+mkdocstrings = "*"
+
+[tool.black]
+extend-exclude = '''
+/(
+  | .dist
+  | .htmlcov
+  | .mypy_cache
+)/
+'''
+
+[tool.isort]
+profile = "black"
+known_first_party = ["debug_toolbar"]
+
+[tool.mypy]
+disallow_incomplete_defs = true
+disallow_untyped_calls = true
+disallow_untyped_decorators = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
