@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+autosecretkey/__init__.py
+django_autosecretkey.egg-info/PKG-INFO
+django_autosecretkey.egg-info/SOURCES.txt
+django_autosecretkey.egg-info/dependency_links.txt
+django_autosecretkey.egg-info/requires.txt
+django_autosecretkey.egg-info/top_level.txt
