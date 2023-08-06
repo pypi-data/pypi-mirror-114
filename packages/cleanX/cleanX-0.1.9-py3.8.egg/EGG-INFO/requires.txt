@@ -1,0 +1,16 @@
+pandas
+numpy
+matplotlib
+pillow
+tesserocr
+opencv-python
+pytz
+
+[cli]
+click
+
+[pydicom]
+pydicom
+
+[simpleitk]
+SimpleITK
