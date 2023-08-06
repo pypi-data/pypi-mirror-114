@@ -1,0 +1,2 @@
+class MissingKeywordArgument(Exception):
+	pass
