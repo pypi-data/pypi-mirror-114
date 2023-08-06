@@ -1,0 +1,27 @@
+Metadata-Version: 1.2
+Name: django-job-board
+Version: 0.1
+Summary: A Django app to conduct job board.
+Home-page: https://www.mediusware.com
+Author: Your Name
+Author-email: kmrifat@mediusware.com
+License: BSD-3-Clause
+Description: UNKNOWN
+Keywords: "django job board"
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.6
