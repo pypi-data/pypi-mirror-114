@@ -1,0 +1,12 @@
+CHANGELOG.md,sha256=bMRlr_QEn53CanXLkiYoHQYov6XOz0nfRsW4yTeb_a0,863
+csv_permissions/__init__.py,sha256=pb_lgaILYptxC6q9d2CwNyQZIdKHtdIE_JFr1RT6JDg,251
+csv_permissions/apps.py,sha256=P2nRxm8eo_vtEXdsY3q0vTkB9uMpnAWFF8OC4fLJP0g,188
+csv_permissions/evaluators.py,sha256=XRwAy3CqDK-GQnuiuCaBjwvPyGLI2hstS7OXvwQsX78,2646
+csv_permissions/legacy.py,sha256=KUyt-ILs-lzCeD5oUma4_Ie-bi0k0m6jLf_NprBBZ1o,4478
+csv_permissions/permissions.py,sha256=bWn1p35M8jFgU565k-gytMOvxeQJC_fymv7mQRWp0Zc,16538
+csv_permissions/test_utils.py,sha256=upvbHJ3YV5JlmJIs6LSBLzl0K9c21MxIelvP5kyOnMQ,1138
+csv_permissions/types.py,sha256=7nEMF_XAxW2qT72XQ-h6hYe-LTTCZrsRASgkz4QuXtA,1248
+django_csvpermissions-0.2.0.dev0.dist-info/LICENSE,sha256=jltI_icCqLFHL3AvI_FuI_j9gIP6YtA7u1mRBlOABRA,3346
+django_csvpermissions-0.2.0.dev0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+django_csvpermissions-0.2.0.dev0.dist-info/METADATA,sha256=FM0EfWVbYoWh0RO1AtTpB2TuutMUDb9KviYA2qKIl-k,15832
+django_csvpermissions-0.2.0.dev0.dist-info/RECORD,,
