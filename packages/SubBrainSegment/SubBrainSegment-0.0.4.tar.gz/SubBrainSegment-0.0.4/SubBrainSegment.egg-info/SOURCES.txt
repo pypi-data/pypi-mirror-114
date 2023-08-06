@@ -1,0 +1,8 @@
+LICENCE.txt
+README.txt
+setup.py
+SubBrainSegment.egg-info/PKG-INFO
+SubBrainSegment.egg-info/SOURCES.txt
+SubBrainSegment.egg-info/dependency_links.txt
+SubBrainSegment.egg-info/requires.txt
+SubBrainSegment.egg-info/top_level.txt
