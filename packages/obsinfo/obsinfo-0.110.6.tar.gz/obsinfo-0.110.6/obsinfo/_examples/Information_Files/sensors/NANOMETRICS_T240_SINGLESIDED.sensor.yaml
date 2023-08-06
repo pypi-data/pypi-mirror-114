@@ -1,0 +1,41 @@
+---
+format_version: "0.110"
+revision: 
+    date: "2017-11-30"
+    authors: 
+        - {$ref: "authors/Wayne_Crawford.author.yaml#author"}
+sensor:
+    equipment:
+        model: "Trillium T240"
+        type: "Broadband seismometer"
+        description: "Trillium T240 seismometer, single-sided connection"
+        manufacturer: "Nanometrics, Inc"
+        vendor: "Nanometrics, Inc"
+        serial_number: "32793N"
+        installation_date: "2018-11-23"
+        removal_date: "2020-01-23"
+        calibration_dates: 
+            - "2018-12-23"
+            - "2017-11-01"
+            - "2016-05-22"
+
+    seed_codes:
+        band_base: "B"
+        instrument: "H"
+            
+    configuration_default: "SINGLE-SIDED_SN1-399"
+    
+    configuration_definitions:
+        "SINGLE-SIDED_SN1-399" :
+            equipment:
+                description: "negative shorted to ground, serial numbers 1-399"
+            response_stages:
+                - $ref: "sensors/responses/Trillium_T240_SN1-399-singlesided_theoretical.stage.yaml#stage"
+                
+        "SINGLE-SIDED_SN400plus" :
+            equipment:
+                description: "negative shorted to ground, serial numbers 400+"
+            response_stages:
+                - $ref: "sensors/responses/Trillium_T240_SN400-singlesided_theoretical.stage.yaml#stage"
+    
+    

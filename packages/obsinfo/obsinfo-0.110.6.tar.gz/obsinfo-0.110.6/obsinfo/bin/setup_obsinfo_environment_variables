@@ -1,0 +1,22 @@
+# Do your best to check if the python command invokes version 3
+setup_obsinfo_env_vars()
+{
+	Version=`python --version 2>&1 | grep "^Python 2."`
+	if test -z "$Version"
+	then LocalPath=`python -m site --user-site`
+	else LocalPath=`python3 -m site --user-site`
+	fi
+        LocalPath="$LocalPath"/obsinfo/_examples/Information_Files
+
+# if you do not wish to use the default, INSERT OBSINFO LOCAL PATH HERE
+# Assigning LocalPath=<your examples directory>#####
+
+	OBSINFO_DATAPATH="$LocalPath":GITLAB/obsinfo/_examples/Information_Files
+
+	OBSINFO_GITLAB_REPOSITORY=www.gitlab.com
+	OBSINFO_PROJECTPATH=resif/obsinfo
+	OBSINFO_VERSION=`obsinfo-print_version`
+
+	export OBSINFO_GITLAB_REPOSITORY OBSINFO_PROJECTPATH OBSINFO_DATAPATH OBSINFO_VERSION
+
+}

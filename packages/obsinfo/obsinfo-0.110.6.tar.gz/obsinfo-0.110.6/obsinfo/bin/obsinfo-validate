@@ -1,0 +1,6 @@
+#!/bin/bash
+. setup_obsinfo_environment_variables --source-only
+
+setup_obsinfo_env_vars
+
+obsinfo-local-validate $*
