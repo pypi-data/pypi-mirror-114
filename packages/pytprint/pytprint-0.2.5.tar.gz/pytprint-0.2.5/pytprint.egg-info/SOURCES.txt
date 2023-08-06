@@ -1,0 +1,7 @@
+README.md
+setup.py
+pytprint/__init__.py
+pytprint.egg-info/PKG-INFO
+pytprint.egg-info/SOURCES.txt
+pytprint.egg-info/dependency_links.txt
+pytprint.egg-info/top_level.txt
