@@ -1,0 +1,6 @@
+setup.py
+deepalign_registry_service_client.egg-info/PKG-INFO
+deepalign_registry_service_client.egg-info/SOURCES.txt
+deepalign_registry_service_client.egg-info/dependency_links.txt
+deepalign_registry_service_client.egg-info/requires.txt
+deepalign_registry_service_client.egg-info/top_level.txt
