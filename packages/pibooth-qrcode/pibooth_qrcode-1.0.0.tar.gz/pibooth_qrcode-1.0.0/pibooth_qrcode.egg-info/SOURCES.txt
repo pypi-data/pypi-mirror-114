@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+pibooth_qrcode.py
+setup.py
+pibooth_qrcode.egg-info/PKG-INFO
+pibooth_qrcode.egg-info/SOURCES.txt
+pibooth_qrcode.egg-info/dependency_links.txt
+pibooth_qrcode.egg-info/entry_points.txt
+pibooth_qrcode.egg-info/not-zip-safe
+pibooth_qrcode.egg-info/requires.txt
+pibooth_qrcode.egg-info/top_level.txt
