@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: inginious-coding-style
+Version: 1.0.0
+Summary: 
+Author: Peder Hovdan Andresen
+Author-email: pedeha@stud.ntnu.no
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: inginious (>=0.7,<0.8)
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
