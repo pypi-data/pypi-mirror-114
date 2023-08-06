@@ -1,0 +1,8 @@
+scanfs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scanfs/fsscanner.py,sha256=6j9jp746RKvsnrvNZLJcwkJ28EsICytke3ThwWXbtBo,1846
+scanfs/fsscannerex.py,sha256=VygUr9qQbxo0TzQ0XxMx0rb1Z-4sA3QWcizLCuzXBKY,184
+scanfs-0.0.6.dist-info/LICENSE.txt,sha256=gxeXntJw3YdrvMwdEn_MBvgZUqTvlAW-ERzrTTaF2vk,1068
+scanfs-0.0.6.dist-info/METADATA,sha256=AwPfbXUgas3HqT5D0AcLYKzeRfbRUG00-T2cOvZuX0M,2005
+scanfs-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+scanfs-0.0.6.dist-info/top_level.txt,sha256=sdcIurE04OAsVC5-oZPgQCAjZd5REApve_wrwnaderM,7
+scanfs-0.0.6.dist-info/RECORD,,
