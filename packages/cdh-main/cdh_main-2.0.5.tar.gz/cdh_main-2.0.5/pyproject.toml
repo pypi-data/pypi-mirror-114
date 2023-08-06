@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "cdh_main"
+version = "2.0.5"
+description = "Three folded data structure {(ID) key : value} with ID as int, key as str and value as variable type"
+authors = ["Roberto Amadori <robiamado@gmail.com>"]
+license = "Free to use"
+
+[tool.poetry.dependencies]
+python = "*"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
