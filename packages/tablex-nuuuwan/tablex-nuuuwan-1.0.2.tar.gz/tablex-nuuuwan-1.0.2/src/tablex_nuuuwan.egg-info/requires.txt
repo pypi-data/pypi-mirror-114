@@ -1,0 +1,7 @@
+bs4
+selenium
+tweepy
+utils-nuuuwan
+pytest
+tabula-py
+camelot-py[cv]
