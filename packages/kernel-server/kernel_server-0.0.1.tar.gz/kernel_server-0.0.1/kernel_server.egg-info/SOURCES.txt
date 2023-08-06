@@ -1,0 +1,12 @@
+README.md
+setup.py
+kernel_server/__init__.py
+kernel_server/_version.py
+kernel_server/connect.py
+kernel_server/message.py
+kernel_server/server.py
+kernel_server.egg-info/PKG-INFO
+kernel_server.egg-info/SOURCES.txt
+kernel_server.egg-info/dependency_links.txt
+kernel_server.egg-info/requires.txt
+kernel_server.egg-info/top_level.txt

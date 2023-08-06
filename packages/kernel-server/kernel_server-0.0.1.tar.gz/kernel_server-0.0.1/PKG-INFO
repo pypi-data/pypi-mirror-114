@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: kernel_server
+Version: 0.0.1
+Summary: A Jupyter kernel server
+Home-page: https://github.com/davidbrochart/kernel_server.git
+Author: David Brochart
+Author-email: david.brochart@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Provides-Extra: test
