@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: hydromt_sfincs
+Version: 0.2.0
+Summary: hydroMT plugin for sfincs models.
+Home-page: None
+Author: None
+Author-email: Dirk Eilander <dirk.eilander@deltares.nl>, Tim Leijnse <tim.leijnse@deltares.nl>
