@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+nc_console/__init__.py
+nc_console/_console.py
+nc_console/_logger.py
+nc_console.egg-info/PKG-INFO
+nc_console.egg-info/SOURCES.txt
+nc_console.egg-info/dependency_links.txt
+nc_console.egg-info/not-zip-safe
+nc_console.egg-info/requires.txt
+nc_console.egg-info/top_level.txt
