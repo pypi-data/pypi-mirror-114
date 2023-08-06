@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: bluebeam_release
+Version: 2.0.0
+Summary: A side scroller, tile map, shooter game
+Home-page: UNKNOWN
+Author: Clyde Slichter
+Author-email: cnslichter@ufl.edu
+License: UNKNOWN
+Keywords: pygame,game,shooter
+Platform: UNKNOWN
+Requires-Python: >=3.8
+License-File: LICENSE
+
+UNKNOWN
+
