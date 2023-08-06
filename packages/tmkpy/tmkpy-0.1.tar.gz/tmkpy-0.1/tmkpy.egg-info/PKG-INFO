@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: tmkpy
+Version: 0.1
+Summary: Python bindings for the TMK video similarity library
+Home-page: https://github.com/meedan/tmkpy
+Author: Scott Hale
+Author-email: scott@meedan.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
