@@ -1,0 +1,234 @@
+Metadata-Version: 2.1
+Name: jnbv
+Version: 2021.7.28.0
+Summary: Validation of Jupyter notebooks and kernels
+Home-page: https://gitlab.com/MAXIV-SCISW/JUPYTERHUB/jnbv
+Author: Jason Brudvik
+Author-email: jason.brudvik@maxiv.lu.se
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/MAXIV-SCISW/JUPYTERHUB/jnbv/-/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: papermill (==2.3.3)
+Requires-Dist: nbformat (==5.1.3)
+
+# JUPYTER NOTEBOOK VALIDATION
+
+1. [Project Overview](#project-overview)
+2. [Install](#install)
+3. [Usage](#usage)
+4. [Contributing](#contributing)
+
+
+## PROJECT OVERVIEW
+
+This repository contains scripts used to validate ipynb notebooks and Jupyter
+kernels.
+
+### PACKAGE
+A python package has been created which can be installed via pip or conda:
+- conda package: [![conda-forge jnbv)](https://img.shields.io/conda/vn/conda-forge/jnbv)](https://anaconda.org/conda-forge/jnbv)
+- PyPi package: [![PyPI jnbv](https://img.shields.io/pypi/v/jnbv)](https://pypi.org/project/jnbv/)
+
+
+### GOALS
+The goals of this project are to be able to:
+1. Execute validation of Jupyter kernels using ipynb notebooks in the terminal
+2. Execute validations non-interactively in a CI pipeline
+3. Check execution output for errors
+4. Compare output of an execution to known output
+5. Select different Jupyter kernels to use
+6. Log results of notebook executions and tests
+
+
+### EXAMPLE OUTPUT
+Partial output from validation tests run in the terminal:
+
+![screenshot_validation_comparison_output_terminal](https://gitlab.com/MAXIV-SCISW/JUPYTERHUB/jnbv/raw/master/screenshots/screenshot_validation_comparison_output_terminal.png)
+
+Output from an ipynb notebook created from failed execution of a notebook:
+
+![screenshot_jupyter_notebook_failed](https://gitlab.com/MAXIV-SCISW/JUPYTERHUB/jnbv/raw/master/screenshots/screenshot_jupyter_notebook_failed.png)
+
+
+## INSTALL
+
+The jnbv module can be installed with pip or conda using one of the following:
+- conda package: [![conda-forge jnbv)](https://img.shields.io/conda/vn/conda-forge/jnbv)](https://anaconda.org/conda-forge/jnbv)
+- PyPi package: [![PyPI jnbv](https://img.shields.io/pypi/v/jnbv)](https://pypi.org/project/jnbv/)
+- gitlab repository: [![gitlab jnbv](https://badgen.net/badge/icon/gitlab?icon=gitlab&label=jnbv)](https://gitlab.com/MAXIV-SCISW/JUPYTERHUB/jnbv)
+
+
+### Install with pip
+
+Create a virtual environment if you don't already have one:
+```bash
+python3 -m venv venv
+```
+
+Activate your environment, in this example it's in venv/:
+```bash
+source venv/bin/activate
+```
+
+Install the code from [PyPi](https://pypi.org/project/jnbv/) using pip:
+```bash
+pip install jnbv
+```
+
+Or install from gitlab using pip and git:
+```bash
+pip install git+https://gitlab.com/MAXIV-SCISW/JUPYTERHUB/jnbv.git
+```
+
+With either method, dependencies will also be installed.
+
+
+### Install with conda
+Activate and install directly into your environment:
+```bash
+source venv/bin/activate
+conda install jnbv -c conda-forge
+```
+
+Or, you can add jnbv via your conda environment yaml file, by adding
+conda-forge to your list of channels, and jnbv to your list of dependencies, as
+in this example file:
+```bash
+---
+name: my-conda-env
+channels:
+  - conda-forge
+dependencies:
+  - jnbv
+```
+
+Then update your conda environment, for example the base conda environment
+which is in the directory venv/:
+```bash
+venv/bin/conda env update --name base --file my-conda-env.yml
+```
+
+
+## USAGE
+
+```bash
+jnbv -h
+```
+
+![jnbv_help](https://gitlab.com/MAXIV-SCISW/JUPYTERHUB/jnbv/raw/master/screenshots/jnbv_help.png)
+
+
+### EXECUTE NOTEBOOK
+For this, you will need to have:
+1. A base environment in which jnbv has been installed (see above)
+2. An ipynb notebook file
+3. A Jupyter kernel that will be used to execute the file
+
+Once you have all these items, the base environment should be activated:
+```bash
+source venv/bin/activate
+```
+
+Check to see what kernels you have available:
+```bash
+jupyter kernelspec list
+    Available kernels:
+      hdf5-kernel    /var/www/jupyterhub/jnbv/venv/share/jupyter/kernels/hdf5-kernel
+      python3        /var/www/jupyterhub/jnbv/venv/share/jupyter/kernels/python3
+```
+If you don't have any kernels, then install ipykernel into your environment
+with either pip or conda:
+```bash
+pip install ipykernel
+conda install ipykernel
+```
+and then you should have the default kernel "python3" available.
+
+If you don't have an ipynb notebook handy, you can get an example notebook
+file here:
+```bash
+wget https://gitlab.com/MAXIV-SCISW/JUPYTERHUB/jnbv/-/raw/master/development/the-meaning-of-life.ipynb
+```
+
+And then the ipynb notebook can be executed in the terminal, using the default
+kernel python3 for example:
+```bash
+jnbv the-meaning-of-life.ipynb \
+    --kernel_name python3 \
+    --execute
+```
+
+![screenshot_execute](https://gitlab.com/MAXIV-SCISW/JUPYTERHUB/jnbv/raw/master/screenshots/screenshot_execute.png)
+
+
+### READ NOTEBOOK
+By defualt, the result of executing an ipynb file is a new ipynb file named
+output.ipynb.  It can be read in the terminal with:
+```bash
+jnbv output.ipynb --read
+```
+
+![screenshot_read](https://gitlab.com/MAXIV-SCISW/JUPYTERHUB/jnbv/raw/master/screenshots/screenshot_read.png)
+
+
+### TEST NOTEBOOK
+The same file can be checked for errors:
+```bash
+jnbv output.ipynb --test
+```
+
+![screenshot_test](https://gitlab.com/MAXIV-SCISW/JUPYTERHUB/jnbv/raw/master/screenshots/screenshot_test.png)
+
+
+### COMPARE NOTEBOOKS
+And two ipynb notebooks can be compared:
+```bash
+jnbv output.ipynb --compare the-meaning-of-life.ipynb
+```
+
+![screenshot_compare](https://gitlab.com/MAXIV-SCISW/JUPYTERHUB/jnbv/raw/master/screenshots/screenshot_compare.png)
+
+
+### EXECUTE, TEST, COMPARE, SAVE
+All steps can be made to run in succession with one command:
+```bash
+jnbv the-meaning-of-life.ipynb \
+    --kernel_name python3 \
+    --execute --read --test --compare --save
+```
+
+Or, more simply using the --validate option, which is a combination of 5 other
+options:
+```bash
+jnbv the-meaning-of-life.ipynb \
+    --kernel_name python3 \
+    --validate
+```
+
+Note that above the option --save was also added, which then creates the output
+directory test-results/, and within that creates subdirectories with kernel
+names, date stamps, and finally log files and new ipynb files.<br>
+For example:
+```bash
+test-results/
+└── python3/
+    └── 2021-06-11_14-39-40/
+        ├── the-meaning-of-life.ipynb
+        └── the-meaning-of-life.log
+```
+
+Example output from executing a simple notebook using the default kernel:
+
+![usage_python3_the-meaning-of-life](https://gitlab.com/MAXIV-SCISW/JUPYTERHUB/jnbv/raw/master/screenshots/usage_python3_the-meaning-of-life.png)
+
+
+## CONTRIBUTING
+
+To contribute to this project, see: [CONTRIBUTING.md](https://gitlab.com/MAXIV-SCISW/JUPYTERHUB/jnbv/-/blob/master/CONTRIBUTING.md)
+
+
