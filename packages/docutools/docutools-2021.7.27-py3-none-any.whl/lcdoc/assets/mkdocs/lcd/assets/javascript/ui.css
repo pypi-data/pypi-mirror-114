@@ -1,0 +1,103 @@
+.termcast_player .xp-control-bar {
+	 position: absolute;
+	 left: 12px;
+	 right: 12px;
+	 bottom: 0;
+	 height: 36px;
+	 color: #eee;
+	 background-color: rgba(0, 0, 0, 0.7);
+	 text-align: left;
+	 z-index: 60;
+	 transition: opacity 0.2s ease-in-out 0.1s;
+}
+ .termcast_player .xp-control-bar * {
+	 box-sizing: inherit;
+	 user-select: none;
+}
+ .termcast_player .xp-control-bar-left {
+	 position: absolute;
+	 height: 100%;
+	 left: 0;
+	 bottom: 0;
+}
+ .termcast_player .xp-control-bar-right {
+	 position: absolute;
+	 height: 100%;
+	 right: 0;
+	 bottom: 0;
+}
+ .termcast_player .xp-control-bar .xp-playback-rate-setting {
+	 display: inline-block;
+	 height: 100%;
+}
+ .termcast_player .xp-control-bar .xp-setting-box {
+	 display: none;
+	 width: 70px;
+	 text-align: center;
+	 position: absolute;
+	 bottom: 50px;
+	 right: 0px;
+	 padding: 10px 0;
+	 border: 1px solid rgba(255, 255, 255, 0.5);
+}
+ .termcast_player .xp-control-bar .xp-setting-box-open {
+	 display: block;
+}
+ .termcast_player .xp-control-bar .xp-setting-box .xp-setting-item {
+	 cursor: pointer;
+	 padding: 5px 0;
+}
+ .termcast_player .xp-control-bar .xp-playback-rate {
+	 display: inline-block;
+	 width: 40px;
+	 line-height: 36px;
+	 text-align: center;
+	 font-size: 14px;
+	 vertical-align: middle;
+	 cursor: pointer;
+}
+ .termcast_player .xp-control-bar .xp-icon-button {
+	 display: inline-block;
+	 vertical-align: middle;
+	 cursor: pointer;
+	 height: 100%;
+	 width: 36px;
+}
+ .termcast_player .xp-control-bar .xp-time-display {
+	 vertical-align: middle;
+	 padding: 0 5px;
+	 line-height: 36px;
+	 font-size: 14px;
+	 white-space: nowrap;
+	 cursor: default;
+}
+ .termcast_player .xp-progress-bar {
+	 position: absolute;
+	 bottom: 36px;
+	 width: 100%;
+	 height: 5px;
+	 z-index: 99;
+	 background-color: rgba(255, 255, 255, 0.2);
+	 cursor: pointer;
+	 transition: transform 0.1s cubic-bezier(0.4, 0, 1, 1);
+}
+ .termcast_player .xp-progress-bar:hover {
+	 transform: scaleY(1.5);
+	 transform-origin: center;
+}
+ .termcast_player .xp-progress {
+	 position: absolute;
+	 left: 0;
+	 height: 100%;
+	 z-index: 99;
+	 background-color: red;
+}
+ .termcast_player .xp-progress-hover {
+	 position: absolute;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 background-color: rgba(255, 255, 255, 0.5);
+	 transform-origin: 0 0;
+}
+ 

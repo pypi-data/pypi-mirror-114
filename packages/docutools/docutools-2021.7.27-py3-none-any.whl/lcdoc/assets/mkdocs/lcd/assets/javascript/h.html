@@ -1,0 +1,71 @@
+    <div class="termcast_player" width="100%" style="color: #999">
+        <div class="term_controls">
+        <i class="term_info fa fa-info-circle"     title ="info"></i>
+        <i class="term_play_btn fa fa-play"        title ="play/resume"></i>
+        <i class="term_loop fa fa-circle-notch"  title ="loop"></i>
+        <i class="term_rewind fa fa-fast-backward" title ="rewind"></i>
+
+        <span class="right_float" style="position: relative; float:right; font-family: monospace" />
+            <i class="fa fa-tachometer-alt" title ="playback speed multiplier"></i>
+            <span class="term_play_speed">1</span>
+            <span class="term_timer"></span>
+            <i class="term_maxmin fa fa-expand" title ="toggle height"></i>
+        </div>
+
+        <div class="term_wrap" style="position:relative; width:100%;overflow:hidden">
+
+        <terminal />
+
+        <div style="z-index: 2; cursor: pointer; position: absolute; visibility: hidden; top: 3px; left: 10px;"
+            class="term_help_insert draggable">
+            ${help_table}
+        </div>
+        <div style="z-index: 3; left: 50%; top: 20%; cursor: pointer; position: absolute; visibility: hidden;"
+            class="search_words_insert draggable">
+            <table><tr><td>Search Items<br/><b>j</b>: Jump to next match,
+                <b>&#92;n</b>: search linebreaks. Tip: use prompt to jump through cmds</td></tr>
+                <tr><td>
+                    <input width="100%" class="search_words has_user_input"></input>
+                </td></tr>
+            </table>
+        </div>
+
+        <i style="color: #777; z-index: 1; position: absolute;"
+            class="term_play_btn_big fa fa-5x fa-play"></i>
+
+<div class="xp-control-bar" style="opacity: 1;">
+  <div class="xp-progress-bar">
+    <div class="xp-progress" style="width: 76.4053%;"/>
+    <div style="opacity: 0; width: 28.4864%;" class="xp-progress-hover"/>
+  </div>
+  <div class="xp-control-bar-left">
+    <div class="xp-icon-button">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 36 36" class="icon">
+        <path d="M 12,26 18.5,22 18.5,14 12,10 z M 18.5,22 25,18 25,18 18.5,14 z"/>
+      </svg>
+    </div>
+    <div class="xp-icon-button">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 36 36" class="icon">
+        <path d="M8,21 L12,21 L17,26 L17,10 L12,15 L8,15 L8,21 Z M19,14 L19,22 C20.48,21.32 21.5,19.77 21.5,18 C21.5,16.26 20.48,14.74 19,14 ZM19,11.29 C21.89,12.15 24,14.83 24,18 C24,21.17 21.89,23.85 19,24.71 L19,26.77 C23.01,25.86 26,22.28 26,18 C26,13.72 23.01,10.14 19,9.23 L19,11.29 Z"/>
+      </svg>
+    </div>
+    <span class="xp-time-display">00:31 / 00:40</span>
+  </div>
+  <div class="xp-control-bar-right">
+    <div class="xp-playback-rate-setting">
+      <div class="xp-playback-rate">1.0x</div>
+      <div class="xp-setting-box">
+        <div data-rate="0.5" class="xp-setting-item">0.5x</div>
+        <div data-rate="1.0" class="xp-setting-item">Normal</div>
+        <div data-rate="1.5" class="xp-setting-item">1.5x</div>
+        <div data-rate="2.0" class="xp-setting-item">2.0x</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+    </div>
+
+
