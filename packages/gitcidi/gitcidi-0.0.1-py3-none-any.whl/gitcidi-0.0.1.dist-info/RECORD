@@ -1,0 +1,13 @@
+buildpan/__init__.py,sha256=fVoR7NKC087ywcpY2gcso_XPixRSOkdt_zQN-pR8r3Y,40
+buildpan/allrepo.py,sha256=18owacx41KTawJbkWZ8E8YDguUsUrCcjDjd_5ZBZm7w,1089
+buildpan/auth.py,sha256=g4Y_Cky-VQLqGd3jmWjOmBtRWm1tGcP0LfLiOdMEvHE,1010
+buildpan/buildpan.py,sha256=5QNqO3Jy-OrFV2-G9whO3_6c9xnRA7IQHneulmpWk-g,1156
+buildpan/reset.py,sha256=-pKiGTsu_qsRnZD_RRy8zhQHjP6DLeFPqsIoKWy5euQ,1060
+buildpan/selectrepo.py,sha256=PsLWKPSoRZN6QloU3rEQPKBZvbIKgk_pqXYTvV1DCwU,1358
+buildpan/webhook.py,sha256=Lb_qxh1VA-b7Pzzo9bWjZ5lQ6lZCjA9Zlk6OZP113UM,2931
+gitcidi-0.0.1.dist-info/LICENCE,sha256=-Yt8LreCWOLQ7OKzxhfkSoMVCi2gMbhoJhEzm27g4qs,1068
+gitcidi-0.0.1.dist-info/METADATA,sha256=EbRVYedLl6QtMf_DiIb309m8YByeMwgETpe4oMVUnaw,876
+gitcidi-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gitcidi-0.0.1.dist-info/entry_points.txt,sha256=QIQ9kYstc7CB5FIuY5lzSzUHF8LO9SuVVFX0wMvlzbo,53
+gitcidi-0.0.1.dist-info/top_level.txt,sha256=_Xx-tXKqYa9OPhRIbds2lVFLuzEIzSN6ig0nEtRzM5A,9
+gitcidi-0.0.1.dist-info/RECORD,,
