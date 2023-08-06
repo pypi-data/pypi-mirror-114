@@ -1,0 +1,6 @@
+Flask
+
+[dev]
+coverage
+flake8
+tox
