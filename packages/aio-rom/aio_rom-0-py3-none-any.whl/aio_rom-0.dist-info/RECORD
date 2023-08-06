@@ -1,0 +1,13 @@
+rom/__init__.py,sha256=RfCd2kLRTKOZc-GJC1XoLJvSQhqTlIpZr-LopgeU2vk,90
+rom/attributes.py,sha256=KqoKJuJBs5SCIpH0AISmHzByRbDOf0SrjL5hGxILiCA,9414
+rom/exception.py,sha256=kjGipE-CB7q-tbH31WODC1mOSb6OszSQ2AT0WmwzmiY,154
+rom/fields.py,sha256=WDr4JV3yk0j3pztRc02hgAX3NynCJu9RpuLtrW10bn8,6300
+rom/model.py,sha256=Id-ewmnzPEwaKV8MamswqFl4LiW3p1WNWMdHjMBSm7k,7044
+rom/mypy.py,sha256=0tDGG9-OYm0jIT9_2hgEnFyB4765_jeNcnQvwgaObYU,2316
+rom/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rom/session.py,sha256=AZTWYGYxhLUQFXSzdz8vorrs1qqeuDGBPTVg_dVjfk0,2353
+rom/types.py,sha256=BsIKN5Sz_tKJxY5B17xkWXRaZbum4p-uie1bfxbS-0I,609
+aio_rom-0.dist-info/LICENSE,sha256=FRZ1425nCcLgWRHguM6Ca3hllf4lQHGJiBL18dEkFYg,1071
+aio_rom-0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+aio_rom-0.dist-info/METADATA,sha256=h7ikLVDluZRn63C4t9f0tNoHYH-pM5F1etFvs7Q3r3M,2317
+aio_rom-0.dist-info/RECORD,,
