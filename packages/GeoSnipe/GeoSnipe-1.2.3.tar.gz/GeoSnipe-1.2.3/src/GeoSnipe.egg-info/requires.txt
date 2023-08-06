@@ -1,0 +1,2 @@
+msmcauth==0.0.3
+paramiko>=2.7.2
