@@ -1,0 +1,3 @@
+[console_scripts]
+telescope=telescope.cli:telescope
+
