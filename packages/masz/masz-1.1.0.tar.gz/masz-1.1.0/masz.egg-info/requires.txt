@@ -1,0 +1,4 @@
+requests
+typing
+dateparser
+rich

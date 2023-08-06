@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: masz
+Version: 1.1.0
+Summary: API Wrapper for MASZ (A discord moderation bot)
+Home-page: https://github.com/zaanposni/masz-api-wrapper
+Author: zaanposni
+Author-email: me@zaanposni.com
+License: MIT
+Description: <h1>👮‍♂️ MASZ API Wrapper</h1>
+        <p>
+        <img src="https://img.shields.io/pypi/pyversions/masz" />
+        <img src="https://img.shields.io/pypi/v/masz" />
+        <a href="https://github.com/zaanposni/masz-api-wrapper/blob/dev/LICENSE"><img src="https://img.shields.io/github/license/zaanposni/masz-api-wrapper.svg"/></a>
+        </p>
+        
+        ⭐ **Fully object-oriented library** to integrate the <a href="https://github.com/zaanposni/discord-masz" target="_blank">**MASZ API**</a> into your project.
+        
+        ## 🚀 Installation
+        
+        **Python 3.6 or higher required**
+        ```
+        pip install masz
+        ```
+        
+        ## 👀Examples
+        
+        Checkout the example script `demo.py`.
+        
+        ![demo.gif](demo.gif)
+        
+        ## Support
+        
+        If you have any questions feel free to contact me.
+        - [Mail](mailto:masz@zaanposni.com)
+        - Discord: `zaanposni#9295`
+        - Discord MASZ guild: https://discord.gg/5zjpzw6h3S
+        
+        ## 🤝 Contributors <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"/>
+        
+        <a href="https://github.com/zaanposni"><img src="https://avatars3.githubusercontent.com/u/24491035?s=460&v=4"
+                                                    height=90px, width=90px style="border-radius: 50%" /></a>
+        
+        ## License:
+        
+        This project is licensed under MIT.
+        
+Keywords: MASZ,API,DISCORD,WRAPPER,JSON,REST,MODERATION,TOKEN,PYTHON
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
