@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: football-betting-models
+Version: 0.0.5
+Summary: Seeding models package
+Home-page: https://github.com/MikeyJW/football_betting_models
+Author: MikeyJW
+Author-email: michael.watson@whoknowswins.com
+License: UNKNOWN
+Description: Statistical betting tools for highly exotic football betting markets.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
