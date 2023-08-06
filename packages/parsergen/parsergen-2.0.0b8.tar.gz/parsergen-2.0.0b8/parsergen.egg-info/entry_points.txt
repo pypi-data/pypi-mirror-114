@@ -1,0 +1,3 @@
+[console_scripts]
+parsergen = parsergen.__main__:main
+
