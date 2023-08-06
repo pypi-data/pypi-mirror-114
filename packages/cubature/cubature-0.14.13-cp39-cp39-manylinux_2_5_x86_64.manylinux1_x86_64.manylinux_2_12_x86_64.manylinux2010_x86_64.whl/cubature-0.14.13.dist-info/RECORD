@@ -1,0 +1,8 @@
+cubature-0.14.13.dist-info/METADATA,sha256=gS6653XS1l_gCKN55LFfmQs6x-nwvVwUCCBh6YWKb-E,5211
+cubature-0.14.13.dist-info/top_level.txt,sha256=9mbd5HTHJkQK2M7zpwfGnpgk45M-gI--XqZ3S12xmpY,9
+cubature-0.14.13.dist-info/RECORD,,
+cubature-0.14.13.dist-info/WHEEL,sha256=-Y3vWbctlRrqr_-P0nzWg3hAGpCXsHCvOTzakldKVCA,217
+cubature/_test_integrands.cpython-39-x86_64-linux-gnu.so,sha256=3qScLqczXkPaEQvf22bz-PlF60YvC3f_82wuQ4h5AVg,1526656
+cubature/__init__.py,sha256=lkZJCHPPuNDw5XZeXd0ryvDy7MSEx-sgFf6nkblfr1g,1051
+cubature/_cubature.cpython-39-x86_64-linux-gnu.so,sha256=5Mv-EouVnaw7O1PvWlnGqlRUHm3goUiMTahEnPWv0Os,14398632
+cubature/cubature.py,sha256=1crKk55TQL0Ug4_irsN5g4fVlj8HM45dCVN0eWrKvmA,9886
