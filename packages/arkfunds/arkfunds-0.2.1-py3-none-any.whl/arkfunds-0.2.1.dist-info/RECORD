@@ -1,0 +1,10 @@
+arkfunds/__init__.py,sha256=cfQ2YDUND5vhEKDTO_YPCCS9G7VICqlLK9tSeqT4acw,126
+arkfunds/arkfunds.py,sha256=xLHy_K4oBBUxbey80gB5omHon2RMXib6cLZhpuhbWyA,2121
+arkfunds/etf.py,sha256=KYGHXZt1utZxjrD0xYsWYHDt5xn5BPy7VYg_Rh2_Vcc,2816
+arkfunds/stock.py,sha256=-po42w4uv2OzQJdHjnsFtES61VGK5lixVFUxzvmeM4A,2525
+arkfunds/utils.py,sha256=VQ0QoBAUp02aq2Ja2y8Zd5FGRYbW8QOwW97YdEVdMbA,499
+arkfunds/yahoo.py,sha256=f9Dgrx8X2xB8YBvB3pDjrPr_VX9085NN8N1EljGB1Zc,2605
+arkfunds-0.2.1.dist-info/LICENSE,sha256=7lB1dTchsBMubozpK2CINlR2aHEeClwlLSmM9o0uZyY,1073
+arkfunds-0.2.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+arkfunds-0.2.1.dist-info/METADATA,sha256=Y9ffFEFlfXQzvA6aME1wmfy3DzC6gzvtlJUwxoTIANM,9629
+arkfunds-0.2.1.dist-info/RECORD,,
