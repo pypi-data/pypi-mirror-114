@@ -1,0 +1,5 @@
+Django>=3.2
+httpx>=0.18.1
+Markdown>=3.3.4
+Pygments>=2.9.0
+beautifulsoup4>=4.9.3
