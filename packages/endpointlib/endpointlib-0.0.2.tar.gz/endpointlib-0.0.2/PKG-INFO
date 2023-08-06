@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: endpointlib
+Version: 0.0.2
+Summary: MQTT Endpoint Library
+Home-page: UNKNOWN
+Author: afranco
+Author-email: afranco@astro.unam.mx
+License: MIT
+Project-URL: Source, https://github.com/afranco-astro/endpoint-lib/
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# endpoint-lib
+MQTT Endpoint Library
+
+
