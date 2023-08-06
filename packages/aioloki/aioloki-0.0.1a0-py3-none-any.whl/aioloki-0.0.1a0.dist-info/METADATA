@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: aioloki
+Version: 0.0.1a0
+Summary: An asynchronous python logging handler to stream logs to Grafana Loki
+Home-page: https://github.com/AXVin/aioloki
+Author: AXVin
+License: AGPL v3
+Keywords: aioloki,loki,logging,logger
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: aiohttp
+Classifier: Topic :: System :: Logging
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp (>=3.6.0)
+
+# aioloki
+An asynchronous python logging handler to stream logs to Grafana Loki
+
+## Installation
+```
+pip install aioloki
+```
+
+## Usage
+```py
+import asyncio
+import logging
+import aiohttp
+import aioloki
+
+async def main():
+    session = aiohttp.ClientSession()
+    handler = aioloki.AioLokiHandler(
+        'http://localhost:3100',
+        tags={'cluser': '1'},
+        session=session
+    )
+    log = logging.getLogger('test-logging')
+    log.addHandler(handler)
+    log.info(
+        'Setup aioloki successfully',
+        extra={'tags': {'function': 'main'}}
+    )
+    await session.close()
+
+asyncio.run(main())
+```
+
+
