@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: column_print
+Version: 0.0.2
+Summary: Terminal print strings in columns
+Home-page: https://github.com/SteveDaulton/column_print
+Author: Steve Daulton
+Author-email: steve.daulton@gmail.com
+License: GNU General Public License v2 or later (GPLv2+)
+Platform: Linux
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Topic :: Printing
+Classifier: Topic :: Terminals
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE.txt
+
+# column_print.py
+
+A simple way to print short strings to a terminal in columns.
+
+Unlike many similar utilities, it is NOT necessary for the strings to be
+in a list before printing. column_print can print any sequence of strings
+without knowing the length or number of strings in advance.
+
+## ColumnPrinter
+
+A context manager class to print successive print statements in columns.
+
+**Example Usage:**
+
+```python
+from modules.column_print import ColumnPrinter
+with ColumnPrinter(2, 80) as cp:
+    cp("Hello")
+    cp("World")
+```
+
+Prints:
+
+```
+Hello                                   World
+Goodbye                                 Moon
+```
+
+### print_list
+
+A function to print a list of items in columns.
+
+**Example usage:**
+
+```python
+from modules.column_print import ColumnPrinter
+with ColumnPrinter(2, 80) as cp:
+    cp.print_list(mylist)
+```
+
+## Supported Platforms:
+
+* Linux (Windows and macOS to be added)
+* Python 3.6 or Later
+
+
+# Developing column_printer
+
+To install column_printer, along with the tools you need to develop, test, and
+document, run the following in your virtualenv:
+
+```bash
+$ pip install -e .[dev]
+```
+
+or, using pipenv:
+
+```
+$ pipenv install -e .
+```
+
+See also [TODO.txt](../main/TODO.md)
+
+
