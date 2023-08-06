@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: mhi-cosim
+Version: 1.0.0
+Summary: MHI Cosimulation Module
+Home-page: https://www.pscad.com/webhelp-v5-al/index.html
+Author: Manitoba Hydro International Ltd.
+Author-email: pscad@mhi.ca
+License: BSD License
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Requires: wheel
+Requires-Python: >=3
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+====================
+Cosimulation Library
+====================
+
+The EMTDC Python Cosimulation Library is designed to allow control
+simulation of a portion of a power system from a Python script.
+
+
