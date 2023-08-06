@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: epkeeperlib
+Version: 1.0.1
+Summary: EPKEEPER common utility package
+Home-page: https://gitee.com/tonychengchen/epkeeper_lib
+Author: Cheng Chen
+Author-email: tonychengchen@hotmail.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Requires-Dist: PyMySQL
+Requires-Dist: setuptools
+
+UNKNOWN
+
