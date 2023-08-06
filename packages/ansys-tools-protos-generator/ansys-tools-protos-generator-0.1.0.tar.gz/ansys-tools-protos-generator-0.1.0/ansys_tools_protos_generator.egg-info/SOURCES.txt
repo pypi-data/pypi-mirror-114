@@ -1,0 +1,11 @@
+README.rst
+setup.py
+ansys/tools/protos_generator/__init__.py
+ansys/tools/protos_generator/__main__.py
+ansys/tools/protos_generator/_version.py
+ansys/tools/protos_generator/generator.py
+ansys_tools_protos_generator.egg-info/PKG-INFO
+ansys_tools_protos_generator.egg-info/SOURCES.txt
+ansys_tools_protos_generator.egg-info/dependency_links.txt
+ansys_tools_protos_generator.egg-info/requires.txt
+ansys_tools_protos_generator.egg-info/top_level.txt
