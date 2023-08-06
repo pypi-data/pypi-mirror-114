@@ -1,0 +1,10 @@
+ms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ms/base.py,sha256=WtmEjgA7NfbCdIxF1UZKVLjUiy9LCc0FVHMj0WBvNuw,3351
+ms/generate_proto_file.py,sha256=P4FQXn6ahrMgyyXLFILxL0DSMYqR1xw65JLLh6Prca8,1943
+ms/ms-plugin.py,sha256=g4EVfWB-Aq-KEs6u_oiLqyHfImgfFkeItBpguxEKSYY,2811
+ms/protocol_pb2.py,sha256=JlfImllWVP7VtpCYEEES5jIKWNRGzaa2-WRynhcns6o,1588973
+ms/rpc.py,sha256=3d3OJ-N7NqyR1o8yjIXEO3kXsxsyPX4d70rsP7qConA,55243
+ms_api-0.9.200.dist-info/METADATA,sha256=ctCgSGnBszSxOLf4UEYs65uQ1am_5lHnHaEy7T4JZ0c,757
+ms_api-0.9.200.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ms_api-0.9.200.dist-info/top_level.txt,sha256=8bK_TNUJkQ56A4VeIc7vxyhdsKDcpetvVidE9PZqjFA,3
+ms_api-0.9.200.dist-info/RECORD,,
