@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "selenium-testing-library"
+version = "2021.7.28b0"
+description = "A Python Selenium library inspired by the Testing Library"
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/Smotko/selenium-testing-library"
+authors = ["Anže Pečar <anze@pecar.me>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+selenium = ">3.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+black = "*"
+pytest-cov = "*"
+pytest-watch = "*"
+mypy = "*"
+isort = "*"
+tox = "*"
+tox-py = "*"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.pytest.ini_options]
+minversion = "6.2.4"
+addopts = "--selenium-headless --cov=selenium_testing_library --cov-report html --cov-report xml --verbose --durations=10"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
