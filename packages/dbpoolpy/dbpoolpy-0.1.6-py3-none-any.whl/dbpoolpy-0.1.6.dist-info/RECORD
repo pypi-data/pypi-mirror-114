@@ -1,0 +1,17 @@
+dbpoolpy/__init__.py,sha256=XXEsCpGkOGEhIOfQfHC9Q615oclnMsY3L8GYKjvQa2o,281
+dbpoolpy/autopool.py,sha256=DTZC5saNvbcAFrQt4Y_HGZaBroKJCv5ATGXng_tkYD8,1243
+dbpoolpy/conf.py,sha256=Ckl0SH52oRMRpts-mJE4YLby7pR4V9emdfRVlCVb2l4,1214
+dbpoolpy/dbconnect.py,sha256=aSvtK-dPrvq2qLoGEDj8Zrc66UvoHIw_S7C2N1rjuQo,8705
+dbpoolpy/dbhelper.py,sha256=Yc0g283sGMlHnIHa67g3OkHlEAdx_qlhlNaX0aQqEU8,13940
+dbpoolpy/dbpool.py,sha256=Z52ipgDFIB_sEqJrvULw_sVUZRn5yISPcZX1BnSGN_s,7550
+dbpoolpy/logger.py,sha256=OmLn3hFPcaGkIYwVL9pp6B6P09h705-vtMKsUpXSZqc,5226
+dbpoolpy/multi_pool.py,sha256=5C8T6ylioLT162DVYUHutUhm6basNPLR8cC8Z1jjEYs,918
+dbpoolpy/pager.py,sha256=s2KmCMC-uswsApH-Si_qOCByMA1a9I7n0mh6C2Or4Gg,5064
+dbpoolpy/pooled_db.py,sha256=xspZ3w7TGjZ8C32nzfdfDfG9boVZy_o75L3dhrxzYgA,13438
+dbpoolpy/steady_db.py,sha256=pov_BTteRMMCxksP3QSWyoaLcW_ik-el4QD7WllnQ-A,26382
+dbpoolpy/utils.py,sha256=XBCMbtbnAPZ0GMrVsmPF_m5w1TWIQ26lEQj9srzsDfs,2839
+dbpoolpy-0.1.6.dist-info/LICENSE,sha256=iZQiFM8jtIIN4mgALuadoroIUPbMgjYrx8NngJvwUmA,1064
+dbpoolpy-0.1.6.dist-info/METADATA,sha256=LgwAn673p5yciGkGeicUlOC-K_6YN9S69qQWO--_aaA,457
+dbpoolpy-0.1.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dbpoolpy-0.1.6.dist-info/top_level.txt,sha256=lw_D9WEVQOjlp9pKQzj7VAxq4Eq0xSdcl_B32xIPX_I,9
+dbpoolpy-0.1.6.dist-info/RECORD,,
