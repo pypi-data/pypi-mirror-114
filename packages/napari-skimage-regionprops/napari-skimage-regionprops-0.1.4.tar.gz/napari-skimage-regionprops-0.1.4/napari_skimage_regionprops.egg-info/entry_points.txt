@@ -1,0 +1,4 @@
+[napari.plugin]
+3 Utilities = napari_skimage_regionprops._utilities
+4 Measurements (skimage) = napari_skimage_regionprops._regionprops
+
