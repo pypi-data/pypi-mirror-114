@@ -1,0 +1,14 @@
+nlkit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nlkit/data.py,sha256=-Qs5oyVMhJxEQuDHL4RKgn4FcXPqqMfS4c5EgKgVJM4,678
+nlkit/layers.py,sha256=L9RIwJXqnoaC56atoFivNJ-xHC_ExchItftG9yaUV0Y,101
+nlkit/metrics.py,sha256=wwseVse89Rrzi6zpcD-H1JfSkhru0zlzyq96_jP03CE,1234
+nlkit/preprocessor.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nlkit/stats.py,sha256=S2CvfeB-hX8DBzJywwIZOMKUiWeMHf4r-1nDCYBlUsA,3617
+nlkit/trainer.py,sha256=Ha3Bai7Lwnf8-GizE6AbNFAqeXL10nhXF_nMVoQKbk0,3801
+nlkit/utils.py,sha256=jAsaciDsnjAkgD01Wio_ADEBFN6QiDE5aavzeDMC1hc,6285
+nlkit/word2vec.py,sha256=K-D4Hc7IJvrZf28xwsVWcN5F9Y7tY3eLmpfpJpnUt6U,6016
+nlkit-0.0.2rc1.dist-info/LICENSE,sha256=2rbJpPIZGFydJv4inI9ViBYo_Q4Rp54Z3XlMCMGoFCU,1055
+nlkit-0.0.2rc1.dist-info/METADATA,sha256=dF5OtcZDxZiz3y9fgeKINOQ1apH_CMwT-HxMS8NzzbA,610
+nlkit-0.0.2rc1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+nlkit-0.0.2rc1.dist-info/top_level.txt,sha256=6vLDvwDLdy4-iIr2GPIHB01zNEHP5vIrbwaUnNftCko,6
+nlkit-0.0.2rc1.dist-info/RECORD,,
