@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: odoo14-addons-oca-oca-custom
+Version: 14.0.20210726.0
+Summary: Meta package for oca-oca-custom Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Requires-Dist: odoo14-addon-oca-event-badge
+Requires-Dist: odoo14-addon-project-members
+
+UNKNOWN
+
