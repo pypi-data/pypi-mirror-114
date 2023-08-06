@@ -1,0 +1,330 @@
+Metadata-Version: 2.1
+Name: leet2git
+Version: 0.2.0
+Summary: Tool to ease the integration between Leetcode and a Git repository
+Home-page: https://github.com/yurirocha15/leetcode2github
+Author: Yuri Rocha
+Author-email: yurirocha15@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: appdirs (==1.4.4)
+Requires-Dist: autoimport (==0.7.0)
+Requires-Dist: black (==21.7b0)
+Requires-Dist: beautifulsoup4 (==4.9.3)
+Requires-Dist: browser-cookie3 (==0.12.1)
+Requires-Dist: click (==8.0.1)
+Requires-Dist: GitPython (==3.1.18)
+Requires-Dist: isort (==5.9.3)
+Requires-Dist: requests (==2.25.1)
+Provides-Extra: dev
+Requires-Dist: pre-commit (==2.8.2) ; extra == 'dev'
+Requires-Dist: flake8 (==3.9.2) ; extra == 'dev'
+Requires-Dist: flake8-builtins (==1.5.3) ; extra == 'dev'
+Requires-Dist: flake8-docstrings (==1.5.0) ; extra == 'dev'
+Requires-Dist: flake8-bugbear (==20.1.4) ; extra == 'dev'
+Requires-Dist: flake8-polyfill (==1.0.2) ; extra == 'dev'
+Requires-Dist: flake8-pytest (==1.3) ; extra == 'dev'
+Requires-Dist: flake8-use-fstring (==1.1) ; extra == 'dev'
+Requires-Dist: mypy (==0.790) ; extra == 'dev'
+Requires-Dist: mypy-extensions (==0.4.3) ; extra == 'dev'
+Requires-Dist: pep8-naming (==0.11.1) ; extra == 'dev'
+Requires-Dist: pyflakes (==2.3.0) ; extra == 'dev'
+Requires-Dist: pylint (==2.6.0) ; extra == 'dev'
+Requires-Dist: pytest (==6.1.2) ; extra == 'dev'
+Requires-Dist: pytest-cov (==2.10.1) ; extra == 'dev'
+Requires-Dist: pytest-custom-exit-code (==0.3.0) ; extra == 'dev'
+Requires-Dist: pytest-flake8 (==1.0.6) ; extra == 'dev'
+Requires-Dist: pytest-mypy (==0.7.0) ; extra == 'dev'
+Requires-Dist: pytest-pylint (==0.18.0) ; extra == 'dev'
+
+# leet2git
+[![Build Status](https://github.com/yurirocha15/leetcode2github/workflows/Build/badge.svg)](https://github.com/yurirocha15/leetcode2github/workflows/Build/badge.svg)
+[![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-380/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Imports: isort](https://img.shields.io/badge/imports-isort-white)](https://pycqa.github.io/isort/)
+[![Linting: flake8 & mypy & pylint](https://img.shields.io/badge/linting-flake8%20%26%20mypy%20%26%20pylint-green)](https://pypi.org/project/pytest-pylint/)
+[![Stable Version](https://img.shields.io/github/v/tag/yurirocha15/leetcode2github)](https://img.shields.io/github/v/tag/yurirocha15/leetcode2github)
+[![Latest Release](https://img.shields.io/github/v/release/yurirocha15/leetcode2github?color=%233D9970)](https://img.shields.io/github/v/release/yurirocha15/leetcode2github?color=%233D9970)
+[![Pypi Version](https://img.shields.io/pypi/v/leet2git)](https://pypi.org/project/leet2git/)
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
+This repository tries to automate the steps needed to integrate your leetcode answers with github.
+
+This includes:
+ - Importing a question:
+   - generates the question file,
+   - generates the test file (python3 only),
+   - updates the README
+ - Submiting a question solution
+ - Importing the latest accepted solution for each question with a single command
+
+## Installation
+
+To install the needed libraries, activate a virtual environment (recommended) and run:
+
+```shell
+$ pip install leet2git
+```
+
+### Install from Source
+
+To install from source, download this repository, navigate to the folder and run:
+
+```shell
+$ pip install -e .[dev]
+```
+
+## Usage
+
+Currently, it is necessary to log into leetcode on either chrome or firefox before running the commands.
+
+```shell
+$ leet2git --help
+Usage: leet2git [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --version                     Show the version and exit.
+  -s, --source-repository TEXT  The path to the folder where the code will be saved.
+                                Overrides the default config
+  -l, --language TEXT           The language to run the command.
+                                Overrides the default config
+  --help                        Show this message and exit.
+
+Commands:
+  delete      Delete a question and its files
+  get         Generates all the files for a question
+  import-all  Get all solutions and generate their files
+  init        Creates a new configuration file and can generate a git repository.
+  reset       Reset the configuration file
+  run         Run a question on Leetcode Servers
+  submit      Submit a question to Leetcode
+```
+
+### Init Repository
+
+Navigate to the source repository and run:
+
+```shell
+$ leet2git init --help
+Usage: leet2git init [OPTIONS]
+
+  Creates a new configuration file and can generate a git repository.
+
+Options:
+  -s, --source-repository TEXT  the path to the folder where the code will be saved
+  -l, --language TEXT           the default language
+  -c, --create-repo             generates a git repository
+```
+
+Running this command will open the configuration file in the default editor.
+
+### Dowloading All Submissions
+
+To download the latest accepted submission for each solved problem:
+
+```shell
+$ leet2git import-all
+```
+
+### Downloading a Question to Solve
+
+To generate the files of a given question:
+
+```shell
+$ leet2git get --help
+Usage: leet2git get [OPTIONS] QUESTION_ID
+
+  Generates all the files for a question
+
+  Args:     question_id (int): the question id
+```
+
+### Running a Question
+
+To run a question on leetcode servers:
+
+```shell
+$ leet2git run --help
+Usage: leet2git submit [OPTIONS] QUESTION_ID
+
+  Run a question on Leetcode Servers
+
+  Args:     question_id (int): the question id
+```
+
+### Submitting a Question
+
+To submit a question to leetcode:
+
+```shell
+$ leet2git submit --help
+Usage: leet2git submit [OPTIONS] QUESTION_ID
+
+  Submit a question to Leetcode
+
+  Args:     question_id (int): the question id
+```
+
+### Removing a Question
+
+To remove a downloaded problem (delete files and remove from readme):
+
+```shell
+$ leet2git delete --help
+Usage: leet2git delete [OPTIONS] QUESTION_ID
+
+  Delete a question and its files
+
+  Args:     question_id (int): the question id
+```
+
+### Reset Repository
+
+**Warning: This will delete the current question database and cannot be undone.** Navigate to the source repository and run:
+
+```shell
+$ leet2git reset --help
+Usage: leet2git reset [OPTIONS]
+
+  Reset the configuration file
+
+Options:
+  -s, --source-repository TEXT  the path to the folder where the code will be saved
+  -l, --language TEXT           the default language
+  --soft (default) / --hard     A soft reset only erases the database.
+                                A hard reset also erase the files.
+```
+
+Running this command will open the configuration file in the default editor.
+
+## Configuration
+
+Running either the init or the reset command will open the configuration file in the default editor.
+The file location will also be printed in the terminal, so you can edit in manually later.
+
+### Example Configuration
+
+```json
+{
+    "language": "python3",
+    "source_path": "path_to_repository",
+    "readme": {
+        "show_difficulty": true,
+        "show_category": true
+    },
+    "source_code": {
+        "add_description": true
+    },
+    "test_code": {
+        "generate_tests": true
+    }
+}
+```
+
+### language
+
+The default language the Download/Submit the questions. Can be overriden when running a command with the -l option.
+
+Available Options:
+- "bash"
+- "c"
+- "cpp"
+- "csharp"
+- "golang"
+- "java"
+- "javascript"
+- "kotlin"
+- "mysql"
+- "php"
+- "python"
+- "python3"
+- "ruby"
+- "rust"
+- "scala"
+- "swift"
+
+### source_path
+
+The path to the code repository
+
+### readme
+
+- show_difficulty: If true, will generate an extra section on README with different tables for each difficulty.
+- show_category: If true, will generate an extra section on README with different tables for each category.
+
+### source_code
+
+- add_description: If True, will add the problem description as comments in the source file.
+
+### test_code
+
+- generate_tests: If true, will try to generate local test files for the question. Currently only python3 is supported.
+
+
+## Language Support
+
+| Language | Generate/Import Question | Generate Local Tests | Submit/Run Question | Auto Import/Include Libraries |
+|:--------:|--------------------------|----------------------|-----------------|-------------------------------|
+| bash | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: |
+| c | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: |
+| cpp | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: |
+| csharp | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: |
+| golang | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: |
+| java | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: |
+| javascript | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: |
+| kotlin | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: |
+| mysql | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: |
+| php | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: |
+| python | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: |
+| python3 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :large_orange_diamond: |
+| ruby | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: |
+| rust | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: |
+| scala | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: |
+| swift | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: |
+
+:heavy_check_mark:: Fully Supported
+:large_orange_diamond:: Partially Supported
+:x:: Not Supported
+
+After stabilizing the code, I am planning to improve the language suport. Contributions are always welcomed ;)
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://www.yurirocha.com"><img src="https://avatars.githubusercontent.com/u/4281771?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Yuri Rocha</b></sub></a><br /><a href="https://github.com/yurirocha15/leetcode2github/commits?author=yurirocha15" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/sungho-joo"><img src="https://avatars.githubusercontent.com/u/53804787?v=4?s=100" width="100px;" alt=""/><br /><sub><b>sungho-joo</b></sub></a><br /><a href="https://github.com/yurirocha15/leetcode2github/commits?author=sungho-joo" title="Code">💻</a> <a href="https://github.com/yurirocha15/leetcode2github/issues?q=author%3Asungho-joo" title="Bug reports">🐛</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
