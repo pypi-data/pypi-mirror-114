@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: django-reversion-rest-framework
+Version: 0.1.0
+Summary: A package for adding a django-reversion history endpoint to django-rest-framework ModelViewSet
+Home-page: https://github.com/dennybiasiolli/django-reversion-rest-framework
+Author: Denny Biasiolli
+Author-email: denny.biasiolli@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/dennybiasiolli/django-reversion-rest-framework/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Django
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django-reversion (>=4)
+Requires-Dist: djangorestframework (>=3)
+
+# django-reversion-rest-framework
+
+A package for adding a django-reversion history endpoint to django-rest-framework ModelViewSet.
+
+
+## Configuration
+
+Follow the official website for the installation and the integration of django-reversion in your project, otherwise future steps won't work.
+
+You might need to enable the `ReversionMiddleware` for storing a version for each API change.<br>
+Follow the instructions [here](https://django-reversion.readthedocs.io/en/stable/middleware.html),
+you should add `'reversion.middleware.RevisionMiddleware'` to your `MIDDLEWARE` setting.
+
+
+### Using the HistoryModelViewSet
+
+The `HistoryModelViewSet` extends django-rest-framework's `ModelViewSet`
+adding a GET `history` action in the detail,
+displaying a list of all revisions of that specific record.
+
+You can use the `HistoryModelViewSet` in place of the `ModelViewSet`
+during viewsets definition.
+
+```py
+from reversion_rest_framework.viewsets import HistoryModelViewSet
+
+
+class MyModelViewSet(HistoryModelViewSet):
+    # ...
+```
+
+Then if your endpoint exposes on the url `/my-models/` you can get the history
+of a record using `my-models/<pk>/history/`.
+
+
