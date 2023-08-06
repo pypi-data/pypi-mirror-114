@@ -1,0 +1,9 @@
+setup.py
+reapython/__init__.py
+reapython/rea.py
+reapython.egg-info/PKG-INFO
+reapython.egg-info/SOURCES.txt
+reapython.egg-info/dependency_links.txt
+reapython.egg-info/entry_points.txt
+reapython.egg-info/requires.txt
+reapython.egg-info/top_level.txt
