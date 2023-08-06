@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: eagers
+Version: 0.1.1
+Summary: Efficient Allocation of Grid Energy Resources including Storage
+License: MIT
+Author: Dustin McLarty
+Author-email: dustin.mclarty@wsu.edu
+Requires-Python: >=3.7,<3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: ecos (>=2.0.7,<3.0.0)
+Requires-Dist: matplotlib (>=3.4.2,<4.0.0)
+Requires-Dist: numpy (>=1.21.1,<2.0.0)
+Requires-Dist: openpyxl (>=3.0.7,<4.0.0)
+Requires-Dist: scipy (>=1.7.0,<2.0.0)
+Requires-Dist: tables (>=3.6.1,<4.0.0)
