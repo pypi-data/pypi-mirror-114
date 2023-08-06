@@ -1,0 +1,7 @@
+PiicoDev_BME280
+PiicoDev_MPU6050
+PiicoDev_MS5637
+PiicoDev_TMP117
+PiicoDev_Unified
+PiicoDev_VEML6030
+PiicoDev_VL53L1X

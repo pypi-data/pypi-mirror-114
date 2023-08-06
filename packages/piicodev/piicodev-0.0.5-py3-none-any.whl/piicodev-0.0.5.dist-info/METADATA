@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: piicodev
+Version: 0.0.5
+Summary: Drivers for the PiicoDev ecosystem of sensors and modules
+Home-page: https://github.com/CoreElectronics/PiicoDev
+Author: Core Electronics
+Author-email: production.inbox@coreelectronics.com.au
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: MicroPython
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: smbus2 (>=0.4.1)
+Provides-Extra: dev
+Requires-Dist: pytest (>=3.7) ; extra == 'dev'
+
+# Core Electronics Unified PiicoDev Library
+Unified device libraries for the PiicoDev ecosystem of sensors and modules.
+Built for MicroPython and Python.
+
+## Installation
+On Raspberry Pi, run the following to install:
+```python
+pip3 install piicodev
+```
+
+
+## Developing
+To install this package, along with the tools you need to develop and run tests, run the following (in your virtualenv:)
+```bash
+pip install -e .[dev]
+```
+
+
