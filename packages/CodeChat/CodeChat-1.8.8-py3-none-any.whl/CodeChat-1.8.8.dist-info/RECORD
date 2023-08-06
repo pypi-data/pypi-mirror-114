@@ -1,0 +1,17 @@
+CodeChat/CodeToMarkdown.py,sha256=IXMTVhsmh31t3LlL9YycFxbg59m_xwx1mXzOZw6BPOM,7083
+CodeChat/CodeToRest.py,sha256=eufvqAGqa9KxQACjGbmxRLrBib3p82oTxIIKOOzGib8,43091
+CodeChat/CodeToRestSphinx.py,sha256=bPfijHAdPRSLCGObftfiGPp_UuO9KLl-XOUrMHUgolY,16724
+CodeChat/CommentDelimiterInfo.py,sha256=YRA2ybqkiNaNjD4RXz7kw4Z_QTVUgiogPBaq9acSRco,9816
+CodeChat/RestToCode.py,sha256=6xvRwk2MgYxdoodRn9LKNpjZ5nOqGmDgGBcRlqSXeoA,26399
+CodeChat/SourceClassifier.py,sha256=AJ8KUee383a6d0Dv-eBKHqEYY8JCrl-DJMhtfuBb1nM,42113
+CodeChat/__init__.py,sha256=m9NMD-pSsPjrNv3fOM1d7w_tjwgUlMD6Ry2y6Dao_eY,1373
+CodeChat/css/CodeChat.css,sha256=cEg9Ni8tdmCvyU_L_OzH9UfrFbF0k8f7t0iwmDxMbXQ,2385
+CodeChat/css/CodeChat_sphinx_rtd_theme.css,sha256=pxbkQpsbinzO5LC6fDv4dmjwh-AQ5gciPWtYVx6UdP8,1395
+CodeChat/css/docutils.css,sha256=8TIo2YyGzFTiaLDnZtX5En8fuOU1f6RYwNJ1K-wjhrU,4481
+CodeChat/sphinx_template/codechat_config.json,sha256=VZokj6uIO_qG4Eqf27SnvA2d0QiV5muh-tUfNcKu4yA,2346
+CodeChat/sphinx_template/conf.py,sha256=tFce3dpdNmaWxTjVcLdAIsDeuI1aefdliZ7MVxWeJUY,14432
+CodeChat/sphinx_template/index.rst,sha256=9RsUGsegvUycenL2hJMz6DcApP-D_pUotYZ562n-WQw,482
+CodeChat-1.8.8.dist-info/METADATA,sha256=YUJNOxevv7alotiVbWjXuv69TR5_W1uR1j-shD3iRow,4906
+CodeChat-1.8.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+CodeChat-1.8.8.dist-info/top_level.txt,sha256=FtKil3p6L-CHgsMFDMmXbxFD2KTZtq4T9reK-CwX-6s,9
+CodeChat-1.8.8.dist-info/RECORD,,
