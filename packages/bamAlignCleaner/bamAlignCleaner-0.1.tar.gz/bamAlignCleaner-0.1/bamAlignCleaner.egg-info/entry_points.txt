@@ -1,0 +1,3 @@
+[console_scripts]
+bamAlignCleaner = bamaligncleaner.cli:cli
+
