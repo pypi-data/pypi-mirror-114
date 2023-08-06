@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pysatl
+Version: 1.2.5
+Summary: Library to transport ISO7816-4 APDUs over anything
+Home-page: https://github.com/sebastien-riou/SATL
+Author: Sebastien Riou
+Author-email: matic@nimp.co.uk
+License: UNKNOWN
+Description: Python3 implementation of SATL
+        ==============================
+        
+        [![Docs Status](https://readthedocs.org/projects/satl/badge/)](https://readthedocs.org/projects/satl/badge/)
+        
+        SATL stands for 'Simple APDU Transport Layer'. It is a simple way to exchange ISO7816-4 APDUs over interfaces not covered in ISO7816-3.
+        
+        More info about SATL here: https://github.com/sebastien-riou/SATL
+        
+        Python3 package documentation: https://satl.readthedocs.io/en/latest/
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
