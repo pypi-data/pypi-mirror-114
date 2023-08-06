@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+parqser/__init__.py
+parqser/simple_example.py
+parqser.egg-info/PKG-INFO
+parqser.egg-info/SOURCES.txt
+parqser.egg-info/dependency_links.txt
+parqser.egg-info/requires.txt
+parqser.egg-info/top_level.txt
