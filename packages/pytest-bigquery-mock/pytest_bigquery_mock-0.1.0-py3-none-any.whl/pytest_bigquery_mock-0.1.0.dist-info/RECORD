@@ -1,0 +1,8 @@
+pytest_bigquery_mock/__init__.py,sha256=JfBCRY6Ne5Y3p_jZOwPLED68IoxBvqea1gKdxaUbSJY,91
+pytest_bigquery_mock/plugin.py,sha256=dc8nhi56k8dRTYz6TDNBMTD2f2hFzQ-9wZvrpZJrhvk,1390
+pytest_bigquery_mock-0.1.0.dist-info/LICENSE,sha256=eP2Qs3QGaqzsw9nVNmHaoGBp1eDD6Pz7k9gm3p8AIOM,1073
+pytest_bigquery_mock-0.1.0.dist-info/METADATA,sha256=NVWMtZ6hAK95Q-g6IsE5_oeuskhyxn3W73Xh_Wd3FSs,1631
+pytest_bigquery_mock-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pytest_bigquery_mock-0.1.0.dist-info/entry_points.txt,sha256=usWOVj6V4pK5WCfaDzy-Om6t3LwUccLuE0CSFISNNxE,56
+pytest_bigquery_mock-0.1.0.dist-info/top_level.txt,sha256=AoLSV6ZvX3jZ33vl8zzB8yjV0sxkFjsQ8yUWUupziMQ,21
+pytest_bigquery_mock-0.1.0.dist-info/RECORD,,
