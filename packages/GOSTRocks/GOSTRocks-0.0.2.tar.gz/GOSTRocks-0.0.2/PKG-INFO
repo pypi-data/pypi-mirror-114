@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: GOSTRocks
+Version: 0.0.2
+Summary: Miscellaneous geospatial functions concerning vector, raster, and network analysis
+Home-page: https://github.com/bpstewar/gostrocks
+Author: Benjamin P. Stewart
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# GOSTRocks
+Geospatial tools from the World Bank GOST team (mostly Ben).
+
+# Installation
+```
+$ pip install GOSTRocks
+```
+
+Future releases and information can be built from the setup.py here, but pip will contain the most recent stable version
+
+# Examples
+...see the notebooks in the github repo
+
+

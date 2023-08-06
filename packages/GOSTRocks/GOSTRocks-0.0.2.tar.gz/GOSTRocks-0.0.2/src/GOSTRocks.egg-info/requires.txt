@@ -1,0 +1,15 @@
+rasterio
+geopandas
+pandas
+numpy
+osmnx
+GOSTNets
+scikit-image
+pyproj
+ogr
+rtree
+osmnx
+networkx
+xarray
+rioxarray
+seaborn
