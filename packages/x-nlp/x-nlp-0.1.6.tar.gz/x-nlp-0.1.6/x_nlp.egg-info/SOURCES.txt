@@ -1,0 +1,11 @@
+README.md
+setup.py
+x_nlp.egg-info/PKG-INFO
+x_nlp.egg-info/SOURCES.txt
+x_nlp.egg-info/dependency_links.txt
+x_nlp.egg-info/top_level.txt
+xnlp/__init__.py
+xnlp/parser/__init__.py
+xnlp/parser/combinator.py
+xnlp/parser/monad.py
+xnlp/parser/util.py
