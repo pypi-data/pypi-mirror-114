@@ -1,0 +1,10 @@
+README.md
+setup.py
+suricata_threatbus/__init__.py
+suricata_threatbus/suricata.py
+suricata_threatbus.egg-info/PKG-INFO
+suricata_threatbus.egg-info/SOURCES.txt
+suricata_threatbus.egg-info/dependency_links.txt
+suricata_threatbus.egg-info/entry_points.txt
+suricata_threatbus.egg-info/requires.txt
+suricata_threatbus.egg-info/top_level.txt

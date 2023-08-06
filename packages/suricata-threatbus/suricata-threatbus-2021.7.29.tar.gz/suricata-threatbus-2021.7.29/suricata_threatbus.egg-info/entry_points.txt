@@ -1,0 +1,3 @@
+[console_scripts]
+suricata-threatbus = suricata_threatbus.suricata:main
+
