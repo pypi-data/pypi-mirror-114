@@ -1,0 +1,10 @@
+README.md
+setup.py
+pyspotter/__init__.py
+pyspotter/pyspotter.py
+pyspotter.egg-info/PKG-INFO
+pyspotter.egg-info/SOURCES.txt
+pyspotter.egg-info/dependency_links.txt
+pyspotter.egg-info/entry_points.txt
+pyspotter.egg-info/requires.txt
+pyspotter.egg-info/top_level.txt
