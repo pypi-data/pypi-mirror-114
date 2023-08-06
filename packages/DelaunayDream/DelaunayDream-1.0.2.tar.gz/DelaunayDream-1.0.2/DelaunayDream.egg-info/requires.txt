@@ -1,0 +1,5 @@
+moviepy
+numpy
+opencv-contrib-python
+pyqt5==5.14
+qtwidgets

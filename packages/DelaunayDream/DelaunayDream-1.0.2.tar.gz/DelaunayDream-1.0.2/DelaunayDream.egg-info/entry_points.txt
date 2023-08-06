@@ -1,0 +1,3 @@
+[console_scripts]
+delaunaydream = DelaunayDream.main:main
+
