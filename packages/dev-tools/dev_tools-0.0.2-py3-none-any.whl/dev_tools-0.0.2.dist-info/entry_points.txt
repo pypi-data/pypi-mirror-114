@@ -1,0 +1,4 @@
+[console_scripts]
+passer_template_server = dev_tools.template_server:_main
+pts = dev_tools.template_server:_main
+
