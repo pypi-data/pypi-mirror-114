@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/chessfessor.egg-info/PKG-INFO
+src/chessfessor.egg-info/SOURCES.txt
+src/chessfessor.egg-info/dependency_links.txt
+src/chessfessor.egg-info/top_level.txt

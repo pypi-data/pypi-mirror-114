@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: chessfessor
+Version: 1.0.0
+Summary: Extract your chess games data from https://lichess.org and https://chess.com
+Home-page: https://github.com/FrequentlyMissedDeadlines/py-chessfessor
+Author: FrequentlyMissedDeadlines
+Author-email: FrequentlyMissedDeadlines+chessfessor@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/FrequentlyMissedDeadlines/py-chessfessor/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Natural Language :: English
+Classifier: Topic :: Games/Entertainment :: Board Games
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# py-chessfessor
+[![Build](https://github.com/FrequentlyMissedDeadlines/py-chessfessor/actions/workflows/python-package.yml/badge.svg)](https://github.com/FrequentlyMissedDeadlines/py-chessfessor/actions/workflows/python-package.yml)
+[![Publish](https://github.com/FrequentlyMissedDeadlines/py-chessfessor/actions/workflows/python-publish.yml/badge.svg)](https://github.com/FrequentlyMissedDeadlines/py-chessfessor/actions/workflows/python-publish.yml)
+[![Version](https://img.shields.io/pypi/pyversions/chessfessor)](https://pypi.org/project/chessfessor)
+[![codecov](https://codecov.io/gh/FrequentlyMissedDeadlines/py-chessfessor/branch/main/graph/badge.svg)](https://codecov.io/github/FrequentlyMissedDeadlines/py-chessfessor?branch=master)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Chessfessor is the short for "Chess Professor". This command line tool will allow you to download all your chess game data from [Lichess](https://lichess.org/) and [Chess.com](https://www.chess.com/). You can then put this data in any BI tool you like to analyse your games or generate dashboards like winrates per opening.
+
+## Install
+
+```
+python -m pip install chessfessor
+```
+
+## Usage
+
+```
+chessfessor Kasparov
+```
+
+## Advanced usage
+
+```bash
+# Display help page
+chessfessor -h
+
+# Get Lichess.org games for player Kasparov
+chessfessor Kasparov --website lichess
+
+# Get Chess.com games for player Kasparov
+chessfessor Kasparov --website chessdotcom
+
+#Get Lichess.org games for player Kasparov, including casual games
+chessfessor Kasparov --website lichess --include-casual
+```
+
+## Disclaimer
+I have no rights on [Lichess](https://lichess.org/) or [Chess.com](https://www.chess.com/). All rights belong to their respective owners.
+
+But this tool comes from free, enjoy it! 🎉
+
