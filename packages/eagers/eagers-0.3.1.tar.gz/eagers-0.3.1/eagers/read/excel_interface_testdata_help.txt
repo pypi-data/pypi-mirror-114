@@ -1,0 +1,34 @@
+// Text displayed on the help sheet of the testdata template Excel workbook.
+// "#" denotes a section header.
+// "//" denotes a commented line.
+
+# All Sheets
+Data on the TimeSeriesInputs sheet are referenced by naming both the timestamp
+and the data column. The timestamp column name must come first and the two
+names must be comma-separated.
+
+# NodeData
+The timestamp column is named at the top of the sheet. Node data entries are
+separated out by network. Each network section is denoted by the network name
+in the left column. You may leave blank lines between the last row of data of
+one network and the first row of the next network, but it is not necessary.
+Only hydro network entries should have values in the inflow, outflow,
+inflow_history, and outflow_history columns.
+
+# Weather
+Either a file name plus designation or one or more groupings of a timestamp
+field, data fields and a designation goes here. Designation must be either
+"tmy" or "continuous".
+
+# TimeSeriesInputs
+This sheet contains the actual time series data for the data fields referenced
+in the other sheets. Each header besides the timestamp headers is prefixed with
+the (lowercase) name of the sheet and a colon. This is so that we have the
+option of using the same header name for two different test data categories.
+
+Datetime values may be entered either as Dates or Text. If Text, they must
+conform to the ISO 8601 standard. The best way to do this is by first using
+Excel's "Date" number format (e.g. "1/1/17 00:00"), then converting those
+numbers to text using something like this:
+=TEXT(A2,"yyyy-mm-dd")&"T"&TEXT(A2,"hh:mm:ss")
+Cf. https://stackoverflow.com/a/62417245/7232335 for more information.
