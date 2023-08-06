@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: jsdk
+Version: 0.0.3
+Summary: A package for interacting programmatically with Jasmin Gateway CLI
+Home-page: https://github.com/Arolitec/jsdk
+Author: Arolitec
+Author-email: manouman@live.fr
+License: MIT License
+Project-URL: Bug Tracker, https://github.com/Arolitec/jsdk/issues
+Keywords: jasmin,gateway,sms
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Jasmin SMS Gateway SDK
+
+## Package available on [Pypi](https://pypi.org/project/jsdk/)
+
