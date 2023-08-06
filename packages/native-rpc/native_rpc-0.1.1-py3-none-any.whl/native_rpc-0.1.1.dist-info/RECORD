@@ -1,0 +1,17 @@
+native_rpc/__init__.py,sha256=NrsBhh4jQLdSg8xBKRaglCRHOuoyNw4j4WBKGZZ-tPg,1213
+native_rpc/deserializer.py,sha256=5e2nVtTlrIO-D-j4ma3qob7aquhfo5soCuhvuYjR8nU,886
+native_rpc/exceptions.py,sha256=7HwrjxzcWHdOhwZqQs02BmFnM-zQVyn3uejqf17nXV8,2393
+native_rpc/namespace.py,sha256=qyyB75lpu3GBQQdnldKqTFJ-Ez5gygvc5ctWriHV73E,1646
+native_rpc/obj_pool.py,sha256=J9DaDUuXJ3WIAXZhfpYDVKXiRau6dW15J1wvWSEMgg4,1921
+native_rpc/serializer.py,sha256=-nJ88V8EzqFEWWWryXB9HbmlApY55qEGTSR9H040hFs,986
+native_rpc/server.py,sha256=8vKX_xyNPxwbQQcIOMNUKuOA_yaDYqKvWKZ72PykOTA,6833
+native_rpc/stream.py,sha256=-1NO3-46T5FOPeyOXYxJxjnRX-d6QINoz5KvPuRgcmA,692
+native_rpc_client/__init__.py,sha256=zXLffcDil4W-qnrg6_q9WVacI9Q4AGOKocL-DeCCqZQ,422
+native_rpc_client/client.py,sha256=i_mg-ER5U0eNq1fjOVj4b-S6SGyl2mSF1dT5S-Am9xI,5426
+native_rpc_client/deserializer.py,sha256=gwXuiL66sd17ICVrpFVYlWK1793K5cSTBWw76enQt08,806
+native_rpc_client/serializer.py,sha256=NAiziNbkgmPvAw5uJhSLYZw1XCJe32tGg0jToRQSsWs,1018
+native_rpc-0.1.1.dist-info/LICENSE,sha256=B6fUk3UJWoUcymTxlFOHSRwTZm00u7auKmggRgnYNWU,1065
+native_rpc-0.1.1.dist-info/METADATA,sha256=J9_SzKSyEDIdeSrAhuK8JfCJ1vkdN9_2tr92x8HxBbs,561
+native_rpc-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+native_rpc-0.1.1.dist-info/top_level.txt,sha256=uJ2mHNhurVUuxnHhFmJfu7Gp3d_UPbccBOl94cmVPEY,29
+native_rpc-0.1.1.dist-info/RECORD,,
