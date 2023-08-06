@@ -1,0 +1,2 @@
+matplotlib
+slack_sdk
