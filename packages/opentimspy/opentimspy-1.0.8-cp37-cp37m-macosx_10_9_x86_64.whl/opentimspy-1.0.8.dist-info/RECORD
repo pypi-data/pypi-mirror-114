@@ -1,0 +1,11 @@
+libopentims_cpp.cpython-37m-darwin.so,sha256=L_VUWv1ocvz6kLjC6kB0ECSMYKaUgdP1El-FhtRs7Xg,116024
+libopentims_support.cpython-37m-darwin.so,sha256=vmSayXLeW50dnH68fS0KvKMXgSgs2fhJNrZYcvrSlo0,1347080
+opentimspy_cpp.cpython-37m-darwin.so,sha256=N_1N5fbsjaVh1M9C4ku3v8Pi1SX6Q7phF3aQ8M6ukQg,343136
+opentimspy/__init__.py,sha256=3mte_ssTmuENkU52rTF0FdISV_VJPQBKjDX8IAFbUZQ,2245
+opentimspy/opentims.py,sha256=1elX9JtnI52aDJQhUjhfSjT6xXK7Yim1a6PhTsQ1nWI,14501
+opentimspy/sql.py,sha256=Wug33NG8bGnKdEydWfzAgOMKbQzNdMypSn7jBKUXkTo,1098
+opentimspy-1.0.8.dist-info/LICENCE,sha256=EEf7eWNjsPoQS0tSYRgrf3B7rb7fqv5zHNZGsdcb9s4,32892
+opentimspy-1.0.8.dist-info/METADATA,sha256=vVjEFFuSHJoZmh4MUflZIc6MCSOqo1A2PRQ0xT4G0YE,991
+opentimspy-1.0.8.dist-info/WHEEL,sha256=WVG6A_oY5zUoNXUyvfLMOSXC-hqC5VZacUL1MeSOz70,110
+opentimspy-1.0.8.dist-info/top_level.txt,sha256=yreQjUfBpC95-QdrrmkWbD3BKWAaAG48NNrN8HAp4nc,62
+opentimspy-1.0.8.dist-info/RECORD,,
