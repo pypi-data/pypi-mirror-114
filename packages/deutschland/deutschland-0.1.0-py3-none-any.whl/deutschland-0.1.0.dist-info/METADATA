@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: deutschland
+Version: 0.1.0
+Summary: 
+Author: Lilith Wittmann
+Author-email: mail@lilithwittmann.de
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Shapely (>=1.7.1,<2.0.0)
+Requires-Dist: mapbox-vector-tile (>=1.2.1,<2.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
