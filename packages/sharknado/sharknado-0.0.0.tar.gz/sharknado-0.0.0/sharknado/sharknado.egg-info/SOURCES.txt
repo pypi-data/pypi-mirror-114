@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+sharknado/core/__init__.py
+sharknado/core/utils.py
+sharknado/sharknado.egg-info/PKG-INFO
+sharknado/sharknado.egg-info/SOURCES.txt
+sharknado/sharknado.egg-info/dependency_links.txt
+sharknado/sharknado.egg-info/requires.txt
+sharknado/sharknado.egg-info/top_level.txt
