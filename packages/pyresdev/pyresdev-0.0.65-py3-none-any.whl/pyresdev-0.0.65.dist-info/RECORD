@@ -1,0 +1,16 @@
+pyresdev/__init__.py,sha256=26UWatnbm6ZIwQMuu9NNzQ0IW1ACO4Oe9caModuTpWM,4
+pyresdev/processing/L700_utils.py,sha256=zxMqhHg9mlK4K-m_JHvTu4K4VX09rIQYK9jfBLLoPqk,10687
+pyresdev/processing/__init__.py,sha256=Cj3g1RSZCoV0nURycPvJP5QbESrEgME3tDItcVLfJ_A,128
+pyresdev/processing/processing.py,sha256=6e5xQu4nYE9-G6vZRN-i8e_A-a1WWY65A_6CFJ2VToQ,10607
+pyresdev/utils/__init__.py,sha256=TXKAQ2EdijeE01W5GpIDAdwYYeuD8KLCkjYBNXKhgig,273
+pyresdev/utils/_aws_tools.py,sha256=3W84uKTORz_pE5U840rqXa_UHFugWw7o--Q-GhXOLDo,736
+pyresdev/utils/_db_tools.py,sha256=S4bx19j_HmL7PGZ8LdP4ddbK9MQ7vVGP7tRM2gGJuA4,2407
+pyresdev/utils/_developer_utils.py,sha256=mH8-VCIeYTDc969hCM_G84gw2OkQ7_rnMBDMVhGtVaU,19900
+pyresdev/utils/_memory_reduction.py,sha256=XHiQ7WkJP2jH6r0oTttAw5PWPx5fWme968baZx8Rna0,2832
+pyresdev/utils/_processing_tools.py,sha256=gbLB_Zed2kFbVLCwvCRe2D9tx_st9dQjBS_24GMlpdg,2617
+pyresdev/utils/_regex_utils.py,sha256=x6-6Ab0v0LpARrwfSJePXOuG6JA2qf4_z00BEvz0bIY,6004
+pyresdev-0.0.65.dist-info/LICENSE.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyresdev-0.0.65.dist-info/METADATA,sha256=o2jtA1oiQRgRaNq7ZwwOj_OMz1ovU6wqgP6E72_joXA,524
+pyresdev-0.0.65.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+pyresdev-0.0.65.dist-info/top_level.txt,sha256=Z8NxapJS3_B4wR8Chi6Whz9KyWIfkEowezEZBHd1I9c,9
+pyresdev-0.0.65.dist-info/RECORD,,
