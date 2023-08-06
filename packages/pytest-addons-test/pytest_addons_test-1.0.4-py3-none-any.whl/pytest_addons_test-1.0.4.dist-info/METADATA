@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pytest-addons-test
+Version: 1.0.4
+Summary: 用于测试pytest的插件
+Author: lin
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pytest (>=6.2.4,<7.0.0)
