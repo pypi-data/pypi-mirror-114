@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: camphr
+Version: 0.10.0
+Summary: spaCy plugin for Transformers, Udify, Elmo, etc.
+Home-page: https://github.com/PKSHATechnology-Research/camphr
+License: Apache-2.0
+Keywords: spaCy,nlp,natural language processing,transformers
+Author: tamuhey
+Author-email: tamuhey@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: all
+Provides-Extra: base
+Provides-Extra: juman
+Provides-Extra: mecab
+Provides-Extra: sentencepiece
+Requires-Dist: PyYAML (>=5.4.1,<6.0.0)
+Requires-Dist: dataclass-utils (>=0.7.12,<0.8.0)
+Requires-Dist: dataclasses (>=0.6,<0.7)
+Requires-Dist: mecab-python3 (>=1.0,<1.1); extra == "all" or extra == "mecab"
+Requires-Dist: mojimoji (>=0.0.11,<0.0.12); extra == "all" or extra == "juman"
+Requires-Dist: pyknp (>=0.4.2,<0.5); extra == "all" or extra == "juman"
+Requires-Dist: pytextspan (>=0.5.0,<1.0)
+Requires-Dist: pytokenizations (>=0.4.8,<1.0)
+Requires-Dist: sentencepiece (>=0.1.96,<0.2.0); extra == "all" or extra == "sentencepiece"
+Requires-Dist: typing-extensions (>=3.7.4)
+Project-URL: Repository, https://github.com/PKSHATechnology-Research/camphr
+Description-Content-Type: text/markdown
+
+
