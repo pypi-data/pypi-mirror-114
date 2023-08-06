@@ -1,0 +1,55 @@
+[tool.poetry]
+name = "jupyter-bundle"
+version = "1.1.0a1"
+description = "Jupyter Lab support for Daipe"
+readme = "README.md"
+repository = "https://github.com/daipe-ai/jupyter-bundle"
+
+license = "MIT"
+
+authors = [
+    "Jiri Koutny <jiri.koutny@datasentics.com>"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+include = ["*.yaml"]
+
+packages = [
+    { include = "jupyterbundle", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7.1,<4.0.0"
+pyfony-core = "^0.8.0"
+daipe-core = "^1.1"
+ipywidgets = ">=7.6"
+jupytext = ">=1.11.0"
+jupyterlab = ">=3.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+flake8 = "^3.9.0"
+black = "^20.8b1"
+flake8-fixme = "^1.1.1"
+pep8-naming = "^0.11.1"
+poethepoet = "^0.10.0"
+
+[tool.poetry.plugins."pyfony.bundle"]
+create = "jupyterbundle.JupyterBundle:JupyterBundle"
+
+[pyfony.bootstrap]
+container_init = "pyfonycore.container.container_init:init_with_current_bundle"
+root_module_name = "jupyterbundle"
+
+[tool.black]
+line-length = 140
+
+[tool.poe.tasks]
+black = "black src"
+black-check = "black --check src"
+flake8 = "flake8 --ignore=E501,W503 src"
