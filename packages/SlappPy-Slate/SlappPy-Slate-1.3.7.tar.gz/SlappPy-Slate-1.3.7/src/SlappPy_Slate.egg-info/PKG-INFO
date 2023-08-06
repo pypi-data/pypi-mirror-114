@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: SlappPy-Slate
+Version: 1.3.7
+Summary: SlappPy is the Python support and generation code for Slapp and Dola.
+Home-page: https://github.com/kjhf/SlappPy
+Author: Slate
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/kjhf/SlappPy/issues
+Project-URL: Source, https://github.com/kjhf/SlappPy/
+Project-URL: Discord, https://discord.gg/wZZv2Cr
+Keywords: slapp,slate,splatoon
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SlapPy
+SlapPy is the Python support and generation code for [Slapp](https://github.com/kjhf/SplatTag) and [Dola](https://github.com/kjhf/DolaBot).
+Code on [Github](https://github.com/kjhf/SlapPy).
+
+## Requirements
+- Python 3.9+
+* Create a `.env` in the repository root with the following values:
+
+```py
+# Required values:
+# Source address for Battlefy backend
+CLOUD_BACKEND="https://xxxxx.cloudfront.net"
+# Path to SplatTagConsole for Slapp things
+SLAPP_CONSOLE_PATH=".../SplatTagConsole.dll"
+# Path to the Slapp App Data folder
+SLAPP_DATA_FOLDER=".../SplatTag"
+
+# Optional values depending on requirements:
+# Database variables if using the database, which are:
+DATABASE_HOST="localhost:5000"
+DATABASE_NAME="database"
+DATABASE_USER="user"
+DATABASE_PASSWORD="user"
+# A Discord bot token if using the backtrace:
+BOT_TOKEN="xxxxxx.xxxxxx.xxxxxx"
+# Challonge credentials if using Challonge downloaders
+CHALLONGE_API_KEY="xxxx"
+CHALLONGE_USERNAME="YourUsername"
+# Smash GG credentials if using Smash GG downloaders 
+SMASH_GG_API_KEY="xxxx"
+```
+
+## Distribution
+The following commands should be entered into the venv console:
+
+Windows:
+
+    rmdir /S build
+    rmdir /S dist
+    py -m pip install --upgrade build
+    py -m build
+    py -m pip install --upgrade twine
+    py -m twine upload dist/*
+
+Linux:
+
+    rm -r build
+    rm -r dist
+    python3 -m pip install --upgrade build
+    python3 -m build
+    python3 -m pip install --upgrade twine
+    python3 -m twine upload dist/*
+
+
