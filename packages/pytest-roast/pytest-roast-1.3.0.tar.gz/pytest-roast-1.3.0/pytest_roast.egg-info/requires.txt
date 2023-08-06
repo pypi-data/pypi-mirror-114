@@ -1,0 +1,7 @@
+pytest
+roast>=2.0.0
+
+[dev]
+pytest-mock
+pytest-black
+coverage
