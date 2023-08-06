@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/ddd_shared.egg-info/PKG-INFO
+src/ddd_shared.egg-info/SOURCES.txt
+src/ddd_shared.egg-info/dependency_links.txt
+src/ddd_shared.egg-info/requires.txt
+src/ddd_shared.egg-info/top_level.txt
+src/shared/__init__.py
+src/shared/application.py
