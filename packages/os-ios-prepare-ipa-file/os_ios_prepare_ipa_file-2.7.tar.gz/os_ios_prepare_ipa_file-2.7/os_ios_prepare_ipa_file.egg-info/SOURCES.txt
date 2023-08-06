@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+os_ios_prepare_ipa_file/ipa_preparer.py
+os_ios_prepare_ipa_file.egg-info/PKG-INFO
+os_ios_prepare_ipa_file.egg-info/SOURCES.txt
+os_ios_prepare_ipa_file.egg-info/dependency_links.txt
+os_ios_prepare_ipa_file.egg-info/requires.txt
+os_ios_prepare_ipa_file.egg-info/top_level.txt
+os_ios_prepare_ipa_file/res/.DS_Store
+os_ios_prepare_ipa_file/res/dummy_html.html
+os_ios_prepare_ipa_file/res/dummy_plist.plist
