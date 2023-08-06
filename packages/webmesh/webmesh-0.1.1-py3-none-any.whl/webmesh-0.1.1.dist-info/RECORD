@@ -1,0 +1,10 @@
+webmesh/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+webmesh/message_protocols.py,sha256=B9au2HdBISMGpt3ZVJnb5bcO_PSH8BRHF3BMop4qh1E,601
+webmesh/message_serializers.py,sha256=U7N4_nNaDF9beMKQO-W32eXRqLsK20kpMQHkLPX35mo,1084
+webmesh/utils.py,sha256=8LCwugCUkMy-zpnA5_Q8cN3-mzrRonmMY4vm7S6ILSk,612
+webmesh/webmesh_client.py,sha256=L0Ka6DwA_Ht2X8NCEOD8bmNA5HgjK7RmSGxUYRH_0SQ,1836
+webmesh/webmesh_component.py,sha256=zUL0AK1S6Kn3h9dBDjgHmPa9d_9VQbN27ORVZiNVkK4,809
+webmesh/webmesh_server.py,sha256=RrFwnHHxkFFti1WOi9lpzr6_mXA9UolLmqCPtwQMSLc,4497
+webmesh-0.1.1.dist-info/METADATA,sha256=GrVdpPXnhUv9_8qadX1n8BPkYUYuSUjDASVKa01DtH4,245
+webmesh-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+webmesh-0.1.1.dist-info/RECORD,,
