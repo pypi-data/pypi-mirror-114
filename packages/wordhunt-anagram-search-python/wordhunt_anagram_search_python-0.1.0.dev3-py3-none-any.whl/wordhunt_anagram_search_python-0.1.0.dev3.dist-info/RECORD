@@ -1,0 +1,14 @@
+wordhuntanagram/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wordhuntanagram/anagram.py,sha256=Ka7DxsyC039t-AfS-rJRLopKmRFbWqU8GyQ8U0rl_mM,1290
+wordhuntanagram/base.py,sha256=PVjPEWgdVfG6n_53ZqgwtwKBi1bQPI6bv7XapCf0Ork,6319
+wordhuntanagram/file_tree.py,sha256=ioJaU6PQgbfrGAej06YxCVL7vgr8gV46Urw0j7fgb-k,2568
+wordhuntanagram/logger.py,sha256=era6pfAL_WnL94aKeQoXaC8PSkXkrcBd09aZFaGeAqE,1424
+wordhuntanagram/matrices.py,sha256=udzgBxCTc0eUDKChZWUKyqW9F8kdr844wc8PZOum4dY,10072
+wordhuntanagram/wordhunt.py,sha256=pi7D9tNqhJaEhqHkaTL4eupksDs2vPnPWpqW70bzW5U,2698
+wordhuntanagram/words.json,sha256=c-ka3GRs3cH7C5ORlivb_kV9GvB9QdjJfYRjFbei3hU,4454700
+wordhuntanagram/data/trie_store.json,sha256=4cZ1-7Ud7qRoXKluzGLVHumvXTc2lf4m3_f3g7YyKrg,14290754
+wordhunt_anagram_search_python-0.1.0.dev3.dist-info/LICENSE,sha256=iLih7wPG87lH3J7-zB2l4oDS_0t0Zr82nQQdqwuAYqQ,1080
+wordhunt_anagram_search_python-0.1.0.dev3.dist-info/METADATA,sha256=pxiB6czzPjIhvu4uvDbmZLqIKtsBQqsSAGMzBQZWGX4,2250
+wordhunt_anagram_search_python-0.1.0.dev3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wordhunt_anagram_search_python-0.1.0.dev3.dist-info/top_level.txt,sha256=GZnsn-qAjA5T4-RfcwCz5k8tkVNb2Jp4JEWbsd2UZsY,16
+wordhunt_anagram_search_python-0.1.0.dev3.dist-info/RECORD,,
