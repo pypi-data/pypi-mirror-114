@@ -1,0 +1,315 @@
+Metadata-Version: 2.1
+Name: mopidris
+Version: 0.9.1
+Summary: MPRIS2 D-Bus for a (remote) Mopidy instance
+Home-page: https://codeberg.org/sph/mopidris
+Author: Stephan Helma
+Author-email: s.p.helma@gmx.net
+License: GNU General Public License, Version 3
+Project-URL: Bug Tracker, https://gitlab.com/sphh/mopidris/-/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Multimedia :: Sound/Audio :: Players
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dbus-next (>=0.2.3)
+Requires-Dist: mopidy-asyncio-client (>=3.0.1)
+Requires-Dist: setuptools
+Provides-Extra: dev
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Provides-Extra: release
+Requires-Dist: twine ; extra == 'release'
+Requires-Dist: wheel ; extra == 'release'
+
+# mopidris
+
+MPRIS2 D-Bus for a (remote) Mopidy instance.
+
+
+## Background
+
+Many desktop environments can control a media player through the
+[D-Bus](http://www.freedesktop.org/wiki/Software/dbus) via the
+[Media Player Remote Interfacing Specification (MPRIS)](https://specifications.freedesktop.org/mpris-spec/latest/)
+interface. To control a locally running instance of Mopidy, there exists the
+`Mopidy-MPRIS` package:
+- https://mopidy.com/ext/mpris/
+- https://pypi.org/project/Mopidy-MPRIS
+- https://github.com/mopidy/mopidy-mpris
+
+For this to work, Mopidy has to run on the same computer as the the D-Bus. If
+Mopidy runs on a remote server, up to now there was only the following
+solution available:
+1. Install and enable the MPD interface for Mopidy:
+    - https://mopidy.com/ext/mpd/
+    - https://pypi.org/project/Mopidy-MPD/
+    - https://github.com/mopidy/mopidy-mpd
+2. Install [`mpDris2`](https://github.com/eonpatapon/mpDris2).
+3. Start `mpDris2`, whenever you log into your desktop environment.
+
+The `mopidris` introduced here, connects directly to a local or remote Mopidy
+without the detour through the `mpd` interface.
+
+There is an additional (and probably controversial) feature implemented:
+Internet radio streams do often send artist and title as one metatag. If those
+two fields are separated by `" - "`, it is split and presented as artist and
+title to the D-Bus. (This is the default behaviour and can be switched off with
+the `--no-mangle` command line parameter.)
+
+
+## Installation
+
+```python3
+pip install mopidris
+```
+
+This installs these additional packages:
+- `dbus_next` >= 0.2.3
+    - https://pypi.org/project/dbus-next
+    - https://github.com/altdesktop/python-dbus-next
+- `mopidy_asyncio_client` >= 3.0.1 (and `websockets` as a dependency)
+    - https://pypi.org/project/mopidy-asyncio-client
+    - https://codeberg.org/sph/mopidy-asyncio-client
+
+
+### Optional packages
+
+You can install the following optional packages. `mopidris` makes use of them,
+if it can find them, but it also works well without them:
+1. `aiorun`: If the event loop is terminated with CTRL-C, sometimes the port
+   is not released and 'mopidris' cannot be restarted. 'aiorun' can help here
+   (but it can still happen, that the DBUS hangs ...)
+    - https://pypi.org/project/aiorun/
+    - https://github.com/cjrh/aiorun
+2. `colored_traceback`: Shows coloured tracebacks, to help debugging
+   exceptions.
+    - https://pypi.org/project/colored-traceback
+    - https://github.com/staticshock/colored-traceback.py
+3. `colorlog`: Colour the log to make it easier to read.
+    - https://pypi.org/project/colorlog/
+    - https://github.com/borntyping/python-colorlog
+
+
+## Usage
+
+### Command line
+
+The program is started with
+
+```sh
+python3 /path/to/mopidris
+```
+e.g. if `mopidris` is installed into the directory
+`/usr/local/lib/python3.8/dist-packages/mopidris/`, call it with
+```sh
+python3 /usr/local/lib/python3.8/dist-packages/mopidris
+```
+
+The most important options are undeniably the (optional) positional parameter
+specifying the host and possibly `--retries` and `--can-quit`. For the full
+list, see the section "Command line options" near the end.
+
+
+### Configuration file
+
+Instead of giving the parameters all the time when calling `mopidris`, it is
+possible to write them into a configuration file. The default location can be
+found by calling `python3 mopidris --help` (look for the `--config` option).
+
+A possible configuration file can look like this:
+```toml
+# Remote host ip
+host = 192.168.0.1
+
+# Retry forever
+reconnect_attempts = -1
+
+# Wait 60s between retries
+reconnect_timeout = 60
+```
+
+### `.desktop` file
+
+If this [`mopidy.desktop`](https://codeberg.org/sph/mopidris/mopidris.desktop)
+is installed (e.g. into `/usr/local/share/applications` or to
+`${HOME}/.local/share/applications`, it is probably possible to start
+`mopidris` on a Linux system from the sound applet. For this to work, the file
+has to be named `mopidris.desktop` and the program at least started once
+manually!
+
+Do not forget to update the path in the file to your installation directory!
+
+### Start automatically
+
+There exists two possible ways to start `mopidris` automatically, whenever a
+user logs in:
+
+#### Startup Applications
+
+Put `python3 /path/to/mopidris` with the required command line options (or a
+configuration file) into your `Startup Applications`.
+
+If you have installed the `mopidy.desktop` file as described above, this file
+can be used in the `Startup Applications`.
+
+#### systemd service
+
+**NB**: This is not tested, so please feel free to open an issue and post a
+correction to the procedure!
+
+It is also possible to start it via a systemd service.
+
+Copy the
+[`mopidris.service`](https://codeberg.org/sph/mopidris/mopidris.service) file
+to `/usr/lib/systemd/user` (or the user's equivalent) and activate it with:
+```sh
+systemctl --user enable mopidris.service
+systemctl --user start mopidris.service
+```
+
+
+## Command line options
+
+To see the command line options, call
+```sh
+python3 mopidris --help
+```
+
+```
+usage: mopidris [-h] [-p PORT] [-r ATTEMPTS] [-t TIMEOUT] [-q] [-m] [-c FILE]
+                [-i {tracklist,playlists}]
+                [-d {debug,info,warning,error,critical}]
+                [--debug-mopidy {debug,info,warning,error,critical}]
+                [--debug-dbus {debug,info,warning,error,critical}]
+                [--debug-websockets {debug,info,warning,error,critical}]
+                [--debug-aiorun {debug,info,warning,error,critical}]
+                [--debug-interfaces.base {debug,info,warning,error,critical}]
+                [--debug-interfaces.root {debug,info,warning,error,critical}]
+                [--debug-interfaces.player {debug,info,warning,error,critical}]
+                [--debug-interfaces.tracklist {debug,info,warning,error,critical}]
+                [--debug-interfaces.playlist {debug,info,warning,error,critical}]
+                [HOST]
+
+Connect a (remote) Mopidy instance to the local DBus.
+
+positional arguments:
+  HOST                  the remote host name or ip address
+                        (default: localhost,
+                         configfile key: host)
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -p PORT, --port PORT  the port number Mopidy is listening on
+                        (default: 6680,
+                         configfile key: port)
+  -r ATTEMPTS, --retries ATTEMPTS
+                        how often to retry to connect to Mopidy; if -1, retry
+                        forever
+                        (default: 5,
+                         configfile key: reconnect_attempts)
+  -t TIMEOUT, --timeout TIMEOUT
+                        how long to wait between reconnection attempts
+                        (default: 20,
+                         configfile key: reconnect_timeout)
+  -q, --can-quit        it is possible to quit this program from an
+                        application; note, that the (remote) will keep running
+                        (default: False,
+                         configfile key: can_quit)
+  -m, --no-mangle       do not split the Internet radio stream title at " - "
+                        (default: True,
+                         configfile key: mangle)
+  -c FILE, --config FILE
+                        read values from the configuration file
+                        (default: <operating system dependend>,
+                         a configfile key is not supported)
+
+DBus Interfaces:
+  -i {tracklist,playlists}, --interface {tracklist,playlists}
+                        activate additional 'org.mpris.MediaPlayer2' DBus
+                        interfaces (the 'org.mpris.MediaPlayer2' and
+                        'org.mpris.MediaPlayer2.Player' interfaces are always
+                        active)
+                        (configfile key: interfaces - use one line for each
+                        interface)
+
+Debugging:
+  -d {debug,info,warning,error,critical}, --debug {debug,info,warning,error,critical}
+                        the general loglevel
+                        (default: warning,
+                         configfile key: debug)
+  --debug-mopidy {debug,info,warning,error,critical}
+                        the loglevel for the 'mopidy_asyncio_client' module
+                        (default: follows --debug argument,
+                         configfile key: debug_mopidy_asyncio_client)
+  --debug-dbus {debug,info,warning,error,critical}
+                        the loglevel for the 'dbus_next' module
+                        (default: follows --debug argument,
+                         configfile key: debug_dbus_next)
+  --debug-websockets {debug,info,warning,error,critical}
+                        the loglevel for the 'websockets' module
+                        (default: follows --debug argument,
+                         configfile key: debug_websockets)
+  --debug-aiorun {debug,info,warning,error,critical}
+                        the loglevel for the 'aiorun' module
+                        (default: follows --debug argument,
+                         configfile key: debug_aiorun)
+  --debug-interfaces.base {debug,info,warning,error,critical}
+                        the loglevel for the 'interfaces.base' module
+                        (default: follows --debug argument,
+                         configfile key: debug_interfaces.base)
+  --debug-interfaces.root {debug,info,warning,error,critical}
+                        the loglevel for the 'interfaces.root' module
+                        (default: follows --debug argument,
+                         configfile key: debug_interfaces.root)
+  --debug-interfaces.player {debug,info,warning,error,critical}
+                        the loglevel for the 'interfaces.player' module
+                        (default: follows --debug argument,
+                         configfile key: debug_interfaces.player)
+  --debug-interfaces.tracklist {debug,info,warning,error,critical}
+                        the loglevel for the 'interfaces.tracklist' module
+                        (default: follows --debug argument,
+                         configfile key: debug_interfaces.tracklist)
+  --debug-interfaces.playlist {debug,info,warning,error,critical}
+                        the loglevel for the 'interfaces.playlist' module
+                        (default: follows --debug argument,
+                         configfile key: debug_interfaces.playlist)
+
+Configuration file:
+Each line in the configuration file is a 'key = value' pair. The key is given
+in the description of each parameter and the value can be any valid value.
+Comments start with '#' and everything after is discarded.
+
+Copyright (C) 2021, licensed under GPL 3.0 or later.
+```
+
+
+## Copyright of this file
+
+Copyright (C) 2021  Stephan Helma
+
+This file is part of mopidris.
+
+mopidris is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+mopidris is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with mopidris. If not, see <https://www.gnu.org/licenses/>.
+
+
