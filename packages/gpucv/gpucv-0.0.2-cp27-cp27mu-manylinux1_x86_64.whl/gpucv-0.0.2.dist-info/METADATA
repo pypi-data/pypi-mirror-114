@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: gpucv
+Version: 0.0.2
+Summary: Run image processing algos on your GPU
+Home-page: http://example.com/
+Author: Shrikumaran PB
+Author-email: pbshrikumaran@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+Do you have a GPU and run image processing algos in your CPU ?
+
+Time to upgrade ! Run it on your GPU with this easy to use pythonic library.
+
+
