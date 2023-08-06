@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: rs
+Version: 0.0.1
+Summary: A Simple Remote Server and Training Manager.
+Home-page: https://github.com/atranitell/TQ
+Author: Kai Jin
+Author-email: atranitell@gmail.com
+License: Apache 2.0 Licence
+Description: # tq
+        A Simple Remote Server and Training Manager
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown

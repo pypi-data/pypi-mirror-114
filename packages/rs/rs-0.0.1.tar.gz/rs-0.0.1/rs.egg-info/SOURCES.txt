@@ -1,0 +1,12 @@
+README.md
+setup.py
+rs.egg-info/PKG-INFO
+rs.egg-info/SOURCES.txt
+rs.egg-info/dependency_links.txt
+rs.egg-info/requires.txt
+rs.egg-info/top_level.txt
+tq/__init__.py
+tq/client.py
+tq/logger.py
+tq/server.py
+tq/tfevent.py
