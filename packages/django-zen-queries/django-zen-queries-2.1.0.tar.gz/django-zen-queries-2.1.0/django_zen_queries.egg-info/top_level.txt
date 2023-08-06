@@ -1,0 +1,3 @@
+zen_queries
+zen_queries/templatetags
+zen_queries/tests
