@@ -1,0 +1,12 @@
+boto3
+Flask
+Jinja2>=2.9
+markdown2
+feedgen
+toml
+libsass
+sectile>=0.3.5
+jsonpickle
+
+[:python_version <= "3.9"]
+importlib_resources
