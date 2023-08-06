@@ -1,0 +1,11 @@
+LICENSE
+LICENSE2
+README.md
+setup.py
+zipfile39.py
+zipfile39.egg-info/PKG-INFO
+zipfile39.egg-info/SOURCES.txt
+zipfile39.egg-info/dependency_links.txt
+zipfile39.egg-info/not-zip-safe
+zipfile39.egg-info/requires.txt
+zipfile39.egg-info/top_level.txt
