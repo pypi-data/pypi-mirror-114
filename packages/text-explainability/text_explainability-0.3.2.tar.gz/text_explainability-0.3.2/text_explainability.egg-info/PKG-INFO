@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: text-explainability
+Version: 0.3.2
+Summary: Generic explainability architecture for text machine learning models
+Home-page: https://git.science.uu.nl/m.j.robeer/text_explainability
+Author: Marcel Robeer
+Author-email: m.j.robeer@uu.nl
+License: GNU LGPL v3
+Description: <p align="center">
+          <img src="https://git.science.uu.nl/m.j.robeer/text_explainability/-/raw/main/img/TextLogo-Logo%20large.png">
+        </p>
+        
+        _A generic explainability architecture for explaining text machine learning models._
+        
+        Marcel Robeer, 2021
+        
+        ## Installation
+        Install from PyPI via `pip3 install text_explainability`. Alternatively, clone this repository and install via `pip3 install -e .` or locally run `python3 setup.py install`.
+        
+        ## Example usage
+        Run lines in `example_usage.py` to see an example of how the package can be used.
+        
+        ## Maintenance
+        ### Contributors
+        - Marcel Robeer (`@m.j.robeer`)
+        - Michiel Bron (`@mpbron-phd`)
+        
+        ### Todo
+        Tasks yet to be done:
+        - Add data sampling methods (e.g. representative subset, prototypes, MMD-critic)
+        - Implement local post-hoc explanations:
+            - Implement Anchors
+        - Implement global post-hoc explanations
+        - Add support for regression models
+        - More complex data augmentation
+            - Top-k replacement (e.g. according to LM / WordNet)
+            - Tokens to exclude from being changed
+            - Bag-of-words style replacements
+        - Add rule-based return type
+        - Write more tests
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
