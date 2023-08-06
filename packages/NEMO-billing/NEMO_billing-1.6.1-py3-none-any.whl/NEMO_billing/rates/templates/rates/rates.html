@@ -1,0 +1,55 @@
+{% extends 'pagination/pagination_base.html' %}
+{% block title %}Rates{% endblock %}
+{% block before_pagination %}
+	<h1>
+		Rates
+		<a class="btn btn-success pull-right" href="{% url 'create_rate' %}">New rate</a>
+	</h1>
+	{% if page %}
+	<div class="row" style="margin-bottom: 20px">
+		<div class="col-sm-4">
+			<input id="search" type="text" placeholder="Search for a rate" class="form-control" autofocus>
+		</div>
+	</div>
+	{% endif %}
+{% endblock %}
+{% block pagination_content %}
+	<table class="table table-bordered table-condensed table-striped table-hover thead-light">
+		<thead>
+			<tr>
+				<th>{% include 'pagination/pagination_column.html' with order_by='type' name='Type' %}</th>
+				<th>Item</th>
+				{% if rate_categories_exist %}<th>{% include 'pagination/pagination_column.html' with order_by='category' name='Category' %}</th>{% endif %}
+				<th>{% include 'pagination/pagination_column.html' with order_by='amount' name='Rate' %}</th>
+				<th class="button-column-minimum">{% include 'pagination/pagination_column.html' with order_by='flat' name='Flat Rate' align=True  %}</th>
+				<th>{% include 'pagination/pagination_column.html' with order_by='minimum_charge' name='Minimum Charge'%}</th>
+				<th class="text-center button-column-minimum"></th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for rate in page %}
+				<tr>
+					<td>{{ rate.type }}</td>
+					<td>{{ rate.get_item|default_if_none:"" }}</td>
+					{% if rate_categories_exist %}<td>{{ rate.category|default_if_none:"" }}</td>{% endif %}
+					<td>{{ rate.amount }}</td>
+					<td class="text-center"><span class="glyphicon {% if rate.flat %}glyphicon-ok success-highlight{% endif %}"></span></td>
+					<td>{{ rate.minimum_charge|default_if_none:'' }}</td>
+					<td><button type="button" class="btn btn-xs btn-default" title="Edit rate" onclick="window.location = '{% url 'edit_rate' rate.type.get_rate_group_type rate.id %}'"><i class="glyphicon glyphicon-pencil"></i></button></td>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+	<script>
+	function get_rate(jquery_event, search_selection, dataset_name)
+		{
+			window.location.href = "{% url 'edit_rate' 'tool' 999 %}".replace('tool', search_selection.type_value).replace('999', search_selection.id);
+		}
+		function on_load()
+		{
+			$("#search").autocomplete('users', get_rate, {{ search_rates }}).focus();
+		}
+		window.addEventListener('load', on_load, true);
+	</script>
+{% endblock %}
+{% block table_empty_content %}There are currently no rates saved in NEMO.{% endblock %}
