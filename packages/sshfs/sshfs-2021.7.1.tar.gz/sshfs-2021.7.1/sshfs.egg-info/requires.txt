@@ -1,0 +1,26 @@
+fsspec==2021.7.0
+asyncssh==2.7.0
+
+[:python_version < "3.7"]
+async_exit_stack==1.0.1
+
+[bcrypt]
+asyncssh[bcrypt]
+
+[fido2]
+asyncssh[fido2]
+
+[gssapi]
+asyncssh[gssapi]
+
+[libnacl]
+asyncssh[libnacl]
+
+[pkcs11]
+asyncssh[python-pkcs11]
+
+[pyopenssl]
+asyncssh[pyopenssl]
+
+[pywin32]
+asyncssh[pywin32]
