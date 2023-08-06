@@ -1,0 +1,6 @@
+include src/vltava/resources/nlp_czech-morfflex-161115-no_dia.dict
+include src/vltava/resources/majka.w-lt
+include src/vltava/resources/cs.stopwords
+include vltava/resources/nlp_czech-morfflex-161115-no_dia.dict
+include vltava/resources/majka.w-lt
+include vltava/resources/cs.stopwords

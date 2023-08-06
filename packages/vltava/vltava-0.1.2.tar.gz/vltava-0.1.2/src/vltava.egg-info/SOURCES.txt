@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/vltava/__init__.py
+src/vltava.egg-info/PKG-INFO
+src/vltava.egg-info/SOURCES.txt
+src/vltava.egg-info/dependency_links.txt
+src/vltava.egg-info/requires.txt
+src/vltava.egg-info/top_level.txt
+src/vltava/resources/__init__.py
+src/vltava/resources/cs.stopwords
+src/vltava/resources/majka.w-lt
+src/vltava/resources/nlp_czech-morfflex-161115-no_dia.dict
