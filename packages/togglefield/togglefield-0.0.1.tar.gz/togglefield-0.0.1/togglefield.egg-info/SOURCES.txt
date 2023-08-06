@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+togglefield/__init__.py
+togglefield/admin.py
+togglefield/apps.py
+togglefield/forms.py
+togglefield/models.py
+togglefield/tests.py
+togglefield/views.py
+togglefield/widgets.py
+togglefield.egg-info/PKG-INFO
+togglefield.egg-info/SOURCES.txt
+togglefield.egg-info/dependency_links.txt
+togglefield.egg-info/top_level.txt
+togglefield/migrations/__init__.py
+togglefield/static/__init__.py
