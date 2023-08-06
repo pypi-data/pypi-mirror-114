@@ -1,0 +1,5 @@
+imagefilters-0.6.0.dist-info/METADATA,sha256=QJ-uBfdG_rUoDkM6bWxIp2dY3xfHQ1zVT0fs-RFLHWI,483
+imagefilters-0.6.0.dist-info/WHEEL,sha256=35WtLFc-0oiPIEmuomQNh871XmTxdQWLojkG7mbwG9o,104
+filters/__init__.py,sha256=3bRqNt0OmWXdVwcXSLRtyCq2rTIa1j3liML9Xi-CW0k,183
+filters/filters.cpython-39-darwin.so,sha256=ZxdvfhVqooMlyXFY8kSaEH0AWmRiwf9SpyyB8-ULsaQ,1369372
+imagefilters-0.6.0.dist-info/RECORD,,

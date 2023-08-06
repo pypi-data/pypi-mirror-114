@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: imagefilters
+Version: 0.6.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Rust
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Summary: A project that incorporates a Rust image library and exposes it as a python module
+Author: Michael Pascuzzi
