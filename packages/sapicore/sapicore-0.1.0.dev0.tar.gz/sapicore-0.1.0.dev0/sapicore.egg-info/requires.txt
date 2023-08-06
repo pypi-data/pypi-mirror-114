@@ -1,0 +1,14 @@
+numpy
+tqdm
+pandas
+ruamel.yaml
+nixio
+tree-config
+
+[dev]
+pytest>=3.6
+pytest-cov
+flake8
+sphinx-rtd-theme
+coveralls
+sphinx
