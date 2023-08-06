@@ -1,0 +1,15 @@
+airflow/providers/sftp/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/sftp/get_provider_info.py,sha256=maa9_ie-AP2_I0zOhGnrS1Ds_ufzOEeyboEMnHIhSyE,2486
+airflow/providers/sftp/hooks/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/sftp/hooks/sftp.py,sha256=I3oxAUHbUnZk4PhakTDTh02ZCvDQA0m6ozdOpfOwdhE,11761
+airflow/providers/sftp/operators/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/sftp/operators/sftp.py,sha256=OY5epE4FRntqt8JrL_YjXYLU8XwwzBhPQlyIbrcQbU8,7403
+airflow/providers/sftp/sensors/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/sftp/sensors/sftp.py,sha256=OHtFR_zqAJvYr9wsnaKYr-qeq4n8H7B7rFDiqh5QCKQ,2028
+apache_airflow_providers_sftp-2.1.0rc2.dist-info/LICENSE,sha256=gXPVwptPlW1TJ4HSuG5OMPg-a3h43OGMkZRR1rpwfJA,10850
+apache_airflow_providers_sftp-2.1.0rc2.dist-info/METADATA,sha256=nlfxa67-SX_29i69uNKo9edMhEMPbgife9eDRgKDrQg,7319
+apache_airflow_providers_sftp-2.1.0rc2.dist-info/NOTICE,sha256=m-6s2XynUxVSUIxO4rVablAZCvFq-wmLrqV91DotRBw,240
+apache_airflow_providers_sftp-2.1.0rc2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+apache_airflow_providers_sftp-2.1.0rc2.dist-info/entry_points.txt,sha256=GUxky3ALIAgLWm9IskNLAMYPg3v1w20a_fCQI-0j-3s,102
+apache_airflow_providers_sftp-2.1.0rc2.dist-info/top_level.txt,sha256=OeMVH5md7fr2QQWpnZoOWWxWO-0WH1IP70lpTVwopPg,8
+apache_airflow_providers_sftp-2.1.0rc2.dist-info/RECORD,,
