@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-26 07:58+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: __init__.py:9
+msgid "Clothes"
+msgstr "Одежда"
+
+#: constants.py:11
+msgid "Male"
+msgstr "Мужской"
+
+#: constants.py:12
+msgid "Female"
+msgstr "Женский"
+
+#: constants.py:13
+msgid "Both"
+msgstr "Оба"
+
+#: models.py:15 models.py:151
+msgid "Sex"
+msgstr "Стать"
+
+#: models.py:32
+msgid "Category"
+msgstr "Категория"
+
+#: models.py:37
+msgid "Size grid"
+msgstr "Размерная сетка"
+
+#: models.py:42
+msgid "Age"
+msgstr "Возвраст"
+
+#: models.py:46
+msgid "Adult"
+msgstr "Взрослый"
+
+#: models.py:47
+msgid "Child"
+msgstr "Ребенок"
+
+#: models.py:54
+msgid "Category profile"
+msgstr "Профиль категории"
+
+#: models.py:55
+msgid "Category profiles"
+msgstr "Профили категорий"
+
+#: models.py:91
+msgid "Size"
+msgstr "Размер"
+
+#: models.py:96
+msgid "Ordered product"
+msgstr "Заказаный товар"
+
+#: models.py:101
+msgid "Breast size"
+msgstr "Объем груди (см)"
+
+#: models.py:106
+msgid "Waist volume"
+msgstr "Объем талии (см)"
+
+#: models.py:111
+msgid "Hips volume"
+msgstr ""
+
+#: models.py:116
+msgid "Length of the sleeve from the shoulder"
+msgstr "Объем бедер (см)"
+
+#: models.py:121
+msgid "Shoulder length"
+msgstr "Плечо (см)"
+
+#: models.py:126
+msgid "Product length"
+msgstr "Длина изделия (см)"
+
+#: models.py:131
+msgid "Back width"
+msgstr "Ширина спины (см)"
+
+#: models.py:136
+msgid "Neck volume"
+msgstr "Объем шеи (см)"
+
+#: models.py:141
+msgid "Length of dress up to waist"
+msgstr "Длина платья до талии (см)"
+
+#: models.py:144
+msgid "Length of dress from waist"
+msgstr "Длина платья от талии (см)"
+
+#: models.py:146
+msgid "Comment"
+msgstr "Комментарий"
+
+#: templates/clothes/modal.html:8
+msgid "Please insert sizes"
+msgstr "Пожалуйста введите размеры"
+
+#: templates/clothes/modal.html:21
+msgid "Male sizes"
+msgstr "Мужские размеры"
+
+#: templates/clothes/modal.html:44
+msgid "Female sizes"
+msgstr "Женские размеры"
+
+#: templates/clothes/modal.html:72
+msgid "Save"
+msgstr "Сохранить"
+
+#: templates/clothes/modal.html:76
+msgid "Cancel"
+msgstr "Отменить"
+
+#: templates/clothes/new_size_grid_email_for_manager.html:21
+msgid "Product"
+msgstr "Товар"
+
+#: templates/clothes/new_size_grid_email_for_manager.html:22
+msgid "Price"
+msgstr "Цена"
+
+#: utils.py:10
+msgid "New size grid for product"
+msgstr "Новая размерная сетка для товара"
