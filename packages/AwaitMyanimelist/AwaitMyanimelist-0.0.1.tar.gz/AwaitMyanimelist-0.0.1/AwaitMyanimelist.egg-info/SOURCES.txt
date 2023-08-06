@@ -1,0 +1,12 @@
+setup.py
+AwaitMyanimelist/__init__.py
+AwaitMyanimelist/anime.py
+AwaitMyanimelist/main.py
+AwaitMyanimelist/malUser.py
+AwaitMyanimelist/mal_client.py
+AwaitMyanimelist/manga.py
+AwaitMyanimelist.egg-info/PKG-INFO
+AwaitMyanimelist.egg-info/SOURCES.txt
+AwaitMyanimelist.egg-info/dependency_links.txt
+AwaitMyanimelist.egg-info/requires.txt
+AwaitMyanimelist.egg-info/top_level.txt
