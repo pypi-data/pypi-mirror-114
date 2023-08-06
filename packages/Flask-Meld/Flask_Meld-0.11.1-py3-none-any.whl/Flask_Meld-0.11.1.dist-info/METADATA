@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: Flask-Meld
+Version: 0.11.1
+Summary: Meld is a framework for Flask that allows you to create dynamic user interfaces using Python and the Jinja2 templating engine.
+Home-page: http://github.com/mikeabrahamsen/Flask-Meld/
+Author: Michael Abrahamsen
+Author-email: mail@michaelabrahamsen.com
+License: MIT
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Requires-Dist: Flask (>=0.9)
+Requires-Dist: beautifulsoup4 (>=4)
+Requires-Dist: orjson (>=3.4.6)
+Requires-Dist: flask-socketio (>=5)
+Requires-Dist: gevent-websocket (>=0.10.1)
+Requires-Dist: jinja2-simple-tags (==0.3.1)
+Requires-Dist: click (==7.1.2)
+
+# Flask-Meld
+
+Official Website - [Flask-Meld.dev](https://www.flask-meld.dev)
+
+Project inspiration (outdated examples) - [Ditch Javascript Frameworks For Pure Python Joy](https://michaelabrahamsen.com/posts/flask-meld-ditch-javascript-frameworks-for-pure-python-joy/) 
+
+Join the community on Discord - https://discord.gg/DMgSwwdahN
+
+Meld is a framework for Flask to meld your frontend and backend code. What does
+that mean? It means you can enjoy writing dynamic user interfaces in pure Python.
+
+Less context switching.
+No need to write javascript.
+More fun!
+
+
