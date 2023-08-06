@@ -1,0 +1,8 @@
+id: unzip
+name: unzip
+labels:
+  - cli
+  - utils
+formulas:
+  apt: unzip
+  pacman: unzip

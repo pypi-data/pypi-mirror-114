@@ -1,0 +1,10 @@
+id: vlc
+name: VLC
+labels:
+  - gui
+  - media
+formulas:
+  apt: vlc
+  choco: vlc
+  pacman: vlc
+  winget: VideoLAN.VLC

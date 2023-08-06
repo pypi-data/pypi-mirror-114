@@ -1,0 +1,8 @@
+id: adobe-reader
+name: Adobe Acrobat Reader DC
+description: Adobe Acrobat Reader DC
+labels:
+  - gui
+  - utils
+formulas:
+  choco: adobereader

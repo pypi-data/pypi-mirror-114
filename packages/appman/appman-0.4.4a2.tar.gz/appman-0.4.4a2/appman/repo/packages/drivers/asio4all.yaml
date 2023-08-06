@@ -1,0 +1,7 @@
+id: asio4all
+name: asio4all
+description: ASIO4ALL is a hardware independent low latency ASIO driver for WDM audio devices
+labels:
+  - audio
+formulas:
+  choco: asio4all

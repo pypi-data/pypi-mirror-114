@@ -1,0 +1,9 @@
+id: keychain
+name: keychain
+description: null
+labels:
+  - cli
+  - security
+formulas:
+  apt: keychain
+  pacman: keychain

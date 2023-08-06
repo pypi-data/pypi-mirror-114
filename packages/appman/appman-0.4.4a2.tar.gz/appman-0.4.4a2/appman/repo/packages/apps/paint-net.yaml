@@ -1,0 +1,7 @@
+id: paint-net
+name: Paint.NET
+description: Paint.NET is free image and photo editing software for PCs that run Windows.
+labels:
+  - gui
+formulas:
+  choco: paint.net

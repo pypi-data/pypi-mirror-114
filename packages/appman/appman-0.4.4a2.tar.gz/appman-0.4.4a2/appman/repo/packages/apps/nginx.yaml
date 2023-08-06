@@ -1,0 +1,12 @@
+id: nginx
+name: nginx
+description: An HTTP and reverse proxy server, a mail proxy server, and a generic
+  TCP/UDP proxy server
+labels:
+  - cli
+  - dev-tools
+  - web-server
+formulas:
+  apt: nginx
+  pacman: nginx
+  scoop: nginx

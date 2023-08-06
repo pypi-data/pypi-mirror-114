@@ -1,0 +1,7 @@
+os: arch
+commands:
+  init: sudo pacman -Syu --noconfirm
+  install: sudo pacman -S --noconfirm $pmid
+  uninstall: sudo pacman -R --noconfirm $pmid
+  update-all: sudo pacman -Syu --noconfirm
+  installed: pacman -Q $pmid

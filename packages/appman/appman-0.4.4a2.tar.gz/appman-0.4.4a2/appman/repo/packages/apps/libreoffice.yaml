@@ -1,0 +1,7 @@
+id: libreoffice
+name: LibreOffice
+labels:
+  - gui
+formulas:
+  choco: libreoffice-still
+  winget: LibreOffice.LibreOffice

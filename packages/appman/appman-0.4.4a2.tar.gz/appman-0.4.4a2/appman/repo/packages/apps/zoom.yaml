@@ -1,0 +1,8 @@
+id: zoom
+name: Zoom
+labels:
+  - gui
+  - communication
+formulas:
+  choco: zoom
+  winget: Zoom.Zoom

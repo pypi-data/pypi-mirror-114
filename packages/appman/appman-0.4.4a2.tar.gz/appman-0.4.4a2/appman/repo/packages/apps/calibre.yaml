@@ -1,0 +1,8 @@
+id: calibre
+name: Calibre
+labels:
+  - gui
+  - books
+formulas:
+  choco: calibre
+  winget: calibre.calibre

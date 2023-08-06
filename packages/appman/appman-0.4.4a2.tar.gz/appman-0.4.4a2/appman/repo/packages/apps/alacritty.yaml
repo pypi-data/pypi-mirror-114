@@ -1,0 +1,7 @@
+id: alacritty
+name: Alacritty
+description: Alacritty is a modern terminal emulator that comes with sensible defaults, but allows for extensive configuration
+labels:
+  - gui
+formulas:
+  choco: alacritty

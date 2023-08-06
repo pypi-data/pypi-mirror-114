@@ -1,0 +1,11 @@
+id: python2
+name: python2
+labels:
+  - cli
+  - dev-tools
+  - prog-langs
+formulas:
+  apt: python2
+  choco: python2
+  pacman: python2
+  winget: Python.Python.2

@@ -1,0 +1,7 @@
+id: obsidian
+name: Obsidian
+labels:
+  - gui
+  - notes
+formulas:
+  choco: obsidian

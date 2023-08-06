@@ -1,0 +1,8 @@
+id: slack
+name: Slack
+labels:
+  - gui
+  - communication
+formulas:
+  choco: slack
+  winget: SlackTechnologies.Slack

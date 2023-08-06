@@ -1,0 +1,8 @@
+id: bitwarden-gui
+name: Bitwarden
+description: Bitwarden is the easiest and safest way to store all of your logins and passwords while conveniently keeping them synced between all of your devices.
+labels:
+  - gui
+  - security
+formulas:
+  choco: bitwarden

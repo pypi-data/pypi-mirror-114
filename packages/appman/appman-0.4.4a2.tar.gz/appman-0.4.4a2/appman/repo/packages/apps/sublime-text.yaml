@@ -1,0 +1,8 @@
+id: sublime-text
+name: Sublime Text
+labels:
+  - gui
+  - editor
+formulas:
+  choco: sublimetext3.app
+  winget: SublimeHQ.SublimeText

@@ -1,0 +1,8 @@
+id: pass
+name: pass
+labels:
+  - cli
+  - security
+formulas:
+  apt: pass
+  pacman: pass

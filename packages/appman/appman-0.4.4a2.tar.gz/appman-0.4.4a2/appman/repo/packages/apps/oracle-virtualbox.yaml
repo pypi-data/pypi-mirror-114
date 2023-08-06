@@ -1,0 +1,8 @@
+id: oracle-virtualbox
+name: Oracle VirtualBox
+labels:
+  - gui
+  - dev-tools
+formulas:
+  choco: virtualbox
+  winget: Oracle.VirtualBox

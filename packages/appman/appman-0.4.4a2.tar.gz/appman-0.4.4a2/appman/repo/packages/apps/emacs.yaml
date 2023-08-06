@@ -1,0 +1,8 @@
+id: emacs
+name: emacs
+labels:
+  - cli
+  - editor
+formulas:
+  apt: emacs
+  pacman: emacs

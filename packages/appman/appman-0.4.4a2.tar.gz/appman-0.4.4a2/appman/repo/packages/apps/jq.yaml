@@ -1,0 +1,10 @@
+id: jq
+name: jq
+description: Lightweight and flexible command-line JSON processor
+labels:
+  - cli
+  - utils
+formulas:
+  apt: jq
+  pacman: jq
+  scoop: jq
