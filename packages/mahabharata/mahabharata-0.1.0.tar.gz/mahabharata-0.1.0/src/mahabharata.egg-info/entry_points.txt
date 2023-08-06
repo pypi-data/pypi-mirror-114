@@ -1,0 +1,3 @@
+[console_scripts]
+mahabharata = mahabharata.services.cli_service.group:cli
+

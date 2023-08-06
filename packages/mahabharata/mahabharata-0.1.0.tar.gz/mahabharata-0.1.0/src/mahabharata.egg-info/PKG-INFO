@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: mahabharata
+Version: 0.1.0
+Summary: Mahabharata poem query cli
+Home-page: UNKNOWN
+Author: Sharlon Regales
+Author-email: sharlon.regales@tno.nl
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# Mahabharata
+
+A cli that spits out some poems from the longest poem in history
+
+
