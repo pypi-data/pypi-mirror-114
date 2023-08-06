@@ -1,0 +1,151 @@
+{% extends "layout.html" %}
+
+{% block column %}
+{{ super() }}
+<h3>{{ _("Information") }}</h3>
+<table class="table table-sm">
+    <tr>
+        <td>Submission author(s)</td>
+        <td>{% for author in submission_authors %}
+            <p>{{ author }}</p>
+            {% endfor %}
+        </td>
+    </tr>
+    <tr>
+        <td>Task</td>
+        <td>{{ task.get_name(user_manager.session_language()) }}</td>
+    </tr>
+    <tr>
+        <td>Submitted</td>
+        <td>{{ submitted_on }}</td>
+    </tr>
+    {% if grades %}
+    <tr>
+        <td>Mean style grade</td>
+        <td>{{grades.get_mean(config) | int }} / 100</td>
+    </tr>
+    {% endif %}
+</table>
+{% endblock %}
+
+{% block navbar %}
+<!-- TODO: fix navbar! Remove admin breadcrumb. -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{get_homepath()}}/course/{{course.get_id()}}">{{
+                course.get_name(user_manager.session_language()) }}</a></li>
+        <li class="breadcrumb-item">
+            <a href="{{get_homepath()}}/admin/{{course.get_id()}}" title="{{ _('Administration') }}"
+                data-toggle="tooltip" data-placement="bottom">
+                <i class="fa fa-user-secret"></i>
+            </a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="{{get_homepath()}}/admin/{{course.get_id()}}/students" title="{{ _('Students') }}"
+                data-toggle="tooltip" data-placement="bottom">
+                <i class="fa fa-user"></i>
+            </a>
+        </li>
+        <li class="breadcrumb-item"><a href="{{get_homepath()}}/admin/{{course.get_id()}}/student/{{username}}">{{
+                user_realname }}</a>
+        </li>
+        <li class="breadcrumb-item"><a
+                href="{{get_homepath()}}/admin/{{course.get_id()}}/submissions?users={{username}}&tasks={{task.get_id()}}">{{
+                task.get_name(user_manager.session_language()) }}</a></li>
+        <li class="breadcrumb-item"><a href="{{get_homepath()}}/submission/{{submission._id}}">{{ submission['_id'] |
+                string }}<span class="sr-only">{{ _("(current)")
+                    }}</span></a></li>
+        <li class="breadcrumb-item active"><a href="#">Coding Style<span
+                    class="sr-only">(current)</span></a></li>
+    </ol>
+</nav>
+{% endblock %}
+
+
+
+<!-- Display grading categories -->
+{% block content %}
+
+
+<div class="container-fluid">
+    <h1 class="card-title"> Coding Style Grades</h1>
+    <hr/>
+    <div>
+    {% for id, grade in grades.grades.items() %}
+        <!-- Create new row every second index -->
+        <!-- Is there a better way to do this? -->
+        {% if loop.index0 % 2 == 0 %}
+            <div class="row m-1 mt-5">
+        {% endif %}
+    
+        <!-- Grade Box -->
+        <div class="col-md-5 p-4 mr-5 border">
+            <h3>
+                <!-- Unlike grading page, we always show the stored description/name. -->
+                {% if id in config.enabled %}
+                    {% set disabled = False %}
+                {% else %}
+                    {% set disabled = True %}
+                {% endif %}
+                {{ grade.name }} {% if disabled %} (disabled) {% endif %}
+            </h3>
+            <p>
+                {{ grade.description }}
+            </p>
+
+            <!-- Display grade frame -->
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="{{id}}_grade"><h5>Grade:</h5></label>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>{{ grade.grade }} / 100</p>
+                        </div>
+                    </div>
+
+                    {% if grade.feedback %}
+                    <div class="row pt-3">
+                        <div class="col-md-12">
+                            <label for="{{id}}_feedback"><h5>Feedback:</h5></label>
+                            <br>  
+                            <!-- Show feedback (if any) -->
+                            
+                            <p id="{{id}}_feedback" class="border p-2" {% if disabled %} readonly {% endif %}>
+                                {%- if grade.feedback -%}
+                                    {{ grade.feedback }}
+                                {%- else -%}
+                                    <br>
+                                {%- endif -%}
+                            </p>
+                            
+                            {% if disabled %}
+                                <small>NOTE: This category was enabled when the submission was graded, but has since been disabled or renamed.</small>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    
+    {% if loop.index % 2 == 0 or loop.last -%}
+        </div>
+    {%- endif -%}
+
+    {% endfor %}
+
+
+    <!-- Display mean -->
+        <!-- Display mean grade -->
+        <div class="row">
+            <div class="col-md-12 p-4 ">
+                {% if grades %}
+                <h4>Average:</h4>
+                <p>{{grades.get_mean(config) | int}} / 100</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
