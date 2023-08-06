@@ -1,0 +1,9 @@
+sopel_modules.imdb-1.2.2-py3.9-nspkg.pth,sha256=GpO4OWqrcKGJyabPvvsBuBcrUk4pFr3K5HYvSnuQBi8,574
+sopel_modules/imdb/__init__.py,sha256=UaD1iCJ7w4eYflkDVy29BTmhfoj_rgPrGzwXvR7G6Pg,299
+sopel_modules/imdb/imdb.py,sha256=dHJX1zgd2UcRkUZ76j0Xhb2E4tY67DM7qyaNuAZnzKQ,5753
+sopel_modules.imdb-1.2.2.dist-info/LICENSE,sha256=cba8xvCgl5v_9PeMbodJZLvW110vCHmlqxyXuey1J1Q,1068
+sopel_modules.imdb-1.2.2.dist-info/METADATA,sha256=bwwHJaFCRKoDDVUGAmM6Pb09LVrnQMK7lUcv_Nm-hFg,1654
+sopel_modules.imdb-1.2.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sopel_modules.imdb-1.2.2.dist-info/namespace_packages.txt,sha256=1GJk87jnz3vpuDVQimAVoSTAzCNN7PNkycVbH0Q1pkg,14
+sopel_modules.imdb-1.2.2.dist-info/top_level.txt,sha256=1GJk87jnz3vpuDVQimAVoSTAzCNN7PNkycVbH0Q1pkg,14
+sopel_modules.imdb-1.2.2.dist-info/RECORD,,
