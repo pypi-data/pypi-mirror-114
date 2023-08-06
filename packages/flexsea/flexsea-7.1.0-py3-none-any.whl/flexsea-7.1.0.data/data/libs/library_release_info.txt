@@ -1,0 +1,14 @@
+When committing libraries please update this document
+These directories are intended to keep precompiled plan stack libraries
+for situations like someone wanting to use Python scripts without needing
+to install C++ compiler and compiling plan stack.
+
+The intent is to only update the precompiled libraries on major releases.
+
+Status of libraries
+linux -
+raspberryPi -
+win32 -
+win64 -
+
+All Libraries are currently in Development and does not reflect any particular release.  See lib_rev.info file in each folder for commit ID's.
