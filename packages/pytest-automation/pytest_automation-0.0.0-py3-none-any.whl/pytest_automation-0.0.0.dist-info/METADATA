@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pytest-automation
+Version: 0.0.0
+Summary: pytest plugin for building a test suite, using YAML files to extend pytest parameterize functionality.
+Home-page: https://github.com/asfadmin/Discovery-PytestAutomation
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Framework :: Pytest
+Description-Content-Type: text/markdown
+Requires-Dist: PyYAML
+
+UNKNOWN
+
+
