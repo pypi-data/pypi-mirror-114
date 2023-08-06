@@ -1,0 +1,8 @@
+README.md
+setup.py
+polarize/__init__.py
+polarize/main.py
+polarize.egg-info/PKG-INFO
+polarize.egg-info/SOURCES.txt
+polarize.egg-info/dependency_links.txt
+polarize.egg-info/top_level.txt
