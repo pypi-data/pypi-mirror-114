@@ -1,0 +1,13 @@
+airflow/providers/apache/sqoop/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/apache/sqoop/get_provider_info.py,sha256=jCMc-nFVAqSgKvEi-dA6OmtvmseYIO5YlxP28YE_lbg,2116
+airflow/providers/apache/sqoop/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/apache/sqoop/hooks/sqoop.py,sha256=j0hUsvt984lUqP6zfs8DTGCxGL2zdFy4XCzdP0Adr0Q,15932
+airflow/providers/apache/sqoop/operators/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/apache/sqoop/operators/sqoop.py,sha256=Uq5m-xhupBt-ut8lCU3UK5lucnCpCa2uvc-n8Ax6sZY,11126
+apache_airflow_providers_apache_sqoop-2.0.1rc2.dist-info/LICENSE,sha256=gXPVwptPlW1TJ4HSuG5OMPg-a3h43OGMkZRR1rpwfJA,10850
+apache_airflow_providers_apache_sqoop-2.0.1rc2.dist-info/METADATA,sha256=bzYCjEG4PvpJ_0k50r5Jox9snY35K8ruKoKUsgrIYK8,5428
+apache_airflow_providers_apache_sqoop-2.0.1rc2.dist-info/NOTICE,sha256=m-6s2XynUxVSUIxO4rVablAZCvFq-wmLrqV91DotRBw,240
+apache_airflow_providers_apache_sqoop-2.0.1rc2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+apache_airflow_providers_apache_sqoop-2.0.1rc2.dist-info/entry_points.txt,sha256=XENSB5Dx1JFWXduCvJwhlCBRrGGjpdczlMaKCWC52vk,110
+apache_airflow_providers_apache_sqoop-2.0.1rc2.dist-info/top_level.txt,sha256=OeMVH5md7fr2QQWpnZoOWWxWO-0WH1IP70lpTVwopPg,8
+apache_airflow_providers_apache_sqoop-2.0.1rc2.dist-info/RECORD,,
