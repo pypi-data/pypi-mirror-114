@@ -1,0 +1,9 @@
+bs4
+requests
+cfscrape
+typing
+colorama
+irc
+puffotter
+sentry-sdk
+names
