@@ -1,0 +1,10 @@
+napari_oclrfc/__init__.py,sha256=uyyqOay9C2GvYQV3T6tOUemCdlnAgOH8Zsf0a-sI2Lk,173
+napari_oclrfc/_function.py,sha256=4Wp_itmV1PJtcBZXhtq0Cn93OclqFf8N1uwYQcrv2Ww,4884
+napari_oclrfc/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_oclrfc/_tests/test_function.py,sha256=-iEKt3tTXBYCkf2td6VRZSjfuLrIyMV2hC7-UW9rUP4,85
+napari_oclrfc-0.4.2.dist-info/LICENSE,sha256=BI8iYAKKLuVbRNJp_QRiKFaK9D75Tmkx_qoZqBQ-t3I,1512
+napari_oclrfc-0.4.2.dist-info/METADATA,sha256=ItmJGjn149UFaXyCyY0xEY6fKyAGypp5LZKKNnZrexo,7157
+napari_oclrfc-0.4.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+napari_oclrfc-0.4.2.dist-info/entry_points.txt,sha256=u4DzQVP-Xz_ZVj6_jiZkns-0zxEaI6NUOeoTz61qi_w,46
+napari_oclrfc-0.4.2.dist-info/top_level.txt,sha256=9QxWhh8hiwdjLibu2oy2JgU4OyHRg7rrsV33apZjG8o,14
+napari_oclrfc-0.4.2.dist-info/RECORD,,
