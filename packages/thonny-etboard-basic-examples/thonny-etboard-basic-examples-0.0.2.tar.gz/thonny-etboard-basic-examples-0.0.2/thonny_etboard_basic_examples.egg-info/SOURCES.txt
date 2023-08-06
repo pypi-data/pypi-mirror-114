@@ -1,0 +1,24 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+thonny_etboard_basic_examples.egg-info/PKG-INFO
+thonny_etboard_basic_examples.egg-info/SOURCES.txt
+thonny_etboard_basic_examples.egg-info/dependency_links.txt
+thonny_etboard_basic_examples.egg-info/requires.txt
+thonny_etboard_basic_examples.egg-info/top_level.txt
+thonnycontrib/thonny_etboard_basic_examples/__init__.py
+thonnycontrib/thonny_etboard_basic_examples/__pycache__/__init__.cpython-39.pyc
+thonnycontrib/thonny_etboard_basic_examples/etboard/examples/01. RED LED blink/ex_01.py
+thonnycontrib/thonny_etboard_basic_examples/etboard/examples/02. 4 led blink/ex_02.py
+thonnycontrib/thonny_etboard_basic_examples/etboard/examples/03. 4 led sequential blink/ex_03.py
+thonnycontrib/thonny_etboard_basic_examples/etboard/examples/04. 4 led sequential blink2/ex_04.py
+thonnycontrib/thonny_etboard_basic_examples/etboard/examples/05. 4 led sequential blink3/ex_05.py
+thonnycontrib/thonny_etboard_basic_examples/etboard/examples/06. 4 led blink, red button press off/ex_06.py
+thonnycontrib/thonny_etboard_basic_examples/etboard/examples/07. red led toggle, red butoon press/ex_07.py
+thonnycontrib/thonny_etboard_basic_examples/etboard/examples/08. led on same button color/ex_08.py
+thonnycontrib/thonny_etboard_basic_examples/etboard/examples/09. oled write, depending on the value light sensor/ex_09.py
+thonnycontrib/thonny_etboard_basic_examples/etboard/examples/10. ultrasonic distance, led blink/ex_10.py
+thonnycontrib/thonny_etboard_basic_examples/etboard/lib/OLED_U8G2.py
+thonnycontrib/thonny_etboard_basic_examples/etboard/lib/pin_define.py
+thonnycontrib/thonny_etboard_basic_examples/etboard/lib/ssd1306.py
