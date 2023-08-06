@@ -1,0 +1,3 @@
+[console_scripts]
+blal = blal.__main__:main
+
