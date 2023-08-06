@@ -1,0 +1,3 @@
+[console_scripts]
+shorty = shorty.__main__:main
+
