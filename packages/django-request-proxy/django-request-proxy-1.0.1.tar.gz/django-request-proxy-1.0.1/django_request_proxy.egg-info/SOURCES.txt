@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+django_request_proxy.egg-info/PKG-INFO
+django_request_proxy.egg-info/SOURCES.txt
+django_request_proxy.egg-info/dependency_links.txt
+django_request_proxy.egg-info/requires.txt
+django_request_proxy.egg-info/top_level.txt
+request_proxy/__init__.py
+request_proxy/urls.py
+request_proxy/views.py
+request_proxy/migrations/__init__.py
