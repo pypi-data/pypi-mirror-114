@@ -1,0 +1,14 @@
+tcp_tls_tunnel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tcp_tls_tunnel/constants.py,sha256=qelpHTl0lS7E2o7gEtbNlkPXXplNqFSJfThlMsDpUOU,415
+tcp_tls_tunnel/create_tunnel_connection.py,sha256=cjydO9ulpQkl7d3-8V6EC89_P_a-yhFBva_N11REJTE,2608
+tcp_tls_tunnel/dto.py,sha256=PcoYteM_5TP6wjg0MJq3YjlEE4T4rr2aVssBZVIzTKQ,513
+tcp_tls_tunnel/exceptions.py,sha256=u0k3AT8TyBRyYz4hwG0EBc1m5eTkeetVpxKqdHaTorA,482
+tcp_tls_tunnel/httpx_adapter.py,sha256=nriBzZ7hJuya6ee9NDZmycdi2cWIBtwvHeFFEmRdtII,4374
+tcp_tls_tunnel/hyper_http2_adapter.py,sha256=ffX1VDxWIKa2lrij3jjR_n9LI63nSECp-8uc9hbSX8A,7842
+tcp_tls_tunnel/requests_adapter.py,sha256=SPITUa0-bapGqTIEtTc9gMSXDe-6XV8p-O0o1_UYnmM,2872
+tcp_tls_tunnel/utils.py,sha256=qupRRVHLlAHfgmJEqSq-tqtaW-kJrLD3rANeIFvlCog,668
+tcp_tls_tunnel-1.0.1.dist-info/LICENCE,sha256=QX41X_o01YVB1L4msl2J6tZ0xTA8Ap4pf_crFheMphk,1103
+tcp_tls_tunnel-1.0.1.dist-info/METADATA,sha256=NXVOtE3ZobxJu9U8k2SRwIpmT7G7ZnlaGEfu1IE1HN4,6599
+tcp_tls_tunnel-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tcp_tls_tunnel-1.0.1.dist-info/top_level.txt,sha256=S8JrU6DL9jMhRWNWSCC9MGw-UFL6j4imKYkQssj-RXw,15
+tcp_tls_tunnel-1.0.1.dist-info/RECORD,,
