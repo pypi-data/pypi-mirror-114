@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+rwpm.egg-info/PKG-INFO
+rwpm.egg-info/SOURCES.txt
+rwpm.egg-info/dependency_links.txt
+rwpm.egg-info/top_level.txt
+src/rwpm/rwpm.c

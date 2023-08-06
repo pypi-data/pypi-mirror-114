@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: rwpm
+Version: 0.0.0.1.post3
+Summary: A sample Python project
+Home-page: https://github.com/rewq/rwpm
+Author: rewq
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/rewq/rwpm/issues
+Project-URL: Source, https://github.com/rewq/rwpm
+Description: # ReadWriteProcessMemory
+        A Python/C API extension module to interface with process_vm_readv(2) and process_vm_writev(2) system calls.
+        
+        
+Keywords: sample,setuptools,development
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Disassemblers
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: Topic :: System :: Operating System Kernels :: Linux
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
