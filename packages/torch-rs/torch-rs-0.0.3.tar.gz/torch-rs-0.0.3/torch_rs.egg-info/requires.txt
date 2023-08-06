@@ -1,0 +1,10 @@
+torch
+torchvision
+einops
+numpy
+pillow
+tifffile
+
+[train]
+pytorch-lightning
+torchmetrics
