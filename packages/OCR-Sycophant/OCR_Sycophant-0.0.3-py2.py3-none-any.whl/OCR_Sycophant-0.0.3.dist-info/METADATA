@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: OCR-Sycophant
+Version: 0.0.3
+Summary: Simple models and wrapper detector for badly OCRed documents
+Home-page: https://github.com/ponteineptique/OCR-Sycophant
+Author: Thibault Clérice
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: click (==8.0.1)
+Requires-Dist: joblib (==1.0.1)
+Requires-Dist: numpy (==1.19.5)
+Requires-Dist: scikit-learn (==0.24.2)
+Requires-Dist: tqdm (==4.61.2)
+
+
+# OCR Sycophant
+

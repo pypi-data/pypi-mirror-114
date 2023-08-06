@@ -1,0 +1,10 @@
+ocr_sycophant/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ocr_sycophant/cli.py,sha256=13s9R7sJbo7nUyAO3hrTU3Ko-sJ3K8wDbQ9oc3NYQuE,4159
+ocr_sycophant/encoder.py,sha256=CVaFz7skDMhH-LOfQ3Yxk6PwnhdoOTX_su7H_RofNl8,3680
+ocr_sycophant/model.py,sha256=n1UHMngc65nH3KsyiarZ-OsCr2FBRoBY-tL_oFrlSxU,4889
+ocr_sycophant/utils.py,sha256=wdwjxk4CCbEXbar70-vvMgn_pBE5QPprKiRS3MmOicg,1085
+OCR_Sycophant-0.0.3.dist-info/METADATA,sha256=3wMN5aXqihpXLtGC518FHeqBbMJv_g2dnbfCYl3GN2c,876
+OCR_Sycophant-0.0.3.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+OCR_Sycophant-0.0.3.dist-info/entry_points.txt,sha256=dCCCj-Fmj8ZmmWzO0h_IktVfWOkxYUjj55rFfZgKlJY,57
+OCR_Sycophant-0.0.3.dist-info/top_level.txt,sha256=202Cb1gPG8gxiCX8qN9yAG78TOFS6UCocSe47ibmjYo,14
+OCR_Sycophant-0.0.3.dist-info/RECORD,,
