@@ -1,0 +1,6 @@
+What's inside:
+-----------
+
+1.0.1 (29/07/2021)
+------------------
+*   First stable build with MeaningsFinder class for finding definations
