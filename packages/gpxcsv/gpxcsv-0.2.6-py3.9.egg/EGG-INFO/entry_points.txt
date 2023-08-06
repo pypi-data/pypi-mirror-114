@@ -1,0 +1,3 @@
+[console_scripts]
+gpxcsv = gpxcsv.__main__:main
+
