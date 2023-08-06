@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: postbuddy
+Version: 0.1.0
+Summary: Template para nossos e-mails base no cookiecutter e API do Gmail
+Home-page: http://gitlab.internal.b2w.io/team/a-tech/postbuddy
+Author: Diogo Neves
+Author-email: diogooncastro1@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: bigquery
+Requires-Dist: cookiecutter
+Requires-Dist: jinja2
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+
+---
+title: 'Postbuddy Documentation'
+disqus: hackmd
+---
+
+Postbuddy
+===
+
+## Tabela de Conteúdos
+- [Postbuddy](#postbuddy)
+  * [Tabela de Conteúdos](#tabela-de-conte-dos)
+  * [Pré-requisitos](#pr--requisitos)
+  * [Instruções de Uso para gerar o código e o template HTML para o corpo do e-mail](#instru--es-de-uso-para-gerar-o-c-digo-e-o-template-html-para-o-corpo-do-e-mail)
+  * [Instruções de Uso relativas ao código gerado](#instru--es-de-uso-relativas-ao-c-digo-gerado)
+  * [Apêndice](#ap-ndice)
+
+
+## Pré-requisitos
+
+Instalar o Postbuddy é bastante simples. Primeiramente é necessário possuir uma versão recente do Python instalada (3.6 ou superior), depois o único passo adicional necessário é instalar o pacote por meito do pip:
+`pip install postbuddy`
+Simples assim! Agora basta seguir as instruções que constam nesse documento e editar o código para que seu template de e-mail seja gerado com as informações que julgar necessárias.
+
+Instruções de Uso para gerar o código e o template HTML para o corpo do e-mail
+---
+Atualmente apenas um template está disponível para ser gerado, basta usar o comando `postbudy basictemplate` no seu terminal que tudo será gerado automaticamente.
+OBS: Devido a questões de segurança, os arquivos B2W.json e secret.json são gerados vazios, então é indicado preencher com o conteúdo correspondente para cada arquivo.
+
+> Caso tenha interesse em ajudar a manter o repositório, fique a vontade!
+
+Instruções de Uso relativas ao código gerado
+---
+Depois que tudo for gerado corretamente, poderemos ver que uma série de arquivos foram criados em conjunto, a seguir podemos ver um breve resumo explicando cada um dos mais importantes:
+
+- `B2W.json`: **Arquivo de segurança onde deveremos adicionar as informações referentes às credenciais do nosso BigQuery.**
+- `secret.json`: **Segundo arquivo de segurança, mas dessa vez é referente ao usuário responsável pela conta de e-mail, caso seja necessário, links de referência com instruções sobre como gerar esses dados estarão no apêndice.**
+- `GoogleService.py`: **Código criado para criar um serviço válido do Gmail, não será necessário alterar nada nesse arquivo, toda a configuração básica necessária já está criada.**
+- `main.py`: **Arquivo principal para a execução da aplicação, é nele que as informações principais ficam (por exemplo: e-mail de quem está enviando, de quem está recebendo, etc.) De início também não é necessário ter mudanças significativas nesse arquivo, já que a base já está toda feita.**
+- `utils`: **Diretório com todos os arquivos que tenham algum tipo de utilidade mais específica, seja tanto para configurações adicionais quanto para funcionalidades que podem ser adicionadas no corpo do e-mail***
+    - `constants.py`: **Arquivo utilizado para ter as informações bases que podem ser utilizadas em qualquer arquivo, para evitar que as informações precisem ficar sendo copiadas e coladas. As informações que constam dentro desse arquivo, como já é de se esperar, são constantes e não precisam ser alteradas nunca, vale lembrar que, caso necessário, poderão ser adicionadas novos dados, caso sejam necessários**;
+    - `functions.py`: **Aqui é onde encontramos toda a lógica referente a funções que sejam importantes para gerar dados para o e-mail ou para modificar funcionalidades na hora de enviar alguma informação específica para o corpo do e-mail, já que pode se comunicar diretamente com a configuração do jinja**;
+    - `jinja_config.py`: **Toda a configuração referente ao Jinja se encontra  nesse arquivo, para referências futuras, ver apêndice para checar documentação e entender como o template do Jinja funciona**.
+- `email-templates`: **Diretório onde podemos encontrar todos os templates (Jinja) referentes ao projeto, até o momento temos apenas o template básico, mas ele já poderá ser usado amplamente, de acordo com a necessidade do usuário.**
+    - `basic-template`: **Como comentado anteriormente, tempos apenas o template básico até o momento, e é nesse diretório que encontramos todos os arquivos HTML que podem ser modificados de acordo com a necessidade do usuário.**
+        - `base.html`: **Template base para todos os outros, é aqui que encontramos tudo relacionado a CSS e como estará estruturado, como pode ser observado ao abrir.**
+        - `content.html`: **Aqui é onde a mudança mais deve acontecer, já que é onde fica todo o conteúdo do e-mail, assim como informações adicionais que julgar necessárias para serem mostradas no informe.**
+        - `footer.html`: **Apenas o rodapé, dificilmente deverá ser alterado, mas, caso necessário, poderá ser alterado como qualquer HTML.**
+        - `header.html`: **Mais um arquivo que dificilmente precisará ser alterado, mas segue a mesma lógica de todos os outros, caso necessário, só alterar também.**
+
+
+
+## Apêndice
+
+**Links úteis**:
+
+[Documentação da API do Gmail](https://developers.google.com/gmail/api/guides/quickstarts-overview)<br>
+[Tutorial rápido de como habilitar a permissão de uma API através do Google](https://developers.google.com/gmail/api/auth/about-auth)<br>
+[Documentação sobre escopos de autorização](https://developers.google.com/gmail/api/auth/scopes)<br>
+[Como verificar a conta do Gmail na primeira vez que estiver sendo usada](https://support.google.com/cloud/answer/7454865)<br>
+[Documentação do Jinja2](https://jinja.palletsprojects.com/en/3.0.x/)<br>
+[Documentação Cookiecutter](https://cookiecutter.readthedocs.io/en/1.7.2/)
+
+
+**Achou que necessita de mais informações?** Só avisar!
+
+###### tags: `Templates` `Documentação` `Postbuddy`
+
+

@@ -1,0 +1,27 @@
+#!python
+import click
+import pkg_resources
+
+from cookiecutter.main import cookiecutter
+
+VERSION = pkg_resources.require('postbuddy')[0].version
+
+
+@click.group()
+@click.version_option(version=VERSION, prog_name='postbuddy')
+def exec():
+    pass
+
+
+@click.command()
+def basictemplate():
+    cookiecutter(
+        'git+http://gitlab.internal.b2w.io/team/a-tech/postbuddy.git'
+    )
+
+
+exec.add_command(basictemplate)
+
+
+if __name__ == '__main__':
+    exec()
