@@ -1,0 +1,8 @@
+setup.py
+fardel_auth_address/__init__.py
+fardel_auth_address/models.py
+fardel_auth_address/views.py
+fardel_auth_address.egg-info/PKG-INFO
+fardel_auth_address.egg-info/SOURCES.txt
+fardel_auth_address.egg-info/dependency_links.txt
+fardel_auth_address.egg-info/top_level.txt

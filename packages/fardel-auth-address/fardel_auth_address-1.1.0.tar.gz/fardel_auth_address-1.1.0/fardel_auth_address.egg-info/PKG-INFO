@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: fardel-auth-address
+Version: 1.1.0
+Summary: Address extension for FardelCMS users
+Home-page: https://github.com/FardelCMS/fardel_auth_address
+Author: Sepehr Hamzehlouy
+Author-email: s.hamzelooy@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Programming Language :: Python :: 3.7
