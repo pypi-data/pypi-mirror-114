@@ -1,0 +1,326 @@
+####
+# title: config.py
+#
+# language: Python3.8
+# date: 2021-04-23
+# license: GPL>=v3
+# author: Jenny, bue
+#
+# description:
+#   jinxif file name nomenclature, lab, or workplace dependent constants and fuctions are kept here
+#####
+
+# library
+import os
+import stat
+
+# (CHANGE ME)
+
+# const
+
+# standard marker spelling
+# fundamental marke nameing convention rules:
+# 1. marker names can not contain underscores, never!
+es_marker_standard = {
+    '53BP1',
+    'AR', 'aSMA',
+    'BAX','BCL2','BMP2','BMP4','BMP6',
+    'CAV1','CC3','CCND1',
+    'CD3','CD4','CD8','CD20','CD31','CD44','CD45','CD68','CD74','CD90',
+    'CGA',
+    'CK5','CK7','CK8','CK14','CK17','CK18','CK19',
+    'ColI','ColIV','CoxIV',
+    'cPARP',
+    'CSF1R',
+    'DAPI0','DAPI1','DAPI2','DAPI3','DAPI4','DAPI5','DAPI6','DAPI6Q','DAPI7','DAPI7Q','DAPI8','DAPI9','DAPI10','DAPI11','DAPI12',
+    'EGFR','ER','Ecad',
+    'F480','FN1','FoxP3',
+    'GATA3','GATA6','gH2AX','Glut1','GRNZB',
+    'H3K4','H3K27','HER2','HIF1a',
+    'Ki67',
+    'LamAC','LamB1','LamB2','LYVE1',
+    'MSH2','MSH6','MUC1',
+    'PCNA','PD1','PDGFRa','PDL1','PDL1ab','PDL1d','PDPN','PgR','PgRc4',
+    'p63','pAKT','pERK','pHH3','pMYC','pRB','pS62MYC','pS6RP','panCK',
+    'R00c2','R00c3','R00c4', 'R00c5', 
+    'R0c2','R0c3','R0c4','R0c5',
+    'R1c2','R1c3', 'R1c4', 'R1c5',
+    'R2c2', 'R2c3', 'R2c4', 'R2c5', 
+    'R3c2', 'R3c3', 'R3c4', 'R3c5', 
+    'R4c2', 'R4c3', 'R4c4', 'R4c5', 
+    'R5c2', 'R5c3', 'R5c4', 'R5c5', 
+    'R6c2', 'R6c3', 'R6c4', 'R6c5', 
+    'R7c2', 'R7c3', 'R7c4', 'R7c5', 
+    'R8c2', 'R8c3', 'R8c4', 'R8c5', 
+    'R9c2', 'R9c3', 'R9c4', 'R9c5',
+    'R5Qc2','R5Qc3','R5Qc4','R5Qc5',
+    'R6Qc2','R6Qc3','R6Qc4','R6Qc5',
+    'R7Qc2','R7Qc3','R7Qc4','R7Qc5',
+    'R8Qc2','R8Qc3','R8Qc4','R8Qc5',
+    'R10Qc2','R10Qc3','R10Qc4','R10Qc5',
+    'R11Qc2','R11Qc3','R11Qc4','R11Qc5',
+    'R12Qc2','R12Qc3','R12Qc4','R12Qc5',
+    'R13Qc2','R13Qc3','R13Qc4','R13Qc5',
+    'R14Qc2','R14Qc3','R14Qc4','R14Qc5',
+    'RAD51',
+    'S100','SYP',
+    'TUBB3',
+    'Vim',
+    'ZEB1',
+}
+
+# fundamental standard cytoplasm marker nameing convention rules:
+# this set is dependent on what we use for cytoplasm segmentation. in our case usually only Ecad or panCK.
+# in our case usually only Ecad or panCK.
+# 1. markers have to be in the es_marker_standard set.
+es_cytoplasmmarker_standard = {
+    'aSMA',
+    'BAX','BCL2','BMP2','BMP4','BMP6',
+    'CAV1','CGA','CK5','CSF1R','CD44',
+    'CK7','CK8','CK14','CK17','CK18','CK19','panCK',
+    'EGFR','Ecad',
+    'Glut1',
+    'HER2',
+    'LYVE1',
+    'MUC1',
+    'PDGFRa','PDL1',
+    'p63''pAKT''pERK','pS6RP',
+    'S100','SYP',
+    'TFF1','TUBB3',
+    'Vim',
+}
+
+# fundamental marker_partition nameing convention rules:
+# 1. valid standard cellpartition are: Nuclei, Ring, Nucmem, Cellmem
+# 2. marker and partition have to be separated by underscore!
+# 3. marker names can not contain underscores, never!
+# 4. markers have to be in the es_marker_standard set.
+es_markerpartition_standard = {
+    '53BP1_Nuclei',
+    'AR_Nuclei', 'aSMA_Ring',
+    'BAX_Ring', 'BCL2_Ring', 'BMP2_Ring', 'BMP4_Ring', 'BMP6_Ring',
+    'CAV1_Ring', 'CC3_Nuclei', 'CCND1_Nuclei',
+    'CD3_Ring', 'CD4_Ring', 'CD8_Ring', 'CD20_Ring', 'CD31_Ring', 'CD44_Ring', 'CD45_Ring', 'CD68_Ring', 'CD74_Ring', 'CD90_Ring',
+    'CGA_Ring',
+    'CK5_Ring', 'CK7_Ring', 'CK8_Ring', 'CK14_Ring', 'CK17_Ring', 'CK18_Ring', 'CK19_Ring',
+    'ColI_Ring', 'ColIV_Ring', 'CoxIV_Ring',
+    'cPARP_Nuclei',
+    'CSF1R_Ring',
+    'DAPI_Nuclei',
+    'EGFR_Ring','EGFR_Cellmem', 'ER_Nuclei', 'Ecad_Ring','Ecad_Cellmem',
+    'F480_Ring', 'FN1_Ring', 'FoxP3_Nuclei',
+    'GATA3_Nuclei', 'GATA6_Nuclei', 'gH2AX_Nuclei', 'Glut1_Ring', 'GRNZB_Nuclei',
+    'H3K4_Nuclei', 'H3K27_Nuclei', 'HER2_Ring','HER2_Cellmem', 'HIF1a_Nuclei',
+    'Ki67_Nuclei', 'Ki67r_Nuclei', # special
+    'LamAC_Nuclei', 'LamB1_Nuclei', 'LamB2_Nuclei', 'LYVE1_Ring',
+    'MSH2_Nuclei', 'MSH6_Nuclei', 'MUC1_Ring',
+    'PCNA_Nuclei', 'PD1_Ring', 'PDGFRa_Ring', 'PDL1_Ring', 'PDL1ab_Ring', 'PDL1d_Ring', 'PDPN_Ring', 'PgR_Nuclei', 'PgRb_Nuclei', 'PgRc4_Nuclei',  # special
+    'p63_Nuclei','p63_Ring', 'pAKT_Ring', 'pAKT_Cellmem', 'pERK_Nuclei', 'pERK_Ring', 'pHH3_Nuclei', 'pMYC_Nuclei', 'pRB_Nuclei',  'pS62MYC_Nuclei', 'pS6RP_Ring', 'panCK_Ring', # kicked pRb_Nuclei
+    'RAD51_Nuclei',
+    'S100_Ring', 'SYP_Ring',
+    'TFF1_Ring', 'TUBB3_Ring',
+    'Vim_Ring',
+    'ZEB1_Nuclei',
+}
+
+# fundamental nameing convention rules:
+# 1. slide, mscene, and scene can not conatin underscores. never!
+# 2. cmIF round numbers have to be given as integers. E.g. 7
+# 3. quenching rounds, used for autofluorescence subtraction,
+#    have to be labeled with the alphabetic character specified in s_quenching (E.g. Q) behind the previous cmIF round integr. (E.g. 7Q)
+# 4. the markers specifield in the filename have not to include the DAPI channel!
+# 5. subfolders have to start with slide (though can be slide_mscene or slide_pxscene or slide what ever).
+# all the rest can be adjusted to your labs need by carefully chaning the information in d_nconv.
+
+# nameing convention
+d_nconv = {
+
+    ##########
+    # wetlab #
+    ##########
+    # microscopy specification
+    # (adjust to your labs specifictaion)
+    's_quenching': 'Q',  # one character string used to label quenching rounds
+    's_marker_dapi': 'DAPI',
+    's_color_dapi': 'c1',
+    'ls_color_order': ['c1','c2','c3','c4','c5','c6','c7','c8'],
+
+
+    #########
+    # paths #
+    #########
+
+    # czi: czi path to original folder below slide
+    # (adjust to your labs specifictaion, though all format variables have to be used in this order)
+    's_czidir': './',  # Cyclic_Image/{batch}/
+    's_format_czidir': '{}{}/original/',  # s_czidir, s_slide
+
+    # raw : raw path per slide
+    # (adjust to your labs specifictaion, though all format variables have to be used in this order)
+    's_rawdir': './RawImages/',
+    's_format_rawdir': '{}{}/',  # s_rawdir, s_slide
+
+    # regist : registration path per slide_pxscene
+    # (adjust to your labs specifictaion, though all format variables have to be used in this order)
+    's_regdir': './RegisteredImages/',
+    's_format_regdir': '{}{}/',  # s_regdir, s_slide_pxscene
+
+    # afsub : autofluorescence subtracted path per slide_pxscene
+    # (adjust to your labs specifictaion, though all format variables have to be used in this order)
+    's_afsubdir': './SubtractedRegisteredImages/',
+    's_format_afsubdir': '{}{}/',  # s_afsubdir, s_slide_pxscene
+
+    # segment : cellpose segementation path per slide_pxscene
+    # (adjust to your labs specifictaion, though all format variables have to be used in this order)
+    's_segdir': './Segmentation/',
+    's_format_segdir_cellpose': '{}{}_CellposeSegmentation/',  # s_segdir, s_slide_pxscene
+
+    # qc : quality control result path (adjust to your labs specifictaion)
+    # (adjust to your labs specifictaion)
+    's_qcdir': './QC/',
+
+    # meta: metadata result path
+    # (adjust to your labs specifictaion)
+    's_metadir': './MetaImages/',
+
+
+    ###############
+    # input files #
+    ###############
+
+    # marker separator in tiff and czi filenames
+    # (adjust to your labs specifictaion)
+    's_sep_marker': '.',  #!
+
+    # @ czi files
+    # (adjust to your labs specifictaion, though all information have to be found)
+    's_regex_czi_original': r'^(R[^_]+)_([^_]+)_([^_]+)_.*\.czi', # 4 markers separated by dots  #!
+    'di_regex_czi_original': {'round':1, 'markers':2, 'slide':3},  #!
+    #'s_regex_czi_stitched': r'^(R[^_]+)_([^_]+_[^_]+_[^_]+_[^_]+)_([^_]+)_(.*)-([^\.]+)\.czi$', # 4 markers separated by underscore
+    #'di_regex_czi_stitched': {'round':1, 'markers':2, 'slide':3, 'scanid':4, 'mscene':5},  # used? scanid
+    #'s_regex_czi_splitscene': r'^(R[^_]+)_([^_]+)_([^_]+)_(.*)-([^\.]+)\.czi$', # 4 markers separated by dots
+    #'di_regex_czi_splitscene': {'round':1, 'markers':2, 'slide':3, 'scanid':4, 'mscene':5}, # used? scanid
+
+    # @ raw tiff files
+    # (adjust to your labs specifictaion, though all information have to be found)
+    's_regex_tiff_raw': r'^(R[^_]+)_([^_]+)_([^_]+)_([^-]*)-([^_]+)_([^_]+)_([^\.]+)\.tiff?',  #!
+    'di_regex_tiff_raw': {'round':1, 'markers':2, 'slide':3, 'scanid':4, 'mscene':5, 'color':6, 'imagetype':7},  # used? imagetype  #!
+
+
+    #################
+    # output files #
+    ################
+
+    # @ reg tiff files
+    # bue 20210706: currently registration file name is hardcoded in matlab code!
+    's_format_tiff_reg': 'Registered-R{}_{}_{}_{}_{}_{}.tif',  # output
+    's_regex_tiff_reg': r'^Registered-(R[^_]+)_([^_]+)_([^_]+)_([^_]+)_([^_]+)_([^\.]+)\.tiff?$',
+    'di_regex_tiff_reg': {'round':1, 'markers':2, 'slide':3, 'scene':4, 'color':5, 'imagetype':6},  # used? imagetype
+
+    # @ afsub tiff files: autofluorescent subtracted registered tiff file
+    # bue 20210706: format should be comatibel with registration
+    's_format_tiff_afsubreg': 'Registered-R{}_{}_{}_{}_{}_Sub{}.tif',
+
+    # @ thresh
+    's_format_csv_threshold': 'thresh_{}_ThresholdLi.csv',  # s_slide
+
+    # @ segment and feat: basin files format string, regex string, and variabel position dictionary
+    's_format_tiff_celllabel_nuc': '{}_nuc{}_NucleiSegmentationBasins.tif',  # s_slide_pxscene, i_nuc_diam
+    's_regex_tiff_celllabel_nuc': r'^([^_]+)_([^_]+)_nuc(\d+)_NucleiSegmentationBasins.tif$',  # s_slide_pxscene, i_nuc_diam
+    's_format_tiff_celllabel_cell': '{}_{}_cell{}_CellSegmentationBasins.tif',  # s_slide_pxscene, ls.seg.marker, i_cell_diam
+    's_regex_tiff_celllabel_cell': r'^([^_]+)_([^_]+)_([^_]+)_cell(\d+)_CellSegmentationBasins.tif$',  # s_slide_pxscene, ls.seg.marker, i_cell_diam
+    's_format_tiff_celllabel_nuccellmatched': '{}_{}_nuc{}_cell{}_matched_CellSegmentationBasins.tif',  # s_slide_pxscene, ls.seg.marker, i_nuc_diam, i_cell_diam
+    's_regex_tiff_celllabel_nuccellmatched': r'^([^_]+)_([^_]+)_([^_]+)_nuc(\d+)_cell(\d+)_matched_CellSegmentationBasins.tif$',  # s_slide_pxscene, ls.seg.marker, i_nuc_diam, i_cell_diam # JE-TMA-48b_scene001_Ecad _nuc30_cell30_matched_CellSegmentationBasins.tif
+    'di_regex_tiff_celllabel_nuccellmatched':{'s_slide':1, 's_pxscene':2, 's_seg_markers':3, 'i_nuc_diam':4, 'i_cell_diam':5},
+    's_format_tiff_celllabel_nuccellmatchedfeat': '{}_{}_nuc{}_cell{}_matched_exp5_CellSegmentationBasins.tif',  # s_slide_pxscene, ls.seg.marker, i_nuc_diam, i_cell_diam
+    #'s_regex_tiff_celllabel_nuccellmatchedfeat': r'^([^_]+)_([^_]+)_([^_]+)_nuc(\d+)_cell(\d+)_matched_exp5_CellSegmentationBasins.tif$',  # s_slide_pxscene, ls.seg.markers, i_nuc_diam, i_cell_diam
+
+    # @ segment : projection for segementation, and variabel position dictionary
+    's_format_png_nucprojection': '{}_nuc{}_NucleiProjection.png',  # s_slide_pxscene, i_nuc_diam
+    's_format_png_cellprojection': '{}_{}_cell{}_CellProjection.png',  # s_slide_pxscene, s.seg.markers, i_cell_diam
+
+    # @ feat : celltouch by segmentation json file and feature csv files
+    's_format_json_celltouch_segmentation': 'celltouch_segmentation_{}.json', # s_slide
+    's_format_csv_controidxy': 'features_{}_CentroidXY.csv',  # s_slide   # centroid xy information
+    's_format_csv_patched_shape_meanintenisty': 'features_{}_patched_MeanIntensity_Shape_{}.csv', # s_slide s_filter_dapi
+    's_format_csv_raw_centroid_shape_meanintenisty': 'features_{}_raw_MeanIntensity_Shape_Centroid.csv',  # s_slide
+}
+
+
+# functions
+def slurmbatch(
+        s_pathfile_sbatch,
+        s_srun_cmd,
+        s_jobname = None,
+        s_partition = None,
+        s_gpu = None,
+        s_mem = None,
+        s_time = None,
+        s_account = None,
+    ):
+    '''
+    version: 2021-04-21
+
+    input:
+        s_pathfile_sbatch: path and filename of the sbatch file that is generated.
+        s_srun_cmd: commandline command to be run via srun.
+        s_jobname: 8 letter job name to be displayed at squeue.
+            if None, the first 8 letters form the s_pathfile_sbatch filename will be taken.
+        s_partition: slurm cluster partition to use.
+            OHSU ACC options are 'exacloud', 'light', (and 'gpu').
+            the default is tweaked to OHSU ACC settings.
+        s_gpu: slurm cluster gpu allocation.
+            OHSU ACC options are any 'gpu:1', faster 'gpu:v100:1', slower 'gpu:p100:1',
+            not rapids compatible is 'gpu:rtx2080:1'.
+        s_mem: slurm cluster memory allocation. format '64G'.
+        s_time: slurm cluster time allocation in hour or day format.
+            OHSU ACC max is '36:00:00' [hour] or '30-0' [day].
+            the related qos code is tewaked to OHSU ACC settings.
+        s_account: slurm cluster account to credit time from.
+            my OHSU ACC options are 'gray_lab', 'chin_lab', 'heiserlab'.
+
+    output:
+        executable sbatch file generated at s_pathfile_sbatch.
+
+    description:
+        generate an executable slurm sbatch file.
+        this code might be very specific to the OHSU ACC exacloud cluster.
+    '''
+    # bash shebang
+    s_batchfile = '#!/bin/bash\n'
+    # partition
+    if not (s_gpu is  None):
+        s_partition = 'gpu'
+    s_batchfile += f'#SBATCH --partition={s_partition}\n'
+    # gpu
+    if not (s_gpu is None):
+        s_batchfile += f'#SBATCH --gres={s_gpu}\n'
+    # ram
+    if not (s_mem is None):
+        s_batchfile += f'#SBATCH --mem={s_mem}\n'
+    # time and qos
+    if not (s_time is None):
+        s_batchfile += f'#SBATCH --time={s_time}\n'
+        if (s_time.find('-') > -1) and (float(s_time.replace('-','.')) > 1.5):
+            if (s_gpu != None):
+                s_qos = 'gpu_long_jobs'
+            elif (float(s_time.replace('-','.')) > 10):
+                s_qos = 'very_long_jobs'
+            else:
+                s_qos = 'long_jobs'
+            # add sbatch entry
+            s_batchfile += f'#SBATCH --qos={s_qos}\n'
+    # account
+    if not (s_account is None):
+        s_batchfile += f'#SBATCH -A {s_account}\n'
+    # job name
+    if not (s_jobname is None):
+        s_batchfile += f'#SBATCH --job-name={s_jobname}\n'
+    # run dmc
+    s_batchfile += f'srun {s_srun_cmd} 2>&1\n'
+    # generate sbatch file
+    with open(s_pathfile_sbatch, 'w') as f:
+        f.write(s_batchfile)
+    # make sbatch file executable for current user
+    os.chmod(s_pathfile_sbatch, os.stat(s_pathfile_sbatch).st_mode | stat.S_IEXEC)  # bue: the | is a bit wise OR operator
+
