@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/autoconfsh/__init__.py
+src/autoconfsh/__main__.py
+src/autoconfsh/cli.py
+src/autoconfsh.egg-info/PKG-INFO
+src/autoconfsh.egg-info/SOURCES.txt
+src/autoconfsh.egg-info/dependency_links.txt
+src/autoconfsh.egg-info/entry_points.txt
+src/autoconfsh.egg-info/top_level.txt
