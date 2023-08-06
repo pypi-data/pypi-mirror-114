@@ -1,0 +1,11 @@
+easykiwi/__init__.py,sha256=vDySN9k7AYQgVgn4rPyP5qK1rQODRaygnRqrvZr8TgM,392
+easykiwi/_singleton.py,sha256=IsyW5Npd1RAG1ICtCgOdqtE89Y88k_97MnRHcrkCiW0,692
+easykiwi/cli.py,sha256=taAHPrVfG88NFjY1BLE51UMgHePPyc-ZIE5z4rItsx8,1228
+easykiwi/client.py,sha256=t8tHpx7Mu_xEMYWPLqT6_P0oM8VmZrt0id4B9EYQCgU,633
+easykiwi/core.py,sha256=7sS9NHG9a5yRdHIFs1GtPnAjgp9Xu7oCYQWfFRdH2sU,2157
+Easykiwi-1.2.dist-info/LICENSE,sha256=pxe0TOZ6kU0d55Ul--PLOqL7AQ32tCQCIVllVZpRKuI,1088
+Easykiwi-1.2.dist-info/METADATA,sha256=XE_iKM5pim1z3EKT4MGZMUwMIu-YliWP3MRgcTEPyUQ,1912
+Easykiwi-1.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Easykiwi-1.2.dist-info/entry_points.txt,sha256=wC_R2jvPhAT0t7l7ioGmqfaqLT9jgbEPxhWjXmkpp1M,39
+Easykiwi-1.2.dist-info/top_level.txt,sha256=cDUKJACVqhhVoipUQBYwwt0b3j4HAjG66eXUQf1jXZ4,9
+Easykiwi-1.2.dist-info/RECORD,,
