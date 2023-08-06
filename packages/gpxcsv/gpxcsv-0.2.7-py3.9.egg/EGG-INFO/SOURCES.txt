@@ -1,0 +1,10 @@
+README.md
+setup.py
+gpxcsv/__init__.py
+gpxcsv/__main__.py
+gpxcsv.egg-info/PKG-INFO
+gpxcsv.egg-info/SOURCES.txt
+gpxcsv.egg-info/dependency_links.txt
+gpxcsv.egg-info/entry_points.txt
+gpxcsv.egg-info/requires.txt
+gpxcsv.egg-info/top_level.txt
