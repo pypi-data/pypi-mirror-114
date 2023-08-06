@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: nates
+Version: 0.1.1
+Summary: Helper functions for various projects
+Home-page: https://github.com/nadahlberg/nates
+Author: Nathan Dahlberg
+Author-email: nadahlberg@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+UNKNOWN
+
+
