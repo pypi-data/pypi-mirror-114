@@ -1,0 +1,6 @@
+cocos
+numba
+numpy
+pandas
+scipy
+pytest
