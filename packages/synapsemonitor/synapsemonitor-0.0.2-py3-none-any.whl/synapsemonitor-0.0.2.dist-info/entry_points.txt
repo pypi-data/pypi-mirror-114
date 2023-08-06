@@ -1,0 +1,3 @@
+[console_scripts]
+synapsemonitor = synapsemonitor.__main__:main
+
