@@ -1,0 +1,13 @@
+README.md
+setup.py
+OCR_Sycophant.egg-info/PKG-INFO
+OCR_Sycophant.egg-info/SOURCES.txt
+OCR_Sycophant.egg-info/dependency_links.txt
+OCR_Sycophant.egg-info/entry_points.txt
+OCR_Sycophant.egg-info/requires.txt
+OCR_Sycophant.egg-info/top_level.txt
+ocr_sycophant/__init__.py
+ocr_sycophant/cli.py
+ocr_sycophant/encoder.py
+ocr_sycophant/model.py
+ocr_sycophant/utils.py
