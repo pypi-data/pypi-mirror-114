@@ -1,0 +1,2 @@
+recursive-include klity/src *
+include MANIFEST.in
