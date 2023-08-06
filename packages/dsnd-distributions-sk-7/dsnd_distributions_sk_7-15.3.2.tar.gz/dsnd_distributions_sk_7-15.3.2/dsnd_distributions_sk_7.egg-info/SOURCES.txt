@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+dsnd_distributions_sk_7/Binomialdistribution.py
+dsnd_distributions_sk_7/Gaussiandistribution.py
+dsnd_distributions_sk_7/Generaldistribution.py
+dsnd_distributions_sk_7/__init__.py
+dsnd_distributions_sk_7.egg-info/PKG-INFO
+dsnd_distributions_sk_7.egg-info/SOURCES.txt
+dsnd_distributions_sk_7.egg-info/dependency_links.txt
+dsnd_distributions_sk_7.egg-info/not-zip-safe
+dsnd_distributions_sk_7.egg-info/top_level.txt
