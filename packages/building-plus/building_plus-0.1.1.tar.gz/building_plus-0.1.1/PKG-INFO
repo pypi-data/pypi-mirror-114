@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: building-plus
+Version: 0.1.1
+Summary: Dynamic building simulator based on EnergyPlus with enhancements.
+License: MIT
+Author: Dustin McLarty
+Author-email: dustin.mclarty@wsu.edu
+Requires-Python: >=3.8,<3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: matplotlib (>=3.4.2,<4.0.0)
+Requires-Dist: numpy (>=1.21.1,<2.0.0)
+Requires-Dist: scipy (>=1.7.0,<2.0.0)
