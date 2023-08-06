@@ -1,0 +1,9 @@
+numpy
+astropy>=3.0
+tqdm
+pooch
+h5py
+scipy
+pyyaml
+regions
+appdirs
