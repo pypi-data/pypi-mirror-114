@@ -1,0 +1,4 @@
+[wai.annotations.plugins]
+from-tf-od = wai.annotations.tf.specifier:TFRecordsInputFormatSpecifier
+to-tf-od = wai.annotations.tf.specifier:TFRecordsOutputFormatSpecifier
+
