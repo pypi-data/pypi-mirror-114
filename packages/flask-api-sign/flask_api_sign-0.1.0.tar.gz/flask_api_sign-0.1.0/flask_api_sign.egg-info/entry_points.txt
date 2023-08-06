@@ -1,0 +1,3 @@
+[console_scripts]
+flask_api_sign = flask_api_sign.cli:main
+
