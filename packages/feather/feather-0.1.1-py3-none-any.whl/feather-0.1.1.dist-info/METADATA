@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: feather
+Version: 0.1.1
+Summary: Feather AI SDK
+Home-page: UNKNOWN
+Author: Paul Riga, Nihir Vedd
+Author-email: paul.riga@feather-ai.com, nihir@feather-ai.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: Flask (==1.1.2)
+Requires-Dist: flask-restful (==0.3.9)
+Requires-Dist: flask-cors (==3.0.10)
+Requires-Dist: numpy (==1.20.2)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: python-slugify (==5.0.2)
+Requires-Dist: Pillow (==8.2.0)
+
+UNKNOWN
+
