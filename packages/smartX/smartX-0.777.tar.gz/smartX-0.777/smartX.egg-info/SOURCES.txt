@@ -1,0 +1,10 @@
+setup.py
+smartX/Binomialdistribution.py
+smartX/Gaussiandistribution.py
+smartX/Generaldistribution.py
+smartX/__init__.py
+smartX.egg-info/PKG-INFO
+smartX.egg-info/SOURCES.txt
+smartX.egg-info/dependency_links.txt
+smartX.egg-info/not-zip-safe
+smartX.egg-info/top_level.txt
