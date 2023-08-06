@@ -1,0 +1,5 @@
+recursive-exclude * __pycache__
+recursive-exclude * example.py
+recursive-exclude * db.cfg
+recursive-exclude * *.flac
+prune hcai_models/tests
