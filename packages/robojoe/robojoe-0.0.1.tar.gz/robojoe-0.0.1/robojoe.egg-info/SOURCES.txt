@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+robojoe/__init__.py
+robojoe.egg-info/PKG-INFO
+robojoe.egg-info/SOURCES.txt
+robojoe.egg-info/dependency_links.txt
+robojoe.egg-info/top_level.txt
