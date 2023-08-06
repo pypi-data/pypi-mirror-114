@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: deutschland
+Version: 0.1.5
+Summary: 
+Home-page: https://github.com/bundesAPI/deutschland
+License: Apache-2.0
+Author: Lilith Wittmann
+Author-email: mail@lilithwittmann.de
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pillow (>=8.3.1,<9.0.0)
+Requires-Dist: Shapely (>=1.7.1,<2.0.0)
+Requires-Dist: beautifulsoup4 (>=4.9.3,<5.0.0)
+Requires-Dist: boto3 (>=1.18.9,<2.0.0)
+Requires-Dist: dateparser (>=1.0.0,<2.0.0)
+Requires-Dist: gql (>=2.0.0,<3.0.0)
+Requires-Dist: mapbox-vector-tile (>=1.2.1,<2.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: selenium (>=3.141.0,<4.0.0)
+Requires-Dist: slugify (>=0.0.1,<0.0.2)
+Requires-Dist: tensorflow (>=2.5.0,<3.0.0)
+Requires-Dist: webdriver-manager (>=3.4.2,<4.0.0)
+Project-URL: Bug Tracker, https://github.com/bundesAPI/deutschland/issues
+Project-URL: Repository, https://github.com/bundesAPI/deutschland
+Description-Content-Type: text/markdown
+
+# Deutschland
+A python package that gives you easy access to the most valuable datasets of Germany.
+
+## Installation
+```bash
+pip install deutschland
+```
+
+## Geographic data
+Fetch information about streets, house numbers, building outlines, …
+
+```python
+from deutschland import Geo
+geo = Geo()
+# top_right and bottom_left coordinates
+data = geo.fetch([52.50876180448243, 13.359631043007212], 
+                 [52.530116236589244, 13.426532801586827])
+print(data.keys())
+# dict_keys(['Adresse', 'Barrierenlinie', 'Bauwerksflaeche', 'Bauwerkslinie', 'Bauwerkspunkt', 'Besondere_Flaeche', 'Besondere_Linie', 'Besonderer_Punkt', 'Gebaeudeflaeche', 'Gebaeudepunkt', 'Gewaesserflaeche', 'Gewaesserlinie', 'Grenze_Linie', 'Historischer_Punkt', 'Siedlungsflaeche', 'Vegetationslinie', 'Verkehrsflaeche', 'Verkehrslinie', 'Verkehrspunkt', 'Hintergrund'])
+
+print(data["Adresse"][0])
+# {'geometry': {'type': 'Point', 'coordinates': (13.422642946243286, 52.51500157651358)}, 'properties': {'postleitzahl': '10179', 'ort': 'Berlin', 'ortsteil': 'Mitte', 'strasse': 'Holzmarktstraße', 'hausnummer': '55'}, 'id': 0, 'type': 'Feature'}
+```
+
+
+
+
+## Company Data
+
+### Handelsregister
+Get financial reports for all german companies that are reporting to Handelsregister.
+
+*Big thanks to Nico Duldhardt and Friedrich Schöne, who [supported this implementation with their machine learning model](https://av.tib.eu/media/52366).*
+
+```python
+from deutschland import Bundesanzeiger
+ba = Bundesanzeiger()
+# search term
+data = ba.get_reports("Deutsche Bahn AG")
+# returns a dictionary with all reports found as fulltext reports
+print(data.keys())
+# dict_keys(['Jahresabschluss zum Geschäftsjahr vom 01.01.2020 bis zum 31.12.2020', 'Konzernabschluss zum Geschäftsjahr vom 01.01.2020 bis zum 31.12.2020\nErgänzung der Veröffentlichung vom 04.06.2021',
+```
+
