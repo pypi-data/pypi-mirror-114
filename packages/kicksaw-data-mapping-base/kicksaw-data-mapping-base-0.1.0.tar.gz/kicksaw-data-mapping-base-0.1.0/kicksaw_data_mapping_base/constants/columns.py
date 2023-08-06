@@ -1,0 +1,5 @@
+SFDC_OBJECT = "SFDC Object"
+SFDC_DATA_TYPE = "SFDC Data Type"
+SFDC_FIELD = "SFDC Field"
+JSON_PATH = "JSONPath"
+COMMENT = "Comment"
