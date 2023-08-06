@@ -1,0 +1,228 @@
+{% extends "framework/base.html" %}
+
+{% block header %}
+    <title>{{ _('系统配置 列表') }}</title>
+
+{% endblock %}
+
+
+{% block content %}
+    <div id="vue-container" v-cloak="">
+        <div class="row header">
+            <div class="col-sm-5">
+                <h1>{{ _('系统配置') }}
+                    <small>{{ _('列表') }}</small>
+                </h1>
+            </div>
+        </div>
+
+        <form id="filter-form" class="form-inline">
+            <div class="row ">
+                <div class="col-sm-3">
+                    <template>
+                        <a-anchor>
+                            <a-anchor-link v-for="(items, key) in groupOptionsMap"
+                                           a-anchor-link
+                                           :href="'#'+key"
+                                           :title="key.toUpperCase()">
+                                <a-anchor-link v-for="(item, i) in items" :href="'#'+item.name" :title="item.alias"/>
+
+                            </a-anchor-link>
+
+
+                        </a-anchor>
+                    </template>
+                </div>
+
+                <div class="col-sm-9">
+
+                    <a-card v-for="(items, key) in groupOptionsMap"
+                            :id="key" :title="key.toUpperCase()" :bordered="false">
+
+                        <a-form :label-col="{ span: 6 }" :wrapper-col="{ span: 18 }">
+                            <a-form-item v-for="(item, i) in items">
+                                <span :id="item.name" slot="label">((item.alias))
+
+                                </span>
+
+
+                                <a-input-number v-if="item.type=='int'"
+                                                v-model="item.value"
+                                                @change="changeSettings(item)"
+                                                :placeholder="item.default_value.toString()"></a-input-number>
+                                <a-input-number v-else-if="item.type=='float'"
+                                                v-model="item.value"
+                                                @change="changeSettings(item)"
+                                                :placeholder="item.default_value.toString()"
+                                                :step="0.01"></a-input-number>
+                                <a-select v-else-if="item.type=='list' && !item.choices" mode="multiple"
+                                          v-model="item.value"
+                                          @change="changeSettings(item)"
+                                          :placeholder="item.default_value">
+                                    <a-select-option v-for="(t,ii) in item.value" :value="t">(( t ))</a-select-option>
+                                </a-select>
+
+                                <a-select v-else-if="item.choices" :mode="item.type=='list'?'multiple' : 'default'"
+                                          v-model="item.value"
+                                          @change="changeSettings(item)"
+                                          :placeholder="item.default_value.toString()">
+                                    <a-select-option v-for="(t,ii) in item.choices" :value="t[0]">(( t[1] ))
+                                    </a-select-option>
+                                </a-select>
+
+                                <a-switch v-else-if="item.type=='bool'" :placeholder="item.default_value.toString()"
+                                          v-model="item.value"
+                                          @change="changeSettings(item)"></a-switch>
+
+                                <div v-else-if="item.type=='dict'" :bb="dictToArray(item)">
+                                    <a-button size="small"
+                                              type="primary"
+                                              @click="addDictItem(item,items)"
+                                              icon="plus-circle">
+                                        {{ _('添加') }}
+                                    </a-button>
+                                    <a-input-group v-for="(obj, index) in item.valueArray" compact>
+
+                                        <a-input v-model="obj.key"
+                                                 style=" width: 100px; text-align: center"
+                                                 @change="changeDictItem(item,$event.target)"></a-input>
+                                        <a-input style=" width: 30px; border-left: 0; pointer-events: none; backgroundColor: #fff"
+                                                 placeholder=":"
+                                                 disabled></a-input>
+                                        <a-input v-model="obj.value"
+                                                 style="width: 100px; text-align: center; border-left: 0"
+                                                 @change="changeDictItem(item,$event.target)"></a-input>
+                                        <a-button @click="deleteDictItem(item,index)">
+                                            <a-icon type="delete" theme="twoTone" two-tone-color="red"/>
+                                        </a-button>
+                                    </a-input-group>
+                                </div>
+
+
+                                <input type="text" v-else-if="item.type=='datetime'"
+                                       :placeholder="item.default_value"
+                                       class="datetime input-sm"
+                                       v-model="item.value"
+                                       :allow-clear="true"
+                                       @input="changeSettings(item)"/>
+
+                                <a-input v-else :placeholder="item.default_value"
+                                         v-model="item.value"
+                                         :allow-clear="true"
+                                         @change="changeSettings(item)"></a-input>
+
+
+                            </a-form-item>
+
+                        </a-form>
+
+
+                    </a-card>
+
+                </div>
+
+
+            </div>
+            <br>
+            <div class="row pane edit-save-bar">
+                <div class="col-sm-offset-3 col-sm-9">
+                    <input id="reset-btn" class="btn btn-default" type="reset" value="{{ _('重 置') }}">
+                    <button @click="saveSettings(true)"
+                            :disabled="isExecuting"
+                            class="btn btn-primary "
+                            type="button">
+                        {{ _('保 存') }}
+                    </button>
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        var group_options_map = Object.assign({{ data|json_dumps|safe }})
+
+        var vue_app = new Vue({
+            el: '#vue-container',
+            delimiters: ['((', '))'],
+            data() {
+                return {
+                    groupOptionsMap: group_options_map,
+                    postData: {},
+                    isExecuting: false,
+
+                };
+            },
+            computed: {},
+            methods: {
+                dictToArray(obj) {
+                    if (obj.valueArray) {
+                        return obj
+                    }
+                    var array = []
+                    for (var k in obj.value) {
+                        array.push({key: k, value: obj.value[k]})
+                    }
+                    obj.valueArray = array
+                    console.dir(obj)
+                    return obj
+                },
+                changeDictItem(obj, target) {
+                    obj.value = {}
+                    obj.valueArray.map((item)=>{
+                        obj.value[item.key] = item.value
+                    })
+                    this.changeSettings(obj)
+                },
+                addDictItem(item, items) {
+                    item.valueArray.push({key: '', value: ''})
+                    console.dir(item)
+                    //this.$set(item,'valueArray',item.valueArray)
+                    this.groupOptionsMap = Object.assign({}, this.groupOptionsMap)
+                },
+                deleteDictItem(item, index) {
+                    item.valueArray.splice(index, 1)
+                    // this.$set(item,'valueArray',item.valueArray)
+                    this.groupOptionsMap = Object.assign({}, this.groupOptionsMap)
+
+                },
+                changeSettings(item) {
+                    this.postData[item.name] = item.value === '' ? item.default_value : item.value
+
+                },
+                saveSettings() {
+                    if(Object.keys(this.postData).length==0){
+                        this.$message.info('{{ _('配置没有修改 !') }}',2)
+                        return
+                    }
+                    var data = JSON.stringify({settings_data: this.postData})
+                    $.ajax({
+                        type: "POST",
+                        url: "{{ url('dynamic_settings.save') }}",
+                        dataType: 'json',
+                        data: data,
+                        contentType: 'application/json',
+                        success: (rsp) => {
+                            this.$message.success(rsp.msg)
+                            this.postData = {}
+                        },
+                        error: (jqXHR, statusText, errorMsg) => {
+                            ajaxError(jqXHR, statusText, errorMsg)
+
+                        },
+                        complete: (jqXHR, statusText) => {
+                            this.isExecuting = false
+                        }
+
+                    })
+
+                },
+            },
+            mounted: function () {
+
+            }
+
+        })
+
+    </script>
+{% endblock %}
