@@ -1,0 +1,8 @@
+numpy
+scipy
+pandas
+networkx
+joblib
+spikeextractors>=0.9.7
+spiketoolkit>=0.7.6
+spikesorters>=0.4.5
