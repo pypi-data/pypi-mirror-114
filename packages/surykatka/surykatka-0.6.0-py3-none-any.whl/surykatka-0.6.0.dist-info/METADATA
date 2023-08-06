@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: surykatka
+Version: 0.6.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Nexedi
+Author-email: romain@nexedi.com
+License: GPLv3+
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Requires-Dist: setuptools (>40.5.0)
+Requires-Dist: requests (>2.20.0)
+Requires-Dist: forcediphttpsadapter
+Requires-Dist: peewee (>2.10.1)
+Requires-Dist: click (>=7.0)
+Requires-Dist: dnspython
+Requires-Dist: miniupnpc
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pyflakes ; extra == 'dev'
+Requires-Dist: mock ; extra == 'dev'
+Requires-Dist: httpretty ; extra == 'dev'
+
+UNKNOWN
+
+
