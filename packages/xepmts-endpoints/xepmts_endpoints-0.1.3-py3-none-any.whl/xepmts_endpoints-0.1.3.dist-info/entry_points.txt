@@ -1,0 +1,3 @@
+[console_scripts]
+xepmts_endpoints=xepmts_endpoints.cli:main
+
