@@ -1,0 +1,12 @@
+financefeast/__init__.py,sha256=itFCiPTiNXFupyAWTIAy0lPv8RoVlmGfST7MAP3hdog,180
+financefeast/client.py,sha256=6VdxYcEKf7JOW3UgbHWvorJ-qYIjcJa_6C9_2umuCbU,31202
+financefeast/common.py,sha256=gotk-HtXzHT2dktfDwhR6sPihujm1Yd1Qh8y4F0FaPI,139
+financefeast/entity.py,sha256=MWGPotHyCu8mAbanPVkyRxK7tLfb6yclGHL9ZVSa0Bo,889
+financefeast/exceptions.py,sha256=Lelbs3W4leYHaLZBV5K55p3XycTrQYUEiPaEbLs_SEY,680
+financefeast/rest.py,sha256=fp23MqkCwez19gLqP4YhePMSg89lG7G_kwMaHtiigzc,33288
+financefeast/stream.py,sha256=Ll_AgkWr27fVIkYcHODC9B-U_7mTh8ytbFHNaGN_juY,79
+financefeast-0.0.22.dist-info/LICENSE,sha256=py5Bvls8AY40QrU1h1RVX_R4zhm5JrgFow7k29w_vrk,1094
+financefeast-0.0.22.dist-info/METADATA,sha256=FY8Vzv5Ap_bzXO4OmloGt13ZQUQRRpMuouIgbOFfsXY,9520
+financefeast-0.0.22.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+financefeast-0.0.22.dist-info/top_level.txt,sha256=9oiW3nLigLRcAPwxMYS_w7rPxutY84OflAoTyuWccBE,13
+financefeast-0.0.22.dist-info/RECORD,,
