@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ipython_sparql_pandas.egg-info/PKG-INFO
+src/ipython_sparql_pandas.egg-info/SOURCES.txt
+src/ipython_sparql_pandas.egg-info/dependency_links.txt
+src/ipython_sparql_pandas.egg-info/requires.txt
+src/ipython_sparql_pandas.egg-info/top_level.txt
