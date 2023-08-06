@@ -1,0 +1,16 @@
+wanikani_notifier/__init__.py,sha256=8uzBPwFX7M-XnFAVDvL-airGv84dhTR49oBZE87Gz6g,143
+wanikani_notifier/__main__.py,sha256=BU3u8q_W_H3lXEEwbtKJpRdcFMBwbeoilV0S8nGG3Rk,95
+wanikani_notifier/cli.py,sha256=KA8kxTR7VALmmgzmijXlfpfsImaR3PwQXq-OZA0KGZc,4576
+wanikani_notifier/wanikani.py,sha256=BRg0Gw0rSyA4n_1oek-Mthd5juFCC1g_EQt-0941InQ,2397
+wanikani_notifier/notifiers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wanikani_notifier/notifiers/console.py,sha256=FznPNqc8dF4xV0kdJPdE0wr-gAIcbIWWEevGG5MxCTk,512
+wanikani_notifier/notifiers/notifier.py,sha256=GvRB-x_nHJa2RZYULOQ66EakH53iyngTc0A37m_KKY0,929
+wanikani_notifier/notifiers/pushover.py,sha256=QFyWFu_MlQTitSHtl-DRHHNDMlehLW4gbmUvKH8rKhs,762
+wanikani_notifier/notifiers/pushsafer.py,sha256=B4-Pr8y9vhgZ_DF0dQmAqsGHFeh2g1vmUYHCMQFjo9w,995
+wanikani_notifier-0.4.1.dist-info/AUTHORS.rst,sha256=b2jpT5FCy11vBDmhL61HLxpDQyXLBUSGwmTNMmLFFAI,164
+wanikani_notifier-0.4.1.dist-info/LICENSE,sha256=RLkXOeafgCgi343_5dyJrvWtf0wMikWw8ACFXr-gxl0,1073
+wanikani_notifier-0.4.1.dist-info/METADATA,sha256=GoyAc68AUyZ8KI3XwrV54cAr7KzhAy9wG7l165_xVOg,3001
+wanikani_notifier-0.4.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+wanikani_notifier-0.4.1.dist-info/entry_points.txt,sha256=vMndYEYSw9RQB0cKpRcog-nubQg0b5LpsfyvwvMlFDk,65
+wanikani_notifier-0.4.1.dist-info/top_level.txt,sha256=Ycq3D2ivrN3-atwEH2rNzn-FQeW0glE9zQJikpcuFFY,18
+wanikani_notifier-0.4.1.dist-info/RECORD,,

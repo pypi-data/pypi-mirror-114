@@ -1,0 +1,116 @@
+Metadata-Version: 2.1
+Name: wanikani-notifier
+Version: 0.4.1
+Summary: Notifies a WaniKani user for new reviews to do.
+Home-page: https://github.com/laurent-radoux/wanikani_notifier
+Author: Laurent Radoux
+Author-email: radoux.laurent@gmail.com
+License: MIT license
+Keywords: wanikani_notifier
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: setuptools (~=57.4.0)
+Requires-Dist: Click (==7.0)
+Requires-Dist: urllib3 (~=1.26.6)
+Requires-Dist: more-itertools (==8.8.0)
+Requires-Dist: wanikani-api (==0.5.1)
+Requires-Dist: python-pushsafer (==0.4)
+Requires-Dist: chump (==1.6.0)
+
+=================
+WaniKani Notifier
+=================
+
+
+.. image:: https://img.shields.io/pypi/v/wanikani_notifier.svg
+        :target: https://pypi.python.org/pypi/wanikani_notifier
+
+.. image:: https://readthedocs.org/projects/wanikani-notifier/badge/?version=latest
+        :target: https://wanikani-notifier.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+Notifies a WaniKani user for new assignments to do.
+
+
+* Free software: MIT license
+* Documentation: https://wanikani-notifier.readthedocs.io.
+
+
+Features
+--------
+
+* Can fetch
+
+  * Assignments that became available in the last x hours
+  * All available assignments as of the start of the hour
+
+* Sends a notification via different notification systems whenever new reviews and/or lessons are available
+
+  * List of supported notifiers:
+
+    * Console
+    * Pushover
+    * PushSafer
+
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.4.1 (2021-07-28)
+------------------
+* Fixed missing dependency
+
+
+0.4.0 (2021-07-28)
+------------------
+
+* Added possibility to chain generation of messages to notify multiple things at once (CLI)
+* Added support for console and Pushover notifiers
+* Added Notifier factory system
+* Added total available assignments to the notifiable topics
+
+0.3.0 (2021-07-23)
+------------------
+
+* Changed "hours age" parameter to "since" to improve usability in scripts.
+* Added notifier abstraction
+* Added the possibility to use multiple notifiers
+
+  * Currently, there is only one notifier (pushsafer)
+
+* Changed options name to reflect these changes
+
+0.2.0 (2021-07-21)
+------------------
+
+* Changed "after" parameter to "hours ago" to improve usability in scripts.
+
+0.1.0 (2021-07-21)
+------------------
+
+* First release on PyPI.
+
+
