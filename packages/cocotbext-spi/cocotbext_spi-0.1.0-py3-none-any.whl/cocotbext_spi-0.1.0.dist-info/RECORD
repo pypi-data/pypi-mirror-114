@@ -1,0 +1,12 @@
+cocotbext/spi/__init__.py,sha256=1LbkhNcirWGpmfwQKB4l3HEFESjq0qnkeIc4CXpj_9w,1225
+cocotbext/spi/about.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+cocotbext/spi/spi.py,sha256=jGg0pvIhwavHkslVzR511oDbZFANQIS03MERGwAk5bA,10621
+cocotbext/spi/devices/generic.py,sha256=w5091Ff0EED7snJZJKwv0hpmsRpbEG2JgOCihgr86vg,808
+cocotbext/spi/devices/TI/ADS8028.py,sha256=OFrNwFJo2nPtnSVVlUgQJnbk7kF1vb44j52H1efx-D0,3087
+cocotbext/spi/devices/TI/DRV8304.py,sha256=NeeFU0sXbfJxNHIRe8XQ_Xgp-g0XK9mZaXsGrhk3fbE,2213
+cocotbext/spi/devices/TI/__init__.py,sha256=v9DoS7jq4TGLivC08g3gs5KguEFb9l31eTfAeV87rko,661
+cocotbext_spi-0.1.0.dist-info/COPYING,sha256=Jct97_CO4l29Ifmef2yltRO0d3iy9sYf4vnnCJnanBg,1055
+cocotbext_spi-0.1.0.dist-info/METADATA,sha256=Hhr11Wy4l7kY8yUJLdivvMGn_XqUKDWoLTg6gpyj-0I,7488
+cocotbext_spi-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cocotbext_spi-0.1.0.dist-info/top_level.txt,sha256=CEzgDDbvABi5X1TOqXPbyRc2Bsf41BTwKc5T8riPRPM,10
+cocotbext_spi-0.1.0.dist-info/RECORD,,
