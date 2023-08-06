@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "round_to_n_significant_digits"
+version = "0.1.4"
+description = "PYPI package with only 1 function to round float numbers"
+authors = ["stanislav <stas.prokopiev@gmail.com>"]
+readme = "README.rst"
+
+[tool.poetry.dependencies]
+python = ">=2.7, >=3.6"
+char = "^0.1.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
