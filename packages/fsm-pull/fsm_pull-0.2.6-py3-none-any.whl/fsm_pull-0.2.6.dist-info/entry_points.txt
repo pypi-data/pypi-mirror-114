@@ -1,0 +1,3 @@
+[console_scripts]
+fsm-pull=fsm_pull.fsm:main
+
