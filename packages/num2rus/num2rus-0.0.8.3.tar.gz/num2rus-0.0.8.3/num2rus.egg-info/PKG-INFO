@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: num2rus
+Version: 0.0.8.3
+Summary: A small package to convert float numbers to russian string
+Home-page: https://github.com/terean-dspd/numbers-2-rus
+Author: DennisKot
+Author-email: DennisKot@google.com
+License: UNKNOWN
+Description: ![Upload Python Package](https://github.com/terean-dspd/numbers-2-rus/workflows/Upload%20Python%20Package/badge.svg)
+        # num2rus v 0.0.8
+        
+        Небольшой python пакет для преобразования чисела в текст с учетмо множественного числа. 
+        A small package to convert float numbers to russian string.
+        
+        ## What's new
+        - bug fix for #4 issue
+        - bug fix for #2 issue
+        - bug fix for #1 issue
+        - unittests added
+        
+        ## Usage
+        
+        ### Install package
+        
+        `pip install num2rus`
+        
+        ### Import it
+        
+        ```python
+         import num2rus
+         num2rus.converter(1.10) # один рубль десять копеек
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
