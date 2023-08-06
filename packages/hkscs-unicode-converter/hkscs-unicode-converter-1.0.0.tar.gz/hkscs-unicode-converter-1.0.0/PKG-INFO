@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: hkscs-unicode-converter
+Version: 1.0.0
+Summary: Convert HKSCS codepoints to corresponding new codepoints in Unicode 4.1 onwards
+Home-page: https://github.com/aaronhktan/hkscs-unicode-converter
+Author: Aaron Tan
+Author-email: hi@aaronhktan.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/aaronhktan/hkscs-unicode-converter/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# hkscs-unicode-converter
+
+**hkscs-unicode-converter** is a utility for converting HKSCS characters assigned to Private Use Areas of Unicode to their equivalents in Unicode 4.1 onwards. Inspired by the [npm module](https://www.npmjs.com/package/hkscs_unicode_converter) of the same name.
+
+```python
+>>> from hkscs_unicode_converter import converter
+>>> converter.convert_string("亂廿四") # Convert an entire string
+'亂噏廿四'
+>>> converter.convert_char("") # Convert a single character
+'嘅'
+>>> converter.convert_char(chr(0xE7D4)) # Convert from codepoint
+'啱'
+>>> converter.convert_char("\uE7D4") # Convert from Unicode literal
+'啱'
+>>> hex(ord(converter.convert_char(chr(0xE7D4)))) # Get corresponding codepoint
+'0x5571'
+```
+
+## Installing
+
+hkscs-unicode-converter is available on PyPI and officially supports Python 3.7+:
+
+```console
+$ python3 -m pip install hkscs-unicode-converter
+```
+
+## Tests
+
+Tests are located in the hkscs_unicode_converter submodule. Testing uses [tox](https://tox.readthedocs.io/en/latest/) to automate environment management and the built-in [unittest](https://docs.python.org/3/library/unittest.html) framework to run tests.
+
+```console
+$ tox
+```
+
+## Style Guide
+
+Run [black](https://github.com/psf/black) before committing to master!
+
