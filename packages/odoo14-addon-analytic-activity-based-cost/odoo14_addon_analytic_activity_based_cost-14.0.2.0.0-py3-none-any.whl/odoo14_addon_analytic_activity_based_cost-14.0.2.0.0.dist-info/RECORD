@@ -1,0 +1,12 @@
+odoo/addons/analytic_activity_based_cost/README.rst,sha256=pjkKuveGidWyuIAKUgNF9C69KPeb05wzhdxKiOZXs4w,3504
+odoo/addons/analytic_activity_based_cost/__init__.py,sha256=KHINIWADUPjrC25LpOr-yG1vfXkxssaweHaw91ohHtQ,109
+odoo/addons/analytic_activity_based_cost/__manifest__.py,sha256=Z8E-8N8p2eCzcs7MR_HwRicttYVftUEi0IjTQa7YQUw,598
+odoo/addons/analytic_activity_based_cost/i18n/analytic_activity_based_cost.pot,sha256=AyzPzY6fvZoAIdVCppv0SiPLoR_D-HBQlYffHd1jWNE,341
+odoo/addons/analytic_activity_based_cost/readme/CONTRIBUTORS.rst,sha256=qIde-PpH7vu_bnLehCD0nIQyfmrLoJNQCVRr_97_o2k,175
+odoo/addons/analytic_activity_based_cost/readme/DESCRIPTION.rst,sha256=8WMUP9KScVEEm4FzNx38kdRh9aQZLjFGrvl8p7W7WsI,160
+odoo/addons/analytic_activity_based_cost/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/analytic_activity_based_cost/static/description/index.html,sha256=W2E28NjjNx-gQiKIA1mXzjBW0tyJzCwMr09nrV8F1Sk,12946
+odoo14_addon_analytic_activity_based_cost-14.0.2.0.0.dist-info/METADATA,sha256=wIvwQqeVIb696ZilC7B3NCNFVELnSTBvUhlmHfSlWpY,4111
+odoo14_addon_analytic_activity_based_cost-14.0.2.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+odoo14_addon_analytic_activity_based_cost-14.0.2.0.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_analytic_activity_based_cost-14.0.2.0.0.dist-info/RECORD,,
