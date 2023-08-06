@@ -1,0 +1,10 @@
+lorempicsum/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lorempicsum/__main__.py,sha256=XKFbgsEuStmTZL1AWHHXUJG7Tykh_UfSRKpoDDU_lYQ,30
+lorempicsum/cli.py,sha256=rNfD-Ym_jWbIB9eIYwhfzhpW1TPGBEVptISTKiB4r1c,751
+lorempicsum/engine.py,sha256=Gr1zqRdxaEBMqlYEygjWH0JWgzPx96ucFA-hnhnLC_Y,2295
+lorempicsum/main.py,sha256=RZGw1kS0FwqF527am1TEtHyeCAwphpVHi5Z-CYsgTJ4,245
+lorempicsum-0.0.3.dist-info/LICENSE,sha256=Ob5moGcxJR2Lx-aUpU2ITqu0bWYimcj_PN6kSHkFTko,1053
+lorempicsum-0.0.3.dist-info/METADATA,sha256=qT25xqBG2rNfGZq2CtyfBW3Kf3U7YpTlAUpDYr4yGpI,1440
+lorempicsum-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+lorempicsum-0.0.3.dist-info/top_level.txt,sha256=F8k8IGFyvaeDPI8dlRJ1iN9rjCMsGi0CySFYpK8tq4U,12
+lorempicsum-0.0.3.dist-info/RECORD,,
