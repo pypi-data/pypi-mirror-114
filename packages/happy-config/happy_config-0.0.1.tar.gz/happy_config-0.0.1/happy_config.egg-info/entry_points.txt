@@ -1,0 +1,3 @@
+[console_scripts]
+hconf = happy_config.cli:main
+
