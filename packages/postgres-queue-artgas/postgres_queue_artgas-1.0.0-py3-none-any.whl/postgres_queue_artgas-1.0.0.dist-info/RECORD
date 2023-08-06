@@ -1,0 +1,9 @@
+postgres_queue_artgas/__init__.py,sha256=wdTsi9V2RRIN92-_K6BwdSdpfyCrQxVAZEAsB1A2mlE,84
+postgres_queue_artgas/base.py,sha256=oXpIaGuLf-QtxkuGZJmttIqih2HlL6y27aTLrzCVr5s,308
+postgres_queue_artgas/db.py,sha256=b_sNT9RUjmvbsgS4DkUYVyQa9SbnCW4hum8QDfBWNHA,776
+postgres_queue_artgas/master.py,sha256=X3wqEYAxhYmko70Io4B5ck63TpNg1Rn_n2J0jUqIMAA,315
+postgres_queue_artgas/worker.py,sha256=BUpVNucGsUlZ6jXKdNAWEtdkQ7vZzEp-uFcL2CZaa-g,1000
+postgres_queue_artgas-1.0.0.dist-info/METADATA,sha256=RZii5P8ddZr-eMfMqP6MJpzLwsx5flVfqeVUsRCemVs,188
+postgres_queue_artgas-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+postgres_queue_artgas-1.0.0.dist-info/top_level.txt,sha256=QUmUMR_8c79m8M3HqpvoMwF1Zhs3H7Lfve-fBdzVWOI,22
+postgres_queue_artgas-1.0.0.dist-info/RECORD,,
