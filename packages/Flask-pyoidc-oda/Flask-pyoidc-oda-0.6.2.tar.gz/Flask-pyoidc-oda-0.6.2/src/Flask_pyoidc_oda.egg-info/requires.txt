@@ -1,0 +1,5 @@
+oic==1.2.1
+Flask
+requests
+importlib_resources
+PyJWT==2.1.0
