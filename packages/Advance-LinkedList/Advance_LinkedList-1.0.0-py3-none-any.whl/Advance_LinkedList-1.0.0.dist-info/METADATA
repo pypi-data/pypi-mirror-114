@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: Advance-LinkedList
+Version: 1.0.0
+Summary: It is LinkedList Data Structure
+Home-page: https://github.com/nit22032002/Advance-LinkedList
+Author: Nitin
+Author-email: nit2203@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Advance-LinkedList
+it contain a class named LinkedList.It is one of a data structure which link a form 
+using a linking .
+
+it contain many function which make it effective then list
+
+like you can append data in sorted order .
+
+it contain all basic function of list and also sum advance function.
+
+you can find mean,median,mode of all data. 
+
+you can find MaxSum possible of an list or MaximumProduct and many more 
+
+for explore more please visit on Advance-LinkedList github page 
+
+## Installation
+
+pip install Advance-LinkedList
+
+## How to use it?
+
+import it in your program and create object of linked list
+
+import Advance-LinkedList
+
+<objectname>=LinkedList()
+
+## License
+
+Â© 2021 nit2203
+
+This repository is licensed under the MIT license. See LICENSE for details.
+
