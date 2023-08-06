@@ -1,0 +1,24 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+thonny_etboard_basic_examples.egg-info/PKG-INFO
+thonny_etboard_basic_examples.egg-info/SOURCES.txt
+thonny_etboard_basic_examples.egg-info/dependency_links.txt
+thonny_etboard_basic_examples.egg-info/requires.txt
+thonny_etboard_basic_examples.egg-info/top_level.txt
+thonnycontrib/thonny_etboard_basic_examples/__init__.py
+thonnycontrib/thonny_etboard_basic_examples/etboard/examples/01. Red LED Blink/ex_01.py
+thonnycontrib/thonny_etboard_basic_examples/etboard/examples/02. 4 LED Blink/ex_02.py
+thonnycontrib/thonny_etboard_basic_examples/etboard/examples/03. 4 LED Sequential Blink/ex_03.py
+thonnycontrib/thonny_etboard_basic_examples/etboard/examples/04. 4 LED Sequential Blink2/04-1. 4개의 LED를 하나씩 켜고 끄는 예제
+thonnycontrib/thonny_etboard_basic_examples/etboard/examples/04. 4 LED Sequential Blink2/ex_04.py
+thonnycontrib/thonny_etboard_basic_examples/etboard/examples/05. 4 LED Sequential Blink3/ex_05.py
+thonnycontrib/thonny_etboard_basic_examples/etboard/examples/06. 4 LED Blink, Red Button Press Off/ex_06.py
+thonnycontrib/thonny_etboard_basic_examples/etboard/examples/07. Red LED Toggle, Red Butoon Press/ex_07.py
+thonnycontrib/thonny_etboard_basic_examples/etboard/examples/08. LED On Same Button Color/ex_08.py
+thonnycontrib/thonny_etboard_basic_examples/etboard/examples/09. OLED Write, Depending On The Value Light Sensor/ex_09.py
+thonnycontrib/thonny_etboard_basic_examples/etboard/examples/10. Ultrasonic Distance, LED Blink/ex_10.py
+thonnycontrib/thonny_etboard_basic_examples/etboard/lib/OLED_U8G2.py
+thonnycontrib/thonny_etboard_basic_examples/etboard/lib/pin_define.py
+thonnycontrib/thonny_etboard_basic_examples/etboard/lib/ssd1306.py
