@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: typhoon-dbapi
+Version: 0.0.3
+Summary: Hooks and functions related to databases compatible with the Python Database API Specification v2.0.
+Home-page: https://github.com/pypa/sampleproject
+Author: Typhoon Data
+Author-email: info.typhoon.data@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: typhoon-orchestrator
+Requires-Dist: sqlparse
+Provides-Extra: bigquery
+Requires-Dist: google-cloud-bigquery ; extra == 'bigquery'
+Provides-Extra: duckdb
+Requires-Dist: duckdb ; extra == 'duckdb'
+Provides-Extra: mssql
+Requires-Dist: pymssql ; extra == 'mssql'
+Provides-Extra: mysql
+Requires-Dist: mysql-connector-python ; extra == 'mysql'
+Provides-Extra: postgres
+Requires-Dist: psycopg2 ; extra == 'postgres'
+Provides-Extra: snowflake
+Requires-Dist: snowflake-connector-python ; extra == 'snowflake'
+Provides-Extra: sqlalchemy
+Requires-Dist: sqlalchemy ; extra == 'sqlalchemy'
+
+# Typhoon DbAPI Extension
+
+Hooks and functions related to databases compatible with the [Python Database API Specification v2.0](https://www.python.org/dev/peps/pep-0249/).
+
+## Installation
+
+Run `pip install typhoon-dbapi` for the base package including functions and an EchoDb hook for testing purposes as well as SQLite.
+
+## Install extras
+
+For additional databases run:
+
+- **Snowflake**: `pip install typhoon-dbapi[snowflake]`
+- **Big Query**: `pip install typhoon-dbapi[bigquery]`
+- **Postgres**: `pip install typhoon-dbapi[postgres]`
+- **DuckDB**: `pip install typhoon-dbapi[duckdb]`
+- **MySQL**: `pip install typhoon-dbapi[mysql]`
+
+## Virtualenv for development
+
+```shell script
+python3 -m venv venv_typhoon
+source venv_typhoon/bin/activate
+python -m pip install -r requirements   # Re-run this every time you add new requirements
+```
+
+## Upload to Pypi
+
+Make an account at https://pypi.org/account/register/.
+Edit the setup.py to include project name, desired version, description etc. https://docs.python.org/3/distutils/setupscript.html
+Run `make typhoon-extension` and use the user and password you created to upload.
+
+## Upload docs to github pages
+
+**Coming soon...**
+
+
