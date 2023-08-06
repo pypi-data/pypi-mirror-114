@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+pydspack/__init__.py
+pydspack.egg-info/PKG-INFO
+pydspack.egg-info/SOURCES.txt
+pydspack.egg-info/dependency_links.txt
+pydspack.egg-info/top_level.txt
