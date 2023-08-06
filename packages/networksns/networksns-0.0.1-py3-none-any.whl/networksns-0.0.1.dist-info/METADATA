@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: networksns
+Version: 0.0.1
+Summary: Complex Network library
+Home-page: https://github.com/alb95/NetworkSNS
+Author: Alberto Bucci
+Author-email: albertobucci1995@gmail.com
+License: BSD-Clause-2
+Keywords: complex-networks
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: dynetx
+Requires-Dist: numpy
+Requires-Dist: networkx
+Requires-Dist: scipy
+Requires-Dist: statsmodels
+
+UNKNOWN
+
