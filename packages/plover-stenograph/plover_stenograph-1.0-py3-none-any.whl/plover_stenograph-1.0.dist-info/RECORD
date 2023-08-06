@@ -1,0 +1,14 @@
+plover_stenograph/__init__.py,sha256=P2CPFghtRZM6FJlw3vdl9_k8yTmv7VwLBeAvS9sYJAg,92
+plover_stenograph/usb.py,sha256=Kgt37SmLxDle0VlHjxN11-kg2suckzb7x2PorS2cbTY,17918
+plover_stenograph/wifi.py,sha256=kC0H6jjZKCWp4ExiXNErbb7H8E9X0rZcYO0G5jZRd5U,8487
+stenograph/__init__.py,sha256=1BlWQ7XvTZHOf_qDMHV_lE8qFsUPNobgsJu8-xMhwd4,167
+stenograph/exception.py,sha256=YPzrb9y2EHjjhi03KYeq7tZnKRTuLDIjtrDcSEmARwg,611
+stenograph/machine.py,sha256=0NpuxweEy1JXlmDUHY1a0yQZCgCuQPKK47_HUN90IXE,607
+stenograph/packet.py,sha256=Fr67DAlim81-Uiw7YKmnXnirRk7AWzxTEQoUtlO7P1k,4993
+stenograph/stroke.py,sha256=iRfOOcgEYIulJRbezVk6-V0p4B4GNhl_hJygqsTPPME,255
+plover_stenograph-1.0.dist-info/METADATA,sha256=o8gVYjieyfXm-O-a3SE9BJsIvBvglU3RfkhNbVXPJoU,579
+plover_stenograph-1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+plover_stenograph-1.0.dist-info/entry_points.txt,sha256=jeQk2DCp0xh7DUUnta02DTU8GcS-B360rEI2t4b4eKU,119
+plover_stenograph-1.0.dist-info/top_level.txt,sha256=VDVresIul2nFnN6IFUySmcyctCUYBbV87HQyHKVfrso,29
+plover_stenograph-1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+plover_stenograph-1.0.dist-info/RECORD,,
