@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: tensorflow-mri
+Version: 0.2.0a1
+Summary: A collection of TensorFlow add-ons for computational MRI.
+Home-page: https://github.com/mrphys/tensorflow-mri
+Author: Javier Montalt Tordera
+Author-email: javier.montalt@outlook.com
+License: Apache 2.0
+Keywords: tensorflow,mri
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: GPU
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: h5py
+Requires-Dist: numpy
+Requires-Dist: tensorflow
+Requires-Dist: tensorflow-graphics
+
+TensorFlow MRI
+==============
+
+|pypi| |build| |docs|
+
+.. |pypi| image:: https://badge.fury.io/py/tensorflow-mri.svg
+    :target: https://badge.fury.io/py/tensorflow-mri
+.. |build| image:: https://github.com/mrphys/tensorflow-mri/actions/workflows/build-package.yml/badge.svg
+    :target: https://github.com/mrphys/tensorflow-mri/actions/workflows/build-package.yml
+.. |docs| image:: https://img.shields.io/badge/api-reference-blue.svg
+    :target: https://mrphys.github.io/tensorflow-mri/
+
+.. start-intro
+
+TensorFlow MRI is a collection of TensorFlow add-ons for computational MRI.
+
+.. end-intro
+
+Installation
+------------
+
+.. start-install
+
+You can install TensorFlow MRI with ``pip``:
+
+.. code-block:: console
+
+    $ pip install tensorflow-mri
+
+Note that only Linux wheels are currently being provided.
+
+.. end-install
+
+
