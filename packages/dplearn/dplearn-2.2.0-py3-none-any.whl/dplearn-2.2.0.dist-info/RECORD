@@ -1,0 +1,10 @@
+dplearn/__init__.py,sha256=JhgoD28_ojLaLi3hXsJ5PFSz9j_rZEeaRz-Bj4Eau9M,4115
+dplearn/extra.py,sha256=kwMv6NSIPi7sc9KHUF7JD4ZalxRHQnnbwTSxismRqvY,2167
+dplearn/math.py,sha256=Ak0dzKWRieWDUw_1a8fzcl1qFLItwiI399cq-Y6vkow,1378
+dplearn/quant.py,sha256=EYywZRGD_19QNfIw-kZYski4KCnjS5OOgIastOg8zNE,2295
+dplearn/tools.py,sha256=MUAq0tjXe7Yskdga07PUa1W7pi2grDXVg5kHnRPu550,12932
+dplearn-2.2.0.dist-info/LICENSE,sha256=mcpjpkMf70J3XjAr7Uf-zNj_TjJbr1qZ_Jx7l0oLbio,1522
+dplearn-2.2.0.dist-info/METADATA,sha256=jjO361tkutQmPGiiJT-v6s6aGSb6Dtc30pL-GO6CzPo,6038
+dplearn-2.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dplearn-2.2.0.dist-info/top_level.txt,sha256=OKr7DnTvFEW-cidCFGZumAzWR3LlcVc2Ks1o6W9pIXI,8
+dplearn-2.2.0.dist-info/RECORD,,
