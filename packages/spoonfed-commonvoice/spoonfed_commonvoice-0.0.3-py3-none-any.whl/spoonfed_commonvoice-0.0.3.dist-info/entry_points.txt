@@ -1,0 +1,3 @@
+[console_scripts]
+cva = spoonfed_commonvoice.main:run
+
