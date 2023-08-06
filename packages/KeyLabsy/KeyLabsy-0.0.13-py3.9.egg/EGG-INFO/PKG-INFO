@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: KeyLabsy
+Version: 0.0.13
+Summary: Streaming video data via networks
+Home-page: UNKNOWN
+Author: Psyro
+Author-email: <mail@psyro.de>
+License: UNKNOWN
+Description: No Documentation now. Just a example for it on github https://github.com/Psyro770/KeyLabs-Python/blob/main/main.py
+Keywords: wrapper,apiwrapper,keylabs,auth,authsystem
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
