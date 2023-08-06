@@ -1,0 +1,17 @@
+Metadata-Version: 1.0
+Name: dt-authentication-ente
+Version: 0.1.9
+Summary: UNKNOWN
+Home-page: http://github.com/duckietown/lib-dt-authentication
+Author: Andrea F. Daniele
+Author-email: afdaniele@ttic.edu
+License: UNKNOWN
+Description: 
+        dt-authentication-ente: Authentication client library used to decode Duckietown Tokens
+        ======================================================================================
+        
+        
+        Authentication client library used to decode Duckietown Tokens.
+        
+        
+Platform: UNKNOWN
