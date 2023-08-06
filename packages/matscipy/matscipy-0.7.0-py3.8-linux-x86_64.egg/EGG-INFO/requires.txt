@@ -1,0 +1,10 @@
+
+[cli]
+
+[fenics]
+fenics-dijitso
+fenics-dolfin
+fenics-ffc
+fenics-fiat
+fenics-ufl
+mshr
