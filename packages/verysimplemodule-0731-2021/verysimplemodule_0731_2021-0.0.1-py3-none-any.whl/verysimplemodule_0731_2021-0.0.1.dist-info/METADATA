@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: verysimplemodule-0731-2021
+Version: 0.0.1
+Summary: My first Python package
+Home-page: UNKNOWN
+Author: HAN YU
+Author-email: bearbearyu@gmail.com
+License: UNKNOWN
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+
+My first Python package with a slightly longer description
+
+
