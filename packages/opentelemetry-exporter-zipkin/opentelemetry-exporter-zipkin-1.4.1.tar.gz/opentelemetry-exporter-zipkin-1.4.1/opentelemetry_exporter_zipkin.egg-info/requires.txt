@@ -1,0 +1,4 @@
+opentelemetry-exporter-zipkin-json==1.4.1
+opentelemetry-exporter-zipkin-proto-http==1.4.1
+
+[test]
