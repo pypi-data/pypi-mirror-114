@@ -1,0 +1,17 @@
+README.md
+setup.py
+premier_league_api/__init__.py
+premier_league_api/client.py
+premier_league_api/competitions.py
+premier_league_api/errors.py
+premier_league_api/fixture.py
+premier_league_api/gameweek.py
+premier_league_api/meta_competitions.py
+premier_league_api/player.py
+premier_league_api/shared.py
+premier_league_api.egg-info/PKG-INFO
+premier_league_api.egg-info/SOURCES.txt
+premier_league_api.egg-info/dependency_links.txt
+premier_league_api.egg-info/requires.txt
+premier_league_api.egg-info/top_level.txt
+premier_league_api.egg-info/zip-safe
