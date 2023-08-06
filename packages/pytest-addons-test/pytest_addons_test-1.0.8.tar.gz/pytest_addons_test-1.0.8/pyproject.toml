@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pytest_addons_test"
+version = "1.0.8"
+description = "用于测试pytest的插件"
+authors = ["lin"]
+packages = [
+    { include = "pytest_addons_test"},
+]
+[tool.poetry.plugins] # Optional super table
+
+[tool.poetry.plugins."pytest11"]
+pytest_addons_test = "pytest_addons_test"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pytest = "^6.2.4"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
