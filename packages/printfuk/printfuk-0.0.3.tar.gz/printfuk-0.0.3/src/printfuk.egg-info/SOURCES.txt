@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+src/printfuk/__init__.py
+src/printfuk/printfuk.py
+src/printfuk.egg-info/PKG-INFO
+src/printfuk.egg-info/SOURCES.txt
+src/printfuk.egg-info/dependency_links.txt
+src/printfuk.egg-info/top_level.txt
