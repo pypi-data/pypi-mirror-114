@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: orbithunter
+Version: 0.7rc3
+Summary: Framework for Nonlinear Dynamics and Chaos
+Home-page: https://orbithunter.readthedocs.io/en/latest/index.html
+Author: Matthew Gudorf
+Author-email: matthew.gudorf@gmail.com
+License: UNKNOWN
+Project-URL: documentation, https://orbithunter.readthedocs.io/en/latest/index.html
+Project-URL: issues, https://orbithunter.readthedocs.io/en/latest/issues.html
+Project-URL: bugs, https://github.com/mgudorf/orbithunter/issues
+Project-URL: source, https://github.com/mgudorf/orbithunter
+Project-URL: guide, https://orbithunter.readthedocs.io/en/latest/guide.html
+Project-URL: tutorials, https://github.com/mgudorf/orbithunter/tree/main/notebooks
+Project-URL: faq, https://orbithunter.readthedocs.io/en/latest/faq.html
+Keywords: pde,partial differential equation,numeric,numerical simulation,solver,framework,periodic orbit
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Requires-Dist: numpy (>=1.18.1)
+Requires-Dist: scipy (>=1.4.1)
+Requires-Dist: h5py (>=2.10.0)
+Requires-Dist: pyqt5 (>=5.15.4)
+Requires-Dist: matplotlib (>=3.1.3)
+Provides-Extra: developer
+Requires-Dist: pytest (>=5.3.5) ; extra == 'developer'
+Requires-Dist: black (>=19.10b0) ; extra == 'developer'
+Provides-Extra: docs
+Requires-Dist: ipython ; extra == 'docs'
+Requires-Dist: sphinx (==3.5.2) ; extra == 'docs'
+Requires-Dist: sphinxcontrib-log-cabinet (==1.0.1) ; extra == 'docs'
+Requires-Dist: sphinx-issues (>=1.2.0) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (==0.5.1) ; extra == 'docs'
+Requires-Dist: sphinx-gallery (==0.8.2) ; extra == 'docs'
+Requires-Dist: numpydoc (>=1.1) ; extra == 'docs'
+Requires-Dist: pillow (>=8.0) ; extra == 'docs'
+Requires-Dist: nb2plots (>=0.6) ; extra == 'docs'
+Requires-Dist: texext (>=0.6.6) ; extra == 'docs'
+Requires-Dist: sphinx-tabs (>=2.1.0) ; extra == 'docs'
+Provides-Extra: extra
+Requires-Dist: ipykernel (>=5.1.4) ; extra == 'extra'
+Requires-Dist: jupyterlab (>=1.2.6) ; extra == 'extra'
+Requires-Dist: ipython (>=7.21.0) ; extra == 'extra'
+Requires-Dist: gudhi (>=3.3.0) ; extra == 'extra'
+Requires-Dist: POT (>=0.7.0) ; extra == 'extra'
+Requires-Dist: scikit-learn (>=0.24.1) ; extra == 'extra'
+Requires-Dist: tensorflow (>1.14.0) ; extra == 'extra'
+Provides-Extra: full
+Requires-Dist: pytest (>=5.3.5) ; extra == 'full'
+Requires-Dist: black (>=19.10b1) ; extra == 'full'
+Requires-Dist: ipython (>=7.21.0) ; extra == 'full'
+Requires-Dist: ipykernel (>=5.1.4) ; extra == 'full'
+Requires-Dist: jupyterlab (>=1.2.6) ; extra == 'full'
+Requires-Dist: gudhi (>=3.3.0) ; extra == 'full'
+Requires-Dist: POT (>=0.7.0) ; extra == 'full'
+Requires-Dist: scikit-learn (>=0.24.1) ; extra == 'full'
+Requires-Dist: tensorflow (>=1.14.0) ; extra == 'full'
+Provides-Extra: test
+Requires-Dist: pytest (>=5.3.5) ; extra == 'test'
+
+orbithunter 0.7rc3
+==================
+orbithunter serves as a framework for solving chaotic nonlinear partial differential equations.
+
+Features
+--------
+
+- An object oriented approach to solutions of partial differential equations
+- A general-purpose framework for finding, visualizing and manipulating these solutions
+- High-level access to SciPy API, particularly its minimize and optimize packages.
+- New spatiotemporal techniques such as 'clipping' and 'gluing'
+
+Currently there is only an implementation of the Kuramoto-Sivashinsky equation (KSE).
+
+External Links
+--------------
+
+Be sure to check out these resources for help and development!
+
+- `Homepage and Documentation <https://orbithunter.readthedocs.io/en/latest/index.html>`_
+- `Issues <https://orbithunter.readthedocs.io/en/latest/issues.html>`_
+- `Bug reports <https://github.com/mgudorf/orbithunter/issues>`_
+- `Source <https://github.com/mgudorf/orbithunter>`_
+- `Developer Guide <https://orbithunter.readthedocs.io/en/latest/guide.html>`_
+- `Tutorial Notebooks <https://github.com/mgudorf/orbithunter/tree/main/tutorial>`_
+- `FAQ <https://orbithunter.readthedocs.io/en/latest/faq.html>`_
+
+Support
+-------
+
+If you are having issues, please let us know.
+We have a mailing list located at: orbithunter@googlegroups.com
+
+License
+-------
+
+The project is licensed under the GNU General Public License v3 (GPLv3) license.
+
