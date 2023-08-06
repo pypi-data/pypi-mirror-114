@@ -1,0 +1,11 @@
+srcom/__init__.py,sha256=w6Mcr_2yOq6oNkc624XbrmgO2XS9C_huxFwis8EE3_Q,54
+srcom/abcs.py,sha256=V-T4gUBgErM8aA5jJJmFZvP04VGCcHWJBspXJ6F0vtw,424
+srcom/client.py,sha256=NdR1mmHYkva59bU1bMehqOLBwfOPTEOigS3M1Cu_pZM,5827
+srcom/dataclasses.py,sha256=tp_rQvp7Tj4i7DNsrn6w-LUx3QfoloeEf9iem9mnAxc,9693
+srcom/http.py,sha256=oKvasbfVD_pmxDHzC8Lna8qUj0Pxw5hBvBidQPXcBfY,685
+srcom/utils.py,sha256=DFuN68KFeQ9cfXvsG3skuC9mnGUIVnuXXwxyVMyQr9k,564
+srcom.py-0.0.1.dist-info/LICENSE,sha256=XCCNo4s8eeoir-StQTrPLnVmHAMQHrBFVpru2zAfbYA,1067
+srcom.py-0.0.1.dist-info/METADATA,sha256=oxe2-VqYlhOEM7O7DhWB0E_hUY-lT8SBq4Os2_nqMHg,2494
+srcom.py-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+srcom.py-0.0.1.dist-info/top_level.txt,sha256=csBasY80ejosw2GecCn19x_8BN6SxuQNBcgg6zXleWs,6
+srcom.py-0.0.1.dist-info/RECORD,,
