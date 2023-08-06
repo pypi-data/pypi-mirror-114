@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: consciousnet
+Version: 0.0.0
+Summary: 
+Module providing Consciousness Exploration Tools for PyTorch.
+
+Home-page: https://github.com/neurospin-deepinsight/consciousnet
+Author: 
+consciousnet developers
+
+Author-email: antoine.grigis@cea.fr
+License: CeCILL-B
+Description: Module providing Consciousness Exploration Tools for PyTorch.
+        
+Platform: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Utilities
