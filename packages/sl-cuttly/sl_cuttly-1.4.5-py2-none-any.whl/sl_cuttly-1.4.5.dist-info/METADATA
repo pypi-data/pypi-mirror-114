@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: sl-cuttly
+Version: 1.4.5
+Summary: UNKNOWN
+Home-page: https://github.com/shehan9909/sl-cuttly
+Author: shehan_lahiru
+Author-email: www.shehan6472@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: sl-shortner
+
+cuttly link shortner.
+
+python3
+
+
