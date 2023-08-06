@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: deetly
+Version: 0.0.26
+Summary: toolkit for creating data packages
+Author: Paul Bencze
+Author-email: paul@idelab.com
+Requires-Python: >=3.6.8,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: isodate (>=0.6.0,<0.7.0)
+Requires-Dist: pandas (>=1.1.4,<2.0.0)
+Requires-Dist: plotly
+Requires-Dist: python-dateutil (>=2.8.1,<3.0.0)
+Requires-Dist: requests (>=2.20.0,<3.0.0)
+Requires-Dist: schema (>=0.7.4,<0.8.0)
+Requires-Dist: urllib3 (>=1.26.0,<2.0.0)
