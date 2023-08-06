@@ -1,0 +1,20 @@
+[tool.hdev]
+project_name = "hdev"
+project_type = "library"
+
+[tool.hdev.clean]
+# File and directory patterns relative to the root to remove.
+# These support shell expansions and patterns
+files=[]
+dirs=[]
+# File and directory names which will be removed anywhere they
+# are found. These support shell expansions and patterns
+file_names=[]
+dir_names=[]
+# Control if empty dirs are cleaned or not
+empty_dirs=true
+
+[tool.hdev.run]
+# Add custom commands accessible with `hdev run ...`
+shell.command="./bin/run/shell.sh"
+shell.help="Start a shell with local development hdev running for local dev"

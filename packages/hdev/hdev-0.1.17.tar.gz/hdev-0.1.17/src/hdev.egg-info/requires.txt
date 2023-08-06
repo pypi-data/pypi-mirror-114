@@ -1,0 +1,17 @@
+cookiecutter
+diskcache
+importlib_resources
+jinja2<3
+toml
+tox
+
+[tests]
+cookiecutter
+coverage
+diskcache
+h-matchers
+importlib_resources
+jinja2<3
+pytest
+toml
+tox
