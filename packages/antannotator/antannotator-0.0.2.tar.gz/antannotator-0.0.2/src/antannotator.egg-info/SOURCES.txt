@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/antannotator/__init__.py
+src/antannotator/annotation_controller.py
+src/antannotator/persistence.py
+src/antannotator/text_classification_wiget.py
+src/antannotator/utils.py
+src/antannotator.egg-info/PKG-INFO
+src/antannotator.egg-info/SOURCES.txt
+src/antannotator.egg-info/dependency_links.txt
+src/antannotator.egg-info/requires.txt
+src/antannotator.egg-info/top_level.txt
