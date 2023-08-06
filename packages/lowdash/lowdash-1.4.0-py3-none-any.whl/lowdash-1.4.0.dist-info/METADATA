@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: lowdash
+Version: 1.4.0
+Summary: A python implementation of lodash in javascript
+Home-page: https://github.com/abh80/lowdash
+License: MIT
+Keywords: lodash,javascript,python
+Author: abh80
+Author-email: boatgithub27@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: sphinx-rtd-theme (>=0.5.2,<0.6.0)
+Project-URL: Repository, https://github.com/abh80/lowdash
+Description-Content-Type: text/markdown
+
+# Lowdash
+
+Lowdash is a simple implementation of lodash in python.
+
+Lowdash will provide you with a set of functions that will help to work with arrays, objects and other data structures.
+
+# Installing
+
+```bash
+pip install lowdash
+```
+
+# Getting Started
+
+To get started you can use the following code:
+
+```python
+from lowdash.arrays import *
+compact(['a', '', 'b', None, 'c'])
+# Output : ['a', 'b', 'c']
+```
+
+## Documentation Comming Soon!
+
