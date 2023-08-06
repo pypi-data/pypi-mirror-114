@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: terra-mantle
+Version: 0.1.0
+Summary: Terra mantle client
+Home-page: https://github.com/Anchor-Protocol/mantle-python
+Author: Ian Lee
+Author-email: ian@terra.money
+License: Apache-2.0
+Platform: UNKNOWN
+Requires-Dist: gql
+Requires-Dist: graphql-core
+
+UNKNOWN
+
+
