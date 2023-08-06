@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/analyzer/__init__.py
+src/analyzer/encoder.py
+src/analyzer/global_const_dir.py
+src/analyzer/main.py
+src/hilla_encoder.egg-info/PKG-INFO
+src/hilla_encoder.egg-info/SOURCES.txt
+src/hilla_encoder.egg-info/dependency_links.txt
+src/hilla_encoder.egg-info/top_level.txt
