@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+src/BitFieldDraw.egg-info/PKG-INFO
+src/BitFieldDraw.egg-info/SOURCES.txt
+src/BitFieldDraw.egg-info/dependency_links.txt
+src/BitFieldDraw.egg-info/top_level.txt
+src/bitfielddraw/__init__.py
+src/bitfielddraw/__main__.py
