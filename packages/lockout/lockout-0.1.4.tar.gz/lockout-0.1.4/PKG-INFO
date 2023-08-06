@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: lockout
+Version: 0.1.4
+Summary: Lockout: Sparse Regularization of Neural Networks
+Home-page: https://github.com/warbelo/Lockout
+Author: Wilmer Arbelo
+Author-email: wilmer.arbelogonzalez@ucsf.edu
