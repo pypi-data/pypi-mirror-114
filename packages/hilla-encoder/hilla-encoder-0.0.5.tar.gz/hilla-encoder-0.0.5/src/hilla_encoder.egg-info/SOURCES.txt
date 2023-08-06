@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/encoder/__init__.py
+src/encoder/encoder.py
+src/encoder/global_const_dir.py
+src/encoder/main.py
+src/hilla_encoder.egg-info/PKG-INFO
+src/hilla_encoder.egg-info/SOURCES.txt
+src/hilla_encoder.egg-info/dependency_links.txt
+src/hilla_encoder.egg-info/top_level.txt
