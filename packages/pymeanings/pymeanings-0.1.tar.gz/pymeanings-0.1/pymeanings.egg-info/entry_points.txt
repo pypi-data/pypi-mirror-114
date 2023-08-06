@@ -1,0 +1,3 @@
+[console_scripts]
+pymeaning = pymeanings.command_line:main
+

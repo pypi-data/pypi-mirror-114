@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.py
+pymeanings/__init__.py
+pymeanings/command_line.py
+pymeanings/meaning.py
+pymeanings.egg-info/PKG-INFO
+pymeanings.egg-info/SOURCES.txt
+pymeanings.egg-info/dependency_links.txt
+pymeanings.egg-info/entry_points.txt
+pymeanings.egg-info/not-zip-safe
+pymeanings.egg-info/requires.txt
+pymeanings.egg-info/top_level.txt
