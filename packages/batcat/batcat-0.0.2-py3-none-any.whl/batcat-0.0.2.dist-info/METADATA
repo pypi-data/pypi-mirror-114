@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: batcat
+Version: 0.0.2
+Summary: BatCat, A Cat Looks Like A Cat.
+Home-page: https://github.com/Ewen2015/BatpCat
+Author: Ewen Wang
+Author-email: wolfgangwong2012@gmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: pandas
+Requires-Dist: boto3
+
+
+BatCat, A Cat Looks Like A Cat
+========================================
+
+😸😹😺😻😼😽😾😿🙀🐱
+
+BatCat is designed to help data scientists handle data from Amazon Simple Storage Service (s3) in AWS Lambda.
+
+Story of the BatCat
+----------------------
+
+The package names after a cat of my friend, Clara. 
+
+image:: https://raw.githubusercontent.com/Ewen2015/BatCat/master/BatCat.jpeg
+
+License
+-------
+
+BatCat is licensed under the MIT License © Contributors, 2021.
+
+
