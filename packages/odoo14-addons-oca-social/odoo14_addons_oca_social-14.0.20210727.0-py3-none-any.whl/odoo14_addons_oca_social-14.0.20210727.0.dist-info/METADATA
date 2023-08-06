@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: odoo14-addons-oca-social
+Version: 14.0.20210727.0
+Summary: Meta package for oca-social Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Requires-Dist: odoo14-addon-base-search-mail-content
+Requires-Dist: odoo14-addon-email-template-qweb
+Requires-Dist: odoo14-addon-mail-attach-existing-attachment
+Requires-Dist: odoo14-addon-mail-debrand
+Requires-Dist: odoo14-addon-mail-layout-preview
+Requires-Dist: odoo14-addon-mail-outbound-static
+Requires-Dist: odoo14-addon-mail-preview-base
+Requires-Dist: odoo14-addon-mail-restrict-send-button
+Requires-Dist: odoo14-addon-mail-send-copy
+Requires-Dist: odoo14-addon-mail-tracking
+Requires-Dist: odoo14-addon-mail-tracking-mass-mailing
+Requires-Dist: odoo14-addon-mass-mailing-partner
+
+UNKNOWN
+
