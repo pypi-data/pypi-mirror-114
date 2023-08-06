@@ -1,0 +1,6 @@
+setup.py
+rpa_parent.egg-info/PKG-INFO
+rpa_parent.egg-info/SOURCES.txt
+rpa_parent.egg-info/dependency_links.txt
+rpa_parent.egg-info/requires.txt
+rpa_parent.egg-info/top_level.txt
