@@ -1,0 +1,4 @@
+[gui_scripts]
+buildFen = MzChess:runFenBuilder
+mzChess = MzChess:runMzChess
+
