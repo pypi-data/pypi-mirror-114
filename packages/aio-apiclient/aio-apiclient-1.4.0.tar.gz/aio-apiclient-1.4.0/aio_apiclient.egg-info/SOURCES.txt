@@ -1,0 +1,14 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+aio_apiclient.egg-info/PKG-INFO
+aio_apiclient.egg-info/SOURCES.txt
+aio_apiclient.egg-info/dependency_links.txt
+aio_apiclient.egg-info/requires.txt
+aio_apiclient.egg-info/top_level.txt
+apiclient/__init__.py
+apiclient/api.py
+apiclient/backends/__init__.py
+apiclient/backends/_aiohttp.py
+apiclient/backends/_httpx.py
