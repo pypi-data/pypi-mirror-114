@@ -1,0 +1,10 @@
+README.md
+setup.py
+alteryx_gallery_py/__init__.py
+alteryx_gallery_py/__main__.py
+alteryx_gallery_py/subscriptions.py
+alteryx_gallery_py.egg-info/PKG-INFO
+alteryx_gallery_py.egg-info/SOURCES.txt
+alteryx_gallery_py.egg-info/dependency_links.txt
+alteryx_gallery_py.egg-info/entry_points.txt
+alteryx_gallery_py.egg-info/top_level.txt
