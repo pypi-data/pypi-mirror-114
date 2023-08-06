@@ -1,0 +1,405 @@
+#!/usr/bin/env python3
+#
+# (c) 2017-2021 Fetal-Neonatal Neuroimaging & Developmental Science Center
+#                     Boston Children's Hospital
+#
+#               http://childrenshospital.org/FNNDSC/
+#                         dev@babyMRI.org
+#
+
+import sys, os, pudb, socket, json
+sys.path.insert(1, os.path.join(os.path.dirname(__file__), '..'))
+
+from    pfstate             import S
+from    argparse            import RawTextHelpFormatter
+from    argparse            import ArgumentParser
+from    pfmisc._colors      import Colors
+from    pfmisc.C_snode      import C_snode
+from    pfmisc.debug        import debug
+
+
+str_defIP   = [l for l in (
+                [ip for ip in socket.gethostbyname_ex(socket.gethostname())[2]
+                if not ip.startswith("127.")][:1],
+                    [[(s.connect(('8.8.8.8', 53)), s.getsockname()[0], s.close())
+                for s in [socket.socket(socket.AF_INET, socket.SOCK_DGRAM)]][0][1]]) if l][0][0]
+
+str_name    = "pfstate"
+str_version = "3.0.2"
+str_desc    = Colors.CYAN + r"""
+
+        __     _         _
+       / _|   | |       | |
+ _ __ | |_ ___| |_  __ _| |_  ___
+| '_ \|  _/ __| __|/ _` | __|/ _ \
+| |_) | | \__ \ |_| (_| | |_|  __/
+| .__/|_| |___/\__|\__,_|\__|\___|
+| |
+|_|
+
+                                Path-File-state
+
+                A stateful class -- part of the pf* family.
+
+                              -- version """ + \
+             Colors.YELLOW + str_version + Colors.CYAN + """ --
+
+    ``pfstate`` is a class designed to, at a *class* level, maintain state.
+    Thus, it is a class that has state information at the class level and
+    not within instantiated objects.
+
+    States are created in the global space typically by deriving from a special
+    internal class and
+    calling the state_create() method of the base class. Note that a "derived"
+    class is still only setting state in the same global space -- and not in
+    a separate derived-class space.
+
+    THIS IS IMPORTANT:
+
+        * There is only ever ONE global state in the context of a single
+          system. Thus, if various different modules use `pfstate` it is
+          probably best practice to *always* set the **kwargs that are sent
+          to the derived class with
+
+                     **dict(kwargs, useGlobalState = True)
+
+    The class was designed to overcome some inherent limitations in using the
+    python HTTPServer module, namely:
+
+        * The server module is constructed with a parameter denoting a class
+          to handle calls/storage. Thus, from the constructor to the server
+          it is impossible to set internal values of the handler.
+
+        * each HTTP call to the server instantiated a new handler instance,
+          hence any state information that might exist in the handler is
+          reset at each call.
+
+    Moreover, the class was also created as an alternate to using global
+    variables. In essence, this class object is a container analogue for
+    "global" variables and provides an arguably cleaner mechanism for
+    encapsulating some form of global state.
+
+    This class object is designed to be used as a module and its contained
+    state object 'S' can be added to an existing class and subclassed as
+    necessary. See the __main__ method calling.
+
+""" + Colors.NO_COLOUR
+
+def synopsis(ab_shortOnly = False):
+    scriptName = os.path.basename(sys.argv[0])
+    shortSynopsis =  '''
+    NAME
+
+	    pfstate
+
+        - pf* state object
+
+    SYNOPSIS
+
+            pfstate                                                 \\
+                [--verbosity <level>]                               \\
+                [--configFileLoad <file>]                           \\
+                [--configFileSave <file>]                           \\
+                [--debugToDir <dir>]                                \\
+                [--state <internalState>]                           \\
+                [-x|--desc]                                         \\
+                [-y|--synopsis]                                     \\
+                [--msg <JSON_formatted>]
+
+    BRIEF EXAMPLE
+
+        $>pfstate --state '/earthState'      # return a dictionary
+
+        $>pfstate --state 'tree'             # return the raw internal data
+
+    '''
+
+    description =  '''
+    DESCRIPTION
+
+    ``pfstate`` provides an encapsulated container for "global" type
+    variables.
+
+    Internally, data is organized initially as a dictionary which is
+    re-cast into an SNode tree. To use, this class should be subclassed,
+    and its class member variable 'S' set to the needs of the calling
+    program/system.
+
+    ARGS
+
+        [--state <directive>]
+        If specified, return some state detail.. Usually this is some
+        path into an internal state tree node. If the <directive> is
+        the actual text 'tree', then return the entire state object
+        representation.
+
+        [--msg '<JSON_formatted>']
+        An optional JSON formatted string exemplifying how to get and
+        set internal variables.
+
+        --msg '
+        {
+            "action": "internalctl",
+            "meta": {
+                        "var":     "/",
+                        "get":      "value"
+                    }
+        }'
+
+        --msg '
+        {   "action": "internalctl",
+            "meta": {
+                        "var":     "/service/megalodon",
+                        "set":     {
+                            "compute": {
+                                "addr": "10.20.1.71:5010",
+                                "baseURLpath": "api/v1/cmd/",
+                                "status": "undefined"
+                            },
+                            "data": {
+                                "addr": "10.20.1.71:5055",
+                                "baseURLpath": "api/v1/cmd/",
+                                "status": "undefined"
+                            }
+                        }
+                    }
+        }'
+
+        [--configFileLoad <file>]
+        Load configuration information from the JSON formatted <file>.
+
+        [--configFileSave <file>]
+        Save configuration information to the JSON formatted <file>.
+
+        [-x|--desc]
+        Provide an overview help page.
+
+        [-y|--synopsis]
+        Provide a synopsis help summary.
+
+        [--version]
+        Print internal version number and exit.
+
+        [--debugToDir <dir>]
+        A directory to contain various debugging output -- these are typically
+        JSON object strings capturing internal state. If empty string (default)
+        then no debugging outputs are captured/generated.
+
+        [-v|--verbosity <level>]
+        Set the verbosity level. "0" typically means no/minimal output. Allows
+        for more fine tuned output control as opposed to '--quiet' that
+        effectively silences everything.
+
+    EXAMPLES
+
+    pfstate                                                \\
+        --msg '
+            {  "action": "internalctl",
+                "meta": {
+                            "var":     "/",
+                            "get":      "value"
+                        }
+            }'
+    '''
+    if ab_shortOnly:
+        return shortSynopsis
+    else:
+        return shortSynopsis + description
+
+parser  = ArgumentParser(description = str_desc, formatter_class = RawTextHelpFormatter)
+
+parser.add_argument(
+    '--msg',
+    action  = 'store',
+    dest    = 'msg',
+    default = '',
+    help    = 'Message payload for internalctl control.'
+)
+parser.add_argument(
+    '--version',
+    help    = 'if specified, print version number',
+    dest    = 'b_version',
+    action  = 'store_true',
+    default = False
+)
+parser.add_argument(
+    '--state',
+    help    = 'if specified, show the reference internal state',
+    dest    = 'state',
+    default = ''
+)
+parser.add_argument(
+    '--configFileLoad',
+    help    = 'a file containing configuration information',
+    dest    = 'str_configFileLoad',
+    action  = 'store',
+    default = ''
+)
+parser.add_argument(
+    '--configFileSave',
+    help    = 'a file to store configuration information',
+    dest    = 'str_configFileSave',
+    action  = 'store',
+    default = ''
+)
+parser.add_argument(
+    '--debugToDir',
+    help    = 'a destination directory to contain debugging info',
+    dest    = 'str_debugToDir',
+    action  = 'store',
+    default = ''
+)
+parser.add_argument(
+    "-v", "--verbosity",
+    help    = "verbosity level for app",
+    dest    = 'verbosity',
+    default = "1")
+parser.add_argument(
+    "-x", "--desc",
+    help    = "long synopsis",
+    dest    = 'desc',
+    action  = 'store_true',
+    default = False
+)
+parser.add_argument(
+    "-y", "--synopsis",
+    help    = "short synopsis",
+    dest    = 'synopsis',
+    action  = 'store_true',
+    default = False
+)
+
+args            = parser.parse_args()
+
+if args.desc or args.synopsis:
+    str_help    : str = ""
+    print(str_desc)
+    if args.desc:
+        str_help     = synopsis(False)
+    if args.synopsis:
+        str_help     = synopsis(True)
+    print(str_help)
+    sys.exit(1)
+
+if args.b_version:
+    print("Version: %s" % str_version)
+    sys.exit(1)
+
+# Create a state class
+class D(S):
+    """
+    A derived class with problem-specific state
+
+    See https://github.com/FNNDSC/pfstate for more information.
+
+    """
+
+    def __init__(self, *args, **kwargs):
+        """
+        Constructor
+        """
+        self.state_create(
+        {
+            'additionalState': {
+                'desc':         'Additional state information',
+                'theAnswer':    42,
+                'theQuestion':  'What do you get if you multiple six by nine',
+                'foundBy':      'Arthur Dent',
+                'note':     {
+                    'additional':   'was this really Arthur Dent, though?',
+                    'action':   {
+                        'item1':    'further research might be needed'
+                    }
+                }
+            },
+            'earthState': {
+                'current':      'Destroyed',
+                'reason':       'Facilitate Hyperspace bypass',
+                'survivors': {
+                    'humans':   ['Arthur Dent', 'Ford Prefect', 'Trillian'],
+                    'dolphins': 'Most of them',
+                    'note': {
+                        'exception':    'Ford Prefect is not a human'
+                    }
+                }
+            }
+        },
+        *args, **kwargs)
+
+state   = D(
+    version     = str_version,
+    name        = str_name,
+    desc        = str_desc,
+    args        = vars(args)
+)
+
+# Now create a different derived class --
+# This will still add to the global state
+class E(S):
+    """
+    A new derived class with different state -- this is still
+    added to the same global space
+    """
+
+    def __init__(self, arg, *args, **kwargs):
+        """
+        Constructor
+        """
+        if 'randomFact' not in arg.keys():
+            arg['randomFact']   = "Vogon poetry is the third worst poetry in the universe."
+        self.state_create(
+        {
+            'Vogons': {
+                'desc'          :   'Slug-like but vaguely humanoid',
+                'preferredJob'  :   'Galactic bureaucrats',
+                'randomFact'    :   arg['randomFact'],
+                'note':     {
+                    'additional':   'Vogons are the worst marksmen in the galaxy.',
+                    'source':   {
+                        'name':    'Marvin the Paranoid Android'
+                    }
+                }
+            }
+        },
+        *args, **kwargs)
+
+class demo:
+    """Just an example class that as part of its initialization adds to state
+    """
+    def __init__(self, arg, *args, **kwargs):
+        """example class constructor
+
+        Args:
+            arg ([type]): some unspecified type arg input
+        """
+        self.newState       = E(arg, *args, **dict(kwargs, useGlobalState = True))
+
+example = demo(
+            {
+                'randomFact' : "Vogon poetry is the third worst poetry in the universe"
+            }, name = "example"
+        )
+
+debugger                = debug(verbosity = int(args.verbosity))
+log                     = debugger.qprint
+
+if len(args.msg):
+    d_control = state.internalctl_process(request = json.loads(args.msg))
+    log(
+        json.dumps(
+            d_control,
+            indent = 4
+        ),
+        level = 2
+    )
+
+if len(args.state):
+    if args.state == 'tree':
+        log(state.T)
+    else:
+        log(
+            json.dumps(
+                state.as_dict(node = args.state), indent = 4
+            ),
+            syslog      = False,
+            colorize    = False)
