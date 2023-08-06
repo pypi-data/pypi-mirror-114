@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: ddfirmware
+Version: 1.0.0
+Summary: DD-WRT firmware download tool
+Home-page: https://github.com/fleetyeets/dd-firmware
+Author: Travis Pawlikowski
+Author-email: tnp123@protonmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/fleetyeets/dd-firmware/issues
+Project-URL: Source, https://github.com/fleetyeets/dd-firmware
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dd-firmware
+
+## What is dd-firmware?
+
+dd-firmware is a simple script for terminal use.  It queries dd-wrt.com for router firmware based on user input and writes it to the present working directory. 
+
+## System Requirements
+
+* python3
+
+
+## Installation
+
+```pip install dd-firmware```
+
+## Usage
+
+To use dd-firmware:
+
+### Basic / Current Day
+
+```dd-firmware [router]```
+
+Example: dd-firmware r7000; uses fuzzy regex match
+
+
+### Arguments
+
+```-f or --five```
+
+prints the last five firmware release dates and allows you to pick from within
+
+

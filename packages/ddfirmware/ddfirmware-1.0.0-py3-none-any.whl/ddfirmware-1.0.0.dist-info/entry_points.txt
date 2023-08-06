@@ -1,0 +1,3 @@
+[console_scripts]
+ddfirmware = ddfirmware.cli:main
+
