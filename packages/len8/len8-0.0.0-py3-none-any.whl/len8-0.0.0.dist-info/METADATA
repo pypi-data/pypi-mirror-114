@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: len8
+Version: 0.0.0
+Summary: A utility for keeping line lengths within PEP 8 standards.
+Home-page: https://github.com/parafoxia/len8
+Author: Ethan Henderson, Jonxslays
+License: BSD-3-Clause
+Project-URL: Documentation, https://len8.readthedocs.io/en/latest/
+Project-URL: Source, https://github.com/parafoxia/len8
+Project-URL: Bug Tracker, https://github.com/parafoxia/len8/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: black (==21.7b0) ; extra == 'dev'
+Requires-Dist: mypy (==0.910) ; extra == 'dev'
+Requires-Dist: nox (==2021.6.12) ; extra == 'dev'
+Requires-Dist: sphinx (==4.1.1) ; extra == 'dev'
+Requires-Dist: sphinx-rtd-dark-mode (==1.2.3) ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme (==0.5.2) ; extra == 'dev'
+
+# len8
+
+[![PyPi version](https://img.shields.io/pypi/v/len8.svg)](https://pypi.python.org/pypi/len8/)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/len8.svg)](https://pypi.python.org/pypi/len8/)
+[![PyPI - Implementation](https://img.shields.io/pypi/implementation/len8)](https://pypi.python.org/pypi/len8/)
+[![PyPI - Status](https://img.shields.io/pypi/status/len8)](https://pypi.python.org/pypi/len8/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/len8)](https://pypistats.org/packages/len8)
+
+[![Maintenance](https://img.shields.io/maintenance/yes/2021)](https://github.com/parafoxia/len8)
+[![GitHub Release Date](https://img.shields.io/github/release-date/parafoxia/len8)](https://github.com/parafoxia/len8)
+[![GitHub last commit](https://img.shields.io/github/last-commit/parafoxia/len8)](https://github.com/parafoxia/len8)
+[![Read the Docs](https://img.shields.io/readthedocs/len8)](https://len8.readthedocs.io/en/latest/index.html)
+[![License](https://img.shields.io/github/license/parafoxia/len8.svg)](https://github.com/parafoxia/len8/blob/main/LICENSE)
+
+
