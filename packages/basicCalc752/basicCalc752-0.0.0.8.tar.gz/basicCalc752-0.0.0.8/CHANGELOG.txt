@@ -1,0 +1,33 @@
+CHANGE LOG
+-------------
+0.0.0.1 --> 7/27/2021
+First Release
+***********************
+0.0.0.2 --> 7/27/2021
+Just wanted to test some things out
+really didn't don anything
+************************
+0.0.0.3--> 7/27/2021
+Just wanted to test some things out
+really didn't don anything
+************************
+0.0.0.4--> 7/27/2021
+Just wanted to test some things out
+really didn't don anything
+************************
+0.0.0.5--> 7/27/2021
+Just wanted to test some things out
+really didn't don anything
+************************
+0.0.0.6--> 7/27/2021
+Just wanted to test some things out
+really didn't don anything
+************************
+0.0.0.7--> 7/27/2021
+Just wanted to test some things out
+really didn't don anything
+************************
+0.0.0.8--> 7/27/2021
+Just wanted to test some things out
+really didn't don anything
+************************
