@@ -1,0 +1,15 @@
+ontoma/__init__.py,sha256=SNG5VQ4se5njeZAzjtmo6cugNwc_Aekvd9kOFzkwB5A,294
+ontoma/cli.py,sha256=RdS7kwiLNYoXffSZ1F0wjmTg8zwzijQT583dWabwQA4,2987
+ontoma/constants.py,sha256=45mfKQL5VLpRjlt3WBuk2o0_nBDN32N4tNBJmGEIngY,453
+ontoma/downloaders.py,sha256=uDGE-13UgdOnggpyWYd39Y0J-UhB7PI0TuUxROXYryQ,1149
+ontoma/interface.py,sha256=0n748CxPeLzU_S3dJMiWOuw21yV5SW3-NyCkRINm7vs,10474
+ontoma/ontology.py,sha256=Xc_Gc9cJ3s2MwOvyJkTiPDz8rOtV5UNyJi82oDNUsgE,4169
+ontoma/owl.py,sha256=gQM24-WGaSFfAcDUmVvNh4k3s-2TMBtjr5vLbVfW4VA,3528
+ontoma/oxo.py,sha256=GZwJFcxBm46HJmRVETU5fKPWAo5uihgXZ30kP5UF58A,1579
+ontoma/zooma.py,sha256=ri0Z1nz2OlghwcWfAJhWyCpgi9cIsh97hH1oe6pafNY,1077
+ontoma-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ontoma-1.0.0.dist-info/METADATA,sha256=VybmzCXVpqgN-jdira1ph41v-Medwpyict8pSmDOkBo,1211
+ontoma-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ontoma-1.0.0.dist-info/entry_points.txt,sha256=rNTn1ZCB32ssP2jTuDnHZFitQpTORmLBBFDc7oR-Q8Y,64
+ontoma-1.0.0.dist-info/top_level.txt,sha256=DKW5DiCVpA0l6q3QGIEJ8jfLbOqUO4IjPMmWV4YcYWY,7
+ontoma-1.0.0.dist-info/RECORD,,

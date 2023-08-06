@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: ontoma
+Version: 1.0.0
+Summary: Ontology mapping for Open Targets
+Home-page: https://github.com/opentargets/OnToma
+Author: Open Targets data team
+Author-email: data@opentargets.org
+License: Apache License, Version 2.0
+Keywords: opentargets ontology efo mapper
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: pandas
+Requires-Dist: pronto
+Requires-Dist: requests
+Requires-Dist: retry
+
+![Documentation Status](https://readthedocs.org/projects/ontoma/badge/?version=stable) ![Build Status](https://img.shields.io/circleci/build/gh/opentargets/OnToma)
+
+OnToma is a Python module which maps the disease or phenotype terms to [EFO,](https://www.ebi.ac.uk/efo/) the ontology used in the Open Targets platform.
+
+The documentation is available at **https://ontoma.readthedocs.io/.**
+
+
