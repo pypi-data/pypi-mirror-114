@@ -1,0 +1,9 @@
+tabular_automl/__init__.py,sha256=FoQ2rYq620f_rwCXE6cj8t3DAvnMasVZrA94XxU2s2w,68
+tabular_automl/settings.py,sha256=bwiWdUkGtNarFOGwXDwOG7WqKXOgxnMTh2VRuITjPUA,109
+tabular_automl/tabular_automl.py,sha256=QCiAWG4yGgToW3671tHhvqZtTIG0pFsyZ310DPyLN-M,4007
+tabular_automl/tests.py,sha256=yBu3c9FVfNjqSt4Qy6QoajgdkQ9dqpLhFa5iHEGtyxQ,2825
+tabular_automl-0.1.0.dist-info/LICENSE,sha256=DVDwv1L_sA2nD0NUZXDiBsMTObfL4uK8mmB-oBx7t_w,1093
+tabular_automl-0.1.0.dist-info/METADATA,sha256=6xycpy5XDA8TO4aXPmnBnPU_a9BdCPWFV2OD9QB2Dz8,1068
+tabular_automl-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tabular_automl-0.1.0.dist-info/top_level.txt,sha256=ncMvjhqeku6IWnJvrhBF-dvEQXWjZCP9VF8PCrhWdzo,15
+tabular_automl-0.1.0.dist-info/RECORD,,
