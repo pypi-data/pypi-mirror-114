@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+labelspark/__init__.py
+labelspark/api_key.py
+labelspark.egg-info/PKG-INFO
+labelspark.egg-info/SOURCES.txt
+labelspark.egg-info/dependency_links.txt
+labelspark.egg-info/requires.txt
+labelspark.egg-info/top_level.txt
