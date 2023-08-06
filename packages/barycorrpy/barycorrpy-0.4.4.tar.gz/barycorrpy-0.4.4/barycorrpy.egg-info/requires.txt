@@ -1,0 +1,6 @@
+astropy>=4.0.4
+jplephem
+numpy>=1.17.2
+scipy
+astroquery>=0.3.10
+pyerfa>=1.7.3
