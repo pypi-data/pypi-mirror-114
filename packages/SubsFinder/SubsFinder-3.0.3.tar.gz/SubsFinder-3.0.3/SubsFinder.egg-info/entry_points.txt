@@ -1,0 +1,4 @@
+[console_scripts]
+subsfinder = subsfinder.run_gevent:run
+subutils = subsfinder.utils:main
+
