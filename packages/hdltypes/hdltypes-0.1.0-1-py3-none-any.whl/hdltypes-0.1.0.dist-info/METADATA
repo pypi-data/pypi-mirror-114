@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: hdltypes
+Version: 0.1.0
+Summary: Models of VHDL datatypes in Python
+Home-page: https://github.com/ktbarrett/pyhdltypes
+Author: Kaleb Barrett
+Author-email: dev.ktbarrett@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+![Tests](https://github.com/ktbarrett/pyhdltypes/actions/workflows/tests.yaml/badge.svg)
+[![Documentation Status](https://readthedocs.org/projects/pyhdltypes/badge/?version=latest)](https://pyhdltypes.readthedocs.io/en/latest/?badge=latest)
+[![codecov](https://codecov.io/gh/ktbarrett/pyhdltypes/branch/dev/graph/badge.svg?token=1GDBKHF5IM)](https://codecov.io/gh/ktbarrett/pyhdltypes)
+
+
+# pyhdltypes
+
+pyhdltypes is a library providing accurate and high performance Python models of common VHDL and Verilog data types.
+
+## Installation
+
+```
+pip install hdltypes
+```
+
+
