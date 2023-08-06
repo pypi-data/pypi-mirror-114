@@ -1,0 +1,72 @@
+# AntAnnotator
+
+JupyterLab tool for data annotations for machine learning routines.
+
+Just drop your python data into widged and label it.
+
+![AnnotationWidget.png](./docs/AnnotationWidget.png)
+
+# Features
+
+**Data persistence** Data is automatically persisted on disk in .json format.
+
+**UI** Annotation UI witch allow to do annotation
+
+# Usage example
+
+```
+from antannotator.annotation_controller import AnnotationController
+from antannotator.persistence import AutoEventStorage, AutoAnnotationTaskStorage, AnnotationSample
+
+# Select directory where annnotation task data will be stored
+
+event_storage = AutoEventStorage.get_event_storage("/tmp/annotator/events")
+task_storage = AutoAnnotationTaskStorage.get_task_storage("/tmp/annotator/tasks")
+controller = AnnotationController(task_storage=task_storage, event_storage=event_storage)
+
+# 
+options = {"literature": "Classical literature",
+            "songs": "20th Century Songs", 
+            "other":"Other"}
+
+
+# load samples to annotate
+samples = [ AnnotationSample(sample_id=f"id_1", 
+            task_data=f"We passed upon the stair\nWe spoke of was and when\nAlthough I wasn't there\nHe said I was his friend", 
+            available_options=options, 
+            hidden_info=None,
+            visible_info=None),
+        AnnotationSample(sample_id=f"id_2", 
+            task_data=f"It was many and many a year ago,\nIn a kingdom by the sea", 
+            available_options=options, 
+            hidden_info=None,
+            visible_info=None),
+        AnnotationSample(sample_id=f"id_3", 
+            task_data=f"On a dark desert highway, cool wind in my hair\nWarm smell of colitas, rising up through the air", 
+            available_options=options, 
+            hidden_info=None,
+            visible_info=None)]
+
+controller.append_samples(samples)
+
+# start annotations process
+controller.do_annotaions()
+```
+
+# Installation 
+
+```
+pip install antannotator
+```
+
+# Roadmap
+
+- [x] Multichoice text classification  
+Multiclass, multichoise text classification
+
+
+- [ ] One choice text classification  
+One choice classification. (Task adavance immediately user celect a option)
+
+- [ ] Free input  
+Free user input. (For example for summarization task)
