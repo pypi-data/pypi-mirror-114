@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/pyvisafungen/__init__.py
+src/pyvisafungen/pyvisafungen.py
+src/pyvisafungen.egg-info/PKG-INFO
+src/pyvisafungen.egg-info/SOURCES.txt
+src/pyvisafungen.egg-info/dependency_links.txt
+src/pyvisafungen.egg-info/requires.txt
+src/pyvisafungen.egg-info/top_level.txt

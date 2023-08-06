@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyvisafungen
+Version: 1.0.1
+Summary: my library
+Home-page: https://github.com/users/niwotongzai/projects/1
+Author: Kunpeng Wang
+Author-email: wangkunpeng@wipm.ac.cn
+License: MIT Licence
+Keywords: testing testautomation
+Platform: any
+Requires-Python: >=3.5.*
+License-File: LICENSE
+
+Driver for function generators
+
