@@ -1,0 +1,6 @@
+numpy
+autoD
+scipy
+trimesh
+medImgProc
+nfft
