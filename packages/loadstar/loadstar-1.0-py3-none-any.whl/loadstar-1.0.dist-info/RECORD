@@ -1,0 +1,13 @@
+loadstar/__init__.py,sha256=oyzcSjX2caiY7idWacQyuOq8VH0GN5OG9ks8x0H_YMg,108
+loadstar/__main__.py,sha256=LewBgUCbHcY8s0yavo3ruAoypbJmlPFuB8jvI9i5-W8,123
+loadstar/analysis.py,sha256=7iOZplnmdtnLHQ_4PmSiN14KTwBr5bPD9Pgyc9yK1RU,769
+loadstar/camera.py,sha256=UNJY6OQwLvbsMp7woWbM2fvmatm9ILOf2Mv6de5vYHo,1551
+loadstar/console.py,sha256=EMutp0LFQ-XOFUH0Ggvmrmp-ARJjj4bESC2jhdwm670,1776
+loadstar/cookstar.py,sha256=2wDLfVwPiLeXlygPBLy2HMSkhqDGdt83TjiIdssprD0,5313
+loadstar/fps.py,sha256=30D7i-0E2pAH7dKsVp5RPykXk6lR3nGMWRgDX_srhNY,1249
+loadstar-1.0.dist-info/LICENSE,sha256=GWAcFA-BwREkHIQPatrgJ-3gHUo8oQkBHKAt9ytauTo,1076
+loadstar-1.0.dist-info/METADATA,sha256=UT4oeLS6jUGlj-JVQkpuQMV3bWfz4-x_mQ6alfN_fFo,4828
+loadstar-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+loadstar-1.0.dist-info/entry_points.txt,sha256=kp8cAca-y35Kcl6diVLnW3ir3A_HgB4-X5H7BHzodtc,44
+loadstar-1.0.dist-info/top_level.txt,sha256=OXwRFwloI3dGGx0s38jg7s7dG_z154LOyQG1wisGuI4,9
+loadstar-1.0.dist-info/RECORD,,
