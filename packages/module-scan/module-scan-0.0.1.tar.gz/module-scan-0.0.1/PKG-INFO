@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: module-scan
+Version: 0.0.1
+Summary: Repository scanner for module imports
+Home-page: https://github.com/mgrajesh1/module-scanner
+Author: Rajesh Gopinathapai
+Author-email: mgrajesh@hotmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/mgrajesh1/module-scanner/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Module Scanner
+Scans Python project for all module imports that are NOT part of Python standard library regardless of whether the package is installed or not. Since this module does not consult pip installed modules, this scan can be performed on CI.
+## Features
+* Scans source code repository recursively for module imports
+* Finds packages even if they are not installed (useful in automated builds with no virtual environments)
+* Lightweight scanner
+
+## Installation
+* Clone repository and run the script
+* Install using pip
+```shell
+$ pip install module-scanner
+```
+
+

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/module_scan/__init__.py
+src/module_scan/scan.py
+src/module_scan.egg-info/PKG-INFO
+src/module_scan.egg-info/SOURCES.txt
+src/module_scan.egg-info/dependency_links.txt
+src/module_scan.egg-info/entry_points.txt
+src/module_scan.egg-info/top_level.txt

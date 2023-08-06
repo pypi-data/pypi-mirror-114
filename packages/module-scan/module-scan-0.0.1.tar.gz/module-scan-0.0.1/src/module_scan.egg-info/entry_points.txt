@@ -1,0 +1,3 @@
+[console_scripts]
+module-scan = module_scan.scan:main
+
