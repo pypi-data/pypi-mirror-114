@@ -1,0 +1,8 @@
+pandas
+scipy
+docopt
+openpyxl
+
+[testing]
+pytest
+pytest-cov

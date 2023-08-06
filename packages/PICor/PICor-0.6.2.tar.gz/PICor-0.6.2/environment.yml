@@ -1,0 +1,23 @@
+name: picor
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.6
+  - pip
+  - docopt
+  - pandas
+  - scipy
+  - pip:
+    - pandas-ods-reader
+  # for developement only
+  - black
+  - coverage
+  - flake8
+  - ipython
+  - pdbpp
+  - pylint
+  - pyscaffold
+  - pytest
+  - pytest-cov
+  - tox
