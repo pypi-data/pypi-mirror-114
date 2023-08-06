@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: vi-nlp-core
+Version: 0.1
+Summary: VMA-NLU is a library to implement NLU component in virtual medical assistant.
+Home-page: https://github.com/demdecuong/NER_Extractor/tree/main
+Author: minhnp
+Author-email: v.minhng@vinbrain.net
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: vi_nlp_core
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
