@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: py4devs_api
+Version: 0.1.1
+Summary: A biblioteca py4devs tem por objetivo fornecer um meio simples de utilizar as incriveis ferramentas desenvolvidas pela equipe 4DEVS.COM.BR diretamente nos scripts/projetos python.
+Home-page: https://github.com/Diegiwg/PY4DEVS-API
+Author: Diego Queiroz [Diegiwg]
+Author-email: diegiwg@gmail.com
+License: MIT
+Download-URL: https://github.com/Diegiwg/PY4DEVS-API/archive/refs/tags/v0.1.1.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

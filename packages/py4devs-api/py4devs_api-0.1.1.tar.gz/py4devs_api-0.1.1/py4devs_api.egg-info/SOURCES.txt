@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+py4devs_api/__init__.py
+py4devs_api/generators.py
+py4devs_api/utils.py
+py4devs_api.egg-info/PKG-INFO
+py4devs_api.egg-info/SOURCES.txt
+py4devs_api.egg-info/dependency_links.txt
+py4devs_api.egg-info/requires.txt
+py4devs_api.egg-info/top_level.txt
