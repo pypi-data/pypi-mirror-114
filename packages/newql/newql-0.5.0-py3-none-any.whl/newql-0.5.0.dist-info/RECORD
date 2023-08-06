@@ -1,0 +1,15 @@
+newql/VERSION,sha256=oK1QZAE5pST4ZZEVcUW_HUZ06pwGW_6iFVjw97BEMMg,6
+newql/__init__.py,sha256=ttcD6E2cCLiryAJb5rf11Nr8I5KCxfZ6rdTKnAjjMrY,590
+newql/context.py,sha256=U4yogKlRm6gfvtCt3HQ_LRvT2dKaxu9l8gDAPiRFU20,815
+newql/dev_server.py,sha256=T76K0iV1kLHQy97mqxdbcUc8O3LQSMgh8oI41BepTg0,2911
+newql/errors.py,sha256=YhYahfpoHKZgohHGzA2w4RIqeKQCheHI_rc6PCwEtlI,123
+newql/example.py,sha256=2z_vykRFZ1RlyYTYMuUfwWh3jZ3HvlZIUe8tE_yAaIw,3129
+newql/field.py,sha256=fWKU5Ob79V1m_zvEtBAytYgxe0saDZAViqqwak9PrCQ,6364
+newql/introspection.py,sha256=xeZRghLakjxu3r1IfDHF92uM26I3kJqfWCq3bxG7GPM,5624
+newql/parse.py,sha256=TCZ_vu_hbmlXIvYTwalhKYr9Wx3oQ0ngW6mvtUjT6aQ,9692
+newql/schema.py,sha256=76_BUy4LBH3eCtuN69DcJ28yC3MRZnUqhZKFUDOJ1LQ,5610
+newql-0.5.0.dist-info/LICENSE,sha256=r1Fa7C5-EkchXLK_AUk5oRZ1f53oD7bnDwf_JSO2nqY,1069
+newql-0.5.0.dist-info/METADATA,sha256=eZt6kmZartO1cdnk54cMW-G88OTMzTmwhLe3jPYjQKg,5581
+newql-0.5.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+newql-0.5.0.dist-info/top_level.txt,sha256=ohne5LNyTq5TEIBMrF3ZosXKrahFX6HMhfG97sKH5FI,6
+newql-0.5.0.dist-info/RECORD,,
