@@ -1,0 +1,15 @@
+sendfox/__init__.py,sha256=3usrhUdoeRGAqFz7elYNQ0x4QDLzFvnIPrAvMJv7PoE,1041
+sendfox/api.py,sha256=HO70Ux3C7eOLE7Zb0mXZtLfoMuKZBZ7h3NyP9N5ERv8,1538
+sendfox/client.py,sha256=IWlGmQfRrfJQvVQYC2KT0_jrb86v8ECLh8xDV3EzXjQ,6399
+sendfox/endpoints/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sendfox/endpoints/campaigns.py,sha256=a7XHuYJzJ1Agg_uS1QVcBsyJKXJIaPFB_w-xhEp1UJk,1346
+sendfox/endpoints/contacts.py,sha256=6btjtvoHGT0lDNOOtPQ69ijnvXW_pH8ps1rMkIlunxc,2085
+sendfox/endpoints/lists.py,sha256=1xpSnJzV5lFIjRSHFyW6HuhBMGQgTr5rbsZyb7FihRI,2259
+sendfox/endpoints/me.py,sha256=6b_StvqtVKJw2aQgMkcmWflMdG9kmb_b8rUZ_gLGwy8,619
+sendfox/endpoints/root.py,sha256=8aFeLy6_7pu_pYLoiBxKx8Y9YZIzStQ_9fxhPP3M3Xg,616
+sendfox/endpoints/unsubscribe.py,sha256=OJ8zNglOXIbnAZHj-ZNCaSWEig-8MCTGaoWcxLhGlpc,814
+python_sendfox_api-0.1.3.dist-info/LICENSE,sha256=wilVwKWM1jyRD56kwWpOSKHPCjKH5zrspLGUztNEX_c,1063
+python_sendfox_api-0.1.3.dist-info/METADATA,sha256=R6e0xVsyLjr9V18ARQH5rt1lOBPmN1WvGIYgriHDp5s,788
+python_sendfox_api-0.1.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+python_sendfox_api-0.1.3.dist-info/top_level.txt,sha256=e-1slZJ8Z72oG_5IrWx331RJAIgxyZsIXvRXWro1EiQ,8
+python_sendfox_api-0.1.3.dist-info/RECORD,,
