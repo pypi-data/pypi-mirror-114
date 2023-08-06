@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: bluebeam_production
+Version: 1.0.0
+Summary: A side scroller, tile map, shooter game
+Home-page: UNKNOWN
+Author: Clyde Slichter
+Author-email: cnslichter@ufl.edu
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: pygame,game,shooter
+Platform: UNKNOWN
+Requires-Python: >=3.8
