@@ -1,0 +1,2 @@
+class IsEmpty(Exception):
+    pass

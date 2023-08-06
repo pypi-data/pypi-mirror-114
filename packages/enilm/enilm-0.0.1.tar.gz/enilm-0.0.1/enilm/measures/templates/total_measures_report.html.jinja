@@ -1,0 +1,119 @@
+<style>
+    header {
+        font-size: 120%;
+        font-weight: bold;
+    }
+
+    .flexbox {
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .flexbox > section {
+        margin-left: 15px;
+    }
+</style>
+
+<details>
+    <summary>Durations</summary>
+    <div class="flexbox">
+        <section>
+            <table>
+                <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                    <th>Ratio</th>
+                </tr>
+                <tr>
+                    <td>Duration</td>
+                    <td>{{duration}}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Activity Duration</td>
+                    <td>{{activity_duration}}</td>
+                    <td>{{((activity_duration / duration) * 100)|round(2)}}%</td>
+                </tr>
+                <tr>
+                    <td>Inactivity Duration</td>
+                    <td>{{inactivity_duration}}</td>
+                    <td>{{((inactivity_duration / duration) * 100)|round(2)}}%</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            {{active_pie_html}}
+        </section>
+    </div>
+</details>
+
+<details>
+    <summary>Appliances</summary>
+    <div class="flexbox">
+        <section>
+            <header>Number of appliances</header>
+            <table>
+                <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Total number of appliances</td>
+                    <td>{{napps}}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Number of active appliances</td>
+                    <td>{{nactive_apps}}</td>
+                </tr>
+                <tr>
+                    <td>Average number of active appliances per day</td>
+                    <td>{{nactive_per_day|round(2)}}</td>
+                </tr>
+                <tr>
+                    <td>Average number of active appliances per hour</td>
+                    <td>{{nactive_per_hour|round(2)}}</td>
+                </tr>
+                <tr>
+                    <td>Number of inactive appliances</td>
+                    <td>{{ninactive_apps}}</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <header>Active Appliances</header>
+            <ol>
+                {% for app in active_apps %}
+                <li>{{app.label(True)}}</li>
+                {% endfor %}
+            </ol>
+        </section>
+
+        <section>
+            <header>Inactive Appliances</header>
+            <ol>
+                {% for app in inactive_apps %}
+                <li>{{app.label(True)}}</li>
+                {% else %}
+                None
+                {% endfor %}
+            </ol>
+        </section>
+
+        <section>
+            {{nactive_bar_html}}
+        </section>
+
+        <section>
+            {{app_nactive_pie}}
+        </section>
+    </div>
+</details>
+
+
+<details>
+    <summary>Power Statistics</summary>
+    {{power_stats_html}}
+</details>

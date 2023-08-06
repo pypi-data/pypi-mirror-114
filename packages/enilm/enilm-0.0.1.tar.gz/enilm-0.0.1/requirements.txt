@@ -1,0 +1,11 @@
+numpy
+pandas
+networkx
+tensorflow
+sklearn
+numba
+wandb
+pyserial
+tables
+seaborn
+papermill
