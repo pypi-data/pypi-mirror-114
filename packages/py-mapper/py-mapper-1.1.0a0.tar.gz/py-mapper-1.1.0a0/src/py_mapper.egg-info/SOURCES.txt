@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/py_mapper.egg-info/PKG-INFO
+src/py_mapper.egg-info/SOURCES.txt
+src/py_mapper.egg-info/dependency_links.txt
+src/py_mapper.egg-info/top_level.txt
+src/pymapper/__init__.py
+src/pymapper/mapper.py
