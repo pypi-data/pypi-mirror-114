@@ -1,0 +1,15 @@
+pipekit/__init__.py,sha256=pw22wFmIcx8ZlnY3z_c6RBvwjeG2mUkptX_umg0ak_4,66
+pipekit/component.py,sha256=5IGexHldiPn_ASdgotyhjThyXdaZ4DfShv8A_sLg3UE,7945
+pipekit/engine.py,sha256=1BExLeWntBpsEPkZ31Am0nhkdVjEV0bwj98U-8lPwJY,839
+pipekit/filter.py,sha256=G4WntF2XiNipxSHfndyoV4TTgFcHRitjmoA879KJVyc,1597
+pipekit/message.py,sha256=CyVgRnpdMxx_AxGEhQXslJt_AVRPmh4vvqGStoBv5ek,1923
+pipekit/node.py,sha256=4eXkOsw1Z-zn9x0PwMK8Gh7B1FhLb80MYsi8e7k4M10,19055
+pipekit/pipe.py,sha256=d3nRKeQh4Otz6TQcGQqZZwz_Fv-gJXQ6vSUcdhPpXTg,4537
+pipekit/utils.py,sha256=4SSn9fQkUhrLDTnwTFQA_QPZVqZPlIul_ByJPKYfP-I,4238
+pipekit/workflow.py,sha256=7aAzZiwCE58V7Qff_oH7QCgktk9btGeZlfjTqZI_lpo,13530
+pipekit-0.2.4.dist-info/LICENSE,sha256=p9sdJTKfSO9S0SgmcGTXJVZWZ8RsSv8JyYIOQxKY0M0,1070
+pipekit-0.2.4.dist-info/METADATA,sha256=kilyiTlvgNMuyiW27S-_itox1q-YpprCPqrWhB35c50,2267
+pipekit-0.2.4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+pipekit-0.2.4.dist-info/entry_points.txt,sha256=mCmzI-2z0cflPfk8kx-rdpo7edF1wTkvKUFsSa1jHoY,42
+pipekit-0.2.4.dist-info/top_level.txt,sha256=8KrLCtjs6F1E2oTTpMx1hHEPbfFIM9EksJgtklUaO08,8
+pipekit-0.2.4.dist-info/RECORD,,
