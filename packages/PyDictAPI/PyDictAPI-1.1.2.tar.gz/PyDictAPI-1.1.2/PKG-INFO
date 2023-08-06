@@ -1,0 +1,111 @@
+Metadata-Version: 2.1
+Name: PyDictAPI
+Version: 1.1.2
+Summary: A simple web-scraping based Dictionary Module for Python
+Home-page: https://github.com/imshawan/PyDictAPI
+Author: Shawan Mandal
+Author-email: imshawan.dev049@gmail.com
+License: UNKNOWN
+Description: [![PyDictAPI](https://img.shields.io/badge/PyDictAPI-Stable-limegreen)](https://github.com/imshawan/PyDictAPI)
+        [![GitHub license](https://img.shields.io/github/license/imshawan/PyDictAPI)](https://github.com/imshawan/PyDictAPI/blob/master/LICENSE.txt)
+        [![Latest Version](http://img.shields.io/pypi/v/PyDictAPI.svg?style=flat-square)](https://pypi.python.org/pypi/PyDictAPI/)
+        [![Downloads](https://img.shields.io/pypi/dm/PyDictAPI.svg?style=flat-square)](https://pypi.python.org/pypi/PyDictAPI/)
+        
+        # PyDictionaryAPI
+        ### A simple web-scraping based Dictionary Module for Python
+        
+        PyDictAPI is a Dictionary Module for Python 3+ to get a detailed and well-structured meanings of a queried word in JSON format. This module can also be used along with Flask/Django backends to make a full-fledged API server.<br><br>
+        PyDictAPI searches for the query passed on the web, if the query matches than it returns the definitions of that particular query. And incase of incorrect words, the response is returned as a suggestion of the correct word.
+        <br>
+        
+        >  **Note** It uses Dictionary.com for extracting the meanings.
+        
+        This module uses Requests and bs4 dependencies to scrape the web and find the definitions and return it in a well-structured JSON document
+        
+        ## Installation
+        
+        PyDictAPI can be easily installed through [PIP](https://pip.pypa.io/en/stable/)
+        
+        ```
+        pip install PyDictAPI
+        ```
+        
+        ## Usage
+        
+        PyDictAPI can be used by creating a MeaningsFinder instance which can take a word as argument
+        
+        For example,
+        
+        ```python
+        from PyDictAPI import MeaningsFinder
+        Meanings = MeaningsFinder()
+        print(Meanings.findMeanings('apple'))
+        ```
+        
+        This is will create a local instance of the MeaningsFinder class and will return a dictionary containing the meanings of the word. <br>
+        The Response can be seen as:
+        
+        ```
+        {
+            'word': 'Apple', 
+            'meanings': [
+                    {
+                        'partOfSpeech': 'Noun', 
+                        'definitions': [
+                                {
+                                    'definition': 'The usually round, red or yellow, edible fruit of a small tree, Malus sylvestris, of the rose family.', 
+                                    'example': ''
+                                }
+                            ]
+                    }, 
+                    {
+                        'partOfSpeech': 'Noun', 
+                        'definitions': [
+                            {
+                                'definition': 'A rosaceous tree, Malus sieversii, native to Central Asia but widely cultivated in temperate regions in many varieties, having pink or white fragrant flowers and firm rounded edible fruits', 
+                                'example': ''
+                            }
+                        ]
+                    }
+                ]
+        }                                                                       
+        ```
+        ## Exceptions
+        
+        ### Example - 1: If the word is spelt incorrectly
+        
+        ```python
+        print(Meanings.findMeanings('helloooo'))
+        ```
+        Incase of incorrect words, the response is returned as a suggestion of the correct word <br>
+        The Response can be seen as:
+        
+        ```
+        {
+            'message': 'Couldn't find results for helloooo, Did you mean hello?'
+        }
+        ```
+        
+        ### Example - 2: If the word doesn't exist
+        
+        ```python
+        print(Meanings.findMeanings('abcdefghijkl'))
+        ```
+        The Response can be seen as:
+        
+        ```
+        {
+            'message': 'Couldn't find any results for ABCDEFGHIJKL, try searching the web...'
+        }
+        ```
+        
+        ## About
+        
+        Copyright (c) 2021 Shawan Mandal.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
