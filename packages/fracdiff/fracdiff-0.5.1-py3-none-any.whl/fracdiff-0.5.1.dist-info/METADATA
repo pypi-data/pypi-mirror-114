@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: fracdiff
+Version: 0.5.1
+Summary: Super-fast fractional differentiation.
+Home-page: https://github.com/fracdiff/fracdiff
+License: BSD-3-Clause
+Author: Shota Imaki
+Author-email: shota.imaki.0801@gmail.com
+Requires-Python: >=3.6.13,<4.0.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: torch
+Requires-Dist: numpy (>=1.18.0,<2.0.0)
+Requires-Dist: scikit-learn (>=0.24.0,<0.25.0)
+Requires-Dist: scipy (>=1.4.1,<2.0.0)
+Requires-Dist: statsmodels (>=0.12.0,<0.13.0)
+Requires-Dist: torch (>=1.9.0,<2.0.0); extra == "torch"
+Project-URL: Repository, https://github.com/fracdiff/fracdiff

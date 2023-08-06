@@ -1,0 +1,13 @@
+fracdiff/__init__.py,sha256=Z1yo9_xhnJH-dpkmEq6k49tUv__ZiKceYcYFYkrvilQ,95
+fracdiff/fdiff.py,sha256=JBzx-dyHELU6yp_bgeGYHCnnRUB_lpRl184kiO6PXdY,5446
+fracdiff/fracdiff.py,sha256=_aSBYRn8ooRIaab9CpVhv4W9f1OJnx4Ldkul6RbqYM4,4124
+fracdiff/fracdiffstat.py,sha256=fDDyEqt-EsoJdKzS0BzRMI07Xcr7GPRD_rkCAjogiEM,6263
+fracdiff/stat.py,sha256=Nq5UpjhSsd5xkD8sB-49GggkyuQ62wqSHr0mjCjtv8E,2157
+fracdiff/tol.py,sha256=pxFZH7lqmq0dWrsCmVcFqv_hw1yQ4U1u-psiIXXDb5c,2195
+fracdiff/torch/__init__.py,sha256=2GXRiES4dFJrKTr93l_TzPHUeQTAwWeSSPEDZLSc_wA,94
+fracdiff/torch/functional.py,sha256=WDEcMJ7hGgS2cVQJzutapDq9lOYKoHkahs4EXOSZeLk,4343
+fracdiff/torch/module.py,sha256=cwA83nS1oH7MrHiTV_rHW6JVWTbGdNUW8DbZ6YY6ULM,3312
+fracdiff-0.5.1.dist-info/LICENSE,sha256=N-L588nMCMO2lk3oyAzVcO0JQL01NGGIITU-cd0z1LU,1516
+fracdiff-0.5.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+fracdiff-0.5.1.dist-info/METADATA,sha256=05Ig8wOoJ-MCdWDdFmuwsD-kB1i6MIMMdbMn5cxyMxc,823
+fracdiff-0.5.1.dist-info/RECORD,,
