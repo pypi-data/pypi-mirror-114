@@ -1,0 +1,3 @@
+[nautobot.workers]
+ansible=nautobot_chatops_ansible.worker:ansible
+
