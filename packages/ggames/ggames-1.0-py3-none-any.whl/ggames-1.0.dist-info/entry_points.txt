@@ -1,0 +1,3 @@
+[console_scripts]
+kcop-win = ggames:kcop_win
+
