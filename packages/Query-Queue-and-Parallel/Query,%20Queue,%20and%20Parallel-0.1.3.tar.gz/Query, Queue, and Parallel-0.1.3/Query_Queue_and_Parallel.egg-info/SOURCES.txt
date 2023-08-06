@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+Query_Queue_and_Parallel.egg-info/PKG-INFO
+Query_Queue_and_Parallel.egg-info/SOURCES.txt
+Query_Queue_and_Parallel.egg-info/dependency_links.txt
+Query_Queue_and_Parallel.egg-info/top_level.txt
+query_queue_and_parallel/__init__.py
