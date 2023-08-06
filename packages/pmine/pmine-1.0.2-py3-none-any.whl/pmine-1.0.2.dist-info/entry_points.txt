@@ -1,0 +1,3 @@
+[console_scripts]
+pmine = minesweeper.minesweeper_cli:start
+
