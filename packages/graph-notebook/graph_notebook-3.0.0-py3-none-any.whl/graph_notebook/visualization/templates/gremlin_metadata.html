@@ -1,0 +1,36 @@
+<div class="table-div">
+    <link rel="stylesheet" type="text/css" href="/static/datatables.css">
+    <style>
+        #{{guid}} * {
+              font-size: 1em !important;
+              font-family: "Courier New", Courier, monospace !important;
+        }
+
+        .sorting, .sorting_asc, .sorting_desc {
+            background : none !important;
+        }
+
+        .dataTable {
+            width: 100%
+        }
+    </style>
+    <table id="{{guid}}" class="nowrap dt-left">
+        <tbody>
+            <tr>
+                <th></th>
+                <th style="text-align: left">Execution Time:</th>
+                <td>{{q_time}} seconds</td>
+            </tr>
+            <tr>
+                <th></th>
+                <th style="text-align: left">Results Returned:</th>
+                <td>{{q_num}}</td>
+            </tr>
+            <tr>
+                <th></th>
+                <th style="text-align: left">Response Memory Size:</th>
+                <td>{{q_size}} bytes</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
