@@ -1,0 +1,5 @@
+mypy>=0.902
+grpcio
+
+[:python_version < "3.8"]
+typing-extensions
