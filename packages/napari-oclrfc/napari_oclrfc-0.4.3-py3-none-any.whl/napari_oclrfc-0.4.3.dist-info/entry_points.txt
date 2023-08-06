@@ -1,0 +1,3 @@
+[napari.plugin]
+Segmentation (OCLRFC) = napari_oclrfc
+
