@@ -1,0 +1,3 @@
+[console_scripts]
+x735fan = main:fan
+
