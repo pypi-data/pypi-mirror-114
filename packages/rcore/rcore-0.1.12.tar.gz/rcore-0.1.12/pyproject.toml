@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "rcore"
+version = "0.1.12"
+description = "Ядро для приложений python. Сборник утилит."
+authors = ["rocshers <prog.rocshers@gmail.com>"]
+readme = "readme.md"
+# homepage = "https://github.com/rocshers/rcore"
+classifiers = [
+    'Programming Language :: Python :: 3',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: OS Independent',
+]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pyyaml = "5.4.1"
+rlogging = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "6.2.2"
+mypy = "0.812"
+mypy-extensions = "0.4.3"
+twine = "3.4.1"
+wheel = "0.36.2"
+wemake-python-styleguide = "0.15.2"
+autopep8 = "1.5.7"
+snakeviz = "^2.1.0"
+
+# [tool.poetry-version-plugin]
+# source = "init"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
