@@ -1,0 +1,9 @@
+opentelemetry/semconv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opentelemetry/semconv/version.py,sha256=GTJY8RDVdAShAWuYve1Op6ZMs9TI9ojbTlBhwaSCsmk,608
+opentelemetry/semconv/resource/__init__.py,sha256=_FGNzWi0TqfriJoaCaOs67CSgyp2Ujwoy1aY6cDreV8,20297
+opentelemetry/semconv/trace/__init__.py,sha256=8o2ZVvdJ0MJl-eDoK5OczcN81PrjzSK7GWad24ILcg8,30829
+opentelemetry_semantic_conventions-0.23b2.dist-info/LICENSE,sha256=h8jwqxShIeVkc8vOo9ynxGYW16f4fVPxLhZKZs0H5U8,11350
+opentelemetry_semantic_conventions-0.23b2.dist-info/METADATA,sha256=bPqBY4O7EBFySQVCop8eZ-R-R0z_5Pj0U69KUVPhVgY,2207
+opentelemetry_semantic_conventions-0.23b2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+opentelemetry_semantic_conventions-0.23b2.dist-info/top_level.txt,sha256=5p97iTMneNm1LAKDalzEVpYhvPZsaqJZzdLuD_upSaQ,14
+opentelemetry_semantic_conventions-0.23b2.dist-info/RECORD,,
