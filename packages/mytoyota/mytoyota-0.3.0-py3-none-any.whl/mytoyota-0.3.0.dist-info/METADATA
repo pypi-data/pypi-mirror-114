@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: mytoyota
+Version: 0.3.0
+Summary: Python client for Toyota Connected Services.
+Home-page: https://github.com/DurgNomis-drol/mytoyota
+License: MIT
+Keywords: Toyota,Car,MYT
+Author: Simon Grud Hansen
+Author-email: simongrud@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: httpx (>=0.17.1,<0.18.0)
+Requires-Dist: langcodes (>=3.1.0,<4.0.0)
+Requires-Dist: pendulum (>=2.1.2,<3.0.0)
+Requires-Dist: uuid (>=1.30,<2.0)
+Project-URL: Bug Tracker, https://github.com/DurgNomis-drol/mytoyota/issues
+Project-URL: Repository, https://github.com/DurgNomis-drol/mytoyota
+Project-URL: Release Notes, https://github.com/DurgNomis-drol/mytoyota/releases
+Description-Content-Type: text/markdown
+
+# Toyota Connected Services Python module
+
+### [!] **This is still in beta**
+
+## Description
+
+Python 3 package to communicate with Toyota Connected Services.
+
+## Installation
+
+This package can be installed through `pip`.
+
+```text
+pip install mytoyota
+```
+
+## Usage
+
+```python
+import asyncio
+from mytoyota.client import MyT
+
+username = "jane@doe.com"
+password = "MyPassword"
+locale = "da-dk"
+
+client = MyT(username=username, password=password, locale=locale, region="europe")
+
+
+async def get_information():
+    print("Logging in...")
+    await client.login()
+
+    print("Retrieving cars...")
+    # Returns information about the cars registered to your account
+    cars = await client.get_vehicles()
+
+    print(await client.gather_all_information_json())
+
+    statistics = await client.get_driving_statistics_from_date_json(cars[0]['vin'])
+
+    print(statistics)
+
+    statistics = await client.get_driving_statistics_from_week_json(cars[0]['vin'])
+
+    print(statistics)
+
+    statistics = await client.get_driving_statistics_from_month_json(cars[0]['vin'])
+
+    print(statistics)
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(get_information())
+loop.close()
+
+```
+
+## Docs
+
+Coming soon...
+
+## Contributing
+
+This python module uses poetry and pre-commit.
+
+To start contributing, fork this repository and run `poetry install`. Then create a new branch. Before making a PR, please run pre-commit `poetry run pre-commit run --all-files` and make sure that all tests passes locally first.
+
+## Note
+
+As I [@DurgNomis-drol](https://github.com/DurgNomis-drol) is not a professional programmer. I will be maintain it as best as I can. If someone is interested in helping with this, they are more the welcome to message me to be a collaborator on this project.
+
+## Credits
+
+A huge thanks go to [@calmjm](https://github.com/calmjm) for making [tojota](https://github.com/calmjm/tojota).
+
