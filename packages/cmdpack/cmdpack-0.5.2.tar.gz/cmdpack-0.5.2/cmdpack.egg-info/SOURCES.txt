@@ -1,0 +1,8 @@
+README.md
+setup.py
+cmdpack/__init__.py
+cmdpack.egg-info/PKG-INFO
+cmdpack.egg-info/SOURCES.txt
+cmdpack.egg-info/dependency_links.txt
+cmdpack.egg-info/not-zip-safe
+cmdpack.egg-info/top_level.txt
