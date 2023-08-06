@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: antipywidgets
+Version: 0.0.3
+Summary: My IPyWidgets
+Home-page: https://github.com/IvanAntipov/AntIPyWidgets
+Author: Ivan Antipov
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# AntIPyWidgets
+
+My IPyWidgets
+
+# Installation
+
+```
+pip install antipywidgets
+```
+
+
+## Jobs runner
+
+```python 
+
+import antipywidgets.jobs_runner as jobs_runner 
+
+def get_job(...):
+    def job():
+        ... Do the job ...
+    return job
+
+jobs = [get_job(...) for ... in ...]
+
+runner = jobs_runner.make_runner(jobs)
+```
+![jobs_runner.png](./docs/jobs_runner.png)
+
+In the next cell
+
+```
+runner()
+```
+
+
+
