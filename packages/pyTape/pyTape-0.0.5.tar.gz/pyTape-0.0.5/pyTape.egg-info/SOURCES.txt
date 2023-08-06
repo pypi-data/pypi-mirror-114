@@ -1,0 +1,7 @@
+setup.py
+pyTape/__init__.py
+pyTape/pyTape.py
+pyTape.egg-info/PKG-INFO
+pyTape.egg-info/SOURCES.txt
+pyTape.egg-info/dependency_links.txt
+pyTape.egg-info/top_level.txt
