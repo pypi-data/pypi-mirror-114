@@ -1,0 +1,124 @@
+- name: Create a fake host
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Create the host
+      add_host:
+        name: "delegator"
+        ansible_host: "127.0.0.1"
+        ansible_connection: "local"
+
+- name: Run a play with a delegated task
+  hosts: delegator
+  gather_facts: no
+  vars:
+    delegated_hosts:
+      - localhost
+  tasks:
+    - name: Run a normal task
+      command: echo "A normal task"
+      changed_when: false
+
+    - name: Run a task with delegate_to
+      command: echo "A delegated task"
+      changed_when: false
+      delegate_to: localhost
+
+    # Test for particular behavior when running a loop task with delegate_to
+    # https://github.com/ansible/ansible/issues/75339
+    - name: Run a delegated task with a variable
+      command: echo "A delegated task to a variable host"
+      changed_when: false
+      delegate_to: "{{ item }}"
+      loop: "{{ delegated_hosts }}"
+
+- name: Validate undelegated task
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Get the current playbook to retrieve it's id
+      ara_playbook:
+      register: playbook_query
+
+    - name: Find the undelegated task
+      vars:
+        playbook_id: "{{ playbook_query.playbook.id | string }}"
+      set_fact:
+        tasks: "{{ lookup('ara_api', '/api/v1/tasks?name=normal&playbook=' + playbook_id) }}"
+
+    - name: Find the undelegated result
+      vars:
+        task_id: "{{ tasks.results[0].id }}"
+      set_fact:
+        results: "{{ lookup('ara_api', '/api/v1/results?task=' + task_id) }}"
+
+    - name: Validate the result
+      vars:
+        result: "{{ results.results[0] }}"
+      assert:
+        that:
+          - result.host is integer
+          - result.delegated_to == []
+
+- name: Validate delegated tasks
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Get the current playbook to retrieve it's id
+      ara_playbook:
+      register: playbook_query
+
+    - name: Find the delegated task
+      vars:
+        playbook_id: "{{ playbook_query.playbook.id | string }}"
+      set_fact:
+        tasks: "{{ lookup('ara_api', '/api/v1/tasks?name=delegate_to&playbook=' + playbook_id) }}"
+
+    - name: Find the delegated result
+      vars:
+        task_id: "{{ tasks.results[0].id }}"
+      set_fact:
+        results: "{{ lookup('ara_api', '/api/v1/results?task=' + task_id) }}"
+
+    - name: Validate the result
+      vars:
+        result: "{{ results.results[0] }}"
+      assert:
+        that:
+          - result.delegated_to is not mapping and result.delegated_to is iterable
+          - result.host is integer
+          - result.host != result.delegated_to[0]
+
+    - name: Find the other delegated task
+      vars:
+        playbook_id: "{{ playbook_query.playbook.id | string }}"
+      set_fact:
+        tasks: "{{ lookup('ara_api', '/api/v1/tasks?name=variable&playbook=' + playbook_id) }}"
+
+    - name: Find the other delegated result
+      vars:
+        task_id: "{{ tasks.results[0].id }}"
+      set_fact:
+        results: "{{ lookup('ara_api', '/api/v1/results?task=' + task_id) }}"
+
+    - name: Retrieve the hosts related to the other delegated task
+      vars:
+        result: "{{ results.results[0] }}"
+      set_fact:
+        first_host: "{{ lookup('ara_api', '/api/v1/hosts/' + result.host | string) }}"
+        second_host: "{{ lookup('ara_api', '/api/v1/hosts/' + result.delegated_to[0] | string) }}"
+
+    - name: Validate the other delegated result
+      vars:
+        result: "{{ results.results[0] }}"
+        # TODO: Uncertain why "to_json | from json" is necessary here. The lookup returns a dict but trying to
+        # access it yields: 'ansible.utils.unsafe_proxy.AnsibleUnsafeText object' has no attribute 'name'
+        first: "{{ first_host | to_json | from_json }}"
+        second: "{{ second_host | to_json | from_json }}"
+      assert:
+        that:
+          - result.delegated_to is not mapping and result.delegated_to is iterable
+          - result.host != result.delegated_to[0]
+          - result.delegated_to[0] == second.id
+          - first.name == "delegator"
+          - second.name == "localhost"
