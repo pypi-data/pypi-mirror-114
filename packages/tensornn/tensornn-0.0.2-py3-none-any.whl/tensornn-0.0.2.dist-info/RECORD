@@ -1,0 +1,15 @@
+tensornn/__init__.py,sha256=HValL5Xpai6KD9r8cl9jejragtINjIvKAlmhaNkVyIQ,1032
+tensornn/activation.py,sha256=gcijp2W0oNyfKrySH5NkZ_rt4DnobFpJ_MYvh_OKJbU,4293
+tensornn/errors.py,sha256=aBuFfchPcV35CHGLWkTl7857wOq-K7zram1KYD4zhT8,1085
+tensornn/layers.py,sha256=_Bu2lPpLYXXArBTBanKFwu4pK55NWoFFXpZe44o5noE,3246
+tensornn/loss.py,sha256=qtF0ote4hC-vKdtDaawjhS6tHWjy_yKiQo1QyZ3MCU4,2931
+tensornn/nn.py,sha256=FSxNicFh28-XZ3hxuNKgtX5ICwI0cn5pzYf9AaGdLwM,2356
+tensornn/optimizers.py,sha256=C5j2LbSkfoVcRvRTQ_a-pSJATn-2vMt0WcAhMFu4klA,1033
+tensornn/tensor.py,sha256=qr_FC_wAYTyFu2QlEL6XK1pWJ70bBkdOb4PMq5-cNoo,1580
+tensornn/utils.py,sha256=4tKdgtBR5rnWboiJuYxyj_2JBXodyZGVxUIWh2mCLfE,1421
+tensornn/learning/__init__.py,sha256=b3IpLs1_FCWMhk4uzCn4L3jY60-TkkkjxNYvOg1G0ug,758
+tensornn-0.0.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tensornn-0.0.2.dist-info/METADATA,sha256=xblrXhHaF7yNqhvCNSjp7kUVnGPd87cye8_Z6_k9SjA,732
+tensornn-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+tensornn-0.0.2.dist-info/top_level.txt,sha256=XH4fo8J8SLU9UKQyJbDtl0FrUedvQEeyTPntrw3jMW4,9
+tensornn-0.0.2.dist-info/RECORD,,
