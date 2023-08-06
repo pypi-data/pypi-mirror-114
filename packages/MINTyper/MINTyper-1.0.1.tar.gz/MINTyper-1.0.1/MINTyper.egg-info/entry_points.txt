@@ -1,0 +1,3 @@
+[console_scripts]
+mintyper = mintyper.__main__:main
+

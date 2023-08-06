@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+dcmMethylations.txt
+requirements.txt
+setup.cfg
+setup.py
+MINTyper.egg-info/PKG-INFO
+MINTyper.egg-info/SOURCES.txt
+MINTyper.egg-info/dependency_links.txt
+MINTyper.egg-info/entry_points.txt
+MINTyper.egg-info/not-zip-safe
+MINTyper.egg-info/top_level.txt
+mintyper/MINTyperFunctions.py
+mintyper/__init__.py
+mintyper/__main__.py
