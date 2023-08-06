@@ -1,0 +1,5 @@
+pytest_addons_test/__init__.py,sha256=doBI_RC-nf4V3R-lBSKkeodzcoP1-JbTlLFBREGTYl8,1470
+pytest_addons_test-1.0.3.dist-info/entry_points.txt,sha256=05KA6pE-HyY2z24UaLCh7LFVs1VzTVxsJxDbTJGr7HA,44
+pytest_addons_test-1.0.3.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+pytest_addons_test-1.0.3.dist-info/METADATA,sha256=Ny5zn0GXEnwzzVCYMeyMB3kFxBP1W-jp0Sldq0_asKE,276
+pytest_addons_test-1.0.3.dist-info/RECORD,,
