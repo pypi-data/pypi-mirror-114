@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+lc_sdk_python.egg-info/PKG-INFO
+lc_sdk_python.egg-info/SOURCES.txt
+lc_sdk_python.egg-info/dependency_links.txt
+lc_sdk_python.egg-info/requires.txt
+lc_sdk_python.egg-info/top_level.txt
+livechat/agent/__init__.py
+livechat/configuration/__init__.py
+livechat/configuration/client.py
+livechat/customer/__init__.py
