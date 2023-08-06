@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: drf-hooks
+Version: 0.1.0
+Summary: A powerful mechanism for sending real time API notifications via a new subscription model.
+Home-page: http://github.com/am-flow/drf-hooks
+Author: Angira Tripathi
+Author-email: angira.tripathi@am-flow.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+License-File: LICENSE.md
+License-File: AUTHORS.md
+Requires-Dist: Django (>=3.1)
+Requires-Dist: requests
+
+UNKNOWN
+
