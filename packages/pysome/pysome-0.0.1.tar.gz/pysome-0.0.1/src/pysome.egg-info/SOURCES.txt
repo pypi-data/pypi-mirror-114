@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pysome/Exceptions.py
+src/pysome/Some.py
+src/pysome/VSet.py
+src/pysome/__init__.py
+src/pysome/expect.py
+src/pysome.egg-info/PKG-INFO
+src/pysome.egg-info/SOURCES.txt
+src/pysome.egg-info/dependency_links.txt
+src/pysome.egg-info/top_level.txt
