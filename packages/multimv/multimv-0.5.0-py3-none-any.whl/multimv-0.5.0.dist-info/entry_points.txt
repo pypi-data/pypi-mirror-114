@@ -1,0 +1,3 @@
+[console_scripts]
+multimv=multimv:main
+
