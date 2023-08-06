@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: ycc
+Version: 0.3.2
+Summary: 三圆计算器,cmd或命令行python -m ycc 或 ycc命令开始运行,ycc-tset版本是测试上传版本
+Home-page: http://github.com
+Author: 神秘的·
+Author-email: 3046479366@qq.com
+License: MIT
+Keywords: ycc,3y,a_3y,Circle,圆,圆柱,圆环,py,Chinese
+Platform: UNKNOWN
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Developers
+License-File: LICENCE
+
+========
+ycc
+========
+
+A three-circle calculator, It contains Circle Circles and Cylinders.
+It is in Chinese.If you konw how to speak and write or mean these,you can use
+
+The project is about Circle , Circular ring and Cylinder 
+This project is in Chinese version and is for mainland China only
+
+Installation
+----------------------
+Download and use ``pip``:
+
+::
+    
+    $pip install ycc
+    $ycc
+
+
+Rules
+-------------
+**Please comply with local laws and regulations, **
+****User only has the right to use ****
+****The final interpretation belongs to the author ****
+For mainland China only. 
+You can see or read the log in log.py
+This means that you have read and agreed to all the above regulations. 
+
+** MADE IN CHINA,From a Chinese middle school student**
+** The Peoject in Chinese**
+
+my qq emali address:3046479366@qq.com
+
+::
+    
+    When you are using this project,You will agree to the following.
+
+    ****1.Follow your local laws and don't break the law. If you break the law, the author will not take any responsibility**** 
+
+    ****2.When you use the project,please reasonable use .
+
+    ****If you find bugs when you're using the project,you can send a emali to 3046479366@qq.com
+
+    ****3.The final interpretation belongs to the author .
+
+    ****4.Don't steal the source code, if you find someone stealing my source code, you can tell me by email****
+
+    , I will give you some compensation
+
+
+
+Release Notes
+------------------------
+Currently the latest edition 
+
