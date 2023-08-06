@@ -1,0 +1,65 @@
+name: pygeohydro-tests
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  # async_retriever
+  - aiodns
+  - aiohttp
+  - aiohttp-client-cache
+  - aiosqlite
+  - brotlipy
+  - cchardet
+  - cytoolz
+  - nest-asyncio
+  - orjson
+
+  # pygeoogc deps
+  - defusedxml
+  - owslib
+  - pydantic
+  - pyyaml
+  - pyproj
+  - requests
+  - requests-cache
+  - shapely
+  - simplejson
+  - urllib3
+
+  # pygeoutils deps
+  - affine
+  - dask
+  - geopandas
+  - netcdf4
+  - numpy
+  - rasterio
+  - xarray
+
+  # pynhd deps
+  - networkx
+  - pandas
+  - pyarrow
+
+  # pygeohydro deps
+  - folium
+  - lxml
+  - matplotlib-base
+
+  # deps to speed up xarray and geopandas
+  - pygeos
+  - bottleneck
+
+  # test deps
+  - psutil
+  - pytest
+  - pytest-clarity
+  - pytest-cov
+  - pytest-sugar
+  - pytest-xdist
+
+  - pip
+  - pip:
+    - git+https://github.com/cheginit/async_retriever.git
+    - git+https://github.com/cheginit/pygeoogc.git
+    - git+https://github.com/cheginit/pygeoutils.git
+    - git+https://github.com/cheginit/pynhd.git
