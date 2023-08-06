@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: up_results
+Version: 0.4
+Summary: Result maker of roll numbers from excel sheet for UP Board, India
+Home-page: https://github.com/ponyket/up_results
+Author: Aniket Upadhyay and Tanzeel Ur Rahman
+Author-email: iamtanzeel1998@gmail.com
+License: MIT
+Download-URL: https://github.com/ponyket/up_results/archive/refs/tags/v0.3.tar.gz
+Description: UNKNOWN
+Keywords: UP board,result,scraper
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

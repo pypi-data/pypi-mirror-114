@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+up_results/example.py
+up_results/result_downloader.py
+up_results/result_parser.py
+up_results.egg-info/PKG-INFO
+up_results.egg-info/SOURCES.txt
+up_results.egg-info/dependency_links.txt
+up_results.egg-info/requires.txt
+up_results.egg-info/top_level.txt
