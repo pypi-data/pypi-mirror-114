@@ -1,0 +1,5 @@
+requests
+pycryptodome
+
+[bs4]
+bs4
