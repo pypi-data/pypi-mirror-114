@@ -1,0 +1,13 @@
+CHANGELOG.md
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+PyDictAPI/__init__.py
+PyDictAPI/scrape.py
+PyDictAPI/utils.py
+PyDictAPI.egg-info/PKG-INFO
+PyDictAPI.egg-info/SOURCES.txt
+PyDictAPI.egg-info/dependency_links.txt
+PyDictAPI.egg-info/requires.txt
+PyDictAPI.egg-info/top_level.txt
