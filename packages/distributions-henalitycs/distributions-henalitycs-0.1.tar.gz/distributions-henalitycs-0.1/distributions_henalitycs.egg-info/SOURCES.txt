@@ -1,0 +1,10 @@
+setup.py
+distributions/Binomialdistribution.py
+distributions/Gaussiandistribution.py
+distributions/Generaldistribution.py
+distributions/__init__.py
+distributions_henalitycs.egg-info/PKG-INFO
+distributions_henalitycs.egg-info/SOURCES.txt
+distributions_henalitycs.egg-info/dependency_links.txt
+distributions_henalitycs.egg-info/not-zip-safe
+distributions_henalitycs.egg-info/top_level.txt
