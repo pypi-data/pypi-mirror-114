@@ -1,0 +1,14 @@
+scipy
+cilog
+typed-argument-parser==1.5.4
+captum==0.2.0
+shap
+IPython
+tqdm
+rdkit-pypi
+pandas
+
+[test]
+pytest
+pytest-cov
+mock
