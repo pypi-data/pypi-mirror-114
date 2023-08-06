@@ -1,0 +1,11 @@
+pycountry
+pypopulation
+utils-nuuuwan
+tweepy
+matplotlib
+numpy
+tabula-py
+infographics-nuuuwan
+pycountry-convert
+scipy
+emoji-country-flag
