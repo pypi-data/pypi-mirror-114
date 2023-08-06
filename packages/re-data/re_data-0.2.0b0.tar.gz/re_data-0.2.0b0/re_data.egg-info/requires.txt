@@ -1,0 +1,7 @@
+click<8.0.0,>=7.1.2
+dbt<0.21.0,>=0.20.0
+
+[dev]
+isort
+black
+pre-commit
