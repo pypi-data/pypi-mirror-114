@@ -1,0 +1,3 @@
+basecolors
+colorama
+chardet
