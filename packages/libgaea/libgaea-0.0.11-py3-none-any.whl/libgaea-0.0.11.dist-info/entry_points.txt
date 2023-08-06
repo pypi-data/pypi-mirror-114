@@ -1,0 +1,3 @@
+[web.apps]
+gaea=gaea.__web__:app
+
