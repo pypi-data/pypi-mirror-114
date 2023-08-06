@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: pipeline-parallel
+Version: 1.2.3
+Summary: "To run processes in parallel by managing CPU and RAM. Initially designed for JWST pipeline"
+Home-page: https://gitlab.com/jwst_fr/pipeline_parallel
+Author: "Christophe Cossou"
+Author-email: "ccossou@gmail.com"
+License: UNKNOWN
+Description: UNKNOWN
+Platform: ["Linux"
+Platform: "Mac OS X"]
+Requires-Python: >=3.7

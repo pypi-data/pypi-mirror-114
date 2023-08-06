@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.adoc
+pyproject.toml
+setup.cfg
+setup.py
+pipeline_parallel/__init__.py
+pipeline_parallel/arg_list.py
+pipeline_parallel/fake_server.py
+pipeline_parallel/process_pool.py
+pipeline_parallel/utils.py
+pipeline_parallel.egg-info/PKG-INFO
+pipeline_parallel.egg-info/SOURCES.txt
+pipeline_parallel.egg-info/dependency_links.txt
+pipeline_parallel.egg-info/requires.txt
+pipeline_parallel.egg-info/top_level.txt
