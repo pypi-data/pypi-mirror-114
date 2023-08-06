@@ -1,0 +1,4 @@
+[console_scripts]
+pip-plugin-versions = pip_plugin_versions.versions:main_plugin
+pip-versions = pip_plugin_versions.versions:main
+
