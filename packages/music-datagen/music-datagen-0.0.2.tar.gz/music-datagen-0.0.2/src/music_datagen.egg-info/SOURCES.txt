@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/music_datagen/__init__.py
+src/music_datagen/data_functions.py
+src/music_datagen/datagen.py
+src/music_datagen.egg-info/PKG-INFO
+src/music_datagen.egg-info/SOURCES.txt
+src/music_datagen.egg-info/dependency_links.txt
+src/music_datagen.egg-info/top_level.txt
