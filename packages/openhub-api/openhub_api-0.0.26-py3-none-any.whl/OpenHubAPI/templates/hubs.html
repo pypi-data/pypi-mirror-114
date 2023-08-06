@@ -1,0 +1,106 @@
+{% extends 'admin/base_site.html' %}
+
+{% block title %}{{ title }}{% endblock title %}
+
+{% block content %}
+    <h1>{{ title }}</h1>
+    <h1>Hubs</h1>
+    <div class="container-fluid">
+        <form id="hub-form">
+            <div class="row">
+                {% csrf_token %}
+                {% for field in form.visible_fields %}
+                    <div class="form-group col-4">
+                        <label class="col-12">{{ field.label }}</label>
+                        {{ field }}
+                    </div>
+                {% endfor %}
+                {% for field in form.hidden_fields %}
+                    {{ field }}
+                {% endfor %}
+                <input type="submit" class="btn btn-primary" value="Create Hub"/>
+            </div>
+        </form>
+    </div>
+    <hr/>
+    <div class="container-fluid">
+        <table class="table table-striped table-sm " id="my_hubs" style="width:100%">
+            <thead>
+            <tr>
+                <th>Serial No.</th>
+                <th>Category</th>
+                <th>Type</th>
+                <th>Display Name</th>
+                <th>AID</th>
+                <th>Updated At</th>
+                <th>Created At</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for hub in hubs %}
+                <tr>
+                    <td><a href=/hub/{{ hub.id }} style="color:#0000EE">{{ hub.id }}</a></td>
+                    <td>{{ hub.category }}</td>
+                    <td>{{ hub.type }}</td>
+                    <td>{{ hub.display_name }}</td>
+                    <td>{{ hub.aid }}</td>
+                    <td>{{ hub.updated_at }}</td>
+                    <td>{{ hub.created_at }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+{% endblock content %}
+{% block javascript %}
+    <script>
+        /*
+            On submiting the form, send the POST ajax
+            request to server and after successfull submission
+            display the object.
+        */
+        $("#hub-form").submit(function (e) {
+            // preventing from page reload and default actions
+            e.preventDefault();
+            // serialize the data for sending the form data.
+            var serializedData = $(this).serialize();
+            // make POST ajax call
+            $.ajax({
+                type: 'POST',
+                url: "{% url 'post_hub' %}",
+                data: serializedData,
+                success: function (response) {
+                    // on successfull creating object
+                    // 1. clear the form.
+                    $("#hub-form").trigger('reset');
+                    // 2. focus to nickname input
+                    $("#id_id").focus();
+
+                    // display the newly accessory to table.
+                    var instance = JSON.parse(response["instance"]);
+                    var fields = instance[0]["fields"];
+                    var pk = instance[0]["pk"];
+                    var link = /accessories/ + pk
+                    $("#my_hubs tbody").prepend(
+                        `<tr>
+                    <td><a href=${link} style="color:#0000EE">${pk}</a></td>
+                    <td>${fields["category"] || ""}</td>
+                    <td>${fields["type"] || ""}</td>
+                    <td>${fields["display_name"] || ""}</td>
+                    <td>${fields["aid"] || ""}</td>
+                    <td>${fields["updated_at"] || ""}</td>
+                    <td>${fields["created_at"] || ""}</td>
+                    <td>${fields || ""}</td>
+
+                    </tr>`
+                    )
+                },
+                error: function (response) {
+                    // alert the error if any error occured
+                    alert(response["responseJSON"]["error"]);
+                }
+            })
+        })
+    </script>
+{% endblock javascript %}
