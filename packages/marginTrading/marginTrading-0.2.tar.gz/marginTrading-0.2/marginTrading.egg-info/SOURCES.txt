@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+marginTrading/CryptoTech_Logo.ico
+marginTrading/__init__.py
+marginTrading/marginTradingCalc.py
+marginTrading/marginTradingCalculation_GUI_v1.py
+marginTrading.egg-info/PKG-INFO
+marginTrading.egg-info/SOURCES.txt
+marginTrading.egg-info/dependency_links.txt
+marginTrading.egg-info/not-zip-safe
+marginTrading.egg-info/requires.txt
+marginTrading.egg-info/top_level.txt
