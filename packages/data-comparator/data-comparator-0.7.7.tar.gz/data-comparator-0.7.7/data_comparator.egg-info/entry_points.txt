@@ -1,0 +1,3 @@
+[console_scripts]
+data_comparator = data_comparator.app:main
+
