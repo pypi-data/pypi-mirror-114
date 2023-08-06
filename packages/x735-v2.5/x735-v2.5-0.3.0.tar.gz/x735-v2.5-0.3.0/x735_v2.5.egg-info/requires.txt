@@ -1,0 +1,6 @@
+pigpio==1.78
+RPi.GPIO==0.7.0
+click==8.0.1
+
+[dev]
+pre-commit
