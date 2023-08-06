@@ -1,0 +1,4 @@
+fastybird-devices-module
+fastybird-modules-metadata
+pony
+setuptools
