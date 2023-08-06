@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: jupic-toolkit
+Version: 0.0.2
+Summary: JupIC toolkit
+Home-page: https://github.com/g1stavo/jupic-toolkit
+License: GPLv3
+Author: g1stavo
+Author-email: gustavocsalvador@gmail.com
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/g1stavo/jupic-toolkit
+Description-Content-Type: text/markdown
+
+# jupic-toolkit
+JupIC toolkit
+
+## Run 
+```shell
+$ make run
+```
+
+## Install
+```shell
+$ poetry install
+```
+
+## Package
+Bump version with Poetry (or manually in `pyproject.toml`), 
+```shell
+$ poetry version (patch|minor|major)
+```
+
+Then:
+```shell
+$ make package
+```
