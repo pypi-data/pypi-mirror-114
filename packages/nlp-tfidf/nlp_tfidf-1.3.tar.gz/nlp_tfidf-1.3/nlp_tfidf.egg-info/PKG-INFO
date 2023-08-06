@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: nlp-tfidf
+Version: 1.3
+Summary: My short description for my project.
+Home-page: https://github.com/yino/nlp-tf-idf
+Author: yino
+Author-email: m15829090357@163.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# nlp-qa-tfidf
+
+#### 介绍
+tfidf
+余弦短文本求相似度
+
+#### package
+gensim
+jieba
+pandas
+
+
+#### 安装教程
+
+1.  pip install -i https://mirrors.aliyun.com/pypi/simple/ -r requirements.txt 
+
+#### 使用说明
+
+1.  运行qa文件
+2.  questionList 可替换
+
+
