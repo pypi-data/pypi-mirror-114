@@ -1,0 +1,20 @@
+#-*- coding: utf-8; mode: org; -*-
+#+AUTHOR: <AUTHOR>
+#+TITLE: <PROJECT>
+#+EMAIL: <EMAIL>
+#+STARTUP: overview
+#+DESCRIPTION:  No description
+#+KEYWORDS:
+#+LANGUAGE: en
+#+TEXT:  No Text
+#+OPTIONS: H:2 num:t toc:t \n:nil tags:nil @:t *:t ::t |:t ^:t f:t TeX:t skip:t
+#+LATEX_HEADER:#+LATEX_HEADER: \usepackage[margin=1in]{geometry}
+#+LATEX_HEADER: \usepackage{footmisc}
+#+EXPORT_SELECT_TAGS:
+#+EXPORT_EXCLUDE_TAGS:
+
+* Goal
+
+* Principle
+
+* Build-up

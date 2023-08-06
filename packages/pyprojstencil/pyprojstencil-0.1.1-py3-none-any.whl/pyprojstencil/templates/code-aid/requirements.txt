@@ -1,0 +1,32 @@
+# distribution
+check-manifest
+twine
+pigar
+pip
+
+# build
+build
+wheel
+setuptools
+
+# language-server-protocol
+ipython
+
+# style-check
+flake8
+autoflake
+
+# autoimport
+importmagic
+epc
+
+# sort import
+isort
+
+# auto indent google-style
+yapf
+
+# tests
+pytest
+coverage
+coverage-badge
