@@ -1,0 +1,3 @@
+[console_scripts]
+selene_sdk = selene_sdk.cli:main
+
