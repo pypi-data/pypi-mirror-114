@@ -1,0 +1,8 @@
+pyproject.toml
+easypymongodb/__init__.py
+easypymongodb/setup.py
+easypymongodb.egg-info/PKG-INFO
+easypymongodb.egg-info/SOURCES.txt
+easypymongodb.egg-info/dependency_links.txt
+easypymongodb.egg-info/requires.txt
+easypymongodb.egg-info/top_level.txt
