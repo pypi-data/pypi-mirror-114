@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gitci
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyGithub (==1.55)
+Requires-Dist: click (==8.0.1)
+
+UNKNOWN
+
+
