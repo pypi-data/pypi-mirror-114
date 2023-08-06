@@ -1,0 +1,3 @@
+[console_scripts]
+stix-shifter-threatbus = stix_shifter_threatbus.shifter:main
+
