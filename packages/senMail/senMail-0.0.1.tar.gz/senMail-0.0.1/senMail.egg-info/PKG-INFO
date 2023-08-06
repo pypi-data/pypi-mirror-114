@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: senMail
+Version: 0.0.1
+Summary: Email sending package
+Home-page: UNKNOWN
+Author: Chandira Jananath(CjE)
+Author-email: dhdevcj@gmail.com
+License: UNKNOWN
+Description: Email sending in easy way with python and use custom services like sendgrid
+Keywords: python,email,networking,sendmail,api,cje,pythoneasy
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown

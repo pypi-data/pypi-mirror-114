@@ -1,0 +1,8 @@
+setup.py
+senMail/__init__.py
+senMail/sendMail.py
+senMail.egg-info/PKG-INFO
+senMail.egg-info/SOURCES.txt
+senMail.egg-info/dependency_links.txt
+senMail.egg-info/requires.txt
+senMail.egg-info/top_level.txt
