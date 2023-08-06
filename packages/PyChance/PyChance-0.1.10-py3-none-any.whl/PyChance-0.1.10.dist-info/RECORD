@@ -1,0 +1,13 @@
+pychance/__init__.py,sha256=WvIrw9L6XKf71WkARWV8FjT2W4f3BvzQmQnZlzPsbxA,38
+pychance/pychance_class.py,sha256=Id7LQ3Ki15iHjamMxiCwnO_qUwHnz6GcZ6hT4-j8_cc,579
+pychance/data/__init__.py,sha256=sRpTIUnnD8fAoDkDk-YsPIF0p-VKwfnfP9Ed4VFVh5U,44
+pychance/data/simpletable_class.py,sha256=XAZxkKkuteXgwcdSJWk91Gd7ef_J1nj6TREZTvZDv7c,738
+pychance/parsing/__init__.py,sha256=vagZVi8NBgJNx_vV_t3WP9505p04HwM6v80GwT3kAuc,28
+pychance/parsing/parser.py,sha256=VYLNgVW5m5yINiSCSwqrQm32SgnThWnv9PS9nA7pKy8,776
+pychance/utility/__init__.py,sha256=SEYr0pN5EYcltqrurL_YzdfxNedGI3WNQEmlgLKEGd4,39
+pychance/utility/singleton.py,sha256=NBV546wTb9foxE2nRwWsnTGQl-MppfV8QuHgusFeljQ,430
+PyChance-0.1.10.dist-info/LICENSE,sha256=koUtRlH11t11tuzFAMXe-cZJcNNuqGUAiDq1fn29f_s,1092
+PyChance-0.1.10.dist-info/METADATA,sha256=ohHOR8hkdCJ6LtRUwutDENDtnHuccNcScjSUvNtVgDA,295
+PyChance-0.1.10.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+PyChance-0.1.10.dist-info/top_level.txt,sha256=9_3_vlCTBKSl3ggMqCA1C684EjCtKEr27J428WD8cuw,9
+PyChance-0.1.10.dist-info/RECORD,,
