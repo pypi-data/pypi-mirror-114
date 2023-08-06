@@ -1,0 +1,31 @@
+#!/bin/bash
+set -e
+if [ -n "$DEBUG" ]; then
+    set -x
+fi
+
+# Allow customization using POSIX environment variables:
+DOCKER=${DOCKER:-docker}
+
+TAG=${TAG:-latest}
+MATHICS_IMAGE=${MATHICS_IMAGE:-mathicsorg/mathics:${TAG}}
+
+for arg in $@ ; do
+    case "$arg" in
+        -u | --upgrade | upgrade)
+			$DOCKER pull $MATHICS_IMAGE
+			exit $?
+		;;
+    esac
+done
+
+$DOCKER run -it \
+  --name mathics-doc \
+  --rm \
+  --env="DISPLAY" \
+  --workdir=/app \
+  --volume="$PWD":/app \
+  --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
+  --volume="/tmp:/usr/src/app/data" \
+  $MATHICS_IMAGE \
+  --mode pdf -- $@

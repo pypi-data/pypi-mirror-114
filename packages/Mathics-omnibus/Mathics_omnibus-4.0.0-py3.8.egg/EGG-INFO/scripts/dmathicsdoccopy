@@ -1,0 +1,29 @@
+#!/bin/bash
+set -e
+if [ -n "$DEBUG" ]; then
+    set -x
+fi
+
+# Allow customization using POSIX environment variables:
+DOCKER=${DOCKER:-docker}
+
+TAG=${TAG:-latest}
+MATHICS_IMAGE=${MATHICS_IMAGE:-mathicsorg/mathics:${TAG}}
+
+for arg in "$@" ; do
+    case "$arg" in
+        -u | -U | --upgrade | upgrade)
+			$DOCKER pull $MATHICS_IMAGE
+			exit $?
+		;;
+    esac
+done
+
+$DOCKER run -it \
+  --name mathics-copy \
+  --rm \
+  --workdir=/app \
+  --volume="$PWD":/app \
+  --volume="/tmp:/usr/src/app/data" \
+  $MATHICS_IMAGE \
+  --mode copy -- $@
