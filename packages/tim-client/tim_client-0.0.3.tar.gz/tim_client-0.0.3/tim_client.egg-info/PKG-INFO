@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: tim-client
+Version: 0.0.3
+Summary: TIM Python Client
+Home-page: https://tangent.works
+Author: Tangent Works
+Author-email: info@tangent.works
+License: UNKNOWN
+Project-URL: Documentation, https://docs.tangent.works/
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: pipeline
+License-File: LICENSE
+
+# TIM Python Client V5
+
+Python SDK to use the V5 Engine of TIM. This include helper methods to:
+- upload a dataset
+- create a forecast with a dataset
+- ...
+
+## Usage
+
+### Installation
+To install package run: `pip install tim-client`
+
+### Initiation
+```
+from tim import Tim
+
+client = Tim(email='',password='')
+```
+
+### Methods
+Tim provides following helper methods:
+- `client.upload_dataset`
+- `client.create_forecast`
+- `client.execute_forecast`
+- `client.get_forecast_results`
+- `client.create_and_execute_forecast_job`
+- `client.create_anomaly_detection`
+- `client.execute_anomaly_detection`
+- `client.create_and_execute_anomaly_detection`
+- `client.get_anomaly_detection_job_results`
+
+### Error handling
+Minimal validation is performed by the tim-client, errors will be raised by the server
+
+### Documentation
+Full documentation of the API can be found at: https://docs.tangent.works
+
+

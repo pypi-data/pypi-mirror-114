@@ -1,0 +1,11 @@
+requests
+pandas
+typing-extensions
+
+[dev]
+pre-commit
+pytest
+versioneer
+
+[pipeline]
+build
