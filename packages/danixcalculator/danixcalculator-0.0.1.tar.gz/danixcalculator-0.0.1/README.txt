@@ -1,0 +1,1 @@
+This is basic calculator for everyone use. Two numbers (ADD, SUBSTRACT, MULTIPLY, DIVIDE).

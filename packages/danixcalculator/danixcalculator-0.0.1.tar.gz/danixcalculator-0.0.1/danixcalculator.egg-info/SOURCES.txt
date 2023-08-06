@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+danixcalculator/__init__.py
+danixcalculator.egg-info/PKG-INFO
+danixcalculator.egg-info/SOURCES.txt
+danixcalculator.egg-info/dependency_links.txt
+danixcalculator.egg-info/top_level.txt

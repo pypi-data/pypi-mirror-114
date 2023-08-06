@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: danixcalculator
+Version: 0.0.1
+Summary: Basic Calculator 2 numbers
+Home-page: UNKNOWN
+Author: Danix25
+Author-email: UNKNOWN
+License: MIT
+Description: This is basic calculator for everyone use. Two numbers (ADD, SUBSTRACT, MULTIPLY, DIVIDE).
+        
+        ChatgeLog
+        ==========================
+        
+        0.0.0.1 (31/7/2021)
+        ---------------------
+        First Releace
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
