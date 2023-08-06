@@ -1,0 +1,4 @@
+rich>=9.13.0
+Pillow
+cchardet
+pyperclip>=1.8.0
