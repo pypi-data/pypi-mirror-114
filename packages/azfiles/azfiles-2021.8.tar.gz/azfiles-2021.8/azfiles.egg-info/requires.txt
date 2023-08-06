@@ -1,0 +1,16 @@
+requests
+python-dateutil
+
+[dev]
+hs-build-tools
+coverage
+mypy
+wheel
+twine
+black
+isort
+pytest
+pytest-mypy
+pytest-cov
+types-python-dateutil
+types-requests

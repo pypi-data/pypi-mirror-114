@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+version.txt
+azfiles/__init__.py
+azfiles/__main__.py
+azfiles.egg-info/PKG-INFO
+azfiles.egg-info/SOURCES.txt
+azfiles.egg-info/dependency_links.txt
+azfiles.egg-info/entry_points.txt
+azfiles.egg-info/not-zip-safe
+azfiles.egg-info/requires.txt
+azfiles.egg-info/top_level.txt
