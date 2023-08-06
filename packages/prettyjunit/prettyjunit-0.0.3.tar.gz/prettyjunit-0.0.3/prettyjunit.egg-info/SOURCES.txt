@@ -1,0 +1,10 @@
+License.txt
+README.md
+setup.py
+prettyjunit/__init__.py
+prettyjunit/convert.py
+prettyjunit.egg-info/PKG-INFO
+prettyjunit.egg-info/SOURCES.txt
+prettyjunit.egg-info/dependency_links.txt
+prettyjunit.egg-info/entry_points.txt
+prettyjunit.egg-info/top_level.txt
