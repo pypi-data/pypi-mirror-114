@@ -1,0 +1,4 @@
+[console_scripts]
+clear-tower-defense-savefile=tower_defense.main:reset
+tower-defense=tower_defense.main:app
+
