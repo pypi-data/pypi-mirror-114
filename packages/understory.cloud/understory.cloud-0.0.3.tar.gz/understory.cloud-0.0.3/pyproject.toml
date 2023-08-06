@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "understory.cloud"
+version = "0.0.3"
+description = "Navigate the various projects tangential to the understory."
+authors = ["Angelo Gladding <angelo@lahacker.net>"]
+license = "CC0-1.0"
+
+[tool.poetry.plugins."web.apps"]
+understory_cloud = "understory_cloud:app"
+
+[tool.poetry.dependencies]
+python = "^3.9,<3.10"
+understory = "*"
+# understory = {path = "../understory"}
+
+[tool.poetry.dev-dependencies]
+black = "^21.7b0"
+isort = "^5.9.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
