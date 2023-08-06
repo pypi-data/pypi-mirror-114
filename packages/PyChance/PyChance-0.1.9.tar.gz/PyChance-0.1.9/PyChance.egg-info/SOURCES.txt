@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+PyChance.egg-info/PKG-INFO
+PyChance.egg-info/SOURCES.txt
+PyChance.egg-info/dependency_links.txt
+PyChance.egg-info/top_level.txt
+pychance/__init__.py
+pychance/pychance_class.py
+pychance/data/__init__.py
+pychance/data/simpletable_class.py
+pychance/parsing/__init__.py
+pychance/parsing/parser.py
+pychance/utility/__init__.py
+pychance/utility/singleton.py
