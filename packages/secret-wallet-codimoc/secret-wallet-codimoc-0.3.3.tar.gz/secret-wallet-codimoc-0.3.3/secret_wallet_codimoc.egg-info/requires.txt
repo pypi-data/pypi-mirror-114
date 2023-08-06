@@ -1,0 +1,5 @@
+boto3
+cryptography
+password_strength
+python-daemon
+docutils<0.16
