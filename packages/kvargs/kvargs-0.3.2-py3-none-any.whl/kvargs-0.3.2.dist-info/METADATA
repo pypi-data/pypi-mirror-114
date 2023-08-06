@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: kvargs
+Version: 0.3.2
+Summary: Key-value command line argument parser
+Home-page: https://declassed.art/repository/kvargs
+Author: AXY
+Author-email: axy@declassed.art
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Software Development :: User Interfaces
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+
+
+Key=value command line argument parser
+======================================
+
+This is an example how good design decisions lead to clear solutions
+and how "best practices" bloat the code.
+
+Everyone knows ``dd`` utility? So, this is an implementation of
+command line parser for the same syntax.
+
+Compare it with ``argparse``. Impressed?
+
+You may argue that argparse does much more. Okay, I could agree with you
+if I did not open the documentation each time when I needed to add
+a few simple command line options to my new script.
+
+Well, I don't want to disappoint you completely, so I added a useful hack
+which makes the code bigger. Unfortunately, it makes your code shorter.
+
+How to use this module
+----------------------
+
+example.py::
+
+    import kvargs
+
+    print(list(kvargs.values()))
+
+    print(kvargs['foo'])
+    print(kvargs['bar'])
+
+    if 'far' in kvargs:
+        print(kvargs['far'])
+
+How to provide command line args
+--------------------------------
+
+Same as for ``dd``::
+
+    python3 example.py foo=123 bar=456 far=0 near=123 near=456 near=789
+
+
+
