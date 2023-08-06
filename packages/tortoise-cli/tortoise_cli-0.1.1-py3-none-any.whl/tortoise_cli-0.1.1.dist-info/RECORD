@@ -1,0 +1,11 @@
+CHANGELOG.md,sha256=SqtfZ5c75Du53uM-UdNto2DigAWNGd8q5gSrT6Yt2AQ,93
+LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+README.md,sha256=IJvqzrSKuK1zSvJI04wbN4xkzGT66-CZEPvHUMLA4Qc,1885
+tortoise_cli/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+tortoise_cli/cli.py,sha256=R8aqh5P7Cnl3jDV6d5Engr4YsmMyZeiugQqwHCFnJMQ,1644
+tortoise_cli/utils.py,sha256=KQ0KBAYuOJdAG8i6eLs4ILzNf74vJU3HGoOXS5-GQSo,805
+tortoise_cli-0.1.1.dist-info/entry_points.txt,sha256=GE3eLwXQPoPgEjAnk-YEAGIKGrvhYSxf-jvIT_0kbi8,54
+tortoise_cli-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tortoise_cli-0.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+tortoise_cli-0.1.1.dist-info/METADATA,sha256=gf3lwUzg3DA2tKQ1X6qrwg2LJ4jL_zK6gCEGmmOd2Qg,2722
+tortoise_cli-0.1.1.dist-info/RECORD,,
