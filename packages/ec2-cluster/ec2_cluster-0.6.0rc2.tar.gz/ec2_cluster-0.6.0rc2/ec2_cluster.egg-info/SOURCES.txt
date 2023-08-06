@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+ec2_cluster/VERSION
+ec2_cluster/__init__.py
+ec2_cluster/extras.py
+ec2_cluster.egg-info/PKG-INFO
+ec2_cluster.egg-info/SOURCES.txt
+ec2_cluster.egg-info/dependency_links.txt
+ec2_cluster.egg-info/requires.txt
+ec2_cluster.egg-info/top_level.txt
