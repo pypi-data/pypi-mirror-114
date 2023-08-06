@@ -1,0 +1,4 @@
+setuptools~=56.0
+fastapi~=0.65
+uvicorn~=0.13
+click~=7.0

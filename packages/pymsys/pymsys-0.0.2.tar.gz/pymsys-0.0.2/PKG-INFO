@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: pymsys
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/willi-z/pymsys
+Author: WILLI Zschiebsch
+License: BSD-3-Clause
+Project-URL: Source Code, https://github.com/willi-z/pymsys
+Project-URL: Issue Tracker, https://github.com/willi-z/pymsys/issues/
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
