@@ -1,0 +1,4 @@
+attrs>=20.3.0
+
+[:python_version < "3.7"]
+contextvars>=2.4
