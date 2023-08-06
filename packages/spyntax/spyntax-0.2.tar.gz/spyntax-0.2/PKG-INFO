@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: spyntax
+Version: 0.2
+Summary: Small package for generating all possible sentences from spintax, using DFS.
+Home-page: https://github.com/fs1g17/spyntax/
+Author: Fedor Selenskiy
+Author-email: fedor.selenskiy@gmail.com
+License: MIT
+Download-URL: https://github.com/fs1g17/spyntax/archive/refs/tags/v_0.2.tar.gz
+Description: UNKNOWN
+Keywords: spintax,generate,DFS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
