@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: commode-utils
+Version: 0.3.3
+Summary: Set of useful functions and modules for Code Modeling
+Home-page: https://github.com/SpirinEgor/commode-utils
+Author: Egor Spirin
+Author-email: spirin.egor@gmail.com
+License: Apache 2.0
+Download-URL: https://pypi.org/project/commode-utils/
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: black (>=21.6b0)
+Requires-Dist: mypy (>=0.910)
+Requires-Dist: tqdm (>=4.49.0)
+Requires-Dist: torchmetrics (>=0.4.1)
+Requires-Dist: torch (>=1.9.0)
+Requires-Dist: setuptools (>=57.4.0)
+Requires-Dist: omegaconf (>=2.1.0)
+Requires-Dist: pytorch-lightning (>=1.4.0)
+Requires-Dist: parameterized (>=0.8.1)
+
+# commode-utils
+Different functions and modules for helping in Code Modeling
+
+
