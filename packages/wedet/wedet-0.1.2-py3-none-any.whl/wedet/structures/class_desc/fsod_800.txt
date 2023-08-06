@@ -1,0 +1,800 @@
+abaya
+academic gown
+accordion
+acorn
+acorn squash
+afghan hound
+african crocodile
+african elephant
+african grey
+african hunting dog
+agaric
+airplane
+alarm clock
+albatross
+alpaca
+ambulance
+american coot
+american lobster
+anchovy pear
+andiron
+anemone fish
+ant
+antelope
+apiary
+appenzeller
+apple
+aquarium
+arabian camel
+armadillo
+armchair
+artichoke
+asparagus
+assault rifle
+avocado
+axe
+baboon
+backboard
+backpack
+bagel
+balance beam
+bald eagle
+bale
+balloon
+ballplayer
+ballpoint
+banana
+banjo
+barbell
+barber chair
+barge
+barrel
+bartlett
+baseball bat
+baseball glove
+basenji
+basketball player
+bassarisk
+bassoon
+bat
+bath towel
+bathtub
+battery
+beach wagon
+beaker
+bearskin
+bee
+bee eater
+bell
+bell pepper
+belt
+bench
+bernese mountain dog
+bib
+bicycle wheel
+bighorn
+bikini
+billiard table
+binoculars
+bison
+black footed ferret
+black stork
+black swan
+blanket
+blenheim spaniel
+blue jay
+bolete
+book
+bookcase
+boot
+border collie
+bottle
+bovine
+bow and arrow
+bowl
+box
+boxer
+brace
+brambling
+brassiere
+bread
+bridal gown
+bride
+broccoli
+broom
+brown bear
+bubble
+bucket
+buckeye
+bull
+bull mastiff
+bullet
+bullet train
+bumper car
+burrito
+burro
+bus
+bust
+butterfly
+butterfly fish
+butternut squash
+button
+cabbage
+cake
+calculator
+camel
+camera
+camper
+canary
+candle
+candy
+cannon
+canoe
+canopic jar
+car door
+car wheel
+cardigan
+cardoon
+carrot
+cart
+carthorse
+carton
+castle
+cat
+caterpillar
+cattle
+cauliflower
+cavy
+cayuse
+celandine
+cello
+centipede
+cetacean
+chacma
+chain
+chainsaw
+cheetah
+cherry
+chesapeake bay retriever
+chessman
+chest of drawers
+chicken
+chimpanzee
+clipper
+clog
+closet
+club sandwich
+coat
+cock
+cocktail
+coffee
+coffee mug
+coffee table
+coin
+colobus
+column
+comb
+common fig
+computer keyboard
+computer monitor
+computer mouse
+conch
+cookie
+coral fungus
+corn
+countertop
+cowboy boot
+cowboy hat
+crab
+crampon
+crane
+crate
+cream
+cricket ball
+crocodile
+croquette
+crossword puzzle
+crown
+crutch
+cucumber
+cupboard
+curtain
+custard apple
+cutting board
+dagger
+dairy cattle
+daisy
+dandie dinmont
+deck chair
+deer
+desk
+dhole
+diaper
+dice
+digital clock
+dingo
+dishwasher
+diver
+dodo
+dog bed
+doll
+dolphin
+dough
+doughnut
+dowitcher
+dragonfly
+drake
+drawer
+dressing table
+drill
+drum
+drumstick
+duck
+dugong
+dumbbell
+dung beetle
+dungeness crab
+dutch oven
+eagle
+earthstar
+eggnog
+eider
+elephant
+elk
+english foxhound
+english springer
+entlebucher
+envelope
+eskimo dog
+european gallinule
+ewe
+face powder
+falafel
+falcon
+fiddler crab
+filing cabinet
+fire hydrant
+flag
+flagpole
+flamingo
+flashlight
+flat coated retriever
+flowerpot
+flute
+flying disc
+folding chair
+food processor
+football
+football helmet
+fork
+fountain
+fox
+french fries
+french loaf
+frog
+frying pan
+gar
+gas stove
+gazelle
+gearing
+gemsbok
+giant schnauzer
+giraffe
+go kart
+goat
+goblet
+goldfinch
+goldfish
+golf ball
+golf cart
+gondola
+goose
+gordon setter
+gorilla
+gown
+granny smith
+grapefruit
+greyhound
+grizzly
+groom
+guacamole
+guanaco
+guava
+guenon
+guinea pig
+guitar
+gyromitra
+hair slide
+hamburger
+hammer
+hamster
+handbag
+handgun
+handkerchief
+harp
+hartebeest
+hatchet
+hay
+headboard
+hedgehog
+heifer
+helicopter
+hen
+hip
+hippopotamus
+hog
+honey
+honeycomb
+hook
+horizontal bar
+horn
+horse
+hot dog
+hound
+house finch
+houseplant
+human arm
+human beard
+human foot
+human hand
+human leg
+hyena
+ibex
+ice cream
+ice skate
+impala
+indian elephant
+infant bed
+interceptor
+ipod
+irish terrier
+irish wolfhound
+isopod
+italian greyhound
+jack o' lantern
+jacket
+jackfruit
+jaguar
+jam
+jar
+jeans
+jellyfish
+jennet
+jersey
+jinrikisha
+jockey
+joystick
+jug
+kangaroo
+kettle
+kid
+killer whale
+kimono
+king charles spaniel
+king penguin
+kit fox
+kite
+kite balloon
+knee pad
+knife
+knot
+koala
+lab coat
+labrador retriever
+ladder
+ladybug
+lamp
+lampshade
+langur
+laptop
+large yellow lady's slipper
+laundry cart
+lavender
+lemon
+leonberg
+leopard
+lesser scaup
+letter opener
+lighter
+lighthouse
+limousine
+lion
+lipstick
+litchi
+lizard
+llama
+loafer
+lobster
+longwool
+lorikeet
+loudspeaker
+loupe
+lovebird
+loveseat
+lynx
+macaque
+macaw
+madagascar cat
+magpie
+mailbox
+malamute
+male horse
+mallet
+mango
+marble
+marimba
+marmoset
+martin
+mask
+matchstick
+measuring cup
+meat loaf
+meatball
+medicine ball
+megalith
+metal screw
+microphone
+microwave oven
+military uniform
+milk
+minibus
+miniskirt
+mirror
+missile
+mitten
+mixing bowl
+mobile home
+mobile phone
+modem
+mongoose
+monkey
+morel
+mortarboard
+motor scooter
+motorboat
+motorcycle
+mountain bike
+mountain goat
+mountain sheep
+mountain tent
+mouse
+mug
+mule
+mushroom
+mustang
+nail
+nailfile
+necklace
+nipple
+norwich terrier
+oar
+oboe
+ocarina
+oil filter
+okapi
+okra
+open face sandwich
+orange
+orangutan
+organ
+oryx
+ostrich
+otter
+otterhound
+oven
+owl
+ox
+oxygen mask
+oystercatcher
+packet
+packhorse
+paddle
+paintbrush
+pajama
+palm
+palm tree
+pan
+pancake
+panda
+panpipe
+paper towel
+parachute
+parking meter
+parrot
+parsnip
+partridge
+pasta
+patas
+pay phone
+peach
+pear
+peg
+pelican
+pembroke
+pen
+pencil case
+penguin
+penlight
+perfume
+petri dish
+pick
+picket fence
+picture frame
+pig
+pigeon
+pill bottle
+pillow
+pimento
+pineapple
+pinwheel
+pitcher
+pizza
+plastic bag
+plate
+plug
+plum
+polar bear
+pomegranate
+pony
+poodle
+pool ball
+pop bottle
+popcorn
+porch
+porcupine
+poster
+potato
+prairie chicken
+pretzel
+printer
+propeller
+punching bag
+quail
+quesadilla
+quince
+rabbit
+raccoon
+racer
+radio telescope
+radish
+rain barrel
+rake
+ram
+rambutan
+raspberry
+raven
+red backed sandpiper
+red breasted merganser
+red panda
+red wine
+redbone
+reel
+refrigerator
+remote control
+retriever
+rhesus
+rhodesian ridgeback
+rifle
+ring binder
+river boat
+rocket
+rocking chair
+roller skates
+rose
+ruddy turnstone
+rugby ball
+ruler
+ruminant
+running shoe
+saddle
+safety pin
+sail
+sailboat
+salad
+salmon
+saluki
+samoyed
+sandal
+sarong
+saucer
+sausage dog
+saw
+saxophone
+scale
+scarf
+school bus
+scissors
+scoreboard
+scorpion
+scotch terrier
+scoter
+screw
+screwdriver
+scuba diver
+sea lion
+sealyham terrier
+seat belt
+sewing machine
+shark
+sheep
+shelf
+shield
+shih tzu
+shirt
+shoji
+shopping cart
+short pants
+shorts
+shower
+shower cap
+shower curtain
+shrimp
+shutter
+shuttlecock
+siamang
+siberian husky
+sink
+skateboard
+ski
+ski mask
+ski pole
+skunk
+sleeping bag
+sleeve
+slide
+slide rule
+slot
+snail
+snake
+snipe
+snorkel
+snow goose
+snowboard
+snowmobile
+snowplow
+snowshoe
+soap dispenser
+sock
+sofa bed
+solar dish
+sombrero
+sorrel
+spaghetti squash
+sparrow
+spatula
+speedboat
+spider
+spoon
+spoonbill
+sports car
+springbok
+squash racket
+squirrel
+staffordshire bullterrier
+stairs
+stamp
+standard poodle
+standard schnauzer
+stapler
+starfish
+stationary bicycle
+steel drum
+stethoscope
+stinkhorn
+stool
+stop sign
+strawberry
+stretcher
+studio couch
+stuffed peppers
+stuffed tomato
+submarine
+submarine sandwich
+suitcase
+sulphur crested cockatoo
+sunscreen
+surfboard
+sushi
+swallow
+swan
+sweet orange
+swim cap
+swimwear
+swing
+switchblade
+sword
+syringe
+taco
+tank
+tank car
+tap
+tart
+taxi
+tea
+teapot
+teddy bear
+television
+tennis ball
+tennis racket
+tent
+terrapin
+thatch
+tick
+tie
+tiger
+timber wolf
+tin can
+toast
+toaster
+toilet
+toilet paper
+tomato
+toothbrush
+tostada
+towel
+tower
+traffic light
+trailer truck
+train
+training bench
+trench coat
+tripod
+trombone
+truck
+trumpet
+turkey
+turnstile
+tusker
+twin bed
+umbrella
+unicycle
+van
+vase
+vending machine
+vervet
+vestment
+violin
+volleyball
+vulture
+waffle
+wall clock
+wallaby
+wallet
+wardrobe
+warthog
+washing machine
+wassail
+watch
+water buffalo
+water jug
+weimaraner
+west highland white terrier
+whale
+wheelchair
+whippet
+whisk
+whistle
+white stork
+whooping crane
+wicket
+wild boar
+wild sheep
+window blind
+window shade
+wine
+wine glass
+wisent
+wok
+wooden spoon
+woodpecker
+wool
+workhorse
+worm
+wrench
+yacht
+yawl
+yellow lady's slipper
+yurt
+zebra
+zebu
+zucchini

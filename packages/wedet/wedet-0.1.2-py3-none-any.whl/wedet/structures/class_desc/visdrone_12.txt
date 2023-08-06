@@ -1,0 +1,12 @@
+awning-tricycle
+bicycle
+bus
+car
+ignored-regions
+motor
+others
+pedestrian
+people
+tricycle
+truck
+van

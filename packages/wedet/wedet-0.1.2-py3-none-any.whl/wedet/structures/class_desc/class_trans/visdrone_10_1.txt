@@ -1,0 +1,10 @@
+awning-tricycle, __
+bicycle,         __
+bus,             __
+car,             car
+motor,           __
+pedestrian,      __
+people,          __
+tricycle,        __
+truck,           __
+van,             __

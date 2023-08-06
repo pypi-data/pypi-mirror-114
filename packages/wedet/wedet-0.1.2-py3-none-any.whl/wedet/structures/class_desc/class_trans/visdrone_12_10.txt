@@ -1,0 +1,12 @@
+awning-tricycle, awning-tricycle
+bicycle,         bicycle
+bus,             bus
+car,             car
+ignored-regions, __
+motor,           motor
+others,          __
+pedestrian,      pedestrian
+people,          people
+tricycle,        tricycle
+truck,           truck
+van,             van
