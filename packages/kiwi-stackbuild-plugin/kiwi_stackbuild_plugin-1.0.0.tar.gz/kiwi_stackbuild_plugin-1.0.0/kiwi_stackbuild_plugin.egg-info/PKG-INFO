@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: kiwi-stackbuild-plugin
+Version: 1.0.0
+Summary: KIWI - Stack Build Plugin
+Home-page: https://github.com/OSInside/kiwi-stackbuild-plugin
+Author: Marcus Schäfer
+Author-email: ms@suse.com
+License: GPLv3+
+Download-URL: https://download.opensuse.org/repositories/Virtualization:/Appliances:/Builder
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: System :: Operating System
+License-File: LICENSE
+
+UNKNOWN
+
