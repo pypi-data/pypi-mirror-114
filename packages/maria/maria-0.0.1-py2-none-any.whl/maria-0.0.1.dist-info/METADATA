@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: maria
+Version: 0.0.1
+Summary: Modeling Auto-Regressive Integrated Atmosphere
+Home-page: https://github.com/tomachito/maria
+Author: Thomas Morris
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: ephem
+
+# maria (Modeling Auto-Regressive Integrated Atmosphere)
+
+maria is a Python package that simulates and realizes time-ordered atmospheric fluctuations in ground-based telescopes. 
+
