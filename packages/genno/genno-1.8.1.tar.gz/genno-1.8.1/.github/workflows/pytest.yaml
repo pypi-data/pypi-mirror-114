@@ -1,0 +1,90 @@
+name: Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+  - cron: "0 5 * * *"
+
+
+env:
+  depth: 100  # Depth of history to clone, for setuptools-scm
+
+jobs:
+  pytest:
+    strategy:
+      matrix:
+        os:
+        - macos-latest
+        - ubuntu-latest
+        - windows-latest
+        python-version:
+        - "3.6"  # Earliest version supported by genno; matches xarray
+        - "3.8"
+        - "3.9"  # Latest Python release / latest testable on GitHub Actions
+
+        # For development versions of Python, compiled binary wheels are not
+        # available for some dependencies, e.g. llvmlite, numba, numpy, and/or
+        # pandas. Compiling these on the job runner requires a more elaborate
+        # build environment, currently out of scope for genno.
+        # - "3.10.0-alpha.1"  # Development version
+
+        exclude:
+        # This job triggers errors when importing ixmp.testing: no module named
+        # ixmp.backend. Not critical, since it's upstream.
+        - os: windows-latest
+          python-version: "3.6"
+
+      fail-fast: false
+
+    runs-on: ${{ matrix.os }}
+    name: ${{ matrix.os }}-py${{ matrix.python-version }}
+
+    steps:
+    - name: Cancel previous runs that have not completed
+      uses: styfle/cancel-workflow-action@0.7.0
+      with:
+        access_token: ${{ github.token }}
+
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: ${{ env.depth }}
+
+    - name: Fetch tags (for setuptools-scm)
+      run: git fetch --tags --depth=${{ env.depth }}
+
+    - uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Cache Python packages
+      uses: actions/cache@v2
+      with:
+        path: |
+          ~/.cache/pip
+          ~/Library/Caches/pip
+          ~/appdata/local/pip/cache
+        key: ${{ matrix.os }}-py${{ matrix.python-version }}
+        restore-keys: |
+          ${{ matrix.os }}-
+
+    - uses: ts-graphviz/setup-graphviz@v1
+
+    - name: Upgrade pip, wheel, setuptools-scm
+      run: python -m pip install --upgrade pip wheel setuptools-scm
+
+    - name: Install Python package and dependencies
+      run: pip install --editable .[docs,tests]
+
+    - name: Run test suite using pytest
+      run: pytest genno --trace-config --verbose --cov-report=xml --cov-report=term --color=yes
+
+    - name: Test documentation build using Sphinx
+      if: ${{ startsWith(matrix.os, 'ubuntu') }}
+      working-directory: doc
+      run: make html
+
+    - name: Upload test coverage to Codecov.io
+      uses: codecov/codecov-action@v1.2.1
