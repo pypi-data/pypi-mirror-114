@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+rxray/__init__.py
+rxray/ray.py
+rxray.egg-info/PKG-INFO
+rxray.egg-info/SOURCES.txt
+rxray.egg-info/dependency_links.txt
+rxray.egg-info/requires.txt
+rxray.egg-info/top_level.txt
