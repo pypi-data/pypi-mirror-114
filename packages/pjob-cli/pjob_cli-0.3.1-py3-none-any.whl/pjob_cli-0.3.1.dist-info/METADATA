@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pjob-cli
+Version: 0.3.1
+Summary: UNKNOWN
+Home-page: https://github.com/ChenJiangxu/pjob-cli
+Author: Joncy
+Author-email: chenjiangxu@foxmail.com
+License: MIT Licence
+Platform: any
+Requires-Dist: requests
+
+UNKNOWN
+
+
