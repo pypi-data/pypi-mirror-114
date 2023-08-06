@@ -1,0 +1,98 @@
+import pytest
+import pandas as pd
+import numpy as np
+import seaborn as sns
+from sklearn.metrics import mean_absolute_error
+from sklearn.linear_model import LinearRegression
+
+
+import warnings
+warnings.filterwarnings("ignore", module = "matplotlib\..*" )
+warnings.filterwarnings("ignore", module = "seaborn\..*" )
+warnings.filterwarnings("ignore", message="FixedFormatter should only be used together with FixedLocator")
+
+import edatk._single_variable._summary_statistics as sst
+from edatk._auto_eda import auto_eda
+from edatk._modeling._cross_val_custom import cross_validate_custom
+
+
+def _get_sns_test_datasets(small_list=True):
+    if small_list:
+        return [sns.load_dataset('iris'), sns.load_dataset('diamonds'), sns.load_dataset('titanic')]
+    else:
+        return [sns.load_dataset(ds_name) for ds_name in sns.get_dataset_names()]
+
+
+def _get_test_df():
+    SAMPLE_LIST = [5.1,4.9,4.7,4.6,5.0, None]
+    SAMPLE_CAT = ['a', 'b', 'c', 'd', 'e', 'a']
+    return pd.DataFrame(list(zip(SAMPLE_LIST,SAMPLE_CAT)), columns=['metric', 'category'])
+
+
+def test_mean():
+    assert round(sst._op_mean(_get_test_df(),'metric'),2) == 4.86
+
+
+def test_median():
+    assert round(sst._op_median(_get_test_df(),'metric'),2) == 4.9
+
+
+def test_rowcount():
+    assert sst._op_rowcount(_get_test_df(),'metric') == 6
+    assert type(sst._op_rowcount(_get_test_df(),'metric')) is int
+
+
+def test_min():
+    assert round(sst._op_min(_get_test_df(),'metric'), 2) == 4.6
+
+
+def test_max():
+    assert round(sst._op_max(_get_test_df(),'metric'),2) == 5.1
+
+
+def test_variance():
+    assert round(sst._op_variance(_get_test_df(),'metric'),4) == 0.0344
+
+
+def test_standard_deviation():
+    assert round(sst._op_standard_deviation(_get_test_df(),'metric'),4) == 0.1855
+
+
+def test_missing():
+    assert int(sst._op_missing_rows(_get_test_df(),'metric')) == 1
+    assert type(sst._op_missing_rows(_get_test_df(),'metric')) is int
+
+
+def test_75th_percentile():
+    assert round(sst._op_quantile(_get_test_df(),'metric',0.75),4) == 5.0
+
+
+def test_distinct_count():
+    assert int(sst._op_distinct_count(_get_test_df(), 'category')) == 5
+
+
+def test_data_type():
+    assert sst._op_get_column_data_type(_get_test_df(), 'category') == 'string'
+    assert sst._op_get_column_data_type(_get_test_df(), 'metric') == 'numeric-condensed'
+
+
+def test_cv():
+    df = sns.load_dataset('diamonds')
+    y = df.pop('price')
+    X = df.loc[:, ['carat','depth']]
+    scorer2 = mean_absolute_error
+    model2 = LinearRegression()
+
+    assert round(np.mean(cross_validate_custom(X, y, model2, scorer2)), 2) == 1005.25
+
+
+def test_auto_column_text_eda():
+    df = _get_test_df()
+    auto_eda(df)
+
+
+def test_sns_datasets():
+    ds_list = _get_sns_test_datasets()
+    for i, ds in enumerate(ds_list):
+        print(f'Running dataset {i}')
+        auto_eda(ds, ignore_errors=False, show_chart=False)
