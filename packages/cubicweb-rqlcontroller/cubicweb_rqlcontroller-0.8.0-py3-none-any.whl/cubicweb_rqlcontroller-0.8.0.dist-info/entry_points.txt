@@ -1,0 +1,3 @@
+[cubicweb.cubes]
+rqlcontroller = cubicweb_rqlcontroller
+
