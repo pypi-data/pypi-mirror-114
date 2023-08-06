@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: navsim_mlagents_envs
+Version: 0.27.0
+Summary: NavSim cusomized Unity Machine Learning Agents Interface
+Home-page: UNKNOWN
+Author: STTC, UCF
+Author-email: armando@ucf.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6.1
