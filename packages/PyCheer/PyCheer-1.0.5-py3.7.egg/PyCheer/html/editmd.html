@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <style>
+		body{background-color: white}
+        iframe{margin:0;}
+	</style>
+	<!--<iframe src="//player.bilibili.com/player.html?aid=889091583&bvid=BV1UK4y1M7oE&cid=367063448&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>-->
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="icon" href="/logo.ico" type="image/x-icon"/>
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/css/modern-business.css" rel="stylesheet">
+		<link href="/css/font-awesome.min.css" rel="stylesheet" type="textcss">
+        <link href="/css/markdown-palettes.css" rel="stylesheet">
+        <script src="/js/markdown-palettes.min.js"></script>
+		<script src="/js/jquery.min.js"></script>
+		<script src="/js/axios.min.js"></script>
+		<script src="/js/ace.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body background-color="white">
+        <iframe src="/head.html" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="height:8%;"></iframe><br>
+        <iframe src="/main-control1.html" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" id="main-control1" style="height:6%;"></iframe>
+		<div id="editor"></div>
+		<script>
+			var init_code="<init_code>";
+			var show_init_code=decodeURIComponent(init_code);
+			console.log(show_init_code);
+			var editor=new MarkdownPalettes('#editor');
+			editor.content=show_init_code;
+			function GetQueryString(name)
+			{
+				var reg=new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+				var r=window.location.search.substr(1).match(reg);
+				if (r!=null)
+				{
+					return unescape(r[2]);
+				}
+				return null;
+			}
+			function save()
+			{
+				//var editor=new MarkdownPalettes('editor');
+				var save_value=editor.content;
+				console.log(save_value);
+				var send_value=encodeURIComponent(save_value);
+				axios.post("/save?path="+GetQueryString("path"),data=send_value).then(function(response){console.log(response);});
+			}
+			document.onkeydown=function(key)
+			{
+				if(key.code=="KeyS"&&key.ctrlKey==true)
+				{
+					save();
+					return false;
+				}
+			}
+		</script>
+		<script src="/js/bootstrap.min.js"></script>
+	</body>
+</html>

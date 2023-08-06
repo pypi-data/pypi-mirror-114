@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="icon" href="/logo.ico" type="image/x-icon"/>
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/css/modern-business.css" rel="stylesheet">
+		<link href="/css/font-awesome.min.css" rel="stylesheet" type="textcss">
+		<script src="/js/jquery.min.js"></script>
+		<script src="/js/axios.min.js" type="text/javascript" charset="utf-8"></script>
+        <style>
+            body{background-color: white;}
+            iframe{border:0;}
+        </style>
+    </head>
+    <body>
+        <img src="logo/logo.png" align="center"><br>
+        <center>
+            <div style="width:80%;">
+                <svg t="1597981317667" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8332" width="512" height="512"><path d="M768 352h-10.666667V298.666667c0-135.253333-110.08-245.333333-245.333333-245.333334S266.666667 163.413333 266.666667 298.666667v53.333333H256A117.546667 117.546667 0 0 0 138.666667 469.333333v384c0 64.64 52.693333 117.333333 117.333333 117.333334h512c64.64 0 117.333333-52.693333 117.333333-117.333334V469.333333c0-64.64-52.693333-117.333333-117.333333-117.333333zM330.666667 298.666667c0-100.053333 81.28-181.333333 181.333333-181.333334s181.333333 81.28 181.333333 181.333334v53.333333h-362.666666V298.666667z m490.666666 554.666666a53.333333 53.333333 0 0 1-53.333333 53.333334H256A53.333333 53.333333 0 0 1 202.666667 853.333333V469.333333a53.333333 53.333333 0 0 1 53.333333-53.333333h512a53.333333 53.333333 0 0 1 53.333333 53.333333v384z" p-id="8333"></path><path d="M512 544a32 32 0 0 0-32 32v170.666667a32 32 0 1 0 64 0v-170.666667a32 32 0 0 0-32-32z" p-id="8334"></path></svg>
+                <br>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary btn-sm" onclick="javascript:alert('Token在服务启动时于控制台以蓝色字体（部分控制台不支持颜色）输出，请注意查看。')">
+                            <svg t="1597981492955" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9186" width="20" height="20"><path d="M512 127.9c51.9 0 102.2 10.1 149.5 30.2 45.7 19.3 86.8 47 122.1 82.3s63 76.4 82.3 122.1c20 47.3 30.2 97.6 30.2 149.5S886 614.2 865.9 661.5c-19.3 45.7-47 86.8-82.3 122.1s-76.4 63-122.1 82.3c-47.3 20-97.6 30.2-149.5 30.2S409.8 886 362.5 865.9c-45.7-19.3-86.8-47-122.1-82.3s-63-76.4-82.3-122.1c-20-47.3-30.2-97.6-30.2-149.5s10.1-102.2 30.2-149.5c19.3-45.7 47-86.8 82.3-122.1s76.4-63 122.1-82.3c47.3-20 97.6-30.2 149.5-30.2m0-64C264.5 63.9 63.9 264.5 63.9 512S264.5 960.1 512 960.1 960.1 759.5 960.1 512 759.5 63.9 512 63.9z" fill="" p-id="9187"></path><path d="M480 736h64v64h-64zM476.9 686.3c-0.3-9.3-0.4-42.2-0.4-46.8 0-27.3 3.9-50.8 11.6-70.6 5.7-14.9 14.8-30 27.4-45.1 9.3-11.1 25.9-27.2 50-48.4 24-21.2 39.7-38.1 46.9-50.7s10.8-26.4 10.8-41.3c0-27-10.5-50.7-31.6-71.2-21.1-20.4-46.9-30.7-77.5-30.7-29.6 0-54.3 9.3-74.1 27.8-19.8 18.5-32.8 47.4-39 86.8l-71.4-8.5c6.4-52.7 25.5-93.1 57.3-121.1s73.7-42 125.9-42c55.3 0 99.4 15 132.3 45.1 32.9 30.1 49.4 66.5 49.4 109.2 0 24.7-5.8 47.4-17.4 68.3s-34.2 46.2-67.9 76c-22.6 20.1-37.4 34.8-44.4 44.4-6.9 9.5-12.1 20.4-15.4 32.8-3.3 12.3-5.3 58.4-5.8 86.2h-66.7v-0.2z" fill="" p-id="9188"></path></svg>
+                        </button>
+                    </div>
+                    <input id="token-input" type="text" class="form-control" placeholder="请输入Token" style="width:40%;">
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-outline-success btn-sm" onclick="javascript:commit()">提交</button>
+                    </div>
+                </div>
+            </div>
+        </center>
+        <script>
+			function GetQueryString(name)
+			{
+				var reg=new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+				var r=window.location.search.substr(1).match(reg);
+				if (r!=null)
+				{
+					return unescape(r[2]);
+				}
+				return null;
+			}
+            async function commit()
+            {
+                const response = await axios.post("/rg?token="+document.getElementById("token-input").value)
+                console.log(response);
+                if(response.status==200)
+                {
+                    var go_url=GetQueryString("go_url");
+                    if(go_url==null)
+                    {
+                        window.location.href="/tree";
+                    }
+                    else
+                    {
+                        window.location.href=decodeURIComponent(go_url);
+                    }
+                }
+                else
+                {
+                    alert("Token输入错误或服务产生错误。若是服务产生错误，您可以查看Console信息。");
+                }
+            }
+        </script>
+        <script src="/js/popper.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+    </body>
+</html>
