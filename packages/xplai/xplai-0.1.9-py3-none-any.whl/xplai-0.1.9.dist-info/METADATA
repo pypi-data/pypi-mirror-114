@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: xplai
+Version: 0.1.9
+Summary: xpl.ai client SDK.
+Home-page: https://xpl.ai/
+Author: XPL Technologies AB
+License: Proprietary software
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests (~=2.24.0)
+Requires-Dist: pydantic
+Requires-Dist: aiohttp
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: torchaudio
+Requires-Dist: Pillow
+
+Request early access from xpl.ai to get login credentials.
+##CLI Usage
+### Authentication
+Login.
+~~~
+xpl auth login
+
+Options:
+    -u, --username
+    -s, --secret
+~~~
+Logout
+~~~
+    xpl auth logout
+~~~
+
+### Tasks
+Create *task* draft
+~~~
+xpl task draft
+
+    Options:
+    -n, --name
+    -m, --modality: # 'image', 'video', 'audio', 'text'
+                    # Currently supported: 'image'
+    -c, --csv: # A path to csv file containing training examples that will be used to pretreain the model.
+~~~
+Initialize Active learning pipeline from the *task*.
+- Model for the task will be assembled, 
+- Data pipelines will be initialized
+- Sample examples for pretraining will be uploaded  
+- Training from provided examples will start
+~~~
+xpl task commit
+~~~
+List *tasks*
+~~~
+xpl task list
+~~~
+Describe *task's* detail information
+~~~
+xpl task describe
+
+    Options:
+    -t, --task_id: # an id of the task. Can be obtained from "xpl task list" command
+~~~
+
+### Annotations
+List active annotation jobs that are associated with the task.
+This will return list of urls, corresponding toi annotation jobs. Url directs to the annotation UI.
+~~~
+xpl annotations list
+
+    Options:
+    -t, --task_id: # an id of the task. Can be obtained from "xpl task list" command
+~~~
+
+### Concepts
+Search XPL Platform for the concepts by the lemma
+~~~
+xpl concept search
+
+    Options:
+    -l, --lemma: # A single word human-readable lemma that describes concept in English
+~~~
+##End-user integration
+The core of end-user integration is a Task object.
+###Instantiate Task object
+~~~
+task = Task(task_id='b622d1e8bd0d43d0be184239bf9ce53d',
+            task_api_key='a714e3ce19594872be7fb9042d02134b')
+            # task_api_key can be obtained from cli: "xpl task describe"
+~~~
+Instantiating Task object will: 
+- verify validity of the task's api key,
+- check the active version of the model
+- if needed: fetch the model from storage using secured http channel and cache it on the disk
+- load model and will be ready to accept data for inferences
+###Run task on data of corresponding modality
+~~~
+from xplai import Task
+
+image_path = '/data/image.png'
+concepts_detected = task.run(source=image_path)
+
+# do something useful
+for concept in concepts_detected:
+    print(f'detected {concept.display_name} in {image_path}')
+~~~
+
