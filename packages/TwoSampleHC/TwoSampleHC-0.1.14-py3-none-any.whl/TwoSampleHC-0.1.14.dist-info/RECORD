@@ -1,0 +1,9 @@
+TwoSampleHC/TwoSampleHC.py,sha256=52AkbQg8IRVTcr877YKGrnm7SOaYcdzI7_Ylmgi0fgU,16314
+TwoSampleHC/__init__.py,sha256=PgD2IopQbNHvuU25O-F9M2TvqGz0Bpj0MhQiKdHWzhw,660
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/multinomial_perturbation.py,sha256=kzs9O7wlcnGwWSueLfsng54i-KG_TBNDSb-H3xF9AcM,913
+TwoSampleHC-0.1.14.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+TwoSampleHC-0.1.14.dist-info/METADATA,sha256=9CImChtz7UH2bUZv5t74sYCiamQzLJTGmMEKNemScLc,2528
+TwoSampleHC-0.1.14.dist-info/WHEEL,sha256=MYFsq5fFBwF_oyJgrOoFmYYB1K6Sw7MxY-0897ZLbdM,92
+TwoSampleHC-0.1.14.dist-info/top_level.txt,sha256=ko9vqHG6PIs92OmMhMVoRs9iXYMhQowIjUTP5dOEP0c,18
+TwoSampleHC-0.1.14.dist-info/RECORD,,
