@@ -1,0 +1,25 @@
+### Introduction
+
+SCSit: A high-efficiency cell types identification tool for single-cell sequencing data from SPLiT-seq
+
+### Parameter description
+All file_path are *Absolute path*, cause thread work direction may different with
+file path. So path from content root is not suitable here.
+
+#### Eg: 
+```angular2html
+  Program: SCSit (A high-efficiency preprocessing tool for single-cell sequencing data from SPLiT-seq)
+  
+  Contact: Shangqian Xie <sqianxie@foxmail.com>
+    Usage: SCSit [options] -r1 input_r1.fastq -r2 input_r2.fastq -p primer.list -b barcode.list -o output
+    
+  params:
+    "       -r1 R1File        Paths to files that contain input read1 of SPLiT-seq pair-end files
+    "       -r2 R2File        Paths to files that contain input read2 of SPLiT-seq pair-end files
+    "       -p primerList     Primer list of all oligonucleotide sequences used
+    "       -b barcodeList    The 96 well plate oligonucleotides used for each round of barcodes
+    Options:
+    "       -t int            Maximum number of threads to use [default:4]
+    "       -o output_prefix  Paths to files that contain output file prefix [default:output]
+    "       -h                show this help message and exit
+```

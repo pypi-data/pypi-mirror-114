@@ -1,0 +1,102 @@
+#!/usr/bin/env python3
+
+from ctypes import *
+import sys
+import os
+from scsit import *
+
+scs_it = cdll.LoadLibrary(get_path())
+
+
+def calculate(argv):
+    r1 = ""
+    r2 = ""
+    r3 = ""
+    r4 = ""
+    r5 = "4"
+    r6 = "output"
+    p1 = ""
+    p2 = ""
+    p3 = ""
+    p4 = ""
+    p5 = "-t"
+    p6 = "-o"
+    if len(argv) == 9:
+        r1 = argv[2]
+        r2 = argv[4]
+        r3 = argv[6]
+        r4 = argv[8]
+        p1 = argv[1]
+        p2 = argv[3]
+        p3 = argv[5]
+        p4 = argv[7]
+    elif len(argv) == 13:
+        r1 = argv[2]
+        r2 = argv[4]
+        r3 = argv[6]
+        r4 = argv[8]
+        r5 = argv[10]
+        r6 = argv[12]
+        p1 = argv[1]
+        p2 = argv[3]
+        p3 = argv[5]
+        p4 = argv[7]
+        p5 = argv[9]
+        p6 = argv[11]
+    elif len(argv) == 2 and argv[1] == '-h':
+        print("Program: SCSit (A high-efficiency preprocessing tool for single-cell sequencing data from SPLiT-seq)")
+        print("Version: 1.0.0")
+        print("Contact: Shangqian Xie <sqianxie@foxmail.com>")
+        print("")
+        print("Usage: scsit [options] -r1 input_r1.fastq -r2 input_r2.fastq -p primer.list -b barcode.list -o output")
+        print("")
+        print("     -r1 R1File        Paths to files that contain input read1 of SPLiT-seq pair-end files <str>")
+        print("     -r2 R2File        Paths to files that contain input read2 of SPLiT-seq pair-end files <str>")
+        print("     -p primerList     Primer list of all oligonucleotide sequences used <str>")
+        print("     -b barcodeList    The 96 well plate oligonucleotides used for each round of barcodes <str>")
+        print("")
+        print("Options:")
+        print("")
+        print("     -t int            Maximum number of threads to use [default: 2]")
+        print("     -o output_prefix  Paths to files that contain output file prefix [default: output]")
+        print("     -h                show this help message and exit:")
+        print("")
+    else:
+        print("")
+        print("     Input 'scsit -h' for more information")
+        print("     command:")
+        print("     scsit -r1 file1.fastq -r2 file2.fastq -p primerList.txt -b barcodeList.txt")
+        print("     replace last four parameters to your own file")
+        print("")
+    r1 = bytes(r1, encoding="utf8")
+    r2 = bytes(r2, encoding="utf8")
+    r3 = bytes(r3, encoding="utf8")
+    r4 = bytes(r4, encoding="utf8")
+    r5 = bytes(r5, encoding="utf8")
+    r6 = bytes(r6, encoding="utf8")
+    p1 = bytes(p1, encoding="utf8")
+    p2 = bytes(p2, encoding="utf8")
+    p3 = bytes(p3, encoding="utf8")
+    p4 = bytes(p4, encoding="utf8")
+    p5 = bytes(p5, encoding="utf8")
+    p6 = bytes(p6, encoding="utf8")
+    params = (c_char_p*13)()
+    params[0] = c_char_p(b"SCSit")
+    params[1] = c_char_p(p1)
+    params[2] = c_char_p(r1)
+    params[3] = c_char_p(p2)
+    params[4] = c_char_p(r2)
+    params[5] = c_char_p(p3)
+    params[6] = c_char_p(r3)
+    params[7] = c_char_p(p4)
+    params[8] = c_char_p(r4)
+    params[9] = c_char_p(p5)
+    params[10] = c_char_p(r5)
+    params[11] = c_char_p(p6)
+    params[12] = c_char_p(r6)
+    scs_it.main(13, params)
+
+
+if __name__ == "__main__":
+    calculate(sys.argv)
+
