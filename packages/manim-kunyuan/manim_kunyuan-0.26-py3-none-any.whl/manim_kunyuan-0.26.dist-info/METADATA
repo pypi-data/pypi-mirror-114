@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: manim-kunyuan
+Version: 0.26
+Summary: Math Animation Tool(Fork from 3b1b manim)
+Home-page: https://github.com/beidongjiedeguang/manim
+Author-email: beidongjiedeguang@gmail.com
+License: MIT
+Keywords: Computer Vision,Machine Learning,Neural Networks,Mathematic
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: argparse
+Requires-Dist: colour
+Requires-Dist: numpy
+Requires-Dist: Pillow
+Requires-Dist: scipy
+Requires-Dist: sympy
+Requires-Dist: tqdm
+Requires-Dist: mapbox-earcut
+Requires-Dist: matplotlib
+Requires-Dist: moderngl
+Requires-Dist: moderngl-window
+Requires-Dist: pydub
+Requires-Dist: pyyaml
+Requires-Dist: screeninfo
+Requires-Dist: validators
+Requires-Dist: ipython
+Requires-Dist: PyOpenGL
+Requires-Dist: manimpango (<0.4.0,>=0.2.0)
+Requires-Dist: pyreadline ; sys_platform == "win32"
+
+# Install
+Use pip
+```bash
+pip install manim_kunyuan
+```
+
+Locally build
+```bash
+python nightly_workflow.py
+```
+
+# Run test
+```bash
+python test.py
+```
+
+
