@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: kf-metadata
+Version: 0.3.1
+Summary: KubeFlow Metadata SDK
+Home-page: https://github.com/kubeflow/metadata
+Author: Kubeflow Authors
+License: Apache License Version 2.0
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8.0
+Requires-Dist: ml-metadata (==0.24.0)
+Requires-Dist: retrying
+
+Please visit the document page: https://kubeflow-metadata.readthedocs.io/en/latest/
+
+
