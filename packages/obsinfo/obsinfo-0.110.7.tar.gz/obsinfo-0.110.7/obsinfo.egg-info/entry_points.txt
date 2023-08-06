@@ -1,0 +1,10 @@
+[console_scripts]
+obsinfo-local-makeStationXML = obsinfo.main.makeStationXML:main
+obsinfo-local-validate = obsinfo.main.validate:main
+obsinfo-make_LCHEAPO_scripts = obsinfo.addons.LCHEAPO:_console_script
+obsinfo-make_SDPCHAIN_scripts = obsinfo.addons.SDPCHAIN:_console_script
+obsinfo-print = obsinfo.main.print:print_obs
+obsinfo-print_version = obsinfo.print_version:main
+obsinfo-setup = obsinfo.main.setupObsinfo:setup_obsinfo
+obsinfo-test = obsinfo.tests.test:run_suite_info_files
+

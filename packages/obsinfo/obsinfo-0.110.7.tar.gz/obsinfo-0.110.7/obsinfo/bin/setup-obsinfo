@@ -1,0 +1,22 @@
+# sets up obsinfo by copying example information files to a directory of
+# Assumes /.local/bin is in PATH
+#the user choosing ($2). Invoked by obsinfo-setup which is a package entry point
+
+cp $1/../../bin/*obsinfo* ~/.local/bin
+
+if test -n "$2"
+then
+    if ! test -d $2
+    then
+        mkdir $2
+    fi
+
+    cp -r  $1 $2
+    cp -r  $1/../../templates $2
+    cd ~/.local/bin
+    sed "/^#.*#####$/a \\
+LocalPath=$2/" setup_obsinfo_environment_variables > /tmp/obsinfo_variables.tmp
+    mv /tmp/obsinfo_variables.tmp setup_obsinfo_environment_variables
+fi
+
+

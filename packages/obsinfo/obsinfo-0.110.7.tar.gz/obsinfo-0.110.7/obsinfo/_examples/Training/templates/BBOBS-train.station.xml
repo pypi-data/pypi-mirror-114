@@ -1,0 +1,3315 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FDSNStationXML xmlns="http://www.fdsn.org/xml/station/1" schemaVersion="1.1">
+  <Source>ObsPy</Source>
+  <Sender> ,  Email:   Phones: </Sender>
+  <Module>obsinfo v0.110.4</Module>
+  <ModuleURI>https://gitlab.com/resif/obsinfo</ModuleURI>
+  <Created>2021-07-22T16:53:40.792094Z</Created>
+  <Network code="4G" startDate="2007-07-01T00:00:00.000000Z" endDate="2025-12-31T00:00:00.000000Z">
+    <Description>EMSO-MOMAR</Description>
+    <Comment>
+      <Value>EXTRA ATTRIBUTES (for documentation only): </Value>
+    </Comment>
+    <Operator>
+      <Agency>INSU-IPGP OBS operator</Agency>
+      <Contact>
+        <Name>Wayne Crawford</Name>
+        <Agency>INSU-IPGP OBS operator</Agency>
+        <Email>obs@ipgp.fr</Email>
+        <Phone>
+          <CountryCode>33</CountryCode>
+          <AreaCode>0</AreaCode>
+          <PhoneNumber>012-32323</PhoneNumber>
+        </Phone>
+      </Contact>
+      <WebSite/>
+    </Operator>
+    <TotalNumberStations>1</TotalNumberStations>
+    <SelectedNumberStations>1</SelectedNumberStations>
+    <Station code="BB_1" startDate="2015-04-23T10:00:00.000000Z" endDate="2016-05-28T15:37:00.000000Z" restrictedStatus="unknown">
+      <Comment>
+        <Value>EXTRA ATTRIBUTES (for documentation only):</Value>
+      </Comment>
+      <Latitude unit="DEGREES" minusError="0.00017986432118374611" plusError="0.00017986432118374611">37.2806</Latitude>
+      <Longitude unit="DEGREES" minusError="0.00016434108428" plusError="0.00016434108428">-32.234</Longitude>
+      <Elevation unit="METERS">-1950.0</Elevation>
+      <Site>
+        <Name>First site</Name>
+      </Site>
+      <Vault>Sea floor</Vault>
+      <Geology>unknown</Geology>
+      <Equipment>
+        <Type>Broadband Ocean Bottom Seismometer</Type>
+        <Description>LCHEAPO 2000 BBOBS 2012-present</Description>
+        <Manufacturer>Scripps Inst. Oceanography - INSU</Manufacturer>
+        <Vendor>Scripps Inst. Oceanography - UNSU</Vendor>
+        <Model>BBOBS1</Model>
+      </Equipment>
+      <CreationDate>2015-04-23T10:00:00.000000Z</CreationDate>
+      <TerminationDate>2016-05-28T15:37:00.000000Z</TerminationDate>
+      <TotalNumberChannels>4</TotalNumberChannels>
+      <SelectedNumberChannels>4</SelectedNumberChannels>
+      <Channel code="HH2" startDate="2015-04-23T10:00:00" endDate="2016-05-28T15:37:00" locationCode="00">
+        <Description>2_00</Description>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>serial number_1: Sphere01-133</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_2: Sphere02-132</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_3: Sphere03-134</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_4: Sphere04-138</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_5: Sphere05-137</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_6: Sphere06-830</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_7: Sphere07-136</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_8: Sphere08-829</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_9: Sphere09-826</Value>
+        </Comment>
+        <Latitude unit="DEGREES" minusError="0.00017986432118374611" plusError="0.00017986432118374611">37.2806</Latitude>
+        <Longitude unit="DEGREES" minusError="0.00016434108428" plusError="0.00016434108428">-32.234</Longitude>
+        <Elevation unit="METERS">-1950.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES" minusError="180" plusError="180">90.0</Azimuth>
+        <Dip unit="DEGREES" minusError="0" plusError="0">0.0</Dip>
+        <SampleRate>125.0</SampleRate>
+        <Sensor>
+          <Type>Broadband seismometer</Type>
+          <Description>negative shorted to ground, serial numbers 1-399</Description>
+          <Manufacturer>Nanometrics, Inc</Manufacturer>
+          <Vendor>Nanometrics, Inc</Vendor>
+          <Model>Trillium T240</Model>
+          <SerialNumber>32793N</SerialNumber>
+          <InstallationDate>2018-11-23T00:00:00.000000Z</InstallationDate>
+          <RemovalDate>2020-01-23T00:00:00.000000Z</RemovalDate>
+          <CalibrationDate>2018-12-23T00:00:00.000000Z</CalibrationDate>
+          <CalibrationDate>2017-11-01T00:00:00.000000Z</CalibrationDate>
+          <CalibrationDate>2016-05-22T00:00:00.000000Z</CalibrationDate>
+        </Sensor>
+        <PreAmplifier>
+          <Type>Analog gain card</Type>
+          <Description>INSU BBOBS gain card</Description>
+          <Manufacturer>SIO or IPGP</Manufacturer>
+          <Vendor>LCHEAPO</Vendor>
+          <Model>BBOBS-GAIN</Model>
+          <InstallationDate>1970-01-01T00:00:00.000000Z</InstallationDate>
+          <RemovalDate>1970-01-01T00:00:00.000000Z</RemovalDate>
+        </PreAmplifier>
+        <DataLogger>
+          <Type>delta-sigma A/D converter + digital filter</Type>
+          <Description>CS5321/22 delta-sigma A/D converter + FIR digital filter</Description>
+          <Manufacturer>Cirrus Logic</Manufacturer>
+          <Vendor>various</Vendor>
+          <Model>CS5321/22</Model>
+          <InstallationDate>1970-01-01T00:00:00.000000Z</InstallationDate>
+          <RemovalDate>1970-01-01T00:00:00.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>156880016.955</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>VELOCITY</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>counts</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="-1" resourceId="">
+            <PolesZeros name="0">
+              <Description>SENSOR - TRILLIUM 240 SN1-399 (SINGLE-SIDED)</Description>
+              <InputUnits>
+                <Name>m/s</Name>
+                <Description>VELOCITY</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>VOLTS</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>5.3387561573544256e+17</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="2">
+                <Real minusError="0.0" plusError="0.0">-72.5</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="3">
+                <Real minusError="0.0" plusError="0.0">-163.3</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="4">
+                <Real minusError="0.0" plusError="0.0">-251.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="5">
+                <Real minusError="0.0" plusError="0.0">-3270.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="0.0" plusError="0.0">-0.018134</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.018034</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="0.0" plusError="0.0">-0.018134</Real>
+                <Imaginary minusError="0.0" plusError="0.0">-0.018034</Imaginary>
+              </Pole>
+              <Pole number="2">
+                <Real minusError="0.0" plusError="0.0">-84.4</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Pole>
+              <Pole number="3">
+                <Real minusError="0.0" plusError="0.0">-180.2</Real>
+                <Imaginary minusError="0.0" plusError="0.0">224.4</Imaginary>
+              </Pole>
+              <Pole number="4">
+                <Real minusError="0.0" plusError="0.0">-180.2</Real>
+                <Imaginary minusError="0.0" plusError="0.0">-224.4</Imaginary>
+              </Pole>
+              <Pole number="5">
+                <Real minusError="0.0" plusError="0.0">-725.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Pole>
+              <Pole number="6">
+                <Real minusError="0.0" plusError="0.0">-1060.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Pole>
+              <Pole number="7">
+                <Real minusError="0.0" plusError="0.0">-4300.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Pole>
+              <Pole number="8">
+                <Real minusError="0.0" plusError="0.0">-5800.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Pole>
+              <Pole number="9">
+                <Real minusError="0.0" plusError="0.0">-4200.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">4600.0</Imaginary>
+              </Pole>
+              <Pole number="10">
+                <Real minusError="0.0" plusError="0.0">-4200.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">-4600.0</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>598.45</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <PolesZeros name="0">
+              <Description>PREAMPLIFIER: BBOBS 0.225x</Description>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>VOLTS</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>VOLTS</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+            </PolesZeros>
+            <StageGain>
+              <Value>0.225</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <Coefficients name="0">
+              <Description>DIGITIZER - CS5321 Delta-Sigma A/D converter</Description>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">32000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Correction>0.232</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>1165084</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="1">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="2">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="3">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="4">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="5">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="6">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="7">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="8">
+              <Description>DECIMATION - CS5322 FIR3 (linear phase)</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>-3.09982e-06</NumeratorCoefficient>
+              <NumeratorCoefficient>-2.94483e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-9.8002e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000162383</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000100029</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000120655</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000261935</NumeratorCoefficient>
+              <NumeratorCoefficient>2.52755e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000410488</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000366852</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00037627</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000854597</NumeratorCoefficient>
+              <NumeratorCoefficient>-3.05213e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00127677</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000911347</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00127725</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00215259</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000461754</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0033391</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00140994</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00377236</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00419596</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00264403</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00720434</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000644286</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00918799</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00608709</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00858197</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0127456</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00398398</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0186342</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00520746</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0209498</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0181708</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0166742</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0322588</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00346739</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0429715</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0193349</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0443283</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0498126</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0294292</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0826437</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00934572</NumeratorCoefficient>
+              <NumeratorCoefficient>0.107599</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0816959</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.103155</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.204297</NumeratorCoefficient>
+              <NumeratorCoefficient>-3.12367e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>0.390602</NumeratorCoefficient>
+              <NumeratorCoefficient>0.590214</NumeratorCoefficient>
+              <NumeratorCoefficient>0.390602</NumeratorCoefficient>
+              <NumeratorCoefficient>-3.12367e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.204297</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.103155</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0816959</NumeratorCoefficient>
+              <NumeratorCoefficient>0.107599</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00934572</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0826437</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0294292</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0498126</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0443283</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0193349</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0429715</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00346739</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0322588</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0166742</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0181708</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0209498</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00520746</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0186342</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00398398</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0127456</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00858197</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00608709</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00918799</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000644286</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00720434</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00264403</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00419596</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00377236</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00140994</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0033391</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000461754</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00215259</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00127725</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000911347</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00127677</NumeratorCoefficient>
+              <NumeratorCoefficient>-3.05213e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000854597</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00037627</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000366852</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000410488</NumeratorCoefficient>
+              <NumeratorCoefficient>2.52755e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000261935</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000120655</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000100029</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000162383</NumeratorCoefficient>
+              <NumeratorCoefficient>-9.8002e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-2.94483e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-3.09982e-06</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="HH1" startDate="2015-04-23T10:00:00" endDate="2016-05-28T15:37:00" locationCode="00">
+        <Description>1_00</Description>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>serial number_1: Sphere01-133</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_2: Sphere02-132</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_3: Sphere03-134</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_4: Sphere04-138</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_5: Sphere05-137</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_6: Sphere06-830</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_7: Sphere07-136</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_8: Sphere08-829</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_9: Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>serial number_1: Sphere01-133</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_2: Sphere02-132</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_3: Sphere03-134</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_4: Sphere04-138</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_5: Sphere05-137</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_6: Sphere06-830</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_7: Sphere07-136</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_8: Sphere08-829</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_9: Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>serial number_1: Sphere01-133</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_2: Sphere02-132</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_3: Sphere03-134</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_4: Sphere04-138</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_5: Sphere05-137</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_6: Sphere06-830</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_7: Sphere07-136</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_8: Sphere08-829</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_9: Sphere09-826</Value>
+        </Comment>
+        <Latitude unit="DEGREES" minusError="0.00017986432118374611" plusError="0.00017986432118374611">37.2806</Latitude>
+        <Longitude unit="DEGREES" minusError="0.00016434108428" plusError="0.00016434108428">-32.234</Longitude>
+        <Elevation unit="METERS">-1950.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES" minusError="180" plusError="180">0.0</Azimuth>
+        <Dip unit="DEGREES" minusError="0" plusError="0">0.0</Dip>
+        <SampleRate>125.0</SampleRate>
+        <Sensor>
+          <Type>Broadband seismometer</Type>
+          <Description>negative shorted to ground, serial numbers 1-399</Description>
+          <Manufacturer>Nanometrics, Inc</Manufacturer>
+          <Vendor>Nanometrics, Inc</Vendor>
+          <Model>Trillium T240</Model>
+          <SerialNumber>32793N</SerialNumber>
+          <InstallationDate>2018-11-23T00:00:00.000000Z</InstallationDate>
+          <RemovalDate>2020-01-23T00:00:00.000000Z</RemovalDate>
+          <CalibrationDate>2018-12-23T00:00:00.000000Z</CalibrationDate>
+          <CalibrationDate>2017-11-01T00:00:00.000000Z</CalibrationDate>
+          <CalibrationDate>2016-05-22T00:00:00.000000Z</CalibrationDate>
+        </Sensor>
+        <PreAmplifier>
+          <Type>Analog gain card</Type>
+          <Description>INSU BBOBS gain card</Description>
+          <Manufacturer>SIO or IPGP</Manufacturer>
+          <Vendor>LCHEAPO</Vendor>
+          <Model>BBOBS-GAIN</Model>
+          <InstallationDate>1970-01-01T00:00:00.000000Z</InstallationDate>
+          <RemovalDate>1970-01-01T00:00:00.000000Z</RemovalDate>
+        </PreAmplifier>
+        <DataLogger>
+          <Type>delta-sigma A/D converter + digital filter</Type>
+          <Description>CS5321/22 delta-sigma A/D converter + FIR digital filter</Description>
+          <Manufacturer>Cirrus Logic</Manufacturer>
+          <Vendor>various</Vendor>
+          <Model>CS5321/22</Model>
+          <InstallationDate>1970-01-01T00:00:00.000000Z</InstallationDate>
+          <RemovalDate>1970-01-01T00:00:00.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>156880016.955</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>VELOCITY</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>counts</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="-1" resourceId="">
+            <PolesZeros name="0">
+              <Description>SENSOR - TRILLIUM 240 SN1-399 (SINGLE-SIDED)</Description>
+              <InputUnits>
+                <Name>m/s</Name>
+                <Description>VELOCITY</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>VOLTS</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>5.3387561573544256e+17</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="2">
+                <Real minusError="0.0" plusError="0.0">-72.5</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="3">
+                <Real minusError="0.0" plusError="0.0">-163.3</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="4">
+                <Real minusError="0.0" plusError="0.0">-251.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="5">
+                <Real minusError="0.0" plusError="0.0">-3270.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="0.0" plusError="0.0">-0.018134</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.018034</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="0.0" plusError="0.0">-0.018134</Real>
+                <Imaginary minusError="0.0" plusError="0.0">-0.018034</Imaginary>
+              </Pole>
+              <Pole number="2">
+                <Real minusError="0.0" plusError="0.0">-84.4</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Pole>
+              <Pole number="3">
+                <Real minusError="0.0" plusError="0.0">-180.2</Real>
+                <Imaginary minusError="0.0" plusError="0.0">224.4</Imaginary>
+              </Pole>
+              <Pole number="4">
+                <Real minusError="0.0" plusError="0.0">-180.2</Real>
+                <Imaginary minusError="0.0" plusError="0.0">-224.4</Imaginary>
+              </Pole>
+              <Pole number="5">
+                <Real minusError="0.0" plusError="0.0">-725.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Pole>
+              <Pole number="6">
+                <Real minusError="0.0" plusError="0.0">-1060.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Pole>
+              <Pole number="7">
+                <Real minusError="0.0" plusError="0.0">-4300.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Pole>
+              <Pole number="8">
+                <Real minusError="0.0" plusError="0.0">-5800.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Pole>
+              <Pole number="9">
+                <Real minusError="0.0" plusError="0.0">-4200.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">4600.0</Imaginary>
+              </Pole>
+              <Pole number="10">
+                <Real minusError="0.0" plusError="0.0">-4200.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">-4600.0</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>598.45</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <PolesZeros name="0">
+              <Description>PREAMPLIFIER: BBOBS 0.225x</Description>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>VOLTS</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>VOLTS</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+            </PolesZeros>
+            <StageGain>
+              <Value>0.225</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <Coefficients name="0">
+              <Description>DIGITIZER - CS5321 Delta-Sigma A/D converter</Description>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">32000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Correction>0.232</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>1165084</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="1">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="2">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="3">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="4">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="5">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="6">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="7">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="8">
+              <Description>DECIMATION - CS5322 FIR3 (linear phase)</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>-3.09982e-06</NumeratorCoefficient>
+              <NumeratorCoefficient>-2.94483e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-9.8002e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000162383</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000100029</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000120655</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000261935</NumeratorCoefficient>
+              <NumeratorCoefficient>2.52755e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000410488</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000366852</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00037627</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000854597</NumeratorCoefficient>
+              <NumeratorCoefficient>-3.05213e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00127677</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000911347</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00127725</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00215259</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000461754</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0033391</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00140994</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00377236</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00419596</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00264403</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00720434</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000644286</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00918799</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00608709</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00858197</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0127456</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00398398</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0186342</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00520746</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0209498</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0181708</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0166742</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0322588</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00346739</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0429715</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0193349</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0443283</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0498126</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0294292</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0826437</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00934572</NumeratorCoefficient>
+              <NumeratorCoefficient>0.107599</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0816959</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.103155</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.204297</NumeratorCoefficient>
+              <NumeratorCoefficient>-3.12367e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>0.390602</NumeratorCoefficient>
+              <NumeratorCoefficient>0.590214</NumeratorCoefficient>
+              <NumeratorCoefficient>0.390602</NumeratorCoefficient>
+              <NumeratorCoefficient>-3.12367e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.204297</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.103155</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0816959</NumeratorCoefficient>
+              <NumeratorCoefficient>0.107599</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00934572</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0826437</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0294292</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0498126</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0443283</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0193349</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0429715</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00346739</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0322588</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0166742</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0181708</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0209498</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00520746</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0186342</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00398398</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0127456</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00858197</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00608709</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00918799</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000644286</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00720434</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00264403</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00419596</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00377236</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00140994</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0033391</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000461754</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00215259</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00127725</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000911347</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00127677</NumeratorCoefficient>
+              <NumeratorCoefficient>-3.05213e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000854597</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00037627</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000366852</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000410488</NumeratorCoefficient>
+              <NumeratorCoefficient>2.52755e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000261935</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000120655</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000100029</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000162383</NumeratorCoefficient>
+              <NumeratorCoefficient>-9.8002e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-2.94483e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-3.09982e-06</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="HHZ" startDate="2015-04-23T10:00:00" endDate="2016-05-28T15:37:00" locationCode="00">
+        <Description>Z_00</Description>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>serial number_1: Sphere01-133</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_2: Sphere02-132</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_3: Sphere03-134</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_4: Sphere04-138</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_5: Sphere05-137</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_6: Sphere06-830</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_7: Sphere07-136</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_8: Sphere08-829</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_9: Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>serial number_1: Sphere01-133</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_2: Sphere02-132</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_3: Sphere03-134</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_4: Sphere04-138</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_5: Sphere05-137</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_6: Sphere06-830</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_7: Sphere07-136</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_8: Sphere08-829</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_9: Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>serial number_1: Sphere01-133</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_2: Sphere02-132</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_3: Sphere03-134</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_4: Sphere04-138</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_5: Sphere05-137</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_6: Sphere06-830</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_7: Sphere07-136</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_8: Sphere08-829</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_9: Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>serial number_1: Sphere01-133</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_2: Sphere02-132</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_3: Sphere03-134</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_4: Sphere04-138</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_5: Sphere05-137</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_6: Sphere06-830</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_7: Sphere07-136</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_8: Sphere08-829</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_9: Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>serial number_1: Sphere01-133</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_2: Sphere02-132</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_3: Sphere03-134</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_4: Sphere04-138</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_5: Sphere05-137</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_6: Sphere06-830</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_7: Sphere07-136</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_8: Sphere08-829</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_9: Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>serial number_1: Sphere01-133</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_2: Sphere02-132</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_3: Sphere03-134</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_4: Sphere04-138</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_5: Sphere05-137</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_6: Sphere06-830</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_7: Sphere07-136</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_8: Sphere08-829</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_9: Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>serial number_1: Sphere01-133</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_2: Sphere02-132</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_3: Sphere03-134</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_4: Sphere04-138</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_5: Sphere05-137</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_6: Sphere06-830</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_7: Sphere07-136</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_8: Sphere08-829</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_9: Sphere09-826</Value>
+        </Comment>
+        <Latitude unit="DEGREES" minusError="0.00017986432118374611" plusError="0.00017986432118374611">37.2806</Latitude>
+        <Longitude unit="DEGREES" minusError="0.00016434108428" plusError="0.00016434108428">-32.234</Longitude>
+        <Elevation unit="METERS">-1950.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES" minusError="0" plusError="0">0.0</Azimuth>
+        <Dip unit="DEGREES" minusError="5" plusError="5">90.0</Dip>
+        <SampleRate>125.0</SampleRate>
+        <Sensor>
+          <Type>Broadband seismometer</Type>
+          <Description>negative shorted to ground, serial numbers 1-399</Description>
+          <Manufacturer>Nanometrics, Inc</Manufacturer>
+          <Vendor>Nanometrics, Inc</Vendor>
+          <Model>Trillium T240</Model>
+          <SerialNumber>32793N</SerialNumber>
+          <InstallationDate>2018-11-23T00:00:00.000000Z</InstallationDate>
+          <RemovalDate>2020-01-23T00:00:00.000000Z</RemovalDate>
+          <CalibrationDate>2018-12-23T00:00:00.000000Z</CalibrationDate>
+          <CalibrationDate>2017-11-01T00:00:00.000000Z</CalibrationDate>
+          <CalibrationDate>2016-05-22T00:00:00.000000Z</CalibrationDate>
+        </Sensor>
+        <PreAmplifier>
+          <Type>Analog gain card</Type>
+          <Description>INSU BBOBS gain card</Description>
+          <Manufacturer>SIO or IPGP</Manufacturer>
+          <Vendor>LCHEAPO</Vendor>
+          <Model>BBOBS-GAIN</Model>
+          <InstallationDate>1970-01-01T00:00:00.000000Z</InstallationDate>
+          <RemovalDate>1970-01-01T00:00:00.000000Z</RemovalDate>
+        </PreAmplifier>
+        <DataLogger>
+          <Type>delta-sigma A/D converter + digital filter</Type>
+          <Description>CS5321/22 delta-sigma A/D converter + FIR digital filter</Description>
+          <Manufacturer>Cirrus Logic</Manufacturer>
+          <Vendor>various</Vendor>
+          <Model>CS5321/22</Model>
+          <InstallationDate>1970-01-01T00:00:00.000000Z</InstallationDate>
+          <RemovalDate>1970-01-01T00:00:00.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>697244519.8000001</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>VELOCITY</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>counts</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="-1" resourceId="">
+            <PolesZeros name="0">
+              <Description>SENSOR - TRILLIUM 240 SN1-399 (SINGLE-SIDED)</Description>
+              <InputUnits>
+                <Name>m/s</Name>
+                <Description>VELOCITY</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>VOLTS</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>5.3387561573544256e+17</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="2">
+                <Real minusError="0.0" plusError="0.0">-72.5</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="3">
+                <Real minusError="0.0" plusError="0.0">-163.3</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="4">
+                <Real minusError="0.0" plusError="0.0">-251.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="5">
+                <Real minusError="0.0" plusError="0.0">-3270.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="0.0" plusError="0.0">-0.018134</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.018034</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="0.0" plusError="0.0">-0.018134</Real>
+                <Imaginary minusError="0.0" plusError="0.0">-0.018034</Imaginary>
+              </Pole>
+              <Pole number="2">
+                <Real minusError="0.0" plusError="0.0">-84.4</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Pole>
+              <Pole number="3">
+                <Real minusError="0.0" plusError="0.0">-180.2</Real>
+                <Imaginary minusError="0.0" plusError="0.0">224.4</Imaginary>
+              </Pole>
+              <Pole number="4">
+                <Real minusError="0.0" plusError="0.0">-180.2</Real>
+                <Imaginary minusError="0.0" plusError="0.0">-224.4</Imaginary>
+              </Pole>
+              <Pole number="5">
+                <Real minusError="0.0" plusError="0.0">-725.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Pole>
+              <Pole number="6">
+                <Real minusError="0.0" plusError="0.0">-1060.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Pole>
+              <Pole number="7">
+                <Real minusError="0.0" plusError="0.0">-4300.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Pole>
+              <Pole number="8">
+                <Real minusError="0.0" plusError="0.0">-5800.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Pole>
+              <Pole number="9">
+                <Real minusError="0.0" plusError="0.0">-4200.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">4600.0</Imaginary>
+              </Pole>
+              <Pole number="10">
+                <Real minusError="0.0" plusError="0.0">-4200.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">-4600.0</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>598.45</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <PolesZeros name="0">
+              <Description>PREAMPLIFIER: BBOBS 1.0x</Description>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>VOLTS</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>VOLTS</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+            </PolesZeros>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <Coefficients name="0">
+              <Description>DIGITIZER - CS5321 Delta-Sigma A/D converter</Description>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">32000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Correction>0.232</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>1165084</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="1">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="2">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="3">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="4">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="5">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="6">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="7">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="8">
+              <Description>DECIMATION - CS5322 FIR3 (linear phase)</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>-3.09982e-06</NumeratorCoefficient>
+              <NumeratorCoefficient>-2.94483e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-9.8002e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000162383</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000100029</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000120655</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000261935</NumeratorCoefficient>
+              <NumeratorCoefficient>2.52755e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000410488</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000366852</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00037627</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000854597</NumeratorCoefficient>
+              <NumeratorCoefficient>-3.05213e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00127677</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000911347</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00127725</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00215259</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000461754</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0033391</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00140994</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00377236</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00419596</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00264403</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00720434</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000644286</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00918799</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00608709</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00858197</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0127456</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00398398</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0186342</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00520746</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0209498</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0181708</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0166742</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0322588</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00346739</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0429715</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0193349</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0443283</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0498126</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0294292</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0826437</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00934572</NumeratorCoefficient>
+              <NumeratorCoefficient>0.107599</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0816959</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.103155</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.204297</NumeratorCoefficient>
+              <NumeratorCoefficient>-3.12367e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>0.390602</NumeratorCoefficient>
+              <NumeratorCoefficient>0.590214</NumeratorCoefficient>
+              <NumeratorCoefficient>0.390602</NumeratorCoefficient>
+              <NumeratorCoefficient>-3.12367e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.204297</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.103155</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0816959</NumeratorCoefficient>
+              <NumeratorCoefficient>0.107599</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00934572</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0826437</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0294292</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0498126</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0443283</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0193349</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0429715</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00346739</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0322588</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0166742</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0181708</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0209498</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00520746</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0186342</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00398398</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0127456</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00858197</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00608709</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00918799</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000644286</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00720434</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00264403</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00419596</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00377236</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00140994</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0033391</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000461754</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00215259</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00127725</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000911347</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00127677</NumeratorCoefficient>
+              <NumeratorCoefficient>-3.05213e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000854597</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00037627</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000366852</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000410488</NumeratorCoefficient>
+              <NumeratorCoefficient>2.52755e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000261935</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000120655</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000100029</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000162383</NumeratorCoefficient>
+              <NumeratorCoefficient>-9.8002e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-2.94483e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-3.09982e-06</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="HDH" startDate="2015-04-23T10:00:00" endDate="2016-05-28T15:37:00" locationCode="00">
+        <Description>H_00</Description>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>serial number_1: Sphere01-133</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_2: Sphere02-132</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_3: Sphere03-134</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_4: Sphere04-138</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_5: Sphere05-137</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_6: Sphere06-830</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_7: Sphere07-136</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_8: Sphere08-829</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_9: Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>serial number_1: Sphere01-133</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_2: Sphere02-132</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_3: Sphere03-134</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_4: Sphere04-138</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_5: Sphere05-137</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_6: Sphere06-830</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_7: Sphere07-136</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_8: Sphere08-829</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_9: Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>serial number_1: Sphere01-133</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_2: Sphere02-132</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_3: Sphere03-134</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_4: Sphere04-138</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_5: Sphere05-137</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_6: Sphere06-830</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_7: Sphere07-136</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_8: Sphere08-829</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_9: Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>serial number_1: Sphere01-133</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_2: Sphere02-132</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_3: Sphere03-134</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_4: Sphere04-138</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_5: Sphere05-137</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_6: Sphere06-830</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_7: Sphere07-136</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_8: Sphere08-829</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_9: Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>serial number_1: Sphere01-133</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_2: Sphere02-132</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_3: Sphere03-134</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_4: Sphere04-138</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_5: Sphere05-137</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_6: Sphere06-830</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_7: Sphere07-136</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_8: Sphere08-829</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_9: Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>serial number_1: Sphere01-133</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_2: Sphere02-132</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_3: Sphere03-134</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_4: Sphere04-138</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_5: Sphere05-137</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_6: Sphere06-830</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_7: Sphere07-136</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_8: Sphere08-829</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_9: Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>serial number_1: Sphere01-133</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_2: Sphere02-132</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_3: Sphere03-134</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_4: Sphere04-138</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_5: Sphere05-137</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_6: Sphere06-830</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_7: Sphere07-136</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_8: Sphere08-829</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_9: Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>serial number_1: Sphere01-133</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_2: Sphere02-132</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_3: Sphere03-134</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_4: Sphere04-138</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_5: Sphere05-137</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_6: Sphere06-830</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_7: Sphere07-136</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_8: Sphere08-829</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_9: Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>serial number_1: Sphere01-133</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_2: Sphere02-132</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_3: Sphere03-134</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_4: Sphere04-138</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_5: Sphere05-137</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_6: Sphere06-830</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_7: Sphere07-136</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_8: Sphere08-829</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_9: Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>serial number_1: Sphere01-133</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_2: Sphere02-132</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_3: Sphere03-134</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_4: Sphere04-138</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_5: Sphere05-137</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_6: Sphere06-830</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_7: Sphere07-136</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_8: Sphere08-829</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_9: Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>serial number_1: Sphere01-133</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_2: Sphere02-132</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_3: Sphere03-134</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_4: Sphere04-138</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_5: Sphere05-137</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_6: Sphere06-830</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_7: Sphere07-136</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_8: Sphere08-829</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_9: Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>INSU-IPGP OBS park sphere sensor pairs are: </Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere01-133, Sphere02-132,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere03-134, Sphere04-138,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere05-137, Sphere06-830, Sphere07-136,</Value>
+        </Comment>
+        <Comment>
+          <Value>Sphere08-829, Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>serial number_1: Sphere01-133</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_2: Sphere02-132</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_3: Sphere03-134</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_4: Sphere04-138</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_5: Sphere05-137</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_6: Sphere06-830</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_7: Sphere07-136</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_8: Sphere08-829</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_9: Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>serial number_1: Sphere01-133</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_2: Sphere02-132</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_3: Sphere03-134</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_4: Sphere04-138</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_5: Sphere05-137</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_6: Sphere06-830</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_7: Sphere07-136</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_8: Sphere08-829</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_9: Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>serial number_1: Sphere01-133</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_2: Sphere02-132</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_3: Sphere03-134</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_4: Sphere04-138</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_5: Sphere05-137</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_6: Sphere06-830</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_7: Sphere07-136</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_8: Sphere08-829</Value>
+        </Comment>
+        <Comment>
+          <Value>serial_number_9: Sphere09-826</Value>
+        </Comment>
+        <Comment>
+          <Value>Extra attributes (for documentation purposes only):</Value>
+        </Comment>
+        <Comment>
+          <Value>DBIRD_response_type: CALIBRATED</Value>
+        </Comment>
+        <Latitude unit="DEGREES" minusError="0.00017986432118374611" plusError="0.00017986432118374611">37.2806</Latitude>
+        <Longitude unit="DEGREES" minusError="0.00016434108428" plusError="0.00016434108428">-32.234</Longitude>
+        <Elevation unit="METERS">-1950.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES" minusError="0" plusError="0">0.0</Azimuth>
+        <Dip unit="DEGREES" minusError="0" plusError="0">90.0</Dip>
+        <SampleRate>125.0</SampleRate>
+        <Sensor>
+          <Type>Differential Pressure Gauge</Type>
+          <Description>Differential Pressure Gauge</Description>
+          <Manufacturer>various</Manufacturer>
+          <Vendor>various</Vendor>
+          <Model>DPG</Model>
+          <InstallationDate>1970-01-01T00:00:00.000000Z</InstallationDate>
+          <RemovalDate>1970-01-01T00:00:00.000000Z</RemovalDate>
+        </Sensor>
+        <PreAmplifier>
+          <Type>DPG Card</Type>
+          <Description>Differential Pressure Gauge Card</Description>
+          <Manufacturer>SIO-IPGP</Manufacturer>
+          <Model>DPG-Card</Model>
+          <InstallationDate>1970-01-01T00:00:00.000000Z</InstallationDate>
+          <RemovalDate>1970-01-01T00:00:00.000000Z</RemovalDate>
+        </PreAmplifier>
+        <DataLogger>
+          <Type>delta-sigma A/D converter + digital filter</Type>
+          <Description>CS5321/22 delta-sigma A/D converter + FIR digital filter</Description>
+          <Manufacturer>Cirrus Logic</Manufacturer>
+          <Vendor>various</Vendor>
+          <Model>CS5321/22</Model>
+          <InstallationDate>1970-01-01T00:00:00.000000Z</InstallationDate>
+          <RemovalDate>1970-01-01T00:00:00.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>495.16069999999996</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>Pa</Name>
+              <Description>PRESSURE</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>counts</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="-1" resourceId="">
+            <PolesZeros name="0">
+              <Description>SENSOR - GENERIC DPG</Description>
+              <InputUnits>
+                <Name>Pa</Name>
+                <Description>PRESSURE</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>VOLTS</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.0000358576962742</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="0.0" plusError="0.0">-0.0182</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="0.0" plusError="0.0">-0.05</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>0.000425</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <PolesZeros name="0">
+              <Description>PREAMPLIFIER - DPG card</Description>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>VOLTS</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>VOLTS</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>5792.916895078848</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="0.0" plusError="0.0">-0.0484</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="0.0" plusError="0.0">-57.471</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Pole>
+              <Pole number="2">
+                <Real minusError="0.0" plusError="0.0">-100.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>1</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <Coefficients name="0">
+              <Description>DIGITIZER - CS5321 Delta-Sigma A/D converter</Description>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">32000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Correction>0.232</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>1165084</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="1">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="2">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="3">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="4">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="5">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="6">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="7">
+              <Description>DECIMATION - CS5322 FIR2</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.225586</NumeratorCoefficient>
+              <NumeratorCoefficient>0.193359</NumeratorCoefficient>
+              <NumeratorCoefficient>0.12085</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0537109</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0161133</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00292969</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000244141</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="-1" resourceId="">
+            <FIR name="8">
+              <Description>DECIMATION - CS5322 FIR3 (linear phase)</Description>
+              <InputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <Symmetry>NONE</Symmetry>
+              <NumeratorCoefficient>-3.09982e-06</NumeratorCoefficient>
+              <NumeratorCoefficient>-2.94483e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-9.8002e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000162383</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000100029</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000120655</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000261935</NumeratorCoefficient>
+              <NumeratorCoefficient>2.52755e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000410488</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000366852</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00037627</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000854597</NumeratorCoefficient>
+              <NumeratorCoefficient>-3.05213e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00127677</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000911347</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00127725</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00215259</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000461754</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0033391</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00140994</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00377236</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00419596</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00264403</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00720434</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000644286</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00918799</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00608709</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00858197</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0127456</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00398398</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0186342</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00520746</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0209498</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0181708</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0166742</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0322588</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00346739</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0429715</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0193349</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0443283</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0498126</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0294292</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0826437</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00934572</NumeratorCoefficient>
+              <NumeratorCoefficient>0.107599</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0816959</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.103155</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.204297</NumeratorCoefficient>
+              <NumeratorCoefficient>-3.12367e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>0.390602</NumeratorCoefficient>
+              <NumeratorCoefficient>0.590214</NumeratorCoefficient>
+              <NumeratorCoefficient>0.390602</NumeratorCoefficient>
+              <NumeratorCoefficient>-3.12367e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.204297</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.103155</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0816959</NumeratorCoefficient>
+              <NumeratorCoefficient>0.107599</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00934572</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0826437</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0294292</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0498126</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0443283</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0193349</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0429715</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00346739</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0322588</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0166742</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0181708</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0209498</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00520746</NumeratorCoefficient>
+              <NumeratorCoefficient>0.0186342</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00398398</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0127456</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00858197</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00608709</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00918799</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000644286</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00720434</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00264403</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00419596</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00377236</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00140994</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.0033391</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000461754</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00215259</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00127725</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000911347</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.00127677</NumeratorCoefficient>
+              <NumeratorCoefficient>-3.05213e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000854597</NumeratorCoefficient>
+              <NumeratorCoefficient>0.00037627</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000366852</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000410488</NumeratorCoefficient>
+              <NumeratorCoefficient>2.52755e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000261935</NumeratorCoefficient>
+              <NumeratorCoefficient>0.000120655</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000100029</NumeratorCoefficient>
+              <NumeratorCoefficient>-0.000162383</NumeratorCoefficient>
+              <NumeratorCoefficient>-9.8002e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-2.94483e-05</NumeratorCoefficient>
+              <NumeratorCoefficient>-3.09982e-06</NumeratorCoefficient>
+            </FIR>
+            <StageGain>
+              <Value>1</Value>
+              <Frequency>0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+</FDSNStationXML>
