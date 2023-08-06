@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: ligo-asimov
+Version: 0.3.3
+Summary: A Python package for managing and interacting with data analysis jobs.
+Home-page: https://git.ligo.org/asimov/asimov
+Author: Daniel Williams
+Author-email: daniel.williams@ligo.org
+License: MIT license
+Keywords: supervisor,pe,ligo,asimov
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: click
+Requires-Dist: gitpython
+Requires-Dist: htcondor
+Requires-Dist: ligo-gracedb
+Requires-Dist: liquidpy
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: otter-report
+Requires-Dist: python-gitlab
+Requires-Dist: pytz
+Requires-Dist: pyyaml
+Requires-Dist: requests
+Requires-Dist: gwpy
+
+UNKNOWN
+
+
