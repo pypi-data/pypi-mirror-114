@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: detection-tools
+Version: 0.2
+Summary: Tensorflow Object Detection Tools Library
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: Pillow (>=1.0)
+Requires-Dist: Matplotlib (>=2.1)
+Requires-Dist: Cython (>=0.28.1)
+
+UNKNOWN
+
