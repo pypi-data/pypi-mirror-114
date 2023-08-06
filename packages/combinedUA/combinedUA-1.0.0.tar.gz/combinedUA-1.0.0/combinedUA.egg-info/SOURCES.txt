@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+pyproject.toml
+setup.cfg
+combinedUA/__init__.py
+combinedUA/util.py
+combinedUA.egg-info/PKG-INFO
+combinedUA.egg-info/SOURCES.txt
+combinedUA.egg-info/dependency_links.txt
+combinedUA.egg-info/top_level.txt
+combinedUA/db/android.txt
+combinedUA/db/chrome.txt
+combinedUA/db/ios.txt
+combinedUA/db/safari_build.txt
+combinedUA/db/safari_version.txt
+combinedUA/db/webkit.txt
