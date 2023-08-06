@@ -1,0 +1,9 @@
+k3dict/__init__.py,sha256=4a2YkMgK0gxk8jjts90ojqGz57PVyfF39G3p8gOaReQ,896
+k3dict/dictutil.py,sha256=9VTihUwjC1TPXnDuXOoqN7QZrnZgRtVuSX0o-AmRZzk,14835
+k3dict/fixed_keys_dict.py,sha256=V-UefG9xxAGX41T6ucGLTDdgnN1JgpGsatFFCdVQ4jo,1239
+k3dict/setup.py,sha256=Wqvz3EQ6V-dOGn67xhJVOMiJIuvTxmp3fhXqIifcwho,3938
+k3dict/synopsis.py,sha256=mzPw769FGdUAmRjEI894CsAWdcRLrEk5Kyow9ydrI6Y,1815
+k3dict-0.1.1.dist-info/METADATA,sha256=yk4dzJo83J3j9uE_c0o-wGL8xmQeCtBkBp3aD0yWHnY,3527
+k3dict-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+k3dict-0.1.1.dist-info/top_level.txt,sha256=g6LYCXlFnlUW5lSxgWuPE9YcIsmta3CVgLr1GKU-EGQ,7
+k3dict-0.1.1.dist-info/RECORD,,
