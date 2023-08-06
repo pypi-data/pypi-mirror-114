@@ -1,0 +1,5 @@
+msgpack>=1.0
+opencv-python>=4.4.0
+pytest>=6.2
+pytest-cov>=2.11
+pytest-mock>=3.5
