@@ -1,0 +1,3 @@
+[console_scripts]
+ocr-sycophant = ocr_sycophant.cli:cli
+
