@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+src/pipsearchguitk.py
+src/pipsearchguitk.egg-info/PKG-INFO
+src/pipsearchguitk.egg-info/SOURCES.txt
+src/pipsearchguitk.egg-info/dependency_links.txt
+src/pipsearchguitk.egg-info/top_level.txt
