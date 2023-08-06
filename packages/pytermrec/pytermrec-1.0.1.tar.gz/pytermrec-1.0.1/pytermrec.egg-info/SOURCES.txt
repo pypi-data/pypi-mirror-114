@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pytermrec.egg-info/PKG-INFO
+pytermrec.egg-info/SOURCES.txt
+pytermrec.egg-info/dependency_links.txt
+pytermrec.egg-info/entry_points.txt
+pytermrec.egg-info/top_level.txt
+termrec/__init__.py
+termrec/__main__.py

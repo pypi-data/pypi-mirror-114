@@ -1,0 +1,4 @@
+[console_scripts]
+termplay = termrec.__main__:parse_play
+termrec = termrec.__main__:parse_rec
+
