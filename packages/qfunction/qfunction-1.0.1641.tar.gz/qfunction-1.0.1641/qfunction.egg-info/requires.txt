@@ -1,0 +1,7 @@
+numpy
+qutip
+tqdm
+matplotlib
+imageio
+bs4
+requests
