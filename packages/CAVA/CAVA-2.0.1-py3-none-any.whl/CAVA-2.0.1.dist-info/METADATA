@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: CAVA
+Version: 2.0.1
+Summary: CAVA (Clinical Annotation of VAriants)
+Home-page: https://github.com/Steven-N-Hart/CAVA
+Author: Steven-N-Hart
+Author-email: hart.steven@mayo.edu
+License: MIT
+Platform: UNKNOWN
+License-File: LICENCE
+Requires-Dist: Cython
+Requires-Dist: pybedtools
+Requires-Dist: pysam
+Requires-Dist: crossmap
+Requires-Dist: wget
+Requires-Dist: requests
+
+UNKNOWN
+
