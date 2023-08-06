@@ -1,0 +1,9 @@
+margin_talib_service/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+margin_talib_service/__main__.py,sha256=0-5aN53KLTyM1iF2xS_qyJnCG8dOKAWDHhwSsCV-TOk,65
+margin_talib_service/service.py,sha256=cbeA1DDrKRQREi0fmqotXJNzsUWrPeQEfdF7xTHDt64,2121
+margin_talib_service-0.0.3.dist-info/LICENSE,sha256=nf5f2RvhIkN9PtXSLmP8S-M-6wNhKceV52N2XYnYFlI,1075
+margin_talib_service-0.0.3.dist-info/METADATA,sha256=ApN4nHQOpVjlCFfwU8IOdtnBOPTDAMwfOnbDFaYbBxg,4769
+margin_talib_service-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+margin_talib_service-0.0.3.dist-info/entry_points.txt,sha256=nAakAB1EtVIX-kkqyBs8jFH35_Q_Qw7Qg4uUq3XmA7o,76
+margin_talib_service-0.0.3.dist-info/top_level.txt,sha256=UmnBRPJoZDV-mGkwpCi7OXVVMM-dzV80WB-AGu7Z6f4,21
+margin_talib_service-0.0.3.dist-info/RECORD,,
