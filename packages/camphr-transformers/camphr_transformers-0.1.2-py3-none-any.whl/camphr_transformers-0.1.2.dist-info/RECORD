@@ -1,0 +1,6 @@
+camphr_transformers/VERSION.py,sha256=YvuYzWnKtqBb-IqG8HAu-nhIYAsgj9Vmc_b9o7vO-js,22
+camphr_transformers/__init__.py,sha256=QPtut1nwkxYQvyqLmf_dhP8xSsbTZTCM_-P2IDuMsaI,33
+camphr_transformers/ner.py,sha256=6ECSzNonUlYkizh6V0atEunZVpwcpHty5x76aotR96Q,2958
+camphr_transformers-0.1.2.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+camphr_transformers-0.1.2.dist-info/METADATA,sha256=ZwyyMQBvtFyRbA9fyZrotilX9rdVs-zSgcCm1d3RxzQ,512
+camphr_transformers-0.1.2.dist-info/RECORD,,
