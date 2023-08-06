@@ -1,0 +1,3 @@
+[console_scripts]
+piscola = bin.piscola:main
+
