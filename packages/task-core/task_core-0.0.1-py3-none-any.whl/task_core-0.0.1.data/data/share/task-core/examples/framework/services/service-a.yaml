@@ -1,0 +1,36 @@
+id: service-a
+type: service
+version: 1.0.0
+tasks:
+  - id: print
+    driver: print
+    message: "message from service a"
+
+  - id: setup
+    action: init
+    driver: service
+    provides:
+      - service-a.init
+    jobs:
+      - echo: "service a start"
+
+  - id: run
+    action: run
+    driver: service
+    provides:
+      - service-a.run
+    requires:
+      - service-a.init
+    jobs:
+      - echo: "service a run"
+
+  - id: finalize
+    action: finalize
+    driver: service
+    provides:
+      - service-a.finalize
+    requires:
+      - service-a.run
+    jobs:
+      - echo: "service a done"
+

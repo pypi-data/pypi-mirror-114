@@ -1,0 +1,10 @@
+[console_scripts]
+task-core = task_core.cmd:main
+task-core-example = task_core.cmd:example
+
+[task_core.task.types]
+ansible_runner = task_core.tasks:AnsibleRunnerTask
+directord = task_core.tasks:DirectordTask
+print = task_core.tasks:PrintTask
+service = task_core.tasks:ServiceTask
+
