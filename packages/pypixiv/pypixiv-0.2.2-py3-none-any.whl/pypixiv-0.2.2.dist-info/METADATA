@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: pypixiv
+Version: 0.2.2
+Summary: Pixiv ajax wrapper
+Home-page: https://github.com/SaidBySolo/pypixiv
+Author: Ryu JuHeon
+Author-email: SaidBySolo@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# pypixiv
+
+> Pixiv ajax python wrapper
+
+## Feature
+
+* Asynchronous.
+
+* Fully type annotated.
+
+* The response is returned as an object.
+
+## Simple Example
+
+```py
+import asyncio
+
+from pypixiv.client import PixivClient
+
+
+async def main():
+    async with PixivClient() as client:
+        illust = await client.illustinfo(79136250)
+        user_id = int(illust.userId)
+        print(user_id)
+        user = await client.userinfo(user_id)
+        print(user.name)
+
+
+asyncio.run(main())
+```
+
+
