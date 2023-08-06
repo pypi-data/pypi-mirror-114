@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: alphafold2mmopt
+Version: 0.1.1
+Summary: optimize pdb structures using fine-tune training strategy in alphafold2
+Home-page: UNKNOWN
+Author: Kexin Zhang
+Author-email: zhangkx2@shanghaitech.edu.cn
+License: MIT
+Description: UNKNOWN
+Keywords: computational biology,force fields,molecular mechanics,protein
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering

@@ -1,0 +1,7 @@
+numpy
+openmm
+biopython
+dm-haiku
+dm-tree
+jax[cpu]
+pdbfixer

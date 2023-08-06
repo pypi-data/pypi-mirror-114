@@ -1,0 +1,3 @@
+[console_scripts]
+alphafold2mmopt = alphafold2mmopt.run:main
+
