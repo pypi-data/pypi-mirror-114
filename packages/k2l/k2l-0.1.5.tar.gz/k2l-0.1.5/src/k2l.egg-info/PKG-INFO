@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: k2l
+Version: 0.1.5
+Summary: Static mach-o binary analysis tool.
+Home-page: https://github.com/kritantadev/ktool
+Author: _kritanta
+Author-email: krit@krit.me
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/kritantadev/ktool/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ktool
+Static Mach-O binary metadata analysis tool / information dumper
+---
+
+### Installation
+
+```shell
+pip3 install k2l
+```
+
+### Usage
+
+```shell
+usage: ktool [command] <flags> [filename]
+
+dumping headers:
+ktool dump --headers --out <directory> [filename]
+
+```
+
+Will document other features soon, more are on the way.
+
+---
+
+written in python for the sake of platform independence when operating on static binaries and libraries
+
+#### Special thanks to
+
+IDA for making it possible to write the code without actually understanding full internals  
+JLevin and *OS Internals Vol 1 for actually understanding the internals and specifics + writing documentation  
+arandomdev for guidance + code
+
+
