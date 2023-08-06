@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: passx
+Version: 0.0.2
+Summary: A Password manager using GNUPG
+Home-page: https://github.com/harshbaliyan126/Passx-py
+Author: floppy04 <Harsh Baliyan>
+Author-email: <harshbaliyan126@gmail.com>
+License: UNKNOWN
+Description: # Passx
+        It's a script, using GNUPG for encrypting passwords.
+        
+        ### Installation
+        
+         -  Create a GNUPG key pair if not created already, following this [GNUPG tutorial](https://www.gnupg.org/gph/en/manual/c14.html)
+         -  After that, when key pair is created. Do following:
+        
+           ```console
+           $ git clone https://github.com/harshbaliyan126/Passx-py.git
+           $ cd Passx-py
+           $ pip install -r requirement.txt
+           $ chmod +x ./main/passx
+           $ cp ./main/passx to/the/path/directory
+           ```
+        
+        ### Usage
+        
+        ```
+        Usage:
+            passx [account] - Loads password to clipboard
+        
+            -a , --add
+                passx -a/--add [account] - Saves account
+            -d, --delete
+                passx -d/--delete [account] - Deletes account
+            --list
+                passx --list - List all accounts saved
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
