@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/keyspot/__init__.py
+src/keyspot.egg-info/PKG-INFO
+src/keyspot.egg-info/SOURCES.txt
+src/keyspot.egg-info/dependency_links.txt
+src/keyspot.egg-info/top_level.txt
