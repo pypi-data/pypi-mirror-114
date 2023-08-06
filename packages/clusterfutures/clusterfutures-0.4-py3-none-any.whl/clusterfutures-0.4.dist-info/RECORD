@@ -1,0 +1,9 @@
+cfut/__init__.py,sha256=pe0paIFQ5IyaYcKiaf0963VRdLToRe5N9FH90M5HY1w,7086
+cfut/condor.py,sha256=JQZHmABga3NrvR7F_jHVZeb_aurMEwKize1zIE0sC9M,4426
+cfut/remote.py,sha256=vI9EjbtnDGo1-_dgVgZy-nGYLnYrpMv_AaLnNbCcZms,1105
+cfut/slurm.py,sha256=1-Tl6DB56X-BrfAPH-sxhHYyjL1UYzUAHcxqUDlmtaA,953
+cfut/util.py,sha256=cCCs7s2QXnfTRfnrZ1tUVv6KV8dh21jYZJUHMI_SQno,1452
+clusterfutures-0.4.dist-info/METADATA,sha256=hh83m9llhCj-qs53Wg6fB1nuUepl5_kFgA0RNIlegls,2686
+clusterfutures-0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+clusterfutures-0.4.dist-info/top_level.txt,sha256=UEQ9cZZWQeppPC0TPTYuXuizaqdGy3wa8WwL7ZUiLLU,5
+clusterfutures-0.4.dist-info/RECORD,,
