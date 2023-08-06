@@ -1,0 +1,9 @@
+[console_scripts]
+pyxtal-step-installer = pyxtal_step.installer:run
+
+[org.molssi.seamm]
+PyXtal = pyxtal_step:PyXtalStep
+
+[org.molssi.seamm.tk]
+PyXtal = pyxtal_step:PyXtalStep
+

@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: pyxtal_step
+Version: 2021.7.29
+Summary: A SEAMM plugin for PyXtal for building atomic and molecular crystals.
+Home-page: https://github.com/qzhu2017/pyxtal_step
+Author: Qiang Zhu
+Author-email: qiang.zhu@unlv.edu
+License: MIT
+Description: ====================
+        SEAMM PyXtal Plug-in
+        ====================
+        
+        .. image:: https://img.shields.io/github/issues-pr-raw/qzhu2017/pyxtal_step
+           :target: https://github.com/qzhu2017/pyxtal_step/pulls
+           :alt: GitHub pull requests
+        
+        .. image:: https://github.com/qzhu2017/pyxtal_step/workflows/CI/badge.svg
+           :target: https://github.com/qzhu2017/pyxtal_step/actions
+           :alt: Build Status
+        
+        .. image:: https://codecov.io/gh/qzhu2017/pyxtal_step/branch/master/graph/badge.svg
+           :target: https://codecov.io/gh/qzhu2017/pyxtal_step
+           :alt: Code Coverage
+        
+        .. image:: https://img.shields.io/lgtm/grade/python/g/qzhu2017/pyxtal_step.svg?logo=lgtm&logoWidth=18
+           :target: https://lgtm.com/projects/g/qzhu2017/pyxtal_step/context:python
+           :alt: Code Quality
+        
+        .. image:: https://github.com/qzhu2017/pyxtal_step/workflows/Documentation/badge.svg
+           :target: https://qzhu2017.github.io/pyxtal_step/index.html
+           :alt: Documentation Status
+        
+        .. image:: https://pyup.io/repos/github/qzhu2017/pyxtal_step/shield.svg
+           :target: https://pyup.io/repos/github/qzhu2017/pyxtal_step/
+           :alt: Updates for Dependencies
+        
+        .. image:: https://img.shields.io/pypi/v/pyxtal_step.svg
+           :target: https://pypi.python.org/pypi/pyxtal_step
+           :alt: PyPi VERSION
+        
+        A SEAMM plug-in for A SEAMM plug-in for PyXtal
+        
+        * Free software: MIT
+        * Documentation: https://qzhu2017.github.io/pyxtal_step/index.html
+        * Code: https://github.com/qzhu2017/pyxtal_step
+        
+        Features
+        --------
+        
+        * Please edit this section!
+        
+        Acknowledgements
+        ----------------
+        
+        This package was created with Cookiecutter_ and the
+        `molssi-seamm/cookiecutter-seamm-plugin`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`molssi-seamm/cookiecutter-seamm-plugin`: https://github.com/molssi-seamm/cookiecutter-seamm-plugin
+        
+        
+        
+        =======
+        History
+        =======
+        
+        2021.7.22 (2021-07-22)
+        ----------------------
+        
+        * Plug-in created using the SEAMM plug-in cookiecutter.
+        
+Keywords: SEAMM,plug-in,flowchart,PyXtal,crystals
+Platform: Linux
+Platform: Mac OS-X
+Platform: Unix
+Platform: Windows
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/x-rst
