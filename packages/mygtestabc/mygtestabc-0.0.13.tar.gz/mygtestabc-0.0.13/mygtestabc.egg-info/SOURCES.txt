@@ -1,0 +1,11 @@
+README.md
+setup.py
+mygtestabc.egg-info/PKG-INFO
+mygtestabc.egg-info/SOURCES.txt
+mygtestabc.egg-info/dependency_links.txt
+mygtestabc.egg-info/requires.txt
+mygtestabc.egg-info/top_level.txt
+vidstream/__init__.py
+vidstream/audio.py
+vidstream/ml.py
+vidstream/streaming.py
