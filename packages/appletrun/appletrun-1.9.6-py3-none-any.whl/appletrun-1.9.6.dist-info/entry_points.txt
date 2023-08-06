@@ -1,0 +1,3 @@
+[console_scripts]
+appletrun=appletrun.__main__:main
+
