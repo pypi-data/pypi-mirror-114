@@ -1,0 +1,10 @@
+dill
+ipython
+jedi==0.17.2
+mpmath
+pyasn1-modules>=0.2.8
+pyasn1>=0.4.8
+rich
+sortedcontainers
+tqdm
+z3-solver

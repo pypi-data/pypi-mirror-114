@@ -1,0 +1,109 @@
+Idea backlog
+---------------
+X   Wang's Attack
+X   RC6
+X   Argon2
+X   CAST
+?   Stateless block cipher shuffling
+X   Differential power analysis
+X   Flush+Reload key recovery
+
+
+CURRENT
+---------------
+X   BSGS involution
+X   Poly conv chunking
+X   Poly conv broken (broke in ZZ/ZZ(2) with deg 7858)
+X   SIKE
+
+
+0.3.0
+===============
+X   DenseVector
+    X   Coercion
+
+
+X   GNFS
+
+X   Separate key parameters from use? Explains some gaps in functions vs data
+    X   ECKey, so it can be used in ECDHE and ECDSA
+
+
+X   Crypto fingerprinting
+    OK  Add PSL to block cipher modes
+    X   Add fingerprinter to ACE
+
+X   Timing attack framework
+    OK  Build TimingOracle
+    X   Time sync
+    X   Techniques to increase sync resolution from a lower resolution oracle
+
+X   Document timing attack setup
+
+X   New IoT ciphers
+    X   Rabbit stream cipher
+    X   HC-256 stream cipher
+    X   NSA Simon
+    X   NSA Speck
+
+
+X   DualEC is incredibly slow
+
+
+X   Composable exploits and ACE
+    OK  RUNTIME primitive property/exploit loading
+    X   RUNTIME programmatic search
+    OK  ACE verified against several manual cryptanalysis test vectors
+    X   ACE creates working exploits
+    X   ACE correctly detects
+        X   Small key size
+        X   Non-CSPRNGs
+        X   Meet in the middle attacks
+
+
+OK  ACE should be able to register multiple exploits per class
+X   Asymmetric encryption in ACE
+
+X   Refactor ACE tests
+    X   Stop weird three-function thing
+    X   Rename variables (what is enc_perm?)
+
+X   Does 'exploit.py/register_knowns' need to exist any more? Why not just use decorators?
+X   ACE should be able to enumerate all attack paths
+
+X   Hierarchical and optionally persistent runtime configuration
+X   Swappable backends?
+
+X   More protocols
+    X   PGP
+    X   SSH
+    X   TLS
+    X   CRAM
+    X   SCRAM
+    X   DIGEST
+    X   AKA (Authentication and Key Agreement)
+    X   Kerberos
+    X   NTLMv2
+    X   RADIUS
+
+
+X   OCB3
+X   Lucas pseudoprime generation
+X   Unify Diffie-Hellmans
+
+X   Payload generators (RegEx gen)
+
+
+
+Future
+===============
+X   RC6
+X   Argon2
+X   Yarrow
+X   Fortuna
+X   Blum blum shub
+X   SM3
+X   SM4
+X   Primitive analysis
+X   CAST
+X   STREAM
