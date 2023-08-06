@@ -1,0 +1,13 @@
+kicksaw_data_mapping_base/__init__.py,sha256=_1Oo4KZ6xvWslH-tgo7FyDKhz--ruD3_kItElS2xCxI,121
+kicksaw_data_mapping_base/cli.py,sha256=k9310L41KuoiLcR1t59iERvtXx9M0bg3DDNyNl-sh9I,318
+kicksaw_data_mapping_base/constants/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kicksaw_data_mapping_base/constants/columns.py,sha256=fAi7Gj50eYibzPkrVeJ3JeYDXcGuBxDt6FrOnJoSmA8,200
+kicksaw_data_mapping_base/constants/defaults.py,sha256=Ww0TRjcsKDh1dNki0ZVCMVgwdFvaPmMj6E3M49L7hw8,19
+kicksaw_data_mapping_base/constants/scopes.py,sha256=OcMaXJRsDwN_hevEalOFCDKCATcS430lFSxbI9NxDF4,112
+kicksaw_data_mapping_base/constants/tokens.py,sha256=ruLwUOUg8jx8ia9yGmdKp2yGFPR37dhv9Y7ukfrSQ1w,27
+kicksaw_data_mapping_base/download.py,sha256=nNXl0s9z0iwODXXeemUUh_S_vaHfhlAG7FP06Z95qkw,363
+kicksaw_data_mapping_base/main.py,sha256=g-V9rD0w87Fc97uTiLjkhXsRITiQKFFD-Ke3P9YZNxI,1372
+kicksaw_data_mapping_base-0.1.4.dist-info/entry_points.txt,sha256=JlBgESe4Lh1U9Q-W66LC0PwWCYsCFbmp1c1QWaFfnhM,83
+kicksaw_data_mapping_base-0.1.4.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+kicksaw_data_mapping_base-0.1.4.dist-info/METADATA,sha256=1NPxHgUb7NzQmGriioOdT_4RNsiFLycWOHaT8or3MXU,1180
+kicksaw_data_mapping_base-0.1.4.dist-info/RECORD,,
