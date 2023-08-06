@@ -1,0 +1,12 @@
+djlint/__init__.py,sha256=QByiUGQZfEnVAKp-OPMcjqPoo8Y5eykF0b4T3PkGGok,5556
+djlint/__main__.py,sha256=AZgAzxxGDtuCXlsQrTYeQMreRoGCtPR1gDOWcCERnhI,78
+djlint/lint.py,sha256=HKHNHrgZdzl0HI2Hs_qcps3TNoZIOZs4JjDW8CU_c-Q,1293
+djlint/reformat.py,sha256=fHNBCARlGWrmfF4c93WVzKQIJ2j8sfO80qo8Ks0qTkg,7228
+djlint/rules.yaml,sha256=Dl8QTWURsN2ySC078BzzN5S2x8p8anxudvtdBOCB7jo,2517
+djlint/settings.py,sha256=Wic7hpwccOtxr2PNh3etNg3p0ZTQS8f_YgbtXCFiwOo,3559
+djlint-0.1.1.dist-info/LICENSE,sha256=M7wm1EmMGDtwPRdg7kW4d00h1uAXjKOT3HFScYQMeiE,34916
+djlint-0.1.1.dist-info/METADATA,sha256=Xxh4ECjUL3j-YTzLGrN2n42zG8sbCnKx_DYQJzSbY6U,3899
+djlint-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+djlint-0.1.1.dist-info/entry_points.txt,sha256=CDISJVSDBeiHaRbPcBV1CrA5a0ubkyPLgNt89U9vyt8,40
+djlint-0.1.1.dist-info/top_level.txt,sha256=lQYDIcTNWWsZhJpfH2MwiTnQlm0t-d89iNlsvViweOA,7
+djlint-0.1.1.dist-info/RECORD,,
