@@ -1,0 +1,3 @@
+[console_scripts]
+chamredb = chamredb.run_chamredb:main
+
