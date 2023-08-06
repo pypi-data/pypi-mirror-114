@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: dandischema
+Version: 0.3.1
+Summary: Schemata for DANDI archive project
+Home-page: http://dandiarchive.org
+Author: DANDI developers
+Author-email: team@dandiarchive.org
+Maintainer: Yaroslav O. Halchenko
+Maintainer-email: debian@onerussian.com
+License: Apache 2.0
+Project-URL: Source Code, https://github.com/dandi/dandischema
+Platform: OS Independent
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8
+Provides-Extra: style
+Provides-Extra: test
+Provides-Extra: all
+License-File: LICENSE
+
+A Python library for maintaining and managing DANDI metadata schemata. The
+library helps create and validate DANDI schema-compliant metadata for Dandisets
+and assets.
+
+To use: `pip install dandischema`
+
+More documentation coming soon.
+
+
