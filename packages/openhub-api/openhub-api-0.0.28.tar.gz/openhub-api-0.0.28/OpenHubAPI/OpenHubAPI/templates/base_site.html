@@ -1,0 +1,45 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        {% block title %}
+            {{ page_title|default:"Home" }}
+        {% endblock title %}
+    </title>
+    <link href="{% static 'main.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+    <header id="header">
+        <div id="logo"><img src="{% static 'housegnome.jpg' %}" alt="" width=auto
+                            height=40px/></div>
+        <div id="top_menu"><a href="http://127.0.0.1:8000/hardware/">Hardware</a> | <a
+                href="http://127.0.0.1:8000/accessories/">Accessories</a></div>
+        <div id="topbanner"><img src="{% static 'fullhouse.png' %}" alt="" width=100% height=auto/></div>
+    </header>
+    {#    <aside id="rightsidebar">#}
+    {#        <nav id="nav">#}
+    {#            <ul>#}
+    {#                <li>Menu 1</li>#}
+    {#                <li>Menu 2</li>#}
+    {#                <li>Menu 3</li>#}
+    {#            </ul>#}
+    {#        </nav>#}
+    {#    </aside>#}
+    <section id="main">
+        {% block content %}
+            <p>Placeholder text in base template. Replace with page content.</p>
+        {% endblock content %}
+    </section>
+    <footer id="footer">Copyright &copy;
+        <script type="text/JavaScript">
+            document.write(new Date().getFullYear());
+        </script>
+        OpenHub
+    </footer>
+</div>
+</body>
+</html>
