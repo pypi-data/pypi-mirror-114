@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+sneekpeek/__init__.py
+sneekpeek.egg-info/PKG-INFO
+sneekpeek.egg-info/SOURCES.txt
+sneekpeek.egg-info/dependency_links.txt
+sneekpeek.egg-info/top_level.txt
