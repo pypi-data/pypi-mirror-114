@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: theproofistrivial
+Version: 0.1.1
+Summary: Python port of TheProofIsTrivial
+Home-page: https://github.com/ahmedkhalf/TheProofIsTrivial
+Author: Ahmed Khalf
+Author-email: ahmedkhalf567@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ahmedkhalf/TheProofIsTrivial/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Education
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Terminals
+Classifier: Topic :: Text Processing
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TheProofIsTrivial
+
+Python port of the javascript based website
+[TheProofIsTrivial](http://www.theproofistrivial.com/).
+
+## Usage
+
+### Python Library
+
+```python
+import theproofistrivial
+
+quote = theproofistrivial.QuoteGenerator()
+output = quote.create()
+
+print(output)
+```
+
+The result is a list:
+
+```
+['The proof is trivial! Just biject it to a',
+ 'combinatorial',
+ 'field',
+ 'whose elements are',
+ 'associative',
+ 'linear transformations']
+```
+
+You can then process the list to make a single string or leave as is:
+
+```python
+# Single line string
+output = " ".join(output)
+
+# Multi line string
+output = "\n".join(output)
+```
+
+### Command Line
+
+```bash
+theproofistrivial -h
+```
+
+```
+usage: __main__.py [-h] [-o]
+
+optional arguments:
+  -h, --help     show this help message and exit
+  -o, --oneline  show output as a single line
+```
+
+```bash
+theproofistrivial
+```
+
+```
+The proof is trivial! Just view the problem as a
+computable
+hypergraph
+whose elements are
+total
+unbounded-fan-in circuits
+```
+
+```bash
+theproofistrivial -o
+```
+
+```
+The proof is trivial! Just biject it to an associative semigroup whose elements are perfect manifolds
+```
+
+

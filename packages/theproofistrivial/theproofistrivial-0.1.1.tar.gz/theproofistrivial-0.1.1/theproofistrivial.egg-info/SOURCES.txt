@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+theproofistrivial/__init__.py
+theproofistrivial/__main__.py
+theproofistrivial.egg-info/PKG-INFO
+theproofistrivial.egg-info/SOURCES.txt
+theproofistrivial.egg-info/dependency_links.txt
+theproofistrivial.egg-info/top_level.txt
