@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ContecControllers
+Version: 0.0.1
+Summary: Package that use to integrate with Contec controllers
+Home-page: https://github.com/havivi86/ContecControllers
+Author: Ofir Haviv
+Author-email: ofir.haviv@outlook.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/havivi86/ContecControllers/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pymodbus
+
+# Contec Controllers
+
+Package that integrates with Contec controllers
+
