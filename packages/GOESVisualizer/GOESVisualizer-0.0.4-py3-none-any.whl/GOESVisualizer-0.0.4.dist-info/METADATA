@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: GOESVisualizer
+Version: 0.0.4
+Summary: A simple tool to visualize GOES16/17
+Home-page: UNKNOWN
+Author: Amir Souri
+Author-email: ahsouri@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: xarray
+Requires-Dist: netCDF4
+Requires-Dist: opencv-python
+Requires-Dist: datetime
+Requires-Dist: metpy
+Requires-Dist: boto3
+Requires-Dist: requests
+Requires-Dist: botocore
+Requires-Dist: cartopy
+
+# GOESVisualizer
+
+A simple toolbox to retrieve/visualize/save GOES16(east) and GOES17(west) RGB image over a region of interest
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install GOESVisualizer.
+
+```bash
+pip install GOESVisualizer
+```
+
+## Usage
+
+see example.py
+
+or
+
+```bash
+from GOESVisualizer import GSVis
+
+GSobj = GSVis('west',2021,7,21,20,-125,-117,35,45)
+# only plot
+GSobj.plotGS()
+# or only save
+GSobj.plotGS(True,'goessample.png')
+
+```
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
