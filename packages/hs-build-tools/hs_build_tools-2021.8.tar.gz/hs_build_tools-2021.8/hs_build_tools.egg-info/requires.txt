@@ -1,0 +1,13 @@
+shiv
+
+[dev]
+sniffer
+coverage
+mypy
+twine
+wheel
+nose
+pytest
+isort
+black
+pyinotify
