@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: PyHDX
+Version: 0.4.0b2
+Summary: Derive ΔG for single residues from HDX-MS data
+Home-page: https://github.com/Jhsmit/PyHDX
+Author: Jochem H. Smit
+Author-email: jhsmit@gmail.com
+Maintainer: Jochem H. Smit
+Maintainer-email: jhsmit@gmail.com
+License: MIT
+Keywords: HDX-MS
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: hdxrate (>=0.2.0)
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: scikit-image
+Requires-Dist: scipy
+Requires-Dist: symfit
+Requires-Dist: torch
+Requires-Dist: tqdm
+Requires-Dist: dask
+Requires-Dist: distributed
+Provides-Extra: docs
+Requires-Dist: sphinx (>=3.2.1) ; extra == 'docs'
+Requires-Dist: ipykernel ; extra == 'docs'
+Requires-Dist: numpydoc ; extra == 'docs'
+Requires-Dist: nbsphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: docutils (==0.16) ; extra == 'docs'
+Requires-Dist: sphinx-copybutton ; extra == 'docs'
+Provides-Extra: pdf
+Requires-Dist: pylatex ; extra == 'pdf'
+Requires-Dist: proplot (==0.6.4) ; extra == 'pdf'
+Provides-Extra: web
+Requires-Dist: panel (>=0.11.0) ; extra == 'web'
+Requires-Dist: bokeh ; extra == 'web'
+Requires-Dist: param ; extra == 'web'
+Requires-Dist: lumen (==0.3.0) ; extra == 'web'
+Requires-Dist: holoviews ; extra == 'web'
+Requires-Dist: colorcet ; extra == 'web'
+Requires-Dist: hvplot ; extra == 'web'
+
+PyHDX is software tool to derive Derive ΔG for single residues from HDX-MS data.
+
+It can be used in scripts/jupyter notebooks or accessed through a web interface.
+
+`bioRxiv Paper`_
+`GitHub page`_
+`Documentation`_
+
+.. _bioRxiv Paper: https://doi.org/10.1101/2020.09.30.320887
+.. _GitHub page: https://github.com/Jhsmit/PyHDX
+.. _Documentation: https://pyhdx.readthedocs.io/en/latest/
+
