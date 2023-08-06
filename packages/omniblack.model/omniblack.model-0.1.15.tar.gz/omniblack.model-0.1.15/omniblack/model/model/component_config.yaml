@@ -1,0 +1,56 @@
+name: component_config
+display:
+    en: Component Configuration
+fields:
+    - name: name
+      required: true
+      display:
+          en: Name
+      desc:
+          en: The name of the component described by this configuration.
+      type: string
+
+    - name: type
+      required: true
+      display:
+          en: Type
+      desc:
+          en: The type of component.
+      type: string
+      valid_values:
+          - lib
+          - app
+
+    - name: template_path
+      display:
+          en: Template Path
+      desc:
+          en: >-
+              A path to an html template to use for serving the resulting
+              javascript bundle. If not provided no html file will be generated.
+              This path will be resolved using the `require.resolve` algorithm.
+
+      type: string
+
+    - name: public_path
+      display:
+          en: Public Path
+      desc: The public path from which the spa will be served.
+      type: string
+
+    - name: pages_dir
+      display:
+          en: Pages Directory
+      desc:
+          en: The directory where the spa pages are kept.
+      type: string
+
+    - name: product_name
+      display:
+          en: Product Name
+      desc:
+          en: The name of the component to be displayed to users.
+      type: child
+      attrs:
+          struct_name: meta:ui_string
+

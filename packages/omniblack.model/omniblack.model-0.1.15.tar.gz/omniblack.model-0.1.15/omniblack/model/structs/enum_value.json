@@ -1,0 +1,50 @@
+{
+    "desc": {
+        "en": "A possible value for a field."
+    },
+    "display_name": {
+        "en": "Enum Value"
+    },
+    "fields": [
+        {
+            "desc": {
+                "en": "The internal value"
+            },
+            "display": {
+                "en": "Internal"
+            },
+            "type": "$self.type",
+            "name": "internal",
+            "required": true
+        },
+        {
+            "required": true,
+            "desc": {
+                "en": "The displayed value"
+            },
+            "display": {
+                "en": "Display"
+            },
+            "type": "child",
+            "attrs": {
+                "struct_name": "ui_string"
+            },
+            "name": "display"
+        },
+        {
+            "desc": {
+                "en": "The long version of displayed value"
+            },
+            "display": {
+                "en": "Display Long"
+            },
+            "type": "child",
+            "attrs": {
+                "struct_name": "ui_string"
+            },
+            "name": "display_long"
+        }
+    ],
+    "name": "enum_value"
+}
+

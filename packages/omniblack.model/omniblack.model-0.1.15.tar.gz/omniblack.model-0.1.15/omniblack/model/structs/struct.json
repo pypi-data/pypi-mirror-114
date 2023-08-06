@@ -1,0 +1,61 @@
+{
+    "name": "struct",
+    "display": {
+        "en": "Struct"
+    },
+    "fields": [
+        {
+            "name": "name",
+            "type": "string",
+            "required": true,
+            "desc": {
+                "en": "The name of the struct. Used to refer to the system."
+            },
+            "display": {
+                "en": "name"
+            }
+        },
+        {
+            "name": "display",
+            "desc": {
+                "en": "The display name of the struct."
+            },
+            "type": "child",
+            "required": true,
+            "display": {
+                "en": "Display"
+            },
+            "attrs": {
+                "struct_name": "ui_string"
+            }
+        },
+        {
+            "name": "fields",
+            "desc": {
+                "en": "The fields that make up this struct."
+            },
+            "type": "child",
+            "list": true,
+            "required": true,
+            "display": {
+                "en": "Fields"
+            },
+            "attrs": {
+                "struct_name": "field"
+            }
+        },
+        {
+            "name": "implementation",
+            "desc": {
+                "en": "Language specific details of the struct."
+            },
+            "type": "child",
+            "display": {
+                "en": "Implementation details"
+            },
+            "attrs": {
+                "struct_name": "implementation_details"
+            }
+        }
+    ]
+}
