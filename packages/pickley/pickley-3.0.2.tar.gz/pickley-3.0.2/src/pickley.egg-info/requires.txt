@@ -1,0 +1,4 @@
+click==8.0.1
+requests==2.26.0
+runez==3.1.0
+virtualenv==20.6.0
