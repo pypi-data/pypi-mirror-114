@@ -1,0 +1,302 @@
+stages:
+  - images
+  - current
+  - compat
+  - upcoming
+  - archives
+
+.base:
+  image: registry.heptapod.net:443/mercurial/hg-git/ci/$CI_COMMIT_HG_BRANCH:hg-$HG-py$PYTHON
+  timeout: 10m
+  services:
+      - name: registry.heptapod.net:443/mercurial/hg-git/git-server
+        alias: git-server
+  variables:
+    CI_TEST_GIT_NETWORKING: 1
+  script:
+    - adduser -D test
+    - chown -R test *
+    - su test -c contrib/ci.sh
+  artifacts:
+    reports:
+      junit: tests-$PYTHON-$HG.xml
+
+# First, test with the latest and greatest Mercurial, across the
+# versions Python supported. We generally assume that if e.g. CPython
+# 3.5 and 3.8 work, anything in between will work as well.
+Latest:
+  extends: .base
+  stage: current
+  parallel:
+    matrix:
+      - &latest-versions
+        PYTHON:
+          - "2.7"
+          - "3.5"
+          - "3.9"
+        HG:
+          - "5.9"
+
+# This is the authoritative list of versions of Mercurial that this
+# extension is supported and tested with; it should be kept in sync
+# with __init__.py.
+#
+# Versions prior to the version that ships in the latest Ubuntu LTS
+# release (4.5.3 for 18.04; 5.3.1 for 20.04) may be dropped if they
+# interfere with new development. The latest released minor version
+# should be listed for each major version; earlier minor versions are
+# not needed.
+Supported:
+  extends: .base
+  stage: compat
+  retry: 1
+  parallel:
+    matrix:
+      - &supported-versions-py2
+        PYTHON: "2.7"
+        HG:
+          - "4.4"
+          - "4.5"
+          - "4.6"
+          - "4.7"
+          - "4.8"
+          - "4.9"
+          - "5.0"
+          - "5.1"
+          - "5.2"
+          - "5.3"
+          - "5.4"
+          - "5.5"
+          - "5.6"
+          - "5.7"
+          - "5.8"
+      - &supported-versions-py3
+        PYTHON: "3.9"
+        HG:
+          - "5.2"
+          - "5.3"
+          - "5.4"
+          - "5.5"
+          - "5.6"
+          - "5.7"
+          - "5.8"
+
+# Test that it is possible to use and run hg-git on Ubuntu without
+# compiling any C code, i.e. with stock Dulwich, Mercurial and
+# CPython. This should most definitely be the case on the latest
+# rolling release without a PPA. We can live with PPAs on older
+# systems.
+Ubuntu:
+    stage: compat
+    image: ubuntu:20.10
+    script:
+      - apt-get -qq update
+      - >
+        DEBIAN_FRONTEND=noninteractive
+        apt-get -qq install --no-install-recommends
+        gnupg gnupg-agent git unzip ssh
+        mercurial python3-dulwich python3-setuptools pyflakes3
+      - >
+        python3 tests/run-tests.py -v
+        --xunit $PWD/tests-ubuntu.xml --color=always --timeout 300
+    artifacts:
+      reports:
+        junit: tests-ubuntu.xml
+
+# Test that the tests pass against the current branches
+Development:
+  extends: .base
+  stage: upcoming
+  rules:
+    # disallow failures for scheduled builds, so we get a nice
+    # notification
+    - if: '$CI_PIPELINE_SOURCE == "schedule"'
+      allow_failure: false
+    # but we don't want to prevent merging unrelated work, so allow
+    # failures for normal builds -- all of this is to avoid a detached
+    # build for merge requests
+    - if: '$CI_PIPELINE_SOURCE == "push"'
+      allow_failure: true
+    - if: '$CI_PIPELINE_SOURCE == "web"'
+      when: manual
+      allow_failure: true
+  parallel:
+    matrix:
+      - &development-versions
+        PYTHON:
+          - "2.7"
+          - "3.9"
+        HG:
+          - "stable"
+          - "default"
+
+# Build images for the above tasks; this should be a scheduled job, as
+# it is quite unnecessary to run on every invocation.
+CI images:
+  stage: images
+  tags:
+    - container-registry-push
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "schedule"'
+    - if: '$CI_BUILD_IMAGES == "1"'
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
+  script:
+    - |
+      cat > /kaniko/.docker/config.json <<EOF
+      {
+        "auths": {
+          "$CI_REGISTRY": {
+            "username": "$CI_REGISTRY_USER",
+            "password": "$CI_REGISTRY_PASSWORD"
+          }
+        }
+      }
+      EOF
+    - >
+      /kaniko/executor --context $CI_PROJECT_DIR
+      --dockerfile $CI_PROJECT_DIR/contrib/docker/Dockerfile.alpine
+      --build-arg PYTHON=$PYTHON
+      --build-arg HG=$HG
+      --single-snapshot
+      --cleanup
+      --destination registry.heptapod.net:443/mercurial/hg-git/ci/$CI_COMMIT_HG_BRANCH:hg-$HG-py$PYTHON
+  parallel:
+    matrix:
+      - *latest-versions
+      - *supported-versions-py2
+      - *supported-versions-py3
+      - *development-versions
+
+# Builds the image used by tests/test-networking.t
+Git service image:
+  stage: images
+  tags:
+    - container-registry-push
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "schedule"'
+    - if: '$CI_BUILD_IMAGES == "1"'
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
+  timeout: 5m
+  script:
+    - mkdir -p /kaniko/.docker /kaniko/ssl/certs
+    - |
+      cat > /kaniko/.docker/config.json <<EOF
+      {
+        "auths": {
+          "$CI_REGISTRY": {
+            "username": "$CI_REGISTRY_USER",
+            "password": "$CI_REGISTRY_PASSWORD"
+          }
+        }
+      }
+      EOF
+    - |
+      cat > /kaniko/ssl/certs/Heptapod_Tooling_CA.crt << EOF
+      -----BEGIN CERTIFICATE-----
+      MIIDfjCCAmagAwIBAgIUZ7t3vKco1mvle/l1TfTRooLWduMwDQYJKoZIhvcNAQEL
+      BQAwJzElMCMGA1UEAwwcSGVwdGFwb2QgSW50ZXJuYWwgVG9vbGluZyBDQTAeFw0y
+      MDExMzAyMTMzMTBaFw0zMDExMjgyMTMzMTBaMCcxJTAjBgNVBAMMHEhlcHRhcG9k
+      IEludGVybmFsIFRvb2xpbmcgQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK
+      AoIBAQCnxPEwRwppDzuHGccnfdVpppX5s1mWlWl1FqiqdtnJWrkTzKiolJurZXms
+      Kt6iEB75yMD9r6KiTSN0vRcaH+qhZ2rA/frfKpkhSShp6TZke87tRdLufgUNxVNt
+      ObAWaXEV2qePRHzLwx016uc/TwrdBvBqjPrRv2gwXLk9gadIPmAMVqSZE9I4qKru
+      1RciZ2J2R8zDcJuZ4Pi/uQi3XGD0Tm0iVyjIO5zou3+5R6khx4tBcZQX+XZD/usU
+      10emcZoFHIkc0+uKos+AEB1CBkXCYZDy2G3u8+tYXvNQaMk12Y31/Fv1LdjGwtYG
+      qEi9k05x/nxOwSK/idPPSeeogcdxAgMBAAGjgaEwgZ4wHQYDVR0OBBYEFNnphf7w
+      hzIVfEaGTRgGA+COTFfvMGIGA1UdIwRbMFmAFNnphf7whzIVfEaGTRgGA+COTFfv
+      oSukKTAnMSUwIwYDVQQDDBxIZXB0YXBvZCBJbnRlcm5hbCBUb29saW5nIENBghRn
+      u3e8pyjWa+V7+XVN9NGigtZ24zAMBgNVHRMEBTADAQH/MAsGA1UdDwQEAwIBBjAN
+      BgkqhkiG9w0BAQsFAAOCAQEAmW/80xxQBSQdcEYw3euGDsK72ENztS4P4x12H55j
+      lULg7DaoWgGDkIIBuhCK+5Y3wzhQyvsBrSB+LcVyVLQbS6yIIgzBVZPf/ZPMrC5x
+      HjwXKGyZQFqFR/NGxVMmLidHXADF28EqFqSfdfWtdntnUL34hzAHZQkGn+d5S/d3
+      8qze9BWueo213tLCBtZxoTpneJDhq/fW++5BTagipzwpsmT26ycJ+k4uBwbkcnBo
+      JP7Hk/I4BC3bZg8dDQShpPCGRlp9b8R0XSGoOoFRGW6z3nhh88kcdFdoPiMgEOuq
+      FDmDjn14Jct6uFGIHEadGvenxDLivFxV+UnSS8u6tVwYTw==
+      -----END CERTIFICATE-----
+      EOF
+    - >
+      /kaniko/executor --context $CI_PROJECT_DIR/contrib/docker/git-server
+      --dockerfile $CI_PROJECT_DIR/contrib/docker/git-server/Dockerfile
+      --single-snapshot
+      --cleanup
+      --destination registry.heptapod.net:443/mercurial/hg-git/git-server
+
+x86 Wheels:
+  image: quay.io/pypa/${PLATFORM}
+  timeout: 15m
+  stage: archives
+  only:
+    - tags
+  variables:
+    PYPI_REPOSITORY: ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi
+  script:
+    - yum install -y gettext
+    - |
+      cat > ~/.pypirc <<EOF
+      [distutils]
+      index-servers =
+        gitlab
+
+      [gitlab]
+      repository = ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi
+      username = gitlab-ci-token
+      password = ${CI_JOB_TOKEN}
+      EOF
+    - |
+      for pythondir in /opt/python/${ABI}*
+      do
+        # setuptools_scm needs hg in its path
+        export PATH=$pythondir/bin:$PATH
+        $pythondir/bin/pip install docutils pygments mercurial twine
+        $pythondir/bin/pip wheel -w wheelhouse mercurial .
+      done
+    - |
+      for whl in wheelhouse/*-linux_*.whl
+      do
+        auditwheel repair --plat ${PLATFORM} -w wheelhouse $whl
+        rm -v $whl
+      done
+    # rely on our PATH adjustment above
+    - |
+      for whl in wheelhouse/*-${PLATFORM}.whl wheelhouse/hg_git-*.whl
+      do
+        twine upload \
+          --disable-progress-bar --verbose --skip-existing \
+          --repository gitlab \
+          $whl \
+          && echo "upload of $whl success" \
+          || echo "upload of $whl failed"
+      done
+  artifacts:
+    paths:
+      - wheelhouse
+  parallel:
+    matrix:
+      - PLATFORM: manylinux2010_x86_64
+        ABI:
+          - cp27
+      - PLATFORM: manylinux2014_x86_64
+        ABI:
+          - cp35
+          - cp36
+          - cp37
+          - cp38
+          - cp39
+
+ARM Wheels:
+  extends: "x86 Wheels"
+  tags:
+    - arm64
+  parallel:
+    matrix:
+      - PLATFORM: manylinux2014_aarch64
+        ABI:
+          - cp35
+          - cp36
+          - cp37
+          - cp38
+          - cp39
