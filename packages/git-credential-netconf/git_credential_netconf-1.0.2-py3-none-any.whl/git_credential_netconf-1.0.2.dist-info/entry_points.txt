@@ -1,0 +1,3 @@
+[console_scripts]
+git-credential-netconf = git_credential_netconf.__main__:main
+
