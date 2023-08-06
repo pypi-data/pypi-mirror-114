@@ -1,0 +1,4 @@
+#!/Users/macbook/MyWorkspace/subaligner-github/.venv/bin/python
+# EASY-INSTALL-SCRIPT: 'aeneas==1.7.3.0','aeneas_plot_waveform'
+__requires__ = 'aeneas==1.7.3.0'
+__import__('pkg_resources').run_script('aeneas==1.7.3.0', 'aeneas_plot_waveform')

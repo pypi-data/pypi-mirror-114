@@ -1,0 +1,3 @@
+aeneas-1.7.3.0-py3.8-macosx-10.9-x86_64.egg/aeneas/cdtw/cdtw.cpython-38-darwin.so
+aeneas-1.7.3.0-py3.8-macosx-10.9-x86_64.egg/aeneas/cew/cew.cpython-38-darwin.so
+aeneas-1.7.3.0-py3.8-macosx-10.9-x86_64.egg/aeneas/cmfcc/cmfcc.cpython-38-darwin.so
