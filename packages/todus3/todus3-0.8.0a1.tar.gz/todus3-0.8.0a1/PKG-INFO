@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: todus3
+Version: 0.8.0a1
+Summary: ToDus client for S3
+Home-page: https://github.com/oleksis/todus/tree/todus3
+License: MPL
+Keywords: todus,s3,client
+Author: adbenitez
+Author-email: adbenitez@nauta.cu
+Maintainer: Oleksis Fraga
+Maintainer-email: oleksis.fraga@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Provides-Extra: 7z
+Requires-Dist: multivolumefile (>=0.2.3,<0.3.0); extra == "7z"
+Requires-Dist: py7zr (>=0.16.1,<0.17.0); extra == "7z"
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Requires-Dist: tqdm (>=4.61.2,<5.0.0)
+Project-URL: Repository, https://github.com/oleksis/todus/tree/todus3
+Description-Content-Type: text/markdown
+
+# ToDus client for S3
+
+[![](https://img.shields.io/pypi/v/todus3.svg)](https://pypi.org/project/todus3)
+[![](https://img.shields.io/pypi/pyversions/todus3.svg)](
+https://pypi.org/project/todus3)
+[![Downloads](https://pepy.tech/badge/todus3)](https://pepy.tech/project/todus3)
+[![](https://img.shields.io/pypi/l/todus3.svg)](https://pypi.org/project/todus3)
+[![CI](https://github.com/oleksis/todus/actions/workflows/python-ci.yml/badge.svg)](https://github.com/oleksis/todus/actions/workflows/python-ci.yml)
+[![](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+Use the ToDus API (login/download/upload) in your Python projects.
+
+## Install
+
+To install run
+```bash
+  pip install todus3
+```
+
+## Usage
+```bash
+### Help
+todus3 -- help
+
+### Login and Enter PIN
+todus3 -n 53123456 login
+
+### Download from TXT files with 3 Workers/Threads
+todus3 -n 53123456 download -t 3 file.txt [file.txt ...]
+
+### Upload file by parts in Bytes (10 MB)
+todus3 -n 53123456 upload binary.bin -p 10485760
+```
+
