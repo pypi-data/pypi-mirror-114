@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+django_110_hCaptcha.egg-info/PKG-INFO
+django_110_hCaptcha.egg-info/SOURCES.txt
+django_110_hCaptcha.egg-info/dependency_links.txt
+django_110_hCaptcha.egg-info/top_level.txt
+hcaptcha/__init__.py
+hcaptcha/apps.py
+hcaptcha/fields.py
+hcaptcha/settings.py
+hcaptcha/views.py
+hcaptcha/widgets.py
+hcaptcha/migrations/__init__.py
+hcaptcha/templates/hcaptcha_widget.html
