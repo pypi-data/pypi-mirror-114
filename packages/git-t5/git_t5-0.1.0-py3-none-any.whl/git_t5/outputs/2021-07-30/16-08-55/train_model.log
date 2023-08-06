@@ -1,0 +1,72 @@
+[2021-07-30 16:08:56,069][absl][INFO] - Starting the local TPU driver.
+[2021-07-30 16:08:56,070][absl][INFO] - Unable to initialize backend 'tpu_driver': Not found: Unable to find driver in registry given worker: local://
+[2021-07-30 16:08:56,071][absl][INFO] - Unable to initialize backend 'gpu': Not found: Could not find registered platform with name: "cuda". Available platform names are: Host Interpreter
+[2021-07-30 16:08:56,072][absl][INFO] - Unable to initialize backend 'tpu': Invalid argument: TpuPlatform is not available.
+[2021-07-30 16:08:56,072][absl][WARNING] - No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
+[2021-07-30 16:09:00,506][datasets.arrow_dataset][WARNING] - Loading cached split indices for dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-7985fdfc995a6b01.arrow and /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-ae52d9675dbd448f.arrow
+[2021-07-30 16:09:00,749][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-6402210baa5d3334.arrow
+[2021-07-30 16:09:00,784][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-c9f750f6a7a1c5f3.arrow
+[2021-07-30 16:09:00,816][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-ecb8b486619d4e0b.arrow
+[2021-07-30 16:09:00,836][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-a5e1e2b87385cb75.arrow
+[2021-07-30 16:09:00,869][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-989ff0ff1e38b48c.arrow
+[2021-07-30 16:09:00,889][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-eaf855c3d96a6b7d.arrow
+[2021-07-30 16:09:00,922][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-a17b9945b63db2a7.arrow
+[2021-07-30 16:09:00,944][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-60202500c8d9a374.arrow
+[2021-07-30 16:09:01,235][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-cda882792d70e9d4.arrow
+[2021-07-30 16:09:01,263][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-c6481b7216ac97eb.arrow
+[2021-07-30 16:09:01,298][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-dd7eefe8b4eb9ca7.arrow
+[2021-07-30 16:09:01,340][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-3b84b753afced815.arrow
+[2021-07-30 16:09:01,360][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-f069ef60c436af6b.arrow
+[2021-07-30 16:09:01,380][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-536a3ac9ca9fe70d.arrow
+[2021-07-30 16:09:01,403][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-5cc7a825acf311f5.arrow
+[2021-07-30 16:09:01,424][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-e850700a6fdd3e7f.arrow
+[2021-07-30 16:09:01,611][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-ba1ff55884fc3245.arrow
+[2021-07-30 16:09:01,617][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-9654dc1e0dc5ab59.arrow
+[2021-07-30 16:09:01,623][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-20e4bda9ea394116.arrow
+[2021-07-30 16:09:01,630][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-54cee9ddb76a94c5.arrow
+[2021-07-30 16:09:01,636][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-6c2acdef75ad5c73.arrow
+[2021-07-30 16:09:01,643][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-434337c221990a2b.arrow
+[2021-07-30 16:09:01,650][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-b27f5e84968896eb.arrow
+[2021-07-30 16:09:01,657][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-7340a78cc9241ad5.arrow
+[2021-07-30 16:09:01,848][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-badae0297353df31.arrow
+[2021-07-30 16:09:01,855][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-0d4ad1ccca017085.arrow
+[2021-07-30 16:09:01,860][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-45ceddecd9d6d3fd.arrow
+[2021-07-30 16:09:01,867][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-d2dcfe7ce98fca73.arrow
+[2021-07-30 16:09:01,873][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-ecc7393bcc0b15de.arrow
+[2021-07-30 16:09:01,879][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-02928f6e1f5504f9.arrow
+[2021-07-30 16:09:01,886][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-8c63059977c544d6.arrow
+[2021-07-30 16:09:01,892][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-68f54a0c818bbe48.arrow
+[2021-07-30 16:09:02,075][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-7e2cde6929c88a31.arrow
+[2021-07-30 16:09:02,082][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-4bf1a3ad94119486.arrow
+[2021-07-30 16:09:02,088][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-bc1145482279348a.arrow
+[2021-07-30 16:09:02,095][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-c7df53c9124a214d.arrow
+[2021-07-30 16:09:02,101][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-7a9e093537c4fdc1.arrow
+[2021-07-30 16:09:02,108][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-3b5927e334a1b078.arrow
+[2021-07-30 16:09:02,114][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-ecc06d186d10a0f0.arrow
+[2021-07-30 16:09:02,121][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-ae32dbb9f153f2f9.arrow
+[2021-07-30 16:09:02,301][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-d96191cffdc26d85.arrow
+[2021-07-30 16:09:02,306][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-ccaf396f3715aa37.arrow
+[2021-07-30 16:09:02,312][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-5b908baf211b1e31.arrow
+[2021-07-30 16:09:02,319][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-43d144534c546561.arrow
+[2021-07-30 16:09:02,326][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-a5630b2968b2ac63.arrow
+[2021-07-30 16:09:02,333][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-d8ae9937a69ccc19.arrow
+[2021-07-30 16:09:02,339][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-60d407dcfa02ef51.arrow
+[2021-07-30 16:09:02,345][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-61ec1007c6cf1d35.arrow
+[2021-07-30 16:09:02,433][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-3a97d9d559e02bec.arrow
+[2021-07-30 16:09:02,439][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-082f8b4c1b596cea.arrow
+[2021-07-30 16:09:02,445][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-27ceeab1dbd92dfa.arrow
+[2021-07-30 16:09:02,452][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-4b81d45dce23bea7.arrow
+[2021-07-30 16:09:02,457][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-76a8445f468bf4c1.arrow
+[2021-07-30 16:09:02,463][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-ccb1715f7a996b51.arrow
+[2021-07-30 16:09:02,469][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-9bd5b10c6db56ac9.arrow
+[2021-07-30 16:09:02,476][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-6e124e2d95469ad8.arrow
+[2021-07-30 16:09:02,657][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-f9a9ab587d785d0d.arrow
+[2021-07-30 16:09:02,662][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-ac24f85a0c58e9f7.arrow
+[2021-07-30 16:09:02,669][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-968a0bbbd166a5ea.arrow
+[2021-07-30 16:09:02,674][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-b76933c66ad76e89.arrow
+[2021-07-30 16:09:02,680][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-68b619dbe68266b6.arrow
+[2021-07-30 16:09:02,686][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-88b662018674671a.arrow
+[2021-07-30 16:09:02,693][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-ceed998eae98f021.arrow
+[2021-07-30 16:09:02,698][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-88dffe3e30c7d150.arrow
+[2021-07-30 16:09:02,726][datasets.arrow_dataset][WARNING] - Loading cached shuffled indices for dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-d0a9348b3e6e82c1.arrow
+[2021-07-30 16:09:02,730][absl][INFO] - A polynomial schedule was set with a non-positive `transition_steps` value; this results in a constant schedule with value `init_value`.

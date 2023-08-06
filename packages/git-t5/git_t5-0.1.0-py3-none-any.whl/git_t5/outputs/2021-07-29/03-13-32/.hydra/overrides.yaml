@@ -1,0 +1,12 @@
+- data.dataset_path=/Users/mozharovsky/Desktop/git-t5-tokenizer/data
+- data.dataset_column=text
+- data.max_sequence_length=512
+- data.overwrite_cache=False
+- data.num_workers=8
+- data.train_batch_size=1
+- data.eval_batch_size=1
+- model.model_type=t5
+- model.config_name=t5-base
+- model.tokenizer_path=/Users/mozharovsky/Desktop/git-t5-tokenizer/tokenizer
+- model.cache_dir=/Users/mozharovsky/Desktop/git-t5-tokenizer/model
+- trainer.logging_steps=1

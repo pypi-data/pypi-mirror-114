@@ -1,0 +1,4 @@
+[console_scripts]
+gt5-train-model=git_t5.cli.train_model:main
+gt5-train-tokenizer=git_t5.cli.train_tokenizer:main
+

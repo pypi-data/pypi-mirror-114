@@ -1,0 +1,6 @@
+[2021-07-30 15:58:47,447][absl][INFO] - Starting the local TPU driver.
+[2021-07-30 15:58:47,449][absl][INFO] - Unable to initialize backend 'tpu_driver': Not found: Unable to find driver in registry given worker: local://
+[2021-07-30 15:58:47,450][absl][INFO] - Unable to initialize backend 'gpu': Not found: Could not find registered platform with name: "cuda". Available platform names are: Host Interpreter
+[2021-07-30 15:58:47,450][absl][INFO] - Unable to initialize backend 'tpu': Invalid argument: TpuPlatform is not available.
+[2021-07-30 15:58:47,450][absl][WARNING] - No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
+[2021-07-30 15:58:52,093][datasets.arrow_dataset][WARNING] - Loading cached split indices for dataset at /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-7985fdfc995a6b01.arrow and /Users/mozharovsky/Desktop/git-t5-tokenizer/data/cache-ae52d9675dbd448f.arrow
