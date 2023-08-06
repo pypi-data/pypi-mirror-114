@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: gps-babel-tower
+Version: 0.0.5
+Summary: Babel Tower NLP Library
+Home-page: UNKNOWN
+Author: Chi Zhang
+Author-email: chii@google.com
+License: Apache
+Platform: UNKNOWN
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Babel Tower
+
+This is a Python package containing modules for many common NLP tasks, such as keyword extraction, translation,
+sentiment analysis, language detection, finding similar text, etc.
+
+## Development
+
+Run `pip install -e .` from the top directory, then you can import modules from the `gps_babel_tower` package.
+
+## Examples
+
+Check out `examples` for examples of using the NLP modules.
+
