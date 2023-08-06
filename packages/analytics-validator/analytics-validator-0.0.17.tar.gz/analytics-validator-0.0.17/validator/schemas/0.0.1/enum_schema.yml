@@ -1,0 +1,23 @@
+type: map
+mapping:
+  name:
+    type: str
+    required: True
+    pattern: "^[a-zA-Z]\\w*$"
+  values:
+    required: True
+    type: seq
+    range:
+      min: 1
+    sequence:
+      - type: map
+        mapping:
+          name:
+            unique: True
+            type: str
+            required: True
+            pattern: "^[_a-zA-Z]\\w*$"
+          value:
+            type: str
+            required: True
+            pattern: "(.|\\s)*\\S(.|\\s)*"

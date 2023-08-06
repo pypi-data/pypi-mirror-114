@@ -1,0 +1,18 @@
+#!/usr/bin/python
+import sys
+import os
+import getopt
+from validator import validator
+
+try:
+    opts, args = getopt.getopt(sys.argv[1:], "hp:", ["project="])
+except getopt.GetoptError:
+    print(" -proj <projectDirectory>")
+    sys.exit(2)
+
+for opt, arg in opts:
+    if opt == '-h':
+        print(" -project <projectDirectory>")
+        sys.exit()
+    elif opt in ("-p", "--project"):
+        validator.check(os.getcwd() + "/" + arg)

@@ -1,0 +1,22 @@
+name: "User Attributes"
+attributes:
+  - name: "name"
+    type: "enum/ProductType"
+
+  - name: "user"
+    type: "string"
+    value: "teste"
+
+  - name: "float"
+    type: "float"
+    value: 1.0
+
+  - name: "boolean"
+    type: "boolean"
+    value: true
+
+  - name: "date"
+    type: "date"
+
+  - name: "map"
+    type: "map"

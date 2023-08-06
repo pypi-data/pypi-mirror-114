@@ -1,0 +1,26 @@
+type: map
+mapping:
+  name:
+    type: str
+    required: True
+    pattern: "(.|\\s)*\\S(.|\\s)*"
+  attributes:
+    type: seq
+    required: True
+    range:
+      min: 1
+    sequence:
+      - type: map
+        mapping:
+          name:
+            unique: True
+            type: str
+            required: True
+            pattern: "^[_a-zA-Z]\\w*$"
+          type:
+            type: str
+            pattern: "^(|list\/)(string|integer|boolean|datetime|date|time|float|map|enum\/[a-zA-Z]+)$"
+            required: True
+          value:
+            type: any
+            required: False

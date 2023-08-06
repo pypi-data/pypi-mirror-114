@@ -1,0 +1,13 @@
+name: "ProductType"
+values:
+  - name: "CGS"
+    value: "Hype CGS"
+
+  - name: "Queue"
+    value: "Hype Queue"
+
+  - name: "Inline"
+    value: "Inline"
+
+  - name: "Draw"
+    value: "Hype Draw"

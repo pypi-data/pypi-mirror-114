@@ -1,0 +1,21 @@
+name: "Adidas Confirmed"
+schema: 0.0.1
+datetime_format: "DD/MM/YY, hh:mm:ss"
+date_format: "DD/MM/YY"
+time_format: "hh:mm:ss"
+list_delimiter: " | "
+scope_delimiter: "::"
+default_event_attributes:
+  scopes:
+    - name: "event"
+      attributes:
+        - name: "source"
+          type: "string"
+          value: "APP"
+          required: true
+    - name: "time"
+      attributes:
+        - name: "local"
+          type: "datetime"
+          value: "now"
+          required: true
