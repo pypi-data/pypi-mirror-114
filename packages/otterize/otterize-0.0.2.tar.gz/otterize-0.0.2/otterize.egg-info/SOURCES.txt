@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+otterize/__init__.py
+otterize.egg-info/PKG-INFO
+otterize.egg-info/SOURCES.txt
+otterize.egg-info/dependency_links.txt
+otterize.egg-info/top_level.txt
