@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: bd103
+Version: 1.0.0
+Summary: BD103's Python Package
+Home-page: https://bd103.thedev.id
+License: Apache-2.0
+Author: BD103
+Author-email: dont@stalk.me
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/BD103/BD103-Python
+Description-Content-Type: text/markdown
+
+# BD103 Python Package
+
+WIP, come back soon!
