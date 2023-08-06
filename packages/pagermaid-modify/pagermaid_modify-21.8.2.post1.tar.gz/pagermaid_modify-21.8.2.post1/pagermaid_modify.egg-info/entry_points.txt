@@ -1,0 +1,3 @@
+[console_scripts]
+pagermaid = pagermaid:__main__
+
