@@ -1,0 +1,35 @@
+docutils==0.15  # issue with 0.17, https://github.com/tskit-dev/msprime/issues/1625
+asv
+bintrees
+codecov
+coverage
+daiquiri
+demes>=0.1.2
+demesdraw
+flake8
+hypothesis
+matplotlib>=3.4.0
+# More recent meson is too strict. See #1485.
+meson<=0.56
+mock
+mypy
+ninja
+numpy
+pre-commit
+pytest
+pytest-cov
+pytest-xdist
+tskit>=0.3.5
+stdpopsim>=0.1.2 # Make sure we have correct version of OOA model
+scipy
+# TODO we're pinning the version here because of problems on Travis.
+# versions weren't correctly being set for v1.12.1
+setuptools_scm == 1.11.1
+sphinx<4
+sphinx-argparse
+sphinx-issues
+jupyter-book
+
+newick>=1.3.0
+# We use JSON-schema to test out metadata handling.
+python_jsonschema_objects
