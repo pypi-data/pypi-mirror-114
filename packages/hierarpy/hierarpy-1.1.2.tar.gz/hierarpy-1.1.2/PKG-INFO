@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: hierarpy
+Version: 1.1.2
+Summary: A library for hierarchical configuration in Python.
+Home-page: https://github.com/rodrigo-castellon/hierarpy
+Author: Rodrigo Castellon
+Author-email: rjcaste@stanford.edu
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# hierarpy
+A library for hierarchical configuration in Python.
+
+## Introduction
+
+Typical approaches to handling configuration are usually too static and flat, and struggle to accomodate deep learning experiments out-of-the-box. For example, you may want to switch out a model architecture, but the architecture has a different set of hyperparameters that could be tuned! It would be great if you could easily handle these common cases.
+
+To this end, we propose a hierarchical structure of configuration files in a config directory. Subfolders contain alternate configuration files that can each be substituted into the parent configuration file. `hierarpy` handles this hierarchical structure, encouraging faster, more high entropy, yet reproducible experiments.
+
+`hierarpy` also lets you overrides  configuration variables at the command line by simply adding a flag such as `--model.bidirectional=True` when calling the script (see A Minimal Example for how this works).
+
+## Requirements
+
+`hierarpy` relies only on [addict](https://github.com/mewwts/addict) and [PyYAML](https://pypi.org/project/PyYAML/).
+
+## A Minimal Example
+
+A minimal script using `hierarpy` is given below, found at `example/main.py`:
+
+```
+"""
+A test file demonstrating hierarpy in action.
+"""
+
+import hierarpy
+
+import sys
+import yaml
+
+# Load the hierarchical configuration from the given path.
+# This will use config/main.yaml as a springboard to look for
+# other configuration files. In our case, that YAML file only
+# specifies exactly one other YAML file to substitute in.
+d = hierarpy.load_config('config/main.yaml')
+
+# Get arguments from the command line, formatted as
+# --potentially.hierarchical.key.here==value
+# Note that since we have already loaded in d completely,
+# it is impossible for the user to change a non-leaf key,
+# or in other words change the branching behavior when loading.
+args = hierarpy.get_args()
+
+# Override d (from files) with any arguments supplied by the user.
+d = hierarpy.override_config(d, args)
+
+# Pretty-print.
+print(yaml.dump(d.to_dict(), default_flow_style=False))
+
+# Note that since d is an addict.Dict object, this allows us to perform
+# powerful and flexible manipulations.
+print('the hidden sizes of the layers of the model are', d.model.hidden_sizes)
+d.dataset.data_loading.num_workers = 3
+print(d.dataset)
+```
+
+If you run `$ cd example && python main.py`, in our standard output you should get
+
+```
+learning_rate: 0.01
+model:
+  bidirectional: false
+  hidden_sizes:
+  - 300
+  - 300
+  - 300
+  input_size: 100
+  subconfig_name: lstm
+optimizer: adam
+
+the hidden sizes of the layers of the model are [300, 300, 300]
+{'data_loading': {'num_workers': 3}}
+```
+
+Notice how this automatically incorporates the child config file `lstm.yaml` in the `model` directory. Now if you try running `$ python main.py --model.bidirectional=True`, you should get
+```
+learning_rate: 0.01
+model:
+  bidirectional: true
+  hidden_sizes:
+  - 300
+  - 300
+  - 300
+  input_size: 100
+  subconfig_name: lstm
+optimizer: adam
+
+the hidden sizes of the layers of the model are [300, 300, 300]
+{'data_loading': {'num_workers': 3}}
+```
+
+

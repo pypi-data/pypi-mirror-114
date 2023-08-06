@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+hierarpy/__init__.py
+hierarpy/core.py
+hierarpy.egg-info/PKG-INFO
+hierarpy.egg-info/SOURCES.txt
+hierarpy.egg-info/dependency_links.txt
+hierarpy.egg-info/requires.txt
+hierarpy.egg-info/top_level.txt
