@@ -1,0 +1,2 @@
+atomicwrites<1.5,>=1.4
+requests<2.27,>=2.26
