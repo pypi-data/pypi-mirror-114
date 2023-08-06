@@ -1,0 +1,15 @@
+pandas
+tf_explain
+numpy
+pillow
+tqdm
+cmapy
+albumentations
+matplotlib
+pandas
+seaborn
+sklearn
+pydicom
+
+[test]
+pytest
