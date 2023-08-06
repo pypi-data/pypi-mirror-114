@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pycondition
+Version: 0.0.2
+Summary: Python library of algorithms for matched experimental conditions
+Home-page: https://github.com/doerlbh/pycondition
+Author: Baihan Lin
+Author-email: doerlbh@gmail.com
+License: GPLv3
+Project-URL: Bug Tracker, https://github.com/doerlbh/pycondition/issues
+Description: # pycondition
+        
+        [![PyPI version](https://badge.fury.io/py/pycondition.svg)](https://badge.fury.io/py/pycondition)  [![codecov](https://codecov.io/gh/doerlbh/pycondition/branch/main/graph/badge.svg?token=)](https://codecov.io/gh/doerlbh/pycondition) [![Travis_CI](https://travis-ci.com/doerlbh/pycondition.svg?token=&branch=main)](https://travis-ci.com/doerlbh/pycondition) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+        
+        Python library
+        
+        Created by [Baihan Lin](www.baihan.nyc), Columbia University
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
