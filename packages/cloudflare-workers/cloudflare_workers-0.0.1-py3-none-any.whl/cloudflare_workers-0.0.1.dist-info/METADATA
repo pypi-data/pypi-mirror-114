@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: cloudflare-workers
+Version: 0.0.1
+Summary: A simple Python wrapper to Cloudflare Workers
+Home-page: https://github.com/dineshsonachalam/cloudflare_workers
+Author: Dinesh Sonachalam
+Author-email: dineshsonachalam@gmail.com
+License: MIT
+Keywords: cloudflare workers
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.1
+Description-Content-Type: text/markdown
+Requires-Dist: requests (==2.25.1)
+
+# cloudflare_workers
+
+

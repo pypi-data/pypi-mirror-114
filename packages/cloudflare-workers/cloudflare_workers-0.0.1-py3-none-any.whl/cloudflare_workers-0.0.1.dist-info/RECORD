@@ -1,0 +1,7 @@
+cloudflare_workers/__init__.py,sha256=-eTMylYUMQ-7ZC37XQwum2PebIJpT2P9T4vCuTxf_gk,42
+cloudflare_workers/key_value_store.py,sha256=GzkTEZvqrQevkmU8tbMAE3N2gPZDH6ehx0wFFVU4vkk,29
+cloudflare_workers-0.0.1.dist-info/LICENSE,sha256=n3E4GkunZCfntaJrizjHuAo5TdytwwEBt91h6g7pYn4,1074
+cloudflare_workers-0.0.1.dist-info/METADATA,sha256=lsvFd9hFo4AY_TK31UbZ3vi0ke8XhRJT9bYM4_wzAuw,578
+cloudflare_workers-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cloudflare_workers-0.0.1.dist-info/top_level.txt,sha256=fnEevrjWFB1TE_BstwHXKUt011F6gj3Kl8G-Xj2OVEM,19
+cloudflare_workers-0.0.1.dist-info/RECORD,,
