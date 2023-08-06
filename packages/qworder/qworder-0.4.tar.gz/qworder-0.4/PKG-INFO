@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: qworder
+Version: 0.4
+Summary: QWorder simplifies strings representing sequences of quantum gates
+Home-page: https://github.com/korsakjakub/qworder
+Author: Jakub Korsak
+Author-email: jakub.korsak@protonmail.com
+License: gpl-3.0
+Download-URL: https://github.com/korsakjakub/QWorder/archive/refs/tags/0.4.tar.gz
+Description: UNKNOWN
+Keywords: QUANTUM,COMPUTING,GATESTRINGS,SIMPLIFIER,PAULI,MATRIX,HADAMARD
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
