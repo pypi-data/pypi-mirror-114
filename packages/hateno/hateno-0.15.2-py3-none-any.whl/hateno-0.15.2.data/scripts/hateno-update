@@ -1,0 +1,45 @@
+#!python
+# -*- coding: utf-8 -*-
+
+'''
+This script uses the Manager class to update a simulations folder.
+'''
+
+import argparse
+
+from hateno.folder import Folder
+from hateno.manager import Manager
+from hateno.ui import UI
+from hateno.utils import utils
+
+def addArguments(parser):
+	pass
+
+def main(args):
+	folder = utils.findFolder()
+
+	if folder is None:
+		print('No Hateno folder found')
+		return
+
+	with Manager(folder) as manager:
+		n_simulations = manager.getSimulationsNumber()
+
+		if n_simulations == 0:
+			print('This folder is empty.')
+			return
+
+		ui = UI()
+
+		infos_line = ui.addTextLine('Updating the simulations list…')
+		progress_bar = ui.addProgressBar(n_simulations)
+
+		manager.update(callback = progress_bar.update)
+
+		ui.removeItem(progress_bar)
+		infos_line.text = 'Simulations list updated'
+
+if __name__ == '__main__':
+	parser = argparse.ArgumentParser(description = 'Update a simulations folder.')
+	addArguments(parser)
+	main(parser.parse_args())
