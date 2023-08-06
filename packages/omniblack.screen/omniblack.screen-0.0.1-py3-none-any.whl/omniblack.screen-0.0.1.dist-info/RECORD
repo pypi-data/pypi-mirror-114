@@ -1,0 +1,11 @@
+omniblack/screen/IdDict.py,sha256=3PAcOfAYDJfQI3MiDSmE-gkxh761j4SyWa_Cy6CrXkk,1775
+omniblack/screen/LoggingDisplay.py,sha256=eF4MDmRXgKWF33zhLNdR4OjkL0Eb8JfCxFbszEcKPsY,745
+omniblack/screen/MonitoredDeque.py,sha256=CgG3yO32vHRW8zyp45SR0PUXXRqzLiQZIokipQCrsGE,1469
+omniblack/screen/Process.py,sha256=YIPF1NLzOm3l-iY6wAyKtJJG6RX7CCfNmWWDmQ6h2lY,10209
+omniblack/screen/__init__.py,sha256=lTtuaMQnv9QMRKFxRLfG0dgDtNd92iB566-2PL2QR7Y,96
+omniblack/screen/ansi_widget.py,sha256=jjkqld69Htl4T3Kp0MYRoBGJ3_UhJs7F0mZ9hDTelH4,1470
+omniblack/screen/translate_text.py,sha256=ZmoF13w8RpGKTm69o0nISfRmfiZ0QRFoOQ1eQf4eCaU,6240
+omniblack/screen/ui.py,sha256=Hjkx6JIAPYStlR4042UuOObt5I3Zfzq_mXbr2V6VpKE,7893
+omniblack.screen-0.0.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+omniblack.screen-0.0.1.dist-info/METADATA,sha256=7uKRb8zORxW-bULS7DHowVKP0QjpF5ep_C-SI4EyN8U,381
+omniblack.screen-0.0.1.dist-info/RECORD,,
