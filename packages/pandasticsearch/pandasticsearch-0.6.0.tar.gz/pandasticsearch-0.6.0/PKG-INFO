@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pandasticsearch
+Version: 0.6.0
+Summary: A Pandastic Elasticsearch client for data analyzing.
+Home-page: http://pypi.python.org/pypi/pandasticsearch/
+Author: onesuper
+Author-email: onesuperclark@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: pandas
