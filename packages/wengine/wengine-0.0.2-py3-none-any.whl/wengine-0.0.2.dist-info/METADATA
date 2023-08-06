@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: wengine
+Version: 0.0.2
+Summary: WEngine - оператор работы с weighing_platform
+Home-page: UNKNOWN
+Author: Arthur
+Author-email: ksmdrmvstchny@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: whikoperator
+Requires-Dist: qodex-skud-bus
+Requires-Dist: gravityRecorder
+Requires-Dist: ghik-frame
+Requires-Dist: weightsplitter
+Requires-Dist: wsqluse
+
+UNKNOWN
+
