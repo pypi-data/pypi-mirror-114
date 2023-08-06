@@ -1,0 +1,10 @@
+README.txt
+setup.py
+Mgf/Mgf.py
+Mgf/__init__.py
+Mgf.egg-info/PKG-INFO
+Mgf.egg-info/SOURCES.txt
+Mgf.egg-info/dependency_links.txt
+Mgf.egg-info/entry_points.txt
+Mgf.egg-info/top_level.txt
+Mgf.egg-info/zip-safe
