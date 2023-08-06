@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/gematria/__init__.py
+src/gematria/calculate.py
+src/gematria_eschreib.egg-info/PKG-INFO
+src/gematria_eschreib.egg-info/SOURCES.txt
+src/gematria_eschreib.egg-info/dependency_links.txt
+src/gematria_eschreib.egg-info/top_level.txt
