@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: edgefarm_application
+Version: 0.2.2
+Summary: A python library for EdgeFarm applications
+Home-page: https://github.com/edgefarm/edgefarm-application-sdk.py
+Author: Ci4Rail GmbH
+Author-email: engineering@ci4rail.com
+License: UNKNOWN
+Project-URL: Source Code, https://github.com/edgefarm/edgefarm-application-sdk.py.git
+Description: # edgefarm-application
+        [![CI](https://github.com/edgefarm/edgefarm-application-sdk.py/actions/workflows/push_on_main.yml/badge.svg)](https://pypi.org/project/edgefarm-application/)
+        
+        A python library for EdgeFarm applications.
+        
+        Supported features
+        * Communicate with Service Modules
+            * [alm-mqtt-module](./edgefarm_application/alm_mqtt_module)
+            * [ads-node-module](./edgefarm_application/ads_node_module)
+        
+        This library is using [asyncio](https://docs.python.org/3/library/asyncio.html) and therefore the application must use the design patters required for asyncio.
+        
+        ## Installation via pip
+        ```
+        pip3 install edgefarm-application
+        ```
+        
+        ## Example usage:
+        ```python
+        import edgefarm_application as ef
+        
+        async def subject_handler(msg):
+            payload = json.loads(msg["payload"])
+            print(f"{msg}: payload={payload}")
+        
+        
+        async def main():
+            # Initialize Edgefarm Application SDK
+            await ef.application_module_init_from_environment(asyncio.get_event_loop())
+        
+            # Publish a message to Application Data Service (ADS)
+            ads = ef.AdsProducer()
+        
+            # Create an encoder for an application specific payload
+            payload_schema = { .... }  # replace with your avro schema
+        
+            encoder = ef.AdsEncoder(
+                payload_schema,
+                schema_name="temperature_data",
+                schema_version=(1, 0, 0),
+                tags={"monitor": "channel1"},
+            )
+        
+            ads_payload = { 'mydata': 1234 }
+        
+            await ads.encode_and_send(encoder, ads_payload)
+        
+        
+            # Connect to ALM MQTT module and register the MQTT subjects we want to receive
+            mqtt_client = AlmMqttModuleClient()
+            await mqtt_client.subscribe("simulation/temperature", subject_handler)
+        
+            #
+            # The following shuts down gracefully when SIGINT or SIGTERM is received
+            #
+            stop = {"stop": False}
+        
+            def signal_handler():
+                stop["stop"] = True
+        
+            for sig in ("SIGINT", "SIGTERM"):
+                loop.add_signal_handler(getattr(signal, sig), signal_handler)
+        
+            while not stop["stop"]:
+                await asyncio.sleep(1)
+        
+            print("Unsubscribing and shutting down...")
+            await mqtt_client.close()
+            await ef.application_module_term()
+        
+        
+        if __name__ == "__main__":
+            asyncio.run(main())
+        ```
+        
+        ## Compatibility
+        
+        Compatible with Python >= 3.8
+        
+        ## Running examples
+        
+        (You can ignore these instructions if you installed this SDK via pip)
+        
+        When you have cloned this repo and want to run the code in `examples`, ensure that you have the `edgefarm_application` in your `PYTHONPATH`, e.g.
+        ```bash
+        export PYTHONPATH=<this-repo-checkout-path>:${PYTHONPATH}
+        ```
+        
+        Furthermore, load required schemas from [ads_schema repo](https://github.com/edgefarm/ads-schemas.git):
+        ```bash
+        make
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
