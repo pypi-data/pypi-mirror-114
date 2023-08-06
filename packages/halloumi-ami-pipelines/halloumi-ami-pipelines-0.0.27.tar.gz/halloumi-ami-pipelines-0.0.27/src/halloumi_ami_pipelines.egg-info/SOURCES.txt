@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/ami_pipelines/__init__.py
+src/ami_pipelines/py.typed
+src/ami_pipelines/_jsii/__init__.py
+src/ami_pipelines/_jsii/halloumi-ami-pipelines@0.0.27.jsii.tgz
+src/halloumi_ami_pipelines.egg-info/PKG-INFO
+src/halloumi_ami_pipelines.egg-info/SOURCES.txt
+src/halloumi_ami_pipelines.egg-info/dependency_links.txt
+src/halloumi_ami_pipelines.egg-info/requires.txt
+src/halloumi_ami_pipelines.egg-info/top_level.txt
