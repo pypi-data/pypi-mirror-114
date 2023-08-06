@@ -1,0 +1,12 @@
+dicomsdl/__init__.py,sha256=55j_AKuiEl5YU3iw8_ueqY3G44k_P30W_hD9Etf-wdA,5593
+dicomsdl/_dicomsdl.pyd,sha256=XvC6AJUI1Nc7Quue3aiNt_XGM0kKo--XRwuthb4G_vM,2143744
+dicomsdl/_util.pyd,sha256=Ov9bHX1-q1TVsDLr9e0m9XvgYk4srdW4TsPXya9u-Oc,114688
+dicomsdl/dump.py,sha256=UmMQnILHcDiPSRXoYZAxD2X_1aRpv8OdONPsbvtX03Q,574
+dicomsdl/show.py,sha256=EcWlWhkpV3U2YFmQoQ6awtoUDLFotpJBnWLuvwo8whA,458
+dicomsdl/util.py,sha256=snU_PwLneFchn8wVToq86YhOyefHTX459pnlQcQBn7g,126
+dicomsdl-0.107.7.dist-info/LICENSE,sha256=B1q0TXVUOR2hJ8MMXlePRhDrNElEpn-EF6T2jFKyXU0,9800
+dicomsdl-0.107.7.dist-info/METADATA,sha256=xWpd6ij7sWe90e0KE4BfPAIsewWaD3k8cQWjIuUZYGs,5631
+dicomsdl-0.107.7.dist-info/WHEEL,sha256=Yt_rpa18HI_NXs5dEYG1uWuZ-4QRLVJrN8TSetG3BOI,106
+dicomsdl-0.107.7.dist-info/entry_points.txt,sha256=PSvjseq-iSUdrdl5CWdnqE6mIWbxhCJUx7LMKzxAKs4,81
+dicomsdl-0.107.7.dist-info/top_level.txt,sha256=5Aec8NM9UXIX27-GGPVCrS2mRpl8hgAHFaDkO_MiMWw,9
+dicomsdl-0.107.7.dist-info/RECORD,,
