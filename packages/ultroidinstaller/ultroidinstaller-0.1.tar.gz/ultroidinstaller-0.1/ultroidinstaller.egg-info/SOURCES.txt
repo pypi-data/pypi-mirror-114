@@ -1,0 +1,9 @@
+README.md
+setup.py
+installultroid/__init__.py
+installultroid/__main__.py
+ultroidinstaller.egg-info/PKG-INFO
+ultroidinstaller.egg-info/SOURCES.txt
+ultroidinstaller.egg-info/dependency_links.txt
+ultroidinstaller.egg-info/requires.txt
+ultroidinstaller.egg-info/top_level.txt
