@@ -1,0 +1,9 @@
+Pillow
+django~=3.2
+django-object-actions~=3.0
+
+[test]
+tox
+pytest-django
+pytest-pythonpath
+pytest-freezegun
