@@ -1,0 +1,19 @@
+#kind: SnapshotSupplier
+#id: sdk.supplier.after_error_snapshot
+#namespaces:
+#  - inherit: sdk.supplier.namespace_whatever
+#    namespace: get::ns
+#
+#---
+#
+#kind: NamespacedSnapshotSupplier
+#id: any_namespace
+#namespace: cluster
+#resources:
+#  - foo
+#  - sdk.res_selectors.whatever
+#metrics:
+#  - type: prometheus
+#    data:
+#      kind: PromMatrixSupplier
+#      source: whatever

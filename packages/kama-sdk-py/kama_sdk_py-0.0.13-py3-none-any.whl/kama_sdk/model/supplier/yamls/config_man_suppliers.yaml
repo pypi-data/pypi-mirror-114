@@ -1,0 +1,57 @@
+kind: ConfigSupplier
+id: sdk.supplier.config.default_vars
+field_key: default_vars
+
+---
+
+kind: ConfigSupplier
+id: sdk.supplier.config.vendor_injection_vars
+field_key: vendor_injection_vars
+
+---
+
+kind: ConfigSupplier
+id: sdk.supplier.config.user_injection_vars
+field_key: user_injection_vars
+
+---
+
+kind: ConfigSupplier
+id: sdk.supplier.config.user_vars
+field_key: user_vars
+
+---
+
+kind: ConfigSupplier
+id: sdk.supplier.config.prefs
+field_key: prefs
+
+---
+
+kind: ConfigSupplier
+id: sdk.supplier.config.ns
+field_key: ns
+
+---
+
+kind: MergeSupplier
+id: sdk.supplier.config.variables
+source:
+  - get::sdk.supplier.config.default_vars
+  - get::sdk.supplier.config.vendor_injection_vars
+  - get::sdk.supplier.config.user_injection_vars
+  - get::sdk.supplier.config.user_vars
+
+---
+
+kind: Supplier
+id: sdk.supplier.injections_ktea
+source:
+  type: server
+  uri: https://api.codesdk.com/services/ktea/nectar/vals2sec/1.0.0
+
+---
+
+kind: ConfigSupplier
+id: sdk.supplier.config.ktea
+field_key: ktea

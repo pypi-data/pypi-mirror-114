@@ -1,0 +1,6 @@
+kind: ResourcesSupplier
+id: sdk.supplier.concern.resource_selector_to_constructors
+serializer: legacy
+output:
+  kat_res: __identity__
+  res: as_dict

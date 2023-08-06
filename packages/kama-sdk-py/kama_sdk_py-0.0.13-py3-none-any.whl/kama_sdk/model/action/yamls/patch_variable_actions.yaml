@@ -1,0 +1,67 @@
+kind: PatchManifestVarsAction
+id: sdk.action.patch_manifest_variables
+title: "Patch ${get::props target_key} variables"
+info: get::props title
+
+---
+
+kind: UnsetManifestVarsAction
+id: sdk.action.unset_manifest_vars
+title: "Unset variables from ${get::props target_key}"
+info: get::props title
+
+---
+
+kind: WriteManifestVarsAction
+id: sdk.action.write_manifest_variables
+title: "Replace ${get::props target_key} variables"
+info: get::props title
+
+---
+
+kind: PatchManifestVarsAction
+id: sdk.action.patch_default_vars
+target_key: default_vars
+title: Patch default variables
+
+---
+
+kind: PatchManifestVarsAction
+id: sdk.action.patch_prefs
+target_key: prefs
+title: Patch user Prefs
+
+---
+
+kind: PatchManifestVarsAction
+id: sdk.action.patch_vendor_injection_vars
+target_key: vendor_injection_vars
+title: Patch vendor-injected variables
+
+---
+
+kind: PatchManifestVarsAction
+id: sdk.action.patch_user_injection_vars
+target_key: user_injection_vars
+title: Patch user-injected variables
+
+---
+
+kind: PatchManifestVarsAction
+id: sdk.action.patch_user_vars
+target_key: user_vars
+title: Patch user-level variables
+
+---
+
+kind: UnsetManifestVarsAction
+id: sdk.action.unset_user_vars
+target_key: user_vars
+title: Unset user-level variables
+
+
+---
+
+kind: ConfigSupplier
+id: sdk.supplier.config.prefs
+field_key: prefs

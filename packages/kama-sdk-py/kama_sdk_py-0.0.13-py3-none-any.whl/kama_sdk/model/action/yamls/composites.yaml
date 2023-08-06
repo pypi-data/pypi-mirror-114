@@ -1,0 +1,89 @@
+kind: MultiAction
+id: sdk.action.apply_manifest_e2e_action
+title: Apply Resources
+info: Updates the manifest and waits for a settled state
+sub_actions:
+  - id::sdk.action.template_manifest
+  - id::sdk.action.kubectl_apply
+  - id::sdk.action.await_outkomes_settled
+debug_props: [config_space, values, ktea, res_descs, outkomes]
+
+---
+
+kind: MultiAction
+id: sdk.action.apply_application_manifest_e2e_action
+inherit: sdk.action.apply_manifest_e2e_action
+title: Template and apply manifest
+ktea: get::sdk.supplier.config.ktea
+values: get::sdk.supplier.config.variables
+debug_props: [config_space, values, ktea, res_descs, outkomes]
+
+---
+
+kind: MultiAction
+id: sdk.action.commit_step_values_action
+ktea: get::sdk.supplier.config.ktea
+title: Safely commit variables
+info: Dry run variables and patch master ConfigMap
+debug_props: [values, ktea, res_descs, outkomes, config_space]
+
+sub_actions:
+  kind: ListPluck
+  flat: true
+  source:
+    - include:
+        kind: Predicate
+        operator: greater-than
+        check_against: 0
+        challenge: get::props commit->.standard | length
+      value:
+        - inherit: sdk.action.template_manifest_merge_original_values
+          values:
+            kind: MergeSupplier
+            source:
+              - get::props commit->.standard
+              - get::props commit->.inline
+        - id::sdk.action.kubectl_dry_run_action
+        - id::sdk.action.create_backup_action
+        - inherit: sdk.action.patch_manifest_variables
+          values: get::props commit->.standard
+          target_key: user_vars
+
+    - include:
+        kind: Predicate
+        operator: greater-than
+        check_against: 0
+        challenge: get::props commit->.prefs | length
+      value:
+        - id::sdk.action.create_backup_action
+        - inherit: sdk.action.patch_manifest_variables
+          values: get::props commit->.prefs
+          target_key: prefs
+
+---
+
+kind: MultiAction
+id: sdk.action.step_apply_application_manifest_e2e_action
+inherit: sdk.action.commit_step_values_action
+ktea: get::sdk.supplier.config.ktea
+sub_actions:
+  - sdk.action.commit_step_values_action
+  - inherit: sdk.action.template_manifest
+    values:
+      kind: MergeSupplier
+      source:
+        - get::sdk.supplier.config.variables
+        - get::props commit->.inline
+  - id::sdk.action.kubectl_apply
+  - id::sdk.action.await_outkomes_settled
+
+---
+
+kind: MultiAction
+id: sdk.action.step_apply_application_manifest_e2e_action_with_restarts
+inherit: sdk.action.step_apply_application_manifest_e2e_action
+new__sub_actions:
+  - "...get::self>>old__sub_actions"
+  - kind: DeleteResourcesAction
+    title: Restart Pods
+    selectors: get::self>>deletion_selectors

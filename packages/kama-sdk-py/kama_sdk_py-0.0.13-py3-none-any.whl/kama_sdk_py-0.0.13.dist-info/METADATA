@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: kama-sdk-py
+Version: 0.0.13
+Summary: SDK for the Kubernetes Application Management API (KAMA)
+Home-page: https://github.com/nectar-cs/kama-sdk-py
+Author: NMachine
+Author-email: xavier@nmachine.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: flask (>=1.1)
+Requires-Dist: flask-cors
+Requires-Dist: k8kat (>=0.0.241)
+Requires-Dist: requests
+Requires-Dist: termcolor (>=1.1.0)
+Requires-Dist: cachetools (>=3.1)
+Requires-Dist: redis (>=3)
+Requires-Dist: rq
+Requires-Dist: validators
+Requires-Dist: humanize (>=3.2.0)
+Requires-Dist: jq (>=1.1.2)
+
+### remind me to say:
+- cached: foo in models has lower precedence than props in regular config 
+- everything **MUST** be in snake case
+- models are both configuration and state as they are dynamic
+
+
+#### good example to show
+
+```
+kind: Supplier
+id: foo
+cached:
+  res:
+    kind: ResourcesSupplier
+    selector:
+      res_kind: Secret
+      name: gcp-svc-acct-keyfile
+    many: false
+    serializer: legacy
+  key_one: get::self>>res=>decoded_data->.gcp_svc_acct_keyfile
+```
+
+All providers:
+
+## Operations & Actions
+
+Main operations list: org.provider.operations.system
+
+
+
+

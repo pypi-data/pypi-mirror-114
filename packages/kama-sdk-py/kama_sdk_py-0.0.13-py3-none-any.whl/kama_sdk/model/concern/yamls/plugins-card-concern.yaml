@@ -1,0 +1,34 @@
+kind: Concern
+id: org.concern.plugins
+cached:
+  prom: get::&nmachine.prom.concern.minimal-prom-header
+  grafana: get::&nmachine.prom.concern.minimal-grafana-header
+  telem: get::&nmachine.telem.concern
+
+---
+
+kind: ConcernCardAdapter
+id: org.card-adapter.plugins
+spec:
+  type: Block
+  title: Plugin Statuses
+  elements:
+    - type: Section
+      width: 1
+      elements:
+        - kind: Supplier
+          inherit: nmachine.prom.view-adapter.header.prom
+          new__concern: get::self>>old__concern>>prom
+        - kind: Supplier
+          inherit: nmachine.prom.view-adapter.header.grafana
+          new__concern: get::self>>old__concern>>grafana
+    - type: Section
+      width: 1
+      elements:
+        - kind: Supplier
+          inherit: nmachine.telem.view-adapter.header
+          new__concern: get::self>>old__concern>>telem
+        - type: Text
+          text: ""
+          style:
+            height: 49px

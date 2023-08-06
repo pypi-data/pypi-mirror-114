@@ -1,0 +1,144 @@
+################## CONCERN DATA ##################
+
+kind: Concern
+id: sdk.concern.pod
+inherit: sdk.concern.generic_resource
+cached:
+  prom_mem_dump: get::sdk.supplier.concern.pod.prom_mem_dump
+  prom_mem_dump_by_container: get::sdk.supplier.concern.pod.prom_mem_dump_by_container
+  container_statuses: get::props kat_res=>main_container_status_summaries
+  kat_dep: get::props kat_res=>dep
+
+---
+
+kind: PromDataSupplier
+id: sdk.supplier.concern.pod.prom_mem_dump
+source: "sum(
+          container_memory_usage_bytes{
+            namespace=\"${get::props kat_res=>namespace}\",
+            pod='${get::props kat_res=>name}',
+            image!='',
+            container_name!='POD'
+          }
+        )"
+
+---
+
+kind: PromDataSupplier
+id: sdk.supplier.concern.pod.prom_mem_dump_by_container
+source: "sum by(container) (container_memory_usage_bytes{
+                          namespace=\"${get::props kat_res=>namespace}\",
+                          pod='${get::props kat_res=>name}',
+                          image!='',
+                          container_name!='POD'
+                        }
+                      )"
+
+---
+
+
+
+
+
+
+################## DETAIL AND SET ADAPTERS ##################
+
+
+
+
+
+
+kind: ConcernTableAdapter
+id: sdk.concern.resource_tables.pods
+title: Pods
+concern_shell: id::sdk.concern.pod
+concern_constructors:
+  kind: ResourcesSupplier
+  inherit: sdk.supplier.concern.resource_selector_to_constructors
+  selector: "expr::pods:*"
+columns:
+  - id::sdk.concern_attr.res.name_with_link_action
+  - id::sdk.concern_attr.pod.deployment_name_with_link_action
+  - id::sdk.concern_attr.res.ternary_status
+  - id::sdk.concern_attr.pod.container_statuses
+  - id::sdk.concern_attr.res.memory_series_summary
+  - id::sdk.concern_attr.res.created_at
+
+---
+
+kind: ConcernDetailAdapter
+id: sdk.concern_adapter.pod
+title: get::props concern=>long_title
+panel_adapters:
+  - id::sdk.concern-panel.generic-res.basics
+  - id::sdk.concern-panel.pod.memory_series_by_container
+
+
+---
+
+
+
+
+
+################## ATTRIBUTE ADAPTERS ##################
+
+
+
+
+
+
+kind: ConcernAttrAdapter
+id: sdk.concern_attr.pod.container_statuses
+title: Containers
+label: container_statuses
+value:
+  type: StatusDots
+  shape: square
+  style:
+    jc: center
+  data: get::props concern=>container_statuses
+
+---
+
+kind: ConcernAttrAdapter
+id: sdk.concern_attr.pod.phase
+value:
+  type: Tag
+  text: get::props concern=>phase
+
+---
+
+kind: ConcernValuePanelAdapter
+id: sdk.concern-panel.pod.memory_series_by_container
+title: Memory by Container
+value:
+  type: TimeseriesGraph
+  style:
+    width: 100%
+    height: 300px
+  data:
+    kind: PromMatrixToSeriesSupplier
+    source: get::props concern=>prom_mem_dump_by_container
+
+---
+
+kind: ConcernAttrAdapter
+id: sdk.concern_attr.pod.deployment_name_with_link_action
+title: Deployment
+label: deployment
+value:
+  type: Text
+  text: get::props concern=>kat_dep.name
+  action:
+    type: concern_detail
+    uri:
+      nav:
+        super_set_id: overview
+        set_id: get::props set_id
+      reconstructor:
+        adapter_ref: id::sdk.concern_adapter.deployment
+        concern_ref: id::sdk.concern.deployment
+        seed:
+          namespace: get::props concern=>namespace
+          name: get::props concern=>res_name
+          res_kind: get::props concern=>res_kind

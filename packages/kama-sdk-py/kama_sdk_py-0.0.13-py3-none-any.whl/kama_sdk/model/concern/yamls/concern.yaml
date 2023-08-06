@@ -1,0 +1,41 @@
+kind: Concern
+id: sdk.concern.generic_resource
+
+cached:
+  kat_res:
+    kind: ResourcesSupplier
+    many: false
+    serializer: legacy
+    selector: get::props seed
+
+  namespace: get::props kat_res=>namespace
+  res_name: get::props kat_res=>name
+  res_kind: get::props kat_res=>kind
+  ternary_status: get::props kat_res=>ternary_status
+
+  med_title: "${get::props res_kind} / ${get::props res_name}"
+  long_title: "${get::props res_kind} /
+  ${get::props namespace} / ${get::props res_name}"
+
+  friendly_created_at:
+    kind: FormattedDateSupplier
+    source: get::props kat_res=>created_at
+    output: "%b %d at %I:%M%p %Z"
+
+  res_kind_lower_singular:
+    kind: Supplier
+    source: get::props res_kind
+    output: lower
+    serializer: legacy
+
+
+---
+
+kind: ConcernAttrPanelAdapter
+id: sdk.concern-panel.generic-res.basics
+title: Basic Attributes
+attribute_adapters:
+  - id::sdk.concern_attr.res.name
+  - id::sdk.concern_attr.res.namespace
+  - id::sdk.concern_attr.res.ternary_status
+  - id::sdk.concern_attr.res.created_at

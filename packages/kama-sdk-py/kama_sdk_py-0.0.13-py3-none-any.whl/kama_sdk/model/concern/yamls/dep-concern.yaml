@@ -1,0 +1,179 @@
+################## CONCERN DATA ##################
+
+kind: Concern
+id: sdk.concern.deployment
+inherit: sdk.concern.generic_resource
+cached:
+  prom_mem_dump: get::sdk.supplier.concern.dep.prom_mem_dump
+  prom_mem_dump_by_pod: get::sdk.supplier.concern.dep.prom_mem_dump_by_pod
+  pod_statuses: get::sdk.supplier.res_pods_minifier
+
+---
+
+kind: PromDataSupplier
+id: sdk.supplier.concern.dep.prom_mem_dump
+step: 15m
+source: "sum(
+          container_memory_usage_bytes{
+            namespace=\"${get::props kat_res=>namespace}\",
+            pod=~'${get::props kat_res=>name}-.*',
+            image!='',
+            container_name!='POD'
+          }
+        )"
+
+---
+
+kind: PromDataSupplier
+step: 15m
+id: sdk.supplier.concern.dep.prom_mem_dump_by_pod
+source: "sum by(pod) (container_memory_usage_bytes{
+                          namespace=\"${get::props kat_res=>namespace}\",
+                          pod=~'${get::props kat_res=>name}-.*',
+                          image!='',
+                          container_name!='POD'
+                        }
+                      )"
+
+---
+
+kind: PromDataSupplier
+step: 15m
+id: sdk.supplier.concern.dep.prom_cpu_dump_by_pod
+source: "sum by(pod) (container_memory_usage_bytes{
+                          namespace=\"${get::props kat_res=>namespace}\",
+                          pod=~'${get::props kat_res=>name}-.*',
+                          image!='',
+                          container_name!='POD'
+                        }
+                      )"
+
+---
+
+
+
+
+################## DETAIL AND SET ADAPTERS ##################
+
+
+
+
+
+
+kind: ConcernTableAdapter
+id: sdk.concern.resource_tables.deployments
+title: Deployments
+concern_shell: id::sdk.concern.deployment
+concern_constructors:
+  kind: ResourcesSupplier
+  inherit: sdk.supplier.concern.resource_selector_to_constructors
+  selector: "expr::deployments:*"
+columns:
+  - id::sdk.concern_attr.res.name_with_link_action
+  - id::sdk.concern_attr.res.ternary_status
+  - id::sdk.concern_attr.dep.pod_statuses
+  - id::sdk.concern_attr.res.memory_series_summary
+  - id::sdk.concern_attr.res.created_at
+
+---
+
+kind: ConcernDetailAdapter
+id: sdk.concern_adapter.deployment
+title: get::props concern=>long_title
+page_adapters:
+  - title: Overview
+    id: overview
+    panel_adapters:
+      - id::sdk.concern-panel.generic-res.basics
+      - id::sdk.concern-panel.deployment.memory_series_by_pod
+      - id::sdk.concern-panel.deployment.deployment_pods
+
+---
+
+kind: ConcernAttrPanelAdapter
+id: sdk.concern-panel.deployment.basic
+title: Basic Attributes
+attribute_adapters:
+  - id::sdk.concern_attr.res.name
+  - id::sdk.concern_attr.res.namespace
+  - id::sdk.concern_attr.res.ternary_status
+  - id::sdk.concern_attr.res.created_at
+
+---
+
+kind: ConcernTablePanelAdapter
+id: sdk.concern-panel.deployment.deployment_pods
+title: Pods
+table_adapter:
+  kind: ConcernTableAdapter
+  title: Pods
+  concern_shell: id::sdk.concern.pod
+  concern_constructors:
+    kind: ResourcesSupplier
+    inherit: sdk.supplier.concern.resource_selector_to_constructors
+    selector:
+      res_kind: pods
+      namespace: get::props concern=>namespace
+      label_selector: get::props concern=>kat_res.pod_select_labels
+  columns:
+    - id::sdk.concern_attr.res.name_with_link_action
+    - id::sdk.concern_attr.res.ternary_status
+    - id::sdk.concern_attr.pod.container_statuses
+    - id::sdk.concern_attr.res.memory_series_summary
+    - id::sdk.concern_attr.res.created_at
+
+---
+
+
+
+
+
+################## ATTRIBUTE ADAPTERS ##################
+
+
+
+
+
+
+kind: ConcernAttrAdapter
+id: sdk.concern_attr.dep.pod_statuses
+title: Pods
+label: pod_statuses
+value:
+  type: StatusDots
+  data: get::props concern=>pod_statuses
+
+---
+
+kind: ConcernValuePanelAdapter
+title: Memory by Pod
+info: Data from prometheus. Also available in Grafana dashboard.
+id: sdk.concern-panel.deployment.memory_series_by_pod
+value:
+  type: TimeseriesGraph
+  stacked: true
+  style:
+    width: 100%
+    height: 300px
+  data:
+    kind: PromMatrixToSeriesSupplier
+    source: get::props concern=>prom_mem_dump_by_pod
+    humanizer: kind::BytesHumanizer
+
+
+---
+
+kind: ConcernValuePanelAdapter
+title: CPU by Pod
+info: Data from prometheus. Also available in Grafana dashboard.
+id: sdk.concern-panel.deployment.cpu_series_by_pod
+value:
+  type: TimeseriesGraph
+  stacked: true
+  style:
+    width: 100%
+    height: 300px
+  data:
+    kind: PromMatrixToSeriesSupplier
+    source: get::props concern=>prom_cpu_dump_by_pod
+    humanizer: kind::CoresHumanizer

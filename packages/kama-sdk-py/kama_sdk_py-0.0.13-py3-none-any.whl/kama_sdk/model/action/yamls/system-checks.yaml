@@ -1,0 +1,61 @@
+kind: RunPredicatesAction
+id: sdk.action.system-checks.master
+title: Nectar System Check
+info: Ensure manifest correct, workloads green, metrics running
+labels: { type: system_check }
+tags: [data]
+telem_type: system_check
+predicates:
+  - sdk.predicate.is-ktea-in-sync
+  - sdk.predicate.all-deployments-green
+  - sdk.predicate.metrics-server-running
+
+---
+
+kind: RunPredicatesAction
+id: sdk.action.system-checks.master2
+title: Fantastic Lemur
+info: Ensure manifest correct, workloads green, metrics running
+labels:
+  searchable: true
+telem_type: system_check
+predicates:
+  - sdk.predicate.is-ktea-in-sync
+  - sdk.predicate.all-deployments-green
+
+---
+
+kind: MultiPredicate
+id: sdk.action.system-checks.master2
+title: Fantastic Lemur
+info: Ensure manifest correct, workloads green, metrics running
+labels:
+  searchable: true
+predicates:
+  - id::sdk.predicate.is-ktea-in-sync
+  - id::sdk.predicate.all-deployments-green
+
+---
+
+#---
+#
+#master:
+#  subs:
+#    - main
+#    - telem
+#
+#  controller:
+#    "@routes.get('whatever')":
+#
+#---
+#
+#kind: InstallationOption
+#title: With everything
+#info: Main app scaled loww without telemetry stack
+#overriable_fields:
+#  - id: some.field
+#values:
+#  kind: KteaValuesSupplier
+#  identifier: some-key
+#installation_operations:
+#  - id::sdk.operation.installation
