@@ -1,0 +1,6 @@
+scipy
+seaborn
+matplotlib
+pandas
+XlsxWriter
+numpy
