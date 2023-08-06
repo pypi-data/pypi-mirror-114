@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: silver-spectacle
+Version: 0.0.1
+Summary: An easier way to display data
+Home-page: https://github.com/jeff-hykin/silver_spectacle
+Author: Jeff Hykin
+Author-email: jeff.hykin@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Setup
+
+Everything is detailed in the `documentation/SETUP.md`!
+
