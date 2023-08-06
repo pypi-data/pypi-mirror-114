@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: epicbot-images
+Version: 0.0.1
+Summary: An image manipulation module for EpicBot.
+Home-page: https://github.com/Nirlep5252/epicbot-images
+Author: Nirlep_5252_
+License: MIT
+Keywords: discord.py,meme,discord,image-gen
+Platform: UNKNOWN
+Requires-Python: >=3.5.3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# Install
+
+```
+$ py -m pip install -U git+https://github.com/nirlep5252/epicbot-images
+```
+
+# Usage
+
+### Memes:
+```py
+from epicbot_images import memes
+
+# somewhere else
+# this example is for discord bots, but `memes.drake()` returns a path to the final image output,
+# you can use this in any python app you want, not limited to discord bots.
+@bot.command()
+async def drake(ctx, first, second):
+    await ctx.reply(file=discord.File(await memes.drake(first, second)))
+    # it's so easy to use
+```
+
+#### I won't be making docs for these, refer to the source code or ask in the support server if you have any questions
+
+# Available meme templates
+
+- `drake`, `disappointed`, `flex_tape`
+
+# Links
+
+## [Support](https://discord.gg/Zj7h8Fp) | [Invite EpicBot](https://epic-bot.com/invite) | [Vote EpicBot](https://epic-bot.com/vote)
+
