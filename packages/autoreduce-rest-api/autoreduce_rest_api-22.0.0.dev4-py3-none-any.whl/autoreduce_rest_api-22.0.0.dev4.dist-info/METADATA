@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: autoreduce-rest-api
+Version: 22.0.0.dev4
+Summary: ISIS Autoreduction Runs REST API
+Home-page: https://github.com/ISISScientificComputing/autoreduce/
+Author: ISIS Autoreduction Team
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: autoreduce-scripts (==22.0.0.dev12)
+Requires-Dist: django (==3.2.4)
+Requires-Dist: djangorestframework (==3.12.4)
+
+UNKNOWN
+
+
