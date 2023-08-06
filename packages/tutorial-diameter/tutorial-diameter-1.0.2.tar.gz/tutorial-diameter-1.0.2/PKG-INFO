@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: tutorial-diameter
+Version: 1.0.2
+Summary: Compute diameter of (largest pairwise distance within) a newick tree
+Home-page: https://github.com/balabanmetin/pip-conda-tutorial-diameter
+Author: Metin Balaban, Uyen Mai
+Author-email: balaban@ucsd.edu, umai@eng.ucsd.edu
+License: UNKNOWN
+Description: This small script computes diameter of a newick tree.            Diameter is defined as the largest path distance between any pair of            leaves in tree.
+Platform: UNKNOWN
+Description-Content-Type: text/plain
