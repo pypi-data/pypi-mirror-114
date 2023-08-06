@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+xdgterm.py
+xdgterm.egg-info/PKG-INFO
+xdgterm.egg-info/SOURCES.txt
+xdgterm.egg-info/dependency_links.txt
+xdgterm.egg-info/entry_points.txt
+xdgterm.egg-info/requires.txt
+xdgterm.egg-info/top_level.txt
