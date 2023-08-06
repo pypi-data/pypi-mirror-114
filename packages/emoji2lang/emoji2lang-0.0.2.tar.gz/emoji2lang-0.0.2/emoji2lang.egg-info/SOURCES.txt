@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+emoji2lang/__init__.py
+emoji2lang/converter.py
+emoji2lang.egg-info/PKG-INFO
+emoji2lang.egg-info/SOURCES.txt
+emoji2lang.egg-info/dependency_links.txt
+emoji2lang.egg-info/top_level.txt
+emoji2lang/data/zh_emoji_info.txt
