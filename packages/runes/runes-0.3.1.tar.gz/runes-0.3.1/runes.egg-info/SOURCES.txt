@@ -1,0 +1,8 @@
+README.md
+setup.py
+runes.egg-info/PKG-INFO
+runes.egg-info/SOURCES.txt
+runes.egg-info/dependency_links.txt
+runes.egg-info/requires.txt
+runes.egg-info/top_level.txt
+runes.egg-info/zip-safe
