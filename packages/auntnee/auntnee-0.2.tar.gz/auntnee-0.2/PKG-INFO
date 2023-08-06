@@ -1,0 +1,38 @@
+Metadata-Version: 1.1
+Name: auntnee
+Version: 0.2
+Summary: This is an TOTP Authenticator CLI for the terminal
+Home-page: https://github.com/venomega/auntnee
+Author: venomega
+Author-email: usercryptonumberzero@gmail.com
+License: GPL-3
+Download-URL: https://github.com/venomega/auntnee/archive/0.2.tar.gz
+Description: # Auntnee
+        
+        TODO:
+          - support encrypted json (*Aegis* compatible)
+          - appimage release
+          - design an ui
+        
+        
+        # About
+        This program is an TOTP Authenticator for terminal, initialy the json with all 2FA codes is generated from an apk called *Aegis* Authenticator, so this program reads the json file generated with the apk and show you 2FA code from the console.
+        Now support creation of empty template and is not demanding the *Aegis* json.
+        
+        # Support
+        
+         - creating empty template
+         - using existing json from *Aegis* unencrypted
+         - add new issuer to the json
+         - delete provided issuer from the json
+         - change path of json built-in
+        
+        # Instalation
+        
+        ### Fisrt start
+        
+        When you first run *auntnee*
+        
+Platform: UNKNOWN
+Requires: pyotp
+Requires: curses
