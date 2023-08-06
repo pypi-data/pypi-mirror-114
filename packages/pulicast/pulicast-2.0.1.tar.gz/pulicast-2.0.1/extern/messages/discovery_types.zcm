@@ -1,0 +1,13 @@
+struct pulicast_channel {
+   string name;  // name of the node. Empty name means anonymous node
+   int64_t publishing_period_ns;  // the announcement period in nanoseconds 
+   boolean is_published;
+   boolean is_subscribed;
+}
+
+struct pulicast_node {
+   string name;  // name of the node. not requried to be unique. Can be empty
+   int64_t session_id;  // session id randomly generated on each restart of the node. Should be unique (hopefully)
+   int16_t num_channels;
+   pulicast_channel channels[num_channels];
+}

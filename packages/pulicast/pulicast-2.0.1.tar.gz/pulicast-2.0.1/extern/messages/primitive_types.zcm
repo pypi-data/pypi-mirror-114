@@ -1,0 +1,45 @@
+struct int8_msg 
+{
+  int8_t value;
+}
+
+struct int16_msg
+{
+  int16_t value;
+}
+
+struct int32_msg
+{
+  int32_t value;
+}
+
+struct int64_msg
+{
+  int64_t value;
+}
+
+struct float_msg
+{
+  double value;
+}
+
+struct double_msg
+{
+  double value;
+}
+
+struct string_msg 
+{
+  string value;  
+}
+
+struct boolean_msg
+{
+  boolean value;
+}
+
+struct byte_msg
+{
+  byte value;
+}
+
