@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: guesslang
+Version: 2.2.1
+Summary: Detect the programming language of a source code
+Home-page: https://github.com/yoeo/guesslang
+Author: Y. SOMDA
+License: MIT
+Platform: any
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+
+
+Guesslang documentation
+=======================
+
+.. image:: https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white
+  :alt: View on Github
+  :target: https://github.com/yoeo/guesslang/
+.. image:: https://img.shields.io/pypi/v/guesslang.svg
+  :target: https://pypi.python.org/pypi/guesslang
+  :alt: Pypi Version
+.. image:: https://img.shields.io/pypi/l/guesslang.svg
+  :target: https://pypi.python.org/pypi/guesslang/
+  :alt: License
+
+Guesslang detects the programming language of a given source code.
+It supports more than **50** programming **languages** and detects
+the correct programming language with more than **90% accuracy**.
+
+`Guesslang is an open source <https://github.com/yoeo/guesslang>`_
+deep learning software that have been trained with
+**over a million** source code files.
+
+You can use Guesslang as a command line interface tool or as a Python module:
+
+.. code-block:: python
+
+  from guesslang import Guess
+
+  guess = Guess()
+
+  # Guess the language from code
+  language = guess.language_name("""
+      % Quick sort
+
+      -module (recursion).
+      -export ([qsort/1]).
+
+      qsort([]) -> [];
+      qsort([Pivot|T]) ->
+             qsort([X || X <- T, X < Pivot])
+             ++ [Pivot] ++
+             qsort([X || X <- T, X >= Pivot]).
+      """)
+
+  print(language)  # --> Erlang
+
+Guesslang supports **54** of the **world's most popular** programming languages:
+
++-----------+---------------+--------------+---------------+-------------+
+|  Assembly |  Batchfile    |  C           |  C#           |  C++        |
++-----------+---------------+--------------+---------------+-------------+
+|  Clojure  |  CMake        |  COBOL       |  CoffeeScript |  CSS        |
++-----------+---------------+--------------+---------------+-------------+
+|  CSV      |  Dart         |  DM          |  Dockerfile   |  Elixir     |
++-----------+---------------+--------------+---------------+-------------+
+|  Erlang   |  Fortran      |  Go          |  Groovy       |  Haskell    |
++-----------+---------------+--------------+---------------+-------------+
+|  HTML     |  INI          |  Java        |  JavaScript   |  JSON       |
++-----------+---------------+--------------+---------------+-------------+
+|  Julia    |  Kotlin       |  Lisp        |  Lua          |  Makefile   |
++-----------+---------------+--------------+---------------+-------------+
+|  Markdown |  Matlab       |  Objective-C |  OCaml        |  Pascal     |
++-----------+---------------+--------------+---------------+-------------+
+|  Perl     |  PHP          |  PowerShell  |  Prolog       |  Python     |
++-----------+---------------+--------------+---------------+-------------+
+|  R        |  Ruby         |  Rust        |  Scala        |  Shell      |
++-----------+---------------+--------------+---------------+-------------+
+|  SQL      |  Swift        |  TeX         |  TOML         |  TypeScript |
++-----------+---------------+--------------+---------------+-------------+
+|  Verilog  |  Visual Basic |  XML         |  YAML         |             |
++-----------+---------------+--------------+---------------+-------------+
+
+Full documentation at https://guesslang.readthedocs.io/en/latest/
+
