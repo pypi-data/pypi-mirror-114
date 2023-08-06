@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+denseweight.egg-info/PKG-INFO
+denseweight.egg-info/SOURCES.txt
+denseweight.egg-info/dependency_links.txt
+denseweight.egg-info/requires.txt
+denseweight.egg-info/top_level.txt
