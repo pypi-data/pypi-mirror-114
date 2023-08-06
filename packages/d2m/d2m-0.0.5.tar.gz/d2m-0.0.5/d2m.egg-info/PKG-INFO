@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: d2m
+Version: 0.0.5
+Summary: A dataframe health checker.
+Home-page: https://github.com/bonzoyang/d2m/
+Author: Bonzo Yang
+Author-email: bonzoyang@gmail.com
+License: UNKNOWN
+Description: d2m is a dataframe health checker, provides duplicate check.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
