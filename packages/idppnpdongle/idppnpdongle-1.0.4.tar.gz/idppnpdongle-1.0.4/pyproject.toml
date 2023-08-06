@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "idppnpdongle"
+version = "1.0.4"
+description = "Module for interfacing with Inmarsat's IDP Plug-N-Play device."
+authors = ["G.Bruce-Payne <geoff.bruce-payne@inmarsat.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/inmarsat-enterprise/idp-pnpdongle"
+keywords = ["satellite", "iot", "idp", "isatdata pro"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+gpiozero = "^1.5.1"
+pigpio = "^1.78"
+idpmodem = "^1.1.9"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.6.0"
+pytest = "^6.2.1"
+Sphinx = "^3.4.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
