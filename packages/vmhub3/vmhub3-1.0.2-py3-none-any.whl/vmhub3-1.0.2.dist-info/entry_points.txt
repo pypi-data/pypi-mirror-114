@@ -1,0 +1,3 @@
+    [console_scripts]
+    vmhub3 = vmhub3.vmhub3:main
+    

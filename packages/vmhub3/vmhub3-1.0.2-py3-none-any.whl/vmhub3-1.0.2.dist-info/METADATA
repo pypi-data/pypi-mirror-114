@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: vmhub3
+Version: 1.0.2
+Summary: python module to send instructions to Virgin Media Hub 3.0 / Compal routers
+Home-page: https://github.com/rpcsp/vmhub3
+Author: rpcsp
+Author-email: pcunha@hotmail.com
+License: https://github.com/rpcsp/vmhub3/blob/main/LICENSE
+Project-URL: Project page, https://github.com/rpcsp/vmhub3
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: xmltodict
+
+# vmhub3
+
+Simple python module to send instructions to Virgin Media Hub 3.0 / Compal router.
+
+### Example - Reading configs and attributes:
+
+    import logging
+    from vmhub3 import VMHub3
+
+    logging.basicConfig(level=logging.DEBUG)
+
+    router = VMHub3(ip='your-router-ip', password='your-router-pwd')
+    router.connect()
+    router.get_global_config()
+    router.get_language_config()
+    router.get_languages()
+    router.get_wifi_state()
+    router.get_wifi_config()
+    router.get_wifi_basic_config()
+    router.get_wifi_advanced_config()
+    router.get_status()
+    router.get_wps()
+    router.get_lan()
+
+### Example - Rebooting router:
+
+    from vmhub3 import VMHub3
+
+    router = VMHub3(ip='your-router-ip', password='your-router-pwd')
+    router.connect()
+    router.reboot()
+
+
