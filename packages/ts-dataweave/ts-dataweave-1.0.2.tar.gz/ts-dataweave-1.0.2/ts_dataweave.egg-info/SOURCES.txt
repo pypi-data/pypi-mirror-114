@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+ts_dataweave/Error.py
+ts_dataweave/Payload.py
+ts_dataweave/PayloadType.py
+ts_dataweave/__init__.py
+ts_dataweave/_version.py
+ts_dataweave/download.py
+ts_dataweave/run.py
+ts_dataweave.egg-info/PKG-INFO
+ts_dataweave.egg-info/SOURCES.txt
+ts_dataweave.egg-info/dependency_links.txt
+ts_dataweave.egg-info/top_level.txt
