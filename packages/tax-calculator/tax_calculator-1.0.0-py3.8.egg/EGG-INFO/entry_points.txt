@@ -1,0 +1,3 @@
+[console_scripts]
+tax-calculator = tax_calculator.main:main
+

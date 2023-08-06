@@ -1,0 +1,1 @@
+arrow>=1.1.1beautifulsoup4>=4.9.3python-dateutil>=2.8.2requests>=2.26.0soupsieve>=2.2.1stringcase>=1.2.0urllib3>=1.26.6
