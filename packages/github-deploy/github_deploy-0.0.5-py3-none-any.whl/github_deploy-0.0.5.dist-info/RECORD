@@ -1,0 +1,13 @@
+github_deploy/__init__.py,sha256=h-QyvMVzDNpT3jyVskcSbUVFXxGCRxieFPrvTveZG9k,64
+github_deploy/main.py,sha256=0XqW0m2KJmD0pIx_drq20kngmpiwGT80XFwi2DhviPo,832
+github_deploy/commands/__init__.py,sha256=h-QyvMVzDNpT3jyVskcSbUVFXxGCRxieFPrvTveZG9k,64
+github_deploy/commands/_constants.py,sha256=3NMoD5F3ybEhJ0wG72NAz-vyyPTz1bNBa0eKpeT2yjE,134
+github_deploy/commands/_utils.py,sha256=tmQ-BlQZSnKqruCibLn0p7skHi9XrKPbHgZ0WKezqCs,225
+github_deploy/commands/delete.py,sha256=WY2edeM8lETw6PiKI9qtd1AxQMwOcxb17XRXCRFN56M,6244
+github_deploy/commands/upload.py,sha256=vrNK6zAYrvK2JvFcWSOkBNCedwludEVd3sjPwt7mfGs,8514
+github_deploy-0.0.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+github_deploy-0.0.5.dist-info/METADATA,sha256=ktWXjoWgRv78hcty3z38apx0WKc7QzBT50ZaDcgQxIk,3756
+github_deploy-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+github_deploy-0.0.5.dist-info/entry_points.txt,sha256=FO8jIipMOM2AQF-cOzyGOPbSAj_7xbfx8H4KTXcaMLE,95
+github_deploy-0.0.5.dist-info/top_level.txt,sha256=8V4oEsK0QvleAtbGaRzq3ffOEZqgkDz7xklmZCvxSeE,14
+github_deploy-0.0.5.dist-info/RECORD,,
