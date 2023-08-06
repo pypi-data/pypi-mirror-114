@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+tap_tripactions/__init__.py
+tap_tripactions/client.py
+tap_tripactions/streams.py
+tap_tripactions/schemas/bookings.json
+test/test_client.py
+test/test_sync.py
+twilio_tap_tripactions.egg-info/PKG-INFO
+twilio_tap_tripactions.egg-info/SOURCES.txt
+twilio_tap_tripactions.egg-info/dependency_links.txt
+twilio_tap_tripactions.egg-info/entry_points.txt
+twilio_tap_tripactions.egg-info/requires.txt
+twilio_tap_tripactions.egg-info/top_level.txt
