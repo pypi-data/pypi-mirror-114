@@ -1,0 +1,1 @@
+pyserial==3.5pandas==1.3.1
