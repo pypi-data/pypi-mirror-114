@@ -1,0 +1,16 @@
+linkml_csv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+linkml_csv/dumpers/__init__.py,sha256=Cm1OQLlzF-DecuK58PxrBAgUKnVxHyW2rEPntszPIiw,78
+linkml_csv/dumpers/csv_dumper.py,sha256=lV8UKtpyOIzrykWOkLcHhsEnxFXMA0QKR6le2KKOJX0,1065
+linkml_csv/loaders/__init__.py,sha256=9WqUhYGJ3nI1FsGN9ScjrRc1wJBwJr6g3b_XIysJ1jc,78
+linkml_csv/loaders/csv_loader.py,sha256=aVhbW-g-gOUdnehkrxxK5DjgePUWm9Dow0y92plcpL4,1481
+linkml_csv/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+linkml_csv/utils/converter.py,sha256=6EC_LXw3OiWPql4sOY1jXcPyPxB4os-TRz1vKFoQXaA,2983
+linkml_csv/utils/csvutils.py,sha256=QbO7Y4k_5pwC5SYgUj-QkPeUMEiH4NJFb5LwnB2PTcE,2136
+linkml_csv-0.0.4.dist-info/AUTHORS,sha256=uSnoOb6PBFJkSfBid2aoZ70Yx68zxIoG69AnLZ-XiLA,31
+linkml_csv-0.0.4.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+linkml_csv-0.0.4.dist-info/METADATA,sha256=vTcPARbdo9Y6Ojiin65SvNkiOoLAfb9eVjLy8W-xBR0,981
+linkml_csv-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+linkml_csv-0.0.4.dist-info/entry_points.txt,sha256=RE-CSUjnNJOZ35CrwUVqBJV96ROTmAGII6-VVShEcFU,61
+linkml_csv-0.0.4.dist-info/pbr.json,sha256=7oq0s6RvCOqfRV2TUG0Woc34GGSvNYoYxHTxfN3Turc,47
+linkml_csv-0.0.4.dist-info/top_level.txt,sha256=BoAn4yJK0nrFRYv1QTJRRv9kY0G4ch5xQMO0sw6QBQ4,11
+linkml_csv-0.0.4.dist-info/RECORD,,

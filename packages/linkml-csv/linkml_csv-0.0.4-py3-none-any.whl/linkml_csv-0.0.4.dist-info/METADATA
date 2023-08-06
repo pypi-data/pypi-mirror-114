@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: linkml-csv
+Version: 0.0.4
+Summary: LinkML to CSV conversion
+Home-page: http://linkml.github.io/linkml-csv
+Author: Harold Solbrig
+Author-email: solbrig@jhu.edu
+License: CC0 1.0 Universal
+Keywords: linkml,lod,rdf,owl,yaml,model,metamodel
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Requires-Dist: json-flattener
+Requires-Dist: linkml
+Requires-Dist: linkml-runtime
+
+Extension of LinkML runtime for handling conversion to CSVs, TSVs, and spreadsheets
+
+

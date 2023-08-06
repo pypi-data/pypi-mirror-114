@@ -1,0 +1,3 @@
+[console_scripts]
+lconvert = linkml_csv.utils.converter:cli
+
