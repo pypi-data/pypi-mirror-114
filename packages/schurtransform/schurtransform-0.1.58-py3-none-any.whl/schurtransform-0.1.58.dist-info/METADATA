@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: schurtransform
+Version: 0.1.58
+Summary: The Fourier-Schur transform for spatial statistics.
+Home-page: UNKNOWN
+Author: James Mathews
+Author-email: mathewj2@mskcc.org
+License: UNKNOWN
+Project-URL: Documentation, https://schurtransform.readthedocs.io/
+Project-URL: Source code, https://github.com/schur-transform/schurtransform
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (==1.21.0)
+Requires-Dist: pandas (==1.1.5)
+Requires-Dist: matplotlib (==3.4.2)
+Requires-Dist: seaborn (==0.11.1)
+
+[Documentation](https://schurtransform.readthedocs.io/en/latest/).
+
+
