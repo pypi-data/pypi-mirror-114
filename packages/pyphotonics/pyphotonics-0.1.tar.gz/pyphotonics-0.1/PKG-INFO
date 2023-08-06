@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pyphotonics
+Version: 0.1
+Summary: The PyPhotonics python code is a post-processing code written entirely in python which takes as input the output files of the VASP and phonopy codes for a defect system, and calculates the Huang-Rhys factor and the PL lineshapes for that system.
+Home-page: https://github.com/sheriftawfikabbas/pyphotonics
+Author: Sherif Abdulkader Tawfik
+Author-email: sherif.tawfic@gmail.com
+License: gpl-3.0
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: DFT,Material science,Photoluminescence,VASP
+Platform: UNKNOWN
