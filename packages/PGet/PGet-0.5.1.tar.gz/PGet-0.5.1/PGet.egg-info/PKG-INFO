@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: PGet
+Version: 0.5.1
+Summary: A tool and library to save large files by creating multiple connections.
+Home-page: https://github.com/halilozercan/pget
+Author: Halil Ozercan
+Author-email: halilozercan@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/halilozercan/pget/tarball/0.5.1
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
