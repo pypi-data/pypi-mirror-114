@@ -1,0 +1,16 @@
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+read_fillet/__init__.py
+read_fillet/split_reads_on_adapter.py
+read_fillet/split_reads_on_adapter_assess.py
+read_fillet.egg-info/PKG-INFO
+read_fillet.egg-info/SOURCES.txt
+read_fillet.egg-info/dependency_links.txt
+read_fillet.egg-info/entry_points.txt
+read_fillet.egg-info/requires.txt
+read_fillet.egg-info/top_level.txt
+read_fillet.egg-info/zip-safe

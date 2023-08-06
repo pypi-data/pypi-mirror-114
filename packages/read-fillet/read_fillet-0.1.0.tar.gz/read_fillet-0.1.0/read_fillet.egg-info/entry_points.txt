@@ -1,0 +1,4 @@
+[console_scripts]
+read_fillet = read_fillet.split_reads_on_adapter:main
+read_fillet_assess = read_fillet.split_reads_on_adapter_assess:main
+
