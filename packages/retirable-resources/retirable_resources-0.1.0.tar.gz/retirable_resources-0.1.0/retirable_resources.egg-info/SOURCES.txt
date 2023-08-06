@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+retirable_resources/__init__.py
+retirable_resources/resource_manager.py
+retirable_resources/version.py
+retirable_resources.egg-info/PKG-INFO
+retirable_resources.egg-info/SOURCES.txt
+retirable_resources.egg-info/dependency_links.txt
+retirable_resources.egg-info/requires.txt
+retirable_resources.egg-info/top_level.txt
