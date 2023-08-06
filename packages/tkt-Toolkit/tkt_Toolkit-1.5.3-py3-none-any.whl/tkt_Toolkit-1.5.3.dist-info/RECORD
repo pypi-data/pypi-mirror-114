@@ -1,0 +1,17 @@
+Toolkit/Base.py,sha256=3KIsJApwB742d1Cn0a35i5_JqxUIWe0gWuNeU7l5xbg,346
+Toolkit/Crypto.py,sha256=qwy-ZfGWcR_xI237U1HgDT1-e1pYNFyz9Npr7OWQKus,775
+Toolkit/Discord_framework.py,sha256=SSpxDPQGGrVub6rrjjkHME9OpSxKae8WAwe1bl7H_Ow,6467
+Toolkit/Script_1.py,sha256=zmRV5u8r16WTM6cheu9CLGop8FgKfVsNnwD45faW38A,724
+Toolkit/Script_2.py,sha256=ni-Dx8ghpsnQl37BknyLhPXe-J78KhRrY3HRA_IjC0o,118
+Toolkit/SpeechRecongition.py,sha256=-7h2xUC4grBMdD5rYrN2xp_xMartQTphvYt-el9tHAQ,1601
+Toolkit/Youtube.py,sha256=ZCOIexgLfP6YwdYCFyGzam_--eUDwGY0MF5c232kP7M,1505
+Toolkit/__init__.py,sha256=V9pDRXQJvsHs-ZIr9VYc_aQV-hM7ur_QqEKVOpFAmRI,4878
+Toolkit/errors.py,sha256=abAWqIVjGPKyghHJ1aa4Pt3d8K2rWf5VkgTSCVX6Fbs,334
+Toolkit/parse.py,sha256=WQYLdpsXdlkiGVi-FKIlWHE_poTPrv2NqCk8XnEawwE,923
+Toolkit/texttospeech.py,sha256=JdPgb4dKso9qA0qe_t5U04X5EcQR8W_mi9p0bPMgjJs,253
+Toolkit/translator.py,sha256=xjz5jPgaBFCWgyA8qhweB8L_X-oPtNlZKXC5rua8zlk,1009
+tkt_Toolkit-1.5.3.dist-info/METADATA,sha256=Z8XS4o-zdQzKVmbyqlSTrZ3ot4ZXS0Ncn9iXAlmI6xE,1771
+tkt_Toolkit-1.5.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tkt_Toolkit-1.5.3.dist-info/license,sha256=gA2peRdNbxq7imknj5fPYn-OpCmad91KmluEqW-6cjA,1500
+tkt_Toolkit-1.5.3.dist-info/top_level.txt,sha256=cKjviaBLRETsMROe5HlwWTQ8XtrBd5T9-c_g8j_Hz7w,8
+tkt_Toolkit-1.5.3.dist-info/RECORD,,
