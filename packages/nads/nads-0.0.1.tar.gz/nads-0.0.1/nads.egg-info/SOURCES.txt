@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+nads/__init__.py
+nads.egg-info/PKG-INFO
+nads.egg-info/SOURCES.txt
+nads.egg-info/dependency_links.txt
+nads.egg-info/requires.txt
+nads.egg-info/top_level.txt
