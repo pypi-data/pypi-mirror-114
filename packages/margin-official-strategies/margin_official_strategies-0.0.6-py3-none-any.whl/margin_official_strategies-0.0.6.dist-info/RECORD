@@ -1,0 +1,8 @@
+margin-official-strategies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+margin-official-strategies/example_strategies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+margin-official-strategies/example_strategies/ping_pong_demo.py,sha256=AlZQWCo4htFGkDnWRpGPVXsQsWKrzbHPgHrrtrqT74w,5107
+margin_official_strategies-0.0.6.dist-info/LICENSE,sha256=nf5f2RvhIkN9PtXSLmP8S-M-6wNhKceV52N2XYnYFlI,1075
+margin_official_strategies-0.0.6.dist-info/METADATA,sha256=VH33lMTochRUubX3J-U-4gk2JPbqLPi-2IShqnpHGUM,2374
+margin_official_strategies-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+margin_official_strategies-0.0.6.dist-info/top_level.txt,sha256=2dhFI0wFNuskDfEJvfbU4vsZBBZuTZxyBYlVdJAEgxM,27
+margin_official_strategies-0.0.6.dist-info/RECORD,,
