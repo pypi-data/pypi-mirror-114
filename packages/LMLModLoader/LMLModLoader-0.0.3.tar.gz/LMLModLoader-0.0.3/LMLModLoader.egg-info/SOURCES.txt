@@ -1,0 +1,6 @@
+setup.py
+LMLModLoader/__init__.py
+LMLModLoader.egg-info/PKG-INFO
+LMLModLoader.egg-info/SOURCES.txt
+LMLModLoader.egg-info/dependency_links.txt
+LMLModLoader.egg-info/top_level.txt
