@@ -1,0 +1,102 @@
+Metadata-Version: 1.2
+Name: mcot
+Version: 0.4.1
+Summary: Overarching library for Michiel Cottaar's projects
+Home-page: https://git.fmrib.ox.ac.uk/ndcn0236/mcot
+Author: Michiel Cottaar
+Author-email: Michiel.Cottaar@ndcn.ox.ac.uk
+License: MIT license
+Description: The personal utilities and libraries from Michiel Cottaar.
+        
+        This code contains many different packages which can either be installed separately using `pip install mcot.<package>` or as one whole `pip install mcot`.
+        
+        Command line scripts
+        --------------------
+        
+        Command line scripts are all available through a single executable: `mcot` . 
+        This executable will be installed irrespective of the package you install (it is part of `mcot.utils`, which is required by all other packages).
+        You can run a specific script using:
+        
+        .. code-block :: sh
+        
+            mcot $SCRIPTNAME
+        
+        Many scripts are grouped together, in which case they can be called as:
+        
+        .. code-block :: sh
+        
+            mcot $GROUP $SCRIPTNAME
+        
+        To list the installed scripts just type:
+        
+        .. code-block :: sh
+        
+            mcot
+        
+        Developer's notes
+        -----------------
+        All packages are managed as a single monorepo available at https://git.fmrib.ox.ac.uk/ndcn0236/mcot.
+        Testing and packaging is handled through the pants build system https://www.pantsbuild.org/.
+        First make sure to be in the top-level directory and then run the following to test:
+        
+        .. code-block :: sh
+        
+            ./pants test ::
+        
+        or to build the packages:
+        
+        .. code-block :: sh
+        
+            ./pants package ::
+        
+        To bump the version number of a package run:
+        
+        .. code-block :: sh
+        
+            ./bump_project.sh <package> <part>
+        
+        where <part> is one of "major", "minor", or "patch". This will bump the version of both the package and the `mcot` complete package, which can then be uploaded using twine.
+        
+        Adding a new package
+        ^^^^^^^^^^^^^^^^^^^^
+        
+        1. Create a new directory in "src/mcot"
+        2. Add a README.rst and VERSION file with a description and the version number.
+        3. Use `mcot.utils.build.load_info` in __init__.py to import the README and version number
+        
+            .. code-block :: python
+        
+                from mcot.utils.build import load_info
+                __doc__, __version__ = load_info(__name__) 
+                del load_info
+        
+        4. Copy an existing .bumpversion.cfg from another directory and update the current version number
+        5. Copy a BUILD script from another package (e.g., `mcot.surface`) and adjust the contents accordingly
+        6. Copy BUILD script to test directory from test directory of another project (e.g., "src/mcot/surface/tests")
+        7. Add package requirements to "requirements.txt"
+        8. Add the package to documentation in doc/index.rst
+        9. Run the tests for this package
+        
+            .. code-block :: sh
+        
+                ./pants test src/mcot/<package name>/tests/:
+        
+        10. Test the package build:
+        
+            .. code-block :: sh
+        
+                ./pants package src/mcot/<package name>:
+        
+        11. Build the documentation
+        
+            .. code-block :: sh
+        
+                python doc/publish.py
+        
+        
+        Once the package is ready to be uploaded to pypi: add the package to the BUILD script in the top-level directory and to the upload.sh script
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6

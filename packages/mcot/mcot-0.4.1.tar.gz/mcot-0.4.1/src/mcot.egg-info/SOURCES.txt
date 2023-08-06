@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.py
+src/mcot.egg-info/PKG-INFO
+src/mcot.egg-info/SOURCES.txt
+src/mcot.egg-info/dependency_links.txt
+src/mcot.egg-info/namespace_packages.txt
+src/mcot.egg-info/requires.txt
+src/mcot.egg-info/top_level.txt
