@@ -1,0 +1,37 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['polyga']
+
+package_data = \
+{'': ['*'], 'polyga': ['default_files/dna.csv']}
+
+install_requires = \
+['click<8.0.0',
+ 'joblib>=1.0.1,<2.0.0',
+ 'numpy>=1.2.4,<2.0.0',
+ 'pandas>=1.1,<2.0',
+ 'rdkit-pypi>=2021.3.3,<2022.0.0',
+ 'regex>=2021.4.4,<2022.0.0',
+ 'scipy>=1.7,<2.0',
+ 'tqdm>=4.61.1,<5.0.0']
+
+setup_kwargs = {
+    'name': 'polyga',
+    'version': '1.0.0',
+    'description': 'Polymer Genetic Algorithm',
+    'long_description': None,
+    'author': 'Chiho Kim',
+    'author_email': 'chiho.kim@gatech.edu',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': 'https://github.com/jdkern11/polyga.git',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.7.1,<3.10',
+}
+
+
+setup(**setup_kwargs)
