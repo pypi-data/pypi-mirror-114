@@ -1,0 +1,8 @@
+pandas
+numpy>=1.17.4
+matplotlib>=3.3.2
+pvlib>=0.8.0
+bokeh>=2.2.3
+cryptography>=2.8
+cassandra_driver>=3.25.0
+pytz>=2019.3
