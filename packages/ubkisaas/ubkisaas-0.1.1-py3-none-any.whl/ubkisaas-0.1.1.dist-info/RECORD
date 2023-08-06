@@ -1,0 +1,10 @@
+ubkisaas/__init__.py,sha256=pjDzk9biXKOmwIAkW8EvkQoFJ1oOLVUqlRfy-kH8zTo,202
+ubkisaas/ubki_credit_report.py,sha256=ZjKTNF7dfDpymnRR6UwIzsp57hP9iLz22btEwMsKqmg,10875
+ubkisaas/ubki_credit_score.py,sha256=cSfkmOvRL0v9ksPBWI4EiyqdQDw7E0XHedmlJB4QQcc,3477
+ubkisaas/ubki_report.py,sha256=E4U1lv_eaUdxAjvqIMqZkZw1ci17G1A1lEsnKyRv2ls,2377
+ubkisaas/ubki_request.py,sha256=Xnc_U287L5Uawjvm4VOx0gC2_5WTLFgG-0RtrW_Sao0,7129
+ubkisaas-0.1.1.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+ubkisaas-0.1.1.dist-info/METADATA,sha256=U-p_ZxE48Vkd-m8BnFQ5AZaLkUtu6yxIYvF6FuienWU,4008
+ubkisaas-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ubkisaas-0.1.1.dist-info/top_level.txt,sha256=SJur-xpC46g1EbsNfxOPggKcg2Ibp_FXINvR_3GU-YY,9
+ubkisaas-0.1.1.dist-info/RECORD,,
