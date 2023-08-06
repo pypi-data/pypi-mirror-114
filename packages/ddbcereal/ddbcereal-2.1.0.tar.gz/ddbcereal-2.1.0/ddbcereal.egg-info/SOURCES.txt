@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+ddbcereal/__init__.py
+ddbcereal/deserializing.py
+ddbcereal/exceptions.py
+ddbcereal/py.typed
+ddbcereal/serializing.py
+ddbcereal/types.py
+ddbcereal.egg-info/PKG-INFO
+ddbcereal.egg-info/SOURCES.txt
+ddbcereal.egg-info/dependency_links.txt
+ddbcereal.egg-info/top_level.txt
