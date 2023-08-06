@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: xquant-python
+Version: 3.0.268
+Summary: strategy python client:e97f9dc
+Home-page: UNKNOWN
+Author: upchina
+Author-email: UNKNOWN
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Keywords: upchina quant sdk
+Platform: UNKNOWN
+Requires-Dist: lark-parser (>=0.7.1addict>=1.0.0)
+Requires-Dist: numpy (>=1.14.0)
+Requires-Dist: pandas (>=0.21.0)
+Requires-Dist: statsmodels
+Requires-Dist: wheel
+
+UNKNOWN
+
+
