@@ -1,0 +1,101 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "acorn-grow",
+            "type": "shell",
+            "command": "${config:python.pythonPath} -m pip install --upgrade pyacorn -r ${workspaceFolder}/requirements.txt && ${config:python.pythonPath} -m pyacorn grow {{ token }} -d ${workspaceFolder} --runtime python3 --vscode --merge",
+            "problemMatcher": [],
+            "presentation": {
+              "reveal": "always"
+            }
+        },
+        {
+            "label": "acorn-test",
+            "type": "shell",
+            "command": "${config:python.pythonPath} -m unittest discover -c tests",
+            "problemMatcher": [],
+            "presentation": {
+              "reveal": "always"
+            },
+            "group": "test"
+        },
+        {
+            "label": "acorn-validate",
+            "type": "shell",
+            "command": "${config:python.pythonPath} -m mypy --config ${workspaceFolder}/mypy.ini ${workspaceFolder}/{{ project }}",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always"
+            },
+            "group": "test"
+        },
+        {
+            "label": "acorn-package",
+            "type": "shell",
+            "command": "${config:python.pythonPath} ${workspaceFolder}/setup.py sdist bdist_wheel",
+            "problemMatcher": [],
+            "presentation": {
+              "reveal": "always"
+            },
+            "dependsOn": [ "acorn-test", "acorn-validate" ]
+        },
+        {
+            "label": "acorn-setup",
+            "type": "shell",
+            "command": "${config:python.pythonPath} -m {{ project }} setup",
+            "options": {
+                "env": {
+                    "{{ project|upper }}_SETTINGS": "${workspaceFolder}/{{ project }}.cfg"
+                }
+            },
+            "problemMatcher": [],
+            "presentation": {
+              "reveal": "always"
+            }
+        },
+        {
+            "label": "acorn-shell",
+            "type": "shell",
+            "command": "${config:python.pythonPath} -m {{ project }} shell",
+            "options": {
+                "env": {
+                    "{{ project|upper }}_SETTINGS": "${workspaceFolder}/{{ project }}.cfg"
+                }
+            },
+            "problemMatcher": [],
+            "presentation": {
+              "reveal": "always"
+            },
+            "dependsOn": [ "acorn-setup" ]
+        },
+        {
+            "label": "acorn-registeradmin",
+            "type": "shell",
+            "command": "${config:python.pythonPath} -m {{ project }} add-user ${input:acorn-username} ${input:acorn-password} --group system",
+            "options": {
+                "env": {
+                    "{{ project|upper }}_SETTINGS": "${workspaceFolder}/{{ project }}.cfg"
+                }
+            },
+            "problemMatcher": [],
+            "presentation": {
+              "reveal": "always"
+            },
+            "dependsOn": [ "acorn-setup" ]
+        }
+    ],
+    "inputs": [
+        {
+            "id": "acorn-username",
+            "type": "promptString",
+            "description": "Enter the new admin username"
+        },
+        {
+            "id": "acorn-password",
+            "type": "promptString",
+            "description": "Enter the new admin password",
+            "password": true
+        }
+    ]
+}
