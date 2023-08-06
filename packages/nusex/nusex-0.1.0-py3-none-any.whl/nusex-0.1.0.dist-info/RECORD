@@ -1,0 +1,13 @@
+nusex/__init__.py,sha256=jzQbjbrdPaISvrzDIqRbmtdINmGrL7xqLAblSv8ti_0,556
+nusex/cli.py,sha256=_S4PE9pgStm_QJiuMXMYB3tHxlYRhxoHmz_NrNt9myQ,1986
+nusex/errors.py,sha256=6XH4Aj1dL33yeLVhqSlLxZWsdm2bVi5U5EZro_9e9Ow,224
+nusex/commands/__init__.py,sha256=EnymR7GfgUFt2bsZrEU9rTFzQZBCq8zLM6YsbzCGgbM,75
+nusex/commands/build.py,sha256=_LHyN3tlU18dNtjpNuKqwzX5Wy8wIhwMHXyuizdWApQ,3726
+nusex/commands/deploy.py,sha256=i0vmPfzhRhurQ2yO7UdPq5gHauSwkbd-9dL0COUjZWg,1811
+nusex/commands/init.py,sha256=pLn2aFbvMS3EIu4hfLvbYDelez7D-J7CdkeYIGcg5pM,2622
+nusex-0.1.0.dist-info/LICENSE,sha256=lY6LNJwofm-LKatvLczs9v_W9hcmfzL7ZEoD8U77BlI,1523
+nusex-0.1.0.dist-info/METADATA,sha256=0w0CCBolF9iDl4byxmjc8aC3vTkLM4lrx2shoms3C8k,4577
+nusex-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+nusex-0.1.0.dist-info/entry_points.txt,sha256=HfNyIPoJ1sAjn8yN3dqQVq24udXt2zwKMODzO9kNllw,63
+nusex-0.1.0.dist-info/top_level.txt,sha256=aFghyIRzjIo0MTqe9E-GdAQBcLzyNS6ZbsB7r7EUR0o,6
+nusex-0.1.0.dist-info/RECORD,,
