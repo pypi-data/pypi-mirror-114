@@ -1,0 +1,13 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "autopep8",
+    "coverage==5.5",
+    "pytest==6.2",
+    "pytest-cov==2.12",
+    "pytest-flake8==1.0",
+    "requests",
+    "xmltodict==0.12"
+]
+build-backend = "setuptools.build_meta"
