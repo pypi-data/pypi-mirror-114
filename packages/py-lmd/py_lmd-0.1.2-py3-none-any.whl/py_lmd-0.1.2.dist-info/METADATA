@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: py-lmd
+Version: 0.1.2
+Summary: Read, Modify and Create new shape files for the Leica LMD6 & LMD7
+Home-page: https://github.com/GeorgWa/py-lmd
+Author: Georg Wallmann
+Author-email: g.wallmann@campus.lmu.de
+License: UNKNOWN
+Project-URL: Documentation, https://py-lmd.readthedocs.io/en/latest/
+Project-URL: Bug Tracker, https://github.com/GeorgWa/py-lmd/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# py-lmd
+
+The py-lmd library allows to read, modify and write shape files for the Leica LMD6 & LMD7 microscope.
+Additionally, functionality for the calibration, generation of final pulses and import of vektor files is included.
+
+
