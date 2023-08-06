@@ -1,0 +1,9 @@
+pyproject.toml
+setup.cfg
+schemdule/extensions/simplegui/__init__.py
+schemdule/extensions/simplegui/__reg__.py
+schemdule_extensions_simplegui.egg-info/PKG-INFO
+schemdule_extensions_simplegui.egg-info/SOURCES.txt
+schemdule_extensions_simplegui.egg-info/dependency_links.txt
+schemdule_extensions_simplegui.egg-info/requires.txt
+schemdule_extensions_simplegui.egg-info/top_level.txt
