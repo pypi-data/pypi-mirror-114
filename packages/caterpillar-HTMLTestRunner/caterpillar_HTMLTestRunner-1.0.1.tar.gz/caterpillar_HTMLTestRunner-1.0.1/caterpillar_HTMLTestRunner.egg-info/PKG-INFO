@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: caterpillar-HTMLTestRunner
+Version: 1.0.1
+Summary: caterpillar_HTMLTestRunner
+Home-page: https://gitee.com/redrose2020_admin/caterpillar_HTMLTestRunner
+Author: redrose2100
+Author-email: hitredrose@163.com
+Maintainer: redrose2100
+Maintainer-email: hitredrose@163.com
+License: MIT License
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE
+
+# caterpillar_HTMLTestRunner
+
+#### 介绍
+用于存放HTMLTestRunner.py文件，并从此仓代码发布到pypi官方，从而可以使用pip install HTMLTestRunner 命令安装的方式安装
+
+#### 软件架构
+软件架构说明
+
+
+#### 安装教程
+
+1.  pip install HTMLTestRunner
+#### 使用说明
+
+1. 待补充
+
+#### 参与贡献
+
+1.  Fork 本仓库
+2.  新建 Feat_xxx 分支
+3.  提交代码
+4.  新建 Pull Request
+
+
+
