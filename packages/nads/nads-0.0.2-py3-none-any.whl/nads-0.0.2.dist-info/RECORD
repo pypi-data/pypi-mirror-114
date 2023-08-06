@@ -1,0 +1,15 @@
+nads/__init__.py,sha256=uq6DjVDolO5YQutadGxz4bflbfvaBHm27BwV6zJ2wdo,46
+nads/nads.py,sha256=25nqufy0IOFctcsdCKYBp-fgDcq2UTDAAp8eNN6iPGo,2265
+nads/utils.py,sha256=ea2rvhQDSFECMwdIAOD9nqs0Qp8uae9kBnwd5uIMHBw,309
+nads/visualization.py,sha256=MkqdhpjF1eu9F4shIr6TZ4pidiPhjz4ht4Sins4ZYk8,3623
+nads/compute/__init__.py,sha256=U8TsoHu2miCCCYcBJ6u90AHlc2ZrUrLVgdtJ8iK55x4,189
+nads/compute/gradient_covariance.py,sha256=WaKf7HYRGRSI8PzOKwaIfjqEbYteg5x-PZR0NtMdssU,2279
+nads/compute/jacobian.py,sha256=G6YHgW5RqkDIiQgkTIEcnEcTTqPGR_qlnddtS-Ue5tM,1245
+nads/data/__init__.py,sha256=n51tZ4aso1qGyRx1szwo0ITxKvu3WIl23o_SclJpGJQ,92
+nads/data/dataset.py,sha256=O0p-a9Vwh83El6am65T7BhBEPHwoyRcaBGWCAUzzGlY,2271
+nads/data/direction.py,sha256=ejCrYQVCPh5Bu2__65ApKVy5EynmMH5GPQVgI38NddM,569
+nads-0.0.2.dist-info/LICENSE,sha256=PPKhLp5tv1BVpKg9xFRzrC8ntCWHyiK5ExXA3bOARPk,1068
+nads-0.0.2.dist-info/METADATA,sha256=2tJ-4PQ_IRXz_AnAZtO97JyCUpyN0M47HPKXYaaJ-Qo,3549
+nads-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+nads-0.0.2.dist-info/top_level.txt,sha256=ArxOmAKZkxgtO4yNlgvfAIzBVs8iqiPzZdXVSPzVr_s,5
+nads-0.0.2.dist-info/RECORD,,
