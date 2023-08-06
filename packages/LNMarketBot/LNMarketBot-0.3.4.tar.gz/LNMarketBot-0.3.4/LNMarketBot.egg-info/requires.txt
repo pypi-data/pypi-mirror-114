@@ -1,0 +1,6 @@
+requests
+krakenex
+pykrakenapi
+LNMarkets
+notifiers
+nest-asyncio
