@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/noise_img_generator/__init__.py
+src/noise_img_generator/__main__.py
+src/noise_img_generator/generators.py
+src/noise_img_generator/perlin.py
+src/noise_img_generator/utils.py
+src/noise_img_generator.egg-info/PKG-INFO
+src/noise_img_generator.egg-info/SOURCES.txt
+src/noise_img_generator.egg-info/dependency_links.txt
+src/noise_img_generator.egg-info/entry_points.txt
+src/noise_img_generator.egg-info/requires.txt
+src/noise_img_generator.egg-info/top_level.txt
