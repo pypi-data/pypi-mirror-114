@@ -1,0 +1,17 @@
+kd_med/__init__.py,sha256=lQeJOjIiA07_2qZy8aICMMgdBBlWrXije41bG8Zw8J0,259
+kd_med/get_resnet3d.py,sha256=lv7d8pqfHAeSSyCX4Jcq4Kbxyrf9WwvN--aETzby-5c,2919
+kd_med/kd_loss.py,sha256=QaoCZoyIXVSzxGM3uYZqH--AXA4A-xyFQ1gpbNE28fY,4072
+kd_med/pre_trained_enc.py,sha256=gUBUPPljENROfXH0B1HwqEqKO0YxvZmbFhoDJG55yp8,7272
+kd_med/resnet3d.py,sha256=eGagQ11qTDHGVjYxRMm8hVlyHofn8jYR6OiAE7cyFb8,11228
+kd_med/unet3d.py,sha256=KRQcyFd0zgHJhFNOI4gZ0GXWcSNDhkZr1iVgBzqyZJs,4847
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/runner.py,sha256=JpXfOOqdUlv7mY3_uuPnwzbrcR_sPIQjeQIOfxbwSzM,847
+tests/test_EncPlusConv.py,sha256=kItH8NTDM11hJzf31ajYJgGjoN4ZyBvhNqVDeu3Il2s,1323
+tests/test_GetEncSConv.py,sha256=OnrIj61yl_Y4N47qUoqadrEijdHkUsXzVz22Bz5LvWA,2138
+tests/test_PreTrainedEnc.py,sha256=M9yyKDzlApLVJqqCQ0TKO9zhD5JTdWWKHGVNwaqs3uA,2031
+tests/test_kd_loss.py,sha256=I_VV0pK_lKNSp5TPiVUZCAVQWjY0-5WucFYzvmCPPRQ,5686
+kd_med-0.0.9.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+kd_med-0.0.9.dist-info/METADATA,sha256=grKf19yO5woEic1UpjLqXle2EOsHH_YEYwuQqFxoMSM,818
+kd_med-0.0.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+kd_med-0.0.9.dist-info/top_level.txt,sha256=xmc7PIWbH0GYx_qCDFtw9GRQaVebOIoTF_rlzacEaqU,13
+kd_med-0.0.9.dist-info/RECORD,,
