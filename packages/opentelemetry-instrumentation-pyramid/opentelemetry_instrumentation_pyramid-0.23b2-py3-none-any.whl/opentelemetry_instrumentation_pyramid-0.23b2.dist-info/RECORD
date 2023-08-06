@@ -1,0 +1,10 @@
+opentelemetry/instrumentation/pyramid/__init__.py,sha256=R6f32G6D_mzZ4IjdqJViN_SHj-QKJrrZeyPDad4PoCw,5079
+opentelemetry/instrumentation/pyramid/callbacks.py,sha256=hWmncLZn4ykOhol6Hhd9Ed0MAln5IpuTKTHj0IZbDeA,6779
+opentelemetry/instrumentation/pyramid/package.py,sha256=6v31PVD-tvmg2xK2xdPCvCe7q7ORKpQHc_SAosWHCV8,621
+opentelemetry/instrumentation/pyramid/version.py,sha256=GTJY8RDVdAShAWuYve1Op6ZMs9TI9ojbTlBhwaSCsmk,608
+opentelemetry_instrumentation_pyramid-0.23b2.dist-info/LICENSE,sha256=h8jwqxShIeVkc8vOo9ynxGYW16f4fVPxLhZKZs0H5U8,11350
+opentelemetry_instrumentation_pyramid-0.23b2.dist-info/METADATA,sha256=Jhnvb1Wx4khpVzoMLu3-BDwrSjru863uv3KY6cLMGAM,2516
+opentelemetry_instrumentation_pyramid-0.23b2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+opentelemetry_instrumentation_pyramid-0.23b2.dist-info/entry_points.txt,sha256=qpbPLKCOT-t23epJGHv9iwef6oEJcWpVjB1E_nKqcSo,98
+opentelemetry_instrumentation_pyramid-0.23b2.dist-info/top_level.txt,sha256=5p97iTMneNm1LAKDalzEVpYhvPZsaqJZzdLuD_upSaQ,14
+opentelemetry_instrumentation_pyramid-0.23b2.dist-info/RECORD,,
