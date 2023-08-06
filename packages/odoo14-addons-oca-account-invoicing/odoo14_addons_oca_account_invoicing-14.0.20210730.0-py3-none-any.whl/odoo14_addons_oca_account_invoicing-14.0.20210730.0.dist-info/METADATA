@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: odoo14-addons-oca-account-invoicing
+Version: 14.0.20210730.0
+Summary: Meta package for oca-account-invoicing Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Requires-Dist: odoo14-addon-account-billing
+Requires-Dist: odoo14-addon-account-invoice-check-total
+Requires-Dist: odoo14-addon-account-invoice-date-due
+Requires-Dist: odoo14-addon-account-invoice-force-number
+Requires-Dist: odoo14-addon-account-invoice-payment-retention
+Requires-Dist: odoo14-addon-account-invoice-refund-link
+Requires-Dist: odoo14-addon-account-invoice-search-by-reference
+Requires-Dist: odoo14-addon-account-invoice-section-sale-order
+Requires-Dist: odoo14-addon-account-invoice-tax-required
+Requires-Dist: odoo14-addon-account-move-original-partner
+Requires-Dist: odoo14-addon-account-move-tier-validation
+
+UNKNOWN
+
