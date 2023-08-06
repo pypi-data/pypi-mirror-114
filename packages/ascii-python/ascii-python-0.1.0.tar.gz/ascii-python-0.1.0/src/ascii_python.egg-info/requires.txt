@@ -1,0 +1,5 @@
+opencv-python
+
+[dev]
+wheel
+sdist
