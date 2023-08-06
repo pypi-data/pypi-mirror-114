@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: netbox-plugin-azuread
+Version: 0.1.0
+Summary: Authenticate with Netbox via AzureAD
+Home-page: https://github.com/marcus-crane/netbox-plugin-azuread
+Author: Marcus Crane
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+
+UNKNOWN
+
+
