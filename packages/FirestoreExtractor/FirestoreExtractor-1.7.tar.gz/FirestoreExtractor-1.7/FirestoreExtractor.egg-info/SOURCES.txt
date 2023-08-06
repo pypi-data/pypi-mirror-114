@@ -1,0 +1,10 @@
+FirestoreExtractor.py
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+FirestoreExtractor.egg-info/PKG-INFO
+FirestoreExtractor.egg-info/SOURCES.txt
+FirestoreExtractor.egg-info/dependency_links.txt
+FirestoreExtractor.egg-info/requires.txt
+FirestoreExtractor.egg-info/top_level.txt
