@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: infercode
+Version: 0.0.11
+Summary: Map any code snippet into vector
+Home-page: https://github.com/bdqnghi/infercode/
+Author: Nghi D. Q. Bui and Yijun Yu
+Author-email: bdqnghi@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
