@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: taktile-profiling
+Version: 0.7.0b0
+Summary: Taktile's Profiling Module 
+Home-page: https://github.com/taktile-org/taktile-profiling
+Author: Taktile GmbH
+Author-email: devops@taktile.com
+License: UNKNOWN
+Keywords: taktile-profiling
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+
+UNKNOWN
+
