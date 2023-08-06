@@ -1,0 +1,92 @@
+#!python
+"""%prog [options] DIRECTORY [DIRECTORY ...]
+
+Check status of the progress of the project in DIRECTORY.
+
+Output is written to the status file (``status.txt``) and standard
+error. A quick way to find problems is to do a ::
+
+  cat status.txt | gawk -F '|' '$2 !~ /OK/ {print $0}'
+
+"""
+from __future__ import absolute_import, print_function, division
+
+import logging
+logger = logging.getLogger('mdpow')
+
+# depends on the tests
+PASS_SCORE = 8
+
+if __name__ == "__main__":
+    import sys
+    import os.path
+    from glob import glob
+    from optparse import OptionParser
+
+    parser = OptionParser(usage=__doc__)
+    parser.add_option('-o', '--outfile', dest="outfile",
+                      help="write status results to FILE [%default]",
+                      metavar="FILE")
+    parser.set_defaults(outfile="status.txt")
+    opts,args = parser.parse_args()
+
+    logger.info("Writing status to %r", opts.outfile)
+
+    # dir status type comment
+    fmt = "%-20s | %-10s | %-15s | %s\n"
+    with open(opts.outfile, 'w') as status:
+        def swrite(*args):
+            all_args = tuple([directory] + list(args))
+            status.write(fmt % all_args)
+            sys.stderr.write(fmt % all_args)
+        for directory in args:
+            score = 0
+            if not os.path.isdir(directory):
+                # just silently skip non-dirs
+                continue
+
+            # directory itself
+            if not os.path.exists(directory):
+                swrite("NOTFOUND", "directory", "not found")
+                logger.warning("Directory %r not found, skipping...", directory)
+                continue
+
+            # output from simulations
+            solvents = ('water', 'octanol')
+            nmin_fepsims = {'Coulomb':5, 'VDW':16}
+            for solvent in solvents:
+                for feptype,nmin in nmin_fepsims.items():
+                    xvg = os.path.join(
+                        directory, 'FEP', solvent,
+                        feptype, '[0-9][0-9][0-9][0-9]', 'md.xvg*')
+                    dgdl = glob(xvg)
+                    n = len(dgdl)
+                    what = "%(solvent)s/%(feptype)s" % vars()
+                    if n >= nmin:
+                        score += 1
+                        swrite("OK", what, "%2d dgdl md.xvg files"%n)
+                    else:
+                        swrite("MISSING", what, "%2d < %d dgdl md.xvg files"%(n,nmin))
+
+
+            # pickle file from setup
+            for picklefile in ("water/Ghyd.fep", "octanol/Goct.fep"):
+                fn = os.path.join(directory, 'FEP', picklefile)
+                if os.path.exists(fn):
+                    score += 1
+                    swrite("OK", "pickle", fn)
+                else:
+                    swrite("NOTFOUND", "pickle", picklefile)
+
+            # combined graph from mdpow-pow
+            graphs = glob(os.path.join(directory, 'dVdl_*.*'))
+            if len(graphs) > 0:
+                score += 2
+                swrite("OK", "graph dV/dl", str(graphs))
+            else:
+                swrite("NOTFOUND", "graph dV/dl", "dVdl_*.*")
+
+            if score >= PASS_SCORE:
+                swrite("OK", "ALL", "score=%d" % score)
+            else:
+                swrite("FAIL", "ALL", "score=%d" % score)
