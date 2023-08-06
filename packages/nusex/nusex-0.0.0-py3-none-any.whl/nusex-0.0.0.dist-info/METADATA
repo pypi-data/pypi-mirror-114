@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: nusex
+Version: 0.0.0
+Summary: A project templating utility for Python.
+Home-page: https://github.com/parafoxia/nusex
+Author: Ethan Henderson
+Author-email: ethan.henderson.1998@gmail.com
+License: BSD-3-Clause
+Project-URL: Documentation, https://nusex.readthedocs.io/en/latest/
+Project-URL: Source, https://github.com/parafoxia/nusex
+Project-URL: Bug Tracker, https://github.com/parafoxia/nusex/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: black (==21.7b0) ; extra == 'dev'
+Requires-Dist: nox (==2021.6.12) ; extra == 'dev'
+Requires-Dist: sphinx (==4.1.1) ; extra == 'dev'
+Requires-Dist: sphinx-rtd-dark-mode (==1.2.3) ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme (==0.5.2) ; extra == 'dev'
+
+# nusex
+
+[![PyPi version](https://img.shields.io/pypi/v/nusex.svg)](https://pypi.python.org/pypi/nusex/)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/nusex.svg)](https://pypi.python.org/pypi/nusex/)
+[![PyPI - Implementation](https://img.shields.io/pypi/implementation/nusex)](https://pypi.python.org/pypi/nusex/)
+[![PyPI - Status](https://img.shields.io/pypi/status/nusex)](https://pypi.python.org/pypi/nusex/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/nusex)](https://pypistats.org/packages/nusex)
+
+[![Maintenance](https://img.shields.io/maintenance/yes/2021)](https://github.com/parafoxia/nusex)
+[![GitHub Release Date](https://img.shields.io/github/release-date/parafoxia/nusex)](https://github.com/parafoxia/nusex)
+[![GitHub last commit](https://img.shields.io/github/last-commit/parafoxia/nusex)](https://github.com/parafoxia/nusex)
+[![Read the Docs](https://img.shields.io/readthedocs/nusex)](https://nusex.readthedocs.io/en/latest/index.html)
+[![License](https://img.shields.io/github/license/parafoxia/nusex.svg)](https://github.com/parafoxia/nusex/blob/main/LICENSE)
+
+A project templating utility for Python.
+
+
