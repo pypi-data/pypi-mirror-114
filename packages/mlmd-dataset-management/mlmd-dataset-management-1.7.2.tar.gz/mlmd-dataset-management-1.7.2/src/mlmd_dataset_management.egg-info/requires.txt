@@ -1,0 +1,6 @@
+azure-storage-blob
+requests
+ml-metadata==1.0.0
+python-dotenv
+google-cloud-storage
+mysql-connector-python
