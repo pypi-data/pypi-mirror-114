@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: haros_plugin_pyflwor
+Version: 0.2.1
+Summary: HAROS plugin to query Configurations with Pyflwor.
+Home-page: https://github.com/git-afsantos/haros-plugin-pyflwor
+Author: André Santos
+Author-email: andre.f.santos@inesctec.pt
+License: MIT
+Description: UNKNOWN
+Keywords: ros query architecture model computation-graph
+Platform: UNKNOWN
