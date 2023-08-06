@@ -1,0 +1,29 @@
+{% extends "layouts/base.html" %}
+{% load tz i18n%}
+
+{% block content %}
+  <h2>{% trans 'Add new patient' %}</h2>
+  <form class="needs-validation">
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text">Name</span>
+      <input type="text" name="patient_firstname" class="form-control" placeholder="{% trans 'First name' %}"
+             value="{{ patient.names.first.first_name }}" data-reflex="change->PatientAddReflex#update_firstname"
+             required
+      >
+      <input type="text" class="form-control" placeholder="{% trans 'Last name' %}" required>
+      <span class="input-group-text">{% trans 'Title' %}</span>
+      <input type="text" name="patient_title" class="form-control" placeholder="{% trans 'Title' %}"
+             value="{{ patient.names.first.first_name }}">
+    </div>
+
+
+    <div class="input-group input-group-sm mb-3">
+      <input type="text" class="form-control" placeholder="{% trans 'Comment' %}" >
+    </div>
+    <button class="btn btn-primary" data-reflex="click->PatientAddReflex#update">{% trans 'Ok' %}</button>
+    <button class="btn btn-secondary">{% trans 'Clear' %}</button>
+  </form>
+  <h3>{{ patient.names.first }}{% if patient.title %} <i>{{ patient.title }}</i>{% endif %}</h3> <i class="bi-gender-male"></i>
+  <div><i class="bi-phone"></i> {{ patient.phone }}</div>
+  <div><i class="bi-email"></i> {{ patient.email }}</div>
+{% endblock %}
