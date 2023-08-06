@@ -1,0 +1,10 @@
+setup.py
+tim124_distributions/Binomialdistribution.py
+tim124_distributions/Gaussiandistribution.py
+tim124_distributions/Generaldistribution.py
+tim124_distributions/__init__.py
+tim124_distributions.egg-info/PKG-INFO
+tim124_distributions.egg-info/SOURCES.txt
+tim124_distributions.egg-info/dependency_links.txt
+tim124_distributions.egg-info/not-zip-safe
+tim124_distributions.egg-info/top_level.txt
