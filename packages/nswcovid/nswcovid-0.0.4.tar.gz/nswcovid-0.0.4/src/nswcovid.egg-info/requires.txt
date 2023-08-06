@@ -1,0 +1,7 @@
+backoff
+requests
+beautifulsoup4
+
+[testing]
+pytest
+pytest-cov
