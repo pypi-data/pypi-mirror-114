@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: mt-awscdk-constructs
+Version: 0.0.9
+Summary: Marley Tech AWS CDK Construct Library
+Home-page: https://github.com/marleytech/mt-awscdk-constructs.git
+Author: Greg Farrow<g-farrow@users.noreply.github.com>
+License: MIT
+Project-URL: Source, https://github.com/marleytech/mt-awscdk-constructs.git
+Description: # Marley Tech AWS CDK Construct Library
+        
+        A collection of useful AWS CDK Constructs.
+        
+        ## Constructs
+        
+        ### EventFunction
+        
+        A Construct which provides the resource for triggering a Lambda Function via a EventBridge Rule. It includes the Dead Letter Queues for the delivery and the processing of the event.
+        
+        ![Event Function Architecture Diagram](docs/EventFunction/EventFunction.png)
+        
+        The Event Function Lambda is given the following Environment Variables:
+        
+        * `PROCESSING_DLQ_ARN` - the SQS Queue ARN of the Processing DLQ (to assist the Lambda Code to publish failed messages to this queue)
+        * `PROCESSING_DLQ_NAME` - the SQS Queue Name of the Processing DLQ (to assist the Lambda Code to publish failed messages to this queue)
+        
+        #### Resources
+        
+        This Construct deploy the following resources:
+        
+        * Rule (EventBridge Rule) - The trigger or event rule which will be passed to the Event Function
+        * Event Function (Lambda Function) - The code which will be executed
+        * Delivery DLQ (SQS Queue) - A DLQ which undeliverable Events are pushed to (e.g. if the Event Function is unreachable)
+        * Processing DLQ (SQS Queue) - A DLQ which the Event Fucntion may push Events to if it considers the Event to be unprocessable (e.g. if the Event is in an unexpected structure)
+        
+        ## Contributing
+        
+        See [CONTRIBUTING.md](CONTRIBUTING.md)
+        
+        ## Contributor Code Of Conduct
+        
+        [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
+        
+        Please note that this project is released with a Contributor Code of Conduct. By participating in this project you agree
+        to abide [by its terms](CODE_OF_CONDUCT.md).
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
