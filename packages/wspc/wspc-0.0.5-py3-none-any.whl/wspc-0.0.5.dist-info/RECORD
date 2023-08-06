@@ -1,0 +1,12 @@
+wspc/__init__.py,sha256=5ggUnJBKbdz6gj859M6KQn5zSsdusFeHtMTDttMvR-w,21
+wspc/command_line.py,sha256=6fzuva5229kk5hpZhCmAgsDZkmhN64YkAU49jRr7ZRo,3852
+wspc/feature_selection.py,sha256=r6yecFlWabvVIqiMu6uEZGMNIuNg6xU9H9dQDjUTXtY,5412
+wspc/reader.py,sha256=V7CBCdSRrTPxF3NN87VE2as0VxCUCpklm8QJPAY_svQ,3975
+wspc/wspc.py,sha256=mBK6HHODcWNeYhdbIg4g4OXlxdRsh-9htOpKvTVQaNQ,2766
+wspc/model/WSPC_model.pkl,sha256=2tiHNgBgUp6Jye7dkOQOuRegoSozko-QigdJMMvtXlI,1118799
+wspc-0.0.5.dist-info/LICENSE,sha256=Rh2txA4Yw3HvfRsBmL0NWloMv1EizJaHmMmIMWYYGvU,1119
+wspc-0.0.5.dist-info/METADATA,sha256=r7Coog_JYkR3MjJP1D6FCqCXG0bhT5v9wKN9xUUpkGA,3657
+wspc-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wspc-0.0.5.dist-info/entry_points.txt,sha256=_3xIniTHcHWPQ0lNbyDb1rROQUEtOtBXRsrANd8wvfg,49
+wspc-0.0.5.dist-info/top_level.txt,sha256=3YluZ2YJAOV5u3hb-SfQE1V8Go8rp_M8yfaQ48Usr8A,5
+wspc-0.0.5.dist-info/RECORD,,
