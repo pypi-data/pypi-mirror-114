@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+boolean_question/__init__.py
+boolean_question/boolq.py
+boolean_question.egg-info/PKG-INFO
+boolean_question.egg-info/SOURCES.txt
+boolean_question.egg-info/dependency_links.txt
+boolean_question.egg-info/requires.txt
+boolean_question.egg-info/top_level.txt
+boolean_question/utils/__init__.py
+boolean_question/utils/helper.py

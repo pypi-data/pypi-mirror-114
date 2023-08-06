@@ -1,0 +1,6 @@
+gdown
+torch
+torchvision
+transformers
+pandas
+numpy
