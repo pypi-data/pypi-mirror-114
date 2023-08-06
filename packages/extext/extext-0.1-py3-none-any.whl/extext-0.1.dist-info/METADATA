@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: extext
+Version: 0.1
+Summary: Markup language.
+Home-page: https://gitea.gch.icu/gd/extext/
+Author: gd
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+Lightweight Markdown-like markup language
+
+
