@@ -1,0 +1,240 @@
+Metadata-Version: 2.1
+Name: czmodel
+Version: 2.0.0
+Summary: A conversion tool for TensorFlow or ONNX ANNs to CZANN
+Home-page: UNKNOWN
+Author: Sebastian Soyer
+Author-email: sebastian.soyer@zeiss.com
+License: UNKNOWN
+Project-URL: ZEN Intellesis, https://www.zeiss.com/microscopy/int/products/microscope-software/zen-intellesis-image-segmentation-by-deep-learning.html
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6,<4
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+License-File: NOTICE.txt
+
+This project provides simple-to-use conversion tools to generate a CZANN file from a 
+[TensorFlow](https://www.tensorflow.org/) or [ONNX](https://onnx.ai/) model that resides in memory or on disk to be usable in the 
+[ZEN Intellesis](https://www.zeiss.com/microscopy/int/products/microscope-software/zen-intellesis-image-segmentation-by-deep-learning.html) module starting with ZEN blue >=3.2 and ZEN Core >3.0.  
+
+Please check the following compatibility matrix for ZEN Blue/Core and the respective version (self.version) of the CZANN Model Specification JSON Meta data file (see _CZANN Model Specification_ below). Version compatibility is defined via the [Semantic Versioning Specification (SemVer)](https://semver.org/lang/de/).
+
+| Model (legacy)/JSON        | ZEN Blue           | ZEN Core  |
+| -------------------------- |:------------------:| ---------:|
+| 1.0.0                      | \> 3.4             | \> 3.3    |
+| 3.1.0 (legacy)             | \> 3.3             | \> 3.2    |
+| 3.0.0 (legacy)             | \> 3.1             | \> 3.0    |
+
+If you encounter a version mismatch when importing a model into ZEN, please check for the correct version of this package.
+
+## Samples
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zeiss-microscopy/OAD/blob/master/Machine_Learning/notebooks/czmodel/SingleClassSemanticSegmentation_2_0_0.ipynb)
+
+## System setup
+The current version of this toolbox only requires a fresh Python 3.x installation. 
+It was tested with Python 3.7 on Windows.
+
+## Model conversion
+The toolbox provides a `convert` module that features all supported conversion strategies. It currently supports 
+converting Keras models in memory or stored on disk with a corresponding metadata JSON file (see _CZANN Model Specification_ below).
+
+### Keras models in memory
+The toolbox also provides functionality that can be imported e.g. in the training script used to fit a Keras model. The function is accessible by running: 
+```python
+from czmodel.convert import convert_from_model_spec
+```
+It accepts a `tensorflow.keras.Model` that will be exported to [ONNX](https://onnx.ai/) and in case of failure to [SavedModel](https://www.tensorflow.org/guide/saved_model) 
+format and at the same time wrapped into a CZANN to be compatible with the Intellesis infrastructure.  
+To provide the meta data, the toolbox provides a ModelSpec class that must be filled with the model, a ModelMetadata 
+instance containing the required information described in the specification (see _Model Metadata_ below) and optionally a license file. 
+
+A CZANN can be created from a Keras model with the following three steps.
+
+#### Creating a model meta data class
+To export a CZANN several meta information is needed that must be provided through a `ModelMetadata` instance.
+```python
+from czmodel.model_metadata import ModelMetadata, ModelType
+
+model_metadata = ModelMetadata(
+    input_shape=[1024, 1024, 3],
+    output_shape=[1024, 1024, 5],
+    model_type=ModelType.SINGLE_CLASS_SEMANTIC_SEGMENTATION,
+    classes=["class1", "class2"],
+    model_name="ModelName",
+    min_overlap=[90, 90]
+)
+```
+
+#### Creating a model specification
+The model and its corresponding metadata are now wrapped into a ModelSpec object.
+```python
+from czmodel.model_metadata import ModelSpec
+
+model_spec = ModelSpec(
+    model=model, 
+    model_metadata=model_metadata, 
+    license_file="C:\\some\\path\\to\\a\\LICENSE.txt"
+)
+```
+
+#### Converting the model
+The actual model conversion is finally performed with the ModelSpec object and the output path and name of the CZANN.
+```python
+from czmodel.convert import convert_from_model_spec
+
+convert_from_model_spec(model_spec=model_spec, output_path='some/path', output_name='some_file_name')
+```
+
+### Exported TensorFlow models
+To convert an exported TensorFlow model the model and the provided meta data need to comply with 
+(see _CZANN Model Specification_ below).
+
+The actual conversion is triggered by either calling:
+```python
+from czmodel.convert import convert_from_json_spec
+
+convert_from_json_spec('Path to JSON file', 'Output path', 'Model Name')
+```
+or by using the command line interface of the `savedmodel2czann` script:
+```console
+savedmodel2ann path/to/model_spec.json output/path/ output_name --license_file path/to/license_file.txt
+```
+
+### Adding pre- and post-processing layers
+Both, `convert_from_json_spec` and `convert_from_model_spec` additionally allow specifying the following optional parameters:
+- `spatial_dims`: Set new spatial dimensions for the new input node of the model. This parameter is expected to contain the new height 
+and width in that order. **Note:** The spatial input dimensions can only be changed in ANN architectures that are invariant to the 
+spatial dimensions of the input, e.g. FCNs.
+- `preprocessing`: One or more pre-processing layers that will be prepended to the deployed model. A pre-processing 
+layer must be derived from the `tensorflow.keras.layers.Layer` class.
+- `postprocessing`: One or more post-processing layers that will be appended to the deployed model. A post-processing 
+layer must be derived from the `tensorflow.keras.layers.Layer` class.
+
+While ANN models are often trained on images in RGB(A) space, the ZEN infrastructure requires models inside a CZANN to 
+expect inputs in BGR(A) color space. This toolbox offers pre-processing layers to convert the color space before 
+passing the input to the model to be actually deployed. The following code shows how to add a RGB to BGR conversion layer 
+to a model and set its spatial input dimensions to 512x512.
+
+```python
+from czmodel.util.transforms import TransposeChannels
+
+# Define dimensions and pre-processing
+spatial_dims = 512, 512  # Optional: Target spatial dimensions of the model
+preprocessing = [TransposeChannels(order=(2, 1, 0))]  # Optional: Pre-Processing layers to be prepended to the model. Can be a single layer, a list of layers or None.
+postprocessing = None  # Optional: Post-Processing layers to be appended to the model. Can be a single layer, a list of layers or None.
+
+# Perform conversion
+convert_from_model_spec(
+    model_spec=model_spec, 
+    output_path='some/path', 
+    output_name='some_file_name', 
+    spatial_dims=spatial_dims, 
+    preprocessing=preprocessing,
+    postprocessing=postprocessing
+)
+```
+
+Additionally, the toolbox offers a `SigmoidToSoftmaxScores` layer that can be appended through the `postprocessing` parameter to convert 
+the output of a model with sigmoid output activation to the output that would be produced by an equivalent model with softmax activation.
+
+## CZANN Model Specification
+This section specifies the requirements for an artificial neural network (ANN) model and the additionally required metadata to enable execution of the model inside the ZEN Intellesis infrastructure starting with ZEN blue >=3.2 and ZEN Core >3.0.  
+
+The model format currently allows to bundle models for semantic segmentation, instance segmentation, object detection, classification and regression and is defined as a ZIP archive with the file extension .czann containing the following files with the respective filenames:
+- JSON Meta data file. (filename: model.json)
+- Model in ONNX/TensorFlow SavedModel format. In case of  SavedModel format the folder representing the model must be zipped to a single file. (filename: model.model)
+- Optionally: A license file for the contained model. (filename: license.txt)
+
+The meta data file must comply with the following specification:
+
+```json
+{
+    "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+    "$id": "http://127.0.0.1/model_format.schema.json",
+    "title": "Exchange format for ANN models",
+    "description": "A format that defines the meta information for exchanging ANN models. Any future versions of this specification should be evaluated through https://docs.snowplowanalytics.com/docs/pipeline-components-and-applications/iglu/igluctl-0-7-2/#lint-1 with --skip-checks numericMinMax,stringLength,optionalNull and https://www.json-buddy.com/json-schema-analyzer.htm.",
+    "type": "object",
+    "self": {
+        "vendor": "com.zeiss",
+        "name": "model-format",
+        "format": "jsonschema",
+        "version": "1-0-0"
+    },
+    "properties": {
+        "Id": {
+            "description": "Universally unique identifier of 128 bits for the model.",
+            "type": "string"
+        },
+        "Type": {
+            "description": "The type of problem addressed by the model.",
+            "type": "string",
+            "enum": ["SingleClassInstanceSegmentation", "MultiClassInstanceSegmentation", "SingleClassSemanticSegmentation", "MultiClassSemanticSegmentation", "SingleClassClassification", "MultiClassClassification", "ObjectDetection", "Regression"]
+        },
+        "MinOverlap": {
+            "description": "The minimum overlap of tiles for each dimension in pixels. Must be divisible by two. In tiling strategies that consider tile borders instead of overlaps the minimum overlap is twice the border size.",
+            "type": "array",
+            "items": {
+                "description": "The overlap of a single spatial dimension",
+                "type": "integer",
+                "minimum": 0
+            },
+            "minItems": 1
+        },
+        "Classes": {
+            "description": "The class names corresponding to the last output dimension of the prediction. If the last dimension of the prediction has shape n the provided list must be of length n",
+            "type": "array",
+            "items": {
+                "description": "A name describing a class for segmentation and classification tasks",
+                "type": "string"
+            },
+            "minItems": 2
+        },
+        "ModelName": {
+            "description": "The name of exported neural network model in ONNX (file) or TensorFlow SavedModel (folder) format in the same ZIP archive as the meta data file. In the case of ONNX the model must use ONNX opset version 12. In the case of TensorFlow SavedModel all operations in the model must be supported by TensorFlow 2.0.0. The model must contain exactly one input node which must comply with the input shape defined in the InputShape parameter and must have a batch dimension as its first dimension that is either 1 or undefined.",
+            "type": "string"
+        },
+        "InputShape": {
+            "description": "The shape of an input image. A typical 2D model has an input of shape [h, w, c] where h and w are the spatial dimensions and c is the number of channels. A 3D model is expected to have an input shape of [z, h, w, c] that contains an additional dimension z which represents the third spatial dimension. The batch dimension is not specified here. The input of the model must be of type float32 in the range [0..1].",
+            "type": "array",
+            "items": {
+                "description": "The size of a single dimension",
+                "type": "integer",
+                "minimum": 1
+            },
+            "minItems": 3,
+            "maxItems": 4
+        },
+        "OutputShape": {
+            "description": "The shape of the output image. A typical 2D model has an input of shape [h, w, c] where h and w are the spatial dimensions and c is the number of classes. A 3D model is expected to have an input shape of [z, h, w, c] that contains an additional dimension z which represents the third spatial dimension. The batch dimension is not specified here. If the output of the model represents an image, it must be of type float32 in the range [0..1].",
+            "type": "array",
+            "items": {
+                "description": "The size of a single dimension",
+                "type": "integer",
+                "minimum": 1
+            },
+            "minItems": 3,
+            "maxItems": 4
+        }
+    },
+    "required": ["Id", "Type", "InputShape", "OutputShape"]
+}
+```
+Json files can contain escape sequences and \\-characters in paths must be escaped with \\\\.
+
+The following code snippet shows an example for a valid metadata file:
+
+```json
+{
+  "Id": "b511d295-91ff-46ca-bb60-b2e26c393809",
+  "Type": "SingleClassSemanticSegmentation",
+  "Classes": ["class1", "class2", "class3"],
+  "InputShape": [1024, 1024, 3],
+  "OutputShape": [1024, 1024, 5]
+}
+```
+
