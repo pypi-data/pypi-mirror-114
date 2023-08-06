@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ggames/__init__.py
+src/ggames/cops_robbers_game.py
+src/ggames/reachability_game.py
+src/ggames.egg-info/PKG-INFO
+src/ggames.egg-info/SOURCES.txt
+src/ggames.egg-info/dependency_links.txt
+src/ggames.egg-info/entry_points.txt
+src/ggames.egg-info/top_level.txt
