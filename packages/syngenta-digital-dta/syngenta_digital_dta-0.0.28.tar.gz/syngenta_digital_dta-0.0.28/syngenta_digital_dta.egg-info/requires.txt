@@ -1,0 +1,8 @@
+aws-psycopg2
+boto3
+elasticsearch
+jsonref
+jsonpickle
+pyyaml
+requests-aws4auth
+simplejson
