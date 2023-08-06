@@ -1,0 +1,2 @@
+aiosmb>=0.2.34
+websockets

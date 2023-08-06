@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: aiosmbremote
+Version: 0.0.5
+Summary: Gathering shiny things from your domain
+Home-page: https://github.com/skelsec/aiosmbremote
+Author: Tamas Jos
+Author-email: info@skelsecprojects.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
