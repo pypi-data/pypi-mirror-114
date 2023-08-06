@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: MINTyper
+Version: 1.0.0
+Summary: MINTyper: an outbreak-detection method for accurate and rapid SNP typing of clonal clusters with noisy long reads
+Home-page: https://bitbucket.org/genomicepidemiology/mintyper
+Author: Malte Hallgren
+Author-email: malhal@food.dtu.dk
+License: Apache 2.0
+Platform: UNKNOWN
+Requires-Python: >=3.6
+
+UNKNOWN
+
