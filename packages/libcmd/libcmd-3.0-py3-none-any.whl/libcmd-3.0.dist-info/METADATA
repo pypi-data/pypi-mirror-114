@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: libcmd
+Version: 3.0
+Summary: Create commands and call them across a socket.
+Home-page: https://github.com/ylmonkey/libcmd
+Author: Forbidden
+Author-email: yourmom@hotmail.com
+License: None
+Platform: UNKNOWN
+Requires-Python: >3.6
+
+UNKNOWN
+
