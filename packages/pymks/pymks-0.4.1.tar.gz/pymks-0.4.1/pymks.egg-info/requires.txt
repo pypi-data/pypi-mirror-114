@@ -1,0 +1,10 @@
+pytest
+numpy
+dask
+Deprecated
+matplotlib
+scikit-learn
+pytest-cov
+nbval
+toolz
+pandas
