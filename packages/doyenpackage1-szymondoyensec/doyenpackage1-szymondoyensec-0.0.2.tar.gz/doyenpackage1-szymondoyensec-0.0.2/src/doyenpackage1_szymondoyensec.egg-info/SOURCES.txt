@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/doyenpackage1_szymondoyensec.egg-info/PKG-INFO
+src/doyenpackage1_szymondoyensec.egg-info/SOURCES.txt
+src/doyenpackage1_szymondoyensec.egg-info/dependency_links.txt
+src/doyenpackage1_szymondoyensec.egg-info/top_level.txt
