@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "D47calib"
+version = "0.0.4"
+description = "D47calib library"
+authors = ["Mathieu Daëron <mathieu@daeron.fr>"]
+license = "Modified BSD License - https://opensource.org/licenses/BSD-3-Clause"
+packages = [
+    { include = "D47calib" },
+]
+classifiers = [
+    "Development Status :: 1 - Planning",
+]
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
