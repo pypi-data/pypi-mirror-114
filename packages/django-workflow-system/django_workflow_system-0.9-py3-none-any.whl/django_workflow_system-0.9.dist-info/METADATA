@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: django-workflow-system
+Version: 0.9
+Summary: A highly customizable workflow system for Django. Create surveys, activities, etc.
+Home-page: UNKNOWN
+Author: Center for Research Computing
+Author-email: prometheus-team@nd.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >3.8
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow (>=6.2.0)
+Requires-Dist: jsonschema (>=3.0.1)
+Requires-Dist: Django (>=3.1.0)
+Requires-Dist: djangorestframework (>=3.12.2)
+Requires-Dist: factory-boy (>=3.2.0)
+
+# Django Workflow System
+
+[![pypi-version]][pypi]
+
+**Finally, an awesome Django Workflow System.**
+
+Full documentation for the package is currently being written....but for now, here's what you need to get up and running.
+
+**NOTE: THIS PROJECT IS STILL IN BETA, BREAKING CHANGES COULD BE INTRODUCED AT ANY TIME**
+
+# Requirements
+
+- Python (3.5, 3.6, 3.7, 3.8)
+- Django (3.1+)
+
+We **highly recommend** and only officially support the latest patch release of
+each Python and Django series.
+
+# Installation
+
+`pip install django-workflow-system`
+
+# Post-Install Setup
+
+**Django Settings Additions**
+
+```python
+# You will need to add django_workflow_system and rest_framework to your installed apps
+INSTALLED_APPS = [
+    "django_workflow_system",
+    "rest_framework",
+    ...]
+
+# You will need to add some authentication classes for DRF, more info can be found at https://www.django-rest-framework.org/api-guide/settings/
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        # "rest_framework.authentication.BasicAuthentication",
+        "rest_framework.authentication.SessionAuthentication",
+    ],
+    "DEFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.IsAuthenticated",
+    ],
+}
+```
+
+In your main urls.py file you will need to add the following line:
+```python
+path('api/', include('django_workflow_system.api.urls'))
+```
+`'api/'` can be whatever you want.
+
+[pypi-version]: https://img.shields.io/pypi/v/django-workflow-system.svg
+[pypi]: https://pypi.org/project/django-workflow-system/
+
+
