@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: schedpack
+Version: 0.1.2
+Summary: Package for scheduling activities that last some time
+Home-page: https://github.com/Borisoid/schedpack
+Author: borisoid
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Keywords: schedule,lasting,cron
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
