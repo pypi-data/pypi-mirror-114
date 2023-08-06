@@ -1,0 +1,1 @@
+This is a stock analysing library. It has various type of technical and fundamental indicators.
