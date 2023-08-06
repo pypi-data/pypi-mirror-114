@@ -1,0 +1,9 @@
+README.md
+setup.py
+datasette_webhook_write/__init__.py
+datasette_webhook_write.egg-info/PKG-INFO
+datasette_webhook_write.egg-info/SOURCES.txt
+datasette_webhook_write.egg-info/dependency_links.txt
+datasette_webhook_write.egg-info/entry_points.txt
+datasette_webhook_write.egg-info/requires.txt
+datasette_webhook_write.egg-info/top_level.txt

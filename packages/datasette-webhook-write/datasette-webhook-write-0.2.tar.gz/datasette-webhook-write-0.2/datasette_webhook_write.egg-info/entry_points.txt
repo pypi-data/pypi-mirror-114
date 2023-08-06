@@ -1,0 +1,3 @@
+[datasette]
+webhook_write = datasette_webhook_write
+
