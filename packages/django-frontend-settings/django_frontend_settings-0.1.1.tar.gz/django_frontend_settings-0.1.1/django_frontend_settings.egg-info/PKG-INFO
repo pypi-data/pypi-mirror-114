@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: django-frontend-settings
+Version: 0.1.1
+Summary: Dynamic settings & feature flags for the fronted.
+Home-page: https://github.com/loadsmart/django-frontend-settings
+Author: Loadsmart
+Author-email: developer@loadsmart.com
+License: MIT
+Description: Frontend Settings
+        =================
+        
+        Abstract
+        --------
+        
+        Dynamic settings and feature flags for the frontend.
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Provides-Extra: test
+Provides-Extra: lint
+Provides-Extra: doc
+Provides-Extra: dev
