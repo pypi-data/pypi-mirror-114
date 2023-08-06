@@ -1,0 +1,16 @@
+CHANGES
+=======
+
+2.16.5
+------
+
+* use filelock to make process call process safe
+* skip uninstall uiautomator apk for tmq platform
+* add link
+* use github actions to publish lib instead of trivis
+* fix tests
+* Update init.py (#618)
+* hotfix for multiprocess call reset\_uiautomator
+* update ISSUE\_TEMPLATE for REQUIRED logs
+* update doc
+* add cli:doctor
