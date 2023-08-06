@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: py-ttern
+Version: 0.0.3
+Summary: Python module for simple pattern matching
+Home-page: https://github.com/Z-Shang/pyttern
+Author: zshang
+Author-email: z@gilgamesh.me
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+# Pyttern
+
+Simple ans stupid pattern matching for Python
+

@@ -1,0 +1,8 @@
+README.md
+setup.py
+py_ttern.egg-info/PKG-INFO
+py_ttern.egg-info/SOURCES.txt
+py_ttern.egg-info/dependency_links.txt
+py_ttern.egg-info/top_level.txt
+pyttern/__init__.py
+pyttern/pyttern.py
