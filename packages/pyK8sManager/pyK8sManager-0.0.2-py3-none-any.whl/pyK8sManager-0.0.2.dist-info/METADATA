@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pyK8sManager
+Version: 0.0.2
+Summary: pyK8sManager
+Home-page: UNKNOWN
+Author: Lucian Tin Udovicic
+Author-email: luciantin@protonmail.com
+License: UNKNOWN
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: kubernetes
+
+pyK8sManager
+
+
