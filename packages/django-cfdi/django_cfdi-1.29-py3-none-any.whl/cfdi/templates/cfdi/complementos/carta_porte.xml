@@ -1,0 +1,251 @@
+{% load cfdi_tags %}
+<cartaporte:CartaPorte 
+	Version="1.0" 
+
+    {% set_field 'TranspInternac' complemento.TranspInternac %}
+    {% set_field 'EntradaSalidaMerc' complemento.EntradaSalidaMerc %}
+    {% set_field 'ViaEntradaSalida' complemento.ViaEntradaSalida %}
+    {% set_field 'TotalDistRec' complemento.TotalDistRec %} 
+>
+	
+	<cartaporte:Ubicaciones>
+        {% for ubicacion in complemento.ubicaciones %}
+		<cartaporte:Ubicacion 
+            {% set_field 'TipoEstacion' ubicacion.TipoEstacion %} 
+            {% set_field 'DistanciaRecorrida' ubicacion.DistanciaRecorrida %}
+        >
+
+			<cartaporte:Origen 
+				{% set_field 'IDOrigen' ubicacion.Origen.IDOrigen %}
+                {% set_field 'RFCRemitente' ubicacion.Origen.RFCRemitente %}
+                {% set_field 'NombreRemitente' ubicacion.Origen.RFCRemNombre %}
+                {% set_field 'NumRegIdTrib' ubicacion.Origen.NumRegIdTrib %}
+                {% set_field 'ResidenciaFiscal' ubicacion.Origen.ResidenciaFiscal %}
+                {% set_field 'NumEstacion' ubicacion.Origen.NumEstacion %}
+                {% set_field 'NombreEstacion' ubicacion.Origen.NombreEstacion %}
+                {% set_field 'NavegacionTrafico' ubicacion.Origen.NavegacionTrafico %}
+                {% set_field 'FechaHoraSalida' ubicacion.Origen.FechaHoraSalida %}
+            />
+				
+			<cartaporte:Destino 
+				{% set_field 'IDDestino' ubicacion.Destino.IDDestino %}
+				{% set_field 'RFCDestinatario' ubicacion.Destino.RFCDestinatario %}
+				{% set_field 'NombreDestinatario' ubicacion.Destino.NombreDestinatario %}
+				{% set_field 'NumRegIdTrib' ubicacion.Destino.NumRegIdTrib %}
+				{% set_field 'ResidenciaFiscal' ubicacion.Destino.ResidenciaFiscal %}
+				{% set_field 'NumEstacion' ubicacion.Destino.NumEstacion %}
+				{% set_field 'NombreEstacion' ubicacion.Destino.NombreEstacion %}
+				{% set_field 'NavegacionTrafico' ubicacion.Destino.NavegacionTrafico %}
+				{% set_field 'FechaHoraProgLlegada' ubicacion.Destino.FechaHoraProgLlegada %}
+            />
+			
+			<cartaporte:Domicilio 
+                {% set_field 'Calle' ubicacion.Domicilio.Calle %}
+                {% set_field 'NumeroExterior' ubicacion.Domicilio.NumeroExterior %}
+                {% set_field 'NumeroInterior' ubicacion.Domicilio.NumeroInterior %}
+                {% set_field 'Colonia' ubicacion.Domicilio.CalColoniale %}
+                {% set_field 'Localidad' ubicacion.Domicilio.Localidad %}
+                {% set_field 'Referencia' ubicacion.Domicilio.Referencia %}
+                {% set_field 'Municipio' ubicacion.Domicilio.Municipio %}
+                {% set_field 'Estado' ubicacion.Domicilio.Estado %}
+                {% set_field 'Pais' ubicacion.Domicilio.Pais %}
+                {% set_field 'CodigoPostal' ubicacion.Domicilio.CodigoPostal %}
+            />
+		</cartaporte:Ubicacion>
+        {% endfor %}
+	</cartaporte:Ubicaciones>
+	
+	<cartaporte:Mercancias 
+		{% set_field 'PesoBrutoTotal' complemento.Mercancias.PesoBrutoTotal %}
+        {% set_field 'UnidadPeso' complemento.Mercancias.UnidadPeso %}
+        {% set_field 'PesoNetoTotal' complemento.Mercancias.PesoNetoTotal %}
+        {% set_field 'NumTotalMercancias' complemento.Mercancias.NumTotalMercancias %}
+        {% set_field 'CargoPorTasacion' complemento.Mercancias.CargoPorTasacion %}
+	>
+        {% for mercancia in complemento.mercancias %}
+            <cartaporte:Mercancia 
+                {% set_field 'BienesTransp' mercancia.BienesTransp %}
+                {% set_field 'ClaveSTCC' mercancia.ClaveSTCC %}
+                {% set_field 'Descripcion' mercancia.Descripcion %}
+                {% set_field 'ClaveUnidad' mercancia.ClaveUnidad %}
+                {% set_field 'Unidad' mercancia.Unidad %}
+                {% set_field 'Dimensiones' mercancia.Dimensiones %}
+                {% set_field 'MaterialPeligroso' mercancia.MaterialPeligroso %}
+                {% set_field 'CveMaterialPeligroso' mercancia.CveMaterialPeligroso %}
+                {% set_field 'Embalaje' mercancia.Embalaje %}
+                {% set_field 'PesoEnKg' mercancia.PesoEnKg %}
+                {% set_field 'ValorMercancia' mercancia.ValorMercancia %}
+                {% set_field 'Moneda' mercancia.Moneda %}
+                {% set_field 'FraccionArancelaria' mercancia.FraccionArancelaria %}
+                {% set_field 'UUIDComercioExt' mercancia.UUIDComercioExt %}
+            >
+                {% for ct in mercancia.cantidades_transporta %}
+                    <cartaporte:CantidadTransporta 
+                        {% set_field 'Cantidad' ct.Cantidad %}
+                        {% set_field 'IDOrigen' ct.IDOrigen %}
+                        {% set_field 'IDDestino' ct.IDDestino %}
+                        {% set_field 'CvesTransporte' ct.CvesTransporte %}
+                    >
+                {% endfor %}
+                {% if mercancia.DetalleMercancia %}
+                    <cartaporte:DetalleMercancia 
+                        {% set_field 'UnidadPeso' mercancia.DetalleMercancia.UnidadPeso %}
+                        {% set_field 'PesoBruto' mercancia.DetalleMercancia.PesoBruto %}
+                        {% set_field 'PesoNeto' mercancia.DetalleMercancia.PesoNeto %}
+                        {% set_field 'PesoTara' mercancia.DetalleMercancia.PesoTara %}
+                        {% set_field 'NumPiezas' mercancia.DetalleMercancia.NumPiezas %}
+                    >
+            </cartaporte:Mercancia>
+		{% endfor %}
+        
+        {% if complemento.AutotransporteFederal %}
+            <cartaporte:AutotransporteFederal 
+                {% set_field 'PermSCT' omplemento.AutotransporteFederal.PermSCT %}
+                {% set_field 'NumPermisoSCT' omplemento.AutotransporteFederal.NumPermisoSCT %}
+                {% set_field 'NombreAseg' omplemento.AutotransporteFederal.NombreAseg %}
+                {% set_field 'NumPolizaSeguro' omplemento.AutotransporteFederal.NumPolizaSeguro %}
+            >
+
+            {% if complemento.AutotransporteFederal.IdentificacionVehicular %}
+                <cartaporte:IdentificacionVehicular 
+                    {% set_field 'ConfigVehicular' complemento.AutotransporteFederal.IdentificacionVehicular.ConfigVehicular %}
+                    {% set_field 'PlacaVM' complemento.AutotransporteFederal.IdentificacionVehicular.PlacaVM %}
+                    {% set_field 'AnioModeloVM' complemento.AutotransporteFederal.IdentificacionVehicular.AnioModeloVM %}
+                >
+            {% endif %}
+
+            {% if complemento.AutotransporteFederal.IdentificacionVehicular.remolques %}
+                <cartaporte:Remolques>
+                {% for remolque in complemento.AutotransporteFederal.IdentificacionVehicular.remolques %}
+                    <cartaporte:Remolque 
+                        {% set_field 'SubTipoRem' remolque.SubTipoRem %}
+                        {% set_field 'Placa' remolque.Placa %}
+                    />
+                {% endfor %}
+                </cartaporte:Remolques>
+            {% endif %}
+            </cartaporte:AutotransporteFederal>
+        {% endif %}
+    </cartaporte:Mercancias>
+    
+    <cartaporte:FiguraTransporte 
+        {% set_field 'CveTransporte' complemento.FiguraTransporte.CveTransporte %}
+    >
+        {% if complemento.FiguraTransporte.operadores %}
+        <cartaporte:Operadores>
+            {% for operador in complemento.FiguraTransporte.operadores %}
+            <cartaporte:Operador 
+                {% set_field 'RFCOperador' operador.RFCOperador %}
+                {% set_field 'NumLicencia' operador.NumLicencia %}
+                {% set_field 'NombreOperador' operador.NombreOperador %}
+                {% set_field 'NumRegIdTribOperador' operador.NumRegIdTribOperador %}
+                {% set_field 'ResidenciaFiscalOperador' operador.ResidenciaFiscalOperador %}
+            >
+
+                {% if operador.Domicilio %}
+            
+                    <cartaporte:Domicilio 
+                        {% set_field 'Calle' operador.Domicilio.Calle %}
+                        {% set_field 'NumeroExterior' operador.Domicilio.NumeroExterior %}
+                        {% set_field 'NumeroInterior' operador.Domicilio.NumeroInterior %}
+                        {% set_field 'Colonia' operador.Domicilio.Colonia %}
+                        {% set_field 'Localidad' operador.Domicilio.Localidad %}
+                        {% set_field 'Referencia' operador.Domicilio.Referencia %}
+                        {% set_field 'Municipio' operador.Domicilio.Municipio %}
+                        {% set_field 'Estado' operador.Domicilio.Estado %}
+                        {% set_field 'Pais' operador.Domicilio.Pais %}
+                        {% set_field 'CodigoPostal' operador.Domicilio.CodigoPostal %}
+                    />
+
+                {% endif %}
+                
+            </cartaporte:Operador>
+            {% endfor %}
+        </cartaporte:Operadores>
+        
+        
+
+        {% if complemento.FiguraTransporte.RFCPropietario %}
+        <cartaporte:Propietario
+
+            {% set_field 'RFCPropietario' complemento.FiguraTransporte.RFCPropietario %}
+            {% set_field 'NombrePropietario' complemento.FiguraTransporte.NombrePropietario %}
+            {% set_field 'NumRegIdTribPropietario' complemento.FiguraTransporte.NumRegIdTribPropietario %}
+            {% set_field 'ResidenciaFiscalPropietario' complemento.FiguraTransporte.ResidenciaFiscalPropietario %}
+        >
+
+            {% if operador.Domicilio %}
+                <cartaporte:Domicilio 
+                    {% set_field 'Calle' operador.Domicilio.Calle %}
+                    {% set_field 'NumeroExterior' operador.Domicilio.NumeroExterior %}
+                    {% set_field 'NumeroInterior' operador.Domicilio.NumeroInterior %}
+                    {% set_field 'Colonia' operador.Domicilio.Colonia %}
+                    {% set_field 'Localidad' operador.Domicilio.Localidad %}
+                    {% set_field 'Referencia' operador.Domicilio.Referencia %}
+                    {% set_field 'Municipio' operador.Domicilio.Municipio %}
+                    {% set_field 'Estado' operador.Domicilio.Estado %}
+                    {% set_field 'Pais' operador.Domicilio.Pais %}
+                    {% set_field 'CodigoPostal' operador.Domicilio.CodigoPostal %}
+                />
+            {% endif %}
+
+        </cartaporte:Propietario>
+        {% endif %}
+        
+        {% if complemento.FiguraTransporte.Arrendatario %}
+        <cartaporte:Arrendatario 
+
+            {% set_field 'CodigoPostal' complemento.FiguraTransporte.Arrendatario.CodigoPostal %}
+            {% set_field 'RFCArrendatario' complemento.FiguraTransporte.Arrendatario.RFCArrendatario %}
+            {% set_field 'NombreArrendatario' complemento.FiguraTransporte.Arrendatario.NombreArrendatario %}
+            {% set_field 'NumRegIdTribArrendatario' complemento.FiguraTransporte.Arrendatario.NumRegIdTribArrendatario %}
+            {% set_field 'ResidenciaFiscalArrendatario' complemento.FiguraTransporte.Arrendatario.ResidenciaFiscalArrendatario %}
+
+
+
+            {% if complemento.FiguraTransporte.Arrendatario.Domicilio %}
+
+            <cartaporte:Domicilio 
+                {% set_field 'Calle' complemento.FiguraTransporte.Arrendatario.Calle %}
+                {% set_field 'NumeroExterior' complemento.FiguraTransporte.Arrendatario.NumeroExterior %}
+                {% set_field 'Colonia' complemento.FiguraTransporte.Arrendatario.Colonia %}
+                {% set_field 'Localidad' complemento.FiguraTransporte.Arrendatario.Localidad %}
+                {% set_field 'Referencia' complemento.FiguraTransporte.Arrendatario.Referencia %}
+                {% set_field 'Municipio' complemento.FiguraTransporte.Arrendatario.Municipio %}
+                {% set_field 'Estado' complemento.FiguraTransporte.Arrendatario.Estado %}
+                {% set_field 'Pais' complemento.FiguraTransporte.Arrendatario.Pais %}
+                {% set_field 'CodigoPostal' complemento.FiguraTransporte.Arrendatario.CodigoPostal %}
+            />
+            {% endif %}
+        </cartaporte:Arrendatario>
+        {% endif %}
+
+        {% if complemento.FiguraTransporte.Notificado %}
+        <cartaporte:Notificado 
+
+            {% set_field 'RFCNotificado' complemento.FiguraTransporte.Notificado.RFCNotificado %}
+            {% set_field 'NombreNotificado' complemento.FiguraTransporte.Notificado.NombreNotificado %}
+            {% set_field 'NumRegIdTribNotificado' complemento.FiguraTransporte.Notificado.NumRegIdTribNotificado %}
+            {% set_field 'NumRegIdTribNotificado' complemento.FiguraTransporte.Notificado.NumRegIdTribNotificado %}
+            {% set_field 'ResidenciaFiscalNotificado' complemento.FiguraTransporte.Notificado.ResidenciaFiscalNotificado %}
+        
+            {% if complemento.FiguraTransporte.Notificado.Domicilio %}
+            <cartaporte:Domicilio 
+
+                {% set_field 'Calle' complemento.FiguraTransporte.Notificado.Domicilio.Calle %}
+                {% set_field 'NumeroExterior' complemento.FiguraTransporte.Notificado.Domicilio.NumeroExterior %}
+                {% set_field 'NumeroInterior' complemento.FiguraTransporte.Notificado.Domicilio.NumeroInterior %}
+                {% set_field 'Colonia' complemento.FiguraTransporte.Notificado.Domicilio.Colonia %}
+                {% set_field 'Localidad' complemento.FiguraTransporte.Notificado.Domicilio.Localidad %}
+                {% set_field 'Referencia' complemento.FiguraTransporte.Notificado.Domicilio.Referencia %}
+                {% set_field 'Municipio' complemento.FiguraTransporte.Notificado.Domicilio.Municipio %}
+                {% set_field 'Estado' complemento.FiguraTransporte.Notificado.Domicilio.Estado %}
+                {% set_field 'Pais' complemento.FiguraTransporte.Notificado.Domicilio.Pais %}
+                {% set_field 'CodigoPostal' complemento.FiguraTransporte.Notificado.Domicilio.CodigoPostal %}
+            />
+            {% endif %}
+
+        </cartaporte:Notificado>
+        {% endif %}
+    </cartaporte:FiguraTransporte>
+</cartaporte:CartaPorte>
