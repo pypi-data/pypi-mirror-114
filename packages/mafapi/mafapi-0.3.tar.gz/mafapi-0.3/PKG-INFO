@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: mafapi
+Version: 0.3
+Summary: A simple python interfact for mafia.gg to create bots and clients.
+Home-page: https://github.com/Oderjunkie/mafapi
+Author: Otesunkie
+Author-email: trickytests@gmail.com
+License: GNU GPLv3
+Download-URL: https://github.com/Oderjunkie/mafapi/archive/refs/tags/v_012.tar.gz
+Description: UNKNOWN
+Keywords: mafia,bot,connection,async,client
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
