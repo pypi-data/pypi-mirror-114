@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: ansypyttsx3
+Version: 0.0.1
+Summary: A very easy text to speech
+Home-page: UNKNOWN
+Author: Anto Joel V
+Author-email: antojoel8020@gmail.com
+License: MIT
+Keywords: easy text to speech easy pyttsx3
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+This modules helps to convert any text to speech with only one command
+speak()
+which is very useful for beginers
+
+
+
+
+
+developed by:-
+Anto Joel V 
+antojoel8020@gmail.com
+Student @ Francis Xavier Engineering College, TVL
+
+
+Change Log
+==========
+
+0.0.1 (27/07/2021)
+------------------
+-First Release
+
+

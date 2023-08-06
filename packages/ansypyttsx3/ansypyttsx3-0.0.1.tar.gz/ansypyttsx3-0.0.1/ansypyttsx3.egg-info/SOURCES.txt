@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LISCENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+ansypyttsx3.egg-info/PKG-INFO
+ansypyttsx3.egg-info/SOURCES.txt
+ansypyttsx3.egg-info/dependency_links.txt
+ansypyttsx3.egg-info/requires.txt
+ansypyttsx3.egg-info/top_level.txt
+antospeaks/__init__.py
