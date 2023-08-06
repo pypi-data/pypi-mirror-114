@@ -1,0 +1,17 @@
+AUTHORS.rst
+CONTRIBUTING.rst
+LICENSE.txt
+MANIFEST.in
+README.rst
+VERSION
+setup.cfg
+setup.py
+src/swmmtoolbox/__init__.py
+src/swmmtoolbox/swmmtoolbox.py
+src/swmmtoolbox.egg-info/PKG-INFO
+src/swmmtoolbox.egg-info/SOURCES.txt
+src/swmmtoolbox.egg-info/dependency_links.txt
+src/swmmtoolbox.egg-info/entry_points.txt
+src/swmmtoolbox.egg-info/not-zip-safe
+src/swmmtoolbox.egg-info/requires.txt
+src/swmmtoolbox.egg-info/top_level.txt
