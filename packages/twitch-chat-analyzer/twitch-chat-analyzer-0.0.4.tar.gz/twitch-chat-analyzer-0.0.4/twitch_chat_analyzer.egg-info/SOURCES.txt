@@ -1,0 +1,11 @@
+README.md
+setup.py
+twitch_chat_analyzer/__init__.py
+twitch_chat_analyzer/analyzer.py
+twitch_chat_analyzer/downloader.py
+twitch_chat_analyzer/kraken.py
+twitch_chat_analyzer/models.py
+twitch_chat_analyzer.egg-info/PKG-INFO
+twitch_chat_analyzer.egg-info/SOURCES.txt
+twitch_chat_analyzer.egg-info/dependency_links.txt
+twitch_chat_analyzer.egg-info/top_level.txt
