@@ -1,0 +1,12 @@
+retinaface/RetinaFace.py,sha256=pP1wPsiEbAOlPT3bymFwAWO_Cz452B_vHlv-7CVUqTM,5879
+retinaface/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+retinaface/commons/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+retinaface/commons/postprocess.py,sha256=zamSBQpifnqyWRTb0QCMhR0PtgCO-9OjELWvRgdFv8M,5874
+retinaface/commons/preprocess.py,sha256=Er4WZ_N7cGeARlGG65JdgZLnKPUmi7cPijfhV_LSDiY,1569
+retinaface/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+retinaface/model/retinaface_model.py,sha256=kuMuKc3-J9DnkvmOH336PRlnUMsNEd5IWOv7x38eJc4,40910
+retina_face-0.0.5.dist-info/LICENSE,sha256=c1nY3wN2iOn0Nzrt2d0pekZ3AwcqPJsAGxaeyM45VHc,1077
+retina_face-0.0.5.dist-info/METADATA,sha256=ezzVOtomWOXNhmvJizHkF_W86hyjsIlaMf1zmhqJovc,5618
+retina_face-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+retina_face-0.0.5.dist-info/top_level.txt,sha256=pfovrQynXTF0QV20p2oj5Lqgoh9AbT3qQ-nkyut5yw0,11
+retina_face-0.0.5.dist-info/RECORD,,
