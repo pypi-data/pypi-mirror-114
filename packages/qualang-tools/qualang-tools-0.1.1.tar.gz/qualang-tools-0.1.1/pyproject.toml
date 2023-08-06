@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "qualang-tools"
+version = "v0.1.1"
+description = "The qualang_tools package includes tools for writing QUA programs in Python."
+license = "BSD-3-Clause"
+authors = [
+      "QM <qua-libs@quantum-machines.co>",
+]
+packages = [
+    { include = "qualang_tools" }
+]
+include = [
+]
+exclude = [
+    "**/tests/**",
+]
+readme = "README.md"
+homepage = "https://github.com/qua-platform/py-qua-tools"
+
+[tool.poetry.dependencies]
+python = "^3.7.1"
+matplotlib = "^3.4.2"
+numpy = "^1.20.3"
+pandas = "^1.2.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^21.5b2"
+poethepoet = "^0.10.0"
+
+[tool.poe.tasks]
+format = "black ."
+check_format = "black --check ."
+test = "pytest"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
