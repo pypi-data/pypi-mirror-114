@@ -1,0 +1,27 @@
+schoolschedulerapp/Makefile,sha256=M_k4-kvJxxzzlGwXGu-Q0Ep-SNAxPYebgzwpIxC_9-A,223
+schoolschedulerapp/SchoolScheduler.db,sha256=K9cBH87VHD7Y1X3zYUR5s8_c1ovfureZSDCOB5rmN_w,360448
+schoolschedulerapp/__init__.py,sha256=6nNnrzK8ANAfFg_nv9MZv92oGE40lf3-b8wKgOo9oWs,146
+schoolschedulerapp/db.py,sha256=UHDrLoxCNkiXDE41S6zxspHqI2ldL8HRbSRUwfmM4vA,12788
+schoolschedulerapp/db_alchemy.py,sha256=CmBDmzp1Kaj9H3zr9LlaP4AMqqRM2xvscjCmEfwqyXQ,14305
+schoolschedulerapp/edit.png,sha256=XeiIqFKHVq5hDbdtNty3321pxnKNDVbr2Pz0OSUth5k,19826
+schoolschedulerapp/generatedata.py,sha256=dPvYjO65qkpplLns5Oar7SIVI77uxik2FgiSFj2851Y,19708
+schoolschedulerapp/main.py,sha256=zcnYPZHr-wJ3D4VIQ-MY9BD30Q2pBCwBWHwwUSCDn_g,799
+schoolschedulerapp/sa.so,sha256=F9X-RHv8ioARkTpewU7IaixqqX00zDvqB9KCM7oQSyo,12965304
+schoolschedulerapp/schedule.py,sha256=8zVA7yBYmbvurBrdMpgfiHhCnE47dZUnybG7THShPRM,5164
+schoolschedulerapp/scheduler.rs,sha256=BJ87rf8e7ToP6E0IwV8kxsOlnZUYcgSh3B0asx93nBQ,2348
+schoolschedulerapp/scheduler.ui,sha256=HnT3DHTYJDGq9iIwU8ng-aNfdAXpwqHW1BtpRmQxA1M,26591
+schoolschedulerapp/schedulerui.py,sha256=8IoTzpVikz6uDV8X6yKi99eknBbmiSpKYOgnH7Si3Ps,61551
+schoolschedulerapp/search.png,sha256=e27ngRxgqwCy6g1OKKSrzfLC8CcmN-wtDqdHhibbyXY,2683
+schoolschedulerapp/square.png,sha256=bq2HrPdSZJT2vjgUL5JKPW-B1ZMn27zuZhjwxqgL3Lo,2534
+schoolschedulerapp/words.txt,sha256=0MiSsZ47Yy7igd46SFt9CS2EUgdAXmMwAzlE8T1cyE0,280433
+schoolschedulerapp/wsl.py,sha256=lX9ZKOamOVhNhKzLQshD-JvLk1DZQHVI7_fToI1ovAE,946
+schoolschedulerapp/export/Default PDF Export Directory,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+schoolschedulerapp/import/Data.xlsx,sha256=iAHDJrIFNQ0rJ9GRiCUFXq6gILa0vk4DFf-Ir-q61ag,251435
+schoolschedulerapp/import/Test Data Generator Output Directory,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+schoolschedulerapp/scheduler/SchoolScheduler.db,sha256=glNcALWLXTZIDRg_rVO7jDEXE9FPB-ApMHHs97VAXrM,159744
+schoolschedulerapp/venv/pyvenv.cfg,sha256=w07dyOl3KAAvAOHt_lCF8zJj51BDBbLebOZBKQDB-6Q,117
+SchoolSchedulerApp-2.0.2.dist-info/METADATA,sha256=5Qf0c-Jhz12HeTl9gaA1LUQ7MN_xMWx9DmDI0IrC_NA,1499
+SchoolSchedulerApp-2.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+SchoolSchedulerApp-2.0.2.dist-info/entry_points.txt,sha256=o6-Rst0FxX6oJDOgNBW-zg5I1UZ4mlPtbfhXGYIHAIo,65
+SchoolSchedulerApp-2.0.2.dist-info/top_level.txt,sha256=Bqas89DFTyk-y66B3-RU8Dy9M_kIpGSk2q8vDDrCm20,19
+SchoolSchedulerApp-2.0.2.dist-info/RECORD,,
