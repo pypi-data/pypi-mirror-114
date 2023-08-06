@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ddfirmware/__init__.py
+ddfirmware/cli.py
+ddfirmware.egg-info/PKG-INFO
+ddfirmware.egg-info/SOURCES.txt
+ddfirmware.egg-info/dependency_links.txt
+ddfirmware.egg-info/entry_points.txt
+ddfirmware.egg-info/top_level.txt
