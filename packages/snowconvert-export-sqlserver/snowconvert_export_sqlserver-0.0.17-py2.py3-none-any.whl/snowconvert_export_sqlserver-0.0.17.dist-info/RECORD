@@ -1,0 +1,16 @@
+snowconvert_export_sqlserver-0.0.17.data/scripts/sc-sqlserver-arrange,sha256=Y9jogItKXgosfcHhEljJrNN9IEhGKV3XzvzZpB9RZVw,766
+snowconvert_export_sqlserver-0.0.17.data/scripts/sc-sqlserver-arrange.bat,sha256=vxVeDgJIwKFChijwBmv8Mwmj4AVggGb4WCIqVA1Zc-w,222
+snowconvert_export_sqlserver-0.0.17.data/scripts/sc-sqlserver-export,sha256=rxJ6VLgVdzFM0AnJKnb5LZaNn8j35NV_HjzBPSDueSE,2955
+snowconvert_export_sqlserver-0.0.17.data/scripts/sc-sqlserver-export.ps1,sha256=T6XmwKXKw7WMqTW5SA53XUNbrkla8dqCYt6XnZylqoc,1945
+sqlarrange/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlarrange/__main__.py,sha256=2f7z0BECz_SkD6nyIR4I9GlxMIcMzJZq4jT7jmLbiXI,669
+sqlarrange/bin/linux64/ExtractionCleanUp,sha256=Lv-acsgH1WhZOvSOPqxRH8R3PeAF7FLzreenP0R6G9M,62645758
+sqlarrange/bin/mac64/ExtractionCleanUp,sha256=YeIggk5ODOPBTMHMmVT6d-_U2rlsPznfhbLPk8ghJ44,63422485
+sqlarrange/bin/win64/ExtractionCleanUp.exe,sha256=RZ8eyeR2RNzlQ1Tw_n90I4UaqfXCvuAixhdlyO3Ko5c,62242402
+sqlarrange/bin/win64/Microsoft.Data.SqlClient.SNI.pdb,sha256=MUaNLMIC2SB3DtKl9snmhiWxZytiEcOTTCP6Gv66Nnk,592896
+snowconvert_export_sqlserver-0.0.17.dist-info/LICENSE.txt,sha256=otWZDFrtoi6kugaE9DFFaOt9ksNY-dhYg3DP16YOR08,1131
+snowconvert_export_sqlserver-0.0.17.dist-info/METADATA,sha256=7jIP0gSangBBGjtL4_J5332dUON9oPINW3m44Qu_yQM,2525
+snowconvert_export_sqlserver-0.0.17.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+snowconvert_export_sqlserver-0.0.17.dist-info/top_level.txt,sha256=Mqj6513S1mr-u2azebTaD8giIKNLkU3w025lw2Q31Ec,11
+snowconvert_export_sqlserver-0.0.17.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+snowconvert_export_sqlserver-0.0.17.dist-info/RECORD,,
