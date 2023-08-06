@@ -1,0 +1,9 @@
+httpx
+youtube-search-python
+cryptography
+pytube
+gtts
+discord
+googletrans==3.1.0a0
+SpeechRecognition
+termcolor
