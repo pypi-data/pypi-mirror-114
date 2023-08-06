@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "projectend"
+version = "0.14.0"
+description = "calculate the end of projects"
+authors = ["Jean-Louis Fuchs <jean-louis.fuchs@adfinis-sygroup.ch>"]
+homepage = "https://github.com/ganwell/projectend"
+repository = "https://github.com/ganwell/projectend"
+license = "AGPL-3.0-or-later"
+readme = "README.md"
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.7",
+]
+
+[tool.poetry.scripts]
+projectend = 'projectend:cmd'
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+toml = ">=0.10.2"
+intervaltree = ">=3.1.0"
+click = ">=7.1.2"
+
+[tool.poetry.dev-dependencies]
+pdbpp = ">=0.10.2"
+keyring = ">=23.0.1"
+SecretStorage = ">=3.3.1"
+pytest = ">=6.2.4"
+mypy = ">=0.812"
+black = ">=21.5b0"
+isort = ">=5.8.0"
+python-lsp-server = ">=1.0.1"
+flake8 = ">=3.9.1"
+flake8-bugbear = ">=21.4.3"
+flake8-debugger = ">=4.0.0"
+flake8-isort = ">=4.0.0"
+flake8-docstrings = ">=1.6.0"
+flake8-string-format = ">=0.3.0"
+flake8-tuple = ">=0.4.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
