@@ -1,0 +1,175 @@
+
+.. Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+..   http://www.apache.org/licenses/LICENSE-2.0
+
+.. Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+
+
+Package ``apache-airflow-providers-sftp``
+
+Release: ``2.1.0rc2``
+
+
+`SSH File Transfer Protocol (SFTP) <https://tools.ietf.org/wg/secsh/draft-ietf-secsh-filexfer/>`__
+
+
+Provider package
+----------------
+
+This is a provider package for ``sftp`` provider. All classes for this provider package
+are in ``airflow.providers.sftp`` python package.
+
+You can find package information and changelog for the provider
+in the `documentation <https://airflow.apache.org/docs/apache-airflow-providers-sftp/2.1.0/>`_.
+
+
+Installation
+------------
+
+You can install this package on top of an existing airflow 2.1+ installation via
+``pip install apache-airflow-providers-sftp``
+
+The package supports the following python versions: 3.6,3.7,3.8,3.9
+
+PIP requirements
+----------------
+
+================================  ==================
+PIP package                       Version required
+================================  ==================
+``apache-airflow``                ``>=2.1.0``
+``apache-airflow-providers-ssh``  ``>=2.1.0``
+``paramiko``                      ``>=2.6.0``
+``pysftp``                        ``>=0.2.9``
+``sshtunnel``                     ``>=0.1.4,<0.2``
+================================  ==================
+
+Cross provider package dependencies
+-----------------------------------
+
+Those are dependencies that might be needed in order to use all the features of the package.
+You need to install the specified provider packages in order to use them.
+
+You can install such cross-provider dependencies when installing from PyPI. For example:
+
+.. code-block:: bash
+
+    pip install apache-airflow-providers-sftp[ssh]
+
+
+==============================================================================================  =======
+Dependent package                                                                               Extra
+==============================================================================================  =======
+`apache-airflow-providers-ssh <https://airflow.apache.org/docs/apache-airflow-providers-ssh>`_  ``ssh``
+==============================================================================================  =======
+
+ .. Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+ ..   http://www.apache.org/licenses/LICENSE-2.0
+
+ .. Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+
+
+Changelog
+---------
+
+2.1.0
+.....
+
+Features
+~~~~~~~~
+
+* ``Add support for non-RSA type key for SFTP hook (#16314)``
+
+.. Below changes are excluded from the changelog. Move them to
+   appropriate section above if needed. Do not delete the lines(!):
+   * ``Remove redundant logging in SFTP Hook (#16704)``
+   * ``Prepare documentation for July release of providers. (#17015)``
+   * ``Fixed wrongly escaped characters in amazon&#39;s changelog (#17020)``
+
+2.0.0
+.....
+
+Breaking changes
+~~~~~~~~~~~~~~~~
+
+* ``Auto-apply apply_default decorator (#15667)``
+
+.. warning:: Due to apply_default decorator removal, this version of the provider requires Airflow 2.1.0+.
+   If your Airflow version is < 2.1.0, and you want to install this provider version, first upgrade
+   Airflow to at least version 2.1.0. Otherwise your Airflow package version will be upgraded
+   automatically and you will have to manually run ``airflow upgrade db`` to complete the migration.
+
+Features
+~~~~~~~~
+
+* ``Depreciate private_key_pass in SFTPHook conn extra and rename to private_key_passphrase (#14028)``
+
+.. Below changes are excluded from the changelog. Move them to
+   appropriate section above if needed. Do not delete the lines(!):
+   * ``Updated documentation for June 2021 provider release (#16294)``
+   * ``More documentation update for June providers release (#16405)``
+   * ``Synchronizes updated changelog after buggfix release (#16464)``
+
+1.2.0
+.....
+
+Features
+~~~~~~~~
+
+* ``Undeprecate private_key option in SFTPHook (#15348)``
+* ``Add logs to show last modified in SFTP, FTP and Filesystem sensor (#15134)``
+
+1.1.1
+.....
+
+Features
+~~~~~~~~
+
+* ``SFTPHook private_key_pass extra param is deprecated and renamed to private_key_passphrase, for consistency with
+  arguments' naming in SSHHook``
+
+Bug fixes
+~~~~~~~~~
+
+* ``Corrections in docs and tools after releasing provider RCs (#14082)``
+
+
+1.1.0
+.....
+
+Updated documentation and readme files.
+
+Features
+~~~~~~~~
+
+* ``Add retryer to SFTP hook connection (#13065)``
+
+
+1.0.0
+.....
+
+Initial version of the provider.
