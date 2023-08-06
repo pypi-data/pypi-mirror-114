@@ -1,0 +1,3 @@
+[console_scripts]
+pori_cbioportal = pori_cbioportal.main:command_interface
+
