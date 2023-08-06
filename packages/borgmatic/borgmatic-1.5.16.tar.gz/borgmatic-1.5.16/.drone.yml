@@ -1,0 +1,86 @@
+---
+kind: pipeline
+name: python-3-6-alpine-3-9
+
+services:
+  - name: postgresql
+    image: postgres:11.9-alpine
+    environment:
+      POSTGRES_PASSWORD: test
+      POSTGRES_DB: test
+  - name: mysql
+    image: mariadb:10.3
+    environment:
+      MYSQL_ROOT_PASSWORD: test
+      MYSQL_DATABASE: test
+
+steps:
+- name: build
+  image: alpine:3.9
+  pull: always
+  commands:
+    - scripts/run-full-tests
+---
+kind: pipeline
+name: python-3-7-alpine-3-10
+
+services:
+  - name: postgresql
+    image: postgres:11.9-alpine
+    environment:
+      POSTGRES_PASSWORD: test
+      POSTGRES_DB: test
+  - name: mysql
+    image: mariadb:10.3
+    environment:
+      MYSQL_ROOT_PASSWORD: test
+      MYSQL_DATABASE: test
+
+steps:
+- name: build
+  image: alpine:3.10
+  pull: always
+  commands:
+    - scripts/run-full-tests
+---
+kind: pipeline
+name: python-3-8-alpine-3-13
+
+services:
+  - name: postgresql
+    image: postgres:13.1-alpine
+    environment:
+      POSTGRES_PASSWORD: test
+      POSTGRES_DB: test
+  - name: mysql
+    image: mariadb:10.5
+    environment:
+      MYSQL_ROOT_PASSWORD: test
+      MYSQL_DATABASE: test
+
+steps:
+- name: build
+  image: alpine:3.13
+  pull: always
+  commands:
+    - scripts/run-full-tests
+---
+kind: pipeline
+name: documentation
+
+steps:
+- name: build
+  #image: plugins/docker
+  # Temporary work-around for https://github.com/drone-plugins/drone-docker/pull/327
+  image: techknowlogick/drone-docker
+  settings:
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
+    repo: witten/borgmatic-docs
+    dockerfile: docs/Dockerfile
+
+trigger:
+  branch:
+    - master

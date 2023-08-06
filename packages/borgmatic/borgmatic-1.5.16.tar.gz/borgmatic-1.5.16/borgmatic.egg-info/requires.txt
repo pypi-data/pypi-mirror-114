@@ -1,0 +1,5 @@
+jsonschema
+requests
+ruamel.yaml<0.18.0,>0.15.0
+setuptools
+colorama<0.5,>=0.4.1
