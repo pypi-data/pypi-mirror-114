@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lethean_vpn
+Version: 1.0.0
+Summary: Lethean VPN
+Home-page: https://lt.hn/en/docs/vpn
+Author: Lethean VPN
+Author-email: contact@lethean.io
+License: GPLv3
+Keywords: vpn
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+
+    Distributed Virtual Private Marketplace  # noqa: E501
+    
+
