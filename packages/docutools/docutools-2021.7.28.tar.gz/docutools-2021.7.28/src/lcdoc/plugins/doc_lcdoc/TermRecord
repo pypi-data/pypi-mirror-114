@@ -1,0 +1,384 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# vim: set nospell:
+##############################################################################
+# TermRecord.py                                                              #
+#                                                                            #
+# This file can either run the 'script' command as a wrapper, or parse its   #
+# output with timing information.  It produces self-contained or dynamic     #
+# HTML files capable of replaying the terminal session with just a modern    #
+# browser.                                                                   #
+#                                                                            #
+#                                                                            #
+#   Authors: Wolfgang Richter <wolfgang.richter@gmail.com>                   #
+#                                                                            #
+#                                                                            #
+#   Copyright 2014-2017 Wolfgang Richter and licensed under the MIT License. #
+#                                                                            #
+##############################################################################
+
+
+from argparse import ArgumentParser, FileType
+from contextlib import closing
+from codecs import open as copen
+from json import dumps
+from math import ceil
+from os.path import basename, dirname, exists, join
+from os import system, environ as env
+import os
+from struct import unpack
+from subprocess import Popen
+from sys import platform, prefix, stderr
+from tempfile import NamedTemporaryFile
+
+try:
+    from termrecord import templated
+
+    from jinja2 import FileSystemLoader, Template
+    from jinja2.environment import Environment
+
+    DEFAULT_TEMPLATE = join(templated(), 'static.jinja2')
+except:
+    termrecord = None
+
+TTYREC = 'ttyrec'
+if os.system('ttyrec -h'):
+    # trying a bundled version compiled for linux, patched for RH7: https://github.com/aljazceru/ttyrec
+    # the original does not compile otherwise:
+    # Mabye on linux the ubiquuos 'script' is anyway the better option?
+    TTYREC = os.path.abspath(os.path.dirname('__file__')) + '/ttyrec'
+
+
+# http://blog.taz.net.au/2012/04/09/getting-the-terminal-size-in-python/
+def probeDimensions(fd=1):
+    """
+    Returns height and width of current terminal. First tries to get
+    size via termios.TIOCGWINSZ, then from environment. Defaults to 25
+    lines x 80 columns if both methods fail.
+
+    :param fd: file descriptor (default: 1=stdout)
+    """
+    try:
+        import fcntl, termios, struct
+
+        hw = struct.unpack('hh', fcntl.ioctl(fd, termios.TIOCGWINSZ, '1234'))
+    except:
+        try:
+            hw = (env['LINES'], env['COLUMNS'])
+        except:
+            hw = (24, 80)
+
+    return hw
+
+
+# http://stackoverflow.com/a/8220141/3362361
+def testOSX():
+    return platform == 'darwin'
+
+
+def escapeString(string):
+    string = string.encode('unicode_escape').decode('utf-8')
+    string = string.replace("'", "\\'")
+    string = "'" + string + "'"
+    return string
+
+
+def runScript(command=None, tempfile=None):
+    timingfname = None
+    scriptfname = None
+    CMD = ['script']
+
+    if tempfile:
+        timingfname = '%s.timing' % str(tempfile)
+        scriptfname = '%s.log' % str(tempfile)
+        with open(timingfname, 'w'):
+            with open(scriptfname, 'w'):
+                pass
+    else:
+        with NamedTemporaryFile(delete=False) as timingf:
+            with NamedTemporaryFile(delete=False) as scriptf:
+                timingfname = timingf.name
+                scriptfname = scriptf.name
+
+    CMD.append('-t')
+
+    if command:
+        CMD.append('-c')
+        CMD.append(command)
+
+    CMD.append(scriptfname)
+
+    with open(timingfname, 'w') as timingf:
+        proc = Popen(CMD, stderr=timingf)
+        proc.wait()
+
+    return (
+        copen(scriptfname, encoding='utf-8', errors='replace'),
+        open(timingfname, 'r'),
+    )
+
+
+def runTtyrec(command=None):
+    scriptfname = None
+    CMD = ['ttyrec']
+
+    with NamedTemporaryFile(delete=False) as scriptf:
+        scriptfname = scriptf.name
+
+    if command:
+        CMD.append('-e')
+        CMD.append(command)
+
+    CMD.append(scriptfname)
+
+    proc = Popen(CMD)
+    proc.wait()
+    return open(scriptfname, 'rb')
+
+
+def getTiming(timef):
+    timing = None
+    with closing(timef):
+        timing = [l.strip().split(' ') for l in timef]
+        timing = [(int(ceil(float(r[0]) * 1000)), int(r[1])) for r in timing]
+    return timing
+
+
+def scriptToJSON(scriptf, timing=None):
+    ret = []
+
+    with closing(scriptf):
+        scriptf.readline()  # ignore first header line from script file
+        offset = 0
+        for t in timing:
+            data = escapeString(scriptf.read(t[1]))
+            offset += t[0]
+            ret.append((data, offset))
+    return ret
+
+
+def parseTtyrec(scriptf):
+    pos = 0
+    offset = 0
+    oldtime = 0
+    ret = []
+
+    with closing(scriptf):
+        data = scriptf.read()
+        while pos < len(data):
+            secs, usecs, amount = unpack('iii', data[pos : pos + 12])
+            pos += 12
+            timing = int(ceil(secs * 1000 + float(usecs) / 1000))
+            if oldtime:
+                offset += timing - oldtime
+            oldtime = timing
+            ret.append(
+                (
+                    escapeString(
+                        data[pos : pos + amount].decode(
+                            encoding='utf-8', errors='replace'
+                        )
+                    ),
+                    offset,
+                )
+            )
+            pos += amount
+    return ret
+
+
+def renderTemplate(json, dimensions, templatename, outfname=None):
+    fsl = FileSystemLoader(dirname(templatename), 'utf-8')
+    e = Environment()
+    e.loader = fsl
+
+    templatename = basename(templatename)
+    rendered = e.get_template(templatename).render(json=json, dimensions=dimensions)
+
+    if not outfname:
+        return rendered
+
+    with closing(outfname):
+        outfname.write(rendered)
+
+
+if __name__ == '__main__':
+    argparser = ArgumentParser(description='Stores terminal sessions into HTML.')
+
+    argparser.add_argument(
+        '-b',
+        '--backend',
+        type=str,
+        choices=['script', 'ttyrec'],
+        help='use either script or ttyrec',
+        required=False,
+    )
+    argparser.add_argument(
+        '-c', '--command', type=str, help='run a command and quit', required=False
+    )
+    argparser.add_argument(
+        '-d',
+        '--dimensions',
+        type=int,
+        metavar=('h', 'w'),
+        nargs=2,
+        help='dimensions of terminal',
+        required=False,
+    )
+    argparser.add_argument(
+        '--json', help='output only JSON', action='store_true', required=False
+    )
+    argparser.add_argument(
+        '-S',
+        '--shot',
+        help='shot mode, json output as lines to copy',
+        action='store_true',
+        required=False,
+    )
+
+    argparser.add_argument(
+        '--js', help='output only JavaScript', action='store_true', required=False
+    )
+    if termrecord:
+        argparser.add_argument(
+            '-m',
+            '--template-file',
+            type=str,
+            default=DEFAULT_TEMPLATE,
+            help='file to use as HTML template',
+            required=False,
+        )
+    argparser.add_argument(
+        '-o',
+        '--output-file',
+        type=FileType('w'),
+        help='file to output recording to',
+        required=False,
+    )
+    argparser.add_argument(
+        '-s', '--script-file', type=str, help='script file to parse', required=False
+    )
+    argparser.add_argument(
+        '-t',
+        '--timing-file',
+        type=FileType('r'),
+        help='timing file to parse',
+        required=False,
+    )
+    argparser.add_argument(
+        '--tempfile',
+        type=str,
+        help='full path for tempfiles (extensions will be added)',
+        required=False,
+    )
+
+    ns = argparser.parse_args()
+
+    backend = ns.backend
+    command = ns.command
+    dimensions = ns.dimensions
+    tmpname = ns.template_file if termrecord else None
+    scriptf = ns.script_file
+    outf = ns.output_file
+    timef = ns.timing_file
+    tempfile = ns.tempfile
+    json_only = ns.json or ns.shot
+    shot_mode = ns.shot
+    js_only = ns.js
+    isOSX = testOSX()
+
+    if backend != TTYREC and ((scriptf and not timef) or (timef and not scriptf)):
+        argparser.error(
+            'Both SCRIPT_FILE and TIMING_FILE have to be ' + 'specified together.'
+        )
+        exit(1)
+
+    if not backend:
+        if isOSX:
+            backend = TTYREC
+        else:
+            backend = 'script'
+
+    if not json_only and not js_only and tmpname and not exists(tmpname):
+        stderr.write('Error: Template ("%s") does not exist.\n' % (tmpname))
+        stderr.write('If you only wanted JSON output, use "--json"\n')
+        stderr.write('If you only wanted JavaScript output, use "--js"\n')
+        exit(1)
+
+    if not dimensions:
+        dimensions = probeDimensions() if not scriptf else (24, 80)
+
+    if not scriptf:
+        if backend == TTYREC:
+            scriptf = runTtyrec(command)
+        else:
+            scriptf, timef = runScript(command=command, tempfile=tempfile)
+    else:
+        if backend == TTYREC:
+            scriptf = open(scriptf, 'rb')
+        else:
+            scriptf = copen(scriptf, encoding='utf-8', errors='replace')
+
+    if backend == TTYREC:
+        frames = parseTtyrec(scriptf)
+    else:
+        timing = getTiming(timef)
+        frames = scriptToJSON(scriptf, timing)
+    # tcstart tcend funcitons in AXC (or via shortcut):
+    f1 = []
+    ts = '<-------/termcast start/------->'
+    te = '<-------/termcast end/------->'
+    t = '<-------/termcast '
+    offs, tlen = 0, len(t) + 10  # sometimes with \\r\\n at start
+    for f in frames:
+        c = f[0]
+        if t in c[:tlen]:
+            if ts in c:
+                f1 = []
+                offs = f[1]
+                continue
+            elif te in c:
+                # end - remove the entry of the end command:
+                for i in range(7):
+                    f1.pop()
+                    if '\\n' in f1[-1][0]:
+                        break
+                break
+        f1.append((c, f[1] - offs))
+    frames = f1
+
+    if json_only:
+        import time
+
+        u = env.get('SUDO_USER', env.get('USER', 'n.a.'))
+        meta = {
+            'rows': dimensions[0],
+            'cols': dimensions[1],
+            'ts': time.strftime('%X %x %Z'),
+            'kB': 0,
+            'by': u,
+        }
+        # gk: 3 years later: wtf?
+        # if shot_mode and not outf:
+        #     # for copy and paste
+        #     print('please clear scrollback buffer now <CMD>-k on mac')
+        #     input(' ')
+        if shot_mode:
+            frames = [i[0] for i in frames]  # timing no need
+            # dump = dumps(frames, indent=2).encode('utf-8')
+
+        frames.insert(0, meta)
+        dump = dumps(frames, indent=2)  # .encode('utf-8')
+        meta['kB'] = len(dump) / 1024
+
+        if not outf:
+            print(dump)
+        else:
+            outf.write(dump)
+            print('done termcast ')
+
+    elif js_only:
+        print('JS ONLY PLEASE IMPLEMENT ME.')
+    elif tmpname and outf:
+        renderTemplate(json, dimensions, tmpname, outf)
+    elif tmpname:
+        print((renderTemplate(json, dimensions, tmpname)))

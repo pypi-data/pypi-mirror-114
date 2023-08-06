@@ -1,0 +1,114 @@
+[
+  {
+    "rows": 55,
+    "cols": 95,
+    "ts": "08:08:15 05/15/21 CEST",
+    "kB": 0,
+    "by": "gk",
+    "cmd": ""
+  },
+  [
+    "'The string is a stark data structure and everywhere it is passed there is much duplication of process. It is a perfect vehicle for hiding information.\\r\\n - Alan J. Perlis\\r\\n\\r\\n'",
+    120
+  ],
+  [
+    "'\\x1b[1m\\x1b[7m%\\x1b[27m\\x1b[1m\\x1b[0m                                                                                              \\r \\r'",
+    440
+  ],
+  [
+    "'\\r\\x1b[0m\\x1b[27m\\x1b[24m\\x1b[J\\x1b[0m\\x1b[49m\\x1b[39m\\x1b[0m\\x1b[49m\\x1b[38;5;31m\\x1b[1m\\x1b[38;5;31m\\x1b[38;5;39m~\\x1b[0m\\x1b[38;5;39m\\x1b[49m\\x1b[38;5;31m/\\x1b[1m\\x1b[38;5;31m\\x1b[38;5;39mrepos\\x1b[0m\\x1b[38;5;39m\\x1b[49m\\x1b[38;5;31m/\\x1b[1m\\x1b[38;5;31m\\x1b[38;5;39mdocutools\\x1b[0m\\x1b[38;5;39m\\x1b[49m\\x1b[38;5;31m/\\x1b[38;5;103mdo\\x1b[0m\\x1b[38;5;103m\\x1b[49m\\x1b[38;5;31m/\\x1b[38;5;103ml\\x1b[0m\\x1b[38;5;103m\\x1b[49m\\x1b[38;5;31m/\\x1b[38;5;103ma\\x1b[0m\\x1b[38;5;103m\\x1b[49m\\x1b[38;5;31m/\\x1b[1m\\x1b[38;5;31m\\x1b[38;5;39mjavascript\\x1b[0m\\x1b[38;5;39m\\x1b[49m\\x1b[38;5;31m\\x1b[0m\\x1b[38;5;31m\\x1b[49m\\x1b[38;5;31m\\x1b[0m\\x1b[38;5;31m\\x1b[49m \\x1b[0m\\x1b[38;5;31m\\x1b[49m\\x1b[38;5;76m\\u276f\\x1b[0m\\x1b[38;5;76m\\x1b[49m\\x1b[38;5;76m\\x1b[0m\\x1b[38;5;76m\\x1b[49m\\x1b[30m\\x1b[0m\\x1b[30m\\x1b[49m\\x1b[39m \\x1b[0m\\x1b[49m\\x1b[39m\\x1b[K\\x1b[28C\\x1b[0m\\x1b[38;5;39m\\x1b[49m\\x1b[38;5;178m\\x1b[38;5;76mmain \\x1b[38;5;178m+4 \\x1b[38;5;178m!15 \\x1b[38;5;39m?30\\x1b[0m\\x1b[38;5;39m\\x1b[49m\\x1b[38;5;178m\\x1b[0m\\x1b[38;5;178m\\x1b[49m\\x1b[38;5;178m\\x1b[0m\\x1b[38;5;178m\\x1b[49m\\x1b[38;5;37m Py docutools\\x1b[0m\\x1b[38;5;37m\\x1b[49m\\x1b[38;5;37m\\x1b[0m\\x1b[38;5;37m\\x1b[49m\\x1b[38;5;37m\\x1b[0m\\x1b[38;5;37m\\x1b[49m\\x1b[39m\\x1b[56D\\x1b['",
+    580
+  ],
+  [
+    "'?2004h\\x1b['",
+    583
+  ],
+  [
+    "'4ml\\x1b[24m\\x1b[90ms -lta\\x1b[39m\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x1b'",
+    880
+  ],
+  [
+    "'[24m\\x1b[32ml\\x1b[32ms\\x1b[39m\\x1b['",
+    998
+  ],
+  [
+    "'39m \\x1b['",
+    1082
+  ],
+  [
+    "'39m-\\x1b['",
+    1189
+  ],
+  [
+    "'39ml\\x1b['",
+    1431
+  ],
+  [
+    "'39mt\\x1b['",
+    1475
+  ],
+  [
+    "'39ma\\x1b['",
+    1583
+  ],
+  [
+    "'?2004l\\r\\r\\nto'",
+    1822
+  ],
+  [
+    "'tal 2396\\r\\n-r'",
+    1928
+  ],
+  [
+    "'w-r--r-- 1 gk gk    5047 15. Mai 08:06 termcast.json\\r\\ndr'",
+    1929
+  ],
+  [
+    "'wxrwxr-x 1 gk gk     404 15. Mai 08:05 \\x1b[0m\\x1b[01;34m.\\x1b[0m\\r\\n-rw-r--r-- 1 gk gk    1385 15. Mai 08:05 xterm.min.css\\r\\n-r'",
+    1930
+  ],
+  [
+    "'w-r--r-- 1 gk gk    1191 15. Mai 08:05 index.html\\r\\n-rw-r--r-- 1 gk gk  582376 14. Mai 13:52 asciinema-player.js\\r\\n-rw-r--r-- 1 gk gk   38568 14. Mai 11:03 lc_with_termcast.js\\r\\n-r'",
+    1931
+  ],
+  [
+    "'w-rw-r-- 1 gk gk   38568 13. Mai 22:10 lc.js\\r\\n-rw-r--r-- 1 gk gk 1261582 11. Mai 23:04 fa_all.js\\r\\ndr'",
+    1932
+  ],
+  [
+    "'wxrwxr-x 1 gk gk      74 11. Mai 01:50 \\x1b[01;34m..\\x1b[0m\\r\\n-r'",
+    1933
+  ],
+  [
+    "'w-r--r-- 1 gk gk     155 22. Dez 14:25 tables.js\\r\\n-rw-rw-r-- 1 gk gk   30943  7. Nov 2020  ax_termcasts.js\\r\\n-r'",
+    1934
+  ],
+  [
+    "'w-rw-r-- 1 gk gk  149350  7. Nov 2020  Rx.min.js\\r\\n-rw-rw-r-- 1 gk gk  298220  7. Nov 2020  xterm.4.9.0.min.js\\r\\n-r'",
+    1935
+  ],
+  [
+    "'w-rw-r-- 1 gk gk    2612  7. Nov 2020  xterm-addon-fit.min.js\\r\\n-rw-rw-r-- 1 gk gk    5957  7. Nov 2020  xterm-addon-search.min.js\\r\\n-rw-rw-r-- 1 gk gk    3100  3. Jun 2020  tablesort.min.js\\r\\n\\x1b['",
+    1936
+  ],
+  [
+    "'1m\\x1b[7m%\\x1b[27m\\x1b[1m\\x1b[0m                                                                                              \\r \\r\\r\\x1b'",
+    1937
+  ],
+  [
+    "'[0m\\x1b[27m\\x1b[24m\\x1b[J\\x1b[0m\\x1b[49m\\x1b[39m\\x1b[0m\\x1b[49m\\x1b[38;5;31m\\x1b[1m\\x1b[38;5;31m\\x1b[38;5;39m~\\x1b[0m\\x1b[38;5;39m\\x1b[49m\\x1b[38;5;31m/\\x1b[1m\\x1b[38;5;31m\\x1b[38;5;39mrepos\\x1b[0m\\x1b[38;5;39m\\x1b[49m\\x1b[38;5;31m/\\x1b[1m\\x1b[38;5;31m\\x1b[38;5;39mdocutools\\x1b[0m\\x1b[38;5;39m\\x1b[49m\\x1b[38;5;31m/\\x1b[38;5;103mdo\\x1b[0m\\x1b[38;5;103m\\x1b[49m\\x1b[38;5;31m/\\x1b[38;5;103ml\\x1b[0m\\x1b[38;5;103m\\x1b[49m\\x1b[38;5;31m/\\x1b[38;5;103ma\\x1b[0m\\x1b[38;5;103m\\x1b[49m\\x1b[38;5;31m/\\x1b[1m\\x1b[38;5;31m\\x1b[38;5;39mjavascript\\x1b[0m\\x1b[38;5;39m\\x1b[49m\\x1b[38;5;31m\\x1b[0m\\x1b[38;5;31m\\x1b[49m\\x1b[38;5;31m\\x1b[0m\\x1b[38;5;31m\\x1b[49m \\x1b[0m\\x1b[38;5;31m\\x1b[49m\\x1b[38;5;76m\\u276f\\x1b[0m\\x1b[38;5;76m\\x1b[49m\\x1b[38;5;76m\\x1b[0m\\x1b[38;5;76m\\x1b[49m\\x1b[30m\\x1b[0m\\x1b[30m\\x1b[49m\\x1b[39m \\x1b[0m\\x1b[49m\\x1b[39m\\x1b[K\\x1b[28C\\x1b[0m\\x1b[38;5;39m\\x1b[49m\\x1b[38;5;178m\\x1b[38;5;76mmain \\x1b[38;5;178m+4 \\x1b[38;5;178m!15 \\x1b[38;5;39m?30\\x1b[0m\\x1b[38;5;39m\\x1b[49m\\x1b[38;5;178m\\x1b[0m\\x1b[38;5;178m\\x1b[49m\\x1b[38;5;178m\\x1b[0m\\x1b[38;5;178m\\x1b[49m\\x1b[38;5;37m Py docutools\\x1b[0m\\x1b[38;5;37m\\x1b[49m\\x1b[38;5;37m\\x1b[0m\\x1b[38;5;37m\\x1b[49m\\x1b[38;5;37m\\x1b[0m\\x1b[38;5;37m\\x1b[49m\\x1b[39m\\x1b[56D\\x1b[?2'",
+    2003
+  ],
+  [
+    "'004h\\x1b[?2'",
+    2005
+  ],
+  [
+    "'004l\\r\\r\\n\\nS'",
+    3203
+  ],
+  [
+    "'cr'",
+    3204
+  ]
+]
