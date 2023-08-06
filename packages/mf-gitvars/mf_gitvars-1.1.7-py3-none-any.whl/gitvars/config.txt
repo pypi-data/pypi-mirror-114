@@ -1,0 +1,6 @@
+# config.txt
+
+[project]
+gitlab_project =
+var_prefix = K8S_SECRET_
+exclude_keys = HELM_UPGRADE_VALUES_FILE

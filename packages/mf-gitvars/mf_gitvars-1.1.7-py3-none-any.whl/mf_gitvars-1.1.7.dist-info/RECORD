@@ -1,0 +1,10 @@
+gitvars/__init__.py,sha256=B5kGfu-FGX-aaYN87Xijjujq7qieN7YF31RGvyYMdpI,70
+gitvars/__main__.py,sha256=6azB3T-K0FWeGc3zbG2y1s_TsdAG40LOsprf0VURcQA,984
+gitvars/config.txt,sha256=ulvh-TVfwezRt_sn5ZD6kJyQEa2daG0BpgHNOpE4uts,106
+gitvars/printvars.py,sha256=oKdor3EZ-BKQGlwqVtw9OM2RHsTsSRNb-XBgpQlxGJE,2028
+gitvars/readvars.py,sha256=U0pRFuIBz2pz4KMZPt6V62mW9UNv05N1zdkiYmgQQxo,924
+mf_gitvars-1.1.7.dist-info/METADATA,sha256=GCQMfjiMQGJFy8MQTAlf0s-UCRWMyi7rnTEqPYe2568,1480
+mf_gitvars-1.1.7.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+mf_gitvars-1.1.7.dist-info/entry_points.txt,sha256=BKkmFyj17FlSdn1I8t651fnCefsIq7xXMoPBFGwP9sk,54
+mf_gitvars-1.1.7.dist-info/top_level.txt,sha256=o73PHSI1P11rB1LXdeotvqhHenjzJPiXWutOGmrCAJw,8
+mf_gitvars-1.1.7.dist-info/RECORD,,
