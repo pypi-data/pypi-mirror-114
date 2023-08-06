@@ -1,0 +1,4 @@
+from rlogging import cli
+
+if __name__ == '__main__':
+    cli.start_cli()
