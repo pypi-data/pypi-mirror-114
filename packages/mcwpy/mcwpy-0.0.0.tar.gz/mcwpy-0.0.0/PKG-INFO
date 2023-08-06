@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: mcwpy
+Version: 0.0.0
+Summary: Add a new way to create Minecraft datapacks
+Home-page: https://github.com/vianneyveremme/minecraft_with_python
+Author: Vianpyro
+Author-email: vianney.veremme@gmail.com
+License: MIT
+Description: This is my first working Python library :)
+        It is a very simple calculator that takes two numbers and add them or substract them together.
+        
+        # Initial (2021/07/28)
+        - Created two functions to add or substract numbers together.
+        - Created a `setup.py` file to setup the library.
+        - Wrote `README.md`.
+        
+Keywords: Minecraft,Datapack,Function,MCFunction
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

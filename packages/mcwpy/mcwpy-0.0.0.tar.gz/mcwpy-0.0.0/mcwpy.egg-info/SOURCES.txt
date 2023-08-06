@@ -1,0 +1,12 @@
+CHANGELOG.md
+LICENSE.md
+MANIFEST.in
+README.md
+REQUIREMENTS.txt
+setup.py
+mcwpy/__init__.py
+mcwpy.egg-info/PKG-INFO
+mcwpy.egg-info/SOURCES.txt
+mcwpy.egg-info/dependency_links.txt
+mcwpy.egg-info/not-zip-safe
+mcwpy.egg-info/top_level.txt
