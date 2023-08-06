@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        netpwn=netpwn.__main__:main
+    
