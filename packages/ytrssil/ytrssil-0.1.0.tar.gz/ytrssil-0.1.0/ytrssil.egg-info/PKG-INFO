@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: ytrssil
+Version: 0.1.0
+Summary: Subscribe to YouTube RSS feeds and keep track of watched videos
+Home-page: UNKNOWN
+Author: Pavle Portic
+Author-email: git@theedgeofrage.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# YouTube RSS manager
+
+This is a simple CLI to manage YouTube subscriptions through RSS feeds
+and watch new videos using `mpv`. It keeps track of watched videos in a local
+sqlite database.
+
+## Configuration
+
+It looks for a list of RSS URLs in `$XDG_CONFIG_HOME/ytrssil/feeds`
+(~/.config/ by default), with one URL per line. Only YouTube channel feeds
+are supported at this moment.
+
+

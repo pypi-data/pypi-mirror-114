@@ -1,0 +1,2 @@
+class ChannelNotFound(Exception):
+    pass
