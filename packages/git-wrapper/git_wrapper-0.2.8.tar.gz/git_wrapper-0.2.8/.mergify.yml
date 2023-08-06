@@ -1,0 +1,17 @@
+pull_request_rules:
+    - actions:
+        merge:
+            method: rebase
+            rebase_fallback: merge
+            strict: true
+      conditions:
+          - label!=(no-mergify|WIP)
+          - '#approved-reviews-by>=2'
+          - check-success=flake8
+          - check-success=integration
+          - check-success=test (2.7)
+          - check-success=test (3.6)
+          - check-success=test (3.7)
+          - check-success=test (3.8)
+          - check-success=test (3.9)
+      name: default
