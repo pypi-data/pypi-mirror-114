@@ -1,0 +1,285 @@
+{% extends './base_site.html' %}
+
+{% block title %}{{ title }}{% endblock title %}
+{% block content %}
+    <h1>Calibration: </h1>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg">
+                <div class="row">
+                    <div class="col-md">
+                        <h6>Accessory: <a
+                                href=/accessories/{{ calibration.accessory.id }} style="color:#0000EE">{{ calibration.accessory.id }}</a>
+                        </h6>
+                    </div>
+                    <div class="col-md">
+
+                        <form id="calibration-form">
+                            {% csrf_token %}
+                            {% for field in calibration_form.visible_fields %}
+                                <div class="form-group col">
+                                    <label class="col-12">{{ field.label }}</label>
+                                    {{ field }}
+                                </div>
+                            {% endfor %}
+                            <input type="submit" class="btn btn-primary" value="Update calibration"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="row">
+                    <div class="col-md">
+                        <h6>Create Calibration Constant:</h6>
+
+                        <form id="calibration-constants-form">
+
+                            {% csrf_token %}
+                            <div class="form-group col-row">
+                                <label class="col-12">{{ calibrationconstants_initial_form.fields.id.label }}</label>
+                                {{ calibrationconstants_initial_form.id }}
+                            </div>
+                            <div class="form-group form-row">
+                                <div class="form-group col-sm">
+
+                                    <label class="col-sm">{{ calibrationconstants_initial_form.fields.type.label }}</label>
+
+                                    {{ calibrationconstants_initial_form.type }}
+                                </div>
+                                <div class="form-group col-sm">
+
+                                    <label class="col-sm">{{ calibrationconstants_initial_form.fields.value.label }}</label>
+
+                                    {{ calibrationconstants_initial_form.value }}
+                                </div>
+                            </div>
+
+                            {% for field in calibrationconstants_initial_form.hidden_fields %}
+                                {{ field }}
+                            {% endfor %}
+                            <input type="submit" class="btn btn-primary" value="Create Calibration Constant"/>
+                        </form>
+
+
+                        <hr/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+
+                        <table class="table table-striped table-sm " id="my_calibrations" style="width:100%">
+                            <thead>
+                            <tr>
+                                <th>Current Constants</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for calibration_constant_form in calibrationconstants_forms %}
+                                <tr>
+                                    <td>
+                                        <form id=
+                                                {{ '"calibration-constant-update-form' }}{{ calibration_constant_form.id.value }}{{ '"' }}>
+                                            {% csrf_token %}
+                                            <div class="form-group col-row">
+                                                <label class="col-12">{{ calibration_constant_form.fields.id.label }}</label>
+                                                {{ calibration_constant_form.id }}
+                                            </div>
+                                            <div class="form-group form-row">
+                                                <div class="form-group col-sm">
+
+                                                    <label class="col-sm">{{ calibration_constant_form.fields.type.label }}</label>
+
+                                                    {{ calibration_constant_form.type }}
+                                                </div>
+                                                <div class="form-group col-sm">
+
+                                                    <label class="col-sm">{{ calibration_constant_form.fields.value.label }}</label>
+
+                                                    {{ calibration_constant_form.value }}
+                                                </div>
+                                            </div>
+                                            {% for field in calibration_constant_form.hidden_fields %}
+                                                {#                                        <td>#}
+
+
+                                                {{ field }}
+                                                {#                                        </td>#}
+                                            {% endfor %}
+                                            {#                                    <td>#}
+                                            <input type="submit" class="btn btn-primary" value="Update Constant"/>
+                                            {#                                    </td>#}
+                                        </form>
+                                    </td>
+                                </tr>
+                                {##}
+                                {##}
+                                {#                                <tr>#}
+                                {#                                    <td>#}
+                                {#                                        <input type='text' class='txtedit' value='<?php echo $username; ?>'#}
+                                {#                                               id='username_<?php echo $id; ?>'>#}
+                                {#                                        {{ calibration_constant.id }}#}
+                                {#                                    </td>#}
+                                {#                                    <td>{{ calibration_constant.type }}</td>#}
+                                {#                                    <td>{{ calibration_constant.value }}</td>#}
+                                {#                                    <td>{{ calibration_constant.updated_at }}</td>#}
+                                {#                                    <td>{{ calibration_constant.created_at }}</td>#}
+                                {#                                    <th></th>#}
+                                {#                                </tr>#}
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block javascript %}
+    <script>
+        /*
+            On submiting the form, send the POST ajax
+            request to server and after successfull submission
+            display the object.
+        */
+        {#$("#calibration-form").submit(function (e) {#}
+        {#    // preventing from page reload and default actions#}
+        {#    e.preventDefault();#}
+        {#    // serialize the data for sending the form data.#}
+        {#    var serializedData = $(this).serialize();#}
+        {#    // make POST ajax call#}
+        {#    $.ajax({#}
+        {#        type: 'PATCH',#}
+        {#        url: "{% url 'update_calibration' %}",#}
+        {#        data: serializedData,#}
+        {#        success: function (response) {#}
+        {#            // on successfull creating object#}
+        {#            // 2. focus to nickname input#}
+        {#            $("#id_id").focus();#}
+        {##}
+        {#            // display the newly calibration to table.#}
+        {#            var instance = JSON.parse(response["instance"]);#}
+        {##}
+        {#        },#}
+        {#        error: function (response) {#}
+        {#            // alert the error if any error occured#}
+        {#            alert(response["responseJSON"]["error"]);#}
+        {#        }#}
+        {#    })#}
+
+        {##}
+        {##}
+        $("#calibration-constants-form").submit(function (e) {
+            // preventing from page reload and default actions
+            e.preventDefault();
+            // serialize the data for sending the form data.
+            var serializedData = $(this).serialize();
+            // make POST ajax call
+            $.ajax({
+                type: 'POST',
+                url: "{% url 'post_calibration_constant' %}",
+                data: serializedData,
+                success: function (response) {
+                    // on successfull creating object
+                    // 2. focus to nickname input
+                    $("#id_id").focus();
+
+                    // display the newly calibration to table.
+                    var instance = JSON.parse(response["instance"]);
+                    var form = JSON.parse(response["form"]);
+                    var fields = instance[0]["fields"];
+                    var pk = instance[0]["pk"];
+                    var formId = "calibration-constant-update-form" + pk;
+                    var formReference = "#" + formId
+                    var type = fields['type']
+                    var value = fields['value']
+                    var calibration = fields['calibration']
+
+                    $("#my_calibrations tbody").prepend(
+                        `<tr>
+                            <td>
+                                <form id=${formId} method="POST">
+                                    {% csrf_token %}
+                                    <div class="form-group col-row">
+                                                <input type="text" name="id" value=${pk} class="form-control" required=""
+                                               id="id_id"><input type="hidden" name="initial-id" value=${pk}
+                                                                 id="initial-id_id">
+                                            </div>
+                                            <div class="form-group form-row">
+                                                <div class="form-group col-sm">
+
+                                                    <input type="text" name="type" value=${type} maxlength="255"
+                                               class="form-control"
+                                               required="" id="id_type">
+                                                </div>
+                                                <div class="form-group col-sm">
+
+                                                    <input type="text" name="value" value=${value} maxlength="255"
+                                               class="form-control"
+                                               required="" id="id_value">
+                                                </div>
+                                            </div>
+
+
+                                    <input type="hidden" name="calibration" value=${calibration} class="form-control"
+                                           id="id_calibration">
+
+
+                                        <input type="submit" class="btn btn-primary" value="Update Constant">
+
+                                </form>
+                            </td>
+                        </tr>)`
+                    )
+                    var form2 = document.getElementById(formId);
+                    form2.onsubmit = function (e) {
+                        // preventing from page reload and default actions
+                        e.preventDefault();
+                        // serialize the data for sending the form data.
+                        var serializedData = $(this).serialize();
+                        // make POST ajax call
+                        $.ajax({
+
+                            type: 'POST',
+                            url: "{% url 'post_calibration_constant' %}",
+                            data: serializedData,
+                            error: function (response) {
+                                // alert the error if any error occured
+                                alert(response["responseJSON"]["error"]["id"]);
+                            }
+                        })
+                    }
+                },
+                error: function (response) {
+                    // alert the error if any error occured
+                    alert(response["responseJSON"]["error"]);
+                }
+            })
+        })
+
+
+        {% for calibration_constant_form in calibrationconstants_forms %}
+
+            $({{'"#calibration-constant-update-form'}}{{ calibration_constant_form.id.value }}{{ '"' }}
+            ).submit(function (e) {
+                // preventing from page reload and default actions
+                e.preventDefault();
+                // serialize the data for sending the form data.
+                var serializedData = $(this).serialize();
+                // make POST ajax call
+                $.ajax({
+
+                    type: 'POST',
+                    url: "{% url 'post_calibration_constant' %}",
+                    data: serializedData,
+                    error: function (response) {
+                        // alert the error if any error occured
+                        alert(response["responseJSON"]["error"]["id"]);
+                    }
+                })
+            })
+        {% endfor %}
+
+    </script>
+{% endblock javascript %}
