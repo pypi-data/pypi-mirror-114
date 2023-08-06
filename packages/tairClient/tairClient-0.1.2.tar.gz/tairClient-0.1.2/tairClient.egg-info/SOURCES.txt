@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+tairClient/__init__.py
+tairClient/client.py
+tairClient.egg-info/PKG-INFO
+tairClient.egg-info/SOURCES.txt
+tairClient.egg-info/dependency_links.txt
+tairClient.egg-info/requires.txt
+tairClient.egg-info/top_level.txt

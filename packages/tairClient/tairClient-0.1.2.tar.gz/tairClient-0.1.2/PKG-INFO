@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tairClient
+Version: 0.1.2
+Summary: a client extends redis.py that gives developers easy access to tair or tairModules
+Home-page: https://github.com/631086083/tairClient
+Author: Cheng Jiang
+Author-email: jiangcheng17@mails.ucas.ac.cn
+License: UNKNOWN
+Keywords: tair redis tairHash tairString
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+
