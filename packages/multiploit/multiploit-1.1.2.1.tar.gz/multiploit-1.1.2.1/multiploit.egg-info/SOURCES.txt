@@ -1,0 +1,13 @@
+CHANGES
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+multiploit/__init__.py
+multiploit/info.py
+multiploit.egg-info/PKG-INFO
+multiploit.egg-info/SOURCES.txt
+multiploit.egg-info/dependency_links.txt
+multiploit.egg-info/requires.txt
+multiploit.egg-info/top_level.txt
