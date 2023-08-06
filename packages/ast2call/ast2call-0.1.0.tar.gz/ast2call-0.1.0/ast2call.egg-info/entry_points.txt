@@ -1,0 +1,3 @@
+[console_scripts]
+ast2call = ast2call:main
+
