@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: vmray_rest_api
+Version: 5.1.1
+Summary: VMRay REST API Client and Integration Kit
+Home-page: https://www.vmray.com
+Author: VMRay
+Author-email: info@vmray.com
+License: Proprietary
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+
