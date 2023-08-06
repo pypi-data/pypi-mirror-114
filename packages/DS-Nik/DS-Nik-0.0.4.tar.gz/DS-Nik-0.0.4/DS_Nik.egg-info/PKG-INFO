@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: DS-Nik
+Version: 0.0.4
+Summary: An demonstration of how to create, document, and publish to the cheese shop a5 pypi.org.
+Home-page: UNKNOWN
+Author: Nikhilesh Chaudhari
+Author-email: nikhileshchaudhari93@gmail.com
+License: BSD
+Description: Some data structures
+Keywords: example data structures
+Platform: UNKNOWN
