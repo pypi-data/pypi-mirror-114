@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+rabin/__init__.py
+rabin/rabin
+rabin/rabin.py
+rabin.egg-info/PKG-INFO
+rabin.egg-info/SOURCES.txt
+rabin.egg-info/dependency_links.txt
+rabin.egg-info/top_level.txt
