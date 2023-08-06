@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: fifocast
+Version: 0.0.5
+Summary: Data Science library on python
+Home-page: UNKNOWN
+Author: shugaibov-valy
+Author-email: shugaibov2006@gmail.com
+License: MIT
+Keywords: fifocast
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+# Fifocast - FireForeCast
+
+
