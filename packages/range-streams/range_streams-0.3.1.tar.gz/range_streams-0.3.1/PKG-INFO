@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: range_streams
+Version: 0.3.1
+Summary: Streaming via range requests.
+Home-page: https://github.com/lmmx/range-streams
+Author: Louis Maddox
+Author-email: louismmx@gmail.com
+Maintainer: Louis Maddox
+Maintainer-email: louismmx@gmail.com
+License: MIT
+Project-URL: Documentation, https://range-streams.readthedocs.io/
+Project-URL: Bug Tracker, https://github.com/lmmx/range-streams/issues
+Project-URL: Source Code, https://github.com/lmmx/range-streams
+Description: # range-streams
+        
+        [![Documentation](https://readthedocs.org/projects/range-streams/badge/?version=latest)](https://range-streams.readthedocs.io/en/latest/)
+        [![CI Status](https://github.com/lmmx/range-streams/actions/workflows/master.yml/badge.svg)](https://github.com/lmmx/range-streams/actions/workflows/master.yml)
+        [![Coverage](https://codecov.io/gh/lmmx/range-streams/branch/master/graph/badge.svg)](https://codecov.io/github/lmmx/range-streams)
+        [![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org)
+        [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+        
+        Streaming via range requests in Python
+        
+        [Read The Docs](https://range-streams.readthedocs.io/en/latest/)
+        
+        ## Requires
+        
+        - Python 3.8+
+        
+        ## Installation
+        
+        ```sh
+        pip install range-streams
+        ```
+        
+        > _range-streams_ is available from [PyPI](https://pypi.org/project/range-streams), and
+        > the code is on [GitHub](https://github.com/lmmx/range-streams)
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: tests
+Provides-Extra: dev
