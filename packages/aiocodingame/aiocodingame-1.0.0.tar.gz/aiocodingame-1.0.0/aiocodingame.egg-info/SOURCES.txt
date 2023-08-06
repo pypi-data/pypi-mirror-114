@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+aiocodingame/__init__.py
+aiocodingame.egg-info/PKG-INFO
+aiocodingame.egg-info/SOURCES.txt
+aiocodingame.egg-info/dependency_links.txt
+aiocodingame.egg-info/requires.txt
+aiocodingame.egg-info/top_level.txt

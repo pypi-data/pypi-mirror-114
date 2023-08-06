@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: aiocodingame
+Version: 1.0.0
+Summary: ⛔️ DEPRACATED: Asynchronous wrapper for the CodinGame API.
+Home-page: https://github.com/takos22/aiocodingame
+Author: takos22
+Author-email: takos2210@gmail.com
+License: MIT
+Project-URL: Documentation, https://aiocodingame.readthedocs.io/
+Project-URL: Issue tracker, https://github.com/takos22/aiocodingame/issues
+Description: ⛔️ DEPRACATED: aiocodingame module
+        ===================================
+        
+        Use the `codingame module <https://github.com/takos22/codingame>`_ instead.
+        
+        Install that module:
+        
+        .. code-block:: sh
+        
+           pip install codingame[async]
+        
+        
+        To create an asynchronous client:
+        
+        .. code-block:: py
+        
+           import asyncio
+           import codingame
+        
+           async def main():
+              client = codingame.Client(is_async=True)
+        
+              # if you want to log in
+              await client.login("email@example.com", "password")
+        
+              # get a codingamer
+              codingamer = await client.get_codingamer("username")
+              print(codingamer.pseudo)
+        
+              # get the global leaderboard
+              global_leaderboard = await client.get_global_leaderboard()
+              # print the pseudo of the top codingamer
+              print(global_leaderboard.users[0].pseudo)
+        
+           asyncio.run(main())
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
