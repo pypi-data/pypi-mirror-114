@@ -1,0 +1,10 @@
+
+[codestyle]
+flake8<4,>=3
+black==20.8b1
+isort<6,>=5
+pyupgrade<3,>=2
+
+[testing]
+pytest-django<5,>=4
+pytest-cov<3,>=2
