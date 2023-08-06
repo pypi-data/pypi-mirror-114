@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: tax-calculator
+Version: 1.1.5
+Summary: Allows you to compute taxes
+Home-page: https://github.com/Koldar/tax-calculator
+Author: Massimo Bono
+Author-email: massimobono1@gmail.com
+License: MIT
+Keywords: tax
+Platform: UNKNOWN
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+License-File: README.md
+License-File: requirements.txt
+License-File: setup.py
+License-File: tox.ini
+Requires-Dist: arrow (>=1.1.1)
+Requires-Dist: beautifulsoup4 (>=4.9.3)
+Requires-Dist: python-dateutil (>=2.8.2)
+Requires-Dist: requests (>=2.26.0)
+Requires-Dist: soupsieve (>=2.2.1)
+Requires-Dist: stringcase (>=1.2.0)
+Requires-Dist: urllib3 (>=1.26.6)
+Requires-Dist: semantic-version (>=2.8.5)
+
+# Introduction
+ 
+Allows a regime forfettario partita IVA to compute the taxes it needs to pay to the Italian Government.
+ 
+# User 
+ 
+## Installation
+ 
+```
+pip install tax-calculator
+```
+ 
+For a help, use:
+ 
+```
+tax-calculator --help
+``` 
+
+To compute taxes:
+
+```
+tax-calculator compute-forfettario --ateco="62.02.00" --ricavi=15000
+```
+
+For additional options, consult the help of the subparser:
+
+```
+tax-calculator compute-forfettario --help
+```
+
+## Features
+
+ * Allows you to compute regime forfettario taxes;
+
+# Developer
+
+## Test
+
+Just tox it:
+
+```
+tox
+```
+
+## Uploading
+
+First create in your HOME folder the file `.pypirc`, with the following content:
+
+```
+[pypirc]
+servers = pypi
+[server-login]
+username:<your pypi username>
+password:<your pypi password>
+```
+
+Then perform your contribution. To test, update the version automatically, upload to pypi and create 
+a new tag on the git repo do the following:
+
+```
+python setup.py test update_version_patch bdist_wheel upload push_tag
+```
+
+There are also `update_version_minor` and `update_version_major` which increase the minor and major version
+number, respectively.   
+ 
+
