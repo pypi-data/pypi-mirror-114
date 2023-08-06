@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+drf_elastic_filter/__init__.py
+drf_elastic_filter/elastic_filter.py
+drf_elastic_filter/utils.py
+drf_elastic_filter.egg-info/PKG-INFO
+drf_elastic_filter.egg-info/SOURCES.txt
+drf_elastic_filter.egg-info/dependency_links.txt
+drf_elastic_filter.egg-info/requires.txt
+drf_elastic_filter.egg-info/top_level.txt
