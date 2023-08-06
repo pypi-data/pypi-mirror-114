@@ -1,0 +1,14 @@
+magcluster/__init__.py,sha256=9Jo0jZ8X3t7WlM1KdYcFV-WaJ6_Lo8T2OhWPvUuEML8,321
+magcluster/args.py,sha256=8bSSPwh5g_kdD7A5LdLqpWP4u6zU6Q_n2o6D_bv6C4U,10133
+magcluster/batch_proc.py,sha256=wUQ5RJdEOlszP-7te9jTZCpIUAYpnCug1KM95oWBWdg,2288
+magcluster/capture_args.py,sha256=6Feqx_lXuYTXLxuAtmcQVwOoUDpm8juPzpo_5lRKWYA,68
+magcluster/controller.py,sha256=1oI12ss_2k8CQRvBBU1auKDO_l7yFf4lnQ0TeJsYXrk,522
+magcluster/maga.py,sha256=mMTbT3xuLE8WwfluBT-7LFc2aB1_QS6tOCI8VvW-ONU,182
+magcluster/magm.py,sha256=txMGGi35Z0b-NjUyALpSnlmVDkjREslclZTpouSho6I,201
+magcluster/magsc.py,sha256=ChOPE8o9FLaxi74ofbDBgVKROx8aKbnZC3fCFoNiqIc,4384
+magcluster-0.1.5.dist-info/LICENSE.txt,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+magcluster-0.1.5.dist-info/METADATA,sha256=pTR6E3TATT04laFdDtdG2qjaWOcomxznUHP24hWhltI,2066
+magcluster-0.1.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+magcluster-0.1.5.dist-info/entry_points.txt,sha256=hJWk6rr1CVunGxr24EoSMsr8-HqNVsBluszIX1xMvaI,48
+magcluster-0.1.5.dist-info/top_level.txt,sha256=X3z81lhV9CCM3t2sUtH-K4osVfa3UVHdROmGQGMVYh4,11
+magcluster-0.1.5.dist-info/RECORD,,
