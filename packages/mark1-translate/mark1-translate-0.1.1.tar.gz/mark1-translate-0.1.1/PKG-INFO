@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: mark1-translate
+Version: 0.1.1
+Summary: 
+Author: cgmark101
+Author-email: cgmark101@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests (>=2.26.0,<3.0.0)
