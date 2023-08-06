@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+doughnut/__init__.py
+doughnut/hello.py
+doughnut.egg-info/PKG-INFO
+doughnut.egg-info/SOURCES.txt
+doughnut.egg-info/dependency_links.txt
+doughnut.egg-info/top_level.txt
