@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+tabular_automl/__init__.py
+tabular_automl/settings.py
+tabular_automl/tabular_automl.py
+tabular_automl/tests.py
+tabular_automl.egg-info/PKG-INFO
+tabular_automl.egg-info/SOURCES.txt
+tabular_automl.egg-info/dependency_links.txt
+tabular_automl.egg-info/requires.txt
+tabular_automl.egg-info/top_level.txt

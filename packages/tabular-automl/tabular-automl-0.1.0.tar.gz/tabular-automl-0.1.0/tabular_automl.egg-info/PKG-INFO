@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: tabular-automl
+Version: 0.1.0
+Summary: A light wrapper around popular Python machine learning frameworks for tabular data
+Home-page: https://github.com/harisonmg/tabular-automl
+Author: Harison Gachuru
+Author-email: harisongachuru@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/harisonmg/tabular-automl/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# tabular-automl
+A light wrapper around popular Python machine learning frameworks for tabular data
+
+[![Tests](https://github.com/harisonmg/tabular-automl/actions/workflows/ci.yml/badge.svg)](https://github.com/harisonmg/tabular-automl/actions/workflows/ci.yml)
+[![Coverage Status](https://coveralls.io/repos/github/harisonmg/tabular-automl/badge.svg?branch=main)](https://coveralls.io/github/harisonmg/tabular-automl?branch=main)
+
+
