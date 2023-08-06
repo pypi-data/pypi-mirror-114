@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: ecr_scan_reporter
+Version: 0.2.2
+Summary: Application to monitor ECR Repositories and capture scan results
+Home-page: https://github.com/compose-x/ecr_scan_reporter
+Author: John Preston
+Author-email: john@compose-x.io
+License: UNKNOWN
+Keywords: ecr_scan_reporter aws ecr security vulnerabilities scan lambda severless
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+=================
+ECR Scan Reporter
+=================
+
+
+.. image:: https://img.shields.io/pypi/v/ecr_scan_reporter.svg
+        :target: https://pypi.python.org/pypi/ecr_scan_reporter
+
+
+------------------------------------------------------------------------------------
+Serverless Application to monitor ECR Repositories and capture scan results
+------------------------------------------------------------------------------------
+
+Workflow
+==========
+
+.. image:: https://ecr-scan-reporter.compose-x.io/_images/EcrScanReporterWorkflow.jpg
+
+
+Full documentation https://ecr-scan-reporter.compose-x.io.
+
+Install from `AWS Serveless Applications Repository`_
+
+Credits
+-------
+
+This package was created with Cookiecutter_.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _AWS Serveless Applications Repository: https://serverlessrepo.aws.amazon.com/applications/eu-west-1/518078317392/ecr-scan-reporter
+
+
