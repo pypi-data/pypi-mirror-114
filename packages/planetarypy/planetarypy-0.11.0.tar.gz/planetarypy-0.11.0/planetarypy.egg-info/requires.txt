@@ -1,0 +1,8 @@
+strictyaml
+pandas
+pvl
+numpy
+python-dateutil
+tqdm
+lxml
+yarl
