@@ -1,0 +1,43 @@
+Metadata-Version: 1.1
+Name: pyftpdlib_zipreaderfilesystem
+Version: 0.0.0.1
+Summary: pyftpdlib_zipreaderfilesystem
+Home-page: https://github.com/cielavenir/pyftpdlib_zipreaderfilesystem
+Author: cielavenir
+Author-email: cielartisan@gmail.com
+License: MIT
+Description: ## pyftpdlib\_zipreaderfilesystem
+        
+        pyftpdlib abstracted\_fs for reading zip entries.
+        
+        ### Installation
+        
+        I'm not planning to upload this mess to pypi, use git.
+        
+        ```
+        pip install git+https://github.com/cielavenir/pyftpdlib_zipreaderfilesystem.git
+        ```
+        
+        ### Sample
+        
+        ```
+        python -m pyftpdlib_zipreaderfilesystem [zip_filename]
+        ```
+        
+        
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: PyPy

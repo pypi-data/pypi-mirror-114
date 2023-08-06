@@ -1,0 +1,9 @@
+README.md
+pyftpdlib_zipreaderfilesystem.py
+setup.py
+pyftpdlib_zipreaderfilesystem.egg-info/PKG-INFO
+pyftpdlib_zipreaderfilesystem.egg-info/SOURCES.txt
+pyftpdlib_zipreaderfilesystem.egg-info/dependency_links.txt
+pyftpdlib_zipreaderfilesystem.egg-info/not-zip-safe
+pyftpdlib_zipreaderfilesystem.egg-info/requires.txt
+pyftpdlib_zipreaderfilesystem.egg-info/top_level.txt
