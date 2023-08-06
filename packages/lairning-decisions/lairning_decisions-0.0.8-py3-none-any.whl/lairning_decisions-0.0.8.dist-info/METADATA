@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: lairning-decisions
+Version: 0.0.8
+Summary: lairning Decisions
+Home-page: https://github.com/lairning/drlpackage
+Author: md_lairning
+Author-email: md.lairning@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# lairning Decisions
+Contains lairning Deep Reinforcement Learning platform that Trains AI Agents to take optimal decisions on Simulated Environments (processes or systems) and make those AI Agents available through a Rest API to be used in the real world.
+
+
+
+
+
