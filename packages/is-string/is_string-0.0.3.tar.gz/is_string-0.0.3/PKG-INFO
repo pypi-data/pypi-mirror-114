@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: is_string
+Version: 0.0.3
+Summary: A small Python library to determine if something is a string
+Home-page: UNKNOWN
+Author: Przemek Kaminski
+Author-email: przemyslaw.m.kaminski@gmail.com
+License: UNKNOWN
+Description: # is_string
+        
+        ![tests](https://github.com/przemo199/is_string/actions/workflows/ci.yml/badge.svg)
+        
+        A small Python library to determine if something is a string.
+        
+        Installation
+        ------------
+        
+           ```bash
+           pip install is-number
+           ```
+        
+        Credits
+        ------------
+        
+        This project was inspired by the work done by Jacob Tomlinson
+Keywords: python,str,string
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
