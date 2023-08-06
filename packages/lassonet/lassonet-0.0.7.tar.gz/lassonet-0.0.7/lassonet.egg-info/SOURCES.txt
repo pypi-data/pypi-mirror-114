@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+lassonet/__init__.py
+lassonet/interfaces.py
+lassonet/model.py
+lassonet/prox-examples.py
+lassonet/prox.py
+lassonet/r.py
+lassonet/utils.py
+lassonet.egg-info/PKG-INFO
+lassonet.egg-info/SOURCES.txt
+lassonet.egg-info/dependency_links.txt
+lassonet.egg-info/requires.txt
+lassonet.egg-info/top_level.txt
