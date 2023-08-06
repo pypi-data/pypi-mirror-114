@@ -1,0 +1,12 @@
+bokeh
+codecov
+coverage
+ipywidgets
+jupyter
+nbconvert
+numpydoc
+pytest
+pytest-cov
+sphinx>=1.4.3
+sphinx_bootstrap_theme
+sphinxcontrib-bibtex
