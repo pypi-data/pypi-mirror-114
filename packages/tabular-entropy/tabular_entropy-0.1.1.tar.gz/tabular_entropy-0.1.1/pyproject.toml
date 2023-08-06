@@ -1,0 +1,11 @@
+[build-system]
+requires = ["maturin>=0.11,<0.12"]
+build-backend = "maturin"
+
+[project]
+name = "tabular_entropy"
+description = "Calculate Mutual Information for Paired Vectors"
+requires-python = ">=3.7,<=3.10"
+classifiers = [
+    "Programming Language :: Rust"
+]
