@@ -1,0 +1,12 @@
+# packaging
+pip>=9
+setuptools>=26
+
+# data science
+numpy
+nltk
+
+# tests/linter
+coverage
+flake8
+pytest
