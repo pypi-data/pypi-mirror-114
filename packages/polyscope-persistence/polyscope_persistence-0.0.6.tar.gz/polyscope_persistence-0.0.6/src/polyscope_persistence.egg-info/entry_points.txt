@@ -1,0 +1,3 @@
+[console_scripts]
+show = polyscope_persistence.wrapper:run_show_from_command_line
+
