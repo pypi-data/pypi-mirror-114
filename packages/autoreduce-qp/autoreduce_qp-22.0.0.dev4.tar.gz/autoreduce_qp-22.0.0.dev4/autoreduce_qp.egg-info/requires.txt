@@ -1,0 +1,5 @@
+autoreduce_db==22.0.0.dev6
+Django==3.2.4
+fire==0.4.0
+plotly==5.1.0
+stomp.py==7.0.0

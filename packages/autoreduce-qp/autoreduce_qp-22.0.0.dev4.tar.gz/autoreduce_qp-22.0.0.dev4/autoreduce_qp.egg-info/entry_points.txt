@@ -1,0 +1,3 @@
+[console_scripts]
+autoreduce-qp-start = autoreduce_qp.queue_processor.queue_listener:main
+
