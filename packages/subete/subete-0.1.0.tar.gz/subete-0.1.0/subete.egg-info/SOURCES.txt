@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+subete/__init__.py
+subete/repo.py
+subete.egg-info/PKG-INFO
+subete.egg-info/SOURCES.txt
+subete.egg-info/dependency_links.txt
+subete.egg-info/top_level.txt
