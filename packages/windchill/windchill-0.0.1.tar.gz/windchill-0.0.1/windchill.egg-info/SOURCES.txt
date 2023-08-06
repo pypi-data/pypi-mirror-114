@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+windchill/__init__.py
+windchill.egg-info/PKG-INFO
+windchill.egg-info/SOURCES.txt
+windchill.egg-info/dependency_links.txt
+windchill.egg-info/top_level.txt
