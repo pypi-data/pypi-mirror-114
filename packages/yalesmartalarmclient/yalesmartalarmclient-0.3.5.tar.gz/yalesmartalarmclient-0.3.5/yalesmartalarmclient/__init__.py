@@ -1,0 +1,2 @@
+"""Yalesmartalarmclient."""
+name = "yalesmartalarmclient"
