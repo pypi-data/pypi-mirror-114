@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: siamo-ragazzi
+Version: 1.0.0
+Summary: "Siamo ragazzi" meme generator
+License: AGPL-3.0-or-later
+Author: Stefano Pigozzi
+Author-email: me@steffo.eu
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pillow (>=8.3.1,<9.0.0)
+Requires-Dist: click (>=8.0.1,<9.0.0)
