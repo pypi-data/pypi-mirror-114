@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: demo-webapp
+Version: 0.0.3
+Summary: a simple web-app based on flask
+Home-page: https://github.com/SebastienPittet/demo-webapp
+Author: Sebastien Pittet
+Author-email: sebastien@pittet.org
+License: MIT
+Keywords: demo exoscale
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Other Audience
+License-File: LICENSE
+Requires-Dist: Flask
+Requires-Dist: requests
+
+demo-webapp
+===========
+
+|Total alerts|
+
+|Language grade: Python|
+
+|Build Status|
+
+This application is written in Python and based on
+`Flask <https://flask.palletsprojects.com/>`__. The template uses
+`Bootstrap framework <https://getbootstrap.com/>`__. It only show some
+content for **demo purpose**.
+
+In its initial release, it is mainly a wrapper of a
+Single-page-Application (SPA) stored on Exoscale `Simple Object Storage
+(SOS) <https://www.exoscale.com/object-storage/>`__ but can evolve
+differently in the future.
+
+From the release of August 1st, it fetch a random advice from
+`adviceslip.com Open API <https://api.adviceslip.com/>`__.
+
+.. |Total alerts| image:: https://img.shields.io/lgtm/alerts/g/SebastienPittet/demo-webapp.svg?logo=lgtm&logoWidth=18
+   :target: https://lgtm.com/projects/g/SebastienPittet/demo-webapp/alerts/
+.. |Language grade: Python| image:: https://img.shields.io/lgtm/grade/python/g/SebastienPittet/demo-webapp.svg?logo=lgtm&logoWidth=18
+   :target: https://lgtm.com/projects/g/SebastienPittet/demo-webapp/context:python
+.. |Build Status| image:: https://travis-ci.com/SebastienPittet/demo-webapp.svg?branch=master
+   :target: https://travis-ci.com/SebastienPittet/demo-webapp
+
+
