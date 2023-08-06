@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+matrix_synapse_admin.egg-info/PKG-INFO
+matrix_synapse_admin.egg-info/SOURCES.txt
+matrix_synapse_admin.egg-info/dependency_links.txt
+matrix_synapse_admin.egg-info/requires.txt
+matrix_synapse_admin.egg-info/top_level.txt
+synapse_admin/__init__.py
+synapse_admin/__main__.py
+synapse_admin/base.py
+synapse_admin/client.py
+synapse_admin/management.py
+synapse_admin/media.py
+synapse_admin/room.py
+synapse_admin/user.py
