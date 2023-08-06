@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: bdf2lvgl
+Version: 0.1.0
+Summary: Convert bitmap fonts in BDF format to the LVGL font format.
+License: GPLv2
+Author: summivox
+Author-email: summivox@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: bdflib (>=1.1.3,<2.0.0)
+Requires-Dist: click (>=8.0.1,<9.0.0)
+Requires-Dist: numpy (>=1.21.1,<2.0.0)
