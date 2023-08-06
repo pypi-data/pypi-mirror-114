@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+tf_dataclass/__init__.py
+tf_dataclass/get_type.py
+tf_dataclass/modified_dataclass.py
+tf_dataclass/packing_tools.py
+tf_dataclass.egg-info/PKG-INFO
+tf_dataclass.egg-info/SOURCES.txt
+tf_dataclass.egg-info/dependency_links.txt
+tf_dataclass.egg-info/top_level.txt
