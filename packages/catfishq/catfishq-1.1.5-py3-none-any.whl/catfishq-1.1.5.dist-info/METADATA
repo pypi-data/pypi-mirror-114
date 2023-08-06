@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: catfishq
+Version: 1.1.5
+Summary: Cat FASTQ files
+Home-page: UNKNOWN
+Author: philres
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pysam
+
+UNKNOWN
+
+
