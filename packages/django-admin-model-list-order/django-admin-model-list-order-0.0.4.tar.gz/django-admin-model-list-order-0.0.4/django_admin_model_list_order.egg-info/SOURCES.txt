@@ -1,0 +1,17 @@
+Authors.rst
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+admin_model_list_order/__init__.py
+admin_model_list_order/middleware.py
+admin_model_list_order/models.py
+admin_model_list_order/static/css/admin-custom-order.css
+admin_model_list_order/static/js/admin-custom-order.js
+django_admin_model_list_order.egg-info/PKG-INFO
+django_admin_model_list_order.egg-info/SOURCES.txt
+django_admin_model_list_order.egg-info/dependency_links.txt
+django_admin_model_list_order.egg-info/not-zip-safe
+django_admin_model_list_order.egg-info/requires.txt
+django_admin_model_list_order.egg-info/top_level.txt
