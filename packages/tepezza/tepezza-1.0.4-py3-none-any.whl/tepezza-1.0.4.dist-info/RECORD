@@ -1,0 +1,13 @@
+tepezza/__init__.py,sha256=6BUpvilI64p6InJY0AAzCk1xQdW6T-O9eQa2uDqPswU,72
+tepezza/__main__.py,sha256=31HwgZMLkpodyFUb0j8sI6HPdPTX5XrNzfx6NOZ97_8,1239
+tepezza/__version__.py,sha256=Oi2b5pm3sFbESQW0xgj8kqwDPX_Hxmx4gNILYpLzYqI,21
+tepezza/api.py,sha256=zAz6rmwhnjvVIt_nRRdq7LctWTxeKHpjhQ2Ae99Jwtk,10131
+tepezza/hotkey.py,sha256=kL2k1foEWPYoI7BrjY7cjJu8COrXxwh8FXtg8gaiGMQ,1897
+tepezza/data/default_config.ini,sha256=i1_uRFGawKy1xEX_0URxtLFZsd1pUMwmA5zwI5UzT8w,289
+tepezza/data/get_master_zipcode_list.ipynb,sha256=uLLpEh_Ef6ezhdNPOqSa64QN1tG4bCNumeYceU7e1R8,8973
+tepezza/data/zipcodes.csv,sha256=y3ee1Qh0u_DOjy8sfsMZDGLUAH2IWH5iKHpFU7UQU7Q,482148
+tepezza-1.0.4.dist-info/LICENSE,sha256=m_7KsQaoMcOr8Ak5YGGnhPGtbN1nA8vkalgN59iSBhQ,1078
+tepezza-1.0.4.dist-info/METADATA,sha256=BblJaUpdpZB89O89cKSP5qG9KWmSBPIW9oF9aJjhsUM,1167
+tepezza-1.0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+tepezza-1.0.4.dist-info/top_level.txt,sha256=Ithu5DxZy3e1gFzZrYPFsazDitcZgp0JjY58hDWcq0M,8
+tepezza-1.0.4.dist-info/RECORD,,
