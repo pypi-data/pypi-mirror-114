@@ -1,0 +1,10 @@
+bysondb/__init__.py,sha256=hMwnTLUKuKSHzd4WnMGXb9rAbkidIWBY2dm1WLMvVuU,280
+bysondb/base.py,sha256=mFbRIvJUkazwOSf_XUnDPdijtXoiP2Pm2usQD7WvphA,1788
+bysondb/db.py,sha256=4C4WJLAaZCwmCBPZPAZPYAwyVsaXCJwNvx0O22Y_wKk,1810
+bysondb/document_db.py,sha256=vceyHOrGJHcaWzfHFVmT9gjfQa44jjVDu4Vi4z-wWEY,4097
+bysondb/errors.py,sha256=kTzwo3mjt814ksSOu2ut4Kkw6RRZhY04IqYRS4lWtwc,282
+LICENSE,sha256=BT3gb1IzN4sW6WoVwHDEFggQcd4-vav9OPUyysgpsJU,1093
+bysondb-0.1.1.dist-info/LICENSE,sha256=BT3gb1IzN4sW6WoVwHDEFggQcd4-vav9OPUyysgpsJU,1093
+bysondb-0.1.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+bysondb-0.1.1.dist-info/METADATA,sha256=ch0ya31dmA-TahzA1oEpGljzXZca8RQWTYNtspPqDig,3051
+bysondb-0.1.1.dist-info/RECORD,,
