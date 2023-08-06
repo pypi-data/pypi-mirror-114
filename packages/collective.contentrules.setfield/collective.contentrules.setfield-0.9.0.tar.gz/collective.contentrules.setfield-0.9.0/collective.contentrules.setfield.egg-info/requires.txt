@@ -1,0 +1,7 @@
+setuptools
+plone.app.contentrules
+zope.formlib
+
+[test]
+plone.app.testing
+plone.api
