@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tapyrus-api-client
+Version: 1.0.0
+Summary: Tapyrus API
+Home-page: https://github.com/chaintope/tapyrus-api-client-examples
+Author: OpenAPI Generator community
+Author-email: team@openapitools.org
+License: UNKNOWN
+Keywords: OpenAPI,OpenAPI-Generator,Tapyrus API
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: urllib3 (>=1.25.3)
+Requires-Dist: python-dateutil
+
+The client library of Tapyrus API
+
+
