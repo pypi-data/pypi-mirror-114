@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: trendfitter
+Version: 0.0.6
+Summary: Latent Variable Modelling made easy
+Home-page: https://github.com/danaraujocr/trendfitter
+Author: Daniel Rodrigues
+Author-email: dan.araujocr@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7.4
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+
+[![Build Status](https://travis-ci.com/danaraujocr/trendfitter.svg?branch=master)](https://travis-ci.com/github/danaraujocr/trendfitter)
+
+# trendfitter
+Trendfitter is a latent variable modelling package made for multivariate statistical process control. Some of the methods implemented in this library are already available in other packages, but not with all the tools here available for investigation, exploration and prediction applied to industrial production processes. Additionally, the methods here follow an object-oriented approach similar to scikit-learn so that one can explore combining tools existing in that package without having the need to adapt the code.
+
+This first version contains:
+- Principal Component Analysis (PCA)
+- Multi-Block Principal Component Analysis (MB-PCA)
+- Partial Least Squares or Projection to Latent Structures (PLS)
+- Multiblock PLS (MB-PLS)
+- Sequential MBPLS (SMB-PLS)
+- Dynamic PLS (DiPLS)
+
+The models have methods implemented for the calculation of scores, loadings, weights, Hotelling's TÂ², Squared Prediction Errors(SPEs), and contributions for both TÂ²s and SPEs. Moreover, dealing with missing data in the matrix is available in multiple approaches, namely: Trimmed Score Regression (TSR), Conditional Mean Replacement (CMR), Trimmed Score Method (TMR), and Projection to Model Plane (PMP). All of these previously unavailable on the open-source python environment.
+
+Trendfitter is installable via pip:
+
+    pip install trendfitter
+
+Any information regarding usage of the methods and functions can be found using the help() function. Such as:
+
+    help(PCA())
+
+
+
+
+
