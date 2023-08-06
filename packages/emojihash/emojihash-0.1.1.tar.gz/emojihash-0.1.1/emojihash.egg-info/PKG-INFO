@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: emojihash
+Version: 0.1.1
+Summary: Emoji hash functions
+Home-page: https://github.com/v1a0/sqllex
+Author: v1a0
+Author-email: contact@v1a0.dev
+License: gpl-3.0
+Download-URL: https://github.com/V1A0/emojihash/archive/refs/tags/v0.1.1.tar.gz
+Keywords: emoji,crypto,security,cryptography,hash,sha,sha512,sha256,md5,fun
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Security :: Cryptography
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Emoji-hash 😄
+
+Library with hashing tools where hash is emoji(s). Zero dependencies.
+
+## Installation
+```shell
+pip install emojihash
+```
+
+## Simple example
+
+```python
+from emojihash import eh1
+
+my_string = "Hello world!"
+
+emoji_hash = eh1(my_string) # eh == Emoji Hash
+
+print(emoji_hash) # 🥳
+```
+
+## More examples
+```python
+from emojihash import eh1
+
+print(
+    eh1("Hello world!") # "🥳"
+)
+
+print(
+    eh1(42) # "🚳"
+)
+
+print(
+    eh1("I need more emojis!!!", length=12) # "🍤🍧🚮🛄👑🛹⛩💙🙇🎊🍍👚"
+)
+
+print(
+    eh1("I need more emojis!!!", length=2) # "🦈🏼"
+)
+
+print(
+    eh1(b'000', length=2) # "🩹🟠"
+)
+
+print(
+    eh1(u'5p34k 1337', length=4, encode='ascii') # "🍓👣🔩💯"
+)
+```
+

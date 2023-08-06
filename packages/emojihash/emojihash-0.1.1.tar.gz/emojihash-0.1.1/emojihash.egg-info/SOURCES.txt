@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+emojihash/__init__.py
+emojihash/main.py
+emojihash.egg-info/PKG-INFO
+emojihash.egg-info/SOURCES.txt
+emojihash.egg-info/dependency_links.txt
+emojihash.egg-info/top_level.txt
+emojihash/db/__init__.py
+emojihash/db/basic_emojis.py
+emojihash/hash_classes/__init__.py
+emojihash/hash_classes/eh1.py
+emojihash/typing/__init__.py
+emojihash/typing/basic_types.py
