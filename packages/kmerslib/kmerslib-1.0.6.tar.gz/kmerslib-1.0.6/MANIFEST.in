@@ -1,0 +1,6 @@
+include kmers.cu
+include kmers.cuh
+include kmerslib.h
+include testkamer.cpp
+include ffpKmersLib.cuh
+include kmerslib/core.cpp
