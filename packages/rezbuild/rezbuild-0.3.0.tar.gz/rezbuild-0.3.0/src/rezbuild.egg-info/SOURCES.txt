@@ -1,0 +1,17 @@
+.gitignore
+CHANGES.md
+LICENSE
+README.md
+README_zh_CN.md
+build.py
+package.py
+pyproject.toml
+setup.cfg
+src/rezbuild/__init__.py
+src/rezbuild/builder.py
+src/rezbuild/exceptions.py
+src/rezbuild/utils.py
+src/rezbuild.egg-info/PKG-INFO
+src/rezbuild.egg-info/SOURCES.txt
+src/rezbuild.egg-info/dependency_links.txt
+src/rezbuild.egg-info/top_level.txt
