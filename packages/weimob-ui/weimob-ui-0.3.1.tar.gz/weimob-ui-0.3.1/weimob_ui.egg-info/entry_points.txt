@@ -1,0 +1,3 @@
+[console_scripts]
+WeimobUi = weimobUI.__main__:main
+
