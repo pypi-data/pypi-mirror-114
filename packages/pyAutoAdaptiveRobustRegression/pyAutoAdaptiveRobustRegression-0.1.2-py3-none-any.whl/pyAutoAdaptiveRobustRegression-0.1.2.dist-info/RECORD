@@ -1,0 +1,11 @@
+pyAutoAdaptiveRobustRegression/__init__.py,sha256=giXFCbTLuafkZ2k_tOvsIeuisIG6fgEY_POGK9BX1HY,202
+pyAutoAdaptiveRobustRegression/internal.py,sha256=iBg2CPa9sBv4wrAJO8xcYf6Wqhlcl0CJgE_9EOj2L74,4929
+pyAutoAdaptiveRobustRegression/bin/linux/pyAutoAdaptiveRobustRegression.so,sha256=BS_rGVee4smuCCa7arMX3MXMsyIVP5k0YJ7aK_uzIXU,100856
+pyAutoAdaptiveRobustRegression/bin/macos/pyAutoAdaptiveRobustRegression.dylib,sha256=TMBxH6wVZoejWXDgAoWfr7peCblNfSxElOYuka7GrsY,183848
+pyAutoAdaptiveRobustRegression/bin/win32/libopenblas.dll,sha256=_FLSPAOx--PiZjmlFEV88JscnsM7z5PuYsbKKLxDAFI,32492623
+pyAutoAdaptiveRobustRegression/bin/win32/pyAutoAdaptiveRobustRegression.dll,sha256=U8RU_QCkpm6UJ-reQ5KWmXfG9RB4obW5kblt2aMN2AU,3111166
+pyAutoAdaptiveRobustRegression-0.1.2.dist-info/LICENSE,sha256=2xdO-niKToqopaQg6P_eLDLn37fpyOt-iomSzoce2T0,1068
+pyAutoAdaptiveRobustRegression-0.1.2.dist-info/METADATA,sha256=oV7PoiakpSmVRznrQwt7RkifL19LZ7feg7o-M8wzt-w,850
+pyAutoAdaptiveRobustRegression-0.1.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyAutoAdaptiveRobustRegression-0.1.2.dist-info/top_level.txt,sha256=97tIA4ziy-mG7c1KfygUYMnbXm9cvxHZZy0uxpzi_Qw,31
+pyAutoAdaptiveRobustRegression-0.1.2.dist-info/RECORD,,
