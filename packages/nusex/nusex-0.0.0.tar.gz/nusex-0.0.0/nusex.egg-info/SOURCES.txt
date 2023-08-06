@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements-dev.txt
+setup.py
+nusex/__init__.py
+nusex.egg-info/PKG-INFO
+nusex.egg-info/SOURCES.txt
+nusex.egg-info/dependency_links.txt
+nusex.egg-info/requires.txt
+nusex.egg-info/top_level.txt
