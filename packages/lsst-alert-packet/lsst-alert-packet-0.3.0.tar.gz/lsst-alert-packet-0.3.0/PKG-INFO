@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: lsst-alert-packet
+Version: 0.3.0
+Summary: Code for interacting with Vera C. Rubin Observatory alert packets
+Home-page: https://github.com/lsst/alert_packet
+Author: Spencer Nelson
+Author-email: swnelson@uw.edu
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 3 - Alpha
