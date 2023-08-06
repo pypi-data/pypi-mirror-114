@@ -1,0 +1,4 @@
+opencv-python
+vidsz
+numpy
+requests
