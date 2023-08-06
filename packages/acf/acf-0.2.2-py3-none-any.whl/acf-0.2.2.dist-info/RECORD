@@ -1,0 +1,17 @@
+acf/__init__.py,sha256=cLGR1uHkv3SxsIt9zCJVXEpwB9ngVyxn8FvI6lhld6g,468
+acf/version.py,sha256=4FqgR9xm7o2MqCGoTGJ5DUQp70Z83kjsiDoAbbqMwtY,240
+acf/core/__init__.py,sha256=EEpoO4eApuOczqvnt0FwkoejOOESnW3lRWf0BXXn-m8,67
+acf/core/computation.py,sha256=idv8TtZj2Dx5bJzPp_wL7tVgFIN65qf1-6wNSve37_Y,12206
+acf/core/metrics.py,sha256=pudsDdfw9WB2BydZD8E9Gpx5WnOZIqBDHTHD6igjWNA,1993
+acf/core/preprocessing.py,sha256=dJuK75xeFrCZ-leEbC_hyE915cnS8ugz4PtScLEYzf0,823
+acf/core/utils.py,sha256=zIE43CvVy-sWo87OLsjy97PQzJZ5BJSiRyGw3Ox82Io,2814
+acf/tests/__init__.py,sha256=EEpoO4eApuOczqvnt0FwkoejOOESnW3lRWf0BXXn-m8,67
+acf/tests/test_computation.py,sha256=0jmexIM7GJ2MGR0u0BzkhAoQh2uY7VPcymGvn-0EctQ,6405
+acf/tests/test_metrics.py,sha256=c8RsOaA5kXtt2Q6oyjv1sUlkUamSxI3POLeAwzr9TQ0,1716
+acf/tests/test_preprocessing.py,sha256=-Ux7Sa9iiUUKJyYdBHsiOQAu4FpZvbzRirLML-0O1FY,1333
+acf/tests/test_utils.py,sha256=ZwdfWr5rvGq3VfdpeRIdqdtjtu1lCbjogrJiu7bGyMk,5083
+acf-0.2.2.dist-info/LICENSE,sha256=19wq5g7axxebmEMBm47forZtufXX9IK4AQtQ5Fv6-6Q,1070
+acf-0.2.2.dist-info/METADATA,sha256=GhfxZmn6X-hJPpd3oWnboeOjrwq5d2Iy_DUahlky7wI,314
+acf-0.2.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+acf-0.2.2.dist-info/top_level.txt,sha256=5dV716elBFtnNnNRES50-sxB7cYdYynymCpViUT61iw,4
+acf-0.2.2.dist-info/RECORD,,

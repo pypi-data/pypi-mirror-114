@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: acf
+Version: 0.2.2
+Summary: Lightweight recommender engine
+Home-page: UNKNOWN
+Author: Jan Cervenka
+Author-email: jan.cervenka@yahoo.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: pandas (>=1.0)
+Requires-Dist: numpy (>=1.16)
+
+UNKNOWN
+
