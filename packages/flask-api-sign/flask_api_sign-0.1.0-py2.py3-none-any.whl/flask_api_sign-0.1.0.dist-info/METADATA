@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: flask-api-sign
+Version: 0.1.0
+Summary: Flask extension of Api sign Verification
+Home-page: https://github.com/juforg/flask-api-sign
+Author: juforg
+Author-email: juforg@gmail.com
+License: MIT license
+Keywords: flask,api,sign,auth,verification,flask_api_sign
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Environment :: Plugins
+Classifier: Framework :: Flask
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: Click (>=6.0)
+Requires-Dist: Flask (>=1.0)
+
+===========================
+Flask Api Sign Verification
+===========================
+
+.. image:: https://readthedocs.org/projects/flask-api-sign/badge/?version=latest
+   :target: https://flask-api-sign.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
+
+.. image:: https://github.com/juforg/flask-api-sign/actions/workflows/publish-to-pypi.yml/badge.svg
+   :target: https://github.com/juforg/flask-api-sign/actions/workflows/publish-to-pypi.yml
+   :alt: Publish Python 🐍 distributions 📦 to PyPI and TestPyPI
+
+Features
+--------
+* Testing setup with ``unittest`` and ``python setup.py test`` or ``py.test``
+* Command line interface using Click
+
+Quickstart
+----------
+
+Install the latest Cookiecutter if you haven't installed it yet ::
+
+    pip install -U flask-api-sign
+
+
+
+Then::
+
+    from flask import Flask
+    from flask_api_sign import ApiSignManager
+    from flask_api_sign import verify_sign
+
+    app = Flask(__name__)
+
+    api_sign_mgr = ApiSignManager()
+    api_sign_mgr.init_app(app)
+    @app.route("/")
+    @verify_sign
+    def index():
+        pass
+
+
+Links
+-----
+
+-   Documentation: https://flask-api-sign.readthedocs.io/en/latest/index.html
+-   Changes: https://flask-api-sign.readthedocs.io/en/latest/history.html
+-   PyPI Releases: https://pypi.org/project/flask-api-sign/
+-   Source Code: https://github.com/juforg/flask-api-sign/
+-   Issue Tracker: https://github.com/juforg/flask-api-sign/issues/
+
+
+=======
+History
+=======
+
+0.1.0 (2021-07-27)
+------------------
+
+* First release on PyPI.
+
+
