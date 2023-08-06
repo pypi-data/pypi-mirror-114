@@ -1,0 +1,11 @@
+tqdm==4.60.0
+clip_by_openai
+dall-e==0.1
+imageio-ffmpeg==0.4.3
+PyYAML==5.4.1
+omegaconf==2.0.6
+pytorch-lightning==1.3.3
+einops==0.3.0
+imageio==2.9.0
+torch==1.7.1
+torchvision==0.8.2
