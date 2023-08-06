@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pypi_Deploy_Demo/__init__.py
+pypi_Deploy_Demo/component.py
+pypi_Deploy_Demo/main.py
+pypi_Deploy_Demo.egg-info/PKG-INFO
+pypi_Deploy_Demo.egg-info/SOURCES.txt
+pypi_Deploy_Demo.egg-info/dependency_links.txt
+pypi_Deploy_Demo.egg-info/entry_points.txt
+pypi_Deploy_Demo.egg-info/requires.txt
+pypi_Deploy_Demo.egg-info/top_level.txt
