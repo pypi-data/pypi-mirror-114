@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+README.txt
+pyproject.toml
+setup.py
+file2csv/Converter.py
+file2csv/__init__.py
+file2csv.egg-info/PKG-INFO
+file2csv.egg-info/SOURCES.txt
+file2csv.egg-info/dependency_links.txt
+file2csv.egg-info/top_level.txt

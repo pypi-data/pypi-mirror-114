@@ -1,0 +1,2 @@
+Generates a fixed width file using the provided spec (offset provided in the spec file represent the length of each field).
+Implements a parser that can parse the fixed width file and generate a delimited file, like CSV for example.
