@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: perfsizesagemaker
+Version: 0.1.1
+Summary: Automated performance testing to determine the right size of infrastructure, applied to AWS SageMaker
+Author: Richard Shiao
+Requires-Python: >=3.8.11,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: boto3 (>=1.17.66,<2.0.0)
+Requires-Dist: jinja2 (>=3.0.1,<4.0.0)
+Requires-Dist: perfsize (>=0.1.7,<0.2.0)
+Requires-Dist: pyyaml (>=5.4.1,<6.0.0)
+Requires-Dist: yattag (>=1.14.0,<2.0.0)
