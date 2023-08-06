@@ -1,0 +1,5 @@
+setup.py
+d2m.egg-info/PKG-INFO
+d2m.egg-info/SOURCES.txt
+d2m.egg-info/dependency_links.txt
+d2m.egg-info/top_level.txt
