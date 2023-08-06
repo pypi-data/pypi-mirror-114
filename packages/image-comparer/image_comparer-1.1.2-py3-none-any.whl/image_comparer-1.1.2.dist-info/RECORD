@@ -1,0 +1,12 @@
+image_comparer/__init__.py,sha256=KdnjwIerK-tfwdyTX6qxY2wl7cFvRWpJjf4hTPZ4KD4,72
+image_comparer/cli.py,sha256=S7wZnr0bDszvoiXa3wNHIa1q9acrpY7iiBwDvE8B2-s,921
+image_comparer/compare.py,sha256=IKJPFT9tGDwu79nxfhGflpMXFw2AZQ5rct8zR4znKQw,1316
+image_comparer/download.py,sha256=gOugCSTALjD25XG6SB3mc5o7ti-cAsX-rtMELpGim64,798
+image_comparer/model.py,sha256=oMwTb9NmTg08TfW6IWRtujOXKk7VMbt2AtMqqzUPhv0,1182
+image_comparer-1.1.2.dist-info/DESCRIPTION.rst,sha256=4_P1Bgdu20rW_tgjxgw4KwjHWpVqsyYTcg0ejDfLNZo,1394
+image_comparer-1.1.2.dist-info/METADATA,sha256=cSR14BaohGVBUvBeGD1Vx4WfEfNjwtRc1pj0kQKTkKI,2062
+image_comparer-1.1.2.dist-info/RECORD,,
+image_comparer-1.1.2.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+image_comparer-1.1.2.dist-info/entry_points.txt,sha256=5eYwPYkWXkc2a70hzWaL7P6nLGXQW-IILaDC4H7tfkM,58
+image_comparer-1.1.2.dist-info/metadata.json,sha256=dRvYsbZemOCczOx5GTe0QFvCb_eM9Wg9DFKNjVPJOFU,1008
+image_comparer-1.1.2.dist-info/top_level.txt,sha256=YOCMtHnowgAUNfFy_fwkUr2ZQ5u9p8HPQrYAUIR7If8,15
