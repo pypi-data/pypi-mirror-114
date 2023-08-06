@@ -1,0 +1,9 @@
+microphone/__init__.py,sha256=6YhXhSaM6QgTAQWcMg0FvM1ZXrsl8L0WsK7mofGracw,2911
+microphone/config.py,sha256=62n7HCmB3IDh0Jal4cX_usVtxHFvx3HL8yPhMnFYqTo,262
+microphone/configure_input.py,sha256=nFfMTx7L-3uK8_W0Nn3LzIOKhCQk7F6gYP9b0TE1MA0,3408
+microphone/context_managers.py,sha256=qT0nU09--CcSJm64-tE2OXYKKukyX6JWnLGg9J2BLsU,2329
+week1_test-1.2.1.dist-info/LICENSE,sha256=RBhg5hIyHCQyj9Hd6pdx4QVzRdIfplLdnbuNB0fm2H4,1093
+week1_test-1.2.1.dist-info/METADATA,sha256=Ha2f5QYN7-NZMySp2FPk7SJgXl48v1x8SCFoIL2NBaU,2343
+week1_test-1.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+week1_test-1.2.1.dist-info/top_level.txt,sha256=ZJHPa-qMIHn3PCYhaSlHk1JPzO1pZlPpsMXkvBDcDMM,11
+week1_test-1.2.1.dist-info/RECORD,,
