@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: bento-tools
+Version: 0.1.1
+Summary: A toolkit for subcellular analysis of RNA organization
+License: MIT
+Author: Clarence Mah
+Author-email: ckmah@ucsd.edu
+Requires-Python: >=3.8,<3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Shapely (>=1.7.1,<2.0.0)
+Requires-Dist: anndata (>=0.7.6,<0.8.0)
+Requires-Dist: astropy (>=4.3.post1,<5.0)
+Requires-Dist: datashader (>=0.13.0,<0.14.0)
+Requires-Dist: geopandas (>=0.9.0,<0.10.0)
+Requires-Dist: ipywidgets (>=7.6.3,<8.0.0)
+Requires-Dist: leidenalg (>=0.8.7,<0.9.0)
+Requires-Dist: matplotlib (>=3.4.2,<4.0.0)
+Requires-Dist: numpy (>=1.21.1,<2.0.0)
+Requires-Dist: pandas (>=1.3.1,<2.0.0)
+Requires-Dist: proplot (>=0.7.0,<0.8.0)
+Requires-Dist: pygeos (>=0.10.1,<0.11.0)
+Requires-Dist: rasterio (>=1.2.6,<2.0.0)
+Requires-Dist: scanpy (>=1.8.1,<2.0.0)
+Requires-Dist: scipy (>=1.7.0,<2.0.0)
+Requires-Dist: seaborn (>=0.11.1,<0.12.0)
+Requires-Dist: skorch (>=0.10.0,<0.11.0)
+Requires-Dist: torchvision (>=0.10.0,<0.11.0)
+Requires-Dist: tqdm (>=4.61.2,<5.0.0)
+Requires-Dist: umap-learn (>=0.5.1,<0.6.0)
+Description-Content-Type: text/markdown
+
+# Bento
+
+Bento is a toolkit for ingesting, visualizing, and analyzing spatial transcriptomics data at subcellular resolution. 
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install bento.
+
+```bash
+pip install bento-tools
+```
+
+## Usage
+
+```python
+import bento
+# Todo
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
