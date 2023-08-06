@@ -1,0 +1,5 @@
+attrs>=20.3
+grpcio<2.0.0,>=1.37.0
+
+[test]
+pytest>=6.0
