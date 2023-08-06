@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+generate_docs/__init__.py
+generate_docs/generator.py
+generate_docs/how_to.py
+generate_docs/readme.py
+generate_docs/wiki.py
+generate_docs.egg-info/PKG-INFO
+generate_docs.egg-info/SOURCES.txt
+generate_docs.egg-info/dependency_links.txt
+generate_docs.egg-info/entry_points.txt
+generate_docs.egg-info/requires.txt
+generate_docs.egg-info/top_level.txt
