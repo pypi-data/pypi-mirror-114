@@ -1,0 +1,79 @@
+metadata:
+  title: Sheriff's Sale
+  temporary session: true
+---
+mandatory: true
+question: |
+  Property Taxes/Utility Bills
+subquestion: |
+  This tool will help you prepare a petition to postpone your sheriff’s sale.  Please review the Pennsylvania Rule of Civil Procedure on sheriff’s sale postponements below before using this tool.
+  &nbsp;
+  &nbsp;
+  ###Rule 3129.3. Postponement of Sale. New Notice. Failure of Plaintiff to Attend Sale.
+  (a) Except as provided by subdivision (b) or special order of court, new notice shall be given as provided by Rule 3129.2 if a sale of real property is stayed, continued, postponed or adjourned.
+  
+  (b)(1) If the sale is stayed, continued, postponed or adjourned to a date certain within one hundred thirty days of the scheduled sale, notice of which sale was given as provided by Rule 3129.2, and public announcement thereof, including the new date, is made to the bidders assembled at the time and place fixed for the sale, no new notice as provided by Rule 3129.2 shall be required, but there may be only two such stays, continuances, postponements or adjournments within the one hundred thirty day period without new notice.
+  
+  (2)(i) When the sale is stayed, continued, postponed or adjourned as provided by subdivision (b)(1), the plaintiff shall file
+  
+  (A) a notice of the date of continued sheriff's sale with the prothonotary at least fifteen days before the continued sale date, and
+  
+  (B) a certificate of filing with the sheriff confirming the filing of the notice of the date of continued sheriff's sale with the prothonotary.
+  
+  The sheriff shall continue the sale to the next available sale date if the notice of the date of continued sheriff's sale has not been timely filed. This continuance imposes a new obligation on the plaintiff to meet the requirements described in (b)(2)(i)(A) and (B).
+  
+  (ii) Non-compliance with this subdivision is not a basis for setting aside the sheriff's sale unless raised prior to the delivery of the sheriff's deed. The sale shall be set aside only upon a showing of prejudice.
+  
+  Official Note - This subdivision supersedes other provisions of these rules limiting the number of times a sale may be continued, including the provisions of subdivision (b)(1).
+  
+  (3)(i) The notice required by subdivision (b)(2) shall be substantially in the following form -
+  
+  (Caption)
+  
+  Notice of the Date of Continued Sheriff's Sale
+  
+  The Sheriff's Sale scheduled for ______ , ____ at __;__ __ M. in the above-captioned matter has been continued until ______ , ____ at __;__ __ M.
+  
+  Date______
+  
+  By______
+  
+  (Attorney for Plaintiff)
+  ______
+  
+  (Address)       
+  ______
+  
+  (Phone)
+  
+  (ii) The certificate of filing required by subdivision (b)(2) shall be in substantially the following form - 
+  
+  (Caption)
+  
+  Certificate of Filing
+  
+  On this date, I filed with the Prothonotary of ______ County a copy of the Notice of the Date of Continued Sheriff's Sale in the above-captioned matter.
+  
+  Date______
+  
+  By______
+  
+  (Attorney for Plaintiff)
+  
+  ______
+  
+  (Address)       
+  
+  ______
+  
+  (Phone)
+  
+  (c) If the plaintiff or a representative of the plaintiff is not present at the sale, the real property shall not be sold. The sheriff shall return the writ of execution to the prothonotary and file a return pursuant to Rule 3139 indicating that the real property was not sold because the plaintiff or a representative of the plaintiff was not present at the sale. Thereafter, the writ may be reissued pursuant to Rule 3106.
+fields:
+  - I understand and have reviewed the above rule(s) of civil procedure: user_saw_intro
+    datatype: yesnowide
+continue button label: |
+  Start Complaint
+validation code: |
+  if not user_saw_intro:
+    validation_error("You cannot continue until you indicate that you understand.")
