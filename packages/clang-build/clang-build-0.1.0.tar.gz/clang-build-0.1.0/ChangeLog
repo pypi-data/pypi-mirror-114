@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+0.1.0
+-----
+
+* CI: fix changelog generation and add deploy
