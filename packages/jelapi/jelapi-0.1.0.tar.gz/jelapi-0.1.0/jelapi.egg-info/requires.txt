@@ -1,0 +1,7 @@
+httpx[http2]>=0.18
+
+[test]
+factory_boy
+faker_enum
+pytest-cov
+respx>=0.17
