@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: secure-ec2
+Version: 0.0.4
+Summary: A project that helps you to provision EC2 instance securely
+Home-page: https://github.com/avishayil/secure_ec2
+Author: Avishay Bar
+Author-email: avishay.il@gmail.com
+License: MIT license
+Keywords: secure_ec2
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: Click (==8.0.1)
+Requires-Dist: boto3 (==1.17.109)
+Requires-Dist: PyInquirer (==1.0.3)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: halo (==0.0.31)
+Provides-Extra: develop
+Requires-Dist: pytest (>=3) ; extra == 'develop'
+Requires-Dist: pytest-cov (>=2.12) ; extra == 'develop'
+Requires-Dist: bandit (>=1.7.0) ; extra == 'develop'
+Requires-Dist: black (>=21.7b0) ; extra == 'develop'
+Requires-Dist: isort (>=5.9.2) ; extra == 'develop'
+Requires-Dist: flake8 (>=3.9.2) ; extra == 'develop'
+Requires-Dist: moto (>=2.2.0) ; extra == 'develop'
+Requires-Dist: coverage (>=5.5) ; extra == 'develop'
+Requires-Dist: coverage-badge (>=1.0.1) ; extra == 'develop'
+Requires-Dist: pre-commit (>=2.13.0) ; extra == 'develop'
+Requires-Dist: bump2version (>=0.5.4) ; extra == 'develop'
+
+==========
+Secure EC2
+==========
+
+
+.. image:: https://img.shields.io/pypi/v/secure_ec2.svg
+        :target: https://pypi.python.org/pypi/secure_ec2
+
+.. image:: https://github.com/avishayil/secure_ec2/actions/workflows/test.yml/badge.svg
+        :target: https://github.com/avishayil/secure_ec2/actions/workflows/test.yml
+
+.. image:: https://readthedocs.org/projects/secure-ec2/badge/?version=latest
+        :target: https://secure-ec2.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+.. image:: coverage.svg
+        :target: https://coverage.readthedocs.io/
+        :alt: Coverage
+
+A project that helps you to provision EC2 instance securely
+
+
+* Free software: MIT license
+* Documentation: https://secure-ec2.readthedocs.io.
+
+
+TL;DR
+--------
+Installation:
+
+.. code-block:: bash
+
+    § pip install secure_ec2
+
+Wizard Usage:
+
+.. code-block:: bash
+
+  § secure_ec2
+
+Command Line Usage:
+
+.. code-block:: bash
+
+  § secure_ec2 --os_type Linux --num_instances 3 --keypair None --instance_type t2.micro # Session Manager access
+  § secure_ec2 --os_type Windows --num_instances 1 --keypair demo-kp --instance_type t2.micro # SSH access with KeyPair
+
+
+Features
+--------
+
+* Provision EC2 instance with keypair securely
+* Provision EC2 instance without keypair (Session Manager access) securely
+
+
+Demo
+----
+
+Linux
+=====
+
+.. image:: screenshots/linux.gif
+        :alt: Linux Example
+
+Windows
+=======
+
+.. image:: screenshots/windows.gif
+        :alt: Windows Example
+
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.0.1 (2021-07-12)
+------------------
+
+* First release on PyPI.
+
+
