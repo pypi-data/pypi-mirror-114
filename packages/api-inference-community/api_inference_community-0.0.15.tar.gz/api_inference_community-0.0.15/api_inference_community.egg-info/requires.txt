@@ -1,0 +1,14 @@
+starlette==0.14.2
+numpy>=1.18.0
+pydantic==1.8.1
+parameterized==0.8.1
+pillow==8.2.0
+huggingface_hub>=0.0.12
+datasets==1.10
+
+[test]
+httpx==0.18
+Pillow==8.2
+httpx==0.18
+torch==1.9.0
+pytest==6.2
