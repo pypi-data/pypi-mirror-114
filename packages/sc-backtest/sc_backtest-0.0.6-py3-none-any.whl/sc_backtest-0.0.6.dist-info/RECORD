@@ -1,0 +1,11 @@
+sc_backtest/__init__.py,sha256=3zI_5PRLtALas6faBBlIqAUCiYR06D5xcXCpelo8UJQ,214
+sc_backtest/backtest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sc_backtest/private_func.py,sha256=e7okKgD8Z3WXghemZjmFkMLliMSzdDfitcCDqZg5Rbs,1900
+sc_backtest/sc_backtest.py,sha256=FJ2XZ4w6sVyUh8ncAp5okHO3FerxrDgm_YdT3zOFwG8,8627
+sc_backtest/simpletest.py,sha256=XuvZhd6NXV1NWK4MG4pyt_nqe1eAFipjT4xR7omM7i8,14086
+sc_backtest/technical_analysis.py,sha256=aR6bCQxr_WmE8H-vYT_Pu4-8QPtxunDo5fHY4OUpoZE,4651
+sc_backtest-0.0.6.dist-info/LICENSE.txt,sha256=fygcIjvyfHh75rUyRkDhjO4RsI0nuy-FYd35sjpFKMc,1058
+sc_backtest-0.0.6.dist-info/METADATA,sha256=VQkSTN02s244YYil_6VP3jwri7bJPoXqGfh-4XtMqDc,2257
+sc_backtest-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sc_backtest-0.0.6.dist-info/top_level.txt,sha256=nMLdkblGAj9XVLKY5jDhP2gRI2S8w9UuVSy6mZpq914,12
+sc_backtest-0.0.6.dist-info/RECORD,,
