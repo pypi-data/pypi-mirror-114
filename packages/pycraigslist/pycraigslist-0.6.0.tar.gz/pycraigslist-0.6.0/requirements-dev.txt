@@ -1,0 +1,10 @@
+httpx
+bs4
+tenacity
+cchardet
+lxml
+pytest
+pre-commit
+absolufy-imports
+black
+flit
