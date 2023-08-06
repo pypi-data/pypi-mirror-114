@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ksh-test-foo
+Version: 0.0.1
+Summary: A OpenAI Gym Env for foo
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: gym
+
+first_attempt by ksh
+
+
