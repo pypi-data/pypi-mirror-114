@@ -1,0 +1,13 @@
+imageprobe/__init__.py,sha256=S1JSXIFidhNpYg-GL0eNLI_tVoNQ7dXJykCdhR2vRQw,492
+imageprobe/client.py,sha256=tzD8KOfOcu6dK_27KhOmKHI3wYU7sbtQc1HPfK2Htpc,2844
+imageprobe/errors.py,sha256=UoSG5cz3JwsaMv7X4v5UmxDMrop3gOghISiDmucelSs,614
+imageprobe/parser.py,sha256=qslK8hZq09nnjnAjcuKMGdOP_9x2o0cUBCh0EphMaHE,1177
+imageprobe/parsers/__init__.py,sha256=MT3NyF6695E3npoewQJpDuOasRf0HKNcv9hCwPUKeYg,196
+imageprobe/parsers/gif.py,sha256=UbV1v8DVAVwVGkSJE8vcpsYe7YzAl-FVQz-1RLvMG1I,732
+imageprobe/parsers/png.py,sha256=aYNxaQI0uxJFR5fn9Y6HF7MMW-TaNVBm06BaYPxJrho,965
+imageprobe/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imageprobe/types.py,sha256=2n4_X84DXklPV1B6P5hRNZ4Wj_v2vYsWaP3yTi0LIYA,608
+imageprobe-0.2.0.dist-info/LICENSE,sha256=dTi5q8ur05OkVbrCqEhpLbuV0FGeNh2ep6OhAO5M7JQ,1062
+imageprobe-0.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+imageprobe-0.2.0.dist-info/METADATA,sha256=U066-ud6OBR9kjeRQuqtJVcCc1l6AdH1dLA5GxF59Fs,2589
+imageprobe-0.2.0.dist-info/RECORD,,
