@@ -1,0 +1,19 @@
+metadata:
+  title: Sheriff's Sale
+  temporary session: true
+---
+mandatory: true
+question: |
+  Is the notice that you received related to overdue mortgage payments, property taxes, and/or utility bills?
+subquestion: |
+  * [Mortgage payments]
+  * [Property taxes/Utility bills]
+  * [I don't know]
+  * Learn more about sheriff sales
+  
+  [Mortgage payments]: ${ interview_url(i='docassemble.EJCRC:data/questions/mortgage.yml') }
+  [Property taxes/Utility bills]: ${ interview_url(i='docassemble.EJCRC:data/questions/property_utility.yml') }
+  [I don't know]: ${ interview_url(i='docassemble.EJCRC:data/questions/sheriff_unknown.yml') }
+auto terms:
+  Learn more about sheriff sales: |
+   To learn more about the sheriff’s sale process contact [Save Your Home Philly](http://saveyourhomephilly.org/) at 215-334-HOME (4663) or [Community Legal Services](https://clsphila.org/services/mortgage-issues/) at 215-981-3700 

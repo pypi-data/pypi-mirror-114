@@ -1,0 +1,18 @@
+metadata:
+  title: Court of Common Pleas
+  temporary session: true
+---  
+mandatory: true
+question: |
+  Court of Common Pleas Cases
+subquestion: |
+  The Court of Common Pleas has jurisdiction over legal and equity actions, appeals from Municipal Court, and appeals from certain administrative agencies and boards.  This online tool can assist you with general filings for ejectment actions and Municipal Court landlord-tenant appeals.
+  
+  Select your case’s category to see what kind of documents this online tool help you with.
+  * [Ejectment]
+  * [Landlord-tenant appeal from Municipal Court]  
+  * [I don’t know what kind of case this is]
+  
+  [Ejectment]: ${ interview_url(i='docassemble.EJCRC:data/questions/ejectment_defendant_screen.yml') }
+  [Landlord-tenant appeal from Municipal Court]: ${ interview_url(i='docassemble.EJCRC:data/questions/appeal_LLT_case.yml') }
+  [I don't know what kind of case this is] ${ interview_url(i='docassemble.EJCRC:data/questions/case_unknown.yml') }
