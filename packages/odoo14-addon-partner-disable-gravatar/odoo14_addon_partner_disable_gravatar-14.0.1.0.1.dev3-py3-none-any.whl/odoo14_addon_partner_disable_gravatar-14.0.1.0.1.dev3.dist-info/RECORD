@@ -1,0 +1,17 @@
+odoo/addons/partner_disable_gravatar/README.rst,sha256=uPdj38mtjjDSAFpzkdTMod0Bj6QjDa7KptNN8nUa76A,4865
+odoo/addons/partner_disable_gravatar/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/partner_disable_gravatar/__manifest__.py,sha256=2r5-iRG8OgKdLmF8kD3GlrV_c41hw5qdtXS0aQxI-pE,575
+odoo/addons/partner_disable_gravatar/i18n/partner_disable_gravatar.pot,sha256=MjFw50sWiDvbt-upL-Hxvt85Xt8xQ7l9yy-i37-R8Hw,989
+odoo/addons/partner_disable_gravatar/models/__init__.py,sha256=g-Dp2ZwN6oB4CqdQfgRInNSzdMWAVQg1vjWL7S-ZODM,26
+odoo/addons/partner_disable_gravatar/models/res_partner.py,sha256=d21yUR09cq6MbT2PG0pa302kZ0im-AXiSyeb02pqkBY,337
+odoo/addons/partner_disable_gravatar/readme/CONFIGURE.rst,sha256=Q-D2HB__2Ai-94iISXAkt3Vzj8Y7GBQ0tR6I7RbUHhA,104
+odoo/addons/partner_disable_gravatar/readme/CONTRIBUTORS.rst,sha256=e8dOgio6UxRss1tsAaHVr97hi-hjTfI5ouj7XQ1JHGE,50
+odoo/addons/partner_disable_gravatar/readme/DESCRIPTION.rst,sha256=4Qp97s5Njm62PNhdq5cFE2omzq0Y2Jn_efO19XsnUPM,1822
+odoo/addons/partner_disable_gravatar/static/description/icon.png,sha256=okXk3jXj-M7ACBWtZ2fixV7LW65KuxqygA8pFh7vnTY,12068
+odoo/addons/partner_disable_gravatar/static/description/index.html,sha256=rbzUAJ38hMFG_0rvLW8drPasnVvhQY38TasCTl57I9Y,14389
+odoo/addons/partner_disable_gravatar/tests/__init__.py,sha256=ja-DdvhSjFKyeIe-ysHC6bXg5pWgz5VVWe07ADgDbNc,44
+odoo/addons/partner_disable_gravatar/tests/test_partner_disable_gravatar.py,sha256=FujOOH9TAO9OXcRqi0dwaJdW1HW-EREbuWVZ5LoQb4o,546
+odoo14_addon_partner_disable_gravatar-14.0.1.0.1.dev3.dist-info/METADATA,sha256=jaj_PKYWR598dv-SiULKbbM5_PZAcwlmD5ADg-052UA,5400
+odoo14_addon_partner_disable_gravatar-14.0.1.0.1.dev3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+odoo14_addon_partner_disable_gravatar-14.0.1.0.1.dev3.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_partner_disable_gravatar-14.0.1.0.1.dev3.dist-info/RECORD,,
