@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: inter-rao-energosbyt-python
+Version: 0.0.17
+Summary: Inter RAO API bindings for python
+Home-page: https://github.com/alryaz/inter-rao-energosbyt-python
+Author: Alexander Ryazanov
+Author-email: alryaz@xavux.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/alryaz/inter-rao-energosbyt-python/issues
+Description: Inter RAO Energosbyt Python
+        ===========================
+        Библиотека для работы с ЕЛК ЖКХ компании Интер РАО.
+        
+        Библиотека подвергается частым изменениям, так как находится в стадии постоянной разработки.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
