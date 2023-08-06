@@ -1,0 +1,4 @@
+alive_progress>=1.6.1
+colored
+configparser
+praw>=7.1.2
