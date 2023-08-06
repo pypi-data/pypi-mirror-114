@@ -1,0 +1,4 @@
+[plover.machine]
+Stenograph USB = plover_stenograph:StenographUsb
+Stenograph Wi-Fi = plover_stenograph:StenographWiFi
+
