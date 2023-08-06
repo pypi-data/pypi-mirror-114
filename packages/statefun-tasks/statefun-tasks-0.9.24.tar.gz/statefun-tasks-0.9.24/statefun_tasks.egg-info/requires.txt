@@ -1,0 +1,2 @@
+apache-flink-statefun>=3.0.0
+kafka-python
