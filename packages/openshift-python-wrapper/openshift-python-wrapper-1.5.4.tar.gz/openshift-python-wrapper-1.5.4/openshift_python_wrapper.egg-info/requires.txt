@@ -1,0 +1,8 @@
+kubernetes
+openshift
+xmltodict
+urllib3
+netaddr
+paramiko
+pbr
+pdoc3
